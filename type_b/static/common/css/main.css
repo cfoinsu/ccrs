@@ -127,7 +127,7 @@ Version : v3.4	date : 2023-05-11 (웹접근성 인증마크 수정)
 }
 
 #header .gnb-wrap > nav {
-    width: 1060px;
+    width: 1160px;
     height: 100%;
     margin: 0 auto;
     font-weight: 500;
@@ -170,7 +170,7 @@ Version : v3.4	date : 2023-05-11 (웹접근성 인증마크 수정)
     transition: all 0.2s ease;
     top: 59px;
     padding-top: 24px;
-    width: calc(1060px / 6);
+    width: calc(1160px / 6);
     left: 0;
     /* -webkit-transform: translateX(-50%); */
     /* transform: translateX(-50%); */
