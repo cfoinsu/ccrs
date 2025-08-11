@@ -87,7 +87,7 @@ pre {margin: 0; white-space: pre-wrap; font-family: "NotoSansKR", sans-serif; li
 div {scrollbar-width: thin;}
 div::-webkit-scrollbar {width: 5px;}
 div::-webkit-scrollbar-thumb {border-radius: 3px;}
-section {scrollbar-width: thin;}
+section {scrollbar-width: thin;max-width: 1592px;margin: 0 auto;}
 section::-webkit-scrollbar {width: 0px;}
 section::-webkit-scrollbar-thumb {display: none;}
 .clr {clear: both;}
