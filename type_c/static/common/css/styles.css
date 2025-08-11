@@ -32,7 +32,7 @@ body {
     position: relative;
     z-index: 3;
     background-color: #f5f5f5;
-    padding: 0.5rem 0;
+    /* padding: 0.5rem 0; */
 }
 
 .utility-bar .container {
@@ -1312,7 +1312,7 @@ body {
 .footer {
     background: #0a1c2a;
     color: white;
-    padding: 40px 0;
+    /* padding: 40px 0; */
     /* margin-top: 60px; */
 }
 
@@ -1374,7 +1374,7 @@ body {
 
 /* Institution Links */
 .institution-links {
-    background: #f8f9fa;
+    background: #fff;
     border-top: 1px solid #e1e5e9;
     padding: 0;
 }
