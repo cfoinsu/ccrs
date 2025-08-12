@@ -1,3 +1,9 @@
+@charset "utf-8";
+/*-------------------------------------------------
+Author : insu
+Create date : 2025-08-04
+Version : v1.0
+-------------------------------------------------*/
 /* Reset and Base Styles */
 /*skip*/
 #skip_nav {}
@@ -154,7 +160,7 @@ body {
 /* Main Content */
 .main-content {
     min-height: calc(100vh - 140px);
-    padding: 20px 0;
+    padding: 116px 0 160px;
 }
 
 /* Breadcrumb */
@@ -252,6 +258,11 @@ body {
     transition: transform 0.3s ease;
 }
 
+.nav-section-title .nav-arrow {
+    background: url(../images/ic/nav-arrow.svg) center no-repeat;
+    width: 16px;
+    height: 10px;
+}
 .nav-section.active .nav-arrow {
     transform: rotate(180deg);
 }
@@ -740,18 +751,24 @@ body {
 .submit-btn:hover {
     background: #e67e01;
 }
-
+.utility-bar {
+    position: relative;
+    z-index: 3;
+    background-color: #f5f5f5;
+}
 /* Quick Menu */
 .quick-menu {
     position: fixed;
-    right: 24px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
-    background: white;
     border-radius: 24px 0 0 24px;
-    box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
     padding: 20px 0;
-    z-index: 100;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
 }
 
 .quick-item {
@@ -798,7 +815,6 @@ body {
     background: #0a1c2a;
     color: white;
     padding: 40px 0;
-    margin-top: 60px;
 }
 
 .footer-content {
@@ -859,9 +875,9 @@ body {
 
 /* Institution Links */
 .institution-links {
-    background: #f8f9fa;
+    background: #fff;
     border-top: 1px solid #e1e5e9;
-    padding: 20px 0;
+    padding: 0;
 }
 
 .institution-carousel {

@@ -437,7 +437,7 @@ Version : v3.4	date : 2023-05-11 (웹접근성 인증마크 수정)
     background-size: cover;
     z-index: 4;
     -o-object-fit: cover;}
-#section1 .swiper-slide video {
+video {
     position: absolute;
     top: 0;
     left: 0;
@@ -446,6 +446,11 @@ Version : v3.4	date : 2023-05-11 (웹접근성 인증마크 수정)
     -o-object-fit: cover;
     object-fit: cover;
     z-index: 5;
+    outline: none;
+    border: 0;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
 }
 #section1 .swiper-slide .overlay-bg {
     position: absolute;
@@ -518,7 +523,7 @@ Version : v3.4	date : 2023-05-11 (웹접근성 인증마크 수정)
 #section2 {
     background: url(../images/bg/bg_section02.png) no-repeat center center;
     background-size: 100%;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 #section2 .bg-box {
@@ -607,8 +612,9 @@ Version : v3.4	date : 2023-05-11 (웹접근성 인증마크 수정)
 
 #section3 {
     position: relative;
-    background-attachment: fixed;
-    background: transparent;
+    background: url(../images/bg/bg_section03.png) no-repeat center center;
+    /* background-attachment: fixed; */
+    background-size: 100%;
 }
 
 #section3::before {
@@ -861,6 +867,13 @@ Version : v3.4	date : 2023-05-11 (웹접근성 인증마크 수정)
     font-weight: 500;
     height: 120px;
     line-height: 24px;
+}
+
+#section4 {
+    position: relative;
+    background: url(../images/bg/bg_section04.png) no-repeat center center;
+    /* background-attachment: fixed; */
+    /* background-size: 100%; */
 }
 
 /* 사이트맵 스타일 */

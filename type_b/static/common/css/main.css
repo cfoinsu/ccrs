@@ -409,7 +409,7 @@ Version : v3.4	date : 2023-05-11 (웹접근성 인증마크 수정)
     overflow: hidden;
 }
 
-#section1 .swiper-slide video {
+video {
     position: absolute;
     top: 0;
     left: 0;
@@ -418,6 +418,11 @@ Version : v3.4	date : 2023-05-11 (웹접근성 인증마크 수정)
     -o-object-fit: cover;
     object-fit: cover;
     z-index: 5;
+    outline: none;
+    border: 0;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
 }
 
 #section1 .swiper-slide .overlay-text {
@@ -432,6 +437,23 @@ Version : v3.4	date : 2023-05-11 (웹접근성 인증마크 수정)
     margin: 0;
     padding: 0 9vw;
     z-index: 6;
+}
+
+#section1 .swiper-container-horizontal>.swiper-pagination-bullets {
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    z-index: 10;
+    width: 50%;
+}
+#section1 .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    opacity: 0.5;
+}
+#section1 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #000;
 }
 
 #section1 .swiper-slide .overlay-text h1 {
