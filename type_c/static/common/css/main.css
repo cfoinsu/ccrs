@@ -522,7 +522,7 @@ video {
 
 #section2 {
     background: url(../images/bg/bg_section02.png) no-repeat center center;
-    background-size: 100%;
+    background-size: cover;
     /* background-attachment: fixed; */
 }
 
@@ -614,7 +614,7 @@ video {
     position: relative;
     background: url(../images/bg/bg_section03.png) no-repeat center center;
     /* background-attachment: fixed; */
-    background-size: 100%;
+    background-size: cover;
 }
 
 #section3::before {
@@ -873,7 +873,7 @@ video {
     position: relative;
     background: url(../images/bg/bg_section04.png) no-repeat center center;
     /* background-attachment: fixed; */
-    /* background-size: 100%; */
+    background-size: cover;
 }
 
 /* 사이트맵 스타일 */

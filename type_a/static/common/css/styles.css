@@ -1299,7 +1299,10 @@ body {
     padding: 40px 0;
     /* margin-top: 60px; */
 }
-
+.footer img{
+    max-width: 100%;
+    width: 100%;
+}
 .footer-content {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
@@ -1362,7 +1365,10 @@ body {
     border-top: 1px solid #e1e5e9;
     padding: 0;
 }
-
+.institution-links img {
+    max-width: 100%;
+    width: 100%;
+}
 .institution-carousel {
     display: flex;
     justify-content: space-between;

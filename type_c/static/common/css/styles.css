@@ -1313,10 +1313,14 @@ body {
 
 /* Footer */
 .footer {
-    background: #0a1c2a;
+    background: #fff;
     color: white;
     /* padding: 40px 0; */
     /* margin-top: 60px; */
+}
+.footer img{
+    max-width: 100%;
+    width: 100%;
 }
 
 .footer-content {
