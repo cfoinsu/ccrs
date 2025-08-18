@@ -281,6 +281,10 @@ body {
 .nav-section.active .nav-section-title {
     color: #ed7801;
 }
+.nav-section.active .nav-subsection {
+    height: auto;
+    transition: all 0.3s ease;
+}
 
 .nav-arrow {
     transition: transform 0.3s ease;
@@ -299,6 +303,9 @@ body {
     list-style: none;
     padding: 0;
     background: #f9f9f9;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .nav-subitem {
