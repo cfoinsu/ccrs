@@ -146,6 +146,12 @@
     flex-direction: column;
     gap: 16px;
 }
+.main-banner.slidebox {
+    flex: none;
+    width: 654px;
+    height: 100%;
+    overflow: hidden;
+}
 
 .banner-image {
     position: absolute;

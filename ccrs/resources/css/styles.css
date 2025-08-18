@@ -1807,6 +1807,28 @@ body {
     max-height: 1000px;
     padding: 20px;
 }
+
+/* 백그라운드 블러 효과 */
+.backdrop-blur {
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+}
+
+/* 반투명 배경 */
+.bg-navy-transparent {
+    background-color: rgba(1, 32, 99, 0.88);
+}
+
+/* 하단 바 때문에 콘텐츠에 여백 추가 */
+.content-with-bottom-bar {
+    padding-bottom: 128px; /* 32 * 4 */
+}
+
+@media (min-width: 640px) {
+    .content-with-bottom-bar {
+        padding-bottom: 160px; /* 40 * 4 */
+    }
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
     .content-layout {
