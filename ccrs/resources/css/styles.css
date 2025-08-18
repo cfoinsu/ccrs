@@ -569,7 +569,7 @@ body {
 .timeline-marker::after {
     content: '✓';
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -735,7 +735,7 @@ body {
 }
 
 .input-label {
-    font-size: 12px;
+    font-size: 14px;
     color: #6b7280;
     margin-top: 4px;
 }
@@ -1264,7 +1264,7 @@ body {
 }
 
 .result-details {
-    font-size: 12px;
+    font-size: 14px;
     color: #6b7280;
     margin-top: 2px;
 }
@@ -1279,7 +1279,7 @@ body {
 }
 
 .btn-secondary {
-    font-size: 12px;
+    font-size: 14px;
     background: #f3f4f6;
     border: none;
     padding: 4px 8px;
@@ -1292,6 +1292,7 @@ body {
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 14px;
 }
 
 .more-info-btn {
@@ -1348,16 +1349,16 @@ body {
 
 .info-content h4 {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .info-subtitle {
-    font-size: 12px;
+    font-size: 14px;
     color: #6b7280;
 }
 
 .info-description {
-    font-size: 12px;
+    font-size: 14px;
     color: #6b7280;
     margin-top: 4px;
 }
@@ -1505,7 +1506,7 @@ body {
     padding: 16px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     color: #333;
     min-width: 80px;
@@ -1720,7 +1721,7 @@ body {
 }
 
 .card-subtitle {
-    font-size: 12px;
+    font-size: 14px;
     color: #6b7280;
 }
 
@@ -1770,7 +1771,42 @@ body {
     color: #374151;
     cursor: pointer;
 }
+.transition-all {
+            transition: all 0.3s ease-in-out;
+}
 
+.rotate-90 {
+    transform: rotate(90deg);
+}
+
+.rotate-270 {
+    transform: rotate(270deg) scaleY(-1);
+}
+
+.font-pretendard-gov-bold {
+    font-family: 'Pretendard GOV', sans-serif;
+    font-weight: bold;
+}
+
+.font-pretendard-gov-regular {
+    font-family: 'Pretendard GOV', sans-serif;
+    font-weight: normal;
+}
+
+/* 아코디언 슬라이드 효과 */
+.accordion-content {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    padding:20px;
+}
+
+.accordion-content.open {
+    display: block;
+    max-height: 1000px;
+    padding: 20px;
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
     .content-layout {

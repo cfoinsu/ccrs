@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>맞춤형 채무조정</title>
     <link rel="stylesheet" href="/ccrs/resources/cdn/krds.min.css">
-    <link rel="stylesheet" href="/ccrs/resources/css/styles.css">
+    <link rel="stylesheet" href="/ccrs/type/www/css/styles.css">
     <link rel="stylesheet" href="/ccrs/resources/css/common.css">
     <link rel="stylesheet" href="/ccrs/resources/css/main.css">
     <link rel="stylesheet" href="/ccrs/resources/css/sub.css">
@@ -597,163 +597,24 @@
                             <!-- Quick Results -->
                             <div class="result-card">
                                 <h3>간편진단 결과</h3>
-                                <div class="mx-auto">
-                                    <div class="bg-white border border-[#f48f01] rounded-xl overflow-hidden">
-                                        <!-- 제목 섹션 -->
-                                        <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start sm:items-center p-4 sm:p-6 lg:p-8">
-                                            <!-- 아이콘 영역 (이미지 플레이스홀더) -->
-                                            <div class="relative shrink-0 w-14 h-14 bg-gray-200 rounded border-2 border-gray-300 flex items-center justify-center" data-name="icon">
-                                                <span class="text-gray-500 text-xs">아이콘</span>
-                                            </div>
-                                            
-                                            <!-- 제목 -->
-                                            <div class="flex flex-col justify-center">
-                                                <h1 class="font-pretendard-gov-bold text-[#222222] text-2xl sm:text-3xl lg:text-4xl leading-[1.5]">
-                                                    사전채무조정
-                                                </h1>
-                                            </div>
-                                            
-                                            <!-- 버튼들 - 모바일에서는 아래로, 데스크톱에서는 오른쪽으로 -->
-                                            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 ml-auto mt-4 sm:mt-0 w-full sm:w-auto">
-                                                <button class="btn btn-secondary text-center">
-                                                    <span>상세정보</span>
-                                                </button>
-                                                <button class="btn btn-primary text-center">
-                                                    <span>비교담기</span>
-                                                </button>
-                                            </div>
-                                        </div>
+                                <div class="result-item">
+                                    <div class="result-title">
                                         
-                                        <!-- 통계 섹션 -->
-                                        <div class="bg-[#f6f3f0] rounded-xl mx-4 sm:mx-6 lg:mx-8 mb-4 sm:mb-6">
-                                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 divide-y sm:divide-y-0 lg:divide-x divide-[rgba(0,0,0,0.1)]">
-                                                <div class="flex flex-col gap-2 p-4 sm:p-6 lg:p-8">
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
-                                                        상환기간
-                                                    </div>
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
-                                                        60개월
-                                                    </div>
-                                                </div>
-                                                <div class="flex flex-col gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
-                                                        월 상환액
-                                                    </div>
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
-                                                        177만원
-                                                    </div>
-                                                </div>
-                                                <div class="flex flex-col gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
-                                                        원금
-                                                    </div>
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
-                                                        10,000만원
-                                                    </div>
-                                                </div>
-                                                <div class="flex flex-col gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
-                                                        이자
-                                                    </div>
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
-                                                        648만원
-                                                    </div>
-                                                </div>
-                                                <div class="flex flex-col gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
-                                                        이자율
-                                                    </div>
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
-                                                        2.5%
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="highlight"><span class="result-icon">📊</span>사전채무조정</div>
+                                        <div class="result-actions">
+                                            <button class="btn btn-secondary">상세정보</button>
+                                            <button class="btn btn-primary">비교담기</button>
                                         </div>
-                                        
-                                        <!-- 토글 버튼 -->
-                                        <div class="flex justify-center py-4 sm:py-6">
-                                            <button id="toggleButton" class="flex items-center gap-1 px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-gray-50 rounded-md">
-                                                <span id="toggleText" class="font-pretendard-gov-bold text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
-                                                    지원내용 보기
-                                                </span>
-                                                <div id="arrowIcon" class="w-5 h-5 bg-gray-300 rounded flex items-center justify-center transition-transform duration-300 rotate-90">
-                                                    <span class="text-xs text-gray-600">▶</span>
-                                                </div>
-                                            </button>
-                                        </div>
-                                        
-                                        <!-- 구분선 -->
-                                        <div id="separator" class="mx-4 sm:mx-6 lg:mx-8 mb-4 sm:mb-6" style="display: none;">
-                                            <div class="h-px bg-black opacity-10"></div>
-                                        </div>
-                                        
-                                        <!-- 지원내용 -->
-                                        <div id="supportContent" class="accordion-content">
-                                            <div class="space-y-3">
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
-                                                        입력하신 정보를 종합적으로 검토한 결과, '프리워크아웃' 제도가 적합할 수 있습니다.
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
-                                                        최장 10년간 원리금을 분할 상환하고, 약정이자율의 30~70% 감면 혜택을 받을 수 있습니다.
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
-                                                        자영업자 또는 폐업자이신 경우, '새출발기금(사전)' 제도를 통해 31~89일 연체된 채무에 대해 상환 기간 연장과 이자율 조정을 지원받을 수 있습니다.
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
-                                                        개인회생: 일정한 소득이 있는 경우 3~5년간 상환 후 잔여채무 면책
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
-                                                        개인회생 : 일정한 소득이 있는 경우 3~5년간 상환 후 잔여채무 면책
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
-                                                        개인파산 : 모든 채무를 감당하기 어려울 경우 잔여채무 면책 가능
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
-                                                        입력하신 정보를 기준으로 한 예상 월 변제금은 약 00만 원입니다. (*실제 심사 결과에 따라 변동될 수 있습니다.)
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
-                                                        제도별 조건과 차이가 궁금하시다면, 홈페이지의 [제도 비교] 기능을 이용해 주세요.
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
-                                                        자세한 상담은 가까운 지부 방문상담 또는 사이버상담부 전화상담으로 신청하실 수 있습니다.
-                                                    </div>
-                                                </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
-                                                        개인회생·개인파산 등 종합 상담은 지부 방문상담을 통해 제공됩니다.
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    </div>
+                                    <div class="result-info">
+                                        <div class="result-details">
+                                            상환기관 <span class="highlight">60개월</span>
+                                            월 상환액 <span class="highlight">177만원</span>
+                                            원금 <span class="highlight">2.8%</span>
                                         </div>
                                     </div>
                                 </div>
+                                <button class="more-info-btn">지원내용 더보기</button>
                             </div>
 
                             <!-- Additional Information -->
@@ -1066,42 +927,9 @@
             </div>
         </div>
     </div>
-
     <script src="/ccrs/resources/js/jquery-2.2.4.min.js"></script>
     <script src="/ccrs/resources/js/common.js"></script>
     <script src="/ccrs/resources/js/layout.js"></script>
     <script src="/ccrs/resources/js/script.js"></script>
-    <!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
-
-    <!-- 2️⃣ 아코디언 토글 스크립트 -->
-    <script>
-    $(function () {                       // DOMContentLoaded 와 동일
-        // ① 요소 캐시
-        const $toggleBtn   = $('#toggleButton');
-        const $toggleText  = $('#toggleText');
-        const $arrowIcon   = $('#arrowIcon');
-        const $separator   = $('#separator');
-        const $support     = $('#supportContent');
-
-        // ② 클릭 이벤트 핸들러
-        $toggleBtn.on('click', function () {
-        //   - 클래스 토글과 현재 상태 확인
-        //   - .toggleClass() 은 토글 후 현재 상태를 반환하지 않으므로
-        //     .hasClass() 로 현재가 열렸는지 판단
-        const isOpen = $support.toggleClass('open').hasClass('open');
-
-        //   - 열림/닫힘에 따라 UI 업데이트
-        if (isOpen) {
-            $toggleText.text('지원내용 닫기');
-            $arrowIcon.removeClass('rotate-90').addClass('rotate-270');
-            $separator.show();               // display:block
-        } else {
-            $toggleText.text('지원내용 보기');
-            $arrowIcon.removeClass('rotate-270').addClass('rotate-90');
-            $separator.hide();                // display:none
-        }
-        });
-    });
-    </script>
 </body>
 </html>

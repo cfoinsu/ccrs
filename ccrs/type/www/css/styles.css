@@ -5,6 +5,34 @@ Create date : 2025-08-04
 Version : v1.0
 -------------------------------------------------*/
 /* Reset and Base Styles */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/NotoSansKR-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/NotoSansKR-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/NotoSansKR-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/NotoSansKR-Bold.ttf') format('truetype');
+}
+
 /*skip*/
 #skip_nav {}
 #skip_nav a {position:absolute;left:-3000px; z-index: 100;}
@@ -24,7 +52,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1710px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -36,6 +64,20 @@ body {
     z-index: 1000;
     background: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.utility-wrap {
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.utility-wrap ul {overflow: hidden;}
+.utility-wrap ul li {float: left;}
+.utility-wrap ul li:not(.font-bold) + li::before {
+    content:'';
+    height: 12px;
+    width: 1px;
+    background: b1bbbe;
 }
 
 .util-bar {
@@ -327,10 +369,15 @@ body {
 }
 
 .page-description {
+    display: flex;
+    align-items: center;
     font-size: 20px;
     line-height: 1.5;
     color: #333;
     margin-bottom: 20px;
+    background: #F6F3F0;
+    padding: 25px;
+    border-radius: 8px;
 }
 
 .page-description strong {
@@ -662,10 +709,10 @@ body {
 
 /* Form Section */
 .form-section {
-    background: white;
+    background: #F4F5F6;
     border-radius: 8px;
-    padding: 24px;
     margin-bottom: 24px;
+    padding: 24px;
 }
 
 .form-grid {
@@ -677,7 +724,7 @@ body {
 
 .form-group label {
     display: block;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 500;
     margin-bottom: 8px;
 }
@@ -715,6 +762,409 @@ body {
     font-size: 14px;
     background: white;
 }
+/* 카드 컴포넌트 */
+.card {
+  background-color: white;
+  border-radius: 0.75rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.card-header {
+  padding: 1.5rem;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+/* 폼 스타일 */
+.form-group {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-label {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1f2937;
+  display: block;
+}
+
+.form-label-small {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1f2937;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-hint {
+  font-size: 0.875rem;
+  color: #6b7280;
+  display: block;
+}
+
+.form-input {
+  width: 100%;
+  height: 48px;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  outline: none;
+}
+
+.form-input:focus {
+  box-shadow: 0 0 0 2px #f97316;
+  border-color: #f97316;
+}
+
+.form-select {
+  width: 100%;
+  height: 48px;
+  padding-left: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  outline: none;
+  background-color: white;
+}
+
+.form-select:focus {
+  box-shadow: 0 0 0 2px #f97316;
+  border-color: #f97316;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-suffix {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  pointer-events: none;
+}
+
+/* 라디오 그룹 */
+.radio-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.radio-option:hover {
+  background-color: #f9fafb;
+}
+
+.radio-option:has(input:checked) {
+  background-color: #fff7ed;
+  border-color: #f97316;
+}
+
+.radio-option input[type="radio"] {
+  width: 1rem;
+  height: 1rem;
+  color: #f97316;
+  border-color: #d1d5db;
+}
+
+.radio-option input[type="radio"]:focus {
+  box-shadow: 0 0 0 2px #f97316;
+}
+
+.radio-label {
+  color: #374151;
+  user-select: none;
+}
+
+/* 버튼 스타일 */
+.btn {
+  display: inline-flex;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 19px;
+  font-weight: 500;
+  transition: background-color 0.15s ease-in-out;
+  outline: none;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), 0 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: #f97316;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #ea580c;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), 0 0 0 4px #f97316;
+}
+
+.btn-outline {
+  border: 1px solid #d1d5db;
+  background-color: white;
+  color: #374151;
+}
+
+.btn-outline:hover {
+  background-color: #f9fafb;
+}
+
+.btn-outline:focus {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), 0 0 0 4px #6b7280;
+}
+
+.btn-ghost {
+  color: #374151;
+}
+
+.btn-ghost:hover {
+  background-color: #f3f4f6;
+}
+
+.btn-ghost:focus {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), 0 0 0 4px #6b7280;
+}
+
+.btn-comparison {
+  background-color: #fed7aa;
+  color: #c2410c;
+  border: 1px solid #fdba74;
+}
+
+.btn-comparison:hover {
+  background-color: #fdba74;
+}
+
+.btn-comparison:focus {
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), 0 0 0 4px #f97316;
+}
+
+/* 프로그램 카드 */
+.program-card {
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.program-card:hover {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.program-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #4b5563;
+}
+
+/* 툴팁 */
+.tooltip-trigger {
+  cursor: help;
+  display: inline-flex;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 50;
+  background-color: #111827;
+  color: white;
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  max-width: 20rem;
+}
+
+.tooltip-content {
+  position: relative;
+}
+
+.tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid transparent;
+  border-top-color: #111827;
+}
+
+/* 배지 */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.badge-secondary {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+/* 반응형 조정 */
+@media (max-width: 768px) {
+  .form-input, .form-select {
+    height: 2.5rem;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .radio-group {
+    flex-direction: column;
+  }
+  
+  .radio-option {
+    justify-content: flex-start;
+  }
+}
+
+/* 애니메이션 */
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 로딩 상태 */
+.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* 프로그램 상세 정보 */
+.program-details {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.375rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .feature-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-label {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 0.25rem;
+}
+
+.feature-value {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+/* 비교함 */
+.comparison-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: 1px solid #d1d5db;
+  box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 -2px 4px -2px rgb(0 0 0 / 0.1);
+  padding: 1rem;
+  z-index: 40;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.comparison-container.show {
+  transform: translateY(0);
+}
+
+/* 폼 검증 오류 */
+.form-error {
+  border-color: #ef4444;
+}
+
+.form-error:focus {
+  box-shadow: 0 0 0 2px #ef4444;
+  border-color: #ef4444;
+}
+
+.error-message {
+  font-size: 0.875rem;
+  color: #dc2626;
+  margin-top: 0.25rem;
+}
+
+/* 성공 메시지 */
+.success-message {
+  font-size: 0.875rem;
+  color: #16a34a;
+  margin-top: 0.25rem;
+}
+
+/* 프로그레스 바 */
+.progress-bar {
+  width: 100%;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  height: 0.5rem;
+}
+
+.progress-fill {
+  height: 0.5rem;
+  background-color: #f97316;
+  border-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+}
+
 
 /* Compare Section */
 .compare-section {
@@ -852,12 +1302,9 @@ body {
 }
 
 .btn-primary {
-    font-size: 12px;
     background: #f97316;
     color: white;
     border: none;
-    padding: 4px 8px;
-    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -1046,6 +1493,11 @@ body {
     background: #e67e01;
 }
 .utility-bar {
+    position: relative;
+    z-index: 3;
+    background-color: #f5f5f5;
+}
+.top_link {
     position: relative;
     z-index: 3;
     background-color: #f5f5f5;
