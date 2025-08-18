@@ -661,9 +661,10 @@
 			</div>
 		</footer>
 		<!-- Footer:e -->
+		<div class="modal">
+			<button class="pop-close">닫기</button>
+		</div>
 
-
-	
 		<script type="text/javascript">
 
 			/* 메인 페이지 스크립트:s */
@@ -694,8 +695,6 @@
 			//팝업 닫기 버튼 클릭 이벤트
 			$(".pop-close").click(function () {
 				$(this).parent().slideToggle(500);
-			$(".slick-prev").css("opacity", "0");
-			$(".slick-next").css("opacity", "0");
 			});
 
 			$(".feature-card").click(function () {

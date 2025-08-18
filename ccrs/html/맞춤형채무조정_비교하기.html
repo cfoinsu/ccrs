@@ -9,17 +9,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>맞춤형 채무조정</title>
     <link rel="stylesheet" href="/ccrs/resources/cdn/krds.min.css">
-    <link rel="stylesheet" href="/ccrs/resources/cdn/krds.min.css">
     <link rel="stylesheet" href="/ccrs/resources/css/styles.css">
     <link rel="stylesheet" href="/ccrs/resources/css/common.css">
     <link rel="stylesheet" href="/ccrs/resources/css/main.css">
     <link rel="stylesheet" href="/ccrs/resources/css/sub.css">
     <link rel="stylesheet" href="/ccrs/resources/css/layout.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/ccrs/resources/css/all.min.css">
+
+    <!-- Tailwind (standalone JS) -->
+    <script src="/ccrs/resources/js/plugin/tailwind.js"></script>
+    
     <script src="/ccrs/resources/js/jquery-2.2.4.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Skip Navigation -->
@@ -356,52 +357,231 @@
                             <!-- Form Section -->
                             <div class="form-section">
                                 <div class="form-grid">
+                                    <!-- 채무액 (무담보) -->
                                     <div class="form-group">
-                                        <label>재화여 한화위수</label>
-                                        <div class="input-row">
-                                            <div class="input-wrapper">
-                                                <input type="text" placeholder="0" class="number-input">
-                                                <div class="input-label">화외</div>
-                                            </div>
-                                            <div class="input-wrapper">
-                                                <input type="text" placeholder="0" class="number-input">
-                                                <div class="input-label">방식</div>
-                                            </div>
+                                        <div class="form-tit">
+                                            <label class="form-label">채무액 (무담보)</label>
+                                            <span class="form-hint">최소 1만원 이상 입력</span>
+                                        </div>
+                                        <div class="input-wrapper">
+                                            <input type="number" id="unsecured-debt" class="form-input" placeholder="0" required>
+                                            <span class="input-suffix">만원</span>
                                         </div>
                                     </div>
 
+                                    <!-- 채무액 (부동산 담보 대출금) -->
                                     <div class="form-group">
-                                        <label>재화여 한화위 그룹기과법</label>
-                                        <div class="input-row">
-                                            <div class="input-wrapper">
-                                                <input type="text" placeholder="0" class="number-input">
-                                                <div class="input-label">화외</div>
-                                            </div>
-                                            <div class="input-wrapper">
-                                                <input type="text" placeholder="0" class="number-input">
-                                                <div class="input-label">방식</div>
-                                            </div>
+                                        <div class="form-tit">
+                                            <label class="form-label">채무액 (부동산 담보 대출금)</label>
+                                            <span class="form-hint">최소 1만원 이상 입력</span>
+                                        </div>
+                                        <div class="input-wrapper">
+                                            <input type="number" id="secured-debt" class="form-input" placeholder="0">
+                                            <span class="input-suffix">만원</span>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="form-grid">
+                                    <!-- 채무액 (전월세 보증금 대출금) -->
                                     <div class="form-group">
-                                        <label>물리범적</label>
-                                        <select class="form-select">
-                                            <option>주의사애</option>
-                                        </select>
+                                        <div class="form-tit">
+                                            <label class="form-label">채무액 (전월세 보증금 대출금)</label>
+                                            <span class="form-hint">최소 1만원 이상 입력</span>
+                                        </div>
+                                        <div class="input-wrapper">
+                                            <input type="number" id="housing-loan-debt" class="form-input" placeholder="0">
+                                            <span class="input-suffix">만원</span>
+                                        </div>
                                     </div>
 
+                                    <!-- 채무액 (잔여 차량 대출금액) -->
                                     <div class="form-group">
-                                        <label>물리실신</label>
-                                        <select class="form-select">
-                                            <option>생활자산</option>
+                                        <div class="form-tit">
+                                            <label class="form-label">채무액 (잔여 차량 대출금액)</label>
+                                            <span class="form-hint">최소 1만원 이상 입력</span>
+                                        </div>
+                                        <div class="input-wrapper">
+                                            <input type="number" id="secured-debt" class="form-input" placeholder="0">
+                                            <span class="input-suffix">만원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-grid">
+                                    <!-- 보유재산 -->
+                                    <div class="form-group">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <div class="form-tit">
+                                                <label class="form-label">보유재산<div class="tooltip-trigger" data-tooltip="부동산, 자동차 등 보유하신 재산의 시가 총액을 입력해주세요.">
+                                                    <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <circle cx="12" cy="12" r="10"></circle>
+                                                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                                        <path d="m12 17 .01 0"></path>
+                                                    </svg>
+                                                </div></label>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="grid grid-cols-2 gap-4">
+                                            <div>
+                                                <label class="form-label-small">부동산</label>
+                                                <div class="input-wrapper">
+                                                    <input type="number" id="real-estate" class="form-input" placeholder="0">
+                                                    <span class="input-suffix">만원</span>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label class="form-label-small">동산</label>
+                                                <div class="input-wrapper">
+                                                    <input type="number" id="movable-property" class="form-input" placeholder="0">
+                                                    <span class="input-suffix">만원</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 연체일수 -->
+                                    <div class="form-group">
+                                        <div class="flex items-center gap-2">
+                                            <div class="form-tit">
+                                                <label class="form-label">연체일수<div class="tooltip-trigger" data-tooltip="현재 연체중인 채무의 연체일수를 선택해주세요.">
+                                                    <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <circle cx="12" cy="12" r="10"></circle>
+                                                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                                        <path d="m12 17 .01 0"></path>
+                                                    </svg>
+                                                </div></label>
+                                                
+                                            </div>
+                                        </div>
+                                        <select id="overdue-days" class="form-select">
+                                            <option value="">선택해주세요</option>
+                                            <option value="none">연체없음</option>
+                                            <option value="1-30">1-30일</option>
+                                            <option value="31-60">31-60일</option>
+                                            <option value="61-90">61-90일</option>
+                                            <option value="91-more">91일 이상</option>
                                         </select>
                                     </div>
+                                </div>
+                                <div class="form-grid">
+                                    <!-- 가구원수 -->
+                                    <div class="form-group">
+                                        <div class="flex items-center gap-2">
+                                            <label class="form-label">가구원수<div class="tooltip-trigger" data-tooltip="동거하는 가족 수를 입력해주세요.">
+                                                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                                    <path d="m12 17 .01 0"></path>
+                                                </svg>
+                                            </div></label>
+                                            
+                                        </div>
+                                        <span class="form-hint">미입력 시 1명으로 계산</span>
+                                        <div class="input-wrapper">
+                                            <input type="number" id="household-size" class="form-input" placeholder="1">
+                                            <span class="input-suffix">명</span>
+                                        </div>
+                                    </div>
+                                    <!-- 월소득액 -->
+                                    <div class="form-group">
+                                        <div class="flex items-center gap-2">
+                                            <label class="form-label">월소득액<div class="tooltip-trigger" data-tooltip="세후 실수령액을 기준으로 입력해주세요.">
+                                                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                                    <path d="m12 17 .01 0"></path>
+                                                </svg>
+                                            </div></label>
+                                            
+                                        </div>
+                                        <div class="input-wrapper">
+                                            <input type="number" id="monthly-income" class="form-input" placeholder="0" required>
+                                            <span class="input-suffix">만원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-grid">
+                                    <!-- 제3자 제공소득 -->
+                                    <div class="form-group">
+                                        <div class="flex items-center gap-2">
+                                            <label class="form-label">제3자 제공소득<div class="tooltip-trigger" data-tooltip="가족이나 제3자로부터 받는 정기적인 지원금액을 입력해주세요.">
+                                                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                                    <path d="m12 17 .01 0"></path>
+                                                </svg>
+                                            </div></label>
+                                            
+                                        </div>
+                                        <div class="input-wrapper">
+                                            <input type="number" id="third-party-income" class="form-input" placeholder="0">
+                                            <span class="input-suffix">만원</span>
+                                        </div>
+                                    </div>
+                                    <!-- 소득증빙 가능여부 -->
+                                    <div class="form-group">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <label class="form-label">소득증빙 가능여부<div class="tooltip-trigger" data-tooltip="급여명세서, 소득금액증명원 등으로 소득증빙이 가능한지 선택해주세요.">
+                                                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                                    <path d="m12 17 .01 0"></path>
+                                                </svg>
+                                            </div></label>
+                                            
+                                        </div>
+                                        <div class="radio-group" id="income-verification">
+                                            <label class="radio-option">
+                                                <input type="radio" name="incomeVerification" value="possible" required>
+                                                <span class="radio-label">소득증빙가능</span>
+                                            </label>
+                                            <label class="radio-option">
+                                                <input type="radio" name="incomeVerification" value="impossible">
+                                                <span class="radio-label">소득증빙불가</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-grid">
+                                    <!-- 신용점수 하위20%이하 -->
+                                    <div class="form-group">
+                                        <div class="flex items-center gap-2 mb-4">
+                                            <label class="form-label">신용점수 하위20%이하<div class="tooltip-trigger" data-tooltip="본인의 신용점수가 하위 20% 구간에 해당하는지 선택해주세요.">
+                                                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                                    <path d="m12 17 .01 0"></path>
+                                                </svg>
+                                            </div></label>
+                                            
+                                        </div>
+                                        <div class="radio-group" id="credit-score">
+                                            <label class="radio-option">
+                                                <input type="radio" name="creditScore" value="below20" required>
+                                                <span class="radio-label">20% 이하</span>
+                                            </label>
+                                            <label class="radio-option">
+                                                <input type="radio" name="creditScore" value="above20">
+                                                <span class="radio-label">20% 이상</span>
+                                            </label>
+                                            <label class="radio-option">
+                                                <input type="radio" name="creditScore" value="unknown">
+                                                <span class="radio-label">잘 모름</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group"></div>
                                 </div>
                             </div>
-
+                            <!-- 버튼 영역 -->
+                            <div class="flex justify-center gap-4 pt-8">
+                                <button type="button" id="reset-btn" class="btn btn-outline">
+                                    초기화
+                                </button>
+                                <button type="submit" id="submit-btn" class="btn btn-primary">
+                                    간편진단 결과조회
+                                </button>
+                            </div>
                             <!-- Compare Section -->
                             <div class="compare-section">
                                 <div class="compare-content">
@@ -415,38 +595,31 @@
                             </div>
 
                             <!-- Quick Results -->
-                            <div class="results-grid">
-                                <div class="result-card">
-                                    <div class="action-section">
-                                        <div class="action-label">조치</div>
-                                        <button class="action-button">직접신청 상담요청</button>
-                                    </div>
-                                </div>
-                                
-                                <div class="result-card">
-                                    <h3>간단한만 결과</h3>
-                                    <div class="result-item">
-                                        <div class="result-icon">📊</div>
-                                        <div class="result-info">
-                                            <div class="result-title">사전제무조정</div>
-                                            <div class="result-details">
-                                                사과처 <span class="highlight">10,000명법</span>
-                                                A이법명 <span class="highlight">A4직련법</span>
-                                                수실정 <span class="highlight">2.8%</span>
-                                            </div>
-                                        </div>
+                            <div class="result-card">
+                                <h3>간편진단 결과</h3>
+                                <div class="result-item">
+                                    <div class="result-title">
+                                        
+                                        <div class="highlight"><span class="result-icon">📊</span>사전채무조정</div>
                                         <div class="result-actions">
-                                            <button class="btn-secondary">상담신청</button>
-                                            <button class="btn-primary">선택하기</button>
+                                            <button class="btn btn-secondary">상세정보</button>
+                                            <button class="btn btn-primary">비교담기</button>
                                         </div>
                                     </div>
-                                    <button class="more-info-btn">자제용 더보기 →</button>
+                                    <div class="result-info">
+                                        <div class="result-details">
+                                            상환기관 <span class="highlight">60개월</span>
+                                            월 상환액 <span class="highlight">177만원</span>
+                                            원금 <span class="highlight">2.8%</span>
+                                        </div>
+                                    </div>
                                 </div>
+                                <button class="more-info-btn">지원내용 더보기</button>
                             </div>
 
                             <!-- Additional Information -->
                             <div class="additional-info">
-                                <h3>또 다른 정보하기</h3>
+                                <h3>제도 더 알아보기</h3>
                                 
                                 <div class="info-list">
                                     <div class="info-item">
@@ -457,8 +630,8 @@
                                             <div class="info-description">신법적 더불경(B2B) 상의 금융서해법</div>
                                         </div>
                                         <div class="info-actions">
-                                            <button class="btn-secondary">상담신청</button>
-                                            <button class="btn-primary">선택하기</button>
+                                            <button class="btn btn-secondary">상세정보</button>
+                                            <button class="btn btn-primary">비교담기</button>
                                         </div>
                                     </div>
 
@@ -470,8 +643,8 @@
                                             <div class="info-description">신법적 더불경(B2B) 상의 금융서해법</div>
                                         </div>
                                         <div class="info-actions">
-                                            <button class="btn-secondary">상담신청</button>
-                                            <button class="btn-primary">선택하기</button>
+                                            <button class="btn btn-secondary">상세정보</button>
+                                            <button class="btn btn-primary">비교담기</button>
                                         </div>
                                     </div>
 
@@ -483,8 +656,8 @@
                                             <div class="info-description">신법적 더불경(B2B) 상의 금융서해법을 화의 등용 사법약 대합 대사</div>
                                         </div>
                                         <div class="info-actions">
-                                            <button class="btn-secondary">상담신청</button>
-                                            <button class="btn-primary">선택하기</button>
+                                            <button class="btn btn-secondary">상세정보</button>
+                                            <button class="btn btn-primary">비교담기</button>
                                         </div>
                                     </div>
 
@@ -496,8 +669,8 @@
                                             <div class="info-description">신법적 더불경(B2B) 상의 금주서해법</div>
                                         </div>
                                         <div class="info-actions">
-                                            <button class="btn-secondary">상담신청</button>
-                                            <button class="btn-primary">선택하기</button>
+                                            <button class="btn btn-secondary">상세정보</button>
+                                            <button class="btn btn-primary">비교담기</button>
                                         </div>
                                     </div>
 
@@ -509,8 +682,8 @@
                                             <div class="info-description">신법적 화법 상의 화법 금융법</div>
                                         </div>
                                         <div class="info-actions">
-                                            <button class="btn-secondary">상담신청</button>
-                                            <button class="btn-primary">선택하기</button>
+                                            <button class="btn btn-secondary">상세정보</button>
+                                            <button class="btn btn-primary">비교담기</button>
                                         </div>
                                     </div>
                                 </div>
@@ -572,7 +745,7 @@
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
                     <path d="M8 12h8M8 8h8M8 16h8" stroke="currentColor" stroke-width="1.5"/>
                 </svg>
-                <span>상담신청</span>
+                <span>상세정보</span>
             </div>
             <div class="quick-item">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -750,7 +923,7 @@
             
             <div class="modal-footer">
                 <button class="btn-cancel" id="cancelModal">닫기</button>
-                <button class="btn-primary">상담신청</button>
+                <button class="btn btn-primary">상세정보</button>
             </div>
         </div>
     </div>
