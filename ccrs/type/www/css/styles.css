@@ -240,7 +240,7 @@ body {
     display: grid;
     grid-template-columns: 280px 1fr;
     gap: 40px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 /* Sidebar */

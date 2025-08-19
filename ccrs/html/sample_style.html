@@ -62,7 +62,7 @@
 <h2>기본 color값</h2>
 <div class="sampleGrp typeColor">
     <!-- 컬러만 참조 -->
-    <span class="colorBox01" style="background:#4daf36;"><span>bg : #4daf36</span></span><span class="colorBox01_t" style="background:#4d9d3a;"><span>bg : #4d9d3a</span>T</span>
+    <span class="colorBox01" style="background:#F48F01;"><span>bg : #F48F01</span></span><span class="colorBox01_t" style="background:#FFF6EA;color:#ED7801;"><span>bg : #FFF6EA</span>T</span>
     <span class="colorBox02" style="background:#ff8932;"><span>bg : #ff8932</span></span><span class="colorBox02_t" style="background:#f26700;"><span>bg : #f26700</span>T</span>
 
     <br /><br />
@@ -70,9 +70,14 @@
     <span style="background:#01407c;color:#fff;">(기본) #01407c</span>
     <span style="background:#5f6062;color:#fff;">(기본) #5f6062</span>
 
-    <span style="background:#fff;color:#5f6062;">(폰트) #5f6062</span>
+    <span style="background:#fff;color:#ED7801;">(폰트) #ED7801</span>
     <span style="background:#555;color:#fff;">(폰트) #555</span>
-    <span style="background:#dbdee1;">(라인) #dbdee1</span>
+    <span style="background:#D2D6DA;">(라인) #D2D6DA</span>
+    <br /><br />
+    <span style="background:#DE3412;">(system danger) #DE3412</span>
+    <span style="background:#FFB114;">(system warning) #FFB114</span>
+    <span style="background:#228738;">(system success) #228738</span>
+    <span style="background:#096AB3;">(system information) #096AB3</span>
 </div>
 
 <h2>페이징</h2>
@@ -224,11 +229,12 @@
     <input type="text" class="inp_t" name="datepicker01_1" id="datepicker01_1" title="날짜 입력" value="2020/08/04" style="width:137px;">
     <a href="#datepicker01_1" class="date-picker-control date-picker-dateval" title="달력 보기" id="fd-but-datepicker01_1" role="button" aria-haspopup="true" tabindex="0"><span>&nbsp;</span><span class="fd-screen-reader">달력 보기</span></a>
     <script>
-    datePickerController.createDatePicker({
-        formElements:{
-            "datepicker01_1":"%Y/%m/%d"
-        }
-    });
+        $(function() {
+            $('#datepicker01_1').datepicker({
+                dateFormat: "yy/mm/dd"
+            });
+        });
+
     </script>
 
     <br><br>
@@ -237,16 +243,25 @@
     <span class="picker_txt">~</span>
     <input type="text" class="inp_t" name="datepicker02_2" id="datepicker02_2" title="종료 날짜 입력" value="2020/08/20" style="width:137px;"><a href="#datepicker02_2" class="date-picker-control date-picker-dateval" title="달력 보기" id="fd-but-datepicker02_2" role="button" aria-haspopup="true" tabindex="0"><span>&nbsp;</span><span class="fd-screen-reader">달력 보기</span></a>
     <script>
-    datePickerController.createDatePicker({
-        formElements:{
-            "datepicker02_1":"%Y/%m/%d"
-        }
-    });
-    datePickerController.createDatePicker({
-        formElements:{
-            "datepicker02_2":"%Y/%m/%d"
-        }
-    });
+        $(function() {
+            datePickerController.createDatePicker({
+                formElements:{
+                    "datepicker02_1":"%Y/%m/%d"
+                }
+            });
+            datePickerController.createDatePicker({
+                formElements:{
+                    "datepicker02_2":"%Y/%m/%d"
+                }
+            });
+            $('#datepicker02_1').datepicker({
+                dateFormat: "yy/mm/dd"
+            });
+            $('#datepicker02_2').datepicker({
+                dateFormat: "yy/mm/dd"
+            });
+        });
+    
     </script>
 
     <br><br>
@@ -257,25 +272,28 @@
     <input type="text" class="inp_t" name="datepicker03_1" id="datepicker03_1" title="날짜 입력" value="2020/08/04" style="width:137px;"><a href="#datepicker03_1" class="date-picker-control date-picker-dateval" title="달력 보기" id="fd-but-datepicker03_1" role="button" aria-haspopup="true" tabindex="0"><span>&nbsp;</span><span class="fd-screen-reader">달력 보기</span></a>
     <input type="text" class="inp_t timepicker" name="timepicker" id="timepicker" title="시간 입력" style="width:120px;">
     <script>
-    datePickerController.createDatePicker({
-        formElements:{
-            "datepicker03_1":"%Y/%m/%d"
-        }
-    });
-
-    $(function(){
-        $('.timepicker').timepicker({
-            timeFormat: 'h:mm p',
-            interval: 60,
-            minTime: '10',
-            maxTime: '6:00pm',
-            defaultTime: '11',
-            startTime: '10:00',
-            dynamic: false,
-            dropdown: true,
-            scrollbar: true
+        datePickerController.createDatePicker({
+            formElements:{
+                "datepicker03_1":"%Y/%m/%d"
+            }
         });
-    });
+        
+        $(function(){
+            $('#datepicker03_1').datepicker({
+                dateFormat: "yy/mm/dd"
+            });
+            $('.timepicker').timepicker({
+                timeFormat: 'h:mm p',
+                interval: 60,
+                minTime: '10',
+                maxTime: '6:00pm',
+                defaultTime: '11',
+                startTime: '10:00',
+                dynamic: false,
+                dropdown: true,
+                scrollbar: true
+            });
+        });
     </script>
 
     <br><br>
