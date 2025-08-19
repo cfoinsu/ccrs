@@ -328,7 +328,8 @@
 									// 	delay: 2500,
 									// 	disableOnInteraction: false,
 									// },
-									// loop:true,
+									loop:true,
+									loopedSlides: 3,
 									pagination: {
 										el: ".swiper-pagination",
 										clickable: true,
@@ -345,10 +346,27 @@
 		
 							<!-- 우측 길잡이 카드 -->
 							<div class="main-banner">
-								<div class="">
-									<img src="../../static/common/images/img/photo-ari04.png" alt="">
+								<div class="" style="height: 356px;width: auto;">
+									<!-- <img src="../../static/common/images/img/photo-ari04.png" alt=""> -->
 									<div class="hoverline">
-										
+										<ul>
+											<li>
+												<p>신속채무조정 <span>연체 30일 이하</span></p>
+												<p class="sub">일시적인 어려움을 도와드립니다.</p>
+											</li>
+											<li>
+												<p>사전채무조정 <span>연체 31일 ~ 89일</span></p>
+												<p class="sub">어려울수록 힘이 되어 드립니다.</p>
+											</li>
+											<li>
+												<p>개인워크아웃 <span>연체 30일 이상</span></p>
+												<p class="sub">큰 시련은 함께 이겨내야 합니다.</p>
+											</li>
+											<li>
+												<p>새출발기금 <span>소상공인·자영업자</span></p>
+												<p class="sub">여러분의 새로운 시작을 응원합니다.</p>
+											</li>
+										</ul>
 									</div>
 								</div>
 								<div class="">
@@ -700,9 +718,6 @@
 			</div>
 		</footer>
 		<!-- Footer:e -->
-		<div class="modal">
-			<button class="pop-close">닫기</button>
-		</div>
 
 		<script type="text/javascript">
 

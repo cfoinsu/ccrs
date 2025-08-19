@@ -188,9 +188,9 @@ body {
 
 .quick-actions {
     /* background: rgba(255, 255, 255, 0.1); */
-    /* backdrop-filter: blur(10px); */
+    backdrop-filter: blur(20px);
     border-radius: 0.75rem;
-    padding: 1.5rem;
+    padding: 0;
     display: flex;
     width: 100%;;
     flex-direction: column;
