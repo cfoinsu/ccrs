@@ -905,6 +905,13 @@ body {
   transition: background-color 0.15s ease-in-out;
   outline: none;
 }
+.btn.btn-primary {
+    font-size: 19px;
+}
+.info-item .btn.btn-primary,
+.result-card .btn.btn-primary {
+    font-size: 14px;
+}
 
 .btn:focus {
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), 0 0 0 4px rgba(0, 0, 0, 0.1);
