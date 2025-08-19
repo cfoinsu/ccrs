@@ -718,7 +718,7 @@ body {
 .form-group label {
     display: block;
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .input-row {
@@ -785,8 +785,8 @@ body {
   display: block;
 }
 
-.form-label-small {
-  font-size: 1rem;
+.form-group label.form-label-small {
+  font-size: 14px;
   font-weight: 500;
   color: #1f2937;
   display: block;
