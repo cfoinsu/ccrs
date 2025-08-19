@@ -719,7 +719,6 @@ body {
     display: block;
     font-size: 17px;
     font-weight: 500;
-    margin-bottom: 8px;
 }
 
 .input-row {
@@ -776,7 +775,9 @@ body {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-
+.form-grid .form-group {
+    justify-content: space-between;
+}
 .form-label {
   font-size: 1.125rem;
   font-weight: 700;
