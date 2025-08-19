@@ -305,8 +305,11 @@
 						<section class="main-content">
 							<!-- 좌측 메인 배너 -->
 							<div class="main-banner slidebox" style="max-width: 654px;overflow: hidden;">
-								<div class="swiper-container" id="slider">
+								<div class="swiper-container" id="slider" style="width: 100%;">
 									<div class="swiper-wrapper">
+										<div class="swiper-slide">                      
+											<img src="../../static/common/images/img/photo-ari00.png" alt="">
+										</div>
 										<div class="swiper-slide">                      
 											<img src="../../static/common/images/img/photo-ari01.png" alt="">
 										</div>
@@ -315,7 +318,23 @@
 										</div>
 										
 									</div>
+									<div class="swiper-pagination"></div>
 								</div>
+								<script>
+									var swiper = new Swiper(".swiper-container", {
+									spaceBetween: 0,
+									centeredSlides: true,
+									// autoplay: {
+									// 	delay: 2500,
+									// 	disableOnInteraction: false,
+									// },
+									// loop:true,
+									pagination: {
+										el: ".swiper-pagination",
+										clickable: true,
+									},
+									});
+								</script>
 							</div>
 		
 							<!-- 중앙 진단 카드 -->
@@ -326,15 +345,24 @@
 		
 							<!-- 우측 길잡이 카드 -->
 							<div class="main-banner">
-								<img src="../../static/common/images/img/photo-ari04.png" alt="">
-								<img src="../../static/common/images/img/photo-ari05.png" alt="">
+								<div class="">
+									<img src="../../static/common/images/img/photo-ari04.png" alt="">
+									<div class="hoverline">
+										
+									</div>
+								</div>
+								<div class="">
+									<img src="../../static/common/images/img/photo-ari05.png" alt="">
+
+								</div>
 							</div>
 						</section>
 		
 						<!-- 하단 섹션 -->
 						<section class="bottom-section">
 							<div class="intro-section">
-								<h2 class="intro-title">신용회복위원회는 이런 곳입니다.</h2>
+								<img src="../../static/common/images/img/photo-ari06.png" alt="">
+								<!-- <h2 class="intro-title">신용회복위원회는 이런 곳입니다.</h2>
 								<div class="intro-buttons">
 									<button class="intro-btn">
 										<span>사회적가치실현</span>
@@ -348,18 +376,19 @@
 											<path d="M13 5.5L18 10.5M18 10.5L13 15.5M18 10.5H2.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
 										</svg>
 									</button>
-								</div>
+								</div> -->
 							</div>
 		
 							<div class="people-section">
-								<h3 class="people-title">위원회 역사관</h3>
+								<img src="../../static/common/images/img/photo-ari07.png" alt="">
+								<!-- <h3 class="people-title">위원회 역사관</h3>
 								<button class="people-btn">
 									<svg width="32" height="32" viewBox="0 0 32 32" fill="none">
 										<circle cx="16" cy="16" r="16" fill="#F48F01"/>
 										<path d="M9 16H22" stroke="white" stroke-linecap="round" stroke-width="1.8"/>
 										<path d="M18 12L22 16L18 20" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
 									</svg>
-								</button>
+								</button> -->
 							</div>
 						</section>
 					</div>

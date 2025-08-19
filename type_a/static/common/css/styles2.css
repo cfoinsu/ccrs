@@ -152,6 +152,13 @@
     height: 100%;
     overflow: hidden;
 }
+.main-banner.slidebox .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+    width: 120px;
+    bottom: 30px;
+}
+.main-banner.slidebox .swiper-pagination-bullet-active {
+    background: #333;
+}
 
 .banner-image {
     position: absolute;
@@ -409,9 +416,6 @@
 .intro-section {
     width: 1190px;
     height: 120px;
-    background: #ebeff3;
-    border-radius: 24px;
-    padding: 39px 32px;
     position: relative;
 }
 
@@ -450,9 +454,6 @@
 .people-section {
     width: 386px;
     height: 120px;
-    background: #ebeff3;
-    border-radius: 24px;
-    padding: 40px 32px;
     position: relative;
 }
 
