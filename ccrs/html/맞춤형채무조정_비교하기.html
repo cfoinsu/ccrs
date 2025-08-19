@@ -344,7 +344,7 @@
                                 </div>
                             </div>
                             <p class="page-description">
-                                <span class="info-icon">ℹ️</span>
+                                <span class="info-icon"></span>
                                 간략한 정보를 통해 본인에게 맞는 채무조정제도를 소개합니다.
                             </p>
                             
@@ -506,11 +506,11 @@
                                         <div class="radio-group" id="income-verification">
                                             <label class="radio-option">
                                                 <input type="radio" name="incomeVerification" value="possible" required>
-                                                <span class="radio-label">소득증빙가능</span>
+                                                <span class="radio-label"><i class="fas fa-check"></i>소득증빙가능</span>
                                             </label>
                                             <label class="radio-option">
                                                 <input type="radio" name="incomeVerification" value="impossible">
-                                                <span class="radio-label">소득증빙불가</span>
+                                                <span class="radio-label"><i class="fas fa-check"></i>소득증빙불가</span>
                                             </label>
                                         </div>
                                     </div>
@@ -527,15 +527,15 @@
                                         <div class="radio-group" id="credit-score">
                                             <label class="radio-option">
                                                 <input type="radio" name="creditScore" value="below20" required>
-                                                <span class="radio-label">20% 이하</span>
+                                                <span class="radio-label"><i class="fas fa-check"></i>20% 이하</span>
                                             </label>
                                             <label class="radio-option">
                                                 <input type="radio" name="creditScore" value="above20">
-                                                <span class="radio-label">20% 이상</span>
+                                                <span class="radio-label"><i class="fas fa-check"></i>20% 이상</span>
                                             </label>
                                             <label class="radio-option">
                                                 <input type="radio" name="creditScore" value="unknown">
-                                                <span class="radio-label">잘 모름</span>
+                                                <span class="radio-label"><i class="fas fa-check"></i>잘 모름</span>
                                             </label>
                                         </div>
                                     </div>
@@ -645,8 +645,8 @@
                                         <!-- 제목 섹션 -->
                                         <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start sm:items-center p-4 sm:p-6 lg:p-8">
                                             <!-- 아이콘 영역 (이미지 플레이스홀더) -->
-                                            <div class="relative shrink-0 w-14 h-14 bg-gray-200 rounded border-2 border-gray-300 flex items-center justify-center" data-name="icon">
-                                                <span class="text-gray-500 text-xs">아이콘</span>
+                                            <div class="relative shrink-0 w-14 h-14" data-name="icon">
+                                                <img src="../resources/images/ic/icon_title.svg" alt="아이콘" class="w-full h-full object-contain">
                                             </div>
                                             
                                             <!-- 제목 -->
@@ -670,61 +670,48 @@
                                         <!-- 통계 섹션 -->
                                         <div class="bg-[#f6f3f0] rounded-xl mx-4 sm:mx-6 lg:mx-8 mb-4 sm:mb-6">
                                             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 divide-y sm:divide-y-0 lg:divide-x divide-[rgba(0,0,0,0.1)]">
-                                                <div class="flex flex-col gap-2 p-4 sm:p-6 lg:p-8">
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
+                                                <div class="flex flex-col items-center gap-2 p-4 sm:p-6 lg:p-8">
+                                                    <div class="font-pretendard-gov-bold text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
                                                         상환기간
                                                     </div>
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
+                                                    <div class="font-pretendard-gov-regular text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
                                                         60개월
                                                     </div>
                                                 </div>
-                                                <div class="flex flex-col gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
+                                                <div class="flex flex-col items-center gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
+                                                    <div class="font-pretendard-gov-bold text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
                                                         월 상환액
                                                     </div>
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
+                                                    <div class="font-pretendard-gov-regular text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
                                                         177만원
                                                     </div>
                                                 </div>
-                                                <div class="flex flex-col gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
+                                                <div class="flex flex-col items-center gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
+                                                    <div class="font-pretendard-gov-bold text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
                                                         원금
                                                     </div>
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
+                                                    <div class="font-pretendard-gov-regular text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
                                                         10,000만원
                                                     </div>
                                                 </div>
-                                                <div class="flex flex-col gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
+                                                <div class="flex flex-col items-center gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
+                                                    <div class="font-pretendard-gov-bold text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
                                                         이자
                                                     </div>
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
+                                                    <div class="font-pretendard-gov-regular text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
                                                         648만원
                                                     </div>
                                                 </div>
-                                                <div class="flex flex-col gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
+                                                <div class="flex flex-col items-center gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
+                                                    <div class="font-pretendard-gov-bold text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
                                                         이자율
                                                     </div>
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
+                                                    <div class="font-pretendard-gov-regular text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
                                                         2.5%
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                        <!-- 토글 버튼 -->
-                                        <div class="flex justify-center py-4 sm:py-6">
-                                            <button id="toggleButton" class="flex items-center gap-1 px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-gray-50 rounded-md">
-                                                <span id="toggleText" class="font-pretendard-gov-bold text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
-                                                    지원내용 보기
-                                                </span>
-                                                <div id="arrowIcon" class="w-5 h-5 bg-gray-300 rounded flex items-center justify-center transition-transform duration-300 rotate-90">
-                                                    <span class="text-xs text-gray-600">▶</span>
-                                                </div>
-                                            </button>
-                                        </div>
-                                        
                                         <!-- 구분선 -->
                                         <div id="separator" class="mx-4 sm:mx-6 lg:mx-8 mb-4 sm:mb-6" style="display: none;">
                                             <div class="h-px bg-black opacity-10"></div>
@@ -795,6 +782,19 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <!-- 토글 버튼 -->
+                                        <div class="flex justify-center py-4 sm:py-6">
+                                            <button id="toggleButton" class="flex items-center gap-1 px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-gray-50 rounded-md">
+                                                <span id="toggleText" class="font-pretendard-gov-bold text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
+                                                    지원내용 보기
+                                                </span>
+                                                <div id="arrowIcon" class="w-5 h-5 rounded flex items-center justify-center transition-transform duration-300 rotate-90">
+                                                    <span class="text-xs text-gray-600">▶</span>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        
+                                        
                                     </div>
                                 </div>
                             </div>
