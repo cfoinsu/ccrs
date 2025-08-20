@@ -1232,7 +1232,6 @@ body {
 .result-card {
     background: white;
     border-radius: 8px;
-    padding: 16px;
 }
 
 .action-section {
@@ -1333,7 +1332,7 @@ body {
 .additional-info {
     background: white;
     border-radius: 8px;
-    padding: 24px;
+    /* padding: 24px; */
     margin-bottom: 24px;
 }
 

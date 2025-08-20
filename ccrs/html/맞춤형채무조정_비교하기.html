@@ -19,6 +19,8 @@
 
     <!-- Tailwind (standalone JS) -->
     <script src="/ccrs/resources/js/plugin/tailwind.js"></script>
+    <!-- <script src="/ccrs/resources/js/component/ui-script.js"></script> -->
+    <script src="/ccrs/resources/cdn/krds.min.js"></script>
     
     <script src="/ccrs/resources/js/jquery-2.2.4.min.js"></script>
 </head>
@@ -29,230 +31,230 @@
         <a href="#nav-menu">메인메뉴 바로가기</a>
     </div>
 
-    <div id="Wrap">
+    <div id="container">
 	    <!-- header:s -->
 	    <header id="header" class="header">
 			<!-- Utility Bar -->
-        <div class="utility-bar">
-			<img src="/ccrs/resources/images/bg/bg_top.png" alt="">
-            <!-- <div class="container">
-                <div class="utility-left">
-                    <span class="font-bold">신용회복위원회</span>
-                    <span>사이버상담부</span>
-                    <span>신용상담사 자격시험원</span>
+            <div class="utility-bar">
+                <img src="/ccrs/resources/images/bg/bg_top.png" alt="">
+                <!-- <div class="container">
+                    <div class="utility-left">
+                        <span class="font-bold">신용회복위원회</span>
+                        <span>사이버상담부</span>
+                        <span>신용상담사 자격시험원</span>
+                    </div>
+                    <div class="utility-right">
+                        <span>앱 다운로드</span>
+                        <span>|</span>
+                        <span>상담전화</span>
+                        <span class="phone-number">1600-5500</span>
+                    </div>
+                </div> -->
+            </div>
+            <div class="header-container">
+                <div class="gnb-wrap">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="/ccrs/resources/images/logo/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="gnb">
+                            <li class="is-active">
+                                <a href="#" class="menu-label">
+                                    채무조정 지원
+                                </a>
+                                <ul class="depth2">
+                                    <li><a href="#">채무조정 길잡이</a></li>
+                                    <li><a href="#">나에게 맞는 채무조정 찾기</a></li>
+                                    <li><a href="#">맞춤형 채무조정제도</a></li>
+                                    <li><a href="#">개인회생·파산 제도</a></li>
+                                    <li><a href="#">금융회사 채무조정</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="menu-label">
+                                    상환 중 맞춤지원
+                                </a>
+                                <ul class="depth2">
+                                    <li><a href="#">소액금융지원</a></li>
+                                    <li><a href="#">성실상환 혜택</a></li>
+                                    <li><a href="#">실효위기 지원</a></li>
+                                    <li><a href="#">상환단계별 맞춤형 가이드</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="menu-label">
+                                    금융생활지원
+                                </a>
+                                <ul class="depth2">
+                                    <li><a href="#">금융·고용·복지 복합지원</a></li>
+                                    <li><a href="#">컨설팅 지원</a></li>
+                                    <li><a href="#">신용교육</a></li>
+                                    <li><a href="#">신용상담사 자격시험</a></li>
+                                    <li><a href="#">불법사금융 알아보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="menu-label">
+                                    알림과 활동소식
+                                </a>
+                                <ul class="depth2">
+                                    <li><a href="#">새소식</a></li>
+                                    <li><a href="#">인재채용</a></li>
+                                    <li><a href="#">공고</a></li>
+                                    <li><a href="#">홍보활동</a></li>
+                                    <li><a href="#">사회공헌</a></li>
+                                    <li><a href="#">자료실</a></li>
+                                    <li><a href="#">결산현황</a></li>
+                                    
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="menu-label">
+                                    소통과 참여공간
+                                </a>
+                                <ul class="depth2">
+                                    <li><a href="#">자주묻는 질문(FAQ)</a></li>
+                                    <li><a href="#">열린참여공간</a></li>
+                                    <li><a href="#">군복무자 전용 질의응답</a></li>
+                                    <li><a href="#">이용 수기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="menu-label">
+                                    위원회 소개
+                                </a>
+                                <ul class="depth2">
+                                    <li><a href="#">위원장 인사말</a></li>
+                                    <li><a href="#">기관소개</a></li>
+                                    <li><a href="#">사회적 가치</a></li>
+                                    <li><a href="#">청렴경영</a></li>
+                                    
+                                    <li><a href="#">지부위치 안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="utils">
+                        <li class="search"><a href="#"><img src="/ccrs/resources/images/ic/header-language.svg" alt="언어 변경"></a></li>
+                        <li class="search"><a class="search-open"><img src="/ccrs/resources/images/ic/header-search.svg" alt="컨텐츠 검색"></a></li>
+                    </ul>
+                    <button type="button" class="hamburger-wrap" id="hamburgerBtn" title="전체메뉴 열기">
+                        <a href="#" class="hamburger"><span class="hide">전체메뉴</span></a>
+                    </button>
+                    <div class="all-menu" id="allMenuTag">
+                        <nav>
+                            <ul class="all-menu-list">
+                                <li>
+                                    <a href="#" class="depth1">채무조정 지원</a>
+                                    <ul class="depth2">
+                                        <li class="depth3"><a href="#">채무조정 길잡이</a></li>
+                                        <li class="depth3"><a href="#">나에게 맞는 채무조정 찾기</a></li>
+                                        <li class="depth3"><a href="#">맞춤형 채무조정제도</a></li>
+                                        <li class="depth3"><a href="#">개인회생·파산 제도</a></li>
+                                        <li class="depth3"><a href="#">금융회사 채무조정</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="depth1">
+                                        상환 중 맞춤지원
+                                    </a>
+                                    <ul class="depth2">
+                                        <li class="depth3"><a href="#">소액금융지원</a></li>
+                                        <li class="depth3"><a href="#">성실상환 혜택</a></li>
+                                        <li class="depth3"><a href="#">실효위기 지원</a></li>
+                                        <li class="depth3"><a href="#">상환단계별 맞춤형 가이드</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="depth1">
+                                        금융생활지원
+                                    </a>
+                                    <ul class="depth2">
+                                        <li class="depth3"><a href="#">금융·고용·복지 복합지원</a></li>
+                                        <li class="depth3"><a href="#">컨설팅 지원</a></li>
+                                        <li class="depth3"><a href="#">신용교육</a></li>
+                                        <li class="depth3"><a href="#">신용상담사 자격시험</a></li>
+                                        <li class="depth3"><a href="#">불법사금융 알아보기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="depth1">
+                                        알림과 활동소식
+                                    </a>
+                                    <ul class="depth2">
+                                        <li class="depth3"><a href="#">새소식</a></li>
+                                        <li class="depth3"><a href="#">인재채용</a></li>
+                                        <li class="depth3"><a href="#">공고</a></li>
+                                        <li class="depth3"><a href="#">홍보활동</a></li>
+                                        <li class="depth3"><a href="#">사회공헌</a></li>
+                                        <li class="depth3"><a href="#">자료실</a></li>
+                                        <li class="depth3"><a href="#">결산현황</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="depth1">
+                                        소통과 참여공간
+                                    </a>
+                                    <ul class="depth2">
+                                        <li class="depth3"><a href="#">자주묻는 질문(FAQ)</a></li>
+                                        <li class="depth3"><a href="#">열린참여공간</a></li>
+                                        <li class="depth3"><a href="#">군복무자 전용 질의응답</a></li>
+                                        <li class="depth3"><a href="#">이용 수기</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="depth1">
+                                        위원회 소개
+                                    </a>
+                                    <ul class="depth2">
+                                        <li class="depth3"><a href="#">위원장 인사말</a></li>
+                                        <li class="depth3"><a href="#">기관소개</a></li>
+                                        <li class="depth3"><a href="#">사회적 가치</a></li>
+                                        <li class="depth3"><a href="#">청렴경영</a></li>
+                                        
+                                        <li class="depth3"><a href="#">지부위치 안내</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="allmenu-util">
+                                <a href="#" class="util1 hamburger-wrap">
+                                    <img src="/ccrs/resources/images/ic/close.png" alt="전체메뉴 닫기">
+                                </a>
+                                <a href="#" class="util2 search-open">
+                                    <img src="/ccrs/resources/images/ic/allmenu-search.svg" alt="검색메뉴">
+                                </a>
+                                <a href="#" class="util3">
+                                    <img src="/ccrs/resources/images/ic/allmenu-language.svg" alt="언어변경">
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="search-menu" id="searchTag">
+                        <h5>통합검색</h5>
+                        <div class="search-area-header">
+                                <label for="searchText" class="hide">검색</label>
+                                <input type="text" name="commonSearchText" id="searchText" placeholder="검색어를 입력하세요" onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요'">
+                                <a class="btn-search-header" onclick="javascript:fn_commonSearch(1);"></a>
+                        </div>
+                        <div class="result-title">
+                            <h5>검색결과</h5><span id="common_total_cnt" class="sp">0</span><h5> 건</h5>
+                        </div>
+                        <a href="#" class="btn-close">
+                            <img src="/ccrs/resources/images/ic/close.png" alt="검색메뉴 닫기">
+                        </a>
+                        <div class="result-area">
+                            <div id="commonSearchItemDiv" class="list-body" style="margin-bottom: 24px;">
+                                
+                            </div>
+                            <div id="commonSearchPagenationDiv" class="pagenation">
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="utility-right">
-                    <span>앱 다운로드</span>
-                    <span>|</span>
-                    <span>상담전화</span>
-                    <span class="phone-number">1600-5500</span>
-                </div>
-            </div> -->
-        </div>
-		<div class="header-container">
-			<div class="gnb-wrap">
-				<div class="logo">
-					<a href="#">
-						<img src="/ccrs/resources/images/logo/logo.svg" alt="logo">
-					</a>
-				</div>
-				<nav>
-					<ul class="gnb">
-						<li class="is-active">
-							<a href="#" class="menu-label">
-								채무조정 지원
-							</a>
-							<ul class="depth2">
-								<li><a href="#">채무조정 길잡이</a></li>
-								<li><a href="#">나에게 맞는 채무조정 찾기</a></li>
-								<li><a href="#">맞춤형 채무조정제도</a></li>
-								<li><a href="#">개인회생·파산 제도</a></li>
-								<li><a href="#">금융회사 채무조정</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="menu-label">
-								상환 중 맞춤지원
-							</a>
-							<ul class="depth2">
-								<li><a href="#">소액금융지원</a></li>
-								<li><a href="#">성실상환 혜택</a></li>
-								<li><a href="#">실효위기 지원</a></li>
-								<li><a href="#">상환단계별 맞춤형 가이드</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="menu-label">
-								금융생활지원
-							</a>
-							<ul class="depth2">
-								<li><a href="#">금융·고용·복지 복합지원</a></li>
-								<li><a href="#">컨설팅 지원</a></li>
-								<li><a href="#">신용교육</a></li>
-								<li><a href="#">신용상담사 자격시험</a></li>
-								<li><a href="#">불법사금융 알아보기</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="menu-label">
-								알림과 활동소식
-							</a>
-							<ul class="depth2">
-								<li><a href="#">새소식</a></li>
-								<li><a href="#">인재채용</a></li>
-								<li><a href="#">공고</a></li>
-								<li><a href="#">홍보활동</a></li>
-								<li><a href="#">사회공헌</a></li>
-								<li><a href="#">자료실</a></li>
-								<li><a href="#">결산현황</a></li>
-								
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="menu-label">
-								소통과 참여공간
-							</a>
-							<ul class="depth2">
-								<li><a href="#">자주묻는 질문(FAQ)</a></li>
-								<li><a href="#">열린참여공간</a></li>
-								<li><a href="#">군복무자 전용 질의응답</a></li>
-								<li><a href="#">이용 수기</a></li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="menu-label">
-								위원회 소개
-							</a>
-							<ul class="depth2">
-								<li><a href="#">위원장 인사말</a></li>
-								<li><a href="#">기관소개</a></li>
-								<li><a href="#">사회적 가치</a></li>
-								<li><a href="#">청렴경영</a></li>
-								
-								<li><a href="#">지부위치 안내</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-				<ul class="utils">
-					<li class="search"><a href="#"><img src="/ccrs/resources/images/ic/header-language.svg" alt="언어 변경"></a></li>
-					<li class="search"><a class="search-open"><img src="/ccrs/resources/images/ic/header-search.svg" alt="컨텐츠 검색"></a></li>
-				</ul>
-				<button type="button" class="hamburger-wrap" id="hamburgerBtn" title="전체메뉴 열기">
-					<a href="#" class="hamburger"><span class="hide">전체메뉴</span></a>
-				</button>
-				<div class="all-menu" id="allMenuTag">
-					<nav>
-						<ul class="all-menu-list">
-							<li>
-								<a href="#" class="depth1">채무조정 지원</a>
-								<ul class="depth2">
-									<li class="depth3"><a href="#">채무조정 길잡이</a></li>
-									<li class="depth3"><a href="#">나에게 맞는 채무조정 찾기</a></li>
-									<li class="depth3"><a href="#">맞춤형 채무조정제도</a></li>
-									<li class="depth3"><a href="#">개인회생·파산 제도</a></li>
-									<li class="depth3"><a href="#">금융회사 채무조정</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#" class="depth1">
-									상환 중 맞춤지원
-								</a>
-								<ul class="depth2">
-									<li class="depth3"><a href="#">소액금융지원</a></li>
-									<li class="depth3"><a href="#">성실상환 혜택</a></li>
-									<li class="depth3"><a href="#">실효위기 지원</a></li>
-									<li class="depth3"><a href="#">상환단계별 맞춤형 가이드</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#" class="depth1">
-									금융생활지원
-								</a>
-								<ul class="depth2">
-									<li class="depth3"><a href="#">금융·고용·복지 복합지원</a></li>
-									<li class="depth3"><a href="#">컨설팅 지원</a></li>
-									<li class="depth3"><a href="#">신용교육</a></li>
-									<li class="depth3"><a href="#">신용상담사 자격시험</a></li>
-									<li class="depth3"><a href="#">불법사금융 알아보기</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#" class="depth1">
-									알림과 활동소식
-								</a>
-								<ul class="depth2">
-									<li class="depth3"><a href="#">새소식</a></li>
-									<li class="depth3"><a href="#">인재채용</a></li>
-									<li class="depth3"><a href="#">공고</a></li>
-									<li class="depth3"><a href="#">홍보활동</a></li>
-									<li class="depth3"><a href="#">사회공헌</a></li>
-									<li class="depth3"><a href="#">자료실</a></li>
-									<li class="depth3"><a href="#">결산현황</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#" class="depth1">
-									소통과 참여공간
-								</a>
-								<ul class="depth2">
-									<li class="depth3"><a href="#">자주묻는 질문(FAQ)</a></li>
-									<li class="depth3"><a href="#">열린참여공간</a></li>
-									<li class="depth3"><a href="#">군복무자 전용 질의응답</a></li>
-									<li class="depth3"><a href="#">이용 수기</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#" class="depth1">
-									위원회 소개
-								</a>
-								<ul class="depth2">
-									<li class="depth3"><a href="#">위원장 인사말</a></li>
-									<li class="depth3"><a href="#">기관소개</a></li>
-									<li class="depth3"><a href="#">사회적 가치</a></li>
-									<li class="depth3"><a href="#">청렴경영</a></li>
-									
-									<li class="depth3"><a href="#">지부위치 안내</a></li>
-								</ul>
-							</li>
-						</ul>
-						<div class="allmenu-util">
-							<a href="#" class="util1 hamburger-wrap">
-								<img src="/ccrs/resources/images/ic/close.png" alt="전체메뉴 닫기">
-							</a>
-							<a href="#" class="util2 search-open">
-								<img src="/ccrs/resources/images/ic/allmenu-search.svg" alt="검색메뉴">
-							</a>
-							<a href="#" class="util3">
-								<img src="/ccrs/resources/images/ic/allmenu-language.svg" alt="언어변경">
-							</a>
-						</div>
-					</nav>
-				</div>
-				<div class="search-menu" id="searchTag">
-					<h5>통합검색</h5>
-					<div class="search-area-header">
-							<label for="searchText" class="hide">검색</label>
-							<input type="text" name="commonSearchText" id="searchText" placeholder="검색어를 입력하세요" onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요'">
-							<a class="btn-search-header" onclick="javascript:fn_commonSearch(1);"></a>
-					</div>
-					<div class="result-title">
-						<h5>검색결과</h5><span id="common_total_cnt" class="sp">0</span><h5> 건</h5>
-					</div>
-					<a href="#" class="btn-close">
-						<img src="/ccrs/resources/images/ic/close.png" alt="검색메뉴 닫기">
-					</a>
-					<div class="result-area">
-						<div id="commonSearchItemDiv" class="list-body" style="margin-bottom: 24px;">
-							
-						</div>
-						<div id="commonSearchPagenationDiv" class="pagenation">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+            </div>
 		</header>
 		<!-- header:e -->
 		<!-- main contents:s -->
@@ -351,7 +353,35 @@
                         </div>
                         <!-- Content Sections -->
                         <div class="content-sections">
-                        
+                            <!-- tab -->
+                            <div class="krds-tab-area layer">
+                            <!-- tab list -->
+                            <div class="tab line full">
+                                <ul role="tablist">
+                                <li id="tab_login_01" role="tab" aria-selected="true" aria-controls="panel_login_01" class="active">
+                                    <button type="button" class="btn-tab">타이틀 1 <i class="sr-only created"> 선택됨</i></button>
+                                </li>
+                                <li id="tab_login_02" role="tab" aria-selected="false" aria-controls="panel_login_02">
+                                    <button type="button" class="btn-tab">타이틀 2</button>
+                                </li>
+                                </ul>
+                            </div>
+                            <!-- //tab list -->
+
+                            <!-- tab contents -->
+                            <div class="tab-conts-wrap">
+                                <section id="panel_login_01" aria-labelledby="tab_login_01" class="tab-conts active" data-quick-nav="false">
+                                <h3 class="sr-only">탭 영역 타이틀</h3>
+                                탭 1 영역
+                                </section>
+                                <section id="panel_login_02" aria-labelledby="tab_login_02" class="tab-conts" data-quick-nav="false">
+                                <h3 class="sr-only">탭 영역 타이틀</h3>
+                                탭 2 영역
+                                </section>
+                            </div>
+                            <!-- //tab contents -->
+                            </div>
+                            <!-- //tab -->
                             <!-- Form Section -->
                             <div class="form-section">
                                 <div class="form-grid">
@@ -872,7 +902,7 @@
                                 </div>
                                 
                                 <div class="more-section">
-                                    <button class="more-btn">더보기 →</button>
+                                    <button class="more-btn open-modal" data-target="modal_sample">모달띄우기 →</button>
                                 </div>
                             </div>
 
@@ -1009,6 +1039,85 @@
         </footer>
     </div>
 
+    <!-- krds Modal -->
+    <!-- modal -->
+    <section id="modal_sample" class="krds-modal fade" role="dialog" aria-labelledby="tit_modal_sample">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <!-- modal title -->
+        <div class="modal-header">
+            <h2 id="tit_modal_sample" class="modal-title">
+            모달 제목
+            </h2>
+        </div>
+        <!-- //modal title -->
+        <!-- modal contents -->
+        <div class="modal-conts">
+            <div class="conts-area">
+            시작 <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            대화 상자는 사용자에게 작업에 대해 알리고 중요한 정보를 포함하거나 결정이 필요하거나 여러 작업을 포함할 수 있습니다.
+            <br>
+            끝
+            </div>
+        </div>
+        <!-- //modal contents -->
+        <!-- modal btn -->
+        <div class="modal-btn btn-wrap">
+            <button type="button" class="krds-btn medium tertiary close-modal">아니요</button>
+            <button type="button" class="krds-btn medium primary close-modal">예</button>
+        </div>
+        <!-- //modal btn -->
+        <!-- close button -->
+        <button type="button" class="krds-btn medium icon btn-close close-modal">
+            <span class="sr-only">닫기</span>
+            <i class="svg-icon ico-popup-close"></i>
+        </button>
+        <!-- //close button -->
+        </div>
+    </div>
+    <div class="modal-back"></div>
+    </section>
+    <!-- //modal -->
     <!-- Compare Modal -->
     <div id="compareModal" class="modal">
         <div class="modal-content">
