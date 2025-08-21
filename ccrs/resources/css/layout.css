@@ -4,11 +4,253 @@ Author : insu
 Create date : 2025-08-04
 Version : v1.0
 -------------------------------------------------*/
-/* 메인 페이지 */
+/* 본문 바로가기 */
+#skipNav {
+    position: relative;
+    z-index: 9999;
+}
+
+#skipNav a {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    line-height: 30px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+#skipNav a:focus, #skipNav a:active {
+    top: 0;
+}
+
+/* 헤더 스타일 */
+#Wrap {
+    outline: 0;
+    overflow: hidden;
+}
+
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 88px;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#header::before {
+    content: "";
+    width: 100%;
+    height: 116px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-bottom: 1px solid var(--main-color7);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#header::after {
+    content: "";
+    width: 100%;
+    height: 87px;
+    background-color: #fff;
+    position: absolute;
+    top: -87px;
+    left: 0;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-box-shadow: 1px 10px 15px rgb(0 0 0 / 10%);
+    box-shadow: 1px 10px 15px rgb(0 0 0 / 10%);
+}
+
+#header.is-hide {
+    top: -120px;
+}
+
+#header.is-active::before {
+    border-bottom-color: var(--main-color1);
+}
+
+#header.is-active::after {
+    top: 88px;
+    height: 312px;
+}
+
+#header.is-active .gnb-wrap nav .gnb > li .depth2 {
+    opacity: 1;
+    visibility: visible;
+    min-height: inherit;
+}
+
+#header .header-container {
+    height: 100%;
+}
+
+#header .gnb-wrap .logo {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+}
+
+#header .gnb-wrap .logo a {
+    height: 100%;
+    display: block;
+}
+
+#header .gnb-wrap .logo a img {
+    height: auto;
+    width: auto;
+}
+
+#header .gnb-wrap {
+    position: relative;
+    z-index: 50;
+    height: 100%;
+}
+
+#header .gnb-wrap > nav {
+    width: 1160px;
+    height: 100%;
+    margin: 0 auto;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.4rem;
+    padding-top: 2.9rem;
+}
+
+#header .gnb-wrap > nav .gnb {
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .gnb-wrap > nav .gnb > li {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+#header .gnb-wrap > nav .gnb > li.is-active::after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--main-color1);
+}
+#header .gnb-wrap > nav .gnb > li.is-active > a {
+    color: var(--main-color1);
+}
+
+#header .gnb-wrap > nav .gnb > li .depth2 {
+    opacity: 0;
+    visibility: hidden;
+    min-height: 0;
+    height: 312px;
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    top: 59px;
+    padding-top: 4px;
+    width: calc(1160px / 6);
+    left: 0;
+    text-align: left;
+}
+
+#header .gnb-wrap > nav .gnb > li .depth2 > li {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--text-color1);
+    font-weight: 400;
+    margin: 0;
+}
+
+#header .gnb-wrap > nav .gnb > li .depth2 > li:hover {
+    font-weight: 600;
+    color: var(--main-color1);
+}
+
+#header .gnb-wrap > nav .gnb > li .depth2 > li > a {
+    display: block;
+    width: 100%;
+    height: 3.6rem;
+    line-height: 3.6rem;
+}
+
+#header .gnb-wrap .utils {
+    position: absolute;
+    top: 0;
+    right: 104px;
+    height: 88px;
+    line-height: 88px;
+}
+
+#header .gnb-wrap .utils>li {
+    display: inline-block;
+    margin-right: 2.4rem;
+    cursor: pointer;
+}
+
+#header .gnb-wrap .hamburger {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/ic/header-allmenu-pc.png) no-repeat;
+}
+
+#header .gnb-wrap #hamburgerBtn {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    width: 88px;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    padding: 27px;
+}
+
+#header .gnb-wrap .hamburger img {
+    z-index: 100;
+}
+
+/* #header .gnb-wrap .allmenu-util {height: 100vh; width: 88px;} */
+#header .gnb-wrap .allmenu-util a {
+    position: absolute;
+    right: 4rem;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+}
+
+#header .gnb-wrap .allmenu-util a.util1 {
+    top: 4rem;
+}
+
+#header .gnb-wrap .allmenu-util a.util2 {
+    top: 10rem;
+}
+
+#header .gnb-wrap .allmenu-util a.util3 {
+    top: 16rem;
+}
+
 @media (max-width: 1440px) {
     #contents .section3 .contents-wrap {width: 80vw;}   
 }
 @media (max-width: 1280px) {
+
     #header {height: 75px; width: 100vw;}
     #header::before {height: 75px;}
     #header .gnb-wrap .logo {left: 24px; top: 18px;}
@@ -276,7 +518,6 @@ Version : v1.0
     .p-type3::before {width: 16px; height: 17px; background-size: contain;}
     ul.date-info {flex-direction: column; align-items: flex-start;}
     ul.date-info li:nth-child(2) {display: none;}
-    .forgn-map {height: calc(100vw - 160px); background: url(../images/img/forgn_img2.png) no-repeat; background-size: contain; background-position: center;}
     .forgn-map .map-mark {width: 120px; height: 36px; display: none;}
     .forgn-map .map-mark>a {width: 120px; height: 36px;}
     .forgn-map .map-mark ul {width: 120px;}

@@ -1,16 +1,8 @@
 @charset "utf-8";
-@import url(fonts_SUIT.css);
-@import url(webfonts.css);
 /*-------------------------------------------------
-Author : jwshin
-Create date : 2023-01-19
-Version : v1.1
--------------------------------------------------
-Version : v2.0	date : 2023-04-12
--------------------------------------------------
-Version : v3.0	date : 2023-04-20 (웹접근성 1차 수정)
-Version : v3.2	date : 2023-05-04 (웹접근성 3차 수정)
-Version : v3.4	date : 2023-05-12 (웹접근성 인증 수정)
+Author : insu
+Create date : 2025-08-04
+Version : v1.0
 -------------------------------------------------*/
 
 /* usual setting */
@@ -43,8 +35,8 @@ pre {margin: 0; white-space: pre-wrap; font-family: "NotoSansKR", sans-serif; li
 
 /* color */
 :root {
-	--main-color1: #3D846B;
-	--main-color2: #549D83;
+	--main-color1: #ED7801;
+	--main-color2: #F48F01;
 	--main-color3: #D4E5C7;
 	--main-color4: #F3F8EF;
 	--main-color5: #777;
@@ -87,7 +79,7 @@ pre {margin: 0; white-space: pre-wrap; font-family: "NotoSansKR", sans-serif; li
 div {scrollbar-width: thin;}
 div::-webkit-scrollbar {width: 5px;}
 div::-webkit-scrollbar-thumb {border-radius: 3px;}
-section {scrollbar-width: thin;max-width: 1592px;margin: 0 auto;}
+section {scrollbar-width: thin;max-width: 1592px;}
 section::-webkit-scrollbar {width: 0px;}
 section::-webkit-scrollbar-thumb {display: none;}
 .clr {clear: both;}
