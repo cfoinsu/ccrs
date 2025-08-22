@@ -105,22 +105,26 @@ function mobileMenu() {
 
 /* 푸터 스크립트:s */
 //TOP버튼 애니메이션
-$(window).scroll(function () {
-	if ($(this).scrollTop() > 800) {
-		$(".topbtn").addClass("show");
-		$(".btn-scroll").css("margin-bottom", "120px");
+
+    
+// Scroll to top functionality
+$(window).scroll(function() {
+	if ($(this).scrollTop() > 200) {
+		if (!$('.scroll-to-top').length) {
+			$('body').append(
+				'<button class="scroll-to-top" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; background: #f97316; color: white; border: none; border-radius: 50%; cursor: pointer; z-index: 999; font-size: 18px;">↑</button>'
+			);
+		}
+		$('.scroll-to-top').fadeIn();
 	} else {
-		$(".topbtn").removeClass("show");
-		$(".btn-scroll").css("margin-bottom", "60px");
+		$('.scroll-to-top').fadeOut();
 	}
 });
 
-$(function () {
-    var topEle = $('.topbtn');
-    topEle.on('click', function() {
-    $('html, body').stop().animate({scrollTop: 0});
-    });
+$(document).on('click', '.scroll-to-top', function() {
+	$('html, body').animate({scrollTop: 0}, 500);
 });
+
 
 ////패밀리사이트 클릭이벤트
 //$(function () {
