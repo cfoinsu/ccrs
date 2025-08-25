@@ -2677,6 +2677,10 @@ caption {
   flex: 1 1 0px;
   min-width: 0;
 }
+.tab.middle .btn-tab {
+  background-color: #EBEEF3;
+  color: #474E55;
+}
 .tab.fill .btn-tab {
   padding: 0 var(--krds-tab--fill-button-padding);
   border-radius: var(--krds-tab--fill-button-radius);
@@ -22491,6 +22495,7 @@ body {
 }
 .g-wrap .g-img-wrap img {
   max-width: 100%;
+  width: 100%;
 }
 .g-wrap .g-img-wrap.no-radius {
   border-radius: 0;
