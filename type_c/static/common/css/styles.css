@@ -166,6 +166,8 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    height: 386px;
     gap: 2rem;
 }
 
