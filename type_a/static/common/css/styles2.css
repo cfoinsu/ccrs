@@ -407,7 +407,6 @@
 
 /* 하단 섹션 */
 .bottom-section {
-    padding: 0 164px;
     display: flex;
     gap: 16px;
     width: 1592px;
@@ -417,6 +416,9 @@
     width: 1190px;
     height: 120px;
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .intro-title {
@@ -779,11 +781,7 @@
     }
     
     .main-content {
-        padding: 20px 0;
-    }
-    
-    .bottom-section {
-        padding: 20px 0;
+        padding: 16px 0;
     }
     
     .news-section {

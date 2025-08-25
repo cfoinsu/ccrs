@@ -131,11 +131,11 @@ Version : v1.0
     height: 100px;
 }
 
-/* #header .gnb-wrap .logo {
+#header .gnb-wrap>.logo {
     position: absolute;
     top: 30px;
     left: 40px;
-} */
+}
 
 #header .gnb-wrap .logo a {
     height: 100%;

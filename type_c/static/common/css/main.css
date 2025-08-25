@@ -482,6 +482,7 @@ video {
     font-size: 9.6rem;
     font-weight: 600;
     color: #fff;
+    margin-top: -220px;
 }
 
 #section1 .swiper-slide .overlay-text p {

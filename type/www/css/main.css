@@ -315,6 +315,51 @@ section {
     margin-top: 2.4rem;
 }
 
+
+.hoverline{
+    background-color: #F48F01;
+    border-radius: 24px;
+    padding: 6px 22px;
+    min-height: 362px;
+    display: flex;
+    align-items: center;
+}
+.hoverline ul {
+    width: 100%;
+}
+.hoverline ul li {
+    background: url(../images/ic/icon_arrow.png) no-repeat center right 20px;
+    color:#fff;
+    font-size: 24px;
+    font-weight: 700;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    transition: all 0.3s ease;
+}
+.hoverline ul li.on,
+.hoverline ul li:hover{
+    height: 110px;
+}
+.hoverline ul li + li {
+    border-top: 1px solid #fff;
+}
+.hoverline ul li p span {
+    font-size: 17px;
+}
+.hoverline ul li .sub {
+    display: none;
+    line-height: 150%;
+    font-size: 17px;
+    font-weight: 400;
+}
+.hoverline ul li.on .sub,
+.hoverline ul li:hover .sub {
+    display: block;
+}
+
 #section3 {
     position: relative;
     background-attachment: fixed;

@@ -33,7 +33,7 @@
 	<script type="text/javascript" src="../../static/common/js/jspdf.min.js"></script>
 	<script type="text/javascript" src="../../static/common/js/kakao.js"></script>
 </head>
-<body>
+<body style="overflow: hidden;">
     <script src="../../static/common/js/plugins/aos.js"></script>
 	<script src="../../static/common/js/common.js"></script>
     <script src="../../static/common/js/layout.js"></script>
@@ -292,8 +292,8 @@
 									<!-- Left Content -->
 									<div class="hero-left">
 										<h1 class="hero-title">
-											희망을 향한<br>
-											새로운 시작!
+											<span class="stit">당신에게 맞는 신용회복 방안으로</span>
+											<span class="ltit">희망으로 다시 시작하세요</span>
 										</h1>
 									</div>
 	
@@ -329,6 +329,7 @@
 										<span>실효위기 지원</span>
 										<span>금융·고용·복지 복합지원</span>
 									</div> -->
+									<div class="hover"></div>
 									<img src="../../static/common/images/bg/video_bottom.png" alt="">
 								</div>
 							</div>
@@ -343,8 +344,8 @@
 									<!-- Left Content -->
 									<div class="hero-left">
 										<h1 class="hero-title">
-											희망을 향한<br>
-											새로운 시작!
+											<span class="stit">당신에게 맞는 신용회복 방안으로</span>
+											<span class="ltit">희망으로 다시 시작하세요</span>
 										</h1>
 									</div>
 	
@@ -380,6 +381,7 @@
 										<span>실효위기 지원</span>
 										<span>금융·고용·복지 복합지원</span>
 									</div> -->
+									<div class="hover"></div>
 									<img src="../../static/common/images/bg/video_bottom.png" alt="" style="backdrop-filter: blur(5px);">
 								</div>
 				            </div>
@@ -722,7 +724,27 @@
         </div>
     </footer>
 
-    <div class="intro"></div>
+    <div class="intro pic03">
+		<div class="close btn01"></div>
+		<div class="close btn02"></div>
+		<a href="https://cyber.ccrs.or.kr/" target="_self" class="introlink link01" title="사이버상담부"></a>
+		<a href="https://www.educredit.or.kr/ccedu/main/main.do" target="_self" class="introlink link02" title="신용교육원"></a>
+		<a href="https://counselor.ccrs.or.kr/ccedu/main/main.do" target="_self" class="introlink link03" title="신용상담사"></a>
+	</div>
+    <div class="intro pic02">
+		<div class="close btn01"></div>
+		<div class="close btn02"></div>
+		<a href="https://cyber.ccrs.or.kr/" target="_self" class="introlink link01" title="사이버상담부"></a>
+		<a href="https://www.educredit.or.kr/ccedu/main/main.do" target="_self" class="introlink link02" title="신용교육원"></a>
+		<a href="https://counselor.ccrs.or.kr/ccedu/main/main.do" target="_self" class="introlink link03" title="신용상담사"></a>
+	</div>
+    <div class="intro pic01">
+		<div class="close btn01"></div>
+		<div class="close btn02"></div>
+		<a href="https://cyber.ccrs.or.kr/" target="_self" class="introlink link01" title="사이버상담부"></a>
+		<a href="https://www.educredit.or.kr/ccedu/main/main.do" target="_self" class="introlink link02" title="신용교육원"></a>
+		<a href="https://counselor.ccrs.or.kr/ccedu/main/main.do" target="_self" class="introlink link03" title="신용상담사"></a>
+	</div>
 
 	
 <script type="text/javascript">
@@ -752,17 +774,6 @@ $(window).scroll(function () {
   }
 });
 
-//팝업 닫기 버튼 클릭 이벤트
-$(".pop-close").click(function () {
-	$(this).parent().slideToggle(500);
-  $(".slick-prev").css("opacity", "0");
-  $(".slick-next").css("opacity", "0");
-});
-
-$(".feature-card").click(function () {
-	$(".feature-card").removeClass("orange-card");
-	$(this).addClass("orange-card");
-});
 
 $('.btn-scroll').click(function(e) {
     e.preventDefault();
@@ -794,11 +805,15 @@ $('.btn-scroll').click(function(e) {
     }, 800, 'easeInOutExpo');
 });
 /* 메인 페이지 스크립트:e */
-$(".intro").click(function () {
-	$(this).addClass("remove-intro");
+$(".intro .close").click(function () {
+	$(this).parent().addClass("remove-intro");
+	if($(".intro.remove-intro").length === 3){
+		$("body").css("overflow","auto");
+	}
 });
 $(".utility-bar").click(function () {
 	$(".intro").removeClass("remove-intro");
+	$("body").css("overflow","hidden");
 });
 </script>
 

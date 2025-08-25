@@ -16,7 +16,7 @@ body {
 .container {
     max-width: 1668px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0;
     position: relative;
 }
 
@@ -32,7 +32,12 @@ body {
 .utility-bar {
     position: relative;
     z-index: 3;
-    background-color: #f5f5f5;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    border-bottom: 1px solid #E1E8EE;
     /* padding: 0.5rem 0; */
 }
 
