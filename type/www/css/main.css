@@ -142,6 +142,13 @@
 }
 
 /* 메인 컨텐츠 스타일 */
+main .container {
+    max-width: 1596px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
 section {
     margin: 0 auto;
 }
