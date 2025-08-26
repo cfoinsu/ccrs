@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
 	<meta name="keywords" content="신용회복위원회"/>
 	<meta name="description" content="신용회복위원회"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>채무조정절차</title>
+    <title>게시판_일반_목록</title>
     <link rel="stylesheet" href="/type/www/cdn/krds.min.css">
     <link rel="stylesheet" href="/type/www/css/styles.css">
     <link rel="stylesheet" href="/type/www/css/common.css">
@@ -237,7 +237,7 @@
                         <!-- Page Header -->
                         <div class="page-header">
                             <div class="title-wrap">
-                                <h1>채무조정제도 소개</h1>
+                                <h1>게시판_일반_목록</h1>
                                 <div class="page-actions">
                                     <div class="view-count">
                                         <i class="fas fa-eye"></i>
@@ -255,35 +255,161 @@
                                 </div>
                                 
                             </div>
-                            <!-- Content Sections -->
-                            <div class="content-sections">
-                                <p class="page-description">
-                                    <span class="info-icon"></span>
-                                    채무조정절차는 규정에 따라 공정하고 투명하게 운영됩니다.
-                                </p>
-                                <div class="g-conts-area">
-                                    <div class="g-img-wrap">
-                                        <div class="g-img-zoom"><img src="../type/www/images/img/process-table01.png" alt="절차"></div>
+                        </div>
+                        <!-- Content Sections -->
+                        <div class="content-sections">
+                            <div class="board-list">
+                                <!-- 검색 입력폼 -->
+                                <div class="search-top-box">
+                                    <div class="sch-filter-box">
+                                        <div class="filter-form">
+                                        <div>
+                                            <label class="label hide" for="appl-sch-sel1">선택 분류</label>
+                                            <select id="appl-sch-sel1" class="krds-form-select medium">
+                                            <option value="">전체</option>
+                                            <option value="">항목</option>
+                                            <option value="">항목</option>
+                                            </select>
+                                        </div>
+                                        <!-- 검색 입력폼 -->
+                                        <div class="sch-form-wrap">
+                                            <div class="sch-input">
+                                            <input type="text" class="krds-input" placeholder="검색어를 입력해주세요" title="검색어 입력">
+                                            <button type="button" class="krds-btn medium icon ico-search">
+                                                <span class="sr-only">검색</span>
+                                                <i class="svg-icon ico-sch"></i>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        <!-- //검색 입력폼 -->
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="g-conts-area sm">
-    
-                                    <ul class="krds-info-list decimal" role="list">
-                                        <li role="listitem">
-                                        심사 소요 기간은 채무조정 접수일로부터 평균 2개월이며, 채권금융회사와의 협의 내용에 따라 달라질 수 있습니다.
-                                        </li>
-                                        <li role="listitem">
-                                        채무조정 접수일 부터는 특별한 사유가 없는 한 채권금융회사에 개별상환하는 것을 중단하여야 합니다.
-                                        </li>
-                                        <li role="listitem">
-                                        신청비 및 예납금은 위원회 심사역으로부터 안내받은 바에 따라 납입하여야 합니다.
-                                        </li>
-                                        <li role="listitem">
-                                        채무조정 확정 통지를 받으신 경우 확정자 교육 및 채무조정합의서를 반드시 체결하여야 합니다.
-                                        </li>
-                                    </ul>
+                                <!-- //검색 입력폼 -->
+
+                                <!-- 검색 결과 : 리스트 상단 -->
+                                <div class="search-list-top">
+                                <ul class="sch-info" aria-live="polite">
+                                    <li>검색 결과 <span class="point">24</span>건</li>
+                                </ul>
+                                <ul class="sch-sort">
+                                    <li class="m-hide">
+                                    <strong class="sort-label"><label for="search_result_count">목록 표시 개수</label></strong>
+                                    <select class="krds-form-select-sort" id="search_result_count">
+                                        <option>10개</option>
+                                        <option>9개</option>
+                                    </select>
+                                    </li>
+                                    <li class="w-hide">
+                                    <button type="button" class="krds-btn large text ico-filter">
+                                        <span class="span">필터</span>
+                                        <span class="krds-badge bg-primary number">122</span>
+                                        <i class="svg-icon ico-filter"></i>
+                                    </button>
+                                    </li>
+                                    <li>
+                                    <strong class="sort-label"><label for="sort">정렬기준</label></strong>
+                                    <div class="w-sort-btn">
+                                        <button type="button" class="active">관련도순</button>
+                                        <button type="button">최신순</button>
+                                        <button type="button">인기순</button>
+                                    </div>
+                                    <div class="m-sort-btn">
+                                        <select class="krds-form-select-sort" id="sort">
+                                        <option>관련도순</option>
+                                        <option>최신순</option>
+                                        <option>인기순</option>
+                                        </select>
+                                    </div>
+                                    </li>
+                                </ul>
                                 </div>
+                                <!-- //검색 결과 : 리스트 상단 -->
+                                <!-- 검색 결과 : 리스트 -->
+                                <ul class="krds-structured-list type-full">
+                                <li class="structured-item">
+                                    <div class="in">
+                                    <div class="card-top">
+                                        <span class="krds-badge bg-light-primary">신청중</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="#" class="c-text">
+                                        <p class="c-tit visited"><span class="span">산모·신생아 건강관리 지원사업</span></p>
+                                        <p class="c-txt">
+                                            다문화가정의 자녀가 건강한 사회구성원, 글로벌 인재로 성장할 수 있도록 체계적인 언어발달을 돕습니다.
+                                            다문화가정의 자녀가 건강한 사회구성원, 글로벌 인재로 성장할 수 있도록 체계적인 언어발달을 돕습니다.
+                                        </p>
+                                        <p class="c-date">
+                                            <strong class="key">신청 기간</strong>
+                                            <span class="value">2023.11.01-2024.04.30</span>
+                                        </p>
+                                        </a>
+                                        <div class="c-btn">
+                                        <a href="#" class="krds-btn secondary" title="산모·신생아 건강관리 지원사업">신청하기</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-btm">
+                                        <span class="tag">청소년</span>
+                                        <span class="tag">영유아</span>
+                                    </div>
+                                    <div class="card-btn">
+                                        <button type="button" class="krds-btn medium text" title="산모·신생아 건강관리 지원사업"><i class="svg-icon ico-share"></i> 공유하기</button>
+                                        <button type="button" class="krds-btn medium text" title="산모·신생아 건강관리 지원사업"><i class="svg-icon ico-like"></i> 찜하기</button>
+                                    </div>
+                                    </div>
+                                </li>
+                                <li class="structured-item">
+                                    <div class="in">
+                                    <div class="card-top">
+                                        <span class="krds-badge bg-light-primary">신청중</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="#" class="c-text">
+                                        <p class="c-tit"><span class="span">저소득층 기저귀·조제분유 지원</span></p>
+                                        <p class="c-txt">
+                                            다문화가정의 자녀가 건강한 사회구성원, 글로벌 인재로 성장할 수 있도록 체계적인 언어발달을 돕습니다.
+                                        </p>
+                                        <p class="c-date">
+                                            <strong class="key">신청 기간</strong>
+                                            <span class="value">2023.11.01-2024.04.30</span>
+                                        </p>
+                                        </a>
+                                        <div class="c-btn">
+                                        <a href="#" class="krds-btn secondary" title="저소득층 기저귀·조제분유 지원">신청하기</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-btm">
+                                        <span class="tag">청소년</span>
+                                        <span class="tag">영유아</span>
+                                    </div>
+                                    <div class="card-btn">
+                                        <button type="button" class="krds-btn medium text" title="저소득층 기저귀·조제분유 지원"><i class="svg-icon ico-like"></i> 찜하기</button>
+                                        <button type="button" class="krds-btn medium text" title="저소득층 기저귀·조제분유 지원"><i class="svg-icon ico-share"></i> 공유하기</button>
+                                    </div>
+                                    </div>
+                                </li>
+                                </ul>
+                                <!-- //검색 결과 : 리스트 -->
+                                <!-- pagination -->
+                                <div class="krds-pagination">
+                                <span class="page-navi prev disabled" href="#">이전</span>
+                                <div class="page-links">
+                                    <a class="page-link" href="#">1</a>
+                                    <a class="page-link" href="#">2</a>
+                                    <a class="page-link" href="#">3</a>
+                                    <a class="page-link active" href="#"><span class="sr-only">현재페이지 </span>4</a>
+                                    <a class="page-link" href="#">5</a>
+                                    <a class="page-link" href="#">6</a>
+                                    <a class="page-link" href="#">7</a>
+                                    <a class="page-link" href="#">8</a>
+                                    <span class="page-link link-dot"></span>
+                                    <a class="page-link" href="#">99</a>
+                                </div>
+                                <a class="page-navi next" href="#">다음</a>
+                                </div>
+                                <!-- //pagination -->
                             </div>
+
                         </div>
                         <!-- //Content Sections -->
                         <!-- Feedback Section -->
@@ -570,5 +696,36 @@
     <script src="/type/www/js/layout.js"></script>
     <script src="/type/www/js/script.js"></script>
     <!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
+
+    <!-- 2️⃣ 아코디언 토글 스크립트 -->
+    <script>
+    $(function () {                       // DOMContentLoaded 와 동일
+        // ① 요소 캐시
+        const $toggleBtn   = $('#toggleButton');
+        const $toggleText  = $('#toggleText');
+        const $arrowIcon   = $('#arrowIcon');
+        const $separator   = $('#separator');
+        const $support     = $('#supportContent');
+
+        // ② 클릭 이벤트 핸들러
+        $toggleBtn.on('click', function () {
+        //   - 클래스 토글과 현재 상태 확인
+        //   - .toggleClass() 은 토글 후 현재 상태를 반환하지 않으므로
+        //     .hasClass() 로 현재가 열렸는지 판단
+        const isOpen = $support.toggleClass('open').hasClass('open');
+
+        //   - 열림/닫힘에 따라 UI 업데이트
+        if (isOpen) {
+            $toggleText.text('지원내용 닫기');
+            $arrowIcon.removeClass('rotate-90').addClass('rotate-270');
+            $separator.show();               // display:block
+        } else {
+            $toggleText.text('지원내용 보기');
+            $arrowIcon.removeClass('rotate-270').addClass('rotate-90');
+            $separator.hide();                // display:none
+        }
+        });
+    });
+    </script>
 </body>
 </html>

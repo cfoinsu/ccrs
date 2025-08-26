@@ -3306,3 +3306,19 @@ body {
     grid-template-columns: auto;
   }
 }
+
+/* bbs_write */
+.boardHead{padding: 0 5px 10px;}
+.bbs_write{border-top:2px solid #1e538e;}
+.bbs_write tr{border-bottom:1px solid #dde2e8;}
+.bbs_write th{text-align:left;background:#f6f6f6;padding-left:15px;font-size:14px;color:#333}
+.bbs_write th .ico{display:inline-block;width:7px;height:6px;background:url(../images/common/Ellipse.png) no-repeat 0 0;margin-right:5px;}
+.bbs_write.sub4 th{padding:10px 0 10px 15px;}
+.bbs_write.sub4 td{padding:8px 0 8px 15px;}
+.ico{display:inline-block;min-width:7px;min-height:6px;max-width:16px;max-height:16px;background:url(../images/common/Ellipse.png) no-repeat 0 0;margin-right:5px;}
+.bbs_write td{padding:5px 10px;}
+.bbs_write td>div{min-height:31px;line-height:31px;}
+.bbs_write .t_box{padding:0;height:29px;line-height:29px;padding-left:5px;padding-right:5px;border:1px solid #cbcbcb;}
+.bbs_write .t_box2{padding:0;height:22px;line-height:29px;padding-left:5px;padding-right:5px;border:1px solid #cbcbcb;}
+.bbs_write.sub4 table tbody td{font-size:12px;}
+span.sub4InputLabel{display:inline-block;width:150px;}
