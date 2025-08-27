@@ -3309,9 +3309,9 @@ body {
 
 /* bbs_write */
 .boardHead{padding: 0 5px 10px;}
-.bbs_write{border-top:2px solid #1e538e;}
+.bbs_write{border-top:2px solid var(--krds-color-light-gray-90);}
 .bbs_write tr{border-bottom:1px solid #dde2e8;}
-.bbs_write th{text-align:left;background:#f6f6f6;padding-left:15px;font-size:14px;color:#333}
+.bbs_write th{text-align:left;background:var(--krds-color-light-secondary-5);padding-left:15px;font-size:17px;font-weight: 700;color:var(--krds-color-light-gray-95)}
 .bbs_write th .ico{display:inline-block;width:7px;height:6px;background:url(../images/common/Ellipse.png) no-repeat 0 0;margin-right:5px;}
 .bbs_write.sub4 th{padding:10px 0 10px 15px;}
 .bbs_write.sub4 td{padding:8px 0 8px 15px;}
