@@ -427,7 +427,7 @@ body {
   --krds-light-color-action-primary-hover: var(--krds-color-light-primary-5);
   --krds-light-color-action-primary-pressed: var(--krds-color-light-primary-10);
   --krds-light-color-action-secondary: var(--krds-color-light-alpha-white0);
-  --krds-light-color-action-secondary-hover: var(--krds-color-light-secondary-5);
+  --krds-light-color-action-secondary-hover: var(--krds-color-light-primary-5);
   --krds-light-color-action-secondary-pressed: var(--krds-color-light-secondary-10);
   --krds-light-color-action-secondary-selected: var(--krds-color-light-secondary-5);
   --krds-light-color-action-secondary-on: var(--krds-color-light-alpha-white0);

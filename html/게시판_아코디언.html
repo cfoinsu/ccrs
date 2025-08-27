@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,8 @@
 	<meta name="keywords" content="신용회복위원회"/>
 	<meta name="description" content="신용회복위원회"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>소액대출_제도소개</title>
-    <link rel="stylesheet" href="/type/www/cdn/krds.min.css">
+    <title>게시판_아코디언</title>
+    <!-- <link rel="stylesheet" href="/type/www/cdn/krds.min.css"> -->
     <link rel="stylesheet" href="/type/www/css/styles.css">
     <link rel="stylesheet" href="/type/www/css/common.css">
     <link rel="stylesheet" href="/type/www/css/main.css">
@@ -237,7 +237,7 @@
                         <!-- Page Header -->
                         <div class="page-header">
                             <div class="title-wrap">
-                                <h1>소액대출</h1>
+                                <h1>게시판_일반_목록</h1>
                                 <div class="page-actions">
                                     <div class="view-count">
                                         <i class="fas fa-eye"></i>
@@ -256,349 +256,96 @@
                                 
                             </div>
                         </div>
-                        <div class="tab fill full">
-                            <ul role="tablist">
-                                <li id="tab01" role="tab" aria-selected="false" aria-controls="tabpanel01" class="active" data-listener-attached="true">
-                                    <a href="#" class="btn-tab">제도소개<i class="sr-only created">선택됨</i></a>
-                                </li>
-                                <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02" data-listener-attached="true">
-                                    <a href="#" class="btn-tab">지원절차</a>
-                                </li>
-                                <li id="tab03" role="tab" aria-selected="false" aria-controls="tabpanel03" data-listener-attached="true">
-                                    <a href="#" class="btn-tab">대출종류</a>
-                                </li>
-                                <li id="tab04" role="tab" aria-selected="false" aria-controls="tabpanel04" data-listener-attached="true">
-                                    <a href="#" class="btn-tab">비대면 소액대출</a>
-                                </li>
-                                <li id="tab05" role="tab" aria-selected="false" aria-controls="tabpanel05" data-listener-attached="true">
-                                    <a href="#" class="btn-tab">소액금융소식</a>
-                                </li>
-                            </ul>
-                        </div>
                         <!-- Content Sections -->
                         <div class="content-sections">
+                            <div class="board-list">
+                                <!-- 검색 입력폼 -->
+                                <div class="search-top-box">
+                                    <div class="sch-filter-box">
+                                        <div class="filter-form">
+                                            <!-- 검색 입력폼 -->
+                                            <div class="sch-form-wrap">
+                                                <div class="sch-input">
+                                                <input type="text" class="krds-input" placeholder="검색어를 입력해주세요" title="검색어 입력">
+                                                <button type="button" class="krds-btn medium icon ico-search">
+                                                    <span class="sr-only">검색</span>
+                                                    <i class="svg-icon ico-sch"></i>
+                                                </button>
+                                                </div>
+                                            </div>
+                                            <!-- //검색 입력폼 -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //검색 입력폼 -->
 
-                            <div class="page-description">
-                                <span class="info-icon"></span>
-                                신용회복위원회에서 채무조정 성실상환자를 대상으로 생활안정자금, 학자금, 운영자금 등 긴급자금을 직접 지원하는 제도입니다.
-                            </div>
-                            <div class="g-conts-area">
-                                <div class="g-img-wrap">
-                                    <div class="g-img-zoom"><img src="../type/www/images/img/debt_keyword01.png" alt="키워드"></div>
+                                <!-- 검색 결과 : 리스트 상단 -->
+                                <div class="search-list-top">
+                                    <ul class="sch-info" aria-live="polite">
+                                        <li>총 <span class="point">139</span>건 (<span class="point">1</span>/<span class="total">1,000</span>페이지)</li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="g-conts-area">
-                                <h4 class="sec-tit">지원대상</h4>
-                                <ul class="krds-info-list decimal" role="list">
-                                    <li role="listitem">신용회복위원회로부터 채무조정을 받아 6개월 이상 성실하게 상환하고 있거나 최근 3년 이내 상환을 완료한 분
-                                    </li>
-                                    <li role="listitem">채무자회생 및 파산에 관한 법률에 의거 법원으로부터 개인회생 변제계획 인가를 받아 12개월 이상 성실하게 상환하고 있거나 최근 3년 이내 상환을 완료한 분</li>
-                                    <li role="listitem">소액금융기금 출연 주체가 출연목적에 따라 지원대상자로 별도 지정한 분</li>
-                                </ul>
-                                <div class="g-conts-area sp-sm">
-                                    <div class="g-info-box">
-                                        <div class="g-desc-box">
-                                            <p class="g-tit">지원불가대상</p>
-                                            <ul class="krds-info-list decimal">
-                                                <li>대출금을 상환할 수 있는 소득이나 상환여력이 부족한 분</li>
-                                                <li>신용정보조회표상 연체정보가 등록된 분</li>
-                                                <li>보유재산이 과다한 분</li>
-                                                <li>채무조정(개인회생) 이후 신규로 발생한 채무가 과다하신 분</li>
-                                                <li>최근 6개월 이내 신규 채무가 발생하신 분</li>
-                                            </ul>
-                                            <p class="noti"><i class="svg-icon ico-information-fill"></i>상기사항 외에 기타 부적격 사유 및 내부 심사기준에 따라 대출이 제한될 수 있습니다.</p>
+                                <!-- //검색 결과 : 리스트 상단 -->
+                                <!-- accordion -->
+                                <div class="krds-accordion type-line">
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header"><button type="button" id="accordionHeaderSample01" class="btn-accordion" aria-controls="accordionCollapseSample01"><span>아코디언 카테고리</span> 아코디언 타이틀 영역</button></h5>
+                                        <div id="accordionCollapseSample01" class="accordion-collapse collapse" aria-labelledby="accordionHeaderSample01">
+                                        <div class="accordion-body">
+                                            <!-- accordion contents -->
+                                            취약채무자 신속면책제도는 위원회 신용상담보고서를 기초로 법원에서 파산관재인 선임 없이 파산선고와 동시에 폐지 및 면책을 진행하는 절차입니다.
+개인 채권자가 없고 소득과 재산이 일정 수준 이하인 기초생활수급자, 70세 이상 고령자, 중증장애인 중 파산 절차를 희망하는 경우 위원회를 통해 신속면책제도를 지원 받을 수 있습니다. 
+세부적인 지원 기준은 위원회 지부 상담을 통해 확인해주시기 바랍니다.
+                                            <!-- //accordion contents -->
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header"><button type="button" id="accordionHeaderSample01" class="btn-accordion" aria-controls="accordionCollapseSample02"><span>개인회생·파산지원</span> 취약채무자 신속면책제도는 무엇인가요?</button></h5>
+                                        <div id="accordionCollapseSample02" class="accordion-collapse collapse" aria-labelledby="accordionHeaderSample01">
+                                        <div class="accordion-body">
+                                            <!-- accordion contents -->
+                                            취약채무자 신속면책제도는 위원회 신용상담보고서를 기초로 법원에서 파산관재인 선임 없이 파산선고와 동시에 폐지 및 면책을 진행하는 절차입니다.
+개인 채권자가 없고 소득과 재산이 일정 수준 이하인 기초생활수급자, 70세 이상 고령자, 중증장애인 중 파산 절차를 희망하는 경우 위원회를 통해 신속면책제도를 지원 받을 수 있습니다. 
+세부적인 지원 기준은 위원회 지부 상담을 통해 확인해주시기 바랍니다.
+                                            <!-- //accordion contents -->
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header"><button type="button" id="accordionHeaderSample02" class="btn-accordion" aria-controls="accordionCollapseSample03"><span>개인회생·파산지원</span> 취약채무자 신속면책제도는 무엇인가요?</button></h5>
+                                        <div id="accordionCollapseSample03" class="accordion-collapse collapse" aria-labelledby="accordionHeaderSample02">
+                                        <div class="accordion-body">
+                                            <!-- accordion contents -->
+                                            취약채무자 신속면책제도는 위원회 신용상담보고서를 기초로 법원에서 파산관재인 선임 없이 파산선고와 동시에 폐지 및 면책을 진행하는 절차입니다.
+개인 채권자가 없고 소득과 재산이 일정 수준 이하인 기초생활수급자, 70세 이상 고령자, 중증장애인 중 파산 절차를 희망하는 경우 위원회를 통해 신속면책제도를 지원 받을 수 있습니다. 
+세부적인 지원 기준은 위원회 지부 상담을 통해 확인해주시기 바랍니다.
+                                            <!-- //accordion contents -->
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- //accordion -->
+                                <!-- pagination -->
+                                <div class="krds-pagination">
+                                <span class="page-navi prev disabled" href="#">이전</span>
+                                <div class="page-links">
+                                    <a class="page-link" href="#">1</a>
+                                    <a class="page-link" href="#">2</a>
+                                    <a class="page-link" href="#">3</a>
+                                    <a class="page-link active" href="#"><span class="sr-only">현재페이지 </span>4</a>
+                                    <a class="page-link" href="#">5</a>
+                                    <a class="page-link" href="#">6</a>
+                                    <a class="page-link" href="#">7</a>
+                                    <a class="page-link" href="#">8</a>
+                                    <span class="page-link link-dot"></span>
+                                    <a class="page-link" href="#">99</a>
+                                </div>
+                                <a class="page-navi next" href="#">다음</a>
+                                </div>
+                                <!-- //pagination -->
                             </div>
-                            <div class="g-conts-area">
-                                <h4 class="sec-tit">지원내용</h4>
-                                <div class="conts-desc">
-                                소액대출은 생활안정자금이나 학자금, 시설개선자금, 운영자금, 고금리차환자금 등의 용도로 지원합니다.
-                                </div>
-                                <div class="krds-table-wrap">
-                                    <table class="tbl col data">
-                                        <caption>
-                                            신청방법 및 서류 표 (구분, 설명, 비고로 구성됨)
-                                        </caption>
-                                        <colgroup>
-                                            <col>
-                                            <col>
-                                            <col>
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">구분</th>
-                                            <th scope="col" class="">설명</th>
-                                            <th scope="col" class="">비고</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                            <th scope="row">신청권자</th>
-                                            <td class="">
-                                                채권자, 채무자 및 채무자에 준하는 자(법정대리인, 파산회사 대표자, 이사, 지배인)
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">관할법인</th>
-                                            <td class="">
-                                                주소지를 관할하는 지방법원 본원
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">파산원인</th>
-                                            <td class="">
-                                                지급불능, 지급정지, 채무초과의 상태 – 은행대출, 카드사용, 사채 등 원인을 불문하여, 신용 불량 여부도 상관없으며, 금액이 많고 적음도 상관없습니다. 
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">신청장소</th>
-                                            <td class="">
-                                                ㅇㅇ지방법원(파산과 또는 민사신청과) 접수계 
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">파산신청서</th>
-                                            <td class="">
-                                                ㅇㅇ지방법원(파산과 또는 민사신청과) 접수계에서 배부합니다.
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="g-conts-area">
-                                <h4 class="sec-tit">대출한도 및 조건</h4>
-                                <div class="krds-table-wrap">
-                                    <table class="tbl col data">
-                                        <caption>
-                                            신청방법 및 서류 표 (구분, 설명, 비고로 구성됨)
-                                        </caption>
-                                        <colgroup>
-                                            <col>
-                                            <col>
-                                            <col>
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">구분</th>
-                                            <th scope="col" class="">설명</th>
-                                            <th scope="col" class="">비고</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                            <th scope="row">신청권자</th>
-                                            <td class="">
-                                                채권자, 채무자 및 채무자에 준하는 자(법정대리인, 파산회사 대표자, 이사, 지배인)
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">관할법인</th>
-                                            <td class="">
-                                                주소지를 관할하는 지방법원 본원
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">파산원인</th>
-                                            <td class="">
-                                                지급불능, 지급정지, 채무초과의 상태 – 은행대출, 카드사용, 사채 등 원인을 불문하여, 신용 불량 여부도 상관없으며, 금액이 많고 적음도 상관없습니다. 
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">신청장소</th>
-                                            <td class="">
-                                                ㅇㅇ지방법원(파산과 또는 민사신청과) 접수계 
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">파산신청서</th>
-                                            <td class="">
-                                                ㅇㅇ지방법원(파산과 또는 민사신청과) 접수계에서 배부합니다.
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="g-conts-area sm">
-                                    <ul class="krds-info-list decimal" role="list">
-                                    <li role="listitem">개인회생 성실상환자 및 새희망힐링론 대상자의 경우 별도 한도가 적용됩니다. (개인회생 성실상환자 최대 700만원, 새희망힐링론 대상자 최대 500만원)
-                                    </li>
-                                    <li role="listitem">대출금리는 채무조정 변제금 상환기간에 따라 달라지며 금융취약계층의 경우 해당 금리의 70% 적용 금리로 우대 가능합니다.<br>(서류 증빙 필수) 기초수급자, 장애인, 장애인부양자, 만 70세 이상자, 만 70세 이상 노부모 부양자, 한부모가족, 다자녀부양자</li>
-                                    <li role="listitem">대출 신청일 기준 2개월 이내 신용교육원(www.educredit.or.kr) 온라인 교육 이수자의 경우 0.1%p 우대금리가 적용됩니다.</li>
-                                </ul>
-                                </div>
-                            </div>
-                            <div class="g-conts-area">
-                                <h4 class="sec-tit">지원내용</h4>
-                                <div class="conts-desc">
-                                소액대출은 생활안정자금이나 학자금, 시설개선자금, 운영자금, 고금리차환자금 등의 용도로 지원합니다.
-                                </div>
-                                <div class="krds-table-wrap">
-                                    <table class="tbl col data">
-                                        <caption>
-                                            신청방법 및 서류 표 (구분, 설명, 비고로 구성됨)
-                                        </caption>
-                                        <colgroup>
-                                            <col>
-                                            <col>
-                                            <col>
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">구분</th>
-                                            <th scope="col" class="">설명</th>
-                                            <th scope="col" class="">비고</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                            <th scope="row">신청권자</th>
-                                            <td class="">
-                                                채권자, 채무자 및 채무자에 준하는 자(법정대리인, 파산회사 대표자, 이사, 지배인)
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">관할법인</th>
-                                            <td class="">
-                                                주소지를 관할하는 지방법원 본원
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">파산원인</th>
-                                            <td class="">
-                                                지급불능, 지급정지, 채무초과의 상태 – 은행대출, 카드사용, 사채 등 원인을 불문하여, 신용 불량 여부도 상관없으며, 금액이 많고 적음도 상관없습니다. 
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">신청장소</th>
-                                            <td class="">
-                                                ㅇㅇ지방법원(파산과 또는 민사신청과) 접수계 
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">파산신청서</th>
-                                            <td class="">
-                                                ㅇㅇ지방법원(파산과 또는 민사신청과) 접수계에서 배부합니다.
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="g-conts-area">
-                                <h4 class="sec-tit">신청서류</h4>
-                                <div class="krds-table-wrap">
-                                    <table class="tbl col data">
-                                        <caption>
-                                            신청서류 표 (구분, 자금용도로 구성됨)
-                                        </caption>
-                                        <colgroup>
-                                            <col>
-                                            <col>
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">구분</th>
-                                            <th scope="col" class="">자금용도</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                            <th scope="row">생활안전자금</th>
-                                            <td class="">
-                                                채권자, 채무자 및 채무자에 준하는 자(법정대리인, 파산회사 대표자, 이사, 지배인)
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">학자금</th>
-                                            <td class="">
-                                                주소지를 관할하는 지방법원 본원
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">고금리차환자금</th>
-                                            <td class="">
-                                                지급불능, 지급정지, 채무초과의 상태 – 은행대출, 카드사용, 사채 등 원인을 불문하여, 신용 불량 여부도 상관없으며, 금액이 많고 적음도 상관없습니다. 
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">시설개선자금</th>
-                                            <td class="">
-                                                영세자영업자의 사업장 집기, 비품, 시설물의 구입 및 교체, 보수자금 
-                                            </td>
-                                            <td class=""></td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">운영자금</th>
-                                            <td class="">
-                                                영세사업자의 원재료 구입 등의 운영자금
-                                            </td>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="g-conts-area sm">
-                                    <div class="conts-desc">
-                                    신청서류는 채무현황, 재산보유현황 등 채무자의 상황에 따라 달라질 수 있으므로 상담시 자세히 안내 받으시기 바랍니다.<br>※ 비대면 소액대출은 별도의 서류 제출없이 스크래핑 기술을 통해 확인하며, 자영업자인 경우에만 소득서류를 제출합니다.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="g-conts-area">
-                                <h4 class="sec-tit">신청방법</h4>
-                                <div class="g-conts-area sp-sm">
-                                    <h5 class="con-tit">비대면 소액대출 신청 (사이버상담부 홈페이지, 신용회복위원회 앱)</h5>
-                                    <div class="conts-desc">
-                                    공동,금융,민간인증서를 소지하고 계신 경우 신용회복위원회 사이버상담부(cyber.ccrs.or.kr) 를 통해 인터넷으로 상담 및 신청하실 수 있습니다.
-                                    </div>
-                                    <div class="g-desc-body">
-                                        <div class="g-grid-wrap unit3">
-                                            <div class="g-info-box sm">
-                                                <div class="g-desc-box">
-                                                    <p class="g-tit">콜센터</p>
-                                                    <div class="conts-desc">
-                                                        1600-5500
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="g-info-box sm">
-                                                <div class="g-desc-box">
-                                                    <p class="g-tit">상담소 찾기</p>
-                                                    <div class="conts-desc">
-                                                        팝업보기 >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="g-info-box sm">
-                                                <div class="g-desc-box">
-                                                    <p class="g-tit">인터넷 상담신청</p>
-                                                    <div class="conts-desc">
-                                                        바로보기 >
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                </div>
-                            </div>
+
                         </div>
                         <!-- //Content Sections -->
                         <!-- Feedback Section -->
@@ -885,5 +632,36 @@
     <script src="/type/www/js/layout.js"></script>
     <script src="/type/www/js/script.js"></script>
     <!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
+
+    <!-- 2️⃣ 아코디언 토글 스크립트 -->
+    <script>
+    $(function () {                       // DOMContentLoaded 와 동일
+        // ① 요소 캐시
+        const $toggleBtn   = $('#toggleButton');
+        const $toggleText  = $('#toggleText');
+        const $arrowIcon   = $('#arrowIcon');
+        const $separator   = $('#separator');
+        const $support     = $('#supportContent');
+
+        // ② 클릭 이벤트 핸들러
+        $toggleBtn.on('click', function () {
+        //   - 클래스 토글과 현재 상태 확인
+        //   - .toggleClass() 은 토글 후 현재 상태를 반환하지 않으므로
+        //     .hasClass() 로 현재가 열렸는지 판단
+        const isOpen = $support.toggleClass('open').hasClass('open');
+
+        //   - 열림/닫힘에 따라 UI 업데이트
+        if (isOpen) {
+            $toggleText.text('지원내용 닫기');
+            $arrowIcon.removeClass('rotate-90').addClass('rotate-270');
+            $separator.show();               // display:block
+        } else {
+            $toggleText.text('지원내용 보기');
+            $arrowIcon.removeClass('rotate-270').addClass('rotate-90');
+            $separator.hide();                // display:none
+        }
+        });
+    });
+    </script>
 </body>
 </html>

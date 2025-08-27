@@ -3856,6 +3856,13 @@ caption {
 }
 .krds-accordion.type-line .accordion-item .btn-accordion {
   padding: var(--krds-accordion--line-padding) var(--krds-accordion--line-button-padding-right) var(--krds-accordion--line-padding) 0;
+  
+  font-size: 19px;
+  font-weight: 700;
+}
+.krds-accordion.type-line .accordion-item .btn-accordion span{
+  font-size: 15px;
+  font-weight: 400;
 }
 .krds-accordion.type-line .accordion-item .btn-accordion::after {
   top: var(--krds-accordion--line-padding);
@@ -3863,16 +3870,17 @@ caption {
 }
 .krds-accordion.type-line .accordion-item .btn-accordion.active {
   background: none;
+  color: var(--krds-color-light-primary-60);
 }
 .krds-accordion.type-line .accordion-item .accordion-body {
-  padding: 0 0 var(--krds-accordion--padding);
+  padding: var(--krds-accordion--padding);
 }
 .krds-accordion.type-line .accordion-item.active {
   background: none;
   border-top-color: var(--krds-accordion--color-divider-open);
 }
 .krds-accordion.type-line .accordion-item.active .accordion-body {
-  background: none;
+  
 }
 
 [data-krds-mode=high-contrast] .krds-accordion {
@@ -18129,7 +18137,7 @@ a:hover .d-card .c-tit {
 }
 .search-list-top .sch-info li:not(:last-child),
 .search-list-top .sch-sort li:not(:last-child) {
-  padding-right: 1.7rem;
+  padding-right: 1.6rem;
 }
 .search-list-top .sch-info li:not(:last-child)::after,
 .search-list-top .sch-sort li:not(:last-child)::after {
@@ -18139,8 +18147,8 @@ a:hover .d-card .c-tit {
   height: var(--krds-size-height-2);
   background-color: var(--search-list-color-border);
   position: absolute;
-  bottom: 0.3rem;
-  right: 0.5rem;
+  bottom: 0.5rem;
+  right: 0.8rem;
 }
 .search-list-top .sch-sort {
   flex-shrink: 0;
@@ -18414,8 +18422,9 @@ a:hover .d-card .c-tit {
   justify-content: flex-start;
   flex-direction: column;
   gap: 2.4rem;
-  padding: var(--krds-padding-6) 0;
+  padding: var(--krds-padding-8);
   margin-bottom: var(--krds-gap-3);
+  background-color: var(--krds-color-light-primary-5);
 }
 .filter-list.krds-accordion .accordion-item .btn-accordion {
   padding: var(--krds-padding-5) calc(var(--krds-size-height-4) + var(--krds-gap-5)) var(--krds-padding-5) 0;
