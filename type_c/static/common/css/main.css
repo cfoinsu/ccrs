@@ -132,7 +132,7 @@ Version : v3.4	date : 2023-05-11 (ì›¹ì ‘ê·¼ì„± ì¸ì¦ë§ˆ
 #header .gnb-wrap > nav {
     width: 930px;
     height: 100%;
-    margin-left: 200px ;
+    margin-left: 240px ;
     font-weight: 700;
     text-align: center;
     font-size: 2.4rem;
@@ -142,7 +142,7 @@ Version : v3.4	date : 2023-05-11 (ì›¹ì ‘ê·¼ì„± ì¸ì¦ë§ˆ
 #header .gnb-wrap > nav .gnb {
     height: 100%;
     display: flex;
-    gap: 40px;
+    gap: 30px;
     justify-content: flex-start;
 }
 
@@ -152,7 +152,7 @@ Version : v3.4	date : 2023-05-11 (ì›¹ì ‘ê·¼ì„± ì¸ì¦ë§ˆ
     text-align: left;
     font-size: 20px;
     padding-top: 4px;
-    width: calc(1100px / 6);
+    width: calc(900px / 6);
 }
 
 #header .gnb-wrap > nav .gnb > li.is-active::after {

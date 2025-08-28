@@ -1257,6 +1257,9 @@ body {
 .quick-menu {
     width: 80px;
 }
+.quick-menu img{
+    width: 80px;
+}
 .quick-item {
     display: flex;
     flex-direction: column;
