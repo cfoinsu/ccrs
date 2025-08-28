@@ -459,6 +459,8 @@ Version : v1.0
     display: inline-block;
     text-align: left;
     width: auto;
+    font-size: 20px;
+    padding-top: 2px;
 }
 
 #header .gnb-wrap > nav .gnb > li.is-active::after {
@@ -490,7 +492,7 @@ Version : v1.0
 
 #header .gnb-wrap > nav .gnb > li .depth2 > li {
     display: block;
-    font-size: 1.6rem;
+    font-size: 14px;
     color: var(--text-color1);
     font-weight: 400;
     margin: 0;
