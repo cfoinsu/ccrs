@@ -37,10 +37,6 @@ header, footer, article, section, aside, nav, main {display: block;}
 button, input, optgroup, select, textarea {font-family: inherit; font-size: inherit; font-weight: inherit; margin: 0;}
 pre {margin: 0; white-space: pre-wrap; font-family: "NotoSansKR", sans-serif; line-height: 1.6; color: #555;}
 
-@media (max-width: 768px) {
-	html {font-size: 8px;}
-}
-
 /* color */
 :root {
 	--main-color1: #3D846B;
