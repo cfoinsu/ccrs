@@ -257,7 +257,7 @@
                             
                         </div>
                         <!-- Content Sections -->
-                        <div class="content-sections">
+                        <div class="content-sections g-wrap">
                             <div class="page-description">
                                 <span class="info-icon"></span>
                                 간략한 정보를 통해 본인에게 맞는 채무조정제도를 소개합니다.
@@ -454,7 +454,7 @@
                                 </div>
                             </div>
                             <!-- 버튼 영역 -->
-                            <div class="flex justify-center gap-4 pt-8">
+                            <div class="">
                                 <button type="button" id="reset-btn" class="btn btn-outline">
                                     초기화
                                 </button>
@@ -464,83 +464,68 @@
                             </div>
                             <!-- Compare Section -->
                             <!-- 비교하기 하단 고정 바 -->
-                            <div class="fixed bottom-0 left-0 right-0 bg-navy-transparent backdrop-blur z-50">
-                                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                                    <div class="flex items-center py-4 sm:py-6 gap-4 sm:gap-6">
-                                        
-                                        <!-- 왼쪽 제목 섹션 (데스크톱만 표시) -->
-                                        <div class="hidden sm:block">
-                                            <h2 class="font-pretendard-gov-bold text-white text-2xl sm:text-[32px] leading-[1.5]">
+                            <div class="compare-fixed-bar">
+                                <div class="compare-container">
+                                    <div class="compare-flex-items">
+                                        <div class="desktop-title-section">
+                                            <h2 class="desktop-title-h2">
                                                 비교하기
                                             </h2>
-                                            <p class="font-pretendard-gov-regular text-white text-[15px] sm:text-[17px] leading-[1.5]">
+                                            <p class="desktop-title-p">
                                                 최대 3개 가능
                                             </p>
                                         </div>
-
-                                        <!-- 중앙 상품 영역 -->
-                                        <div class="flex-1 flex gap-2 sm:gap-4 overflow-x-auto">
-                                            
-                                            <!-- 모바일에서는 제목을 여기에 표시 -->
-                                            <div class="sm:hidden flex flex-col justify-center min-w-fit">
-                                                <h2 class="font-pretendard-gov-bold text-white text-xl leading-[1.5]">
+                                        <div class="compare-products-container">
+                                            <div class="mobile-title-section">
+                                                <h2 class="mobile-title-h2">
                                                     비교하기
                                                 </h2>
-                                                <p class="font-pretendard-gov-regular text-white text-sm leading-[1.5]">
+                                                <p class="mobile-title-p">
                                                     최대 3개 가능
                                                 </p>
                                             </div>
-
-                                            <div class="flex gap-2 sm:gap-4">
-                                                <!-- 첫 번째 상품 카드 -->
-                                                <div class="bg-white rounded-xl p-3 sm:p-4 w-full max-w-[280px] h-[70px] sm:h-[90px] flex items-center gap-3 relative">
-                                                    <div class="w-8 h-8 sm:w-10 sm:h-10 shrink-0">
-                                                        <div class="w-full h-full bg-gray-200 rounded border flex items-center justify-center">
-                                                            <span class="text-xs text-gray-600">아이콘</span>
+                                            <div class="products-flex-container">
+                                                <div class="product-card">
+                                                    <div class="product-icon-wrapper">
+                                                        <div class="product-icon-placeholder">
+                                                            <span>아이콘</span>
                                                         </div>
                                                     </div>
-                                                    <div class="font-pretendard-gov-bold text-black text-base sm:text-[19px] leading-[1.5] flex-1">
+                                                    <div class="product-title">
                                                         사전채무조정
                                                     </div>
-                                                    <button class="absolute top-2 right-2 w-4 h-4 sm:w-5 sm:h-5 bg-gray-200 rounded flex items-center justify-center">
-                                                        <span class="text-xs text-gray-600">×</span>
+                                                    <button class="remove-btn">
+                                                        <span>×</span>
                                                     </button>
                                                 </div>
-                                                
-                                                <!-- 두 번째 상품 카드 -->
-                                                <div class="bg-white rounded-xl p-3 sm:p-4 w-full max-w-[280px] h-[70px] sm:h-[90px] flex items-center gap-3 relative">
-                                                    <div class="w-8 h-8 sm:w-10 sm:h-10 shrink-0">
-                                                        <div class="w-full h-full bg-gray-200 rounded border flex items-center justify-center">
-                                                            <span class="text-xs text-gray-600">아이콘</span>
+                                                <div class="product-card">
+                                                    <div class="product-icon-wrapper">
+                                                        <div class="product-icon-placeholder">
+                                                            <span>아이콘</span>
                                                         </div>
                                                     </div>
-                                                    <div class="font-pretendard-gov-bold text-black text-base sm:text-[19px] leading-[1.5] flex-1">
+                                                    <div class="product-title">
                                                         개인워크아웃 개인회생주택담보대출
                                                     </div>
-                                                    <button class="absolute top-2 right-2 w-4 h-4 sm:w-5 sm:h-5 bg-gray-200 rounded flex items-center justify-center">
-                                                        <span class="text-xs text-gray-600">×</span>
+                                                    <button class="remove-btn">
+                                                        <span>×</span>
                                                     </button>
                                                 </div>
-                                                
-                                                <!-- 추가 슬롯 -->
-                                                <div class="bg-white bg-opacity-5 rounded-xl w-full max-w-[280px] h-[70px] sm:h-[90px] border-2 border-dashed border-white border-opacity-30 flex items-center justify-center">
-                                                    <div class="w-6 h-6 bg-white bg-opacity-20 rounded flex items-center justify-center">
-                                                        <span class="text-white text-lg">+</span>
+                                                <div class="add-slot-card">
+                                                    <div class="add-slot-icon">
+                                                        <span>+</span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <!-- 오른쪽 버튼 섹션 -->
-                                        <div class="flex items-center gap-2 sm:gap-4">
-                                            <button id="openCompareModal" class="bg-[#f48f01] px-4 sm:px-6 py-3 sm:py-4 rounded-lg min-w-[80px] sm:min-w-[120px]">
-                                                <span class="font-pretendard-gov-bold text-white text-base sm:text-[19px] leading-[1.5]">
+                                        <div class="compare-buttons-container">
+                                            <button class="open-compare-modal">
+                                                <span>
                                                     비교하기
                                                 </span>
                                             </button>
-                                            
-                                            <button class="w-6 h-6 sm:w-8 sm:h-8 bg-white bg-opacity-20 rounded flex items-center justify-center">
-                                                <span class="text-white text-sm sm:text-base">×</span>
+                                            <button class="close-btn">
+                                                <span>×</span>
                                             </button>
                                         </div>
                                     </div>
@@ -548,163 +533,149 @@
                             </div>
 
                             <!-- Quick Results -->
-                            <div class="result-card">
+                            <div class="result-card-container">
                                 <h3>간편진단 결과</h3>
-                                <div class="mx-auto">
-                                    <div class="bg-white border border-[#f48f01] rounded-xl overflow-hidden">
-                                        <!-- 제목 섹션 -->
-                                        <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start sm:items-center p-4 sm:p-6 lg:p-8">
-                                            <!-- 아이콘 영역 (이미지 플레이스홀더) -->
-                                            <div class="relative shrink-0 w-14 h-14" data-name="icon">
-                                                <img src="../type/www/images/ic/icon_title.svg" alt="아이콘" class="w-full h-full object-contain">
+                                <div class="result-card-inner-wrapper">
+                                    <div class="results-content-wrapper">
+                                        <div class="result-title-section">
+                                            <div class="result-icon-wrapper" data-name="icon">
+                                                <img src="../type/www/images/ic/icon_title.svg" alt="아이콘" class="result-icon">
                                             </div>
-                                            
-                                            <!-- 제목 -->
-                                            <div class="flex flex-col justify-center">
-                                                <h1 class="font-pretendard-gov-bold text-[#222222] text-2xl sm:text-3xl lg:text-4xl leading-[1.5]">
+                                            <div class="result-title-text">
+                                                <h1 class="result-main-title">
                                                     사전채무조정
                                                 </h1>
                                             </div>
-                                            
-                                            <!-- 버튼들 - 모바일에서는 아래로, 데스크톱에서는 오른쪽으로 -->
-                                            <div class="flex flex-col sm:flex-row gap-2 sm:gap-3 ml-auto mt-4 sm:mt-0 w-full sm:w-auto">
-                                                <button class="btn btn-secondary text-center">
+                                            <div class="result-buttons">
+                                                <button class="btn btn-secondary">
                                                     <span>상세정보</span>
                                                 </button>
-                                                <button class="btn btn-primary text-center">
+                                                <button class="btn btn-primary">
                                                     <span>비교담기</span>
                                                 </button>
                                             </div>
                                         </div>
-                                        
-                                        <!-- 통계 섹션 -->
-                                        <div class="bg-[#f6f3f0] rounded-xl mx-4 sm:mx-6 lg:mx-8 mb-4 sm:mb-6">
-                                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 divide-y sm:divide-y-0 lg:divide-x divide-[rgba(0,0,0,0.1)]">
-                                                <div class="flex flex-col items-center gap-2 p-4 sm:p-6 lg:p-8">
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
+                                        <div class="stats-section">
+                                            <div class="stats-grid-container">
+                                                <div class="stat-item">
+                                                    <div class="stat-label">
                                                         상환기간
                                                     </div>
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
+                                                    <div class="stat-value">
                                                         60개월
                                                     </div>
                                                 </div>
-                                                <div class="flex flex-col items-center gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
+                                                <div class="stat-item">
+                                                    <div class="stat-label">
                                                         월 상환액
                                                     </div>
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
+                                                    <div class="stat-value">
                                                         177만원
                                                     </div>
                                                 </div>
-                                                <div class="flex flex-col items-center gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
+                                                <div class="stat-item">
+                                                    <div class="stat-label">
                                                         원금
                                                     </div>
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
+                                                    <div class="stat-value">
                                                         10,000만원
                                                     </div>
                                                 </div>
-                                                <div class="flex flex-col items-center gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
+                                                <div class="stat-item">
+                                                    <div class="stat-label">
                                                         이자
                                                     </div>
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
+                                                    <div class="stat-value">
                                                         648만원
                                                     </div>
                                                 </div>
-                                                <div class="flex flex-col items-center gap-2 p-4 sm:p-6 lg:p-8 border-l border-[rgba(0,0,0,0.1)]">
-                                                    <div class="font-pretendard-gov-bold text-[#222222] text-sm sm:text-[15px] leading-[1.5]">
+                                                <div class="stat-item">
+                                                    <div class="stat-label">
                                                         이자율
                                                     </div>
-                                                    <div class="font-pretendard-gov-regular text-[#222222] text-lg sm:text-xl lg:text-2xl leading-[1.5]">
+                                                    <div class="stat-value">
                                                         2.5%
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- 구분선 -->
-                                        <div id="separator" class="mx-4 sm:mx-6 lg:mx-8 mb-4 sm:mb-6" style="display: none;">
-                                            <div class="h-px bg-black opacity-10"></div>
+                                        <div class="separator">
+                                            <div class="separator-line"></div>
                                         </div>
-                                        
-                                        <!-- 지원내용 -->
-                                        <div id="supportContent" class="accordion-content">
-                                            <div class="space-y-3">
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
+                                        <div class="accordion-content support-content">
+                                            <div class="support-content-list">
+                                                <div class="support-item">
+                                                    <div class="list-marker"></div>
+                                                    <div class="support-text">
                                                         입력하신 정보를 종합적으로 검토한 결과, '프리워크아웃' 제도가 적합할 수 있습니다.
                                                     </div>
                                                 </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
+                                                <div class="support-item">
+                                                    <div class="list-marker"></div>
+                                                    <div class="support-text">
                                                         최장 10년간 원리금을 분할 상환하고, 약정이자율의 30~70% 감면 혜택을 받을 수 있습니다.
                                                     </div>
                                                 </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
+                                                <div class="support-item">
+                                                    <div class="list-marker"></div>
+                                                    <div class="support-text">
                                                         자영업자 또는 폐업자이신 경우, '새출발기금(사전)' 제도를 통해 31~89일 연체된 채무에 대해 상환 기간 연장과 이자율 조정을 지원받을 수 있습니다.
                                                     </div>
                                                 </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
+                                                <div class="support-item">
+                                                    <div class="list-marker"></div>
+                                                    <div class="support-text">
                                                         개인회생: 일정한 소득이 있는 경우 3~5년간 상환 후 잔여채무 면책
                                                     </div>
                                                 </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
+                                                <div class="support-item">
+                                                    <div class="list-marker"></div>
+                                                    <div class="support-text">
                                                         개인회생 : 일정한 소득이 있는 경우 3~5년간 상환 후 잔여채무 면책
                                                     </div>
                                                 </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
+                                                <div class="support-item">
+                                                    <div class="list-marker"></div>
+                                                    <div class="support-text">
                                                         개인파산 : 모든 채무를 감당하기 어려울 경우 잔여채무 면책 가능
                                                     </div>
                                                 </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
+                                                <div class="support-item">
+                                                    <div class="list-marker"></div>
+                                                    <div class="support-text">
                                                         입력하신 정보를 기준으로 한 예상 월 변제금은 약 00만 원입니다. (*실제 심사 결과에 따라 변동될 수 있습니다.)
                                                     </div>
                                                 </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
+                                                <div class="support-item">
+                                                    <div class="list-marker"></div>
+                                                    <div class="support-text">
                                                         제도별 조건과 차이가 궁금하시다면, 홈페이지의 [제도 비교] 기능을 이용해 주세요.
                                                     </div>
                                                 </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
+                                                <div class="support-item">
+                                                    <div class="list-marker"></div>
+                                                    <div class="support-text">
                                                         자세한 상담은 가까운 지부 방문상담 또는 사이버상담부 전화상담으로 신청하실 수 있습니다.
                                                     </div>
                                                 </div>
-                                                <div class="flex items-start gap-3 mb-3">
-                                                    <div class="bg-[#474e55] rounded-[3px] w-1 h-1 mt-[11px] shrink-0"></div>
-                                                    <div class="font-pretendard-gov-regular text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
+                                                <div class="support-item">
+                                                    <div class="list-marker"></div>
+                                                    <div class="support-text">
                                                         개인회생·개인파산 등 종합 상담은 지부 방문상담을 통해 제공됩니다.
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- 토글 버튼 -->
-                                        <div class="flex justify-center py-4 sm:py-6">
-                                            <button id="toggleButton" class="flex items-center gap-1 px-2 py-2 cursor-pointer transition-all duration-300 hover:bg-gray-50 rounded-md">
-                                                <span id="toggleText" class="font-pretendard-gov-bold text-[#17191b] text-base sm:text-[17px] leading-[1.5]">
+                                        <div class="toggle-container">
+                                            <button class="toggle-button">
+                                                <span class="toggle-text">
                                                     지원내용 보기
                                                 </span>
-                                                <div id="arrowIcon" class="w-5 h-5 rounded flex items-center justify-center transition-transform duration-300 rotate-90">
-                                                    <span class="text-xs text-gray-600">▶</span>
+                                                <div class="arrow-icon">
+                                                    <span>▶</span>
                                                 </div>
                                             </button>
                                         </div>
-                                        
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -958,7 +929,7 @@
             <div class="modal-content">
             <!-- modal title -->
             <div class="modal-header">
-                <h2 id="tit_modal_sample" class="modal-title">
+                <h2 id="tit_modal_sample" class="modal-title" tabindex="0">
                 모달 제목
                 </h2>
             </div>
@@ -1257,11 +1228,12 @@
     <script>
     $(function () {                       // DOMContentLoaded 와 동일
         // ① 요소 캐시
-        const $toggleBtn   = $('#toggleButton');
-        const $toggleText  = $('#toggleText');
-        const $arrowIcon   = $('#arrowIcon');
-        const $separator   = $('#separator');
-        const $support     = $('#supportContent');
+        const $toggleBtn   = $('.toggle-button');
+        const $toggleText  = $('.toggle-text');
+        const $arrowIcon   = $('.arrow-icon');
+        const $separator   = $('.separator');
+        const $support     = $('.support-content');
+        const $toggleContainer     = $('.toggle-container');
 
         // ② 클릭 이벤트 핸들러
         $toggleBtn.on('click', function () {
@@ -1273,12 +1245,12 @@
         //   - 열림/닫힘에 따라 UI 업데이트
         if (isOpen) {
             $toggleText.text('지원내용 닫기');
-            $arrowIcon.removeClass('rotate-90').addClass('rotate-270');
-            $separator.show();               // display:block
+            $toggleContainer.addClass('active');
+            $separator.slideDown();               // display:block
         } else {
             $toggleText.text('지원내용 보기');
-            $arrowIcon.removeClass('rotate-270').addClass('rotate-90');
-            $separator.hide();                // display:none
+            $toggleContainer.removeClass('active');
+            $separator.slideUp();                // display:none
         }
         });
     });
