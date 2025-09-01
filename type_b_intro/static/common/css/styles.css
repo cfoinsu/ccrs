@@ -1544,6 +1544,7 @@ body {
     z-index: 1000;
 }
 .intro.remove-intro {
+    height: 0;
     overflow: hidden;
-    top: -120vh !important;
+    top: -100vh !important;
 }
