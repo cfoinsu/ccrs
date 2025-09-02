@@ -286,7 +286,7 @@ Version : v1.0
 }
 
 #header.is-hide {
-    top: -150px;
+    top: -76px;
 }
 
 #header.is-active::before {

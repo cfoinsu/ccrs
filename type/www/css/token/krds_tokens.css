@@ -302,7 +302,7 @@ body {
   --krds-light-color-surface-white-subtler: var(--krds-color-light-gray-0);
   --krds-light-color-border-gray-light: var(--krds-color-light-gray-20);
   --krds-light-color-border-gray: var(--krds-color-light-gray-30);
-  --krds-light-color-border-secondary-light: var(--krds-color-light-secondary-10);
+  --krds-light-color-border-secondary-light: var(--krds-color-light-secondary-100);
   --krds-light-color-border-danger-light: var(--krds-color-light-danger-10);
   --krds-light-color-border-danger: var(--krds-color-light-danger-50);
   --krds-light-color-border-warning-light: var(--krds-color-light-warning-10);

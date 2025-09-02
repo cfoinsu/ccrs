@@ -418,6 +418,8 @@ Version : v3.4	date : 2023-05-11 (웹접근성 인증마크 수정)
 }
 #section1 .swiper-container {
     z-index: 3;
+    width: 1280px;
+    margin: 0 auto;
 }
 #mainVideo {
     position: absolute;
@@ -480,7 +482,7 @@ video {
     justify-content: flex-start;
     width: 100%;
     margin: 0;
-    padding: 0 7.8vw;
+    padding: 0;
     z-index: 7;
 }
 
@@ -490,6 +492,18 @@ video {
     color: #fff;
 }
 
+#section1 .swiper-slide .overlay-text h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    color: #fff;
+}
+#section1 .swiper-slide .overlay-text h1 .stit{
+    font-size: 4rem;
+}
+#section1 .swiper-slide .overlay-text h1 .ltit{
+    display: block;
+}
+
 #section1 .swiper-slide .overlay-text p {
     font-size: 2.4rem;
     line-height: 1.8;
@@ -497,6 +511,7 @@ video {
     color: #fff;
     /*white-space: pre-line;*/
 }
+
 
 #section1 .controller-bar {
     position: sticky;

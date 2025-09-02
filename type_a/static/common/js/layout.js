@@ -25,14 +25,6 @@ $(function () {
 		$(this).removeClass('is-active');
 	});
 
-	$(".gnb .depth2 li a").focus(function () {
-		$(this).css("font-weight","700").css("color","#3D846B");
-	});
-
-	$(".gnb .depth2 li a").focusout(function () {
-		$(this).css("font-weight","500").css("color","#181818");
-});
-
 //전체메뉴 click, hover 이벤트
 $(".hamburger-wrap").click(function () {
 	$(this).find('.hamburger').toggleClass("is-active");

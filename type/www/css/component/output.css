@@ -2850,6 +2850,18 @@ caption {
   color: var(--krds-table--data-thead-color-text);
   text-align: left;
 }
+.krds-table-wrap .tbl.board thead th {
+  padding: var(--krds-table--data-thead-th-padding) var(--krds-table--data-thead-th-padding-sides);
+  background-color: var(--krds-table--data-thead-surface);
+  border-top: var(--krds-table--data-border-width) solid var(--krds-table--data-thead-border);
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  font-weight: var(--krds-font-weight-bold);
+  font-size: var(--krds-table--data-thead-pc-font-size);
+  color: var(--krds-table--data-thead-color-text);
+  text-align: center;
+}
 @media (max-width: 767px) {
   .krds-table-wrap .tbl.data thead th {
     font-size: var(--krds-table--data-thead-mobile-font-size);
@@ -2860,6 +2872,16 @@ caption {
   padding: var(--krds-table--data-tbody-padding) var(--krds-table--data-tbody-padding-sides);
   background-color: var(--krds-table--data-tbody-color-surface);
   border: var(--krds-table--data-border-width) solid var(--krds-table--data-tbody-color-divider);
+  font-size: var(--krds-table--data-tbody-pc-font-size);
+  color: var(--krds-table--data-tbody-color-text);
+  font-weight: var(--krds-font-weight-regular);
+  text-align: center;
+}
+.krds-table-wrap .tbl.board tbody th,
+.krds-table-wrap .tbl.board tbody td {
+  padding: var(--krds-table--data-tbody-padding) var(--krds-table--data-tbody-padding-sides);
+  background-color: var(--krds-table--data-tbody-color-surface);
+  border-bottom: var(--krds-table--data-border-width) solid var(--krds-table--data-tbody-color-divider);
   font-size: var(--krds-table--data-tbody-pc-font-size);
   color: var(--krds-table--data-tbody-color-text);
   font-weight: var(--krds-font-weight-regular);
@@ -22174,8 +22196,10 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: var(--krds-gap-5);
+  margin: 3rem 0;
 }
 .g-wrap .g-num-list.sm > li + li {
   margin-top: var(--krds-pc-gap-layout-text-text-medium);

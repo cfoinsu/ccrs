@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
 	<meta name="keywords" content="신용회복위원회"/>
 	<meta name="description" content="신용회복위원회"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>소액대출_대출종류</title>
+    <title>협약기관조회</title>
     <link rel="stylesheet" href="/type/www/cdn/krds.min.css">
     <link rel="stylesheet" href="/type/www/css/styles.css">
     <link rel="stylesheet" href="/type/www/css/common.css">
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/type/www/css/all.min.css">
 
     <!-- Tailwind (standalone JS) -->
+    <!-- <script src="/type/www/js/plugins/tailwind.js"></script> -->
     <!-- <script src="/type/www/js/component/ui-script.js"></script> -->
     <script src="/type/www/cdn/krds.min.js"></script>
     
@@ -238,7 +239,7 @@
                         <!-- Page Header -->
                         <div class="page-header">
                             <div class="title-wrap">
-                                <h1>소액대출</h1>
+                                <h1>협약기관조회</h1>
                                 <div class="page-actions">
                                     <div class="view-count">
                                         <i class="fas fa-eye"></i>
@@ -257,106 +258,187 @@
                                 
                             </div>
                         </div>
-                        <div class="tab fill full">
-                            <ul role="tablist">
-                                <li id="tab01" role="tab" aria-selected="false" aria-controls="tabpanel01" data-listener-attached="true">
-                                    <a href="#" class="btn-tab">제도소개</a>
-                                </li>
-                                <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02" data-listener-attached="true">
-                                    <a href="#" class="btn-tab">지원절차</a>
-                                </li>
-                                <li id="tab03" class="active" role="tab" aria-selected="false" aria-controls="tabpanel03" data-listener-attached="true">
-                                    <a href="#" class="btn-tab">대출종류<i class="sr-only created">선택됨</i></a>
-                                </li>
-                                <li id="tab04" role="tab" aria-selected="false" aria-controls="tabpanel04" data-listener-attached="true">
-                                    <a href="#" class="btn-tab">비대면 소액대출</a>
-                                </li>
-                                <li id="tab05" role="tab" aria-selected="false" aria-controls="tabpanel05" data-listener-attached="true">
-                                    <a href="#" class="btn-tab">소액금융소식</a>
-                                </li>
-                            </ul>
-                        </div>
                         <!-- Content Sections -->
                         <div class="content-sections g-wrap">
-
                             <div class="page-description">
                                 <span class="info-icon"></span>
-                                신용회복위원회에서 채무조정 성실상환자를 대상으로 생활안정자금, 학자금, 운영자금 등 긴급자금을 직접 지원하는 제도입니다.
+                                서민의 금융생활지원에 관한 법률[시행 2019. 11. 26.] [법률 제16653호, 2019. 11. 26., 일부개정]에 의거 국내 금융회사는 신용회복지원협약에 가입되어 있습니다.
+                                <button type="button" class="btn btn-primary">법률 보기<i class="fa fa-play"></i></button>
                             </div>
-                            <div class="g-conts-area">
-                                <h4 class="sec-tit">기부금 및 재원 소개</h4>
-                                <div class="conts-desc">
-                                대출종류에 대해 자세히 알려드립니다.
-                                </div>
-                                <div class="g-conts-area sp-sm">
-                                    <h5 class="con-tit">채무조정·개인회생 성실상환자</h5>
-                                    <div class="g-desc-body">
-                                        <div class="g-btn-area">
-                                            <!-- button -->
-                                            <button type="button" class="krds-btn tertiary">대전광역시 드림론</button>
-                                            <button type="button" class="krds-btn tertiary">부산광역시 부비론</button>
-                                            <button type="button" class="krds-btn tertiary">경상북도 낙동강론</button>
-                                            <button type="button" class="krds-btn tertiary">경상북도 낙동강론</button>
-                                            <button type="button" class="krds-btn tertiary">서울특별시 한강론</button>
-                                            <button type="button" class="krds-btn tertiary">대전광역시 드림론</button>
-                                            <button type="button" class="krds-btn tertiary">부산광역시 부비론</button>
-                                            <button type="button" class="krds-btn tertiary">경상북도 낙동강론</button>
-                                            <button type="button" class="krds-btn tertiary">경상북도 낙동강론</button>
-                                            <button type="button" class="krds-btn tertiary">서울특별시 한강론</button>
-                                            <button type="button" class="krds-btn tertiary">대전광역시 드림론</button>
-                                            <button type="button" class="krds-btn tertiary">부산광역시 부비론</button>
-                                            <button type="button" class="krds-btn tertiary">경상북도 낙동강론</button>
-                                            <button type="button" class="krds-btn tertiary">경상북도 낙동강론</button>
-                                            <button type="button" class="krds-btn tertiary">서울특별시 한강론</button>
-                                            <!-- //button -->
+                            <div class="board-list">
+                                <!-- 검색 입력폼 -->
+                                <div class="search-top-box">
+                                    <div class="sch-filter-box">
+                                        <div class="tab line full">
+                                            <ul role="tablist">
+                                                <li id="tab01" class="active" role="tab" aria-selected="false" aria-controls="tabpanel01" data-listener-attached="true">
+                                                    <a href="#" class="btn-tab">금융권<i class="sr-only created">선택됨</i></a>
+                                                </li>
+                                                <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02" data-listener-attached="true">
+                                                    <a href="#" class="btn-tab">조합</a>
+                                                </li>
+                                                <li id="tab03" role="tab" aria-selected="false" aria-controls="tabpanel03" data-listener-attached="true">
+                                                    <a href="#" class="btn-tab">사업수행기관</a>
+                                                </li>
+                                                <li id="tab04" role="tab" aria-selected="false" aria-controls="tabpanel04" data-listener-attached="true">
+                                                    <a href="#" class="btn-tab">공공기관</a>
+                                                </li>
+                                                <li id="tab05" role="tab" aria-selected="false" aria-controls="tabpanel05" data-listener-attached="true">
+                                                    <a href="#" class="btn-tab">기타</a>
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </div> 
-                                </div>
-                                <div class="g-conts-area sp-sm">
-                                    <h5 class="con-tit">금융피해자</h5>
-                                    <div class="g-desc-body">
-                                        <!-- button -->
-                                        <button type="button" class="krds-btn tertiary open-modal" data-target="modal_sample">새희망힐링론</button>
-                                        <!-- //button -->
-                                
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="g-conts-area">
-                                <h4 class="sec-tit">소액금융재원은 어떻게 조성되어 있나요?</h4>
-                                <div class="conts-desc">
-                                금융회사, 일반기업, 개인 및 단체 등의 기부로 이루어진 기부금과 지방자치단체 등의 지원금으로 조성되어 있습니다.
-                                </div>
-                                <div class="g-conts-area sm">
-                                    <div class="g-img-wrap">
-                                        <div class="g-img-zoom"><img src="../type/www/images/img/debt_content01.png" alt="컨텐츠"></div>
+                                        <!-- tab contents -->
+                                        <div class="tab-conts-wrap">
+                                            <section id="tabpanel01" aria-labelledby="tab_01" class="tab-conts active" data-quick-nav="false">
+                                            <h3 class="sr-only">탭 영역 타이틀</h3>
+                                                <div class="g-btn-area">
+                                                    <button type="button" class="krds-btn medium tertiary">ㄱ</button>
+                                                    <button type="button" class="krds-btn medium tertiary">ㄴ</button>
+                                                    <button type="button" class="krds-btn medium tertiary">ㄷ</button>
+                                                    <button type="button" class="krds-btn medium tertiary">ㄹ</button>
+                                                    <button type="button" class="krds-btn medium tertiary">ㅂ</button>
+                                                    <button type="button" class="krds-btn medium tertiary">ㅅ</button>
+                                                    <button type="button" class="krds-btn medium tertiary">ㅇ</button>
+                                                    <button type="button" class="krds-btn medium tertiary">ㅈ</button>
+                                                    <button type="button" class="krds-btn medium tertiary">ㅊ</button>
+                                                    <button type="button" class="krds-btn medium tertiary">ㅌ</button>
+                                                    <button type="button" class="krds-btn medium tertiary">ㅍ</button>
+                                                    <button type="button" class="krds-btn medium tertiary">ㅎ</button>
+                                                </div>
+                                                <div class="g-description-area">각 조문을 클릭하시면 해당 조문을 바로 확인하실 수 있습니다.
+                                                </div>
+
+
+                                                <div class="filter-form">
+                                                    <div>
+                                                        <label class="label" for="appl-sch-sel1">유형 분류</label>
+                                                        <select id="appl-sch-sel1" class="krds-form-select medium">
+                                                        <option value="">전체</option>
+                                                        <option value="">항목</option>
+                                                        <option value="">항목</option>
+                                                        </select>
+                                                    </div>
+                                                    <div>
+                                                        <label class="label">구분</label>
+                                                        <select id="appl-sch-sel2" class="krds-form-select medium" title="구분 선택" style="width:265px">
+                                                        <option value="">전체</option>
+                                                        <option value="">항목</option>
+                                                        <option value="">항목</option>
+                                                        </select>
+                                                        <!-- 검색 입력폼 -->
+                                                        <div class="sch-form-wrap">
+                                                            <div class="sch-input">
+                                                            <input type="text" class="krds-input" placeholder="검색어를 입력해주세요" title="검색어 입력">
+                                                            <button type="button" class="krds-btn medium icon ico-search">
+                                                                <span class="sr-only">검색</span>
+                                                                <i class="svg-icon ico-sch"></i>
+                                                            </button>
+                                                            </div>
+                                                        </div>
+                                                        <!-- //검색 입력폼 -->
+                                                    </div>
+                                                </div>
+
+                                            </section>
+                                            <section id="tabpanel02" aria-labelledby="tab_02" class="tab-conts" data-quick-nav="false">
+                                            <h3 class="sr-only">탭 영역 타이틀</h3>
+                                            탭 2 영역
+                                            </section>
+                                            <section id="tabpanel03" aria-labelledby="tab_03" class="tab-conts" data-quick-nav="false">
+                                            <h3 class="sr-only">탭 영역 타이틀</h3>
+                                            탭 3 영역
+                                            </section>
+                                            <section id="tabpanel04" aria-labelledby="tab_04" class="tab-conts" data-quick-nav="false">
+                                            <h3 class="sr-only">탭 영역 타이틀</h3>
+                                            탭 4 영역
+                                            </section>
+                                            <section id="tabpanel05" aria-labelledby="tab_05" class="tab-conts" data-quick-nav="false">
+                                            <h3 class="sr-only">탭 영역 타이틀</h3>
+                                            탭 5 영역
+                                            </section>
+                                        </div>
+                                        <!-- //tab contents -->
+                                        
                                     </div>
                                 </div>
+                                <!-- //검색 입력폼 -->
+
+                                <!-- 검색 결과 : 리스트 상단 -->
+                                <div class="search-list-top">
+                                <ul class="sch-info" aria-live="polite">
+                                    <li>검색 결과 <span class="point">24</span>건</li>
+                                </ul>
+                                <ul class="sch-sort">
+                                    <li class="m-hide">
+                                    <strong class="sort-label"><label for="search_result_count">목록 표시 개수</label></strong>
+                                    <select class="krds-form-select-sort" id="search_result_count">
+                                        <option>10개</option>
+                                        <option>9개</option>
+                                    </select>
+                                    </li>
+                                    <li class="w-hide">
+                                    <button type="button" class="krds-btn large text ico-filter">
+                                        <span class="span">필터</span>
+                                        <span class="krds-badge bg-primary number">122</span>
+                                        <i class="svg-icon ico-filter"></i>
+                                    </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="krds-btn small tertiary">다운로드<i class="svg-icon ico-down"></i></button>
+                                    </li>
+                                </ul>
+                                </div>
+                                <!-- //검색 결과 : 리스트 상단 -->
+                                <!-- table -->
+                                <div class="krds-table-wrap">
+                                <table class="tbl col board vc">
+                                    <caption>게시판에 대한 표로 제목1,제목2에 대한 내용으로 구성되어 있으며 제목1은 제목1-1,제목1-2,제목1-3으로 구성되어있다.</caption>
+                                    <colgroup>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col>
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">기관명</th>
+                                        <th scope="col">연락처</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                    <tr>
+                                        <th scope="row">999</th>
+                                        <td>은행</td>
+                                        <td class="al"><a href="#"><b>(주)국민은행<i class="fa fa-new"></i></b></a></td>
+                                        <td>02-3156-9133</td>
+                                    </tbody>
+                                </table>
+                                </div>
+                                <!-- //table -->
+                                <!-- pagination -->
+                                <div class="krds-pagination">
+                                <span class="page-navi prev disabled" href="#">이전</span>
+                                <div class="page-links">
+                                    <a class="page-link" href="#">1</a>
+                                    <a class="page-link" href="#">2</a>
+                                    <a class="page-link" href="#">3</a>
+                                    <a class="page-link active" href="#"><span class="sr-only">현재페이지 </span>4</a>
+                                    <a class="page-link" href="#">5</a>
+                                    <a class="page-link" href="#">6</a>
+                                    <a class="page-link" href="#">7</a>
+                                    <a class="page-link" href="#">8</a>
+                                    <span class="page-link link-dot"></span>
+                                    <a class="page-link" href="#">99</a>
+                                </div>
+                                <a class="page-navi next" href="#">다음</a>
+                                </div>
+                                <!-- //pagination -->
                             </div>
-                            <div class="g-conts-area">
-                                <h4 class="sec-tit">지원금</h4>
-                                <div class="conts-desc">
-                                어디서 지원받아 어떻게 사용됐나요?
-                                </div>
-                                <div class="g-desc-body">
-                                    <!-- 차트 탭 -->
-                                </div>
-                            </div>
-                            <div class="g-conts-area">
-                                <h4 class="sec-tit">기부금</h4>
-                                <div class="conts-desc">
-                                어디서 지원받아 어떻게 사용됐나요?
-                                </div>
-                                <div class="g-desc-body">
-                                    <!-- 차트 탭 -->
-                                </div>
-                            </div>
-                            <div class="g-conts-area">
-                                <h4 class="sec-tit">참여기간</h4>
-                                <div class="g-desc-body">
-                                    <!-- 참여기간 로고 -->
-                                </div>
-                            </div>
+
                         </div>
                         <!-- //Content Sections -->
                         <!-- Feedback Section -->
@@ -639,129 +721,42 @@
         </div>
     </div>
     <!-- 검색영역 -->
-    <!-- krds Modal -->
-    <!-- modal -->
-    <section id="modal_sample" class="krds-modal fade" role="dialog" aria-labelledby="tit_modal_sample">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <!-- modal title -->
-            <div class="modal-header">
-                <h2 id="tit_modal_sample" class="modal-title" tabindex="0">
-                대출종류 상세안내
-                </h2>
-            </div>
-            <!-- //modal title -->
-            <!-- modal contents -->
-            <div class="modal-conts">
-                <div class="conts-area g-wrap">
-                    <div class="g-conts-area sp-sm">
-                        <div class="g-info-box">
-                            <div class="g-desc-box">
-                                <ul class="krds-info-list decimal" role="list">
-                                    <li role="listitem">대출을 신청하시고자 하는 경우 우선 상담센터(1600-5500)를 통해 신청요건을 확인하신 후 지부 심사역의 안내에 
-따라 필요한 서류를 준비하여 주시기 바랍니다.</li>
-                                    <li role="listitem">대출의 결정은 지원대상자 중 신용회복위원회 소액금융규정에서 정하는 일정 요건에 해당하여야 하며, 대출가능금액과
-금리는 자금용도, 채무조정 변제금 상환기간, 내부 심사기준에 따라 차등 적용됩니다.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="g-conts-area sp-sm">
-                        <h5 class="con-tit">대전광역시 드림론 지원대상</h5>
-                        <div class="conts-desc">
-                        대전광역시 거주자로서 신용회복지원을 받아 6개월 이상 변제 계획을 성실하게 이행하고 있거나 최근 3년 이내 이행을 완료한 자
-                        </div>
-                    </div>
-                    <div class="g-conts-area sp-sm">
-                        <h5 class="con-tit">대출 한도 및 조건</h5>
-                        <div class="krds-table-wrap">
-                            <table class="tbl col data">
-                                <caption>
-                                    대출 한도 및 조건에 대한 표로 상품종류 대출한도 금리(연) 상환기간으로 구성됨
-                                </caption>
-                                <colgroup>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                    <th scope="col">상품종류</th>
-                                    <th scope="col" class="">대출한도</th>
-                                    <th scope="col" class="">금리(연)</th>
-                                    <th scope="col" class="">상환기간</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                    <td class="ac">생활안정자금</td>
-                                    <td class="ac">
-                                        1,000만원 이내
-                                    </td>
-                                    <td class="ac">3~4%</td>
-                                    <td class="ac">5년이내 분할상환</td>
-                                    </tr>
-                                    <tr>
-                                    <td class="ac">학자금</td>
-                                    <td class="ac">
-                                        1,500만원 이내
-                                    </td>
-                                    <td class="ac">3~4%</td>
-                                    <td class="ac">5년이내 분할상환</td>
-                                    </tr>
-                                    <tr>
-                                    <td class="ac">고금리차환자금</td>
-                                    <td class="ac">
-                                        1,000만원 이내
-                                    </td>
-                                    <td class="ac">3~4%</td>
-                                    <td class="ac">5년이내 분할상환</td>
-                                    </tr>
-                                    <tr>
-                                    <td class="ac">시설개선자금</td>
-                                    <td class="ac">
-                                        1,000만원 이내
-                                    </td>
-                                    <td class="ac">3~4%</td>
-                                    <td class="ac">5년이내 분할상환</td>
-                                    <tr>
-                                    <td class="ac">생활안전자금</td>
-                                    <td class="ac">
-                                        1,000만원 이내
-                                    </td>
-                                    <td class="ac">3~4%</td>
-                                    <td class="ac">5년이내 분할상환</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- //modal contents -->
-            <!-- modal btn -->
-            <div class="modal-btn btn-wrap">
-                <button type="button" class="krds-btn medium tertiary close-modal">닫기</button>
-                <!-- <button type="button" class="krds-btn medium primary close-modal">예</button> -->
-            </div>
-            <!-- //modal btn -->
-            <!-- close button -->
-            <button type="button" class="krds-btn medium icon btn-close close-modal">
-                <span class="sr-only">닫기</span>
-                <i class="svg-icon ico-popup-close"></i>
-            </button>
-            <!-- //close button -->
-            </div>
-        </div>
-        <div class="modal-back"></div>
-    </section>
-    <!-- //modal -->
 
     <script src="/type/www/js/jquery-2.2.4.min.js"></script>
     <script src="/type/www/js/common.js"></script>
     <script src="/type/www/js/layout.js"></script>
     <script src="/type/www/js/script.js"></script>
     <!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
+
+    <!-- 2️⃣ 아코디언 토글 스크립트 -->
+    <script>
+    $(function () {                       // DOMContentLoaded 와 동일
+        // ① 요소 캐시
+        const $toggleBtn   = $('#toggleButton');
+        const $toggleText  = $('#toggleText');
+        const $arrowIcon   = $('#arrowIcon');
+        const $separator   = $('#separator');
+        const $support     = $('#supportContent');
+
+        // ② 클릭 이벤트 핸들러
+        $toggleBtn.on('click', function () {
+        //   - 클래스 토글과 현재 상태 확인
+        //   - .toggleClass() 은 토글 후 현재 상태를 반환하지 않으므로
+        //     .hasClass() 로 현재가 열렸는지 판단
+        const isOpen = $support.toggleClass('open').hasClass('open');
+
+        //   - 열림/닫힘에 따라 UI 업데이트
+        if (isOpen) {
+            $toggleText.text('지원내용 닫기');
+            $arrowIcon.removeClass('rotate-90').addClass('rotate-270');
+            $separator.show();               // display:block
+        } else {
+            $toggleText.text('지원내용 보기');
+            $arrowIcon.removeClass('rotate-270').addClass('rotate-90');
+            $separator.hide();                // display:none
+        }
+        });
+    });
+    </script>
 </body>
 </html>

@@ -356,6 +356,8 @@ body {
     border-radius: 8px;
     gap: 20px;
 }
+.page-description .info-icon {flex: none;}
+.page-description .btn {flex: none;}
 
 .page-description strong {
     font-weight: 700;

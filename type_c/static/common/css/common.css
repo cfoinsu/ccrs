@@ -2,15 +2,9 @@
 @import url(fonts_SUIT.css);
 @import url(webfonts.css);
 /*-------------------------------------------------
-Author : jwshin
-Create date : 2023-01-19
-Version : v1.1
--------------------------------------------------
-Version : v2.0	date : 2023-04-12
--------------------------------------------------
-Version : v3.0	date : 2023-04-20 (웹접근성 1차 수정)
-Version : v3.2	date : 2023-05-04 (웹접근성 3차 수정)
-Version : v3.4	date : 2023-05-12 (웹접근성 인증 수정)
+Author : isyun
+Create date : 2025-08-19
+Version : v1.0
 -------------------------------------------------*/
 
 /* usual setting */
@@ -39,7 +33,7 @@ pre {margin: 0; white-space: pre-wrap; font-family: "NotoSansKR", sans-serif; li
 
 /* color */
 :root {
-	--main-color1: #3D846B;
+	--main-color1: #f48f01;
 	--main-color2: #549D83;
 	--main-color3: #D4E5C7;
 	--main-color4: #F3F8EF;
