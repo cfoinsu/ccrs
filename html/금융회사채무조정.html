@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -7,23 +7,23 @@
 	<meta name="keywords" content="신용회복위원회"/>
 	<meta name="description" content="신용회복위원회"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>게시판_일반_목록</title>
-    <link rel="stylesheet" href="/type/www/cdn/krds.min.css">
-    <link rel="stylesheet" href="/type/www/css/styles.css">
-    <link rel="stylesheet" href="/type/www/css/common.css">
-    <link rel="stylesheet" href="/type/www/css/main.css">
-    <!-- <link rel="stylesheet" href="/type/www/css/sub.css"> -->
-    <link rel="stylesheet" href="/type/www/css/layout.css">
-    <link rel="stylesheet" href="/type/www/css/component/output.css">
+    <title>금융회사채무조정</title>
+    <link rel="stylesheet" href="../type/www/cdn/krds.min.css">
+    <link rel="stylesheet" href="../type/www/css/styles.css">
+    <link rel="stylesheet" href="../type/www/css/common.css">
+    <link rel="stylesheet" href="../type/www/css/main.css">
+    <!-- <link rel="stylesheet" href="../type/www/css/sub.css"> -->
+    <link rel="stylesheet" href="../type/www/css/layout.css">
+    <link rel="stylesheet" href="../type/www/css/component/output.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/type/www/css/all.min.css">
+    <link rel="stylesheet" href="../type/www/css/all.min.css">
 
     <!-- Tailwind (standalone JS) -->
-    <!-- <script src="/type/www/js/plugins/tailwind.js"></script> -->
-    <!-- <script src="/type/www/js/component/ui-script.js"></script> -->
-    <script src="/type/www/cdn/krds.min.js"></script>
+    <!-- <script src="../type/www/js/plugins/tailwind.js"></script> -->
+    <!-- <script src="../type/www/js/component/ui-script.js"></script> -->
+    <script src="../type/www/cdn/krds.min.js"></script>
     
-    <script src="/type/www/js/jquery-2.2.4.min.js"></script>
+    <script src="../type/www/js/jquery-2.2.4.min.js"></script>
 </head>
 <body>
     <!-- Skip Navigation -->
@@ -37,7 +37,7 @@
 	    <header id="header" class="header">
 			<!-- Utility Bar -->
 			<div class="utility-bar">
-				<!-- <img src="/type/www/images/bg/bg_top.png" alt=""> -->
+				<!-- <img src="../type/www/images/bg/bg_top.png" alt=""> -->
 				 <div class="container">
 
 					 <div class="utility-left">
@@ -95,23 +95,22 @@
 							</li>
 							<li>
 								<a href="#" class="menu-label">
-									상환 가이드
+									상환 중 가이드
 								</a>
 								<ul class="depth2">
 									<li><a href="#">소액금융</a></li>
 									<li><a href="#">성실상환 혜택</a></li>
 									<li><a href="#">실효위기 지원</a></li>
 									<li><a href="#">상환 단계별 맞춤형 가이드</a></li>
-								<li><a href="#">나의 진행현황</a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="#" class="menu-label">
-									금융생활
+									금융과 생활
 								</a>
 								<ul class="depth2">
 									<li><a href="#">금융·고용·복지 복합지원</a></li>
-									<li><a href="#">맞춤형 컨설팅</a></li>
+									<li><a href="#">컨설팅 지원</a></li>
 									<li><a href="#">신용교육</a></li>
 									<li><a href="#">신용상담사 자격시험</a></li>
 									<li><a href="#">불법사금융 알아보기</a></li>
@@ -119,7 +118,7 @@
 							</li>
 							<li>
 								<a href="#" class="menu-label">
-									알림과 홍보
+									알림과 활동소식
 								</a>
 								<ul class="depth2">
 									<li><a href="#">새소식</a></li>
@@ -134,7 +133,7 @@
 							</li>
 							<li>
 								<a href="#" class="menu-label">
-									소통과 참여
+									소통과 참여공간
 								</a>
 								<ul class="depth2">
 									<li><a href="#">상담안내</a></li>
@@ -239,7 +238,7 @@
                         <!-- Page Header -->
                         <div class="page-header">
                             <div class="title-wrap">
-                                <h1>게시판_일반_목록</h1>
+                                <h1>신청지원</h1>
                                 <div class="page-actions">
                                     <div class="view-count">
                                         <i class="fas fa-eye"></i>
@@ -255,156 +254,161 @@
                                         <i class="fas fa-share-alt"></i>
                                     </button>
                                 </div>
-                                
                             </div>
+                            
                         </div>
                         <!-- Content Sections -->
-                        <div class="content-sections g-wrap">
-                            <div class="board-list">
-                                <!-- 검색 입력폼 -->
-                                <div class="search-top-box">
-                                    <div class="sch-filter-box">
-                                        <div class="filter-form">
-                                        <div>
-                                            <label class="label hide" for="appl-sch-sel1">선택 분류</label>
-                                            <select id="appl-sch-sel1" class="krds-form-select medium">
-                                            <option value="">전체</option>
-                                            <option value="">항목</option>
-                                            <option value="">항목</option>
-                                            </select>
-                                        </div>
-                                        <!-- 검색 입력폼 -->
-                                        <div class="sch-form-wrap">
-                                            <div class="sch-input">
-                                            <input type="text" class="krds-input" placeholder="검색어를 입력해주세요" title="검색어 입력">
-                                            <button type="button" class="krds-btn medium icon ico-search">
-                                                <span class="sr-only">검색</span>
-                                                <i class="svg-icon ico-sch"></i>
-                                            </button>
-                                            </div>
-                                        </div>
-                                        <!-- //검색 입력폼 -->
-                                        </div>
-                                    </div>
+                        <div class="content-sections">
+                            <div class="page-description">
+                                <span class="info-icon"></span>
+                                「개인금융채권의 관리 및 개인금융채무자의 보호에 관한 법률」 제35조 개인금융채무자는 개인금융채권을 연체한 경우에는 대통령령으로 정하는 바에 따라 채권금융회사 등에 채무조정을 요청할 수 있다.
+                            </div>
+                            <div class="g-conts-area">
+                                <h4 class="sec-tit">개인채무자보호법</h4>
+                                <div class="conts-desc">
+                                    2024년 10월 17일부터 개인금융채권을 연체한 채무자는 대출을 받은 채권금융회사에 상환유예, 상환기간 연장, 이자율조정 등의 채무조정을 요청할 수 있습니다.</p>
                                 </div>
-                                <!-- //검색 입력폼 -->
-
-                                <!-- 검색 결과 : 리스트 상단 -->
-                                <div class="search-list-top">
-                                <ul class="sch-info" aria-live="polite">
-                                    <li>검색 결과 <span class="point">24</span>건</li>
-                                </ul>
-                                <ul class="sch-sort">
-                                    <li class="m-hide">
-                                    <strong class="sort-label"><label for="search_result_count">목록 표시 개수</label></strong>
-                                    <select class="krds-form-select-sort" id="search_result_count">
-                                        <option>10개</option>
-                                        <option>9개</option>
-                                    </select>
-                                    </li>
-                                    <li class="w-hide">
-                                    <button type="button" class="krds-btn large text ico-filter">
-                                        <span class="span">필터</span>
-                                        <span class="krds-badge bg-primary number">122</span>
-                                        <i class="svg-icon ico-filter"></i>
-                                    </button>
-                                    </li>
-                                    <li>
-                                    <strong class="sort-label"><label for="sort">정렬기준</label></strong>
-                                    <div class="w-sort-btn">
-                                        <button type="button" class="active">관련도순</button>
-                                        <button type="button">최신순</button>
-                                        <button type="button">인기순</button>
-                                    </div>
-                                    <div class="m-sort-btn">
-                                        <select class="krds-form-select-sort" id="sort">
-                                        <option>관련도순</option>
-                                        <option>최신순</option>
-                                        <option>인기순</option>
-                                        </select>
-                                    </div>
-                                    </li>
-                                </ul>
-                                </div>
-                                <!-- //검색 결과 : 리스트 상단 -->
-                                <!-- table -->
-                                <div class="krds-table-wrap">
-                                <table class="tbl col board vc">
-                                    <caption>게시판에 대한 표로 제목1,제목2에 대한 내용으로 구성되어 있으며 제목1은 제목1-1,제목1-2,제목1-3으로 구성되어있다.</caption>
-                                    <colgroup>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    </colgroup>
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">번호</th>
-                                        <th scope="col">카테고리</th>
-                                        <th scope="col">제목</th>
-                                        <th scope="col">첨부</th>
-                                        <th scope="col">등록자</th>
-                                        <th scope="col">등록일</th>
-                                        <th scope="col">조회수</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <th scope="row"><span>공지</span></th>
-                                        <td>조직/인사</td>
-                                        <td><a href="#">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림<i class="fa fa-new"></i></a></td>
-                                        <td><i class="fa fa-file"></i></td>
-                                        <td>관리자</td>
-                                        <td>2024.10.15</td>
-                                        <td>9999</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><span>공지</span></th>
-                                        <td>조직/인사</td>
-                                        <td><a href="#">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림<i class="fa fa-new"></i></a></td>
-                                        <td><i class="fa fa-file"></i></td>
-                                        <td>관리자</td>
-                                        <td>2024.10.15</td>
-                                        <td>9999</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">999</th>
-                                        <td>조직/인사</td>
-                                        <td><a href="#">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림<i class="fa fa-new"></i></a></td>
-                                        <td></td>
-                                        <td>관리자</td>
-                                        <td>2024.10.15</td>
-                                        <td>9999</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                </div>
-                                <!-- //table -->
-                                <!-- pagination -->
-                                <div class="krds-pagination">
-                                <span class="page-navi prev disabled" href="#">이전</span>
-                                <div class="page-links">
-                                    <a class="page-link" href="#">1</a>
-                                    <a class="page-link" href="#">2</a>
-                                    <a class="page-link" href="#">3</a>
-                                    <a class="page-link active" href="#"><span class="sr-only">현재페이지 </span>4</a>
-                                    <a class="page-link" href="#">5</a>
-                                    <a class="page-link" href="#">6</a>
-                                    <a class="page-link" href="#">7</a>
-                                    <a class="page-link" href="#">8</a>
-                                    <span class="page-link link-dot"></span>
-                                    <a class="page-link" href="#">99</a>
-                                </div>
-                                <a class="page-navi next" href="#">다음</a>
-                                </div>
-                                <!-- //pagination -->
                             </div>
 
-                        </div>
-                        <!-- //Content Sections -->
+                            <div class="g-conts-area">
+                                <h4 class="sec-tit">채무조정 요청대상</h4>
+                                <p class="g-tit">계좌별 대출원금 3천만원 미만의 개인금융채권을 연체 중인 자</p>
+                                <div class="g-conts-area sp-sm">
+                                     <div class="g-info-box">
+                                        <div class="g-desc-box">
+                                            <p class="g-tit">채무조정 요청이 불가한 경우</p>
+                                            <ul class="krds-info-list decimal">
+                                                <li>채무조정 요청권의 채무조정 합의가 해제된 후 3개월이 지나지 않은 경우</li>
+                                                <li>개인금융채권의 존재 여부나 범위에 대하여 소송, 조정 등의 소송 진행 중인 경우</li>
+                                                <li>신용회복위원회·법원 채무조정 절차가 진행 중이거나, 채무조정을 이행 중인 경우</li>
+                                            </ul>
+                                            <p class="g-tit">채무조정 요청이 거절될 수 있는 경우</p>
+                                            <ul class="krds-info-list decimal">
+                                                <li>채무조정 요청 서류에 대한 채권금융회사의 수정 요청에 3회 이상 따르지 않은 경우</li>
+                                                <li>채무조정 절차가 끝난 후 변제능력에 현저한 변동이 없음에도 불구하고 채무조정을 다시 요청하는 경우</li>
+                                                <li>소멸시효가 완성된 대출에 대해 채무조정을 요청하는 경우</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="g-conts-area">
+                                 <h4 class="sec-tit">채무조정 내용</h4>
+                                <p class="g-tit">금융회사 내부기준에 따라 다를 수 있음</p>
+                                <div class="g-conts-area">
+                                    <div class="krds-table-wrap">
+                                        <table class="tbl col data">
+                                            <caption>
+                                                채무조정 내용
+                                            </caption>
+                                            <colgroup>
+                                                <col>
+                                                <col>
+                                                <col>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">상환유예</th>
+                                                    <th scope="col" class="">상환기간 연장</th>
+                                                    <th scope="col" class="">이자율조정</th>
+                                                    <th scope="col" class=""> 채무감면</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="">
+                                                         <ul class="krds-info-list decimal">
+                                                            <li>거치기간 연장</li>
+                                                            <li>상환유예</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="">
+                                                         <ul class="krds-info-list decimal">
+                                                            <li>만기연장</li>
+                                                            <li>분할상환 연장</li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="">약정이자율 이하</td>
+                                                    <td class="">원리금 감면</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="g-desc-box">※ 채무조정 요청방법 및 제출서류는 개별금융회사 또는 금융협회 홈페이지 참조</div>
+                                </div>                                                    
+                            </div>
+
+                            <div class="g-conts-area">
+                                <div class="g-conts-area sp-sm">
+                                        <div class="g-info-box">
+                                        <div class="g-desc-box">
+                                            <p class="g-tit">「개인채무자보호법」 주요내용</p>
+                                            <div class="krds-table-wrap">
+                                                <table class="tbl col data">
+                                                    <caption>
+                                                        채무조정 내용
+                                                    </caption>
+                                                    <colgroup>
+                                                        <col width="15%">
+                                                        <col width="">
+                                                    </colgroup>
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">구분</th>
+                                                            <th scope="col">설명</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="">
+                                                                신청권자
+                                                            </td>
+                                                            <td class="">
+                                                                
+                                                            </td>                                                           
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="">
+                                                                관할법인
+                                                            </td>
+                                                            <td class="">
+                                                                
+                                                            </td>                                                           
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="">
+                                                                파산원인
+                                                            </td>
+                                                            <td class="">
+                                                                
+                                                            </td>                                                           
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="">
+                                                                신청장소
+                                                            </td>
+                                                            <td class="">
+                                                                
+                                                            </td>                                                           
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="">
+                                                                파산신청서
+                                                            </td>
+                                                            <td class="">
+                                                                
+                                                            </td>                                                           
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                              <!-- //Content Sections -->
                         <!-- Feedback Section -->
                         <div class="feedback-section">
                             <div class="feedback-card">
@@ -585,23 +589,22 @@
                 </li>
                 <li>
                     <a href="#" class="depth1">
-                        상환 가이드
+                        상환 중 가이드
                     </a>
                     <ul class="depth2">
                         <li class="depth3"><a href="#">소액금융</a></li>
                         <li class="depth3"><a href="#">성실상환 혜택</a></li>
                         <li class="depth3"><a href="#">실효위기 지원</a></li>
                         <li class="depth3"><a href="#">상환 단계별 맞춤형 가이드</a></li>
-									<li class="depth3"><a href="#">나의 진행현황</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#" class="depth1">
-                        금융생활
+                        금융과 생활
                     </a>
                     <ul class="depth2">
                         <li class="depth3"><a href="#">금융·고용·복지 복합지원</a></li>
-                        <li class="depth3"><a href="#">맞춤형 컨설팅</a></li>
+                        <li class="depth3"><a href="#">컨설팅 지원</a></li>
                         <li class="depth3"><a href="#">신용교육</a></li>
                         <li class="depth3"><a href="#">신용상담사 자격시험</a></li>
                         <li class="depth3"><a href="#">불법사금융 알아보기</a></li>
@@ -609,7 +612,7 @@
                 </li>
                 <li>
                     <a href="#" class="depth1">
-                        알림과 홍보
+                        알림과 활동소식
                     </a>
                     <ul class="depth2">
                         <li class="depth3"><a href="#">새소식</a></li>
@@ -623,7 +626,7 @@
                 </li>
                 <li>
                     <a href="#" class="depth1">
-                        소통과 참여
+                        소통과 참여공간
                     </a>
                     <ul class="depth2">
                         <li class="depth3"><a href="#">상담안내</a></li>
@@ -649,13 +652,13 @@
             </ul>
             <div class="allmenu-util">
                 <a href="#" class="util1 hamburger-wrap">
-                    <img src="/type/www/images/ic/close.png" alt="전체메뉴 닫기">
+                    <img src="../type/www/images/ic/close.png" alt="전체메뉴 닫기">
                 </a>
                 <a href="#" class="util2 search-open">
-                    <img src="/type/www/images/ic/allmenu-search.svg" alt="검색메뉴">
+                    <img src="../type/www/images/ic/allmenu-search.svg" alt="검색메뉴">
                 </a>
                 <a href="#" class="util3">
-                    <img src="/type/www/images/ic/allmenu-language.svg" alt="언어변경">
+                    <img src="../type/www/images/ic/allmenu-language.svg" alt="언어변경">
                 </a>
             </div>
         </nav>
@@ -673,7 +676,7 @@
             <h5>검색결과</h5><span id="common_total_cnt" class="sp">0</span><h5> 건</h5>
         </div>
         <a href="#" class="btn-close">
-            <img src="/type/www/images/ic/close.png" alt="검색메뉴 닫기">
+            <img src="../type/www/images/ic/close.png" alt="검색메뉴 닫기">
         </a>
         <div class="result-area">
             <!-- <div id="commonSearchItemDiv" class="list-body" style="margin-bottom: 24px;">
@@ -686,10 +689,10 @@
     </div>
     <!-- 검색영역 -->
 
-    <script src="/type/www/js/jquery-2.2.4.min.js"></script>
-    <script src="/type/www/js/common.js"></script>
-    <script src="/type/www/js/layout.js"></script>
-    <script src="/type/www/js/script.js"></script>
+    <script src="../type/www/js/jquery-2.2.4.min.js"></script>
+    <script src="../type/www/js/common.js"></script>
+    <script src="../type/www/js/layout.js"></script>
+    <script src="../type/www/js/script.js"></script>
     <!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
 
     <!-- 2️⃣ 아코디언 토글 스크립트 -->

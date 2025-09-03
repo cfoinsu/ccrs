@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -7,23 +7,23 @@
 	<meta name="keywords" content="신용회복위원회"/>
 	<meta name="description" content="신용회복위원회"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>게시판_일반_목록</title>
-    <link rel="stylesheet" href="/type/www/cdn/krds.min.css">
-    <link rel="stylesheet" href="/type/www/css/styles.css">
-    <link rel="stylesheet" href="/type/www/css/common.css">
-    <link rel="stylesheet" href="/type/www/css/main.css">
-    <!-- <link rel="stylesheet" href="/type/www/css/sub.css"> -->
-    <link rel="stylesheet" href="/type/www/css/layout.css">
-    <link rel="stylesheet" href="/type/www/css/component/output.css">
+    <title>맞춤형 채무조정</title>
+    <link rel="stylesheet" href="../type/www/cdn/krds.min.css">
+    <link rel="stylesheet" href="../type/www/css/styles.css">
+    <link rel="stylesheet" href="../type/www/css/common.css">
+    <link rel="stylesheet" href="../type/www/css/main.css">
+    <!-- <link rel="stylesheet" href="../type/www/css/sub.css"> -->
+    <link rel="stylesheet" href="../type/www/css/layout.css">
+    <link rel="stylesheet" href="../type/www/css/component/output.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/type/www/css/all.min.css">
+    <link rel="stylesheet" href="../type/www/css/all.min.css">
 
     <!-- Tailwind (standalone JS) -->
-    <!-- <script src="/type/www/js/plugins/tailwind.js"></script> -->
-    <!-- <script src="/type/www/js/component/ui-script.js"></script> -->
-    <script src="/type/www/cdn/krds.min.js"></script>
+    <!-- <script src="../type/www/js/plugins/tailwind.js"></script> -->
+    <!-- <script src="../type/www/js/component/ui-script.js"></script> -->
+    <script src="../type/www/cdn/krds.min.js"></script>
     
-    <script src="/type/www/js/jquery-2.2.4.min.js"></script>
+    <script src="../type/www/js/jquery-2.2.4.min.js"></script>
 </head>
 <body>
     <!-- Skip Navigation -->
@@ -37,7 +37,7 @@
 	    <header id="header" class="header">
 			<!-- Utility Bar -->
 			<div class="utility-bar">
-				<!-- <img src="/type/www/images/bg/bg_top.png" alt=""> -->
+				<!-- <img src="../type/www/images/bg/bg_top.png" alt=""> -->
 				 <div class="container">
 
 					 <div class="utility-left">
@@ -95,23 +95,22 @@
 							</li>
 							<li>
 								<a href="#" class="menu-label">
-									상환 가이드
+									상환 중 가이드
 								</a>
 								<ul class="depth2">
 									<li><a href="#">소액금융</a></li>
 									<li><a href="#">성실상환 혜택</a></li>
 									<li><a href="#">실효위기 지원</a></li>
 									<li><a href="#">상환 단계별 맞춤형 가이드</a></li>
-								<li><a href="#">나의 진행현황</a></li>
 								</ul>
 							</li>
 							<li>
 								<a href="#" class="menu-label">
-									금융생활
+									금융과 생활
 								</a>
 								<ul class="depth2">
 									<li><a href="#">금융·고용·복지 복합지원</a></li>
-									<li><a href="#">맞춤형 컨설팅</a></li>
+									<li><a href="#">컨설팅 지원</a></li>
 									<li><a href="#">신용교육</a></li>
 									<li><a href="#">신용상담사 자격시험</a></li>
 									<li><a href="#">불법사금융 알아보기</a></li>
@@ -119,7 +118,7 @@
 							</li>
 							<li>
 								<a href="#" class="menu-label">
-									알림과 홍보
+									알림과 활동소식
 								</a>
 								<ul class="depth2">
 									<li><a href="#">새소식</a></li>
@@ -134,7 +133,7 @@
 							</li>
 							<li>
 								<a href="#" class="menu-label">
-									소통과 참여
+									소통과 참여공간
 								</a>
 								<ul class="depth2">
 									<li><a href="#">상담안내</a></li>
@@ -239,7 +238,7 @@
                         <!-- Page Header -->
                         <div class="page-header">
                             <div class="title-wrap">
-                                <h1>게시판_일반_목록</h1>
+                                <h1>신청지원</h1>
                                 <div class="page-actions">
                                     <div class="view-count">
                                         <i class="fas fa-eye"></i>
@@ -255,155 +254,239 @@
                                         <i class="fas fa-share-alt"></i>
                                     </button>
                                 </div>
-                                
                             </div>
+                            
                         </div>
                         <!-- Content Sections -->
-                        <div class="content-sections g-wrap">
-                            <div class="board-list">
-                                <!-- 검색 입력폼 -->
-                                <div class="search-top-box">
-                                    <div class="sch-filter-box">
-                                        <div class="filter-form">
-                                        <div>
-                                            <label class="label hide" for="appl-sch-sel1">선택 분류</label>
-                                            <select id="appl-sch-sel1" class="krds-form-select medium">
-                                            <option value="">전체</option>
-                                            <option value="">항목</option>
-                                            <option value="">항목</option>
-                                            </select>
-                                        </div>
-                                        <!-- 검색 입력폼 -->
-                                        <div class="sch-form-wrap">
-                                            <div class="sch-input">
-                                            <input type="text" class="krds-input" placeholder="검색어를 입력해주세요" title="검색어 입력">
-                                            <button type="button" class="krds-btn medium icon ico-search">
-                                                <span class="sr-only">검색</span>
-                                                <i class="svg-icon ico-sch"></i>
-                                            </button>
-                                            </div>
-                                        </div>
-                                        <!-- //검색 입력폼 -->
-                                        </div>
+                        <div class="content-sections">
+                            <div class="page-description">
+                                <span class="info-icon"></span>
+                                자신의 모든 재산으로도 채무를 변제할 수 없을 때 채무의 정리를 위해 파산을 신청하고, 파산절차를 통해 변제되지 못한 채무는 면책을 구하는 법적 제도입니다.
+                            </div>
+                            <div class="g-conts-area">
+                                <h4 class="sec-tit">지원대상</h4>
+                                    <div class="g-desc-box">
+                                        파산 및 면책은 자신의 모든 채무를 변제할 수 없는 재정 상태에 빠진 사람이 신청 가능
                                     </div>
-                                </div>
-                                <!-- //검색 입력폼 -->
-
-                                <!-- 검색 결과 : 리스트 상단 -->
-                                <div class="search-list-top">
-                                <ul class="sch-info" aria-live="polite">
-                                    <li>검색 결과 <span class="point">24</span>건</li>
-                                </ul>
-                                <ul class="sch-sort">
-                                    <li class="m-hide">
-                                    <strong class="sort-label"><label for="search_result_count">목록 표시 개수</label></strong>
-                                    <select class="krds-form-select-sort" id="search_result_count">
-                                        <option>10개</option>
-                                        <option>9개</option>
-                                    </select>
-                                    </li>
-                                    <li class="w-hide">
-                                    <button type="button" class="krds-btn large text ico-filter">
-                                        <span class="span">필터</span>
-                                        <span class="krds-badge bg-primary number">122</span>
-                                        <i class="svg-icon ico-filter"></i>
-                                    </button>
-                                    </li>
-                                    <li>
-                                    <strong class="sort-label"><label for="sort">정렬기준</label></strong>
-                                    <div class="w-sort-btn">
-                                        <button type="button" class="active">관련도순</button>
-                                        <button type="button">최신순</button>
-                                        <button type="button">인기순</button>
-                                    </div>
-                                    <div class="m-sort-btn">
-                                        <select class="krds-form-select-sort" id="sort">
-                                        <option>관련도순</option>
-                                        <option>최신순</option>
-                                        <option>인기순</option>
-                                        </select>
-                                    </div>
-                                    </li>
-                                </ul>
-                                </div>
-                                <!-- //검색 결과 : 리스트 상단 -->
-                                <!-- table -->
-                                <div class="krds-table-wrap">
-                                <table class="tbl col board vc">
-                                    <caption>게시판에 대한 표로 제목1,제목2에 대한 내용으로 구성되어 있으며 제목1은 제목1-1,제목1-2,제목1-3으로 구성되어있다.</caption>
-                                    <colgroup>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    </colgroup>
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">번호</th>
-                                        <th scope="col">카테고리</th>
-                                        <th scope="col">제목</th>
-                                        <th scope="col">첨부</th>
-                                        <th scope="col">등록자</th>
-                                        <th scope="col">등록일</th>
-                                        <th scope="col">조회수</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <th scope="row"><span>공지</span></th>
-                                        <td>조직/인사</td>
-                                        <td><a href="#">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림<i class="fa fa-new"></i></a></td>
-                                        <td><i class="fa fa-file"></i></td>
-                                        <td>관리자</td>
-                                        <td>2024.10.15</td>
-                                        <td>9999</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><span>공지</span></th>
-                                        <td>조직/인사</td>
-                                        <td><a href="#">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림<i class="fa fa-new"></i></a></td>
-                                        <td><i class="fa fa-file"></i></td>
-                                        <td>관리자</td>
-                                        <td>2024.10.15</td>
-                                        <td>9999</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">999</th>
-                                        <td>조직/인사</td>
-                                        <td><a href="#">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림<i class="fa fa-new"></i></a></td>
-                                        <td></td>
-                                        <td>관리자</td>
-                                        <td>2024.10.15</td>
-                                        <td>9999</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                </div>
-                                <!-- //table -->
-                                <!-- pagination -->
-                                <div class="krds-pagination">
-                                <span class="page-navi prev disabled" href="#">이전</span>
-                                <div class="page-links">
-                                    <a class="page-link" href="#">1</a>
-                                    <a class="page-link" href="#">2</a>
-                                    <a class="page-link" href="#">3</a>
-                                    <a class="page-link active" href="#"><span class="sr-only">현재페이지 </span>4</a>
-                                    <a class="page-link" href="#">5</a>
-                                    <a class="page-link" href="#">6</a>
-                                    <a class="page-link" href="#">7</a>
-                                    <a class="page-link" href="#">8</a>
-                                    <span class="page-link link-dot"></span>
-                                    <a class="page-link" href="#">99</a>
-                                </div>
-                                <a class="page-navi next" href="#">다음</a>
-                                </div>
-                                <!-- //pagination -->
                             </div>
 
-                        </div>
+                            <div class="g-conts-area">
+                                <h4 class="sec-tit">지원내용</h4>
+                                <div class="page-description">
+                                <span class="info-icon"></span>
+                                개인회생제도는 채무자가 채무를 조정 받아 법원이 허가한 변제계획에 따라 3년이내(단, 특별한 사정이 있는 때에는 5년이내) 채권자에게 분할변제를 하고 남은 채무는 면책 받을 수 있도록 한 것입니다. 채무자는 채권자 목록과 변제계획안을 법원에 제출해야 하고 법원이 임명한 회생위원은 채무자의 재산과 수입을 조사하여야 합니다. 법원이 변제계획안을 허가하면 채무자는 변제계획에 따라 변제해야 하고 변제계획을 모두 이행하면 나머지 채무는 면책 받을 수 있습니다.
+                            </div>
+                            
+                            <div class="g-conts-area">
+                                <h4 class="sec-tit">파산 흐름도</h4>
+                               <div class="conts-desc">
+                                   
+                                </div>                               
+                            </div>
+
+                            <div class="g-conts-area">
+                                <h4 class="sec-tit">신청방법</h4>
+                                    <div class="g-desc-box">
+                                        <p class="g-tit">신청방법</p>
+                                        파산신청은 신청권자가 관할법원에 파산원인을 소명하여 파산선고 신청서를 접수하면 됩니다.
+                                    </div>                  
+                                </div>                             
+                            </div>
+
+                            <div class="g-conts-area">
+                                <div class="krds-table-wrap">
+                                    <table class="tbl col data">
+                                        <caption>
+                                            신청서류 표 (구분, 설명, 비고로 구성됨)
+                                        </caption>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col" class="">설명</th>
+                                            <th scope="col" class="">비고</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">신청권자</th>
+                                                <td class="">
+                                                    채권자, 채무자 및 채무자에 준하는 자(법정대리인, 파산회사 대표자, 이사, 지배인)
+                                                </td>
+                                                <td class=""></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">관할법인</th>
+                                                <td class="">
+                                                    주소지를 관할하는 지방법원 본원
+                                                </td>
+                                                <td class=""></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">파산원인</th>
+                                                <td class="">
+                                                    지급불능, 지급정지, 채무초과의 상태 – 은행대출, 카드사용, 사채 등 원인을 불문하여, 신용 불량 여부도 상관없으며, 금액이 많고 적음도 상관없습니다.
+                                                </td>
+                                                <td class=""></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">신청장소</th>
+                                                <td class="">
+                                                    ㅇㅇ지방법원(파산과 또는 민사신청과) 접수계
+                                                </td>
+                                                <td class=""></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">파산신청서</th>
+                                                <td class="">
+                                                    ㅇㅇ지방법원(파산과 또는 민사신청과) 접수계에서 배부합니다.
+                                                </td>
+                                                <td class=""></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="g-conts-area">
+                                    <p class="noti"><i class="svg-icon ico-information-fill"></i>개인파산 신청의 최종적인 목표는 면책을 받아 채권자에게 채무를 변제하지 않아도 된다는 면책결정을 받기 위한 것이며,<br>파산신청은 면책 신청을 하기 위한 전 단계입니다. 이 안내문을 읽으실 때에는 면책 불허가 사유가 있는지 여부를 중점으로 읽으시기 바랍니다.</p>
+                                </div>
+                            </div>
+
+                            <div class="g-conts-area">
+                                <p class="g-tit">신청서류</p>
+                                <div class="krds-table-wrap">
+                                    <table class="tbl col data">
+                                        <caption>
+                                            신청서류 표 (구분, 설명, 비고로 구성됨)
+                                        </caption>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col" class="">서류</th>
+                                            <th scope="col" class="">비고</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">작성서류</th>
+                                                <td class="">
+                                                    개인회생절차
+                                                </td>
+                                                <td class="">전자소송포털</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">작성서류</th>
+                                                <td class="">
+                                                    개인회생채권자목록
+                                                </td>
+                                                <td class="">전자소송포털</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">작성서류</th>
+                                                <td class="">
+                                                    재산목록
+                                                </td>
+                                                <td class="">전자소송포털</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">작성서류</th>
+                                                <td class="">
+                                                    수입 및 지출에 관한 목록(채무자)
+                                                </td>
+                                                <td class="">찾기쉬운생활법령정보</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">작성서류</th>
+                                                <td class="">
+                                                    급여소득자 또는 영업소득자임을 소명하는 자료
+                                                    <ul class="krds-info-list decimal" role="list">
+                                                        <li role="listitem">급여소득자(근로소득원천징수영수증, 소득금액증명원, 급여명세서, 재직증명서, 소득증명서 등)</li>
+                                                        <li role="listitem">영업소득자(사업자등록증, 소득금액증명원, 매출 및 매입 증빙자료 등)</li>
+                                                    </ul>
+                                                </td>
+                                                <td class=""></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">증명서</th>
+                                                <td class="">
+                                                    재산증명서류
+                                                </td>
+                                                <td class="">세무서 및 홈택스</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">작성서류</th>
+                                                <td class="">
+                                                    진술서
+                                                </td>
+                                                <td class="">국가법령정보센터</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">증명서</th>
+                                                <td class="">
+                                                    주민등록등본(정부24) 및 가족관계증명서(전자가족관계등록시스템)
+                                                </td>
+                                                <td class="">정부24, 전자가족관계등록시스템</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">작성서류</th>
+                                                <td class="">
+                                                    변제계획안
+                                                </td>
+                                                <td class="">서울회생법원</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">확보서류</th>
+                                                <td class="">
+                                                    신청일전 10년 이내에 화의사건, 파산사건 또는 개인회생사건을 신청한 사실이 있는 경우 관련서류<br>(해당 사전의 개시결정문, 변제계획안, 면책결정문 등)
+                                                </td>
+                                                <td class=""></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">확보서류</th>
+                                                <td class="">
+                                                    기타 신청자 개인별로 사건내용에 따라 필요한 서류
+                                                <td class=""></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="g-conts-area">
+                                 <div class="g-conts-area sp-sm">
+                                     <div class="g-info-box">
+                                        <div class="g-desc-box">
+                                            <p class="g-tit">면책불허가 사유</p>
+                                            <p class="g-tit">모든 파산자가 법원으로부터 면책을 허가 받을 수 있는 것은 아닙니다.
+                                                즉, 파산자가 면책신청을 하면 법원은 파산자를 심문하여 사정을 듣고, 채권자로부터 의견을 청취한 다음 면책허가결정을 할 것인지를 판단합니다.
+                                                그리고 다음에서 예시한 일정한 사유가 있는 경우에는 채무자 회생 및 파산에 관한 법률 제 564조에 의해 원칙적으로 면책허가결정을 받을 수 없습니다.
+                                                면책이 허가되지 아니한 경우에는 파산의 원인이 된 채무를 다 갚을 때까지 계속하여 변제하여야 할 뿐만 아니라 파산자로서 여러 가지 제약을 받게 됩니다. 이점 신중히 검토하시기 바랍니다.
+                                            </p>
+                                            <p class="g-tit">면책불허가 사유는 아래와 같습니다.</p>
+                                            <ul class="krds-info-list decimal">
+                                                <li>채무자가 자기 재산을 숨기거나 부수거나 다른 사람 명의로 바꾸거나 헐값에 팔아버린 행위</li>
+                                                <li>채무자가 채무를 허위로 증가시키는 행위</li>
+                                                <li>채무자가 과다한 낭비 또는 도박 등을 하여 현저히 재산을 감소시키거나 과대한 채무를 부담하는 행위</li>
+                                                <li>채무자가 신용거래로 구입한 상품을 현저히 불리한 조건으로 처분하는 행위</li>
+                                                <li>채무자가 파산원인인 사실이 있음을 알면서 어느 채권자에게 특별한 이익을 줄 목적으로 채무자의 의무에 속하지 않거나 그 방법 또는 시기가 채무자의 의무에 속하지 않는데도 일부 채권자에게만 변제하거나 담보를 제공하는 행위(아직 변제기가 도래하지 않은 일부 채권자에게만 변제하거나 원래 대물변제 약정이 없는데도 일부 채권자에게 대물변제하는 행위를 포함)</li>
+                                                <li>채무자가 허위의 채권자목록 그 밖의 신청서류를 제출하거나 법원에 대하여 그 재산 상태에 관하여 허위의 진술을 하는 행위</li>
+                                                <li>채무자가 파산선고를 받기 전 1년 이내에 파산의 원인인 사실이 있음에도 불구하고 그 사실이 없는 것으로 믿게 하기 위하여 그 사실을 속이거나 감추고 신용거래로 재산을 취득한 사실이 있는 때</li>
+                                                <li>과거 일정기간(개인파산 면책 확정일부터 7년, 개인회생 면책 확정일부터 5년)내에 면책을 받은 일이 있는 때</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                           
                         <!-- //Content Sections -->
                         <!-- Feedback Section -->
                         <div class="feedback-section">
@@ -585,23 +668,22 @@
                 </li>
                 <li>
                     <a href="#" class="depth1">
-                        상환 가이드
+                        상환 중 가이드
                     </a>
                     <ul class="depth2">
                         <li class="depth3"><a href="#">소액금융</a></li>
                         <li class="depth3"><a href="#">성실상환 혜택</a></li>
                         <li class="depth3"><a href="#">실효위기 지원</a></li>
                         <li class="depth3"><a href="#">상환 단계별 맞춤형 가이드</a></li>
-									<li class="depth3"><a href="#">나의 진행현황</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#" class="depth1">
-                        금융생활
+                        금융과 생활
                     </a>
                     <ul class="depth2">
                         <li class="depth3"><a href="#">금융·고용·복지 복합지원</a></li>
-                        <li class="depth3"><a href="#">맞춤형 컨설팅</a></li>
+                        <li class="depth3"><a href="#">컨설팅 지원</a></li>
                         <li class="depth3"><a href="#">신용교육</a></li>
                         <li class="depth3"><a href="#">신용상담사 자격시험</a></li>
                         <li class="depth3"><a href="#">불법사금융 알아보기</a></li>
@@ -609,7 +691,7 @@
                 </li>
                 <li>
                     <a href="#" class="depth1">
-                        알림과 홍보
+                        알림과 활동소식
                     </a>
                     <ul class="depth2">
                         <li class="depth3"><a href="#">새소식</a></li>
@@ -623,7 +705,7 @@
                 </li>
                 <li>
                     <a href="#" class="depth1">
-                        소통과 참여
+                        소통과 참여공간
                     </a>
                     <ul class="depth2">
                         <li class="depth3"><a href="#">상담안내</a></li>
@@ -649,13 +731,13 @@
             </ul>
             <div class="allmenu-util">
                 <a href="#" class="util1 hamburger-wrap">
-                    <img src="/type/www/images/ic/close.png" alt="전체메뉴 닫기">
+                    <img src="../type/www/images/ic/close.png" alt="전체메뉴 닫기">
                 </a>
                 <a href="#" class="util2 search-open">
-                    <img src="/type/www/images/ic/allmenu-search.svg" alt="검색메뉴">
+                    <img src="../type/www/images/ic/allmenu-search.svg" alt="검색메뉴">
                 </a>
                 <a href="#" class="util3">
-                    <img src="/type/www/images/ic/allmenu-language.svg" alt="언어변경">
+                    <img src="../type/www/images/ic/allmenu-language.svg" alt="언어변경">
                 </a>
             </div>
         </nav>
@@ -673,7 +755,7 @@
             <h5>검색결과</h5><span id="common_total_cnt" class="sp">0</span><h5> 건</h5>
         </div>
         <a href="#" class="btn-close">
-            <img src="/type/www/images/ic/close.png" alt="검색메뉴 닫기">
+            <img src="../type/www/images/ic/close.png" alt="검색메뉴 닫기">
         </a>
         <div class="result-area">
             <!-- <div id="commonSearchItemDiv" class="list-body" style="margin-bottom: 24px;">
@@ -686,10 +768,10 @@
     </div>
     <!-- 검색영역 -->
 
-    <script src="/type/www/js/jquery-2.2.4.min.js"></script>
-    <script src="/type/www/js/common.js"></script>
-    <script src="/type/www/js/layout.js"></script>
-    <script src="/type/www/js/script.js"></script>
+    <script src="../type/www/js/jquery-2.2.4.min.js"></script>
+    <script src="../type/www/js/common.js"></script>
+    <script src="../type/www/js/layout.js"></script>
+    <script src="../type/www/js/script.js"></script>
     <!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
 
     <!-- 2️⃣ 아코디언 토글 스크립트 -->
