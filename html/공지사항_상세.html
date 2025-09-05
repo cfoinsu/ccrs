@@ -7,7 +7,7 @@
 	<meta name="keywords" content="신용회복위원회"/>
 	<meta name="description" content="신용회복위원회"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>게시판_일반_목록</title>
+    <title>공지사항_상세</title>
     <link rel="stylesheet" href="/type/www/cdn/krds.min.css">
     <link rel="stylesheet" href="/type/www/css/styles.css">
     <link rel="stylesheet" href="/type/www/css/common.css">
@@ -239,7 +239,7 @@
                         <!-- Page Header -->
                         <div class="page-header">
                             <div class="title-wrap">
-                                <h1>게시판_일반_목록</h1>
+                                <h1>공지사항_상세</h1>
                                 <div class="page-actions">
                                     <div class="view-count">
                                         <i class="fas fa-eye"></i>
@@ -286,7 +286,7 @@
                                 </div>
                                 
                                 <div class="g-conts-area">
-                                    <div class="g-description-area line" id="contents">
+                                    <div class="g-description-area" id="contents">
                                         <div class="g-attach-file-wrap" style="display: block;" id="attach-file">
                                             <div class="conts-area">
                                                 <ul class="file-list" id="file-list"> 
@@ -306,9 +306,23 @@
                                     </div>
                                 </div>
                             </div>
+                            <dl class="com-post-move-box">
+                                <div class="prev-box">
+                                    <dt><img src="../type/www/images/ic/ic_dropdown.svg" alt="이전글"> 이전글</dt>
+                                    <dd>
+                                        <a href="#" title="이전글">이전글내용</a>
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt><img src="../type/www/images/ic/ic_dropdown.svg" alt="다음글"> 다음글</dt>
+                                    <dd>
+                                        <a href="#" title="다음글">다음글 내용</a>
+                                    </dd>
+                                </div>
+                            </dl>
                             <div class="button-area">
                                 <!-- button -->
-                                <button type="button" class="krds-btn large primary">버튼</button>
+                                <button type="button" class="krds-btn large primary">수정</button>
                                 <button type="button" class="krds-btn large secondary">삭제</button>
                                 <button type="button" class="krds-btn large tertiary">목록</button>
                                 <!-- //button -->
@@ -603,35 +617,6 @@
     <script src="/type/www/js/script.js"></script>
     <!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
 
-    <!-- 2️⃣ 아코디언 토글 스크립트 -->
-    <script>
-    $(function () {                       // DOMContentLoaded 와 동일
-        // ① 요소 캐시
-        const $toggleBtn   = $('#toggleButton');
-        const $toggleText  = $('#toggleText');
-        const $arrowIcon   = $('#arrowIcon');
-        const $separator   = $('#separator');
-        const $support     = $('#supportContent');
-
-        // ② 클릭 이벤트 핸들러
-        $toggleBtn.on('click', function () {
-        //   - 클래스 토글과 현재 상태 확인
-        //   - .toggleClass() 은 토글 후 현재 상태를 반환하지 않으므로
-        //     .hasClass() 로 현재가 열렸는지 판단
-        const isOpen = $support.toggleClass('open').hasClass('open');
-
-        //   - 열림/닫힘에 따라 UI 업데이트
-        if (isOpen) {
-            $toggleText.text('지원내용 닫기');
-            $arrowIcon.removeClass('rotate-90').addClass('rotate-270');
-            $separator.show();               // display:block
-        } else {
-            $toggleText.text('지원내용 보기');
-            $arrowIcon.removeClass('rotate-270').addClass('rotate-90');
-            $separator.hide();                // display:none
-        }
-        });
-    });
     </script>
 </body>
 </html>

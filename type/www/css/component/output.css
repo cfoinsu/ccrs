@@ -2842,13 +2842,23 @@ caption {
   padding: var(--krds-table--data-thead-th-padding) var(--krds-table--data-thead-th-padding-sides);
   background-color: var(--krds-table--data-thead-surface);
   border-top: var(--krds-table--data-border-width) solid var(--krds-table--data-thead-border);
-  border-left: var(--krds-table--data-border-width) solid var(--krds-table--data-thead-border);
-  border-right: var(--krds-table--data-border-width) solid var(--krds-table--data-thead-border);
+  border-left: var(--krds-table--data-border-width) solid var(--krds-table--data-tbody-color-divider);
+  border-right: var(--krds-table--data-border-width) solid var(--krds-table--data-tbody-color-divider);
   border-bottom: none;
   font-weight: var(--krds-font-weight-bold);
   font-size: var(--krds-table--data-thead-pc-font-size);
   color: var(--krds-table--data-thead-color-text);
   text-align: left;
+}
+.krds-table-wrap .tbl.data thead th:first-child,
+.krds-table-wrap .tbl.data tbody th:first-child,
+.krds-table-wrap .tbl.data tbody td:first-child {
+  border-left: none;
+}
+.krds-table-wrap .tbl.data thead th:last-child,
+.krds-table-wrap .tbl.data tbody th:last-child,
+.krds-table-wrap .tbl.data tbody td:last-child {
+  border-right: none;
 }
 .krds-table-wrap .tbl.board thead th {
   padding: var(--krds-table--data-thead-th-padding) var(--krds-table--data-thead-th-padding-sides);
@@ -18022,6 +18032,9 @@ a:hover .d-card .c-tit {
   background: var(--search-box-filter-color-background);
   margin-top: var(--krds-pc-gap-layout-h2-h3);
 }
+.board-list .search-top-box .sch-filter-box {
+  margin-top: 0;
+}
 .search-top-box .sch-filter-box .filter-form {
   display: flex;
   align-items: normal;
@@ -21628,6 +21641,10 @@ body {
   font-size: var(--krds-pc-font-size-heading-xsmall);
   font-weight: var(--krds-font-weight-bold);
 }
+.g-wrap .g-conts-area .conts-desc {
+  font-size: var(--krds-pc-font-size-heading-xxsmall);
+  font-weight: var(--krds-font-weight-normal);
+}
 @media (max-width: 767px) {
   .g-wrap .g-conts-area .g-tit {
     font-size: var(--krds-mobile-font-size-heading-xsmall);
@@ -23076,7 +23093,7 @@ body {
 }
 .g-wrap .g-attach-file-wrap {
   width: 100%;
-  padding: var(--krds-padding-10);
+  padding: var(--krds-padding-6);
   border-radius: var(--krds-radius-xlarge2);
   background-color: var(--krds-light-color-surface-gray-subtle);
 }

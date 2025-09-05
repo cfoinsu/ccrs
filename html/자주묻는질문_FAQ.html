@@ -7,8 +7,8 @@
 	<meta name="keywords" content="신용회복위원회"/>
 	<meta name="description" content="신용회복위원회"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>게시판_일반_목록</title>
-    <link rel="stylesheet" href="/type/www/cdn/krds.min.css">
+    <title>자주묻는질문_FAQ</title>
+    <!-- <link rel="stylesheet" href="/type/www/cdn/krds.min.css"> -->
     <link rel="stylesheet" href="/type/www/css/styles.css">
     <link rel="stylesheet" href="/type/www/css/common.css">
     <link rel="stylesheet" href="/type/www/css/main.css">
@@ -239,7 +239,7 @@
                         <!-- Page Header -->
                         <div class="page-header">
                             <div class="title-wrap">
-                                <h1>게시판_일반_목록</h1>
+                                <h1>자주묻는질문_FAQ</h1>
                                 <div class="page-actions">
                                     <div class="view-count">
                                         <i class="fas fa-eye"></i>
@@ -265,25 +265,17 @@
                                 <div class="search-top-box">
                                     <div class="sch-filter-box">
                                         <div class="filter-form">
-                                        <div>
-                                            <label class="label hide" for="appl-sch-sel1">선택 분류</label>
-                                            <select id="appl-sch-sel1" class="krds-form-select medium">
-                                            <option value="">전체</option>
-                                            <option value="">항목</option>
-                                            <option value="">항목</option>
-                                            </select>
-                                        </div>
-                                        <!-- 검색 입력폼 -->
-                                        <div class="sch-form-wrap">
-                                            <div class="sch-input">
-                                            <input type="text" class="krds-input" placeholder="검색어를 입력해주세요" title="검색어 입력">
-                                            <button type="button" class="krds-btn medium icon ico-search">
-                                                <span class="sr-only">검색</span>
-                                                <i class="svg-icon ico-sch"></i>
-                                            </button>
+                                            <!-- 검색 입력폼 -->
+                                            <div class="sch-form-wrap">
+                                                <div class="sch-input">
+                                                <input type="text" class="krds-input" placeholder="검색어를 입력해주세요" title="검색어 입력">
+                                                <button type="button" class="krds-btn medium icon ico-search">
+                                                    <span class="sr-only">검색</span>
+                                                    <i class="svg-icon ico-sch"></i>
+                                                </button>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!-- //검색 입력폼 -->
+                                            <!-- //검색 입력폼 -->
                                         </div>
                                     </div>
                                 </div>
@@ -291,232 +283,51 @@
 
                                 <!-- 검색 결과 : 리스트 상단 -->
                                 <div class="search-list-top">
-                                <ul class="sch-info" aria-live="polite">
-                                    <li>검색 결과 <span class="point">24</span>건</li>
-                                </ul>
-                                <ul class="sch-sort">
-                                    <li class="m-hide">
-                                    <strong class="sort-label"><label for="search_result_count">목록 표시 개수</label></strong>
-                                    <select class="krds-form-select-sort" id="search_result_count">
-                                        <option>10개</option>
-                                        <option>9개</option>
-                                    </select>
-                                    </li>
-                                    <li class="w-hide">
-                                    <button type="button" class="krds-btn large text ico-filter">
-                                        <span class="span">필터</span>
-                                        <span class="krds-badge bg-primary number">122</span>
-                                        <i class="svg-icon ico-filter"></i>
-                                    </button>
-                                    </li>
-                                    <li>
-                                    <strong class="sort-label"><label for="sort">정렬기준</label></strong>
-                                    <div class="w-sort-btn">
-                                        <button type="button" class="active">관련도순</button>
-                                        <button type="button">최신순</button>
-                                        <button type="button">인기순</button>
-                                    </div>
-                                    <div class="m-sort-btn">
-                                        <select class="krds-form-select-sort" id="sort">
-                                        <option>관련도순</option>
-                                        <option>최신순</option>
-                                        <option>인기순</option>
-                                        </select>
-                                    </li>
-                                </ul>
+                                    <ul class="sch-info" aria-live="polite">
+                                        <li>총 <span class="point">139</span>건 (<span class="point">1</span>/<span class="total">1,000</span>페이지)</li>
+                                    </ul>
                                 </div>
                                 <!-- //검색 결과 : 리스트 상단 -->
-                                <ul class="krds-structured-list">
-                                    <li class="structured-item">
-                                        <div class="card-top">
-                                        <span class="krds-badge bg-light-primary">취업 및 채용지원</span>
+                                <!-- accordion -->
+                                <div class="krds-accordion type-line">
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header"><button type="button" id="accordionHeaderSample01" class="btn-accordion" aria-controls="accordionCollapseSample01"><span>아코디언 카테고리</span> 아코디언 타이틀 영역</button></h5>
+                                        <div id="accordionCollapseSample01" class="accordion-collapse collapse" aria-labelledby="accordionHeaderSample01">
+                                        <div class="accordion-body">
+                                            <!-- accordion contents -->
+                                            취약채무자 신속면책제도는 위원회 신용상담보고서를 기초로 법원에서 파산관재인 선임 없이 파산선고와 동시에 폐지 및 면책을 진행하는 절차입니다.
+개인 채권자가 없고 소득과 재산이 일정 수준 이하인 기초생활수급자, 70세 이상 고령자, 중증장애인 중 파산 절차를 희망하는 경우 위원회를 통해 신속면책제도를 지원 받을 수 있습니다. 
+세부적인 지원 기준은 위원회 지부 상담을 통해 확인해주시기 바랍니다.
+                                            <!-- //accordion contents -->
                                         </div>
-                                        <div class="card-body">
-                                        <a href="#" class="c-text">
-                                            <p class="c-tit"><span class="span">청년친화형 기업 ESG 지원사업</span></p>
-                                            <p class="c-txt">
-                                            [ 개요 ] 기업이 ESG 경영 차원에서 수행하는 청년고용 지원 프로그램에 대한 비용, 컨설팅 지원을 통해 청년 직무역량 향상 및 일경험 기회 확대 →
-                                            청년고용 활성화 기반 구축
-                                            </p>
-                                        </a>
                                         </div>
-                                        <div class="card-btm">
-                                        <span class="tag">장애인</span>
-                                        <span class="tag">직무경홈</span>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header"><button type="button" id="accordionHeaderSample01" class="btn-accordion" aria-controls="accordionCollapseSample02"><span>개인회생·파산지원</span> 취약채무자 신속면책제도는 무엇인가요?</button></h5>
+                                        <div id="accordionCollapseSample02" class="accordion-collapse collapse" aria-labelledby="accordionHeaderSample01">
+                                        <div class="accordion-body">
+                                            <!-- accordion contents -->
+                                            취약채무자 신속면책제도는 위원회 신용상담보고서를 기초로 법원에서 파산관재인 선임 없이 파산선고와 동시에 폐지 및 면책을 진행하는 절차입니다.
+개인 채권자가 없고 소득과 재산이 일정 수준 이하인 기초생활수급자, 70세 이상 고령자, 중증장애인 중 파산 절차를 희망하는 경우 위원회를 통해 신속면책제도를 지원 받을 수 있습니다. 
+세부적인 지원 기준은 위원회 지부 상담을 통해 확인해주시기 바랍니다.
+                                            <!-- //accordion contents -->
                                         </div>
-                                        <div class="card-btn">
-                                        <button type="button" class="krds-btn medium text" title="청년친화형 기업 ESG 지원사업"><i class="svg-icon ico-like"></i> 찜하기</button>
                                         </div>
-                                    </li>
-                                    <li class="structured-item">
-                                        <div class="card-top">
-                                        <span class="krds-badge bg-light-primary">사업주지원</span>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h5 class="accordion-header"><button type="button" id="accordionHeaderSample02" class="btn-accordion" aria-controls="accordionCollapseSample03"><span>개인회생·파산지원</span> 취약채무자 신속면책제도는 무엇인가요?</button></h5>
+                                        <div id="accordionCollapseSample03" class="accordion-collapse collapse" aria-labelledby="accordionHeaderSample02">
+                                        <div class="accordion-body">
+                                            <!-- accordion contents -->
+                                            취약채무자 신속면책제도는 위원회 신용상담보고서를 기초로 법원에서 파산관재인 선임 없이 파산선고와 동시에 폐지 및 면책을 진행하는 절차입니다.
+개인 채권자가 없고 소득과 재산이 일정 수준 이하인 기초생활수급자, 70세 이상 고령자, 중증장애인 중 파산 절차를 희망하는 경우 위원회를 통해 신속면책제도를 지원 받을 수 있습니다. 
+세부적인 지원 기준은 위원회 지부 상담을 통해 확인해주시기 바랍니다.
+                                            <!-- //accordion contents -->
                                         </div>
-                                        <div class="card-body">
-                                        <a href="#" class="c-text">
-                                            <p class="c-tit"><span class="span">장애인 신규고용 장려금</span></p>
-                                            <p class="c-txt">
-                                            [ 개요 ] 장애인의 신규고용을 유도하기 위하여 5인 이상 50인 미만의 상시근로자를 고용하는 사업주가 장애인을 신규고용하여 6개월 이상 고용을 유지한
-                                            경우 장애인 신규고용장려금을 지원
-                                            </p>
-                                        </a>
                                         </div>
-                                        <div class="card-btm">
-                                        <span class="tag">장애인</span>
-                                        <span class="tag">직무경홈</span>
-                                        </div>
-                                        <div class="card-btn">
-                                        <button type="button" class="krds-btn medium text" title="장애인 신규고용 장려금"><i class="svg-icon ico-like"></i> 찜하기</button>
-                                        </div>
-                                    </li>
-                                    <li class="structured-item">
-                                        <div class="card-top">
-                                        <span class="krds-badge bg-light-primary">취업 및 채용지원</span>
-                                        </div>
-                                        <div class="card-body">
-                                        <a href="#" class="c-text">
-                                            <p class="c-tit"><span class="span">청년친화형 기업 ESG 지원사업</span></p>
-                                            <p class="c-txt">
-                                            [ 개요 ] 기업이 ESG 경영 차원에서 수행하는 청년고용 지원 프로그램에 대한 비용, 컨설팅 지원을 통해 청년 직무역량 향상 및 일경험 기회 확대 →
-                                            청년고용 활성화 기반 구축
-                                            </p>
-                                        </a>
-                                        </div>
-                                        <div class="card-btm">
-                                        <span class="tag">장애인</span>
-                                        <span class="tag">직무경홈</span>
-                                        </div>
-                                        <div class="card-btn">
-                                        <button type="button" class="krds-btn medium text" title="청년친화형 기업 ESG 지원사업"><i class="svg-icon ico-like"></i> 찜하기</button>
-                                        </div>
-                                    </li>
-                                    <li class="structured-item">
-                                        <div class="card-top">
-                                        <span class="krds-badge bg-light-primary">취업 및 채용지원</span>
-                                        </div>
-                                        <div class="card-body">
-                                        <a href="#" class="c-text">
-                                            <p class="c-tit"><span class="span">청년친화형 기업 ESG 지원사업</span></p>
-                                            <p class="c-txt">
-                                            [ 개요 ] 기업이 ESG 경영 차원에서 수행하는 청년고용 지원 프로그램에 대한 비용, 컨설팅 지원을 통해 청년 직무역량 향상 및 일경험 기회 확대 →
-                                            청년고용 활성화 기반 구축
-                                            </p>
-                                        </a>
-                                        </div>
-                                        <div class="card-btm">
-                                        <span class="tag">장애인</span>
-                                        <span class="tag">직무경홈</span>
-                                        </div>
-                                        <div class="card-btn">
-                                        <button type="button" class="krds-btn medium text" title="청년친화형 기업 ESG 지원사업"><i class="svg-icon ico-like"></i> 찜하기</button>
-                                        </div>
-                                    </li>
-                                    <li class="structured-item">
-                                        <div class="card-top">
-                                        <span class="krds-badge bg-light-primary">취업 및 채용지원</span>
-                                        </div>
-                                        <div class="card-body">
-                                        <a href="#" class="c-text">
-                                            <p class="c-tit"><span class="span">청년친화형 기업 ESG 지원사업</span></p>
-                                            <p class="c-txt">
-                                            [ 개요 ] 기업이 ESG 경영 차원에서 수행하는 청년고용 지원 프로그램에 대한 비용, 컨설팅 지원을 통해 청년 직무역량 향상 및 일경험 기회 확대 →
-                                            청년고용 활성화 기반 구축
-                                            </p>
-                                        </a>
-                                        </div>
-                                        <div class="card-btm">
-                                        <span class="tag">장애인</span>
-                                        <span class="tag">직무경홈</span>
-                                        </div>
-                                        <div class="card-btn">
-                                        <button type="button" class="krds-btn medium text" title="청년친화형 기업 ESG 지원사업"><i class="svg-icon ico-like"></i> 찜하기</button>
-                                        </div>
-                                    </li>
-                                    <li class="structured-item">
-                                        <div class="card-top">
-                                        <span class="krds-badge bg-light-primary">취업 및 채용지원</span>
-                                        </div>
-                                        <div class="card-body">
-                                        <a href="#" class="c-text">
-                                            <p class="c-tit"><span class="span">청년친화형 기업 ESG 지원사업</span></p>
-                                            <p class="c-txt">
-                                            [ 개요 ] 기업이 ESG 경영 차원에서 수행하는 청년고용 지원 프로그램에 대한 비용, 컨설팅 지원을 통해 청년 직무역량 향상 및 일경험 기회 확대 →
-                                            청년고용 활성화 기반 구축
-                                            </p>
-                                        </a>
-                                        </div>
-                                        <div class="card-btm">
-                                        <span class="tag">장애인</span>
-                                        <span class="tag">직무경홈</span>
-                                        </div>
-                                        <div class="card-btn">
-                                        <button type="button" class="krds-btn medium text" title="청년친화형 기업 ESG 지원사업"><i class="svg-icon ico-like"></i> 찜하기</button>
-                                        </div>
-                                    </li>
-                                    <li class="structured-item">
-                                        <div class="card-top">
-                                        <span class="krds-badge bg-light-primary">취업 및 채용지원</span>
-                                        </div>
-                                        <div class="card-body">
-                                        <a href="#" class="c-text">
-                                            <p class="c-tit"><span class="span">청년친화형 기업 ESG 지원사업</span></p>
-                                            <p class="c-txt">
-                                            [ 개요 ] 기업이 ESG 경영 차원에서 수행하는 청년고용 지원 프로그램에 대한 비용, 컨설팅 지원을 통해 청년 직무역량 향상 및 일경험 기회 확대 →
-                                            청년고용 활성화 기반 구축
-                                            </p>
-                                        </a>
-                                        </div>
-                                        <div class="card-btm">
-                                        <span class="tag">장애인</span>
-                                        <span class="tag">직무경홈</span>
-                                        </div>
-                                        <div class="card-btn">
-                                        <button type="button" class="krds-btn medium text" title="청년친화형 기업 ESG 지원사업"><i class="svg-icon ico-like"></i> 찜하기</button>
-                                        </div>
-                                    </li>
-                                    <li class="structured-item">
-                                        <div class="card-top">
-                                        <span class="krds-badge bg-light-primary">취업 및 채용지원</span>
-                                        </div>
-                                        <div class="card-body">
-                                        <a href="#" class="c-text">
-                                            <p class="c-tit"><span class="span">청년친화형 기업 ESG 지원사업</span></p>
-                                            <p class="c-txt">
-                                            [ 개요 ] 기업이 ESG 경영 차원에서 수행하는 청년고용 지원 프로그램에 대한 비용, 컨설팅 지원을 통해 청년 직무역량 향상 및 일경험 기회 확대 →
-                                            청년고용 활성화 기반 구축
-                                            </p>
-                                        </a>
-                                        </div>
-                                        <div class="card-btm">
-                                        <span class="tag">장애인</span>
-                                        <span class="tag">직무경홈</span>
-                                        </div>
-                                        <div class="card-btn">
-                                        <button type="button" class="krds-btn medium text" title="청년친화형 기업 ESG 지원사업"><i class="svg-icon ico-like"></i> 찜하기</button>
-                                        </div>
-                                    </li>
-                                    <li class="structured-item">
-                                        <div class="card-top">
-                                        <span class="krds-badge bg-light-primary">취업 및 채용지원</span>
-                                        </div>
-                                        <div class="card-body">
-                                        <a href="#" class="c-text">
-                                            <p class="c-tit"><span class="span">청년친화형 기업 ESG 지원사업</span></p>
-                                            <p class="c-txt">
-                                            [ 개요 ] 기업이 ESG 경영 차원에서 수행하는 청년고용 지원 프로그램에 대한 비용, 컨설팅 지원을 통해 청년 직무역량 향상 및 일경험 기회 확대 →
-                                            청년고용 활성화 기반 구축
-                                            </p>
-                                        </a>
-                                        </div>
-                                        <div class="card-btm">
-                                        <span class="tag">장애인</span>
-                                        <span class="tag">직무경홈</span>
-                                        </div>
-                                        <div class="card-btn">
-                                        <button type="button" class="krds-btn medium text" title="청년친화형 기업 ESG 지원사업"><i class="svg-icon ico-like"></i> 찜하기</button>
-                                        </div>
-                                    </li>
-                                    </ul>
+                                    </div>
+                                </div>
+                                <!-- //accordion -->
                                 <!-- pagination -->
                                 <div class="krds-pagination">
                                 <span class="page-navi prev disabled" href="#">이전</span>

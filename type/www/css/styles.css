@@ -3315,6 +3315,8 @@ body {
 .bbs_write tr{border-bottom:1px solid #dde2e8;}
 .bbs_write th{text-align:left;background:var(--krds-color-light-secondary-5);padding-left:15px;font-size:17px;font-weight: 700;color:var(--krds-color-light-gray-95)}
 .bbs_write th .ico{display:inline-block;width:7px;height:6px;background:url(../images/common/Ellipse.png) no-repeat 0 0;margin-right:5px;}
+.bbs_write th label {transform: translateX(12px);}
+.bbs_write th .ico + label {transform: translateX(0);}
 .bbs_write.sub4 th{padding:10px 0 10px 15px;}
 .bbs_write.sub4 td{padding:8px 0 8px 15px;}
 .ico{display:inline-block;min-width:7px;min-height:6px;max-width:16px;max-height:16px;background:url(../images/common/Ellipse.png) no-repeat 0 0;margin-right:5px;}
@@ -3324,6 +3326,17 @@ body {
 .bbs_write .t_box2{padding:0;height:22px;line-height:29px;padding-left:5px;padding-right:5px;border:1px solid #cbcbcb;}
 .bbs_write.sub4 table tbody td{font-size:12px;}
 span.sub4InputLabel{display:inline-block;width:150px;}
+
+/* 게시글 이동 박스 */
+.com-post-move-box {border-top: 1px solid  var(--krds-color-light-gray-20); border-bottom: 1px solid var(--krds-color-light-gray-20);}
+.com-post-move-box > div {display: flex; align-items: center; padding: 12px 0;}
+.com-post-move-box > div:not(:last-of-type) {border-bottom: 1px solid var(--krds-color-light-gray-20);}
+.com-post-move-box dt {flex-shrink: 0; font-size: 16px; display: flex; align-items: center; gap: 20px; font-weight: 600; padding: 0 30px;}
+.com-post-move-box dt img {width: 10px;}
+.com-post-move-box dd {padding-right: 30px;}
+.com-post-move-box dd a {font-size: 16px;}
+.com-post-move-box dd a:where(:hover,:focus) {text-decoration: underline; text-underline-position: under;}
+.com-post-move-box .prev-box dt img {transform: rotate(180deg);}
 
 /* 비교하기 하단 고정 바 */
 .compare-fixed-bar {
