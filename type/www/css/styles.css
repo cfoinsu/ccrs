@@ -351,7 +351,7 @@ body {
     line-height: 1.5;
     color: #333;
     margin-bottom: 20px;
-    background: #F6F3F0;
+    background: linear-gradient(98.33deg, #E1EEFA 41.76%, #C4E1F8 113.09%);
     padding: 25px;
     border-radius: 8px;
     gap: 20px;
@@ -696,7 +696,7 @@ body {
 
 .form-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
     gap: 24px;
     margin-bottom: 24px;
 }
@@ -1256,8 +1256,6 @@ body {
 .result-icon {
     width: 32px;
     height: 32px;
-    background: #fed7aa;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1343,8 +1341,8 @@ body {
 }
 
 .info-icon {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     background: #fef3c7;
     display: flex;
     align-items: center;
@@ -3372,25 +3370,13 @@ span.sub4InputLabel{display:inline-block;width:150px;}
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
-    gap: 1rem;
-}
-
-@media (min-width: 640px) {
-    .compare-flex-items {
-        padding: 1.5rem 0;
-        gap: 1.5rem;
-    }
+    gap: 2rem;
 }
 
 /* 왼쪽 제목 섹션 (데스크톱만 표시) */
 .desktop-title-section {
-    display: none;
-}
-
-@media (min-width: 640px) {
-    .desktop-title-section {
-        display: block;
-    }
+    display: block;
+    margin-right: 5rem;
 }
 
 .desktop-title-h2 {
@@ -3402,36 +3388,25 @@ span.sub4InputLabel{display:inline-block;width:150px;}
 
 @media (min-width: 640px) {
     .desktop-title-h2 {
-        font-size: 2rem;
+        font-size: 3.2rem;
     }
 }
 
 .desktop-title-p {
     font-family: 'Pretendard-Gov-Regular', sans-serif;
     color: white;
-    font-size: 0.9375rem;
+    font-size: 1.7rem;
     line-height: 1.5;
-}
-
-@media (min-width: 640px) {
-    .desktop-title-p {
-        font-size: 1.0625rem;
-    }
 }
 
 /* 중앙 상품 영역 */
 .compare-products-container {
     flex: 1;
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
     overflow-x: auto;
 }
 
-@media (min-width: 640px) {
-    .compare-products-container {
-        gap: 1rem;
-    }
-}
 
 /* 모바일 제목 섹션 */
 .mobile-title-section {
@@ -3463,22 +3438,17 @@ span.sub4InputLabel{display:inline-block;width:150px;}
 
 .products-flex-container {
     display: flex;
-    gap: 0.5rem;
-}
-
-@media (min-width: 640px) {
-    .products-flex-container {
-        gap: 1rem;
-    }
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
 }
 
 /* 상품 카드 */
 .product-card {
     background-color: white;
     border-radius: 0.75rem;
-    padding: 0.75rem;
+    padding: 2.5rem 2rem;
     width: 100%;
-    max-width: 280px;
     height: 70px;
     display: flex;
     align-items: center;
@@ -3487,29 +3457,14 @@ span.sub4InputLabel{display:inline-block;width:150px;}
     transition: all 0.3s ease;
 }
 
-@media (min-width: 640px) {
-    .product-card {
-        padding: 1rem;
-        height: 90px;
-        gap: 1rem;
-    }
-}
-
 .product-card:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .product-icon-wrapper {
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
     flex-shrink: 0;
-}
-
-@media (min-width: 640px) {
-    .product-icon-wrapper {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
 }
 
 .product-icon-placeholder {
@@ -3531,15 +3486,9 @@ span.sub4InputLabel{display:inline-block;width:150px;}
 .product-title {
     font-family: 'Pretendard-Gov-Bold', sans-serif;
     color: black;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.9rem;
+    line-height: 1.2;
     flex: 1;
-}
-
-@media (min-width: 640px) {
-    .product-title {
-        font-size: 1.1875rem;
-    }
 }
 
 .remove-btn {
@@ -3582,16 +3531,10 @@ span.sub4InputLabel{display:inline-block;width:150px;}
     justify-content: center;
 }
 
-@media (min-width: 640px) {
-    .add-slot-card {
-        height: 90px;
-    }
-}
-
 .add-slot-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.2);
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
     border-radius: 0.25rem;
     display: flex;
     align-items: center;
@@ -3600,20 +3543,14 @@ span.sub4InputLabel{display:inline-block;width:150px;}
 
 .add-slot-icon span {
     color: white;
-    font-size: 1.125rem;
+    font-size: 2rem;
 }
 
 /* 오른쪽 버튼 섹션 */
 .compare-buttons-container {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-@media (min-width: 640px) {
-    .compare-buttons-container {
-        gap: 1rem;
-    }
+    align-items: flex-start;
+    gap: 2.5rem;
 }
 
 .open-compare-modal {
@@ -3623,32 +3560,23 @@ span.sub4InputLabel{display:inline-block;width:150px;}
     min-width: 80px;
     border: none;
     cursor: pointer;
+    height: 7rem;
+    font-size: 1.9rem;
+    min-width: 17rem;
 }
 
-@media (min-width: 640px) {
-    .open-compare-modal {
-        padding: 1rem 1.5rem;
-        min-width: 120px;
-    }
-}
 
 .open-compare-modal span {
     font-family: 'Pretendard-Gov-Bold', sans-serif;
     color: white;
-    font-size: 1rem;
+    font-size: 1.9rem;
     line-height: 1.5;
-}
-
-@media (min-width: 640px) {
-    .open-compare-modal span {
-        font-size: 1.1875rem;
-    }
 }
 
 .close-btn {
     width: 1.5rem;
     height: 1.5rem;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: transparent;
     border-radius: 0.25rem;
     border: none;
     display: flex;
@@ -3657,22 +3585,10 @@ span.sub4InputLabel{display:inline-block;width:150px;}
     cursor: pointer;
 }
 
-@media (min-width: 640px) {
-    .close-btn {
-        width: 2rem;
-        height: 2rem;
-    }
-}
 
 .close-btn span {
     color: white;
-    font-size: 0.875rem;
-}
-
-@media (min-width: 640px) {
-    .close-btn span {
-        font-size: 1rem;
-    }
+    font-size: 2rem;
 }
 
 /* Quick Results 섹션 */

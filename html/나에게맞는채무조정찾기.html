@@ -7,7 +7,7 @@
 	<meta name="keywords" content="신용회복위원회"/>
 	<meta name="description" content="신용회복위원회"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>맞춤형 채무조정</title>
+    <title>나에게 맞는 채무조정 찾기</title>
     <link rel="stylesheet" href="/type/www/cdn/krds.min.css">
     <link rel="stylesheet" href="/type/www/css/styles.css">
     <link rel="stylesheet" href="/type/www/css/common.css">
@@ -238,7 +238,7 @@
                         <!-- Page Header -->
                         <div class="page-header">
                             <div class="title-wrap">
-                                <h1>맞춤형채무조정</h1>
+                                <h1>나에게 맞는 채무조정 찾기</h1>
                                 <div class="page-actions">
                                     <div class="view-count">
                                         <i class="fas fa-eye"></i>
@@ -263,8 +263,58 @@
                                 <span class="info-icon"></span>
                                 간략한 정보를 통해 본인에게 맞는 채무조정제도를 소개합니다.
                             </div>
+                            <!-- Card Section -->
+                            <div class="card-section">
+                                <div class="card-step first-step">
+                                    <!-- Header -->
+                                    <div class="card-header">
+                                        <div class="step-label">STEP 01</div>
+                                        <div class="title">채무</div>
+                                        <!-- Cash bag icon -->
+                                        <div class="cash-icon"></div>
+                                    </div>
+
+
+                                    <!-- Next Button -->
+                                    <button class="next-button" onclick="nextStep()">
+                                        <span class="button-text">다음</span>
+                                        <svg class="arrow-right" viewBox="0 0 20 20" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00443 16.4459C7.25073 16.7196 7.67225 16.7418 7.94593 16.4955L14.6126 10.4957C14.7531 10.3693 14.8333 10.1892 14.8333 10.0002C14.8333 9.81124 14.7531 9.63113 14.6126 9.50469L7.94596 3.50429C7.67229 3.25797 7.25077 3.28014 7.00445 3.55381C6.75814 3.82747 6.78031 4.249 7.05397 4.49532L13.1701 10.0002L7.054 15.5044C6.78032 15.7507 6.75813 16.1723 7.00443 16.4459Z" fill="#1B2025"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                             <!-- Form Section -->
                             <div class="form-section">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                                 <div class="form-grid">
                                     <!-- 채무액 (무담보) -->
                                     <div class="form-group">
@@ -488,9 +538,7 @@
                                             <div class="products-flex-container">
                                                 <div class="product-card">
                                                     <div class="product-icon-wrapper">
-                                                        <div class="product-icon-placeholder">
-                                                            <span>아이콘</span>
-                                                        </div>
+                                                        <img src="../type/www/images/ic/icon_title.svg" alt="">
                                                     </div>
                                                     <div class="product-title">
                                                         사전채무조정
@@ -501,9 +549,7 @@
                                                 </div>
                                                 <div class="product-card">
                                                     <div class="product-icon-wrapper">
-                                                        <div class="product-icon-placeholder">
-                                                            <span>아이콘</span>
-                                                        </div>
+                                                        <img src="../type/www/images/ic/icon_house.svg" alt="">
                                                     </div>
                                                     <div class="product-title">
                                                         개인워크아웃 개인회생주택담보대출
@@ -1256,6 +1302,34 @@
         }
         });
     });
+    
+
+        function prevStep1() {
+            // 다음 단계로 이동
+            alert('1 단계로 이동합니다.');
+        }
+        function prevStep2() {
+            // 다음 단계로 이동
+            alert('2 단계로 이동합니다.');
+        }
+        function nextStep1() {
+            // 다음 단계로 이동
+            alert('2 단계로 이동합니다.');
+        }
+        function nextStep2() {
+            // 다음 단계로 이동
+            alert('3 단계로 이동합니다.');
+        }
+
+        // 숫자 입력 필드에 천단위 구분자 추가
+        document.querySelectorAll('.input-field').forEach(input => {
+            input.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/,/g, '');
+                if (!isNaN(value) && value !== '') {
+                    e.target.value = Number(value).toLocaleString();
+                }
+            });
+        });
     </script>
 </body>
 </html>

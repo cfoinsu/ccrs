@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채무 입력 폼</title>
+    <style>
+
+        .container {
+            position: relative;
+            width: 580px;
+            height: 550px;
+            background-color: #fef8d7;
+            border-radius: 24px;
+            margin: 0 auto;
+        }
+
+        /* Header Section */
+        .header {
+            position: absolute;
+            left: 74px;
+            top: 42px;
+            width: 200px;
+            height: 71px;
+        }
+
+        .step-label {
+            position: absolute;
+            left: 0;
+            top: -2px;
+            color: #ed7801;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .title {
+            position: absolute;
+            left: 0;
+            top: 21px;
+            color: #17191b;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.5;
+            letter-spacing: 1px;
+        }
+
+        /* Cash bag icon */
+        /* Form Fields */
+        .form-field {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .form-field.field-1 { left: 74px; top: 150px; }
+        .form-field.field-2 { left: 74px; top: 214px; }
+        .form-field.field-3 { left: 74px; top: 278px; }
+        .form-field.field-4 { left: 74px; top: 342px; }
+        .form-field.field-5 { left: 74px; top: 406px; }
+
+        .field-label {
+            color: #17191b;
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 1.5;
+            white-space: nowrap;
+        }
+
+        .help-icon {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        /* Input Fields */
+        .input-group {
+            position: absolute;
+            width: 220px;
+        }
+
+        .input-group.input-1 { left: 286px; top: 139px; }
+        .input-group.input-2 { left: 286px; top: 203px; }
+        .input-group.input-3 { left: 286px; top: 267px; }
+        .input-group.input-4 { left: 286px; top: 331px; }
+        .input-group.input-5 { left: 286px; top: 395px; }
+
+        .input-box {
+            width: 100%;
+            height: 48px;
+            background-color: white;
+            border-radius: 6px;
+            border: none;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: relative;
+        }
+
+        .input-field {
+            width: 100%;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 17px;
+            font-weight: 400;
+            color: #17191b;
+            text-align: right;
+            padding-right: 40px;
+        }
+
+        .input-field::placeholder {
+            color: #8a949e;
+        }
+
+        .unit-text {
+            position: absolute;
+            right: 16px;
+            color: #8a949e;
+            font-size: 17px;
+            font-weight: 400;
+            pointer-events: none;
+        }
+
+        /* Select Field */
+        .select-box {
+            width: 100%;
+            height: 48px;
+            background-color: white;
+            border-radius: 6px;
+            border: none;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .select-text {
+            color: #8a949e;
+            font-size: 17px;
+            font-weight: 400;
+        }
+
+        .arrow-down {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        /* Next Button */
+        .next-button {
+            position: absolute;
+            left: 420px;
+            top: 467px;
+            min-width: 78px;
+            height: 48px;
+            background: transparent;
+            border: 1px solid #6d7882;
+            border-radius: 6px;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        .next-button:hover {
+            background-color: rgba(109, 120, 130, 0.1);
+        }
+
+        .button-text {
+            color: #17191b;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .arrow-right {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container {
+                width: 100%;
+                height: auto;
+                min-height: 550px;
+                border-radius: 0;
+                padding: 20px;
+            }
+
+            .header {
+                position: relative;
+                left: 0;
+                top: 0;
+                margin-bottom: 40px;
+            }
+
+            .cash-icon {
+                display: none;
+            }
+
+            .form-field {
+                position: relative;
+                left: 0 !important;
+                top: 0 !important;
+                margin-bottom: 20px;
+            }
+
+            .input-group {
+                position: relative;
+                left: 0 !important;
+                top: 0 !important;
+                margin-bottom: 30px;
+                width: 100%;
+            }
+
+            .next-button {
+                position: relative;
+                left: 0 !important;
+                top: 0 !important;
+                margin: 20px auto 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="step-label">STEP 01</div>
+            <div class="title">채무</div>
+        </div>
+
+        <!-- Cash bag icon -->
+        <div class="cash-icon"></div>
+
+        <!-- Form Fields -->
+        <div class="form-field field-1">
+            <div class="field-label">채무액 (무담보)</div>
+            <svg class="help-icon" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3ZM1.66667 10C1.66667 5.39763 5.39763 1.66667 10 1.66667C14.6024 1.66667 18.3333 5.39763 18.3333 10C18.3333 14.6024 14.6024 18.3333 10 18.3333C5.39763 18.3333 1.66667 14.6024 1.66667 10Z" fill="#1B2025"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9461 7.40446C8.73287 7.68403 8.66602 8.01651 8.66602 8.16683H7.33268C7.33268 7.76159 7.47416 7.13574 7.88593 6.59586C8.32287 6.02299 9.03866 5.5835 10.0827 5.5835C11.1012 5.5835 11.8233 5.97762 12.2367 6.58219C12.6248 7.14985 12.687 7.82769 12.5631 8.32733C12.3592 9.14937 11.8635 9.77824 11.5259 10.0803C11.4319 10.1645 11.3507 10.236 11.2802 10.2982C11.0206 10.5271 10.9051 10.629 10.8184 10.7669C10.7414 10.8895 10.6647 11.0901 10.6647 11.6668H9.33138C9.33138 10.9935 9.41542 10.4935 9.68955 10.0573C9.88917 9.73974 10.1875 9.47963 10.4669 9.23613C10.5247 9.18573 10.5817 9.13604 10.6368 9.0867C10.818 8.92454 11.1421 8.51762 11.269 8.00633C11.3104 7.8393 11.2892 7.55881 11.136 7.3348C11.0081 7.1477 10.7308 6.91683 10.0827 6.91683C9.46003 6.91683 9.13416 7.15789 8.9461 7.40446Z" fill="#1B2025"/>
+                <path d="M9.16602 13.3335C9.16602 12.8733 9.53911 12.5002 9.99935 12.5002C10.4596 12.5002 10.8327 12.8733 10.8327 13.3335C10.8327 13.7937 10.4596 14.1668 9.99935 14.1668C9.53911 14.1668 9.16602 13.7937 9.16602 13.3335Z" fill="#1B2025"/>
+            </svg>
+        </div>
+
+        <div class="form-field field-2">
+            <div class="field-label">채무액 (부동산담보)</div>
+            <svg class="help-icon" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3ZM1.66667 10C1.66667 5.39763 5.39763 1.66667 10 1.66667C14.6024 1.66667 18.3333 5.39763 18.3333 10C18.3333 14.6024 14.6024 18.3333 10 18.3333C5.39763 18.3333 1.66667 14.6024 1.66667 10Z" fill="#1B2025"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9461 7.40446C8.73287 7.68403 8.66602 8.01651 8.66602 8.16683H7.33268C7.33268 7.76159 7.47416 7.13574 7.88593 6.59586C8.32287 6.02299 9.03866 5.5835 10.0827 5.5835C11.1012 5.5835 11.8233 5.97762 12.2367 6.58219C12.6248 7.14985 12.687 7.82769 12.5631 8.32733C12.3592 9.14937 11.8635 9.77824 11.5259 10.0803C11.4319 10.1645 11.3507 10.236 11.2802 10.2982C11.0206 10.5271 10.9051 10.629 10.8184 10.7669C10.7414 10.8895 10.6647 11.0901 10.6647 11.6668H9.33138C9.33138 10.9935 9.41542 10.4935 9.68955 10.0573C9.88917 9.73974 10.1875 9.47963 10.4669 9.23613C10.5247 9.18573 10.5817 9.13604 10.6368 9.0867C10.818 8.92454 11.1421 8.51762 11.269 8.00633C11.3104 7.8393 11.2892 7.55881 11.136 7.3348C11.0081 7.1477 10.7308 6.91683 10.0827 6.91683C9.46003 6.91683 9.13416 7.15789 8.9461 7.40446Z" fill="#1B2025"/>
+                <path d="M9.16602 13.3335C9.16602 12.8733 9.53911 12.5002 9.99935 12.5002C10.4596 12.5002 10.8327 12.8733 10.8327 13.3335C10.8327 13.7937 10.4596 14.1668 9.99935 14.1668C9.53911 14.1668 9.16602 13.7937 9.16602 13.3335Z" fill="#1B2025"/>
+            </svg>
+        </div>
+
+        <div class="form-field field-3">
+            <div class="field-label">채무액 (전월세 보증금)</div>
+            <svg class="help-icon" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3ZM1.66667 10C1.66667 5.39763 5.39763 1.66667 10 1.66667C14.6024 1.66667 18.3333 5.39763 18.3333 10C18.3333 14.6024 14.6024 18.3333 10 18.3333C5.39763 18.3333 1.66667 14.6024 1.66667 10Z" fill="#1B2025"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9461 7.40446C8.73287 7.68403 8.66602 8.01651 8.66602 8.16683H7.33268C7.33268 7.76159 7.47416 7.13574 7.88593 6.59586C8.32287 6.02299 9.03866 5.5835 10.0827 5.5835C11.1012 5.5835 11.8233 5.97762 12.2367 6.58219C12.6248 7.14985 12.687 7.82769 12.5631 8.32733C12.3592 9.14937 11.8635 9.77824 11.5259 10.0803C11.4319 10.1645 11.3507 10.236 11.2802 10.2982C11.0206 10.5271 10.9051 10.629 10.8184 10.7669C10.7414 10.8895 10.6647 11.0901 10.6647 11.6668H9.33138C9.33138 10.9935 9.41542 10.4935 9.68955 10.0573C9.88917 9.73974 10.1875 9.47963 10.4669 9.23613C10.5247 9.18573 10.5817 9.13604 10.6368 9.0867C10.818 8.92454 11.1421 8.51762 11.269 8.00633C11.3104 7.8393 11.2892 7.55881 11.136 7.3348C11.0081 7.1477 10.7308 6.91683 10.0827 6.91683C9.46003 6.91683 9.13416 7.15789 8.9461 7.40446Z" fill="#1B2025"/>
+                <path d="M9.16602 13.3335C9.16602 12.8733 9.53911 12.5002 9.99935 12.5002C10.4596 12.5002 10.8327 12.8733 10.8327 13.3335C10.8327 13.7937 10.4596 14.1668 9.99935 14.1668C9.53911 14.1668 9.16602 13.7937 9.16602 13.3335Z" fill="#1B2025"/>
+            </svg>
+        </div>
+
+        <div class="form-field field-4">
+            <div class="field-label">채무액 (차량 대출금)</div>
+            <svg class="help-icon" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3ZM1.66667 10C1.66667 5.39763 5.39763 1.66667 10 1.66667C14.6024 1.66667 18.3333 5.39763 18.3333 10C18.3333 14.6024 14.6024 18.3333 10 18.3333C5.39763 18.3333 1.66667 14.6024 1.66667 10Z" fill="#1B2025"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9461 7.40446C8.73287 7.68403 8.66602 8.01651 8.66602 8.16683H7.33268C7.33268 7.76159 7.47416 7.13574 7.88593 6.59586C8.32287 6.02299 9.03866 5.5835 10.0827 5.5835C11.1012 5.5835 11.8233 5.97762 12.2367 6.58219C12.6248 7.14985 12.687 7.82769 12.5631 8.32733C12.3592 9.14937 11.8635 9.77824 11.5259 10.0803C11.4319 10.1645 11.3507 10.236 11.2802 10.2982C11.0206 10.5271 10.9051 10.629 10.8184 10.7669C10.7414 10.8895 10.6647 11.0901 10.6647 11.6668H9.33138C9.33138 10.9935 9.41542 10.4935 9.68955 10.0573C9.88917 9.73974 10.1875 9.47963 10.4669 9.23613C10.5247 9.18573 10.5817 9.13604 10.6368 9.0867C10.818 8.92454 11.1421 8.51762 11.269 8.00633C11.3104 7.8393 11.2892 7.55881 11.136 7.3348C11.0081 7.1477 10.7308 6.91683 10.0827 6.91683C9.46003 6.91683 9.13416 7.15789 8.9461 7.40446Z" fill="#1B2025"/>
+                <path d="M9.16602 13.3335C9.16602 12.8733 9.53911 12.5002 9.99935 12.5002C10.4596 12.5002 10.8327 12.8733 10.8327 13.3335C10.8327 13.7937 10.4596 14.1668 9.99935 14.1668C9.53911 14.1668 9.16602 13.7937 9.16602 13.3335Z" fill="#1B2025"/>
+            </svg>
+        </div>
+
+        <div class="form-field field-5">
+            <div class="field-label">연체일수</div>
+            <svg class="help-icon" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3ZM1.66667 10C1.66667 5.39763 5.39763 1.66667 10 1.66667C14.6024 1.66667 18.3333 5.39763 18.3333 10C18.3333 14.6024 14.6024 18.3333 10 18.3333C5.39763 18.3333 1.66667 14.6024 1.66667 10Z" fill="#1B2025"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9461 7.40446C8.73287 7.68403 8.66602 8.01651 8.66602 8.16683H7.33268C7.33268 7.76159 7.47416 7.13574 7.88593 6.59586C8.32287 6.02299 9.03866 5.5835 10.0827 5.5835C11.1012 5.5835 11.8233 5.97762 12.2367 6.58219C12.6248 7.14985 12.687 7.82769 12.5631 8.32733C12.3592 9.14937 11.8635 9.77824 11.5259 10.0803C11.4319 10.1645 11.3507 10.236 11.2802 10.2982C11.0206 10.5271 10.9051 10.629 10.8184 10.7669C10.7414 10.8895 10.6647 11.0901 10.6647 11.6668H9.33138C9.33138 10.9935 9.41542 10.4935 9.68955 10.0573C9.88917 9.73974 10.1875 9.47963 10.4669 9.23613C10.5247 9.18573 10.5817 9.13604 10.6368 9.0867C10.818 8.92454 11.1421 8.51762 11.269 8.00633C11.3104 7.8393 11.2892 7.55881 11.136 7.3348C11.0081 7.1477 10.7308 6.91683 10.0827 6.91683C9.46003 6.91683 9.13416 7.15789 8.9461 7.40446Z" fill="#1B2025"/>
+                <path d="M9.16602 13.3335C9.16602 12.8733 9.53911 12.5002 9.99935 12.5002C10.4596 12.5002 10.8327 12.8733 10.8327 13.3335C10.8327 13.7937 10.4596 14.1668 9.99935 14.1668C9.53911 14.1668 9.16602 13.7937 9.16602 13.3335Z" fill="#1B2025"/>
+            </svg>
+        </div>
+
+        <!-- Input Fields -->
+        <div class="input-group input-1">
+            <div class="input-box">
+                <input type="number" class="input-field" placeholder="">
+                <span class="unit-text">만원</span>
+            </div>
+        </div>
+
+        <div class="input-group input-2">
+            <div class="input-box">
+                <input type="number" class="input-field" placeholder="">
+                <span class="unit-text">만원</span>
+            </div>
+        </div>
+
+        <div class="input-group input-3">
+            <div class="input-box">
+                <input type="number" class="input-field" placeholder="">
+                <span class="unit-text">만원</span>
+            </div>
+        </div>
+
+        <div class="input-group input-4">
+            <div class="input-box">
+                <input type="number" class="input-field" placeholder="">
+                <span class="unit-text">만원</span>
+            </div>
+        </div>
+
+        <div class="input-group input-5">
+            <div class="select-box" onclick="toggleDropdown()">
+                <span class="select-text">선택해주세요</span>
+                <svg class="arrow-down" viewBox="0 0 20 20" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16.4453 7.00421C16.719 7.2505 16.7412 7.67202 16.4949 7.94571L10.4956 14.6124C10.3691 14.7529 10.189 14.8331 10 14.8331C9.81103 14.8331 9.63091 14.7529 9.50448 14.6124L3.50448 7.94574C3.25817 7.67206 3.28036 7.25054 3.55403 7.00423C3.8277 6.75793 4.24923 6.78011 4.49554 7.05379L9.99998 13.1698L15.5038 7.05381C15.7501 6.78013 16.1716 6.75792 16.4453 7.00421Z" fill="#1B2025"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Next Button -->
+        <button class="next-button" onclick="nextStep()">
+            <span class="button-text">다음</span>
+            <svg class="arrow-right" viewBox="0 0 20 20" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00443 16.4459C7.25073 16.7196 7.67225 16.7418 7.94593 16.4955L14.6126 10.4957C14.7531 10.3693 14.8333 10.1892 14.8333 10.0002C14.8333 9.81124 14.7531 9.63113 14.6126 9.50469L7.94596 3.50429C7.67229 3.25797 7.25077 3.28014 7.00445 3.55381C6.75814 3.82747 6.78031 4.249 7.05397 4.49532L13.1701 10.0002L7.054 15.5044C6.78032 15.7507 6.75813 16.1723 7.00443 16.4459Z" fill="#1B2025"/>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+    </script>
+</body>
+</html>
