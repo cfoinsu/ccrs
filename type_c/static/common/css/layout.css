@@ -579,6 +579,9 @@ Version : v1.0
 #header .header-quickmenu-box.close .top-box .quickmenu-btn {
   transform: rotate(0);
 }
+#header .header-quickmenu-box.close:hover .top-box .quickmenu-btn{
+  transform: rotate(180deg);
+}
 
 #header .header-quickmenu-list {
   position: relative;
