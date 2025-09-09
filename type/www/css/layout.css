@@ -682,6 +682,13 @@ Version : v1.0
 
 .all-menu .allmenu-util a.util1 {
     top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.all-menu .allmenu-util a.util1 img{
+    width: 32px;
+    vertical-align: middle;
 }
 
 .all-menu .allmenu-util a.util2 {
@@ -697,6 +704,13 @@ Version : v1.0
 
 .all-menu .allmenu-util a.util3 {
     top: 16rem;
+    display: flex;
+    justify-content: center;
+}
+
+.all-menu .allmenu-util a.util3 img{
+    width: 32px;
+    vertical-align: middle;
 }
 
 /* .all-menu .allmenu-util a:nth-child(3) {top: 16rem;} */
