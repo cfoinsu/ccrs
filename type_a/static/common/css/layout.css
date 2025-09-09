@@ -562,8 +562,8 @@ Version : v1.0
 #header .header-quickmenu-box .top-box .quickmenu-btn {
   position: relative;
   display: flex;
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 2.75rem;
+  height: 2.75rem;
   justify-content: center;
   align-items: center;
   background: #ef8d18;
@@ -578,7 +578,6 @@ Version : v1.0
     border-top: 1px solid #fff;
     border-left: 1px solid #fff;
 }
-
 #header .header-quickmenu-box .top-box .quickmenu-btn svg,
 #header .header-quickmenu-box .top-box .quickmenu-btn .icon-sp {
   width: calc(12/var(--base-font-size)*var(--default-font-size));
@@ -587,11 +586,12 @@ Version : v1.0
   transform-origin: center;
   transition: 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
 }
-
 #header .header-quickmenu-box.close .top-box .quickmenu-btn {
   transform: rotate(0);
 }
-
+#header .header-quickmenu-box.close:hover .top-box .quickmenu-btn{
+  transform: rotate(180deg);
+}
 #header .header-quickmenu-list {
   position: relative;
   display: flex;

@@ -823,35 +823,48 @@ $('.btn-scroll').click(function(e) {
 
 $(document).ready(function() {
 	// .quickmenu-btn 클래스를 가진 요소를 클릭했을 때 이벤트 핸들러를 실행합니다.
-	$('.quickmenu-btn').on('click', function() {
-		// .header-quickmenu-list-box를 선택합니다.
-		var menuBox = $('.header-quickmenu-list-box');
-		
-		// .header-quickmenu-box를 선택하여 현재 상태를 나타내는 data-open 속성을 가져옵니다.
-		var parentBox = $('.header-quickmenu-box');
-		var isOpen = parentBox.data('open');
-
-		// 현재 상태(data-open)에 따라 스타일을 토글합니다.
-		if (isOpen) {
-			// 메뉴가 열려 있을 경우, 닫는 처리를 합니다.
-			menuBox.css({
-				'opacity': '0',
-				'visibility': 'hidden'
-			});
-			// data-open 속성을 false로 업데이트합니다.
-			parentBox.data('open', false);
-			parentBox.addClass('close');
-		} else {
-			// 메뉴가 닫혀 있을 경우, 여는 처리를 합니다.
-			menuBox.css({
-				'opacity': '1',
-				'visibility': 'visible'
-			});
-			// data-open 속성을 true로 업데이트합니다.
-			parentBox.data('open', true);
-			parentBox.removeClass('close');
-		}
+	$('.header-quickmenu-box').on('mouseenter', function() {
+		// 마우스가 진입했을 때
+		$('.header-quickmenu-list-box', this).css({
+			'opacity': '1',
+			'visibility': 'visible'
+		});
+		}).on('mouseleave', function() {
+		// 마우스가 벗어났을 때
+		$('.header-quickmenu-list-box', this).css({
+			'opacity': '0',
+			'visibility': 'hidden'
+		});
 	});
+	// $('.quickmenu-btn').on('click', function() {
+	// 	// .header-quickmenu-list-box를 선택합니다.
+	// 	var menuBox = $('.header-quickmenu-list-box');
+		
+	// 	// .header-quickmenu-box를 선택하여 현재 상태를 나타내는 data-open 속성을 가져옵니다.
+	// 	var parentBox = $('.header-quickmenu-box');
+	// 	var isOpen = parentBox.data('open');
+
+	// 	// 현재 상태(data-open)에 따라 스타일을 토글합니다.
+	// 	if (isOpen) {
+	// 		// 메뉴가 열려 있을 경우, 닫는 처리를 합니다.
+	// 		menuBox.css({
+	// 			'opacity': '0',
+	// 			'visibility': 'hidden'
+	// 		});
+	// 		// data-open 속성을 false로 업데이트합니다.
+	// 		parentBox.data('open', false);
+	// 		parentBox.addClass('close');
+	// 	} else {
+	// 		// 메뉴가 닫혀 있을 경우, 여는 처리를 합니다.
+	// 		menuBox.css({
+	// 			'opacity': '1',
+	// 			'visibility': 'visible'
+	// 		});
+	// 		// data-open 속성을 true로 업데이트합니다.
+	// 		parentBox.data('open', true);
+	// 		parentBox.removeClass('close');
+	// 	}
+	// });
 	//탭 버튼 클릭 시 처리
 	$(".news-left .tab-button").click(function(){
 		// 현재 클릭된 버튼의 인덱스 번호
