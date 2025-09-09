@@ -361,8 +361,9 @@ Version : v1.0
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #000;
-    font-weight: 700;
+    color: var(--krds-light-color-text-basic);
+    font-weight: 400;
+    font-size: var(--krds-pc-font-size-label-medium)
 }
 .utility-right .linkbox li + li {
     padding-left: 10px;
@@ -532,7 +533,7 @@ Version : v1.0
   position: relative;
   z-index: 7;
   display: flex;
-  gap: .5rem;
+  gap: .75rem;
   align-items: center
 }
 
@@ -559,15 +560,15 @@ Version : v1.0
   align-items: center;
   background: #ef8d18;
   border-radius: 50%;
-  transform: rotate(180deg);
 }
 .icon-sp.ic_arrow_out_white::before {
     content: '';
     display: block;
-    height: 5px;
-    width: 5px;
-    border-top: 1px solid #fff;
-    border-left: 1px solid #fff;
+    width: 16px;
+    height: 16px;
+    background: url(../img/component/icon/arrow-drop-down.svg) no-repeat center;
+    background-size: 12px;
+    filter: invert(99%) sepia(3%) saturate(2436%) hue-rotate(259deg) brightness(165%) contrast(100%);
 }
 
 #header .header-quickmenu-box .top-box .quickmenu-btn svg,
@@ -580,7 +581,7 @@ Version : v1.0
 }
 
 #header .header-quickmenu-box.close .top-box .quickmenu-btn {
-  transform: rotate(0);
+  transform: rotate(135deg);
 }
 
 #header .header-quickmenu-list {

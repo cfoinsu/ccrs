@@ -33,8 +33,6 @@ Version : v1.0
   src: url('../fonts/NotoSansKR-Bold.ttf') format('truetype');
 } */
 
-@import "../../css/token/krds_tokens.css";
-@import "../../css/component/output.css";
 
 /*skip*/
 /*#skip_nav {}*/
@@ -216,7 +214,7 @@ body {
     height: 10px;
     background: url(../img/component/icon/arrow-right.svg) no-repeat center;
     background-size: 12px;
-    filter: invert(69%) sepia(12%) saturate(12%) hue-rotate(360deg) brightness(88%) contrast(84%);
+    filter: invert(28%) sepia(8%) saturate(656%) hue-rotate(172deg) brightness(92%) contrast(85%);
 }
 
 /* Content Layout */
@@ -233,9 +231,10 @@ body {
 }
 
 .sidebar-header {
-    background: linear-gradient(135deg, #f48f01 0%, #ed7801 100%);
+    background: var(--krds-light-color-element-primary) url(../img/logo/ccrs_symbol_white_alpha10.svg) no-repeat 140px 13px;
+    background-size: 120px;
     color: white;
-    padding: 30px 20px;
+    padding: 40px 20px;
     border-radius: 16px;
     margin-bottom: 20px;
     text-align: center;
@@ -394,7 +393,7 @@ body {
     border: 1px solid var(--krds-light-color-border-gray-light);
     padding: 6px 12px;
     border-radius: var(--krds-radius-max);
-    color: var(--krds-light-color-text-subtle)
+    color: var(--krds-light-color-text-basic)
 }
 
 .view-count .fa-eye:before{
@@ -447,7 +446,7 @@ body {
     width:20px;
     height:20px;
     display: inline-block;
-    background: url(../img/component/icon/share.svg) no-repeat center;
+    background: url(../img/component/icon/share.svg) no-repeat -1px center;
     background-size: contain;
     content: "";
 }
@@ -1088,16 +1087,16 @@ body {
 }
 
 .btn-primary {
-  background-color: #f97316;
-  color: white;
+  background-color: var(--krds-light-color-button-primary-fill);
+  color: var(--krds-light-color-text-bolder-inverse);
 }
 
 .btn-primary:hover {
-  background-color: #ea580c;
+  background-color: var(--krds-light-color-button-primary-hover);
 }
 
 .btn-primary:focus {
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), 0 0 0 4px #f97316;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), 0 0 0 4px var(--krds-light-color-button-primary-hover);
 }
 
 .btn-outline {
@@ -1475,8 +1474,8 @@ body {
 }
 
 .btn-primary {
-    background: #f97316;
-    color: white;
+    background: var(--krds-light-color-button-primary-fill);
+    color: var(--krds-light-color-text-bolder-inverse);
     border: none;
     cursor: pointer;
     font-size: 14px;
@@ -2240,7 +2239,7 @@ body {
 }
 
 .quick-item span{
-    margin-top:6px;
+    margin-top: 8px;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -2477,18 +2476,19 @@ body {
 }
 
 .btn-primary {
-    background-color: #f97316;
-    color: white;
+    background-color: var(--krds-light-color-button-primary-fill);
+    color: var(--krds-light-color-text-bolder-inverse);
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
     border: none;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    gap: 8px;
 }
 
 .btn-primary:hover {
-    background-color: #ea580c;
+    background-color: var(--krds-light-color-button-primary-fill-hover);
 }
 
 .btn-secondary {
