@@ -562,8 +562,8 @@ Version : v1.0
 #header .header-quickmenu-box .top-box .quickmenu-btn {
   position: relative;
   display: flex;
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 2.75rem;
+  height: 2.75rem;
   justify-content: center;
   align-items: center;
   background: #ef8d18;
