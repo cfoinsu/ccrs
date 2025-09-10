@@ -3914,6 +3914,62 @@ caption {
 .krds-accordion.type-line .accordion-item.active .accordion-body {
   
 }
+.krds-accordion.type-heading {
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.krds-accordion.type-heading .accordion-item {
+  border: 1px solid #ccc;
+  border-radius: 2.4rem;
+  padding: 2.4rem 3.2rem;
+}
+.krds-accordion.type-heading .accordion-item .btn-accordion:focus {
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+.krds-accordion.type-heading .accordion-item .btn-accordion {
+  padding: 0;
+  font-size: 19px;
+  font-weight: 700;
+}
+.krds-accordion.type-heading .accordion-item .btn-accordion:hover {
+  background: none;
+  color: var(--krds-color-light-primary-60);
+}
+.krds-accordion.type-heading .accordion-item .btn-accordion span.sec-tit {
+  font-size: var(--krds-pc-font-size-heading-large);
+}
+.krds-accordion.type-heading .accordion-item .btn-accordion::after {
+  top: 10px;
+  right: 0;
+  width: 3rem;
+  height: 3rem;
+  background: url(../../images/ic/accordion-arrow.svg) no-repeat;
+  mask: none;
+}
+.krds-accordion.type-heading .accordion-item.active .btn-accordion::after {
+  width: 3rem;
+  height: 3rem;
+  background: url(../../images/ic/accordion-arrow-on.svg) no-repeat;
+  transform: rotate(360deg);
+}
+.krds-accordion.type-heading .accordion-item .btn-accordion.active {
+  background: none;
+  color: inherit;
+  padding-bottom: 2.4rem;
+  border-bottom:1px solid #ccc;
+}
+.krds-accordion.type-heading .accordion-item .accordion-body {
+  padding: 3.2rem 0 0;
+  background: none;
+}
+.krds-accordion.type-heading .accordion-item.active {
+  background: none;
+}
 
 [data-krds-mode=high-contrast] .krds-accordion {
   --krds-accordion--color-action: var(--krds-high-contrast-color-action-secondary);
@@ -21643,7 +21699,7 @@ body {
 }
 .g-wrap .g-conts-area .conts-desc {
   font-size: var(--krds-pc-font-size-heading-xxsmall);
-  font-weight: var(--krds-font-weight-normal);
+  font-weight: 400;
 }
 @media (max-width: 767px) {
   .g-wrap .g-conts-area .g-tit {
