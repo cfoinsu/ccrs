@@ -528,13 +528,43 @@ body {
     padding: 40px;
     border-radius: 24px;
     z-index: 3;
+    filter: grayscale(1);
 }
-.card-step .btn-area{
+.card-step .btn-area {
     justify-content: space-between;
+    margin-top: 0;
 }
-.card-step.first-step .btn-area{
+.card-step.first-step .btn-area {
     justify-content: flex-end;
 }
+.card-step .cash-icon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: url(../images/ic/icon_cashbag.png) no-repeat center;
+    width: 80px;
+    height: 72px;
+    background-size: 80px 72px;
+}
+.card-step .house-icon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: url(../images/ic/icon_house.png) no-repeat center;
+    width: 85px;
+    height: 69px;
+    background-size: 85px 69px;
+}
+.card-step .card-info-icon {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: url(../images/ic/icon_house.png) no-repeat center;
+    width: 85px;
+    height: 69px;
+    background-size: 85px 69px;
+}
+
 .card-step.second-step {
     background: #E9E9FF;
     left: 20%;
@@ -546,6 +576,7 @@ body {
     z-index: 1;
 }
 .card-step.active {
+    filter: none;
     z-index: 10;
     transition: top 0.3s cubic-bezier(.4,2,.6,1), z-index 0s;
 }
@@ -568,7 +599,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     gap: 0;
-    margin-bottom: 26px;
+    margin-bottom: 21px;
     width: 100%;
 }
 .card-step .card-step-header .step-label {
