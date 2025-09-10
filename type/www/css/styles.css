@@ -370,6 +370,12 @@ body {
     border-radius: var(--krds-radius-xlarge2);
 }
 
+.page-description.blue{
+    background: linear-gradient(91deg, #E1EFFB 0%, #CBE4F8 100%);
+    padding:18px 32px;
+    align-items: center;
+}
+
 .page-description img {
     width: 130px;
     align-self: stretch;
