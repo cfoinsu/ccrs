@@ -20,7 +20,7 @@
 
     <!-- Tailwind (standalone JS) -->
     <!-- <script src="/type/www/js/plugins/tailwind.js"></script> -->
-    <!-- <script src="/type/www/js/component/ui-script.js"></script> -->
+    <script src="/type/www/js/component/ui-script.js"></script>
     <script src="/type/www/cdn/krds.min.js"></script>
     
     <script src="/type/www/js/jquery-2.2.4.min.js"></script>
@@ -63,7 +63,7 @@
 					 </div>
 					 <div class="utility-right">
 						<ul class="linkbox">
-							<li><a href="#"><span>인증센터</span></a></li>
+							
 							<li><a href="#"><span>앱 다운로드</span></a></li>
 							<li><span>상담전화</span><span class="phone-number">1600-5500</span></li>
 						</ul>
@@ -318,7 +318,7 @@
                                         <span class="krds-badge bg-light-primary">취업 및 채용지원</span>
                                         </div>
                                         <div class="card-body">
-                                        <a href="#" class="c-text">
+                                        <a href="#" class="c-text open-modal" data-target="modal_sample">
                                             <p class="c-tit"><span class="span">청년친화형 기업 ESG 지원사업</span></p>
                                             <p class="c-txt">
                                             [ 개요 ] 기업이 ESG 경영 차원에서 수행하는 청년고용 지원 프로그램에 대한 비용, 컨설팅 지원을 통해 청년 직무역량 향상 및 일경험 기회 확대 →
@@ -689,6 +689,85 @@
 		</footer>
 		<!-- Footer:e -->
     </div>
+
+    <!-- krds Modal -->
+    <!-- modal -->
+    <section id="modal_sample" class="krds-modal fade" role="dialog" aria-labelledby="tit_modal_sample">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <!-- modal title -->
+            <div class="modal-header">
+                <h2 id="tit_modal_sample" class="modal-title" tabindex="0">
+                영상FAQ_샘플
+                </h2>
+            </div>
+            <!-- //modal title -->
+            <!-- modal contents -->
+            <div class="modal-conts">
+                <div id="player"></div>
+                <script>
+                    var tag = document.createElement('script');
+                    tag.src = "https://www.youtube.com/iframe_api";
+                    var firstScriptTag = document.getElementsByTagName('script')[0];
+                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                    // 영상 ID만 올바르게 작성된 배열
+                    var videoIds = ['YHjurceKcMM', '8u3PVNy0nRA', 'V5zmJOELZEc']; // 예시로 3개만 사용했습니다. 더 추가하셔도 됩니다.
+                    var currentVideoIndex = 0;
+                    var player;
+
+                    function onYouTubeIframeAPIReady() {
+                        player = new YT.Player('player', {
+                            height: '390',
+                            width: '640',
+                            playerVars: {
+                                'autoplay': 1,
+                                'controls': 1,
+                                'mute': 1
+                            },
+                            events: {
+                                'onReady': onPlayerReady,
+                                'onStateChange': onPlayerStateChange
+                            }
+                        });
+                    }
+
+                    function onPlayerReady(event) {
+                        if (videoIds.length > 0) {
+                            event.target.loadVideoById(videoIds[currentVideoIndex]);
+                        }
+                    }
+
+                    function onPlayerStateChange(event) {
+                        if (event.data === YT.PlayerState.ENDED) {
+                            currentVideoIndex++;
+                            if (currentVideoIndex < videoIds.length) {
+                                player.loadVideoById(videoIds[currentVideoIndex]);
+                            } else {
+                                console.log('모든 영상이 재생되었습니다.');
+                            }
+                        }
+                    }
+                </script>
+            </div>
+            <!-- //modal contents -->
+            <!-- modal btn -->
+            <div class="modal-btn btn-wrap">
+                <button type="button" class="krds-btn medium tertiary close-modal">아니요</button>
+                <button type="button" class="krds-btn medium primary close-modal">예</button>
+            </div>
+            <!-- //modal btn -->
+            <!-- close button -->
+            <button type="button" class="krds-btn medium icon btn-close close-modal">
+                <span class="sr-only">닫기</span>
+                <i class="svg-icon ico-popup-close"></i>
+            </button>
+            <!-- //close button -->
+            </div>
+        </div>
+        <div class="modal-back"></div>
+    </section>
+    <!-- //modal -->
     <!-- all-menu 사이트맵 -->
     <div class="all-menu" id="allMenuTag">
         <nav>
