@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>타이핑 챗 UI</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: 'Arial', sans-serif;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .chat-container {
+      width: 800px;
+      max-width: 98vw;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 2em;
+      box-shadow: 0 4px 16px rgba(0,0,0,.10);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .message-row {
+      width: 100%;
+      display: flex;
+    }
+    .message {
+      display: inline-block;
+      min-width: 80px;
+      max-width: 70%;
+      padding: 20px 18px;
+      border-radius: 23px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      line-height: 1.8;
+      position: relative;
+      background: #e9f4fd;
+      color: #263245;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      word-break: break-all;
+      letter-spacing: 0.03em;
+    }
+    .message.left {
+      margin-right: auto;
+      background: #e9f4fd;
+      text-align: left;
+      border-bottom-left-radius: 8px;
+      margin-left: 0;
+    }
+    .message.right {
+      margin-left: auto;
+      background: #ffeacc;
+      color: #59421a;
+      text-align: right;
+      border-bottom-right-radius: 8px;
+      margin-right: 0;
+    }
+    .cursor {
+      display: inline-block;
+      width: 1ch;
+      color: orange;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container" id="chat"></div>
+  <script>
+    // 메세지 배열
+    const messages = [
+      "안녕하세요! 신용상담센터입니다.",
+      "안녕하세요. 채무 관련해서 문의드리고 싶어요.",
+      "상담을 원하시는 항목을 구체적으로 말씀해 주실 수 있을까요?",
+      "개인회생 및 파산 관련 상담도 가능한가요?",
+      "네, 법원 연계로 다양한 지원이 가능합니다.",
+      "상담 예약은 어떻게 하면 되나요?",
+      "채팅상으로 간단히 예약 정보를 받아 안내해 드릴 수 있습니다.",
+      "감사합니다! 안내 부탁드려요.",
+      "성명, 전화번호, 희망상담일자를 입력해 주세요.",
+      "입력 완료되었습니다. 감사합니다."
+    ];
+
+    const chatContainer = document.getElementById("chat");
+
+    // 타입라이팅 함수
+    async function typeWriterEffect(element, text) {
+      element.innerHTML = "";
+      let i = 0;
+      let html = "";
+      return new Promise(resolve => {
+        function typing() {
+          if (i < text.length) {
+            if (text[i] === "\n") {
+              html += "<br>";
+            } else {
+              html += text[i];
+            }
+            element.innerHTML = html + '<span class="cursor">|</span>';
+            i++;
+            setTimeout(typing, 45);
+          } else {
+            element.innerHTML = html; // 타이핑 끝나면 커서 제거
+            resolve();
+          }
+        }
+        typing();
+      });
+    }
+
+    // 메시지 순차 출력
+    async function showMessages() {
+      for (let idx = 0; idx < messages.length; idx++) {
+        // 2n 번째(짝수) 오른쪽, 2n+1번째(홀수)는 왼쪽
+        const alignClass = (idx % 2 === 0) ? "left" : "right";
+        const row = document.createElement("div");
+        row.className = "message-row";
+        const bubble = document.createElement("div");
+        bubble.className = "message " + alignClass;
+        row.appendChild(bubble);
+        chatContainer.appendChild(row);
+        // 스크롤 맨 아래로
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+        await typeWriterEffect(bubble, messages[idx]);
+        // 다음 메시지 잠깐 딜레이
+        await new Promise(r => setTimeout(r, 500));
+      }
+    }
+
+    window.onload = showMessages;
+  </script>
+</body>
+</html>
