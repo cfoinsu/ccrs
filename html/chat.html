@@ -73,7 +73,13 @@
   <script>
     // 메세지 배열
     const messages = [
-      "안녕하세요! 신용상담센터입니다.",
+      `일대일 심층 신용상담을 통해 정상적으로 채무를 상환할 수 없는 분들에게는 이자율 인하, 채무감면, 상환기간 연장을 통해 신용회복을 도와드리고, 법원과 업무 연계로 개인회생·파산 신청도 지원하고 있습니다.
+
+채무조정 이후 성실하게 채무를 상환 중인 분들에게 저리로 긴급생계자금을 지원해 드리며, 올바른 신용문화 정착을 위해 다양한 계층을 대상으로 신용교육을 실시하고 있습니다.
+
+또한, 신용복지컨설팅으로 채무문제 해결뿐만 아니라 신용도 상승까지 지원하여 서민의 금융 생활 안정에 기여하고 있습니다.
+
+저희 임직원 모두는 봉사정신과 소명의식을 가지고 서민들의 아픔을 이해하고 미래를 함께하는 든든한 동반자가 되겠습니다. 감사합니다.`,
       "안녕하세요. 채무 관련해서 문의드리고 싶어요.",
       "상담을 원하시는 항목을 구체적으로 말씀해 주실 수 있을까요?",
       "개인회생 및 파산 관련 상담도 가능한가요?",
@@ -115,18 +121,19 @@
     // 메시지 순차 출력
     async function showMessages() {
       for (let idx = 0; idx < messages.length; idx++) {
-        // 2n 번째(짝수) 오른쪽, 2n+1번째(홀수)는 왼쪽
         const alignClass = (idx % 2 === 0) ? "left" : "right";
         const row = document.createElement("div");
         row.className = "message-row";
         const bubble = document.createElement("div");
         bubble.className = "message " + alignClass;
+        bubble.setAttribute('tabindex', '-1'); // 포커스 가능
         row.appendChild(bubble);
         chatContainer.appendChild(row);
+        // 포커스 이동
+        bubble.focus();
         // 스크롤 맨 아래로
         chatContainer.scrollTop = chatContainer.scrollHeight;
         await typeWriterEffect(bubble, messages[idx]);
-        // 다음 메시지 잠깐 딜레이
         await new Promise(r => setTimeout(r, 500));
       }
     }
