@@ -2860,6 +2860,9 @@ caption {
 .krds-table-wrap .tbl.data tbody td:last-child {
   border-right: none;
 }
+.g-wrap .krds-table-wrap .tbl.data tbody td {
+  text-align: left;
+}
 .krds-table-wrap .tbl.board thead th {
   padding: var(--krds-table--data-thead-th-padding) var(--krds-table--data-thead-th-padding-sides);
   background-color: var(--krds-table--data-thead-surface);
