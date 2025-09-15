@@ -801,7 +801,7 @@ const krds_accordion = {
         const otherButton = otherItem.querySelector(".btn-accordion");
         otherButton.setAttribute("aria-expanded", "false");
         otherButton.classList.remove("active");
-        otherItem.classList.remove("active");
+        //otherItem.classList.remove("active");
       });
     }
     // 현재 항목 상태 토글
