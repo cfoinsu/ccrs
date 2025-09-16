@@ -1637,6 +1637,11 @@ body {
     border-radius: 24px;
     padding: 40px;
 }
+.feedback-card.noboder {
+    border: none;
+    padding: 0
+    ;
+}
 
 .feedback-card h3 {
     font-size: 18px;
@@ -1650,6 +1655,16 @@ body {
     gap: 24px;
     margin-bottom: 24px;
     flex-wrap: wrap;
+}
+.feedback-card.noboder .rating-options {
+    margin-bottom: 0;
+}
+.feedback-card.noboder h5 {
+    flex:1;
+    width: auto;
+    font-size: 1.7rem;
+    color: #17191B;
+    font-weight: 400;
 }
 
 .rating-option {
