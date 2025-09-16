@@ -2918,69 +2918,6 @@ body {
     color: #666;
 }
 
-.main-footer {
-    background-color: #1e293b;
-    color: white;
-    padding: 4rem 0;
-}
-
-.footer-grid {
-    display: grid;
-    gap: 3rem;
-}
-
-.footer-info {
-    grid-column: span 2;
-}
-
-.footer-logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-}
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: center;
-    font-size: 0.875rem;
-    margin-bottom: 1rem;
-}
-
-.footer-link {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-    color: #cbd5e1;
-}
-
-.footer-link.highlight {
-    color: #f97316;
-}
-
-.footer-details {
-    font-size: 0.875rem;
-    line-height: 1.6;
-}
-
-.footer-details p {
-    margin-bottom: 0.5rem;
-}
-
-.copyright {
-    font-size: 0.75rem;
-    color: #94a3b8;
-}
-
-.footer-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
 
 .service-link {
     color: #f97316;
@@ -3336,68 +3273,6 @@ body {
     color: #fff;
 }
 /* Quick Menu */
-
-/* Footer */
-.footer {
-    background: #0a1c2a;
-    color: white;
-    padding: 40px 0;
-    /* margin-top: 60px; */
-}
-.footer img{
-    max-width: 100%;
-}
-.footer-content {
-    display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    gap: 40px;
-    align-items: start;
-}
-
-.footer-logo img {
-    height: 33px;
-}
-
-.footer-links {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.footer-link {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    position: relative;
-}
-
-.footer-link:not(:last-child)::after {
-    content: '|';
-    position: absolute;
-    right: -12px;
-    color: #666;
-}
-
-.footer-link.important {
-    color: #f48f01;
-}
-
-.footer-link:hover {
-    color: #f48f01;
-}
-
-.footer-info p,
-.footer-contact p {
-    margin-bottom: 8px;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.footer-info strong,
-.footer-contact strong {
-    font-weight: 700;
-}
 
 .phone-number {
     color: #ff8c29;
