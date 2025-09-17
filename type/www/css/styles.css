@@ -4189,67 +4189,67 @@ table.comparison-table td:first-child   {
 
 .guideline-cont-box.before.start .guideline-stepper{
     background: url(../img/contents/debt/Status=before\,\ Step=start.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .guideline-cont-box.before.middle .guideline-stepper{
     background: url(../img/contents/debt/Status=before\,\ Step=middle.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .guideline-cont-box.before.end .guideline-stepper{
     background: url(../img/contents/debt/Status=before\,\ Step=end.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .guideline-cont-box.ongoing.start .guideline-stepper{
     background: url(../img/contents/debt/Status=ongoing\,\ Step=start.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .guideline-cont-box.ongoing.middle .guideline-stepper{
     background: url(../img/contents/debt/Status=ongoing\,\ Step=middle.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .guideline-cont-box.ongoing.end .guideline-stepper{
     background: url(../img/contents/debt/Status=ongoing\,\ Step=end.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .guideline-cont-box.ongoing.righthalf .guideline-stepper{
     background: url(../img/contents/debt/Status=ongoing\,\ Step=righthalf.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .guideline-cont-box.ongoing.lefthalf .guideline-stepper{
     background: url(../img/contents/debt/Status=ongoing\,\ Step=lefthalf.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .guideline-cont-box.ongoing.middleex .guideline-stepper{
     background: url(../img/contents/debt/Status=ongoing\,\ Step=middleex.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .guideline-cont-box.ongoing.righthalfex .guideline-stepper{
     background: url(../img/contents/debt/Status=ongoing\,\ Step=righthalfex.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .guideline-cont-box.ongoing.lefthalfex .guideline-stepper{
     background: url(../img/contents/debt/Status=ongoing\,\ Step=lefthalfex.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .guideline-cont-box.ongoing.righthalfcolor .guideline-stepper{
     background: url(../img/contents/debt/Status=ongoing\,\ Step=righthalfcolor.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .guideline-cont-box.ongoing.lefthalfcolor .guideline-stepper{
     background: url(../img/contents/debt/Status=ongoing\,\ Step=lefthalfex.svg) no-repeat center;
-    background-size: cover;
+    background-size: contain;
 }
 
 .guideline-cont-box.ongoing p{
@@ -4284,4 +4284,141 @@ table.comparison-table td:first-child   {
 
 .voc-result-cont button{
     margin-top: 26px;
+}
+
+/*아코디언 내부 박스 스타일*/
+.accordion-body .conts-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.krds-accordion .accordion-item.active .accordion-collapse{
+    max-height:200vh !important;
+}
+
+.g-info-box .g-desc-box .g-tit.info{
+    margin-left:30px;
+}
+
+.g-info-box .g-desc-box .g-tit.info::before{
+    content:'';
+    display: block;
+    position: absolute;
+    left: -30px;
+    width:24px;
+    height: 24px;
+    background: url(../img/component/icon/annotation-info.svg) no-repeat center;
+}
+
+.g-wrap .g-info-box.point{
+    background-color:var(--krds-light-color-surface-point-subtler);
+}
+
+.g-wrap .g-info-box.point .g-tit{
+    color:var(--krds-light-color-text-point);
+}
+
+.g-wrap .g-info-box .g-desc-box .g-tit{
+    font-size: var(--krds-pc-font-size-heading-small);
+}
+
+.g-wrap .g-info-box.gray{
+    background-color:var(--krds-light-color-surface-gray-subtler);
+}
+
+.g-grid-wrap.unit3 .g-info-box.sm{
+    padding:32px;
+}
+
+.g-grid-wrap.unit3 .g-info-box.sm .g-desc-box .g-tit{
+    font-weight: bold;
+}
+
+.g-grid-wrap.unit3 .g-info-box.sm .g-desc-box .conts-desc{
+    min-height: 130px;
+}
+
+.g-grid-wrap.unit3 .g-info-box.sm .g-desc-box .g-img{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.g-grid-wrap.contect{
+    display: flex !important;
+    gap: var(--krds-gap-4) !important;
+}
+
+.g-grid-wrap.contect .g-info-box{
+    width: 100%;
+    justify-self: stretch;
+    display: flex;
+    flex-direction: row;
+    border-radius:var(--krds-radius-xlarge2);
+}
+
+.g-grid-wrap.contect .g-info-box .g-desc-box{
+    width: 100%;
+    gap: 8px !important;
+}
+
+.g-grid-wrap.contect .g-info-box .g-img{
+    max-height: 70px;
+    margin: auto 0;
+}
+
+.g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc.largetext.primary{
+    color: var(--krds-light-color-text-primary);
+    font-size: var(--krds-pc-font-size-heading-medium);
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc img{
+    width: 14px;
+    margin-top: 4px;
+}
+
+.g-grid-wrap.contect .g-info-box .g-desc-box .g-text-wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.g-grid-wrap.contect .g-info-box .g-desc-box .g-text-wrap .g-subtit{
+    color: var(--krds-light-color-text-basic);
+    font-size: var(--krds-pc-font-size-label-xsmall);
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 2px;
+}
+
+.g-grid-wrap.contect .g-info-box.lightblue{
+    background-color: #DEF9EF;
+}
+.g-grid-wrap.contect .g-info-box.lightpurple{
+    background-color: #EDF4FF;
+}
+
+.krds-info-list .g-tit{
+    color: var(--krds-light-color-text-basic);
+    font-size: var(--krds-pc-font-size-heading-small);
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.g-info-box.sm.full{
+    margin-top: 16px;
+}
+
+.g-info-box.sm.full .g-desc-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.g-info-box.sm.full .g-desc-box .conts-desc{
+    width: 100%;
 }
