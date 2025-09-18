@@ -533,6 +533,17 @@ Version : v1.0
   transform: translateY(-50%);
   z-index: 99
 }
+#header .header-quickmenu-box:hover {
+
+}
+#header .header-quickmenu-box:hover .top-box .quickmenu-btn {
+    transform:rotate(315deg);
+}
+#header .header-quickmenu-box:hover .header-quickmenu-list-box {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
 
 #header .header-quickmenu-box .top-box {
   position: relative;
@@ -565,6 +576,7 @@ Version : v1.0
   align-items: center;
   background: #ef8d18;
   border-radius: 50%;
+  transform: rotate(135deg);
 }
 .icon-sp.ic_arrow_out_white::before {
     content: '';
@@ -608,6 +620,7 @@ Version : v1.0
   visibility: hidden;
   background: #fff;
   z-index: 6;
+  display:none;
 }
 
 #header .header-quickmenu-list-box .icon {
