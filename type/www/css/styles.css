@@ -4355,6 +4355,11 @@ table.comparison-table td:first-child   {
     padding: 32px 20px;
 }
 
+.g-info-box.full .g-desc-box.row{
+    flex-direction: row;
+    align-items: flex-end;
+}
+
 .g-info-box.full .g-desc-box,
 .g-grid-wrap.unit2 .g-info-box.sm .g-desc-box,
 .g-grid-wrap.unit4 .g-info-box.sm .g-desc-box{
