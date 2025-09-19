@@ -46,8 +46,8 @@ Version : v1.0
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-    font-size: 14px;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    font-size: 16px;
     line-height: 1.5;
     color: var(--krds-light-color-text-static);
     background-color: transparent;
@@ -3436,6 +3436,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: var(--krds-gap-5);
 }
+.g-wrap .g-grid-wrap.unit2,
 .g-wrap .g-grid-wrap.unit3{
     gap: var(--krds-gap-4);
 }
@@ -4307,6 +4308,10 @@ table.comparison-table td:first-child   {
     max-height:200vh !important;
 }
 
+.g-info-box.full{
+    margin: 12px 0;
+}
+
 .g-info-box .g-desc-box .g-tit.info{
     margin-left:30px;
 }
@@ -4337,28 +4342,43 @@ table.comparison-table td:first-child   {
     background-color:var(--krds-light-color-surface-gray-subtler);
 }
 
-.g-wrap .g-info-box.gray .g-desc-box .krds-info-list.decimal .g-tit::before{
 
+.g-grid-wrap.unit2 .g-info-box.sm{
+    padding: 32px;
 }
 
 .g-grid-wrap.unit3 .g-info-box.sm{
     padding: 32px 20px;
 }
 
-.g-grid-wrap.unit3 .g-info-box.sm .g-desc-box .g-tit{
-    font-weight: bold;
+.g-info-box.full .g-desc-box,
+.g-grid-wrap.unit2 .g-info-box.sm .g-desc-box{
+    flex-direction: row;
+    align-items: flex-end;
 }
 
+.g-info-box.full .g-desc-box .g-tit,
+.g-grid-wrap.unit2 .g-info-box.sm .g-desc-box .g-tit,
+.g-grid-wrap.unit3 .g-info-box.sm .g-desc-box .g-tit{
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.g-grid-wrap.unit2 .g-info-box.sm .g-desc-box .conts-desc,
 .g-grid-wrap.unit3 .g-info-box.sm .g-desc-box .conts-desc{
     min-height: 130px;
     font-size: var(--krds-pc-font-size-body-medium);
+    margin-top: 8px;
 }
 
+.g-grid-wrap.unit2 .g-info-box.sm .g-desc-box .g-img,
 .g-grid-wrap.unit3 .g-info-box.sm .g-desc-box .g-img{
     display: flex;
     width: 100%;
     justify-content: flex-end;
 }
+
+.g-grid-wrap.unit2 .g-info-box.sm .g-desc-box .g-img img,
 .g-grid-wrap.unit3 .g-info-box.sm .g-desc-box .g-img img{
     height: 60px;
     width: auto;
@@ -4462,6 +4482,10 @@ table.comparison-table td:first-child   {
 .noti .svg-icon{
     width: 18px;
     height: 18px;
+}
+
+.noti .primary{
+    color: var(--krds-light-color-text-primary);
 }
 
 /*게시판 컴포넌트 스타일*/
