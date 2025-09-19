@@ -4328,7 +4328,7 @@ table.comparison-table td:first-child   {
 }
 
 .g-grid-wrap.unit3 .g-info-box.sm{
-    padding:32px;
+    padding: 32px 20px;
 }
 
 .g-grid-wrap.unit3 .g-info-box.sm .g-desc-box .g-tit{
@@ -4343,6 +4343,10 @@ table.comparison-table td:first-child   {
     display: flex;
     width: 100%;
     justify-content: flex-end;
+}
+.g-grid-wrap.unit3 .g-info-box.sm .g-desc-box .g-img img{
+    height: 60px;
+    width: auto;
 }
 
 .g-grid-wrap.contect{
