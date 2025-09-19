@@ -377,8 +377,8 @@ body {
 }
 
 .page-description img {
-    width: 130px;
-    align-self: stretch;
+    width: 140px;
+    margin: auto 0;
 }
 
 .page-description .info-icon {flex: none;}
@@ -1655,6 +1655,7 @@ body {
     gap: 24px;
     margin-bottom: 24px;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .feedback-card.noboder .rating-options {
     margin-bottom: 0;
@@ -4327,6 +4328,10 @@ table.comparison-table td:first-child   {
     background-color:var(--krds-light-color-surface-gray-subtler);
 }
 
+.g-wrap .g-info-box.gray .g-desc-box .krds-info-list.decimal .g-tit::before{
+
+}
+
 .g-grid-wrap.unit3 .g-info-box.sm{
     padding: 32px 20px;
 }
@@ -4424,5 +4429,28 @@ table.comparison-table td:first-child   {
 }
 
 .g-info-box.sm.full .g-desc-box .conts-desc{
+    width: 100%;
+}
+
+/*게시판 컴포넌트 스타일*/
+.search-top-box .sch-filter-box{
+    background: var(--krds-light-color-surface-gray-subtler);
+}
+
+.search-top-box .sch-filter-box .filter-form{
+    justify-content: center;
+    width: 100%;
+}
+
+.search-top-box .sch-filter-box .filter-form .sch-form-wrap{
+    max-width: calc(100% - 29.1rem);
+}
+
+.search-top-box .sch-filter-box .filter-form .krds-form-select{
+    height: 100%;
+}
+
+.search-top-box .sch-filter-box .filter-form .sch-form-wrap .sch-input,
+.search-top-box .sch-filter-box .filter-form .sch-form-wrap .sch-input input{
     width: 100%;
 }
