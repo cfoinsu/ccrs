@@ -404,6 +404,10 @@ body {
     gap: 8px;
 }
 
+.page-description .g-desc-body p{
+    font-size: var(--krds-pc-font-size-body-medium);
+}
+
 .page-actions {
     display: flex;
     align-items: center;
@@ -4150,6 +4154,7 @@ table.comparison-table td:first-child   {
 
 .keywords-text-wrap{
     text-align: center;
+    font-size: var(--krds-pc-font-size-body-medium);
 }
 
 /*채무조정 단계 스테퍼*/
@@ -4160,7 +4165,7 @@ table.comparison-table td:first-child   {
     align-items:flex-end;
     align-self:stretch;
     border-radius: var(--krds-radius-xlarge1);
-    border: 1px solid var(--krds-light-color-border-gray);
+    border: 1px solid var(--krds-light-color-border-gray-light);
 }
 
 .guideline-cont-box{
@@ -4178,6 +4183,7 @@ table.comparison-table td:first-child   {
     min-height: 52px;
     align-self: stretch;
     text-align: center;
+    font-size: var(--krds-pc-font-size-body-medium);
 }
 
 .guideline-stepper{
