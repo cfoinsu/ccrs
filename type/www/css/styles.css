@@ -4355,6 +4355,7 @@ table.comparison-table td:first-child   {
 .g-grid-wrap.unit2 .g-info-box.sm .g-desc-box{
     flex-direction: row;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
 .g-info-box.full .g-desc-box .g-tit,
