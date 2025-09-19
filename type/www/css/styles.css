@@ -4483,6 +4483,22 @@ table.comparison-table td:first-child   {
     padding-left: 0;
 }
 
+.krds-info-list.decimal .bullet{
+    font-size: var(--krds-pc-font-size-heading-small);
+    color: var(--krds-light-color-text-secondary);
+    padding-left: 12px;
+}
+
+.krds-info-list.decimal .bullet::before{
+    content: '';
+    width: 4px;
+    height: 18px;
+    background: url(../img/component/icon/bullet.svg) no-repeat center;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
 .g-wrap .g-conts-area .conts-desc{
     margin-bottom: var(--krds-gap-4);
 }
