@@ -4353,8 +4353,8 @@ table.comparison-table td:first-child   {
 
 .g-info-box.full .g-desc-box,
 .g-grid-wrap.unit2 .g-info-box.sm .g-desc-box{
-    flex-direction: row;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
