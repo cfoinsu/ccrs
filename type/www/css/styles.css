@@ -4438,6 +4438,22 @@ table.comparison-table td:first-child   {
     width: 100%;
 }
 
+.krds-info-list.decimal .before-none::before,
+.krds-info-list.decimal li.before-none{
+    background-color: transparent
+}
+
+.g-wrap .g-conts-area .conts-desc{
+    margin-bottom: var(--krds-gap-4);
+}
+
+.noti{
+    margin-top: var(--krds-gap-4);
+    display: flex;
+    align-items: center;
+    gap: var(--krds-gap-2);
+}
+
 /*게시판 컴포넌트 스타일*/
 .search-top-box .sch-filter-box{
     background: var(--krds-light-color-surface-gray-subtler);
