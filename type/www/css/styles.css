@@ -4440,6 +4440,7 @@ table.comparison-table td:first-child   {
 .search-top-box .sch-filter-box .filter-form{
     justify-content: center;
     width: 100%;
+    gap:var(--krds-gap-3);
 }
 
 .search-top-box .sch-filter-box .filter-form .sch-form-wrap{
