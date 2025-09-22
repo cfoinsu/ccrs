@@ -47,7 +47,7 @@ Version : v1.0
 
 body {
     font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: var(--krds-pc-font-size-body-medium);
     line-height: 1.5;
     color: var(--krds-light-color-text-static);
     background-color: transparent;
@@ -4526,24 +4526,27 @@ table.comparison-table td:first-child   {
     padding-left: 0;
 }
 
+.g-conts-area .bullet,
 .krds-info-list.decimal .bullet{
     font-size: var(--krds-pc-font-size-heading-small);
     color: var(--krds-light-color-text-secondary);
     padding-left: 12px;
 }
 
+.g-conts-area .bullet::before,
 .krds-info-list.decimal .bullet::before{
     content: '';
     width: 4px;
     height: 18px;
     background: url(../img/component/icon/bullet.svg) no-repeat center;
     position: absolute;
-    top: 5px;
+    top: 15%;
     left: 0;
 }
 
 .g-wrap .g-conts-area .conts-desc{
     margin-bottom: var(--krds-gap-4);
+    font-size: var(--krds-pc-font-size-body-medium)
 }
 
 .noti{
@@ -4607,14 +4610,26 @@ table.comparison-table td:first-child   {
     text-align: center;
 }
 
-.mission-box.yellow{
-    background-color: #FFF6DE;
+.yellow-box{
+    background-color: #FFF6DE !important;
 }
 
-.mission-box.blue{
-    background-color: #EDF4FF;
+.blue-box{
+    background-color: #EDF4FF !important;
 }
 
-.mission-box.green{
-    background-color: #EEF9E8;
+.green-box{
+    background-color: #EEF9E8 !important;
+}
+
+.skyblue-box{
+    background-color: #DEF9FE !important;
+}
+
+.red-box{
+    background-color: #FFEEE9 !important;
+}
+
+.purple-box{
+    background-color: #F3F2FF !important;
 }
