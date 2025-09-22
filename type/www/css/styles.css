@@ -204,7 +204,7 @@ body {
     width:16px;
     height:16px;
     display: inline-block;
-    background: url(../img/component/icon/home.svg) no-repeat center;
+    background: url(../img/icons/home.svg) no-repeat center;
     background-size: contain;
     content: "";
 }
@@ -212,7 +212,7 @@ body {
 .breadcrumb-separator {
     width: 8px;
     height: 10px;
-    background: url(../img/component/icon/arrow-right.svg) no-repeat center;
+    background: url(../img/icons/arrow-right.svg) no-repeat center;
     background-size: 12px;
     filter: invert(28%) sepia(8%) saturate(656%) hue-rotate(172deg) brightness(92%) contrast(85%);
 }
@@ -288,7 +288,7 @@ body {
 }
 
 .nav-section-title .nav-arrow {
-    background: url(../img/component/icon/arrow-down.svg) center no-repeat;
+    background: url(../img/icons/arrow-down.svg) center no-repeat;
     width: 16px;
     height: 12px;
 }
@@ -430,7 +430,7 @@ body {
     width:20px;
     height:20px;
     display: inline-block;
-    background: url(../img/component/icon/visibility.svg) no-repeat center;
+    background: url(../img/icons/visibility.svg) no-repeat center;
     background-size: contain;
     content: "";
 }
@@ -458,7 +458,7 @@ body {
     width:20px;
     height:20px;
     display: inline-block;
-    background: url(../img/component/icon/popover_help.svg) no-repeat center;
+    background: url(../img/icons/popover_help.svg) no-repeat center;
     background-size: contain;
     content: "";
 }
@@ -467,7 +467,7 @@ body {
     width:20px;
     height:20px;
     display: inline-block;
-    background: url(../img/component/icon/print.svg) no-repeat center;
+    background: url(../img/icons/print.svg) no-repeat center;
     background-size: contain;
     content: "";
 }
@@ -476,7 +476,7 @@ body {
     width:20px;
     height:20px;
     display: inline-block;
-    background: url(../img/component/icon/share.svg) no-repeat -1px center;
+    background: url(../img/icons/share.svg) no-repeat -1px center;
     background-size: contain;
     content: "";
 }
@@ -4334,7 +4334,7 @@ table.comparison-table td:first-child   {
     left: -30px;
     width:24px;
     height: 24px;
-    background: url(../img/component/icon/annotation-info.svg) no-repeat center;
+    background: url(../img/icons/annotation-info.svg) no-repeat center;
 }
 
 .g-wrap.row{
@@ -4538,7 +4538,7 @@ table.comparison-table td:first-child   {
     content: '';
     width: 4px;
     height: 18px;
-    background: url(../img/component/icon/bullet.svg) no-repeat center;
+    background: url(../img/icons/bullet.svg) no-repeat center;
     position: absolute;
     top: 15%;
     left: 0;

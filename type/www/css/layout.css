@@ -203,7 +203,7 @@ Version : v1.0
     display: block;
     width: 100%;
     height: 100%;
-    background: url(../img/component/icon/menu.svg) center no-repeat;
+    background: url(../img/icons/menu.svg) center no-repeat;
 }
 
 #header .gnb-wrap #hamburgerBtn {
@@ -583,7 +583,7 @@ Version : v1.0
     display: block;
     width: 16px;
     height: 16px;
-    background: url(../img/component/icon/arrow-drop-down.svg) no-repeat center;
+    background: url(../img/icons/arrow-drop-down.svg) no-repeat center;
     background-size: 12px;
     filter: invert(99%) sepia(3%) saturate(2436%) hue-rotate(259deg) brightness(165%) contrast(100%);
 }
@@ -958,7 +958,7 @@ Version : v1.0
     height: 44px;
     width: 44px;
     margin-left: 4px;
-    background: url(../img/component/icon/ico_sch.svg) no-repeat center;
+    background: url(../img/icons/ico_sch.svg) no-repeat center;
     background-size: 36px;
 }
 
@@ -1035,6 +1035,7 @@ Version : v1.0
 }
 main .container {
     max-width: 1280px;
+    padding: 0;
 }
 .institution-links img {
     max-width: 1280px;
@@ -1430,7 +1431,7 @@ main .container {
     #header .gnb-wrap .logo a img {height: 20px;}
     #header .gnb-wrap > nav {display: none;}   
     #header .gnb-wrap > ul.utils {display: none;}   
-    #header .gnb-wrap .hamburger {background: url(../img/component/icon/menu.svg) center no-repeat}
+    #header .gnb-wrap .hamburger {background: url(../img/icons/menu.svg) center no-repeat}
     #header .gnb-wrap #hamburgerBtn {width: 30px; height: 30px;padding: 6px;top:10px;right:25px}
     #header .gnb-wrap .allmenu-util {width: 100vw; height: 4rem;}
     #header .gnb-wrap .allmenu-util a {position: absolute; top: 4rem; display: block; width: 4rem; height: 4rem;}
