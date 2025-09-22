@@ -4320,6 +4320,10 @@ table.comparison-table td:first-child   {
     margin: 12px 0;
 }
 
+.g-tit.primary{
+    color: var(--krds-light-color-text-primary);
+}
+
 .g-info-box .g-desc-box .g-tit.info,
 .noti.g-tit.info{
     margin-left:30px;
@@ -4546,7 +4550,7 @@ table.comparison-table td:first-child   {
 
 .g-wrap .g-conts-area .conts-desc{
     margin-bottom: var(--krds-gap-4);
-    font-size: var(--krds-pc-font-size-body-medium)
+    font-size: var(--krds-pc-font-size-body-medium);
 }
 
 .noti{
@@ -4610,6 +4614,7 @@ table.comparison-table td:first-child   {
     text-align: center;
 }
 
+/*박스 컬러 배경*/
 .yellow-box{
     background-color: #FFF6DE !important;
 }
