@@ -18140,7 +18140,7 @@ a:hover .d-card .c-tit {
   flex-direction: row;
   gap: var(--krds-gap-7);
   max-width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .search-top-box .sch-filter-box .filter-form > div {
   display: inline-flex;
@@ -18148,8 +18148,8 @@ a:hover .d-card .c-tit {
   justify-content: flex-start;
   flex-direction: row;
   gap: var(--krds-gap-4);
-  width: 100%;
-  max-width: 26.5rem;
+  width: auto;
+  max-width: 100%;
 }
 .search-top-box .sch-filter-box .filter-form > div:nth-child(4) {
   max-width: fit-content;
@@ -18163,7 +18163,8 @@ a:hover .d-card .c-tit {
   min-width: 6.3rem;
 }
 .search-top-box .sch-filter-box .filter-form .krds-form-select {
-  width: 100%;
+  width: auto;
+  flex:1;
 }
 .search-top-box .filter-chip {
   padding: var(--krds-padding-8) 0 0;
