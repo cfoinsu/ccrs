@@ -1176,6 +1176,7 @@ body {
 
 .btn-ghost {
   color: #374151;
+  text-align: left;
 }
 
 .btn-ghost:hover {
@@ -4367,7 +4368,7 @@ table.comparison-table td:first-child   {
 }
 
 .g-wrap .g-info-box.purple .g-desc-box .cont-wrap{
-    max-width: 300px;
+    max-width: calc(100% - 80px);
 }
 
 .g-grid-wrap.unit2 .g-info-box.sm,
