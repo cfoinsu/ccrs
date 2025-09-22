@@ -18114,8 +18114,10 @@ a:hover .d-card .c-tit {
   border-bottom: 1px solid var(--krds-light-color-surface-gray-subtler);
 }
 .g-wrap .g-card-list img {
-  width: 100%;
+  width: 0;
+  height: auto;
   border-radius: 1.2rem;
+  flex: 1;
 }
 .board-list .selected-card {
   display: flex;
