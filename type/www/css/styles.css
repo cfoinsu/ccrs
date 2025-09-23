@@ -4341,6 +4341,10 @@ table.comparison-table td:first-child   {
     background: url(../img/icons/annotation-info.svg) no-repeat center;
 }
 
+.g-wrap .g-desc-box{
+    height: 100%;
+}
+
 .g-wrap.row{
     display: flex;
     flex-direction: row;
@@ -4363,6 +4367,7 @@ table.comparison-table td:first-child   {
 
 .g-wrap .g-info-box.gray{
     background-color:var(--krds-light-color-surface-gray-subtler);
+    border: 1px solid var(--krds-light-color-border-gray-light);
 }
 
 .g-wrap .g-info-box.purple{
@@ -4411,6 +4416,7 @@ table.comparison-table td:first-child   {
     min-height: 130px;
     font-size: var(--krds-pc-font-size-body-medium);
     margin-top: 8px;
+    height: 100%;
 }
 
 .g-grid-wrap.unit2 .g-info-box.sm .g-desc-box .g-img,
