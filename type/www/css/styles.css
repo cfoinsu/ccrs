@@ -1134,7 +1134,7 @@ body {
 }
 .btn.btn-primary {
     font-size: 19px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .info-item .btn.btn-primary,
 .result-card .btn.btn-primary {
@@ -4539,6 +4539,8 @@ table.comparison-table td:first-child   {
     margin-top: 8px;
 }
 
+.krds-info-list.dash .before-none::before,
+.krds-info-list.dash li.before-none,
 .krds-info-list.decimal .before-none::before,
 .krds-info-list.decimal li.before-none{
     background-color: transparent;
