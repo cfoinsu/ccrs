@@ -4600,29 +4600,6 @@ table.comparison-table td:first-child   {
     border-radius: var(--krds-radius-xlarge3);
 }
 
-/*게시판 컴포넌트 스타일*/
-.search-top-box .sch-filter-box{
-    background: var(--krds-light-color-surface-gray-subtler);
-}
-
-.search-top-box .sch-filter-box .filter-form{
-    justify-content: center;
-    width: 100%;
-    gap:var(--krds-gap-3);
-}
-
-.search-top-box .sch-filter-box .filter-form .sch-form-wrap{
-    max-width: calc(100% - 29.1rem);
-}
-
-.search-top-box .sch-filter-box .filter-form .krds-form-select{
-    height: 100%;
-}
-
-.search-top-box .sch-filter-box .filter-form .sch-form-wrap .sch-input,
-.search-top-box .sch-filter-box .filter-form .sch-form-wrap .sch-input input{
-    width: 100%;
-}
 
 /*미션과 비전 핵심가치 컨텐츠 영역*/
 .mission-box{
