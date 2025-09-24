@@ -4716,3 +4716,11 @@ table.comparison-table td:first-child   {
 .charter-svg.bottom{
     bottom: 50px;
 }
+
+/*윤리강령 아코디언 추가 스타일*/
+.board-list .g-tit{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+}
