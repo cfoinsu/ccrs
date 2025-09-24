@@ -2722,7 +2722,7 @@ caption {
   content: "";
   width: 0;
   height: 0.4rem;
-  background-color: var(--krds-tab--line-button-color-line-active);
+  background-color: var(--krds-light-color-action-primary-active);
   transition: var(--krds-transition-base);
 }
 .tab.line .active .btn-tab {
