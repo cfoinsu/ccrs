@@ -18079,7 +18079,7 @@ a:hover .d-card .c-tit {
   /* 필터칩 박스 */
 }
 .search-top-box .sch-form-wrap .krds-input {
-  width: 48.5rem;
+  width: auto;
 }
 .search-top-box .sch-form-wrap.flex-inline {
   display: inline-flex;
@@ -18144,23 +18144,54 @@ a:hover .d-card .c-tit {
   padding: 0;
   margin: 5rem 0;
 }
+/*게시판 컴포넌트 스타일*/
+.search-top-box .sch-filter-box{
+    background: var(--krds-light-color-surface-gray-subtler);
+}
+.search-top-box .sch-filter-box .g-btn-area.actbtn {
+  justify-content: space-between;
+}
+.search-top-box .sch-filter-box .g-btn-area.actbtn .krds-btn.active {
+  background: var(--krds-button--color-secondary-fill-pressed);
+  color: var(--krds-button--color-secondary-text);
+  border-color: var(--krds-button--color-secondary-text);
+}
+
+.search-top-box .sch-filter-box .filter-form .sch-form-wrap{
+    max-width: 100%;
+}
+.search-top-box .sch-filter-box .filter-form.wmid {
+  justify-content: flex-start;
+}
+.search-top-box .sch-filter-box .filter-form.wmid .krds-form-select{
+    height: 100%;
+    min-width: 0;
+}
+.search-top-box .sch-filter-box .filter-form.wmid .sch-input{
+    height: 100%;
+    width: auto;
+    min-width: 0;
+}
+
 .search-top-box .sch-filter-box .filter-form {
   display: flex;
   align-items: normal;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
   gap: var(--krds-gap-7);
   max-width: 100%;
+  width:100%;
   flex-wrap: nowrap;
 }
-.search-top-box .sch-filter-box .filter-form > div {
+.search-top-box .sch-filter-box .filter-form .label-wrap {
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
   gap: var(--krds-gap-4);
-  width: auto;
+  width: 100%;
   max-width: 100%;
+  box-sizing: border-box;
 }
 .search-top-box .sch-filter-box .filter-form > div:nth-child(4) {
   max-width: fit-content;
@@ -24442,7 +24473,7 @@ body {
   }
 }
 .g-wrap.popup .search-top-box .sch-form-wrap .krds-input {
-  width: 43.2rem;
+  width: auto;
 }
 @media (max-width: 767px) {
   .g-wrap.popup .search-top-box .sch-form-wrap .krds-input {
