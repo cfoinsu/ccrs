@@ -4587,6 +4587,19 @@ table.comparison-table td:first-child   {
     color: var(--krds-light-color-text-primary);
 }
 
+.accordion-body .conts-desc.row{
+    display: flex;
+    flex-direction: row;
+    gap: var(--krds-gap-8);
+}
+
+.accordion-body .conts-desc.row .accordion-cont-img{
+    flex:none;
+    padding: 20px;
+    height: fit-content;
+    border-radius: var(--krds-radius-xlarge3);
+}
+
 /*게시판 컴포넌트 스타일*/
 .search-top-box .sch-filter-box{
     background: var(--krds-light-color-surface-gray-subtler);
