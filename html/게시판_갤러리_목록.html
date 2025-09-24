@@ -327,26 +327,8 @@
                                                     [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
                                                     <span class="ic-new"></span>
                                                 </p>
-                                            </a>
-                                        </div>
-                                        <div class="card-btm">
-                                            <span class="stat">관리자</span>
-                                            <span class="stat">2025.01.31</span>
-                                            <span class="stat">조회수
-                                                <span class="cnt">9,999</span>
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <li class="gallery-item">
-                                        <div class="card-top">
-                                            <img src="/type/www/images/img/gallery01.png" alt="갤러리 이미지">
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="gall-txt">카테고리</p>
-                                            <a href="#" class="gall-text">
-                                                <p class="gall-tit">
-                                                    [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
-                                                    <span class="ic-new"></span>
+                                                <p class="gall-txt">
+                                                    [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
                                                 </p>
                                             </a>
                                         </div>
@@ -369,6 +351,9 @@
                                                     [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
                                                     <span class="ic-new"></span>
                                                 </p>
+                                                <p class="gall-txt">
+                                                    [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                </p>
                                             </a>
                                         </div>
                                         <div class="card-btm">
@@ -389,6 +374,33 @@
                                                 <p class="gall-tit">
                                                     [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
                                                     <span class="ic-new"></span>
+                                                </p>
+                                                <p class="gall-txt">
+                                                    [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="card-btm">
+                                            <span class="stat">관리자</span>
+                                            <span class="stat">2025.01.31</span>
+                                            <span class="stat">조회수
+                                                <span class="cnt">9,999</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="gallery-item">
+                                        <div class="card-top">
+                                            <img src="/type/www/images/img/gallery01.png" alt="갤러리 이미지">
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="gall-txt">카테고리</p>
+                                            <a href="#" class="gall-text">
+                                                <p class="gall-tit">
+                                                    [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                    <span class="ic-new"></span>
+                                                </p>
+                                                <p class="gall-txt">
+                                                    [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
                                                 </p>
                                             </a>
                                         </div>
@@ -711,31 +723,10 @@
 
     <!-- 2️⃣ 아코디언 토글 스크립트 -->
     <script>
-    $(function () {                       // DOMContentLoaded 와 동일
-        // ① 요소 캐시
-        const $toggleBtn   = $('#toggleButton');
-        const $toggleText  = $('#toggleText');
-        const $arrowIcon   = $('#arrowIcon');
-        const $separator   = $('#separator');
-        const $support     = $('#supportContent');
-
-        // ② 클릭 이벤트 핸들러
-        $toggleBtn.on('click', function () {
-        //   - 클래스 토글과 현재 상태 확인
-        //   - .toggleClass() 은 토글 후 현재 상태를 반환하지 않으므로
-        //     .hasClass() 로 현재가 열렸는지 판단
-        const isOpen = $support.toggleClass('open').hasClass('open');
-
-        //   - 열림/닫힘에 따라 UI 업데이트
-        if (isOpen) {
-            $toggleText.text('지원내용 닫기');
-            $arrowIcon.removeClass('rotate-90').addClass('rotate-270');
-            $separator.show();               // display:block
-        } else {
-            $toggleText.text('지원내용 보기');
-            $arrowIcon.removeClass('rotate-270').addClass('rotate-90');
-            $separator.hide();                // display:none
-        }
+    $(function () {
+        $('.search-list-top .w-sort-btn button').on('click', function () {
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.gallery').toggleClass('type-full');
         });
     });
     </script>

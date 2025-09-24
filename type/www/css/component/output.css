@@ -7659,8 +7659,8 @@ caption {
   padding: 0;
   border: none;
   gap: 4px;
-  min-width: 307px;
-  width:0;
+  min-width: 0;
+  width:100%;
 }
 .krds-structured-list > li.gallery-item .card-body {
   gap: 4px;
@@ -7702,6 +7702,9 @@ caption {
   font-weight: 700;
   font-size: 1.9rem;
   line-height: 150%;
+}
+.gallery-item .gall-text .gall-txt {
+  display:none;
 }
 .gallery-item .gall-text .gall-tit .ic-new {
   display: inline-block;
@@ -8050,6 +8053,7 @@ caption {
   gap: 12px;
 }
 .krds-structured-list.type-full.gallery .gallery-item .card-body .gall-txt {
+  display: block;
   margin-top: 1.2rem;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
