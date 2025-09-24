@@ -373,6 +373,7 @@ Version : v1.0
 .utility-right .linkbox li > * {
     display: inline-block;
     height: 3rem;
+    line-height: 3rem;
 }
 .utility-right .linkbox li + li::before {
     content: "";
