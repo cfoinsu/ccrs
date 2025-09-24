@@ -4672,3 +4672,70 @@ table.comparison-table td:first-child   {
 .white-box{
     background-color: white !important;
 }
+
+/*행동강령 및 윤리헌장 스타일*/
+.charter-wrap{
+    padding: 32px;
+    background-color: var(--krds-color-light-primary-20);
+    border-radius: var(--krds-radius-xlarge2);
+}
+
+.charter-box{
+    padding: 100px 70px;
+    background-color: white;
+    border-radius: var(--krds-radius-xlarge2);
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.charter-title{
+    display: flex;
+    align-items: center;
+    gap: var(--krds-gap-4);
+}
+
+.charter-title img{
+    height: 42px;
+}
+
+.charter-title .sec-tit{
+    font-size: var(--krds-pc-font-size-heading-xlarge);
+}
+
+.charter-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--krds-gap-6);
+    align-self: stretch;
+}
+
+.charter-text.center{
+    align-items: center;
+}
+
+.charter-text.center .g-tit{
+    text-align: center;
+}
+
+.charter-text.row{
+    flex-direction: row;
+    gap: var(--krds-gap-4);
+}
+
+.charter-svg{
+    position: absolute;
+    width: calc(100% - 100px);
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.charter-svg.top{
+    top: 50px;
+}
+
+.charter-svg.bottom{
+    bottom: 50px;
+}
