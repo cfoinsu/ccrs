@@ -2984,6 +2984,15 @@ caption {
   color: var(--krds-info-list--depth1-color-text);
   font-size: var(--krds-info-list--pc-text-depth1);
 }
+.krds-info-list.unit2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--krds-info-list--gap-layout-depth1-li-li);
+}
+.krds-info-list.unit2 > li {
+  width:calc(50% - var(--krds-info-list--gap-layout-depth1-li-li)/2);
+}
 @media (max-width: 767px) {
   .krds-info-list > li {
     font-size: var(--krds-info-list--mobile-text-depth1);
