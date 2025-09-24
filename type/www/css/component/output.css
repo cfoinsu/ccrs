@@ -7655,6 +7655,18 @@ caption {
 .krds-structured-list > li {
   padding: var(--krds-structured-list--list-padding-medium-size);
 }
+.gallery-item {
+  padding: 0;
+  border: none;
+}
+.gallery-item .card-top img {
+  border-radius: 12px;
+}
+.gallery-item .gall-txt {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 150%;
+}
 .krds-structured-list .card-btn {
   position: absolute;
   top: var(--krds-structured-list--card-buttons-position-top-medium-size);
@@ -8806,7 +8818,7 @@ caption {
   --krds-pagination--color-action: var(--krds-light-color-action-secondary);
   --krds-pagination--color-action-hover: var(--krds-light-color-action-secondary-hover);
   --krds-pagination--color-action-pressed: var(--krds-light-color-action-secondary-pressed);
-  --krds-pagination--color-action-active: var(--krds-light-color-action-secondary-active);
+  --krds-pagination--color-action-active: var(--krds-light-color-action-primary-active);
   --krds-pagination-gap: var(--krds-gap-3);
   --krds-pagination-margin-top: var(--krds-pc-gap-layout-h2-h3);
   --krds-pagination--size-height: var(--krds-size-height-6);
