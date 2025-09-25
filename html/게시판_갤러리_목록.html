@@ -725,6 +725,7 @@
     <script>
     $(function () {
         $('.search-list-top .w-sort-btn button').on('click', function () {
+            if($(this).hasClass('active')) return false;
             $(this).addClass('active').siblings().removeClass('active');
             $('.gallery').toggleClass('type-full');
         });

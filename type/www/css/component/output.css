@@ -3983,6 +3983,31 @@ caption {
   background: none;
 }
 
+/* 비타민 */
+.vita-title {background: #fff9f2; border-radius: 0; width: calc(100% + 6.4rem); max-width: 980px; margin: 0 -3.2rem; padding: 20px 32px; display: flex; align-items: center; gap: 10px;}
+.vita-title .img-wrap {display: block; width: 30px; height: 32px;}
+.vita-title .img-wrap img {width: 100%; height: 100%;}
+.vita-txt {font-size: 2.4rem; color: #ed7801; font-weight: 700;}
+.vita-content {width: 100%;}
+.vita-content-inner {display: flex; align-items: center; justify-content: space-between; padding: 3.2rem 0;}
+.vita-content-inner + .vita-content-inner {border-top: 1px solid #f0f0f0;padding-top:35px;}
+.vita-content-text {display: flex; flex-direction: column; gap: 8px; width: calc(100% - 114px);}
+.vita-content-tit {display: flex; align-items: center; gap: 8px;}
+.vita-content-text .tag {background: #49af19; color: #fff; border-radius: 1000px; font-size: 1.5rem; font-weight: 700; padding: 0 10px; height: 24px; display: flex; align-items: center; width: fit-content;}
+.vita-content-text .question {font-size: 1.9rem; color: #17191b; font-weight: 700;}
+.vita-content-text .answer {font-size: 1.6rem; color: #555; line-height: 150%; margin-top: 8px;}
+.vita-content-img {display: block; width: 96px; height: 76px;}
+.vita-content-img img {width: 100%; height: 100%;}
+.krds-accordion.type-heading.vita .accordion-item.active .accordion-collapse {
+  overflow: visible;
+}
+.krds-accordion.type-heading.vita .accordion-item .btn-accordion.active {
+	border-bottom: none;
+}
+.krds-accordion.type-heading.vita .accordion-item .accordion-body {
+	padding: 0;
+}
+
 [data-krds-mode=high-contrast] .krds-accordion {
   --krds-accordion--color-action: var(--krds-high-contrast-color-action-secondary);
   --krds-accordion--button-color-action: var(--krds-high-contrast-color-action-secondary);
