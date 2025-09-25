@@ -62,7 +62,7 @@ Version : v1.0
 }
 
 body {
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    font-family: 'Pretendard GOV', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
     font-size: var(--krds-pc-font-size-body-medium);
     line-height: 1.5;
     color: var(--krds-light-color-text-static);
@@ -4546,6 +4546,13 @@ table.comparison-table td:first-child {
     flex: 1 0 0;
 }
 
+.g-info-box.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .g-tit.primary {
     color: var(--krds-light-color-text-primary);
 }
@@ -4569,6 +4576,7 @@ table.comparison-table td:first-child {
 
 .g-wrap .g-desc-box {
     height: 100%;
+    justify-content: space-between;
 }
 
 .g-wrap.row {
@@ -4606,12 +4614,12 @@ table.comparison-table td:first-child {
     max-width: calc(100% - 80px);
 }
 
-.g-grid-wrap.unit2 .g-info-box.sm,
-.g-grid-wrap.unit4 .g-info-box.sm {
+.g-grid-wrap.unit2 .g-info-box,
+.g-grid-wrap.unit4 .g-info-box {
     padding: 32px;
 }
 
-.g-grid-wrap.unit3 .g-info-box.sm {
+.g-grid-wrap.unit3 .g-info-box {
     padding: 32px 20px;
 }
 
