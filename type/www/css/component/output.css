@@ -3988,7 +3988,7 @@ caption {
 .vita-title .img-wrap {display: block; width: 30px; height: 32px;}
 .vita-title .img-wrap img {width: 100%; height: 100%;}
 .vita-txt {font-size: 2.4rem; color: #ed7801; font-weight: 700;}
-.vita-content {width: 100%;}
+.vita-content {width: 100%;padding-bottom:30px;}
 .vita-content-inner {display: flex; align-items: center; justify-content: space-between; padding: 3.2rem 0;}
 .vita-content-inner + .vita-content-inner {border-top: 1px solid #f0f0f0;padding-top:35px;}
 .vita-content-text {display: flex; flex-direction: column; gap: 8px; width: calc(100% - 114px);}
