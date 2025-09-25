@@ -4811,6 +4811,7 @@ table.comparison-table td:first-child {
     color: var(--krds-light-color-text-primary);
 }
 
+.conts-desc.row,
 .accordion-body .conts-desc.row {
     display: flex;
     flex-direction: row;
@@ -5269,4 +5270,18 @@ table.comparison-table td:first-child {
     .timeline-image-card {
         height: 180px;
     }
+}
+
+/*위원장 인사말 스타일*/
+.chairman-box{
+    border-radius: var(--krds-radius-xlarge2);
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.chairman-signiture{
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
 }
