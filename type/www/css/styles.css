@@ -386,7 +386,7 @@ body {
 
 .page-description {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     align-self: stretch;
     gap: 45px;
     margin-bottom: 20px;
@@ -5292,4 +5292,46 @@ table.comparison-table td:first-child {
     width: 100%;
     justify-content: flex-end;
     align-items: center;
+}
+
+/*고객의소리 상담안내 스타일*/
+.g-tit-img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-description.margin-none{
+    margin-bottom:0;
+}
+
+.g-wrap .g-info-box .g-desc-box .g-tit.call-time{
+    font-size: var(--krds-pc-font-size-heading-medium);
+}
+
+.krds-btn.full{
+    width: 100%;
+}
+
+.small-text{
+    color: var(--krds-light-color-text-subtle);
+    font-size: var(--krds-pc-font-size-body-small);
+}
+
+.conts-desc.qr-box{
+    display: inline-flex;
+    padding: 13px 15px 13px 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid var(--krds-light-color-border-gray);
+    border-radius: var(--krds-radius-xlarge2);
+}
+
+.content-sections.g-wrap.call-wrap{
+   gap: var(--krds-gap-4); 
+}
+
+.sec-tit.call-tit{
+    margin-top: var(--krds-pc-gap-layout-title-body-large);
 }
