@@ -4967,15 +4967,6 @@ table.comparison-table td:first-child {
     flex: 1 0 0;
 }
 
-/* 연혁 페이지 전용 스타일 */
-.ccrs-year {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: flex-start;
-    width: 100%;
-}
-
 /* 연도 탭 섹션 */
 .year-tab-wrap {
     display: flex;
@@ -5037,221 +5028,245 @@ table.comparison-table td:first-child {
     background-color: var(--krds-light-color-border-gray-dark);
 }
 
-/* 타임라인 콘텐츠 */
-.timeline-content {
-    height: 1250px;
-    width: 966px;
+/*연혁 페이지 스타일*/
+/* 타임라인 컨테이너 - Flexbox 기반 */
+.timeline-content-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 타임라인 연도 섹션 - Grid 레이아웃 */
+.timeline-year-section {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 40px;
+    align-items: start;
+    padding: 40px 0;
     position: relative;
 }
 
-.timeline-cont-box {
+.timeline-year-section:not(:last-child)::after {
+    content: '';
     position: absolute;
-    left: 410px;
-    top: 39px;
-    width: 0;
-    height: 688px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 60px;
+    background: linear-gradient(to bottom, var(--krds-light-color-border-gray-light), transparent);
+}
+
+/* 이미지 영역 */
+.timeline-image-area {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* 타임라인 이미지 컨테이너 */
-.timeline-img {
-    position: absolute;
-    overflow: hidden;
-    border-radius: 24px;
-}
-
-.timeline-img-1 {
-    height: 230px;
-    left: 0;
-    top: 0;
-    width: 360px;
-}
-
-.timeline-img-2 {
-    height: 230px;
-    left: 0;
-    top: 350px;
-    width: 360px;
-}
-
-/* 타임라인 연도 텍스트 */
-.timeline-year {
-    position: absolute;
-    font-size: var(--krds-pc-font-size-body-large);
-    color: var(--krds-light-color-text-primary);
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 1px;
-}
-
-/* 타임라인 연도 아이콘 */
-.timeline-year-icon {
-    position: absolute;
-    width: 21px;
-    height: 21px;
-}
-
-
-/* 타임라인 세로 라인 */
-.timeline-cont-box {
-    position: absolute;
-    left: 410px;
-    top: 39px;
-    width: 0;
-    height: 688px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.timeline-line-rotate {
-    transform: rotate(90deg);
-}
-
-.timeline-line-container {
-    height: 0;
-    width: 688px;
-    position: relative;
-}
-
-.timeline-line-inner {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: -1px;
-}
-
-.timeline-line-img {
-    display: block;
-    max-width: none;
-    width: 100%;
-    height: 100%;
-}
-
-
-/* 타임라인 연도 정보 컨테이너 */
-.timeline-year-container {
-    position: absolute;
-    left: 400px;
-    width: 100%;
-}
-
-.timeline-year-container-2023,
-.timeline-year-container-2020 {
-    top: 1px;
-}
-
-.timeline-year-container-2022 {
-    top: 351px;
-}
-
-.timeline-year-container-2021 {
-    top: 700px;
-}
-
-.timeline-year-container-2019{
-    top: 430px;
-}
-
-.timeline-year-container-2018{
-    top: 800px;
-}
-
-.timeline-year-container-2017{
-    top: 1100px;
-}
-
-.timeline-year-container-2016{
-    top: 1400px;
-}
-
-.timeline-year-container-2015{
-    top: 1800px;
-}
-
-.timeline-year-container-2014{
-    top: 2000px;
-}
-
-.timeline-year-container-2013{
-    top: 2300px;
-}
-
-.timeline-year-container-2012{
-    top: 2800px;
-}
-
-/* 타임라인 연도 헤더 */
-.timeline-year-header {
-    position: absolute;
-    height: 66px;
-    left: 0;
-    top: 0;
-    width: 136px;
-}
-
-.ccrs-year .timeline-year {
-    position: absolute;
-    left: 47px;
-    font-size: var(--krds-pc-font-size-heading-xlarge);
-    color: var(--krds-light-color-text-primary);
-    font-weight: 700;
-    line-height: 1.5;
-    top: 0;
-    letter-spacing: 1px;
-}
-
-.timeline-year-icon {
-    position: absolute;
-    left: 0;
-    width: 21px;
-    height: 21px;
-    top: 23px;
-}
-
-.timeline-year-icon img {
-    display: block;
-    max-width: none;
-    width: 100%;
-    height: 100%;
-}
-
-/* 타임라인 이벤트 */
-.timeline-events {
-    position: absolute;
-    left: 50px;
-    top: 86px;
-    font-size: var(--krds-pc-font-size-body-medium);
-    color: var(--krds-light-color-text-ba);
-}
-
-.timeline-event-item {
-    display: flex;
+    flex-direction: column;
     gap: 20px;
-    align-items: flex-start;
-    margin-bottom: 24px;
 }
 
-.timeline-event-item:last-child {
-    margin-bottom: 0;
+.timeline-image-card {
+    width: 100%;
+    height: 230px;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
 }
 
-.ccrs-year .timeline-date {
+.timeline-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 콘텐츠 영역 */
+.timeline-content-area {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-left: 20px;
+}
+
+/* 연도 헤더 - Flexbox 기반 */
+.timeline-year-header-flex {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.timeline-year-flex {
+    font-size: 44px;
+    color: var(--krds-light-color-text-primary);
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.timeline-year-icon-flex {
+    width: 24px;
+    height: 24px;
     flex-shrink: 0;
 }
 
-.timeline-event-content {
+.timeline-year-icon-flex img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 이벤트 리스트 - Flexbox 기반 */
+.timeline-events-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-event-item-flex {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 20px;
+    align-items: start;
+    padding: 12px 0;
+    border-left: 2px solid transparent;
+    padding-left: 16px;
+    transition: all 0.2s ease;
+}
+
+.timeline-event-item-flex:hover {
+    border-left-color: var(--krds-light-color-border-primary);
+    background-color: rgba(var(--krds-light-color-bg-alternative-rgb), 0.3);
+    margin-left: -16px;
+    padding-left: 30px;
+}
+
+.timeline-date-flex {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--krds-light-color-text-bolder);
+    line-height: 1.4;
+}
+
+.timeline-event-content-flex {
+    font-size: 16px;
+    color: var(--krds-light-color-text-basic);
     line-height: 1.5;
 }
 
-.timeline-event-multi {
+.timeline-event-multi-flex {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    align-items: flex-start;
+    gap: 8px;
+}
+
+/* 준비중 콘텐츠 - Flexbox 기반 */
+.timeline-placeholder-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    text-align: center;
+    color: var(--krds-light-color-text-disabled);
+    gap: 16px;
+}
+
+.timeline-placeholder-flex .icon {
+    width: 80px;
+    height: 80px;
+    opacity: 0.5;
+}
+
+.timeline-placeholder-flex .title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.timeline-placeholder-flex .desc {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+    .timeline-content-flex {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    .timeline-year-section {
+        grid-template-columns: 300px 1fr;
+        gap: 30px;
+    }
+    
+    .timeline-year-flex {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-year-section {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+    }
+    
+    .timeline-content-area {
+        padding-left: 0;
+    }
+    
+    .timeline-year-header-flex {
+        justify-content: center;
+        margin-bottom: 24px;
+    }
+    
+    .timeline-year-flex {
+        font-size: 32px;
+    }
+    
+    .timeline-event-item-flex {
+        grid-template-columns: 70px 1fr;
+        gap: 16px;
+    }
+    
+    .timeline-image-card {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-content-flex {
+        gap: 40px;
+        padding: 0 16px;
+    }
+    
+    .timeline-year-section {
+        padding: 24px 0;
+        gap: 20px;
+    }
+    
+    .timeline-year-flex {
+        font-size: 28px;
+    }
+    
+    .timeline-event-item-flex {
+        grid-template-columns: 60px 1fr;
+        gap: 12px;
+        padding: 8px 0;
+    }
+    
+    .timeline-date-flex {
+        font-size: 14px;
+    }
+    
+    .timeline-event-content-flex {
+        font-size: 14px;
+    }
+    
+    .timeline-image-card {
+        height: 180px;
+    }
 }
