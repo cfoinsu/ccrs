@@ -282,7 +282,7 @@ body {
     width: 100%;
     background: none;
     border: none;
-    padding: 18px 20px;
+    padding: 9px 20px;
     text-align: left;
     font-size: 19px;
     font-weight: 700;
@@ -327,7 +327,7 @@ body {
 
 .nav-subitem {
     display: block;
-    padding: 12px 20px 12px 40px;
+    padding: 6px 20px 6px 40px;
     color: #333;
     text-decoration: none;
     font-size: 17px;
