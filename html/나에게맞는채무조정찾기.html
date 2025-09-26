@@ -258,7 +258,7 @@
                                 간략한 정보를 통해 본인에게 맞는 채무조정제도를 소개합니다.
                             </div>
                             <!-- 새로운 Card Step Section -->
-                            <div class="figma-step-container">
+                            <div class="figma-step-container" data-current-step="1">
                                 <!-- 단계 탭 -->
                                 <div class="figma-step-tabs">
                                     <div class="figma-step-tab active" data-step="1">1단계 무담보채무액</div>
@@ -281,10 +281,12 @@
                                                     <div class="figma-step-title">갚아야 할 신용대출의 잔액을 입력해 주세요.</div>
                                                     <div class="figma-step-subtitle">신용대출·마이너스 한도대출·카드론·현금서비스 등 무담보대출의 합계입니다.</div>
                                                 </div>
-                                                <div class="figma-input-box">
-                                                    <span class="figma-input-label">신용대출 총액</span>
-                                                    <input type="text" class="figma-input-field" value="2,000" placeholder="0">
-                                                    <span class="figma-input-unit">만원</span>
+                                                <div class="figma-input-wrapper">
+                                                    <div class="figma-input-box">
+                                                        <span class="figma-input-label">신용대출 총액</span>
+                                                        <input type="text" class="figma-input-field" value="2,000" placeholder="0">
+                                                        <span class="figma-input-unit">만원</span>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -311,18 +313,58 @@
                                     <div class="figma-step-item" data-step="2">
                                         <div class="figma-step-group">
                                             <div class="figma-step-icon">
-                                                <img src="/type/www/img/contents/png/icon_svg2.svg" alt="담보채무액 아이콘">
+                                                <img src="/type/www/img/contents/png/icon_svg.svg" alt="무담보채무액 아이콘">
                                             </div>
                                             <div class="figma-step-inner">
                                                 <div class="figma-step-header">
-                                                    <div class="figma-step-title">현재 연체 상태를 선택해 주세요.</div>
-                                                    <div class="figma-step-subtitle">지금 상황에 맞는 항목을 골라주세요.</div>
+                                                    <div class="figma-step-title">부동산 담보대출의 잔액을 입력해 주세요.</div>
+                                                    <div class="figma-step-subtitle">본인 또는 가족(제3자)명의 부동산을 담보로 받은 대출의 남은 금액입니다.</div>
                                                 </div>
-                                                <div class="figma-chips-container">
-                                                    <div class="figma-chip active" data-value="0">연체 없음 (0일)</div>
-                                                    <div class="figma-chip" data-value="1-30">1~30일 이내 연체</div>
-                                                    <div class="figma-chip" data-value="31-89">31~89일 연체</div>
-                                                    <div class="figma-chip" data-value="90+">90일 이상 연체</div>
+                                                <div class="figma-input-wrapper">
+                                                    <div class="figma-input-box">
+                                                        <span class="figma-input-label">담보대출 잔액</span>
+                                                        <input type="text" class="figma-input-field" value="" placeholder="0">
+                                                        <span class="figma-input-unit">만원</span>
+                                                    </div>
+                                                    <button type="button" class="figma-chip-button" data-action="clear">없음</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="figma-step-group">
+                                            <div class="figma-step-icon">
+                                                <img src="/type/www/img/contents/png/icon_svg.svg" alt="무담보채무액 아이콘">
+                                            </div>
+                                            <div class="figma-step-inner">
+                                                <div class="figma-step-header">
+                                                    <div class="figma-step-title">임차보증금 관련 대출 금액을 입력해 주세요.</div>
+                                                    <div class="figma-step-subtitle">전세자금대출 · 임차보증금 담보대출 등 관련 대출의 남은 금액입니다.</div>
+                                                </div>
+                                                <div class="figma-input-wrapper">
+                                                    <div class="figma-input-box">
+                                                        <span class="figma-input-label">임차보증금 대출</span>
+                                                        <input type="text" class="figma-input-field" value="" placeholder="0">
+                                                        <span class="figma-input-unit">만원</span>
+                                                    </div>
+                                                    <button type="button" class="figma-chip-button" data-action="clear">없음</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="figma-step-group">
+                                            <div class="figma-step-icon">
+                                                <img src="/type/www/img/contents/png/icon_svg.svg" alt="무담보채무액 아이콘">
+                                            </div>
+                                            <div class="figma-step-inner">
+                                                <div class="figma-step-header">
+                                                    <div class="figma-step-title">갚아야 할 자동차 담보대출 잔액을 입력해 주세요.</div>
+                                                    <div class="figma-step-subtitle">본인 또는 가족(제3자)명의 차량을 담보로 받은 대출의 남은 금액입니다.</div>
+                                                </div>
+                                                <div class="figma-input-wrapper">
+                                                    <div class="figma-input-box">
+                                                        <span class="figma-input-label">자동차 담보대출</span>
+                                                        <input type="text" class="figma-input-field" value="" placeholder="0">
+                                                        <span class="figma-input-unit">만원</span>
+                                                    </div>
+                                                    <button type="button" class="figma-chip-button" data-action="clear">없음</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -332,17 +374,58 @@
                                     <div class="figma-step-item" data-step="3">
                                         <div class="figma-step-group">
                                             <div class="figma-step-icon">
-                                                <img src="/type/www/images/ic/icon_house.svg" alt="재산 아이콘">
+                                                <img src="/type/www/img/contents/png/icon_svg.svg" alt="무담보채무액 아이콘">
                                             </div>
                                             <div class="figma-step-inner">
                                                 <div class="figma-step-header">
-                                                    <div class="figma-step-title">보유한 부동산 가액을 입력해 주세요.</div>
-                                                    <div class="figma-step-subtitle">현재 시세 기준으로 입력해 주세요.</div>
+                                                    <div class="figma-step-title">본인 소유의 부동산 시세를 입력해 주세요.</div>
+                                                    <div class="figma-step-subtitle">아파트 · 빌라 · 상가 · 토지 등 본인 명의 부동산의 시세 합계입니다.</div>
                                                 </div>
-                                                <div class="figma-input-box">
-                                                    <span class="figma-input-label">부동산 총액</span>
-                                                    <input type="text" class="figma-input-field" value="0" placeholder="0">
-                                                    <span class="figma-input-unit">만원</span>
+                                                <div class="figma-input-wrapper">
+                                                    <div class="figma-input-box">
+                                                        <span class="figma-input-label">부동산 시세</span>
+                                                        <input type="text" class="figma-input-field" value="" placeholder="0">
+                                                        <span class="figma-input-unit">만원</span>
+                                                    </div>
+                                                    <button type="button" class="figma-chip-button" data-action="clear">없음</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="figma-step-group">
+                                            <div class="figma-step-icon">
+                                                <img src="/type/www/img/contents/png/icon_svg.svg" alt="무담보채무액 아이콘">
+                                            </div>
+                                            <div class="figma-step-inner">
+                                                <div class="figma-step-header">
+                                                    <div class="figma-step-title">보유 중인 임차보증금을 입력해 주세요.</div>
+                                                    <div class="figma-step-subtitle">주거용 또는 사업자의 전 · 월세 임자보증금 총액입니다.</div>
+                                                </div>
+                                                <div class="figma-input-wrapper">
+                                                    <div class="figma-input-box">
+                                                        <span class="figma-input-label">임차보증금</span>
+                                                        <input type="text" class="figma-input-field" value="" placeholder="0">
+                                                        <span class="figma-input-unit">만원</span>
+                                                    </div>
+                                                    <button type="button" class="figma-chip-button" data-action="clear">없음</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="figma-step-group">
+                                            <div class="figma-step-icon">
+                                                <img src="/type/www/img/contents/png/icon_svg.svg" alt="무담보채무액 아이콘">
+                                            </div>
+                                            <div class="figma-step-inner">
+                                                <div class="figma-step-header">
+                                                    <div class="figma-step-title">본인 소유의 자동차 시세를 입력해 주세요.</div>
+                                                    <div class="figma-step-subtitle">승용차 · 화물차 등 본인 차량의 현재 시세 총합입니다.</div>
+                                                </div>
+                                                <div class="figma-input-wrapper">
+                                                    <div class="figma-input-box">
+                                                        <span class="figma-input-label">자동차 시세</span>
+                                                        <input type="text" class="figma-input-field" value="" placeholder="0">
+                                                        <span class="figma-input-unit">만원</span>
+                                                    </div>
+                                                    <button type="button" class="figma-chip-button" data-action="clear">없음</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -352,17 +435,39 @@
                                     <div class="figma-step-item" data-step="4">
                                         <div class="figma-step-group">
                                             <div class="figma-step-icon">
-                                                <img src="/type/www/images/ic/icon_cash.svg" alt="소득 아이콘">
+                                                <img src="/type/www/img/contents/png/icon_svg.svg" alt="무담보채무액 아이콘">
                                             </div>
                                             <div class="figma-step-inner">
                                                 <div class="figma-step-header">
-                                                    <div class="figma-step-title">월 소득액을 입력해 주세요.</div>
-                                                    <div class="figma-step-subtitle">세후 실수령액을 기준으로 입력해 주세요.</div>
+                                                    <div class="figma-step-title">월 소득을 입력해 주세요.</div>
+                                                    <div class="figma-step-subtitle">세금 · 4대 보험 공제 후 실제 수령 금액을 적어주세요.<br/>성과급이 있다면 최근 12개월 평균 금액도 포함해 주세요.</div>
                                                 </div>
-                                                <div class="figma-input-box">
-                                                    <span class="figma-input-label">월 소득액</span>
-                                                    <input type="text" class="figma-input-field" value="0" placeholder="0">
-                                                    <span class="figma-input-unit">만원</span>
+                                                <div class="figma-input-wrapper">
+                                                    <div class="figma-input-box">
+                                                        <span class="figma-input-label">월소득</span>
+                                                        <input type="text" class="figma-input-field" value="" placeholder="0">
+                                                        <span class="figma-input-unit">만원</span>
+                                                    </div>
+                                                    <button type="button" class="figma-chip-button" data-action="clear">없음</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="figma-step-group">
+                                            <div class="figma-step-icon">
+                                                <img src="/type/www/img/contents/png/icon_svg.svg" alt="무담보채무액 아이콘">
+                                            </div>
+                                            <div class="figma-step-inner">
+                                                <div class="figma-step-header">
+                                                    <div class="figma-step-title">가족 등 제3자에게 정기적으로 지원받는 금액이 있나요?</div>
+                                                    <div class="figma-step-subtitle">배우자 · 부모 · 자녀 등에게 생활비를 지원받는 금액이 있다면 적어주세요.</div>
+                                                </div>
+                                                <div class="figma-input-wrapper">
+                                                    <div class="figma-input-box">
+                                                        <span class="figma-input-label">제 3자 소득제공액</span>
+                                                        <input type="text" class="figma-input-field" value="" placeholder="0">
+                                                        <span class="figma-input-unit">만원</span>
+                                                    </div>
+                                                    <button type="button" class="figma-chip-button" data-action="clear">없음</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -372,18 +477,36 @@
                                     <div class="figma-step-item" data-step="5">
                                         <div class="figma-step-group">
                                             <div class="figma-step-icon">
-                                                <img src="/type/www/images/ic/icon_info.svg" alt="정보 아이콘">
+                                                <img src="/type/www/img/contents/png/icon_svg2.svg" alt="담보채무액 아이콘">
                                             </div>
                                             <div class="figma-step-inner">
                                                 <div class="figma-step-header">
-                                                    <div class="figma-step-title">추가 정보를 선택해 주세요.</div>
-                                                    <div class="figma-step-subtitle">정확한 진단을 위해 필요한 정보입니다.</div>
+                                                    <div class="figma-step-title">현재 부양 중인 가족이 있나요?</div>
+                                                    <div class="figma-step-subtitle">부양가족 : 미성년 자녀, 60세 이상 부모</div>
                                                 </div>
                                                 <div class="figma-chips-container">
-                                                    <div class="figma-chip" data-value="single">1인 가구</div>
-                                                    <div class="figma-chip" data-value="family">가족 있음</div>
-                                                    <div class="figma-chip" data-value="low-income">저소득층</div>
-                                                    <div class="figma-chip" data-value="normal">일반</div>
+                                                    <div class="figma-chip active" data-value="0">부양가족이 있어요</div>
+                                                    <div class="figma-chip" data-value="1-30">부양가족이 없어요</div>
+                                                </div>
+                                                <div class="figma-input-box" style="margin-top: 8px;">
+                                                    <span class="figma-input-label">부양가족수</span>
+                                                    <input type="text" class="figma-input-field" value="2,000" placeholder="0">
+                                                    <span class="figma-input-unit">명</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="figma-step-group">
+                                            <div class="figma-step-icon">
+                                                <img src="/type/www/img/contents/png/icon_svg2.svg" alt="담보채무액 아이콘">
+                                            </div>
+                                            <div class="figma-step-inner">
+                                                <div class="figma-step-header">
+                                                    <div class="figma-step-title">최근 3개월 이상 소득 증빙이 가능하신가요?</div>
+                                                    <div class="figma-step-subtitle">증빙서류 예시 : 급여명세서, 소득금액증명원 등</div>
+                                                </div>
+                                                <div class="figma-chips-container">
+                                                    <div class="figma-chip active" data-value="0">증빙이 가능해요</div>
+                                                    <div class="figma-chip" data-value="1-30">증빙이 어려워요</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1019,6 +1142,9 @@
             $('.figma-step-item').removeClass('active');
             $(`.figma-step-item[data-step="${stepNumber}"]`).addClass('active');
             
+            // 배경색 변경
+            $('.figma-step-container').attr('data-current-step', stepNumber);
+            
             currentStep = stepNumber;
             updateButtons();
         });
@@ -1028,6 +1154,33 @@
             const $container = $(this).closest('.figma-chips-container');
             $container.find('.figma-chip').removeClass('active');
             $(this).addClass('active');
+        });
+        
+        // "없음" 버튼 클릭 이벤트
+        $('.figma-chip-button[data-action="clear"]').on('click', function() {
+            const $wrapper = $(this).closest('.figma-input-wrapper');
+            const $inputField = $wrapper.find('.figma-input-field');
+            
+            // 입력 필드를 0으로 설정
+            $inputField.val('0');
+            
+            // 버튼 상태 표시 (선택됨)
+            $(this).addClass('selected');
+            
+            // 잠시 후 선택 상태 제거
+            setTimeout(() => {
+                $(this).removeClass('selected');
+            }, 300);
+        });
+        
+        // input 필드에 값이 입력되면 "없음" 버튼 비활성화 시각적 효과
+        $('.figma-input-field').on('input', function() {
+            const $wrapper = $(this).closest('.figma-input-wrapper');
+            const $clearButton = $wrapper.find('.figma-chip-button[data-action="clear"]');
+            
+            if ($(this).val().replace(/,/g, '') !== '0' && $(this).val() !== '') {
+                $clearButton.removeClass('selected');
+            }
         });
         
         // 입력 필드에 천단위 구분자 추가
@@ -1069,6 +1222,9 @@
                 $('.figma-step-item').removeClass('active');
                 $(`.figma-step-item[data-step="${currentStep}"]`).addClass('active');
                 
+                // 배경색 변경
+                $('.figma-step-container').attr('data-current-step', currentStep);
+                
                 updateButtons();
             }
         });
@@ -1084,6 +1240,9 @@
                 // 컨텐츠 표시
                 $('.figma-step-item').removeClass('active');
                 $(`.figma-step-item[data-step="${currentStep}"]`).addClass('active');
+                
+                // 배경색 변경
+                $('.figma-step-container').attr('data-current-step', currentStep);
                 
                 updateButtons();
             }

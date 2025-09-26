@@ -5699,3 +5699,156 @@ table.comparison-table td:first-child {
         width: 100%;
     }
 }
+
+/* 탭별 배경색 설정 */
+.figma-step-container[data-current-step="1"] .figma-step-content,
+.figma-step-container[data-current-step="1"] .figma-step-tab.active {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+}
+
+.figma-step-container[data-current-step="2"] .figma-step-content,
+.figma-step-container[data-current-step="2"] .figma-step-tab.active {
+    background: linear-gradient(135deg, #fff0f5 0%, #ffe6f0 100%);
+}
+
+.figma-step-container[data-current-step="3"] .figma-step-content,
+.figma-step-container[data-current-step="3"] .figma-step-tab.active {
+    background: linear-gradient(135deg, #f0fff0 0%, #e6ffe6 100%);
+}
+
+.figma-step-container[data-current-step="4"] .figma-step-content,
+.figma-step-container[data-current-step="4"] .figma-step-tab.active {
+    background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 100%);
+}
+
+.figma-step-container[data-current-step="5"] .figma-step-content,
+.figma-step-container[data-current-step="5"] .figma-step-tab.active {
+    background: linear-gradient(135deg, #f5f0ff 0%, #ebe6ff 100%);
+}
+
+/* 기본 스타일 유지 */
+.figma-step-content {
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.figma-step-tab {
+    transition: all 0.3s ease;
+}
+
+/* figma-step-item 스크롤 설정 */
+.figma-step-item {
+    height: 400px;
+    /* 고정 높이 */
+    overflow-y: auto;
+    /* 세로 스크롤 */
+    overflow-x: hidden;
+    /* 가로 스크롤 숨김 */
+    /* 스크롤바 숨기기 (WebKit 브라우저) */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+.figma-step-item::-webkit-scrollbar {
+    display: none;
+    /* WebKit 브라우저 */
+}
+
+/* 고정 그라디언트 오버레이 - 스크롤에 따라 움직이지 않음 */
+.figma-step-content::after {
+    content: '';
+    position: absolute;
+    bottom: 80px;
+    /* 버튼 높이만큼 위에 위치 */
+    left: 0;
+    right: 0;
+    height: 80px;
+    /* 그라디언트 높이 */
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none;
+    /* 클릭 이벤트 방해하지 않음 */
+    z-index: 2;
+    /* 컨텐츠 위에, 버튼 아래 */
+}
+
+/* 버튼 영역이 그라디언트 위에 위치하도록 */
+.figma-buttons {
+    position: relative;
+    z-index: 5;
+    /* 그라디언트보다 위에 */
+}
+
+/* 단계별 그라디언트 색상 조정 */
+.figma-step-container[data-current-step="1"] .figma-step-content::after {
+    background: linear-gradient(to top, rgba(230, 243, 255, 1) 0%, rgba(230, 243, 255, 0.8) 30%, rgba(230, 243, 255, 0) 100%);
+}
+
+.figma-step-container[data-current-step="2"] .figma-step-content::after {
+    background: linear-gradient(to top, rgba(255, 230, 240, 1) 0%, rgba(255, 230, 240, 0.8) 30%, rgba(255, 230, 240, 0) 100%);
+}
+
+.figma-step-container[data-current-step="3"] .figma-step-content::after {
+    background: linear-gradient(to top, rgba(230, 255, 230, 1) 0%, rgba(230, 255, 230, 0.8) 30%, rgba(230, 255, 230, 0) 100%);
+}
+
+.figma-step-container[data-current-step="4"] .figma-step-content::after {
+    background: linear-gradient(to top, rgba(255, 245, 230, 1) 0%, rgba(255, 245, 230, 0.8) 30%, rgba(255, 245, 230, 0) 100%);
+}
+
+.figma-step-container[data-current-step="5"] .figma-step-content::after {
+    background: linear-gradient(to top, rgba(235, 230, 255, 1) 0%, rgba(235, 230, 255, 0.8) 30%, rgba(235, 230, 255, 0) 100%);
+}
+
+/* input-box와 버튼을 함께 배치하기 위한 컨테이너 */
+.figma-input-wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* figma-input-box가 wrapper 안에 있을 때 */
+.figma-input-wrapper .figma-input-box {
+    flex: 1;
+    /* 남은 공간을 모두 차지 */
+}
+
+/* Figma에서 가져온 버튼 스타일 */
+.figma-chip-button {
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 12px;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid #e6e8ea;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #17191b;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    /* 크기 고정 */
+}
+
+.figma-chip-button:hover {
+    background-color: #f8f9fa;
+    border-color: #d1d3d8;
+}
+
+.figma-chip-button:active,
+.figma-chip-button.selected {
+    background-color: #e6f3ff;
+    border-color: #4a90e2;
+    color: #4a90e2;
+}
