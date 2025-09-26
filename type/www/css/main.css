@@ -417,12 +417,6 @@
 }
 
 /* 하단 섹션 */
-.bottom-section {
-    padding: 0 164px;
-    display: flex;
-    gap: 16px;
-    width: 1592px;
-}
 .consulting-section {
     width: 549px;
     height: 105px;
@@ -431,9 +425,17 @@
     padding: 39px 32px;
     position: relative;
 }
+
+.bottom-section {
+    padding: 0 164px;
+    display: flex;
+    gap: 16px;
+    width: 1592px;
+}
+
 .intro-section {
     width: 1190px;
-    height: 105px;
+    height: 120px;
     background: #ebeff3;
     border-radius: 24px;
     padding: 39px 32px;
@@ -474,7 +476,7 @@
 
 .people-section {
     width: 386px;
-    height: 105px;
+    height: 120px;
     background: #ebeff3;
     border-radius: 24px;
     padding: 40px 32px;
