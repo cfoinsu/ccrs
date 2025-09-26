@@ -282,7 +282,7 @@ body {
     width: 100%;
     background: none;
     border: none;
-    padding: 18px 20px;
+    padding: 9px 20px;
     text-align: left;
     font-size: 19px;
     font-weight: 700;
@@ -327,7 +327,7 @@ body {
 
 .nav-subitem {
     display: block;
-    padding: 12px 20px 12px 40px;
+    padding: 6px 20px 6px 40px;
     color: #333;
     text-decoration: none;
     font-size: 17px;
@@ -362,12 +362,12 @@ body {
 }
 
 .content-area>div {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
 /* Page Header */
 .page-header {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 .title-wrap {
@@ -381,7 +381,7 @@ body {
     font-size: 36px;
     font-weight: 700;
     color: var(--krds-light-color-text-static);
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .page-description {
@@ -389,7 +389,7 @@ body {
     align-items: center;
     align-self: stretch;
     gap: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     background: linear-gradient(93deg, #FFF6EA 0%, #FFEBD0 100%);
     padding: 36px;
     border-radius: var(--krds-radius-xlarge2);
@@ -733,7 +733,7 @@ body {
 .content-sections {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 24px;
 }
 
 /* Product Overview */
@@ -4355,6 +4355,7 @@ table.comparison-table td:first-child {
     display: flex;
     align-items: center;
     align-self: stretch;
+    margin-bottom: 0;
 }
 
 .keywords-cont-wrap.row .keywords-cont-box {
@@ -4399,6 +4400,7 @@ table.comparison-table td:first-child {
     align-self: stretch;
     border-radius: var(--krds-radius-xlarge3);
     border: 1px solid var(--krds-light-color-border-gray-light);
+    margin-bottom: 0;
 }
 
 .guideline-cont-box {
@@ -4627,7 +4629,6 @@ table.comparison-table td:first-child {
     flex-direction: row;
     align-items: flex-end;
 }
-
 .g-info-box.full .g-desc-box,
 .g-grid-wrap.unit2 .g-info-box.sm .g-desc-box,
 .g-grid-wrap.unit4 .g-info-box.sm .g-desc-box {
@@ -4671,6 +4672,7 @@ table.comparison-table td:first-child {
 .g-grid-wrap.contect {
     display: flex !important;
     gap: var(--krds-gap-4) !important;
+    margin-top: 40px;
 }
 
 .g-grid-wrap.contect .g-info-box {
@@ -4759,6 +4761,7 @@ table.comparison-table td:first-child {
 
 .krds-info-list.decimal {
     gap: 8px;
+    text-align: left;
 }
 
 .krds-info-list.decimal li .krds-info-list {
@@ -5334,4 +5337,521 @@ table.comparison-table td:first-child {
 
 .sec-tit.call-tit{
     margin-top: var(--krds-pc-gap-layout-title-body-large);
+}
+
+/* 나에게 맞는 채무 조정 찾기 신규 디자인 스타일 */
+.figma-step-container {
+    max-width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 단계 탭 영역 */
+.figma-step-tabs {
+    display: flex;
+    gap: 2px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.figma-step-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 12px 12px 0 0;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.figma-step-tab.active {
+    background-color: #f2e9ff;
+    color: #17191b;
+}
+
+.figma-step-tab:not(.active) {
+    background-color: #e6e8ea;
+    color: #6d7882;
+}
+
+.figma-step-tab:nth-child(1),
+.figma-step-tab:nth-child(2) {
+    width: 195px;
+}
+
+.figma-step-tab:nth-child(3),
+.figma-step-tab:nth-child(4),
+.figma-step-tab:nth-child(5) {
+    width: 194px;
+}
+
+/* 컨텐츠 영역 */
+.figma-step-content {
+    background-color: #f2e9ff;
+    min-height: 486px;
+    border-radius: 0 0 24px 24px;
+    padding: 32px 20px 24px;
+    position: relative;
+}
+
+/* 스텝 내용 */
+.figma-step-item {
+    display: none;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+/* 첫 번째 단계만 기본 표시 */
+.figma-step-item.active {
+    display: flex;
+}
+
+/* 스텝 그룹 (아이콘 + 내용) */
+.figma-step-group {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* 아이콘 영역 - flexbox 기준 */
+.figma-step-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    margin-top: 4px;
+}
+
+.figma-step-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 스텝 컨텐츠 - flexbox 기준 */
+.figma-step-inner {
+    flex: 1;
+    max-width: 448px;
+}
+
+.figma-step-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+/* 2단계 전용 헤더 폭 제한 제거 - 피그마 기준으로 통일 */
+
+.figma-step-title {
+    font-family: 'Pretendard GOV', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #17191b;
+    width: 100%;
+}
+
+.figma-step-subtitle {
+    font-family: 'Pretendard GOV', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #17191b;
+    width: 100%;
+}
+
+/* 입력 박스 - flexbox 기준 */
+.figma-input-box {
+    background-color: white;
+    border-radius: 6px;
+    height: 48px;
+    width: 100%;
+    max-width: 448px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.figma-input-label {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Pretendard GOV', sans-serif;
+    font-size: 17px;
+    color: #17191b;
+    white-space: nowrap;
+}
+
+.figma-input-value-container {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.figma-input-field {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #17191b;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 4px;
+    width: auto;
+    min-width: 60px;
+}
+
+.figma-input-field::placeholder {
+    color: #8a949e;
+    font-weight: normal;
+}
+
+.figma-input-value {
+    font-family: 'Pretendard GOV', sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    color: #17191b;
+}
+
+.figma-input-unit {
+    font-family: 'Pretendard GOV', sans-serif;
+    font-size: 17px;
+    color: #8a949e;
+}
+
+/* 선택 칩 영역 - flexbox 기준 */
+.figma-chips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    max-width: 448px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.figma-chip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 220px;
+    border-radius: 6px;
+    padding: 0 12px;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.figma-chip.active {
+    background-color: #344d82;
+    color: white;
+}
+
+.figma-chip:not(.active) {
+    background-color: white;
+    color: #17191b;
+    border: 1px solid #e6e8ea;
+}
+
+/* 버튼 영역 */
+.figma-buttons {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 20px;
+}
+
+.figma-btn {
+    height: 48px;
+    width: 252px;
+    border-radius: 6px;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.figma-btn.secondary {
+    background-color: transparent;
+    color: #17191b;
+    border: 1px solid #6d7882;
+}
+
+.figma-btn.primary {
+    background-color: #f48f01;
+    color: white;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    .figma-step-container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .figma-step-item[data-step="1"],
+    .figma-step-item[data-step="2"] {
+        gap: 12px;
+    }
+
+    .figma-step-inner {
+        max-width: 100%;
+    }
+
+    .figma-input-box {
+        max-width: 400px;
+    }
+
+    .figma-chips-container {
+        max-width: 400px;
+    }
+
+    .figma-chip {
+        width: calc(50% - 4px);
+    }
+}
+
+@media (max-width: 768px) {
+    .figma-step-tabs {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 16px;
+    }
+
+    .figma-step-tab {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .figma-step-container {
+        padding: 0 16px;
+    }
+
+    .figma-step-item[data-step="1"],
+    .figma-step-item[data-step="2"] {
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .figma-step-icon {
+        margin-top: 0;
+        width: 48px;
+        height: 48px;
+    }
+
+    .figma-step-inner {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .figma-step-header {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .figma-step-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .figma-input-box,
+    .figma-chips-container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .figma-chip {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .figma-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .figma-btn {
+        width: 100%;
+    }
+}
+
+/* 탭별 배경색 설정 */
+.figma-step-container[data-current-step="1"] .figma-step-content,
+.figma-step-container[data-current-step="1"] .figma-step-tab.active {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+}
+
+.figma-step-container[data-current-step="2"] .figma-step-content,
+.figma-step-container[data-current-step="2"] .figma-step-tab.active {
+    background: linear-gradient(135deg, #fff0f5 0%, #ffe6f0 100%);
+}
+
+.figma-step-container[data-current-step="3"] .figma-step-content,
+.figma-step-container[data-current-step="3"] .figma-step-tab.active {
+    background: linear-gradient(135deg, #f0fff0 0%, #e6ffe6 100%);
+}
+
+.figma-step-container[data-current-step="4"] .figma-step-content,
+.figma-step-container[data-current-step="4"] .figma-step-tab.active {
+    background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 100%);
+}
+
+.figma-step-container[data-current-step="5"] .figma-step-content,
+.figma-step-container[data-current-step="5"] .figma-step-tab.active {
+    background: linear-gradient(135deg, #f5f0ff 0%, #ebe6ff 100%);
+}
+
+/* 기본 스타일 유지 */
+.figma-step-content {
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.figma-step-tab {
+    transition: all 0.3s ease;
+}
+
+/* figma-step-item 스크롤 설정 */
+.figma-step-item {
+    height: 400px;
+    /* 고정 높이 */
+    overflow-y: auto;
+    /* 세로 스크롤 */
+    overflow-x: hidden;
+    /* 가로 스크롤 숨김 */
+    /* 스크롤바 숨기기 (WebKit 브라우저) */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+.figma-step-item::-webkit-scrollbar {
+    display: none;
+    /* WebKit 브라우저 */
+}
+
+/* 고정 그라디언트 오버레이 - 스크롤에 따라 움직이지 않음 */
+.figma-step-content::after {
+    content: '';
+    position: absolute;
+    bottom: 80px;
+    /* 버튼 높이만큼 위에 위치 */
+    left: 0;
+    right: 0;
+    height: 80px;
+    /* 그라디언트 높이 */
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0) 100%);
+    pointer-events: none;
+    /* 클릭 이벤트 방해하지 않음 */
+    z-index: 2;
+    /* 컨텐츠 위에, 버튼 아래 */
+}
+
+/* 버튼 영역이 그라디언트 위에 위치하도록 */
+.figma-buttons {
+    position: relative;
+    z-index: 5;
+    /* 그라디언트보다 위에 */
+}
+
+/* 단계별 그라디언트 색상 조정 */
+.figma-step-container[data-current-step="1"] .figma-step-content::after {
+    background: linear-gradient(to top, rgba(230, 243, 255, 1) 0%, rgba(230, 243, 255, 0.8) 30%, rgba(230, 243, 255, 0) 100%);
+}
+
+.figma-step-container[data-current-step="2"] .figma-step-content::after {
+    background: linear-gradient(to top, rgba(255, 230, 240, 1) 0%, rgba(255, 230, 240, 0.8) 30%, rgba(255, 230, 240, 0) 100%);
+}
+
+.figma-step-container[data-current-step="3"] .figma-step-content::after {
+    background: linear-gradient(to top, rgba(230, 255, 230, 1) 0%, rgba(230, 255, 230, 0.8) 30%, rgba(230, 255, 230, 0) 100%);
+}
+
+.figma-step-container[data-current-step="4"] .figma-step-content::after {
+    background: linear-gradient(to top, rgba(255, 245, 230, 1) 0%, rgba(255, 245, 230, 0.8) 30%, rgba(255, 245, 230, 0) 100%);
+}
+
+.figma-step-container[data-current-step="5"] .figma-step-content::after {
+    background: linear-gradient(to top, rgba(235, 230, 255, 1) 0%, rgba(235, 230, 255, 0.8) 30%, rgba(235, 230, 255, 0) 100%);
+}
+
+/* input-box와 버튼을 함께 배치하기 위한 컨테이너 */
+.figma-input-wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* figma-input-box가 wrapper 안에 있을 때 */
+.figma-input-wrapper .figma-input-box {
+    flex: 1;
+    /* 남은 공간을 모두 차지 */
+}
+
+/* Figma에서 가져온 버튼 스타일 */
+.figma-chip-button {
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0 12px;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid #e6e8ea;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #17191b;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    /* 크기 고정 */
+}
+
+.figma-chip-button:hover {
+    background-color: #f8f9fa;
+    border-color: #d1d3d8;
+}
+
+.figma-chip-button:active,
+.figma-chip-button.selected {
+    background-color: #e6f3ff;
+    border-color: #4a90e2;
+    color: #4a90e2;
 }
