@@ -389,7 +389,7 @@ body {
     align-items: center;
     align-self: stretch;
     gap: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     background: linear-gradient(93deg, #FFF6EA 0%, #FFEBD0 100%);
     padding: 36px;
     border-radius: var(--krds-radius-xlarge2);
@@ -733,7 +733,7 @@ body {
 .content-sections {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 24px;
 }
 
 /* Product Overview */
@@ -4355,7 +4355,7 @@ table.comparison-table td:first-child {
     display: flex;
     align-items: center;
     align-self: stretch;
-    margin-bottom: 24px;
+    margin-bottom: 0;
 }
 
 .keywords-cont-wrap.row .keywords-cont-box {
@@ -4400,7 +4400,7 @@ table.comparison-table td:first-child {
     align-self: stretch;
     border-radius: var(--krds-radius-xlarge3);
     border: 1px solid var(--krds-light-color-border-gray-light);
-    margin-bottom: 24px;
+    margin-bottom: 0;
 }
 
 .guideline-cont-box {
@@ -4673,6 +4673,7 @@ table.comparison-table td:first-child {
 .g-grid-wrap.contect {
     display: flex !important;
     gap: var(--krds-gap-4) !important;
+    margin-top: 40px;
 }
 
 .g-grid-wrap.contect .g-info-box {

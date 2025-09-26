@@ -2848,7 +2848,7 @@ caption {
   font-weight: var(--krds-font-weight-bold);
   font-size: var(--krds-table--data-thead-pc-font-size);
   color: var(--krds-table--data-thead-color-text);
-  text-align: left;
+  text-align: center;
 }
 .krds-table-wrap .tbl.data thead th:first-child,
 .krds-table-wrap .tbl.data tbody th:first-child,
