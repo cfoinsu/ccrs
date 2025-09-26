@@ -1045,10 +1045,9 @@ main .container {
     padding: 0;
     position: relative;
 }
-main .container img {
+main .container section img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 section {
