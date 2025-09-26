@@ -1177,7 +1177,7 @@ body {
 /* 버튼 스타일 */
 .btn {
     display: inline-flex;
-    height: 56px;
+    height: 48px;
     align-items: center;
     justify-content: center;
     padding: 8px 20px;
