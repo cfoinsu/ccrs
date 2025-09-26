@@ -2957,9 +2957,9 @@ caption {
   --krds-info-list--depth1-list-margin-top: 0;
   --krds-info-list--depth2-list-margin-top: var(--krds-gap-5);
   --krds-info-list--depth3-list-margin-top: var(--krds-gap-4);
-  --krds-info-list--depth1-padding-left: var(--krds-number-12);
-  --krds-info-list--depth2-padding-left: var(--krds-number-10);
-  --krds-info-list--depth3-padding-left: var(--krds-number-9);
+  --krds-info-list--depth1-padding-left: var(--krds-number-9);
+  --krds-info-list--depth2-padding-left: var(--krds-number-8);
+  --krds-info-list--depth3-padding-left: var(--krds-number-7);
   --krds-info-list--gap-layout-depth1-li-li: var(--krds-gap-4);
   --krds-info-list--gap-layout-depth2-li-li: var(--krds-gap-3);
   --krds-info-list--gap-layout-depth3-li-li: var(--krds-gap-3);
@@ -3035,8 +3035,8 @@ caption {
 }
 .krds-info-list.decimal > li::before {
   content: "";
-  width: 0.6rem;
-  height: 0.6rem;
+  width: 0.4rem;
+  height: 0.4rem;
   content: "";
   background-color: var(--krds-info-list--depth1-color-text);
   border-radius: var(--krds-radius-max);

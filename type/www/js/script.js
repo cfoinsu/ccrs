@@ -210,7 +210,6 @@ document.querySelector('[aria-label="공유"]')?.addEventListener('click', () =>
 
 // Initialize page
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('소액대출 페이지가 로드되었습니다.');
     
     // Add fade-in animation to main sections
     const observer = new IntersectionObserver((entries) => {
@@ -494,15 +493,3 @@ function formatDate(date) {
         day: 'numeric'
     }).format(date);
 }
-
-// Error handling
-window.addEventListener('error', function(event) {
-    console.error('JavaScript Error:', event.error);
-    // You could send this to a logging service
-});
-
-// Performance monitoring
-window.addEventListener('load', function() {
-    const loadTime = performance.now();
-    console.log('Page loaded in:', Math.round(loadTime), 'ms');
-});

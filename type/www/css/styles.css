@@ -3531,7 +3531,7 @@ body {
 
 .g-wrap .g-grid-wrap.unit2,
 .g-wrap .g-grid-wrap.unit3 {
-    gap: var(--krds-gap-4);
+    gap: var(--krds-gap-5);
 }
 
 .g-wrap .g-grid-wrap.unit4 {
@@ -4618,11 +4618,11 @@ table.comparison-table td:first-child {
 
 .g-grid-wrap.unit2 .g-info-box,
 .g-grid-wrap.unit4 .g-info-box {
-    padding: 32px;
+    padding: 3.2rem;
 }
 
 .g-grid-wrap.unit3 .g-info-box {
-    padding: 32px 20px;
+    padding: 3.2rem;
 }
 
 .g-info-box.full .g-desc-box.row {

@@ -18,10 +18,10 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/type/www/css/all.min.css">
 
-    <!-- Tailwind (standalone JS) -->
-    <!-- <script src="/type/www/js/plugins/tailwind.js"></script> -->
-    <!-- <script src="/type/www/js/component/ui-script.js"></script> -->
-    <script src="/type/www/cdn/krds.min.js"></script>
+    
+    
+    
+    
     
     <script src="/type/www/js/jquery-2.2.4.min.js"></script>
 </head>
@@ -605,40 +605,13 @@
     <!-- 검색영역 -->
 
     <script src="/type/www/js/jquery-2.2.4.min.js"></script>
+    <script src="/type/www/js/plugins/aos.js"></script>
     <script src="/type/www/js/common.js"></script>
     <script src="/type/www/js/layout.js"></script>
     <script src="/type/www/js/script.js"></script>
+    <script src="/type/www/js/component/ui-script.js"></script>
     <!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
 
-    <!-- 2️⃣ 아코디언 토글 스크립트 -->
-    <script>
-    $(function () {                       // DOMContentLoaded 와 동일
-        // ① 요소 캐시
-        const $toggleBtn   = $('#toggleButton');
-        const $toggleText  = $('#toggleText');
-        const $arrowIcon   = $('#arrowIcon');
-        const $separator   = $('#separator');
-        const $support     = $('#supportContent');
-
-        // ② 클릭 이벤트 핸들러
-        $toggleBtn.on('click', function () {
-        //   - 클래스 토글과 현재 상태 확인
-        //   - .toggleClass() 은 토글 후 현재 상태를 반환하지 않으므로
-        //     .hasClass() 로 현재가 열렸는지 판단
-        const isOpen = $support.toggleClass('open').hasClass('open');
-
-        //   - 열림/닫힘에 따라 UI 업데이트
-        if (isOpen) {
-            $toggleText.text('지원내용 닫기');
-            $arrowIcon.removeClass('rotate-90').addClass('rotate-270');
-            $separator.show();               // display:block
-        } else {
-            $toggleText.text('지원내용 보기');
-            $arrowIcon.removeClass('rotate-270').addClass('rotate-90');
-            $separator.hide();                // display:none
-        }
-        });
-    });
-    </script>
+    
 </body>
 </html>

@@ -539,7 +539,7 @@ Version : v1.0
 
 }
 #header .header-quickmenu-box:hover .top-box .quickmenu-btn {
-    transform:rotate(315deg);
+    transform:rotate(180deg);
 }
 #header .header-quickmenu-box:hover .header-quickmenu-list-box {
     display: block;
@@ -572,31 +572,31 @@ Version : v1.0
 #header .header-quickmenu-box .top-box .quickmenu-btn {
   position: relative;
   display: flex;
-  width: 1.75rem;
-  height: 1.75rem;
+  max-width: 2.4rem;
+  min-width: 2.4rem;
+  flex: 1;
+  width: 2.4rem;
+  height: 2.4rem;
   justify-content: center;
   align-items: center;
   background: #ef8d18;
-  border-radius: 50%;
-  transform: rotate(135deg);
+  border-radius: 2.4rem;
 }
 .icon-sp.ic_arrow_out_white::before {
     content: '';
     display: block;
-    width: 16px;
-    height: 16px;
-    background: url(../img/icons/arrow-drop-down.svg) no-repeat center;
+    width: 12px;
+    height: 12px;
+    background: url(../img/icons/icon-quickmenu.svg) no-repeat center;
     background-size: 12px;
-    filter: invert(99%) sepia(3%) saturate(2436%) hue-rotate(259deg) brightness(165%) contrast(100%);
+    transition: 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
 }
 
-#header .header-quickmenu-box .top-box .quickmenu-btn svg,
 #header .header-quickmenu-box .top-box .quickmenu-btn .icon-sp {
-  width: calc(12/var(--base-font-size)*var(--default-font-size));
-  height: calc(12/var(--base-font-size)*var(--default-font-size));
-  transform: rotate(225deg);
+  width: 12px;
+  height: 12px;
+  transform: none;
   transform-origin: center;
-  transition: 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
 }
 
 #header .header-quickmenu-box.close .top-box .quickmenu-btn {

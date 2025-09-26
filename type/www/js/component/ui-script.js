@@ -808,6 +808,14 @@ const krds_accordion = {
     button.setAttribute("aria-expanded", !isExpanded);
     button.classList.toggle("active", !isExpanded);
     currentItem.classList.toggle("active", !isExpanded);
+
+    // active가 되었을 때 스크롤
+    if (!isExpanded) {
+      // active 추가가 끝난 후에 스크롤 처리 (애니메이션 딜레이 위해 setTimeout 추천)
+      setTimeout(() => {
+        this.scrollToAccordionItem(currentItem);
+      }, 200); // 필요시 200ms 내외로 조정
+    }
   },
   setupAccordions() {
     this.accordionButtons.forEach((button, idx) => {
@@ -848,6 +856,15 @@ const krds_accordion = {
     accordionContent.setAttribute("role", "region");
     accordionContent.setAttribute("id", `accordionCollapse-id-${uniqueIdx}`);
     accordionContent.setAttribute("aria-labelledby", `accordionHeader-id-${uniqueIdx}`);
+  },
+  scrollToAccordionItem(item) {
+    const offset = 20; // 헤더/여유 픽셀 (필요 시 조절)
+    const rect = item.getBoundingClientRect();
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    window.scrollTo({
+      top: rect.top + scrollTop - offset,
+      behavior: 'smooth'
+    });
   },
 };
 
