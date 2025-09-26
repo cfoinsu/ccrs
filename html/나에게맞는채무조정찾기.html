@@ -257,233 +257,146 @@
                                 <span class="info-icon"></span>
                                 간략한 정보를 통해 본인에게 맞는 채무조정제도를 소개합니다.
                             </div>
-                            <!-- Card Section -->
-                            <div class="card-step-section">
-                                <div class="card-step active first-step">
-                                    <!-- Header -->
-                                    <div class="card-step-header">
-                                        <div class="step-label">STEP 01</div>
-                                        <div class="title">채무</div>
-                                        <!-- Cash bag icon -->
-                                        <div class="cash-icon"></div>
-                                    </div>
-
-                                    <div class="form-grid">
-                                        <!-- 채무액 (무담보) -->
-                                        <div class="form-group">
-                                            <div class="form-tit">
-                                                <label class="form-label">채무액 (무담보)
-                                                    <div class="tooltip-trigger" data-tooltip="최소 1만원 이상 입력해주세요.">
-                                                            <i class="fas fa-question-circle"></i>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <div class="input-wrapper">
-                                                <input type="number" id="unsecured-debt" class="form-input" placeholder="0" required>
-                                                <span class="input-suffix">만원</span>
-                                            </div>
-                                        </div>
-                                        <!-- 채무액 (부동산 담보 대출금) -->
-                                        <div class="form-group">
-                                            <div class="form-tit">
-                                                <label class="form-label">채무액 (부동산 담보 대출금)
-                                                    <div class="tooltip-trigger" data-tooltip="최소 1만원 이상 입력해주세요.">
-                                                            <i class="fas fa-question-circle"></i>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <div class="input-wrapper">
-                                                <input type="number" id="secured-debt" class="form-input" placeholder="0">
-                                                <span class="input-suffix">만원</span>
-                                            </div>
-                                        </div>
-                                        <!-- 채무액 (전월세 보증금 대출금) -->
-                                        <div class="form-group">
-                                            <div class="form-tit">
-                                                <label class="form-label">채무액 (전월세 보증금 대출금)
-                                                    <div class="tooltip-trigger" data-tooltip="최소 1만원 이상 입력해주세요.">
-                                                            <i class="fas fa-question-circle"></i>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <div class="input-wrapper">
-                                                <input type="number" id="housing-loan-debt" class="form-input" placeholder="0">
-                                                <span class="input-suffix">만원</span>
-                                            </div>
-                                        </div>
-
-                                        <!-- 채무액 (잔여 차량 대출금액) -->
-                                        <div class="form-group">
-                                            <div class="form-tit">
-                                                <label class="form-label">채무액 (잔여 차량 대출금액)
-                                                    <div class="tooltip-trigger" data-tooltip="최소 1만원 이상 입력해주세요.">
-                                                            <i class="fas fa-question-circle"></i>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <div class="input-wrapper">
-                                                <input type="number" id="secured-debt" class="form-input" placeholder="0">
-                                                <span class="input-suffix">만원</span>
-                                            </div>
-                                        </div>
-                                        <!-- 연체일수 -->
-                                        <div class="form-group">
-                                            <div class="form-tit">
-                                                <label class="form-label">연체일수
-                                                    <div class="tooltip-trigger" data-tooltip="현재 연체중인 채무의 연체일수를 선택해주세요.">
-                                                        <i class="fas fa-question-circle"></i>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                            <select id="overdue-days" class="form-select">
-                                                <option value="">선택해주세요</option>
-                                                <option value="none">연체없음</option>
-                                                <option value="1-30">1-30일</option>
-                                                <option value="31-60">31-60일</option>
-                                                <option value="61-90">61-90일</option>
-                                                <option value="91-more">91일 이상</option>
-                                            </select>
-                                        </div>
-
-                                    </div>
-                                    <div class="btn-area">
-                                        <!-- Next Button -->
-                                        <button type="button" class="krds-btn medium tertiary" onclick="nextStep1()">다음<i class="svg-icon ico-angle right"></i></button>
-                                    </div>
+                            <!-- 새로운 Card Step Section -->
+                            <div class="figma-step-container">
+                                <!-- 단계 탭 -->
+                                <div class="figma-step-tabs">
+                                    <div class="figma-step-tab active" data-step="1">1단계 무담보채무액</div>
+                                    <div class="figma-step-tab" data-step="2">2단계 담보채무액</div>
+                                    <div class="figma-step-tab" data-step="3">3단계 재산</div>
+                                    <div class="figma-step-tab" data-step="4">4단계 소득</div>
+                                    <div class="figma-step-tab" data-step="5">5단계 정보</div>
                                 </div>
-                                <div class="card-step second-step">
-                                    <!-- Header -->
-                                    <div class="card-step-header">
-                                        <div class="step-label">STEP 02</div>
-                                        <div class="title">재산</div>
-                                        <!-- house icon -->
-                                        <div class="house-icon"></div>
-                                    </div>
-                                    <div class="form-grid">
-                                        <!-- 부동산 -->
-                                        <div class="form-group">
-                                            <label class="form-label">부동산
-                                                <div class="tooltip-trigger" data-tooltip="최소 1만원 이상 입력해주세요.">
-                                                            <i class="fas fa-question-circle"></i>
-                                                    </div>
-                                            </label>
-                                            <div class="input-wrapper">
-                                                <input type="number" id="real-estate" class="form-input" placeholder="0">
-                                                <span class="input-suffix">만원</span>
+                                
+                                <!-- 컨텐츠 영역 -->
+                                <div class="figma-step-content">
+                                    <!-- 1단계: 무담보채무액 -->
+                                    <div class="figma-step-item active" data-step="1">
+                                        <div class="figma-step-group">
+                                            <div class="figma-step-icon">
+                                                <img src="/type/www/img/contents/png/icon_svg.svg" alt="무담보채무액 아이콘">
                                             </div>
-                                        </div>
-                                        <!-- 동산 -->
-                                        <div class="form-group">
-                                            <label class="form-label">동산
-                                                <div class="tooltip-trigger" data-tooltip="최소 1만원 이상 입력해주세요.">
-                                                            <i class="fas fa-question-circle"></i>
-                                                    </div>
-                                            </label>
-                                            <div class="input-wrapper">
-                                                <input type="number" id="movable-property" class="form-input" placeholder="0">
-                                                <span class="input-suffix">만원</span>
-                                            </div>
-                                        </div>
-                                        <!-- 월소득액 -->
-                                        <div class="form-group">
-                                            <label class="form-label">월소득액
-                                                <div class="tooltip-trigger" data-tooltip="세후 실수령액을 기준으로 입력해주세요."><i class="fas fa-question-circle"></i>
-                                            </div></label>
-                                            <div class="input-wrapper">
-                                                <input type="number" id="monthly-income" class="form-input" placeholder="0" required>
-                                                <span class="input-suffix">만원</span>
-                                            </div>
-                                        </div>
-                                        <!-- 제3자 제공소득 -->
-                                        <div class="form-group">
-                                            <label class="form-label">제 3자 소득
-                                                <div class="tooltip-trigger" data-tooltip="가족이나 제3자로부터 받는 정기적인 지원금액을 입력해주세요.">
-                                                <i class="fas fa-question-circle"></i>
+                                            <div class="figma-step-inner">
+                                                <div class="figma-step-header">
+                                                    <div class="figma-step-title">갚아야 할 신용대출의 잔액을 입력해 주세요.</div>
+                                                    <div class="figma-step-subtitle">신용대출·마이너스 한도대출·카드론·현금서비스 등 무담보대출의 합계입니다.</div>
                                                 </div>
-                                            </label>
-                                            <div class="input-wrapper">
-                                                <input type="number" id="third-party-income" class="form-input" placeholder="0">
-                                                <span class="input-suffix">만원</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="btn-area">
-                                        <!-- prev Button -->
-                                        <button type="button" class="krds-btn medium tertiary" onclick="prevStep1()"><i class="svg-icon ico-angle left"></i>이전</button>
-                                        <!-- Next Button -->
-                                        <button type="button" class="krds-btn medium tertiary" onclick="nextStep2()">다음<i class="svg-icon ico-angle right"></i></button>
-                                    </div>
-                                </div>
-                                <div class="card-step third-step">
-                                    <!-- Header -->
-                                    <div class="card-step-header">
-                                        <div class="step-label">STEP 03</div>
-                                        <div class="title">정보</div>
-                                        <!-- info icon -->
-                                        <div class="card-info-icon"></div>
-                                    </div>
-                                    <div class="form-grid">
-                                        <!-- 가구원수 -->
-                                        <div class="form-group">
-                                            <label class="form-label">가구원수
-                                                <div class="tooltip-trigger" data-tooltip="동거하는 가족 수를 입력해주세요. 미입력 시 1명으로 계산됩니다.">
-                                                <i class="fas fa-question-circle"></i>
+                                                <div class="figma-input-box">
+                                                    <span class="figma-input-label">신용대출 총액</span>
+                                                    <input type="text" class="figma-input-field" value="2,000" placeholder="0">
+                                                    <span class="figma-input-unit">만원</span>
                                                 </div>
-                                            </label>
-                                            <div class="input-wrapper">
-                                                <input type="number" id="household-size" class="form-input word1" placeholder="1">
-                                                <span class="input-suffix">명</span>
                                             </div>
                                         </div>
-                                        <!-- 소득증빙 가능여부 -->
-                                        <div class="form-group">
-                                            <label class="form-label">소득증빙 가능여부
-                                                <div class="tooltip-trigger" data-tooltip="급여명세서, 소득금액증명원 등으로 소득증빙이 가능한지 선택해주세요.">
-                                                    <i class="fas fa-question-circle"></i>
-                                                </div>
-                                            </label>
-                                            <div class="radio-group" id="income-verification">
-                                                <label class="radio-option">
-                                                    <input type="radio" name="incomeVerification" value="possible" required>
-                                                    <span class="radio-label"><i class="fas fa-check"></i>소득증빙가능</span>
-                                                </label>
-                                                <label class="radio-option">
-                                                    <input type="radio" name="incomeVerification" value="impossible">
-                                                    <span class="radio-label"><i class="fas fa-check"></i>소득증빙불가</span>
-                                                </label>
+                                        <div class="figma-step-group">
+                                            <div class="figma-step-icon">
+                                                <img src="/type/www/img/contents/png/icon_svg2.svg" alt="담보채무액 아이콘">
                                             </div>
-                                        </div>
-                                        <!-- 신용점수 하위20%이하 -->
-                                        <div class="form-group">
-                                            <label class="form-label">신용점수 하위20%이하
-                                                <div class="tooltip-trigger" data-tooltip="본인의 신용점수가 하위 20% 구간에 해당하는지 선택해주세요.">
-                                                    <i class="fas fa-question-circle"></i>
+                                            <div class="figma-step-inner">
+                                                <div class="figma-step-header">
+                                                    <div class="figma-step-title">현재 연체 상태를 선택해 주세요.</div>
+                                                    <div class="figma-step-subtitle">지금 상황에 맞는 항목을 골라주세요.</div>
                                                 </div>
-                                            </label>
-                                            <div class="radio-group" id="credit-score">
-                                                <label class="radio-option">
-                                                    <input type="radio" name="creditScore" value="below20" required>
-                                                    <span class="radio-label"><i class="fas fa-check"></i>20% 이하</span>
-                                                </label>
-                                                <label class="radio-option">
-                                                    <input type="radio" name="creditScore" value="above20">
-                                                    <span class="radio-label"><i class="fas fa-check"></i>20% 이상</span>
-                                                </label>
-                                                <label class="radio-option">
-                                                    <input type="radio" name="creditScore" value="unknown">
-                                                    <span class="radio-label"><i class="fas fa-check"></i>잘 모름</span>
-                                                </label>
+                                                <div class="figma-chips-container">
+                                                    <div class="figma-chip active" data-value="0">연체 없음 (0일)</div>
+                                                    <div class="figma-chip" data-value="1-30">1~30일 이내 연체</div>
+                                                    <div class="figma-chip" data-value="31-89">31~89일 연체</div>
+                                                    <div class="figma-chip" data-value="90+">90일 이상 연체</div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="btn-area">
-                                        <!-- prev Button -->
-                                        <button type="button" class="krds-btn medium tertiary" onclick="prevStep2()"><i class="svg-icon ico-angle left"></i>이전</button>
-                                        <!-- Next Button -->
-                                        <button type="button" class="krds-btn medium primary" onclick="result()">간편진단 결과조회<i class="svg-icon ico-angle right"></i></button>
+                                    
+                                    <!-- 2단계: 담보채무액 -->
+                                    <div class="figma-step-item" data-step="2">
+                                        <div class="figma-step-group">
+                                            <div class="figma-step-icon">
+                                                <img src="/type/www/img/contents/png/icon_svg2.svg" alt="담보채무액 아이콘">
+                                            </div>
+                                            <div class="figma-step-inner">
+                                                <div class="figma-step-header">
+                                                    <div class="figma-step-title">현재 연체 상태를 선택해 주세요.</div>
+                                                    <div class="figma-step-subtitle">지금 상황에 맞는 항목을 골라주세요.</div>
+                                                </div>
+                                                <div class="figma-chips-container">
+                                                    <div class="figma-chip active" data-value="0">연체 없음 (0일)</div>
+                                                    <div class="figma-chip" data-value="1-30">1~30일 이내 연체</div>
+                                                    <div class="figma-chip" data-value="31-89">31~89일 연체</div>
+                                                    <div class="figma-chip" data-value="90+">90일 이상 연체</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 3단계: 재산 -->
+                                    <div class="figma-step-item" data-step="3">
+                                        <div class="figma-step-group">
+                                            <div class="figma-step-icon">
+                                                <img src="/type/www/images/ic/icon_house.svg" alt="재산 아이콘">
+                                            </div>
+                                            <div class="figma-step-inner">
+                                                <div class="figma-step-header">
+                                                    <div class="figma-step-title">보유한 부동산 가액을 입력해 주세요.</div>
+                                                    <div class="figma-step-subtitle">현재 시세 기준으로 입력해 주세요.</div>
+                                                </div>
+                                                <div class="figma-input-box">
+                                                    <span class="figma-input-label">부동산 총액</span>
+                                                    <input type="text" class="figma-input-field" value="0" placeholder="0">
+                                                    <span class="figma-input-unit">만원</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 4단계: 소득 -->
+                                    <div class="figma-step-item" data-step="4">
+                                        <div class="figma-step-group">
+                                            <div class="figma-step-icon">
+                                                <img src="/type/www/images/ic/icon_cash.svg" alt="소득 아이콘">
+                                            </div>
+                                            <div class="figma-step-inner">
+                                                <div class="figma-step-header">
+                                                    <div class="figma-step-title">월 소득액을 입력해 주세요.</div>
+                                                    <div class="figma-step-subtitle">세후 실수령액을 기준으로 입력해 주세요.</div>
+                                                </div>
+                                                <div class="figma-input-box">
+                                                    <span class="figma-input-label">월 소득액</span>
+                                                    <input type="text" class="figma-input-field" value="0" placeholder="0">
+                                                    <span class="figma-input-unit">만원</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 5단계: 정보 -->
+                                    <div class="figma-step-item" data-step="5">
+                                        <div class="figma-step-group">
+                                            <div class="figma-step-icon">
+                                                <img src="/type/www/images/ic/icon_info.svg" alt="정보 아이콘">
+                                            </div>
+                                            <div class="figma-step-inner">
+                                                <div class="figma-step-header">
+                                                    <div class="figma-step-title">추가 정보를 선택해 주세요.</div>
+                                                    <div class="figma-step-subtitle">정확한 진단을 위해 필요한 정보입니다.</div>
+                                                </div>
+                                                <div class="figma-chips-container">
+                                                    <div class="figma-chip" data-value="single">1인 가구</div>
+                                                    <div class="figma-chip" data-value="family">가족 있음</div>
+                                                    <div class="figma-chip" data-value="low-income">저소득층</div>
+                                                    <div class="figma-chip" data-value="normal">일반</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- 버튼 영역 -->
+                                    <div class="figma-buttons">
+                                        <button type="button" class="figma-btn secondary" id="figma-prev-btn">이전</button>
+                                        <button type="button" class="figma-btn primary" id="figma-next-btn">다음</button>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- Compare Section -->
                             <!-- 비교하기 하단 고정 바 -->
                             <div class="compare-fixed-bar">
@@ -1083,33 +996,114 @@
 
     <!-- 2️⃣ 아코디언 토글 스크립트 -->
     <script>
-    $(function () {                       // DOMContentLoaded 와 동일
-        // ① 요소 캐시
-        const $toggleBtn   = $('.toggle-button');
-        const $toggleText  = $('.toggle-text');
-        const $arrowIcon   = $('.arrow-icon');
-        const $separator   = $('.separator');
-        const $support     = $('.support-content');
-        const $toggleContainer     = $('.toggle-container');
-
-        // ② 클릭 이벤트 핸들러
-        $toggleBtn.on('click', function () {
-        //   - 클래스 토글과 현재 상태 확인
-        //   - .toggleClass() 은 토글 후 현재 상태를 반환하지 않으므로
-        //     .hasClass() 로 현재가 열렸는지 판단
-        const isOpen = $support.toggleClass('open').hasClass('open');
-
-        //   - 열림/닫힘에 따라 UI 업데이트
-        if (isOpen) {
-            $toggleText.text('지원내용 닫기');
-            $toggleContainer.addClass('active');
-            $separator.slideDown();               // display:block
-        } else {
-            $toggleText.text('지원내용 보기');
-            $toggleContainer.removeClass('active');
-            $separator.slideUp();                // display:none
-        }
+    $(function () { 
+        
+        // 새로운 피그마 스텝 기능
+        let currentStep = 1;
+        
+        // 초기 상태 설정
+        $('.figma-step-tab').removeClass('active');
+        $('.figma-step-tab[data-step="1"]').addClass('active');
+        $('.figma-step-item').removeClass('active');
+        $('.figma-step-item[data-step="1"]').addClass('active');
+        
+        // 탭 클릭 이벤트
+        $('.figma-step-tab').on('click', function() {
+            const stepNumber = parseInt($(this).data('step'));
+            
+            // 탭 활성화
+            $('.figma-step-tab').removeClass('active');
+            $(this).addClass('active');
+            
+            // 컨텐츠 표시
+            $('.figma-step-item').removeClass('active');
+            $(`.figma-step-item[data-step="${stepNumber}"]`).addClass('active');
+            
+            currentStep = stepNumber;
+            updateButtons();
         });
+        
+        // 칩 선택 이벤트
+        $('.figma-chip').on('click', function() {
+            const $container = $(this).closest('.figma-chips-container');
+            $container.find('.figma-chip').removeClass('active');
+            $(this).addClass('active');
+        });
+        
+        // 입력 필드에 천단위 구분자 추가
+        $('.figma-input-field').on('input', function() {
+            let value = $(this).val().replace(/,/g, '');
+            if (!isNaN(value) && value !== '') {
+                $(this).val(Number(value).toLocaleString());
+            }
+        });
+        
+        // 입력 필드 포커스 이벤트
+        $('.figma-input-field').on('focus', function() {
+            let value = $(this).val().replace(/,/g, '');
+            if (value === '0') {
+                $(this).val('');
+            }
+        });
+        
+        // 입력 필드 블러 이벤트
+        $('.figma-input-field').on('blur', function() {
+            let value = $(this).val().replace(/,/g, '');
+            if (value === '' || value === '0') {
+                $(this).val('0');
+            } else if (!isNaN(value)) {
+                $(this).val(Number(value).toLocaleString());
+            }
+        });
+        
+        // 버튼 이벤트
+        $('#figma-next-btn').on('click', function() {
+            if (currentStep < 5) {
+                currentStep++;
+                
+                // 탭 활성화
+                $('.figma-step-tab').removeClass('active');
+                $(`.figma-step-tab[data-step="${currentStep}"]`).addClass('active');
+                
+                // 컨텐츠 표시
+                $('.figma-step-item').removeClass('active');
+                $(`.figma-step-item[data-step="${currentStep}"]`).addClass('active');
+                
+                updateButtons();
+            }
+        });
+        
+        $('#figma-prev-btn').on('click', function() {
+            if (currentStep > 1) {
+                currentStep--;
+                
+                // 탭 활성화
+                $('.figma-step-tab').removeClass('active');
+                $(`.figma-step-tab[data-step="${currentStep}"]`).addClass('active');
+                
+                // 컨텐츠 표시
+                $('.figma-step-item').removeClass('active');
+                $(`.figma-step-item[data-step="${currentStep}"]`).addClass('active');
+                
+                updateButtons();
+            }
+        });
+
+        
+        function updateButtons() {
+            // 이전 버튼은 항상 표시 (피그마 디자인에 맞춰)
+            $('#figma-prev-btn').show();
+            
+            // 다음 버튼
+            if (currentStep === 5) {
+                $('#figma-next-btn').text('간편진단 결과조회');
+            } else {
+                $('#figma-next-btn').text('다음');
+            }
+        }
+        
+        // 초기 버튼 상태 설정
+        updateButtons();
     });
     
 

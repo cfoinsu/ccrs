@@ -1,0 +1,15 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon">
+<path id="Rectangle 2572" d="M6 17H42V38C42 40.2091 40.2091 42 38 42H10C7.79086 42 6 40.2091 6 38V17Z" fill="url(#paint0_linear_571_29618)"/>
+<path id="Rectangle 2574" d="M6 13C6 10.7909 7.79086 9 10 9H38C40.2091 9 42 10.7909 42 13V17H6V13Z" fill="var(--fill-0, #C9B6FD)"/>
+<rect id="Rectangle 2571" x="12" y="6" width="4" height="8" rx="2" fill="var(--fill-0, #7737E3)"/>
+<rect id="Rectangle 2573" x="32" y="6" width="4" height="8" rx="2" fill="var(--fill-0, #7737E3)"/>
+<path id="Vector" d="M27.9999 23H29.3333V33.6667M17.3333 23H20.6666C21.197 23 21.7057 23.2107 22.0808 23.5858C22.4559 23.9609 22.6666 24.4696 22.6666 25V26.3333C22.6666 26.8638 22.4559 27.3725 22.0808 27.7475C21.7057 28.1226 21.197 28.3333 20.6666 28.3333M20.6666 28.3333H18.6666M20.6666 28.3333C21.197 28.3333 21.7057 28.544 22.0808 28.9191C22.4559 29.2942 22.6666 29.8029 22.6666 30.3333V31.6667C22.6666 32.1971 22.4559 32.7058 22.0808 33.0809C21.7057 33.456 21.197 33.6667 20.6666 33.6667H17.3333" stroke="var(--stroke-0, white)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_571_29618" x1="6" y1="18.5152" x2="30.0088" y2="48.744" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8784E8"/>
+<stop offset="1" stop-color="#946EE8"/>
+</linearGradient>
+</defs>
+</svg>
