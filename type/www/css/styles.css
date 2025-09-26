@@ -4762,6 +4762,7 @@ table.comparison-table td:first-child {
 
 .krds-info-list.decimal {
     gap: 8px;
+    text-align: left;
 }
 
 .krds-info-list.decimal li .krds-info-list {
