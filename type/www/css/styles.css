@@ -362,12 +362,12 @@ body {
 }
 
 .content-area>div {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
 /* Page Header */
 .page-header {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 .title-wrap {
@@ -381,7 +381,7 @@ body {
     font-size: 36px;
     font-weight: 700;
     color: var(--krds-light-color-text-static);
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .page-description {
@@ -4355,6 +4355,7 @@ table.comparison-table td:first-child {
     display: flex;
     align-items: center;
     align-self: stretch;
+    margin-bottom: 24px;
 }
 
 .keywords-cont-wrap.row .keywords-cont-box {
@@ -4399,6 +4400,7 @@ table.comparison-table td:first-child {
     align-self: stretch;
     border-radius: var(--krds-radius-xlarge3);
     border: 1px solid var(--krds-light-color-border-gray-light);
+    margin-bottom: 24px;
 }
 
 .guideline-cont-box {
@@ -4546,7 +4548,7 @@ table.comparison-table td:first-child {
     flex: 1 0 0;
 }
 
-.g-info-box.row {
+.g-info-box.row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -5205,12 +5207,12 @@ table.comparison-table td:first-child {
         max-width: 100%;
         padding: 0 20px;
     }
-
+    
     .timeline-year-section {
         grid-template-columns: 300px 1fr;
         gap: 30px;
     }
-
+    
     .timeline-year-flex {
         font-size: 36px;
     }
@@ -5222,25 +5224,25 @@ table.comparison-table td:first-child {
         gap: 24px;
         text-align: center;
     }
-
+    
     .timeline-content-area {
         padding-left: 0;
     }
-
+    
     .timeline-year-header-flex {
         justify-content: center;
         margin-bottom: 24px;
     }
-
+    
     .timeline-year-flex {
         font-size: 32px;
     }
-
+    
     .timeline-event-item-flex {
         grid-template-columns: 70px 1fr;
         gap: 16px;
     }
-
+    
     .timeline-image-card {
         height: 200px;
     }
@@ -5251,74 +5253,74 @@ table.comparison-table td:first-child {
         gap: 40px;
         padding: 0 16px;
     }
-
+    
     .timeline-year-section {
         padding: 24px 0;
         gap: 20px;
     }
-
+    
     .timeline-year-flex {
         font-size: 28px;
     }
-
+    
     .timeline-event-item-flex {
         grid-template-columns: 60px 1fr;
         gap: 12px;
         padding: 8px 0;
     }
-
+    
     .timeline-date-flex {
         font-size: 14px;
     }
-
+    
     .timeline-event-content-flex {
         font-size: 14px;
     }
-
+    
     .timeline-image-card {
         height: 180px;
     }
 }
 
 /*위원장 인사말 스타일*/
-.chairman-box {
+.chairman-box{
     border-radius: var(--krds-radius-xlarge2);
     width: fit-content;
     height: fit-content;
     overflow: hidden;
 }
 
-.chairman-signiture {
+.chairman-signiture{
     width: 100%;
     justify-content: flex-end;
     align-items: center;
 }
 
 /*고객의소리 상담안내 스타일*/
-.g-tit-img {
+.g-tit-img{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.page-description.margin-none {
-    margin-bottom: 0;
+.page-description.margin-none{
+    margin-bottom:0;
 }
 
-.g-wrap .g-info-box .g-desc-box .g-tit.call-time {
+.g-wrap .g-info-box .g-desc-box .g-tit.call-time{
     font-size: var(--krds-pc-font-size-heading-medium);
 }
 
-.krds-btn.full {
+.krds-btn.full{
     width: 100%;
 }
 
-.small-text {
+.small-text{
     color: var(--krds-light-color-text-subtle);
     font-size: var(--krds-pc-font-size-body-small);
 }
 
-.conts-desc.qr-box {
+.conts-desc.qr-box{
     display: inline-flex;
     padding: 13px 15px 13px 20px;
     justify-content: space-between;
@@ -5328,11 +5330,11 @@ table.comparison-table td:first-child {
     border-radius: var(--krds-radius-xlarge2);
 }
 
-.content-sections.g-wrap.call-wrap {
-    gap: var(--krds-gap-4);
+.content-sections.g-wrap.call-wrap{
+   gap: var(--krds-gap-4); 
 }
 
-.sec-tit.call-tit {
+.sec-tit.call-tit{
     margin-top: var(--krds-pc-gap-layout-title-body-large);
 }
 
