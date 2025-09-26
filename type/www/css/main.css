@@ -156,20 +156,20 @@
     overflow: hidden;
 }
 .main-banner.center .top {
-    width: 520px;
-    height: 446px;
+    width: 436px;
+    height: 390px;
 }
 .main-banner.center .bottom {
-    width: 520px;
-    height: 180px;
+    width: 436px;
+    height: 147px;
 }
 .main-banner.last .top {
-    width: 386px;
-    height: 356px;
+    width: 323px;
+    height: 289px;
 }
 .main-banner.last .bottom {
-    width: 386px;
-    height: 284px;
+    width: 323px;
+    height: 248px;
 }
 .banner-image {
     position: absolute;
@@ -423,10 +423,17 @@
     gap: 16px;
     width: 1592px;
 }
-
+.consulting-section {
+    width: 549px;
+    height: 105px;
+    background: #ebeff3;
+    border-radius: 24px;
+    padding: 39px 32px;
+    position: relative;
+}
 .intro-section {
     width: 1190px;
-    height: 120px;
+    height: 105px;
     background: #ebeff3;
     border-radius: 24px;
     padding: 39px 32px;
@@ -467,7 +474,7 @@
 
 .people-section {
     width: 386px;
-    height: 120px;
+    height: 105px;
     background: #ebeff3;
     border-radius: 24px;
     padding: 40px 32px;
