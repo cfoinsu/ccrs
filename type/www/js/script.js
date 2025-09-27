@@ -349,9 +349,6 @@ $(document).ready(function() {
         alert('상담 신청이 접수되었습니다.');
     });
     
-    $('.btn-primary').on('click', function() {
-        alert('상품이 선택되었습니다.');
-    });
     
     // Smooth scrolling for anchor links
     $('a[href^="#"]').on('click', function(event) {

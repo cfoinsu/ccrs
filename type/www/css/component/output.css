@@ -3047,6 +3047,26 @@ caption {
   top: 1rem;
   left: 0.8rem;
 }
+.roundcheck .krds-info-list.decimal > li::before {
+  content: "";
+  width: 1.4rem;
+  height: 1.4rem;
+  content: "";
+  background: url(../../img/icons/system-success.svg) center no-repeat;
+  background-size: 1.4rem;
+  top: 0.5rem;
+  left: 0;
+}
+.roundcheck .krds-info-list.dash > li::before {
+  content: "";
+  width: 1.4rem;
+  height: 1.4rem;
+  content: "";
+  background: url(../../img/icons/round_check.svg) center no-repeat;
+  background-size: 1.4rem;
+  top: 0.5rem;
+  left: 0;
+}
 .krds-info-list.dash > li::before {
   content: "-";
 }
