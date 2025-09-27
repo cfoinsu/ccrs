@@ -3003,6 +3003,10 @@ caption {
   top: 0;
   left: 0;
 }
+.krds-info-list > li sup {
+  font-size: 0.8em;
+  line-height: 0;
+}
 .krds-info-list > li > .krds-info-list {
   gap: var(--krds-info-list--gap-layout-depth2-li-li);
   margin-top: var(--krds-info-list--depth2-list-margin-top);
