@@ -2958,8 +2958,8 @@ caption {
   --krds-info-list--depth2-list-margin-top: var(--krds-gap-5);
   --krds-info-list--depth3-list-margin-top: var(--krds-gap-4);
   --krds-info-list--depth1-padding-left: var(--krds-number-9);
-  --krds-info-list--depth2-padding-left: var(--krds-number-8);
-  --krds-info-list--depth3-padding-left: var(--krds-number-7);
+  --krds-info-list--depth2-padding-left: var(--krds-number-9);
+  --krds-info-list--depth3-padding-left: var(--krds-number-9);
   --krds-info-list--gap-layout-depth1-li-li: var(--krds-gap-4);
   --krds-info-list--gap-layout-depth2-li-li: var(--krds-gap-3);
   --krds-info-list--gap-layout-depth3-li-li: var(--krds-gap-3);
@@ -24125,6 +24125,18 @@ body {
   gap: var(--krds-gap-4);
   margin: 0;
 }
+.g-wrap .download-link {
+  display: inline-block;
+  color: #e67e01;
+  cursor: pointer;
+}
+.g-wrap .download-link.file-hwp img {
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-left: 0.4rem;
+}
+
 .g-wrap .file-download-wrap {
   width: 100%;
   display: grid;

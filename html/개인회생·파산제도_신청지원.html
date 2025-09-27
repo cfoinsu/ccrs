@@ -181,25 +181,19 @@
                             <h2>채무조정 지원</h2>
                         </div>
                         <nav class="sidebar-nav">
-                            <div class="nav-section active">
+                            <div class="nav-section">
                                 <button class="nav-section-title">
                                     채무조정 길잡이
                                     <i class="nav-arrow"></i>
                                 </button>
                                 <ul class="nav-subsection">
-                                    <li><a href="#" class="nav-subitem active">소액대출</a></li>
-                                    <li><a href="#" class="nav-subitem">소액체크·신용카드 발급</a></li>
+                                    <li><a href="채무조정길잡이_소개.html" class="nav-subitem">소개</a></li>
+                                    <li><a href="채무조정제도비교_종류비교.html" class="nav-subitem">채무조정제도 비교</a></li>
+                                    <li><a href="협약기관조회.html" class="nav-subitem">협약 기관 조회</a></li>
                                 </ul>
                             </div>
                             <div class="nav-section">
-                                <button class="nav-section-title">
-                                    나에게 맞는 채무조정 찾기
-                                    <i class="nav-arrow"></i>
-                                </button>
-                                <ul class="nav-subsection">
-                                    <li><a href="#" class="nav-subitem active">소액대출</a></li>
-                                    <li><a href="#" class="nav-subitem">소액체크·신용카드 발급</a></li>
-                                </ul>
+                                <a href="나에게맞는채무조정찾기.html" class="nav-section-title">나에게 맞는 채무조정 찾기</a>
                             </div>
                             <div class="nav-section">
                                 <button class="nav-section-title">
@@ -207,19 +201,25 @@
                                     <i class="nav-arrow"></i>
                                 </button>
                                 <ul class="nav-subsection">
-                                    <li><a href="#" class="nav-subitem active">소액대출</a></li>
-                                    <li><a href="#" class="nav-subitem">소액체크·신용카드 발급</a></li>
+                                    <li><a href="신속채무조정(연체30일이하)_일반.html" class="nav-subitem">신속채무조정 (연체30일 이하)</a></li>
+                                    <li><a href="신속채무조정프리워크아웃(연체89일이하)_일반.html" class="nav-subitem">사전채무조정・프리워크아웃 (연체 31~89일 이하)</a></li>
+                                    <li><a href="개인워크아웃(연체90일이상)_일반.html" class="nav-subitem">개인워크아웃 (연체 90일 이상)</a></li>
+                                    <li><a href="새출발기금채무조정_부실차주.html" class="nav-subitem">새출발기금 중개형</a></li>
                                 </ul>
                             </div>
-                            <div class="nav-section">
+                            <div class="nav-section active">
                                 <button class="nav-section-title">
-                                    상황별 가이드
+                                    개인회생・파산제도
                                     <i class="nav-arrow"></i>
                                 </button>
                                 <ul class="nav-subsection">
-                                    <li><a href="#" class="nav-subitem active">소액대출</a></li>
-                                    <li><a href="#" class="nav-subitem">소액체크·신용카드 발급</a></li>
+                                    <li><a href="개인회생·파산제도_신청지원.html" class="nav-subitem active">신청지원</a></li>
+                                    <li><a href="개인회생·파산제도_개인회생이란.html" class="nav-subitem">개인회생이란</a></li>
+                                    <li><a href="개인회생·파산제도_개인파산이란.html" class="nav-subitem">개인파산이란</a></li>
                                 </ul>
+                            </div>
+                            <div class="nav-section">
+                                <a href="금융회사채무조정.html" class="nav-section-title">금융회사 채무조정</a>
                             </div>
                         </nav>
                     </aside>
@@ -841,37 +841,6 @@
     <script src="/type/www/js/script.js"></script>
     <script src="/type/www/js/component/ui-script.js"></script>
     <!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
-
-    <!-- 2️⃣ 아코디언 토글 스크립트 -->
-    <script>
-        $(function () {                       // DOMContentLoaded 와 동일
-            // ① 요소 캐시
-            const $toggleBtn = $('#toggleButton');
-            const $toggleText = $('#toggleText');
-            const $arrowIcon = $('#arrowIcon');
-            const $separator = $('#separator');
-            const $support = $('#supportContent');
-
-            // ② 클릭 이벤트 핸들러
-            $toggleBtn.on('click', function () {
-                //   - 클래스 토글과 현재 상태 확인
-                //   - .toggleClass() 은 토글 후 현재 상태를 반환하지 않으므로
-                //     .hasClass() 로 현재가 열렸는지 판단
-                const isOpen = $support.toggleClass('open').hasClass('open');
-
-                //   - 열림/닫힘에 따라 UI 업데이트
-                if (isOpen) {
-                    $toggleText.text('지원내용 닫기');
-                    $arrowIcon.removeClass('rotate-90').addClass('rotate-270');
-                    $separator.show();               // display:block
-                } else {
-                    $toggleText.text('지원내용 보기');
-                    $arrowIcon.removeClass('rotate-270').addClass('rotate-90');
-                    $separator.hide();                // display:none
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
