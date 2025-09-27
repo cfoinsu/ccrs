@@ -300,10 +300,22 @@
                                                     <div class="figma-step-subtitle">지금 상황에 맞는 항목을 골라주세요.</div>
                                                 </div>
                                                 <div class="figma-chips-container">
-                                                    <div class="figma-chip active" data-value="0">연체 없음 (0일)</div>
-                                                    <div class="figma-chip" data-value="1-30">1~30일 이내 연체</div>
-                                                    <div class="figma-chip" data-value="31-89">31~89일 연체</div>
-                                                    <div class="figma-chip" data-value="90+">90일 이상 연체</div>
+                                                    <label class="figma-chip radio-option">
+                                                        <input type="radio" name="delinquentDays" value="0" checked>
+                                                        <span>연체 없음 (0일)</span>
+                                                    </label>
+                                                    <label class="figma-chip radio-option">
+                                                        <input type="radio" name="delinquentDays" value="30">
+                                                        <span>1~30일 이내 연체</span>
+                                                    </label>
+                                                    <label class="figma-chip radio-option">
+                                                        <input type="radio" name="delinquentDays" value="89">
+                                                        <span>31~89일 연체</span>
+                                                    </label>
+                                                    <label class="figma-chip radio-option">
+                                                        <input type="radio" name="delinquentDays" value="90">
+                                                        <span>90일 이상 연체</span>
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
@@ -485,8 +497,14 @@
                                                     <div class="figma-step-subtitle">부양가족 : 미성년 자녀, 60세 이상 부모</div>
                                                 </div>
                                                 <div class="figma-chips-container">
-                                                    <div class="figma-chip active" data-value="0">부양가족이 있어요</div>
-                                                    <div class="figma-chip" data-value="1-30">부양가족이 없어요</div>
+                                                    <label class="figma-chip radio-option">
+                                                        <input type="radio" name="fami" value="0">
+                                                        <span>부양가족이 있어요</span>
+                                                    </label>
+                                                    <label class="figma-chip radio-option">
+                                                        <input type="radio" name="fami" value="1" checked>
+                                                        <span>부양가족이 없어요</span>
+                                                    </label>
                                                 </div>
                                                 <div class="figma-input-box" style="margin-top: 8px;">
                                                     <span class="figma-input-label">부양가족수</span>
@@ -505,8 +523,14 @@
                                                     <div class="figma-step-subtitle">증빙서류 예시 : 급여명세서, 소득금액증명원 등</div>
                                                 </div>
                                                 <div class="figma-chips-container">
-                                                    <div class="figma-chip active" data-value="0">증빙이 가능해요</div>
-                                                    <div class="figma-chip" data-value="1-30">증빙이 어려워요</div>
+                                                    <label class="figma-chip radio-option">
+                                                        <input type="radio" name="evi" value="0">
+                                                        <span>증빙이 가능해요</span>
+                                                    </label>
+                                                    <label class="figma-chip radio-option">
+                                                        <input type="radio" name="evi" value="1" checked>
+                                                        <span>증빙이 어려워요</span>
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
@@ -1151,13 +1175,6 @@
             updateButtons();
         });
         
-        // 칩 선택 이벤트
-        $('.figma-chip').on('click', function() {
-            const $container = $(this).closest('.figma-chips-container');
-            $container.find('.figma-chip').removeClass('active');
-            $(this).addClass('active');
-        });
-        
         // "없음" 버튼 클릭 이벤트
         $('.figma-chip-button[data-action="clear"]').on('click', function() {
             const $wrapper = $(this).closest('.figma-input-wrapper');
@@ -1169,10 +1186,6 @@
             // 버튼 상태 표시 (선택됨)
             $(this).addClass('selected');
             
-            // 잠시 후 선택 상태 제거
-            setTimeout(() => {
-                $(this).removeClass('selected');
-            }, 300);
         });
         
         // input 필드에 값이 입력되면 "없음" 버튼 비활성화 시각적 효과
@@ -1294,6 +1307,14 @@
                 }
             });
         });
+
+        // 이벤트 리스너를 부착하고, 바로 trigger('change')를 호출하여 초기 상태를 설정합니다.
+        $('input[name="fami"]').on('change', function() {
+            // 선택된 라디오 버튼의 value가 '0' (부양가족이 있어요)인지 확인하여 표시/숨김을 처리합니다.
+            $inputBox = $(this).closest('.figma-step-inner').find('.figma-input-box');
+            // show()/hide() 메서드가 자동으로 display 속성을 변경합니다.
+            $inputBox.toggle(this.value === '0');
+        }).trigger('change'); 
 
 
     </script>

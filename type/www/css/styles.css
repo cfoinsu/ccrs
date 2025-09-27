@@ -411,15 +411,19 @@ body {
 }
 
 .page-description .btn-red {
-    background: var(--krds-color-light-point-50);
+    background: #fff;
     border-color: var(--krds-light-color-border-point);
+    color: var(--krds-light-color-border-point);
 }
 
 .page-description .btn-red:hover {
     background: var(--krds-color-light-point-70);
     border-color: var(--krds-light-color-border-point);
+    color: #fff;
 }
-
+.page-description .btn-red .fa-youtube {
+    color: var(--krds-light-color-border-point);
+}
 .page-description strong {
     font-weight: 700;
 }
@@ -5406,6 +5410,7 @@ table.comparison-table td:first-child {
     flex-direction: column;
     gap: 32px;
     margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 /* 첫 번째 단계만 기본 표시 */
@@ -5562,12 +5567,12 @@ table.comparison-table td:first-child {
     box-sizing: border-box;
 }
 
-.figma-chip.active {
+.figma-chip.radio-option:has(input:checked) {
     background-color: #344d82;
     color: white;
 }
 
-.figma-chip:not(.active) {
+.figma-chip.radio-option:not(.active) {
     background-color: white;
     color: #17191b;
     border: 1px solid #e6e8ea;
@@ -5763,17 +5768,18 @@ table.comparison-table td:first-child {
 .figma-step-content::after {
     content: '';
     position: absolute;
-    bottom: 80px;
+    bottom: 0;
     /* 버튼 높이만큼 위에 위치 */
     left: 0;
     right: 0;
-    height: 80px;
+    height: 200px;
     /* 그라디언트 높이 */
     background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0) 100%);
     pointer-events: none;
     /* 클릭 이벤트 방해하지 않음 */
     z-index: 2;
     /* 컨텐츠 위에, 버튼 아래 */
+    border-radius: 0 0 24px 24px;
 }
 
 /* 버튼 영역이 그라디언트 위에 위치하도록 */
@@ -5851,7 +5857,6 @@ table.comparison-table td:first-child {
 
 .figma-chip-button:active,
 .figma-chip-button.selected {
-    background-color: #e6f3ff;
-    border-color: #4a90e2;
-    color: #4a90e2;
+    background-color: #344d82;
+    color: white;
 }
