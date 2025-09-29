@@ -2698,6 +2698,10 @@ body {
     font-size: var(--krds-pc-font-size-body-small);
 }
 
+.btn-line:hover{
+    background-color: var(--krds-color-light-primary-30);
+}
+
 /* News Section */
 .news-section {
     padding: 5rem 0;
@@ -5766,27 +5770,27 @@ table.comparison-table td:first-child {
 /* 탭별 배경색 설정 */
 .figma-step-container[data-current-step="1"] .figma-step-content,
 .figma-step-container[data-current-step="1"] .figma-step-tab.active {
-    background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+    background: #F2E9FF;
 }
 
 .figma-step-container[data-current-step="2"] .figma-step-content,
 .figma-step-container[data-current-step="2"] .figma-step-tab.active {
-    background: linear-gradient(135deg, #fff0f5 0%, #ffe6f0 100%);
+    background: #E6F3F5;
 }
 
 .figma-step-container[data-current-step="3"] .figma-step-content,
 .figma-step-container[data-current-step="3"] .figma-step-tab.active {
-    background: linear-gradient(135deg, #f0fff0 0%, #e6ffe6 100%);
+    background: #EBFBD9;
 }
 
 .figma-step-container[data-current-step="4"] .figma-step-content,
 .figma-step-container[data-current-step="4"] .figma-step-tab.active {
-    background: linear-gradient(135deg, #fffaf0 0%, #fff5e6 100%);
+    background: #E8F5FF;
 }
 
 .figma-step-container[data-current-step="5"] .figma-step-content,
 .figma-step-container[data-current-step="5"] .figma-step-tab.active {
-    background: linear-gradient(135deg, #f5f0ff 0%, #ebe6ff 100%);
+    background: #FFEDFE;
 }
 
 /* 기본 스타일 유지 */
@@ -5799,50 +5803,12 @@ table.comparison-table td:first-child {
     transition: all 0.3s ease;
 }
 
-/* 고정 그라디언트 오버레이 - 스크롤에 따라 움직이지 않음 */
-.figma-step-content::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    /* 버튼 높이만큼 위에 위치 */
-    left: 0;
-    right: 0;
-    height: 200px;
-    /* 그라디언트 높이 */
-    background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0) 100%);
-    pointer-events: none;
-    /* 클릭 이벤트 방해하지 않음 */
-    z-index: 2;
-    /* 컨텐츠 위에, 버튼 아래 */
-    border-radius: 0 0 24px 24px;
-}
 
 /* 버튼 영역이 그라디언트 위에 위치하도록 */
 .figma-buttons {
     position: relative;
     z-index: 5;
     /* 그라디언트보다 위에 */
-}
-
-/* 단계별 그라디언트 색상 조정 */
-.figma-step-container[data-current-step="1"] .figma-step-content::after {
-    background: linear-gradient(to top, rgba(230, 243, 255, 1) 0%, rgba(230, 243, 255, 0.8) 30%, rgba(230, 243, 255, 0) 100%);
-}
-
-.figma-step-container[data-current-step="2"] .figma-step-content::after {
-    background: linear-gradient(to top, rgba(255, 230, 240, 1) 0%, rgba(255, 230, 240, 0.8) 30%, rgba(255, 230, 240, 0) 100%);
-}
-
-.figma-step-container[data-current-step="3"] .figma-step-content::after {
-    background: linear-gradient(to top, rgba(230, 255, 230, 1) 0%, rgba(230, 255, 230, 0.8) 30%, rgba(230, 255, 230, 0) 100%);
-}
-
-.figma-step-container[data-current-step="4"] .figma-step-content::after {
-    background: linear-gradient(to top, rgba(255, 245, 230, 1) 0%, rgba(255, 245, 230, 0.8) 30%, rgba(255, 245, 230, 0) 100%);
-}
-
-.figma-step-container[data-current-step="5"] .figma-step-content::after {
-    background: linear-gradient(to top, rgba(235, 230, 255, 1) 0%, rgba(235, 230, 255, 0.8) 30%, rgba(235, 230, 255, 0) 100%);
 }
 
 /* input-box와 버튼을 함께 배치하기 위한 컨테이너 */
