@@ -416,12 +416,16 @@ body {
     color: var(--krds-light-color-border-point);
 }
 
-.page-description .btn-red:hover {
+/* .page-description .btn-red:hover {
     background: var(--krds-color-light-point-70);
     border-color: var(--krds-light-color-border-point);
     color: #fff;
+<<<<<<< HEAD
 }
 
+=======
+} */
+>>>>>>> 24ed3d4c64b2350767475d70d24d871cf85e3fe4
 .page-description .btn-red .fa-youtube {
     color: var(--krds-light-color-border-point);
 }
