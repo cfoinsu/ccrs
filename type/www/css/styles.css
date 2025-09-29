@@ -2698,6 +2698,10 @@ body {
     font-size: var(--krds-pc-font-size-body-small);
 }
 
+.btn-line:hover{
+    background-color: var(--krds-color-light-primary-30);
+}
+
 /* News Section */
 .news-section {
     padding: 5rem 0;
