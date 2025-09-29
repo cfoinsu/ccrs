@@ -4015,7 +4015,7 @@ span.sub4InputLabel {
 .results-content-wrapper .graph-img {
     position: relative;
 }
-.results-content-wrapper .graph-img:hover img {
+.results-content-wrapper .graph-img:not(.nofilter):hover img {
     filter: grayscale(1);
 }
 .results-content-wrapper .graph-wrap .manwon {

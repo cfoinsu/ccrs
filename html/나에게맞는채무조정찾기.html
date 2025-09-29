@@ -685,13 +685,13 @@
                                                 <span class="manwon">999</span>
                                                 <div class="hover-box">
                                                     <div class="graph-hover left">
-                                                        <span>이자 20 / 원금 80</span>
+                                                        <span>이자 200 / 원금 800</span>
                                                     </div>
                                                     <div class="graph-hover center">
-                                                        <span>이자 80 / 원금 20</span>
+                                                        <span>이자 800 / 원금 200</span>
                                                     </div>
                                                     <div class="graph-hover right">
-                                                        <span>이자 80 / 원금 20</span>
+                                                        <span>이자 800 / 원금 200</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -700,17 +700,17 @@
                                                 <span class="manwon">999</span>
                                                 <div class="hover-box">
                                                     <div class="graph-hover left">
-                                                        <span>이자 20 / 원금 80</span>
+                                                        <span>이자 200 / 원금 800</span>
                                                     </div>
                                                     <div class="graph-hover center">
-                                                        <span>이자 80 / 원금 20</span>
+                                                        <span>이자 800 / 원금 200</span>
                                                     </div>
                                                     <div class="graph-hover right">
-                                                        <span>이자 80 / 원금 20</span>
+                                                        <span>이자 800 / 원금 200</span>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="graph-img">
+                                            <div class="graph-img nofilter">
                                                 <img src="/type/www/img/contents/png/graph-box03.png">
                                                 <span class="manwon">999</span>
                                             </div>
@@ -719,8 +719,8 @@
                                             <div class="left-box">
                                                 <button type="button" class="krds-btn medium tertiary"><i
                                                         class="svg-icon ico-angle left"></i>다시하기</button>
-                                                <button type="button" class="krds-btn medium primary open-modal"
-                                                    data-target="modal_sample">제도비교<img
+                                                <button type="button" class="krds-btn medium primary compare-modal"
+                                                    data-target="compareModal">제도비교<img
                                                         src="/type/www/img/icons/filter_white.svg"></i></button>
                                             </div>
                                         </div>
@@ -861,7 +861,7 @@
                             </div>
 
                             <div class="more-section">
-                                <button class="krds-btn tertiary open-modal" data-target="modal_sample">더보기<img src="/type/www/img/icons/arrow-down.svg"></button>
+                                <button class="krds-btn tertiary">더보기<img src="/type/www/img/icons/arrow-down.svg"></button>
                             </div>
                         </div>
                         <!-- //Content Sections -->
@@ -1464,6 +1464,14 @@
             // show()/hide() 메서드가 자동으로 display 속성을 변경합니다.
             $inputBox.toggle(this.value === '0');
         }).trigger('change');
+
+        $('.compare-modal').on('click', function () {
+            $('.compare-fixed-bar').slideDown();
+        });
+        $('.close-btn').on('click', function () {
+            $('.compare-fixed-bar').slideUp();
+        });
+        
 
 
     </script>
