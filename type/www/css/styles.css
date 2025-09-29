@@ -4898,6 +4898,7 @@ table.comparison-table td:first-child {
 }
 
 .charter-box {
+    position: relative;
     padding: 100px 70px;
     background-color: white;
     border-radius: var(--krds-radius-xlarge2);
