@@ -420,12 +420,7 @@ body {
     background: var(--krds-color-light-point-70);
     border-color: var(--krds-light-color-border-point);
     color: #fff;
-<<<<<<< HEAD
-}
-
-=======
 } */
->>>>>>> 24ed3d4c64b2350767475d70d24d871cf85e3fe4
 .page-description .btn-red .fa-youtube {
     color: var(--krds-light-color-border-point);
 }
@@ -4570,6 +4565,11 @@ table.comparison-table td:first-child {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.accordion-body .conts-desc .line {
+    height: 1px;
+    background: #ccc;
+    width: 100%;
 }
 
 .krds-accordion .accordion-item.active .accordion-collapse {
