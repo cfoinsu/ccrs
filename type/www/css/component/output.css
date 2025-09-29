@@ -1443,7 +1443,7 @@ caption {
   --krds-button--pc-font-size-medium: var(--krds-pc-font-size-label-medium);
   --krds-button--mobile-font-size-medium: var(--krds-mobile-font-size-label-medium);
   --krds-button--font-weight-medium: var(--krds-font-weight-regular);
-  --krds-button--size-height-large: var(--krds-size-height-8);
+  --krds-button--size-height-large: var(--krds-size-height-7);
   --krds-button--padding-x-large: var(--krds-padding-7);
   --krds-button--padding-y-large: 0;
   --krds-button--gap-large: var(--krds-gap-2);

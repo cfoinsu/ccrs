@@ -3582,7 +3582,7 @@ body {
     }
 }
 
-.g-wrap .g-btn-area {
+.g-wrap .g-btn-area.evenly {
     justify-content: space-evenly;
 }
 
