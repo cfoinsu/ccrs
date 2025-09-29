@@ -423,6 +423,7 @@ body {
 } */
 .page-description .btn-red .fa-youtube {
     color: var(--krds-light-color-border-point);
+    font-size: 3rem;
 }
 
 .page-description strong {
@@ -4005,7 +4006,106 @@ span.sub4InputLabel {
     align-items: flex-start;
 }
 
-
+.results-content-wrapper .graph-wrap {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    gap: 5px;
+}
+.results-content-wrapper .graph-img {
+    position: relative;
+}
+.results-content-wrapper .graph-img:hover img {
+    filter: grayscale(1);
+}
+.results-content-wrapper .graph-wrap .manwon {
+    position: absolute;
+    font-size: 1.5rem;
+    top:115px;
+    right:200px;
+    height: 2.4rem;
+    padding: 2px 5px;
+    background-color: #012063;
+    border-radius: 20px;
+    color:#fff;
+}
+.results-content-wrapper .graph-wrap .manwon::after {
+    content: '만원';
+    margin-left: 2px;
+}
+.results-content-wrapper .graph-wrap .hover-box {
+    position: absolute;
+    width: 159px;
+    height: 134px;
+    top: 73px;
+    left: 93px;
+    display: flex;
+    gap: 2px;
+}
+.results-content-wrapper .graph-wrap .hover-box .graph-hover {
+    position: relative;
+    height:100%;
+    width:0;
+    flex:1;
+}
+.results-content-wrapper .graph-wrap .hover-box span {
+    display: none;
+    position: absolute;
+    font-size: 1.3rem;
+    background-color: #1B2025;
+    color:#fff;
+    padding: 5px;
+    border-radius: 10px 10px 10px 0;
+    white-space: nowrap;
+    width: auto;
+}
+.results-content-wrapper .graph-wrap .hover-box span::after{
+    content:'';
+    position: absolute;
+    left:-8px;
+    bottom:-8px;
+    border:2px solid #00A8A6;
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.results-content-wrapper .graph-wrap .hover-box .graph-hover.left span {
+    bottom: 18px;
+    left: 4px;
+}
+.results-content-wrapper .graph-wrap .hover-box .graph-hover.center span {
+    bottom: 61px;
+    left: 30px;
+}
+.results-content-wrapper .graph-wrap .hover-box .graph-hover.right span {
+    bottom: 104px;
+    left: auto;
+    right:3px;
+    border-radius: 10px 10px 0 10px;
+}
+.results-content-wrapper .graph-wrap .hover-box .graph-hover.right span::after {
+    left: auto;
+    right:-8px
+}
+.results-content-wrapper .graph-wrap .hover-box .graph-hover:hover span {
+    display:block
+}
+.results-content-wrapper .graph-wrap .freeworkout .hover-box .graph-hover.left span {
+    bottom: 45px;
+    left: 4px;
+}
+.results-content-wrapper .graph-wrap .freeworkout .hover-box .graph-hover.center span {
+    bottom: 86px;
+    left: 30px;
+}
+.results-content-wrapper .graph-wrap .freeworkout .hover-box .graph-hover.right span {
+    bottom: 126px;
+    left: auto;
+    right:3px;
+    border-radius: 10px 10px 0 10px;
+}
 .result-icon-wrapper {
     position: relative;
     flex-shrink: 0;
