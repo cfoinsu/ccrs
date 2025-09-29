@@ -431,6 +431,7 @@
     display: flex;
     gap: 16px;
     width: 1592px;
+    max-width: 100%;
 }
 
 .intro-section {
