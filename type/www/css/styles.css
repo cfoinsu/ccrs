@@ -4875,6 +4875,15 @@ table.comparison-table td:first-child {
     gap: var(--krds-gap-8);
 }
 
+.conts-desc.row.orange-box{
+    padding: 20px 32px;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--krds-color-light-primary-10);
+    border-radius: 24px;
+    margin-top: 16px;
+}
+
 .accordion-body .conts-desc.row .accordion-cont-img {
     flex: none;
     padding: 20px;
