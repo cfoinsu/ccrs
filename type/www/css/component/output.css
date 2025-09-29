@@ -2900,6 +2900,9 @@ caption {
   font-weight: var(--krds-font-weight-regular);
   text-align: center;
 }
+.g-wrap .krds-table-wrap .tbl tbody th {
+  background-color: #fffbf6;
+}
 @media (max-width: 767px) {
   .krds-table-wrap .tbl.data tbody th,
   .krds-table-wrap .tbl.data tbody td {
