@@ -1765,9 +1765,9 @@ caption {
 .krds-btn:hover {
   background-color: var(--krds-button--color-primary-fill-hover);
 }
-.krds-btn:active, .krds-btn:focus {
+/* .krds-btn:active, .krds-btn:focus {
   background-color: var(--krds-button--color-primary-fill-pressed);
-}
+} */
 .krds-btn[disabled], .krds-btn.disabled {
   background-color: var(--krds-button--color-primary-fill-disabled);
   border-color: var(--krds-button--color-primary-border-disabled);

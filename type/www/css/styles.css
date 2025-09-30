@@ -4833,6 +4833,8 @@ table.comparison-table td:first-child {
 
 .g-wrap .g-info-box.purple .g-desc-box .cont-wrap {
     max-width: calc(100% - 80px);
+    height: 100%;
+    width: 100%;
 }
 
 .g-grid-wrap.unitrow{
