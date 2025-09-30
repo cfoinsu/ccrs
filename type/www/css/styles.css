@@ -4807,6 +4807,10 @@ table.comparison-table td:first-child {
     max-width: calc(100% - 80px);
 }
 
+.g-grid-wrap.unitrow{
+    display: flex;
+}
+
 .g-grid-wrap.unit2 .g-info-box,
 .g-grid-wrap.unit4 .g-info-box {
     padding: 3.2rem;
