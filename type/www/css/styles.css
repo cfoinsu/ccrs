@@ -6092,6 +6092,14 @@ table.comparison-table td:first-child {
 }
 
 /*신용도우미 추가 스타일*/
+.g-info-box.helpguide{
+    padding:40px;
+}
+
+.g-info-box .cont-wrap .conts-desc .g-tit.helpguide{
+    font-size: 2.4rem;
+}
+
 .g-img.row{
     display: flex;
     flex-direction: row;
@@ -6100,6 +6108,11 @@ table.comparison-table td:first-child {
 .qr-flexbox{
     display: flex;
     gap: 8px;
+    width:50%;
+}
+
+.qr-flexbox .white-box{
+    padding: 12px 12px 16px 12px;
 }
 
 .g-desc-box.gap-40{
