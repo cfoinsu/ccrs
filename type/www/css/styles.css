@@ -6121,6 +6121,10 @@ table.comparison-table td:first-child {
     border-bottom: 1px dashed var(--krds-light-color-border-gray-light);
 }
 
+.level-list-item:last-of-type{
+    border-bottom: none;
+}
+
 .level-list-title{
     display:flex;
     align-items: center;
@@ -6169,6 +6173,12 @@ table.comparison-table td:first-child {
 
 .helperapp-box p{
     text-align: center;
+}
+
+.level-list-gray-box{
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: var(--krds-light-color-surface-gray-subtler);
 }
 
 @media print {
