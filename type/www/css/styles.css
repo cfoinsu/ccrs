@@ -6182,5 +6182,6 @@ table.comparison-table td:first-child {
 }
 
 @media print {
+    table {width:100% !important;max-width: 100% !important;}
     .noprint {display: none;}
 }
