@@ -261,14 +261,11 @@
                             <li id="tab01" role="tab" aria-selected="false" aria-controls="tabpanel01" data-listener-attached="true">
                                 <button type="button" class="btn-tab">일반</button>
                             </li>
-                            <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02" class="active" data-listener-attached="true">
-                                <button type="button" class="btn-tab">지원대상별 특례<i class="sr-only created">선택됨</i></button>
+                            <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02" data-listener-attached="true">
+                                <button type="button" class="btn-tab">지원대상별 특례</button>
                             </li>
-                            <li id="tab03" role="tab" aria-selected="false" aria-controls="tabpanel03" data-listener-attached="true">
-                                <button type="button" class="btn-tab">지원내용별 특례</button>
-                            </li>
-                            <li id="tab04" role="tab" aria-selected="false" aria-controls="tabpanel04" data-listener-attached="true">
-                                <button type="button" class="btn-tab">개인회생주택담보대출 </button>
+                            <li id="tab03" role="tab" aria-selected="false" aria-controls="tabpanel03" class="active" data-listener-attached="true">
+                                <button type="button" class="btn-tab">지원내용별 특례<i class="sr-only created">선택됨</i></button>
                             </li>
                         </ul>
                     </div>
@@ -307,8 +304,7 @@
                             <div class="g-desc-body">
                                 <h5>개인워크아웃(연체90일 이상)</h5>
                                 <p>개인워크아웃은 소득 대비 금융비용 과다로 90일 이상 연체중인 분들 중 채무조정 이후 장기간 분할상환이 가능하신 분에게 유리한 제도입니다.</p>
-                                <button type="button" class="krds-btn medium btn-red">개인워크아웃 알아보기<i
-                                        class="fa-brands fa-youtube"></i></button>
+                                <a href="#" onclick="openYoutubeUrl('https://www.youtube.com/watch?v=d5cXqzKWnuM'); return false;" target="_blank" title="새창열림" class="krds-btn medium btn-red">개인워크아웃 알아보기<i class="fa-brands fa-youtube"></i></a>
                             </div>
                         </div>
 
@@ -368,15 +364,15 @@
                                     <p class="guideline-text-wrap">연체<br>0일 ~ 30일</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
-                                <div class="guideline-cont-box before middle">
+                                <div class="guideline-cont-box ongoing righthalfex">
                                     <p class="guideline-text-wrap">연체<br>31일 ~ 89일</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
-                                <div class="guideline-cont-box ongoing righthalf">
-                                    <p class="guideline-text-wrap">연체<br>90일 이상</p>
+                                <div class="guideline-cont-box ongoing middleex">
+                                    <p class="guideline-text-wrap">연체<br>3개월(90일) 이상</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
-                                <div class="guideline-cont-box before middle">
+                                <div class="guideline-cont-box before lefthalfend">
                                     <p class="guideline-text-wrap">성실상환<br>6개월 이상</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
@@ -425,13 +421,6 @@
                                         aria-labelledby="accordionHeaderSample01">
                                         <div class="accordion-body">
                                             <!-- accordion contents -->
-                                            <div class="g-desc-body">
-                                                <div class="g-desc-body">
-                                                    <div class="g-grid-wrap unit3">
-
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div class="g-info-box full">
                                                 <div class="g-desc-box row">
                                                     <div>
@@ -466,33 +455,40 @@
                                                     <div class="g-info-box sm">
                                                         <div class="g-desc-box">
                                                             <div class="conts-desc">
-                                                                <p class="g-tit">채무감면</p>
-                                                                담보권 실행유예 신청 시까지 발생한 연체이자 감면
-                                                            </div>
-                                                            <div class="g-img">
-                                                                <img src="/type/www/img/contents/support/support3.png">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="g-info-box sm">
-                                                        <div class="g-desc-box">
-                                                            <div class="conts-desc">
-                                                                <p class="g-tit">담보주택 매각지원</p>
-                                                                한국자산관리공사의 전자자산처분시스템(온비드)을 이용하여 담보주택을 매각할 수 있도록 지원
-                                                            </div>
-                                                            <div class="g-img">
-                                                                <img src="/type/www/img/contents/support/support11.png">
+                                                                <div>
+
+                                                                    <p class="g-tit">채무감면</p>
+                                                                    담보권 실행유예 신청 시까지 발생한 연체이자 감면
+                                                                </div>
+                                                                <div class="g-img">
+                                                                    <img src="/type/www/img/contents/support/support3.png">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="g-info-box sm">
                                                         <div class="g-desc-box">
                                                             <div class="conts-desc">
-                                                                <p class="g-tit">주택담보대출<br />장기분할상환으로의 전환</p>
-                                                                담보권 실행유예기간 중 채무자의 상환능력 회복 시 주택담보대출 장기분할상환 채무조정 지원
+                                                                <div>
+                                                                    <p class="g-tit">담보주택 매각지원</p>
+                                                                    한국자산관리공사의 <br>전자자산처분시스템(온비드)을 <br>이용하여 담보주택을 <br>매각할 수 있도록 지원
+                                                                </div>
+                                                                <div class="g-img">
+                                                                    <img src="/type/www/img/contents/support/support11.png">
+                                                                </div>
                                                             </div>
-                                                            <div class="g-img">
-                                                                <img src="/type/www/img/contents/support/support4.png">
+                                                        </div>
+                                                    </div>
+                                                    <div class="g-info-box sm">
+                                                        <div class="g-desc-box">
+                                                            <div class="conts-desc">
+                                                                <div>
+                                                                    <p class="g-tit">주택담보대출<br />장기분할상환으로의 전환</p>
+                                                                    담보권 실행유예기간 중 <br>채무자의 상환능력 회복 시 <br>주택담보대출 장기분할상환 <br>채무조정 지원
+                                                                </div>
+                                                                <div class="g-img">
+                                                                    <img src="/type/www/img/contents/support/support4.png">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -515,7 +511,7 @@
                                                 <div class="g-conts-area">
 
                                                     <div class="conts-desc">
-                                                        신청서류는 채무현황, 재산보유현황 등 채무자의 환경에 따라 달라질 수 있으므로 상담시 자세히 안내 받으시기
+                                                        ※신청서류는 채무현황, 재산보유현황 등 채무자의 환경에 따라 달라질 수 있으므로 상담시 자세히 안내 받으시기
                                                         바랍니다.
                                                     </div>
                                                     <div class="krds-table-wrap">
@@ -667,15 +663,15 @@
                                     <p class="guideline-text-wrap">연체<br>0일 ~ 30일</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
-                                <div class="guideline-cont-box before middle">
+                                <div class="guideline-cont-box ongoing righthalfex">
                                     <p class="guideline-text-wrap">연체<br>31일 ~ 89일</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
-                                <div class="guideline-cont-box ongoing righthalf">
-                                    <p class="guideline-text-wrap">연체<br>90일 이상</p>
+                                <div class="guideline-cont-box ongoing middleex">
+                                    <p class="guideline-text-wrap">연체<br>3개월(90일) 이상</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
-                                <div class="guideline-cont-box before middle">
+                                <div class="guideline-cont-box before lefthalfend">
                                     <p class="guideline-text-wrap">성실상환<br>6개월 이상</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
@@ -729,34 +725,40 @@
                                                     <div class="g-info-box sm">
                                                         <div class="g-desc-box">
                                                             <div class="conts-desc">
-                                                                <p class="g-tit">매각지원</p>
-                                                                한국자산관리공사(캠코)의 전자자산처분시스템(온비드)을 이용하여 매각 추진
-                                                            </div>
-                                                            <div class="g-img">
-                                                                <img src="/type/www/img/contents/support/support11.png">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="g-info-box sm">
-                                                        <div class="g-desc-box">
-                                                            <div class="conts-desc">
-                                                                <p class="g-tit">매각 후 사후처리</p>
-                                                                한국자산관리공사(캠코)는 매매대금을 신용회복위원회에 송금하고, 위원회는 채무상환계획에 따라
-                                                                채권금융회사에 배분
-                                                            </div>
-                                                            <div class="g-img">
-                                                                <img src="/type/www/img/contents/support/support4.png">
+                                                                <div>
+                                                                    <p class="g-tit">매각지원</p>
+                                                                    한국자산관리공사(캠코)의 <br>전자자산처분시스템(온비드)을 <br>이용하여 매각 추진
+                                                                </div>
+                                                                <div class="g-img">
+                                                                    <img src="/type/www/img/contents/support/support11.png">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="g-info-box sm">
                                                         <div class="g-desc-box">
                                                             <div class="conts-desc">
-                                                                <p class="g-tit">잔여채무 채무조정</p>
-                                                                담보주택 매각대금으로 상환 후 잔존채무에 대하여 개인워크아웃 지원요건에 따라 채무조정 지원
+                                                                <div>
+                                                                    <p class="g-tit">매각 후 사후처리</p>
+                                                                    한국자산관리공사(캠코)는 <br>매매대금을 신용회복위원회에 <br>송금하고, 위원회는 <br>채무상환계획에 따라<br>채권금융회사에 배분
+                                                                </div>
+                                                                <div class="g-img">
+                                                                    <img src="/type/www/img/contents/support/support4.png">
+                                                                </div>
                                                             </div>
-                                                            <div class="g-img">
-                                                                <img src="/type/www/img/contents/support/support3.png">
+                                                        </div>
+                                                    </div>
+                                                    <div class="g-info-box sm">
+                                                        <div class="g-desc-box">
+                                                            <div class="conts-desc">
+                                                                <div>
+
+                                                                    <p class="g-tit">잔여채무 채무조정</p>
+                                                                    담보주택 매각대금으로 상환 후 <br>잔존채무에 대하여 <br>개인워크아웃 지원요건에 따라 <br>채무조정 지원
+                                                                </div>
+                                                                <div class="g-img">
+                                                                    <img src="/type/www/img/contents/support/support3.png">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -975,15 +977,15 @@
                                     <p class="guideline-text-wrap">연체<br>0일 ~ 30일</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
-                                <div class="guideline-cont-box before middle">
+                                <div class="guideline-cont-box ongoing righthalfex">
                                     <p class="guideline-text-wrap">연체<br>31일 ~ 89일</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
-                                <div class="guideline-cont-box ongoing righthalf">
-                                    <p class="guideline-text-wrap">연체<br>90일 이상</p>
+                                <div class="guideline-cont-box ongoing middleex">
+                                    <p class="guideline-text-wrap">연체<br>3개월(90일) 이상</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
-                                <div class="guideline-cont-box before middle">
+                                <div class="guideline-cont-box before lefthalfend">
                                     <p class="guideline-text-wrap">성실상환<br>6개월 이상</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
@@ -1007,67 +1009,33 @@
                                                     <li>주택담보대출 연체기간이 31일 이상인 자
                                                         <br />주택담보대출 채권금융회사가 2개 이상인 경우 연체기간 31일 이상 대출이 1건 이상이면 지원 가능
                                                     </li>
-                                                    <li>단기연체 상태의 취약채무자로 소득 및 재산이 일정 수준 이하인 자</li>
+                                                    <li>1주택 소유자로서 담보주택 가격이 6억원 이하 인 자<br>
+                                                        경매유예 신청 당시 KB부동산 시세 또는 최근 개별공시가격을 기준으로 하며, 공유지분을 소유하고 있는 경우 지원 불가
+                                                    </li>
                                                     <li>부부합산 연소득이 7천만원 이하인 자
                                                         <br />세전 소득에서 소득세, 주민세, 국민연금보험료, 국민건강보험료, 고용보험료 등을 제외한 실수령액
                                                         기준
                                                     </li>
                                                 </ul>
-                                                <!-- <div class="g-conts-area sp-sm">
-                                                    <div class="g-info-box">
-                                                        <div class="g-desc-box">
-                                                            <p class="g-tit">다음 중 요건을 모두 충족하는 자</p>
-                                                            <ul class="krds-info-list decimal">
-                                                                <li>(1주택소유자) 채무자가 1주택<div class="tooltip-trigger" data-tooltip="「주택법」 제2조제2호 및 제3호에 해당하는 단독주택 및 공동주택으로 하되
-                                                                    기숙사, 어린이집, 공동생활가정, 지역아동센터 및 노인복지시설은 제외하며 오피스텔은 「주택법」의 주택에 해당하지 아니함">
-                                                    <i class="fas fa-question-circle"></i>
-                                                </div>을 소유한 경우에 한하여 지원하며, 공유지분을 소유하고 있는
-                                                                    경우에는 지원 불가
-                                                                    
-                                                                    <ul class="krds-info-list dash">
-                                                                        <li role="listitem">1주택 이상 소유여부에 대한 판정은 「주택공급에 관한
-                                                                            규칙(국토교통부령 제450호)」제53조 각 호의 사항을 준용</li>
-                                                                        <li role="listitem">채무자의 배우자가 담보주택 소유자인 경우 지원 불가하며,
-                                                                            채무자와 배우자의 공동소유인 경우에도 지원불가</li>
-                                                                        <li role="listitem">담보주택이 공동담보의 목적물인 경우 담보권 실행유예 및
-                                                                            담보주택 매매지원 또는 장기분할상환 채무조정 모두 불가</li>
-                                                                    </ul>
-                                                                </li>
-                                                                <li>(부부합산소득) 세전 소득에서 소득세, 주민세, 국민연금보험료, 국민건강보험료, 고용보험료 등을
-                                                                제외한 실수령액 기준
-                                                                    <ul class="krds-info-list dash">
-                                                                        <li role="listitem">배우자의 소득을 확인하기 위해 지부 또는 사이버상담부에서
-                                                                        배우자 본인의 동의서 및 소득증빙 자료를 징구<div class="tooltip-trigger" data-tooltip="세전 소득에서 소득세,
-                                                                        주민세, 국민연금보험료, 국민건강보험료, 고용보험료 등을 제외한 실수령액 기준">
-                                                    <i class="fas fa-question-circle"></i>
-                                                </div></li>
-                                                                    </ul>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div> -->
-                                                <!-- <div class="g-conts-area sp-sm">
-                                                    <div class="g-info-box point">
-                                                        <div class="g-desc-box">
-                                                            <p class="g-tit">지원제외대상</p>
-                                                            <ul class="krds-info-list decimal">
-                                                                <li>담보주택에 개인사채권자 등 협약 미체결 채권자의 저당권이 설정되어 있는 경우</li>
-                                                                <li>담보주택에 가압류·가등기·가처분 등의 권리제한이 있는 경우.<br />
-                                                                    (채권금융회사가 가압류한 경우에는 지원 가능)</li>
-                                                                <li>이미 담보주택에 경매개시결정이 있는 경우.<br />(경매기일 이전에 경매신청자가 경매취하에
-                                                                    동의하는 경우 지원 가능)</li>
-                                                                <li>채무자가 담보주택을 제3자에게 담보제공한 경우</li>
-                                                                <li>담보주택 관련 사해행위취소 소송, 채무부존재 소송 등 법적 분쟁이 진행 중인 경우</li>
-                                                                <li>채무자에 대한 개인회생·파산 절차가 진행 중인 경우</li>
-                                                                <li>채무자가 협약 제4조제5항의 채무조정 신청 제외대상에 해당하는 경우</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div> -->
                                             </div>
-                                            <!-- //accordion contents -->
+                                            <div class="g-conts-area mt10">
+                                                <div class="g-info-box gray">
+                                                    <div class="g-desc-box">
+                                                        <ul class="krds-info-list decimal">
+                                                            <li>(1주택소유자) 채무자가 1주택<sup>*</sup>을 소유한 경우에 한하여 지원하며, 공유지분을 소유하고 있는 경우에는 지원 불가<br>
+                                                                * 「주택법」 제2조제2호 및 제3호에 해당하는 단독주택 및 공동주택으로 하되<br>기숙사, 어린이집, 공동생활가정, 지역아동센터 및 노인복지시설은 제외하며 오피스텔은 「주택법」의 주택에 해당하지 아니함
+                                                                <ul class="krds-info-list dash">
+                                                                    <li role="listitem">1주택 이상 소유여부에 대한 판정은 「주택공급에 관한 규칙(국토교통부령 제450호)」제53조 각 호의 사항을 준용</li>
+                                                                    <li role="listitem">채무자의 배우자가 담보주택 소유자인 경우 지원 불가하며, 채무자와 배우자의 공동소유인 경우에도 지원불가</li>
+                                                                    <li role="listitem">담보주택이 공동담보의 목적물인 경우 담보권 실행유예 및 담보주택 매매지원 또는 장기분할상환 채무조정 모두 불가</li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <!-- //accordion contents -->
                                     </div>
                                 </div>
                                 <div class="accordion-item">
@@ -1082,44 +1050,46 @@
                                                 <div class="g-grid-wrap unit3">
                                                     <div class="g-info-box sm">
                                                         <div class="g-desc-box">
-                                                            <p class="g-tit">채무감면</p>
                                                             <div class="conts-desc">
-                                                                연체이자에 한하여 감면 가능
-                                                            </div>
-                                                            <div class="g-img">
-                                                                <img
-                                                                    src="/type/www/img/contents/support/support3.png">
+                                                                <div>
+                                                                    <p class="g-tit">채무감면</p>
+                                                                    연체이자에 한하여 감면 가능
+                                                                </div>
+                                                                <div class="g-img">
+                                                                    <img
+                                                                        src="/type/www/img/contents/support/support3.png">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="g-info-box sm">
                                                         <div class="g-desc-box">
-                                                            <p class="g-tit">거치기간 연장</p>
                                                             <div class="conts-desc">
-                                                                거치기간은 채무자 상환여력 등을<br />
-                                                                감안하여 최장 5년 범위내에서<br />
-                                                                연단위로 적용<br />
-                                                                (원리금 상환기간 중 거치기간 신청 불가)
-                                                            </div>
-                                                            <div class="g-img">
-                                                                <img
-                                                                    src="/type/www/img/contents/support/support2.png">
+                                                                <div>
+                                                                    <p class="g-tit">거치기간 연장</p>
+                                                                    거치기간은 채무자 상환여력 등을 감안하여 최장 5년 범위내에서 연단위로 적용 (원리금 상환기간 중 거치기간 신청 불가)
+                                                                </div>
+                                                                <div class="g-img">
+                                                                    <img src="/type/www/img/contents/support/support2.png">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="g-info-box sm">
                                                         <div class="g-desc-box">
-                                                            <p class="g-tit">상환기간 연장</p>
                                                             <div class="conts-desc">
-                                                                원리금균등분할상환방식으로<br />
-                                                                최장 35년까지 연장하나,<br />
-                                                                채무조정 신청 전 잔여기간이<br />
-                                                                35년 이상인 경우<br />
-                                                                잔여기간 적용
-                                                            </div>
-                                                            <div class="g-img">
-                                                                <img
-                                                                    src="/type/www/img/contents/support/support1.png">
+                                                                <div>
+                                                                    <p class="g-tit">상환기간 연장</p>
+                                                                    원리금균등분할상환방식으로<br />
+                                                                    최장 35년까지 연장하나,<br />
+                                                                    채무조정 신청 전 잔여기간이<br />
+                                                                    35년 이상인 경우<br />
+                                                                    잔여기간 적용
+                                                                </div>
+                                                                <div class="g-img">
+                                                                    <img
+                                                                        src="/type/www/img/contents/support/support1.png">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1266,15 +1236,15 @@
                                     <p class="guideline-text-wrap">연체<br>0일 ~ 30일</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
-                                <div class="guideline-cont-box before middle">
+                                <div class="guideline-cont-box ongoing righthalfex">
                                     <p class="guideline-text-wrap">연체<br>31일 ~ 89일</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
-                                <div class="guideline-cont-box ongoing righthalf">
-                                    <p class="guideline-text-wrap">연체<br>90일 이상</p>
+                                <div class="guideline-cont-box ongoing middleex">
+                                    <p class="guideline-text-wrap">연체<br>3개월(90일) 이상</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
-                                <div class="guideline-cont-box before middle">
+                                <div class="guideline-cont-box before lefthalfend">
                                     <p class="guideline-text-wrap">성실상환<br>6개월 이상</p>
                                     <div class="guideline-stepper"></div>
                                 </div>
@@ -1295,7 +1265,7 @@
                                             <div class="conts-desc roundcheck">
                                                 <p class="g-tit">다음 중 요건을 모두 충족하는 자</p>
                                                 <ul class="krds-info-list decimal" role="list">
-                                                    <li role="listitem">주택담보대출 연체기간이 90일 이상인 자
+                                                    <li role="listitem">주택담보대출 연체기간이 31일 이상인 자
                                                         <br />주택담보대출 채권금융회사가 2개 이상인 경우 연체기간 31일 이상 대출이 1건 이상이면 지원 가능
                                                     </li>
                                                     </li>
@@ -1367,25 +1337,29 @@
                                                     <div class="g-info-box sm">
                                                         <div class="g-desc-box">
                                                             <div class="conts-desc">
-                                                                <p class="g-tit">주택담보 이자율 조정</p>
-                                                                약정이자율 1/2범위 내 인하
-                                                                (최고 연 10%, 최저 한국은행 기준금리)
-                                                                (현 3.5%) + 2.25%
-                                                            </div>
-                                                            <div class="g-img">
-                                                                <img src="/type/www/img/contents/support/support6.png">
+                                                                <div>
+                                                                    <p class="g-tit">주택담보 이자율 조정</p>
+                                                                    약정이자율 1/2범위 내 인하<br>
+                                                                    (최고 연 10%, 최저 한국은행 기준금리)<br>
+                                                                    (현 3.5%) + 2.25%
+                                                                </div>
+                                                                <div class="g-img">
+                                                                    <img src="/type/www/img/contents/support/support6.png">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="g-info-box sm">
                                                         <div class="g-desc-box">
                                                             <div class="conts-desc">
-                                                                <p class="g-tit">상환기간 연장</p>
-                                                                상환기간은 거치기간 5년 이내,
-                                                                원리금분할상환 최대 35년 이내 지원
-                                                            </div>
-                                                            <div class="g-img">
-                                                                <img src="/type/www/img/contents/support/support1.png">
+                                                                <div>
+                                                                    <p class="g-tit">상환기간 연장</p>
+                                                                    상환기간은 거치기간 5년 이내,<br>
+                                                                    원리금분할상환 최대 35년 이내 지원
+                                                                </div>
+                                                                <div class="g-img">
+                                                                    <img src="/type/www/img/contents/support/support1.png">
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1442,10 +1416,8 @@
                                                                         </ul>
                                                                     </td>
                                                                     <td class="">
-<a href="[신용서식 02]소득증명(진술)서_작성예시.hwp" download
-                                                                         class="download-link file-hwp"
-                                                                         title="소득진술서(위원회 양식) 다운로드">위원회 양식<img
-                                                                        src="/type/www/img/icons/ico_file_hwp.svg" alt=""></a>
+                                                                        <a href="[신용서식 02]소득증명(진술)서_작성예시.hwp" download class="download-link file-hwp" title="소득진술서(위원회 양식) 다운로드">위원회 양식
+                                                                        <img src="/type/www/img/icons/ico_file_hwp.svg" alt=""></a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1457,10 +1429,8 @@
                                                                         </ul>
                                                                     </td>
                                                                     <td class="">
-<a href="[신용서식 02]소득증명(진술)서_작성예시.hwp" download
-                                                                         class="download-link file-hwp"
-                                                                         title="소득진술서(위원회 양식) 다운로드">위원회 양식<img
-                                                                        src="/type/www/img/icons/ico_file_hwp.svg" alt=""></a>
+                                                                        <a href="[신용서식 02]소득증명(진술)서_작성예시.hwp" download class="download-link file-hwp" title="소득진술서(위원회 양식) 다운로드">위원회 양식
+                                                                        <img src="/type/www/img/icons/ico_file_hwp.svg" alt=""></a>
                                                                     </td>
                                                                 </tr>
                                                                 <tr>
@@ -1503,56 +1473,55 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="g-conts-area">
-                                    <div class="g-desc-body">
-                                        <div class="g-grid-wrap contect">
-                                            <div class="g-info-box">
-                                                <div class="g-desc-box">
-                                                    <div class="g-text-wrap">
-                                                        <p class="g-tit">전화예약</p>
-                                                        <span class="g-subtit">오전 9시 ~ 오후 6시</span>
-                                                    </div>
-                                                    <div class="conts-desc largetext primary">
-                                                        1600-5500
-                                                    </div>
-                                                </div>
-                                                <div class="g-img">
-                                                    <img src="/type/www/img/contents/png/icon_booking.png" />
-                                                </div>
-                                            </div>
-                                            <div class="g-info-box lightblue">
-                                                <div class="g-desc-box">
-                                                    <p class="g-tit">온라인 상담예약</p>
-                                                    <a class="conts-desc" href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_blank" title="새창열림">
-                                                    바로가기
-                                                        <img src="/type/www/img/icons/arrow-right.svg" />
-                                                    </a>
-                                                </div>
-                                                <div class="g-img">
-                                                    <img src="/type/www/img/contents/png/icon_online_booking.png" />
-                                                </div>
-                                            </div>
-                                            <div class="g-info-box lightpurple">
-                                                <div class="g-desc-box">
-                                                    <p class="g-tit">모바일(앱) 예약</p>
-                                                    <div class="conts-desc">
-                                                        바로가기
-                                                        <img src="/type/www/img/icons/arrow-right.svg" />
-                                                    </div>
-                                                </div>
-                                                <div class="g-img">
-                                                    <img src="/type/www/img/contents/png/icon_mobile.png" />
-                                                </div>
-                                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //Content Sections -->
+                    
+                    <div class="g-conts-area">
+                        <div class="g-desc-body">
+                            <div class="g-grid-wrap contect">
+                                <div class="g-info-box">
+                                    <div class="g-desc-box">
+                                        <div class="g-text-wrap">
+                                            <p class="g-tit">전화예약</p>
+                                            <span class="g-subtit">오전 9시 ~ 오후 6시</span>
                                         </div>
+                                        <div class="conts-desc largetext primary">
+                                            1600-5500
+                                        </div>
+                                    </div>
+                                    <div class="g-img">
+                                        <img src="/type/www/img/contents/png/icon_booking.png" />
+                                    </div>
+                                </div>
+                                <div class="g-info-box lightblue">
+                                    <div class="g-desc-box">
+                                        <p class="g-tit">온라인 상담예약</p>
+                                        <a class="conts-desc" href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_blank" title="새창열림">
+                                        바로가기
+                                            <img src="/type/www/img/icons/arrow-right.svg" />
+                                        </a>
+                                    </div>
+                                    <div class="g-img">
+                                        <img src="/type/www/img/contents/png/icon_online_booking.png" />
+                                    </div>
+                                </div>
+                                <div class="g-info-box lightpurple">
+                                    <div class="g-desc-box">
+                                        <p class="g-tit">모바일(앱) 예약</p>
+                                        <div class="conts-desc">
+                                            바로가기
+                                            <img src="/type/www/img/icons/arrow-right.svg" />
+                                        </div>
+                                    </div>
+                                    <div class="g-img">
+                                        <img src="/type/www/img/contents/png/icon_mobile.png" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <!-- //Content Sections -->
-
                 </div>
             </div>
         </div>
