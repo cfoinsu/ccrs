@@ -9,7 +9,7 @@
     <meta name="description" content="신용회복위원회" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>신용도우미</title>
-     <link rel="stylesheet" href="/type/www/cdn/krds.min.css">
+    <link rel="stylesheet" href="/type/www/cdn/krds.min.css">
     <link rel="stylesheet" href="/type/www/css/common.css">
     <link rel="stylesheet" href="/type/www/css/main.css">
     <!-- <link rel="stylesheet" href="/type/www/css/sub.css"> -->
@@ -19,10 +19,10 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/type/www/css/all.min.css">
 
-    
-    
-    
-    
+
+
+
+
 
     <script src="/type/www/js/jquery-2.2.4.min.js"></script>
 </head>
@@ -162,8 +162,7 @@
                     <ul class="utils">
                         <li class="search"><a class="search-open"><img src="/type/www/images/ic/header-search.svg"
                                     alt="컨텐츠 검색"></a></li>
-                        <li class="en"><a href="#"><img src="/type/www/img/icons/ico_language.svg"
-                                    alt="언어 변경"></a></li>
+                        <li class="en"><a href="#"><img src="/type/www/img/icons/ico_language.svg" alt="언어 변경"></a></li>
                         <li class="hamburger-wrap"><a href="#" id="hamburgerBtn" class="hamburger" title="전체메뉴 열기"><span
                                     class="hide">전체메뉴</span></a></li>
                     </ul>
@@ -264,7 +263,8 @@
                         </div>
                         <div class="tab fill full">
                             <ul role="tablist">
-                                <li id="tab01" role="tab" aria-selected="false" aria-controls="tabpanel01" class="active" data-listener-attached="true">
+                                <li id="tab01" role="tab" aria-selected="false" aria-controls="tabpanel01"
+                                    class="active" data-listener-attached="true">
                                     <a href="신용도우미.html" class="btn-tab">신용도우미<i class="sr-only created">선택됨</i></a>
                                 </li>
                                 <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02"
@@ -273,57 +273,75 @@
                                 </li>
                                 <li id="tab03" role="tab" aria-selected="false" aria-controls="tabpanel03"
                                     data-listener-attached="true">
-                                    <a href="https://www.educredit.or.kr/ccedu/main/main.do" target="_blank" title="새창열기" class="btn-tab">개인회생파산가이드 (신용교육원)</a>
+                                    <a href="https://www.educredit.or.kr/ccedu/main/main.do" target="_blank"
+                                        title="새창열기" class="btn-tab">개인회생파산가이드 (신용교육원)</a>
                                 </li>
                             </ul>
                         </div>
                         <!-- Content Sections -->
                         <div class="content-sections g-wrap">
-                            
+
                             <div class="page-description blue">
                                 <span class="info-icon"></span>
                                 <div class="g-desc-body">
-                                    <p>상환단계별로 채무조정자들의 신용회복과 실수로 인한 실효를 예방하기 위해<br>
-                                        신용도우미와 신용비타민을 통해 맞춤정보를 제공하고 신용교육원을 통해 가이드를 제공합니다.</p>
-                                    <button type="button" class="krds-btn medium btn">신용도우미 알아보기<i
-                                            class="fa-brands fa-youtube"></i></button>
+                                    <p>
+                                        상환단계별로 채무조정자들의 신용회복과 실수로 인한 실효를 예방하기 위해<br>
+                                        신용도우미와 신용비타민을 통해 맞춤정보를 제공하고 신용교육원을 통해 가이드를 제공합니다.
+                                    </p>
                                 </div>
+                                <a href="#" onclick="openYoutubeUrl(''); return false;" target="_blank" title="새창열림"
+                                    class="krds-btn medium btn-red">
+                                    신용도우미 알아보기
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
                             </div>
 
                             <div class="g-wrap">
                                 <div class="g-info-box full">
                                     <div class="g-desc-box row">
                                         <div class="cont-wrap">
-                                            <p class="g-tit">신용도우미</p>
                                             <div class="conts-desc">
-                                                <p class="g-subtit">채무조정 상환자에 맞춰 3개월 간격으로 신용도우미 콘텐츠를  신용회복위원회 앱을 통해 지원받을 수 있습니다.</p>
+                                                <p class="g-tit">신용도우미</p>
                                                 <ul class="krds-info-list decimal" role="list">
-                                                    <li role="listitem">1.신용회복위원회 앱 설치</li>
-                                                    <li role="listitem">2.앱 실행하기</li>
-                                                    <li role="listitem">3.메뉴 > 신용복지 컨설팅 > 신용도무미 실행</li>
-                                                    <li role="listitem">4.신용도우미 신청</li>
+                                                    <li class="before-none" role="listitem">
+                                                        채무조정 상환자에 맞춰 3개월 간격으로 신용도우미 콘텐츠를 신용회복위원회 앱을
+                                                        통해 지원받을 수 있습니다.
+                                                    </li>
+                                                    <li class="before-none" role="listitem">1.신용회복위원회 앱 설치</li>
+                                                    <li class="before-none" role="listitem">2.앱 실행하기</li>
+                                                    <li class="before-none" role="listitem">3.메뉴 > 신용복지 컨설팅 > 신용도무미 실행
+                                                    </li>
+                                                    <li class="before-none" role="listitem">4.신용도우미 신청</li>
                                                 </ul>
-                                                <p class="noti"><i class="svg-icon ico-information-fill"></i>각 회차별로 진단과 결과에 따라 맞춤솔루션이 무료로 제공됩니다.</p>
+                                                <p class="noti exclamation">
+                                                    각 회차별로 진단과
+                                                    결과에 따라 맞춤솔루션이 무료로 제공됩니다.
+                                                </p>
                                             </div>
                                         </div>
-                                        <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_refresh.png">
-                                            <img src="/type/www/img/contents/png/icon_refresh.png">
+                                        <div class="g-img row qr-flexbox">
+                                            <div class="white-box">
+                                                <img src="/type/www/img/contents/png/qr_apple.png">
+                                                <p class="g-tit center">앱 스토어</p>
+                                            </div>
+                                            <div class="white-box">
+                                                <img src="/type/www/img/contents/png/qr_google.png">
+                                                <p class="g-tit center">구글 플레이</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="g-description">
-                                        신용회복위원회 앱을 통해 제공되는 신용도우미는 3개월 간격으로 총 5회차 제공되며, 1년 동안 신용 점수가 얼마나 향상되는지 확인할 수 있습니다.
                                     </div>
                                 </div>
                             </div>
                             <div class="krds-accordion type-heading" data-type="multiOpen">
                                 <div class="accordion-item active">
                                     <h4 class="accordion-header">
-                                        <button type="button" id="accordionHeaderSample01" class="btn-accordion" aria-controls="accordionCollapseSample01">
+                                        <button type="button" id="accordionHeaderSample01" class="btn-accordion"
+                                            aria-controls="accordionCollapseSample01">
                                             <span class="sec-tit">1회차 신용 관리 리포트 + 변제금 납입 분석</span>
                                         </button>
                                     </h4>
-                                    <div id="accordionCollapseSample01" class="accordion-collapse collapse" aria-labelledby="accordionHeaderSample01">
+                                    <div id="accordionCollapseSample01" class="accordion-collapse collapse"
+                                        aria-labelledby="accordionHeaderSample01">
                                         <div class="accordion-body">
                                             <!-- accordion contents -->
 
@@ -333,11 +351,13 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h4 class="accordion-header">
-                                        <button type="button" id="accordionHeaderSample02" class="btn-accordion" aria-controls="accordionCollapseSample02">
+                                        <button type="button" id="accordionHeaderSample02" class="btn-accordion"
+                                            aria-controls="accordionCollapseSample02">
                                             <span class="sec-tit">2회차 신용 관리 리포트 + 신용 관리 역량 진단</span>
                                         </button>
                                     </h4>
-                                    <div id="accordionCollapseSample02" class="accordion-collapse collapse" aria-labelledby="accordionHeaderSample02">
+                                    <div id="accordionCollapseSample02" class="accordion-collapse collapse"
+                                        aria-labelledby="accordionHeaderSample02">
                                         <div class="accordion-body">
                                             <!-- accordion contents -->
                                             <!-- //accordion contents -->
@@ -346,11 +366,13 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h4 class="accordion-header">
-                                        <button type="button" id="accordionHeaderSample03" class="btn-accordion" aria-controls="accordionCollapseSample03">
+                                        <button type="button" id="accordionHeaderSample03" class="btn-accordion"
+                                            aria-controls="accordionCollapseSample03">
                                             <span class="sec-tit">3회차 신용 관리 리포트 + 신용 상태 지표 진단</span>
                                         </button>
                                     </h4>
-                                    <div id="accordionCollapseSample03" class="accordion-collapse collapse" aria-labelledby="accordionHeaderSample03">
+                                    <div id="accordionCollapseSample03" class="accordion-collapse collapse"
+                                        aria-labelledby="accordionHeaderSample03">
                                         <div class="accordion-body">
                                             <!-- accordion contents -->
                                             <!-- //accordion contents -->
@@ -358,7 +380,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <!-- //Content Sections -->
                         <!-- Feedback Section -->

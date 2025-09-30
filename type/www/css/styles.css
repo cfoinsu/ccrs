@@ -388,7 +388,7 @@ body {
     display: flex;
     align-items: center;
     align-self: stretch;
-    gap: 45px;
+    gap: 20px;
     margin-bottom: 0;
     background: linear-gradient(93deg, #FFF6EA 0%, #FFEBD0 100%);
     padding: 36px;
@@ -397,7 +397,7 @@ body {
 
 .page-description.blue {
     background: linear-gradient(91deg, #E1EFFB 0%, #CBE4F8 100%);
-    padding: 18px 32px;
+    padding: 18px 20px 18px 32px;
     align-items: center;
 }
 
@@ -6035,7 +6035,7 @@ table.comparison-table td:first-child {
     background: linear-gradient(179deg, #FFF3FB -3%, #FECCED 100%);
 }
 
-.g-info-box.pink-gradient-box .white-box{
+.white-box{
     padding:18px;
     display: flex;
     flex-direction: column;
@@ -6045,7 +6045,7 @@ table.comparison-table td:first-child {
     flex: 1 0 0;
 }
 
-.g-info-box.pink-gradient-box .white-box .g-tit.center{
+.white-box .g-tit.center{
     text-align: center;
     font-size:1.7rem;
     margin-bottom:0;
@@ -6067,6 +6067,17 @@ table.comparison-table td:first-child {
 .callcenter-margin{
     margin-right:40px;
     margin-bottom:-40px;
+}
+
+/*신용도우미 추가 스타일*/
+.g-img.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.qr-flexbox{
+    display: flex;
+    gap: 8px;
 }
 
 @media print {
