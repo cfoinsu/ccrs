@@ -3595,10 +3595,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.g-wrap .g-grid-wrap.unit4{
-    display: flex;
-}
-
 .g-wrap .g-grid-wrap.sp-lg {
     row-gap: var(--krds-gap-9);
 }
