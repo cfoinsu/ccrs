@@ -4586,88 +4586,88 @@ table.comparison-table td:first-child {
 }
 
 .guideline-cont-box.before.start .guideline-stepper {
-    background: url(../img/contents/debt/Status=before\,\ Step=start.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-before-Step-start.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.before.middle .guideline-stepper {
-    background: url(../img/contents/debt/Status=before\,\ Step=middle.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-before-Step-middle.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.before.end .guideline-stepper {
-    background: url(../img/contents/debt/Status=before\,\ Step=end.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-before-Step-end.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.ongoing.start .guideline-stepper {
-    background: url(../img/contents/debt/Status=ongoing\,\ Step=start.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-ongoing-Step-start.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.ongoing.middle .guideline-stepper {
-    background: url(../img/contents/debt/Status=ongoing\,\ Step=middle.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-ongoing-Step-middle.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.ongoing.end .guideline-stepper {
-    background: url(../img/contents/debt/Status=ongoing\,\ Step=end.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-ongoing-Step-end.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.ongoing.righthalf .guideline-stepper {
-    background: url(../img/contents/debt/Status=ongoing\,\ Step=righthalf.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-ongoing-Step-righthalf.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.ongoing.lefthalf .guideline-stepper {
-    background: url(../img/contents/debt/Status=ongoing\,\ Step=lefthalf.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-ongoing-Step-lefthalf.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.ongoing.middleex .guideline-stepper {
-    background: url(../img/contents/debt/Status=ongoing\,\ Step=middleex.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-ongoing-Step-middleex.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.ongoing.righthalfex .guideline-stepper {
-    background: url(../img/contents/debt/Status=ongoing\,\ Step=righthalfex.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-ongoing-Step-righthalfex.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.ongoing.lefthalfex .guideline-stepper {
-    background: url(../img/contents/debt/Status=ongoing\,\ Step=lefthalfex.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-ongoing-Step-lefthalfex.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.ongoing.righthalfcolor .guideline-stepper {
-    background: url(../img/contents/debt/Status=ongoing\,\ Step=righthalfcolor.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-ongoing-Step-righthalfcolor.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.ongoing.lefthalfcolor .guideline-stepper {
-    background: url(../img/contents/debt/Status=ongoing\,\ Step=lefthalfcolor.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-ongoing-Step-lefthalfcolor.svg) no-repeat center;
     background-size: contain;
 }
 
 /*스테퍼 이미지 추가*/
 .guideline-cont-box.before.startend .guideline-stepper {
-    background: url(../img/contents/debt/Status=before\,\ Step=startend.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-before-Step-startend.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.before.endend .guideline-stepper {
-    background: url(../img/contents/debt/Status=before\,\ Step=endend.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-before-Step-endend.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.before.righthalfend .guideline-stepper {
-    background: url(../img/contents/debt/Status=before\,\ Step=righthalfend.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-before-Step-righthalfend.svg) no-repeat center;
     background-size: contain;
 }
 
 .guideline-cont-box.before.lefthalfend .guideline-stepper {
-    background: url(../img/contents/debt/Status=before\,\ Step=lefthalfend.svg) no-repeat center;
+    background: url(../img/contents/debt/Status-before-Step-lefthalfend.svg) no-repeat center;
     background-size: contain;
 }
 
