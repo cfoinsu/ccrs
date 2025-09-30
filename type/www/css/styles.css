@@ -4766,7 +4766,7 @@ table.comparison-table td:first-child {
 }
 
 .g-wrap .g-info-box .g-desc-box .g-tit {
-    font-size: var(--krds-pc-font-size-heading-small);
+    font-size: var(--krds-pc-font-size-heading-xsmall);
 }
 
 .g-wrap .g-info-box.gray {
