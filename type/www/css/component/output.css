@@ -24156,6 +24156,7 @@ body {
   display: inline-block;
   color: #e67e01;
   cursor: pointer;
+  white-space: nowrap;
 }
 .g-wrap .download-link.file-hwp img {
   display: inline-block;
