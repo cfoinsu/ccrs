@@ -6080,6 +6080,43 @@ table.comparison-table td:first-child {
     gap: 8px;
 }
 
+.g-desc-box.gap-40{
+    gap: 40px !important;
+}
+
+.level-list-item{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    padding-bottom: 32px;
+    border-bottom: 1px dashed var(--krds-light-color-border-gray-light);
+}
+
+.level-list-title{
+    display:flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.level-list-text{
+    padding-left:52px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.btn.level-youtube{
+    display: flex;
+    padding: 0 16px;
+    justify-self: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid var(--krds-light-color-button-tertiary-border);
+    font-size: var(--krds-pc-font-size-body-medium);
+}
+
 @media print {
     .noprint {display: none;}
 }
