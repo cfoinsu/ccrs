@@ -146,3 +146,31 @@ $(function () {
 	});
 });
 /* 푸터 스크립트:e */
+// 팝업스크립트
+const openYoutubeUrl = (url) => {
+	if (!url) {
+		url = "/index.do";
+	}
+
+	var name = 'workoutPopup';
+	var specs = [
+		'width=960',
+		'height=600',
+		'left=' + Math.max(0, (screen.width - 960) / 2),
+		'top=' + Math.max(0, (screen.height - 600) / 2),
+		'resizable=yes',
+		'scrollbars=yes',
+		'toolbar=no',
+		'menubar=no',
+		'location=no',
+		'status=no'
+	].join(',');
+
+	var win = window.open(url, name, specs);
+	if (win) {
+		win.opener = null; // 보안 권장
+		win.focus();
+	} else {
+		alert('팝업이 차단되었습니다. 팝업 허용 후 다시 시도하세요.');
+	}
+}
