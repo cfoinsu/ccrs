@@ -6084,6 +6084,12 @@ table.comparison-table td:first-child {
     gap: 40px !important;
 }
 
+.level-list{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
 .level-list-item{
     display: flex;
     flex-direction: column;
