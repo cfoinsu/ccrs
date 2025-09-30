@@ -21254,9 +21254,9 @@ body {
   background-color: var(--krds-light-color-surface-white-subtle);
   border: var(--krds-light-border-width-static-regular) solid var(--krds-light-color-border-gray-light);
 }
-.g-wrap .g-info-box.sm {
+/* .g-wrap .g-info-box.sm {
   padding: var(--krds-pc-padding-card-xsmall);
-}
+} */
 .g-wrap .g-info-box .g-desc + .g-desc {
   margin-top: var(--krds-pc-gap-layout-text-text-large);
 }
