@@ -4700,7 +4700,7 @@ table.comparison-table td:first-child {
 }
 
 .krds-accordion .accordion-item.active .accordion-collapse {
-    max-height: 200vh !important;
+    max-height: 300vh !important;
 }
 
 .g-info-box.full {
@@ -4933,6 +4933,11 @@ table.comparison-table td:first-child {
 
 .krds-info-list .primary {
     color: var(--krds-light-color-text-primary) !important;
+}
+
+.krds-info-list li .krds-table-wrap{
+    margin-top:0;
+    margin-bottom:8px;
 }
 
 .g-info-box.sm.full {
