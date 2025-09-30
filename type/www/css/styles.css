@@ -1209,6 +1209,8 @@ body {
     border-right: 1px solid var(--krds-light-color-border-gray-light);
     margin-right: 24px;
     min-width: 180px;
+    max-width: 180px;
+    width:180px;
 }
 
 .btn:focus {
