@@ -68,7 +68,7 @@ body {
     color: var(--krds-light-color-text-static);
     background-color: transparent;
     word-break: keep-all;
-    word-spacing: -0.02rem;
+    word-spacing: -0.2rem;
 }
 
 .container {
