@@ -1380,6 +1380,24 @@ body {
     }
 }
 
+/* 기본패턴_준비중 */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.element {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  animation: rotate 3s linear infinite;
+}
+
 /* 로딩 상태 */
 .loading {
     opacity: 0.5;
