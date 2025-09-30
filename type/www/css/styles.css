@@ -68,6 +68,7 @@ body {
     color: var(--krds-light-color-text-static);
     background-color: transparent;
     word-break: keep-all;
+    word-spacing: -0.02rem;
 }
 
 .container {
@@ -4717,6 +4718,7 @@ table.comparison-table td:first-child {
 .accordion-body .conts-desc {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
 }
 .accordion-body .conts-desc .line {
@@ -4857,6 +4859,7 @@ table.comparison-table td:first-child {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    width:100%;
 }
 
 .g-info-box.full .g-desc-box .g-tit,
@@ -4874,6 +4877,7 @@ table.comparison-table td:first-child {
     font-size: var(--krds-pc-font-size-body-medium);
     margin-top: 8px;
     height: 100%;
+    width: 100%;
 }
 
 .g-grid-wrap.unit2 .g-info-box.sm .g-desc-box .g-img,

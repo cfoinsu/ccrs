@@ -22819,7 +22819,7 @@ body {
 .g-wrap .g-desc-box {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-direction: column;
 }
 .g-wrap .g-desc-box .con-tit {
