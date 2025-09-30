@@ -4250,7 +4250,9 @@ table.comparison-table td:first-child {
     display: flex;
     align-items: center;
 }
-
+.stats-section .stats-description ul.column {
+    margin-top: 10px;
+}
 .stats-section .stats-description ul li {
     position: relative;
     font-size: 1.9rem;
