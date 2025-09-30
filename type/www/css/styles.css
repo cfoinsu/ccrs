@@ -5977,3 +5977,22 @@ table.comparison-table td:first-child {
 .info-list .g-info-box p{
     font-size: var(--krds-pc-font-size-body-medium);
 }
+
+/*채무조정 실효 추가 스타일*/
+.g-info-box.pink-gradient-box{
+    padding:56px;
+    background: linear-gradient(179deg, #FFF3FB -3%, #FECCED 100%);
+}
+
+.g-info-box.pink-gradient-box .white-box{
+    padding:24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 24px;
+}
+
+.g-info-box.pink-gradient-box .g-tit h2{
+    font-weight: bold;
+    margin-bottom: 40px;
+}
