@@ -4709,6 +4709,10 @@ table.comparison-table td:first-child {
     color: var(--krds-light-color-text-primary);
 }
 
+.g-tit.large{
+    font-size: 3.2rem !important;
+}
+
 .g-info-box .g-desc-box .g-tit.info,
 .noti.g-tit.info,
 .noti.g-tit.exclamation,
@@ -6026,6 +6030,15 @@ table.comparison-table td:first-child {
 
 .conts-desc .accordion-text{
     margin-bottom: 16px;
+}
+
+.g-info-box.center{
+    align-items: center;
+}
+
+.callcenter-margin{
+    margin-right:40px;
+    margin-bottom:-40px;
 }
 
 @media print {
