@@ -4082,6 +4082,7 @@ span.sub4InputLabel {
     border-radius: 10px 10px 10px 0;
     white-space: nowrap;
     width: auto;
+    z-index: 10;
 }
 .results-content-wrapper .graph-wrap .hover-box span::after{
     content:'';
@@ -4230,6 +4231,7 @@ table.comparison-table td:first-child {
 }
 
 .stats-section .stats-img{
+    display: none;
     flex-shrink: 0;
     margin-top: 3.2rem;
 }
@@ -5641,13 +5643,15 @@ table.comparison-table td:first-child {
     display: none;
     flex-direction: column;
     gap: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding-bottom: 40px;
+    height: 100%;
 }
 
 /* 첫 번째 단계만 기본 표시 */
 .figma-step-item.active {
     display: flex;
+    justify-content: center;
 }
 
 /* 스텝 그룹 (아이콘 + 내용) */
@@ -5711,7 +5715,7 @@ table.comparison-table td:first-child {
     border-radius: 6px;
     height: 48px;
     width: 100%;
-    max-width: 448px;
+    /* max-width: 448px; */
     box-sizing: border-box;
     padding: 0 16px;
     display: flex;
@@ -5775,8 +5779,9 @@ table.comparison-table td:first-child {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    width: 100%;
-    max-width: 448px;
+    width: calc(100% + 60px);
+    /* max-width: 525px; */
+    margin-left: -60px;
     align-items: center;
     justify-content: flex-start;
 }
@@ -5786,7 +5791,7 @@ table.comparison-table td:first-child {
     align-items: center;
     justify-content: center;
     height: 48px;
-    width: 220px;
+    width: calc(50% - 4px);
     border-radius: 6px;
     padding: 0 12px;
     font-family: 'Pretendard GOV', sans-serif;
@@ -5989,8 +5994,9 @@ table.comparison-table td:first-child {
     display: flex;
     gap: 8px;
     align-items: center;
-    width: 100%;
-    max-width: 500px;
+    width: calc(100% + 60px);
+    /* max-width: 525px; */
+    margin-left: -60px;
 }
 
 /* figma-input-box가 wrapper 안에 있을 때 */
