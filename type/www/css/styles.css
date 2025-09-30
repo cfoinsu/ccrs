@@ -4649,6 +4649,27 @@ table.comparison-table td:first-child {
     background-size: contain;
 }
 
+/*스테퍼 이미지 추가*/
+.guideline-cont-box.before.startend .guideline-stepper {
+    background: url(../img/contents/debt/Status=before\,\ Step=startend.svg) no-repeat center;
+    background-size: contain;
+}
+
+.guideline-cont-box.before.endend .guideline-stepper {
+    background: url(../img/contents/debt/Status=before\,\ Step=endend.svg) no-repeat center;
+    background-size: contain;
+}
+
+.guideline-cont-box.before.righthalfend .guideline-stepper {
+    background: url(../img/contents/debt/Status=before\,\ Step=righthalfend.svg) no-repeat center;
+    background-size: contain;
+}
+
+.guideline-cont-box.before.lefthalfend .guideline-stepper {
+    background: url(../img/contents/debt/Status=before\,\ Step=lefthalfend.svg) no-repeat center;
+    background-size: contain;
+}
+
 .guideline-cont-box.ongoing p {
     font-weight: bold;
 }
