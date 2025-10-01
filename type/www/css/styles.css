@@ -4671,6 +4671,16 @@ table.comparison-table td:first-child {
     background-size: contain;
 }
 
+.guideline-cont-box.ongoing.startend .guideline-stepper {
+    background: url(../img/contents/debt/Status-ongoing-Step-startend.svg) no-repeat center;
+    background-size: contain;
+}
+
+.guideline-cont-box.ongoing.endend .guideline-stepper {
+    background: url(../img/contents/debt/Status-ongoing-Step-endend.svg) no-repeat center;
+    background-size: contain;
+}
+
 .guideline-cont-box.ongoing p {
     font-weight: bold;
 }
