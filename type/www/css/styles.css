@@ -6215,3 +6215,6 @@ table.comparison-table td:first-child {
     table {width:100% !important;max-width: 100% !important;}
     .noprint {display: none;}
 }
+
+/* 대출이전 글자 삭제 */
+.guideline-cont-wrap .guideline-cont-box:first-child .guideline-text-wrap {font-size: 0 !important;}
