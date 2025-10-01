@@ -83,8 +83,11 @@ document.querySelectorAll('.quick-item, .quick-notification').forEach(item => {
         
         // Here you could add specific actions for each quick menu item
         switch(text.replace(/\s+/g, '')) {
-            case '상담신청':
-                alert('상담신청 페이지로 이동합니다.');
+            case '나의진행사항':
+                alert('나의진행사항 이동');
+                break;
+            case '상담예약신청':
+                alert('자주 묻는 질문 페이지로 이동합니다.');
                 break;
             case '자주묻는질문':
                 alert('자주 묻는 질문 페이지로 이동합니다.');
@@ -92,7 +95,10 @@ document.querySelectorAll('.quick-item, .quick-notification').forEach(item => {
             case '간편진단':
                 alert('간편진단 페이지로 이동합니다.');
                 break;
-            case '협약가입금융사':
+            case '협약기관':
+                alert('협약가입 금융사 목록을 확인합니다.');
+                break;
+            case '지부위치':
                 alert('협약가입 금융사 목록을 확인합니다.');
                 break;
             default:
@@ -357,7 +363,7 @@ $(document).ready(function() {
         if (target.length) {
             $('html, body').animate({
                 scrollTop: target.offset().top - 80
-            }, 500);
+            }, 200);
         }
     });
     
@@ -438,7 +444,7 @@ $(document).ready(function() {
     });
     
     $(document).on('click', '.scroll-to-top', function() {
-        $('html, body').animate({scrollTop: 0}, 500);
+        $('html, body').animate({scrollTop: 0}, 200);
     });
     
     // Tooltip functionality

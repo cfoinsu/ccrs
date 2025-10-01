@@ -68,6 +68,7 @@ body {
     color: var(--krds-light-color-text-static);
     background-color: transparent;
     word-break: keep-all;
+    word-spacing: -0.2rem;
 }
 
 .container {
@@ -4082,6 +4083,7 @@ span.sub4InputLabel {
     border-radius: 10px 10px 10px 0;
     white-space: nowrap;
     width: auto;
+    z-index: 10;
 }
 .results-content-wrapper .graph-wrap .hover-box span::after{
     content:'';
@@ -4230,6 +4232,7 @@ table.comparison-table td:first-child {
 }
 
 .stats-section .stats-img{
+    display: none;
     flex-shrink: 0;
     margin-top: 3.2rem;
 }
@@ -4248,7 +4251,9 @@ table.comparison-table td:first-child {
     display: flex;
     align-items: center;
 }
-
+.stats-section .stats-description ul.column {
+    margin-top: 10px;
+}
 .stats-section .stats-description ul li {
     position: relative;
     font-size: 1.9rem;
@@ -4723,6 +4728,7 @@ table.comparison-table td:first-child {
 .accordion-body .conts-desc {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
 }
 .accordion-body .conts-desc .line {
@@ -4837,6 +4843,8 @@ table.comparison-table td:first-child {
 
 .g-wrap .g-info-box.purple .g-desc-box .cont-wrap {
     max-width: calc(100% - 80px);
+    height: 100%;
+    width: 100%;
 }
 
 .g-grid-wrap.unitrow{
@@ -4863,6 +4871,7 @@ table.comparison-table td:first-child {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    width:100%;
 }
 
 .g-info-box.full .g-desc-box .g-tit,
@@ -4880,6 +4889,7 @@ table.comparison-table td:first-child {
     font-size: var(--krds-pc-font-size-body-medium);
     margin-top: 8px;
     height: 100%;
+    width: 100%;
 }
 
 .g-grid-wrap.unit2 .g-info-box.sm .g-desc-box .g-img,
@@ -4927,10 +4937,12 @@ table.comparison-table td:first-child {
     font-weight: 700;
     line-height: 150%;
 }
-
+.g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc{
+    display: flex;
+    align-items: center;
+}
 .g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc img {
     width: 14px;
-    margin-top: 4px;
 }
 
 .g-grid-wrap.contect .g-info-box .g-desc-box .g-text-wrap {
@@ -4990,6 +5002,7 @@ table.comparison-table td:first-child {
     padding: var(--krds-pc-padding-card-medium);
     background-color: var(--krds-light-color-surface-white);
     border-radius: var(--krds-radius-xlarge2);
+    width: 100%;
 }
 
 .krds-info-list.decimal {
@@ -5651,13 +5664,15 @@ table.comparison-table td:first-child {
     display: none;
     flex-direction: column;
     gap: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding-bottom: 40px;
+    height: 100%;
 }
 
 /* 첫 번째 단계만 기본 표시 */
 .figma-step-item.active {
     display: flex;
+    justify-content: center;
 }
 
 /* 스텝 그룹 (아이콘 + 내용) */
@@ -5721,7 +5736,7 @@ table.comparison-table td:first-child {
     border-radius: 6px;
     height: 48px;
     width: 100%;
-    max-width: 448px;
+    /* max-width: 448px; */
     box-sizing: border-box;
     padding: 0 16px;
     display: flex;
@@ -5785,8 +5800,9 @@ table.comparison-table td:first-child {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    width: 100%;
-    max-width: 448px;
+    width: calc(100% + 60px);
+    /* max-width: 525px; */
+    margin-left: -60px;
     align-items: center;
     justify-content: flex-start;
 }
@@ -5796,7 +5812,7 @@ table.comparison-table td:first-child {
     align-items: center;
     justify-content: center;
     height: 48px;
-    width: 220px;
+    width: calc(50% - 4px);
     border-radius: 6px;
     padding: 0 12px;
     font-family: 'Pretendard GOV', sans-serif;
@@ -5999,8 +6015,9 @@ table.comparison-table td:first-child {
     display: flex;
     gap: 8px;
     align-items: center;
-    width: 100%;
-    max-width: 500px;
+    width: calc(100% + 60px);
+    /* max-width: 525px; */
+    margin-left: -60px;
 }
 
 /* figma-input-box가 wrapper 안에 있을 때 */
@@ -6205,6 +6222,82 @@ table.comparison-table td:first-child {
 }
 
 @media print {
+    /* 기본 설정 */
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    @page {
+        size: A4;
+        margin: 1cm;
+    }
+    
     table {width:100% !important;max-width: 100% !important;}
     .noprint {display: none;}
+  html {
+    width: 210mm;
+    min-width: 1340px;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+  }
+  body {
+    width: 210mm;
+    min-width: 1340px;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+    font-size: 1.7rem;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+  }
+  
+  /* 반응형 무시 */
+  .container, .wrapper, main {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 1340px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+  
+  /* 테이블 고정 */
+  table {
+    table-layout: fixed !important;
+    width: 100% !important;
+    border-collapse: collapse;
+    page-break-inside: auto;
+  }
+  
+  thead {
+    display: table-header-group;
+  }
+  
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  
+  th, td {
+    padding: 8px !important;
+    border: 1px solid #000 !important;
+    word-wrap: break-word;
+    word-break: break-all;
+    vertical-align: top !important;
+  }
+  
+  /* 불필요한 요소 숨기기 */
+  .no-print, nav, header, footer, .sidebar, .btn {
+    display: none !important;
+  }
 }
+
+/* 대출이전 글자 삭제 */
+.guideline-cont-wrap .guideline-cont-box:first-child .guideline-text-wrap {font-size: 0 !important;}
