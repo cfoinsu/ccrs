@@ -6212,8 +6212,81 @@ table.comparison-table td:first-child {
 }
 
 @media print {
+    /* 기본 설정 */
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    
+    @page {
+        size: A4;
+        margin: 1cm;
+    }
+    
     table {width:100% !important;max-width: 100% !important;}
     .noprint {display: none;}
+  html {
+    width: 210mm;
+    min-width: 1340px;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+  }
+  body {
+    width: 210mm;
+    min-width: 1340px;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+    font-size: 1.7rem;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+  }
+  
+  /* 반응형 무시 */
+  .container, .wrapper, main {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 1340px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+  
+  /* 테이블 고정 */
+  table {
+    table-layout: fixed !important;
+    width: 100% !important;
+    border-collapse: collapse;
+    page-break-inside: auto;
+  }
+  
+  thead {
+    display: table-header-group;
+  }
+  
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+  
+  th, td {
+    padding: 8px !important;
+    border: 1px solid #000 !important;
+    word-wrap: break-word;
+    word-break: break-all;
+    vertical-align: top !important;
+  }
+  
+  /* 불필요한 요소 숨기기 */
+  .no-print, nav, header, footer, .sidebar, .btn {
+    display: none !important;
+  }
 }
 
 /* 대출이전 글자 삭제 */
