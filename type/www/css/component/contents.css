@@ -3837,13 +3837,13 @@ caption {
   border-bottom-left-radius: var(--krds-accordion--radius);
   border-bottom-right-radius: var(--krds-accordion--radius);
 }
-.krds-accordion .accordion-item.active .accordion-collapse {
+.krds-accordion .accordion-item.active1 .accordion-collapse {
   height: auto;
   max-height: 100vh;
   transition: all 1.5s ease-in-out;
   visibility: visible;
 }
-.krds-accordion .accordion-item.active .accordion-body {
+.krds-accordion .accordion-item.active1 .accordion-body {
   background-color: var(--krds-accordion--color-action-open);
 }
 .krds-accordion.type-line {
@@ -3875,11 +3875,11 @@ caption {
 .krds-accordion.type-line .accordion-item .accordion-body {
   padding: var(--krds-accordion--padding);
 }
-.krds-accordion.type-line .accordion-item.active {
+.krds-accordion.type-line .accordion-item.active1 {
   background: none;
   border-top-color: var(--krds-accordion--color-divider-open);
 }
-.krds-accordion.type-line .accordion-item.active .accordion-body {
+.krds-accordion.type-line .accordion-item.active1 .accordion-body {
   
 }
 
@@ -22580,7 +22580,7 @@ body {
   --g-question-mobile-accordion-body-padding-left: var(--krds-padding-6);
   position: relative;
 }
-.g-wrap .g-question .krds-accordion .accordion-item.active .btn-accordion .category {
+.g-wrap .g-question .krds-accordion .accordion-item.active1 .btn-accordion .category {
   color: var(--krds-light-color-text-basic);
 }
 .g-wrap .g-question .krds-accordion .btn-accordion {
@@ -23032,7 +23032,7 @@ body {
 .g-wrap .g-code-wrap .accordion-item {
   border: none;
 }
-.g-wrap .g-code-wrap .accordion-item.active .btn-accordion::after {
+.g-wrap .g-code-wrap .accordion-item.active1 .btn-accordion::after {
   transform: rotate(90deg);
 }
 .g-wrap .g-code-wrap .accordion-item .accordion-body {
@@ -24884,16 +24884,16 @@ body {
 [data-krds-mode=high-contrast] .g-wrap .g-question.type1 .accordion-item .accordion-body .krds-tag-wrap {
   border-top: var(--krds-high-contrast-border-width-variable-regular) solid var(--krds-high-contrast-color-divider-gray-light);
 }
-[data-krds-mode=high-contrast] .g-wrap .g-question.type1 .accordion-item.active {
+[data-krds-mode=high-contrast] .g-wrap .g-question.type1 .accordion-item.active1 {
   border-top-color: var(--krds-high-contrast-color-divider-gray-dark);
 }
-[data-krds-mode=high-contrast] .g-wrap .g-question.type1 .accordion-item.active .btn-accordion .title {
+[data-krds-mode=high-contrast] .g-wrap .g-question.type1 .accordion-item.active1 .btn-accordion .title {
   color: var(--krds-high-contrast-color-text-secondary);
 }
 [data-krds-mode=high-contrast] .g-wrap .g-question.type1 .btn-accordion .category {
   color: var(--krds-high-contrast-color-text-secondary);
 }
-[data-krds-mode=high-contrast] .g-wrap .g-question .krds-accordion .accordion-item.active .btn-accordion .category {
+[data-krds-mode=high-contrast] .g-wrap .g-question .krds-accordion .accordion-item.active1 .btn-accordion .category {
   color: var(--krds-high-contrast-color-text-basic);
 }
 [data-krds-mode=high-contrast] .g-wrap .g-question .attached-file {
@@ -25314,16 +25314,16 @@ body {
   [data-krds-mode=theme] .g-wrap .g-question.type1 .accordion-item .accordion-body .krds-tag-wrap {
     border-top: var(--krds-high-contrast-border-width-variable-regular) solid var(--krds-high-contrast-color-divider-gray-light);
   }
-  [data-krds-mode=theme] .g-wrap .g-question.type1 .accordion-item.active {
+  [data-krds-mode=theme] .g-wrap .g-question.type1 .accordion-item.active1 {
     border-top-color: var(--krds-high-contrast-color-divider-gray-dark);
   }
-  [data-krds-mode=theme] .g-wrap .g-question.type1 .accordion-item.active .btn-accordion .title {
+  [data-krds-mode=theme] .g-wrap .g-question.type1 .accordion-item.active1 .btn-accordion .title {
     color: var(--krds-high-contrast-color-text-secondary);
   }
   [data-krds-mode=theme] .g-wrap .g-question.type1 .btn-accordion .category {
     color: var(--krds-high-contrast-color-text-secondary);
   }
-  [data-krds-mode=theme] .g-wrap .g-question .krds-accordion .accordion-item.active .btn-accordion .category {
+  [data-krds-mode=theme] .g-wrap .g-question .krds-accordion .accordion-item.active1 .btn-accordion .category {
     color: var(--krds-high-contrast-color-text-basic);
   }
   [data-krds-mode=theme] .g-wrap .g-question .attached-file {
