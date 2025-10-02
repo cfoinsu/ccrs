@@ -3813,16 +3813,16 @@ caption {
   transition: var(--krds-transition-base);
   transform: rotate(0deg);
 }
-.krds-accordion .accordion-item .btn-accordion.active {
+.krds-accordion .accordion-item .btn-accordion.active1 {
   background-color: var(--krds-accordion--color-action-open);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   color: var(--krds-accordion--button-color-text-open);
 }
-.krds-accordion .accordion-item .btn-accordion.active:focus {
+.krds-accordion .accordion-item .btn-accordion.active1:focus {
   border-radius: var(--krds-accordion--radius);
 }
-.krds-accordion .accordion-item .btn-accordion.active::after {
+.krds-accordion .accordion-item .btn-accordion.active1::after {
   transform: rotate(180deg);
 }
 .krds-accordion .accordion-item .accordion-collapse {
@@ -3868,7 +3868,7 @@ caption {
   top: var(--krds-accordion--line-padding);
   right: 0;
 }
-.krds-accordion.type-line .accordion-item .btn-accordion.active {
+.krds-accordion.type-line .accordion-item .btn-accordion.active1 {
   background: none;
   color: var(--krds-color-light-primary-60);
 }
@@ -18440,7 +18440,7 @@ a:hover .d-card .c-tit {
   height: var(--krds-size-height-4);
   top: var(--krds-gap-4);
 }
-.filter-list.krds-accordion .accordion-item .btn-accordion.active::after {
+.filter-list.krds-accordion .accordion-item .btn-accordion.active1::after {
   background-color: var(--acc-btn-color-background-active);
 }
 .filter-list.krds-accordion .accordion-item .krds-form-chip input[type=radio]:checked ~ label {
@@ -22621,7 +22621,7 @@ body {
   transition: var(--krds-transition-base);
   transform: rotate(0deg);
 }
-.g-wrap .g-question .krds-accordion .btn-accordion.active .title::after {
+.g-wrap .g-question .krds-accordion .btn-accordion.active1 .title::after {
   transform: rotate(180deg);
 }
 .g-wrap .g-question .krds-accordion .accordion-body {
@@ -23026,7 +23026,7 @@ body {
     font-size: var(--krds-mobile-font-size-body-medium);
   }
 }
-.g-wrap .g-code-wrap .btn-accordion.active {
+.g-wrap .g-code-wrap .btn-accordion.active1 {
   background-color: transparent;
 }
 .g-wrap .g-code-wrap .accordion-item {
