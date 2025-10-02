@@ -4756,6 +4756,22 @@ table.comparison-table td:first-child {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 8px;
+    align-items: center;
+}
+
+.g-tit span.tag.orange{
+    line-height: 24px;
+    height: 24px;
+    background-color: #F48F01;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    padding: 0 8px;
+    font-size: 15px;
+    white-space: nowrap;
+    font-weight: 400;
+    box-sizing: border-box;
 }
 
 .g-tit.center{
@@ -4832,7 +4848,7 @@ table.comparison-table td:first-child {
 
 .g-wrap .g-info-box.gray {
     background-color: var(--krds-light-color-surface-gray-subtler);
-    border: 1px solid var(--krds-light-color-border-gray-light);
+    border: none;
 }
 
 .g-wrap .g-info-box.purple {
