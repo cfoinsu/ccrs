@@ -782,68 +782,60 @@ const krds_tab = {
   },
 };
 
-/*** * krds_accordion * ***/
+/*** * krds_accordion  수정버전* ***/
 const krds_accordion = {
   accordionButtons: null,
   accordionHandlers: new Map(),
-  init() {
+  init(mode) { // mode: 'admin' or 'front'
     this.accordionButtons = document.querySelectorAll(".btn-accordion");
-
     if (!this.accordionButtons.length) return;
-
-    this.setupAccordions();
+    this.setupAccordions(mode);
   },
   accordionToggle(button, accordionItems, accordionType, currentItem) {
     const isExpanded = button.getAttribute("aria-expanded") === "true";
-    // singleOpen 타입일 경우, 다른 항목 닫기
     if (accordionType !== "multiOpen" && !currentItem.classList.contains("active")) {
       accordionItems.forEach((otherItem) => {
         const otherButton = otherItem.querySelector(".btn-accordion");
         otherButton.setAttribute("aria-expanded", "false");
         otherButton.classList.remove("active");
-        //otherItem.classList.remove("active");
+        otherItem.classList.remove("active");
       });
     }
-    // 현재 항목 상태 토글
     button.setAttribute("aria-expanded", !isExpanded);
     button.classList.toggle("active", !isExpanded);
     currentItem.classList.toggle("active", !isExpanded);
-
-    // active가 되었을 때 스크롤
-    if (!isExpanded) {
-      // active 추가가 끝난 후에 스크롤 처리 (애니메이션 딜레이 위해 setTimeout 추천)
-      setTimeout(() => {
-        this.scrollToAccordionItem(currentItem);
-      }, 200); // 필요시 200ms 내외로 조정
-    }
   },
-  setupAccordions() {
+  setupAccordions(mode) {
     this.accordionButtons.forEach((button, idx) => {
       const accordionContainer = button.closest(".krds-accordion");
       const accordionItems = accordionContainer.querySelectorAll(".accordion-item");
       const currentItem = button.closest(".accordion-item");
       const accordionContent = currentItem.querySelector(".accordion-collapse");
       const accordionType = accordionContainer.dataset.type || "singleOpen";
-      const isOpen = accordionContainer.classList.contains("is-open");
-
-      // 접근성 속성 초기값 설정
       this.setupAriaAttributes(button, accordionContent, idx);
 
-      // 초기 오픈 상태 설정
-      if (isOpen || currentItem.classList.contains("active")) {
+      // 초기 상태 설정
+      if (mode === 'admin') {
         button.setAttribute("aria-expanded", "true");
         button.classList.add("active");
         currentItem.classList.add("active");
+      } else if (mode === 'front') {
+        if (idx === 0) {
+          button.setAttribute("aria-expanded", "true");
+          button.classList.add("active");
+          currentItem.classList.add("active");
+        } else {
+          button.setAttribute("aria-expanded", "false");
+          button.classList.remove("active");
+          currentItem.classList.remove("active");
+        }
       }
 
-      // 핸들러 고정 및 저장
       let toggleHandler = this.accordionHandlers.get(button);
       if (!toggleHandler) {
         toggleHandler = this.accordionToggle.bind(this, button, accordionItems, accordionType, currentItem);
         this.accordionHandlers.set(button, toggleHandler);
       }
-
-      // 기존 이벤트 리스너 제거 및 새로 등록
       button.removeEventListener("click", toggleHandler);
       button.addEventListener("click", toggleHandler);
     });
@@ -856,15 +848,6 @@ const krds_accordion = {
     accordionContent.setAttribute("role", "region");
     accordionContent.setAttribute("id", `accordionCollapse-id-${uniqueIdx}`);
     accordionContent.setAttribute("aria-labelledby", `accordionHeader-id-${uniqueIdx}`);
-  },
-  scrollToAccordionItem(item) {
-    const offset = 20; // 헤더/여유 픽셀 (필요 시 조절)
-    const rect = item.getBoundingClientRect();
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    window.scrollTo({
-      top: rect.top + scrollTop - offset,
-      behavior: 'smooth'
-    });
   },
 };
 
