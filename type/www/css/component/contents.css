@@ -3826,10 +3826,10 @@ caption {
   transform: rotate(180deg);
 }
 .krds-accordion .accordion-item .accordion-collapse {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-  visibility: hidden;
+  height: auto !important;
+  max-height: 100vh !important;
+  transition: all 1.5s ease-in-out;
+  visibility: visible !important;
 }
 .krds-accordion .accordion-item .accordion-body {
   padding: 0 var(--krds-accordion--padding) var(--krds-accordion--padding);
