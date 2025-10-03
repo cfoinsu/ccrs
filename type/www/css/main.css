@@ -58,7 +58,7 @@
 
 /* 검색 섹션 */
 .search-section {
-    padding: 40px 164px;
+    padding: 20px 0;
     background: white;
 }
 
@@ -163,14 +163,18 @@
     width: 436px;
     height: 147px;
 }
-.main-banner.last .top {
+.main-banner.last .topbox {
     width: 323px;
     height: 289px;
 }
-.main-banner.last .bottom {
+.main-banner.last .bottombox {
     width: 323px;
     height: 248px;
 }
+.main-banner.last .bottombox .ban-txt {
+    position: absolute;
+}
+
 .banner-image {
     position: absolute;
     top: 0;
@@ -417,37 +421,32 @@
 }
 
 /* 하단 섹션 */
-.consulting-section {
-    width: 549px;
-    height: 105px;
-    background: #ebeff3;
-    border-radius: 24px;
-    padding: 39px 32px;
-    position: relative;
-}
 
 .bottom-section {
-    padding: 0 164px;
+    padding: 20px 0 0;
     display: flex;
     gap: 16px;
     width: 1592px;
     max-width: 100%;
 }
 
-.intro-section {
-    width: 1190px;
-    height: 120px;
-    background: #ebeff3;
+.bottom-section .bottom-section-box {
+    background: #FFE6C3;
     border-radius: 24px;
-    padding: 39px 32px;
+    padding: 26px 33px;
     position: relative;
 }
-
-.intro-title {
-    font-size: 32px;
-    font-weight: 700;
-    color: #17191b;
-    line-height: 1.3;
+.consulting-section {
+    width: 549px;
+    height: 120px;
+}
+.intro-section {
+    width: 436px;
+    height: 120px;
+}
+.people-section {
+    width: 323px;
+    height: 120px;
 }
 
 .intro-buttons {
@@ -457,50 +456,34 @@
     display: flex;
     gap: 40px;
 }
-
-.intro-btn {
+.arrow-buttons {
+    display: flex;
+}
+.arrow-btn {
     display: flex;
     align-items: center;
     gap: 4px;
     background: transparent;
     border: none;
     cursor: pointer;
-    font-size: 21px;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
     color: #17191b;
     transition: color 0.3s;
 }
 
-.intro-btn:hover {
+.arrow-btn:hover {
     color: #F48F01;
 }
 
-.people-section {
-    width: 386px;
-    height: 120px;
-    background: #ebeff3;
-    border-radius: 24px;
-    padding: 40px 32px;
-    position: relative;
-}
 
-.people-title {
-    font-size: 31px;
+.bottom-section-box-title {
+    font-size: 1.9rem;
     font-weight: 700;
     color: #17191b;
     line-height: 1.3;
 }
 
-.people-btn {
-    position: absolute;
-    right: 32px;
-    top: 44px;
-    width: 32px;
-    height: 32px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
 
 /* 뉴스 섹션 */
 .news-section {
@@ -796,101 +779,7 @@
 
 
 /* 반응형 디자인 */
-@media (max-width: 1920px) {
-    .top-nav {
-        padding: 20px 0;
-    }
-    
-    .search-section {
-        padding: 20px 0 0;
-    }
-    
-    .main-section {
-        padding: 20px 0 0;
-    }
-    
-    .bottom-section {
-        padding: 20px 0 0;
-    }
-    
-    .news-section {
-        padding: 20px 0;
-    }
-}
 
-@media (max-width: 1600px) {
-    .search-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-    
-    .search-tags {
-        align-self: flex-end;
-    }
-}
-
-@media (max-width: 1400px) {
-    .main-content {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .search-box {
-        width: 100%;
-    }
-    
-    .main-banner,
-    .diagnosis-card,
-    .guide-card-a {
-        width: 100%;
-        max-width: none;
-    }
-    
-    .bottom-section {
-        flex-direction: column;
-        gap: 16px;
-        max-width: 100%;
-    }
-    
-    .intro-section,
-    .people-section {
-        width: 100%;
-        height: auto;
-    }
-    
-    .news-section {
-        flex-direction: column;
-        gap: 16px;
-    }
-    
-    .news-card {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-    
-    .search-box {
-        width: 100%;
-    }
-    
-    .banner-title {
-        font-size: 32px;
-    }
-    
-    .card-main-text {
-        font-size: 28px;
-    }
-    
-    .intro-buttons {
-        position: static;
-        margin-top: 20px;
-        flex-direction: column;
-        gap: 16px;
-    }
-}
 
 /* 헤더 스타일 */
 #Wrap {
@@ -955,7 +844,7 @@
     width: 88px;
     height: 100vh;
     position: fixed;
-    right: 0;
+    left: 0;
     top: 0;
     z-index: 50;
     display: flex;
@@ -996,7 +885,7 @@
     left: 13px;
     top: 13px;
     border-radius: 50%;
-    background-color: #ccc;
+    background-color: #000;
 }
 
 #m-anchor .m-anchor-list li.on::after {
@@ -1008,7 +897,7 @@
     left: 0px;
     top: 0px;
     border-radius: 50%;
-    border: 1px solid #666;
+    border: 1px solid #F48F01;
 }
 
 #m-anchor .m-anchor-list li.on a::after {
@@ -1056,6 +945,7 @@ section {
 }
 #section1 {
     position: relative;
+    padding-top: 100px;
 }
 
 #section1 .swiper-slide {
@@ -1229,7 +1119,7 @@ section {
     background-color: #F48F01;
     border-radius: 24px;
     padding: 6px 22px;
-    min-height: 362px;
+    min-height: 100%;
     display: flex;
     align-items: center;
 }
@@ -1527,83 +1417,9 @@ section {
     line-height: 24px;
 }
 
-@media (min-width: 1281px) {
-    .all-menu > nav .all-menu-list > li {
-        width: 20%;
-        float: left;
-    }
 
-    .all-menu > nav .all-menu-list > li > a {
-        font-size: 2.4rem;
-        padding-bottom: 30px;
-        margin-bottom: 20px;
-        display: block;
-    }
 
-    .all-menu > nav .all-menu-list > li .depth2 {
-        display: block !important;
-    }
 
-    .all-menu > nav .all-menu-list > li .depth2 > li > a {
-        font-size: 1.8rem;
-    }
-}
-
-@media (max-width: 500px) {
-    #commonSearchPagenationDiv ul li {
-        width: 26px;
-        height: 26px;
-    }
-}
-
-/* 버튼 스타일 */
-.btn-main-01 {
-    display: inline-block;
-    width: 138px;
-    height: 52px;
-    line-height: 50px;
-    border-radius: 26px;
-    border: 1px solid #fff;
-    color: #fff;
-    transition: 0.5s ease;
-    text-align: center;
-}
-
-.btn-main-01:hover {
-    color: #fff;
-    background: var(--main-color1);
-    border: 1px solid var(--main-color1);
-}
-
-.btn-main-02 {
-    display: inline-block;
-    width: 138px;
-    height: 52px;
-    line-height: 50px;
-    margin-top: 24px;
-    border-radius: 26px;
-    border: 1px solid var(--main-color1);
-    color: var(--main-color1);
-    transition: 0.5s ease;
-    text-align: center;
-}
-
-.btn-main-02:hover {
-    color: #fff;
-    background: var(--main-color1);
-    border: 1px solid var(--main-color1);
-}
-
-.btn-main-plus {
-    width: 35px;
-    height: 35px;
-    background: url(../images/ic/plus_normal.png) no-repeat;
-    transition: 0.5s ease;
-}
-
-.btn-main-plus:hover {
-    background: url(../images/ic/plus_active.png) no-repeat;
-}
 
 .btn-close {
     position: absolute;
@@ -1611,19 +1427,4 @@ section {
     right: 4rem;
     width: 4rem;
     height: auto;
-}
-
-@media (max-width: 1280px) {
-    .btn-main-02 {
-        margin-top: 0;
-    }
-
-    #footer .footer-wrap .footer-right .family-tag-close {
-        right: calc(50% - 20px);
-        top: 20px;
-    }
-
-    #footer .footer-wrap .footer-right .family-tag-close img {
-        width: 32px;
-    }
 }

@@ -15,7 +15,6 @@
 	<link rel="stylesheet" href="/type/www/css/all.min.css">
 	<!-- <link rel="stylesheet" href="/type/www/css/sub.css"> -->
     <link rel="stylesheet" href="/type/www/css/layout.css">
-    <!-- <link rel="stylesheet" href="/type/www/css/Animation.css"> -->
     <link rel="stylesheet" href="/type/www/css/grid.min.css">
     <link rel="stylesheet" href="/type/www/css/plugins/swiper.min.css">
     <link rel="stylesheet" href="/type/www/css/plugins/slick.css">
@@ -27,14 +26,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<!-- end custom head snippets -->
 	
-    <script src="/type/www/js/plugins/tailwind.js"></script>
-    
-    
 	<script src="/type/www/js/jquery-2.2.4.min.js"></script>
-	<!-- <script type="text/javascript" src="/type/www/js/sns.js"></script> -->
-	<!-- <script type="text/javascript" src="/type/www/js/html2canvas.min.js"></script> -->
-	<!-- <script type="text/javascript" src="/type/www/js/jspdf.min.js"></script> -->
-	<!-- <script type="text/javascript" src="/type/www/js/kakao.js"></script> -->
 </head>
 <body>
     <script src="/type/www/js/plugins/aos.js"></script>
@@ -50,7 +42,6 @@
 	    <header id="header" class="header">
 			<!-- Utility Bar -->
 			<div class="utility-bar">
-				<!-- <img src="/type/www/images/bg/bg_top.png" alt=""> -->
 				 <div class="container">
 
 					 <div class="utility-left">
@@ -182,6 +173,16 @@
 			</div>
 		</header>
 		<!-- header:e -->
+		<div id="m-anchor">
+			<div></div>
+			<ul class="m-anchor-list">
+				<li class="firstpage on"><a href="#section1"><span class="hide">go to first Section</span></a></li>
+				<li class="secondpage"><a href="#section2"><span class="hide">go to second Section</span></a></li>
+				<li class="thirdpage"><a href="#section3"><span class="hide">go to third Section</span></a></li>
+				<li class="fourthpage"><a href="#section4"><span class="hide">go to fourth Section</span></a></li>
+			</ul>
+			<div><a href="javascript:void(0);" class="btn-scroll move-bottom">Scroll&nbsp;down</a></div>
+		</div>
 		<!-- main contents:s -->
 		<main class="main-content" id="main-content">
 			<!-- section1:s -->
@@ -264,33 +265,38 @@
 		
 							<!-- 우측 길잡이 카드 -->
 							<div class="main-banner last">
-								<div class="top">
-									<img src="/type/www/images/img/photo-ari04.png" alt="">
-									<!-- <div class="hoverline">
+								<div class="topbox">
+									<!-- <img src="/type/www/images/img/photo-ari04.png" alt=""> -->
+									<div class="hoverline">
 										<ul>
 											<li>
-												<p>신속채무조정 <span>연체 30일 이하</span></p>
-												<p class="sub">일시적인 어려움을 도와드립니다.</p>
+												<p>소액금융 알아보기</p>
+												<p class="sub">성실상환자 대상 긴급자금을 지원합니다.</p>
 											</li>
 											<li>
-												<p>사전채무조정 <span>연체 31일 ~ 89일</span></p>
-												<p class="sub">어려울수록 힘이 되어 드립니다.</p>
+												<p>비대면 소액대출></p>
+												<p class="sub">PC나 모바일로 신청가능한 제도입니다.</p>
 											</li>
 											<li>
-												<p>개인워크아웃 <span>연체 30일 이상</span></p>
+												<p>소액신용(체크)카드 발급</p>
 												<p class="sub">큰 시련은 함께 이겨내야 합니다.</p>
 											</li>
-											<li>
-												<p>새출발기금 <span>소상공인·자영업자</span></p>
-												<p class="sub">여러분의 새로운 시작을 응원합니다.</p>
-											</li>
 										</ul>
-									</div> -->
+									</div>
 								</div>
-								<div class="bottom">
-									<img src="/type/www/images/img/photo-ari05.png" alt="">
-									<!-- <div class="swiper-container " id="mainslider02">
+								<div class="bottombox">
+									<!-- <img src="/type/www/images/img/photo-ari05.png" alt=""> -->
+									<div class="swiper-container " id="mainslider02">
 										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="image">
+													<img src="/type/www/images/img/photo-ari05.png" alt="">
+												</div>
+												<div class="ban-txt">
+													<span>해외동포를 위한</span><br>
+													<span>개인채무조정제도</span>
+												</div>
+											</div>
 											<div class="swiper-slide">
 												<img src="/type/www/images/img/photo-ari05.png" alt="">
 												<div class="ban-txt">
@@ -298,10 +304,31 @@
 													<span>개인채무조정제도</span>
 												</div>
 											</div>
-											
+											<div class="swiper-slide">
+												<img src="/type/www/images/img/photo-ari05.png" alt="">
+												<div class="ban-txt">
+													<span>해외동포를 위한</span><br>
+													<span>개인채무조정제도</span>
+												</div>
+											</div>
 										</div>
-									</div> -->
-									
+									</div>
+									<script>
+										var swiper = new Swiper("#mainslider02", {
+										spaceBetween: 0,
+										centeredSlides: true,
+										// autoplay: {
+										// 	delay: 2500,
+										// 	disableOnInteraction: false,
+										// },
+										loop:true,
+										loopedSlides: 3,
+										pagination: {
+											el: ".swiper-pagination",
+											clickable: true,
+										},
+										});
+									</script>
 									
 								</div>
 							</div>
@@ -309,36 +336,27 @@
 		
 						<!-- 하단 섹션 -->
 						<div class="bottom-section">
-							<!-- <a target="_blank" class="consulting-section">
-								<h2 class="intro-title">맞춤형 컨설팅</h2>
-								<p class="intro-subtitle">채무문제 해결과 신용관리 방향을 제시합니다.</p>
-							</a> -->
-							<div class="intro-section">
-								<h2 class="intro-title">신용회복위원회를 소개합니다.</h2>
-								<div class="intro-buttons">
-									<button class="intro-btn">
+							<div class="bottom-section-box consulting-section">
+								<h2 class="bottom-section-box-title">맞춤형 컨설팅</h2>
+								<p class="bottom-section-box-subtitle">채무문제 해결과 신용관리 방향을 제시합니다.</p>
+								<button type="button" class="arrow-btn">
+								</button>
+							</div>
+							<div class="bottom-section-box intro-section">
+								<h2 class="bottom-section-box-title">신용회복위원회를 소개합니다.</h2>
+								<div class="arrow-buttons">
+									<button type="button" class="arrow-btn">
 										<span>사회적가치실현</span>
-										<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-											<path d="M13 5.5L18 10.5M18 10.5L13 15.5M18 10.5H2.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
-										</svg>
 									</button>
-									<button class="intro-btn">
+									<button type="button" class="arrow-btn">
 										<span>사회공헌</span>
-										<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-											<path d="M13 5.5L18 10.5M18 10.5L13 15.5M18 10.5H2.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
-										</svg>
 									</button>
 								</div>
 							</div>
 		
-							<div class="people-section">
-								<h3 class="people-title">위원회 역사관</h3>
-								<button class="people-btn">
-									<svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-										<circle cx="16" cy="16" r="16" fill="#F48F01"/>
-										<path d="M9 16H22" stroke="white" stroke-linecap="round" stroke-width="1.8"/>
-										<path d="M18 12L22 16L18 20" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
-									</svg>
+							<div class="bottom-section-box people-section">
+								<h3 class="bottom-section-box-title">위원회 역사관</h3>
+								<button type="button" class="arrow-btn">
 								</button>
 							</div>
 						</div>
@@ -910,5 +928,59 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		//페이지(section) 앵커 스크롤 이벤트
+		$(window).scroll(function () {
+		if ($(this).scrollTop() >= $("#section4").offset().top-100) {
+			$(".m-anchor-list>li").removeClass("on");
+			$(".fourthpage").addClass("on");
+		} 
+		else if ((($(this).scrollTop()) >= ($("#section3").offset().top)) && (($(this).scrollTop()) < ($("#section4").offset().top-100))) {
+			$(".m-anchor-list>li").removeClass("on");
+			$(".thirdpage").addClass("on");
+		} 
+		else if ((($(this).scrollTop()) >= ($("#section2").offset().top)) && (($(this).scrollTop()) < ($("#section3").offset().top-100))) {
+			$(".m-anchor-list>li").removeClass("on");
+			$(".secondpage").addClass("on");
+		} 
+		else if ($(this).scrollTop() < $("#section2").offset().top) {
+			$(".m-anchor-list>li").removeClass("on");
+			$(".firstpage").addClass("on");
+		}
+		else {
+			return false;
+		}
+		});
+
+		$('.btn-scroll').click(function(e) {
+			e.preventDefault();
+			
+			// 현재 스크롤 위치 기준으로 현재 섹션 확인
+			let currentSection;
+			let scrollTop = $(window).scrollTop();
+			
+			if (scrollTop >= $("#section4").offset().top-1) {
+				currentSection = 4;
+			} 
+			else if (scrollTop >= $("#section3").offset().top-1) {
+				currentSection = 3;
+			}
+			else if (scrollTop >= $("#section2").offset().top-1) {
+				currentSection = 2;
+			}
+			else {
+				currentSection = 1;
+			}
+			
+			// 다음 섹션으로 스크롤
+			let nextSection = currentSection + 1;
+			if (nextSection > 4) nextSection = 1; // 마지막 섹션이면 첫 섹션으로
+			
+			// 스무스 스크롤 애니메이션
+			$('html, body').animate({
+				scrollTop: $("#section" + nextSection).offset().top
+			}, 800, 'swing');
+		});
+	</script>
 </body>
 </html>

@@ -800,6 +800,7 @@ Version : v1.0
 
 .all-menu > nav .all-menu-list.darken > li.highlight {
     opacity: 1;
+    flex:1;
 }
 
 .all-menu > nav .all-menu-list.darken > li.highlight > a {
