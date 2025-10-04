@@ -165,7 +165,7 @@ Version : v1.0
     transition: all 0.2s ease;
     top: 59px;
     padding-top: 20px;
-    width: calc(1160px / 6);
+    width: 100%;
     left: 0;
     text-align: left;
 }
@@ -484,7 +484,7 @@ Version : v1.0
     transition: all 0.2s ease;
     top: 80px;
     padding-top: 4px;
-    width: calc(1160px / 6);
+    width: 100%;
     left: 0;
     text-align: left;
 }
