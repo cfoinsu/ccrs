@@ -177,7 +177,7 @@
 		<div id="m-anchor">
 			<div></div>
 			<ul class="m-anchor-list">
-				<li class="firstpage on"><a href="#section1"><span class="hide">go to first Section</span></a></li>
+				<li class="firstpage on"><a href="#container"><span class="hide">go to first Section</span></a></li>
 				<li class="secondpage"><a href="#section2"><span class="hide">go to second Section</span></a></li>
 				<li class="thirdpage"><a href="#section3"><span class="hide">go to third Section</span></a></li>
 				<li class="fourthpage"><a href="#section4"><span class="hide">go to fourth Section</span></a></li>
@@ -932,19 +932,19 @@
 	<script type="text/javascript">
 		//페이지(section) 앵커 스크롤 이벤트
 		$(window).scroll(function () {
-		if ($(this).scrollTop() >= $("#section4").offset().top-100) {
+		if ($(this).scrollTop() >= $("#section4").offset().top-1) {
 			$(".m-anchor-list>li").removeClass("on");
 			$(".fourthpage").addClass("on");
 		} 
-		else if ((($(this).scrollTop()) >= ($("#section3").offset().top)) && (($(this).scrollTop()) < ($("#section4").offset().top-100))) {
+		else if ((($(this).scrollTop()) >= ($("#section3").offset().top-1)) && (($(this).scrollTop()) < ($("#section4").offset().top-100))) {
 			$(".m-anchor-list>li").removeClass("on");
 			$(".thirdpage").addClass("on");
 		} 
-		else if ((($(this).scrollTop()) >= ($("#section2").offset().top)) && (($(this).scrollTop()) < ($("#section3").offset().top-100))) {
+		else if ((($(this).scrollTop()) >= ($("#section2").offset().top-1)) && (($(this).scrollTop()) < ($("#section3").offset().top-100))) {
 			$(".m-anchor-list>li").removeClass("on");
 			$(".secondpage").addClass("on");
 		} 
-		else if ($(this).scrollTop() < $("#section2").offset().top) {
+		else if ($(this).scrollTop() < $("#section2").offset().top-1) {
 			$(".m-anchor-list>li").removeClass("on");
 			$(".firstpage").addClass("on");
 		}
@@ -975,7 +975,7 @@
 			
 			// 다음 섹션으로 스크롤
 			let nextSection = currentSection + 1;
-			if (nextSection > 4) nextSection = 1; // 마지막 섹션이면 첫 섹션으로
+			if (nextSection > 4) nextSection = 4; // 마지막 섹션이면 첫 섹션으로
 			
 			// 스무스 스크롤 애니메이션
 			$('html, body').animate({
