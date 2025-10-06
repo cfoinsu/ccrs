@@ -5101,6 +5101,19 @@ table.comparison-table td:first-child {
     background-color: transparent;
     padding-left: 0;
 }
+.krds-info-list .before-none.indent125 {
+    display: flex;
+}
+.krds-info-list .before-none.indent125::before {
+    display: none;
+}
+.krds-info-list .before-none.indent125 {
+    display: flex;
+}
+.krds-info-list .before-none.indent125 strong {
+    width: 125px;
+    flex: none;
+}
 
 .g-conts-area.flex {
     display: flex;
@@ -5130,7 +5143,26 @@ table.comparison-table td:first-child {
     margin-bottom: var(--krds-gap-4);
     font-size: var(--krds-pc-font-size-body-medium);
 }
-
+.choose-list {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.choose-list li {
+    background-color: #fff;
+    padding: 7px 12px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    color: #17191B;
+    border-radius: 1000px;
+}
+.choose-list li.on {
+    background-color: #58616A;
+    color: #fff;
+}
 .noti {
     margin-top: var(--krds-gap-4);
     display: flex;
@@ -5169,6 +5201,27 @@ table.comparison-table td:first-child {
     padding: 20px;
     height: fit-content;
     border-radius: var(--krds-radius-xlarge3);
+}
+
+.conts-desc-list {
+    border-top: 1px solid #1B2025;
+}
+.conts-desc-list .conts-desc.row {
+    padding: 40px 0;
+    border-bottom: 1px solid #D2D6DA;
+}
+.conts-desc-list .conts-desc.row .desc-cont-img {
+    flex: none;
+    width: 100px;
+    padding: 20px;
+    height: fit-content;
+    border-radius: var(--krds-radius-xlarge3);
+}
+.conts-desc .desc-tit {
+    margin-bottom: 8px;
+    color: #17191B;
+    font-size: 1.9rem;
+    font-weight: 700;
 }
 
 
@@ -5397,16 +5450,6 @@ table.comparison-table td:first-child {
     position: relative;
 }
 
-.timeline-year-section:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 60px;
-    background: linear-gradient(to bottom, var(--krds-light-color-border-gray-light), transparent);
-}
 
 /* 이미지 영역 */
 .timeline-image-area {
@@ -5442,7 +5485,7 @@ table.comparison-table td:first-child {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .timeline-year-flex {
@@ -5457,6 +5500,7 @@ table.comparison-table td:first-child {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+    background: url(../images/ic/sub/ic_history_year.svg) no-repeat;
 }
 
 .timeline-year-icon-flex img {

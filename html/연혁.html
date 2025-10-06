@@ -9,7 +9,7 @@
     <meta name="description" content="신용회복위원회" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>연혁</title>
-    <link rel="stylesheet" href="/type/www/cdn/krds.min.css">
+    
     <link rel="stylesheet" href="/type/www/css/common.css">
     <link rel="stylesheet" href="/type/www/css/main.css">
     <!-- <link rel="stylesheet" href="/type/www/css/sub.css"> -->
@@ -46,8 +46,7 @@
                     <div class="utility-left">
                         <div class="header-quickmenu-box ">
                             <div class="top-box">
-                                <a href="main.html" class="logo">ㄹㄴ
-                                    <img src="/type/www/images/logo/logo.svg" alt="logo">
+                                <a href="main.html" class="logo"><img src="/type/www/images/logo/logo.svg" alt="logo">
                                     <!-- for main -->
                                 </a>
                                 <button class="quickmenu-btn">
@@ -685,34 +684,9 @@
 
     <!-- 2️⃣ 아코디언 토글 스크립트 -->
     <script>
-        $(function () {                       // DOMContentLoaded 와 동일
-            // ① 요소 캐시
-            const $toggleBtn = $('#toggleButton');
-            const $toggleText = $('#toggleText');
-            const $arrowIcon = $('#arrowIcon');
-            const $separator = $('#separator');
-            const $support = $('#supportContent');
+        $(function () {
 
-            // ② 클릭 이벤트 핸들러
-            $toggleBtn.on('click', function () {
-                //   - 클래스 토글과 현재 상태 확인
-                //   - .toggleClass() 은 토글 후 현재 상태를 반환하지 않으므로
-                //     .hasClass() 로 현재가 열렸는지 판단
-                const isOpen = $support.toggleClass('open').hasClass('open');
-
-                //   - 열림/닫힘에 따라 UI 업데이트
-                if (isOpen) {
-                    $toggleText.text('지원내용 닫기');
-                    $arrowIcon.removeClass('rotate-90').addClass('rotate-270');
-                    $separator.show();               // display:block
-                } else {
-                    $toggleText.text('지원내용 보기');
-                    $arrowIcon.removeClass('rotate-270').addClass('rotate-90');
-                    $separator.hide();                // display:none
-                }
-            });
-
-            // ③ 연혁 탭 기능
+            //  연혁 탭 기능
             $('.year-tab').on('click', function () {
                 // 모든 탭에서 active 클래스 제거
                 $('.year-tab').removeClass('active');
@@ -770,10 +744,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2023</div>
@@ -800,10 +771,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2022</div>
@@ -842,10 +810,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2021</div>
@@ -892,10 +857,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2020</div>
@@ -951,10 +913,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2019</div>
@@ -997,10 +956,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2018</div>
@@ -1032,10 +988,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2017</div>
@@ -1063,10 +1016,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2016</div>
@@ -1102,10 +1052,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2015</div>
@@ -1129,10 +1076,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2014</div>
@@ -1160,10 +1104,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2013</div>
@@ -1195,10 +1136,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2012</div>
@@ -1226,10 +1164,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2011</div>
@@ -1264,10 +1199,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2010</div>
@@ -1295,10 +1227,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2009</div>
@@ -1326,10 +1255,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2008</div>
@@ -1357,10 +1283,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2007</div>
@@ -1388,10 +1311,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2006</div>
@@ -1419,10 +1339,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2005</div>
@@ -1450,10 +1367,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2004</div>
@@ -1481,10 +1395,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2003</div>
@@ -1512,10 +1423,7 @@
                         <div class="timeline-content-area">
                             <div class="timeline-year-header-flex">
                                 <div class="timeline-year-icon-flex">
-                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="10.5" cy="10.5" r="10.5" fill="#FFE8C8"/>
-<circle cx="10.5" cy="10.5" r="4.5" fill="#F48F01"/>
-</svg>
+                                    
 
                                 </div>
                                 <div class="timeline-year-flex">2002</div>
