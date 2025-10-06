@@ -22,15 +22,20 @@ caption>p {display:inline;}
 
 /*** style_guide ***/
 /* button */
-.btnC {display:inline-block;overflow:hidden;min-width:240px;margin:0 0 5px 0;padding:0 15px;border:1px solid #212e4e;box-sizing:border-box;padding:0;border-radius:2px;background:#fff;vertical-align:top;transition:0.2s;}
-.btnC>span {display:block;overflow:hidden;height:54px;color:#212e4e;font-size:18px;font-weight:500;line-height:54px;text-align:center;letter-spacing:-0.5px;transition:0.2s;}
-.btnC:hover {background-color:#212e4e !important;}
-.btnC:hover>span {color:#fff !important;}
+.btnC {display:inline-block;overflow:hidden;min-width:240px;margin:0 0 5px 0;padding:0 15px;border:1px solid #6D7882;box-sizing:border-box;padding:0;border-radius:8px;background:#fff;vertical-align:top;transition:0.2s;}
+.btnC>span {display:block;overflow:hidden;height:54px;color:#17191B;font-size:18px;font-weight:500;line-height:54px;text-align:center;letter-spacing:-0.5px;transition:0.2s;}
+.btnC:hover {background-color:#FFF9F2 !important;}
+.btnC:hover>span {color:#ED7801 !important;}
 
 .btnC.Navy {background:#212e4e;}
 .btnC.Navy>span {color:#fff;}
 .btnC.Navy:hover {border:1px solid #4286ea !important;background:#4286ea !important;}
 .btnC.Navy:hover>span {color:#fff !important;}
+
+.btnC.parimay {background:#F48F01;}
+.btnC.parimay>span {color:#fff;}
+.btnC.parimay:hover {border:1px solid #FFD89F !important;background:#FFF9F2 !important;}
+.btnC.parimay:hover>span {color: #F48F01 !important;}
 
 .btnC.Blue {border:1px solid #4286ea;background:#4286ea !important;}
 .btnC.Blue>span {color:#fff;}

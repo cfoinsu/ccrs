@@ -161,7 +161,7 @@ td .ico_file_avi {margin-right:0px !important;}
 /* .lineList_v.noSpacing dt {padding-left:0;padding-right:0;padding-top:0;} */
 /* .lineList_v.noSpacing dd {padding-left:0;padding-right:0;} */
 .lineList_v.typeNoLine {border-top:0;}
-.lineList_v dt {padding:29px 50px 22px;border-bottom:1px solid #e2e2e2;}
+.lineList_v dt {padding:29px 0 22px;border-bottom:1px solid #e2e2e2;}
 .lineList_v dd {padding:29px 50px 60px;}
 .lineList_v+.btnAreaC {border-top:1px solid #e2e2e2}
 .lineList_v .txtL>strong {display:inline-block;overflow:hidden;max-width:100%;box-sizing:border-box;color:#111;font-family:'Roboto','Noto Sans KR',sans-serif;font-size:34px;font-weight:700;line-height:45px;letter-spacing:-0.5px;}
