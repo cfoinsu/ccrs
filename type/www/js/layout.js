@@ -174,3 +174,12 @@ const openYoutubeUrl = (url) => {
 		alert('팝업이 차단되었습니다. 팝업 허용 후 다시 시도하세요.');
 	}
 }
+/**
+ * 버튼 클릭 시 특정 URL로 이동하는 함수
+ * @param {string} url - 이동할 웹 주소 (URL)
+ */
+function goToPage(url) {
+    // window.location.href 속성에 원하는 URL을 할당하면
+    // 브라우저는 해당 주소로 페이지를 이동(리디렉션)합니다.
+    window.location.href = url;
+}
