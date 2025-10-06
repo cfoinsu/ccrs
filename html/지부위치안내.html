@@ -93,7 +93,7 @@
                         <li><button type="button" class="region-item">제주</button></li>
                     </ul>
                     <div class="util-btns">
-                        <button type="button" class="krds-btn medium tertiary">인쇄 <i class="svg-icon ico-print"></i></button>
+                        <button type="button" class="krds-btn medium tertiary open-modal" data-target="modal_sample">인쇄 <i class="svg-icon ico-print"></i></button>
                         <button type="button" class="krds-btn medium tertiary">내위치 <i class="svg-icon ico-spot"></i></button>
                     </div>
                 </div>
@@ -162,6 +162,107 @@
                 </div>
         </main>
     </div>
+    <!-- krds Modal -->
+    <!-- modal -->
+    <section id="modal_sample0" class="krds-modal fade" role="dialog" aria-labelledby="tit_modal_sample">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- modal title -->
+                <div class="modal-header">
+                    <h2 id="tit_modal_sample" class="modal-title">
+                    지부안내
+                    </h2>
+                </div>
+                <!-- //modal title -->
+                <!-- modal contents -->
+                <div class="modal-conts">
+                    <div class="conts-area">
+                        <p>방문 상담은 전국 서민금융통합지원센터를 통해 이뤄집니다. (상담시간 평일 09:00 ~ 17:00)<br>
+                        문의전화 <strong class="primary">1600-5500</strong></p>
+                        <div class="g-imag-hover">
+                            <div class="g-map-images">
+                                <!-- <img src="/type/www/images/img/map/img-mapbox.svg" alt=""> -->
+                                <a href="#" class="map-choose seoul close-modal" onclick="krds_modal.closeModal('modal_sample0')">서울</a>
+                                <a href="#" class="map-choose gyunggi close-modal" onclick="krds_modal.closeModal('modal_sample0')">경기</a>
+                                <a href="#" class="map-choose kangwon close-modal" onclick="krds_modal.closeModal('modal_sample0')">강원</a>
+                                <a href="#" class="map-choose chungchung close-modal" onclick="krds_modal.closeModal('modal_sample0')">충청</a>
+                                <a href="#" class="map-choose gyungsang close-modal" onclick="krds_modal.closeModal('modal_sample0')">경상</a>
+                                <a href="#" class="map-choose jeonla close-modal" onclick="krds_modal.closeModal('modal_sample0')">전라</a>
+                                <a href="#" class="map-choose jeju close-modal" onclick="krds_modal.closeModal('modal_sample0')">제주</a>
+                                <img class="map-seoul" src="/type/www/images/img/map/map_seoul.svg" alt="">
+                                <img class="map-gyunggi" src="/type/www/images/img/map/map_gyunggi.svg" alt="">
+                                <img class="map-kangwon" src="/type/www/images/img/map/map_kangwon.svg" alt="">
+                                <img class="map-chungchung" src="/type/www/images/img/map/map_chungchung.svg" alt="">
+                                <img class="map-gyungsang" src="/type/www/images/img/map/map_gyungsang.svg" alt="">
+                                <img class="map-jeonla" src="/type/www/images/img/map/map_jeonla.svg" alt="">
+                                <img class="map-jeju" src="/type/www/images/img/map/map_jeju.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //modal contents -->
+                <!-- modal btn -->
+                <div class="modal-btn btn-wrap">
+                    <a href="#" onclick="krds_modal.closeModal('modal_sample0')" class="krds-btn medium tertiary close-modal">닫기</a>
+                </div>
+                <!-- //modal btn -->
+                <!-- close button -->
+                <button type="button" onclick="krds_modal.closeModal('modal_sample0')" class="krds-btn medium icon btn-close close-modal">
+                    <span class="sr-only">닫기</span>
+                    <i class="svg-icon ico-popup-close"></i>
+                </button>
+                <!-- //close button -->
+            </div>
+        </div>
+        <div class="modal-back"></div>
+    </section>
+    <!-- //modal -->
+    <!-- krds Modal -->
+    <!-- modal -->
+    <section id="modal_sample" class="krds-modal fade" role="dialog" aria-labelledby="tit_modal_sample">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <!-- modal title -->
+                <div class="modal-header">
+                    <h2 id="tit_modal_sample" class="modal-title">
+                    성동광진 고용복지+센터 출장상담지원
+                    </h2>
+                </div>
+                <!-- //modal title -->
+                <!-- modal contents -->
+                <div class="modal-conts">
+                    <div class="conts-area">
+                        <div class="g-img">
+                            <img src="/type/www/images/img/map/프린트_지도이미지.png" alt="">
+                        </div>
+                    </div>
+                    <div class="conts">
+                        <dl class="flex-list">
+                            <dt>주소</dt>
+                            <dd>서울시 중구 세종대로 124 한국프레스센터(서울신문사) 6층</dd>
+                            <dt>지하철</dt>
+                            <dd>수도권 1,2호선 시청역 4번 출구<br>수도권 5호선 광화문역 5번 출구에서 서울시청 방향으로 300미터</dd>
+                        </dl>
+                    </div>
+                </div>
+                <!-- //modal contents -->
+                <!-- modal btn -->
+                <div class="modal-btn btn-wrap right">
+                    <a href="#" class="krds-btn medium tertiary close-modal">닫기</a>
+                    <a href="#" class="krds-btn medium primary close-modal">인쇄</a>
+                </div>
+                <!-- //modal btn -->
+                <!-- close button -->
+                <button type="button" class="krds-btn medium icon btn-close close-modal">
+                    <span class="sr-only">닫기</span>
+                    <i class="svg-icon ico-popup-close"></i>
+                </button>
+                <!-- //close button -->
+            </div>
+        </div>
+        <div class="modal-back"></div>
+    </section>
+    <!-- //modal -->
 
     <script src="/type/www/js/jquery-2.2.4.min.js"></script>
     <script src="/type/www/js/component/ui-script.js"></script>
@@ -183,7 +284,9 @@
                 
                 // 1. 클릭된 요소는 active 클래스를 토글 (열거나 닫기)
                 $clickedSection.toggleClass('active');
+
             });
+            krds_modal.openModal('modal_sample0');
         });
     </script>
 </body>

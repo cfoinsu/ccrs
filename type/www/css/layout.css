@@ -1773,3 +1773,47 @@ main.map-content .container {max-width: 100%;}
 .map-content .content-area .g-imag {margin-bottom: 0;}
 .map-content .content-area .g-imag img {object-fit: none;}
 .map-content .content-area .ab_note {position: absolute;right: 24px;bottom: 24px;height: 52px;line-height: 50px;padding: 0 24px;box-shadow: 0px 0px 2px 0px #0000000D;box-shadow: 0px 4px 8px 0px #00000014;background-color: #fff;color: #17191B;text-align: right;font-size: 1.7rem;font-weight: 400;border-radius: 1000px;}
+
+.g-imag-hover  {height: 541px;width: 700px;border-radius: 24px;border: 1px solid #D2D6DA;text-align: center;}
+.g-map-images {position: relative;display: block;width: 338px;height: 479px;background: url(../images/img/map/map.png) center no-repeat;margin: 32px auto 0;}
+.g-imag-hover .map-choose {position: absolute;width: 42px;height: 24px;background: transparent;z-index: 3;border-radius: 1000px; color: #6D7882;background-color: #D2D6DA;text-align: center;line-height: 22px;font-size: 1.5rem;}
+.g-imag-hover .map-choose:hover {color: #fff;background-color: #F48F01;}
+.g-imag-hover img {display: none;position: absolute;top: 0;left: 0;}
+.g-imag-hover .g-img img {display: block;}
+.g-imag-hover .map-choose.seoul {top:74px;left: 63px;}
+.g-imag-hover .map-choose.seoul:hover ~ .map-seoul {display: block;z-index: 2;}
+.g-imag-hover .map-choose.gyunggi {top:124px;left: 86px;}
+.g-imag-hover .map-choose.gyunggi:hover ~ .map-gyunggi {display: block;z-index: 2;}
+.g-imag-hover .map-choose.kangwon {top:74px;left: 166px;}
+.g-imag-hover .map-choose.kangwon:hover ~ .map-kangwon {display: block;z-index: 2;}
+.g-imag-hover .map-choose.chungchung {top:194px;left: 93px;}
+.g-imag-hover .map-choose.chungchung:hover ~ .map-chungchung {display: block;z-index: 2;}
+.g-imag-hover .map-choose.gyungsang {top:285px;left: 186px;}
+.g-imag-hover .map-choose.gyungsang:hover ~ .map-gyungsang {display: block;z-index: 2;}
+.g-imag-hover .map-choose.jeonla {top:307px;left: 61px;}
+.g-imag-hover .map-choose.jeonla:hover ~ .map-jeonla {display: block;z-index: 2;}
+.g-imag-hover .map-choose.jeju {top:439px;left: 56px;}
+.g-imag-hover .map-choose.jeju:hover ~ .map-jeju {display: block;z-index: 2;}
+/* dl에 Flex 컨테이너 지정 */
+dl.flex-list {
+    display: flex;
+    flex-wrap: wrap; /* 요소가 넘칠 경우 줄바꿈 허용 */
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* dt와 dd에 item으로 지정 */
+.flex-list dt {
+    /* 용어 너비 지정 */
+    flex-basis: 80px; 
+    font-weight: bold;
+    padding: 5px 10px 5px 0;
+}
+
+.flex-list dd {
+    /* 나머지 공간을 채우도록 설정 */
+    flex-basis: calc(100% - 80px); 
+    /* 또는 flex-grow: 1; */
+    padding: 5px 0;
+    margin: 0;
+}
