@@ -5628,6 +5628,7 @@ table.comparison-table td:first-child {
 }
 
 .chairman-signiture {
+    margin-top: 20px;
     width: 100%;
     justify-content: flex-end;
     align-items: center;
