@@ -249,163 +249,58 @@
                         </div>
                         <!-- Content Sections -->
                         <div class="content-sections g-wrap">
-                            <div class="tab fill full">
-                                <ul role="tablist">
-                                    <li id="tab01" role="tab" aria-selected="false" aria-controls="tabpanel01"
-                                        data-listener-attached="true">
-                                        <a href="#" class="btn-tab">전체</a>
-                                    </li>
-                                    <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02"
-                                        class="active" data-listener-attached="true">
-                                        <a href="#" class="btn-tab">고객의소리<i class="sr-only created">선택됨</i></a>
-                                    </li>
-                                    <li id="tab03" role="tab" aria-selected="false" aria-controls="tabpanel03"
-                                        data-listener-attached="true">
-                                        <a href="#" class="btn-tab">군전용질의</a>
-                                </ul>
-                            </div>
-                            <div class="board-list">
-                                <!-- 검색 입력폼 -->
-                                <div class="search-top-box">
-                                    <div class="sch-filter-box">
-                                        <div class="filter-form">
-                                            <div>
-                                                <label class="label hide" for="appl-sch-sel1">선택 분류</label>
-                                                <select id="appl-sch-sel1" class="krds-form-select medium">
-                                                    <option value="">선택</option>
-                                                    <option value="">공지사항</option>
-                                                    <option value="">질의응답</option>
-                                                    <option value="">이벤트</option>
-                                                </select>
+                            <div class="board-detail">
+                                <div class="community-page-title line" id="title">
+                                    <h2 class="tit">24년 2월 디지털 정부서비스 UIUX 가이드라인 출시 안내입니다.</h2>
+                                    <p class="info">
+                                        <span class="category">안내자</span>
+                                        <span class="category">등록일</span>
+                                        <span class="date">2024.12.12</span>
+                                    </p>
+                                </div>
+                                
+                                <div class="g-conts-area">
+                                    <div class="g-description-area" id="contents">
+                                        <div class="g-attach-file-wrap" style="display: block;" id="attach-file">
+                                            <div class="conts-area">
+                                                <h4 class="con-tit">첨부파일</h4>
+                                                <ul class="file-list" id="file-list"> 
+                                                    <li>
+                                                        <p class="name">디지털 정부서비스 UIUX 가이드라인(24년 2월).pdf [PDF, 28.54 MB]</p>
+                                                        <div class="btn-download">
+                                                        <button type="button" class="krds-btn medium text" data-atch-file-id="FILE_000000000000503" data-file-sn="0">다운로드<i class="svg-icon ico-down"></i></button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div>
-                                                <label class="label hide" for="appl-sch-sel1">선택 분류</label>
-                                                <select id="appl-sch-sel1" class="krds-form-select medium">
-                                                    <option value="">선택</option>
-                                                    <option value="">내용</option>
-                                                    <option value="">제목+내용</option>
-                                                    <option value="">작성자</option>
-                                                </select>
-                                            </div>
-                                            <!-- 검색 입력폼 -->
-                                            <div class="sch-form-wrap">
-                                                <div class="sch-input">
-                                                    <input type="text" class="krds-input" placeholder="검색어를 입력해주세요"
-                                                        title="검색어 입력">
-                                                    <button type="button" class="krds-btn medium icon ico-search">
-                                                        <span class="sr-only">검색</span>
-                                                        <i class="svg-icon ico-sch"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <!-- //검색 입력폼 -->
                                         </div>
+                                        <p>디지털 정부서비스 UI/UX 가이드라인 공표 및 기존 '전자정부 웹사이트 UI·UX 가이드라인'에서 '디지털 정부서비스 UI/UX 가이드라인' 으로 대체됨을 알려드립니다.</p>
+                                        <p>'디지털 정부서비스 UI/UX 가이드라인'은 디지털 서비스를 구성하는 여러 사용자 인터페이스(User Interface; UI) 요소 중 사용 빈도가 높고 사용자 경험(User Experience; UX) 품질에 큰 영향을 주는 공통 구성 요소, 핵심 과업에 대한 설계·구현 가이드 등 「전자정부법」, 「행정기관 및 공공기관 정보시스템 구축·운영 지침」, 「전자정부 웹사이트 품질관리 지침」에 따라 행정기관 및 공공기관이 준수해야 할 디지털 정부서비스 UI/UX에 대한 세부 사항을 제시해드립니다.</p>
+                                        <img src="/type/www/images/img/detail-img01.png" alt="">
                                     </div>
                                 </div>
-                                <!-- //검색 입력폼 -->
-
-                                <!-- 검색 결과 : 리스트 상단 -->
-                                <div class="search-list-top">
-                                    <ul class="sch-info" aria-live="polite">
-                                        <li>검색 결과 <span class="point">24</span>건</li>
-                                    </ul>
-                                    <ul class="sch-sort">
-                                        <li class="m-hide">
-                                            <strong class="sort-label"><label for="search_result_count">목록 표시
-                                                    개수</label></strong>
-                                            <select class="krds-form-select-sort" id="search_result_count">
-                                                <option>10개</option>
-                                                <option>9개</option>
-                                            </select>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                                <!-- //검색 결과 : 리스트 상단 -->
-                                <!-- table -->
-                                <div class="krds-table-wrap">
-                                    <table class="tbl col board vc">
-                                        <caption>게시판에 대한 표로 제목1,제목2에 대한 내용으로 구성되어 있으며 제목1은 제목1-1,제목1-2,제목1-3으로 구성되어있다.
-                                        </caption>
-                                        <colgroup>
-                                            <col>
-                                            <col>
-                                            <col>
-                                            <col>
-                                            <col>
-                                            <col>
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">번호</th>
-                                                <th scope="col">카테고리</th>
-                                                <th scope="col">제목</th>
-                                                <th scope="col">답글</th>
-                                                <th scope="col">답변자</th>
-                                                <th scope="col">등록일</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row"><span>공지</span></th>
-                                                <td>질의응답</td>
-                                                <td><a href="고객의소리_상세.html">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림</a></td>
-                                                <td class="ac">
-                                                    <button type="button" class="krds-btn text open-modal" data-target="modal_sample"><i class="svg-icon ico-go"></i></button>
-                                                </td>
-                                                <td>관리자</td>
-                                                <td>2024.10.15</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row"><span>공지</span></th>
-                                                <td>질의응답</td>
-                                                <td><a href="#">[안내] 한눈에 보는 폐업지원 연계 프로그램</a></td>
-                                                <td class="ac">
-                                                    <button type="button" class="krds-btn text"><i class="svg-icon ico-go"></i></button>
-                                                </td>
-                                                <td>관리자</td>
-                                                <td>2024.10.15</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">2</th>
-                                                <td>질의응답</td>
-                                                <td><a href="#">[중소벤처기업부] 2025년 재창업활성화 유공포상 및 사례공모전 실시</a></td>
-                                                <td></td>
-                                                <td>관리자</td>
-                                                <td>2024.10.15</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">1</th>
-                                                <td>공지사항</td>
-                                                <td><a href="#">2025 신용회복 이용수기 공모전 수상작 발표</a></td>
-                                                <td></td>
-                                                <td>관리자</td>
-                                                <td>2024.10.15</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!-- //table -->
-                                <!-- pagination -->
-                                <div class="krds-pagination">
-                                    <span class="page-navi prev disabled" href="#">이전</span>
-                                    <div class="page-links">
-                                        <a class="page-link" href="#">1</a>
-                                        <a class="page-link" href="#">2</a>
-                                        <a class="page-link" href="#">3</a>
-                                        <a class="page-link active" href="#"><span class="sr-only">현재페이지 </span>4</a>
-                                        <a class="page-link" href="#">5</a>
-                                        <a class="page-link" href="#">6</a>
-                                        <a class="page-link" href="#">7</a>
-                                        <a class="page-link" href="#">8</a>
-                                        <span class="page-link link-dot"></span>
-                                        <a class="page-link" href="#">99</a>
-                                    </div>
-                                    <a class="page-navi next" href="#">다음</a>
-                                </div>
-                                <!-- //pagination -->
                             </div>
-
+                            <dl class="com-post-move-box">
+                                <div class="prev-box">
+                                    <dt><img src="/type/www/images/ic/ic_dropdown.svg" alt="이전글"> 이전글</dt>
+                                    <dd>
+                                        <a href="#" title="이전글">이전글내용</a>
+                                    </dd>
+                                </div>
+                                <div>
+                                    <dt><img src="/type/www/images/ic/ic_dropdown.svg" alt="다음글"> 다음글</dt>
+                                    <dd>
+                                        <a href="#" title="다음글">다음글 내용</a>
+                                    </dd>
+                                </div>
+                            </dl>
+                            <div class="button-area">
+                                <!-- button -->
+                                <button type="button" class="krds-btn primary">버튼</button>
+                                <button type="button" class="krds-btn secondary">삭제</button>
+                                <button type="button" class="krds-btn tertiary">목록</button>
+                                <!-- //button -->
+                            </div>
                         </div>
                         <!-- //Content Sections -->
                         <!-- Feedback Section -->
@@ -690,51 +585,6 @@
         </div>
     </div>
     <!-- 검색영역 -->
-    <!-- krds Modal -->
-    <!-- modal -->
-    <section id="modal_sample" class="krds-modal fade" role="dialog" aria-labelledby="tit_modal_sample">
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <!-- modal title -->
-            <div class="modal-header">
-                <h2 id="tit_modal_sample" class="modal-title sr-only">
-                모달제목
-                </h2>
-            </div>
-            <!-- //modal title -->
-            <!-- modal contents -->
-            <div class="modal-conts">
-                <div class="conts-area">
-                    <div class="conts-header">
-                        <h3>답변자 : <span>관리자</span></h3>
-                        <p class="ans-date">2025.11.11 10:00:00</p>
-                    </div>
-                    <div class="border-box">
-                        답변글 내용<br>
-                        답변글 내용<br>
-                        답변글 내용
-                    </div>
-                    <p class="note">추가적인 사항은 콜센터로 문의 바랍니다. (1600-5500)</p>
-                    
-                </div>
-            </div>
-            <!-- //modal contents -->
-            <!-- modal btn -->
-            <div class="modal-btn btn-wrap">
-                <button type="button" class="krds-btn medium primary close-modal">닫기</button>
-            </div>
-            <!-- //modal btn -->
-            <!-- close button -->
-            <button type="button" class="krds-btn medium icon btn-close close-modal">
-                <span class="sr-only">닫기</span>
-                <i class="svg-icon ico-popup-close"></i>
-            </button>
-            <!-- //close button -->
-            </div>
-        </div>
-        <div class="modal-back"></div>
-    </section>
-    <!-- //modal -->
 
     <script src="/type/www/js/jquery-2.2.4.min.js"></script>
     <script src="/type/www/js/plugins/aos.js"></script>

@@ -704,9 +704,23 @@
 				<img src="/type/www/images/ic/quickmenu/icon_mydata.png" alt="">
 				<span>나의<br>진행상황</span>
 			</div>
-			<div class="quick-item">
+			<div class="quick-item show on">
 				<img src="/type/www/images/ic/quickmenu/icon_book.png" alt="">
 				<span>상담<br>예약신청</span>
+				<div class="quick-showbox">
+					<a href="#" class="showbox-item showbox-arrow">
+						<img src="/type/www/images/ic/quickmenu/icon_book_show1.svg" alt="">
+						<p class="link-title">방문상담 예약</p>
+					</a>
+					<a href="#" class="showbox-item showbox-arrow">
+						<img src="/type/www/images/ic/quickmenu/icon_book_show2.svg" alt="">
+						<p class="link-title">방문상담 예약</p>
+					</a>
+					<a href="#" class="showbox-item">
+						<img src="/type/www/images/ic/quickmenu/icon_book_show3.svg" alt="">
+						<p class="link-title">전화상담 예약<span>1600-5500</span></p>
+					</a>
+				</div>
 			</div>
 			<div class="quick-item">
 				<img src="/type/www/images/ic/quickmenu/icon_qna.png" alt="">
@@ -982,6 +996,9 @@
 				scrollTop: $("#section" + nextSection).offset().top
 			}, 800, 'swing');
 		});
+		$('.quick-item.show').click(function() {
+			$(this).toggleClass('on');
+		})
 	</script>
 </body>
 </html>

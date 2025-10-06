@@ -3287,6 +3287,18 @@ caption {
   font-size: var(--krds-modal--header-pc-font-size);
   font-weight: var(--krds-font-weight-bold);
 }
+.krds-modal .modal-dialog.modal-sm .modal-header .modal-title {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  font-size: var(--krds-pc-font-size-heading-small);
+  font-weight: var(--krds-font-weight-bold);
+}
+.krds-modal .modal-dialog.modal-sm .modal-header {
+  border-bottom:none;
+}
 .krds-modal .modal-dialog .modal-conts {
   display: flex;
   align-items: flex-start;
@@ -3295,7 +3307,7 @@ caption {
   position: relative;
   overflow-y: auto;
   width: 100%;
-  padding: var(--krds-modal--conts-padding-top) var(--krds-modal--padding) var(--krds-modal--conts-padding-bottom);
+  padding: var(--krds-modal--conts-padding-top) var(--krds-modal--padding) var(--krds-modal--padding);
 }
 .krds-modal .modal-dialog .modal-conts::-webkit-scrollbar {
   width: 0.8rem;
@@ -3326,7 +3338,7 @@ caption {
   justify-content: flex-end;
   flex-direction: row;
   gap: var(--krds-modal--btn-gap);
-  padding: var(--krds-modal--btn-padding-top) var(--krds-modal--padding) var(--krds-modal--padding);
+  padding: var(--krds-modal--btn-padding-top) var(--krds-modal--padding);
 }
 .krds-modal .modal-dialog .modal-btn .krds-btn {
   min-width: var(--krds-modal--btn-size-min-wdith);

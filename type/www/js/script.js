@@ -75,38 +75,6 @@ submitBtn.addEventListener('click', () => {
     feedbackTextarea.value = '';
 });
 
-// Quick Menu Interactions
-document.querySelectorAll('.quick-item, .quick-notification').forEach(item => {
-    item.addEventListener('click', () => {
-        const text = item.querySelector('span')?.textContent || '알림';
-        console.log(`Quick menu clicked: ${text}`);
-        
-        // Here you could add specific actions for each quick menu item
-        switch(text.replace(/\s+/g, '')) {
-            case '나의진행사항':
-                alert('나의진행사항 이동');
-                break;
-            case '상담예약신청':
-                alert('자주 묻는 질문 페이지로 이동합니다.');
-                break;
-            case '자주묻는질문':
-                alert('자주 묻는 질문 페이지로 이동합니다.');
-                break;
-            case '간편진단':
-                alert('간편진단 페이지로 이동합니다.');
-                break;
-            case '협약기관':
-                alert('협약가입 금융사 목록을 확인합니다.');
-                break;
-            case '지부위치':
-                alert('협약가입 금융사 목록을 확인합니다.');
-                break;
-            default:
-                alert('알림을 확인합니다.');
-        }
-    });
-});
-
 // Smooth Scrolling for Anchor Links
 // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 //     anchor.addEventListener('click', function (e) {
