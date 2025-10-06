@@ -141,6 +141,9 @@
     display: flex;
     gap: 16px;
 }
+.main-section img {
+    width: 100%;
+}
 
 .main-banner {
     display: flex;

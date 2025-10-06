@@ -1724,3 +1724,52 @@ main .container {
     .mi-img img {width: 80%;}
     .mitype-wrap .mitype-img img {height: 28%;}
 }
+
+/* 지부안내 */
+.header.map {position: relative;padding:0 2.4rem;box-shadow: none;border-bottom: none;}
+.header.map .utility-bar {border-bottom: none;}
+.header.map .utility-bar .container {width: 100%;}
+.header.map .logo {font-size: 25px;font-weight: 700;}
+.header.map .utility-right .linkbox li > * {height: 4.8rem;}
+.header.map .utility-right .linkbox li + li {padding-left: 0;}
+.header.map .utility-right .linkbox li + li::before {display: none;}
+.header.map .linkbox .sch-input .krds-input {height: 48px;width:340px;}
+
+main.map-content {padding:0;max-height: calc(100vh - 75px);overflow: hidden;}
+main.map-content .container {max-width: 100%;}
+.map-content .tab-layout {display: flex;justify-content: space-between;align-items: center;padding:9px 24px;border-bottom: 1px solid #D2D6DA;border-top: 1px solid #D2D6DA;}
+.map-content .tab-layout .region {display: flex;align-items: center;gap: 8px;}
+.map-content .tab-layout .region li {background: #EBEEF3;font-weight: 700;font-size: 1.7rem;line-height: 26px;text-align: center;vertical-align: middle;padding:6px 24px;border-radius: 1000px;}
+.map-content .tab-layout .region li.on {background: #F48F01;color: #fff;}
+.map-content .tab-layout .util-btns {display: flex;gap: 8px;}
+.map-content .content-layout {display: grid;grid-template-columns: 390px 1fr;gap: 0;margin-top: 0;}
+.map-content .content-layout .sidebar-header {background:#fff;padding:5px 10px;border-radius:0;text-align: left;color:#474E55;margin-bottom: 0;}
+.map-content .content-layout .sidebar-header p {text-align: center;font-size: 14px;color:#474E55;}
+.map-content .content-layout .sidebar-scroll-nav {max-height: calc(100vh - 174px);overflow: auto;border-top: 1px solid #E6E8EA;}
+.sidebar-scroll-nav .target-section {border-bottom: 1px solid #E6E8EA;padding:24px;}
+.sidebar-scroll-nav .target-section .map-tit {position: relative;font-size: 1.7rem;font-weight: 700;color: #17191b;display: -webkit-box;overflow: hidden;text-overflow: ellipsis;-webkit-box-orient: vertical;-webkit-line-clamp: 1;padding-right: 20px;}
+.sidebar-scroll-nav .target-section .map-tit::after {content: '';position: absolute;width: 20px;height: 20px;right:0;top:0;background: url(../img/icons/arrow-down.svg) center no-repeat;}
+.sidebar-scroll-nav .target-section.active .map-tit::after {content: '';position: absolute;width: 20px;height: 20px;right:0;top:0;background: url(../img/icons/arrow-top.svg) center no-repeat;}
+.sidebar-scroll-nav .target-section.active {background-color: #FFF6EA;}
+.sidebar-scroll-nav .target-section .root-go {height: 40px;padding:2px 20px;border: 1px solid #B1B8BE;background: #fff;color: #ED7801;font-size: 1.5rem;line-height: 28px;border-radius: 6px;margin-top: 8px;}
+.sidebar-scroll-nav .target-section .map-addr {font-size: 1.5rem;color: #17191B;margin-top: 8px;}
+.sidebar-scroll-nav .target-section .workday {font-size: 1.5rem;color: #17191B;margin-top: 8px;}
+.sidebar-scroll-nav .target-section .root-show {max-height: 0;overflow: hidden;transition: max-height 0.3s;}
+.sidebar-scroll-nav .target-section.active .root-show {max-height: 500px;overflow: initial;}
+.sidebar-scroll-nav .target-section .root-show p {color: #000;font-size: 1.5rem;font-weight: 400;}
+.root-show p span.subway-tag + span.subway-tag {margin-left: 4px;}
+.root-show p span.subway-tag:last-child {margin-right: 8px;}
+.sidebar-scroll-nav .target-section .root-show p span.subway-tag {border-radius: 50%;display: inline-flex;justify-content: center;align-items: center;text-align: center;width: 18px;height: 18px;color:#fff;padding: 0;}
+.subway-tag.nb01 {background-color: #263C96;}
+.subway-tag.nb02 {background-color: #3CB44A;}
+.subway-tag.nb03 {background-color: #f06e00;}
+.subway-tag.nb04 {background-color: #2c9ede;}
+.subway-tag.nb05 {background-color: #8936E0;}
+.subway-tag.nb06 {background-color: #b5500b;}
+.subway-tag.nb07 {background-color: #697215;}
+.subway-tag.nb08 {background-color: #e51e6e;}
+.subway-tag.nb09 {background-color: #d1a62c;}
+.map-content .content-area {position: relative;max-height: calc(100vh - 128px);overflow: hidden;}
+.map-content .content-area .g-imag {margin-bottom: 0;}
+.map-content .content-area .g-imag img {object-fit: none;}
+.map-content .content-area .ab_note {position: absolute;right: 24px;bottom: 24px;height: 52px;line-height: 50px;padding: 0 24px;box-shadow: 0px 0px 2px 0px #0000000D;box-shadow: 0px 4px 8px 0px #00000014;background-color: #fff;color: #17191B;text-align: right;font-size: 1.7rem;font-weight: 400;border-radius: 1000px;}
