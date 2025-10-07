@@ -1794,17 +1794,14 @@ main.map-content .container {max-width: 100%;}
 .g-imag-hover .map-choose.jeonla:hover ~ .map-jeonla {display: block;z-index: 2;}
 .g-imag-hover .map-choose.jeju {top:439px;left: 56px;}
 .g-imag-hover .map-choose.jeju:hover ~ .map-jeju {display: block;z-index: 2;}
-/* dl에 Flex 컨테이너 지정 */
+
 dl.flex-list {
     display: flex;
     flex-wrap: wrap; /* 요소가 넘칠 경우 줄바꿈 허용 */
     margin: 0;
     padding: 10px 0;
 }
-
-/* dt와 dd에 item으로 지정 */
 .flex-list dt {
-    /* 용어 너비 지정 */
     flex-basis: 80px; 
     font-weight: bold;
     padding: 5px 10px 5px 0;

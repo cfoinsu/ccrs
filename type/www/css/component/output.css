@@ -23867,6 +23867,7 @@ body {
   display: flex;
   align-items: center;
   margin-top: var(--krds-gap-3);
+  gap: 10px;
 }
 .g-wrap .community-page-title .info .date {
   display: flex;
