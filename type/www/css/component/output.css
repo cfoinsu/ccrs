@@ -2855,7 +2855,7 @@ caption {
   padding: var(--krds-table--data-thead-th-padding) var(--krds-table--data-thead-th-padding-sides);
   background-color: #fbe8b1;
   border-top: var(--krds-table--data-border-width) solid #f5a033;
-  border-left: var(--krds-table--data-border-width) solid var(--krds-table--data-tbody-color-divider);
+  border-left: var(--krds-table--data-border-width) solid #edbe32;
   border-right: var(--krds-table--data-border-width) solid #edbe32;
   border-bottom: none;
   font-weight: var(--krds-font-weight-bold);

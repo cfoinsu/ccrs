@@ -5206,9 +5206,19 @@ table.comparison-table td:first-child {
 .conts-desc-list {
     border-top: 1px solid #1B2025;
 }
+.conts-desc-list.noboder {
+    border-top: none;
+    margin-top: 2rem;
+}
 .conts-desc-list .conts-desc.row {
     padding: 40px 0;
     border-bottom: 1px solid #D2D6DA;
+    justify-content: flex-start;
+}
+.conts-desc-list.noboder .conts-desc.row {
+    padding: 16px 0;
+    border-bottom: none;
+    justify-content: flex-start;
 }
 .conts-desc-list .conts-desc.row .desc-cont-img {
     flex: none;
