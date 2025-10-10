@@ -4934,6 +4934,7 @@ table.comparison-table td:first-child {
 .g-grid-wrap.unit2 .g-info-box,
 .g-grid-wrap.unit4 .g-info-box {
     padding: 3.2rem;
+    margin: 0;
 }
 
 .g-grid-wrap.unit3 .g-info-box {
@@ -6436,3 +6437,31 @@ table.comparison-table td:first-child {
 
 /* 대출이전 글자 삭제 */
 .guideline-cont-wrap .guideline-cont-box:first-child .guideline-text-wrap {font-size: 0 !important;}
+
+/* beuti-yellow 화려한 효과 */
+td.beuti-yellow {
+  background: #fffbe0;
+  background-clip: padding-box;
+  position: relative;
+}
+
+td.beuti-yellow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  border-radius: 0;
+  padding: var(--krds-table--data-tbody-padding) var(--krds-table--data-tbody-padding-sides);
+  background: linear-gradient(
+      110deg, #ffe964, #f8cbff, #9fd8fd, #ffe964
+  );
+  /* outer border만 보이도록 */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) border-box;
+  mask-composite: exclude;
+  animation: borderflow 2.3s linear infinite;
+  pointer-events: none;
+}
+@keyframes borderflow {
+  100% { filter: hue-rotate(360deg); }
+  0%   { filter: hue-rotate(0deg); }
+}
