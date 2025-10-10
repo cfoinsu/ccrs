@@ -291,6 +291,11 @@
                         
                                 // 선택된 섹션만 보이기
                                 $('#' + sectionId).show();
+
+                                // 첫번째 accordion-item에 active 클래스 추가
+                                $('#' + sectionId + ' .accordion-item:first').addClass('active');
+                                $('#' + sectionId + ' .btn-accordion:first').addClass('active');
+                                $('#' + sectionId + ' .btn-accordion:first').attr('aria-expanded', 'true');
                             });
                         });
                     </script>
@@ -384,7 +389,7 @@
                             <div class="krds-accordion type-heading" data-type="multiOpen">
                                 <div class="accordion-item active">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                                            class="btn-accordion" aria-controls="accordionCollapseSample01"><span
+                                            class="btn-accordion active" aria-controls="accordionCollapseSample01"><span
                                                 class="sec-tit">지원대상</span></button></h4>
                                     <div id="accordionCollapseSample01" class="accordion-collapse collapse"
                                         aria-labelledby="accordionHeaderSample01">
@@ -413,7 +418,7 @@
                                         <!-- //accordion contents -->
                                     </div>
                                 </div>
-                                <div class="accordion-item active">
+                                <div class="accordion-item">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
                                             class="btn-accordion" aria-controls="accordionCollapseSample02"><span
                                                 class="sec-tit">지원내용</span></button></h4>
@@ -499,7 +504,7 @@
                                         <!-- //accordion contents -->
                                     </div>
                                 </div>
-                                <div class="accordion-item active">
+                                <div class="accordion-item ">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
                                             class="btn-accordion" aria-controls="accordionCollapseSample02"><span
                                                 class="sec-tit">신청방법 및 서류</span></button></h4>
@@ -681,7 +686,7 @@
                                 </div>
                             </div>
                             <div class="krds-accordion type-heading" data-type="multiOpen">
-                                <div class="accordion-item active">
+                                <div class="accordion-item ">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
                                             class="btn-accordion" aria-controls="accordionCollapseSample01"><span
                                                 class="sec-tit">지원대상</span></button></h4>
@@ -705,7 +710,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item active">
+                                <div class="accordion-item ">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
                                             class="btn-accordion" aria-controls="accordionCollapseSample02"><span
                                                 class="sec-tit">지원내용</span></button></h4>
@@ -771,7 +776,7 @@
                                         <!-- //accordion contents -->
                                     </div>
                                 </div>
-                                <div class="accordion-item active">
+                                <div class="accordion-item ">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
                                             class="btn-accordion" aria-controls="accordionCollapseSample02"><span
                                                 class="sec-tit">신청방법 및 서류</span></button></h4>
@@ -995,7 +1000,7 @@
                                 </div>
                             </div>
                             <div class="krds-accordion type-heading" data-type="multiOpen">
-                                <div class="accordion-item active">
+                                <div class="accordion-item ">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
                                             class="btn-accordion" aria-controls="accordionCollapseSample01"><span
                                                 class="sec-tit">지원대상</span></button></h4>
@@ -1038,7 +1043,7 @@
                                         <!-- //accordion contents -->
                                     </div>
                                 </div>
-                                <div class="accordion-item active">
+                                <div class="accordion-item ">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
                                             class="btn-accordion" aria-controls="accordionCollapseSample02"><span
                                                 class="sec-tit">지원내용</span></button></h4>
@@ -1121,7 +1126,7 @@
                                         <!-- //accordion contents -->
                                     </div>
                                 </div>
-                                <div class="accordion-item active">
+                                <div class="accordion-item ">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
                                             class="btn-accordion" aria-controls="accordionCollapseSample02"><span
                                                 class="sec-tit">신청서류</span></button></h4>
@@ -1254,7 +1259,7 @@
                                 </div>
                             </div>
                             <div class="krds-accordion type-heading" data-type="multiOpen">
-                                <div class="accordion-item active">
+                                <div class="accordion-item ">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
                                             class="btn-accordion" aria-controls="accordionCollapseSample01"><span
                                                 class="sec-tit">지원대상</span></button></h4>
@@ -1317,7 +1322,7 @@
                                         <!-- //accordion contents -->
                                     </div>
                                 </div>
-                                <div class="accordion-item active">
+                                <div class="accordion-item ">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
                                             class="btn-accordion" aria-controls="accordionCollapseSample02"><span
                                                 class="sec-tit">지원내용</span></button></h4>
@@ -1372,7 +1377,7 @@
                                         <!-- //accordion contents -->
                                     </div>
                                 </div>
-                                <div class="accordion-item active">
+                                <div class="accordion-item ">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
                                             class="btn-accordion" aria-controls="accordionCollapseSample02"><span
                                                 class="sec-tit">신청방법 및 서류</span></button></h4>

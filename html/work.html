@@ -277,7 +277,7 @@
                     <script>
                         $(function () {
                             $('#academic').show();
-                            // 탭 버튼 클릭 시 동작
+                            // 탭 버튼 클릭 시 동작  
                             $('ul[role="tablist"] li').on('click', function () {
                                 var $clicked = $(this);
                                 var targetPanelId = $clicked.attr('id');
@@ -295,6 +295,11 @@
                         
                                 // 선택된 섹션만 보이기
                                 $('#' + sectionId).show();
+
+                                // 첫번째 accordion-item에 active 클래스 추가
+                                $('#' + sectionId + ' .accordion-item:first').addClass('active');
+                                $('#' + sectionId + ' .btn-accordion:first').addClass('active');
+                                $('#' + sectionId + ' .btn-accordion:first').attr('aria-expanded', 'true');
                             });
                         });
                     </script>
