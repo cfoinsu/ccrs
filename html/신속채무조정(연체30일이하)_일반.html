@@ -469,11 +469,22 @@
                                                     <div class="g-info-box sm">
                                                         <div class="g-desc-box">
                                                             <div>
-
-                                                                <p class="g-tit">상환기간 연장 및 분할상환</p>
+                                                                <p class="g-tit">채무감면</p>
                                                                 <div class="conts-desc">
-                                                                    <p>대출의 종류, 총 채무액, 변제가능성, 담보, <br>채무자의 신용, 이행현황 등을 고려하여 <br>최장 10년이내에서 상환기간을 결정
-                                                                    <br>연장된 상환기간 범위 내에서 원리금 분할상환</p>
+                                                                    연체이자 전액 감면
+                                                                </div>
+                                                            </div>
+                                                            <div class="g-img">
+                                                                <img src="/type/www/img/contents/support/support3.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="g-info-box sm">
+                                                        <div class="g-desc-box">
+                                                            <div>
+                                                                <p class="g-tit">분할상환</p>
+                                                                <div class="conts-desc">
+                                                                    <p>최장 10년 이내</p>
                                                                 </div>
                                                             </div>
                                                             <div class="g-img">
@@ -484,10 +495,9 @@
                                                     <div class="g-info-box sm">
                                                         <div class="g-desc-box">
                                                             <div>
-
                                                                 <p class="g-tit">상환유예</p>
                                                                 <div class="conts-desc">
-                                                                    원리금 분할 상환 전 또는 상환 중 6개월 단위로 <br>최장 3년 범위 내에서 상환유예 가능<br/>(단, 최고 이자율 연 15%)
+                                                                    원리금 분할 상환 전 또는 상환 중 6개월 단위로 최장 3년<br/>(유예이자율 연 3.25%)
                                                                 </div>
                                                             </div>
                                                             <div class="g-img">
@@ -498,25 +508,10 @@
                                                     <div class="g-info-box sm">
                                                         <div class="g-desc-box">
                                                             <div>
-
-                                                                <p class="g-tit">채무감면</p>
+                                                                <p class="g-tit">이자율 조정</p>
                                                                 <div class="conts-desc">
-                                                                    연체이자에 한해서 감면
-                                                                </div>
-                                                            </div>
-                                                            <div class="g-img">
-                                                                <img src="/type/www/img/contents/support/support3.png" alt="">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="g-info-box sm">
-                                                        <div class="g-desc-box">
-                                                            <div>
-
-                                                                <p class="g-tit">이자율 감면</p>
-                                                                <div class="conts-desc">
-                                                                    이자율 30% ~ 50% 인하<br>
-                                                                    <!-- <strong>자영업자·휴폐업자의 경우 이자율 50% 인하</strong> -->
+                                                                    약정이자율의 30~50% 범위내 인하<br>
+                                                                    (이자율 상한 연 15%. 단, 신용카드의 경우 이자율 상한 연 10%)
                                                                 </div>
                                                             </div>
                                                             <div class="g-img">
@@ -526,11 +521,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <p class="noti"><i class="svg-icon ico-information-fill"></i>유의사항 : 채무감면 범위,
-                                                상환기간 등의 채무조정 내용은 신청인의 환경, 채무의 성격 등에 따라 모두 다르게 적용됩니다.</p>
-
+                                            <p class="noti"><i class="svg-icon ico-information-fill"></i>유의사항 : 이자율 조정 범위, 분할상환기간 등의 채무조정 내용은 채무의 성격 및 신청인의 소득, 재산 등에 따라 모두 다르게 적용됩니다.</p>
+                                            <div class="g-img">
+                                                <img src="/type/www/images/img/신속채무조정유의사항.png" alt="">
+                                            </div>
+                                            <!-- //accordion contents -->
                                         </div>
-                                        <!-- //accordion contents -->
                                     </div>
                                 </div>
                                 <div class="accordion-item active">
@@ -995,37 +991,6 @@
     <script src="/type/www/js/script.js"></script>
     <script src="/type/www/js/component/ui-script.js"></script>
     <!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
-
-    <!-- 2️⃣ 아코디언 토글 스크립트 -->
-    <script>
-        $(function () {                       // DOMContentLoaded 와 동일
-            // ① 요소 캐시
-            const $toggleBtn = $('#toggleButton');
-            const $toggleText = $('#toggleText');
-            const $arrowIcon = $('#arrowIcon');
-            const $separator = $('#separator');
-            const $support = $('#supportContent');
-
-            // ② 클릭 이벤트 핸들러
-            $toggleBtn.on('click', function () {
-                //   - 클래스 토글과 현재 상태 확인
-                //   - .toggleClass() 은 토글 후 현재 상태를 반환하지 않으므로
-                //     .hasClass() 로 현재가 열렸는지 판단
-                const isOpen = $support.toggleClass('open').hasClass('open');
-
-                //   - 열림/닫힘에 따라 UI 업데이트
-                if (isOpen) {
-                    $toggleText.text('지원내용 닫기');
-                    $arrowIcon.removeClass('rotate-90').addClass('rotate-270');
-                    $separator.show();               // display:block
-                } else {
-                    $toggleText.text('지원내용 보기');
-                    $arrowIcon.removeClass('rotate-270').addClass('rotate-90');
-                    $separator.hide();                // display:none
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
