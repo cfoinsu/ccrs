@@ -3995,13 +3995,6 @@ caption {
 .krds-accordion.type-line .accordion-item .accordion-body {
   padding: var(--krds-accordion--padding);
 }
-.krds-accordion.type-line .accordion-item.active {
-  background: none;
-  border-top-color: var(--krds-accordion--color-divider-open);
-}
-.krds-accordion.type-line .accordion-item.active .accordion-body {
-  
-}
 .krds-accordion.type-heading {
   padding: 0;
   border: none;
