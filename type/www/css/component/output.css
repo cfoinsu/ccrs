@@ -23850,6 +23850,7 @@ body {
   color: var(--krds-light-color-text-secondary);
   font-size: var(--krds-pc-font-size-heading-xxsmall);
   font-weight: var(--krds-font-weight-bold);
+  margin-right:0.4rem;
 }
 @media (max-width: 767px) {
   .g-wrap .community-page-title .category {
@@ -23860,8 +23861,8 @@ body {
   display: flex;
   align-items: center;
   margin-top: var(--krds-gap-3);
-  gap: 10px;
 }
+.g-wrap .community-page-title .info > li,
 .g-wrap .community-page-title .info .date {
   display: flex;
   align-items: center;

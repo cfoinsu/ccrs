@@ -5284,7 +5284,14 @@ table.comparison-table td:first-child {
 .white-box {
     background-color: white !important;
 }
-
+.round-box {
+    border: 1px solid #D2D6DA;
+    padding: 3.2rem;
+    border-radius: 2.4rem;
+}
+.agree-text {
+    margin-bottom: 2rem;
+}
 /*행동강령 및 윤리헌장 스타일*/
 .charter-wrap {
     padding: 32px;

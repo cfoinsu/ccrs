@@ -285,89 +285,133 @@
 
                                 <!-- 검색 결과 : 리스트 상단 -->
                                 <div class="search-list-top">
-                                <ul class="sch-info" aria-live="polite">
-                                    <li>검색 결과 <span class="point">24</span>건</li>
-                                </ul>
-                                <ul class="sch-sort">
-                                    <li class="m-hide">
-                                    <strong class="sort-label"><label for="search_result_count">목록 표시 개수</label></strong>
-                                    <select class="krds-form-select-sort" id="search_result_count">
-                                        <option>10개</option>
-                                        <option>9개</option>
-                                    </select>
-                                    </li>
-                                    <li class="w-hide">
-                                    <button type="button" class="krds-btn large text ico-filter">
-                                        <span class="span">필터</span>
-                                        <span class="krds-badge bg-primary number">122</span>
-                                        <i class="svg-icon ico-filter"></i>
-                                    </button>
-                                    </li>
-                                    <li>
-                                        <button type="button" class="krds-btn small tertiary">보기</button>
-                                    </div>
-                                    </li>
-                                </ul>
-                                <!-- //검색 결과 : 리스트 상단 -->
-                                <!-- table -->
-                                <div class="krds-table-wrap">
-                                <table class="tbl col board vc">
-                                    <caption>게시판에 대한 표로 제목1,제목2에 대한 내용으로 구성되어 있으며 제목1은 제목1-1,제목1-2,제목1-3으로 구성되어있다.</caption>
-                                    <colgroup>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    </colgroup>
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">번호</th>
-                                        <th scope="col">제목</th>
-                                        <th scope="col">첨부</th>
-                                        <th scope="col">등록자</th>
-                                        <th scope="col">등록일</th>
-                                        <th scope="col">조회</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <th scope="row"><span>공지</span></th>
-                                        <td class="al"><a href="#">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림</a></td>
-                                        <td class="ac"><i class="fa fa-file"></i></td>
-                                        <td>관리자</td>
-                                        <td>2024.10.15</td>
-                                        <td>9999</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><span>공지</span></th>
-                                        <td class="al"><a href="#">[안내] 한눈에 보는 폐업지원 연계 프로그램</a></td>
-                                        <td class="ac"><i class="fa fa-file"></i></td>
-                                        <td>관리자</td>
-                                        <td>2024.10.15</td>
-                                        <td>9999</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td class="al"><a href="#">[중소벤처기업부] 2025년 재창업활성화 유공포상 및 사례공모전 실시</a></td>
-                                        <td></td>
-                                        <td>관리자</td>
-                                        <td>2024.10.15</td>
-                                        <td>9999</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td class="al"><a href="#">2025 신용회복 이용수기 공모전 수상작 발표</a></td>
-                                        <td></td>
-                                        <td>관리자</td>
-                                        <td>2024.10.15</td>
-                                        <td>9999</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                    <ul class="sch-info" aria-live="polite">
+                                        <li>검색 결과 <span class="point">24</span>건</li>
+                                    </ul>
+                                    <ul class="sch-sort">
+                                        <li class="m-hide">
+                                        <strong class="sort-label"><label for="search_result_count">목록 표시 개수</label></strong>
+                                        <select class="krds-form-select-sort" id="search_result_count">
+                                            <option value="3">20개</option>
+                                            <option value="2" selected>10개</option>
+                                            <option value="1">5개</option>
+                                        </select>
+                                        </li>
+                                        <li class="w-hide">
+                                        <button type="button" class="krds-btn large text ico-filter">
+                                            <span class="span">필터</span>
+                                            <span class="krds-badge bg-primary number">122</span>
+                                            <i class="svg-icon ico-filter"></i>
+                                        </button>
+                                        </li>
+                                        <li>
+                                        <strong class="sort-label"><label for="sort">정렬기준</label></strong>
+                                        <div class="w-sort-btn">
+                                            <button type="button">갤러리형</button>
+                                            <button type="button" class="active">목록형</button>
+                                        </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <!-- //table -->
+                                <!-- //검색 결과 : 리스트 상단 -->
+                                <ul class="krds-structured-list gallery type-full">
+                                    <li class="gallery-item">
+                                        <div class="card-top">
+                                            <img src="/type/www/images/img/gallery01.png" alt="갤러리 이미지">
+                                        </div>
+                                        <div class="card-body">
+                                            
+                                            <a href="소액금융소식_상세.html" class="gall-text">
+                                                <p class="gall-tit">
+                                                    [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                    <span class="ic-new"></span>
+                                                </p>
+                                                <p class="gall-txt">
+                                                    [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="card-btm">
+                                            <span class="stat">관리자</span>
+                                            <span class="stat">2025.01.31</span>
+                                            <span class="stat">조회수
+                                                <span class="cnt">9,999</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="gallery-item">
+                                        <div class="card-top">
+                                            <img src="/type/www/images/img/gallery01.png" alt="갤러리 이미지">
+                                        </div>
+                                        <div class="card-body">
+                                            
+                                            <a href="#" class="gall-text">
+                                                <p class="gall-tit">
+                                                    [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                    <span class="ic-new"></span>
+                                                </p>
+                                                <p class="gall-txt">
+                                                    [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="card-btm">
+                                            <span class="stat">관리자</span>
+                                            <span class="stat">2025.01.31</span>
+                                            <span class="stat">조회수
+                                                <span class="cnt">9,999</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="gallery-item">
+                                        <div class="card-top">
+                                            <img src="/type/www/images/img/gallery01.png" alt="갤러리 이미지">
+                                        </div>
+                                        <div class="card-body">
+                                            
+                                            <a href="#" class="gall-text">
+                                                <p class="gall-tit">
+                                                    [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                    <span class="ic-new"></span>
+                                                </p>
+                                                <p class="gall-txt">
+                                                    [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="card-btm">
+                                            <span class="stat">관리자</span>
+                                            <span class="stat">2025.01.31</span>
+                                            <span class="stat">조회수
+                                                <span class="cnt">9,999</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="gallery-item">
+                                        <div class="card-top">
+                                            <img src="/type/www/images/img/gallery01.png" alt="갤러리 이미지">
+                                        </div>
+                                        <div class="card-body">
+                                            
+                                            <a href="#" class="gall-text">
+                                                <p class="gall-tit">
+                                                    [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                    <span class="ic-new"></span>
+                                                </p>
+                                                <p class="gall-txt">
+                                                    [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="card-btm">
+                                            <span class="stat">관리자</span>
+                                            <span class="stat">2025.01.31</span>
+                                            <span class="stat">조회수
+                                                <span class="cnt">9,999</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
                                 <!-- pagination -->
                                 <div class="krds-pagination">
                                 <span class="page-navi prev disabled" href="#">이전</span>
@@ -678,6 +722,15 @@
     <script src="/type/www/js/component/ui-script.js"></script>
     <!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
 
-    
+    <!-- 2️⃣ 아코디언 토글 스크립트 -->
+    <script>
+    $(function () {
+        $('.search-list-top .w-sort-btn button').on('click', function () {
+            if($(this).hasClass('active')) return false;
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.gallery').toggleClass('type-full');
+        });
+    });
+    </script>
 </body>
 </html>
