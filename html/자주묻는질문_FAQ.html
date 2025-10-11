@@ -254,22 +254,68 @@
                                 <div class="search-top-box">
                                     <div class="sch-filter-box">
                                         <div class="filter-form">
-                                            <!-- 검색 입력폼 -->
-                                            <div class="sch-form-wrap">
-                                                <div class="sch-input">
-                                                    <input type="text" class="krds-input" placeholder="검색어를 입력해주세요"
-                                                        title="검색어 입력">
-                                                    <button type="button" class="krds-btn medium icon ico-search">
-                                                        <span class="sr-only">검색</span>
-                                                        <i class="svg-icon ico-sch"></i>
-                                                    </button>
-                                                </div>
+                                        <div>
+                                            <label class="label hide" for="appl-sch-sel1">선택 분류</label>
+                                            <select id="appl-sch-sel1" class="krds-form-select medium">
+                                            <option value="">전체</option>
+                                            <option value="">항목</option>
+                                            <option value="">항목</option>
+                                            </select>
+                                        </div>
+                                        <!-- 검색 입력폼 -->
+                                        <div class="sch-form-wrap">
+                                            <div class="sch-input">
+                                            <input type="text" class="krds-input" placeholder="검색어를 입력해주세요" title="검색어 입력">
+                                            <button type="button" class="krds-btn medium icon ico-search">
+                                                <span class="sr-only">검색</span>
+                                                <i class="svg-icon ico-sch"></i>
+                                            </button>
                                             </div>
-                                            <!-- //검색 입력폼 -->
+                                        </div>
+                                        <!-- //검색 입력폼 -->
                                         </div>
                                     </div>
                                 </div>
                                 <!-- //검색 입력폼 -->
+                                
+                                <!-- 카테고리 선택폼 -->
+                                <div class="search-list-top">
+
+                                    <div class="tab fill middle wrap">
+                                        <ul role="tablist">
+                                            <li id="stab01" role="tab" aria-selected="false"
+                                                aria-controls="stabpanel01" class="active" data-listener-attached="true">
+                                                <button type="button" class="btn-tab">전체<i class="sr-only created">선택됨</i></button>
+                                            </li>
+                                            <li id="stab01-1" role="tab" aria-selected="false"
+                                                aria-controls="stabpanel01-1" data-listener-attached="true">
+                                                <button type="button" class="btn-tab">개인회생ㆍ파산지원</button>
+                                            </li>
+                                            <li id="stab02" role="tab" aria-selected="false" aria-controls="stabpanel02"
+                                                data-listener-attached="true">
+                                                <button type="button" class="btn-tab">채무조정</button>
+                                            </li>
+                                            <li id="stab03" role="tab" aria-selected="false" aria-controls="stabpanel03"
+                                                data-listener-attached="true">
+                                                <button type="button" class="btn-tab">성실상환자 소액대출</button>
+                                            </li>
+                                            <li id="stab04" role="tab" aria-selected="false" aria-controls="stabpanel04"
+                                                data-listener-attached="true">
+                                                <button type="button" class="btn-tab">대학생ㆍ청년햇살론</button>
+                                            </li>
+                                            <li id="stab05" role="tab" aria-selected="false" aria-controls="stabpanel05"
+                                                data-listener-attached="true">
+                                                <button type="button" class="btn-tab">사이버상담부</button>
+                                            </li>
+                                            <li id="stab06" role="tab" aria-selected="false" aria-controls="stabpanel06"
+                                                data-listener-attached="true">
+                                                <button type="button" class="btn-tab">성실상환자 카드발급</button>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- //카테고리 선택폼 -->
 
                                 <!-- 검색 결과 : 리스트 상단 -->
                                 <div class="search-list-top">

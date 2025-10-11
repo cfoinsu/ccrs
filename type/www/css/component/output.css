@@ -2630,6 +2630,10 @@ caption {
   flex-direction: row;
   position: relative;
   white-space: nowrap;
+  min-width: 10rem;
+}
+.tab.wrap > ul {
+  flex-wrap: wrap;
 }
 .tab .btn-tab {
   width: 100%;
