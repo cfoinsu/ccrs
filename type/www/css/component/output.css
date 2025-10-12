@@ -7885,6 +7885,14 @@ caption {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.krds-structured-list.gallery .card-top img {
+  width: 307px;
+  height: 204px;
+}
+.krds-structured-list.gallery.type-full .card-top img {
+  width: 256px;
+  height: 170px;
+}
 .krds-structured-list .card-body {
   display: flex;
   align-items: normal;
@@ -18348,10 +18356,10 @@ a:hover .d-card .c-tit {
   border-bottom: 1px solid var(--krds-light-color-surface-gray-subtler);
 }
 .g-wrap .g-card-list img {
-  width: 0;
-  height: auto;
+  width: 184px;
+  height: 260px;
   border-radius: 1.2rem;
-  flex: 1;
+  flex: none;
 }
 .board-list .selected-card {
   display: flex;
@@ -18359,7 +18367,8 @@ a:hover .d-card .c-tit {
   padding: 3.2rem 0 3.2rem 10rem;
 }
 .board-list .selected-card img {
-  height: fit-content;
+  height: 402px;
+  width: 285px;
 }
 .board-list .selected-card .content {
   display:block;

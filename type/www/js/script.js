@@ -282,11 +282,6 @@ $(document).ready(function() {
         });
     });
     
-    // Mobile menu toggle
-    $('.mobile-menu-btn').on('click', function() {
-        $('.main-nav').slideToggle(300);
-    });
-    
     // Form input formatting (숫자 입력 포맷팅)
     $('.number-input').on('input', function() {
         let value = $(this).val().replace(/[^\d]/g, '');
@@ -373,17 +368,6 @@ $(document).ready(function() {
         });
     }
     
-    // Window resize handler
-    $(window).on('resize', function() {
-        if ($(window).width() > 768) {
-            $('.sidebar').show();
-            $('.sidebar-toggle').hide();
-            $('.main-nav').show();
-        } else {
-            $('.sidebar-toggle').show();
-            $('.main-nav').hide();
-        }
-    });
     
     // Add loading animation for buttons
     $('.action-button, .compare-btn, .subscribe-btn, .access-btn').on('click', function() {
@@ -464,3 +448,4 @@ function formatDate(date) {
         day: 'numeric'
     }).format(date);
 }
+
