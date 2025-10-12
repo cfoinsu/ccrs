@@ -6442,9 +6442,6 @@ table.comparison-table td:first-child {
   }
 }
 
-/* 대출이전 글자 삭제 */
-.guideline-cont-wrap .guideline-cont-box:first-child .guideline-text-wrap {font-size: 0 !important;}
-
 /* beuti-yellow 화려한 효과 */
 td.beuti-yellow {
   background: #fffbe0;
