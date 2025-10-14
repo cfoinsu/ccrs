@@ -2666,7 +2666,7 @@ caption {
   color: var(--krds-tab--button-color-text-disabled);
   cursor: default;
 }
-.tab li {
+.wrap.tab li {
   flex-grow: 0;
 }
 .tab.full {

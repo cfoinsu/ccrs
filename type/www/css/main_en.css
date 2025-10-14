@@ -132,10 +132,19 @@ Version : v3.4	date : 2023-05-11 (ì›¹ì ‘ê·¼ì„± ì¸ì¦ë§ˆ
     height: 100%;
 }
 
-#header .gnb-wrap .logo {
+.en #header .gnb-wrap .logo {
     position: absolute;
     top: 27px;
     left: 0;
+}
+.en #header .gnb-wrap > nav {
+    width: 960px;
+    height: 100%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.4rem;
+    padding-top: 0;
+    margin-left: 300px;
 }
 
 #header .gnb-wrap .logo a {

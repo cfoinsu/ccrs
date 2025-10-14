@@ -966,8 +966,8 @@ Version : v1.0
 }
 
 .search-menu .result-area {
-    max-height: 60vh;
-    overflow-y: scroll;
+    max-height: 100%;
+    overflow-y: auto;
 }
 
 .search-menu .result-area::-webkit-scrollbar {
