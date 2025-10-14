@@ -3951,7 +3951,7 @@ caption {
 }
 .krds-accordion .accordion-item .accordion-collapse {
   height: auto;
-  max-height: 100vh;
+  max-height: 100%;
   transition: all 1.5s ease-in-out;
   visibility: visible;
 }
@@ -3963,7 +3963,7 @@ caption {
 }
 .krds-accordion .accordion-item.active .accordion-collapse {
   height: auto;
-  max-height: 100vh;
+  max-height: 300vh;
   transition: all 1.5s ease-in-out;
   visibility: visible;
 }
