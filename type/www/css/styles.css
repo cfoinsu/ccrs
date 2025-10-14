@@ -1153,6 +1153,7 @@ body {
 }
 
 .btn-ghost {
+    display: block;
     color: #374151;
     text-align: left;
 }
@@ -4685,7 +4686,7 @@ table.comparison-table td:first-child {
     color: var(--krds-light-color-text-point);
 }
 
-.accordion-body .conts-desc {
+.g-info-box.full .g-desc-box.row .conts-desc {
     display: flex;
     flex-direction: column;
     justify-content: space-between;

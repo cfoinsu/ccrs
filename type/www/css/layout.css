@@ -1742,7 +1742,11 @@ main.map-content .container {max-width: 100%;}
 .map-content .tab-layout .region li {background: #EBEEF3;font-weight: 700;font-size: 1.7rem;line-height: 26px;text-align: center;vertical-align: middle;padding:6px 24px;border-radius: 1000px;}
 .map-content .tab-layout .region li.on {background: #F48F01;color: #fff;}
 .map-content .tab-layout .util-btns {display: flex;gap: 8px;}
-.map-content .content-layout {display: grid;grid-template-columns: 390px 1fr;gap: 0;margin-top: 0;}
+.map-content .content-layout {display: flex;gap: 0;margin-top: 0;}
+.map-content .content-layout .sidebar {background: #ffffff;position: absolute;z-index: 10;left: -1000px;transition: all .3s ease-in-out;}
+.map-content .content-layout .sidebar.on {background: #ffffff;position:relative;z-index: 10;left: 0;}
+.map-content .content-layout .sidebar .sideba-btn {border: 1px 1px 1px 0 solid #D2D6DA;position: absolute;top:50%;transform: translateY(-50%);right: -24px;width: 24px;height: 46px;}
+.map-content .content-layout .sidebar .sideba-btn i {transform: rotate(270deg);}
 .map-content .content-layout .sidebar-header {background:#fff;padding:5px 10px;border-radius:0;text-align: left;color:#474E55;margin-bottom: 0;}
 .map-content .content-layout .sidebar-header p {text-align: center;font-size: 14px;color:#474E55;}
 .map-content .content-layout .sidebar-scroll-nav {max-height: calc(100vh - 174px);overflow: auto;border-top: 1px solid #E6E8EA;}
