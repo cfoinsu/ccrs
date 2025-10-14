@@ -4816,6 +4816,7 @@ table.comparison-table td:first-child {
     background-color: var(--krds-light-color-surface-point-subtler);
     border: 1px solid var(--krds-light-color-border-point-light);
     flex: 1 0 0;
+    margin-top: 2rem;
 }
 
 .g-wrap .g-info-box.point .g-tit {
