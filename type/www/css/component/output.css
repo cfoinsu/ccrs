@@ -2728,6 +2728,13 @@ caption {
   border-top-right-radius: var(--krds-tab--fill-button-radius);
   border-bottom-right-radius: var(--krds-tab--fill-button-radius);
 }
+.tab.middle.fill>ul {
+  flex-wrap: wrap;
+}
+.tab.middle.fill>ul>li {
+  flex-grow: 0;
+  min-width: 15rem;
+}
 .tab.line .btn-tab {
   min-width: var(--krds-tab--button-size-min-width);
   padding: 0 var(--krds-tab--line-button-padding);
@@ -2857,14 +2864,14 @@ caption {
 }
 .krds-table-wrap .tbl.data thead th {
   padding: var(--krds-table--data-thead-th-padding) var(--krds-table--data-thead-th-padding-sides);
-  background-color: #fbe8b1;
-  border-top: var(--krds-table--data-border-width) solid #f5a033;
-  border-left: var(--krds-table--data-border-width) solid #edbe32;
-  border-right: var(--krds-table--data-border-width) solid #edbe32;
+  background-color: #344D82;
+  border-top: var(--krds-table--data-border-width) solid transparent;
+  border-left: var(--krds-table--data-border-width) solid #D2D6DA;
+  border-right: var(--krds-table--data-border-width) solid #D2D6DA;
   border-bottom: none;
   font-weight: var(--krds-font-weight-bold);
   font-size: var(--krds-table--data-thead-pc-font-size);
-  color: var(--krds-table--data-thead-color-text);
+  color: #fff;
   text-align: center;
 }
 /* .krds-table-wrap .tbl.data thead th {
@@ -2913,7 +2920,7 @@ caption {
 .krds-table-wrap .tbl.data tbody td {
   padding: var(--krds-table--data-tbody-padding) var(--krds-table--data-tbody-padding-sides);
   background-color: var(--krds-table--data-tbody-color-surface);
-  border: var(--krds-table--data-border-width) solid #edbe32;
+  border: var(--krds-table--data-border-width) solid #D2D6DA;
   font-size: var(--krds-table--data-tbody-pc-font-size);
   color: var(--krds-table--data-tbody-color-text);
   font-weight: var(--krds-font-weight-regular);
@@ -2942,7 +2949,7 @@ caption {
   text-align: center;
 }
 .g-wrap .krds-table-wrap .tbl tbody th {
-  background-color: #fffbf6;
+  background-color: #E1EEFA;
 }
 @media (max-width: 767px) {
   .krds-table-wrap .tbl.data tbody th,
@@ -3093,22 +3100,22 @@ caption {
 }
 .roundcheck .krds-info-list.decimal > li::before {
   content: "";
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.6rem;
+  height: 1.6rem;
   content: "";
-  background: url(../../img/icons/system-success.svg) center no-repeat;
-  background-size: 1.4rem;
-  top: 0.5rem;
+  background: url(../../img/icons/check_circle_bullet.svg) center no-repeat;
+  background-size: 1.6rem;
+  top: 0.4rem;
   left: 0;
 }
 .roundcheck .krds-info-list.dash > li::before {
   content: "";
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.2rem;
+  height: 1.2rem;
   content: "";
-  background: url(../../img/icons/round_check.svg) center no-repeat;
-  background-size: 1.4rem;
-  top: 0.5rem;
+  background: url(../../img/icons/check_bullet.svg) center no-repeat;
+  background-size: 1.2rem;
+  top: 0.6rem;
   left: 0;
 }
 .krds-info-list.dash > li::before {
@@ -4027,6 +4034,14 @@ caption {
 }
 .krds-accordion.type-heading .accordion-item .btn-accordion span.sec-tit {
   font-size: var(--krds-pc-font-size-heading-medium);
+  background: url(../../images/ic/tit_accordian.svg) left center no-repeat;
+  padding-left: 20px;
+  background-size: 8px 24px;
+}
+.krds-accordion.type-heading .accordion-item .btn-accordion span.sec-tit.tit_acc {
+  background: url(../../images/ic/tit_accordian.svg) left center no-repeat;
+  padding-left: 20px;
+  background-size: 8px 24px;
 }
 .krds-accordion.type-heading .accordion-item .btn-accordion::after {
   top: 0;
