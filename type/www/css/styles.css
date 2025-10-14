@@ -4805,6 +4805,22 @@ table.comparison-table td:first-child {
 .g-wrap .g-info-box .g-desc-box .g-tit {
     font-size: var(--krds-pc-font-size-heading-small);
 }
+.g-wrap .g-info-box .g-desc-box .g-tit.big {
+    font-size: var(--krds-pc-font-size-heading-large);
+}
+.g-wrap .g-info-box .g-desc-box .g-tit.big .color-blue{
+    color: #096AB3;
+}
+.g-wrap .g-info-box .g-desc-box .flex.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.g-wrap .g-info-box .g-desc-box .small {
+    font-size: 13px;
+}
 
 .g-wrap .g-info-box.gray {
     background-color: var(--krds-light-color-surface-gray-subtler);
@@ -4882,6 +4898,10 @@ table.comparison-table td:first-child {
 .g-grid-wrap.unit4 .g-info-box.sm .g-desc-box .g-img img {
     height: 60px;
     width: auto;
+}
+.g-grid-wrap .g-info-box.sm .g-desc-box .g-img.between {
+    justify-content: space-between !important;
+    align-items: flex-end !important;
 }
 
 .g-grid-wrap.contect {
@@ -5024,6 +5044,7 @@ table.comparison-table td:first-child {
     color: var(--krds-light-color-text-secondary);
     padding-left: 12px;
 }
+.g-conts-area .bullet {margin-bottom: 2rem;}
 
 .g-conts-area .bullet::before,
 .krds-info-list.decimal .bullet::before {
@@ -5040,6 +5061,16 @@ table.comparison-table td:first-child {
     margin-bottom: var(--krds-gap-4);
     font-size: var(--krds-pc-font-size-body-medium);
 }
+.g-wrap .g-conts-area .desc-conts p {
+    margin-bottom: 5px;
+}
+.g-wrap .g-conts-area .desc-conts p strong {
+    margin-left: 1.2rem;
+}
+.g-wrap .g-conts-area .desc-conts p .big {
+    font-size: 3.2rem;
+}
+
 .choose-list {
     overflow: hidden;
     display: flex;
@@ -5171,6 +5202,9 @@ table.comparison-table td:first-child {
 
 .red-box {
     background-color: #FFEEE9 !important;
+}
+.gray-box {
+    background-color: #F4F5F6 !important;
 }
 
 .purple-box {
@@ -6364,4 +6398,19 @@ td.beuti-yellow::after {
 @keyframes borderflow {
   100% { filter: hue-rotate(360deg); }
   0%   { filter: hue-rotate(0deg); }
+}
+
+.money-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+}
+.money-area .money-box {
+    width: calc(100%/4 - 8px);
+    height: 80px;
+    border-radius: 10px;
+    background-color: #F4F5F6;
+    text-align: center;
+    padding: 16px;
 }
