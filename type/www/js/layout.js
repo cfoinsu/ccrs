@@ -214,3 +214,15 @@ $(function() {
     $btn.append('<i class="sr-only created">선택됨</i>');
   });
 });
+
+$(document).ready(function () {
+    $(".quick-chat").on("click", function (e) {
+        e.preventDefault();
+        var url = 'https://ichat.ccrs.or.kr/ichat/ichat.do?type=a&device=web';
+        var win = window.open(url, 'popup', 'width=540,height=820,location=no,scrollbar=yes,resizable=yes');
+    });
+	
+	$('.quick-item.book').click(function() {
+		$(this).toggleClass('on');
+	})
+});
