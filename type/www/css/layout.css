@@ -779,6 +779,7 @@ Version : v1.0
 .all-menu > nav .all-menu-list.darken > li {
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
     border-left: 1px solid #f5f5f5;
+    flex:1;
 }
 
 .all-menu > nav .all-menu-list.darken > li::after {
