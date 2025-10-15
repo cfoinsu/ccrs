@@ -4002,6 +4002,17 @@ caption {
   font-size: 15px;
   font-weight: 400;
 }
+.krds-accordion.type-line .accordion-item .btn-accordion span.catego {
+  display: inline-block;
+  width:12.5rem;
+  min-width:12.5rem;
+  line-height:2.4rem;
+  flex:none;
+}
+.krds-accordion.type-line .accordion-item .btn-accordion:has(.catego) {
+  display:flex;
+  gap:5px;
+}
 .krds-accordion.type-line .accordion-item .btn-accordion::after {
   top: var(--krds-accordion--line-padding);
   right: 0;
