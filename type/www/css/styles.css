@@ -6435,3 +6435,14 @@ td.beuti-yellow::after {
     padding: 16px;
 }
 .underline {text-decoration: underline;}
+
+/* 특수말줄임 추가 (관리자페이지는 적용하면 안됨) */
+.krds-structured-list.type-full.gallery .gallery-item .card-body .gall-text .gall-txt {
+    /* 텍스트 줄 수 제한 및 말줄임표 표시를 위한 필수 설정 */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-height: 1.5;
+    max-height: calc(1.5 * 5em);
+}
