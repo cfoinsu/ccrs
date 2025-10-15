@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>라디오 버튼에 따른 폼 토글</title>
+<style>
+  #department-form, #cardnum-form {
+    display: none;
+  }
+  form {display: flex; align-items: center; gap: 20px;}
+  select{height: 36px;}
+  input[type='text'] {height: 30px;}
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(function(){
+    // 초기 상태 - 이용부서 선택 시 셀렉트 보임
+    $('#department-form').show();
+
+    $('input[name="option"]').change(function() {
+      if ($(this).val() === 'department') {
+        $('#department-form').show();
+        $('#cardnum-form').hide();
+      } else if ($(this).val() === 'cardnum') {
+        $('#department-form').hide();
+        $('#cardnum-form').show();
+      }
+    });
+  });
+</script>
+</head>
+<body>
+    
+    <form>
+        <div class="flex">
+            <label>
+                <input type="radio" name="option" value="department" checked>
+                이용부서
+            </label>
+            <label>
+                <input type="radio" name="option" value="cardnum">
+                카드번호
+            </label>
+        </div>
+    
+        <div id="department-form">
+            <select>
+                <option value="dept1">부서1</option>
+                <option value="dept2">부서2</option>
+                <option value="dept3">부서3</option>
+            </select>
+        </div>    
+        <div id="cardnum-form">
+            <input type="text" placeholder="카드번호를 입력하세요" />
+        </div>
+    </form>
+
+</body>
+</html>
