@@ -6446,3 +6446,8 @@ td.beuti-yellow::after {
     line-height: 1.5;
     max-height: calc(1.5 * 5em);
 }
+.g-wrap .accordion-body .g-attach-file-wrap {
+    padding: var(--krds-padding-4) 0;
+    background-color: transparent;
+    border: none;
+}
