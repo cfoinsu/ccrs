@@ -2953,6 +2953,9 @@ caption {
   text-align: center;
 }
 .g-wrap .krds-table-wrap .tbl tbody th {
+  background-color: #EBEEF3;
+}
+.g-wrap .krds-table-wrap .tbl.data tbody th {
   background-color: #E1EEFA;
 }
 @media (max-width: 767px) {
