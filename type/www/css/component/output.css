@@ -2735,6 +2735,10 @@ caption {
   flex-grow: 0;
   min-width: 15rem;
 }
+.tab.middle.fill.full>ul>li {
+  flex-grow: 1;
+  min-width: 15rem;
+}
 .tab.line .btn-tab {
   min-width: var(--krds-tab--button-size-min-width);
   padding: 0 var(--krds-tab--line-button-padding);
