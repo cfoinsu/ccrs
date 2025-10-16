@@ -138,9 +138,12 @@ Version : v1.0
     position: relative;
     display: inline-block;
     text-align: left;
-    height: 64px;
+    vertical-align: middle;
     line-height: 64px;
     width: calc(1160px / 6);
+}
+#header .gnb-wrap > nav .gnb > li .menu-label {
+    line-height: 64px;
 }
 
 #header .gnb-wrap > nav .gnb > li.is-active::after {
@@ -370,6 +373,7 @@ Version : v1.0
     position: relative;
     display: flex;
 }
+.utility-right .linkbox li > a > span,
 .utility-right .linkbox li > * {
     display: inline-block;
     height: 3rem;
