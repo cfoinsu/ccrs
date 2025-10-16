@@ -7921,6 +7921,7 @@ caption {
 .krds-structured-list.gallery .card-top img {
   width: 307px;
   height: 204px;
+  object-fit: cover;
 }
 .krds-structured-list.gallery.type-full .card-top img {
   width: 256px;
