@@ -942,6 +942,36 @@
 			</div>
 		</div>
 	</div>
+	<div class="intro show" id="popup">
+		<div class="close btn01"></div>
+		<div class="close btn02" id="hideOneDayBtn"></div>
+		<a href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_self" class="introlink link01" title="사이버상담부"></a>
+		<a href="https://www.educredit.or.kr/ccedu/main/main.do" target="_self" class="introlink link02" title="신용교육원"></a>
+		<a href="https://counselor.ccrs.or.kr/ccedu/main/main.do" target="_self" class="introlink link03" title="신용상담사"></a>
+		<!-- <div class="img-logo"></div>
+		<div class="search-area-header">
+			<label for="searchText" class="hide">검색</label>
+			<input type="text" name="commonSearchText" id="searchText" placeholder="검색어를 입력하세요" onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요'">
+			<button class="btn-search-header"></button>
+		</div>
+		<div class="tellphon"><p class="call">희망으로 거는 전화 <strong>1600-5500</strong></p></div>
+		<div class="intro-linkbox">
+			<div class="boxLcol">
+				<p class="bigtit">처음 방문하셨나요?</p>
+				<p class="contsDesc">나에게 맞는 채무조정을 알아보세요.</p>
+				<a href="#" class="link white arrow001">인터넷상담신청</a>
+				<a href="#" class="link white arrow002">방문예약신청</a>
+				<a href="#" class="link white arrow003">나에게 맞는 채무조정 찾기</a>
+				<a href="채무조정제도비교_장단점비교.html" class="link white arrow004">채무조정제도 비교</a>
+			</div>
+			<div class="boxRtop">
+				<p class="boxtit">사이버상담부</p>
+				<a href="#" class="iconlink"></a>
+			</div>
+			<div class="boxRbottom"></div>
+		</div> -->
+
+	</div>
 	<script type="text/javascript">
 		//페이지(section) 앵커 스크롤 이벤트
 		$(window).scroll(function () {
@@ -995,6 +1025,38 @@
 				scrollTop: $("#section" + nextSection).offset().top
 			}, 800, 'swing');
 		});
+		$(".intro .close").click(function () {
+			$(this).parent().removeClass("show");
+			$("body").css("overflow","auto");
+		});
+		$(document).ready(function() {
+			if ($('.intro.show').length) {
+				$('body').css('overflow', 'hidden');
+			}
+		});
 	</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const popup = document.getElementById('popup');
+  const hideBtn = document.getElementById('hideOneDayBtn');
+
+  // 저장된 상태 확인
+  const hideUntil = localStorage.getItem('hideUntil');
+  if (hideUntil && new Date() < new Date(hideUntil)) {
+    popup.style.display = 'none';
+	document.body.style.overflow = "auto";
+  }
+  // 하루 동안 보지 않기 버튼
+  hideBtn.addEventListener('click', () => {
+    const expire = new Date();
+    expire.setDate(expire.getDate() + 1); // 1일 후
+    localStorage.setItem('hideUntil', expire);
+    popup.style.display = 'none';
+	document.body.style.overflow = "auto";
+  });
+});
+</script>
+
 </body>
 </html>
