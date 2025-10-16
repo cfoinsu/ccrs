@@ -485,6 +485,7 @@ dd .add_openNoti {width:100%;margin-left:0px;}
 .replyArea .write .addInfo .part  {color:#4286ea;}
 .replyArea .list {margin-top:-10px;border-bottom:1px solid #e6e6e6;}
 .replyArea .list li {position:relative;padding:25px 0px}
+.replyArea .list.qnaType{border-top:1px solid #d1d1d1;}
 .replyArea .list li+li {border-top:1px solid #e6e6e6;}
 .replyArea .list>li .txtInfo {position:relative;overflow:hidden;margin-bottom:10px;font-size:0;}
 .replyArea .list>li .txtInfo>span {position:relative;display:inline-block;margin-right:10px;font-family:'Roboto','Noto Sans KR',sans-serif;font-size:14px;line-height:26px;vertical-align:top;color:#888}
@@ -502,7 +503,7 @@ dd .add_openNoti {width:100%;margin-left:0px;}
 .replyArea .list>li .txtInfo .btn_recommend em {display:inline-block;font-size:15px;color:#4286ea;vertical-align:top;line-height:15px;font-weight:500}
 .replyArea .list li>pre {white-space:pre-wrap;}
 .replyArea .list li.addReply {padding-left:70px;background:url(../img/board/ico_addReply.png) no-repeat left 30px top 18px;}
-.replyArea .list li>p {padding-right:200px;font-size:15px;color:#222;line-height:23px;white-space:pre-wrap;word-break:break-all;}
+.replyArea .list li>p {font-size:15px;color:#222;line-height:23px;white-space:pre-wrap;word-break:break-all;}
 .replyArea .list>li .addInfo>span {position:relative;display:inline-block;margin-right:5px;padding-left:9px;font-family:'Roboto','Noto Sans KR',sans-serif;font-size:14px;line-height:26px;vertical-align:top;color:#888}
 .replyArea .list>li .addInfo .writer {margin-right:10px;color:#222;font-weight:500;font-size:16px;letter-spacing:-0.5px;}
 .replyArea .list>li .addInfo>span:first-child {padding-left:0;}
