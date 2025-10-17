@@ -6549,3 +6549,68 @@ td.beuti-yellow::after {
     color: #17191B;
     text-align: center;
 }
+
+/* 화살표 레이어 */
+.item-layer,
+.item-share {
+    display: none;
+    position: absolute;
+    width: 27.2rem;
+    padding: var(--spacer5) var(--spacer5) var(--spacer6);
+    background-color: var(--white);
+    border-radius: 0.8rem;
+    border: 1px solid var(--gray30);
+    box-shadow: 0 0.4rem 1.2rem 0 rgba(0, 0, 0, 0.12);
+    transition: 0.4s ease-in-out;
+}
+
+.item-layer::before,
+.item-layer::after,
+.item-share::before,
+.item-share::after {
+    position: absolute;
+    top: -0.2rem;
+    left: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    border: 1px solid var(--gray30);
+    transform: rotate(45deg) translateX(-50%);
+    content: "";
+    z-index: 1;
+}
+
+.item-layer::after,
+.item-share::after {
+    top: 0;
+    width: 5rem;
+    border: none;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.item-layer .section-subtit,
+.item-share .section-subtit {
+    display: block;
+    margin-bottom: var(--spacer7);
+    line-height: 1;
+    font-size: 1.7rem;
+}
+
+.item-layer .btn-close,
+.item-share .btn-close {
+    position: absolute;
+    top: var(--spacer5);
+    right: var(--spacer5);
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../../images/common/icon/ico_close_20.svg);
+}
+
+.item-layer.active,
+.item-share.active {
+    display: block;
+    top: var(--spacer10);
+    right: -8rem;
+    z-index: 100;
+}
