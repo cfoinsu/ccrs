@@ -7925,9 +7925,10 @@ caption {
   flex-wrap: wrap;
 }
 .krds-structured-list.gallery .card-top img {
-  width: 307px;
+  width: 310px;
   height: 204px;
   object-fit: cover;
+  flex-shrink: 0;
 }
 .krds-structured-list.gallery.type-full .card-top img {
   width: 256px;
