@@ -131,7 +131,7 @@ Version : v1.0
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    
+
 }
 
 #header .gnb-wrap > nav .gnb > li {
@@ -530,14 +530,14 @@ Version : v1.0
 /* 추가 기능 */
 
 #header .header-quickmenu-box {
-  position: absolute;
-  display: inline-block;
-  width: 200px;
-  height: 33px;
-  top:50%;
-  left: 0;
-  transform: translateY(-50%);
-  z-index: 99
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 33px;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 99
 }
 #header .header-quickmenu-box:hover {
 
@@ -552,39 +552,39 @@ Version : v1.0
 }
 
 #header .header-quickmenu-box .top-box {
-  position: relative;
-  z-index: 7;
-  display: flex;
-  gap: .75rem;
-  align-items: center
+    position: relative;
+    z-index: 7;
+    display: flex;
+    gap: .75rem;
+    align-items: center
 }
 
 #header .header-quickmenu-box .top-box .logo {
-  display: inline-flex;
-  width: calc(192/var(--base-font-size)*var(--default-font-size))
+    display: inline-flex;
+    width: calc(192/var(--base-font-size)*var(--default-font-size))
 }
 
 #header .header-quickmenu-box .top-box .logo img {
-  max-width: none;
-  width: 100%
+    max-width: none;
+    width: 100%
 }
 
 #header .header-quickmenu-box .top-box .logo img.logo-white {
-  display: none
+    display: none
 }
 
 #header .header-quickmenu-box .top-box .quickmenu-btn {
-  position: relative;
-  display: flex;
-  max-width: 2.4rem;
-  min-width: 2.4rem;
-  flex: 1;
-  width: 2.4rem;
-  height: 2.4rem;
-  justify-content: center;
-  align-items: center;
-  background: #ef8d18;
-  border-radius: 2.4rem;
+    position: relative;
+    display: flex;
+    max-width: 2.4rem;
+    min-width: 2.4rem;
+    flex: 1;
+    width: 2.4rem;
+    height: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    background: #ef8d18;
+    border-radius: 2.4rem;
 }
 .icon-sp.ic_arrow_out_white::before {
     content: '';
@@ -597,103 +597,103 @@ Version : v1.0
 }
 
 #header .header-quickmenu-box .top-box .quickmenu-btn .icon-sp {
-  width: 12px;
-  height: 12px;
-  transform: none;
-  transform-origin: center;
+    width: 12px;
+    height: 12px;
+    transform: none;
+    transform-origin: center;
 }
 
 #header .header-quickmenu-box.close .top-box .quickmenu-btn {
-  transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 
 #header .header-quickmenu-list {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: .62rem;
-  margin-top: 1.5rem;
-  z-index: 1
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .62rem;
+    margin-top: 1.5rem;
+    z-index: 1
 }
 
 #header .header-quickmenu-list-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 3rem;
-  opacity: 0;
-  visibility: hidden;
-  background: #fff;
-  z-index: 6;
-  display:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 3rem;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    z-index: 6;
+    display:none;
 }
 
 #header .header-quickmenu-list-box .icon {
-  position: relative;
-  display: block;
-  width: calc(32/var(--base-font-size)*var(--default-font-size));
-  height: calc(32/var(--base-font-size)*var(--default-font-size))
+    position: relative;
+    display: block;
+    width: calc(32/var(--base-font-size)*var(--default-font-size));
+    height: calc(32/var(--base-font-size)*var(--default-font-size))
 }
 
 #header .header-quickmenu-list-box .icon img {
-  width: 100%
+    width: 100%
 }
 
 #header .header-quickmenu-list-box .txt {
-  position: relative
+    position: relative
 }
 
 #header .header-quickmenu-list-box::before {
-  content: "";
-  position: absolute;
-  top: -1.75rem;
-  left: -1.7rem;
-  right: -1.75rem;
-  bottom: -1.75rem;
-  padding: 1.75rem;
-  background: #fff;
-  border-radius: 24px;
-  border: 1px solid #ccc;
-  box-shadow: 0px 30px 60px 0px rgba(34, 34, 34, .2)
+    content: "";
+    position: absolute;
+    top: -1.75rem;
+    left: -1.7rem;
+    right: -1.75rem;
+    bottom: -1.75rem;
+    padding: 1.75rem;
+    background: #fff;
+    border-radius: 24px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 30px 60px 0px rgba(34, 34, 34, .2)
 }
 
 #header .header-quickmenu-list li a {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.25;
-  letter-spacing: -0.03em;
-  background-color: var(--color-grayish2);
-  border-radius: 1rem;
-  position: relative;
-  overflow: hidden
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.03em;
+    background-color: var(--color-grayish2);
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden
 }
 @media screen and (max-width: 1499px) {
-  #header .header-quickmenu-list li a {
-    font-size: 17px;
-  }
+    #header .header-quickmenu-list li a {
+        font-size: 17px;
+    }
 }
 
 #header .header-quickmenu-list li a::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, .1);
-  opacity: 0;
-  transition: opacity 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .1);
+    opacity: 0;
+    transition: opacity 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
 }
 
 @media screen and (min-width: 1000px) {
-  #header .header-quickmenu-list li a:hover::before {
-    opacity: 1
-  }
+    #header .header-quickmenu-list li a:hover::before {
+        opacity: 1
+    }
 }
 
 /* .all-menu .allmenu-util {height: 100vh; width: 88px;} */
@@ -1447,14 +1447,14 @@ main .container {
     #header .gnb-wrap .allmenu-util a:nth-child(2) {right: 14rem; top: 4rem;}
     #header .gnb-wrap .allmenu-util a:nth-child(3) {right: 9rem; top: 4rem;}
     #header .gnb-wrap .allmenu-util a img {width: 32px; height: 32px;}
-    
+
     .main-content {padding: 90px 0 80px;}
     .popslider-Wrap {right: 0; width: 376px; height: 180px;}
     #pop-box .pop-img {width: 330px; height: 180px;}
     #m-anchor {display: none;}
     #section1 .card-scroll {padding-top: 0px;}
     #section1 .controller-bar {left: calc((100vw - 265px) / 2); bottom: 30vh;}
-    #section1 .swiper-slide .overlay-text {align-items: center; padding: 0; text-align: center; width: 92%; left: 4%; top: 32vh;} 
+    #section1 .swiper-slide .overlay-text {align-items: center; padding: 0; text-align: center; width: 92%; left: 4%; top: 32vh;}
     #section1 .swiper-slide .overlay-text h1 {font-size: 4rem;}
     #section1 .swiper-slide .overlay-text p {text-align: center; font-size: 2.2rem;}
     #section2 {background: url(../images/bg/bg_section2-tablet2.png) no-repeat; background-size: 100%; background-attachment: fixed;}
@@ -1496,13 +1496,13 @@ main .container {
     #header::before {height: 64px;}
     #header .gnb-wrap {display: none;}
     .utility-bar {height: 90px;}
-    #header .gnb-wrap > nav {display: none;}   
-    #header .gnb-wrap > ul.utils {display: none;}   
+    #header .gnb-wrap > nav {display: none;}
+    #header .gnb-wrap > ul.utils {display: none;}
 }
 @media (max-width: 768px) {
     #header .gnb-wrap .logo {left: 16px;}
     #section1 .controller-bar {left: calc(50% - 125px); top: calc(36vh + 310px);}
-    
+
     .card-scroll {width: calc(100% - 48px);}
     .card-scroll .title-box {margin-bottom: 80px;}
     .card-scroll .card {margin-bottom: 40px;}
@@ -1525,7 +1525,7 @@ main .container {
 }
 
 @media (max-width: 390px) {
-    
+
 }
 
 /* 서브 페이지 */
@@ -1535,7 +1535,7 @@ main .container {
     .c-main-wrap .history-bg {margin-bottom: 40px; margin-right: 0; height: fit-content;}
 }
 @media (max-width: 1280px) {
-	#contents .c-header {height: 454px; padding: 208px 0 0;}
+    #contents .c-header {height: 454px; padding: 208px 0 0;}
     .c-tabbox {height: 72px; border-bottom: none;}
     .c-tabbox .c-tab-area {display: flex; height: 100%; justify-content: space-between; align-items: center; z-index: 10;}
     .c-tabbox .c-tab-area a {font-size: 2rem; font-weight: 600; width: 100%;}
@@ -1778,9 +1778,9 @@ main.map-content .container {max-width: 100%;}
 .subway-tag.nb07 {background-color: #697215;}
 .subway-tag.nb08 {background-color: #e51e6e;}
 .subway-tag.nb09 {background-color: #d1a62c;}
-.map-content .content-area {position: relative;max-height: calc(100vh - 128px);overflow: hidden;}
+.map-content .content-area {position: relative;max-height: calc(100vh - 128px);overflow: hidden; width: 100%;}
 .map-content .content-area .g-imag {margin-bottom: 0;}
-.map-content .content-area .g-imag img {object-fit: none;}
+/*.map-content .content-area .g-imag img {object-fit: none;}*/
 .map-content .content-area .ab_note {position: absolute;right: 24px;bottom: 24px;height: 52px;line-height: 50px;padding: 0 24px;box-shadow: 0px 0px 2px 0px #0000000D;box-shadow: 0px 4px 8px 0px #00000014;background-color: #fff;color: #17191B;text-align: right;font-size: 1.7rem;font-weight: 400;border-radius: 1000px;}
 
 .g-imag-hover  {height: 541px;width: 700px;border-radius: 24px;border: 1px solid #D2D6DA;text-align: center;}
@@ -1811,14 +1811,14 @@ dl.flex-list {
     padding: 10px 0;
 }
 .flex-list dt {
-    flex-basis: 80px; 
+    flex-basis: 80px;
     font-weight: bold;
     padding: 5px 10px 5px 0;
 }
 
 .flex-list dd {
     /* 나머지 공간을 채우도록 설정 */
-    flex-basis: calc(100% - 80px); 
+    flex-basis: calc(100% - 80px);
     /* 또는 flex-grow: 1; */
     padding: 5px 0;
     margin: 0;
