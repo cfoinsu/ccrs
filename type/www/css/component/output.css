@@ -7924,6 +7924,11 @@ caption {
   flex-direction: row;
   flex-wrap: wrap;
 }
+.krds-structured-list.gallery.utube .card-top img {
+  width: 310px;
+  height: 204px;
+}
+
 .krds-structured-list.gallery .card-top img {
   width: 310px;
   height: 204px;
