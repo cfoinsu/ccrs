@@ -417,20 +417,20 @@ $(document).ready(function() {
     });
     
     // Share functionality
-    $('.action-btn').filter(':contains("🔗")').on('click', function() {
-        if (navigator.share) {
-            navigator.share({
-                title: '신용회복위원회 - 재무조성 지원',
-                url: window.location.href
-            });
-        } else {
-            // Fallback for browsers that don't support Web Share API
-            const url = window.location.href;
-            navigator.clipboard.writeText(url).then(function() {
-                alert('링크가 클립보드에 복사되었습니다.');
-            });
-        }
-    });
+    // $('.action-btn').filter(':contains("🔗")').on('click', function() {
+    //     if (navigator.share) {
+    //         navigator.share({
+    //             title: '신용회복위원회 - 재무조성 지원',
+    //             url: window.location.href
+    //         });
+    //     } else {
+    //         // Fallback for browsers that don't support Web Share API
+    //         const url = window.location.href;
+    //         navigator.clipboard.writeText(url).then(function() {
+    //             alert('링크가 클립보드에 복사되었습니다.');
+    //         });
+    //     }
+    // });
 });
 
 // Additional utility functions
