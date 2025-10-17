@@ -579,7 +579,7 @@ video {
 }
 
 #section2 {
-    background: url(../images/bg/bg_section02.png) no-repeat center center;
+    
     background-size: cover;
     background-attachment: fixed;
 }
@@ -671,21 +671,9 @@ video {
 
 #section3 {
     position: relative;
-    background: url(../images/bg/bg_section02.png) no-repeat center center;
+    
     background-attachment: fixed;
     background-size: cover;
-}
-
-#section3::before {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    content: '';
-    display: block;
-    width: 956px;
-    height: 465px;
-    background: url(../images/bg/bg_main3.png) no-repeat;
-    z-index: -1;
 }
 
 #section3 .contents-wrap {
@@ -930,7 +918,7 @@ video {
 
 #section4 {
     position: relative;
-    background: url(../images/bg/bg_section02.png) no-repeat center center;
+    /* background: url(../images/bg/bg_section02.png) no-repeat center center; */
     background-attachment: fixed;
     background-size: cover;
 }

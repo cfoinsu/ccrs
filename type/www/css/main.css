@@ -1175,7 +1175,7 @@ section {
     display: block;
     width: 956px;
     height: 465px;
-    background: url(../images/bg/bg_main3.png) no-repeat;
+    /* background: url(../images/bg/bg_main3.png) no-repeat; */
     z-index: -1;
 }
 
