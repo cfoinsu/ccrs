@@ -151,7 +151,7 @@
                     <!-- map Area -->
                     <div class="content-area">
                         <div class="g-imag">
-                            <img src="/type/www/images/img/naver_map.png" alt="">
+                            <img src="/type/www/images/img/naver_map.png" alt="" style="width: 100%;">
                         </div>
                         <div class="ab_note">
                             전국 서민금융통합지원센터에서 자유롭게 신용회복 상담을 받으실 수 있습니다. 상담시간 평일 09:00 ~ 17:00
@@ -271,12 +271,8 @@
     <!-- 2️⃣ 아코디언 토글 스크립트 -->
     <script>
         $(function () {
-            $('.region > li').on('click', function() {
-                // 1. 현재 클릭된 li 요소의 형제(siblings)들, 즉 다른 모든 li 요소에서 
-                //    'on' 클래스를 제거합니다.
-                $(this).siblings('li').removeClass('on');
-                // 2. 현재 클릭된 li 요소에만 'on' 클래스를 추가합니다.
-                $(this).addClass('on');
+            $('.sideba-btn').on('click', function() {
+                $(this).parent('.sidebar').toggleClass('on');
             });
             $('.target-section .map-tit').on('click', function(e) {
                 e.preventDefault();
