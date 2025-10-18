@@ -273,7 +273,7 @@ body {
 /* Content Area */
 .content-area {
     background: #ffffff;
-    width: 980px;
+    width: 100%;
 }
 
 .content-area>div {
@@ -4746,10 +4746,6 @@ table.comparison-table td:first-child {
     height: 1px;
     background: #ccc;
     width: 100%;
-}
-
-.krds-accordion .accordion-item.active .accordion-collapse {
-    max-height: 300vh !important;
 }
 
 .g-info-box.full {

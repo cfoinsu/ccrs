@@ -3983,7 +3983,7 @@ caption {
 }
 .krds-accordion .accordion-item.active .accordion-collapse {
   height: auto;
-  max-height: 100vh;
+  max-height: 1000vh;
   transition: all 1.5s ease-in-out;
   visibility: visible;
 }
@@ -4041,6 +4041,7 @@ caption {
   border: 1px solid #ccc;
   border-radius: 2.4rem;
   padding: 2.4rem 3.2rem;
+  overflow: hidden;
 }
 .krds-accordion.type-heading .accordion-item .btn-accordion:focus {
   outline: none;
@@ -4093,6 +4094,7 @@ caption {
 }
 .krds-accordion.type-heading .accordion-item.active {
   background: none;
+  overflow: visible;
 }
 
 /* 비타민 */
