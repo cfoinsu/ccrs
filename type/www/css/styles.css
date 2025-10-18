@@ -273,6 +273,7 @@ body {
 /* Content Area */
 .content-area {
     background: #ffffff;
+    width: 980px;
 }
 
 .content-area>div {
