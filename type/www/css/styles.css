@@ -142,15 +142,21 @@ body {
 
 /* Content Layout */
 .content-layout {
-    display: grid;
-    grid-template-columns: 280px 1fr;
+    display: flex;
+    /* grid-template-columns: 280px 1fr; */
     gap: 80px;
     margin-top: 40px;
+    justify-content: space-between;
 }
 
 /* Sidebar */
 .sidebar {
     background: #ffffff;
+    border: 1px solid #D2D6DA;
+    border-radius: 12px;
+    width: 280px;
+    flex-shrink: 0;
+    height: 100%;
 }
 
 .sidebar-header {
@@ -158,8 +164,7 @@ body {
     background-size: 120px;
     color: white;
     padding: 40px 20px;
-    border-radius: 16px;
-    margin-bottom: 20px;
+    border-radius: 12px;
     text-align: center;
 }
 
@@ -170,13 +175,12 @@ body {
 }
 
 .sidebar-nav {
-    border: 1px solid #d0d0d0;
-    border-radius: 16px;
+    padding: 0 20px;
     overflow: hidden;
 }
 
 .nav-section {
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid #E6E8EA;
 }
 
 .nav-section:last-child {
@@ -187,9 +191,9 @@ body {
     width: 100%;
     background: none;
     border: none;
-    padding: 9px 20px;
+    padding: 16px 0;
     text-align: left;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 700;
     cursor: pointer;
     display: flex;
@@ -200,11 +204,15 @@ body {
 
 .nav-section.active .nav-section-title {
     color: #ed7801;
+    padding: 16px 0;
 }
 
 .nav-section.active .nav-subsection {
     height: auto;
     transition: all 0.3s ease;
+    padding-bottom: 16px;
+    transform: translateY(-6px);
+    padding-bottom: 6px;
 }
 
 .nav-arrow {
@@ -212,13 +220,14 @@ body {
 }
 
 .nav-section-title .nav-arrow {
-    background: url(../img/icons/arrow-down.svg) center no-repeat;
-    width: 16px;
-    height: 12px;
+    background: url(../img/icons/lnb-arrow-down.svg) center no-repeat;
+    width: 20px;
+    height: 20px;
 }
 
 .nav-section.active .nav-arrow {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
+    background: url(../img/icons/lnb-arrow-top-on.svg) center no-repeat;
 }
 
 .nav-subsection {
@@ -232,17 +241,17 @@ body {
 
 .nav-subitem {
     display: block;
-    padding: 6px 20px 6px 40px;
+    padding: 6px 0 6px 7px;
     color: #333;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
     position: relative;
 }
 
 .nav-subitem::before {
     content: '';
     position: absolute;
-    left: 20px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
     width: 3px;
