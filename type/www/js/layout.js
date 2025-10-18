@@ -330,3 +330,106 @@ $(document).ready(function() {
     });
     */
 });
+$(document).ready(function() {
+    // 1. URL 및 제목 정의
+    const rawCurrentUrl = window.location.href; // 인스타그램 복사용 원본 URL
+    const currentUrl = encodeURIComponent(rawCurrentUrl);
+    const currentTitle = encodeURIComponent(document.title);
+    const popupOption = '_blank';
+
+    // 2. URL 복사 기능 함수 (재사용)
+    function copyToClipboard(text) {
+        if (!navigator.clipboard) {
+            // Fallback: 구형 브라우저
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                return true;
+            } catch (err) {
+                return false;
+            } finally {
+                document.body.removeChild(textarea);
+            }
+        } else {
+            // 최신 API: HTTPS 환경 권장
+            navigator.clipboard.writeText(text).then(() => {
+                // 복사 성공 (처리)
+            }, (err) => {
+                console.error('클립보드 복사 실패:', err);
+            });
+            return true;
+        }
+    }
+
+    // 3. SNS 공유 로직 함수
+    function shareToSNS(snsType) {
+        let shareUrl = '';
+
+        switch (snsType) {
+            case 'facebook':
+                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
+                break;
+            case 'x':
+                shareUrl = `https://twitter.com/intent/tweet?text=${currentTitle}&url=${currentUrl}`;
+                break;
+            case 'kakaostory':
+                shareUrl = `https://story.kakao.com/share?url=${currentUrl}`;
+                break;
+            case 'band':
+                shareUrl = `https://band.us/plugin/share?body=${currentTitle}%0A${currentUrl}&route=BAND`;
+                break;
+            case 'blog':
+                shareUrl = `https://share.naver.com/web/shareView?url=${currentUrl}&title=${currentTitle}`;
+                break;
+            case 'tumblr':
+                shareUrl = `https://www.tumblr.com/widgets/share/tool?posttype=link&canonicalUrl=${currentUrl}&title=${currentTitle}`;
+                break;
+            case 'pinterest':
+                shareUrl = `https://pinterest.com/pin/create/button/?url=${currentUrl}&description=${currentTitle}`;
+                break;
+            case 'insta':
+                // 인스타그램 특수 처리: URL 복사 후 인스타그램 홈으로 이동
+                if (copyToClipboard(rawCurrentUrl)) {
+                    // 복사에 성공하면 사용자에게 안내합니다. (복사 성공 여부 확인용)
+                    // 복사가 비동기로 이루어질 수 있지만, 일단 안내 후 이동합니다.
+                    alert('현재 페이지 URL이 복사되었습니다. 인스타그램 게시물에 붙여넣어 공유해 주세요! ✨');
+                } else {
+                    alert('URL 복사에 실패했습니다. 직접 주소창의 URL을 복사해 주세요.');
+                }
+                
+                // 인스타그램 웹사이트 또는 모바일 앱 URI로 이동합니다.
+                // 새 탭에서 열어 기존 페이지를 유지합니다.
+                window.open('https://www.instagram.com/', '_blank');
+                return; // 팝업 로직을 실행하지 않고 종료
+
+            default:
+                return;
+        }
+
+        // 새 창 팝업 (인스타그램 제외한 SNS)
+        window.open(shareUrl, 'snsSharePop', popupOption);
+    }
+
+    // 4. 각 버튼에 클릭 이벤트 연결 (이전과 동일)
+    // 동적으로 생성된 요소에도 이벤트가 적용되도록 $('body').on('click', ...) 사용
+    $('body').on('click', '._btnFacebook, ._btnX, ._btnKakao, ._btnBand, ._btnBlog, ._btnTumblr, ._btnPinter, ._btnInsta', function(e) {
+        e.preventDefault();
+        
+        let snsType = '';
+        if ($(this).hasClass('_btnFacebook')) snsType = 'facebook';
+        else if ($(this).hasClass('_btnX')) snsType = 'x';
+        else if ($(this).hasClass('_btnKakao')) snsType = 'kakaostory';
+        else if ($(this).hasClass('_btnBand')) snsType = 'band';
+        else if ($(this).hasClass('_btnBlog')) snsType = 'blog';
+        else if ($(this).hasClass('_btnTumblr')) snsType = 'tumblr';
+        else if ($(this).hasClass('_btnPinter')) snsType = 'pinterest';
+        else if ($(this).hasClass('_btnInsta')) snsType = 'insta';
+        
+        if (snsType) {
+            shareToSNS(snsType);
+        }
+    });
+});
