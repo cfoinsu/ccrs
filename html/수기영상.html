@@ -7,8 +7,7 @@
 	<meta name="keywords" content="신용회복위원회"/>
 	<meta name="description" content="신용회복위원회"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>고마워요신복위</title>
-     
+    <title>수기영상</title>
     <link rel="stylesheet" href="/type/www/css/common.css">
     <link rel="stylesheet" href="/type/www/css/main.css">
     <!-- <link rel="stylesheet" href="/type/www/css/sub.css"> -->
@@ -187,21 +186,29 @@
                                     <li><a href="영상FAQ_갤러리.html" class="nav-subitem">영상 FAQ</a></li>
                                 </ul>
                             </div>
-                            <div class="nav-section active">
+                            <div class="nav-section">
                                 <button class="nav-section-title">
                                     고객소통
                                     <i class="nav-arrow"></i>
                                 </button>
                                 <ul class="nav-subsection">
                                     <li><a href="고객의소리_선택.html" class="nav-subitem">고객의 소리</a></li>
-                                    <li><a href="고마워요신복위_동의.html" class="nav-subitem active">칭찬합니다</a></li>
+                                    <li><a href="고마워요신복위_동의.html" class="nav-subitem">칭찬합니다</a></li>
                                 </ul>
                             </div>
                             <div class="nav-section">
                                 <a href="군복무자전용질의응답_동의.html" class="nav-section-title">군복무자 전용 질의응답</a>
                             </div>
-                            <div class="nav-section">
-                                <a href="이용수기.html" class="nav-section-title">이용 수기</a>
+                            <div class="nav-section active">
+                                <button class="nav-section-title">
+                                    이용수기
+                                    <i class="nav-arrow"></i>
+                                </button>
+                                <ul class="nav-subsection">
+                                    <li><a href="이용수기.html" class="nav-subitem">수기집</a></li>
+                                    <li><a href="수기영상.html" class="nav-subitem active">수기영상</a></li>
+                                    <li><a href="고객의감사편지_목록.html" class="nav-subitem">고객의 감사편지</a></li>
+                                </ul>
                             </div>
                         </nav>
                     </aside>
@@ -217,14 +224,14 @@
                             <span class="breadcrumb-separator"></span>
                             <a href="#" class="breadcrumb-item">소통과 참여</a>
                             <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">고객소통</a>
+                            <a href="#" class="breadcrumb-item">이용수기</a>
                             <span class="breadcrumb-separator"></span>
-                            <span class="breadcrumb-item current">칭찬합니다</span>
+                            <span class="breadcrumb-item current">수기영상</span>
                         </nav>
                         <!-- Page Header -->
                         <div class="page-header">
                             <div class="title-wrap">
-                                <h1>칭찬합니다</h1>
+                                <h1>수기영상</h1>
                                 <div class="page-actions">
 
 
@@ -238,7 +245,6 @@
                                 
                             </div>
                         </div>
-                        <!-- Content Sections -->
                         <div class="content-sections g-wrap">
                             <div class="board-list">
                                 <!-- 검색 입력폼 -->
@@ -248,10 +254,9 @@
                                         <div>
                                             <label class="label hide" for="appl-sch-sel1">선택 분류</label>
                                             <select id="appl-sch-sel1" class="krds-form-select medium">
-                                            <option value="">선택</option>
-                                            <option value="">내용</option>
-                                            <option value="">제목+내용</option>
-                                            <option value="">작성자</option>
+                                            <option value="">전체</option>
+                                            <option value="">항목</option>
+                                            <option value="">항목</option>
                                             </select>
                                         </div>
                                         <!-- 검색 입력폼 -->
@@ -272,62 +277,157 @@
 
                                 <!-- 검색 결과 : 리스트 상단 -->
                                 <div class="search-list-top">
-                                <ul class="sch-info" aria-live="polite">
-                                    <li>검색 결과 <span class="point">24</span>건</li>
-                                </ul>
-                                <ul class="sch-sort">
-                                    <li class="m-hide">
-                                    <strong class="sort-label"><label for="search_result_count">목록 표시 개수</label></strong>
-                                    <select class="krds-form-select-sort" id="search_result_count">
-                                        <option>20개</option>
-                                        <option selected>10개</option>
-                                        <option>5개</option>
-                                    </select>
-                                    </li>
-                                </ul>
+                                    <ul class="sch-info" aria-live="polite">
+                                        <li>검색 결과 <span class="point">24</span>건</li>
+                                    </ul>
+                                    <ul class="sch-sort">
+                                        <li class="m-hide">
+                                            <strong class="sort-label"><label for="search_result_count">목록 표시 개수</label></strong>
+                                            <select class="krds-form-select-sort" id="search_result_count">
+                                                <option>10개</option>
+                                                <option>9개</option>
+                                            </select>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <!-- //검색 결과 : 리스트 상단 -->
-                                <!-- table -->
-                                <div class="krds-table-wrap">
-                                <table class="tbl col board vc">
-                                    <caption>게시판에 대한 표로 제목1,제목2에 대한 내용으로 구성되어 있으며 제목1은 제목1-1,제목1-2,제목1-3으로 구성되어있다.</caption>
-                                    <colgroup>
-                                    <col>
-                                    <col style="width: 70%;">
-                                    <col>
-                                    </colgroup>
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">번호</th>
-                                        <th scope="col">제목</th>
-                                        <th scope="col">등록일</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td scope="row">4</td>
-                                        <td class="al"><a href="고마워요신복위_상세.html">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림</a></td>
-                                        <td>2024.10.15</td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">3</td>
-                                        <td class="al"><a href="고마워요신복위_상세.html">[안내] 한눈에 보는 폐업지원 연계 프로그램</a></td>
-                                        <td>2024.10.15</td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">2</td>
-                                        <td class="al"><a href="고마워요신복위_상세.html">[중소벤처기업부] 2025년 재창업활성화 유공포상 및 사례공모전 실시</a></td>
-                                        <td>2024.10.15</td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">1</td>
-                                        <td class="al"><a href="고마워요신복위_상세.html">2025 신용회복 이용수기 공모전 수상작 발표</a></td>
-                                        <td>2024.10.15</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                </div>
-                                <!-- //table -->
+                                <ul class="krds-structured-list gallery utube">
+                                    <li class="gallery-item">
+                                        <a href="#" onclick="openYoutubeUrl('https://www.youtube.com/watch?v=OqR5E_HmjX8'); return false;" target="_blank" title="새창열림">
+
+                                            <div class="card-top">
+                                                <img src="/type/www/images/img/thumbnail-img.jpg" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <!-- <p class="gall-txt">카테고리</p> -->
+                                                <div class="gall-text">
+                                                    <p class="gall-tit">
+                                                        [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                        <span class="ic-new"></span>
+                                                    </p>
+                                                    <div class="gall-txt">
+                                                        [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-btm">
+                                            <span class="stat">관리자</span>
+                                            <span class="stat">2025.01.31</span>
+                                            <span class="stat">조회수
+                                                <span class="cnt">9,999</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="gallery-item">
+                                        <a href="#" onclick="openYoutubeUrl('https://www.youtube.com/watch?v=OqR5E_HmjX8'); return false;" target="_blank" title="새창열림">
+
+                                            <div class="card-top">
+                                                <img src="/type/www/images/img/thumbnail-img.jpg" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <!-- <p class="gall-txt">카테고리</p> -->
+                                                <div class="gall-text">
+                                                    <p class="gall-tit">
+                                                        [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                        <span class="ic-new"></span>
+                                                    </p>
+                                                    <div class="gall-txt">
+                                                        [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-btm">
+                                            <span class="stat">관리자</span>
+                                            <span class="stat">2025.01.31</span>
+                                            <span class="stat">조회수
+                                                <span class="cnt">9,999</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="gallery-item">
+                                        <a href="#" onclick="openYoutubeUrl('https://www.youtube.com/watch?v=OqR5E_HmjX8'); return false;" target="_blank" title="새창열림">
+
+                                            <div class="card-top">
+                                                <img src="/type/www/images/img/thumbnail-img.jpg" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <!-- <p class="gall-txt">카테고리</p> -->
+                                                <div class="gall-text">
+                                                    <p class="gall-tit">
+                                                        [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                        <span class="ic-new"></span>
+                                                    </p>
+                                                    <div class="gall-txt">
+                                                        [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-btm">
+                                            <span class="stat">관리자</span>
+                                            <span class="stat">2025.01.31</span>
+                                            <span class="stat">조회수
+                                                <span class="cnt">9,999</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="gallery-item">
+                                        <a href="#" onclick="openYoutubeUrl('https://www.youtube.com/watch?v=OqR5E_HmjX8'); return false;" target="_blank" title="새창열림">
+
+                                            <div class="card-top">
+                                                <img src="/type/www/images/img/thumbnail-img.jpg" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <!-- <p class="gall-txt">카테고리</p> -->
+                                                <div class="gall-text">
+                                                    <p class="gall-tit">
+                                                        [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                        <span class="ic-new"></span>
+                                                    </p>
+                                                    <div class="gall-txt">
+                                                        [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-btm">
+                                            <span class="stat">관리자</span>
+                                            <span class="stat">2025.01.31</span>
+                                            <span class="stat">조회수
+                                                <span class="cnt">9,999</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="gallery-item">
+                                        <a href="#" onclick="openYoutubeUrl('https://www.youtube.com/watch?v=OqR5E_HmjX8'); return false;" target="_blank" title="새창열림">
+
+                                            <div class="card-top">
+                                                <img src="/type/www/images/img/thumbnail-img.jpg" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <!-- <p class="gall-txt">카테고리</p> -->
+                                                <div class="gall-text">
+                                                    <p class="gall-tit">
+                                                        [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                        <span class="ic-new"></span>
+                                                    </p>
+                                                    <div class="gall-txt">
+                                                        [자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-btm">
+                                            <span class="stat">관리자</span>
+                                            <span class="stat">2025.01.31</span>
+                                            <span class="stat">조회수
+                                                <span class="cnt">9,999</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
                                 <!-- pagination -->
                                 <div class="krds-pagination">
                                 <span class="page-navi prev disabled" href="#">이전</span>
