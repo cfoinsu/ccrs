@@ -164,23 +164,9 @@ document.querySelector('[aria-label="인쇄"]')?.addEventListener('click', () =>
 });
 
 // Share Functionality
-document.querySelector('[aria-label="공유"]')?.addEventListener('click', () => {
-    if (navigator.share) {
-        navigator.share({
-            title: '소액대출 - 신용회복위원회',
-            text: '신용회복위원회의 소액대출 제도에 대해 알아보세요.',
-            url: window.location.href
-        }).catch(err => console.log('Error sharing:', err));
-    } else {
-        // Fallback for browsers that don't support Web Share API
-        const url = window.location.href;
-        navigator.clipboard.writeText(url).then(() => {
-            alert('페이지 주소가 복사되었습니다.');
-        }).catch(() => {
-            alert('공유 기능을 사용할 수 없습니다.');
-        });
-    }
-});
+// document.querySelector('[aria-label="공유"]')?.addEventListener('click', () => {
+    
+// });
 
 // Initialize page
 document.addEventListener('DOMContentLoaded', () => {

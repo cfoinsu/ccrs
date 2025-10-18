@@ -226,3 +226,107 @@ $(document).ready(function () {
 		$(this).toggleClass('on');
 	})
 });
+$(document).ready(function() {
+    $('[aria-label="공유"]').on('click', function() {
+        // 이미 공유하기 팝업이 있는지 확인
+        const $sharePopup = $(this).next('.item-share');
+
+        // 팝업이 존재하지 않으면 생성하여 삽입
+        if ($sharePopup.length === 0) {
+            const shareHtml = `
+                <div class="item-share">
+                    <strong class="section-subtit">공유하기</strong>
+                    <div class="sns-type">
+                        <a href="javascript:;" class="_btnFacebook" title="새창열림">
+                            <i class="icon" aria-hidden="true">
+                                <img src="/type/www/img/icons/icon_logo_facebook.svg" alt="">
+                            </i> 
+                            <span>페이스북</span>
+                        </a>
+                        <a href="javascript:;" class="_btnX" title="새창열림">
+                            <i class="icon" aria-hidden="true">
+                                <img src="/type/www/img/icons/icon_logo_x.svg" alt="">
+                            </i> 
+                            <span>X</span>
+                        </a>
+                        <a href="javascript:;" class="_btnKakao" title="새창열림">
+                            <i class="icon" aria-hidden="true">
+                                <img src="/type/www/img/icons/icon_logo_kakao.svg" alt="">
+                            </i> 
+                            <span>카카오스토리</span>
+                        </a>
+                        <a href="javascript:;" class="_btnBand" title="새창열림">
+                            <i class="icon" aria-hidden="true">
+                                <img src="/type/www/img/icons/icon_logo_band.svg" alt="">
+                            </i> 
+                            <span>네이버밴드</span>
+                        </a>
+                        <a href="javascript:;" class="_btnBlog" title="새창열림">
+                            <i class="icon" aria-hidden="true">
+                                <img src="/type/www/img/icons/icon_logo_blog.svg" alt="">
+                            </i> 
+                            <span>네이버블로그</span>
+                        </a>
+                        <a href="javascript:;" class="_btnTumblr" title="새창열림">
+                            <i class="icon" aria-hidden="true">
+                                <img src="/type/www/img/icons/icon_logo_tumblr.svg" alt="">
+                            </i> 
+                            <span>텀블러</span>
+                        </a>
+                        <a href="javascript:;" class="_btnPinter" title="새창열림">
+                            <i class="icon" aria-hidden="true">
+                                <img src="/type/www/img/icons/icon_logo_pinter.svg" alt="">
+                            </i> 
+                            <span>핀터레스트</span>
+                        </a>
+                        <a href="javascript:;" class="_btnInsta" title="새창열림">
+                            <i class="icon" aria-hidden="true">
+                                <img src="/type/www/img/icons/icon_logo_insta.svg" alt="">
+                            </i> 
+                            <span>인스타그램</span>
+                        </a>
+                    </div>
+                    <button type="button" class="btn-close">
+                        <span class="sr-only">공유하기 닫기</span>
+                    </button>
+                </div>`;
+            
+            // 현재 클릭된 요소 바로 뒤에 삽입
+            $(this).after(shareHtml);
+
+            // 삽입 후 닫기 버튼에 이벤트 리스너 추가 (옵션)
+            // 닫기 버튼을 클릭했을 때 팝업을 닫고 버튼의 active 클래스 제거
+            $(this).next('.item-share').find('.btn-close').on('click', function() {
+                $(this).closest('.item-share').remove();
+                $('[aria-label="공유"]').removeClass('active'); // 공유 버튼의 active 클래스 제거
+            });
+        } 
+        
+        // 클릭된 버튼의 active 클래스 토글 (팝업 표시/숨김용)
+        $(this).toggleClass('active');
+
+        // 생성된(또는 이미 존재하는) 팝업을 토글
+        $(this).next('.item-share').toggleClass('active');
+    });
+	$('.item-share .btn-close').on('click', function() {
+		$(this).closest('.item-share').removeClass('active');
+		$('[aria-label="공유"]').removeClass('active');
+	});
+
+    // 참고: 위 코드는 팝업을 '생성'하고 '토글'하는 로직을 모두 포함하고 있습니다.
+    // 만약 HTML에 팝업이 미리 존재하고 단순히 '클래스 토글'만 하고 싶다면 아래 코드가 더 간단합니다.
+
+    /*
+    // 팝업이 이미 HTML에 존재한다고 가정할 경우의 간결한 jQuery 코드:
+    $('[aria-label="공유"]').on('click', function() {
+        $(this).toggleClass('active');
+        $(this).next('.item-share').toggleClass('active');
+
+        // 팝업 내 닫기 버튼 이벤트 처리
+        $(this).next('.item-share').find('.btn-close').on('click', function() {
+            $(this).closest('.item-share').removeClass('active');
+            $('[aria-label="공유"]').removeClass('active');
+        });
+    });
+    */
+});

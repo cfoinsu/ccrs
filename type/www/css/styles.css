@@ -353,7 +353,7 @@ body {
     align-items: center;
     gap: 8px;
     margin-bottom: 20px;
-    padding: 0 1rem;
+    padding: 0;
 }
 
 .view-count {
@@ -414,7 +414,7 @@ body {
 }
 .action-btn.active .fa-print:before,
 .action-btn:hover .fa-print:before {
-    background: url(../img/icons/print_on.svg) no-repeat center;
+    background: url(../img/icons/print.svg) no-repeat center;
     background-size: contain;
     content: "";
 }
@@ -427,8 +427,12 @@ body {
     background-size: contain;
     content: "";
 }
-.action-btn.active .fa-share-alt:before,
 .action-btn:hover .fa-share-alt:before {
+    background: url(../img/icons/share.svg) no-repeat -1px center;
+    background-size: contain;
+    content: "";
+}
+.action-btn.active .fa-share-alt:before {
     background: url(../img/icons/share_on.svg) no-repeat -1px center;
     background-size: contain;
     content: "";
@@ -6565,11 +6569,10 @@ td.beuti-yellow::after {
 }
 
 /* 화살표 레이어 */
-.item-layer,
 .item-share {
     display: none;
     position: absolute;
-    width: 27.2rem;
+    width: 40rem;
     padding: 2rem;
     background-color: #fff;
     border-radius: 0.8rem;
@@ -6578,13 +6581,11 @@ td.beuti-yellow::after {
     transition: 0.4s ease-in-out;
 }
 
-.item-layer::before,
-.item-layer::after,
 .item-share::before,
 .item-share::after {
     position: absolute;
     top: -0.2rem;
-    left: calc(100% - 3rem);
+    left: calc(100% - 2rem);
     width: 1.5rem;
     height: 1.5rem;
     background-color: #fff;
@@ -6594,16 +6595,14 @@ td.beuti-yellow::after {
     z-index: 1;
 }
 
-.item-layer::after,
 .item-share::after {
     top: 0;
-    width: 5rem;
+    width: 3rem;
     border: none;
     transform: translateX(-50%);
     z-index: 2;
 }
 
-.item-layer .section-subtit,
 .item-share .section-subtit {
     display: block;
     margin-bottom: 2.8rem;
@@ -6611,7 +6610,6 @@ td.beuti-yellow::after {
     font-size: 1.7rem;
 }
 
-.item-layer .btn-close,
 .item-share .btn-close {
     position: absolute;
     top: 2rem;
@@ -6621,7 +6619,6 @@ td.beuti-yellow::after {
     background-image: url(../images/common/icon/ico_close_20.svg);
 }
 
-.item-layer.active,
 .item-share.active {
     display: block;
     top: 5rem;
@@ -6640,7 +6637,7 @@ td.beuti-yellow::after {
 
 .sns-type a {
     display: block;
-    width: calc(33.33% - 0.8rem);
+    width: calc(25% - 0.9rem);
     text-align: center;
     line-height: 1;
 }
