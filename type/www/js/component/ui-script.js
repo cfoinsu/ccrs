@@ -2410,7 +2410,14 @@ window.addEventListener("DOMContentLoaded", () => {
   // 모든 아코디언이 닫아야 할 때 (allclose)
   //krds_accordion.init('allclose');
   // 첫번째만 열려야 할 때 (프론트)
-  krds_accordion.init('front');
+  // krds_accordion.init('front');
+
+    if (typeof pageFlag !== "undefined" && pageFlag === "faq") {
+        krds_accordion.init('allclose');
+    } else {
+        krds_accordion.init('front');
+    }
+
   krds_modal.init();
   krds_contextualHelp.init();
   krds_tooltip.init();
