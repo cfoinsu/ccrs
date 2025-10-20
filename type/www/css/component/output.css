@@ -18510,13 +18510,13 @@ a:hover .d-card .c-tit {
   align-items: center;
 }
 .search-top-box .sch-filter-box .filter-form.row .search-area .sch-form-wrap {
-  width: 295px;
+  min-width: 295px;
 }
 .search-top-box .sch-filter-box .filter-form.row .search-area .label {
   width: 59px;
 }
-.search-top-box .sch-filter-box .filter-form.row .search-area .label.mlauto {
-  margin-left: auto;
+.search-top-box .sch-filter-box .filter-form.row .search-area .label ~ .label {
+  margin-left: auto;padding-left: 20px;
 }
 .search-top-box .sch-filter-box .filter-form.row .search-area .krds-form-select {
   width: 188px;
