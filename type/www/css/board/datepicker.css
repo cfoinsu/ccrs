@@ -230,42 +230,8 @@
     background-position:0 0;
     }
 /*
-    IE 6 activation button hover states
-*/
-.oldie .date-picker-button-active:link,
-.oldie .date-picker-button-active:visited,
-.oldie .date-picker-control:focus,
-.oldie .date-picker-control:hover,
-.oldie .date-picker-control:active
-    {
-    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='media/datepicker-focused.png');
-    }
-/*
     Disabled activation button
 */
-.date-picker-control-disabled:link,
-.date-picker-control-disabled:visited,
-.date-picker-control-disabled:hover,
-.date-picker-control-disabled:active
-    {
-    background-position:0 -36px;
-    cursor:default;
-    }
-/*
-    IE 6 disabled activation button
-*/
-.oldie .date-picker-control-disabled:link,
-.oldie .date-picker-control-disabled:visited,
-.oldie .date-picker-control-disabled:hover,
-.oldie .date-picker-control-disabled:active
-    {
-    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop,src='media/datepicker-disabled.png');
-    }
-.date-picker-control-disabled:hover span,
-.date-picker-control-disabled:active span
-    {
-    box-shadow:none !important;
-    }
 /*
     Feed IE6 the following rule, IE7 should handle the min-width declared
     previously.

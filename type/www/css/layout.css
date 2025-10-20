@@ -376,6 +376,9 @@ Version : v1.0
     font-weight: 400;
     font-size: var(--krds-pc-font-size-label-medium)
 }
+.utility-right .linkbox li {
+    position: relative;
+}
 .utility-right .linkbox li + li {
     padding-left: 10px;
     position: relative;

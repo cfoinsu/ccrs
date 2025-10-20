@@ -227,6 +227,43 @@ $(document).ready(function () {
 	})
 });
 $(document).ready(function() {
+    $('.appdown').on('click', function() {
+        // 이미 공유하기 팝업이 있는지 확인
+        const $linkHtml = $(this).next('.item-share');
+
+        // 팝업이 존재하지 않으면 생성하여 삽입
+        if ($linkHtml.length === 0) {
+            const linkHtml = `
+                <div class="item-share active">
+                    <strong class="section-subtit">앱 다운로드</strong>
+                    <div class="g-qr-box">
+                        <div class="qr-box">
+                            <p class="font-bold">구글 플레이</p>
+                            <img src="/type/www/img/contents/png/qr-googleplay.png">
+                        </div>
+                        <div class="qr-box">
+                            <p class="font-bold">앱 스토어</p>
+                            <img src="/type/www/img/contents/png/qr-appstore.png">
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close">
+                        <span class="sr-only">앱 다운로드 닫기</span>
+                    </button>
+                </div>`;
+            
+            // 현재 클릭된 요소 바로 뒤에 삽입
+            $(this).after(linkHtml);
+
+            // 삽입 후 닫기 버튼에 이벤트 리스너 추가 (옵션)
+            // 닫기 버튼을 클릭했을 때 팝업을 닫고 버튼의 active 클래스 제거
+            $(this).next('.item-share').find('.btn-close').on('click', function() {
+                $(this).closest('.item-share').remove();
+            });
+        } 
+    });
+
+
+
     $('[aria-label="공유"]').on('click', function() {
         // 이미 공유하기 팝업이 있는지 확인
         const $sharePopup = $(this).next('.item-share');

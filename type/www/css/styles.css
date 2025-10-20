@@ -4955,9 +4955,14 @@ table.comparison-table td:first-child {
 }
 
 .g-grid-wrap.contect {
+    position: relative;
     display: flex !important;
     gap: var(--krds-gap-4) !important;
     margin-top: 40px;
+}
+.g-grid-wrap.contect .item-share.active {
+    top : 135px;
+    right: 0;
 }
 
 .g-grid-wrap.contect .g-info-box {
@@ -6228,7 +6233,9 @@ table.comparison-table td:first-child {
     border-radius: 24px;
     flex: 1 0 0;
 }
-
+.flex-start .white-box {
+    justify-content: flex-start;
+}
 .white-box .g-tit.center{
     text-align: center;
     font-size:1.7rem;
@@ -6647,6 +6654,20 @@ td.beuti-yellow::after {
     right: 0;
     z-index: 100;
 }
+.appdown + .item-share.active {
+    height: auto !important;
+    width: 25rem;
+}
+.appdown + .item-share.active .g-qr-box {
+    display: flex;
+    justify-content: space-between;
+}
+.appdown + .item-share.active .g-qr-box .qr-box {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2px;
+    flex-direction: column;
+}
 
 .sns-type {
     display: flex;
@@ -6712,4 +6733,25 @@ td.beuti-yellow::after {
 .flexbox.gap48 {
     display: flex;
     gap: 48px;
+}
+.fillter-chip {
+    text-align: center;
+    height: 48px;
+    line-height: 46px;
+    border: 1px solid #B1B8BE;
+    border-radius: 8px;
+    color: #17191B;
+    font-size: 19px;
+    background-color: #fff;
+    padding: 0 16px;
+}
+input[type=radio]:checked + label.fillter-chip {
+    text-align: center;
+    height: 48px;
+    line-height: 46px;
+    border: 1px solid #F48F01;
+    border-radius: 8px;
+    color: #ED7801;
+    font-size: 19px;
+    background-color: #FFF9F2;
 }
