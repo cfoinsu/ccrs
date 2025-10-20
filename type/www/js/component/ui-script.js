@@ -841,7 +841,8 @@ const krds_accordion = {
     });
   },
   setupAriaAttributes(button, accordionContent, idx) {
-    const uniqueIdx = `${idx}${Math.random().toString(36).substring(2, 9)}`;
+    // const uniqueIdx = `${idx}${Math.random().toString(36).substring(2, 9)}`;
+    const uniqueIdx = idx.toString().padStart(3, "0");;
     button.setAttribute("aria-expanded", "false");
     button.setAttribute("id", `accordionHeader-id-${uniqueIdx}`);
     button.setAttribute("aria-controls", `accordionCollapse-id-${uniqueIdx}`);

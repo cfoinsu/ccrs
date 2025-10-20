@@ -5331,17 +5331,45 @@ table.comparison-table td:first-child {
 
 .charter-svg {
     position: absolute;
-    width: calc(100% - 100px);
+    width: calc(100% - 50px);
     display: inline-flex;
     justify-content: space-between;
 }
 
 .charter-svg.top {
-    top: 50px;
+    top: 25px;
+}
+.charter-svg.top::before {
+    content: '';
+    background: url(../img/common/top_left.svg) no-repeat;
+    display: block;
+    width: 127px;
+    height: 127px;
+}
+.charter-svg.top::after {
+    content: '';
+    background: url(../img/common/top_right.svg) no-repeat;
+    display: block;
+    width: 127px;
+    height: 127px;
 }
 
 .charter-svg.bottom {
-    bottom: 50px;
+    bottom: 25px;
+}
+.charter-svg.bottom::before {
+    content: '';
+    background: url(../img/common/bottom_left.svg) no-repeat;
+    display: block;
+    width: 127px;
+    height: 127px;
+}
+.charter-svg.bottom::after {
+    content: '';
+    background: url(../img/common/bottom_right.svg) no-repeat;
+    display: block;
+    width: 127px;
+    height: 127px;
 }
 
 /*윤리강령 아코디언 추가 스타일*/
