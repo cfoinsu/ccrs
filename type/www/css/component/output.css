@@ -18497,6 +18497,47 @@ a:hover .d-card .c-tit {
   border-top: var(--search-box-filter-chip-width-border) solid var(--search-box-filter-chip-color-border);
   border-radius: 0;
 }
+.search-top-box .sch-filter-box .filter-form.row {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap:10px;
+}
+.search-top-box .sch-filter-box .filter-form.row .search-area {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+.search-top-box .sch-filter-box .filter-form.row .krds-form-select {
+  flex: 0;
+  flex-shrink: 0;
+  min-width: 200px;
+}
+.search-top-box .sch-filter-box .filter-form.row .sch-form-wrap,
+.search-top-box .sch-filter-box .filter-form.row .sch-form-wrap .sch-input,
+.search-top-box .sch-filter-box .filter-form.row .sch-form-wrap .krds-input {
+  width: 100%;
+}
+.search-top-box .sch-filter-box .filter-form.row .period {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+.search-top-box .sch-filter-box .filter-form.row .period .optSetDate {
+  width: 300px;
+  display: block;
+  gap: 5px;
+  flex-shrink: 0;
+}
+.search-top-box .sch-filter-box .filter-form.row .period .optSetDate .inp_t {
+  border-radius: 0.6rem;
+}
+.search-top-box .sch-filter-box .filter-form.row .period .choose-date {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
 
 /* 공통 - 결과 리스트 상단 */
 .search-list-top {

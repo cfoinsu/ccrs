@@ -815,10 +815,10 @@ const krds_accordion = {
       this.setupAriaAttributes(button, accordionContent, idx);
 
       // 초기 상태 설정
-      if (mode === 'admin') {
-        button.setAttribute("aria-expanded", "true");
-        button.classList.add("active");
-        currentItem.classList.add("active");
+      if (mode === 'allclose') {
+        button.setAttribute("aria-expanded", "false");
+        button.classList.remove("active");
+        currentItem.classList.remove("active");
       } else if (mode === 'front') {
         if (idx === 0) {
           button.setAttribute("aria-expanded", "true");
@@ -2406,8 +2406,8 @@ window.addEventListener("DOMContentLoaded", () => {
   krds_sideNavigation.init();
   krds_tab.init();
   // krds_accordion.init();
-  // 모든 아코디언이 열려야 할 때 (어드민)
-  //krds_accordion.init('admin');
+  // 모든 아코디언이 닫아야 할 때 (allclose)
+  //krds_accordion.init('allclose');
   // 첫번째만 열려야 할 때 (프론트)
   krds_accordion.init('front');
   krds_modal.init();

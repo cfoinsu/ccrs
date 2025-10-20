@@ -1039,7 +1039,7 @@ Version : v1.0
 /* Main Content */
 .main-content {
     min-height: calc(100vh - 140px);
-    padding: 140px 0 160px;
+    padding: 140px 0 100px;
 }
 main .container {
     max-width: 1340px;
@@ -1740,22 +1740,23 @@ main .container {
 .header.map .utility-right .linkbox li + li::before {display: none;}
 .header.map .linkbox .sch-input .krds-input {height: 48px;width:340px;}
 
-main.map-content {padding:0;max-height: calc(100vh - 75px);overflow: hidden;}
+main.map-content {padding:0;max-height: 100vh;overflow: hidden;}
 main.map-content .container {max-width: 100%;}
-.map-content .tab-layout {display: flex;justify-content: space-between;align-items: center;padding:9px 24px;border-bottom: 1px solid #D2D6DA;border-top: 1px solid #D2D6DA;}
+.map-content .tab-layout {display: flex;justify-content: space-between;align-items: center;padding:9px 24px;border-bottom: 1px solid #D2D6DA;border-top: 1px solid #D2D6DA;height: 75px;}
+.map-content .tab-layout .top-box {width: 190px;flex-shrink: 0;}
 .map-content .tab-layout .region {display: flex;align-items: center;gap: 8px;}
 .map-content .tab-layout .region li {background: #EBEEF3;font-weight: 700;font-size: 1.7rem;line-height: 26px;text-align: center;vertical-align: middle;padding:6px 24px;border-radius: 1000px;}
 .map-content .tab-layout .region li.on {background: #F48F01;color: #fff;}
 .map-content .tab-layout .util-btns {display: flex;gap: 8px;}
 .map-content .content-layout {display: flex;gap: 0;margin-top: 0;}
-.map-content .content-layout .sidebar {background: #ffffff;position: absolute;z-index: 10;left: -390px;transition: all .3s ease-in-out;width: 390px;flex-shrink: 0;}
+.map-content .content-layout .sidebar {background: #ffffff;position: absolute;z-index: 10;left: -390px;transition: all .3s ease-in-out;width: 390px;flex-shrink: 0;border: none;}
 .map-content .content-layout .sidebar.on {background: #ffffff;position:relative;z-index: 10;left: 0;}
 .map-content .content-layout .sidebar .sideba-btn {border-top: 1px solid #D2D6DA;border-right: 1px solid #D2D6DA;border-bottom: 1px solid #D2D6DA;border-radius: 0 8px 8px 0; position: absolute;top:50%;transform: translateY(-46px);right: -22px;display: flex;justify-content: center;align-items: center;width: 24px;height: 46px;background: #fff;}
 .map-content .content-layout .sidebar .sideba-btn i {transform: rotate(270deg);}
 .map-content .content-layout .sidebar.on .sideba-btn i {transform: rotate(90deg) scaleX(-1);}
 .map-content .content-layout .sidebar-header {background:#fff;padding:5px 10px;border-radius:0;text-align: left;color:#474E55;margin-bottom: 0;}
 .map-content .content-layout .sidebar-header p {text-align: center;font-size: 14px;color:#474E55;}
-.map-content .content-layout .sidebar-scroll-nav {max-height: calc(100vh - 174px);overflow: auto;border-top: 1px solid #E6E8EA;}
+.map-content .content-layout .sidebar-scroll-nav {max-height: calc(100vh - 106px);overflow: auto;border-top: 1px solid #E6E8EA;}
 .sidebar-scroll-nav .target-section {border-bottom: 1px solid #E6E8EA;padding:24px;}
 .sidebar-scroll-nav .target-section .map-tit {position: relative;font-size: 1.7rem;font-weight: 700;color: #17191b;display: -webkit-box;overflow: hidden;text-overflow: ellipsis;-webkit-box-orient: vertical;-webkit-line-clamp: 1;padding-right: 20px;}
 .sidebar-scroll-nav .target-section .map-tit::after {content: '';position: absolute;width: 20px;height: 20px;right:0;top:0;background: url(../img/icons/arrow-down.svg) center no-repeat;}
@@ -1779,7 +1780,7 @@ main.map-content .container {max-width: 100%;}
 .subway-tag.nb07 {background-color: #697215;}
 .subway-tag.nb08 {background-color: #e51e6e;}
 .subway-tag.nb09 {background-color: #d1a62c;}
-.map-content .content-area {position: relative;max-height: calc(100vh - 128px);overflow: hidden; width: 100%;}
+.map-content .content-area {position: relative;max-height: calc(100vh - 75px);overflow: hidden; width: 100%;}
 .map-content .content-area .g-imag {margin-bottom: 0;}
 /*.map-content .content-area .g-imag img {object-fit: none;}*/
 .map-content .content-area .ab_note {position: absolute;right: 24px;bottom: 24px;height: 52px;line-height: 50px;padding: 0 24px;box-shadow: 0px 0px 2px 0px #0000000D;box-shadow: 0px 4px 8px 0px #00000014;background-color: #fff;color: #17191B;text-align: right;font-size: 1.7rem;font-weight: 400;border-radius: 1000px;}

@@ -10,14 +10,14 @@
     <title>게시판_일반_목록</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
      
-    <link rel="stylesheet" href="/type/www/css/common.css?ver=0.1">
-    <link rel="stylesheet" href="/type/www/css/main.css?ver=0.1">
-    <!-- <link rel="stylesheet" href="/type/www/css/sub.css?ver=0.1"> -->
-    <link rel="stylesheet" href="/type/www/css/layout.css?ver=0.1">
-    <link rel="stylesheet" href="/type/www/css/component/output.css?ver=0.1">
-    <link rel="stylesheet" href="/type/www/css/styles.css?ver=0.1">
+    <link rel="stylesheet" href="/type/www/css/common.css?ver=0.2">
+    <link rel="stylesheet" href="/type/www/css/main.css?ver=0.2">
+    <!-- <link rel="stylesheet" href="/type/www/css/sub.css?ver=0.2"> -->
+    <link rel="stylesheet" href="/type/www/css/layout.css?ver=0.2">
+    <link rel="stylesheet" href="/type/www/css/component/output.css?ver=0.2">
+    <link rel="stylesheet" href="/type/www/css/styles.css?ver=0.2">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/type/www/css/all.min.css?ver=0.1">
+    <link rel="stylesheet" href="/type/www/css/all.min.css?ver=0.2">
 
     
     
@@ -315,7 +315,59 @@
                             <div class="board-list">
                                 <!-- 검색 입력폼 -->
                                 <div class="search-top-box">
-                                    <div class="sch-filter-box">
+                                    <form id="sendForm" method="post">
+                                        <input type="hidden" name="pageNo" value="1">
+                                        <input type="hidden" name="pagePerCnt" value="10">
+                                        <input type="hidden" name="recordCountPerPage" value="10">
+                                        <input type="hidden" name="MENU_ID" value="840">
+                                        <input type="hidden" name="CONTENTS_NO" value="1">
+                                        <input type="hidden" name="SITE_NO" value="2">
+                                        <input type="hidden" name="BOARD_SEQ" value="41">
+                                        <input type="hidden" name="BBS_SEQ">
+                                        <input type="hidden" name="PWD">
+                                        
+
+
+                                        <div class="sch-filter-box">
+                                            <div class="filter-form row">
+                                                <div class="search-area">
+                                                    <label class="label hide" for="appl-sch-sel1">선택 분류</label>
+                                                    <select id="appl-sch-sel1" class="krds-form-select medium" name="SEARCH_FLD">
+                                                        <option value="">전체</option>
+                                                        <option value="SUBJECT">제목</option>
+                                                        <option value="WRITER">작성자</option>
+                                                    </select>
+                                                    <!-- 검색 입력폼 -->
+                                                    <div class="sch-form-wrap">
+                                                        <div class="sch-input">
+                                                            <input type="text" name="SEARCH" class="krds-input" placeholder="검색어를 입력해주세요" title="검색어 입력" onkeypress="if(event.keyCode == 13){fn_linkPage(1);return false;}">
+                                                            <button type="button" class="krds-btn medium icon ico-search btn_search">
+                                                                <span class="sr-only">검색</span>
+                                                                <i class="svg-icon ico-sch"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- //검색 입력폼 -->
+                                                </div>
+                                                <div class="period">    
+                                                    <div class="optSetDate">
+                                                        <input type="text" class="inp_t" name="START_DT" id="START_DT" title="시작 날짜 입력 (YYYY/MM/DD)" value="" style="width:130px;"><a href="#START_DT" class="date-picker-control" title="달력 보기" id="fd-but-START_DT" role="button" aria-haspopup="true" tabindex="0"><span>&nbsp;</span><span class="fd-screen-reader">달력 보기</span></a>
+                                                        <span class="picker_txt">~</span>
+                                                        <input type="text" class="inp_t" name="END_DT" id="END_DT" title="종료 날짜 입력 (YYYY/MM/DD)" value="" style="width:130px;"><a href="#END_DT" class="date-picker-control" title="달력 보기" id="fd-but-END_DT" role="button" aria-haspopup="true" tabindex="0"><span>&nbsp;</span><span class="fd-screen-reader">달력 보기</span></a>
+                                                    </div>
+                                                    <div class="choose-date">
+                                                        <input type="radio" name="dateRangeRadio" id="date1" value="30">
+                                                        <label for="date1" class="filler-chip krds-btn small tertiary"><i class="svg-icon ico-checkbox"></i>최근 1개월</label>
+                                                        <input type="radio" name="dateRangeRadio" id="date2" value="90">
+                                                        <label for="date2" class="filler-chip krds-btn small tertiary"><i class="svg-icon ico-checkbox"></i>최근 3개월</label>
+                                                        <input type="radio" name="dateRangeRadio" id="date3" value="choose">
+                                                        <label for="date3" class="filler-chip krds-btn small tertiary"><i class="svg-icon ico-checkbox"></i>기간선택</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- <div class="sch-filter-box">
                                         <div class="filter-form">
                                         <div>
                                             <label class="label hide" for="appl-sch-sel1">선택 분류</label>
@@ -325,7 +377,6 @@
                                             <option value="">항목</option>
                                             </select>
                                         </div>
-                                        <!-- 검색 입력폼 -->
                                         <div class="sch-form-wrap">
                                             <div class="sch-input">
                                             <input type="text" class="krds-input" placeholder="검색어를 입력해주세요" title="검색어 입력">
@@ -335,9 +386,8 @@
                                             </button>
                                             </div>
                                         </div>
-                                        <!-- //검색 입력폼 -->
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <!-- //검색 입력폼 -->
 
@@ -390,38 +440,30 @@
                                         <th scope="col">카테고리</th>
                                         <th scope="col">제목</th>
                                         <th scope="col">첨부</th>
-                                        <th scope="col">등록자</th>
                                         <th scope="col">등록일</th>
-                                        <th scope="col">조회수</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td scope="row"><span>공지</span></td>
+                                        <td scope="row">999</td>
                                         <td>조직/인사</td>
                                         <td><a href="#">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림<i class="fa fa-new"></i></a></td>
                                         <td class="ac"><i class="fa fa-file"></i></td>
-                                        <td>관리자</td>
                                         <td>2024.10.15</td>
-                                        <td>9999</td>
                                     </tr>
                                     <tr>
-                                        <td scope="row"><span>공지</span></td>
+                                        <td scope="row">999</td>
                                         <td>조직/인사</td>
                                         <td><a href="#">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림<i class="fa fa-new"></i></a></td>
                                         <td class="ac"><i class="fa fa-file"></i></td>
-                                        <td>관리자</td>
                                         <td>2024.10.15</td>
-                                        <td>9999</td>
                                     </tr>
                                     <tr>
                                         <td scope="row">999</td>
                                         <td>조직/인사</td>
                                         <td><a href="#">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림<i class="fa fa-new"></i></a></td>
                                         <td></td>
-                                        <td>관리자</td>
                                         <td>2024.10.15</td>
-                                        <td>9999</td>
                                     </tr>
                                     </tbody>
                                 </table>
