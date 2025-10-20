@@ -6755,3 +6755,5 @@ input[type=radio]:checked + label.fillter-chip {
     font-size: 19px;
     background-color: #FFF9F2;
 }
+.stacato {padding-left: 10px;position: relative;display: block;}
+.stacato::before{ content: '*';position: absolute;left: 0;}
