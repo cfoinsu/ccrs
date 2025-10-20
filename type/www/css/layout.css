@@ -144,6 +144,7 @@ Version : v1.0
 }
 #header .gnb-wrap > nav .gnb > li .menu-label {
     line-height: 64px;
+    padding-left: 16px;
 }
 
 #header .gnb-wrap > nav .gnb > li.is-active::after {
