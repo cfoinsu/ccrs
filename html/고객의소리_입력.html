@@ -10,14 +10,14 @@
     <title>고객의 소리</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
      
-    <link rel="stylesheet" href="/type/www/css/common.css?ver=0.2">
-    <link rel="stylesheet" href="/type/www/css/main.css?ver=0.2">
-    <!-- <link rel="stylesheet" href="/type/www/css/sub.css?ver=0.2"> -->
-    <link rel="stylesheet" href="/type/www/css/layout.css?ver=0.2">
-    <link rel="stylesheet" href="/type/www/css/component/output.css?ver=0.2">
-    <link rel="stylesheet" href="/type/www/css/styles.css?ver=0.2">
+    <link rel="stylesheet" href="/type/www/css/common.css?ver=0.3">
+    <link rel="stylesheet" href="/type/www/css/main.css?ver=0.3">
+    <!-- <link rel="stylesheet" href="/type/www/css/sub.css?ver=0.3"> -->
+    <link rel="stylesheet" href="/type/www/css/layout.css?ver=0.3">
+    <link rel="stylesheet" href="/type/www/css/component/output.css?ver=0.3">
+    <link rel="stylesheet" href="/type/www/css/styles.css?ver=0.3">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/type/www/css/all.min.css?ver=0.2">
+    <link rel="stylesheet" href="/type/www/css/all.min.css?ver=0.3">
 
     
     
@@ -54,7 +54,7 @@
 							</div>
 							<div class="header-quickmenu-list-box">
 								<ul class="header-quickmenu-list">
-									<li><a href="http://cyber.ccrs.or.kr/" target="_self"><span class="typo">사이버상담부</span></a></li>
+									<li><a href="http://cyber.ccrs.or.kr/" target="_self"><span class="typo">사이버상담</span></a></li>
 									<li><a href="https://www.educredit.or.kr/" target="_self"><span class="typo">신용교육원</span></a>
 									<li><a href="https://counselor.ccrs.or.kr/ccedu/main/main.do" target="_self"><span class="typo">신용상담사</span></a>
 									</li>
@@ -110,7 +110,6 @@
                                     <li><a href="금융연계.html">금융·고용·복지 복합지원</a></li>
                                     <li><a href="신용복지컨설팅.html">컨설팅 지원</a></li>
                                     <li><a href="신용교육프로그램신청_신용교육소개.html">신용교육</a></li>
-                                    <li><a href="신용상담사자격시험.html">신용상담사 자격시험</a></li>
                                     <li><a href="불법사금융알아보기_예방가이드.html">불법사금융 알아보기</a></li>
                                 </ul>
                             </li>
@@ -150,7 +149,7 @@
                                     <li><a href="연혁.html">기관소개</a></li>
                                     <li><a href="사회적가치_목록.html">사회적가치 실현보고서</a></li>
                                     <li><a href="윤리와책임_윤리헌장.html">청렴경영</a></li>
-
+                                    <li><a href="신용상담사자격시험.html">신용상담사</a></li>
                                     <li><a href="지부위치안내.html" target="_blank" title="새창열림">지부위치 안내</a></li>
                                 </ul>
                             </li>
@@ -305,91 +304,11 @@
                                                 <th scope="row"><span class="ico"><em class="blind">필수입력</em></span><label for="title">내용</label></th>
                                                 <td>
                                                     <div class="textarea-wrap">
-                                                    <textarea class="krds-input" placeholder="에디터영역" cols="125" rows="20" name="content" id="content" title="내용"></textarea>
+                                                    <textarea class="krds-input" placeholder="에디터영역" cols="125" rows="20" name="content" id="content" title="내용" maxlength="100"></textarea>
                                                     <p class="textarea-count">
                                                         <span class="count-now">0</span><span class="count-total">/100</span>
                                                     </p>
                                                     </div>
-                                                </td>
-                                            </tr>
-                                            
-                                            <tr>
-                                                <th scope="row"><label for="auto_num">파일업로드</label></th>
-                                                <td>
-                                                    <!-- file upload -->
-                                                    <div class="krds-file-upload line">
-                                                    <!-- 파일 업로드 영역 -->
-                                                    <div class="file-upload">
-                                                        <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
-                                                        <div class="file-upload-btn-wrap">
-                                                        <input type="file" name="myFile" id="fileu-upload" hidden>
-                                                        <label for="fileu-upload">
-                                                            <button type="button" class="krds-btn medium"><i class="svg-icon ico-upload"></i>파일선택</button>
-                                                        </label>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //파일 업로드 영역 -->
-                                                    <!-- 파일 리스트 영역 -->
-                                                    <div class="file-list">
-                                                        <div class="total"><span class="current">3개</span> / 10개</div>
-                                                        <ul class="upload-list">
-                                                        <li>
-                                                            <div class="file-info">
-                                                            <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
-                                                            <div class="btn-wrap">
-                                                                <span class="krds-spinner" role="status">
-                                                                <span class="sr-only">업로드 중</span>
-                                                                </span>
-                                                            </div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="file-info">
-                                                            <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
-                                                            <div class="btn-wrap">
-                                                                <span class="ico-invalid complete">
-                                                                <em class="sr-only">업로드 완료</em>
-                                                                </span>
-                                                            </div>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="file-info">
-                                                            <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
-                                                            <div class="btn-wrap">
-                                                                <button type="button" class="krds-btn medium text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
-                                                            </div>
-                                                            </div>
-                                                        </li>
-                                                        <li class="is-error">
-                                                            <div class="file-info">
-                                                            <div class="file-name">전입재등록신고서 [주민등록법 시행령 : 별지서식 15, 15호의2호] [hwp, 17KB]</div>
-                                                            <div class="btn-wrap">
-                                                                <button type="button" class="krds-btn medium text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
-                                                            </div>
-                                                            </div>
-                                                            <p class="file-hint-invalid">
-                                                            등록 가능한 파일 용량을 초과하였습니다.<br>
-                                                            20MB 미만의 파일만 등록할 수 있습니다.
-                                                            </p>
-                                                        </li>
-                                                        <li>
-                                                            <div class="file-info m-column">
-                                                            <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
-                                                            <div class="btn-wrap">
-                                                                <button type="button" class="krds-btn medium text">다운로드 <i class="svg-icon ico-down"></i></button>
-                                                                <button type="button" class="krds-btn medium text">바로보기 <i class="svg-icon ico-angle right"></i></button>
-                                                            </div>
-                                                            </div>
-                                                        </li>
-                                                        </ul>
-                                                        <div class="upload-delete-btn">
-                                                        <button type="button" class="krds-btn xsmall tertiary">전체 파일 삭제<i class="svg-icon ico-angle right"></i></button>
-                                                        </div>
-                                                    </div>
-                                                    <!-- //파일 리스트 영역 -->
-                                                    </div>
-                                                    <!-- //file upload -->
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -614,7 +533,7 @@
                         <li class="depth3"><a href="#">금융·고용·복지 복합지원</a></li>
                         <li class="depth3"><a href="#">컨설팅 지원</a></li>
                         <li class="depth3"><a href="#">신용교육</a></li>
-                        <li class="depth3"><a href="#">신용상담사 자격시험</a></li>
+                        <li class="depth3"><a href="#">신용상담사</a></li>
                         <li class="depth3"><a href="#">불법사금융 알아보기</a></li>
                     </ul>
                 </li>

@@ -18630,6 +18630,51 @@ a:hover .d-card .c-tit {
   background-color: var(--search-list-sort-btn-color-button-active);
   transition: 0.4s ease-in-out;
 }
+
+.search-list-top .sch-sort .toggleswtich {
+  display: block;
+  transition: var(--krds-transition-base);
+  color: transparent;
+  font-size:0;
+  border: 1px solid #6D7882;
+  border-radius: 6px;
+  background-color: #fff;
+  height: 48px;
+  gap:0;
+}
+.search-list-top .sch-sort .toggleswtich button {
+  text-decoration: none;
+  text-underline-offset: auto;
+  color: transparent;
+  width: 44px;
+  height: 44px;
+}
+.search-list-top .sch-sort .toggleswtich button.tp-gal {
+  background: transparent url(../../img/common/gallery_card.svg) center no-repeat;
+}
+.search-list-top .sch-sort .toggleswtich button.tp-gal.active {
+  background: #F48F01 url(../../img/common/gallery_card_on.svg) center no-repeat;
+  width: 48px;
+  height: 48px;
+  transform:translate(-1px, -1px);
+}
+.search-list-top .sch-sort .toggleswtich button.tp-list {
+  background: transparent url(../../img/common/gallery_list.svg) center no-repeat;
+}
+.search-list-top .sch-sort .toggleswtich button.tp-list.active {
+  background: #F48F01 url(../../img/common/gallery_list_on.svg) center no-repeat;
+  width: 48px;
+  height: 48px;
+  transform:translate(1px, -1px);
+}
+.search-list-top .sch-sort .toggleswtich button:hover {
+  transition: 0.4s ease-in-out;
+}
+.search-list-top .sch-sort .toggleswtich button:active {
+  background-color: var(--search-list-sort-btn-color-button-active);
+  transition: 0.4s ease-in-out;
+}
+
 .search-list-top .sch-sort .m-sort-btn {
   display: none;
 }

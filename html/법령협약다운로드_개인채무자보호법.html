@@ -7,7 +7,7 @@
 	<meta name="keywords" content="신용회복위원회"/>
 	<meta name="description" content="신용회복위원회"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>보도자료_목록</title>
+    <title>협약·법률</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
      
     <link rel="stylesheet" href="/type/www/css/common.css?ver=0.3">
@@ -177,7 +177,7 @@
                             <div class="nav-section">
                                 <a href="공지사항_목록.html" class="nav-section-title">공지사항</a>
                             </div>
-                            <div class="nav-section active">
+                            <div class="nav-section">
                                 <a href="보도자료_목록.html" class="nav-section-title">보도자료</a>
                             </div>
                             <div class="nav-section">
@@ -219,14 +219,14 @@
                                     <li><a href="사회공헌_활동성과_갤러리.html" class="nav-subitem">활동성과</a></li>
                                 </ul>
                             </div>
-                            <div class="nav-section">
+                            <div class="nav-section active">
                                 <button class="nav-section-title">
                                     자료실
                                     <i class="nav-arrow"></i>
                                 </button>
                                 <ul class="nav-subsection">
                                     <li><a href="서식다운로드_목록.html" class="nav-subitem">위원회 서식</a></li>
-                                    <li><a href="법령협약다운로드.html" class="nav-subitem">협약·법률</a></li>
+                                    <li><a href="법령협약다운로드.html" class="nav-subitem active">협약·법률</a></li>
                                     <li><a href="채무조정동의현황.html" class="nav-subitem">채무조정동의 현황</a></li>
                                     <li><a href="연구자료_목록.html" class="nav-subitem">연구자료</a></li>
                                     <li><a href="결산현황_목록.html" class="nav-subitem">결산자료</a></li>
@@ -246,14 +246,15 @@
                             </a>
                             <span class="breadcrumb-separator"></span>
                             <a href="#" class="breadcrumb-item">알림과 홍보 </a>
-
                             <span class="breadcrumb-separator"></span>
-                            <span class="breadcrumb-item current">보도자료</span>
+                            <a href="#" class="breadcrumb-item">자료실</a>
+                            <span class="breadcrumb-separator"></span>
+                            <span class="breadcrumb-item current">협약·법률</span>
                         </nav>
                         <!-- Page Header -->
                         <div class="page-header">
                             <div class="title-wrap">
-                                <h1>보도자료</h1>
+                                <h1>협약·법률</h1>
                                 <div class="page-actions">
 
 
@@ -268,153 +269,175 @@
                             </div>
                         </div>
                         <!-- Content Sections -->
-                        <div class="content-sections g-wrap">
-                            <div class="tab line full">
+                        <div class="content-sections">
+                            <div class="page-description blue">
+                                <span class="info-icon"></span>
+                                법·제도적인 안정성을 갖추기 위해 신용회복위원회와 금융회사간의 협약을 진행하고 이를 준수합니다.
+                                <a href="[신용서식 02]소득증명(진술)서_작성예시.hwp" title="신용회복지원협약 전문 다운로드" class="krds-btn medium primary" download="">신용회복지원협약 전문 다운로드 
+                                    <i class="svg-icon ico-down"></i> </a>
+                            </div>
+                            <div class="tab fill middle wrap">
                                 <ul role="tablist">
-                                    <li id="tab01" role="tab" aria-selected="false" aria-controls="tabpanel01" class="active" data-listener-attached="true">
-                                        <a href="#" class="btn-tab">전체<i class="sr-only created">선택됨</i></a>
+                                    <li id="tab01" role="tab" aria-selected="false" aria-controls="tabpanel01" data-listener-attached="true">
+                                        <button type="button" onclick="goToPage('법령협약다운로드.html')" class="btn-tab">신용회복지원협약</button>
                                     </li>
                                     <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02" data-listener-attached="true">
-                                        <a href="#" class="btn-tab">조직/인사</a>
+                                        <button type="button" onclick="goToPage('법령협약다운로드_법인.html')" class="btn-tab">법인소상공인 신용회복지원협약</button>
                                     </li>
                                     <li id="tab03" role="tab" aria-selected="false" aria-controls="tabpanel03" data-listener-attached="true">
-                                        <a href="#" class="btn-tab">예산/회계</a>
+                                        <button type="button" onclick="goToPage('법령협약다운로드_서민.html')" class="btn-tab">서민의 금융생활 지원에 관한 법률<i class="sr-only created">선택됨</i></button>
                                     </li>
-                                    <li id="tab04" role="tab" aria-selected="false" aria-controls="tabpanel04" data-listener-attached="true">
-                                        <a href="#" class="btn-tab">사업/실적</a>
-                                    </li>
-                                    <li id="tab05" role="tab" aria-selected="false" aria-controls="tabpanel05" data-listener-attached="true">
-                                        <a href="#" class="btn-tab">감사/윤리</a>
-                                    </li>
-                                    <li id="tab06" role="tab" aria-selected="false" aria-controls="tabpanel06" data-listener-attached="true">
-                                        <a href="#" class="btn-tab">입찰/계약</a>
-                                    </li>
-                                    <li id="tab07" role="tab" aria-selected="false" aria-controls="tabpanel07" data-listener-attached="true">
-                                        <a href="#" class="btn-tab">조사/연구</a>
+                                    <li id="tab04" role="tab" aria-selected="false" aria-controls="tabpanel04" class="active" data-listener-attached="true">
+                                        <button type="button" onclick="goToPage('법령협약다운로드_개인채무자보호법.html')" class="btn-tab">개인채무자 보호법<i class="sr-only created">선택됨</i></button>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="board-list">
-                                <!-- 검색 입력폼 -->
-                                <div class="search-top-box">
-                                    <div class="sch-filter-box">
-                                        <div class="filter-form">
-                                        <div>
-                                            <label class="label hide" for="appl-sch-sel1">선택 분류</label>
-                                            <select id="appl-sch-sel1" class="krds-form-select medium">
-                                            <option value="">선택</option>
-                                            <option value="">내용</option>
-                                            <option value="">제목+내용</option>
-                                            <option value="">작성자</option>
-                                            </select>
-                                        </div>
-                                        <!-- 검색 입력폼 -->
-                                        <div class="sch-form-wrap">
-                                            <div class="sch-input">
-                                            <input type="text" class="krds-input" placeholder="검색어를 입력해주세요" title="검색어 입력">
-                                            <button type="button" class="krds-btn medium icon ico-search">
-                                                <span class="sr-only">검색</span>
-                                                <i class="svg-icon ico-sch"></i>
-                                            </button>
+                            <div class="g-conts-area">
+                                <div class="conts-desc">
+                                    각 조문을 클릭하시면 해당 조문을 바로 확인하실 수 있습니다.
+                                </div>
+                                <div class="g-info-box gray">
+                                    <ul class="choose-list">
+                                        <li class="on" role="listitem"><button type="button" class="item">제1장 총칙</button></li>
+                                        <li role="listitem"><button type="button" class="item">제2장 개인채무조정 기준</button></li>
+                                        <li role="listitem"><button type="button" class="item">제3장 개인채무조정 절차</button></li>
+                                        <li role="listitem"><button type="button" class="item">제4장 개인채무조정의 방법</button></li>
+                                        <li role="listitem"><button type="button" class="item">제5장 개인채무조정의 효력</button></li>
+                                        <li role="listitem"><button type="button" class="item">제6장 개인채무조정의 특례</button></li>
+                                        <li role="listitem"><button type="button" class="item">제7장 「소상공인·자영업자 새출발기금 지원 협약」에 따른 채무조정</button></li>
+                                        <li role="listitem"><button type="button" class="item">제8장 보칙</button></li>
+                                        <li role="listitem"><button type="button" class="item">부칙</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="krds-accordion type-line" data-type="multiOpen">
+                                <div class="accordion-item active">
+                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
+                                            class="btn-accordion" aria-controls="accordionCollapseSample02"><span
+                                                class="sec-tit"><strong>제1장 총칙</strong></span></button></h4>
+                                    <div id="accordionCollapseSample02" class="accordion-collapse collapse"
+                                        aria-labelledby="accordionHeaderSample01">
+                                        <div class="accordion-body">
+                                            <div class="conts-desc">
+                                                <p>
+                                                    <strong>제1조(목적)</strong><br>
+                                                    이 협약은 「서민의 금융생활 지원에 관한 법률」(이하 ‘법’이라 한다) 제75조제1항에 따라 신용회복위원회(이하 ‘위원회’라 한다)와 채권금융회사가 개인채무자에 대한 채무조정(이하 ‘개인채무조정’이라 한다)을 효율적이고 신속하게 지원하는 것을 목적으로 한다.<br><br>
+                                                    <strong>제2조(정의)</strong><br>
+                                                    이 협약에서 사용하는 용어의 정의는 다음과 같다.<br>
+                                                    1.‘채권금융회사’란 법 제75조제2항에 따라 위원회와 이 협약을 체결한 자를 말한다.<br>
+                                                    2.‘개인채무자(이하 ‘채무자’라 한다)’란 채권금융회사의 채권을 상환할 의무가 있는 실명의 개인과 개인사업자를 말한다.<br>
+                                                    3.‘채권’이란 채권금융회사가 타인에 대한 신용공여로 해당 채무자에 대하여 상환을 청구할 수 있는 권리를 말한다.<br>
+                                                    4. ‘개인채무조정’이란 채권금융회사에 대하여 채무자가 부담하는 채무의 상환조건을 상환기간 연장, 분할상환, 이자율 조정, 상환유예, 채무감면 등의 방법으로 변경하는 것을 말하며, 신청요건에 따라 신속채무조정, 사전채무조정, 채무조정으로 구분한다.
+                                                </p>
                                             </div>
                                         </div>
-                                        <!-- //검색 입력폼 -->
-                                        </div>
+                                        <!-- //accordion contents -->
                                     </div>
                                 </div>
-                                <!-- //검색 입력폼 -->
+                                <div class="accordion-item active">
+                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
+                                            class="btn-accordion" aria-controls="accordionCollapseSample02"><span
+                                                class="sec-tit"><strong>제2장 개인채무조정 기준</strong></span></button></h4>
+                                    <div id="accordionCollapseSample02" class="accordion-collapse collapse"
+                                        aria-labelledby="accordionHeaderSample01">
+                                        <div class="accordion-body">
+                                            <div class="conts-desc">
+                                                <p>
+                                                    <strong>제1조(목적)</strong><br>
+                                                    이 협약은 「서민의 금융생활 지원에 관한 법률」(이하 ‘법’이라 한다) 제75조제1항에 따라 신용회복위원회(이하 ‘위원회’라 한다)와 채권금융회사가 개인채무자에 대한 채무조정(이하 ‘개인채무조정’이라 한다)을 효율적이고 신속하게 지원하는 것을 목적으로 한다.<br><br>
+                                                    <strong>제2조(정의)</strong><br>
+                                                    이 협약에서 사용하는 용어의 정의는 다음과 같다.<br>
+                                                    1.‘채권금융회사’란 법 제75조제2항에 따라 위원회와 이 협약을 체결한 자를 말한다.<br>
+                                                    2.‘개인채무자(이하 ‘채무자’라 한다)’란 채권금융회사의 채권을 상환할 의무가 있는 실명의 개인과 개인사업자를 말한다.<br>
+                                                    3.‘채권’이란 채권금융회사가 타인에 대한 신용공여로 해당 채무자에 대하여 상환을 청구할 수 있는 권리를 말한다.<br>
+                                                    4. ‘개인채무조정’이란 채권금융회사에 대하여 채무자가 부담하는 채무의 상환조건을 상환기간 연장, 분할상환, 이자율 조정, 상환유예, 채무감면 등의 방법으로 변경하는 것을 말하며, 신청요건에 따라 신속채무조정, 사전채무조정, 채무조정으로 구분한다.
+                                                </p>
+                                            </div>
 
-                                <!-- 검색 결과 : 리스트 상단 -->
-                                <div class="search-list-top">
-                                <ul class="sch-info" aria-live="polite">
-                                    <li>검색 결과 <span class="point">24</span>건</li>
-                                </ul>
-                                <ul class="sch-sort">
-                                    <li class="m-hide">
-                                    <strong class="sort-label"><label for="search_result_count">목록 표시 개수</label></strong>
-                                    <select class="krds-form-select-sort" id="search_result_count">
-                                        <option>10개</option>
-                                        <option>9개</option>
-                                    </select>
-                                    </li>
- 
-                                </ul>
+                                        </div>
+                                        <!-- //accordion contents -->
+                                    </div>
                                 </div>
-                                <!-- //검색 결과 : 리스트 상단 -->
-                                <!-- table -->
-                                <div class="krds-table-wrap">
-                                <table class="tbl col board vc">
-                                    <caption>게시판에 대한 표로 제목1,제목2에 대한 내용으로 구성되어 있으며 제목1은 제목1-1,제목1-2,제목1-3으로 구성되어있다.</caption>
-                                    <colgroup>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    <col>
-                                    </colgroup>
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">번호</th>
-                                        <th scope="col">제목</th>
-                                        <th scope="col">첨부</th>
-                                        <th scope="col">등록일</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td scope="row">8</td>
-                                        <td class="al"><a href="보도자료_상세.html">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림</a></td>
-                                        <td class="ac"><i class="fa fa-file"></i></td>
-                                        <td>2024.10.15</td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">7</td>
-                                        <td class="al"><a href="보도자료_상세.html">[안내] 한눈에 보는 폐업지원 연계 프로그램</a></td>
-                                        <td class="ac"><i class="fa fa-file"></i></td>
-                                        <td>2024.10.15</td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">6</td>
-                                        <td class="al"><a href="보도자료_상세.html">[중소벤처기업부] 2025년 재창업활성화 유공포상 및 사례공모전 실시</a></td>
-                                        <td></td>
-                                        <td>2024.10.15</td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">5</td>
-                                        <td class="al"><a href="보도자료_상세.html">2025 신용회복 이용수기 공모전 수상작 발표</a></td>
-                                        <td></td>
-                                        <td>2024.10.15</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                <div class="accordion-item active">
+                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
+                                            class="btn-accordion" aria-controls="accordionCollapseSample02"><span
+                                                class="sec-tit"><strong>제3장 개인채무조정 절차</strong></span></button></h4>
+                                    <div id="accordionCollapseSample02" class="accordion-collapse collapse"
+                                        aria-labelledby="accordionHeaderSample01">
+                                        <div class="accordion-body">
+                                            <div class="conts-desc">
+                                                <p>
+                                                    <strong>제1조(목적)</strong><br>
+                                                    이 협약은 「서민의 금융생활 지원에 관한 법률」(이하 ‘법’이라 한다) 제75조제1항에 따라 신용회복위원회(이하 ‘위원회’라 한다)와 채권금융회사가 개인채무자에 대한 채무조정(이하 ‘개인채무조정’이라 한다)을 효율적이고 신속하게 지원하는 것을 목적으로 한다.<br><br>
+                                                    <strong>제2조(정의)</strong><br>
+                                                    이 협약에서 사용하는 용어의 정의는 다음과 같다.<br>
+                                                    1.‘채권금융회사’란 법 제75조제2항에 따라 위원회와 이 협약을 체결한 자를 말한다.<br>
+                                                    2.‘개인채무자(이하 ‘채무자’라 한다)’란 채권금융회사의 채권을 상환할 의무가 있는 실명의 개인과 개인사업자를 말한다.<br>
+                                                    3.‘채권’이란 채권금융회사가 타인에 대한 신용공여로 해당 채무자에 대하여 상환을 청구할 수 있는 권리를 말한다.<br>
+                                                    4. ‘개인채무조정’이란 채권금융회사에 대하여 채무자가 부담하는 채무의 상환조건을 상환기간 연장, 분할상환, 이자율 조정, 상환유예, 채무감면 등의 방법으로 변경하는 것을 말하며, 신청요건에 따라 신속채무조정, 사전채무조정, 채무조정으로 구분한다.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <!-- //accordion contents -->
+                                    </div>
                                 </div>
-                                <!-- //table -->
-                                <!-- pagination -->
-                                <div class="krds-pagination">
-                                <span class="page-navi prev disabled" href="#">이전</span>
-                                <div class="page-links">
-                                    <a class="page-link" href="#">1</a>
-                                    <a class="page-link" href="#">2</a>
-                                    <a class="page-link" href="#">3</a>
-                                    <a class="page-link active" href="#"><span class="sr-only">현재페이지 </span>4</a>
-                                    <a class="page-link" href="#">5</a>
-                                    <a class="page-link" href="#">6</a>
-                                    <a class="page-link" href="#">7</a>
-                                    <a class="page-link" href="#">8</a>
-                                    <span class="page-link link-dot"></span>
-                                    <a class="page-link" href="#">99</a>
+                                <div class="accordion-item active">
+                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
+                                            class="btn-accordion" aria-controls="accordionCollapseSample02"><span
+                                                class="sec-tit"><strong>제4장 개인채무조정의 방법</strong></span></button></h4>
+                                    <div id="accordionCollapseSample02" class="accordion-collapse collapse"
+                                        aria-labelledby="accordionHeaderSample01">
+                                        <div class="accordion-body">
+                                            <div class="conts-desc">
+                                                <p>
+                                                    <strong>제1조(목적)</strong><br>
+                                                    이 협약은 「서민의 금융생활 지원에 관한 법률」(이하 ‘법’이라 한다) 제75조제1항에 따라 신용회복위원회(이하 ‘위원회’라 한다)와 채권금융회사가 개인채무자에 대한 채무조정(이하 ‘개인채무조정’이라 한다)을 효율적이고 신속하게 지원하는 것을 목적으로 한다.<br><br>
+                                                    <strong>제2조(정의)</strong><br>
+                                                    이 협약에서 사용하는 용어의 정의는 다음과 같다.<br>
+                                                    1.‘채권금융회사’란 법 제75조제2항에 따라 위원회와 이 협약을 체결한 자를 말한다.<br>
+                                                    2.‘개인채무자(이하 ‘채무자’라 한다)’란 채권금융회사의 채권을 상환할 의무가 있는 실명의 개인과 개인사업자를 말한다.<br>
+                                                    3.‘채권’이란 채권금융회사가 타인에 대한 신용공여로 해당 채무자에 대하여 상환을 청구할 수 있는 권리를 말한다.<br>
+                                                    4. ‘개인채무조정’이란 채권금융회사에 대하여 채무자가 부담하는 채무의 상환조건을 상환기간 연장, 분할상환, 이자율 조정, 상환유예, 채무감면 등의 방법으로 변경하는 것을 말하며, 신청요건에 따라 신속채무조정, 사전채무조정, 채무조정으로 구분한다.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <!-- //accordion contents -->
+                                    </div>
                                 </div>
-                                <a class="page-navi next" href="#">다음</a>
+                                <div class="accordion-item active">
+                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
+                                            class="btn-accordion" aria-controls="accordionCollapseSample02"><span
+                                                class="sec-tit"><strong>제5장 개인채무조정의 효력</strong></span></button></h4>
+                                    <div id="accordionCollapseSample02" class="accordion-collapse collapse"
+                                        aria-labelledby="accordionHeaderSample01">
+                                        <div class="accordion-body">
+                                            <div class="conts-desc">
+                                                <p>
+                                                    <strong>제1조(목적)</strong><br>
+                                                    이 협약은 「서민의 금융생활 지원에 관한 법률」(이하 ‘법’이라 한다) 제75조제1항에 따라 신용회복위원회(이하 ‘위원회’라 한다)와 채권금융회사가 개인채무자에 대한 채무조정(이하 ‘개인채무조정’이라 한다)을 효율적이고 신속하게 지원하는 것을 목적으로 한다.<br><br>
+                                                    <strong>제2조(정의)</strong><br>
+                                                    이 협약에서 사용하는 용어의 정의는 다음과 같다.<br>
+                                                    1.‘채권금융회사’란 법 제75조제2항에 따라 위원회와 이 협약을 체결한 자를 말한다.<br>
+                                                    2.‘개인채무자(이하 ‘채무자’라 한다)’란 채권금융회사의 채권을 상환할 의무가 있는 실명의 개인과 개인사업자를 말한다.<br>
+                                                    3.‘채권’이란 채권금융회사가 타인에 대한 신용공여로 해당 채무자에 대하여 상환을 청구할 수 있는 권리를 말한다.<br>
+                                                    4. ‘개인채무조정’이란 채권금융회사에 대하여 채무자가 부담하는 채무의 상환조건을 상환기간 연장, 분할상환, 이자율 조정, 상환유예, 채무감면 등의 방법으로 변경하는 것을 말하며, 신청요건에 따라 신속채무조정, 사전채무조정, 채무조정으로 구분한다.
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <!-- //accordion contents -->
+                                    </div>
                                 </div>
-                                <!-- //pagination -->
+
+
                             </div>
-                            <div class="button-area">
-                                <!-- button -->
-                                <button type="button" onclick="goToPage('보도자료_동의.html')" class="krds-btn primary">작성글 목록</button>
-                                <button type="button" onclick="goToPage('보도자료_등록.html')" class="krds-btn primary">글쓰기</button>
-                                <!-- //button -->
-                            </div>
+                            
+                            
                         </div>
+
                         <!-- //Content Sections -->
                         <!-- Feedback Section -->
                         <div class="feedback-section noprint">

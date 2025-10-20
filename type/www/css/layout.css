@@ -300,11 +300,18 @@ Version : v1.0
     top: 140px;
     height: 312px;
 }
-
+#header.is-active .gnb-wrap nav .gnb li a {
+    padding-left: 16px;
+}
 #header.is-active .gnb-wrap nav .gnb > li .depth2 {
     opacity: 1;
     visibility: visible;
     min-height: inherit;
+}
+#header.is-active .gnb-wrap nav .gnb > li.is-active .depth2 {
+    background: #FFF9F2;
+    top: 64px;
+    padding-top: 20px;
 }
 
 /* Header Styles */
@@ -833,6 +840,17 @@ Version : v1.0
     line-height: 1.6;
     transition: all 0.3s;
     padding-left: calc(1.4rem - 2px);
+}
+.all-menu > nav .all-menu-list > li .depth4 > li {
+    color: var(--text-color1);
+    font-size: 1.4rem;
+    line-height: 1.8;
+    transition: all 0.3s;
+    padding-left: 2rem;
+}
+
+.all-menu > nav .all-menu-list > li .depth4 > li > a:hover {
+    color: var(--main-color1);
 }
 
 .all-menu.is-active {
@@ -1756,7 +1774,7 @@ main.map-content .container {max-width: 100%;}
 .map-content .content-layout .sidebar.on .sideba-btn i {transform: rotate(90deg) scaleX(-1);}
 .map-content .content-layout .sidebar-header {background:#fff;padding:5px 10px;border-radius:0;text-align: left;color:#474E55;margin-bottom: 0;}
 .map-content .content-layout .sidebar-header p {text-align: center;font-size: 14px;color:#474E55;}
-.map-content .content-layout .sidebar-scroll-nav {max-height: calc(100vh - 106px);overflow: auto;border-top: 1px solid #E6E8EA;}
+.map-content .content-layout .sidebar-scroll-nav {max-height: calc(100vh - 106px);height: calc(100vh - 106px);overflow: auto;border-top: 1px solid #E6E8EA;}
 .sidebar-scroll-nav .target-section {border-bottom: 1px solid #E6E8EA;padding:24px;}
 .sidebar-scroll-nav .target-section .map-tit {position: relative;font-size: 1.7rem;font-weight: 700;color: #17191b;display: -webkit-box;overflow: hidden;text-overflow: ellipsis;-webkit-box-orient: vertical;-webkit-line-clamp: 1;padding-right: 20px;}
 .sidebar-scroll-nav .target-section .map-tit::after {content: '';position: absolute;width: 20px;height: 20px;right:0;top:0;background: url(../img/icons/arrow-down.svg) center no-repeat;}
@@ -1813,14 +1831,14 @@ dl.flex-list {
     padding: 10px 0;
 }
 .flex-list dt {
-    flex-basis: 80px;
+    flex-basis: 100%;
     font-weight: bold;
     padding: 5px 10px 5px 0;
 }
 
 .flex-list dd {
     /* 나머지 공간을 채우도록 설정 */
-    flex-basis: calc(100% - 80px);
+    flex-basis: 100%;
     /* 또는 flex-grow: 1; */
     padding: 5px 0;
     margin: 0;
