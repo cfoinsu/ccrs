@@ -7867,15 +7867,15 @@ caption {
   font-weight: 700;
   font-size: 1.9rem;
   line-height: 150%;
+  display: -webkit-box;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .gallery-item .gall-text .gall-txt {
   display:none;
-}
-.gallery-item .gall-text .gall-tit .ic-new {
-  display: inline-block;
-  background:url(../../img/icons/ico_new.svg) no-repeat center;
-  width: 16px;
-  height: 16px;
 }
 .krds-structured-list .card-btn {
   position: absolute;
@@ -7925,6 +7925,7 @@ caption {
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
 }
 .krds-structured-list.gallery.utube .card-top img {
   width: 310px;
@@ -18710,7 +18711,7 @@ a:hover .d-card .c-tit {
 .search-list-top .sch-info li:not(:last-child)::after,
 .search-list-top .sch-sort li:not(:last-child)::after {
   content: "";
-  display: inline-flex;
+  display: none;
   width: var(--search-list-width-border);
   height: var(--krds-size-height-2);
   background-color: var(--search-list-color-border);

@@ -1780,7 +1780,7 @@ main.map-content .container {max-width: 100%;}
 .map-content .content-layout .sidebar-header p {text-align: center;font-size: 14px;color:#474E55;}
 .map-content .content-layout .sidebar-scroll-nav {max-height: calc(100vh - 106px);height: calc(100vh - 106px);overflow: auto;border-top: 1px solid #E6E8EA;}
 .sidebar-scroll-nav .target-section {border-bottom: 1px solid #E6E8EA;padding:24px;}
-.sidebar-scroll-nav .target-section .map-tit {position: relative;font-size: 1.7rem;font-weight: 700;color: #17191b;display: -webkit-box;overflow: hidden;text-overflow: ellipsis;-webkit-box-orient: vertical;-webkit-line-clamp: 1;padding-right: 20px;}
+.sidebar-scroll-nav .target-section .map-tit {position: relative;font-size: 1.7rem;font-weight: 700;color: #17191b;display: block;padding-right: 20px;position:relative;}
 .sidebar-scroll-nav .target-section .map-tit::after {content: '';position: absolute;width: 20px;height: 20px;right:0;top:0;background: url(../img/icons/arrow-down.svg) center no-repeat;}
 .sidebar-scroll-nav .target-section.active .map-tit::after {content: '';position: absolute;width: 20px;height: 20px;right:0;top:0;background: url(../img/icons/arrow-top.svg) center no-repeat;}
 .sidebar-scroll-nav .target-section.active {background-color: #FFF6EA;}
@@ -1803,7 +1803,7 @@ main.map-content .container {max-width: 100%;}
 .subway-tag.nb08 {background-color: #e51e6e;}
 .subway-tag.nb09 {background-color: #d1a62c;}
 .map-content .content-area {position: relative;max-height: calc(100vh - 75px);overflow: hidden; width: 100%;}
-.map-content .content-area .g-imag {margin-bottom: 0;}
+.map-content .content-area .g-imag {margin-bottom: 0;height: 100%;}
 /*.map-content .content-area .g-imag img {object-fit: none;}*/
 .map-content .content-area .ab_note {position: absolute;right: 24px;bottom: 24px;height: 52px;line-height: 50px;padding: 0 24px;box-shadow: 0px 0px 2px 0px #0000000D;box-shadow: 0px 4px 8px 0px #00000014;background-color: #fff;color: #17191B;text-align: right;font-size: 1.7rem;font-weight: 400;border-radius: 1000px;}
 
