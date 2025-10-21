@@ -314,7 +314,8 @@ body {
 }
 
 .page-description.blue {
-    background: linear-gradient(91deg, #E1EFFB 0%, #CBE4F8 100%);
+    background: url(../images/img/bg_content_top.png) center no-repeat;
+    background-size: cover;
     padding: 18px 20px 18px 32px;
     align-items: center;
 }

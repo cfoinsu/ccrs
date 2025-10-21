@@ -2592,7 +2592,7 @@ caption {
   --krds-tab--full-button-mobile-font-size: var(--krds-mobile-font-size-heading-small);
   --krds-tab--line-button-padding: var(--krds-padding-2);
   --krds-tab--fill-button-padding: var(--krds-padding-3);
-  --krds-tab--fill-button-radius: var(--krds-radius-medium2);
+  --krds-tab--fill-button-radius: var(--krds-radius-medium3);
   --krds-tab--conts-padding-top: var(--krds-padding-10);
   --krds-tab--mobile-button-trigger-size-height: var(--krds-size-height-7);
   --krds-tab--mobile-button-trigger-padding-x: var(--krds-padding-6);
@@ -2714,25 +2714,38 @@ caption {
 }
 .tab.fill .active .btn-tab {
   background-color: var(--krds-tab--fill-button-color-action-active);
-  border-color: var(--krds-tab--fill-button-color-border-active) !important;
+  border-color: var(--krds-tab--fill-button-color-border) !important;
   color: var(--krds-tab--fill-button-color-text);
+}
+.tab.fill.full .active .btn-tab {
+  background-color: #fff;
+  border: 2px solid #F48F01 !important;
+  color: #F48F01 !important;
+  border-left: 2px solid #F48F01;
+  border-bottom: 0 !important;
+  margin-left: -2px;
 }
 .tab.fill.full .btn-tab {
   border-color: var(--krds-tab--fill-button-color-border);
+  border-bottom: 2px solid #F48F01;
 }
 .tab.fill.full > ul > li + li .btn-tab {
   border-left: none;
 }
 .tab.fill.full > ul > li .btn-tab {
-  border-radius: 0;
+  border-top-left-radius: var(--krds-tab--fill-button-radius);
+  border-top-right-radius: var(--krds-tab--fill-button-radius);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .tab.fill.full > ul > li:first-of-type .btn-tab {
   border-top-left-radius: var(--krds-tab--fill-button-radius);
-  border-bottom-left-radius: var(--krds-tab--fill-button-radius);
+  border-top-right-radius: var(--krds-tab--fill-button-radius);
+  margin-left: 0;
 }
 .tab.fill.full > ul > li:last-of-type .btn-tab {
+  border-top-left-radius: var(--krds-tab--fill-button-radius);
   border-top-right-radius: var(--krds-tab--fill-button-radius);
-  border-bottom-right-radius: var(--krds-tab--fill-button-radius);
 }
 .tab.middle.fill>ul {
   flex-wrap: wrap;
