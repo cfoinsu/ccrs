@@ -2726,7 +2726,7 @@ caption {
   margin-left: -2px;
 }
 .tab.fill.full .btn-tab {
-  border-color: var(--krds-tab--fill-button-color-border);
+  border-color: #D2D6DA;
   border-bottom: 2px solid #F48F01;
 }
 .tab.fill.full > ul > li + li .btn-tab {
