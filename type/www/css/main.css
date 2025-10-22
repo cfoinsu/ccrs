@@ -100,7 +100,8 @@
     width: 40px;
     height: 40px;
     border: none;
-    background: transparent;
+    background: #F48F01;
+    border-radius: 1000px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -109,9 +110,13 @@
 
 .search-icon-white {
     position: absolute;
+    display: block;
     top: 50%;
     left: 50%;
+    width: 20px;
+    height: 20px;
     transform: translate(-50%, -50%);
+    background: url(../images/main/icon_search.svg) center no-repeat;
 }
 
 .search-tags {
