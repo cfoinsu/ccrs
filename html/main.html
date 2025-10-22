@@ -9,15 +9,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>신용회복위원회</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
-	<link rel="stylesheet" href="/type/www/css/styles.css?ver=0.6">
-	<link rel="stylesheet" href="/type/www/css/common.css?ver=0.6">
-	<link rel="stylesheet" href="/type/www/css/main.css?ver=0.6">
-	<link rel="stylesheet" href="/type/www/css/all.min.css?ver=0.6">
-	<!-- <link rel="stylesheet" href="/type/www/css/sub.css?ver=0.6"> -->
-    <link rel="stylesheet" href="/type/www/css/layout.css?ver=0.6">
-	<link rel="stylesheet" href="/type/www/css/component/output.css?ver=0.6">
-    <link rel="stylesheet" href="/type/www/css/plugins/swiper.min.css?ver=0.6">
-    <!-- <link rel="stylesheet" href="/type/www/css/webfonts.css?ver=0.6"> -->
+	<link rel="stylesheet" href="/type/www/css/styles.css?ver=0.7">
+	<link rel="stylesheet" href="/type/www/css/common.css?ver=0.7">
+	<link rel="stylesheet" href="/type/www/css/main.css?ver=0.7">
+	<link rel="stylesheet" href="/type/www/css/all.min.css?ver=0.7">
+	<!-- <link rel="stylesheet" href="/type/www/css/sub.css?ver=0.7"> -->
+    <link rel="stylesheet" href="/type/www/css/layout.css?ver=0.7">
+	<link rel="stylesheet" href="/type/www/css/component/output.css?ver=0.7">
+    <link rel="stylesheet" href="/type/www/css/plugins/swiper.min.css?ver=0.7">
+    <!-- <link rel="stylesheet" href="/type/www/css/webfonts.css?ver=0.7"> -->
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 	<!-- end custom head snippets -->
@@ -34,8 +34,47 @@
 	    <a href="#contents">skip navigation</a>
 	</div>
 	<div id="container">
-	    <!-- header:s -->
+		<!-- header:s -->
 	    <header id="header" class="header">
+			
+		<!-- topbanner -->
+		<div class="top-banner slidetopbox show">
+			<div class="swiper-container topswiper" id="topslider" style="width: 100%;">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="/type/www/images/bg/bg_top_banner01.png" alt="">
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+				<script>
+					new Swiper('.topswiper', {
+						spaceBetween: 0,
+						centeredSlides: true,
+						autoplay: {
+							delay: 5000,
+							disableOnInteraction: false,
+						},
+						loop:true,
+						pagination: {
+							el: '.swiper-pagination',
+							clickable: true,
+						},
+					});
+				</script>
+			</div>
+			<div class="containe">
+				<div class="top-banner-close">
+					<button type="button" class="top-banner-hide-1day">
+						<span>1일 동안 보지 않기</span>
+					</button>
+					<button type="button" class="top-banner-close-btn">
+						<span class="hide sr-only">배너닫기</span>
+						<i class="topbanner_close"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- //topbanner -->
 			<!-- Utility Bar -->
 			<div class="utility-bar">
 				 <div class="container">
@@ -302,6 +341,7 @@
 												</div>
 											</div>
 										</div>
+										<div class="swiper-pagination"></div>
 									</div>
 									<script>
 										var swiper = new Swiper("#mainslider02", {
@@ -914,30 +954,16 @@
 		<div class="search-area-header">
 				<label for="searchText" class="hide">검색</label>
 				<input type="text" name="commonSearchText" id="searchText" placeholder="검색어를 입력하세요" onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요'">
-				<a class="btn-search-header" onclick="javascript:fn_commonSearch(1);"></a>
+				<a class="btn-search-header"></a>
 		</div>
-		<div class="result-title">
-			<h5>검색결과</h5><span id="common_total_cnt" class="sp">0</span><h5> 건</h5>
-		</div>
+
 		<a href="#" class="btn-close">
 			<img src="/type/www/img/icons/ico_close.svg" alt="검색메뉴 닫기">
 		</a>
-		<div class="result-area">
-			<div id="commonSearchItemDiv" class="list-body" style="margin-bottom: 24px;">
-				
-			</div>
-			<div id="commonSearchPagenationDiv" class="pagenation">
-				
-			</div>
-		</div>
 	</div>
 	<!-- 인트로영역 -->
-	<div class="intro" id="popup-intro">
-		<div class="close btn01"></div>
-		<div class="close btn02" id="hideOneDayBtn"></div>
-		<a href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_self" class="introlink link01" title="사이버상담부"></a>
-		<a href="https://www.educredit.or.kr/ccedu/main/main.do" target="_self" class="introlink link02" title="신용교육원"></a>
-		<a href="https://counselor.ccrs.or.kr/ccedu/main/main.do" target="_self" class="introlink link03" title="신용상담사"></a>
+	<div class="intro show" id="popup-intro">
+		<button type="button" class="close btn01"></button>
 		<div class="img-logo" style="text-align: center;">
 			<img src="/type/www/img/intro/Logo.png" alt="신용회복위원회">
 		</div>
@@ -953,19 +979,50 @@
 		<div class="intro-linkbox">
 			<div class="boxLcol">
 				<p class="bigtit">처음 방문하셨나요?</p>
-				<p class="contsDesc">나에게 맞는 채무조정을 알아보세요.</p>
-				<a href="#" class="link white arrow001">인터넷상담신청</a>
-				<a href="#" class="link white arrow002">방문예약신청</a>
-				<a href="#" class="link white arrow003">나에게 맞는 채무조정 찾기</a>
-				<a href="채무조정제도비교_장단점비교.html" class="link white arrow004">채무조정제도 비교</a>
+				<p class="contsDesc">나에게 맞는 채무조정을<br>알아보세요.</p>
+				<div class="boxlinkbottom">
+					<a href="#" class="arrowlink-w half">인터넷상담신청</a>
+					<a href="#" class="arrowlink-w half">방문예약신청</a>
+					<a href="#" class="arrowlink-w full">나에게 맞는 채무조정 찾기</a>
+					<a href="채무조정제도비교_장단점비교.html" class="arrowlink-w full">채무조정제도 비교</a>
+				</div>
 			</div>
-			<div class="boxRtop">
-				<p class="boxtit">사이버상담</p>
-				<a href="#" class="iconlink"></a>
+			<div class="boxRcol">
+				<div class="boxRtop">
+					<p class="boxtit">사이버상담</p>
+					<div class="cyberlinkbox">
+						<a href="#" class="iconlink ico_cyber01">나의 진행상황</a>
+						<a href="#" class="iconlink ico_cyber02">재조정신청</a>
+						<a href="#" class="iconlink ico_cyber03">협의서체결안내</a>
+						<a href="#" class="iconlink ico_cyber04">수정조정신청</a>
+						<a href="#" class="iconlink ico_cyber05">소액대출신청</a>
+						<a href="#" class="iconlink ico_cyber06">제증명발급</a>
+					</div>
+				</div>
+				<div class="boxRbottom">
+					<div class="edubox">
+						<p class="boxtit">신용교육원</p>
+						<div class="usefullinkbox">
+							<a href="#" class="arrowlink-s">온라인 신용교육</a>
+							<a href="#" class="arrowlink-s">찾아가는 신용교육</a>
+						</div>
+					</div>
+					<div class="textbox">
+						<p class="boxtit">신용상담사 자격시험</p>
+						<div class="usefullinkbox">
+							<a href="#" class="arrowlink-s">응시하기</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="boxRbottom"></div>
 		</div>
-
+		<div class="intro-hide">
+			<div class="krds-form-check">
+				<input type="checkbox" name="chk_1" id="chk_1">
+				<label for="chk_1">오늘 하루 보지 않기</label>
+			</div>
+			<button type="button" class="close btn02">닫기</button>
+		</div>
 	</div>
 	<!-- //인트로영역 -->
 	<script type="text/javascript">

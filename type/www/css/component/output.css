@@ -8843,38 +8843,6 @@ caption {
   gap: var(--krds-gap-3);
 }
 
-.swiper-pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  position: relative;
-  height: var(--krds-size-height-6);
-}
-.swiper-pagination .swiper-pagination-bullet {
-  width: var(--krds-size-height-1);
-  height: var(--krds-size-height-1);
-  background-color: var(--krds-light-color-element-gray);
-  opacity: 1;
-}
-.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: 2rem;
-  border-radius: var(--krds-radius-max);
-  background-color: var(--krds-light-color-element-primary);
-}
-.swiper-pagination.swiper-pagination-fraction {
-  gap: var(--krds-gap-2);
-  padding: 0 var(--krds-padding-6);
-  color: var(--krds-light-color-text-basic);
-  font-weight: var(--krds-font-weight-bold);
-  border: var(--krds-light-border-width-variable-regular) solid var(--krds-light-color-border-gray-light);
-  border-radius: var(--krds-radius-max);
-  background-color: var(--krds-light-color-surface-white);
-}
-.swiper-pagination.swiper-pagination-fraction .swiper-pagination-current {
-  color: var(--krds-light-color-text-secondary);
-}
-
 .swiper-controller {
   display: flex;
   align-items: center;

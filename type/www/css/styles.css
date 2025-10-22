@@ -318,6 +318,9 @@ body {
     background-size: cover;
     padding: 36px;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
 }
 .page-description.bgBlue p {
     display: block;
@@ -327,7 +330,7 @@ body {
     text-align: center;
 }
 .page-description.bgBlue:has(.krds-btn) p {
-    text-align: left;
+    margin-bottom: 0;
 }
 .page-description.bgBlue p .fBlue{
     color: #2D51CA;
@@ -343,9 +346,15 @@ body {
 }
 
 .page-description .btn-red {
-    background: #fff;
-    border-color: var(--krds-light-color-border-point);
-    color: var(--krds-light-color-border-point);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #D63D4A;
+    border-color: #D63D4A;
+    border-radius: 24px;
+    box-shadow: 5px 5px 15px 0px #0000002E;
+    padding: 0 16px;
+    color: #fff;
 }
 
 /* .page-description .btn-red:hover {
@@ -353,9 +362,12 @@ body {
     border-color: var(--krds-light-color-border-point);
     color: #fff;
 } */
-.page-description .btn-red .fa-youtube {
-    color: var(--krds-light-color-border-point);
-    font-size: 3rem;
+.page-description .icon_youtube {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url(../img/icons/ico_youtube_white.svg) no-repeat center;
+    background-size: contain;
 }
 
 .page-description strong {
@@ -1179,6 +1191,7 @@ body {
 
 .btn-primary:hover {
     background-color: var(--krds-light-color-button-primary-hover);
+    color: #fff;
 }
 
 .btn-primary:focus {
@@ -3385,7 +3398,7 @@ box-shadow: 0px 8px 16px 0px #0000001F;
     border-radius: 24px 0 0 24px;
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
     padding: 20px 0;
-    z-index: 10;
+    z-index: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6550,85 +6563,7 @@ td.beuti-yellow::after {
     background-color: transparent;
     border: none;
 }
-/* 인트로 추가 */
-
-.intro {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #f8f8f8 url(../images/bg/bg_intro01.png) no-repeat;
-    transition: all 0.3s ease;
-    z-index: 1000;
-    top:-120vh;
-}
-.intro.show {
-    top: 0;
-}
-.intro .introlink {
-    position: absolute;
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-
-.intro .close {
-    position: absolute;
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-.intro.remove-intro {
-    overflow: hidden;
-}
-
-.intro .introlink.link01{
-    width: 760px;
-    height: 250px;
-    left: 62%;
-    top:45%;
-    transform: translateX(-50%) translateY(-50%);
-}
-.intro .introlink.link02{
-    width: 370px;
-    height: 230px;
-    left: 42%;
-    top:60%;
-}
-.intro .introlink.link03{
-    width: 370px;
-    height: 230px;
-    left: 62%;
-    top:60%;
-}
-
-
-.intro .close {
-    position: absolute;
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-.intro .close.btn01 {
-    right: 40px;
-    top: 40px;
-    width: 32px;
-    height: 32px;
-}
-.intro .close.btn02 {
-    left: 56vw;
-    bottom: 2vh;
-    width: 85px;
-    height: 40px;
-}
-.intro.remove-intro {
-    overflow: hidden;
-    top:-120vh;
-}
+/* 노데이터 */
 .board-nodata {
     display: block;
     background: url(../img/contents/png/icon_nodata.png) top 20px center no-repeat;
