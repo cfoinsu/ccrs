@@ -6791,3 +6791,27 @@ input[type=radio]:checked + label.fillter-chip {
 .gallery-item:has(.ic-new) .ic-new {
     display: none;
 }
+.beauty-tit {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 50px;
+}
+.beauty-tit p {
+    text-align: center;
+    display: inline;
+    background: linear-gradient(transparent 65%, #FFE0A3 0);
+}
+/* boxi콘텐츠 - Flexbox 기반 */
+.boxi-content-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 16px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.boxi-content-flex>.g-img {
+    width: 482px;
+}
+.g-grid-wrap.contect {
+    margin-top: 80px;
+}

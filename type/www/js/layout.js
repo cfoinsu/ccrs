@@ -470,93 +470,14 @@ $(document).ready(function() {
         }
     });
 });
-$(function() {
-  // 배너 HTML 블록
-//   const topBanner = `
-//   <!-- topbanner -->
-//   <div class="top-banner slidetopbox show">
-//       <div class="swiper-container topswiper" id="topslider" style="width: 100%;">
-//           <div class="swiper-wrapper">
-//               <div class="swiper-slide">
-//                   <img src="/type/www/images/bg/bg_top_banner01.png" alt="">
-//               </div>
-//           </div>
-//           <div class="swiper-pagination"></div>
-//       </div>
-//       <div class="containe">
-//           <div class="top-banner-close">
-//               <button type="button" class="top-banner-hide-1day">
-//                   <span>1일 동안 보지 않기</span>
-//               </button>
-//               <button type="button" class="top-banner-close-btn">
-//                   <span class="hide sr-only">배너닫기</span>
-//                   <i class="topbanner_close"></i>
-//               </button>
-//           </div>
-//       </div>
-//   </div>
-//   <!-- //topbanner -->
-//   `;
-//   // Swiper 초기화 함수
-//   function initTopSwiper() {
-//     new Swiper('.topswiper', {
-//       spaceBetween: 0,
-//       centeredSlides: true,
-//       autoplay: {
-//         delay: 5000,
-//         disableOnInteraction: false,
-//       },
-//       loop:true,
-//       pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
-//       },
-//       observer: true,      // 동적 DOM 변경 감지
-//       observeParents: true // 상위 요소 변경도 감지
-//     });
-//   }
-  // 쿠키 읽기 함수
-  function getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
-  }
-
-  // 쿠키 설정 (1일)
-  function setCookie(name, value, days) {
-    const date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    document.cookie = `${name}=${value};expires=${date.toUTCString()};path=/`;
-  }
-
-  // 쿠키가 없으면 배너 추가
-  if (!getCookie('hideTopBanner')) {
-    // $('header.header').each(function() {
-    //   $(this).prepend(topBanner);
-    //   // DOM 반영 후 스와이퍼 초기화 (약간의 지연으로 확실히 반영)
-    //   setTimeout(initTopSwiper, 100);
-    // });
-    $('.top-banner').addClass('show').slideDown();
-  }
-
-  // 닫기 버튼 클릭 시 배너 숨김 처리
-  $(document).on('click', '.top-banner-close-btn', function() {
-    $('.top-banner').removeClass('show').slideUp();
-  });
-
-  // 1일 동안 안 보기 클릭 시 쿠키 설정 후 배너 숨김
-  $(document).on('click', '.top-banner-hide-1day', function() {
-    setCookie('hideTopBanner', 'true', 1); // 1일 동안 유지
-    $('.top-banner').removeClass('show').slideUp();
-  });
-});
-
+// 개발예외코딩
 $(function() {
   const CookieUtil = {
     set(name, value, days) {
       const date = new Date();
       date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-      document.cookie = `${name}=${encodeURIComponent(value)};expires=${date.toUTCString()};path=/`;
+      document.cookie = `${name}=${encodeURIComponent(value)}; expires=${date.toUTCString()}; path=/`;
+      console.log('쿠키 저장됨:', name, value); // 디버깅용 출력
     },
     get(name) {
       const value = `; ${document.cookie}`;
@@ -564,20 +485,31 @@ $(function() {
       if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
     },
     remove(name) {
-      document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/`;
+      document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
     }
   };
 
-  // intro 박스 숨김 여부 확인
+  /* top-banner 처리 */
+  if (!CookieUtil.get('hideTopBanner')) {
+    $('.top-banner').addClass('show');
+  }
+
+  $(document).on('click', '.top-banner-close-btn', function() {
+    $('.top-banner').removeClass('show');
+  });
+
+  $(document).on('click', '.top-banner-hide-1day', function() {
+    CookieUtil.set('hideTopBanner', 'true', 1);
+    $('.top-banner').removeClass('show');
+  });
+
+  /* intro 영역 */
   if (!CookieUtil.get('hideIntroToday')) {
     $('.intro').addClass('show');
   }
 
-  // 닫기 버튼 동작
-  $('.intro-hide .close').on('click', function() {
+  $(document).on('click', '.intro-hide .close', function() {
     $('.intro').removeClass('show');
-
-    // 체크박스가 선택되어 있으면 쿠키 설정 (1일 유지)
     if ($('#chk_1').is(':checked')) {
       CookieUtil.set('hideIntroToday', 'true', 1);
     } else {
@@ -585,3 +517,7 @@ $(function() {
     }
   });
 });
+// 개발예외코딩
+$(function(){ $('body').css('display','none').fadeIn(600); });
+
+
