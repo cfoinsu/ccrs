@@ -21,11 +21,11 @@
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
 	<!-- end custom head snippets -->
-	<script src="/type/www/js/jquery-2.2.4.min.js"></script>
-    <script src="/type/www/js/plugins/aos.js"></script>
-    <script src="/type/www/js/layout.js"></script>
-    <script src="/type/www/js/plugins/swiper.min.js"></script>
-    <script src="/type/www/js/component/ui-script.js"></script>
+	<script src="/type/www/js/jquery-2.2.4.min.js?ver=0.7"></script>
+    <script src="/type/www/js/plugins/aos.js?ver=0.7"></script>
+    <script src="/type/www/js/layout.js?ver=0.7"></script>
+    <script src="/type/www/js/plugins/swiper.min.js?ver=0.7"></script>
+    <script src="/type/www/js/component/ui-script.js?ver=0.7"></script>
 	<!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
 	
 </head>
@@ -39,38 +39,67 @@
 			
 		<!-- topbanner -->
 		<div class="top-banner slidetopbox show">
-			<div class="swiper-container topswiper" id="topslider" style="width: 100%;">
+			<div class="swiper-container topswiper">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<img src="/type/www/images/bg/bg_top_banner01.png" alt="">
 					</div>
+					<div class="swiper-slide">
+						<img src="/type/www/images/bg/bg_top_banner01.png" alt="">
+					</div>
 				</div>
-				<div class="swiper-pagination"></div>
-				<script>
-					new Swiper('.topswiper', {
-						spaceBetween: 0,
-						centeredSlides: true,
-						autoplay: {
-							delay: 5000,
+				<div class="containe">
+					<div class="sw-pagingbox">
+						<div class="topswiper-pagination"></div>
+						<div class="top-banner-control">
+							<button type="button" class="autoplay-toggle on" aria-label="자동재생 일시정지">
+								<span class="text sr-only">일시정지</span>
+							</button>
+						</div>
+					</div>
+					<div class="top-banner-close">
+						<button type="button" class="top-banner-hide-1day">
+							<span>1일 동안 보지 않기</span>
+						</button>
+						<button type="button" class="top-banner-close-btn">
+							<span class="hide sr-only">배너닫기</span>
+							<i class="topbanner_close"></i>
+						</button>
+					</div>
+					<script>
+						// Swiper 초기화
+						var topswiper = new Swiper(".topswiper", {
+							spaceBetween: 0,
+							centeredSlides: true,
+							autoplay: {
+							delay: 4000,
 							disableOnInteraction: false,
-						},
-						loop:true,
-						pagination: {
-							el: '.swiper-pagination',
+							},
+							loop: true,
+							loopedSlides: 2,
+							pagination: {
+							el: ".topswiper-pagination",
 							clickable: true,
-						},
-					});
-				</script>
-			</div>
-			<div class="containe">
-				<div class="top-banner-close">
-					<button type="button" class="top-banner-hide-1day">
-						<span>1일 동안 보지 않기</span>
-					</button>
-					<button type="button" class="top-banner-close-btn">
-						<span class="hide sr-only">배너닫기</span>
-						<i class="topbanner_close"></i>
-					</button>
+							}
+						});
+
+						// 토글 버튼 클릭 시 재생/일시정지
+						$(document).on('click', '.autoplay-toggle', function() {
+							var $btn = $(this);
+
+							if ($btn.hasClass('on')) {
+							// 자동재생 중 → 정지
+							topswiper.autoplay.stop();
+							$btn.removeClass('on').addClass('off').attr('aria-label', '자동재생 시작');
+							$btn.find('.text').text('재생');
+							} else {
+							// 정지 상태 → 재생 시작
+							topswiper.autoplay.start();
+							$btn.removeClass('off').addClass('on').attr('aria-label', '자동재생 일시정지');
+							$btn.find('.text').text('일시정지');
+							}
+						});
+					</script>
 				</div>
 			</div>
 		</div>
@@ -155,7 +184,7 @@
                                     <li><a href="금융연계.html">금융·고용·복지 복합지원</a></li>
                                     <li><a href="신용복지컨설팅.html">컨설팅 지원</a></li>
                                     <li><a href="신용교육프로그램신청_신용교육소개.html">신용교육</a></li>
-                                    <li><a href="불법사금융알아보기_예방가이드.html">불법사금융 예방하기</a></li>
+                                    <li><a href="불법사금융알아보기_예방가이드.html">불법사금융 예방∙신고</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -191,7 +220,7 @@
                                 <ul class="depth2">
                                     <li><a href="위원장인사말.html">위원장 인사말</a></li>
                                     <li><a href="연혁.html">기관소개</a></li>
-                                    <li><a href="사회적가치_목록.html">사회적가치 실현보고서</a></li>
+                                    <li><a href="사회적가치_목록.html">사회적 가치 실현보고서</a></li>
                                     <li><a href="윤리와책임_윤리헌장.html">청렴경영</a></li>
                                     <li><a href="신용상담사자격시험.html">신용상담사</a></li>
                                     <li><a href="지부위치안내.html" target="_blank" title="새창열림">지부위치 안내</a></li>
@@ -894,7 +923,7 @@
 						<li class="depth3"><a href="#">컨설팅 지원</a></li>
 						<li class="depth3"><a href="#">신용교육</a></li>
 						<li class="depth3"><a href="#">신용상담사</a></li>
-						<li class="depth3"><a href="#">불법사금융 예방하기</a></li>
+						<li class="depth3"><a href="#">불법사금융 예방∙신고</a></li>
 					</ul>
 				</li>
 				<li>
@@ -929,7 +958,7 @@
 					<ul class="depth2">
 						<li class="depth3"><a href="#">위원장 인사말</a></li>
 						<li class="depth3"><a href="#">기관소개</a></li>
-						<li class="depth3"><a href="#">사회적가치 실현보고서</a></li>
+						<li class="depth3"><a href="#">사회적 가치 실현보고서</a></li>
 						<li class="depth3"><a href="#">청렴경영</a></li>
 						
 						<li class="depth3"><a href="#">지부위치 안내</a></li>
@@ -962,7 +991,7 @@
 		</a>
 	</div>
 	<!-- 인트로영역 -->
-	<div class="intro show" id="popup-intro">
+	<div class="intro" id="popup-intro">
 		<button type="button" class="close btn01"></button>
 		<div class="img-logo" style="text-align: center;">
 			<img src="/type/www/img/intro/Logo.png" alt="신용회복위원회">
@@ -1080,11 +1109,10 @@
 		});
 		$(".intro .close").click(function () {
 			$(this).parent().removeClass("show");
-			$("body").css("overflow","auto");
 		});
 	</script>
 
 
-	<script src="/type/www/js/common.js"></script>
+	<script src="/type/www/js/common.js?ver=0.7"></script>
 </body>
 </html>

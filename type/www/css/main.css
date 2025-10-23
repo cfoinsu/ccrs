@@ -1727,3 +1727,63 @@ body:has(.intro.show) {
     overflow: hidden;
     top:-120vh;
 }
+
+/* 탑스와이퍼 추가 */
+.topswiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #FEDFDD;
+}
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  height: var(--krds-size-height-6);
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: var(--krds-size-height-1);
+  height: var(--krds-size-height-1);
+  background-color: #0000004D;
+  opacity: 1;
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 2rem;
+  border-radius: var(--krds-radius-max);
+  background-color: #1B2025;
+}
+.swiper-pagination.swiper-pagination-fraction {
+  gap: var(--krds-gap-2);
+  padding: 0 var(--krds-padding-6);
+  color: var(--krds-light-color-text-basic);
+  font-weight: var(--krds-font-weight-bold);
+  border: var(--krds-light-border-width-variable-regular) solid var(--krds-light-color-border-gray-light);
+  border-radius: var(--krds-radius-max);
+  background-color: var(--krds-light-color-surface-white);
+}
+.swiper-pagination.swiper-pagination-fraction .swiper-pagination-current {
+  color: var(--krds-light-color-text-secondary);
+}
+.topswiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  height: 26px;
+  gap: 8px;
+}
+.topswiper-pagination .swiper-pagination-bullet {
+  width: var(--krds-size-height-1);
+  height: var(--krds-size-height-1);
+  background-color: #0000004D;
+  opacity: 1;
+}
+.topswiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 2rem;
+  border-radius: var(--krds-radius-max);
+  background-color: #1B2025;
+}

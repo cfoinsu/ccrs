@@ -550,3 +550,38 @@ $(function() {
     $('.top-banner').removeClass('show').slideUp();
   });
 });
+
+$(function() {
+  const CookieUtil = {
+    set(name, value, days) {
+      const date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      document.cookie = `${name}=${encodeURIComponent(value)};expires=${date.toUTCString()};path=/`;
+    },
+    get(name) {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
+    },
+    remove(name) {
+      document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/`;
+    }
+  };
+
+  // intro 박스 숨김 여부 확인
+  if (!CookieUtil.get('hideIntroToday')) {
+    $('.intro').addClass('show');
+  }
+
+  // 닫기 버튼 동작
+  $('.intro-hide .close').on('click', function() {
+    $('.intro').removeClass('show');
+
+    // 체크박스가 선택되어 있으면 쿠키 설정 (1일 유지)
+    if ($('#chk_1').is(':checked')) {
+      CookieUtil.set('hideIntroToday', 'true', 1);
+    } else {
+      CookieUtil.remove('hideIntroToday');
+    }
+  });
+});

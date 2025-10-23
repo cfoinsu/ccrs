@@ -1847,57 +1847,6 @@ dl.flex-list {
     margin: 0;
 }
 
-/* 탑스와이퍼 추가 */
-.swiper-pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  position: relative;
-  height: var(--krds-size-height-6);
-}
-.swiper-pagination .swiper-pagination-bullet {
-  width: var(--krds-size-height-1);
-  height: var(--krds-size-height-1);
-  background-color: var(--krds-light-color-element-gray);
-  opacity: 1;
-}
-.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: 2rem;
-  border-radius: var(--krds-radius-max);
-  background-color: var(--krds-light-color-element-primary);
-}
-.swiper-pagination.swiper-pagination-fraction {
-  gap: var(--krds-gap-2);
-  padding: 0 var(--krds-padding-6);
-  color: var(--krds-light-color-text-basic);
-  font-weight: var(--krds-font-weight-bold);
-  border: var(--krds-light-border-width-variable-regular) solid var(--krds-light-color-border-gray-light);
-  border-radius: var(--krds-radius-max);
-  background-color: var(--krds-light-color-surface-white);
-}
-.swiper-pagination.swiper-pagination-fraction .swiper-pagination-current {
-  color: var(--krds-light-color-text-secondary);
-}
-.topswiper-pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  position: relative;
-  height: var(--krds-size-height-6);
-}
-.topswiper-pagination .swiper-pagination-bullet {
-  width: var(--krds-size-height-1);
-  height: var(--krds-size-height-1);
-  background-color: var(--krds-light-color-element-gray);
-  opacity: 1;
-}
-.topswiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: 2rem;
-  border-radius: var(--krds-radius-max);
-  background-color: var(--krds-light-color-element-primary);
-}
 .slidetopbox {
     width: 100%;
     height: auto;
@@ -1905,18 +1854,11 @@ dl.flex-list {
     position: relative;
     display: none;;
 }
-.slidetopbox .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination {
-    position: absolute;
-    left: 50%;
-    bottom: 10px;
-    transform: translateX(490px);
-    width:180px;
-}
 .slidetopbox.show {
     display: block;
 }
 .slidetopbox .swiper-slide img {
-    width: 100%;
+    width: 1920px;
     height: 119px;
     display: block;
     object-fit: none;
@@ -1972,16 +1914,6 @@ dl.flex-list {
 #header:has(.slidetopbox.show) ~ .main-content {
     padding-top: 260px;
 }
-.containe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    max-width: 100%;
-    width: 1340px;
-    height: 119px;
-    margin: 0 auto;
-}
 .containe .top-banner-close {
     position: absolute;
     top: 12px;
@@ -2000,4 +1932,48 @@ dl.flex-list {
     background: url(../images/common/ic_topbanner_close.svg) no-repeat center;
     background-size: contain;
     cursor: pointer;
+}
+/* 전체 레이아웃 예시 */
+.top-banner .containe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    width: 1340px;
+    height: 119px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+/* pagination 정렬 */
+.sw-pagingbox {
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background: #0000001A;
+    height: 26px;
+    border-radius: 1000px; 
+    padding: 0 12px;
+}
+.top-banner-control button {
+    background: none;
+    border: none;
+}
+.autoplay-toggle.on::after {
+    content: "";
+    display: block;
+    background: url(../images/main/icon_playoff.svg) center no-repeat;
+    width: 10px;
+    height: 10px;
+}
+.autoplay-toggle.off::after {
+    content: "";
+    display: block;
+    background: url(../images/main/icon_playon.svg) center no-repeat;
+    width: 10px;
+    height: 10px;
 }
