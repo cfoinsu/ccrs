@@ -40,6 +40,10 @@ node_modules/
 bower_components/
 jspm_packages/
 
+# npm/yarn package files
+package.json
+package-lock.json
+
 # Environment variables
 .env
 .env.local
