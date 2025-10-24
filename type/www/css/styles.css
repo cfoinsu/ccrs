@@ -6504,33 +6504,6 @@ table.comparison-table td:first-child {
   }
 }
 
-/* beuti-yellow 화려한 효과 */
-td.beuti-yellow {
-  background: #fffbe0;
-  background-clip: padding-box;
-  position: relative;
-}
-
-td.beuti-yellow::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 10;
-  border-radius: 0;
-  padding: var(--krds-table--data-tbody-padding) var(--krds-table--data-tbody-padding-sides);
-  background: linear-gradient(
-      110deg, #ffe964, #f8cbff, #9fd8fd, #ffe964
-  );
-  /* outer border만 보이도록 */
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) border-box;
-  mask-composite: exclude;
-  animation: borderflow 2.3s linear infinite;
-  pointer-events: none;
-}
-@keyframes borderflow {
-  100% { filter: hue-rotate(360deg); }
-  0%   { filter: hue-rotate(0deg); }
-}
 
 .money-area {
     display: flex;
@@ -6814,4 +6787,106 @@ input[type=radio]:checked + label.fillter-chip {
 }
 .g-grid-wrap.contect {
     margin-top: 80px;
+}
+.g-img {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.g-img img {
+  z-index: 1;
+}
+
+.g-img.bgact::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 165, 0, 0.4); /* 주황빛 반투명 원 */
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.g-img.bgact:hover::after,
+.g-img.bgact:focus::after {
+  animation: ripple-circle 0.8s ease-out;
+}
+
+@keyframes ripple-circle {
+  0% {
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.6;
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0.2;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}
+.g-img-zoom {
+  display: inline-block;
+  overflow: hidden; /* 확대 시 영역 밖 넘침 방지 */
+}
+
+.g-img.zoom img {
+  width: 100%;
+  transition: transform 0.4s ease; /* 부드럽게 확대 */
+  transform-origin: center center; /* 중앙 기준 확대 */
+}
+
+.g-img.zoom:hover img {
+  transform: scale(1.2); /* 확대 배율 조정 */
+}
+.shake-act:hover {
+  display: inline-block;
+  animation: shake 0.6s cubic-bezier(.36, .07, .19, .97) none;
+  animation-delay: 1s;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+/* beuti-yellow 화려한 효과 */
+.beuti-border {
+  background: #fffbe0;
+  background-clip: padding-box;
+  position: relative;
+}
+
+.beuti-border::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  border-radius: 0;
+  padding: var(--krds-table--data-tbody-padding) var(--krds-table--data-tbody-padding-sides);
+  background: linear-gradient(
+      110deg, #ffe964, #f8cbff, #9fd8fd, #ffe964
+  );
+  /* outer border만 보이도록 */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) border-box;
+  mask-composite: exclude;
+  animation: borderflow 2.3s linear infinite;
+  pointer-events: none;
+}
+@keyframes borderflow {
+  100% { filter: hue-rotate(360deg); }
+  0%   { filter: hue-rotate(0deg); }
 }
