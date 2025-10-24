@@ -204,77 +204,107 @@
                         <!-- Content Sections -->
                         <div class="content-sections">
                             <!-- 검색 입력 영역 -->
-                            <div class="search-input-area">
-                                <!-- 메인 검색 박스 -->
-                                <div class="search-box-main">
-                                    <!-- 카테고리 필터 -->
-                                    <div class="scope-filter">
-                                        <button type="button" class="scope-select-btn" id="scopeSelectBtn">
-                                            <span class="scope-text">전체</span>
-                                            <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29289 9.29289C7.68342 8.90237 8.31658 8.90237 8.70711 9.29289L12 12.5858L15.2929 9.29289C15.6834 8.90237 16.3166 8.90237 16.7071 9.29289C17.0976 9.68342 17.0976 10.3166 16.7071 10.7071L12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z" fill="#1B2025"/>
-                                            </svg>
-                                        </button>
-                                        <div class="scope-divider"></div>
-                                    </div>
-
-                                    <!-- 검색어 입력 -->
-                                    <div class="keyword-input-wrap">
-                                        <input
-                                            type="text"
-                                            id="searchKeywordMain"
-                                            class="keyword-input"
-                                            placeholder="검색어를 입력하세요"
-                                            value="채무">
-                                        <button type="button" class="search-btn" id="mainSearchBtn">
-                                            <svg class="search-icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                                <path d="M14.5 25C20.299 25 25 20.299 25 14.5C25 8.70101 20.299 4 14.5 4C8.70101 4 4 8.70101 4 14.5C4 20.299 8.70101 25 14.5 25Z" stroke="#1B2025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M21.9243 21.925L27.9993 28" stroke="#1B2025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <!-- 최근 검색어 -->
-                                <div class="recent-search-wrap">
-                                    <span class="recent-search-label">최근 검색어</span>
-                                    <div class="recent-search-tags">
-                                        <span class="search-tag">
-                                            채무조정
-                                            <button type="button" class="tag-remove-btn" aria-label="채무조정 제거">
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                    <rect width="13.3333" height="13.3333" rx="6.66667" fill="#D2D6DA"/>
-                                                    <path d="M5.33333 5.33333L10.6667 10.6667M10.6667 5.33333L5.33333 10.6667" stroke="#1B2025" stroke-width="1.5" stroke-linecap="round"/>
+                            <div class="search-container">
+                                <div class="search-inner">
+                                    <div class="search-left">
+                                        <!-- 메인 검색 박스 -->
+                                        <div class="search-box-main">
+                                        <!-- 카테고리 필터 -->
+                                        <div class="scope-filter">
+                                            <button type="button" class="scope-select-btn" id="scopeSelectBtn">
+                                                <span class="scope-text">전체</span>
+                                                <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29289 9.29289C7.68342 8.90237 8.31658 8.90237 8.70711 9.29289L12 12.5858L15.2929 9.29289C15.6834 8.90237 16.3166 8.90237 16.7071 9.29289C17.0976 9.68342 17.0976 10.3166 16.7071 10.7071L12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L7.29289 10.7071C6.90237 10.3166 6.90237 9.68342 7.29289 9.29289Z" fill="#1B2025"/>
                                                 </svg>
                                             </button>
-                                        </span>
-                                        <span class="search-tag">
-                                            신속
-                                            <button type="button" class="tag-remove-btn" aria-label="신속 제거">
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                    <rect width="13.3333" height="13.3333" rx="6.66667" fill="#D2D6DA"/>
-                                                    <path d="M5.33333 5.33333L10.6667 10.6667M10.6667 5.33333L5.33333 10.6667" stroke="#1B2025" stroke-width="1.5" stroke-linecap="round"/>
-                                                </svg>
-                                            </button>
-                                        </span>
-                                        <span class="search-tag">
-                                            신용회복지원
-                                            <button type="button" class="tag-remove-btn" aria-label="신용회복지원 제거">
-                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                                    <rect width="13.3333" height="13.3333" rx="6.66667" fill="#D2D6DA"/>
-                                                    <path d="M5.33333 5.33333L10.6667 10.6667M10.6667 5.33333L5.33333 10.6667" stroke="#1B2025" stroke-width="1.5" stroke-linecap="round"/>
-                                                </svg>
-                                            </button>
-                                        </span>
-                                    </div>
+                                            <div class="scope-divider"></div>
+                                        </div>
 
-                                    <!-- 결과 내 재검색 체크박스 -->
-                                    <div class="refine-search-check">
-                                        <input type="checkbox" id="refineSearchCheck" class="custom-checkbox">
-                                        <label for="refineSearchCheck" class="custom-checkbox-label">
-                                            <span class="checkbox-box"></span>
-                                            <span class="checkbox-text">결과 내 재검색</span>
-                                        </label>
+                                        <!-- 검색어 입력 -->
+                                        <div class="keyword-input-wrap">
+                                            <input
+                                                type="text"
+                                                id="searchKeywordMain"
+                                                class="keyword-input"
+                                                placeholder="검색어를 입력하세요"
+                                                value="채무">
+                                            <button type="button" class="search-btn" id="mainSearchBtn">
+                                                <svg class="search-icon" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                    <path d="M14.5 25C20.299 25 25 20.299 25 14.5C25 8.70101 20.299 4 14.5 4C8.70101 4 4 8.70101 4 14.5C4 20.299 8.70101 25 14.5 25Z" stroke="#1B2025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M21.9243 21.925L27.9993 28" stroke="#1B2025" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        </div>
+                                        <!-- 검색 옵션 영역 -->
+                                        <div class="search-options-wrap">
+                                            <!-- 최근 검색어 -->
+                                            <div class="recent-search-wrap">
+                                                <span class="recent-search-label">최근 검색어</span>
+                                                <div class="recent-search-tags">
+                                                    <span class="search-tag">
+                                                        채무조정
+                                                        <button type="button" class="tag-remove-btn" aria-label="채무조정 제거">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                <rect width="13.3333" height="13.3333" rx="6.66667" fill="#D2D6DA"/>
+                                                                <path d="M5.33333 5.33333L10.6667 10.6667M10.6667 5.33333L5.33333 10.6667" stroke="#1B2025" stroke-width="1.5" stroke-linecap="round"/>
+                                                            </svg>
+                                                        </button>
+                                                    </span>
+                                                    <span class="search-tag">
+                                                        신속
+                                                        <button type="button" class="tag-remove-btn" aria-label="신속 제거">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                <rect width="13.3333" height="13.3333" rx="6.66667" fill="#D2D6DA"/>
+                                                                <path d="M5.33333 5.33333L10.6667 10.6667M10.6667 5.33333L5.33333 10.6667" stroke="#1B2025" stroke-width="1.5" stroke-linecap="round"/>
+                                                            </svg>
+                                                        </button>
+                                                    </span>
+                                                    <span class="search-tag">
+                                                        신용회복지원
+                                                        <button type="button" class="tag-remove-btn" aria-label="신용회복지원 제거">
+                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                                <rect width="13.3333" height="13.3333" rx="6.66667" fill="#D2D6DA"/>
+                                                                <path d="M5.33333 5.33333L10.6667 10.6667M10.6667 5.33333L5.33333 10.6667" stroke="#1B2025" stroke-width="1.5" stroke-linecap="round"/>
+                                                            </svg>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <!-- 결과 내 재검색 체크박스 -->
+                                            <div class="refine-search-check">
+                                                <input type="checkbox" id="refineSearchCheck" class="custom-checkbox">
+                                                <label for="refineSearchCheck" class="custom-checkbox-label">
+                                                    <span class="checkbox-box"></span>
+                                                    <span class="checkbox-text">결과 내 재검색</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-right">
+                                        <!-- 인기 검색어 순위 -->
+                                        <div class="popular-search-rank">
+                                            <div class="rank-display">
+                                                <span class="rank-number">1</span>
+                                                <span class="rank-keyword">채무조정</span>
+                                                <svg class="rank-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6L8 10L12 6" stroke="#1B2025" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </div>
+                                            <ol class="rank-dropdown">
+                                                <li><span class="rank-num">1</span>채무조정</li>
+                                                <li><span class="rank-num">2</span>소액생계비대출</li>
+                                                <li><span class="rank-num">3</span>개인워크아웃</li>
+                                                <li><span class="rank-num">4</span>청년지원</li>
+                                                <li><span class="rank-num">5</span>신속채무조정</li>
+                                                <li><span class="rank-num">6</span>신용회복지원</li>
+                                                <li><span class="rank-num">7</span>상환도우미</li>
+                                                <li><span class="rank-num">8</span>금융과생활</li>
+                                                <li><span class="rank-num">9</span>신용교육</li>
+                                                <li><span class="rank-num">10</span>불법사금융</li>
+                                            </ol>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
