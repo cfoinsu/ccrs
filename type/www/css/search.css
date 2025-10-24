@@ -4,7 +4,7 @@
    - 네임스페이스: .global-search-container
    - 다른 페이지 스타일과의 충돌 방지를 위해 모든 스타일을 컨테이너 안에 중첩
    ========================================== */
-.global-search-container {
+.global-search-container .search-input-area {
   background-color: var(--krds-color-light-primary-10);
   border-radius: var(--krds-number-10);
   padding: var(--krds-number-14);
