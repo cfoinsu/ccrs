@@ -1,0 +1,59 @@
+# OS generated files
+.DS_Store
+.localized
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.iml
+*.suo
+*.user
+*.bak
+*.swp
+*~.nib
+.project
+.classpath
+.settings/
+.buildpath
+
+# Logs and temporary files
+log/
+*.log
+temp/
+tmp/
+*.tmp
+*.temp
+*.cache
+*.backup
+*.swo
+*.swp
+
+# Build artifacts
+build/
+dist/
+.next/
+out/
+
+# Dependency directories
+node_modules/
+bower_components/
+jspm_packages/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Specific project files
+.claude/
+.cursor/
+docs/
+
+# SCSS sourcemaps
+*.css.map
+.sass-cache/
+
+# SCSS compiled results (optional, uncomment if you want to ignore compiled CSS)
+# type/www/css/styles_en.css
+# type/www/css/sub_en.css
