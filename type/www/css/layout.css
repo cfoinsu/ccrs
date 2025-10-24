@@ -1806,7 +1806,7 @@ main.map-content .container {max-width: 100%;}
 /*.map-content .content-area .g-imag img {object-fit: none;}*/
 .map-content .content-area .ab_note {position: absolute;right: 24px;bottom: 24px;height: 52px;line-height: 50px;padding: 0 24px;box-shadow: 0px 0px 2px 0px #0000000D;box-shadow: 0px 4px 8px 0px #00000014;background-color: #fff;color: #17191B;text-align: right;font-size: 1.7rem;font-weight: 400;border-radius: 1000px;}
 
-.g-imag-hover  {height: 541px;width: 700px;border-radius: 24px;border: 1px solid #D2D6DA;text-align: center;}
+.g-imag-hover  {height: 541px;width: calc(50% - 16px);border-radius: 24px;border: 1px solid #D2D6DA;text-align: center;}
 .g-map-images {position: relative;display: block;width: 338px;height: 479px;background: url(../images/img/map/map.png) center no-repeat;margin: 32px auto 0;}
 .g-imag-hover .map-choose {position: absolute;width: 42px;height: 24px;background: transparent;z-index: 3;border-radius: 1000px; color: #6D7882;background-color: #D2D6DA;text-align: center;line-height: 22px;font-size: 1.5rem;}
 .g-imag-hover .map-choose:hover {color: #fff;background-color: #F48F01;}
