@@ -543,3 +543,25 @@ $(function() {
     );
   });
 });
+
+function isInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top <= (window.innerHeight - 80) && // 80px 여유 (조정 가능)
+    rect.bottom >= 0
+  );
+}
+
+function runScrollFadeup() {
+  $('.g-conts-area > *').each(function() {
+    if (isInViewport(this)) {
+      $(this).addClass('active');
+    }
+  });
+}
+
+$(window).on('scroll resize', runScrollFadeup);
+$(document).ready(function() {
+  $('.g-conts-area > *').addClass('scroll-fadeup'); // 초기 클래스 세팅
+  runScrollFadeup(); // 로드시 체크 (첫 화면부터 등장할 수 있도록)
+});
