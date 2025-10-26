@@ -66,3 +66,9 @@ checklist.sh
 # SCSS compiled results (optional, uncomment if you want to ignore compiled CSS)
 # type/www/css/styles_en.css
 # type/www/css/sub_en.css
+
+
+checklist.sh
+checklist.md
+
+node_modules/
