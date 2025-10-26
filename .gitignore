@@ -67,8 +67,9 @@ checklist.sh
 # type/www/css/styles_en.css
 # type/www/css/sub_en.css
 
-
+# Development files
 checklist.sh
 checklist.md
-
-node_modules/
+package-lock.json
+package.json
+type/www/scss/

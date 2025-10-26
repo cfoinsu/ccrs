@@ -520,4 +520,26 @@ $(function() {
 // 개발예외코딩
 $(function(){ $('body').css('display','none').fadeIn(600); });
 
+$(function() {
+  $(".numcounter").each(function () {
+    const $this = $(this);
+    const target = parseInt($this.text().replace(/,/g, ""), 10); // 목표 숫자
+    $this.text("0"); // 초기화
 
+    $({ count: 0 }).animate(
+      { count: target },
+      {
+        duration: 3000, // 3초간 실행
+        easing: "swing",
+        step: function (now) {
+          // 현재 값 표시 (콤마 포함)
+          $this.text(Math.floor(now).toLocaleString());
+        },
+        complete: function () {
+          // 최종 값 표시
+          $this.text(target.toLocaleString());
+        }
+      }
+    );
+  });
+});
