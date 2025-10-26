@@ -4,6 +4,14 @@
    - 다른 페이지 스타일과의 충돌 방지를 위해 모든 스타일을 컨테이너 안에 중첩
    ========================================== */
 
+// 변수 정의
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1280px;
+
+// Mixins Import
+@import "mixins/breakpoints";
+
     // 스크린 리더 전용 텍스트 (접근성)
     .sr-only {
         position: absolute;
@@ -39,6 +47,16 @@
         border-radius: var(--krds-number-10);
         padding: var(--krds-number-14);
         margin-bottom: var(--krds-number-12);
+
+        @include tabletLess {
+            padding: 20px 16px;
+        }
+
+        @include mobile {
+            padding: 16px;
+            border-radius: 16px;
+        }
+
         .search-inner {
             position: relative;
             width: 100%;
@@ -46,6 +64,14 @@
             margin: 0 auto;
             transform: translateX(-22px);
             z-index: 1;
+
+            @include tabletLess {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                padding: 0;
+                transform: none;
+            }
         }
 
         .search-left {
@@ -67,6 +93,17 @@
             border: 1px solid var(--krds-color-light-gray-30);
             border-radius: var(--krds-number-6);
             padding: 0 var(--krds-number-10);
+
+            @include tabletLess {
+                height: auto;
+                align-items: stretch;
+                gap: 12px;
+            }
+
+            @include mobile {
+                padding: 12px;
+                gap: 10px;
+            }
         }
 
         // 카테고리 필터
@@ -74,6 +111,10 @@
             display: flex;
             align-items: center;
             gap: var(--krds-number-8);
+
+            @include tabletLess {
+                width: 100%;
+            }
 
             // KRDS 셀렉트 스타일 오버라이드
             .krds-form-select {
@@ -119,12 +160,20 @@
             font-size: var(--krds-pc-font-size-body-large);
             color: var(--krds-color-light-gray-95);
             text-align: left;
+
+            @include mobile {
+                font-size: 14px;
+            }
         }
 
         .scope-divider {
             width: 1px;
             height: 32px;
             background-color: var(--krds-color-light-gray-40);
+
+            @include tabletLess {
+                display: none;
+            }
         }
 
         // 검색어 입력
@@ -134,6 +183,10 @@
             gap: var(--krds-number-5);
             flex: 1;
             position: relative;
+
+            @include tabletLess {
+                width: 100%;
+            }
         }
 
         .keyword-input {
@@ -145,6 +198,10 @@
             border: none;
             outline: none;
             padding-right: 40px;
+
+            @include mobile {
+                font-size: 14px;
+            }
 
             &::placeholder {
                 color: var(--krds-color-light-gray-30);
@@ -190,6 +247,13 @@
             width: 100%;
             max-width: 177px;
             margin-left: auto;
+
+            @include tabletLess {
+                position: static;
+                margin: 0;
+                width: 100%;
+                max-width: none;
+            }
 
             &:hover {
                 .rank-arrow {
@@ -252,6 +316,13 @@
             z-index: 1000;
             margin-top: var(--krds-number-2);
 
+            @include tabletLess {
+                right: 0;
+                left: auto;
+                width: 100%;
+                max-width: 100%;
+            }
+
             li {
                 display: flex;
                 align-items: center;
@@ -293,6 +364,12 @@
             justify-content: space-between;
             margin-top: var(--krds-number-8);
             gap: var(--krds-number-8);
+
+            @include tabletLess {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
         }
 
         // 최근 검색어
@@ -301,6 +378,11 @@
             align-items: center;
             gap: var(--krds-number-7);
             position: relative;
+
+            @include tabletLess {
+                align-items: flex-start;
+                width: 100%;
+            }
         }
 
         .recent-search-label {
@@ -308,6 +390,10 @@
             font-size: var(--krds-pc-font-size-body-medium);
             color: var(--krds-color-light-gray-95);
             white-space: nowrap;
+
+            @include mobile {
+                font-size: var(--krds-pc-font-size-body-small);
+            }
         }
 
         .recent-search-tags {
@@ -315,6 +401,14 @@
             align-items: center;
             gap: var(--krds-number-5);
             flex-wrap: wrap;
+
+            @include tabletLess {
+                width: 100%;
+            }
+
+            @include mobile {
+                gap: 6px;
+            }
         }
 
         .search-tag {
@@ -330,6 +424,12 @@
             font-weight: 400;
             font-size: var(--krds-pc-font-size-body-small);
             color: var(--krds-color-light-gray-95);
+
+            @include mobile {
+                font-size: 12px;
+                height: 26px;
+                padding: 4px 8px;
+            }
         }
 
         .tag-remove-btn {
@@ -408,6 +508,10 @@
             font-weight: 400;
             font-size: var(--krds-pc-font-size-body-medium);
             color: var(--krds-color-light-gray-95);
+
+            @include mobile {
+                font-size: var(--krds-pc-font-size-body-small);
+            }
         }
     }
 
@@ -420,11 +524,26 @@
         padding-right: 8px;
         margin-bottom: var(--krds-number-8);
 
+        @include tabletLess {
+            justify-content: flex-start;
+        }
+
+        @include mobile {
+            padding: 12px 0;
+        }
+
         .search-filters {
             display: flex;
             align-items: center;
             gap: var(--krds-number-8);
             padding: 3px 0;
+
+            @include tabletLess {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+                width: 100%;
+            }
         }
 
         .filter-group {
@@ -487,6 +606,10 @@
             width: 1px;
             height: 16px;
             background-color: var(--krds-color-light-gray-30);
+
+            @include tabletLess {
+                display: none;
+            }
         }
     }
 
@@ -496,6 +619,10 @@
     .krds-tab-area.layer {
         margin-top: 24px;
         gap: var(--krds-gap-9);
+
+        @include tabletLess {
+            margin-top: 24px;
+        }
 
         .tab.line.full.search-tabs {
             border: 1px solid var(--krds-color-light-gray-20);
@@ -526,6 +653,20 @@
                 cursor: pointer;
                 transition: all 0.2s;
                 text-align: center;
+
+                @include tabletLess {
+                    font-size: var(--krds-pc-font-size-body-small);
+                    height: 48px;
+                    min-width: 60px;
+                    padding: 0 8px;
+                }
+
+                @include mobile {
+                    font-size: 13px;
+                    height: 44px;
+                    padding: 0 6px;
+                    min-width: 50px;
+                }
 
                 &:last-child {
                     border-right: none;
@@ -570,6 +711,15 @@
                     justify-content: center;
                     padding: 0;
                     transition: all 0.2s;
+
+                    @include tabletLess {
+                        font-size: var(--krds-pc-font-size-body-small);
+                    }
+
+                    @include mobile {
+                        font-size: 13px;
+                    }
+
                     &::before {
                         display: none;
                     }
@@ -686,12 +836,20 @@
             font-size: var(--krds-pc-font-size-heading-medium);
             color: var(--krds-color-light-gray-95);
             margin: 0;
+
+            @include mobile {
+                font-size: 18px;
+            }
         }
 
         .section-count {
             font-weight: 700;
             font-size: var(--krds-pc-font-size-heading-medium);
             color: var(--krds-color-light-primary-60);
+
+            @include mobile {
+                font-size: 18px;
+            }
         }
 
         .btn-more {
@@ -716,6 +874,10 @@
         .section-content {
             padding-top: var(--krds-number-12);
             border-top: 1px solid var(--krds-color-light-gray-90);
+
+            @include mobile {
+                padding-top: 16px;
+            }
         }
 
         // Highlight
@@ -732,6 +894,14 @@
             display: flex;
             flex-direction: column;
             gap: var(--krds-number-8);
+
+            @include tabletLess {
+                gap: 12px;
+            }
+
+            @include mobile {
+                gap: 16px;
+            }
 
             li {
                 display: flex;
@@ -761,6 +931,14 @@
             font-weight: 700;
             font-size: var(--krds-pc-font-size-body-medium);
             color: var(--krds-color-light-gray-95);
+
+            @include tabletLess {
+                font-size: var(--krds-pc-font-size-body-small);
+            }
+
+            @include mobile {
+                font-size: 14px;
+            }
         }
 
         .breadcrumb-arrow {
@@ -777,6 +955,14 @@
             display: flex;
             flex-direction: column;
             gap: var(--krds-number-8);
+
+            @include tabletLess {
+                gap: 12px;
+            }
+
+            @include mobile {
+                gap: 16px;
+            }
 
             li {
                 display: flex;
@@ -800,6 +986,15 @@
             font-size: var(--krds-pc-font-size-body-medium);
             line-height: 1.5;
             color: var(--krds-color-light-gray-95);
+
+            @include tabletLess {
+                font-size: var(--krds-pc-font-size-body-small);
+                white-space: normal;
+            }
+
+            @include mobile {
+                font-size: 14px;
+            }
         }
 
         .post-date {
@@ -808,6 +1003,10 @@
             line-height: 1.5;
             color: var(--krds-color-light-gray-70);
             flex-shrink: 0;
+
+            @include mobile {
+                font-size: 13px;
+            }
         }
 
         // 사진영상 그리드
@@ -816,6 +1015,19 @@
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 24px;
             align-items: start;
+
+            @include tabletLess {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 12px;
+            }
+
+            @include mobile {
+                grid-template-columns: 1fr;
+                gap: 16px;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
             li {
                 display: flex;
                 flex-direction: column;
@@ -844,6 +1056,19 @@
             overflow: hidden;
             background-color: #E3E3E3;
 
+            @include tabletLess {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                aspect-ratio: 317 / 214;
+            }
+
+            @include mobile {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 317 / 214;
+            }
+
             img {
                 width: 100%;
                 height: 100%;
@@ -871,11 +1096,19 @@
             text-overflow: ellipsis;
             height: 58px;
             width: 100%;
+
+            @include tabletLess {
+                width: 100%;
+            }
+
+            @include mobile {
+                font-size: 16px;
+            }
         }
 
         .gallery-date {
             font-weight: 400;
-                                font-size: var(--krds-pc-font-size-body-small);
+            font-size: var(--krds-pc-font-size-body-small);
             line-height: 1.5;
             color: #474E55;
             margin: 0;
@@ -883,7 +1116,7 @@
 
         .gallery-category {
             font-weight: 400;
-                                font-size: var(--krds-pc-font-size-body-small);
+            font-size: var(--krds-pc-font-size-body-small);
             line-height: 1.5;
             color: #474E55;
             margin: 0;
@@ -930,6 +1163,10 @@
             line-height: 1.5;
             color: #17191B;
             margin: 0;
+
+            @include mobile {
+                font-size: var(--krds-pc-font-size-body-small);
+            }
         }
 
         .webpage-desc {
@@ -947,302 +1184,18 @@
             height: 54px;
             width: 100%;
             max-width: 1271px;
-        }
-    }
 
-    // ==========================================
-    // 반응형 (Responsive)
-    // ==========================================
-
-    // 와이드 데스크톱 (1400px 이하)
-    @media (max-width: 1400px) {
-        .gallery-grid {
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        }
-    }
-
-    // 데스크톱 (1280px 이하)
-    @media (max-width: 1280px) {
-        .search-inner {
-            transform: translateX(0);
-            padding: 0 16px;
-        }
-
-        .popular-search-rank {
-            position: static;
-            margin-top: 16px;
-        }
-
-        .webpage-desc {
-            max-width: 100%;
-        }
-
-        .gallery-grid {
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        }
-    }
-
-    // 태블릿 가로 (1024px 이하)
-    @media (max-width: 1024px) {
-        .gallery-grid {
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 16px;
-        }
-
-        .search-results-content .gallery-image {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            aspect-ratio: 317 / 214;
-        }
-
-        .gallery-title {
-            width: 100%;
-        }
-
-        .krds-tab-area li[role="tab"] {
-            font-size: 17px;
-            padding: 0 12px;
-        }
-
-        .search-filters {
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .filter-group {
-            flex: 1 1 auto;
-        }
-    }
-
-    // 태블릿 세로 (768px 이하)
-    @media (max-width: 768px) {
-        .search-input-area {
-            padding: 20px 16px;
-        }
-
-        .search-input-area .search-inner {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            padding: 0;
-            transform: none;
-        }
-
-        .search-input-area .search-box-main {
-            height: auto;
-            align-items: stretch;
-            gap: 12px;
-        }
-
-        .scope-filter {
-            width: 100%;
-        }
-
-        .scope-divider {
-            display: none;
-        }
-
-        .keyword-input-wrap {
-            width: 100%;
-        }
-
-        .search-input-area .search-options-wrap {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 12px;
-        }
-
-        .recent-search-wrap {
-            align-items: flex-start;
-            width: 100%;
-        }
-
-        .recent-search-tags {
-            width: 100%;
-        }
-
-        .search-input-area .popular-search-rank {
-            position: static;
-            margin: 0;
-            width: 100%;
-            max-width: none;
-        }
-
-        .rank-dropdown {
-            right: 0;
-            left: auto;
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .search-results-header {
-            justify-content: flex-start;
-        }
-
-        .search-results-header .search-filters {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 12px;
-            width: 100%;
-        }
-
-        .filter-divider {
-            display: none;
-        }
-
-        .krds-tab-area {
-            margin-top: 24px;
-
-            .tab.line.full.search-tabs li[role="tab"] {
+            @include tabletLess {
+                width: 100%;
                 font-size: var(--krds-pc-font-size-body-small);
-                height: 48px;
-                min-width: 60px;
-                padding: 0 8px;
+            }
 
-                .btn-tab {
-                    font-size: var(--krds-pc-font-size-body-small);
-                }
+            @include mobile {
+                font-size: var(--krds-pc-font-size-body-small);
+                width: 100%;
             }
         }
-
-        .gallery-grid {
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 12px;
-        }
-
-        .menu-list,
-        .post-list {
-            gap: 12px;
-        }
-
-        .breadcrumb-item {
-            font-size: var(--krds-pc-font-size-body-small);
-        }
-
-        .post-title {
-            font-size: var(--krds-pc-font-size-body-small);
-            white-space: normal;
-        }
-
-        .webpage-desc {
-            width: 100%;
-            font-size: var(--krds-pc-font-size-body-small);
-        }
     }
-
-    @media (max-width: 480px) {
-        .search-input-area {
-            padding: 16px;
-            border-radius: 16px;
-        }
-
-        .search-box-main {
-            padding: 12px;
-            gap: 10px;
-        }
-
-        .scope-text {
-            font-size: 14px;
-        }
-
-        .keyword-input {
-            font-size: 14px;
-        }
-
-        .recent-search-label {
-            font-size: var(--krds-pc-font-size-body-small);
-        }
-
-        .recent-search-tags {
-            gap: 6px;
-        }
-
-        .search-tag {
-            font-size: 12px;
-            height: 26px;
-            padding: 4px 8px;
-        }
-
-        .checkbox-text {
-            font-size: var(--krds-pc-font-size-body-small);
-        }
-
-        .search-results-header {
-            padding: 12px 0;
-        }
-
-        .krds-tab-area {
-            .tab.line.full.search-tabs li[role="tab"] {
-                font-size: 13px;
-                height: 44px;
-                padding: 0 6px;
-                min-width: 50px;
-
-                .btn-tab {
-                    font-size: 13px;
-                }
-            }
-        }
-
-        .section-title {
-            font-size: 18px;
-        }
-
-        .section-count {
-            font-size: 18px;
-        }
-
-        .section-content {
-            padding-top: 16px;
-        }
-
-        .gallery-grid {
-            grid-template-columns: 1fr;
-            gap: 16px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .gallery-image {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 317 / 214;
-        }
-
-        .gallery-title {
-            font-size: 16px;
-        }
-
-        .breadcrumb-item,
-        .post-title,
-        .webpage-title {
-            font-size: 14px;
-        }
-
-        .webpage-desc {
-            font-size: 14px;
-        }
-
-        .menu-list,
-        .post-list {
-            gap: 16px;
-        }
-
-        .post-date {
-            font-size: 13px;
-        }
-
-        .webpage-title {
-                                font-size: var(--krds-pc-font-size-body-small);
-        }
-
-        .webpage-desc {
-                                font-size: var(--krds-pc-font-size-body-small);
-            width: 100%;
-        }
-    }
-
 
 // ==========================================
 // 검색 결과 없음 - 디자인 시스템 적용
@@ -1256,10 +1209,10 @@
         text-align: center;
         position: relative;
 
-            .no-results-icon {
-                width: 100px;
-                height: 100px;
-                background-color: var(--krds-color-light-gray-10);
+        .no-results-icon {
+            width: 100px;
+            height: 100px;
+            background-color: var(--krds-color-light-gray-10);
             border-radius: 40px;
             display: flex;
             align-items: center;
@@ -1281,11 +1234,11 @@
             margin: 0;
 
             .text-normal {
-                                color: var(--krds-color-light-gray-95);
+                color: var(--krds-color-light-gray-95);
             }
 
-                .text-highlight {
-                    color: var(--krds-color-light-primary-50);
-                }
+            .text-highlight {
+                color: var(--krds-color-light-primary-50);
+            }
         }
     }
