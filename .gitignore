@@ -54,6 +54,11 @@ package-lock.json
 .cursor/
 docs/
 
+# Checklist files (development only)
+checklist.md
+checklist.sh
+**/checklist.sh
+
 # SCSS sourcemaps
 *.css.map
 .sass-cache/
