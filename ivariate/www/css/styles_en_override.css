@@ -1,0 +1,1094 @@
+@charset "UTF-8";
+/* ==========================================
+   영문 사이트 전용 스타일 오버라이드
+   English Site Style Override
+   - 네임스페이스: .en
+   - styles.css의 스타일을 덮어씁니다
+   ========================================== */
+.en {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.en h1, .en h2, .en h3, .en h4, .en h5, .en h6 {
+  letter-spacing: -0.02em;
+}
+
+.en .info-box,
+.en .analysis-box {
+  background-color: #fff9e6;
+  border-radius: 16px;
+  padding: 32px;
+}
+@media (max-width: 1023px) {
+  .en .info-box,
+  .en .analysis-box {
+    padding: 24px;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .en .info-box,
+  .en .analysis-box {
+    padding: 20px;
+  }
+}
+.en .info-box h3,
+.en .analysis-box h3 {
+  font-size: var(--krds-pc-font-size-heading-medium);
+  font-weight: 700;
+  color: var(--krds-color-light-gray-95);
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .en .info-box h3,
+  .en .analysis-box h3 {
+    font-size: var(--krds-pc-font-size-heading-small);
+  }
+}
+.en .info-box ul,
+.en .analysis-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.en .info-box ul li,
+.en .analysis-box ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+.en .info-box ul li::before,
+.en .analysis-box ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--krds-color-light-primary-60);
+  font-weight: 700;
+}
+
+.en .guide-box,
+.en .solution-box {
+  background-color: #e6f7ff;
+  border-radius: 16px;
+  padding: 32px;
+}
+@media (max-width: 1023px) {
+  .en .guide-box,
+  .en .solution-box {
+    padding: 24px;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .en .guide-box,
+  .en .solution-box {
+    padding: 20px;
+  }
+}
+.en .guide-box h3,
+.en .solution-box h3 {
+  font-size: var(--krds-pc-font-size-heading-medium);
+  font-weight: 700;
+  color: var(--krds-color-light-gray-95);
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .en .guide-box h3,
+  .en .solution-box h3 {
+    font-size: var(--krds-pc-font-size-heading-small);
+  }
+}
+
+.en .financial-inclusion-box,
+.en .service-box {
+  background-color: #f0f0ff;
+  border-radius: 16px;
+  padding: 32px;
+}
+@media (max-width: 1023px) {
+  .en .financial-inclusion-box,
+  .en .service-box {
+    padding: 24px;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .en .financial-inclusion-box,
+  .en .service-box {
+    padding: 20px;
+  }
+}
+.en .financial-inclusion-box h3,
+.en .service-box h3 {
+  font-size: var(--krds-pc-font-size-heading-medium);
+  font-weight: 700;
+  color: var(--krds-color-light-gray-95);
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .en .financial-inclusion-box h3,
+  .en .service-box h3 {
+    font-size: var(--krds-pc-font-size-heading-small);
+  }
+}
+
+.en .counseling-box,
+.en .report-box {
+  background-color: #ffe6f0;
+  border-radius: 16px;
+  padding: 32px;
+}
+@media (max-width: 1023px) {
+  .en .counseling-box,
+  .en .report-box {
+    padding: 24px;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .en .counseling-box,
+  .en .report-box {
+    padding: 20px;
+  }
+}
+.en .counseling-box h3,
+.en .report-box h3 {
+  font-size: var(--krds-pc-font-size-heading-medium);
+  font-weight: 700;
+  color: var(--krds-color-light-gray-95);
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .en .counseling-box h3,
+  .en .report-box h3 {
+    font-size: var(--krds-pc-font-size-heading-small);
+  }
+}
+
+.en .services-grid,
+.en .features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 40px 0;
+}
+@media (max-width: 1023px) {
+  .en .services-grid,
+  .en .features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .en .services-grid,
+  .en .features-grid {
+    gap: 12px;
+  }
+}
+
+.en p {
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+}
+.en li {
+  line-height: 1.6;
+}
+.en strong, .en b {
+  font-weight: 700;
+}
+
+.en .btn,
+.en button {
+  letter-spacing: -0.01em;
+}
+@media (max-width: 767px) {
+  .en .btn,
+  .en button {
+    padding: 12px 16px;
+  }
+}
+
+.en .card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.en .card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.en table th, .en table td {
+  padding: 16px;
+}
+@media (max-width: 767px) {
+  .en table th, .en table td {
+    padding: 12px 8px;
+  }
+}
+
+.en .ceo-message-section .message-content {
+  line-height: 1.8;
+  font-size: var(--krds-pc-font-size-body-large);
+}
+@media (max-width: 767px) {
+  .en .ceo-message-section .message-content {
+    font-size: var(--krds-pc-font-size-body-small);
+  }
+}
+
+.en .history-section .timeline-item {
+  padding: 24px 0;
+}
+@media (max-width: 767px) {
+  .en .history-section .timeline-item {
+    padding: 16px 0;
+  }
+}
+
+.en .icon-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.en .icon-box img {
+  width: 48px;
+  height: 48px;
+}
+@media (max-width: 767px) {
+  .en .icon-box img {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.en section {
+  padding: 60px 0;
+}
+@media (max-width: 1023px) {
+  .en section {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .en section {
+    padding: 32px 0;
+  }
+}
+
+.en #header .gnb li a {
+  letter-spacing: -0.01em;
+}
+
+.en #footer .footer-text {
+  line-height: 1.6;
+}
+
+.intro-section {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+@media (max-width: 1023px) {
+  .intro-section {
+    margin: 32px 0;
+  }
+}
+@media (max-width: 767px) {
+  .intro-section {
+    margin: 24px 0;
+  }
+}
+.intro-section .section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #17191b;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .intro-section .section-title {
+    font-size: 20px;
+  }
+}
+.intro-section .section-description {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #17191b;
+}
+
+@media (max-width: 1023px) {
+  .benefits-section {
+    margin: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .benefits-section {
+    margin: 32px 0;
+  }
+}
+.benefits-section .benefits-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 12px;
+}
+@media (max-width: 767px) {
+  .benefits-section .benefits-header {
+    margin-bottom: 20px;
+  }
+}
+.benefits-section .benefits-header .bullet {
+  width: 4px;
+  height: 18px;
+  background: linear-gradient(to bottom, #f48f01 0%, #344d82 100%);
+  border-radius: 2px;
+}
+.benefits-section .benefits-header .benefits-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #012063;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .benefits-section .benefits-header .benefits-title {
+    font-size: 17px;
+  }
+}
+.benefits-section .benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+@media (max-width: 1023px) {
+  .benefits-section .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .benefits-section .benefits-grid {
+    gap: 16px;
+  }
+}
+.benefits-section .benefits-grid .benefit-card {
+  border: 1px solid #d2d6da;
+  border-radius: 24px;
+  padding: 32px;
+  background: white;
+}
+@media (max-width: 1023px) {
+  .benefits-section .benefits-grid .benefit-card {
+    padding: 24px;
+    border-radius: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .benefits-section .benefits-grid .benefit-card {
+    padding: 20px;
+  }
+}
+.benefits-section .benefits-grid .benefit-card .benefit-card-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #17191b;
+  margin-bottom: 32px;
+  line-height: 1.5;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .benefits-section .benefits-grid .benefit-card .benefit-card-title {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+}
+.benefits-section .benefits-grid .benefit-card .chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefits-section .benefits-grid .benefit-card .chart-container .pie-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .benefits-section .benefits-grid .benefit-card .chart-container .pie-chart svg {
+    width: 120px;
+    height: 120px;
+  }
+}
+.benefits-section .benefits-grid .benefit-card .chart-container .pie-chart .chart-description {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #17191b;
+  text-align: center;
+  max-width: 300px;
+}
+@media (max-width: 767px) {
+  .benefits-section .benefits-grid .benefit-card .chart-container .pie-chart .chart-description {
+    font-size: 12px;
+  }
+}
+.benefits-section .benefits-grid .benefit-card .program-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 24px;
+}
+@media (max-width: 767px) {
+  .benefits-section .benefits-grid .benefit-card .program-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+.benefits-section .benefits-grid .benefit-card .program-grid .program-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.benefits-section .benefits-grid .benefit-card .program-grid .program-item .program-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.benefits-section .benefits-grid .benefit-card .program-grid .program-item .program-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+.benefits-section .benefits-grid .benefit-card .program-grid .program-item .program-text strong {
+  font-size: 19px;
+  font-weight: 700;
+  color: #17191b;
+}
+@media (max-width: 767px) {
+  .benefits-section .benefits-grid .benefit-card .program-grid .program-item .program-text strong {
+    font-size: 17px;
+  }
+}
+.benefits-section .benefits-grid .benefit-card .program-grid .program-item .program-text span {
+  font-size: 13px;
+  color: #17191b;
+}
+.benefits-section .benefits-grid .benefit-card .program-grid .program-item .program-text p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #17191b;
+  margin-top: 8px;
+}
+.benefits-section .benefits-grid .benefit-card .stats-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+}
+@media (max-width: 767px) {
+  .benefits-section .benefits-grid .benefit-card .stats-grid {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+.benefits-section .benefits-grid .benefit-card .stats-grid .stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.benefits-section .benefits-grid .benefit-card .stats-grid .stat-item .stat-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .benefits-section .benefits-grid .benefit-card .stats-grid .stat-item .stat-circle svg {
+    width: 90px;
+    height: 90px;
+  }
+}
+.benefits-section .benefits-grid .benefit-card .stats-grid .stat-item p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #17191b;
+  text-align: center;
+  max-width: 120px;
+}
+@media (max-width: 767px) {
+  .benefits-section .benefits-grid .benefit-card .stats-grid .stat-item p {
+    max-width: none;
+  }
+}
+
+.services-section {
+  margin: 60px 0;
+}
+@media (max-width: 1023px) {
+  .services-section {
+    margin: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .services-section {
+    margin: 32px 0;
+  }
+}
+.services-section .section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #17191b;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .services-section .section-title {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+}
+.services-section .service-card {
+  margin-bottom: 40px;
+  border: 1px solid #d2d6da;
+  border-radius: 24px;
+  padding: 32px;
+  background: white;
+}
+@media (max-width: 1023px) {
+  .services-section .service-card {
+    padding: 24px;
+    border-radius: 16px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .services-section .service-card {
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+}
+.services-section .service-card:last-child {
+  margin-bottom: 0;
+}
+.services-section .service-card .service-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #17191b;
+  margin-bottom: 12px;
+  text-align: center;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .services-section .service-card .service-title {
+    font-size: 17px;
+  }
+}
+.services-section .service-card .service-subtitle {
+  font-size: 17px;
+  color: #17191b;
+  margin-bottom: 32px;
+  text-align: center;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .services-section .service-card .service-subtitle {
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+}
+.services-section .service-card .service-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.services-section .service-card .service-steps .step-box {
+  width: 100%;
+  border-radius: 1000px;
+  padding: 32px 0 32px 100px;
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .services-section .service-card .service-steps .step-box {
+    padding: 24px 0 24px 60px;
+  }
+}
+@media (max-width: 767px) {
+  .services-section .service-card .service-steps .step-box {
+    padding: 20px;
+  }
+}
+.services-section .service-card .service-steps .step-box.gray {
+  background: #f4f5f6;
+}
+.services-section .service-card .service-steps .step-box.blue {
+  background: #edf4ff;
+}
+.services-section .service-card .service-steps .step-box.purple {
+  background: #f3f2ff;
+}
+.services-section .service-card .service-steps .step-box.red {
+  background: #ffeee9;
+}
+.services-section .service-card .service-steps .step-box.simple {
+  text-align: center;
+  padding: 24px;
+}
+@media (max-width: 1023px) {
+  .services-section .service-card .service-steps .step-box.simple {
+    padding: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .services-section .service-card .service-steps .step-box.simple {
+    padding: 16px;
+  }
+}
+.services-section .service-card .service-steps .step-box.simple p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #17191b;
+}
+@media (max-width: 767px) {
+  .services-section .service-card .service-steps .step-box.simple p {
+    font-size: 15px;
+  }
+}
+.services-section .service-card .service-steps .step-box .step-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.services-section .service-card .service-steps .step-box .step-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #17191b;
+}
+@media (max-width: 767px) {
+  .services-section .service-card .service-steps .step-box .step-list li {
+    font-size: 15px;
+  }
+}
+.services-section .service-card .service-steps .step-box .step-list li:last-child {
+  margin-bottom: 0;
+}
+.services-section .service-card .service-steps .step-box .step-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  background: #474e55;
+  border-radius: 3px;
+}
+.services-section .service-card .service-steps .step-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f48f01;
+  font-size: 24px;
+  margin: 4px 0;
+}
+
+.micro-credit-section {
+  margin-bottom: 20px;
+}
+@media (max-width: 1023px) {
+  .micro-credit-section {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .micro-credit-section {
+    margin-bottom: 40px;
+  }
+}
+.micro-credit-section .g-conts-area {
+  margin-bottom: 20px;
+}
+@media (max-width: 1023px) {
+  .micro-credit-section .g-conts-area {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .micro-credit-section .g-conts-area {
+    margin-bottom: 12px;
+  }
+}
+.micro-credit-section .sec-tit.sm {
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+.micro-credit-section .section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #17191b;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .micro-credit-section .section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+.micro-credit-section .section-description {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #17191b;
+  margin-bottom: 40px;
+}
+@media (max-width: 1023px) {
+  .micro-credit-section .section-description {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .micro-credit-section .section-description {
+    margin-bottom: 24px;
+  }
+}
+
+.micro-credit-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.micro-credit-table thead {
+  background: #f0f2f6;
+}
+.micro-credit-table thead th {
+  padding: 12px 20px;
+  border: 1px solid #ccd2e0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #222222;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .micro-credit-table thead th {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+.micro-credit-table tbody td {
+  padding: 12px 20px;
+  border: 1px solid #ccd2e0;
+  font-size: 17px;
+  color: #222222;
+  background: white;
+}
+@media (max-width: 767px) {
+  .micro-credit-table tbody td {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+.micro-credit-table .loan-limit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.micro-credit-table .loan-limit-list li {
+  position: relative;
+  padding-left: 12px;
+  margin-bottom: 4px;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #222222;
+}
+@media (max-width: 767px) {
+  .micro-credit-table .loan-limit-list li {
+    font-size: 14px;
+  }
+}
+.micro-credit-table .loan-limit-list li:last-child {
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.micro-credit-table .loan-limit-list li:last-child .notice-text {
+  color: #0b78cb;
+}
+.micro-credit-table .loan-limit-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 3px;
+  height: 3px;
+  background: #222222;
+  border-radius: 50%;
+}
+
+.credit-education-section {
+  margin-bottom: 20px;
+}
+@media (max-width: 1023px) {
+  .credit-education-section {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .credit-education-section {
+    margin-bottom: 40px;
+  }
+}
+.credit-education-section .section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #17191b;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .credit-education-section .section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+.credit-education-section .section-description {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #17191b;
+  margin-bottom: 40px;
+}
+.credit-education-section .intro-box.gradient-purple {
+  background: linear-gradient(to bottom, #f4f4ff 0%, #dcdcff 100%);
+  border-radius: 24px;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .credit-education-section .intro-box.gradient-purple {
+    padding: 24px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.credit-education-section .intro-content {
+  flex: 1;
+  max-width: 650px;
+}
+.credit-education-section .intro-content .intro-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #17191b;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .credit-education-section .intro-content .intro-title {
+    font-size: 20px;
+  }
+}
+.credit-education-section .intro-content .intro-description {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #17191b;
+  margin: 0;
+}
+.credit-education-section .intro-icon {
+  width: 123px;
+  height: 100px;
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .credit-education-section .intro-icon {
+    width: 80px;
+    height: 65px;
+    margin-top: 16px;
+  }
+}
+.credit-education-section .intro-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.credit-education-section .education-table-section {
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .credit-education-section .education-table-section {
+    margin-top: 32px;
+  }
+}
+.credit-education-section .credit-education-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 2px solid #000;
+}
+.credit-education-section .credit-education-table thead th {
+  background: #f0f2f6;
+  border: 1px solid #ccd2e0;
+  border-bottom: none;
+  padding: 12px 20px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #222222;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .credit-education-section .credit-education-table thead th {
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+}
+.credit-education-section .credit-education-table tbody td {
+  border: 1px solid #ccd2e0;
+  padding: 20px;
+  background: white;
+  vertical-align: top;
+}
+@media (max-width: 767px) {
+  .credit-education-section .credit-education-table tbody td {
+    padding: 16px 12px;
+  }
+}
+.credit-education-section .credit-education-table .education-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.credit-education-section .credit-education-table .education-list li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 12px;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #17191b;
+}
+@media (max-width: 767px) {
+  .credit-education-section .credit-education-table .education-list li {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+.credit-education-section .credit-education-table .education-list li:last-child {
+  margin-bottom: 0;
+}
+.credit-education-section .credit-education-table .education-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  background: #474e55;
+  border-radius: 3px;
+}
+.credit-education-section .image-frame {
+  border: 3px solid #1b2025;
+  border-radius: 24px;
+  padding: 20px;
+  overflow: hidden;
+  margin-top: 32px;
+}
+@media (max-width: 767px) {
+  .credit-education-section .image-frame {
+    padding: 12px;
+    border-radius: 16px;
+    margin-top: 24px;
+  }
+}
+.credit-education-section .image-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+@media (max-width: 767px) {
+  .credit-education-section .image-frame img {
+    border-radius: 8px;
+  }
+}
+.credit-education-section .talent-donation-list {
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .credit-education-section .talent-donation-list {
+    margin-top: 32px;
+  }
+}
+.credit-education-section .talent-donation-list .donation-item {
+  border-bottom: 1px solid #d2d6da;
+  padding: 24px 0;
+}
+@media (max-width: 767px) {
+  .credit-education-section .talent-donation-list .donation-item {
+    padding: 20px 0;
+  }
+}
+.credit-education-section .talent-donation-list .donation-item:first-child {
+  border-top: 1px solid #1b2025;
+}
+.credit-education-section .talent-donation-list .donation-item .donation-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #1b2025;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .credit-education-section .talent-donation-list .donation-item .donation-title {
+    font-size: 17px;
+  }
+}
+.credit-education-section .talent-donation-list .donation-item .donation-description {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #17191b;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .credit-education-section .talent-donation-list .donation-item .donation-description {
+    font-size: 15px;
+  }
+}
+
+.performance-section {
+  margin-bottom: 80px;
+}
+@media (max-width: 1023px) {
+  .performance-section {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .performance-section {
+    margin-bottom: 40px;
+  }
+}
+.performance-section .section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #17191b;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .performance-section .section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+.performance-section .section-description {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #17191b;
+  margin-bottom: 24px;
+}
+.performance-section .sub-section {
+  margin-top: 48px;
+}
+@media (max-width: 767px) {
+  .performance-section .sub-section {
+    margin-top: 32px;
+  }
+}
