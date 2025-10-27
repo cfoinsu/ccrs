@@ -318,3 +318,434 @@
         line-height: 1.6;
     }
 }
+
+// ==========================================
+// 12. Credit and Welfare Counseling Page
+// ==========================================
+
+.intro-section {
+    width: 100%;
+    height: auto;
+    margin: 0;
+
+    @include tabletLess {
+        margin: 32px 0;
+    }
+
+    @include mobile {
+        margin: 24px 0;
+    }
+
+    .section-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #17191b;
+        margin-bottom: 20px;
+        line-height: 1.5;
+
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+
+    .section-description {
+        font-size: 17px;
+        line-height: 1.5;
+        color: #17191b;
+    }
+}
+
+// Benefits Section
+.benefits-section {
+
+    @include tabletLess {
+        margin: 40px 0;
+    }
+
+    @include mobile {
+        margin: 32px 0;
+    }
+
+    .benefits-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        gap: 12px;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
+
+        .bullet {
+            width: 4px;
+            height: 18px;
+            background: linear-gradient(to bottom, #f48f01 0%, #344d82 100%);
+            border-radius: 2px;
+        }
+
+        .benefits-title {
+            font-size: 19px;
+            font-weight: 700;
+            color: #012063;
+            line-height: 1.5;
+
+            @include mobile {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+
+        @include tabletLess {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @include mobile {
+            gap: 16px;
+        }
+
+        .benefit-card {
+            border: 1px solid #d2d6da;
+            border-radius: 24px;
+            padding: 32px;
+            background: white;
+
+            @include tabletLess {
+                padding: 24px;
+                border-radius: 16px;
+            }
+
+            @include mobile {
+                padding: 20px;
+            }
+
+            .benefit-card-title {
+                font-size: 17px;
+                font-weight: 700;
+                color: #17191b;
+                margin-bottom: 32px;
+                line-height: 1.5;
+                text-align: center;
+
+                @include mobile {
+                    font-size: 15px;
+                    margin-bottom: 24px;
+                }
+            }
+
+            .chart-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .pie-chart {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+
+                    svg {
+                        @include mobile {
+                            width: 120px;
+                            height: 120px;
+                        }
+                    }
+
+                    .chart-description {
+                        font-size: 13px;
+                        line-height: 1.5;
+                        color: #17191b;
+                        text-align: center;
+                        max-width: 300px;
+
+                        @include mobile {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+
+            .program-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 32px 24px;
+
+                @include mobile {
+                    grid-template-columns: 1fr;
+                    gap: 24px;
+                }
+
+                .program-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 12px;
+
+                    .program-icon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .program-text {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 4px;
+                        text-align: center;
+
+                        strong {
+                            font-size: 19px;
+                            font-weight: 700;
+                            color: #17191b;
+
+                            @include mobile {
+                                font-size: 17px;
+                            }
+                        }
+
+                        span {
+                            font-size: 13px;
+                            color: #17191b;
+                        }
+
+                        p {
+                            font-size: 13px;
+                            line-height: 1.5;
+                            color: #17191b;
+                            margin-top: 8px;
+                        }
+                    }
+                }
+            }
+
+            .stats-grid {
+                display: flex;
+                justify-content: space-around;
+                gap: 24px;
+
+                @include mobile {
+                    flex-direction: column;
+                    gap: 32px;
+                }
+
+                .stat-item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 16px;
+
+                    .stat-circle {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        svg {
+                            @include mobile {
+                                width: 90px;
+                                height: 90px;
+                            }
+                        }
+                    }
+
+                    p {
+                        font-size: 13px;
+                        line-height: 1.5;
+                        color: #17191b;
+                        text-align: center;
+                        max-width: 120px;
+
+                        @include mobile {
+                            max-width: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Services Section
+.services-section {
+    margin: 60px 0;
+
+    @include tabletLess {
+        margin: 40px 0;
+    }
+
+    @include mobile {
+        margin: 32px 0;
+    }
+
+    .section-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #17191b;
+        margin-bottom: 40px;
+        line-height: 1.5;
+
+        @include mobile {
+            font-size: 20px;
+            margin-bottom: 32px;
+        }
+    }
+
+    .service-card {
+        margin-bottom: 40px;
+        border: 1px solid #d2d6da;
+        border-radius: 24px;
+        padding: 32px;
+        background: white;
+
+        @include tabletLess {
+            padding: 24px;
+            border-radius: 16px;
+            margin-bottom: 32px;
+        }
+
+        @include mobile {
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .service-title {
+            font-size: 19px;
+            font-weight: 700;
+            color: #17191b;
+            margin-bottom: 12px;
+            text-align: center;
+            line-height: 1.5;
+
+            @include mobile {
+                font-size: 17px;
+            }
+        }
+
+        .service-subtitle {
+            font-size: 17px;
+            color: #17191b;
+            margin-bottom: 32px;
+            text-align: center;
+            line-height: 1.5;
+
+            @include mobile {
+                font-size: 15px;
+                margin-bottom: 24px;
+            }
+        }
+
+        .service-steps {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+
+            .step-box {
+                width: 100%;
+                border-radius: 1000px;
+                padding: 32px 0 32px 100px;
+                position: relative;
+
+                @include tabletLess {
+                    padding: 24px 0 24px 60px;
+                }
+
+                @include mobile {
+                    padding: 20px;
+                }
+
+                &.gray {
+                    background: #f4f5f6;
+                }
+
+                &.blue {
+                    background: #edf4ff;
+                }
+
+                &.purple {
+                    background: #f3f2ff;
+                }
+
+                &.red {
+                    background: #ffeee9;
+                }
+
+                &.simple {
+                    text-align: center;
+                    padding: 24px;
+
+                    @include tabletLess {
+                        padding: 20px;
+                    }
+
+                    @include mobile {
+                        padding: 16px;
+                    }
+
+                    p {
+                        margin: 0;
+                        font-size: 17px;
+                        line-height: 1.5;
+                        color: #17191b;
+
+                        @include mobile {
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .step-list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        position: relative;
+                        padding-left: 20px;
+                        margin-bottom: 12px;
+                        font-size: 17px;
+                        line-height: 1.5;
+                        color: #17191b;
+
+                        @include mobile {
+                            font-size: 15px;
+                        }
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 10px;
+                            width: 4px;
+                            height: 4px;
+                            background: #474e55;
+                            border-radius: 3px;
+                        }
+                    }
+                }
+            }
+
+            .step-arrow {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #f48f01;
+                font-size: 24px;
+                margin: 4px 0;
+            }
+        }
+    }
+}
