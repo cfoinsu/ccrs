@@ -4109,14 +4109,15 @@ span.sub4InputLabel {
 }
 .results-content-wrapper .graph-wrap .manwon {
     position: absolute;
-    font-size: 1.5rem;
-    top:115px;
+    font-size: 1.4rem;
+    top:117px;
     right:200px;
     height: 2.4rem;
     padding: 2px 5px;
     background-color: #012063;
     border-radius: 20px;
     color:#fff;
+    text-align: right;
 }
 .results-content-wrapper .graph-wrap .manwon::after {
     content: '만원';
