@@ -3630,6 +3630,7 @@ box-shadow: 0px 8px 16px 0px #0000001F;
 .g-wrap .g-grid-wrap.unit2,
 .g-wrap .g-grid-wrap.unit3 {
     gap: var(--krds-gap-5);
+    margin-bottom: var(--krds-gap-10);
 }
 
 .g-wrap .g-grid-wrap.unit4 {
