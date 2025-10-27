@@ -2,20 +2,7 @@
 /* ==========================================
    통합검색 (Integrated Search) Styles
    - 네임스페이스: .global-search-container
-   - 다른 페이지 스타일과의 충돌 방지를 위해 모든 스타일을 컨테이너 안에 중첩
    ========================================== */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
 .search-results-container {
   position: relative;
   min-height: 200px;
