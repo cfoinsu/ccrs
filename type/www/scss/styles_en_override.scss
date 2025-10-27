@@ -1173,3 +1173,99 @@
         }
     }
 }
+
+// ==========================================
+// 16. Global Network Page
+// ==========================================
+
+.global-network-section {
+    margin-bottom: 80px;
+
+    @include tabletLess {
+        margin-bottom: 60px;
+    }
+
+    @include mobile {
+        margin-bottom: 40px;
+    }
+
+    .network-image-box {
+        background: #e7f4fe;
+        border-radius: 12px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 209px;
+        margin-bottom: 32px;
+        overflow: hidden;
+
+        @include mobile {
+            padding: 12px;
+            height: auto;
+            margin-bottom: 24px;
+        }
+
+        img {
+            width: 160px;
+            height: 169px;
+            object-fit: cover;
+            object-position: center;
+
+            @include mobile {
+                width: 100%;
+                max-width: 160px;
+                height: auto;
+            }
+        }
+    }
+
+    .network-content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: start;
+
+        @include tabletLess {
+            gap: 40px;
+        }
+
+        @include mobile {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+    }
+
+    .network-content-item {
+        .content-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #17191b;
+            margin-bottom: 24px;
+            line-height: 1.5;
+
+            @include mobile {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .content-text {
+            font-size: 17px;
+            line-height: 1.7;
+            color: #17191b;
+
+            p {
+                margin-bottom: 24px;
+
+                @include mobile {
+                    margin-bottom: 20px;
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

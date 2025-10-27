@@ -1171,4 +1171,105 @@
   .performance-section .sub-section {
     margin-top: 32px;
   }
+}
+
+.global-network-section {
+  margin-bottom: 80px;
+}
+@media (max-width: 1023px) {
+  .global-network-section {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .global-network-section {
+    margin-bottom: 40px;
+  }
+}
+.global-network-section .network-image-box {
+  background: #e7f4fe;
+  border-radius: 12px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 209px;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .global-network-section .network-image-box {
+    padding: 12px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+}
+.global-network-section .network-image-box img {
+  width: 160px;
+  height: 169px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+@media (max-width: 767px) {
+  .global-network-section .network-image-box img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+  }
+}
+.global-network-section .network-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+@media (max-width: 1023px) {
+  .global-network-section .network-content-grid {
+    gap: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .global-network-section .network-content-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.global-network-section .network-content-item .content-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #17191b;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .global-network-section .network-content-item .content-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+.global-network-section .network-content-item .content-text {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #17191b;
+}
+.global-network-section .network-content-item .content-text p {
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .global-network-section .network-content-item .content-text p {
+    margin-bottom: 20px;
+  }
+}
+.global-network-section .network-content-item .content-text p:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=styles_en_override.css.map */
