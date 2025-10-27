@@ -1,0 +1,320 @@
+/* ==========================================
+   영문 사이트 전용 스타일 오버라이드
+   English Site Style Override
+   - 네임스페이스: .en
+   - styles.css의 스타일을 덮어씁니다
+   ========================================== */
+
+@import "variables";
+@import "mixins/breakpoints";
+
+// ==========================================
+// 1. 영문 페이지 기본 스타일 오버라이드
+// ==========================================
+
+.en {
+    // 폰트 조정 (영문 폰트에 맞게)
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    // 기본 텍스트 스타일
+    h1, h2, h3, h4, h5, h6 {
+        letter-spacing: -0.02em;
+    }
+}
+
+// ==========================================
+// 2. 박스형 컴포넌트 스타일 (이미지 참고)
+// ==========================================
+
+// 분석 박스 (노란색 배경)
+.en .info-box,
+.en .analysis-box {
+    background-color: #fff9e6;
+    border-radius: 16px;
+    padding: 32px;
+
+    @include tabletLess {
+        padding: 24px;
+        border-radius: 12px;
+    }
+
+    @include mobile {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: var(--krds-pc-font-size-heading-medium);
+        font-weight: 700;
+        color: var(--krds-color-light-gray-95);
+        margin-bottom: 20px;
+
+        @include mobile {
+            font-size: var(--krds-pc-font-size-heading-small);
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+            line-height: 1.6;
+
+            &::before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: var(--krds-color-light-primary-60);
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+// 가이드 박스 (파란색 배경)
+.en .guide-box,
+.en .solution-box {
+    background-color: #e6f7ff;
+    border-radius: 16px;
+    padding: 32px;
+
+    @include tabletLess {
+        padding: 24px;
+        border-radius: 12px;
+    }
+
+    @include mobile {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: var(--krds-pc-font-size-heading-medium);
+        font-weight: 700;
+        color: var(--krds-color-light-gray-95);
+        margin-bottom: 20px;
+
+        @include mobile {
+            font-size: var(--krds-pc-font-size-heading-small);
+        }
+    }
+}
+
+// 금융 포용 박스 (보라색 배경)
+.en .financial-inclusion-box,
+.en .service-box {
+    background-color: #f0f0ff;
+    border-radius: 16px;
+    padding: 32px;
+
+    @include tabletLess {
+        padding: 24px;
+        border-radius: 12px;
+    }
+
+    @include mobile {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: var(--krds-pc-font-size-heading-medium);
+        font-weight: 700;
+        color: var(--krds-color-light-gray-95);
+        margin-bottom: 20px;
+
+        @include mobile {
+            font-size: var(--krds-pc-font-size-heading-small);
+        }
+    }
+}
+
+// 신용상담 보고서 박스 (핑크색 배경)
+.en .counseling-box,
+.en .report-box {
+    background-color: #ffe6f0;
+    border-radius: 16px;
+    padding: 32px;
+
+    @include tabletLess {
+        padding: 24px;
+        border-radius: 12px;
+    }
+
+    @include mobile {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: var(--krds-pc-font-size-heading-medium);
+        font-weight: 700;
+        color: var(--krds-color-light-gray-95);
+        margin-bottom: 20px;
+
+        @include mobile {
+            font-size: var(--krds-pc-font-size-heading-small);
+        }
+    }
+}
+
+// ==========================================
+// 3. 그리드 레이아웃 (2x2)
+// ==========================================
+.en .services-grid,
+.en .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 40px 0;
+
+    @include tabletLess {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    @include mobile {
+        gap: 12px;
+    }
+}
+
+// ==========================================
+// 4. 타이포그래피 오버라이드
+// ==========================================
+.en {
+    // 본문 텍스트
+    p {
+        line-height: 1.7;
+        letter-spacing: -0.01em;
+    }
+
+    // 리스트 아이템
+    li {
+        line-height: 1.6;
+    }
+
+    // 강조 텍스트
+    strong, b {
+        font-weight: 700;
+    }
+}
+
+// ==========================================
+// 5. 버튼 스타일 조정
+// ==========================================
+.en .btn,
+.en button {
+    letter-spacing: -0.01em;
+
+    @include mobile {
+        padding: 12px 16px;
+    }
+}
+
+// ==========================================
+// 6. 카드 컴포넌트
+// ==========================================
+.en .card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    &:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
+}
+
+// ==========================================
+// 7. 테이블 스타일 조정
+// ==========================================
+.en table {
+    th, td {
+        padding: 16px;
+
+        @include mobile {
+            padding: 12px 8px;
+        }
+    }
+}
+
+// ==========================================
+// 8. 페이지 특정 스타일
+// ==========================================
+
+// CEO 메시지 페이지
+.en .ceo-message-section {
+    .message-content {
+        line-height: 1.8;
+        font-size: var(--krds-pc-font-size-body-large);
+
+        @include mobile {
+            font-size: var(--krds-pc-font-size-body-small);
+        }
+    }
+}
+
+// 히스토리 페이지
+.en .history-section {
+    .timeline-item {
+        padding: 24px 0;
+
+        @include mobile {
+            padding: 16px 0;
+        }
+    }
+}
+
+// ==========================================
+// 9. 아이콘 위치 조정
+// ==========================================
+.en .icon-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    img {
+        width: 48px;
+        height: 48px;
+
+        @include mobile {
+            width: 36px;
+            height: 36px;
+        }
+    }
+}
+
+// ==========================================
+// 10. 반응형 간격 조정
+// ==========================================
+.en {
+    section {
+        padding: 60px 0;
+
+        @include tabletLess {
+            padding: 40px 0;
+        }
+
+        @include mobile {
+            padding: 32px 0;
+        }
+    }
+}
+
+// ==========================================
+// 11. 헤더/푸터 조정
+// ==========================================
+.en #header {
+    .gnb {
+        li {
+            a {
+                letter-spacing: -0.01em;
+            }
+        }
+    }
+}
+
+.en #footer {
+    .footer-text {
+        line-height: 1.6;
+    }
+}
