@@ -1250,7 +1250,7 @@
             }
         }
 
-        .content-text {
+            .content-text {
             font-size: 17px;
             line-height: 1.7;
             color: #17191b;
@@ -1266,6 +1266,136 @@
                     margin-bottom: 0;
                 }
             }
+        }
+    }
+}
+
+// ==========================================
+// 17. Headquarter Page
+// ==========================================
+
+.headquarter-section {
+    margin-bottom: 80px;
+
+    @include tabletLess {
+        margin-bottom: 60px;
+    }
+
+    @include mobile {
+        margin-bottom: 40px;
+    }
+
+    .headquarter-layout {
+        display: grid;
+        grid-template-columns: 232px 1fr;
+        gap: 32px;
+        margin-bottom: 40px;
+
+        @include tabletLess {
+            grid-template-columns: 180px 1fr;
+            gap: 24px;
+        }
+
+        @include mobile {
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+    }
+
+    .headquarter-image {
+        img {
+            width: 100%;
+            height: 347px;
+            object-fit: cover;
+            border-radius: 12px;
+
+            @include mobile {
+                height: 200px;
+            }
+        }
+    }
+
+    .contact-info-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include tabletLess {
+            gap: 32px;
+        }
+
+        @include mobile {
+            gap: 24px;
+        }
+    }
+
+    .contact-info-item {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+            color: #1b2025;
+            flex-shrink: 0;
+            margin-top: 5px;
+
+            i {
+                font-size: 20px;
+            }
+        }
+
+        .contact-content {
+            flex: 1;
+
+            .contact-label {
+                font-size: 17px;
+                font-weight: 700;
+                color: #1b2025;
+                margin-bottom: 10px;
+                line-height: 1.5;
+            }
+
+            .contact-text {
+                font-size: 17px;
+                line-height: 1.5;
+                color: #17191b;
+                margin: 0;
+            }
+        }
+    }
+
+    .headquarter-map {
+        position: relative;
+        width: 100%;
+        height: 416px;
+        border-radius: 24px;
+        overflow: hidden;
+        border: 1px solid #d2d6da;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .map-pin {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 48px;
+            height: 64px;
+            color: #ed7801;
+
+            i {
+                font-size: 48px;
+            }
+        }
+
+        @include mobile {
+            height: 300px;
         }
     }
 }
