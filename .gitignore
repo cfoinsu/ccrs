@@ -40,10 +40,6 @@ node_modules/
 bower_components/
 jspm_packages/
 
-# npm/yarn package files
-package.json
-package-lock.json
-
 # Environment variables
 .env
 .env.local
@@ -70,6 +66,3 @@ checklist.sh
 # Development files
 checklist.sh
 checklist.md
-package-lock.json
-package.json
-type/www/scss/
