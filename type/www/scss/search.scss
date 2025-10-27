@@ -162,7 +162,7 @@ $breakpoint-lg: 1280px;
         text-align: left;
 
         @include mobile {
-            font-size: 14px;
+            font-size: var(--krds-pc-font-size-body-small);
         }
     }
 
@@ -200,7 +200,7 @@ $breakpoint-lg: 1280px;
         padding-right: 40px;
 
         @include mobile {
-            font-size: 14px;
+            font-size: var(--krds-pc-font-size-body-small);
         }
 
         &::placeholder {
@@ -282,13 +282,11 @@ $breakpoint-lg: 1280px;
 
     .rank-number {
         font-weight: 700;
-        font-size: var(--krds-pc-font-size-body-medium);
         color: var(--krds-color-light-primary-60);
     }
 
     .rank-keyword {
         font-weight: 700;
-        font-size: var(--krds-pc-font-size-body-medium);
         color: var(--krds-color-light-gray-95);
     }
 
@@ -398,7 +396,6 @@ $breakpoint-lg: 1280px;
 
     .recent-search-label {
         font-weight: 700;
-        font-size: var(--krds-pc-font-size-body-medium);
         color: var(--krds-color-light-gray-95);
         white-space: nowrap;
 
@@ -426,7 +423,7 @@ $breakpoint-lg: 1280px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        gap: var(--krds-number-3);
+        gap: var(--krds-number-4);
         height: 32px;
         padding: var(--krds-number-5);
         background-color: var(--krds-color-light-gray-0);
@@ -437,7 +434,7 @@ $breakpoint-lg: 1280px;
         color: var(--krds-color-light-gray-95);
 
         @include mobile {
-            font-size: 12px;
+            font-size: var(--krds-mobile-font-size-body-xsmall);
             height: 26px;
             padding: 4px 8px;
         }
@@ -451,7 +448,7 @@ $breakpoint-lg: 1280px;
         width: 20px;
         height: 20px;
         padding: 0;
-        background-color: #d2d6da;
+        background-color: var(--krds-color-light-gray-30);
         border: none;
         border-radius: 50%;
         cursor: pointer;
@@ -516,7 +513,6 @@ $breakpoint-lg: 1280px;
 
     .checkbox-text {
         font-weight: 400;
-        font-size: var(--krds-pc-font-size-body-medium);
         color: var(--krds-color-light-gray-95);
         line-height: 1 ;
 
@@ -566,7 +562,6 @@ $breakpoint-lg: 1280px;
 
     .filter-label {
         font-weight: 700;
-        font-size: var(--krds-pc-font-size-body-medium);
         color: var(--krds-color-light-gray-95);
     }
 
@@ -582,7 +577,6 @@ $breakpoint-lg: 1280px;
         border: none;
         border-radius: var(--krds-number-2);
         font-weight: 400;
-        font-size: var(--krds-pc-font-size-body-medium);
         color: var(--krds-color-light-gray-95);
         cursor: pointer;
         transition: background-color 0.2s;
@@ -673,7 +667,7 @@ $breakpoint-lg: 1280px;
             }
 
             @include mobile {
-                font-size: 13px;
+                font-size: var(--krds-mobile-font-size-body-xsmall);
                 height: 44px;
                 padding: 0 6px;
                 min-width: 50px;
@@ -728,7 +722,7 @@ $breakpoint-lg: 1280px;
                 }
 
                 @include mobile {
-                    font-size: 13px;
+                    font-size: var(--krds-mobile-font-size-body-xsmall);
                 }
 
                 &::before {
@@ -763,8 +757,8 @@ $breakpoint-lg: 1280px;
         justify-content: space-between;
         align-items: center;
         padding: 1.6rem 0;
-        border-top: 2px solid #333;
-        border-bottom: 1px solid #E5E5E5;
+        border-top: 2px solid var(--krds-color-light-gray-95);
+        border-bottom: 1px solid var(--krds-color-light-gray-20);
         margin-bottom: 2.4rem;
 
         .sch-info {
@@ -782,8 +776,8 @@ $breakpoint-lg: 1280px;
         }
 
         .label {
-            font-size: 1.4rem;
-            color: #666;
+            font-size: var(--krds-pc-font-size-body-small);
+            color: var(--krds-color-light-gray-60);
             font-weight: 500;
         }
 
@@ -791,18 +785,18 @@ $breakpoint-lg: 1280px;
         .period-btn {
             background: none;
             border: none;
-            font-size: 1.4rem;
-            color: #666;
+            font-size: var(--krds-pc-font-size-body-small);
+            color: var(--krds-color-light-gray-60);
             cursor: pointer;
             padding: 0.4rem 0.8rem;
             position: relative;
 
             &:hover {
-                color: #333;
+                color: var(--krds-color-light-gray-90);
             }
 
             &.active {
-                color: #F48F01;
+                color: var(--krds-color-light-accent-50);
                 font-weight: 700;
             }
 
@@ -815,7 +809,7 @@ $breakpoint-lg: 1280px;
                 transform: translateY(-50%);
                 width: 1px;
                 height: 1.2rem;
-                background-color: #DDD;
+                background-color: var(--krds-color-light-gray-30);
             }
         }
     }
@@ -849,7 +843,7 @@ $breakpoint-lg: 1280px;
         margin: 0;
 
         @include mobile {
-            font-size: 18px;
+            font-size: var(--krds-pc-font-size-heading-small);
         }
     }
 
@@ -859,7 +853,7 @@ $breakpoint-lg: 1280px;
         color: var(--krds-color-light-primary-60);
 
         @include mobile {
-            font-size: 18px;
+            font-size: var(--krds-pc-font-size-heading-small);
         }
     }
 
@@ -943,7 +937,6 @@ $breakpoint-lg: 1280px;
 
     .breadcrumb-item {
         font-weight: 700;
-        font-size: var(--krds-pc-font-size-body-medium);
         color: var(--krds-color-light-gray-95);
         transition: none;
         pointer-events: none;
@@ -953,7 +946,7 @@ $breakpoint-lg: 1280px;
         }
 
         @include mobile {
-            font-size: 14px;
+            font-size: var(--krds-pc-font-size-body-small);
         }
     }
 
@@ -1004,7 +997,6 @@ $breakpoint-lg: 1280px;
 
     .post-title {
         font-weight: 700;
-        font-size: var(--krds-pc-font-size-body-medium);
         line-height: 1.5;
         color: var(--krds-color-light-gray-95);
         transition: none;
@@ -1017,7 +1009,7 @@ $breakpoint-lg: 1280px;
         }
 
         @include mobile {
-            font-size: 14px;
+            font-size: var(--krds-pc-font-size-body-small);
         }
     }
 
@@ -1029,7 +1021,7 @@ $breakpoint-lg: 1280px;
         flex-shrink: 0;
 
         @include mobile {
-            font-size: 13px;
+            font-size: var(--krds-mobile-font-size-body-xsmall);
         }
     }
 
@@ -1089,7 +1081,7 @@ $breakpoint-lg: 1280px;
         height: 214px;
         border-radius: 12px;
         overflow: hidden;
-        background-color: #E3E3E3;
+        background-color: var(--krds-color-light-gray-20);
 
         @include tabletLess {
             width: 100%;
@@ -1120,9 +1112,9 @@ $breakpoint-lg: 1280px;
 
     .gallery-title {
         font-weight: 700;
-        font-size: 19px;
+        font-size: var(--krds-pc-font-size-body-large);
         line-height: 1.5;
-        color: #17191B;
+        color: var(--krds-color-light-gray-95);
         margin: 0;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -1138,15 +1130,14 @@ $breakpoint-lg: 1280px;
         }
 
         @include mobile {
-            font-size: 16px;
-        }
+            }
     }
 
     .gallery-date {
         font-weight: 400;
         font-size: var(--krds-pc-font-size-body-small);
         line-height: 1.5;
-        color: #474E55;
+        color: var(--krds-color-light-gray-70);
         margin: 0;
     }
 
@@ -1154,7 +1145,7 @@ $breakpoint-lg: 1280px;
         font-weight: 400;
         font-size: var(--krds-pc-font-size-body-small);
         line-height: 1.5;
-        color: #474E55;
+        color: var(--krds-color-light-gray-70);
         margin: 0;
         width: fit-content;
         min-width: 100%;
@@ -1171,7 +1162,7 @@ $breakpoint-lg: 1280px;
             flex-direction: column;
             gap: 8px;
             padding-bottom: 32px;
-            border-bottom: 1px solid #D2D6DA;
+            border-bottom: 1px solid var(--krds-color-light-gray-30);
         }
     }
 
@@ -1200,9 +1191,8 @@ $breakpoint-lg: 1280px;
 
     .webpage-title {
         font-weight: 700;
-        font-size: 17px;
         line-height: 1.5;
-        color: #17191B;
+        color: var(--krds-color-light-gray-95);
         margin: 0;
         transition: none;
         pointer-events: none;
@@ -1214,9 +1204,8 @@ $breakpoint-lg: 1280px;
 
     .webpage-desc {
         font-weight: 400;
-        font-size: 17px;
         line-height: 1.5;
-        color: #17191B;
+        color: var(--krds-color-light-gray-95);
         margin: 0;
         display: -webkit-box;
         -webkit-box-orient: vertical;
