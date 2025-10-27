@@ -80,7 +80,7 @@ body {
     padding: 0 20px;
     position: relative;
 }
-
+/* 폰트 스타일 */
 .font-bold {
     font-weight: 600;
 }
@@ -88,6 +88,10 @@ body {
 .primary {
     color: var(--krds-light-color-text-primary);
 }
+.fcGreen {
+    color: #228738;
+}
+
 .logo img {
     height: 33px;
 }
@@ -5185,7 +5189,7 @@ table.comparison-table td:first-child {
 .krds-info-list + .krds-table-wrap {margin-top: 2rem;}
 .g-wrap .g-conts-area .conts-desc {
     margin-bottom: var(--krds-gap-4);
-    font-size: var(--krds-pc-font-size-body-medium);
+    font-size: var(--krds-pc-font-size-body-large);
 }
 .g-wrap .g-conts-area .desc-conts p {
     margin-bottom: 5px;
@@ -6855,6 +6859,18 @@ input[type=radio]:checked + label.fillter-chip {
   pointer-events: none;
   z-index: 2;
 }
+.g-img.bgact.yellow::after {
+    background: rgba(237, 120, 1, 0.4); /* 노란빛 반투명 원 */
+}
+.g-img.bgact.red::after {
+    background: rgba(249, 92, 45, 0.4); /* 붉은빛 반투명 원 */
+}
+.g-img.bgact.blue::after {
+    background: rgba(56, 113, 202, 0.4); /* 푸른빛 반투명 원 */
+}
+.g-img.bgact.skyblue::after {
+    background: rgba(22, 147, 170, 0.4); /* 하늘빛 반투명 원 */
+}
 
 .g-img.bgact:hover::after,
 .g-img.bgact:focus::after {
@@ -6950,6 +6966,14 @@ input[type=radio]:checked + label.fillter-chip {
     font-size: 1.7rem;
     font-weight: 700;
     height: 48px;
+    flex-shrink: 0;
+    gap: 4px;
+}
+.youtube-btn-red:hover,
+.youtube-btn-red:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #FFB3B8;
+    color: #fff;
 }
 .youtube-btn-red .icon-youtube {
     width: 24px;
@@ -6957,6 +6981,35 @@ input[type=radio]:checked + label.fillter-chip {
     display: inline-block;
     background: url(../img/icons/ico_youtube_white.svg) no-repeat center;
     background-size: contain;
+}
+.summary-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 0.8rem;
+    font-size: 1.9rem;
+}
+.summary-key {
+    display: flex;
+    gap: 8px;
+}
+.keybox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3.2rem;
+    padding: 20px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    flex: 1;
+    width: 0;
+}
+.keybox b {
+    margin-top: 7px;
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #000;
 }
 .onrange-info {
     display: inline-block;
@@ -6984,11 +7037,22 @@ input[type=radio]:checked + label.fillter-chip {
     height: 48px;
     gap: 4px;
 }
+.orange-link:hover,
+.orange-link:focus {
+    color:#fff;
+}
 .orange-link .icon-arrow-right-white {
     width: 24px;
     height: 24px;
     display: inline-block;
     background: url(../img/icons/ico_arrow_right_white.svg) no-repeat center;
+    background-size: contain;
+}
+.orange-link .icon-link-white {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background: url(../img/icons/icon-link-white.svg) no-repeat center;
     background-size: contain;
 }
 .specialMap.krds-modal .modal-dialog .modal-content {
@@ -7052,4 +7116,64 @@ input[type=radio]:checked + label.fillter-chip {
 .map_ftext {
     font-weight: 700;
     font-size: 1.9rem;
+}
+.posrel {
+    position: relative;
+}
+.abslogocenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../images/img/round-logo.png) center no-repeat;
+    width: 220px;
+    height: 220px;
+}
+/* 서머리박스 */
+.summary-box {
+    display: block;
+    width: 100%;
+    padding: 40px 32px;
+    border-radius: 24px;
+    background: url(../images/bg/bg_summary.png) no-repeat
+}
+.summary-tit {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #ED7801;
+    padding-left: 28px;
+    background: url(../images/ic/tit_summary.svg) left center no-repeat;
+}
+/* 효과박스 */
+.effect-box {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 32px;
+    border-radius: 24px;
+    background: #EDF4FF;
+}
+.effect-box .boxc3 {
+    flex: calc(100%/3 - 16px) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.effect-box.textleft .boxc3 {
+    text-align: left;
+}
+/* 스크롤효과 */
+.scroll-fadeup {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(.33,1,.68,1), transform 0.7s cubic-bezier(.33,1,.68,1);
+  will-change: opacity, transform;
+}
+.scroll-fadeup.active {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -3042,7 +3042,7 @@ caption {
   --krds-info-list--gap-layout-depth3-li-li: var(--krds-gap-3);
   --krds-info-list--pc-text-depth1: var(--krds-pc-font-size-body-medium);
   --krds-info-list--mobile-text-depth1: var(--krds-mobile-font-size-body-medium);
-  --krds-info-list--pc-text-depth2: var(--krds-pc-font-size-body-medium);
+  --krds-info-list--pc-text-depth2: var(--krds-pc-font-size-body-large);
   --krds-info-list--mobile-text-depth2: var(--krds-mobile-font-size-body-medium);
   --krds-info-list--pc-text-depth3: var(--krds-pc-font-size-body-small);
   --krds-info-list--mobile-text-depth3: var(--krds-mobile-font-size-body-small);
@@ -3060,6 +3060,9 @@ caption {
   padding-left: var(--krds-info-list--depth1-padding-left);
   color: var(--krds-info-list--depth1-color-text);
   font-size: var(--krds-info-list--pc-text-depth1);
+}
+.krds-info-list.lg > li {
+  font-size: var(--krds-info-list--pc-text-depth2);
 }
 .krds-info-list.unit2 {
   display: flex;
