@@ -3000,7 +3000,8 @@ caption {
 .g-wrap .krds-table-wrap .tbl.data tbody th.transp {
   background-color: transparent;
   color: #17191B;
-  text-align: left;
+  text-align: center;
+  font-weight:700;
 }
 .g-wrap .krds-table-wrap .tbl.data .boleft-white {
   border-left: 4px solid #fff !important;
@@ -3009,13 +3010,13 @@ caption {
   background-color: #FFF6EA;
   border-color: #FFD89F;
   color: #17191B;
-  text-align: left;
+  text-align: center;
 }
 .g-wrap .krds-table-wrap .tbl.data tbody td.secondtd {
   background-color: #E6F3FF;
   border-color: #BADAF8;
   color: #17191B;
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .krds-table-wrap .tbl.data tbody th,
@@ -3099,7 +3100,7 @@ caption {
   position: relative;
   padding-left: var(--krds-info-list--depth1-padding-left);
   color: var(--krds-info-list--depth1-color-text);
-  font-size: var(--krds-info-list--pc-text-depth1);
+  font-size: var(--krds-info-list--pc-text-depth2);
 }
 .krds-info-list.lg > li {
   font-size: var(--krds-info-list--pc-text-depth2);
@@ -4145,7 +4146,7 @@ caption {
   border-bottom:1px solid #ccc;
 }
 .krds-accordion.type-heading .accordion-item .accordion-body {
-  padding: 3.2rem 0 0;
+  padding: 3.2rem 0 0.1rem;
   background: none;
 }
 .krds-accordion.type-heading .accordion-item.active {
@@ -23730,6 +23731,9 @@ body {
 .g-wrap .krds-table-wrap .tbl tbody th,
 .g-wrap .krds-table-wrap .tbl tbody td {
   color: var(--krds-light-color-text-subtle);
+}
+.g-wrap .krds-table-wrap .tbl tbody td {
+  padding: 4px 8px;
 }
 .g-wrap .krds-table-wrap .tbl .g-desc-area .g-btn-area {
   gap: var(--krds-gap-3);
