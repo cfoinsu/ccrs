@@ -11,15 +11,15 @@
     <title>연혁</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
     
-    <link rel="stylesheet" href="/type/www/css/common.css?ver=0.9">
-    <link rel="stylesheet" href="/type/www/css/main.css?ver=0.9">
-    <link rel="stylesheet" href="/type/www/css/plugins/swiper.min.css?ver=0.9">
-    <!-- <link rel="stylesheet" href="/type/www/css/sub.css?ver=0.9"> -->
-    <link rel="stylesheet" href="/type/www/css/layout.css?ver=0.9">
-    <link rel="stylesheet" href="/type/www/css/component/output.css?ver=0.9">
-    <link rel="stylesheet" href="/type/www/css/styles.css?ver=0.9">
+    <link rel="stylesheet" href="/type/www/css/common.css?ver=1.0">
+    <link rel="stylesheet" href="/type/www/css/main.css?ver=1.0">
+    <link rel="stylesheet" href="/type/www/css/plugins/swiper.min.css?ver=1.0">
+    <!-- <link rel="stylesheet" href="/type/www/css/sub.css?ver=1.0"> -->
+    <link rel="stylesheet" href="/type/www/css/layout.css?ver=1.0">
+    <link rel="stylesheet" href="/type/www/css/component/output.css?ver=1.0">
+    <link rel="stylesheet" href="/type/www/css/styles.css?ver=1.0">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="/type/www/css/all.min.css?ver=0.9">
+    <link rel="stylesheet" href="/type/www/css/all.min.css?ver=1.0">
 
 
     
@@ -27,7 +27,7 @@
     
     
 
-    <script src="/type/www/js/jquery-2.2.4.min.js?ver=0.9"></script>
+    <script src="/type/www/js/jquery-2.2.4.min.js?ver=1.0"></script>
 </head>
 
 <body>
@@ -257,9 +257,9 @@
                         <div class="content-sections ccrs-year">
                             <!-- 연도 탭 섹션 -->
                             <div class="year-tab-wrap">
-                                <div class="year-tab active" data-year="2023-2021">
+                                <div class="year-tab active" data-year="2025-2021">
                                     <div class="year-cont">
-                                        <div class="year-text">2023 ~ 2021</div>
+                                        <div class="year-text">2025 ~ 2021</div>
                                     </div>
                                     <div class="year-border"></div>
                                 </div>
@@ -682,13 +682,13 @@
     </div>
     <!-- 검색영역 -->
 
-    <script src="/type/www/js/jquery-2.2.4.min.js?ver=0.9"></script>
-    <script src="/type/www/js/plugins/swiper.min.js?ver=0.9"></script>
-    <script src="/type/www/js/plugins/aos.js?ver=0.9"></script>
-    <script src="/type/www/js/common.js?ver=0.9"></script>
-    <script src="/type/www/js/layout.js?ver=0.9"></script>
-    <script src="/type/www/js/script.js?ver=0.9"></script>
-    <script src="/type/www/js/component/ui-script.js?ver=0.9"></script>
+    <script src="/type/www/js/jquery-2.2.4.min.js?ver=1.0"></script>
+    <script src="/type/www/js/plugins/swiper.min.js?ver=1.0"></script>
+    <script src="/type/www/js/plugins/aos.js?ver=1.0"></script>
+    <script src="/type/www/js/common.js?ver=1.0"></script>
+    <script src="/type/www/js/layout.js?ver=1.0"></script>
+    <script src="/type/www/js/script.js?ver=1.0"></script>
+    <script src="/type/www/js/component/ui-script.js?ver=1.0"></script>
     <!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
 
     <!-- 2️⃣ 아코디언 토글 스크립트 -->
@@ -726,9 +726,9 @@
             function updateTimelineContent(yearRange) {
                 const $content = $('#timeline-content');
 
-                if (yearRange === '2023-2021') {
-                    // 2023-2021 콘텐츠 (기본값)
-                    $content.html(getFlexContent2023To2021());
+                if (yearRange === '2025-2021') {
+                    // 2025-2021 콘텐츠 (기본값)
+                    $content.html(getFlexContent2025To2021());
                 } else if (yearRange === '2020-2011') {
                     // 2020-2011 콘텐츠
                     $content.html(getFlexContent2020To2011());
@@ -739,10 +739,95 @@
             }
 
             // 새로운 Flexbox 기반 함수들
-            // 2023-2021 콘텐츠
-            function getFlexContent2023To2021() {
+            // 2025-2021 콘텐츠
+            function getFlexContent2025To2021() {
                 return `
                 <div class="timeline-content-flex">
+                    <!-- 2025 년도 섹션 -->
+                    <div class="timeline-year-section">
+                        <div class="timeline-image-area">
+                            <div class="timeline-image-card">
+                                <img alt="2023 채무조정" src="/type/www/img/contents/png/year2023.png" />
+                            </div>
+                        </div>
+                        <div class="timeline-content-area">
+                            <div class="timeline-year-header-flex">
+                                <div class="timeline-year-icon-flex">
+                                    
+
+                                </div>
+                                <div class="timeline-year-flex">2025</div>
+                            </div>
+                            <div class="timeline-events-flex">
+                                <div class="timeline-event-item-flex">
+                                    <div class="timeline-date-flex">09.19</div>
+                                    <div class="timeline-event-multi-flex">
+                                        <div class="timeline-event-content-flex">전기요금 통합 채무조정 시행</div>
+                                    </div>
+                                </div>
+                                <div class="timeline-event-item-flex">
+                                    <div class="timeline-date-flex">07.07</div>
+                                    <div class="timeline-event-multi-flex">
+                                        <div class="timeline-event-content-flex">소상공인 컨설팅 지원사업 시행</div>
+                                    </div>
+                                </div>
+                                <div class="timeline-event-item-flex">
+                                    <div class="timeline-date-flex">06.30</div>
+                                    <div class="timeline-event-multi-flex">
+                                        <div class="timeline-event-content-flex">신속/사전채무조정 특례 상시화 및 자영업자 채무조정 지원 강화</div>
+                                    </div>
+                                </div>
+                                <div class="timeline-event-item-flex">
+                                    <div class="timeline-date-flex">01.17</div>
+                                    <div class="timeline-event-multi-flex">
+                                        <div class="timeline-event-content-flex">금융회사 채무조정 수탁 업무 시행</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2024 년도 섹션 -->
+                    <div class="timeline-year-section">
+                        <div class="timeline-image-area">
+                            <div class="timeline-image-card">
+                                <img alt="채무조정 지원" src="/type/www/img/contents/png/year2022.png" />
+                            </div>
+                        </div>
+                        <div class="timeline-content-area">
+                            <div class="timeline-year-header-flex">
+                                <div class="timeline-year-icon-flex">
+                                    
+
+                                </div>
+                                <div class="timeline-year-flex">2024</div>
+                            </div>
+                            <div class="timeline-events-flex">
+                                <div class="timeline-event-item-flex">
+                                    <div class="timeline-date-flex">12.30</div>
+                                    <div class="timeline-event-content-flex">
+                                        취약계층 청년층 등 채무자 특성별 맞춤형 금융지원 확대 실시<br>
+                                        "신속(특례), 소액취약채무자 면책"
+                                    </div>
+                                </div>
+                                <div class="timeline-event-item-flex">
+                                    <div class="timeline-date-flex">06.21</div>
+                                    <div class="timeline-event-content-flex">금융통신 통합 채무조정 시행</div>
+                                </div>
+                                <div class="timeline-event-item-flex">
+                                    <div class="timeline-date-flex">03.12</div>
+                                    <div class="timeline-event-multi-flex">
+                                        <div class="timeline-event-content-flex">채무조정 성실상환자의 공공기록정보 등재기간 단축 (2년 → 1년)</div>
+                                    </div>
+                                </div>
+                                <div class="timeline-event-item-flex">
+                                    <div class="timeline-date-flex">02.01</div>
+                                    <div class="timeline-event-content-flex">법무부 '법률홈닥터' 연계 법률상담 시행</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- 2023 년도 섹션 -->
                     <div class="timeline-year-section">
                         <div class="timeline-image-area">
@@ -762,8 +847,13 @@
                                 <div class="timeline-event-item-flex">
                                     <div class="timeline-date-flex">04.03</div>
                                     <div class="timeline-event-multi-flex">
-                                        <div class="timeline-event-content-flex">신속채무조정 특례 시행</div>
-                                        <div class="timeline-event-content-flex">사전채무조정 특례 시행</div>
+                                        <div class="timeline-event-content-flex">신속채무조정 특례, 단기 취약연체자 사전채무조정 특례 시행</div>
+                                    </div>
+                                </div>
+                                <div class="timeline-event-item-flex">
+                                    <div class="timeline-date-flex">01.05</div>
+                                    <div class="timeline-event-multi-flex">
+                                        <div class="timeline-event-content-flex">무료 신용상담 앱 '신용플러스' 출시</div>
                                     </div>
                                 </div>
                             </div>
@@ -787,12 +877,12 @@
                             </div>
                             <div class="timeline-events-flex">
                                 <div class="timeline-event-item-flex">
-                                    <div class="timeline-date-flex">10.04</div>
-                                    <div class="timeline-event-content-flex">새출발기금 중개형 시행</div>
+                                    <div class="timeline-date-flex">11.01</div>
+                                    <div class="timeline-event-content-flex">취약채무자 신속면책제도 시행</div>
                                 </div>
                                 <div class="timeline-event-item-flex">
-                                    <div class="timeline-date-flex">09.26</div>
-                                    <div class="timeline-event-content-flex">신속채무조정 청년 특례 시행</div>
+                                    <div class="timeline-date-flex">10.04</div>
+                                    <div class="timeline-event-content-flex">소상공인·자영업자 새출발기금 중개형 채무조정 시행</div>
                                 </div>
                                 <div class="timeline-event-item-flex">
                                     <div class="timeline-date-flex">02.21</div>
@@ -803,7 +893,7 @@
                                 </div>
                                 <div class="timeline-event-item-flex">
                                     <div class="timeline-date-flex">01.27</div>
-                                    <div class="timeline-event-content-flex">한국장학재단 통합채무조정 시행</div>
+                                    <div class="timeline-event-content-flex">한국장학재단 학자금대출 통합채무조정 시행</div>
                                 </div>
                             </div>
                         </div>
@@ -825,6 +915,22 @@
                                 <div class="timeline-year-flex">2021</div>
                             </div>
                             <div class="timeline-events-flex">
+                                <div class="timeline-event-item-flex">
+                                    <div class="timeline-date-flex">12.23</div>
+                                    <div class="timeline-event-content-flex">신한카드 성실상환자 신용체크카드 발급 지원</div>
+                                </div>
+                                <div class="timeline-event-item-flex">
+                                    <div class="timeline-date-flex">12.03</div>
+                                    <div class="timeline-event-content-flex">미국 전미신용상담협회(NFCC)와 신용상담 선진화 및 금융소비자 보호를 위한 MOU 체결</div>
+                                </div>
+                                <div class="timeline-event-item-flex">
+                                    <div class="timeline-date-flex">10.27</div>
+                                    <div class="timeline-event-content-flex">
+                                        연체전(신속채무조정)·이자율(프리워크아웃) 채무조정 단일채무 보유자 지원<br>
+                                        이자율채무조정(프리워크아웃) 이자율조정 차등화, 이자율 상·하한 개선<br>
+                                        코로나19 피해 자영업자 지원확대(~'22년 한시지원)
+                                    </div>
+                                </div>
                                 <div class="timeline-event-item-flex">
                                     <div class="timeline-date-flex">05.25</div>
                                     <div class="timeline-event-content-flex">미취업청년 지원사업 시행</div>
@@ -1185,7 +1291,7 @@
                                 </div>
                                 <div class="timeline-event-item-flex">
                                     <div class="timeline-date-flex">03.02</div>
-                                    <div class="timeline-event-content-flex">재외동포 신용회복지원제도 시행</div>
+                                    <div class="timeline-event-content-flex">해외동포 신용회복지원제도 시행</div>
                                 </div>
                             </div>
                         </div>
@@ -1454,7 +1560,7 @@
             }
 
             // 페이지 로드 시 기본 콘텐츠 표시
-            updateTimelineContent('2023-2021');
+            updateTimelineContent('2025-2021');
         });
     </script>
 </body>

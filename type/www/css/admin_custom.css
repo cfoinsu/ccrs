@@ -1,0 +1,299 @@
+/* --- 헤더 화이트톤 심플 개편 --- */
+.reN_cms header {
+    height: 70px !important;
+    padding: 0 32px 0 210px !important;
+    border-bottom: 1px solid #EEEEEE;
+    box-shadow: none;
+    box-sizing: border-box;
+    min-width: 0;
+}
+.reN_cms header h1 {
+    top: 50%;
+    left: 24px;
+    height: 50px !important;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+.reN_cms header h1 > a {
+    width: 160px;
+    height: 50px !important;
+    padding: 0;
+    line-height: 50px;
+    text-align: left;
+    vertical-align: middle;
+}
+.reN_cms header h1 img {
+    height: 40px;
+    width: auto;
+    filter: grayscale(0) brightness(1) !important;
+    /* 로고는 필요시 검은색 단색 svg로 교체 추천 */
+}
+
+.reN_cms header .top_util {
+    position: absolute;
+    top:0;
+    right:0;
+    left:210px;
+    height: 70px;
+    padding: 0 32px;
+    background: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0;
+    border: none;
+    box-shadow: none;
+}
+.reN_cms header .top_util .userInfo {
+    color: #666;
+    font-size: 14px;
+    font-family: 'Roboto','Noto Sans KR',sans-serif;
+    margin-right: 12px;
+    font-weight: 400;
+    background: none;
+}
+.reN_cms header .top_util .userInfo .user {
+    padding-left: 20px;
+    background: none;
+    font-weight: 500;
+    color: #222;
+}
+.reN_cms header .top_util .userInfo .part {
+    margin-left: 8px;
+    padding-left: 8px;
+    font-weight: 400;
+    color: #8d8d8d;
+}
+.reN_cms header .top_util .userInfo .part::before {
+    background: #DDD;
+    width: 1px; height: 14px;
+}
+.reN_cms header .top_util a {
+    color: #888 !important;
+    background: none;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 70px;
+    transition: color 0.2s;
+}
+.reN_cms header .top_util a:hover {
+    color: #007AFF !important;
+}
+.reN_cms #gnb {
+    height: 70px;
+    padding: 0 0 0 0;
+    background: #fff !important;
+    border: none;
+    margin: 0;
+    display: flex;
+    align-items: stretch;
+    box-sizing: border-box;
+}
+.reN_cms #gnb>li {margin:0; padding:0 20px;flex: 1; width: 0; text-align: center;}
+.reN_cms #gnb>li>a {
+    height: 69px;
+    line-height: 69px;
+    color: #222 !important;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    background: none;
+    transition: color 0.2s, border-bottom 0.2s;
+    letter-spacing: -0.01em;
+}
+.reN_cms #gnb>li>a.on,
+.reN_cms #gnb>li>a:hover {
+    color: #007AFF !important;
+    border-bottom: 2px solid #007AFF;
+    background: none;
+    border-left: none;
+}
+
+.reN_cms #contents>article {
+
+}
+
+/* ===== 헤더 잘림/overflow/정렬 보정 ===== */
+.reN_cms header {
+    min-width: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box;
+}
+.reN_cms header .top_util {
+    position: absolute;
+    right: 0;
+    left: 230px;
+    width: auto;
+    min-width: 260px;
+    height: 70px;
+    padding-right: 40px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    white-space: nowrap;
+}
+.reN_cms header .top_util .userInfo {
+    min-width: 0;
+    flex-shrink: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px;
+}
+.reN_cms header .top_util a {
+    padding: 0 12px !important;
+    min-width: 48px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media (max-width:1300px) {
+    .reN_cms header .top_util .userInfo {max-width: 120px;}
+}
+
+/* 로그인/로그아웃이 잘리는 현상 예방용 */
+.reN_cms header {
+    overflow: visible !important;
+}
+
+.reN_cms #gnb {
+    min-width: 0;
+    min-height: 70px;
+    display: flex;
+    align-items: stretch;
+    width: calc(100% - 500px);
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh !important;
+}
+
+.reN_cms footer {
+    z-index: 1 !important;
+}
+
+/* ====== 좌측 메뉴 배경을 아이보리톤으로 ====== */
+.reN_cms #contents > nav {
+    /*border-right: 1.5px solid #FFE2B7;*/
+    min-height: 600px;
+}
+
+/* 사이드 메뉴 1뎁스(major_link) 기본 폰트/컬러/포인트값 */
+.reN_cms .major_link > li > a {
+    background: none;
+    color: #FF8200;
+    font-weight: 500;
+    margin-bottom: 2px;
+    transition: background 0.2s, color 0.2s;
+    position: relative;
+}
+/* 기본에선 좀 더 딤한 주황, hover/on은 완전히 진한 주황 */
+.reN_cms .major_link > li > a {
+    color: #000;
+}
+.reN_cms .major_link > li > a:hover {
+    background: #FFE2B7 !important;
+    color: #000 !important;
+}
+.reN_cms .major_link > li > a.on {
+    background: #FFE2B7 !important;
+    color: #FF8200 !important;
+    font-weight: 700;
+}
+
+/* 좌측 포인트 바(hover/on)도 주황 계열로 */
+.reN_cms .major_link > li > a.on::before {
+    background: #FF8200 !important;
+    opacity: 1;
+    width: 4px !important;
+    border-radius: 3px;
+}
+/* 2뎁스: majorS_link - 폰트 회색, on/hover만 주황 */
+.reN_cms .majorS_link > li > a { color: #878060; }
+.reN_cms .majorS_link > li > a:hover,
+.reN_cms .majorS_link > li.on > a { color: #FF8200; }
+/* 2뎁스 점(원) 포인트도 주황 */
+.reN_cms .majorS_link > li:hover::before,
+.reN_cms .majorS_link > li.on::before { background: #FF8200; }
+
+/* 메뉴 구분선, 그림자 등 불필요한 효과 제거 */
+.reN_cms #contents > nav {
+    box-shadow: none!important;
+    border-top: none!important;
+    height: calc(100vh - 70px);
+}
+
+/* (선택) 메뉴 텍스트 등 간격, 정렬을 더 깔끔하게 */
+.reN_cms .major_link > li > a {
+    padding: 16px 16px 16px 24px !important;
+    font-size: 17px;
+}
+.reN_cms .majorS_link > li > a {
+    font-size: 15px;
+}
+
+#container {
+    background: #FFF;
+}
+
+.reN_cms header {
+    height: 70px !important;
+    padding: 0 32px 0 230px !important;
+    border-bottom: none !important;
+    box-shadow: none;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.reN_cms #contents {
+    background: none !important;
+}
+
+
+
+.reN_cms footer>address {
+    border-left: none;
+}
+
+.reN_cms #contents>article {
+    margin: 0 !important;
+    padding: 20px 30px 180px 60px !important;
+}
+
+/* 기본패턴_준비중 */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loadingBarWrap {display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999;}
+.loading_title {display:block;margin-bottom:15px;}
+.loadingBar {position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:320px;height:auto;border-radius:5px;padding:25px 30px 30px;z-index: 9999;background:none;border:none;box-shadow:none;}
+.loadingbar {height:20px;width:320px;border-radius:50px;position: absolute !important;}
+.loadingbar div {width:100%;height:100%;border-radius:50px;position: absolute;top: 0px;left: 0px;}
+.loadingbar .grayBar {background: #dfdfdf;}
+.loadingbar .colorBar {background: linear-gradient( to right, #8167d1, #4485e9);animation: bar 1.5s linear infinite;}
+.btn_loadClose {position:absolute;top:15px;right:15px;width:22px;height:22px;}
+.btn_loadClose .line1 {width: 22px;height: 1px;background: #222;position: absolute;left: 0px;top:10px;transform: rotate(45deg);}
+.btn_loadClose .line2 {width: 22px;height: 1px;background: #222;position: absolute;left: 0px;top:10px;transform: rotate(-45deg);}
+.btn_loadClose span {position: absolute;width: 1px;height: 1px;top: 0;left: 0;margin: 1px;border: none;overflow: hidden;clip: rect(0, 0, 0, 0);}
+
+.element {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes bar {
+    from  { width:0; }
+    to  { width:100%; }
+}
