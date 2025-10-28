@@ -144,8 +144,8 @@ body {
     .page-nav {
         position: absolute;
         top: 50%;
-        left: var(--krds-number-11);
-        right: var(--krds-number-11);
+        left: 45px;
+        right: 45px;
         transform: translateY(-50%);
         display: flex;
         justify-content: space-between;
@@ -300,7 +300,7 @@ body {
 // PDF Content Area
 .pdf-content {
     flex: 1;
-    overflow: auto;
+    overflow: visible;
     background: var(--krds-color-light-gray-5);
     position: relative;
     display: flex;
@@ -316,13 +316,46 @@ body {
         padding: var(--krds-number-6) var(--krds-number-5);
     }
 
+    // Turn.js 컨테이너
+    #flipbook {
+        width: 1200px;
+        height: 900px;
+
+        @include tabletLess {
+            width: 800px;
+            height: 600px;
+        }
+
+        @include mobile {
+            width: 100%;
+            max-width: 500px;
+            height: 375px;
+        }
+
+        .page {
+            background: var(--krds-color-light-gray-0);
+            box-shadow: 0 2px 8px var(--krds-light-color-alpha-shadow2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            canvas {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
     #pdfCanvas {
         max-width: 100%;
         height: auto;
         box-shadow: 0 2px 8px var(--krds-light-color-alpha-shadow2);
         background: var(--krds-color-light-gray-0);
     }
+}
 
+.pdf-content {
     .page-info {
         position: fixed;
         bottom: var(--krds-number-11);

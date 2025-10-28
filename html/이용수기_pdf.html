@@ -18,6 +18,8 @@
     <script src="/type/www/js/jquery-2.2.4.min.js?ver=1.0"></script>
     <!-- PDF.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <!-- Turn.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
 </head>
 <body>
     <div class="pdf-viewer-container">
@@ -58,8 +60,10 @@
         
         <!-- PDF 콘텐츠 영역 -->
         <div class="pdf-content">
-            <!-- PDF.js로 렌더링될 캔버스 -->
-            <canvas id="pdfCanvas"></canvas>
+            <!-- Turn.js 플립북 -->
+            <div id="flipbook">
+                <!-- 페이지들은 JavaScript로 동적 생성 -->
+            </div>
 
             <!-- 페이지 정보 표시 -->
             <div class="page-info">
@@ -72,54 +76,107 @@
         // PDF.js 워커 설정
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
-        // PDF 파일 경로 (샘플 PDF - Mozilla의 PDF.js 테스트 파일)
+        // PDF 파일 경로
         const pdfUrl = 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf';
 
         let pdfDoc = null;
         let pageNum = 1;
-        let pageRendering = false;
-        let pageNumPending = null;
-        let scale = 1.5;
+        let scale = 1.8;
+        const renderedPages = {};
 
-        const canvas = document.getElementById('pdfCanvas');
-        const ctx = canvas.getContext('2d');
+        // PDF 페이지를 캔버스로 렌더링
+        function renderPageToCanvas(pageNumber) {
+            return new Promise((resolve, reject) => {
+                if (renderedPages[pageNumber]) {
+                    resolve(renderedPages[pageNumber]);
+                    return;
+                }
 
-        // PDF 페이지 렌더링
-        function renderPage(num) {
-            pageRendering = true;
+                pdfDoc.getPage(pageNumber).then(function(page) {
+                    const canvas = document.createElement('canvas');
+                    const ctx = canvas.getContext('2d');
+                    const viewport = page.getViewport({ scale: scale });
 
-            pdfDoc.getPage(num).then(function(page) {
-                const viewport = page.getViewport({ scale: scale });
-                canvas.height = viewport.height;
-                canvas.width = viewport.width;
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
 
-                const renderContext = {
-                    canvasContext: ctx,
-                    viewport: viewport
-                };
+                    const renderContext = {
+                        canvasContext: ctx,
+                        viewport: viewport
+                    };
 
-                const renderTask = page.render(renderContext);
-
-                renderTask.promise.then(function() {
-                    pageRendering = false;
-                    if (pageNumPending !== null) {
-                        renderPage(pageNumPending);
-                        pageNumPending = null;
-                    }
-                });
+                    page.render(renderContext).promise.then(function() {
+                        renderedPages[pageNumber] = canvas;
+                        resolve(canvas);
+                    }).catch(reject);
+                }).catch(reject);
             });
-
-            // 페이지 번호 업데이트
-            document.getElementById('pageNum').textContent = num;
         }
 
-        // 페이지 렌더링 대기열
-        function queueRenderPage(num) {
-            if (pageRendering) {
-                pageNumPending = num;
-            } else {
-                renderPage(num);
+        // Turn.js 초기화
+        function initFlipbook(totalPages) {
+            const $flipbook = $('#flipbook');
+
+            // 모든 페이지를 미리 생성
+            for (let i = 1; i <= totalPages; i++) {
+                $flipbook.append(`<div class="page" data-page="${i}"><div class="page-content"></div></div>`);
             }
+
+            // Turn.js 플립북 초기화
+            $flipbook.turn({
+                width: 1200,
+                height: 900,
+                autoCenter: true,
+                duration: 1000,
+                acceleration: true,
+                gradients: true,
+                elevation: 50,
+                when: {
+                    turning: function(event, page, view) {
+                        // 페이지가 넘어갈 때
+                        pageNum = page;
+                        updatePageInfo();
+                        updateButtonState();
+
+                        // 현재 보이는 페이지들 렌더링
+                        loadVisiblePages(page);
+                    },
+                    turned: function(event, page, view) {
+                        // 페이지 넘김 완료
+                        pageNum = page;
+                    }
+                }
+            });
+
+            // 초기 페이지 로드
+            loadVisiblePages(1);
+            updatePageInfo();
+            updateButtonState();
+        }
+
+        // 보이는 페이지들 로드
+        function loadVisiblePages(currentPage) {
+            // 현재 페이지와 다음 페이지 렌더링 (양면 효과)
+            const pagesToLoad = [currentPage];
+            if (currentPage + 1 <= pdfDoc.numPages) {
+                pagesToLoad.push(currentPage + 1);
+            }
+
+            pagesToLoad.forEach(pageNumber => {
+                const $page = $(`.page[data-page="${pageNumber}"] .page-content`);
+                if ($page.children().length === 0) {
+                    renderPageToCanvas(pageNumber).then(canvas => {
+                        $page.append(canvas);
+                    }).catch(err => {
+                        console.error(`페이지 ${pageNumber} 렌더링 오류:`, err);
+                    });
+                }
+            });
+        }
+
+        // 페이지 정보 업데이트
+        function updatePageInfo() {
+            document.getElementById('pageNum').textContent = pageNum;
         }
 
         // 버튼 상태 업데이트
@@ -127,55 +184,30 @@
             const prevBtn = document.querySelector('.page-prev');
             const nextBtn = document.querySelector('.page-next');
 
-            // 첫 페이지일 때 이전 버튼 비활성화
             if (pageNum <= 1) {
                 prevBtn.disabled = true;
-                prevBtn.style.opacity = '0.7';
-                prevBtn.style.cursor = 'not-allowed';
+                prevBtn.style.opacity = '0.5';
             } else {
                 prevBtn.disabled = false;
                 prevBtn.style.opacity = '1';
-                prevBtn.style.cursor = 'pointer';
             }
 
-            // 마지막 페이지일 때 다음 버튼 비활성화
             if (pageNum >= pdfDoc.numPages) {
                 nextBtn.disabled = true;
                 nextBtn.style.opacity = '0.5';
-                nextBtn.style.cursor = 'not-allowed';
             } else {
                 nextBtn.disabled = false;
                 nextBtn.style.opacity = '1';
-                nextBtn.style.cursor = 'pointer';
             }
         }
 
-        // 이전 페이지
-        function onPrevPage() {
-            if (pageNum <= 1) {
-                return;
-            }
-            pageNum--;
-            queueRenderPage(pageNum);
-            updateButtonState();
-        }
-
-        // 다음 페이지
-        function onNextPage() {
-            if (pageNum >= pdfDoc.numPages) {
-                return;
-            }
-            pageNum++;
-            queueRenderPage(pageNum);
-            updateButtonState();
-        }
-
-        // 페이지 이동 (기존 함수명 유지)
+        // 페이지 이동
         function changePage(direction) {
+            const $flipbook = $('#flipbook');
             if (direction < 0) {
-                onPrevPage();
+                $flipbook.turn('previous');
             } else {
-                onNextPage();
+                $flipbook.turn('next');
             }
         }
 
@@ -194,27 +226,34 @@
             pdfDoc = pdfDoc_;
             document.getElementById('pageCount').textContent = pdfDoc.numPages;
 
-            // 첫 페이지 렌더링
-            renderPage(pageNum);
-
-            // 버튼 상태 초기화
-            updateButtonState();
+            // Turn.js 플립북 초기화
+            initFlipbook(pdfDoc.numPages);
         }).catch(function(error) {
             console.error('PDF 로드 오류:', error);
             alert('PDF 파일을 불러올 수 없습니다.');
         });
 
-        // 키보드 이벤트 (화살표 키로 페이지 이동)
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        // 키보드 이벤트
+        $(document).on('keydown', function(e) {
+            const $flipbook = $('#flipbook');
+            if (e.key === 'ArrowLeft') {
                 e.preventDefault();
-                onPrevPage();
-            } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                $flipbook.turn('previous');
+            } else if (e.key === 'ArrowRight') {
                 e.preventDefault();
-                onNextPage();
+                $flipbook.turn('next');
             } else if (e.key === 'Escape') {
                 window.close();
             }
+        });
+
+        // 반응형 처리
+        $(window).on('resize', function() {
+            const $flipbook = $('#flipbook');
+            const width = Math.min(1200, $(window).width() - 100);
+            const height = width * 0.75;
+
+            $flipbook.turn('size', width, height);
         });
     </script>
 </body>
