@@ -1,0 +1,187 @@
+// PDF Viewer Styles
+// Using KRDS Design System Variables
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.pdf-viewer-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+// Sidebar
+.pdf-sidebar {
+    width: 195px;
+    background: var(--krds-color-light-gray-0);
+    border-right: 1px solid var(--krds-color-light-gray-20);
+    padding: var(--krds-number-11);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .sidebar-logo {
+        display: block;
+        width: 100%;
+        margin-bottom: var(--krds-number-6);
+        padding: var(--krds-number-6) 0;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .sidebar-title {
+        font-size: var(--krds-pc-font-size-label-large);
+        font-weight: 700;
+        color: var(--krds-color-light-primary-60);
+        border-top: 1px solid var(--krds-color-light-gray-20);
+        padding-top: var(--krds-number-6);
+        margin-bottom: var(--krds-number-14);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sidebar-controls {
+        margin-top: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: var(--krds-number-9);
+        align-items: center;
+    }
+
+    .page-nav {
+        position: absolute;
+        top: 50%;
+        left: var(--krds-number-11);
+        right: var(--krds-number-11);
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page-prev,
+    .page-next {
+        width: var(--krds-number-16);
+        height: var(--krds-number-16);
+        border: 1px solid var(--krds-color-light-gray-20);
+        border-radius: var(--krds-radius-max);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s;
+        background: var(--krds-color-light-gray-0);
+
+        &:hover {
+            border-color: var(--krds-color-light-primary-60);
+            background: var(--krds-color-light-primary-60);
+            color: var(--krds-color-light-gray-0);
+        }
+
+        &:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            pointer-events: none;
+
+            &:hover {
+                border-color: var(--krds-color-light-gray-20);
+                background: var(--krds-color-light-gray-0);
+                color: inherit;
+            }
+        }
+    }
+
+    .pdf-download-btn {
+        width: 125px;
+        height: 125px;
+        background: var(--krds-color-light-primary-50);
+        border-radius: var(--krds-number-10);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--krds-color-light-gray-0);
+        cursor: pointer;
+        transition: all 0.3s;
+        border: none;
+        font-size: var(--krds-pc-font-size-body-medium);
+        font-weight: 700;
+        position: absolute;
+        bottom: var(--krds-number-11);
+        left: 35px;
+
+        svg {
+            margin-top: var(--krds-number-6);
+        }
+
+        &:hover {
+            background: var(--krds-color-light-primary-60);
+            transform: translateY(-2px);
+        }
+    }
+
+    .pdf-download-icon {
+        width: var(--krds-number-10);
+        height: var(--krds-number-10);
+        margin-top: var(--krds-number-6);
+        filter: brightness(0) invert(1);
+    }
+}
+
+// PDF Content Area
+.pdf-content {
+    flex: 1;
+    overflow: auto;
+    background: var(--krds-color-light-gray-5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--krds-number-14) var(--krds-number-9);
+
+    #pdfCanvas {
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0 2px 8px var(--krds-light-color-alpha-shadow2);
+        background: var(--krds-color-light-gray-0);
+    }
+
+    .page-info {
+        position: fixed;
+        bottom: var(--krds-number-11);
+        right: var(--krds-number-11);
+        background: var(--krds-color-light-alpha-black75);
+        color: var(--krds-color-light-gray-0);
+        padding: var(--krds-number-6) var(--krds-number-9);
+        border-radius: var(--krds-number-9);
+        font-size: var(--krds-pc-font-size-body-xsmall);
+        font-weight: 600;
+        z-index: 100;
+    }
+
+    .pdf-page {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+    .pdf-placeholder {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, var(--krds-color-light-gray-5) 0%, var(--krds-color-light-gray-10) 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--krds-pc-font-size-body-large);
+        color: var(--krds-color-light-gray-40);
+    }
+}

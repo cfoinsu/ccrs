@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="format-detection" content="telephone=no, address=no, email=no"/>
+    <meta name="keywords" content="신용회복위원회"/>
+    <meta name="description" content="신용회복위원회"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>이용수기 - PDF보기</title>
+	  <link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
+    <link rel="stylesheet" href="/type/www/css/common.css?ver=1.0">
+    <link rel="stylesheet" href="/type/www/css/component/output.css?ver=1.0">
+    <link rel="stylesheet" href="/type/www/css/pdf.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/type/www/css/all.min.css?ver=1.0">
+
+    <script src="/type/www/js/jquery-2.2.4.min.js?ver=1.0"></script>
+    <!-- PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+    <div class="pdf-viewer-container">
+        <!-- 사이드바 -->
+        <div class="pdf-sidebar">
+          <h1>
+            <a href="/" class="sidebar-logo">
+                <img src="/type/www/images/logo/logo.svg" alt="logo">
+            </a>
+            
+            <div class="sidebar-title">
+                <span>이</span>
+                <span>용</span>
+                <span>수</span>
+                <span>기</span>
+            </div>
+          </h1>
+          
+          <!-- 페이지 이동 버튼 -->
+          <div class="page-nav">
+              <button class="page-prev" type="button" onclick="changePage(-1)">
+                  <i class="fa-solid fa-angle-left"></i>
+              </button>
+              <button class="page-next" type="button" onclick="changePage(1)">
+                  <i class="fa-solid fa-angle-right"></i>
+              </button>
+          </div>
+          
+          <!-- PDF 다운로드 버튼 -->
+          <button class="pdf-download-btn" type="button" onclick="downloadPDF()">
+              <span>PDF</span>
+              <span>다운로드</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
+<path d="M19.1992 12.2002C19.6409 12.2002 19.9989 12.5583 19.999 13V16.2002C19.999 16.642 19.641 17 19.1992 17H0.799805C0.587668 16.9999 0.384364 16.9156 0.234375 16.7656C0.0844138 16.6156 -3.26416e-05 16.4123 9.46485e-09 16.2002L0.000976572 13C0.0011505 12.5583 0.359084 12.2002 0.800781 12.2002C1.24261 12.2003 1.60069 12.5591 1.60059 13.001V15.4004H18.3994V13C18.3996 12.5583 18.7575 12.2002 19.1992 12.2002ZM9.99902 0C10.4408 0 10.7988 0.358033 10.7988 0.799805V10.5137L14.4229 6.74512C14.7291 6.42694 15.2353 6.4175 15.5537 6.72363C15.872 7.02985 15.8822 7.53606 15.5762 7.85449L10.5762 13.0547C10.4253 13.2116 10.2166 13.2998 9.99902 13.2998C9.78162 13.2998 9.57361 13.2113 9.42285 13.0547L4.42285 7.85449C4.11674 7.53614 4.12624 7.02991 4.44434 6.72363C4.76281 6.41741 5.26993 6.42666 5.57617 6.74512L9.19922 10.5137V0.799805C9.19928 0.358099 9.55733 0.000106154 9.99902 0Z" fill="white"/>
+</svg>
+          </button>
+        </div>
+        
+        <!-- PDF 콘텐츠 영역 -->
+        <div class="pdf-content">
+            <!-- PDF.js로 렌더링될 캔버스 -->
+            <canvas id="pdfCanvas"></canvas>
+
+            <!-- 페이지 정보 표시 -->
+            <div class="page-info">
+                <span id="pageNum"></span> / <span id="pageCount"></span>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // PDF.js 워커 설정
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+        // PDF 파일 경로 (샘플 PDF - Mozilla의 PDF.js 테스트 파일)
+        const pdfUrl = 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/web/compressed.tracemonkey-pldi-09.pdf';
+
+        let pdfDoc = null;
+        let pageNum = 1;
+        let pageRendering = false;
+        let pageNumPending = null;
+        let scale = 1.5;
+
+        const canvas = document.getElementById('pdfCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // PDF 페이지 렌더링
+        function renderPage(num) {
+            pageRendering = true;
+
+            pdfDoc.getPage(num).then(function(page) {
+                const viewport = page.getViewport({ scale: scale });
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport
+                };
+
+                const renderTask = page.render(renderContext);
+
+                renderTask.promise.then(function() {
+                    pageRendering = false;
+                    if (pageNumPending !== null) {
+                        renderPage(pageNumPending);
+                        pageNumPending = null;
+                    }
+                });
+            });
+
+            // 페이지 번호 업데이트
+            document.getElementById('pageNum').textContent = num;
+        }
+
+        // 페이지 렌더링 대기열
+        function queueRenderPage(num) {
+            if (pageRendering) {
+                pageNumPending = num;
+            } else {
+                renderPage(num);
+            }
+        }
+
+        // 버튼 상태 업데이트
+        function updateButtonState() {
+            const prevBtn = document.querySelector('.page-prev');
+            const nextBtn = document.querySelector('.page-next');
+
+            // 첫 페이지일 때 이전 버튼 비활성화
+            if (pageNum <= 1) {
+                prevBtn.disabled = true;
+                prevBtn.style.opacity = '0.7';
+                prevBtn.style.cursor = 'not-allowed';
+            } else {
+                prevBtn.disabled = false;
+                prevBtn.style.opacity = '1';
+                prevBtn.style.cursor = 'pointer';
+            }
+
+            // 마지막 페이지일 때 다음 버튼 비활성화
+            if (pageNum >= pdfDoc.numPages) {
+                nextBtn.disabled = true;
+                nextBtn.style.opacity = '0.5';
+                nextBtn.style.cursor = 'not-allowed';
+            } else {
+                nextBtn.disabled = false;
+                nextBtn.style.opacity = '1';
+                nextBtn.style.cursor = 'pointer';
+            }
+        }
+
+        // 이전 페이지
+        function onPrevPage() {
+            if (pageNum <= 1) {
+                return;
+            }
+            pageNum--;
+            queueRenderPage(pageNum);
+            updateButtonState();
+        }
+
+        // 다음 페이지
+        function onNextPage() {
+            if (pageNum >= pdfDoc.numPages) {
+                return;
+            }
+            pageNum++;
+            queueRenderPage(pageNum);
+            updateButtonState();
+        }
+
+        // 페이지 이동 (기존 함수명 유지)
+        function changePage(direction) {
+            if (direction < 0) {
+                onPrevPage();
+            } else {
+                onNextPage();
+            }
+        }
+
+        // PDF 다운로드
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = '이용수기.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // PDF 로드
+        pdfjsLib.getDocument(pdfUrl).promise.then(function(pdfDoc_) {
+            pdfDoc = pdfDoc_;
+            document.getElementById('pageCount').textContent = pdfDoc.numPages;
+
+            // 첫 페이지 렌더링
+            renderPage(pageNum);
+
+            // 버튼 상태 초기화
+            updateButtonState();
+        }).catch(function(error) {
+            console.error('PDF 로드 오류:', error);
+            alert('PDF 파일을 불러올 수 없습니다.');
+        });
+
+        // 키보드 이벤트 (화살표 키로 페이지 이동)
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                e.preventDefault();
+                onPrevPage();
+            } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                e.preventDefault();
+                onNextPage();
+            } else if (e.key === 'Escape') {
+                window.close();
+            }
+        });
+    </script>
+</body>
+</html>
+
