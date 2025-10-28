@@ -185,3 +185,178 @@ body {
         color: var(--krds-color-light-gray-40);
     }
 }
+
+// ==========================================
+// Responsive Styles
+// ==========================================
+
+// Tablet
+@media (max-width: 1024px) {
+    .pdf-sidebar {
+        width: 140px;
+        padding: var(--krds-number-9);
+
+        .sidebar-logo {
+            img {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+        .sidebar-title {
+            font-size: var(--krds-pc-font-size-body-medium);
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .page-nav {
+            flex-direction: column;
+            gap: var(--krds-number-6);
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pdf-download-btn {
+            width: 100px;
+            height: 100px;
+            font-size: var(--krds-pc-font-size-body-small);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .pdf-content {
+        padding: var(--krds-number-9);
+    }
+}
+
+// Mobile
+@media (max-width: 768px) {
+    .pdf-viewer-container {
+        flex-direction: column;
+    }
+
+    .pdf-sidebar {
+        width: 100%;
+        height: auto;
+        min-height: 70px;
+        flex-direction: row;
+        padding: var(--krds-number-6) var(--krds-number-9);
+        justify-content: space-between;
+        position: relative;
+
+        .sidebar-logo {
+            width: 100px;
+            margin: 0;
+            padding: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .sidebar-title {
+            font-size: var(--krds-pc-font-size-body-medium);
+            border-top: none;
+            border-left: 1px solid var(--krds-color-light-gray-20);
+            padding-top: 0;
+            padding-left: var(--krds-number-6);
+            margin: 0;
+            flex-direction: row;
+            gap: 4px;
+            width: auto;
+        }
+
+        .page-nav {
+            position: relative;
+            top: auto;
+            left: auto;
+            transform: none;
+            flex-direction: row;
+            gap: var(--krds-number-6);
+            margin: 0 var(--krds-number-6);
+        }
+
+        .page-prev,
+        .page-next {
+            width: 36px;
+            height: 36px;
+            flex-shrink: 0;
+        }
+
+        .pdf-download-btn {
+            width: auto;
+            height: 36px;
+            padding: 0 var(--krds-number-9);
+            font-size: var(--krds-pc-font-size-body-small);
+            position: relative;
+            left: auto;
+            transform: none;
+            flex-direction: row;
+            gap: var(--krds-number-4);
+            border-radius: var(--krds-number-9);
+
+            svg {
+                margin-top: 0;
+                width: 16px;
+                height: 16px;
+            }
+
+            span {
+                display: none;
+
+                &:first-child {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .pdf-content {
+        padding: var(--krds-number-6);
+        flex: 1;
+
+        #pdfCanvas {
+            box-shadow: none;
+        }
+
+        .page-info {
+            position: sticky;
+            bottom: var(--krds-number-6);
+            right: var(--krds-number-6);
+            background: var(--krds-color-light-alpha-black75);
+            padding: var(--krds-number-4) var(--krds-number-6);
+            font-size: var(--krds-pc-font-size-body-xsmall);
+        }
+    }
+}
+
+// Small Mobile
+@media (max-width: 480px) {
+    .pdf-sidebar {
+        .sidebar-logo {
+            width: 80px;
+        }
+
+        .sidebar-title {
+            font-size: var(--krds-pc-font-size-body-small);
+            padding-left: var(--krds-number-4);
+        }
+
+        .page-prev,
+        .page-next {
+            width: 32px;
+            height: 32px;
+        }
+
+        .pdf-download-btn {
+            height: 32px;
+            padding: 0 var(--krds-number-6);
+            font-size: var(--krds-pc-font-size-body-xsmall);
+        }
+    }
+
+    .pdf-content {
+        padding: var(--krds-number-4);
+    }
+}
