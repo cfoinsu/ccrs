@@ -20,6 +20,21 @@
     h1, h2, h3, h4, h5, h6 {
         letter-spacing: -0.02em;
     }
+
+    // Inner 컨테이너
+    .inner {
+        max-width: 1340px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        @include tabletLess {
+            padding: 0 16px;
+        }
+
+        @include mobile {
+            padding: 0 16px;
+        }
+    }
 }
 
 // ==========================================
