@@ -4108,9 +4108,9 @@ span.sub4InputLabel {
     color: #17191B;
     font-weight: 700;
 }
-.results-content-wrapper .graph-img:not(.nofilter):hover img {
+/* .results-content-wrapper .graph-img:not(.nofilter):hover img {
     filter: grayscale(1);
-}
+} */
 .results-content-wrapper .graph-wrap .manwon {
     position: absolute;
     font-size: 1.4rem;
