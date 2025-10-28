@@ -1294,6 +1294,17 @@ body {
     position: relative;
 }
 
+.tooltip .tbl.white th,
+.tooltip .tbl.white td {
+    background-color : transparent !important;
+    color: #fff !important;
+    font-size: 1.4rem !important;
+    padding: 2px 4px;
+}
+.tooltip h6 {
+    font-size: 1.8rem;
+}
+
 .tooltip::after {
     content: '';
     position: absolute;
@@ -4108,9 +4119,9 @@ span.sub4InputLabel {
     color: #17191B;
     font-weight: 700;
 }
-.results-content-wrapper .graph-img:not(.nofilter):hover img {
+/* .results-content-wrapper .graph-img:not(.nofilter):hover img {
     filter: grayscale(1);
-}
+} */
 .results-content-wrapper .graph-wrap .manwon {
     position: absolute;
     font-size: 1.4rem;
