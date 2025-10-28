@@ -323,7 +323,7 @@ body {
 .page-description.bgBlue {
     background: url(../images/img/bg_content_top.png) center no-repeat;
     background-size: cover;
-    padding: 36px;
+    padding: 20px 36px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -5153,12 +5153,15 @@ table.comparison-table td:first-child {
 }
 
 .krds-info-list.decimal {
-    gap: 8px;
+    gap: 2px;
     text-align: left;
+}
+.krds-info-list > li > .krds-info-list {
+    margin-top: 0;
 }
 
 .krds-info-list.decimal li .krds-info-list {
-    margin-top: 8px;
+    margin-top: 0;
 }
 
 .krds-info-list.dash .before-none::before,
@@ -6587,7 +6590,12 @@ table.comparison-table td:first-child {
     text-align: center;
     padding: 16px;
 }
-.underline {text-decoration: underline;}
+.underline {text-decoration: underline;color: #004E97;}
+.underline:hover 
+.underline:focus {
+    text-decoration: underline;
+    color: #004E97;
+}
 
 /* 특수말줄임 추가 (관리자페이지는 적용하면 안됨) */
 .krds-structured-list.type-full.gallery .gallery-item .card-body .gall-text .gall-txt {
@@ -7025,7 +7033,7 @@ input[type=radio]:checked + label.fillter-chip {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px;
+    padding: 15px 10px;
     border-radius: 24px;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
@@ -7043,8 +7051,9 @@ input[type=radio]:checked + label.fillter-chip {
 .keybox b {
     margin-top: 7px;
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: #000;
+    padding-left: 10px;
 }
 .onrange-info {
     display: inline-block;
@@ -7191,6 +7200,15 @@ input[type=radio]:checked + label.fillter-chip {
     border-radius: 24px;
     background: #EDF4FF;
 }
+.effect-box .boxc1 {
+    min-width: 100%;
+    flex: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
 .effect-box .boxc2 {
     flex: calc(100%/2 - 16px) 0;
     display: flex;
@@ -7214,6 +7232,10 @@ input[type=radio]:checked + label.fillter-chip {
 .effect-box .key-text span {
     font-weight: 400;
     font-size: 1.7rem;
+}
+.keybox .key-text span {
+    font-weight: 400;
+    font-size: 1.3rem;
 }
 /* 스크롤효과 */
 .scroll-fadeup {

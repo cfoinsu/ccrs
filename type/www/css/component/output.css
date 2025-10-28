@@ -3095,7 +3095,7 @@ caption {
   display: flex;
   flex-direction: column;
   margin-top: var(--krds-info-list--depth1-list-margin-top);
-  gap: var(--krds-info-list--gap-layout-depth1-li-li);
+  gap: 2px;
 }
 .krds-info-list > li {
   position: relative;
@@ -3130,7 +3130,7 @@ caption {
   line-height: 0;
 }
 .krds-info-list > li > .krds-info-list {
-  gap: var(--krds-info-list--gap-layout-depth2-li-li);
+  gap: var(--krds-info-list--gap-layout-depth4-li-li);
   margin-top: var(--krds-info-list--depth2-list-margin-top);
 }
 .krds-info-list > li > .krds-info-list > li {
