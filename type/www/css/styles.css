@@ -1294,6 +1294,14 @@ body {
     position: relative;
 }
 
+.tooltip .tbl.white th,
+.tooltip .tbl.white td {
+    background-color : transparent !important;
+    color: #fff !important;
+    font-size: 1.4rem !important;
+    padding: 2px 4px;
+}
+
 .tooltip::after {
     content: '';
     position: absolute;
