@@ -4044,6 +4044,7 @@ caption {
   max-height: 1000vh;
   transition: all 1.5s ease-in-out;
   visibility: visible;
+  overflow: visible;
 }
 .krds-accordion .accordion-item.active .accordion-body {
   background-color: var(--krds-accordion--color-action-open);
