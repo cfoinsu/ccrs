@@ -6999,23 +6999,35 @@ input[type=radio]:checked + label.fillter-chip {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 0.8rem;
+    margin-bottom: 3.2rem;
     font-size: 1.9rem;
 }
 .summary-key {
     display: flex;
     gap: 8px;
+    flex-wrap: wrap;
+}
+.summary-key + .summary-key {
+    margin-top: 8px;
 }
 .keybox {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 3.2rem;
-    padding: 20px;
+    padding: 15px;
     border-radius: 24px;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
-    flex: 1;
+    flex: calc(20% - 8px);
     width: 0;
+}
+.keybox.full {
+    flex: 100%;
+    flex-shrink: 0;
+}
+.keybox.long {
+    flex: calc(200%/3 - 8px);
+    flex-shrink: 0;
 }
 .keybox b {
     margin-top: 7px;
@@ -7147,7 +7159,8 @@ input[type=radio]:checked + label.fillter-chip {
     width: 100%;
     padding: 40px 32px;
     border-radius: 24px;
-    background: url(../images/bg/bg_summary.png) no-repeat
+    background: url(../images/bg/bg_summary.png) no-repeat;
+    background-size: cover;
 }
 .summary-tit {
     font-size: 3.2rem;
