@@ -6854,12 +6854,12 @@ input[type=radio]:checked + label.fillter-chip {
 .boxi-content-flex {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 16px;
+    gap: 20px;
     max-width: 980px;
     margin: 0 auto;
 }
 .boxi-content-flex>.g-img {
-    width: 482px;
+    width: 100%;
 }
 .g-grid-wrap.contect {
     margin-top: 80px;
@@ -6982,7 +6982,17 @@ input[type=radio]:checked + label.fillter-chip {
   100% { filter: hue-rotate(360deg); }
   0%   { filter: hue-rotate(0deg); }
 }
+.shadow {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 16px;
+}
 
+.shadow:hover,
+.shadow:focus {
+  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+  transform: translateY(-4px);
+}
 
 .youtube-btn-red {
     display: flex;
