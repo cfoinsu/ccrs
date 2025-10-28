@@ -1301,6 +1301,9 @@ body {
     font-size: 1.4rem !important;
     padding: 2px 4px;
 }
+.tooltip h6 {
+    font-size: 1.8rem;
+}
 
 .tooltip::after {
     content: '';
