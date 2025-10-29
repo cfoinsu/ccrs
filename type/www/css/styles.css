@@ -7063,7 +7063,6 @@ input[type=radio]:checked + label.fillter-chip {
     font-weight: 700;
     font-size: 1.5rem;
     color: #000;
-    padding-left: 10px;
 }
 .onrange-info {
     display: inline-block;
