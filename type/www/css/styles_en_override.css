@@ -9,9 +9,9 @@
   letter-spacing: -0.02em;
 }
 .en .inner {
-  max-width: 1340px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 @media (max-width: 1023px) {
   .en .inner {
@@ -355,14 +355,6 @@
   .en section {
     padding: 10px 0;
   }
-}
-
-.en #header .gnb li a {
-  letter-spacing: -0.01em;
-}
-
-.en #footer .footer-text {
-  line-height: 1.6;
 }
 
 .intro-section {
@@ -1473,6 +1465,7 @@
   border-left: none;
   border-top: none;
   border-top-left-radius: 8px;
+  border-bottom-left-radius: 0;
 }
 .regional-offices-section .regional-tabs .tab-item:nth-child(4) {
   border-right: none;
@@ -1489,7 +1482,7 @@
   border-bottom-right-radius: 8px;
 }
 .regional-offices-section .regional-tabs .tab-item:nth-child(5), .regional-offices-section .regional-tabs .tab-item:nth-child(6), .regional-offices-section .regional-tabs .tab-item:nth-child(7) {
-  border-bottom: 1px solid #d2d6da;
+  border-bottom: none;
 }
 .regional-offices-section .regional-tabs .tab-item.active {
   background: #344d82;
