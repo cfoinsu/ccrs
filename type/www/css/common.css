@@ -152,6 +152,7 @@ section::-webkit-scrollbar-thumb {display: none;}
 .pt40 {padding-top: 4rem !important;}
 .pb0 {padding-bottom: 0 !important;}
 .pb10 {padding-bottom: 1rem !important;}
+.pl8 {padding-left: 0.8rem !important;}
 .pl11 {padding-left: 11rem !important;}
 
 /* font */
@@ -166,6 +167,7 @@ section::-webkit-scrollbar-thumb {display: none;}
 .fs_16 {font-size: 1.6rem;}
 .fs_17 {font-size: 1.7rem;}
 .fs_18 {font-size: 1.8rem;}
+.fs_19 {font-size: 1.9rem;}
 .fs_20 {font-size: 2rem;}
 .fs_22 {font-size: 2.2rem;}
 .fs_24 {font-size: 2.4rem;}
@@ -244,8 +246,4 @@ ul.circle-30 li::before {position: absolute; content: ''; display: block; width:
 /* background */
 .bg-point {background: linear-gradient(180deg, rgba(243, 248, 239, 0) 50%, #F3F8EF 50%); width: fit-content;}
 
-
-.gm-b-font{	font-family: GmarketSansBold; font-size: 52px; }
-.gm-m-font{	font-family: GmarketSansMedium; }
-.gm-l-font{	font-family: GmarketSansLight; font-weight: bold;}
 
