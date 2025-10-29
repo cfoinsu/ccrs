@@ -22164,7 +22164,7 @@ body {
 }
 .g-wrap .g-conts-area .con-tit {
   margin-bottom: var(--krds-pc-gap-layout-title-body-medium);
-  font-size: var(--krds-pc-font-size-heading-small);
+  font-size: var(--krds-pc-font-size-heading-medium);
   font-weight: var(--krds-typo-font-weight-bold);
   color: #012063;
 }
