@@ -6399,6 +6399,11 @@ table.comparison-table td:first-child {
     display: flex;
     flex-direction: row;
 }
+.g-img.row.between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .g-img.blue.round {
     background: #F6FAFF;
     border-radius: 2.4rem;
@@ -7295,3 +7300,10 @@ input[type=radio]:checked + label.fillter-chip {
     color: #fff !important;
     background-color: #000 !important;
 }
+.conts-desc {font-size:19px;}
+.krds-info-list.decimal .bullet.small {font-size:19px;}
+.krds-info-list.decimal .bullet.small::before {
+    height: 20px;
+}
+table .krds-info-list > li {font-size: 17px;}
+.g-wrap .krds-table-wrap .tbl.data tbody th {font-weight: 700;}
