@@ -547,7 +547,7 @@ $(function() {
 function isInViewport(element) {
   var rect = element.getBoundingClientRect();
   return (
-    rect.top <= (window.innerHeight - 80) && // 80px 여유 (조정 가능)
+    rect.top <= (window.innerHeight - 120) && // 80px 여유 (조정 가능)
     rect.bottom >= 0
   );
 }
