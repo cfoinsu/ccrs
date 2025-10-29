@@ -145,6 +145,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 0;
 
     #pdfCanvas {
@@ -157,9 +158,10 @@ body {
     // Swiper Styles
     .pdf-swiper {
         width: 100%;
-        // max-width: 1440px;
+        max-width: 95%; // 화면을 더 꽉 채우도록 설정
         overflow-y: auto;
         overflow-x: hidden;
+        margin: 0 auto; // 가운데 정렬
     }
 
     .swiper-slide {
@@ -167,14 +169,15 @@ body {
         align-items: flex-start;
         justify-content: center;
         overflow-y: auto;
-        // width: auto !important;
-        padding: var(--krds-number-6) 0;
+        padding: var(--krds-number-4) 0; // padding 줄임
 
         canvas {
             max-width: 100%;
             height: auto;
             box-shadow: 0 2px 8px var(--krds-light-color-alpha-shadow2);
             background: var(--krds-color-light-gray-0);
+            display: block;
+            margin: 0 auto; // 캔버스 가운데 정렬
         }
     }
 
