@@ -1180,7 +1180,6 @@ fieldset {
 img {
   max-width: 100%;
   vertical-align: top;
-  object-fit: none;
 }
 
 ul,
