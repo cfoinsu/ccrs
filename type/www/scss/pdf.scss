@@ -1,9 +1,6 @@
 // PDF Viewer Styles
 // Using KRDS Design System Variables
 
-@import "variables";
-@import "mixins/breakpoints";
-
 body {
     margin: 0;
     padding: 0;
@@ -14,14 +11,6 @@ body {
     display: flex;
     height: 100vh;
     width: 100vw;
-
-    @include tabletLess {
-        flex-direction: column;
-    }
-
-    @include mobile {
-        flex-direction: column;
-    }
 }
 
 // Sidebar
@@ -35,50 +24,11 @@ body {
     align-items: center;
     position: relative;
 
-    @include tabletLess {
-        width: 100%;
-        height: auto;
-        border-right: none;
-        border-bottom: 1px solid var(--krds-color-light-gray-20);
-        padding: var(--krds-number-8);
-        flex-direction: row;
-        justify-content: space-between;
-
-        h1 {
-          display: flex;
-        }
-    }
-
-    @include mobile {
-        width: 100%;
-        height: auto;
-        border-right: none;
-        border-bottom: 1px solid var(--krds-color-light-gray-20);
-        padding: var(--krds-number-6);
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
     .sidebar-logo {
         display: block;
         width: 100%;
         margin-bottom: var(--krds-number-6);
         padding: var(--krds-number-6) 0;
-
-        @include tabletLess {
-            width: auto;
-            max-width: 150px;
-            margin-bottom: 0;
-            padding: 0;
-        }
-
-        @include mobile {
-            width: auto;
-            max-width: 100px;
-            margin-bottom: 0;
-            padding: 0;
-        }
 
         img {
             display: block;
@@ -96,26 +46,6 @@ body {
         width: 100%;
         display: flex;
         justify-content: space-between;
-
-        @include tabletLess {
-            border-top: none;
-            padding-top: 0;
-            margin-bottom: 0;
-            width: auto;
-            flex: 1;
-            padding-left: var(--krds-number-8);
-        }
-
-        @include mobile {
-            border-top: none;
-            padding-top: 0;
-            margin-bottom: 0;
-            width: 100%;
-            order: -1;
-            padding-left: 0;
-            padding-bottom: var(--krds-number-4);
-            font-size: var(--krds-pc-font-size-body-small);
-        }
     }
 
     .sidebar-controls {
@@ -125,20 +55,6 @@ body {
         flex-direction: column;
         gap: var(--krds-number-9);
         align-items: center;
-
-        @include tabletLess {
-            margin-top: 0;
-            width: auto;
-            flex-direction: row;
-            gap: var(--krds-number-6);
-        }
-
-        @include mobile {
-            margin-top: 0;
-            width: auto;
-            flex-direction: row;
-            gap: var(--krds-number-4);
-        }
     }
 
     .page-nav {
@@ -149,22 +65,6 @@ body {
         transform: translateY(-50%);
         display: flex;
         justify-content: space-between;
-
-        @include tabletLess {
-            position: static;
-            transform: none;
-            left: auto;
-            right: auto;
-            gap: var(--krds-number-6);
-        }
-
-        @include mobile {
-            position: static;
-            transform: none;
-            left: auto;
-            right: auto;
-            gap: var(--krds-number-4);
-        }
     }
 
     .page-prev,
@@ -179,16 +79,6 @@ body {
         cursor: pointer;
         transition: all 0.3s;
         background: var(--krds-color-light-gray-0);
-
-        @include tabletLess {
-            width: var(--krds-number-14);
-            height: var(--krds-number-14);
-        }
-
-        @include mobile {
-            width: var(--krds-number-12);
-            height: var(--krds-number-12);
-        }
 
         &:hover {
             border-color: var(--krds-color-light-primary-60);
@@ -228,52 +118,13 @@ body {
         bottom: var(--krds-number-11);
         left: 35px;
 
-        @include tabletLess {
-            position: static;
-            width: auto;
-            height: auto;
-            padding: var(--krds-number-5) var(--krds-number-8);
-            border-radius: var(--krds-number-6);
-            flex-direction: row;
-            gap: var(--krds-number-4);
-            font-size: var(--krds-pc-font-size-body-small);
-        }
-
-        @include mobile {
-            position: static;
-            width: auto;
-            height: auto;
-            padding: var(--krds-number-4) var(--krds-number-6);
-            border-radius: var(--krds-number-5);
-            flex-direction: row;
-            gap: var(--krds-number-3);
-            font-size: var(--krds-pc-font-size-body-xsmall);
-        }
-
         svg {
             margin-top: var(--krds-number-6);
-
-            @include tabletLess {
-                margin-top: 0;
-                margin-left: var(--krds-number-3);
-            }
-
-            @include mobile {
-                margin-top: 0;
-            }
         }
 
         &:hover {
             background: var(--krds-color-light-primary-60);
             transform: translateY(-2px);
-
-            @include tabletLess {
-                transform: none;
-            }
-
-            @include mobile {
-                transform: none;
-            }
         }
     }
 
@@ -282,70 +133,20 @@ body {
         height: var(--krds-number-10);
         margin-top: var(--krds-number-6);
         filter: brightness(0) invert(1);
-
-        @include tabletLess {
-            width: var(--krds-number-8);
-            height: var(--krds-number-8);
-            margin-top: 0;
-        }
-
-        @include mobile {
-            width: var(--krds-number-7);
-            height: var(--krds-number-7);
-            margin-top: 0;
-        }
     }
 }
 
 // PDF Content Area
 .pdf-content {
     flex: 1;
-    overflow: visible;
+    overflow: hidden;
     background: var(--krds-color-light-gray-5);
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: var(--krds-number-14) var(--krds-number-9);
-
-    @include tabletLess {
-        padding: var(--krds-number-9) var(--krds-number-6);
-    }
-
-    @include mobile {
-        padding: var(--krds-number-6) var(--krds-number-5);
-    }
-
-    // Turn.js 컨테이너
-    #flipbook {
-        width: 1200px;
-        height: 900px;
-
-        @include tabletLess {
-            width: 800px;
-            height: 600px;
-        }
-
-        @include mobile {
-            width: 100%;
-            max-width: 500px;
-            height: 375px;
-        }
-
-        .page {
-            background: var(--krds-color-light-gray-0);
-            box-shadow: 0 2px 8px var(--krds-light-color-alpha-shadow2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            canvas {
-                max-width: 100%;
-                max-height: 100%;
-                object-fit: contain;
-            }
-        }
-    }
+    justify-content: center;
+    padding: 0;
 
     #pdfCanvas {
         max-width: 100%;
@@ -353,9 +154,33 @@ body {
         box-shadow: 0 2px 8px var(--krds-light-color-alpha-shadow2);
         background: var(--krds-color-light-gray-0);
     }
-}
 
-.pdf-content {
+    // Swiper Styles
+    .pdf-swiper {
+        width: 100%;
+        max-width: 95%; // 화면을 더 꽉 채우도록 설정
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin: 0 auto; // 가운데 정렬
+    }
+
+    .swiper-slide {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        overflow-y: auto;
+        padding: var(--krds-number-4) 0; // padding 줄임
+
+        canvas {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 2px 8px var(--krds-light-color-alpha-shadow2);
+            background: var(--krds-color-light-gray-0);
+            display: block;
+            margin: 0 auto; // 캔버스 가운데 정렬
+        }
+    }
+
     .page-info {
         position: fixed;
         bottom: var(--krds-number-11);
@@ -367,20 +192,6 @@ body {
         font-size: var(--krds-pc-font-size-body-xsmall);
         font-weight: 600;
         z-index: 100;
-
-        @include tabletLess {
-            bottom: var(--krds-number-8);
-            right: var(--krds-number-8);
-            padding: var(--krds-number-5) var(--krds-number-7);
-            font-size: var(--krds-pc-font-size-label-xsmall);
-        }
-
-        @include mobile {
-            bottom: var(--krds-number-6);
-            right: var(--krds-number-6);
-            padding: var(--krds-number-4) var(--krds-number-6);
-            font-size: var(--krds-pc-font-size-label-xsmall);
-        }
     }
 
     .pdf-page {
@@ -399,5 +210,180 @@ body {
         justify-content: center;
         font-size: var(--krds-pc-font-size-body-large);
         color: var(--krds-color-light-gray-40);
+    }
+}
+
+// ==========================================
+// Responsive Styles
+// ==========================================
+
+// Tablet
+@media (max-width: 1024px) {
+    .pdf-sidebar {
+        width: 140px;
+        padding: var(--krds-number-9);
+
+        .sidebar-logo {
+            img {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+        .sidebar-title {
+            font-size: var(--krds-pc-font-size-body-medium);
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .page-nav {
+            flex-direction: column;
+            gap: var(--krds-number-6);
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .pdf-download-btn {
+            width: 100px;
+            height: 100px;
+            font-size: var(--krds-pc-font-size-body-small);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .pdf-content {
+        padding: var(--krds-number-9);
+    }
+}
+
+// Mobile
+@media (max-width: 768px) {
+    .pdf-viewer-container {
+        flex-direction: column;
+    }
+
+    .pdf-sidebar {
+        width: 100%;
+        height: auto;
+        min-height: 70px;
+        flex-direction: row;
+        padding: var(--krds-number-6) var(--krds-number-9);
+        justify-content: space-between;
+        position: relative;
+
+        .sidebar-logo {
+            width: 100px;
+            margin: 0;
+            padding: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .sidebar-title {
+            font-size: var(--krds-pc-font-size-body-medium);
+            border-top: none;
+            border-left: 1px solid var(--krds-color-light-gray-20);
+            padding-top: 0;
+            padding-left: var(--krds-number-6);
+            margin: 0;
+            flex-direction: row;
+            gap: 4px;
+            width: auto;
+        }
+
+        .page-nav {
+            position: relative;
+            top: auto;
+            left: auto;
+            transform: none;
+            flex-direction: row;
+            gap: var(--krds-number-6);
+            margin: 0 var(--krds-number-6);
+        }
+
+        .page-prev,
+        .page-next {
+            width: 36px;
+            height: 36px;
+            flex-shrink: 0;
+        }
+
+        .pdf-download-btn {
+            width: auto;
+            height: 36px;
+            padding: 0 var(--krds-number-9);
+            font-size: var(--krds-pc-font-size-body-small);
+            position: relative;
+            left: auto;
+            transform: none;
+            flex-direction: row;
+            gap: var(--krds-number-4);
+            border-radius: var(--krds-number-9);
+
+            svg {
+                margin-top: 0;
+                width: 16px;
+                height: 16px;
+            }
+
+            span {
+                display: none;
+
+                &:first-child {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .pdf-content {
+        padding: var(--krds-number-6);
+        flex: 1;
+
+        #pdfCanvas {
+            box-shadow: none;
+        }
+
+        .page-info {
+            position: sticky;
+            bottom: var(--krds-number-6);
+            right: var(--krds-number-6);
+            background: var(--krds-color-light-alpha-black75);
+            padding: var(--krds-number-4) var(--krds-number-6);
+            font-size: var(--krds-pc-font-size-body-xsmall);
+        }
+    }
+}
+
+// Small Mobile
+@media (max-width: 480px) {
+    .pdf-sidebar {
+        .sidebar-logo {
+            width: 80px;
+        }
+
+        .sidebar-title {
+            font-size: var(--krds-pc-font-size-body-small);
+            padding-left: var(--krds-number-4);
+        }
+
+        .page-prev,
+        .page-next {
+            width: 32px;
+            height: 32px;
+        }
+
+        .pdf-download-btn {
+            height: 32px;
+            padding: 0 var(--krds-number-6);
+            font-size: var(--krds-pc-font-size-body-xsmall);
+        }
+    }
+
+    .pdf-content {
+        padding: var(--krds-number-4);
     }
 }
