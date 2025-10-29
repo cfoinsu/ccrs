@@ -1,106 +1,20 @@
 // ==========================================
 // Main EN - English Main Page Styles
 // ==========================================
-// Author : jwshin
-// Create date : 2023-01-19
-// Version : v3.4
-// ==========================================
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "variables";
 @import "mixins/breakpoints";
 
-// ==========================================
-// 1. Reset & Base
-// ==========================================
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.main-container {
-    width: 100%;
-    max-width: 1920px;
-    margin: 0 auto;
-    position: relative;
-}
+// body {
+//     background: url('/docs/img/신용회복위원회_영문_메인.png') no-repeat 50% 599px;
+// }
+// #container {
+//     opacity: 0.7;
+// }   
 
 // ==========================================
-// 2. English Header Overrides
-// ==========================================
-
-.en {
-    #header {
-        background-color: transparent;
-
-        &::before {
-            background-color: transparent;
-            border-bottom: none;
-        }
-
-        &::after {
-            background-color: transparent;
-        }
-
-        .gnb-wrap {
-            display: flex;
-
-            .logo {
-                position: absolute;
-                top: 27px;
-                left: 0;
-            }
-
-            > nav {
-                width: 960px;
-                height: 100%;
-                font-weight: 700;
-                text-align: center;
-                font-size: 2.4rem;
-                padding-top: 0;
-                margin-left: 300px;
-            }
-        }
-    }
-
-    .main-content {
-        padding: 0;
-    }
-
-    .header {
-        box-shadow: none;
-    }
-}
-
-// ==========================================
-// 3. Skip Navigation
-// ==========================================
-
-#skipNav {
-    position: relative;
-    z-index: 9999;
-
-    a {
-        position: absolute;
-        top: -200px;
-        left: 0;
-        width: 100%;
-        line-height: 30px;
-        background-color: #000;
-        color: #fff;
-        text-align: center;
-
-        &:focus,
-        &:active {
-            top: 0;
-        }
-    }
-}
-
-// ==========================================
-// 4. Header Styles
+// 4. Wrapper
 // ==========================================
 
 #Wrap {
@@ -109,27 +23,29 @@
     min-width: 1280px;
 }
 
-#header {
+.main-content {
+    padding: 0;
+}
+
+// ==========================================
+// 5. Header Styles
+// ==========================================
+
+.en #header {
     position: fixed;
     top: 0px;
     left: 0;
     z-index: 99;
     width: 100%;
-    height: 88px;
+    height: auto;
     background-color: transparent;
     transition: all 0.3s ease;
+    &.header {
+        box-shadow: none;
+    }
 
     &::before {
-        content: "";
-        width: 100%;
-        height: 120px;
-        background-color: transparent;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        border-bottom: 1px solid var(--main-color7);
-        transition: all 0.3s ease;
+        display: none;
     }
 
     &::after {
@@ -153,46 +69,49 @@
     &.is-active {
         &::after {
             top: 0;
-            height: 400px;
+            height: 330px;
         }
 
         .gnb-wrap nav .gnb > li .depth2 {
             opacity: 1;
             visibility: visible;
             min-height: inherit;
+            background: transparent;
+            padding-top: 0;
         }
     }
 
     .header-container {
-        height: 100%;
+        height: auto;
     }
 
     .gnb-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         position: relative;
         z-index: 50;
-        height: 100%;
         color: #fff;
-        width: 1280px;
+        width: auto;
+        height: 100%;
         margin: 0 auto;
+        padding: 10px 40px;
 
-        .logo a {
-            height: 100%;
-            display: block;
-
+        .logo {
+            position: static;
+            height: 33px;
             img {
-                width: 180px;
-                height: 33px;
+                display: block;
+                height: auto;
             }
         }
 
         > nav {
-            width: 930px;
             height: 100%;
-            margin-left: 240px;
             font-weight: 700;
             text-align: center;
             font-size: 2.4rem;
-            padding-top: 2.9rem;
+            // padding-top: 2.9rem;
 
             .gnb {
                 height: 100%;
@@ -205,8 +124,7 @@
                     display: inline-block;
                     text-align: left;
                     font-size: 20px;
-                    padding-top: 4px;
-                    width: calc(900px / 6);
+                    // width: calc(900px / 6);
 
                     &.is-active::after {
                         position: absolute;
@@ -260,11 +178,7 @@
         }
 
         .utils {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            height: 88px;
-            line-height: 88px;
+            position: static;
 
             > li {
                 display: inline-block;
@@ -315,7 +229,31 @@
 }
 
 // ==========================================
-// 5. Popup Styles
+// 8. Base Section Styles
+// ==========================================
+
+.en .section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 150px 0 150px;
+
+    .section-title {
+        font-size: 80px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 45px;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+
+        &.white {
+            color: #fff;
+        }
+    }
+}
+
+// ==========================================
+// 6. Popup Styles
 // ==========================================
 
 .popslider-Wrap {
@@ -370,7 +308,7 @@
 }
 
 // ==========================================
-// 6. Anchor Styles
+// 7. Anchor Styles
 // ==========================================
 
 #m-anchor {
@@ -464,17 +402,7 @@
 }
 
 // ==========================================
-// 7. Section Styles
-// ==========================================
-
-.section {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    overflow: hidden;
-}
-
-// Section 1 - Hero Video
+// 9. Section 1 - Hero
 .en #section1 {
     position: relative;
     height: 100vh;
@@ -623,178 +551,171 @@
     }
 }
 
-// Section 2 - Our Purpose Accordion
-.en #section2 {
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0;
+// ==========================================
+// 11. Reusable Components - Accordion
+// ==========================================
 
-    .purpose-section {
-        max-width: 1240px;
-        margin: 0 auto;
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: 45px;
+}
+
+.accordion-item {
+    position: relative;
+    margin-top: -50px;
+    padding: 20px 10px 55px;
+    background: #F5F3F1;
+    border-radius: 24px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    // 짝수 아이템
+    &:nth-child(even) {
+        background: #F9E9D4;
     }
 
-    .purpose-title {
-        font-size: 56px;
-        font-weight: 700;
-        color: #000;
-        margin-bottom: 60px;
-        text-align: center;
-        font-family: 'Poppins', sans-serif;
-    }
-
-    .accordion-container {
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
-    }
-
-    .accordion-item {
-        position: relative;
-        margin-top: -50px;
-        padding: 20px 10px 85px;
-        background: #F5F3F1;
-        border-radius: 24px;
-        overflow: hidden;
-        transition: all 0.3s ease;
-
-        // 짝수 아이템
-        &:nth-child(even) {
-            background: #F9E9D4;
-        }
-
-        &:hover {
-            background: #FFF5E8;
-        }
-
-        .accordion-body {
-            padding-left: 250px;
-        }
-
-        &.active {
-            .accordion-header {
-                .accordion-icon svg {
-                    transform: rotate(180deg);
-                }
-            }
-
-            .accordion-cont {
-                opacity: 1;
-                height: auto;
-            }
-        }
-    }
-
-    .accordion-header {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        gap: 24px;
-        padding: 20px 32px;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        text-align: left;
-        transition: all 0.2s ease;
-
-        &:hover {
-            opacity: 0.9;
-        }
-
-        .accordion-number {
-            display: block;
-            width: 225px;
-            font-size: 16px;
-            font-weight: 400;
-            color: #666;
-            min-width: 30px;
-        }
-
-        .accordion-title {
-            flex: 1;
-            font-size: 42px;
-            font-weight: 400;
-            font-family: 'Poppins', sans-serif;
-            color: #000;
-        }
-
-        .accordion-icon {
-            display: none;
-            color: #000;
-            transition: transform 0.3s ease;
-
-            svg {
-                display: block;
-                transition: transform 0.3s ease;
-            }
-        }
-    }
-
-    .accordion-cont {
-        height: 0;
-        opacity: 0;
-        overflow: hidden;
-        padding: 0 32px;
+    &:hover {
+        background: #FFF5E8;
     }
 
     .accordion-body {
-        display: flex;
-        align-items: flex-start;
-        gap: 48px;
-        justify-content: space-between;
+        padding-left: 250px;
     }
 
-    .content-text {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-        max-width: 430px;
-
-        p {
-            font-size: 17px;
-            line-height: 1.7;
-            color: #000;
-            margin: 0;
-        }
-
-        .view-more-btn {
-            display: inline-block;
-            padding: 10px 24px;
-            background: #fff;
-            border: 1px solid #E0E0E0;
-            border-radius: 24px;
-            font-size: 14px;
-            font-weight: 500;
-            color: #000;
-            text-decoration: none;
-            width: fit-content;
-            transition: all 0.2s ease;
-
-            &:hover {
-                background: #f5f5f5;
-                border-color: #ccc;
+    &.active {
+        .accordion-header {
+            .accordion-icon svg {
+                transform: rotate(180deg);
             }
         }
-    }
 
-    .content-icon {
-        position: absolute;
-        top: 50%;
-        right: 100px;
-        transform: translateY(-50%);
-        flex-shrink: 0;
-        width: 120px;
-        height: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        svg {
-            width: 100%;
-            height: 100%;
+        .accordion-cont {
+            opacity: 1;
+            height: auto;
         }
     }
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 20px 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    .accordion-number {
+        display: block;
+        width: 200px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #666;
+        min-width: 30px;
+    }
+
+    .accordion-title {
+        flex: 1;
+        font-size: 42px;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+        color: #000;
+    }
+
+    .accordion-icon {
+        display: none;
+        color: #000;
+        transition: transform 0.3s ease;
+
+        svg {
+            display: block;
+            transition: transform 0.3s ease;
+        }
+    }
+}
+
+.accordion-cont {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 32px;
+}
+
+.accordion-body {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    justify-content: space-between;
+}
+
+.content-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 430px;
+
+    p {
+        font-size: 17px;
+        line-height: 1.7;
+        color: #000;
+        margin: 0;
+    }
+
+    .view-more-btn {
+        display: inline-block;
+        padding: 10px 24px;
+        background: #fff;
+        border: 1px solid #E0E0E0;
+        border-radius: 24px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+        text-decoration: none;
+        width: fit-content;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background: #f5f5f5;
+            border-color: #ccc;
+        }
+    }
+}
+
+.content-icon {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    flex-shrink: 0;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// ==========================================
+// 12. Section 2 - Our Purpose
+// ==========================================
+
+.en #section2 {
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .card-scroll {
@@ -875,11 +796,15 @@
     }
 }
 
-// Section 3 - Board & News
+// ==========================================
+// 13. Section 3 - Board & News
+// ==========================================
+
 #section3 {
     position: relative;
     background-attachment: fixed;
     background-size: cover;
+    background-image: url('/type/www/images/en/en_main_work_bg.png');
 
     .contents-wrap {
         width: 67.6vw;
@@ -1110,15 +1035,133 @@
     }
 }
 
-// Section 4
+// ==========================================
+// 14. Section 4
+// ==========================================
+
 #section4 {
     position: relative;
     background-attachment: fixed;
     background-size: cover;
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 13px;
+        
+        .contact-item {
+            width: 40%;
+            background-color: #f5f3f1;
+            border-radius: 24px;
+            padding: 40px 40px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .contact-map {
+            width: 60%;
+        }
+    }
+
+    // Contact Info Group Styles
+    .contact-info-group {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        border-bottom: 1px solid #C8C9CD;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    .contact-icon-wrapper {
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-icon {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .contact-info-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 31px;
+    }
+
+    .contact-info-label {
+        padding-bottom: 10px;
+        font-family: 'Pretendard', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: normal;
+        color: #000;
+        margin: 0;
+    }
+
+    .contact-info-text {
+        font-family: 'Pretendard', sans-serif;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: normal;
+        color: #000;
+        margin: 0;
+    }
+
+    // Directions Buttons
+    .contact-directions-buttons {
+        display: flex;
+        gap: 8px;
+        margin-top: 8px;
+    }
+
+    .contact-direction-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        gap: 10px;
+        background-color: #fff;
+        border-radius: 28px;
+        padding: 13px 24px 13px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+
+        .btn-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: normal;
+            color: #000;
+        }
+
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            color: #000;
+        }
+
+        &:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-1px);
+        }
+    }
 }
 
 // ==========================================
-// 8. Sitemap (All Menu)
+// 15. Sitemap (All Menu)
 // ==========================================
 
 .all-menu {
@@ -1225,7 +1268,7 @@
 }
 
 // ==========================================
-// 9. Search Menu
+// 16. Search Menu
 // ==========================================
 
 .search-menu {
@@ -1344,7 +1387,7 @@
 }
 
 // ==========================================
-// 10. Footer
+// 17. Footer
 // ==========================================
 
 #footer {
@@ -1598,7 +1641,7 @@
 }
 
 // ==========================================
-// 11. Buttons
+// 18. Buttons
 // ==========================================
 
 .btn-main-01 {
@@ -1658,7 +1701,7 @@
 }
 
 // ==========================================
-// 12. Responsive Media Queries
+// 19. Responsive Media Queries
 // ==========================================
 
 @media (max-width: 1280px) {
@@ -1769,5 +1812,100 @@
     #commonSearchPagenationDiv ul li {
         width: 26px;
         height: 26px;
+    }
+}
+
+// ==========================================
+// 13. Footer (English)
+// ==========================================
+
+.footer-en {
+    background-color: #000d28;
+    position: relative;
+    min-height: 200px;
+    padding: 50px 0;
+
+    .footer-container {
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 0 291px;
+        position: relative;
+    }
+
+    .footer-logo {
+        width: auto;
+        height: auto;
+        margin-bottom: 3.8rem;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.1rem;
+    }
+
+    .footer-info-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        line-height: 1.5;
+        color: #ffffff;
+    }
+
+    .footer-info-label {
+        font-family: 'Pretendard GOV', sans-serif;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 1.5;
+        color: #ffffff;
+        flex-shrink: 0;
+    }
+
+    .footer-info-text {
+        font-family: 'Pretendard GOV', sans-serif;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 1.5;
+        color: #ffffff;
+    }
+
+    .footer-copyright {
+        text-align: left;
+        white-space: nowrap;
+
+        p {
+            font-family: 'Pretendard GOV', sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 1.5;
+            color: #ffffff;
+            margin: 0;
+        }
+    }
+
+    .footer-top-btn {
+        position: absolute;
+        right: 291px;
+        top: 50px;
+        width: 56px;
+        height: 56px;
+        display: block;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
     }
 }

@@ -11,12 +11,12 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
 	<link rel="stylesheet" href="/type/www/css/styles.css">
 	<link rel="stylesheet" href="/type/www/css/common.css">
-	<link rel="stylesheet" href="/type/www/css/main_en.css">
 	<link rel="stylesheet" href="/type/www/css/all.min.css">
 	<!-- <link rel="stylesheet" href="/type/www/css/sub.css"> -->
-    <link rel="stylesheet" href="/type/www/css/layout.css">
-    <link rel="stylesheet" href="/type/www/css/grid.min.css">
-    <link rel="stylesheet" href="/type/www/css/styles_en_override.css">
+	<link rel="stylesheet" href="/type/www/css/layout.css">
+	<link rel="stylesheet" href="/type/www/css/grid.min.css">
+	<link rel="stylesheet" href="/type/www/css/main_en.css">
+	<link rel="stylesheet" href="/type/www/css/styles_en_override.css">
     <link rel="stylesheet" href="/type/www/css/plugins/swiper.min.css">
     <!-- <link rel="stylesheet" href="/type/www/css/webfonts.css"> -->
 	
@@ -100,7 +100,11 @@
 					</nav>
 					<ul class="utils">
 						<li class="en"><a href="/html/main.html"><img src="/type/www/images/img/en/header-language.svg" alt="언어 변경"></a></li>
-						<li class="hamburger-wrap"><a href="#" id="hamburgerBtn" class="hamburger" title="전체메뉴 열기"><span class="hide">전체메뉴</span></a></li>
+						<li class="hamburger-wrap">
+							<a href="#" id="hamburgerBtn" class="hamburger" title="전체메뉴 열기">
+								<span class="hide">전체메뉴</span>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -137,10 +141,9 @@
 			<!-- section1:e -->
 			
 			<!-- section2:s -->
-			<section class="section" id="section2">
+			<section class="section card-scroll" id="section2">
 					<div class="inner">
-					<div class="purpose-section">
-						<h2 class="purpose-title">Our Purpose</h2>
+						<h2 class="section-title">Our Purpose</h2>
 
 						<div class="accordion-container">
 							<!-- Accordion Item 1: MISSION -->
@@ -341,26 +344,73 @@ independence</p>
 								</div>
 							</div>
 						</div>
-					</div>
 				</div>
 			</section>
 			<!-- section2:e -->
 			
 			<!-- section3:s -->
-			<section class="section" id="section3">
-				<div class="card-scroll">
-					<div class="inner">
-						<img src="/type/www/images/en/en_main_section03.png" alt="">
-					</div>
+			<section class="section card-scroll" id="section3">
+				<div class="inner">
+						<h2 class="section-title white">Our Work</h2>
+						<img src="/type/www/images/en/en_main_work_img.svg" alt="Our Work">
 				</div>
 			</section>
 			<!-- section3:e -->
 			<!-- section4:s -->
-			<section class="section" id="section4">
-				<div class="card-scroll">
-					<div class="inner">
-						<img src="/type/www/images/en/en_main_section04.png" alt="">
-					</div>
+			<section class="section card-scroll" id="section4">
+				<div class="inner">
+						<h2 class="section-title">Contact Us</h2>
+						<div class="contact-container">
+							<div class="contact-item">
+								<!-- Address Section -->
+								<div class="contact-info-group">
+									<div class="contact-info-content">
+										<h3 class="contact-info-label">Address</h3>
+										<p class="contact-info-text">3F, 6-8F, Korea Press Center, 124, Sejong-daero,<br>Jung-gu, Seoul (Zip Code : 04520)</p>
+									</div>
+								</div>
+
+								<!-- Tel Section -->
+								<div class="contact-info-group">
+									<div class="contact-info-content">
+										<h3 class="contact-info-label">Tel</h3>
+										<p class="contact-info-text">+82-2-6337-2000</p>
+									</div>
+								</div>
+
+								<!-- E-Mail Section -->
+								<div class="contact-info-group">
+									<div class="contact-info-content">
+										<h3 class="contact-info-label">E-Mail</h3>
+										<p class="contact-info-text">cyber@ccrs.or.kr</p>
+									</div>
+								</div>
+
+								<!-- Directions Section -->
+								<div class="contact-info-group">
+									<div class="contact-info-content">
+										<h3 class="contact-info-label">Directions</h3>
+										<div class="contact-directions-buttons">
+											<a href="headquarter.html" class="contact-direction-btn">
+												<span class="btn-text">Headquarter</span>
+												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="btn-icon">
+													<path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</a>
+											<a href="regionalOffices.html" class="contact-direction-btn">
+												<span class="btn-text">Regional Offices</span>
+												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="btn-icon">
+													<path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="contact-map">
+								<img src="/type/www/images/en/en_main_map.png" alt="Map">
+							</div>
+						</div>
 				</div>
 			</section>
 			<!-- section4:e -->		
@@ -368,8 +418,41 @@ independence</p>
 		<!-- main contents:e -->
 		
 		<!-- Footer:s -->
-		<footer class="footer">
-			<img src="/type/www/images/en/en_main_footer.png" alt="푸터">
+		<footer class="footer footer-en">
+			<div class="inner">
+				<!-- Logo -->
+				<div class="footer-logo">
+					<img src="/type/www/images/en/logo_dark.svg" alt="CCRS Logo">
+				</div>
+
+				<!-- Footer Info -->
+				<div class="footer-info">
+					<!-- Address -->
+					<div class="footer-info-item">
+						<span class="footer-info-label">Address</span>
+						<span class="footer-info-text">6th floor, Korea Press Center, 124 Sejong-daero, Jung-gu, Seoul (Zip code: 04520), South Korea</span>
+					</div>
+
+					<!-- Tel -->
+					<div class="footer-info-item">
+						<span class="footer-info-label">Tel</span>
+						<span class="footer-info-text">+82-2-6337-2000</span>
+					</div>
+
+					<!-- Copyright -->
+					<div class="footer-copyright">
+						<p>© Credit Counseling and Recovery Service. All Rights Reserved.</p>
+					</div>
+				</div>
+
+				<!-- Top Button -->
+				<!-- <a href="#top" class="footer-top-btn" aria-label="Scroll to top">
+					<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+						<rect width="56" height="56" rx="28" fill="white" fill-opacity="0.1"/>
+						<path d="M28 38L28 19M28 19C28 19 23.3845 24.0055 20 27.6275M28 19C28 19 32.6155 24.0055 36 27.6274" stroke="white" stroke-width="1.8"/>
+					</svg>
+				</a> -->
+			</div>
 		</footer>
 		<!-- Footer:e -->
 	</div>
@@ -575,6 +658,20 @@ independence</p>
 
 		// Accordion Menu Animation
 		$(document).ready(function() {
+			// 페이지 로드 시 active 상태의 아코디언 초기화
+			$('.accordion-item.active').each(function() {
+				const $item = $(this);
+				const $content = $item.find('.accordion-cont');
+
+				// padding을 먼저 설정
+				gsap.set($content[0], {
+					paddingTop: 24,
+					paddingBottom: 32,
+					height: 'auto',
+					opacity: 1
+				});
+			});
+
 			$('.accordion-header').on('click', function(e) {
 				e.preventDefault();
 
@@ -614,16 +711,18 @@ independence</p>
 					// 열기
 					$item.addClass('active');
 
-					// height를 auto로 계산
-					gsap.set($content[0], { height: 'auto' });
+					// padding을 먼저 설정하고 height 계산
+					gsap.set($content[0], {
+						paddingTop: 24,
+						paddingBottom: 32,
+						height: 'auto'
+					});
 					const autoHeight = $content[0].offsetHeight;
-					gsap.set($content[0], { height: 0 });
+					gsap.set($content[0], { height: 0, opacity: 0 });
 
 					gsap.to($content[0], {
 						height: autoHeight,
 						opacity: 1,
-						paddingTop: 24,
-						paddingBottom: 32,
 						duration: 0.5,
 						ease: 'power3.out',
 						onComplete: function() {
