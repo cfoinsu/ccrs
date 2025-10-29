@@ -7307,3 +7307,5 @@ input[type=radio]:checked + label.fillter-chip {
 }
 table .krds-info-list > li {font-size: 17px;}
 .g-wrap .krds-table-wrap .tbl.data tbody th {font-weight: 700;}
+
+..g-grid-wrap.unit3 .g-info-box
