@@ -80,15 +80,44 @@
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 
         // PDF 파일 경로
-        const pdfUrl = '/type/www/images/pdf/sample.pdf';
+        const pdfUrl = '/type/www/images/pdf/CCRS_2024_Social_Value_Report_Final.pdf';
 
         let pdfDoc = null;
         let swiper = null;
-        let scale = 2.5; // 화면을 더 꽉 채우도록 scale 증가
 
-        // PDF 페이지 렌더링
+        // PDF 페이지 렌더링 (가로/세로 자동 감지)
         function renderPage(pageNum, canvas) {
             return pdfDoc.getPage(pageNum).then(function(page) {
+                // 초기 viewport로 페이지 크기 확인
+                const initialViewport = page.getViewport({ scale: 1 });
+                const pageWidth = initialViewport.width;
+                const pageHeight = initialViewport.height;
+
+                // 컨테이너 크기 가져오기 (실제 뷰포트 높이 사용)
+                const container = document.querySelector('.pdf-content');
+                const containerWidth = container.clientWidth * 1; // 95.02% 사용
+                const containerHeight = window.innerHeight * 1; // 화면 높이의 93.02% 사용
+
+                // 페이지 방향 감지 (가로 vs 세로)
+                const isLandscape = pageWidth > pageHeight;
+
+                // 방향에 따라 적절한 scale 계산
+                let scale;
+                if (isLandscape) {
+                    // 가로 페이지: 가로를 기준으로 맞춤
+                    scale = containerWidth / pageWidth;
+                    // 높이도 확인하여 더 작은 값 사용
+                    const heightScale = containerHeight / pageHeight;
+                    scale = Math.min(scale, heightScale);
+                } else {
+                    // 세로 페이지: 높이를 기준으로 맞춤
+                    scale = containerHeight / pageHeight;
+                    // 가로도 확인하여 더 작은 값 사용
+                    const widthScale = containerWidth / pageWidth;
+                    scale = Math.min(scale, widthScale);
+                }
+
+                // 최종 viewport 생성
                 const viewport = page.getViewport({ scale: scale });
                 canvas.height = viewport.height;
                 canvas.width = viewport.width;

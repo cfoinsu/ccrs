@@ -158,26 +158,25 @@ body {
     // Swiper Styles
     .pdf-swiper {
         width: 100%;
-        max-width: 95%; // 화면을 더 꽉 채우도록 설정
+        height: 100%;
         overflow-y: auto;
         overflow-x: hidden;
-        margin: 0 auto; // 가운데 정렬
     }
 
     .swiper-slide {
         display: flex;
-        align-items: flex-start;
-        justify-content: center;
+        align-items: center; // 세로 가운데 정렬
+        justify-content: center; // 가로 가운데 정렬
         overflow-y: auto;
-        padding: var(--krds-number-4) 0; // padding 줄임
+        padding: var(--krds-number-6) 0;
 
         canvas {
-            max-width: 100%;
+            max-width: 95%;
+            max-height: 90vh;
             height: auto;
             box-shadow: 0 2px 8px var(--krds-light-color-alpha-shadow2);
             background: var(--krds-color-light-gray-0);
             display: block;
-            margin: 0 auto; // 캔버스 가운데 정렬
         }
     }
 

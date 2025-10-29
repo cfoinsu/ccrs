@@ -141,25 +141,24 @@ body {
 }
 .pdf-content .pdf-swiper {
   width: 100%;
-  max-width: 95%;
+  height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-  margin: 0 auto;
 }
 .pdf-content .swiper-slide {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   overflow-y: auto;
-  padding: var(--krds-number-4) 0;
+  padding: var(--krds-number-6) 0;
 }
 .pdf-content .swiper-slide canvas {
-  max-width: 100%;
+  max-width: 95%;
+  max-height: 90vh;
   height: auto;
   box-shadow: 0 2px 8px var(--krds-light-color-alpha-shadow2);
   background: var(--krds-color-light-gray-0);
   display: block;
-  margin: 0 auto;
 }
 .pdf-content .page-info {
   position: fixed;
