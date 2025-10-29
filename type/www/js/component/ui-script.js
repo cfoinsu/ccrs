@@ -819,6 +819,10 @@ const krds_accordion = {
         button.setAttribute("aria-expanded", "false");
         button.classList.remove("active");
         currentItem.classList.remove("active");
+      } else if (mode === 'allopen') {
+        button.setAttribute("aria-expanded", "true");
+        button.classList.add("active");
+        currentItem.classList.add("active");
       } else if (mode === 'front') {
         if (idx === 0) {
           button.setAttribute("aria-expanded", "true");
@@ -2408,7 +2412,9 @@ window.addEventListener("DOMContentLoaded", () => {
   krds_tab.init();
   // krds_accordion.init();
   // 모든 아코디언이 닫아야 할 때 (allclose)
-  //krds_accordion.init('allclose');
+  //krds_accordion.init('allclos);
+  // 모든 아코디언이 열어야 할 때 (allopen)
+  krds_accordion.init('allopen');
   // 첫번째만 열려야 할 때 (프론트)
   // krds_accordion.init('front');
 
