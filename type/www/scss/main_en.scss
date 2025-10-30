@@ -1,235 +1,15 @@
 // ==========================================
 // Main EN - English Main Page Styles
 // ==========================================
+// Only styles specific to main_en.html
+// Layout styles (header, footer, nav) are in layout_en_override.scss
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "variables";
 @import "mixins/breakpoints";
 
-// body {
-//     background: url('/docs/img/신용회복위원회_영문_메인.png') no-repeat 50% 599px;
-// }
-// #container {
-//     opacity: 0.7;
-// }   
-
 // ==========================================
-// 4. Wrapper
-// ==========================================
-
-#Wrap {
-    outline: 0;
-    overflow: auto;
-    min-width: 1280px;
-}
-
-.main-content {
-    padding: 0;
-}
-
-// ==========================================
-// 5. Header Styles
-// ==========================================
-
-.en #header {
-    position: fixed;
-    top: 0px;
-    left: 0;
-    z-index: 99;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-    transition: all 0.3s ease;
-    &.header {
-        box-shadow: none;
-    }
-
-    &::before {
-        display: none;
-    }
-
-    &::after {
-        content: "";
-        width: 100%;
-        height: 120px;
-        background-color: #000;
-        opacity: 0.8;
-        position: absolute;
-        top: -136px;
-        left: 0;
-        z-index: 1;
-        transition: all 0.3s ease;
-        box-shadow: 1px 10px 15px rgb(0 0 0 / 10%);
-    }
-
-    &.is-hide {
-        top: -150px;
-    }
-
-    &.is-active {
-        &::after {
-            top: 0;
-            height: 330px;
-        }
-
-        .gnb-wrap nav .gnb > li .depth2 {
-            opacity: 1;
-            visibility: visible;
-            min-height: inherit;
-            background: transparent;
-            padding-top: 0;
-        }
-    }
-
-    .header-container {
-        height: auto;
-    }
-
-    .gnb-wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        z-index: 50;
-        color: #fff;
-        width: auto;
-        height: 100%;
-        margin: 0 auto;
-        padding: 10px 40px;
-
-        .logo {
-            position: static;
-            height: 33px;
-            img {
-                display: block;
-                height: auto;
-            }
-        }
-
-        > nav {
-            height: 100%;
-            font-weight: 700;
-            text-align: center;
-            font-size: 2.4rem;
-            // padding-top: 2.9rem;
-
-            .gnb {
-                height: 100%;
-                display: flex;
-                gap: 30px;
-                justify-content: flex-start;
-
-                > li {
-                    position: relative;
-                    display: inline-block;
-                    text-align: left;
-                    font-size: 20px;
-                    // width: calc(900px / 6);
-
-                    &.is-active::after {
-                        position: absolute;
-                        content: '';
-                        display: block;
-                        bottom: -1px;
-                        left: 0;
-                        width: 100%;
-                        height: 3px;
-                        border-radius: 2px;
-                        background: transparent;
-                    }
-
-                    .depth2 {
-                        opacity: 0;
-                        visibility: hidden;
-                        min-height: 0;
-                        height: 312px;
-                        position: absolute;
-                        transition: all 0.2s ease;
-                        top: 59px;
-                        padding-top: 4px;
-                        width: calc(1100px / 6);
-                        left: 0;
-
-                        > li {
-                            display: block;
-                            font-size: 1.6rem;
-                            color: #fff;
-                            font-weight: 400;
-                            margin: 0;
-
-                            &:hover {
-                                font-weight: 600;
-                                color: var(--main-color1);
-                            }
-
-                            > a {
-                                display: block;
-                                width: 100%;
-                                height: auto;
-                                line-height: 1.2;
-                                margin-top: 10px;
-                                font-size: 15px;
-                                color: #fff;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        .utils {
-            position: static;
-
-            > li {
-                display: inline-block;
-                margin-right: 2rem;
-                cursor: pointer;
-            }
-        }
-
-        .hamburger {
-            display: block;
-            width: 100%;
-            height: 100%;
-            background: url(../images/img/en/hamburger.png) no-repeat;
-
-            img {
-                z-index: 100;
-            }
-        }
-
-        #hamburgerBtn {
-            width: 25px;
-            height: 25px;
-            line-height: 25px;
-            text-align: center;
-            padding: 0;
-        }
-
-        .allmenu-util a {
-            position: absolute;
-            right: 4rem;
-            display: block;
-            width: 4rem;
-            height: 4rem;
-
-            &.util1 {
-                top: 4rem;
-            }
-
-            &.util2 {
-                top: 10rem;
-            }
-
-            &.util3 {
-                top: 16rem;
-            }
-        }
-    }
-}
-
-// ==========================================
-// 8. Base Section Styles
+// 1. Base Section Styles (Main Page)
 // ==========================================
 
 .en .section {
@@ -253,7 +33,7 @@
 }
 
 // ==========================================
-// 6. Popup Styles
+// 2. Popup Styles
 // ==========================================
 
 .popslider-Wrap {
@@ -308,7 +88,7 @@
 }
 
 // ==========================================
-// 7. Anchor Styles
+// 3. Page Anchor Navigation
 // ==========================================
 
 #m-anchor {
@@ -402,7 +182,9 @@
 }
 
 // ==========================================
-// 9. Section 1 - Hero
+// 4. Section 1 - Hero
+// ==========================================
+
 .en #section1 {
     position: relative;
     height: 100vh;
@@ -552,7 +334,7 @@
 }
 
 // ==========================================
-// 11. Reusable Components - Accordion
+// 5. Accordion Component
 // ==========================================
 
 .accordion-container {
@@ -571,7 +353,7 @@
     overflow: hidden;
     transition: all 0.3s ease;
 
-    // 짝수 아이템
+    // Even items
     &:nth-child(even) {
         background: #F9E9D4;
     }
@@ -710,7 +492,7 @@
 }
 
 // ==========================================
-// 12. Section 2 - Our Purpose
+// 6. Section 2 - Our Purpose
 // ==========================================
 
 .en #section2 {
@@ -797,7 +579,7 @@
 }
 
 // ==========================================
-// 13. Section 3 - Board & News
+// 7. Section 3 - Board & News
 // ==========================================
 
 #section3 {
@@ -1036,7 +818,7 @@
 }
 
 // ==========================================
-// 14. Section 4
+// 8. Section 4 - Contact
 // ==========================================
 
 #section4 {
@@ -1049,7 +831,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 13px;
-        
+
         .contact-item {
             width: 40%;
             background-color: #f5f3f1;
@@ -1161,487 +943,7 @@
 }
 
 // ==========================================
-// 15. Sitemap (All Menu)
-// ==========================================
-
-.all-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    right: -100%;
-    width: 100%;
-    background-color: #fff;
-    height: 100vh;
-    transition: all 0.3s ease;
-
-    > nav .all-menu-list {
-        > li {
-            padding: 24vh 0;
-            position: relative;
-
-            > a {
-                font-size: 2rem;
-                padding-left: 1.4rem;
-                position: relative;
-                color: var(--text-color1);
-                font-weight: 600;
-                margin-bottom: 16px;
-                display: block;
-                padding-left: calc((1.4rem - 2px) * 2);
-            }
-
-            .depth2 {
-                > li {
-                    margin-bottom: 10px;
-                    padding-left: 1.4rem;
-
-                    > a {
-                        color: var(--text-color1);
-                        font-size: 1.6rem;
-                        line-height: 1.6;
-                        transition: all 0.3s;
-                        padding-left: calc(1.4rem - 2px);
-                    }
-                }
-            }
-        }
-
-        &.darken {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: space-between;
-            padding: 0 6vw;
-
-            > li {
-                transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-                border-left: 1px solid #f5f5f5;
-
-                &::after {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 0;
-                    display: block;
-                    content: '';
-                    background: var(--main-color4);
-                    transition: all 0.5s ease;
-                    z-index: -1;
-                }
-
-                &:hover::after {
-                    height: 100vh;
-                }
-
-                &.highlight {
-                    opacity: 1;
-
-                    > a {
-                        color: var(--main-color1);
-                    }
-
-                    > .depth2 > li.focus {
-                        border-left: 2px solid var(--main-color1);
-                        padding-left: calc(1.4rem - 2px);
-
-                        > a {
-                            color: var(--text-color1);
-                            font-weight: 600;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    &.is-active {
-        display: block;
-        opacity: 1;
-        right: 0;
-
-        nav {
-            width: 100%;
-        }
-    }
-}
-
-// ==========================================
-// 16. Search Menu
-// ==========================================
-
-.search-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: -30%;
-    width: 30%;
-    padding: 10vh 4rem 6vh;
-    background-color: #fff;
-    border-left: 1px solid #d9d9d9;
-    height: 100vh;
-    transition: all 0.3s ease;
-    z-index: 10;
-
-    a {
-        cursor: pointer;
-    }
-
-    &.is-active {
-        display: block;
-        right: 0;
-        cursor: auto;
-        line-height: normal;
-    }
-
-    h5 {
-        margin-bottom: 2.4rem;
-        display: inline-block;
-        margin-right: 8px;
-    }
-
-    span.sp {
-        font-size: 2.4rem;
-        font-weight: 600;
-    }
-
-    .search-area-header {
-        display: flex;
-        margin-bottom: 4rem;
-    }
-
-    #searchText {
-        width: calc(100% - 52px);
-        height: 44px;
-        padding: 0 8px;
-        border: 2px solid var(--text-color1);
-        border-radius: 3px;
-    }
-
-    .btn-search-header {
-        height: 44px;
-        width: 44px;
-        margin-left: 4px;
-        background: url(../images/ic/pop-search.png) no-repeat;
-    }
-
-    .result-area {
-        max-height: 60vh;
-        overflow-y: scroll;
-
-        &::-webkit-scrollbar {
-            width: 0;
-        }
-    }
-
-    .result-item {
-        display: block;
-        padding: 16px 0;
-        border-bottom: 1px solid #d9d9d9;
-
-        &:first-child {
-            border-top: 1px solid #d9d9d9;
-        }
-
-        .board-info {
-            margin-top: 8px;
-
-            li {
-                display: inline-block;
-                margin-right: 8px;
-                color: var(--main-color1);
-            }
-        }
-
-        div.over3lines {
-            margin-top: 10px;
-        }
-
-        p {
-            white-space: pre-line;
-        }
-
-        &.notfound {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            .notfound-bg {
-                width: 54px;
-                height: 54px;
-                background: url(../images/ic/pop-search-question.svg) no-repeat;
-            }
-
-            h6 {
-                margin-top: 24px;
-            }
-        }
-    }
-}
-
-#commonSearchPagenationDiv ul li {
-    width: 40px;
-    height: 40px;
-}
-
-// ==========================================
-// 17. Footer
-// ==========================================
-
-#footer {
-    position: relative;
-    background: var(--text-color2);
-    padding: 62px;
-    height: 306px;
-    display: flex;
-    align-items: center;
-
-    .footer-wrap {
-        width: 80vw;
-        margin: 0 auto;
-        color: #fff;
-        display: flex;
-        justify-content: space-between;
-
-        .footer-left {
-            ul {
-                li {
-                    display: inline-block;
-                    margin-right: 4rem;
-                }
-
-                &.foot-menu {
-                    margin-bottom: 40px;
-                    padding-top: 16px;
-                }
-
-                &.foot-logo {
-                    margin-bottom: 40px;
-
-                    .logo1 img {
-                        height: 42px;
-                        width: auto;
-                    }
-
-                    li.family-tag {
-                        display: none;
-                    }
-                }
-            }
-
-            p {
-                font-size: 1.6rem;
-                font-weight: 300;
-            }
-
-            .family-tag {
-                cursor: pointer;
-                border-bottom: 1px solid #fff;
-                height: 58px;
-                margin-bottom: 16px;
-                padding-top: 16px;
-
-                > a {
-                    position: relative;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-
-                    &::after {
-                        position: absolute;
-                        content: '';
-                        display: block;
-                        width: 12.5px;
-                        height: 12.5px;
-                        top: 6px;
-                        right: 12.5px;
-                        background: url(../images/ic/footer-family.png) no-repeat;
-                    }
-                }
-            }
-        }
-
-        .footer-right {
-            display: flex;
-            flex-direction: column;
-            width: 267px;
-            height: 100%;
-
-            .family-tag {
-                cursor: pointer;
-                border-bottom: 1px solid #fff;
-                height: 58px;
-                margin-bottom: 16px;
-                padding-top: 16px;
-
-                > a {
-                    position: relative;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-
-                    &::after {
-                        position: absolute;
-                        content: '';
-                        display: block;
-                        width: 12.5px;
-                        height: 12.5px;
-                        top: 6px;
-                        right: 12.5px;
-                        background: url(../images/ic/footer-family.png) no-repeat;
-                    }
-                }
-            }
-
-            .family {
-                &:last-child {
-                    margin-bottom: 0;
-                }
-
-                .family-list {
-                    position: absolute;
-                    padding: 104px 10vw;
-                    bottom: 306px;
-                    left: 0;
-                    display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                    max-width: 100%;
-                    overflow: hidden;
-                    background: var(--text-color1);
-                    z-index: 50;
-
-                    &::before {
-                        position: absolute;
-                        bottom: 16px;
-                        left: 0;
-                        width: 500%;
-                        background: url(../images/bg/FAMILY\ SITE.svg) repeat-x;
-                        height: 58px;
-                        content: '';
-                        display: block;
-                        will-change: transform;
-                        animation: marquee 180s linear infinite;
-                        opacity: 0;
-                        transition: opacity .5s;
-                    }
-
-                    &.on {
-                        &::before {
-                            opacity: 1;
-                        }
-
-                        .family-list-item {
-                            opacity: 1;
-                        }
-                    }
-
-                    .family-list-item {
-                        width: 33%;
-                        margin-bottom: 24px;
-                        opacity: 0;
-                        transition: opacity .5s;
-
-                        h5 {
-                            position: relative;
-                            margin-bottom: 16px;
-                            font-weight: 400;
-                            width: fit-content;
-                            background: #181818;
-
-                            &:after {
-                                position: absolute;
-                                display: none;
-                                content: '';
-                                background: url(../images/ic/footer-text.svg) no-repeat;
-                                right: -57px;
-                                top: -47px;
-                                width: 115px;
-                                height: 115px;
-                                z-index: -1;
-                                animation: rotate360 60s linear infinite;
-                                transform-origin: 50% 50%;
-                            }
-                        }
-
-                        &.highlight h5:after {
-                            display: block;
-                        }
-
-                        li {
-                            position: relative;
-                            padding: 8px 0;
-                            font-size: 1.8rem;
-                            color: #aaa;
-                            display: block;
-                            transition: all .2s;
-                            width: fit-content;
-
-                            &.is-active {
-                                color: #fff;
-
-                                &::after {
-                                    display: block;
-                                    animation: move-right-s 3s ease-in-out infinite both;
-                                }
-                            }
-
-                            &::after {
-                                position: absolute;
-                                right: -57px;
-                                top: 11px;
-                                width: 50px;
-                                height: 20px;
-                                content: '';
-                                display: none;
-                                background: url(../images/ic/footer-arrow.svg) no-repeat;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .family-tag-close {
-                position: absolute;
-                top: 60px;
-                right: 6vw;
-            }
-        }
-    }
-}
-
-.topbtn {
-    opacity: 0;
-    transition: all .5s;
-    position: fixed;
-    z-index: 50;
-    text-align: center;
-    display: block;
-    content: '';
-    right: 0;
-    bottom: 0px;
-    width: 88px;
-    height: 88px;
-    background: var(--main-color1);
-    color: #fff;
-
-    &.show {
-        opacity: 1;
-    }
-
-    .ictop {
-        display: block;
-        margin: 6px auto;
-        width: 21px;
-        height: 10px;
-        background: url(../images/ic/ic_topbtn.png) no-repeat;
-    }
-}
-
-// ==========================================
-// 18. Buttons
+// 9. Main Page Buttons
 // ==========================================
 
 .btn-main-01 {
@@ -1701,118 +1003,11 @@
 }
 
 // ==========================================
-// 19. Responsive Media Queries
+// 10. Responsive Media Queries
 // ==========================================
 
 @media (max-width: 1280px) {
-    .all-menu > nav .all-menu-list {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 40px 0;
-        padding-bottom: 60px;
-
-        > li {
-            border-left: none;
-            padding: 1rem 0;
-            text-align: center;
-
-            > a {
-                font-size: 2.4rem;
-                padding-left: 0;
-            }
-
-            .depth2 {
-                display: none;
-
-                > li {
-                    padding-left: 0;
-
-                    > a {
-                        font-size: 2rem;
-                        padding-left: 0;
-                    }
-                }
-            }
-        }
-
-        &.darken {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-bottom: 60px;
-
-            > li {
-                border-left: none;
-
-                &::after {
-                    display: none;
-                }
-
-                &.highlight > .depth2 > li.focus {
-                    border-left: none;
-                    padding-left: 0;
-
-                    > a {
-                        font-weight: 400;
-                        padding-left: 0;
-                    }
-                }
-            }
-        }
-    }
-
-    .search-menu {
-        right: -100%;
-        width: 100%;
-    }
-
     .btn-main-02 {
         margin-top: 0;
     }
-
-    #footer .footer-wrap .footer-right .family-tag-close {
-        right: calc(50% - 20px);
-        top: 20px;
-
-        img {
-            width: 32px;
-        }
-    }
 }
-
-@media (min-width: 1281px) {
-    .all-menu > nav .all-menu-list {
-        > li {
-            width: 20%;
-            float: left;
-
-            > a {
-                font-size: 2.4rem;
-                padding-bottom: 30px;
-                margin-bottom: 20px;
-                display: block;
-            }
-
-            .depth2 {
-                display: block !important;
-
-                > li > a {
-                    font-size: 1.8rem;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 500px) {
-    #commonSearchPagenationDiv ul li {
-        width: 26px;
-        height: 26px;
-    }
-}
-
-

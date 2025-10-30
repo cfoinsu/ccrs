@@ -1,22 +1,47 @@
-// English pages CSS bundle
+// ==========================================
+// English Pages CSS Bundle
+// ==========================================
 // Import order: base → libraries → layout → components → overrides
+// This file bundles all styles for English pages
 
-// Base styles
+// ==========================================
+// 1. Base Styles (Korean site base)
+// ==========================================
 @import '../css/common.css';
 @import '../css/main.css';
 
-// Third-party libraries
+// ==========================================
+// 2. Third-party Libraries
+// ==========================================
 @import '../css/all.min.css';
 
-// Layout
+// ==========================================
+// 3. Layout (Korean site layout)
+// ==========================================
 @import '../css/layout.css';
 
-// Components
+// ==========================================
+// 4. Components
+// ==========================================
 @import '../css/component/output.css';
 
-// General styles
+// ==========================================
+// 5. General Styles (Korean site)
+// ==========================================
 @import '../css/styles.css';
 
-// English overrides (must be last)
+// ==========================================
+// 6. English Layout Overrides
+// ==========================================
+// Header, Footer, Navigation, All-menu, Search-menu
+// Common layout components used across all English pages
+@import '../css/layout_en_override.css';
+
+// ==========================================
+// 7. English Page-Specific Styles
+// ==========================================
+// Main page only (hero, sections 1-4, accordion, etc.)
 @import '../css/main_en.css';
+
+// Sub pages only (content boxes, tables, grids, etc.)
 @import '../css/styles_en_override.css';
