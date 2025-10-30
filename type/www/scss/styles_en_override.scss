@@ -276,10 +276,11 @@
 
     tbody {
         td {
+            min-height: 60px;
             border: 1px solid #ccd2e0;
             padding: 20px;
             background: white;
-            vertical-align: top;
+            vertical-align: middle;
 
             @include mobile {
                 padding: 16px 12px;
@@ -990,6 +991,12 @@
         margin-bottom: 40px;
     }
 
+    .img-center {
+        max-width: 820px;
+        margin: 0 auto;
+        display: block;
+    }
+
     // Intro Box with gradient
     .intro-box {
         &.gradient-purple {
@@ -1156,7 +1163,7 @@
         font-size: 17px;
         line-height: 1.7;
         color: #17191b;
-        margin-bottom: 24px;
+        margin-bottom: 10px;
     }
 
     .sub-section {
@@ -1165,6 +1172,19 @@
         @include mobile {
             margin-top: 32px;
         }
+    }
+
+    // Performance table vertical alignment
+    .tbl td {
+        vertical-align: middle;
+    }
+
+    // Unit text styling
+    .unit-text {
+        text-align: right;
+        margin-bottom: 5px;
+        color: #555;
+        font-size: 14px;
     }
 }
 
