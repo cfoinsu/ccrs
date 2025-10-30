@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>신용회복위원회</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
-	<link rel="stylesheet" href="/type/www/css/bundle_en.css">
+	<link rel="stylesheet" href="/type/www/css/bundle_en.css?ver=2.0">
     <!-- <link rel="stylesheet" href="/type/www/css/webfonts.css"> -->
 	
 	<script src="/type/www/js/jquery-2.2.4.min.js"></script>
@@ -24,7 +24,7 @@
 	<div id="skipNav">
 	    <a href="#contents">skip navigation</a>
 	</div>
-	<div id="container">
+	<div id="container" class="main-en">
 		<!-- header:s -->
 		<header id="header" class="header header-main">			
 			<div class="header-container">
@@ -116,17 +116,43 @@
 		<main class="main-content" id="main-content">
 			<!-- section1:s -->
 			<section class="section card-scroll" id="section1">
-					<div class="inner">
-					<div class="hero-text" data-name="텍스트">
-						<strong class="hero-title">
-							<p class="hero-title-1">TOGETHER</p>
-							<p class="hero-title-2">Forward</p>
-						</strong>
-						<p class="hero-subtitle">
-								A world-renowned public institution <br>
-								for debt reduction
-							</p>
-						</h1>
+				<div class="hero-swiper swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="hero-text" data-name="텍스트">
+								<div class="inner">
+									<strong class="hero-title">
+										<p class="hero-title-1">TOGETHER</p>
+										<p class="hero-title-2">Forward</p>
+									</strong>
+									<p class="hero-subtitle">
+											A world-renowned public institution <br>
+											for debt reduction
+										</p>
+								</div>
+							</div>
+							<img src="/type/www/images/en/en_main_intro1.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<div class="hero-text">
+								<strong class="hero-title">
+									<p class="hero-title-1">BRIGHTER</p>
+									<p class="hero-title-2">Tomorrow</p>
+								</strong>
+								<p class="hero-subtitle">
+										Supporting your journey to <br>
+										financial recovery
+									</p>
+							</div>
+							<img src="/type/www/images/en/en_main_intro2.png" alt="">
+						</div>
+
+						<!-- Pagination -->
+						<!-- <div class="swiper-pagination"></div> -->
+
+						<!-- Navigation buttons -->
+						<!-- <div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div> -->
 					</div>
 				</div>
 			</section>
@@ -608,8 +634,21 @@ independence</p>
 			}, 800, 'swing');
 		});
 
-		// GSAP Hero Text Animation
-		$(document).ready(function() {
+		// GSAP Hero Text Animation Function
+		function animateHeroText(slide) {
+			const $slide = $(slide);
+			const $title1 = $slide.find('.hero-title-1');
+			const $title2 = $slide.find('.hero-title-2');
+			const $subtitle = $slide.find('.hero-subtitle');
+
+			// 요소가 없으면 리턴
+			if (!$title1.length && !$title2.length && !$subtitle.length) {
+				return;
+			}
+
+			// 기존 애니메이션 정리
+			gsap.killTweensOf([$title1[0], $title2[0], $subtitle[0]]);
+
 			// 애니메이션 타임라인 생성
 			const heroTimeline = gsap.timeline({
 				defaults: {
@@ -617,29 +656,63 @@ independence</p>
 				}
 			});
 
-			// hero-title-1: 오른쪽에서 왼쪽으로 (0초부터 시작)
-			heroTimeline.from('.hero-title-1', {
-				opacity: 0,
-				x: 100,  // 오른쪽에서 시작
-				duration: 1.2,
-				delay: 0.3
-			}, 0);
+			// hero-title-1: 오른쪽에서 왼쪽으로 (첫줄 앞쪽으로)
+			if ($title1.length) {
+				heroTimeline.fromTo($title1[0],
+					{
+						opacity: 0,
+						x: 100
+					},
+					{
+						opacity: 1,
+						x: -170,
+						duration: 1.2
+					},
+					0
+				);
+			}
 
-			// hero-title-2: 왼쪽에서 오른쪽으로 (0.3초 지연)
-			heroTimeline.from('.hero-title-2', {
-				opacity: 0,
-				x: -100,  // 왼쪽에서 시작
-				duration: 1.2,
-				delay: 0.3
-			}, 0.3);
+			// hero-title-2: 왼쪽에서 오른쪽으로 (둘째줄 뒷쪽으로)
+			if ($title2.length) {
+				heroTimeline.fromTo($title2[0],
+					{
+						opacity: 0,
+						x: -100
+					},
+					{
+						opacity: 1,
+						x: 170,
+						duration: 1.2
+					},
+					0.3
+				);
+			}
 
-			// hero-subtitle: 아래에서 위로 (0.6초 지연)
-			heroTimeline.from('.hero-subtitle', {
-				opacity: 0,
-				y: 50,  // 아래에서 시작
-				duration: 1.2,
-				delay: 0.3
-			}, 0.6);
+			// hero-subtitle: 아래에서 위로
+			if ($subtitle.length) {
+				heroTimeline.fromTo($subtitle[0],
+					{
+						opacity: 0,
+						y: 50
+					},
+					{
+						opacity: 1,
+						y: 0,
+						duration: 1.2
+					},
+					0.6
+				);
+			}
+		}
+
+		// 페이지 로드 시 첫 슬라이드 애니메이션
+		$(document).ready(function() {
+			setTimeout(function() {
+				const firstSlide = $('.hero-swiper .swiper-slide-active')[0];
+				if (firstSlide) {
+					animateHeroText(firstSlide);
+				}
+			}, 300);
 		});
 
 		// Accordion Menu Animation
@@ -739,6 +812,37 @@ independence</p>
 						duration: 0.4,
 						ease: 'power3.inOut'
 					});
+				}
+			});
+		});
+
+		// Hero Swiper Initialization
+		$(document).ready(function() {
+			const heroSwiper = new Swiper('.hero-swiper', {
+				loop: true,
+				speed: 800,
+				effect: 'fade',
+				fadeEffect: {
+					crossFade: true
+				},
+				autoplay: {
+					delay: 5000,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				on: {
+					slideChangeTransitionEnd: function() {
+						// 슬라이드 전환이 끝나면 텍스트 애니메이션 실행
+						const activeSlide = this.slides[this.activeIndex];
+						animateHeroText(activeSlide);
+					}
 				}
 			});
 		});
