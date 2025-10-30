@@ -1,0 +1,22 @@
+// English pages CSS bundle
+// Import order: base → libraries → layout → components → overrides
+
+// Base styles
+@import '../css/common.css';
+@import '../css/main.css';
+
+// Third-party libraries
+@import '../css/all.min.css';
+
+// Layout
+@import '../css/layout.css';
+
+// Components
+@import '../css/component/output.css';
+
+// General styles
+@import '../css/styles.css';
+
+// English overrides (must be last)
+@import '../css/main_en.css';
+@import '../css/styles_en_override.css';
