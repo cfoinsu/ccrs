@@ -337,6 +337,23 @@ body {
     text-align: center;
     color: #474E55;
 }
+.page-description.bgYellow {
+    background: url(../images/img/bgYellow_content_top.png) center no-repeat;
+    background-size: cover;
+    padding: 20px 36px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+.page-description.bgYellow p {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    color: #474E55;
+}
 .page-description.bgBlue:has(.krds-btn) p {
     margin-bottom: 0;
 }
@@ -4950,6 +4967,9 @@ table.comparison-table td:first-child {
 .g-wrap .g-info-box .g-desc-box .g-tit {
     font-size: var(--krds-pc-font-size-heading-small);
 }
+.g-wrap .g-info-box .g-desc-box .g-tit.info {
+    font-size: 20px;
+}
 .g-wrap .g-info-box .g-desc-box .g-tit.big {
     font-size: var(--krds-pc-font-size-heading-large);
 }
@@ -6855,6 +6875,47 @@ input[type=radio]:checked + label.fillter-chip {
     display: inline;
     background: linear-gradient(transparent 65%, #FFE0A3 0);
 }
+.shadow-tit {
+    display: inline-block;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.shadow-tit.yellow {
+    color: #D96D00;
+}
+.shadow-tit.red {
+    color: #C2421F;
+}
+.shadow-tit.blue {
+    color: #2B69C6;
+}
+.shadow-tit.green {
+    color: #1178A1;
+}
+.shadow-tit::after {
+    content: '';
+    display: block;
+    height: 12px;
+    width: auto;
+    margin-top: -12px;
+
+}
+.shadow-tit.yellow::after {
+    background: #FFE398;
+
+}
+.shadow-tit.red::after {
+    background: #FFD5C9;
+
+}
+.shadow-tit.blue::after {
+    background: #C8DDFF;
+
+}
+.shadow-tit.green::after {
+    background: #A3E8F5;
+
+}
 /* boxi콘텐츠 - Flexbox 기반 */
 .boxi-content-flex {
     display: flex;
@@ -6873,6 +6934,11 @@ input[type=radio]:checked + label.fillter-chip {
   position: relative;
   display: inline-block;
   overflow: hidden;
+}
+.g-img.mAuto {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
 }
 .g-img img {
   z-index: 1;
@@ -6911,6 +6977,14 @@ input[type=radio]:checked + label.fillter-chip {
   height: 100%;
   transform: translate(-50%, -50%) scale(4);
   opacity: 1;
+}
+.g-img.bgact.spark:hover::after,
+.g-img.bgact.spark:focus::after {
+  animation: ripple-circle 0.8s ease-out;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%) scale(4);
+  opacity: 0;
 }
 
 @keyframes ripple-circle {
@@ -7069,7 +7143,7 @@ input[type=radio]:checked + label.fillter-chip {
     font-size: 1.5rem;
     color: #000;
 }
-.onrange-info {
+.orange-info {
     display: inline-block;
     padding-left: 26px;
     background: url(../img/icons/orange-info.svg) no-repeat left top;
@@ -7305,5 +7379,46 @@ input[type=radio]:checked + label.fillter-chip {
 .krds-info-list.decimal .bullet.small::before {
     height: 20px;
 }
-table .krds-info-list > li {font-size: 17px;}
-.g-wrap .krds-table-wrap .tbl.data tbody th {font-weight: 700;}
+table .krds-info-list > li > .krds-info-list > li,
+table .krds-info-list > li {
+    font-size: 17px;
+}
+.g-wrap .krds-table-wrap .tbl.data tbody th {
+    font-weight: 700;
+}
+table .table-center {
+    text-align: left;
+    margin: 0 auto;
+    display: block;
+    width: max-content;
+    max-width: fit-content;
+}
+.ptext {
+    font-size: 1.9rem;
+}
+.postion {
+    position: relative;
+}
+.postion .positionbtn {
+    position: absolute;
+    width: 139px;
+    height: 30px;
+    border: none;
+    border-radius: 1000px;
+    font-size: 17px;
+    text-align: center;
+    padding: 2px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 301px;
+    left: 251px;
+    color: transparent;
+    background-color: transparent;
+    font-weight: 400;
+    
+}
+.postion .positionbtn:hover {
+    color: #fff;
+    background-color: #F48F01;
+}

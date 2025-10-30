@@ -169,25 +169,25 @@ document.querySelector('[aria-label="인쇄"]')?.addEventListener('click', () =>
 // });
 
 // Initialize page
-document.addEventListener('DOMContentLoaded', () => {
+// document.addEventListener('DOMContentLoaded', () => {
     
-    // Add fade-in animation to main sections
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, { threshold: 0.1 });
+//     // Add fade-in animation to main sections
+//     const observer = new IntersectionObserver((entries) => {
+//         entries.forEach(entry => {
+//             if (entry.isIntersecting) {
+//                 entry.target.style.opacity = '1';
+//                 entry.target.style.transform = 'translateY(0)';
+//             }
+//         });
+//     }, { threshold: 0.1 });
     
-    document.querySelectorAll('.content-sections > *').forEach(section => {
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(20px)';
-        section.style.transition = 'all 0.6s ease';
-        observer.observe(section);
-    });
-});
+//     document.querySelectorAll('.content-sections > *').forEach(section => {
+//         section.style.opacity = '0';
+//         section.style.transform = 'translateY(20px)';
+//         section.style.transition = 'all 0.6s ease';
+//         observer.observe(section);
+//     });
+// });
 
 // Performance: Lazy load images
 if ('IntersectionObserver' in window) {

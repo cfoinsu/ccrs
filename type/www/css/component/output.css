@@ -2864,7 +2864,7 @@ caption {
 
 /* 표 */
 .krds-table-wrap {
-  --krds-table--data-thead-th-padding: var(--krds-padding-3);
+  --krds-table--data-thead-th-padding: var(--krds-padding-5);
   --krds-table--data-thead-th-padding-sides:var(--krds-padding-6);
   --krds-table--data-thead-pc-font-size: var(--krds-pc-font-size-heading-xsmall);
   --krds-table--data-thead-mobile-font-size: var(--krds-mobile-font-size-heading-xxsmall);

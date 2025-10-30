@@ -518,50 +518,50 @@ $(function() {
   });
 });
 // 개발예외코딩
-$(function(){ $('body').css('display','none').fadeIn(600); });
+// $(function(){ $('body').css('display','none').fadeIn(600); });
 
-$(function() {
-  $(".numcounter").each(function () {
-    const $this = $(this);
-    const target = parseInt($this.text().replace(/,/g, ""), 10); // 목표 숫자
-    $this.text("0"); // 초기화
+// $(function() {
+//   $(".numcounter").each(function () {
+//     const $this = $(this);
+//     const target = parseInt($this.text().replace(/,/g, ""), 10); // 목표 숫자
+//     $this.text("0"); // 초기화
 
-    $({ count: 0 }).animate(
-      { count: target },
-      {
-        duration: 3000, // 3초간 실행
-        easing: "swing",
-        step: function (now) {
-          // 현재 값 표시 (콤마 포함)
-          $this.text(Math.floor(now).toLocaleString());
-        },
-        complete: function () {
-          // 최종 값 표시
-          $this.text(target.toLocaleString());
-        }
-      }
-    );
-  });
-});
+//     $({ count: 0 }).animate(
+//       { count: target },
+//       {
+//         duration: 3000, // 3초간 실행
+//         easing: "swing",
+//         step: function (now) {
+//           // 현재 값 표시 (콤마 포함)
+//           $this.text(Math.floor(now).toLocaleString());
+//         },
+//         complete: function () {
+//           // 최종 값 표시
+//           $this.text(target.toLocaleString());
+//         }
+//       }
+//     );
+//   });
+// });
 
-function isInViewport(element) {
-  var rect = element.getBoundingClientRect();
-  return (
-    rect.top <= (window.innerHeight - 120) && // 80px 여유 (조정 가능)
-    rect.bottom >= 0
-  );
-}
+// function isInViewport(element) {
+//   var rect = element.getBoundingClientRect();
+//   return (
+//     rect.top <= (window.innerHeight - 120) && // 80px 여유 (조정 가능)
+//     rect.bottom >= 0
+//   );
+// }
 
-function runScrollFadeup() {
-  $('.g-conts-area > *').each(function() {
-    if (isInViewport(this)) {
-      $(this).addClass('active');
-    }
-  });
-}
+// function runScrollFadeup() {
+//   $('.g-conts-area > *').each(function() {
+//     if (isInViewport(this)) {
+//       $(this).addClass('active');
+//     }
+//   });
+// }
 
-$(window).on('scroll resize', runScrollFadeup);
-$(document).ready(function() {
-  $('.g-conts-area > *').addClass('scroll-fadeup'); // 초기 클래스 세팅
-  runScrollFadeup(); // 로드시 체크 (첫 화면부터 등장할 수 있도록)
-});
+// $(window).on('scroll resize', runScrollFadeup);
+// $(document).ready(function() {
+//   $('.g-conts-area > *').addClass('scroll-fadeup'); // 초기 클래스 세팅
+//   runScrollFadeup(); // 로드시 체크 (첫 화면부터 등장할 수 있도록)
+// });
