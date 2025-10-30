@@ -4967,6 +4967,9 @@ table.comparison-table td:first-child {
 .g-wrap .g-info-box .g-desc-box .g-tit {
     font-size: var(--krds-pc-font-size-heading-small);
 }
+.g-wrap .g-info-box .g-desc-box .g-tit.info {
+    font-size: 20px;
+}
 .g-wrap .g-info-box .g-desc-box .g-tit.big {
     font-size: var(--krds-pc-font-size-heading-large);
 }

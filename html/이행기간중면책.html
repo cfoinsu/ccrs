@@ -282,9 +282,13 @@
                                     <div id="accordionCollapseSample02" class="accordion-collapse collapse"
                                         aria-labelledby="accordionHeaderSample01">
                                         <div class="accordion-body">
-                                            <div class="conts-desc">
-                                                개인워크아웃 변제계획에 따라 채무를 75%이상 이행하고, 월변제금 미납(연체)횟수가 3회 이상인 채무자로서 다음 어느 하나에
-                                                해당하는 채무자
+                                            <div class="roundcheck">
+                                                <ul class="krds-info-list decimal" role="list">
+                                                    <li role="listitem">
+                                                        개인워크아웃 변제계획에 따라 채무를 75%이상 이행하고, 월변제금 미납(연체)횟수가 3회 이상인 채무자로서 <br>
+                                                        다음 어느 하나에 해당하는 채무자
+                                                    </li>
+                                                </ul>
                                             </div>
 
                                             <div class="krds-table-wrap mt20">
@@ -307,11 +311,11 @@
                                                     <tbody>
                                                         <tr>
                                                             <td scope="row">기초생활수급자</td>
-                                                            <td class="" rowspan="3">
-                                                                최저생계비 이하
+                                                            <td class="" rowspan="2">
+                                                                -
                                                             </td>
-                                                            <td class="" rowspan="3">
-                                                                「채무자 회생 및 파산에 관한 법률」에서 정한 면제재산 범위 이내
+                                                            <td class="" rowspan="2">
+                                                                -
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -319,6 +323,49 @@
                                                         </tr>
                                                         <tr>
                                                             <td scope="row">만 70세 이상</td>
+                                                            <td class="">
+                                                                <div class="tooltip-trigger" data-tooltip="
+                                                                                <h6>2026년 기준</h6>
+                                                                                <table class='tbl data white' style='width: 100%;'>
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th>가구원수</th>
+                                                                                            <th>최저 생계비 150%</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <th>1인</th>
+                                                                                            <td>1,538,543</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th>2인</th>
+                                                                                            <td>2,519,575</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th>3인</th>
+                                                                                            <td>3,215,422</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th>4인</th>
+                                                                                            <td>3,896,843</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                                ">
+                                                                                최저생계비<i class="fas fa-question-circle"></i>
+                                                                            </div> 
+                                                            </td>
+                                                            <td class="">
+                                                                「채무자 회생 및 파산에 관한 법률」에서 정한 
+                                                                <div class="tooltip-trigger" data-tooltip="시세 - 담보대출 잔액 - 공제재산가액<br><br>
+
+* 공제재산가액 : 채무자가 인간다운 생활을 하는데 필요한 최소한의 재산을 의미하며, 『주택임대차보호법시행령』에서 정한 소액보증금을 공제기준가액으로 함
+">
+                                                                                면제재산<i class="fas fa-question-circle"></i>
+                                                                            </div>
+                                                                범위 이내
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -331,16 +378,20 @@
                                 <div class="accordion-item active">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
                                             class="btn-accordion" aria-controls="accordionCollapseSample02"><span
-                                                class="sec-tit">지원절차</span></button></h4>
+                                                class="sec-tit">신청절차</span></button></h4>
                                     <div id="accordionCollapseSample02" class="accordion-collapse collapse"
                                         aria-labelledby="accordionHeaderSample01">
                                         <div class="accordion-body">
                                             <!-- accordion contents -->
                                             <div class="conts-desc">
-                                                <p>
-                                                    채무자 귀책이 없는 면책사유 확인 후 심의위원회 의결과 채권금융회사 과반수의 동의를 받아 면책 결정<br />
-                                                </p>
-                                                <div class="g-img mt10">
+                                                <div class="roundcheck">
+                                                    <ul class="krds-info-list decimal" role="list">
+                                                        <li role="listitem">
+                                                            채무자 귀책이 없는 면책사유 확인 후 심의위원회 의결과 채권금융회사 과반수의 동의를 받아 면책 결정
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="g-img mt10 bgact blue spark">
                                                     <img src="/type/www/images/img/이행기간중면책_지원절차.png?ver=1.5" alt="신청절차">
                                                 </div>
                                             </div>
@@ -362,27 +413,28 @@
                                                         신청서류 표 (구분, 설명, 비고로 구성됨)
                                                     </caption>
                                                     <colgroup>
-                                                        <col style="width: 25%;">
-                                                        <col>
-                                                        <col>
+                                                        <col style="width: 20%;">
+                                                        <col style="width: 10%;">
+                                                        <col style="width: 40%;">
+                                                        <col style="width: 30%;">
                                                     </colgroup>
                                                     <thead>
                                                         <tr>
                                                             <th scope="col" colspan="2" class="">구분</th>
-                                                            <th scope="col" class="">제출서류</th>
-                                                            <th scope="col" class="">발급기관</th>
+                                                            <th scope="col" class="">서류명</th>
+                                                            <th scope="col" class="">비고</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <th scope="row" rowspan="3" scope="col" colspan="2">공통</th>
+                                                            <th scope="row" rowspan="2" scope="col" colspan="2">공통</th>
                                                             <td class="al">
                                                                 <ul class="krds-info-list dash" role="list">
                                                                     <li class="" role="listitem">
-                                                                        신분증 사본
+                                                                        본인확인서류 <sup>*</sup>
                                                                     </li>
                                                                     <li class="" role="listitem">
-                                                                        이행기간 중 면책신청서
+                                                                        이행기간 중 면책신청서(위원회 양식)
                                                                     </li>
                                                                     <li class="" role="listitem">
                                                                         개인(신용)정보 이용·수집·제공, 조회동의서
@@ -390,30 +442,7 @@
                                                                 </ul>
                                                             </td>
                                                             <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        위원회 양식
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        주민등록등본
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                            <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        읍면동 주민자치센터, 민원24(온라인)
-                                                                    </li>
-                                                                    <li class="" role="listitem">
-                                                                        행정정보공동이용 시스템
-                                                                    </li>
-                                                                </ul>
+                                                                <span class="fs_15">* 주민등록증, 운전면허증, 모바일신분증, 외국인등록증, 국내거소신고증, 여권 등</span>
                                                             </td>
                                                         </tr>
                                                         <tr>
@@ -433,122 +462,8 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <th scope="col" colspan="2">기초생활수급자</th>
-                                                            <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        수급자증명서
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                            <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        읍면동 주민자치센터, 민원24(온라인)
-                                                                    </li>
-                                                                    <li class="" role="listitem">
-                                                                        행정정보공동이용 시스템
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="col" colspan="2">중증장애인</th>
-                                                            <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        장애인증명서
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                            <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        읍면동 주민자치센터, 민원24(온라인)
-                                                                    </li>
-                                                                    <li class="" role="listitem">
-                                                                        행정정보공동이용 시스템
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row" rowspan="5">70세 이상자 및 기타 신청자</th>
-                                                            <th scope="row" rowspan="4">본인</th>
-                                                            <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        건강보험자격득실확인서
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                            <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        국민건강보험공단
-                                                                    </li>
-                                                                    <li class="" role="listitem">
-                                                                        행정정보공동이용 시스템
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        소득증빙서류
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                            <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        「신용회복지원협약 시행세칙」별표1(소득산정방법)에 따른 소득증빙서류
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        지방세 세목별 과세증명
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                            <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        읍면동 주민자치센터, 민원24(온라인)
-                                                                    </li>
-                                                                    <li class="" role="listitem">
-                                                                        행정정보공동이용 시스템
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        재산증명서류
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                            <td class="al">
-                                                                <ul class="krds-info-list dash" role="list">
-                                                                    <li class="" role="listitem">
-                                                                        재산 종류에 따라 발급기관 상이
-                                                                    </li>
-                                                                    <li class="" role="listitem">
-                                                                        행정정보공동이용 시스템
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th class="al">배우자</th>
+                                                            <th scope="row">70세 이상자</th>
+                                                            <th class="">배우자</th>
                                                             <td class="al">
                                                                 <ul class="krds-info-list dash" role="list">
                                                                     <li class="" role="listitem">
