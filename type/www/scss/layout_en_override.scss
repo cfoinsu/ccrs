@@ -28,6 +28,9 @@
 .en {
     #container {
         padding-top: 80px;
+        &.main-en {
+            padding-top: 0;
+        }
     }
     .inner {
         max-width: 1400px;
@@ -160,7 +163,9 @@
                         transition: all 0.2s ease;
                         top: 59px;
                         padding-top: 4px;
-                        width: calc(1100px / 6);
+                        width: auto;
+                        min-width: 180px;
+                        max-width: 280px;
                         left: 0;
 
                         > li {
@@ -169,6 +174,7 @@
                             color: #fff;
                             font-weight: 400;
                             margin: 0;
+                            white-space: nowrap;
 
                             &:hover {
                                 font-weight: 600;
@@ -181,8 +187,11 @@
                                 height: auto;
                                 line-height: 1.2;
                                 margin-top: 10px;
-                                font-size: 15px;
+                                font-size: 14px;
                                 color: #fff;
+                                white-space: normal;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
                             }
                         }
                     }

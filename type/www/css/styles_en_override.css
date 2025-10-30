@@ -222,10 +222,12 @@
 
 .en .card {
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 .en .card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 .en table th, .en table td {
@@ -323,8 +325,12 @@
 }
 
 .en .icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 12px;
 }
 .en .icon-box img {
@@ -396,8 +402,12 @@
   }
 }
 .benefits-section .benefits-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 24px;
   gap: 12px;
 }
@@ -409,6 +419,7 @@
 .benefits-section .benefits-header .bullet {
   width: 4px;
   height: 18px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f48f01), to(#344d82));
   background: linear-gradient(to bottom, #f48f01 0%, #344d82 100%);
   border-radius: 2px;
 }
@@ -471,14 +482,27 @@
   }
 }
 .benefits-section .benefits-grid .benefit-card .chart-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .benefits-section .benefits-grid .benefit-card .chart-container .pie-chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
 }
 @media (max-width: 767px) {
@@ -511,20 +535,40 @@
   }
 }
 .benefits-section .benefits-grid .benefit-card .program-grid .program-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 12px;
 }
 .benefits-section .benefits-grid .benefit-card .program-grid .program-item .program-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .benefits-section .benefits-grid .benefit-card .program-grid .program-item .program-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 4px;
   text-align: center;
 }
@@ -549,26 +593,45 @@
   margin-top: 8px;
 }
 .benefits-section .benefits-grid .benefit-card .stats-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   gap: 24px;
 }
 @media (max-width: 767px) {
   .benefits-section .benefits-grid .benefit-card .stats-grid {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 32px;
   }
 }
 .benefits-section .benefits-grid .benefit-card .stats-grid .stat-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 16px;
 }
 .benefits-section .benefits-grid .benefit-card .stats-grid .stat-item .stat-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 767px) {
   .benefits-section .benefits-grid .benefit-card .stats-grid .stat-item .stat-circle svg {
@@ -665,9 +728,16 @@
   }
 }
 .services-section .service-card .service-steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
 }
 .services-section .service-card .service-steps .step-box {
@@ -755,9 +825,15 @@
   border-radius: 3px;
 }
 .services-section .service-card .service-steps .step-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #f48f01;
   font-size: 24px;
   margin: 4px 0;
@@ -931,12 +1007,19 @@
   display: block;
 }
 .credit-education-section .intro-box.gradient-purple {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f4f4ff), to(#dcdcff));
   background: linear-gradient(to bottom, #f4f4ff 0%, #dcdcff 100%);
   border-radius: 24px;
   padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 20px;
   position: relative;
   overflow: hidden;
@@ -944,12 +1027,19 @@
 @media (max-width: 767px) {
   .credit-education-section .intro-box.gradient-purple {
     padding: 24px 20px;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 .credit-education-section .intro-content {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   max-width: 650px;
 }
 .credit-education-section .intro-content .intro-title {
@@ -973,7 +1063,8 @@
 .credit-education-section .intro-icon {
   width: 123px;
   height: 100px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 @media (max-width: 767px) {
   .credit-education-section .intro-icon {
@@ -985,7 +1076,8 @@
 .credit-education-section .intro-icon img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .credit-education-section .education-table-section {
   margin-top: 40px;
@@ -1117,9 +1209,15 @@
   background: #e7f4fe;
   border-radius: 12px;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 209px;
   margin-bottom: 32px;
   overflow: hidden;
@@ -1134,8 +1232,10 @@
 .global-network-section .network-image-box img {
   width: 160px;
   height: 169px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 @media (max-width: 767px) {
   .global-network-section .network-image-box img {
@@ -1148,7 +1248,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  align-items: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 @media (max-width: 1023px) {
   .global-network-section .network-content-grid {
@@ -1225,7 +1327,8 @@
 .headquarter-section .headquarter-image img {
   width: 100%;
   height: 347px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 12px;
 }
 @media (max-width: 767px) {
@@ -1234,8 +1337,13 @@
   }
 }
 .headquarter-section .contact-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 40px;
 }
 @media (max-width: 1023px) {
@@ -1249,22 +1357,29 @@
   }
 }
 .headquarter-section .contact-info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 16px;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .headquarter-section .contact-info-item .contact-icon {
   width: 24px;
   height: 24px;
   color: #1b2025;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin-top: 5px;
 }
 .headquarter-section .contact-info-item .contact-icon i {
   font-size: 20px;
 }
 .headquarter-section .contact-info-item .contact-content {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .headquarter-section .contact-info-item .contact-content .contact-label {
   font-size: 17px;
@@ -1290,13 +1405,15 @@
 .headquarter-section .headquarter-map img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .headquarter-section .headquarter-map .map-pin {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 48px;
   height: 64px;
   color: #ed7801;
@@ -1324,8 +1441,11 @@
   }
 }
 .regional-offices-section .regional-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   border: 1px solid #d2d6da;
   border-radius: 8px;
   overflow: hidden;
@@ -1333,12 +1453,16 @@
 }
 @media (max-width: 767px) {
   .regional-offices-section .regional-tabs {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     border-radius: 8px;
   }
 }
 .regional-offices-section .regional-tabs .tab-item {
-  flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   min-width: 80px;
   height: 56px;
   background: transparent;
@@ -1349,6 +1473,7 @@
   font-weight: 700;
   color: #474e55;
   cursor: pointer;
+  -webkit-transition: background-color 0.2s, color 0.2s;
   transition: background-color 0.2s, color 0.2s;
 }
 .regional-offices-section .regional-tabs .tab-item:first-child {
@@ -1402,8 +1527,13 @@
   }
 }
 .regional-offices-section .office-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .regional-offices-section .office-item {
   padding: 24px 0;
@@ -1427,4 +1557,4 @@
   line-height: 1.5;
   color: #17191b;
   margin: 0;
-}
+}/*# sourceMappingURL=styles_en_override.css.map */

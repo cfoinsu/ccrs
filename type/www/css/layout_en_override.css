@@ -15,6 +15,9 @@
 .en #container {
   padding-top: 80px;
 }
+.en #container.main-en {
+  padding-top: 0;
+}
 .en .inner {
   max-width: 1400px;
   margin: 0 auto;
@@ -148,7 +151,9 @@
   transition: all 0.2s ease;
   top: 59px;
   padding-top: 4px;
-  width: 183.3333333333px;
+  width: auto;
+  min-width: 180px;
+  max-width: 280px;
   left: 0;
 }
 .en #header.header-main .gnb-wrap > nav .gnb > li .depth2 > li {
@@ -157,6 +162,7 @@
   color: #fff;
   font-weight: 400;
   margin: 0;
+  white-space: nowrap;
 }
 .en #header.header-main .gnb-wrap > nav .gnb > li .depth2 > li:hover {
   font-weight: 600;
@@ -168,8 +174,11 @@
   height: auto;
   line-height: 1.2;
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 14px;
   color: #fff;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .en #header.header-main .gnb-wrap .utils {
   position: static;
