@@ -140,7 +140,8 @@ body {
 .pdf-content {
     flex: 1;
     overflow: hidden;
-    background: var(--krds-color-light-gray-5);
+    // background: var(--krds-color-light-gray-5);
+    background: var(--krds-color-light-gray-0);
     position: relative;
     display: flex;
     flex-direction: column;
