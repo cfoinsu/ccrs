@@ -7396,3 +7396,26 @@ table .table-center {
 .ptext {
     font-size: 1.9rem;
 }
+.postion {
+    position: relative;
+}
+.postion .positionbtn {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    border: 1px solid sandybrown;
+    border-radius: 1000px;
+    font-size: 19px;
+    text-align: center;
+    padding: 2px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 500px;
+    left: 200px;
+    background-color: #fff;
+}
+.postion .positionbtn:hover {
+    color: #fff;
+    background-color: saddlebrown;
+}
