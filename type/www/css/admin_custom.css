@@ -93,8 +93,8 @@
 }
 .reN_cms #gnb>li {margin:0; padding:0 20px;flex: 1; width: 0; text-align: center;}
 .reN_cms #gnb>li>a {
-    height: 69px;
-    line-height: 69px;
+    height: 68px;
+    line-height: 68px;
     color: #222 !important;
     font-size: 18px;
     font-weight: 500;
@@ -173,6 +173,7 @@ body {
 
 .reN_cms footer {
     z-index: 1 !important;
+    border-top: 1px solid #ddd;
 }
 
 /* ====== 좌측 메뉴 배경을 아이보리톤으로 ====== */
@@ -224,6 +225,8 @@ body {
     box-shadow: none!important;
     border-top: none!important;
     height: calc(100vh - 70px);
+    border-right: 1px solid #ddd;
+    background: #fff;
 }
 
 /* (선택) 메뉴 텍스트 등 간격, 정렬을 더 깔끔하게 */
@@ -240,9 +243,9 @@ body {
 }
 
 .reN_cms header {
-    height: 70px !important;
+    height: 72px !important;
     padding: 0 32px 0 230px !important;
-    border-bottom: none !important;
+    border-bottom: 2px solid #ddd !important;
     box-shadow: none;
     box-sizing: border-box;
     min-width: 0;
@@ -250,6 +253,7 @@ body {
 
 .reN_cms #contents {
     background: none !important;
+    height: calc(100vh - 73px);
 }
 
 
@@ -296,4 +300,7 @@ body {
 @keyframes bar {
     from  { width:0; }
     to  { width:100%; }
+}
+.reN_cms footer>address::before {
+    display: none;
 }

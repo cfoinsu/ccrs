@@ -7109,6 +7109,7 @@ input[type=radio]:checked + label.fillter-chip {
     margin-top: 0.8rem;
     margin-bottom: 3.2rem;
     font-size: 1.9rem;
+    gap:20px;
 }
 .summary-key {
     display: flex;
