@@ -174,6 +174,7 @@ body {
 .reN_cms footer {
     z-index: 1 !important;
     border-top: 1px solid #ddd;
+    margin-top: -60px;
 }
 
 /* ====== 좌측 메뉴 배경을 아이보리톤으로 ====== */
@@ -224,7 +225,7 @@ body {
 .reN_cms #contents > nav {
     box-shadow: none!important;
     border-top: none!important;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 71px);
     border-right: 1px solid #ddd;
     background: #fff;
 }
@@ -239,6 +240,7 @@ body {
 }
 
 #container {
+    /* overflow: hidden; */
     background: #FFF;
 }
 
@@ -253,18 +255,24 @@ body {
 
 .reN_cms #contents {
     background: none !important;
-    height: calc(100vh - 73px);
+    height: calc(100% - 73px);
+    box-sizing: border-box;
+    min-height: auto;
 }
 
 
 
 .reN_cms footer>address {
     border-left: none;
+    height: 60px;
+    padding: 20px 30px 20px 60px;
 }
 
 .reN_cms #contents>article {
     margin: 0 !important;
-    padding: 20px 30px 180px 60px !important;
+    padding: 20px 30px 80px 60px !important;
+    max-height: calc(100% - 61px);
+    overflow: auto;
 }
 
 /* 기본패턴_준비중 */
