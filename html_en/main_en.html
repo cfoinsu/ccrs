@@ -9,12 +9,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<title>신용회복위원회</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
-	<link rel="stylesheet" href="/type/www/css/bundle_en.css?ver=2.0">
+	<link rel="stylesheet" href="/type/www/css/bundle_en.css?ver=1.7">
     <!-- <link rel="stylesheet" href="/type/www/css/webfonts.css?ver=1.7"> -->
 	
 	<script src="/type/www/js/jquery-2.2.4.min.js?ver=1.7"></script>
 	<!-- GSAP -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js?ver=1.7"></script>
 </head>
 <body class="en">
     <script src="/type/www/js/plugins/aos.js?ver=1.7"></script>
@@ -723,12 +723,14 @@ independence</p>
 				const $content = $item.find('.accordion-cont');
 
 				// padding을 먼저 설정
-				gsap.set($content[0], {
-					paddingTop: 24,
-					paddingBottom: 32,
-					height: 'auto',
-					opacity: 1
-				});
+				if ($content.length) {
+					gsap.set($content[0], {
+						paddingTop: 24,
+						paddingBottom: 32,
+						height: 'auto',
+						opacity: 1
+					});
+				}
 			});
 
 			$('.accordion-header').on('click', function(e) {
