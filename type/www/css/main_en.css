@@ -256,6 +256,7 @@
 }
 .en #section1 .hero-text .hero-subtitle {
   opacity: 0;
+  margin-top: 20px;
   padding-left: 100px;
   font-size: 2.4rem;
   line-height: 1.5;
@@ -421,7 +422,7 @@
   background: #FFF5E8;
 }
 .accordion-item .accordion-body {
-  padding-left: 250px;
+  padding-left: 230px;
 }
 .accordion-item.active .accordion-header .accordion-icon svg {
   -webkit-transform: rotate(180deg);
@@ -520,24 +521,31 @@
   max-width: 430px;
 }
 .content-text p {
-  font-size: 17px;
-  line-height: 1.7;
+  font-size: 19px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
   color: #000;
   margin: 0;
 }
 .content-text .view-more-btn {
-  display: inline-block;
-  padding: 10px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 282px;
+  height: 56px;
+  margin-top: 110px;
   background: #fff;
-  border: 1px solid #E0E0E0;
-  border-radius: 24px;
-  font-size: 14px;
-  font-weight: 500;
+  border-radius: 56px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
   color: #000;
   text-decoration: none;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -554,8 +562,8 @@
           transform: translateY(-50%);
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 120px;
-  height: 120px;
+  width: 170px;
+  height: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

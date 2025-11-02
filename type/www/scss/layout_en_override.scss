@@ -6,6 +6,24 @@
 @import "variables";
 @import "mixins/breakpoints";
 
+.sr_only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+.sr_only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+}
+
 // ==========================================
 // 1. Wrapper
 // ==========================================
@@ -23,11 +41,9 @@
 // ==========================================
 // 2. Common Inner Container
 // ==========================================
-
-// english main header
 .en {
     #container {
-        padding-top: 80px;
+        padding-top: 86px;
         &.main-en {
             padding-top: 0;
         }
@@ -51,219 +67,22 @@
 // 3. Header Styles
 // ==========================================
 
-.en #header.header-main {
-    position: fixed;
-    top: 0px;
-    left: 0;
-    z-index: 99;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-    transition: all 0.3s ease;
-    box-shadow: none;
-
-    &::before {
-        display: none;
-    }
-
-    &::after {
-        content: "";
-        width: 100%;
-        height: 120px;
-        background-color: #000;
-        opacity: 0.8;
-        position: absolute;
-        top: -136px;
-        left: 0;
-        z-index: 1;
-        transition: all 0.3s ease;
-        box-shadow: 1px 10px 15px rgb(0 0 0 / 10%);
-    }
-
-    &.is-hide {
-        top: -150px;
-    }
-
-    &.is-active {
-        &::after {
-            top: 0;
-            height: 330px;
-        }
-
-        .gnb-wrap nav .gnb > li .depth2 {
-            opacity: 1;
-            visibility: visible;
-            min-height: inherit;
-            background: transparent;
-            padding-top: 0;
-        }
-    }
-
-    .header-container {
-        height: auto;
-    }
-
-    .gnb-wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        z-index: 50;
-        color: #fff;
-        width: auto;
-        height: 100%;
-        margin: 0 auto;
-        padding: 10px 40px;
-
-        .logo {
-            position: static;
-            height: 33px;
-            img {
-                display: block;
-                height: auto;
-            }
-        }
-
-        > nav {
-            height: 100%;
-            font-weight: 700;
-            text-align: center;
-            font-size: 2.4rem;
-
-            .gnb {
-                height: 100%;
-                display: flex;
-                gap: 30px;
-                justify-content: flex-start;
-
-                > li {
-                    position: relative;
-                    display: inline-block;
-                    text-align: left;
-                    font-size: 20px;
-
-                    &.is-active::after {
-                        position: absolute;
-                        content: '';
-                        display: block;
-                        bottom: -1px;
-                        left: 0;
-                        width: 100%;
-                        height: 3px;
-                        border-radius: 2px;
-                        background: transparent;
-                    }
-
-                    .depth2 {
-                        opacity: 0;
-                        visibility: hidden;
-                        min-height: 0;
-                        height: 312px;
-                        position: absolute;
-                        transition: all 0.2s ease;
-                        top: 59px;
-                        padding-top: 4px;
-                        width: auto;
-                        min-width: 180px;
-                        max-width: 280px;
-                        left: 0;
-
-                        > li {
-                            display: block;
-                            font-size: 1.6rem;
-                            color: #fff;
-                            font-weight: 400;
-                            margin: 0;
-                            white-space: nowrap;
-
-                            &:hover {
-                                font-weight: 600;
-                                color: var(--main-color1);
-                            }
-
-                            > a {
-                                display: block;
-                                width: 100%;
-                                height: auto;
-                                line-height: 1.2;
-                                margin-top: 10px;
-                                font-size: 14px;
-                                color: #fff;
-                                white-space: normal;
-                                overflow: hidden;
-                                text-overflow: ellipsis;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        .utils {
-            position: static;
-
-            > li {
-                display: inline-block;
-                margin-right: 2rem;
-                cursor: pointer;
-            }
-        }
-
-        .hamburger {
-            display: block;
-            width: 100%;
-            height: 100%;
-            background: url(../images/img/en/hamburger.png) no-repeat;
-
-            img {
-                z-index: 100;
-            }
-        }
-
-        #hamburgerBtn {
-            width: 25px;
-            height: 25px;
-            line-height: 25px;
-            text-align: center;
-            padding: 0;
-        }
-
-        .allmenu-util a {
-            position: absolute;
-            right: 4rem;
-            display: block;
-            width: 4rem;
-            height: 4rem;
-
-            &.util1 {
-                top: 4rem;
-            }
-
-            &.util2 {
-                top: 10rem;
-            }
-
-            &.util3 {
-                top: 16rem;
-            }
-        }
-    }
-}
-
-// ==========================================
-// 3-2. English Sub Pages Header
-// ==========================================
-
 .en #header.header-en {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 83px;
     &::before {
-        height: 84px;
+        display: none;
     }
-    &.is-active::after {
-        top: 80px;
+    &.is-active {
+        &::before {
+            display: block;
+            height: 83px;
+        }
+        &::after {
+            top: 80px;
+        }
     }
     .header-container {
         height: auto;
@@ -281,6 +100,70 @@
             }
             .depth2 {
                 top: 71px;
+            }
+        }
+        .utils {
+            position: static;
+            height: auto;
+            gap: 2rem;
+            li {
+                margin-right: 0;
+                a {
+                    display: flex;
+                    min-height: 40px;
+                    min-width: 40px;
+                    align-items: center;
+                    justify-content: center;
+                }
+                img {
+                    width: 30px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    &.header-en-main {
+        background-color: transparent;
+        box-shadow: none;
+        .gnb-wrap {
+            .logo {
+                background: url(/type/www/img/logo/ccrs_logo_eng_dark.svg) no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 264px;
+                height: 40px;
+                text-indent: -9999px;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            > nav .gnb > li .menu-label {
+                color: #fff;
+            }
+            .hamburger {
+                background: none;
+                i {
+                    color: #fff;
+                    font-size: 24px;
+                }
+            }
+        }
+        &.is-active {
+            background-color: #fff;
+            .gnb-wrap {
+                .logo {
+                    background: url(/type/www/img/logo/ccrs_logo_eng.svg) no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+                > nav .gnb > li .menu-label {
+                    color: #000;
+                }
+                .hamburger {
+                    i {
+                        color: #000;
+                    }
+                }
             }
         }
     }
