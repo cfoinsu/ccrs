@@ -3674,6 +3674,13 @@ box-shadow: 0px 8px 16px 0px #0000001F;
 .g-wrap .g-grid-wrap.sp-lg {
     row-gap: var(--krds-gap-9);
 }
+.g-wrap .g-grid-wrap .g-img.shadow{
+    border-radius: 24px;
+}
+.g-wrap .g-grid-wrap .g-img img {
+    width: 100%;
+    background-size: cover;
+}
 
 @media (max-width: 767px) {
     .g-wrap .g-grid-wrap {
