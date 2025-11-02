@@ -45,15 +45,13 @@ jspm_packages/
 .env.local
 .env.*.local
 
-# Specific project files
-.claude/
-.cursor/
-docs/
-
 # Checklist files (development only)
 checklist.md
 checklist.sh
 **/checklist.sh
+
+.cursor/
+.claude/
 
 # SCSS sourcemaps
 *.css.map
@@ -62,7 +60,3 @@ checklist.sh
 # SCSS compiled results (optional, uncomment if you want to ignore compiled CSS)
 # type/www/css/styles_en.css
 # type/www/css/sub_en.css
-
-# Development files
-checklist.sh
-checklist.md
