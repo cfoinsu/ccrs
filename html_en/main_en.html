@@ -26,7 +26,7 @@
 	</div>
 	<div id="container" class="main-en">
 		<!-- header:s -->
-		<header id="header" class="header header-en header-en-main is-active">			
+		<header id="header" class="header header-en header-en-main ">		
 			<div class="header-container">
 				<div class="gnb-wrap">
 					<a href="main_en.html" class="logo">
@@ -634,6 +634,25 @@ independence</p>
 			}, 800, 'swing');
 		});
 
+		// 히어로 텍스트 초기 상태로 리셋하는 함수
+		function resetHeroText(slide) {
+			const $slide = $(slide);
+			const $title1 = $slide.find('.hero-title-1');
+			const $title2 = $slide.find('.hero-title-2');
+			const $subtitle = $slide.find('.hero-subtitle');
+
+			// 즉시 초기 상태로 설정
+			if ($title1.length) {
+				gsap.set($title1[0], { opacity: 0, x: 100 });
+			}
+			if ($title2.length) {
+				gsap.set($title2[0], { opacity: 0, x: -100 });
+			}
+			if ($subtitle.length) {
+				gsap.set($subtitle[0], { opacity: 0, y: 50 });
+			}
+		}
+
 		// GSAP Hero Text Animation Function
 		function animateHeroText(slide) {
 			const $slide = $(slide);
@@ -772,8 +791,8 @@ independence</p>
 
 					// padding을 먼저 설정하고 height 계산
 					gsap.set($content[0], {
-						paddingTop: 24,
-						paddingBottom: 32,
+						paddingTop: 33,
+						paddingBottom: 42,
 						height: 'auto'
 					});
 					const autoHeight = $content[0].offsetHeight;
@@ -838,6 +857,11 @@ independence</p>
 					prevEl: '.swiper-button-prev',
 				},
 				on: {
+					slideChange: function() {
+						// 다음 슬라이드의 텍스트를 초기 상태로 리셋
+						const nextSlide = this.slides[this.activeIndex];
+						resetHeroText(nextSlide);
+					},
 					slideChangeTransitionEnd: function() {
 						// 슬라이드 전환이 끝나면 텍스트 애니메이션 실행
 						const activeSlide = this.slides[this.activeIndex];
