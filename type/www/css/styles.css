@@ -3522,6 +3522,7 @@ box-shadow: 0px 8px 16px 0px #0000001F;
 .institution-links .swiper {
     flex:1;
     overflow: hidden;
+    max-width: 1180px;
 }
 .institution-links .institution-carousel-wrapper {
     display: flex;
@@ -3536,11 +3537,8 @@ box-shadow: 0px 8px 16px 0px #0000001F;
 .institution-carousel {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
     margin-top: -1px;
     height: 90px;
-    max-width: 1150px;
 }
 
 .institution-item {
