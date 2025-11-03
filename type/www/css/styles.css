@@ -7422,16 +7422,105 @@ table .table-center {
     border-radius: 1000px;
     font-size: 17px;
     text-align: center;
-    padding: 2px 3px;
+    padding: 2px 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 301px;
-    left: 251px;
+    top: 255px;
+    left: 112px;
     color: transparent;
     background-color: transparent;
     font-weight: 400;
-    
+}
+.postion .positionbtn.posbtn01 {
+    width: auto;
+    height: 30px;
+    top: 78px;
+    left: 666px;
+}
+.postion .positionbtn.posbtn02 {
+    width: 139px;
+    height: 30px;
+    top: 110px;
+    left: 112px;
+}
+.postion .positionbtn.posbtn03 {
+    width: 139px;
+    height: 30px;
+    top: 123px;
+    left: 665px;
+}
+.postion .positionbtn.posbtn04 {
+    width: auto;
+    height: 30px;
+    top: 159px;
+    left: 127px;
+}
+.postion .positionbtn.posbtn05 {
+    width: auto;
+    height: 30px;
+    top: 183px;
+    left: 665px;
+}
+.postion .positionbtn.posbtn06 {
+    width: auto;
+    height: 30px;
+    top: 212px;
+    left: 83px;
+}
+.postion .positionbtn.posbtn07 {
+    width: 139px;
+    height: 30px;
+    top: 55px;
+    left: 112px;
+}
+.postion .positionbtn.posbtn08 {
+    width: 139px;
+    height: 30px;
+    top: 255px;
+    left: 112px;
+}
+.postion .positionbtn.posbtn09 {
+    width: 139px;
+    height: 30px;
+    top: 255px;
+    left: 112px;
+}
+.postion .positionbtn.posbtn10 {
+    width: 139px;
+    height: 30px;
+    top: 255px;
+    left: 112px;
+}
+.postion .positionbtn.posbtn11 {
+    width: 139px;
+    height: 30px;
+    top: 255px;
+    left: 112px;
+}
+.postion .positionbtn.posbtn12 {
+    width: 139px;
+    height: 30px;
+    top: 255px;
+    left: 112px;
+}
+.postion .positionbtn.posbtn13 {
+    width: 139px;
+    height: 30px;
+    top: 255px;
+    left: 112px;
+}
+.postion .positionbtn.posbtn14 {
+    width: 139px;
+    height: 30px;
+    top: 255px;
+    left: 112px;
+}
+.postion .positionbtn.posbtn15 {
+    width: 139px;
+    height: 30px;
+    top: 255px;
+    left: 112px;
 }
 .postion .positionbtn:hover {
     color: #fff;
