@@ -26,7 +26,7 @@
 	</div>
 	<div id="container" class="main-en">
 		<!-- header:s -->
-		<header id="header" class="header header-en header-en-main ">		
+		<header id="header" class="header header-en header-en-main">		
 			<div class="header-container">
 				<div class="gnb-wrap">
 					<a href="main_en.html" class="logo">
@@ -38,15 +38,15 @@
 								<a href="#" class="menu-label">
 									About CCRS
 								</a>
-																<ul class="depth2">
-																		<li><a href="messagefromtheCEO.html">Message from the CEO</a></li>
-																		<li><a href="missionandVision.html">Mission and Vision</a></li>
-																		<li><a href="microCreditSupportAct.html">Micro Credit Support Act</a></li>
-																		<li><a href="history.html">History</a></li>
-																		<li><a href="whatWeDo.html">What We Do</a></li>
-																		<li><a href="CI&Mascot.html">CI & Mascot</a></li>
-																		<li><a href="organization.html">Organization</a></li>
-																</ul>
+								<ul class="depth2">
+										<li><a href="messagefromtheCEO.html">Message from the CEO</a></li>
+										<li><a href="missionandVision.html">Mission and Vision</a></li>
+										<li><a href="microCreditSupportAct.html">Micro Credit Support Act</a></li>
+										<li><a href="history.html">History</a></li>
+										<li><a href="whatWeDo.html">What We Do</a></li>
+										<li><a href="CI&Mascot.html">CI & Mascot</a></li>
+										<li><a href="organization.html">Organization</a></li>
+								</ul>
 							</li>
 							<li>
 								<a href="#" class="menu-label">
@@ -90,7 +90,9 @@
 						</ul>
 					</nav>
 					<ul class="utils">
-						<li class="en"><a href="/html/main.html"><img src="/type/www/images/img/en/header-language.svg" alt="언어 변경"></a></li>
+						<li class="en"><a href="/html/main.html" class="language-change">
+							<span class="sr_only">Change Language</span>
+						</a></li>
 						<li class="hamburger-wrap">
 							<a href="#" id="hamburgerBtn" class="hamburger" title="전체메뉴 열기">
 								<span class="sr_only">전체메뉴</span>
@@ -123,11 +125,10 @@
 								<div class="inner">
 									<strong class="hero-title">
 										<p class="hero-title-1">TOGETHER</p>
-										<p class="hero-title-2">Forward</p>
+										<p class="hero-title-2">Beyond Debt</p>
 									</strong>
 									<p class="hero-subtitle">
-											A world-renowned public institution <br>
-											for debt reduction
+										building lives, dreams, and communities that last.
 										</p>
 								</div>
 							</div>
@@ -136,12 +137,12 @@
 						<div class="swiper-slide">
 							<div class="hero-text">
 								<strong class="hero-title">
-									<p class="hero-title-1">BRIGHTER</p>
-									<p class="hero-title-2">Tomorrow</p>
+									<p class="hero-title-1">Your Partner</p>
+									<p class="hero-title-2">for Financial</p>
+									<p class="hero-title-3">Recovery</p>
 								</strong>
 								<p class="hero-subtitle">
-										Supporting your journey to <br>
-										financial recovery
+										Together, We build Hope Beyond Debt
 									</p>
 							</div>
 							<img src="/type/www/images/en/en_main_intro2.png?ver=1.7" alt="">
@@ -639,6 +640,7 @@ independence</p>
 			const $slide = $(slide);
 			const $title1 = $slide.find('.hero-title-1');
 			const $title2 = $slide.find('.hero-title-2');
+			const $title3 = $slide.find('.hero-title-3');
 			const $subtitle = $slide.find('.hero-subtitle');
 
 			// 즉시 초기 상태로 설정
@@ -647,6 +649,9 @@ independence</p>
 			}
 			if ($title2.length) {
 				gsap.set($title2[0], { opacity: 0, x: -100 });
+			}
+			if ($title3.length) {
+				gsap.set($title3[0], { opacity: 0, x: 100 });
 			}
 			if ($subtitle.length) {
 				gsap.set($subtitle[0], { opacity: 0, y: 50 });
@@ -658,15 +663,16 @@ independence</p>
 			const $slide = $(slide);
 			const $title1 = $slide.find('.hero-title-1');
 			const $title2 = $slide.find('.hero-title-2');
+			const $title3 = $slide.find('.hero-title-3');
 			const $subtitle = $slide.find('.hero-subtitle');
 
 			// 요소가 없으면 리턴
-			if (!$title1.length && !$title2.length && !$subtitle.length) {
+			if (!$title1.length && !$title2.length && !$title3.length && !$subtitle.length) {
 				return;
 			}
 
 			// 기존 애니메이션 정리
-			gsap.killTweensOf([$title1[0], $title2[0], $subtitle[0]]);
+			gsap.killTweensOf([$title1[0], $title2[0], $title3[0], $subtitle[0]]);
 
 			// 애니메이션 타임라인 생성
 			const heroTimeline = gsap.timeline({
@@ -684,7 +690,7 @@ independence</p>
 					},
 					{
 						opacity: 1,
-						x: -170,
+						x: -100,
 						duration: 1.2
 					},
 					0
@@ -700,10 +706,26 @@ independence</p>
 					},
 					{
 						opacity: 1,
-						x: 170,
+						x: 100,
 						duration: 1.2
 					},
 					0.3
+				);
+			}
+
+			// hero-title-3: 오른쪽에서 왼쪽으로 (셋째줄 앞쪽으로)
+			if ($title3.length) {
+				heroTimeline.fromTo($title3[0],
+					{
+						opacity: 0,
+						x: 100
+					},
+					{
+						opacity: 1,
+						x: 15,
+						duration: 1.2
+					},
+					0.6
 				);
 			}
 
@@ -719,7 +741,7 @@ independence</p>
 						y: 0,
 						duration: 1.2
 					},
-					0.6
+					0.9
 				);
 			}
 		}
@@ -846,10 +868,10 @@ independence</p>
 				fadeEffect: {
 					crossFade: true
 				},
-				autoplay: {
-					delay: 5000,
-					disableOnInteraction: false,
-				},
+				// autoplay: {
+				// 	delay: 5000,
+				// 	disableOnInteraction: false,
+				// },
 				pagination: {
 					el: '.swiper-pagination',
 					clickable: true,

@@ -76,6 +76,9 @@
 .en #header.header-en.is-active::after {
   top: 80px;
 }
+.en #header.header-en.is-active .gnb-wrap .utils li .language-change {
+  background: url(/type/www/images/img/en/header-language-kr-b.svg) no-repeat center;
+}
 .en #header.header-en .header-container {
   height: auto;
 }
@@ -119,6 +122,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.en #header.header-en .gnb-wrap .utils li .language-change {
+  background: url(/type/www/images/img/en/header-language-kr-w.svg) no-repeat center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  min-width: 0;
+  min-height: 0;
 }
 .en #header.header-en .gnb-wrap .utils li img {
   width: 30px;

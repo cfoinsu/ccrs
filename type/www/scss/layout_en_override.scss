@@ -83,6 +83,9 @@
         &::after {
             top: 80px;
         }
+        .gnb-wrap .utils li .language-change {
+            background: url(/type/www/images/img/en/header-language-kr-b.svg) no-repeat center;
+        }
     }
     .header-container {
         height: auto;
@@ -114,6 +117,14 @@
                     min-width: 40px;
                     align-items: center;
                     justify-content: center;
+                }
+                .language-change {
+                    background: url(/type/www/images/img/en/header-language-kr-w.svg) no-repeat center;
+                    background-size: contain;
+                    width: 30px;
+                    height: 30px;
+                    min-width: 0;
+                    min-height: 0;
                 }
                 img {
                     width: 30px;
