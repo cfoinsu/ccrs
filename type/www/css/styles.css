@@ -4919,7 +4919,8 @@ table.comparison-table td:first-child {
 }
 
 .g-info-box .g-desc-box .g-tit.info::before,
-.noti.g-tit.info::before {
+.noti.g-tit.info::before,
+.info::before {
     content: '';
     display: block;
     position: absolute;
@@ -7302,6 +7303,10 @@ input[type=radio]:checked + label.fillter-chip {
     padding: 40px 32px;
     border-radius: 24px;
     background: #EDF4FF;
+}
+.effect-box.bgnone {
+    padding: 0;
+    background: transparent;
 }
 .effect-box .boxc1 {
     min-width: 100%;
