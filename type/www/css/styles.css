@@ -5609,12 +5609,23 @@ table.comparison-table td:first-child {
 /*연혁 페이지 스타일*/
 /* 타임라인 컨테이너 - Flexbox 기반 */
 .timeline-content-flex {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 60px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.timeline-content-flex::before {
+    content: '';
+    position: absolute;
+    top: 63px;
+    left: 410px;
+    width: 1px;
+    height: 97%;
+    background-color: #FFD89F;
 }
 
 /* 타임라인 연도 섹션 - Grid 레이아웃 */
@@ -5650,12 +5661,25 @@ table.comparison-table td:first-child {
 }
 
 /* 콘텐츠 영역 */
-.timeline-content-area {
+/* .timeline-content-area {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 24px;
     padding-left: 20px;
 }
+.timeline-content-area::before {
+    content: '';
+    position: absolute;
+    top: 34px;
+    left: 30px;
+    width: 1px;
+    height: 200%;
+    background-color: #FFD89F;
+}
+.timeline-year-section:last-child .timeline-content-area::before {
+    height: 100%;
+} */
 
 /* 연도 헤더 - Flexbox 기반 */
 .timeline-year-header-flex {
@@ -5688,9 +5712,11 @@ table.comparison-table td:first-child {
 
 /* 이벤트 리스트 - Flexbox 기반 */
 .timeline-events-flex {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-left: 24px;
 }
 
 .timeline-event-item-flex {
@@ -5704,12 +5730,12 @@ table.comparison-table td:first-child {
     transition: all 0.2s ease;
 }
 
-.timeline-event-item-flex:hover {
+/* .timeline-event-item-flex:hover {
     border-left-color: var(--krds-light-color-border-primary);
     background-color: rgba(var(--krds-light-color-bg-alternative-rgb), 0.3);
     margin-left: -16px;
     padding-left: 30px;
-}
+} */
 
 .timeline-date-flex {
     font-size: 16px;
