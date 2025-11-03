@@ -5622,10 +5622,23 @@ table.comparison-table td:first-child {
 
 /* 콘텐츠 영역 */
 .timeline-content-area {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 24px;
     padding-left: 20px;
+}
+.timeline-content-area::before {
+    content: '';
+    position: absolute;
+    top: 34px;
+    left: 30px;
+    width: 1px;
+    height: 200%;
+    background-color: #FFD89F;
+}
+.timeline-year-section:last-child .timeline-content-area::before {
+    height: 100%;
 }
 
 /* 연도 헤더 - Flexbox 기반 */
@@ -5662,6 +5675,7 @@ table.comparison-table td:first-child {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-left: 24px;
 }
 
 .timeline-event-item-flex {
