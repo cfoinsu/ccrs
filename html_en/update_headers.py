@@ -68,8 +68,8 @@ for html_file in html_files:
 
     script_pattern2 = r'<script src="/type/www/js/jquery-2\.2\.4\.min\.js"></script>\s*<script src="/type/www/js/plugins/aos\.js"></script>\s*<script src="/type/www/js/common\.js"></script>\s*<script src="/type/www/js/layout\.js"></script>\s*<script src="/type/www/js/script\.js"></script>\s*<script src="/type/www/js/component/ui-script\.js"></script>'
 
-    new_scripts = '''<script src="/type/www/js/jquery-2.2.4.min.js?ver=1.8"></script>
-    <script src="/type/www/js/plugins/aos.js?ver=1.8"></script>
+    new_scripts = '''<script src="/type/www/js/jquery-2.2.4.min.js?ver=1.9"></script>
+    <script src="/type/www/js/plugins/aos.js?ver=1.9"></script>
     <script src="includes/init.js"></script>'''
 
     if re.search(script_pattern1, content):
