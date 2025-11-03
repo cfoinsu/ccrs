@@ -1861,10 +1861,12 @@ body {
 }
 
 .footer-content {
-    display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: auto 1fr auto auto;
+    gap: 40px; */
     align-items: start;
+    margin-top: 40px;
 }
 
 .footer-logo img {
@@ -1902,8 +1904,8 @@ body {
 
 .footer-info p,
 .footer-contact p {
-    margin-bottom: 8px;
-    font-size: 16px;
+    margin-bottom: 5px;
+    font-size: 17px;
     line-height: 1.5;
 }
 
@@ -7494,3 +7496,10 @@ table .table-center {
 .krds-table-wrap .tbl.data.roundtype tbody td .krds-info-list.decimal > li::before {
     background-color: #F48F01;
 }
+
+/* footer {
+    background: url(/type/www/images/bg/bg_footer.png) no-repeat -184px -9px !important;
+}
+#container {
+    opacity: 0.5;
+} */
