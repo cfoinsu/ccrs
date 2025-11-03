@@ -652,6 +652,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.1rem;
+  margin-top: 0;
 }
 .footer-en .footer-info-item {
   display: -webkit-box;
