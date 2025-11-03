@@ -7180,7 +7180,7 @@ input[type=radio]:checked + label.fillter-chip {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px 10px;
+    padding: 20px;
     border-radius: 24px;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
