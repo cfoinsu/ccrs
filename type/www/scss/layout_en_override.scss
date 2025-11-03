@@ -889,4 +889,9 @@
         height: auto;
         padding-right: 10px;
     }
+
+    .nav-subitem::before {
+        top: 17px;
+
+    }
 }

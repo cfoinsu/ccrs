@@ -833,4 +833,7 @@
   line-height: 1.2;
   height: auto;
   padding-right: 10px;
+}
+.en .nav-subitem::before {
+  top: 17px;
 }/*# sourceMappingURL=layout_en_override.css.map */
