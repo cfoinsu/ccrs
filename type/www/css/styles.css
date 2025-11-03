@@ -85,6 +85,10 @@ body {
     font-weight: 600;
 }
 
+.font-extrabold {
+    font-weight: 800;
+}
+
 .primary {
     color: var(--krds-light-color-text-primary);
 }
