@@ -1578,23 +1578,7 @@
 // ==========================================
 // Footer styles have been consolidated in layout_en_override.scss
 
-.g-info-box.full .g-desc-box.row {
-    align-items: flex-start;
-    position: relative;
-    .g-img {
-        display: none;
-    }
-}
-.krds-info-list.decimal > li::before {
-    top: 13px;
-}
-.krds-info-list.decimal {
-    margin-top: 20px;
-}
-.krds-info-list > li {
-    font-size: 17px;
-    font-weight: 400;
-}
+
 
 .en {
     .page-description {
@@ -1605,5 +1589,28 @@
     .g-wrap .g-conts-area .conts-desc {
         margin-bottom: 60px;
         font-size: 17px;
+    }
+
+    .g-info-box.full .g-desc-box.row {
+        align-items: flex-start;
+        position: relative;
+        .g-img {
+            display: none;
+        }
+    }
+    // .krds-info-list.decimal > li::before {
+    //     top: 13px;
+    // }
+    .krds-info-list.decimal {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #d2d6da;
+    }
+    .krds-info-list > li {
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .content-area {
+        padding-bottom: 100px;
     }
 }
