@@ -1583,6 +1583,7 @@
 .en {
     .page-description {
         height: 76px;
+        margin-bottom: 20px;
         padding: 0 32px;
         background: #E1EEFA;
     }
@@ -1602,7 +1603,7 @@
     //     top: 13px;
     // }
     .krds-info-list.decimal {
-        margin-top: 20px;
+        // margin-top: 20px;
         padding-top: 20px;
         border-top: 1px solid #d2d6da;
     }
@@ -1612,5 +1613,12 @@
     }
     .content-area {
         padding-bottom: 100px;
+    }
+
+    .accordion-none {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 50px;
     }
 }
