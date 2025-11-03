@@ -1215,6 +1215,7 @@ main .container {
 .footer-contact {
     display: flex;
     flex-direction: column;
+    max-width: 300px;
 }
 .footer-contact a {
     margin-bottom: 38px;
