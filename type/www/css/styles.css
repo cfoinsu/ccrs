@@ -7421,13 +7421,13 @@ table .table-center {
 }
 .postion .positionbtn {
     position: absolute;
-    width: 139px;
-    height: 30px;
+    width: auto;
+    height: 32px;
     border: none;
     border-radius: 1000px;
     font-size: 17px;
     text-align: center;
-    padding: 2px 8px;
+    padding: 4px 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7438,8 +7438,6 @@ table .table-center {
     font-weight: 400;
 }
 .postion .positionbtn.posbtn01 {
-    width: auto;
-    height: 30px;
     top: 78px;
     left: 666px;
 }
@@ -7450,82 +7448,66 @@ table .table-center {
     left: 112px;
 }
 .postion .positionbtn.posbtn03 {
-    width: 139px;
-    height: 30px;
     top: 123px;
     left: 665px;
 }
 .postion .positionbtn.posbtn04 {
-    width: auto;
-    height: 30px;
     top: 159px;
     left: 127px;
 }
 .postion .positionbtn.posbtn05 {
-    width: auto;
-    height: 30px;
     top: 183px;
     left: 665px;
 }
 .postion .positionbtn.posbtn06 {
-    width: auto;
-    height: 30px;
     top: 212px;
     left: 83px;
 }
 .postion .positionbtn.posbtn07 {
     width: 139px;
-    height: 30px;
     top: 234px;
     left: 665px;
 }
 .postion .positionbtn.posbtn08 {
     width: 139px;
-    height: 30px;
     top: 255px;
     left: 112px;
 }
 .postion .positionbtn.posbtn09 {
-    width: auto;
-    height: 30px;
     top: 288px;
     left: 665px;
 }
 .postion .positionbtn.posbtn10 {
-    width: auto;
-    height: 30px;
     top: 305px;
     left: 84px;
 }
 .postion .positionbtn.posbtn11 {
-    width: auto;
-    height: 30px;
     top: 348px;
     left: 665px;
 }
 .postion .positionbtn.posbtn12 {
-    width: auto;
-    height: 30px;
     top: 355px;
     left: 97px;
 }
 .postion .positionbtn.posbtn13 {
-    width: auto;
-    height: 30px;
     top: 400px;
     left: 97px;
 }
 .postion .positionbtn.posbtn14 {
-    width: auto;
-    height: 30px;
     top: 409px;
     left: 665px;
 }
 .postion .positionbtn.posbtn15 {
-    width: auto;
-    height: 30px;
     top: 480px;
     left: 665px;
+}
+.postion .positionbtn.posbtn16 {
+    top: 480px;
+    left: 60px;
+    background: #D2D6DA;
+    color: #7b8187;
+    font-weight: 700;
+    font-size: 17px;
 }
 .postion .positionbtn:hover {
     color: #fff;
