@@ -248,7 +248,7 @@
   background: #f0f2f6;
   border: 1px solid #ccd2e0;
   border-bottom: none;
-  padding: 12px 20px;
+  padding: 12px;
   font-size: 17px;
   font-weight: 700;
   color: #222222;
@@ -260,12 +260,28 @@
     font-size: 15px;
   }
 }
+.en .content-table tbody th {
+  text-align: center;
+  background: #fff !important;
+  min-height: 60px;
+  border: 1px solid #ccd2e0;
+  padding: 20px;
+  vertical-align: middle;
+  font-weight: bold;
+  text-align: left;
+}
 .en .content-table tbody td {
   min-height: 60px;
   border: 1px solid #ccd2e0;
   padding: 20px;
   background: white;
-  vertical-align: middle;
+  vertical-align: top;
+}
+.en .content-table tbody td span {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.3;
 }
 @media (max-width: 767px) {
   .en .content-table tbody td {
@@ -1530,4 +1546,27 @@
   line-height: 1.5;
   color: #17191b;
   margin: 0;
+}
+
+.g-info-box.full .g-desc-box.row {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+.g-info-box.full .g-desc-box.row .g-img {
+  display: none;
+}
+
+.krds-info-list.decimal > li::before {
+  top: 13px;
+}
+
+.krds-info-list.decimal {
+  margin-top: 20px;
+}
+
+.krds-info-list > li {
+  font-size: 17px;
+  font-weight: 400;
 }/*# sourceMappingURL=styles_en_override.css.map */
