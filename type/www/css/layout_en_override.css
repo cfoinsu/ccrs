@@ -814,4 +814,22 @@
     width: 26px;
     height: 26px;
   }
+}
+.en #header .gnb-wrap > nav .gnb > li .menu-label {
+  font-size: 20px;
+}
+.en #header .gnb-wrap > nav {
+  width: 960px;
+}
+.en #header .gnb-wrap > nav .gnb > li .depth2 {
+  padding-top: 10px;
+}
+.en #header .gnb-wrap > nav .gnb > li .depth2 > li {
+  margin-bottom: 18px;
+}
+.en #header .gnb-wrap > nav .gnb > li .depth2 > li > a {
+  white-space: wrap;
+  line-height: 1.2;
+  height: auto;
+  padding-right: 10px;
 }/*# sourceMappingURL=layout_en_override.css.map */

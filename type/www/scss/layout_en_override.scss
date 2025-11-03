@@ -868,3 +868,24 @@
         height: 26px;
     }
 }
+
+.en {
+    #header .gnb-wrap > nav .gnb > li .menu-label {
+        font-size: 20px;
+    }
+    #header .gnb-wrap > nav {
+        width: 960px;
+    }
+    #header .gnb-wrap > nav .gnb > li .depth2 {
+        padding-top: 10px;
+    }
+    #header .gnb-wrap > nav .gnb > li .depth2 > li {
+        margin-bottom: 18px;
+    }
+    #header .gnb-wrap > nav .gnb > li .depth2 > li > a {
+        white-space: wrap;
+        line-height: 1.2;
+        height: auto;
+        padding-right: 10px;
+    }
+}
