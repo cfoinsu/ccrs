@@ -3240,7 +3240,7 @@ caption {
   --krds-modal--size-min-height: 26.4rem;
   --krds-modal--wrap-radius: var(--krds-radius-xlarge1);
   --krds-modal--padding: var(--krds-padding-10);
-  --krds-modal--header-padding-top: var(--krds-number-17);
+  --krds-modal--header-padding-top: var(--krds-number-9);
   --krds-modal--header-pc-font-size: var(--krds-pc-font-size-heading-medium);
   --krds-modal--header-mobile-font-size: var(--krds-mobile-font-size-heading-medium);
   --krds-modal--conts-padding-top: var(--krds-padding-6);
@@ -3373,6 +3373,7 @@ caption {
   border-top-right-radius: inherit;
   padding-top: var(--krds-modal--header-padding-top);
   padding-inline: var(--krds-modal--padding);
+  padding-bottom: 0;
 }
 .krds-modal .modal-dialog .modal-header .modal-title {
   display: -webkit-box;

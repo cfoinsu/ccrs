@@ -2005,7 +2005,12 @@ fontsize-normal
 .modal-conts .conts-area .note {
     font-size: 1.7rem;
 }
-
+.modal-conts .g-wrap .g-conts-area .con-tit.bullet {
+    font-size: 2rem;
+}
+.modal-conts .g-wrap .g-conts-area .con-tit.bullet::before {
+    top: 10%;
+}
 .compare-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
