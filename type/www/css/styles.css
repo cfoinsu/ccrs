@@ -7531,3 +7531,11 @@ table .table-center {
     color: #fff;
     background-color: #F48F01;
 }
+
+.img-float {
+    position: absolute;
+    z-index: 2 !important;
+    top: 33%;
+    left: 46%;
+    width: 80px;
+}
