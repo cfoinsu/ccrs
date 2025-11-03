@@ -1,10 +1,10 @@
-@import '../css/common.css?ver=1.8';
-@import '../css/main.css?ver=1.8';
-@import '../css/all.min.css?ver=1.8';
-@import '../css/plugins/swiper.min.css?ver=1.8';
-@import '../css/layout.css?ver=1.8';
-@import '../css/component/output.css?ver=1.8';
-@import '../css/styles.css?ver=1.8';
-@import '../css/layout_en_override.css?ver=1.8';
-@import '../css/main_en.css?ver=1.8';
-@import '../css/styles_en_override.css?ver=1.8';/*# sourceMappingURL=bundle_en.css.map */
+@import 'common.css?ver=1.8';
+@import 'main.css?ver=1.8';
+@import 'all.min.css?ver=1.8';
+@import 'plugins/swiper.min.css?ver=1.8';
+@import 'layout.css?ver=1.8';
+@import 'component/output.css?ver=1.8';
+@import 'styles.css?ver=1.8';
+@import 'layout_en_override.css?ver=1.8';
+@import 'main_en.css?ver=1.8';
+@import 'styles_en_override.css?ver=1.8';
