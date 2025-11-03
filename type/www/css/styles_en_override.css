@@ -275,7 +275,7 @@
   border: 1px solid #ccd2e0;
   padding: 20px;
   background: white;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .en .content-table tbody td span {
   display: block;
