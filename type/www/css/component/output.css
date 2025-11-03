@@ -3012,6 +3012,7 @@ caption {
   border-color: #FFD89F;
   color: #17191B;
   text-align: center;
+  padding: 16px 8px;
 }
 .g-wrap .krds-table-wrap .tbl.data tbody td.secondtd {
   background-color: #E6F3FF;
