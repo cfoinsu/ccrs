@@ -6490,6 +6490,11 @@ table.comparison-table td:first-child {
     padding: 24px 0;
 }
 
+.g-img.contain img {
+    object-fit: contain;
+    padding: 24px 0;
+}
+
 .qr-flexbox{
     display: flex;
     gap: 8px;
