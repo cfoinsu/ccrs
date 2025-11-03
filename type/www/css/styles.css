@@ -3513,10 +3513,14 @@ box-shadow: 0px 8px 16px 0px #0000001F;
 }
 
 /* Institution Links */
-.institution-links {
-    background: #fff;
+.section-institution {
     border-top: 1px solid #e1e5e9;
-    padding: 0;
+}
+.institution-links {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: #fff;
 }
 
 .institution-links img {
@@ -3532,6 +3536,7 @@ box-shadow: 0px 8px 16px 0px #0000001F;
     background: url(../images/bg/bg_links.png) no-repeat center center;
     margin-top: -1px;
     height: 90px;
+    max-width: 1340px;
 }
 
 .institution-item {
