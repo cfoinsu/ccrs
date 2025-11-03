@@ -85,6 +85,10 @@ body {
     font-weight: 600;
 }
 
+.font-extrabold {
+    font-weight: 800;
+}
+
 .primary {
     color: var(--krds-light-color-text-primary);
 }
@@ -6492,6 +6496,11 @@ table.comparison-table td:first-child {
 }
 .g-img.fit img {
     object-fit: none;
+    padding: 24px 0;
+}
+
+.g-img.contain img {
+    object-fit: contain;
     padding: 24px 0;
 }
 
