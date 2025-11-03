@@ -5216,6 +5216,7 @@ table.comparison-table td:first-child {
     font-size: var(--krds-pc-font-size-heading-medium);
     color: var(--krds-light-color-text-secondary);
     padding-left: 12px;
+    position: relative;
 }
 
 .g-conts-area .bullet::before,
