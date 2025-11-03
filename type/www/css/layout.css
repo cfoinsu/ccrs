@@ -1096,12 +1096,12 @@ main .container {
 .footer img{
     max-width: 100%;
 }
-.footer-content {
+/* .footer-content {
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     gap: 40px;
     align-items: start;
-}
+} */
 
 .footer-logo img {
     height: 33px;
@@ -1162,6 +1162,11 @@ main .container {
 
 .footer-info {
     grid-column: span 2;
+    margin-top: 40px;
+}
+.footer-info p:last-child {
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .footer-logo {
@@ -1210,7 +1215,38 @@ main .container {
 .footer-contact {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+}
+.footer-contact a {
+    margin-bottom: 38px;
+}
+.footer-contact p {
+    margin-bottom: 4px;
+}
+.footer-icon .sns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 27px;
+}
+.footer-icon .certi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 27px;
+}
+
+.footer .krds-form-select {
+    position: relative;
+    height: 48px;
+    background-color: transparent !important;
+    background-image: url(/type/www/images/ic/arrow-down_active.png);
+    background-size: 12px auto !important;
+    font-size: 17px;
+    border: 1px solid #D2D6DA;
+    color: #fff;
+}
+.footer .krds-form-select option {
+    color: #fff;
 }
 
 
