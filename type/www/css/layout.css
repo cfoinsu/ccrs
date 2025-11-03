@@ -1233,7 +1233,7 @@ main .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 27px;
+    margin-top: 17px;
 }
 
 .footer .krds-form-select {
@@ -1246,6 +1246,12 @@ main .container {
     border: 1px solid #D2D6DA;
     color: #fff;
 }
+.footer .krds-form-select:focus {
+    outline: none;
+    border: 1px solid #D2D6DA;
+    color: #fff;
+}
+
 .footer .krds-form-select option {
     color: #fff;
 }
