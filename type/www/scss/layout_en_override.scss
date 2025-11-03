@@ -85,6 +85,7 @@
         }
         .gnb-wrap .utils li .language-change {
             background: url(/type/www/images/img/en/header-language-kr-b.svg) no-repeat center;
+            background-size: contain;
         }
     }
     .header-container {
@@ -119,7 +120,7 @@
                     justify-content: center;
                 }
                 .language-change {
-                    background: url(/type/www/images/img/en/header-language-kr-w.svg) no-repeat center;
+                    background: url(/type/www/images/img/en/header-language-kr.svg) no-repeat center;
                     background-size: contain;
                     width: 30px;
                     height: 30px;
@@ -148,6 +149,14 @@
                 overflow: hidden;
                 white-space: nowrap;
             }
+            .utils {
+                li {
+                    .language-change {
+                        background: url(/type/www/images/img/en/header-language-kr-w.svg) no-repeat center;
+                        background-size: contain;
+                    }
+                }
+            }
             > nav .gnb > li .menu-label {
                 color: #fff;
             }
@@ -166,6 +175,14 @@
                     background: url(/type/www/img/logo/ccrs_logo_eng.svg) no-repeat;
                     background-size: contain;
                     background-position: center;
+                }
+                .utils {
+                    li {
+                        .language-change {
+                            background: url(/type/www/images/img/en/header-language-kr.svg) no-repeat center;
+                            background-size: contain;
+                        }
+                    }
                 }
                 > nav .gnb > li .menu-label {
                     color: #000;
