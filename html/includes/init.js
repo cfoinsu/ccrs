@@ -8,15 +8,34 @@ $(function() {
     // Skip Navigation 로드
     $('#skip-nav-container').load('includes/skip_nav.html');
 
-    // Header 로드
-    $('#header-container').load('includes/header.html', function() {
-        // Header가 로드된 후 스크립트 초기화
-        $.getScript('/type/www/js/common.js?ver=1.9');
-        $.getScript('/type/www/js/layout.js?ver=1.9');
-        $.getScript('/type/www/js/script.js?ver=1.9');
-        $.getScript('/type/www/js/component/ui-script.js?ver=1.9');
-        $.getScript('/type/www/js/common_kr.js?ver=1.9');
-    });
+    // Topbanner 로드 (main.html만 해당)
+    if ($('#topbanner-container').length > 0) {
+        $('#topbanner-container').load('includes/topbanner.html');
+    }
+
+    // Header Content 로드 (topbanner 제외한 header 부분)
+    if ($('#header-content-container').length > 0) {
+        $('#header-content-container').load('includes/header_content.html', function() {
+            // Header가 로드된 후 스크립트 초기화
+            $.getScript('/type/www/js/common.js?ver=1.9');
+            $.getScript('/type/www/js/layout.js?ver=1.9');
+            $.getScript('/type/www/js/script.js?ver=1.9');
+            $.getScript('/type/www/js/component/ui-script.js?ver=1.9');
+            $.getScript('/type/www/js/common_kr.js?ver=1.9');
+        });
+    }
+
+    // Header 로드 (서브 페이지용 - 기존 방식 유지)
+    if ($('#header-container').length > 0) {
+        $('#header-container').load('includes/header.html', function() {
+            // Header가 로드된 후 스크립트 초기화
+            $.getScript('/type/www/js/common.js?ver=1.9');
+            $.getScript('/type/www/js/layout.js?ver=1.9');
+            $.getScript('/type/www/js/script.js?ver=1.9');
+            $.getScript('/type/www/js/component/ui-script.js?ver=1.9');
+            $.getScript('/type/www/js/common_kr.js?ver=1.9');
+        });
+    }
 
     // Footer 로드
     $('#footer-container').load('includes/footer.html');
