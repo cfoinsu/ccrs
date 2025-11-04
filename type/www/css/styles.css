@@ -339,7 +339,7 @@ fontsize-normal .font-bold {
 }
 
 .page-description.bgYellow {
-    background: url(../images/img/bgyellow_content_top.png) center no-repeat;
+    background: url(../images/img/bg_yellow_content_top.png) center no-repeat;
     background-size: cover;
     padding: 28px 30px;
     align-items: center;
