@@ -1216,6 +1216,12 @@ Version : v1.0
 .footer-contact p {
     margin-bottom: 4px;
 }
+.footer-content .grid-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
 .footer-icon .sns {
     display: flex;
     justify-content: space-between;
@@ -1238,6 +1244,7 @@ Version : v1.0
     font-size: 17px;
     border: 1px solid #D2D6DA;
     color: #fff;
+    min-width: 200px;
 }
 .footer .krds-form-select:focus {
     outline: none;
