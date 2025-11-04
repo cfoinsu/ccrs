@@ -325,7 +325,7 @@ fontsize-normal
 }
 
 .page-description.bgBlue {
-    background: #E8EFF5;
+    background: #E9F1FA;
     background-size: cover;
     padding: 20px 36px;
     align-items: center;
@@ -7412,11 +7412,30 @@ input[type=radio]:checked + label.fillter-chip {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     text-align: center;
+    padding: 24px;
+    background-color: var(--krds-color-light-gray-0);
+    border-radius: var(--krds-radius-xlarge2);
+    border: 1px solid var(--krds-light-color-border-gray-light);
+}
+.effect-box .key-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--krds-gap-4);
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--krds-light-color-border-gray-light);
+    width: 100%;
+}
+.effect-box .key-img img{
+    width: fit-content;
+}
+.effect-box .key-img p {
+    font-size: 2.4rem;
+    font-weight: bold;
 }
 .effect-box .key-text {
-    font-weight: 700;
     font-size: 1.9rem;
 }
 .effect-box .key-text span {
