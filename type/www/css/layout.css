@@ -1473,6 +1473,7 @@ Version : v1.0
     flex:1;
     overflow: hidden;
     max-width: 1200px;
+    width: calc(100% - 200px);
     margin-left: -25px;
 }
 .institution-links .institution-carousel-wrapper {

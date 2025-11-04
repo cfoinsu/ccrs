@@ -71,10 +71,9 @@ function initInstitutionCarousel() {
 
     try {
         var institutionSwiper = new Swiper('.institution-carousel-swiper', {
-            slidesPerView: 'auto',
+            slidesPerView: 2,
             spaceBetween: 40,
             loop: true,
-            loopedSlides: 6,
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
@@ -84,22 +83,26 @@ function initInstitutionCarousel() {
                 prevEl: '.institution-nav-btn.prev',
             },
             breakpoints: {
-                320: {
-                    slidesPerView: 'auto',
-                    spaceBetween: 20,
-                },
                 768: {
-                    slidesPerView: 'auto',
+                    slidesPerView: 4,
                     spaceBetween: 30,
                 },
                 1024: {
-                    slidesPerView: 'auto',
+                    slidesPerView: 6,
                     spaceBetween: 40,
                 },
             },
+            on: {
+                init: function() {
+                    console.log('Institution carousel initialized successfully');
+                    console.log('Current slidesPerView:', this.params.slidesPerView);
+                    console.log('Window width:', window.innerWidth);
+                },
+                breakpoint: function(swiper, breakpointParams) {
+                    console.log('Breakpoint changed! New slidesPerView:', breakpointParams.slidesPerView);
+                }
+            }
         });
-
-        console.log('Institution carousel initialized successfully');
 
         // Pause/Play 버튼 기능
         var pauseBtn = document.querySelector('.institution-nav-btn.pause');
