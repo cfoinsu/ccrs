@@ -342,9 +342,9 @@ fontsize-normal
     color: #474E55;
 }
 .page-description.bgYellow {
-    background: url(../images/img/bgYellow_content_top.png) center no-repeat;
+    background: url(../images/img/bgyellow_content_top.png) center no-repeat;
     background-size: cover;
-    padding: 20px 36px;
+    padding: 28px 30px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -7232,6 +7232,16 @@ input[type=radio]:checked + label.fillter-chip {
     font-size: 1.5rem;
     color: #000;
 }
+.black-info {
+    display: inline-block;
+    padding-left: 26px;
+    background: url(../img/icons/ico_information.svg) no-repeat left top;
+    background-size: 24px;
+    color: #17191b;
+    font-weight: 700;
+    vertical-align: middle;
+    line-height: 24px;
+}
 .orange-info {
     display: inline-block;
     padding-left: 26px;
@@ -7241,7 +7251,6 @@ input[type=radio]:checked + label.fillter-chip {
     font-weight: 700;
     vertical-align: middle;
     line-height: 24px;
-    margin: 16px 0 48px;
 }
 .orange-link {
     background: #F48F01;
