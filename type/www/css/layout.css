@@ -540,6 +540,7 @@ Version : v1.0
 /* 추가 기능 */
 
 #header .header-quickmenu-box {
+    position: relative;
     display: inline-block;
     width: 200px;
     height: 33px;
