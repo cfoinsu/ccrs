@@ -12,10 +12,8 @@ $(function() {
     if ($('#header-content-container').length > 0) {
         $('#header-content-container').load('includes/header_content.html', function() {
             // Header가 로드된 후 스크립트 초기화
-            $.getScript('/type/www/js/common.js?ver=2.0');
-            $.getScript('/type/www/js/layout.js?ver=2.0');
-            $.getScript('/type/www/js/script.js?ver=2.0');
-            $.getScript('/type/www/js/component/ui-script.js?ver=2.0');
+            $.getScript('/type/www/js/layout.js');
+            $.getScript('/type/www/js/script.js');
         });
     }
 
@@ -23,10 +21,8 @@ $(function() {
     if ($('#header-container').length > 0) {
         $('#header-container').load('includes/header.html', function() {
             // Header가 로드된 후 스크립트 초기화
-            $.getScript('/type/www/js/common.js?ver=2.0');
-            $.getScript('/type/www/js/layout.js?ver=2.0');
-            $.getScript('/type/www/js/script.js?ver=2.0');
-            $.getScript('/type/www/js/component/ui-script.js?ver=2.0');
+            $.getScript('/type/www/js/layout.js');
+            $.getScript('/type/www/js/script.js');
         });
     }
 

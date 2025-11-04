@@ -11,10 +11,781 @@
     <title>통합검색</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
     
-    <link rel="stylesheet" href="/type/www/css/common.css?ver=0.7">
-    <link rel="stylesheet" href="/type/www/css/main.css?ver=0.7">
-    <link rel="stylesheet" href="/type/www/css/plugins/swiper.min.css?ver=0.7">
-    <!-- <link rel="stylesheet" href="/type/www/css/sub.css?ver=0.7"> -->
-    <link rel="stylesheet" href="/type/www/css/layout.css?ver=0.7">
-    <link rel="stylesheet" href="/type/www/css/component/output.css?ver=0.7">
     <link rel="stylesheet" href="/type/www/css/bundle.css?ver=2.0">
+</head>
+
+<body>
+    <!-- Skip Navigation -->
+    <div id="skip-nav-container"></div>
+
+    <div id="container" class="g-wrap krds-scaled-layout scroll-up">
+        <!-- header:s -->
+        <div id="header-container"></div>
+        <!-- header:e -->
+        <!-- main contents:s -->
+        <main class="main-content" id="main-content">
+            <div class="container">
+                <div class="content-layout full-width">
+                    <!-- Content Area (사이드바 제거) -->
+                    <div class="content-area">
+                        <!-- Breadcrumb -->
+                        <nav class="breadcrumb">
+                            <a href="#" class="breadcrumb-item">
+                                <i class="fas fa-home"></i>
+                                홈
+                            </a>
+                            <span class="breadcrumb-separator"></span>
+                            <span class="breadcrumb-item current">통합검색</span>
+                        </nav>
+                        <!-- Page Header -->
+                        <div class="page-header">
+                            <div class="title-wrap">
+                                <h1>통합검색</h1>
+                                <div class="page-actions">
+                                    <button class="action-btn" aria-label="인쇄">
+                                        <i class="fas fa-print"></i>
+                                    </button>
+                                    <button class="action-btn" aria-label="공유">
+                                        <i class="fas fa-share-alt"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Content Sections -->
+                        <div class="content-sections">
+                            <div class="global-search-container">
+                                <!-- 검색 입력 영역 -->
+                                <div class="search-input-area">
+                                    <div class="search-inner">
+                                        <!-- 메인 검색 박스 -->
+                                        <div class="search-box-main">
+                                            <!-- 카테고리 필터 -->
+                                            <div class="scope-filter">
+                                                <div class="form-group">
+                                                    <label for="scopeSelect" class="sr-only">검색 범위 선택</label>
+                                                    <div class="form-conts">
+                                                        <select id="scopeSelect" class="krds-form-select" title="검색 범위 선택" aria-label="검색 범위 선택">
+                                                            <option value="all" selected>전체</option>
+                                                            <option value="menu">메뉴</option>
+                                                            <option value="post">게시글</option>
+                                                            <option value="media">사진영상</option>
+                                                            <option value="webpage">웹페이지</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="scope-divider"></div>
+                                            </div>
+
+                                            <!-- 검색어 입력 -->
+                                            <div class="keyword-input-wrap">
+                                                <label for="searchKeywordMain" class="sr-only">검색어 입력</label>
+                                                <input
+                                                    type="text"
+                                                    id="searchKeywordMain"
+                                                    class="keyword-input"
+                                                    placeholder="검색어를 입력하세요"
+                                                    value="채무"
+                                                    aria-describedby="searchHelp">
+                                                <button type="button" class="search-btn" id="mainSearchBtn" aria-label="검색 실행">
+                                                    <img src="/type/www/images/ic/header-search.svg" alt="검색" class="search-icon">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- 검색 옵션 영역 -->
+                                        <div class="search-options-wrap">
+                                            <!-- 최근 검색어 -->
+                                            <div class="recent-search-wrap">
+                                                <span class="recent-search-label">최근 검색어</span>
+                                                <div class="recent-search-tags">
+                                                    <span class="search-tag">
+                                                        채무조정
+                                                        <button type="button" class="tag-remove-btn" aria-label="채무조정 제거">
+                                                            <img src="/type/www/images/ic/close.png?ver=1.9" alt="제거" class="tag-remove-icon">
+                                                        </button>
+                                                    </span>
+                                                    <span class="search-tag">
+                                                        신속
+                                                        <button type="button" class="tag-remove-btn" aria-label="신속 제거">
+                                                            <img src="/type/www/images/ic/close.png?ver=1.9" alt="제거" class="tag-remove-icon">
+                                                        </button>
+                                                    </span>
+                                                    <span class="search-tag">
+                                                        신용회복지원
+                                                        <button type="button" class="tag-remove-btn" aria-label="신용회복지원 제거">
+                                                            <img src="/type/www/images/ic/close.png?ver=1.9" alt="제거" class="tag-remove-icon">
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <!-- 결과 내 재검색 체크박스 -->
+                                            <div class="refine-search-check">
+                                                <input type="checkbox" id="refineSearchCheck" class="custom-checkbox">
+                                                <label for="refineSearchCheck" class="custom-checkbox-label">
+                                                    <span class="checkbox-box"></span>
+                                                    <span class="checkbox-text">결과 내 재검색</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <!-- 인기 검색어 순위 -->
+                                        <div class="popular-search-rank">
+                                            <div class="rank-display">
+                                                <span class="rank-number">1</span>
+                                                <span class="rank-keyword">채무조정</span>
+                                                <span class="rank-arrow"></span>
+                                            </div>
+                                            <ol class="rank-dropdown">
+                                                <li><span class="rank-num">1</span>채무조정</li>
+                                                <li><span class="rank-num">2</span>소액생계비대출</li>
+                                                <li><span class="rank-num">3</span>개인워크아웃</li>
+                                                <li><span class="rank-num">4</span>청년지원</li>
+                                                <li><span class="rank-num">5</span>신속채무조정</li>
+                                                <li><span class="rank-num">6</span>신용회복지원</li>
+                                                <li><span class="rank-num">7</span>상환도우미</li>
+                                                <li><span class="rank-num">8</span>금융과생활</li>
+                                                <li><span class="rank-num">9</span>신용교육</li>
+                                                <li><span class="rank-num">10</span>불법사금융</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 검색 결과 필터 (우측 상단) -->
+                                <div class="search-results-header">
+                                    <div class="search-filters">
+                                        <div class="filter-group">
+                                            <span class="filter-label">정렬기준</span>
+                                            <div class="filter-options" role="radiogroup">
+                                                <label class="filter-option">
+                                                    <input type="radio" name="searchSort" value="latest" checked>
+                                                    <span class="radio-label">최신순</span>
+                                                </label>
+                                                <label class="filter-option">
+                                                    <input type="radio" name="searchSort" value="accuracy">
+                                                    <span class="radio-label">정확도순</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="filter-divider"></div>
+                                        <div class="filter-group">
+                                            <span class="filter-label">검색기간</span>
+                                            <div class="filter-options" role="radiogroup">
+                                                <label class="filter-option">
+                                                    <input type="radio" name="searchPeriod" value="1day" checked>
+                                                    <span class="radio-label">1일</span>
+                                                </label>
+                                                <label class="filter-option">
+                                                    <input type="radio" name="searchPeriod" value="1week">
+                                                    <span class="radio-label">1주일</span>
+                                                </label>
+                                                <label class="filter-option">
+                                                    <input type="radio" name="searchPeriod" value="1month">
+                                                    <span class="radio-label">1개월</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="krds-tab-area layer">
+                                    <!-- 탭 네비게이션 -->
+                                    <div class="tab line full search-tabs">
+                                        <ul role="tablist">
+                                            <li id="tab_search_01" role="tab" aria-selected="true" aria-controls="panel_search_01" class="active">
+                                                <button type="button" class="btn-tab">전체 (111) <i class="sr-only created"> 선택됨</i></button>
+                                            </li>
+                                            <li id="tab_search_02" role="tab" aria-selected="false" aria-controls="panel_search_02">
+                                                <button type="button" class="btn-tab">메뉴 (35)</button>
+                                            </li>
+                                            <li id="tab_search_03" role="tab" aria-selected="false" aria-controls="panel_search_03">
+                                                <button type="button" class="btn-tab">게시글 (24)</button>
+                                            </li>
+                                            <li id="tab_search_04" role="tab" aria-selected="false" aria-controls="panel_search_04">
+                                                <button type="button" class="btn-tab">사진영상 (7)</button>
+                                            </li>
+                                            <li id="tab_search_05" role="tab" aria-selected="false" aria-controls="panel_search_05">
+                                                <button type="button" class="btn-tab">웹페이지 (2)</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="tab-conts-wrap search-results-content">
+                                        <section id="panel_search_01" aria-labelledby="tab_search_01" class="tab-conts search-results active" data-quick-nav="false">
+                                            <h3 class="sr-only">탭 영역 타이틀</h3>
+                                            <!-- 메뉴 섹션 -->
+                                            <div class="result-section" data-section="menu">
+                                                <div class="section-header">
+                                                    <h3 class="section-title">
+                                                        메뉴 <span class="section-count">35</span>
+                                                    </h3>
+                                                    <button type="button" class="btn-more" aria-label="메뉴 더보기">
+                                                        <img src="/type/www/images/ic/ic-plus.svg" alt="더보기" class="btn-more-icon">
+                                                    </button>
+                                                </div>
+                                                <div class="section-content">
+                                                    <ul class="menu-list">
+                                                        <li>
+                                                            <a href="#" target="_blank" class="menu-link">
+                                                                <span class="breadcrumb-item">홈</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item"><span class="highlight">채무</span>조정</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item">맞춤형 <span class="highlight">채무</span>조정제도</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</span>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" target="_blank" class="menu-link">
+                                                                <span class="breadcrumb-item">홈</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item"><span class="highlight">채무</span>조정</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item">맞춤형 <span class="highlight">채무</span>조정제도</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item">신속<span class="highlight">채무</span>조정 (연체 30일 이하)</span>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" target="_blank" class="menu-link">
+                                                                <span class="breadcrumb-item">홈</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item"><span class="highlight">채무</span>조정</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item">맞춤형 <span class="highlight">채무</span>조정제도</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</span>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" target="_blank" class="menu-link">
+                                                                <span class="breadcrumb-item">홈</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item"><span class="highlight">채무</span>조정</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item">맞춤형 <span class="highlight">채무</span>조정제도</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item">신속<span class="highlight">채무</span>조정 (연체 30일 이하)</span>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" target="_blank" class="menu-link">
+                                                                <span class="breadcrumb-item">홈</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item"><span class="highlight">채무</span>조정</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item">맞춤형 <span class="highlight">채무</span>조정제도</span>
+                                                                <img src="/type/www/images/ic/quickmenu/arrow-right.svg" alt="화살표" class="breadcrumb-arrow">
+                                                                <span class="breadcrumb-item">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</span>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- 게시글 섹션 -->
+                                            <div class="result-section" data-section="post">
+                                                <div class="section-header">
+                                                    <h3 class="section-title">
+                                                        게시글 <span class="section-count">24</span>
+                                                    </h3>
+                                                    <button type="button" class="btn-more" aria-label="게시글 더보기">
+                                                        <img src="/type/www/images/ic/ic-plus.svg" alt="더보기" class="btn-more-icon">
+                                                    </button>
+                                                </div>
+                                                <div class="section-content">
+                                                    <ul class="post-list">
+                                                        <li>
+                                                            <a href="#" class="post-link">
+                                                                <span class="post-title">[공지사항] 망연계 솔루션 교체 작업에 따른 <span class="highlight">채무</span>지원 서비스 중단 안내</span>
+                                                                <span class="post-date">2025.01.31</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="post-link">
+                                                                <span class="post-title">[보도자료] 신용회복위원회, 거동이 불편한 어르신에게 도시락을 배달하고 떡 선물세트를 전달하며 온정 전해</span>
+                                                                <span class="post-date">2025.01.31</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- 사진영상 섹션 -->
+                                            <div class="result-section" data-section="media">
+                                                <div class="section-header">
+                                                    <h3 class="section-title">
+                                                        사진영상 <span class="section-count">24</span>
+                                                    </h3>
+                                                    <button type="button" class="btn-more" aria-label="사진영상 더보기">
+                                                        <img src="/type/www/images/ic/ic-plus.svg" alt="더보기" class="btn-more-icon">
+                                                    </button>
+                                                </div>
+                                                <div class="section-content">
+                                                    <ul class="gallery-grid">
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                                <div class="gallery-image">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                                </div>
+                                                                <div class="gallery-info">
+                                                                    <h4 class="gallery-title">[자영업지원센터] <span class="highlight">채무</span> 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                    <p class="gallery-date">2025.01.31</p>
+                                                                    <p class="gallery-category">지역활동 소식</p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                            <div class="gallery-image">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                            </div>
+                                                            <div class="gallery-info">
+                                                                <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                <p class="gallery-date">2025.01.31</p>
+                                                                <p class="gallery-category">지역활동 소식</p>
+                                                            </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                                <div class="gallery-image">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                                </div>
+                                                                <div class="gallery-info">
+                                                                    <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                    <p class="gallery-date">2025.01.31</p>
+                                                                    <p class="gallery-category">간행물</p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                                <div class="gallery-image">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                                </div>
+                                                                <div class="gallery-info">
+                                                                    <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                    <p class="gallery-date">2025.01.31</p>
+                                                                    <p class="gallery-category">지역활동 소식</p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                                <div class="gallery-image">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                                </div>
+                                                                <div class="gallery-info">
+                                                                    <h4 class="gallery-title">[자영업지원센터] <span class="highlight">채무</span> 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                    <p class="gallery-date">2025.01.31</p>
+                                                                    <p class="gallery-category">지역활동 소식</p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                            <div class="gallery-image">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                            </div>
+                                                            <div class="gallery-info">
+                                                                <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                <p class="gallery-date">2025.01.31</p>
+                                                                <p class="gallery-category">지역활동 소식</p>
+                                                            </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                            <div class="gallery-image">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                            </div>
+                                                            <div class="gallery-info">
+                                                                <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                <p class="gallery-date">2025.01.31</p>
+                                                                <p class="gallery-category">간행물</p>
+                                                            </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                            <div class="gallery-image">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                            </div>
+                                                            <div class="gallery-info">
+                                                                <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                <p class="gallery-date">2025.01.31</p>
+                                                                <p class="gallery-category">지역활동 소식</p>
+                                                            </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <!-- 웹페이지 섹션 -->
+                                            <div class="result-section" data-section="webpage">
+                                                <div class="section-header">
+                                                    <h3 class="section-title">
+                                                        웹페이지 <span class="section-count">35</span>
+                                                    </h3>
+                                                    <button type="button" class="btn-more" aria-label="웹페이지 더보기">
+                                                        <img src="/type/www/images/ic/ic-plus.svg" alt="더보기" class="btn-more-icon">
+                                                    </button>
+                                                </div>
+                                                <div class="section-content">
+                                                    <ul class="webpage-list">
+                                                        <li>
+                                                            <a href="#" target="_blank" class="webpage-link">
+                                                                <h4 class="webpage-title">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</h4>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                            <p class="webpage-desc">사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다. 연체기간 31일 이상 89일 이하 단기연체 상태의 취약채무자로 소득 및 재산이 일정 수준 이하인 자 사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다.</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" target="_blank" class="webpage-link">
+                                                                <h4 class="webpage-title">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</h4>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                            <p class="webpage-desc">사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다. 연체기간 31일 이상 89일 이하 단기연체 상태의 취약채무자로 소득 및 재산이 일정 수준 이하인 자 사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다.</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section id="panel_search_02" aria-labelledby="tab_search_02" class="tab-conts search-results" data-quick-nav="false">
+                                            <h3 class="sr-only">탭 영역 타이틀</h3>
+                                            <!-- 검색 결과가 없을 경우 -->
+                                            <div class="no-results-container" id="noResults">
+                                                <div class="no-results-icon">
+                                                    <img src="/type/www/images/ic/icon_no_results.svg" alt="검색 결과 없음 아이콘">
+                                                </div>
+                                                <p class="no-results-text">
+                                                    <span class="text-normal">검색결과가 </span>
+                                                    <span class="text-highlight">없습니다.</span>
+                                                </p>
+                                            </div>
+                                        </section>
+                                        <section id="panel_search_03" aria-labelledby="tab_search_03" class="tab-conts search-results" data-quick-nav="false">
+                                            <h3 class="sr-only">탭 영역 타이틀</h3>
+                                            <div class="result-section" data-section="post">
+                                                <div class="section-header">
+                                                    <h3 class="section-title">
+                                                        게시글 <span class="section-count">24</span>
+                                                    </h3>
+                                                    <button type="button" class="btn-more" aria-label="게시글 더보기">
+                                                        <img src="/type/www/images/ic/ic-plus.svg" alt="더보기" class="btn-more-icon">
+                                                    </button>
+                                                </div>
+                                                <div class="section-content">
+                                                    <ul class="post-list">
+                                                        <li>
+                                                            <a href="#" class="post-link">
+                                                                <span class="post-title">[공지사항] 망연계 솔루션 교체 작업에 따른 <span class="highlight">채무</span>지원 서비스 중단 안내</span>
+                                                                <span class="post-date">2025.01.31</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="post-link">
+                                                                <span class="post-title">[보도자료] 신용회복위원회, 거동이 불편한 어르신에게 도시락을 배달하고 떡 선물세트를 전달하며 온정 전해</span>
+                                                                <span class="post-date">2025.01.31</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section id="panel_search_04" aria-labelledby="tab_search_04" class="tab-conts search-results" data-quick-nav="false">
+                                            <div class="result-section" data-section="media">
+                                                <div class="section-header">
+                                                    <h3 class="section-title">
+                                                        사진영상 <span class="section-count">24</span>
+                                                    </h3>
+                                                    <button type="button" class="btn-more" aria-label="사진영상 더보기">
+                                                        <img src="/type/www/images/ic/ic-plus.svg" alt="더보기" class="btn-more-icon">
+                                                    </button>
+                                                </div>
+                                                <div class="section-content">
+                                                    <ul class="gallery-grid">
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                                <div class="gallery-image">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                                </div>
+                                                                <div class="gallery-info">
+                                                                    <h4 class="gallery-title">[자영업지원센터] <span class="highlight">채무</span> 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                    <p class="gallery-date">2025.01.31</p>
+                                                                    <p class="gallery-category">지역활동 소식</p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                            <div class="gallery-image">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                            </div>
+                                                            <div class="gallery-info">
+                                                                <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                <p class="gallery-date">2025.01.31</p>
+                                                                <p class="gallery-category">지역활동 소식</p>
+                                                            </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                                <div class="gallery-image">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                                </div>
+                                                                <div class="gallery-info">
+                                                                    <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                    <p class="gallery-date">2025.01.31</p>
+                                                                    <p class="gallery-category">간행물</p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                                <div class="gallery-image">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                                </div>
+                                                                <div class="gallery-info">
+                                                                    <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                    <p class="gallery-date">2025.01.31</p>
+                                                                    <p class="gallery-category">지역활동 소식</p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                                <div class="gallery-image">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                                </div>
+                                                                <div class="gallery-info">
+                                                                    <h4 class="gallery-title">[자영업지원센터] <span class="highlight">채무</span> 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                    <p class="gallery-date">2025.01.31</p>
+                                                                    <p class="gallery-category">지역활동 소식</p>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                            <div class="gallery-image">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                            </div>
+                                                            <div class="gallery-info">
+                                                                <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                <p class="gallery-date">2025.01.31</p>
+                                                                <p class="gallery-category">지역활동 소식</p>
+                                                            </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                            <div class="gallery-image">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                            </div>
+                                                            <div class="gallery-info">
+                                                                <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                <p class="gallery-date">2025.01.31</p>
+                                                                <p class="gallery-category">간행물</p>
+                                                            </div>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="gallery-link">
+                                                            <div class="gallery-image">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=1.9" alt="사진영상 썸네일">
+                                                            </div>
+                                                            <div class="gallery-info">
+                                                                <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
+                                                                <p class="gallery-date">2025.01.31</p>
+                                                                <p class="gallery-category">지역활동 소식</p>
+                                                            </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section id="panel_search_05" aria-labelledby="tab_search_05" class="tab-conts search-results" data-quick-nav="false">
+                                            <h3 class="sr-only">웹페이지 탭</h3>
+                                            <!-- 웹페이지 섹션 -->
+                                            <div class="result-section" data-section="webpage">
+                                                <div class="section-header">
+                                                    <h3 class="section-title">
+                                                        웹페이지 <span class="section-count">35</span>
+                                                    </h3>
+                                                    <button type="button" class="btn-more" aria-label="웹페이지 더보기">
+                                                        <img src="/type/www/images/ic/ic-plus.svg" alt="더보기" class="btn-more-icon">
+                                                    </button>
+                                                </div>
+                                                <div class="section-content">
+                                                    <ul class="webpage-list">
+                                                        <li>
+                                                            <a href="#" class="webpage-link">
+                                                                <h4 class="webpage-title">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</h4>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                            <p class="webpage-desc">사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다. 연체기간 31일 이상 89일 이하 단기연체 상태의 취약채무자로 소득 및 재산이 일정 수준 이하인 자 사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다.</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="webpage-link">
+                                                                <h4 class="webpage-title">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</h4>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                            <p class="webpage-desc">사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다. 연체기간 31일 이상 89일 이하 단기연체 상태의 취약채무자로 소득 및 재산이 일정 수준 이하인 자 사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다.</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="webpage-link">
+                                                                <h4 class="webpage-title">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</h4>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                            <p class="webpage-desc">사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다. 연체기간 31일 이상 89일 이하 단기연체 상태의 취약채무자로 소득 및 재산이 일정 수준 이하인 자 사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다.</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="webpage-link">
+                                                                <h4 class="webpage-title">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</h4>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                            <p class="webpage-desc">사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다. 연체기간 31일 이상 89일 이하 단기연체 상태의 취약채무자로 소득 및 재산이 일정 수준 이하인 자 사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다.</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="webpage-link">
+                                                                <h4 class="webpage-title">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</h4>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                            <p class="webpage-desc">사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다. 연체기간 31일 이상 89일 이하 단기연체 상태의 취약채무자로 소득 및 재산이 일정 수준 이하인 자 사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다.</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="webpage-link">
+                                                                <h4 class="webpage-title">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</h4>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                            <p class="webpage-desc">사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다. 연체기간 31일 이상 89일 이하 단기연체 상태의 취약채무자로 소득 및 재산이 일정 수준 이하인 자 사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다.</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="webpage-link">
+                                                                <h4 class="webpage-title">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</h4>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                            <p class="webpage-desc">사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다. 연체기간 31일 이상 89일 이하 단기연체 상태의 취약채무자로 소득 및 재산이 일정 수준 이하인 자 사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다.</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="webpage-link">
+                                                                <h4 class="webpage-title">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</h4>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                            <p class="webpage-desc">사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다. 연체기간 31일 이상 89일 이하 단기연체 상태의 취약채무자로 소득 및 재산이 일정 수준 이하인 자 사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다.</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="webpage-link">
+                                                                <h4 class="webpage-title">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</h4>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                            <p class="webpage-desc">사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다. 연체기간 31일 이상 89일 이하 단기연체 상태의 취약채무자로 소득 및 재산이 일정 수준 이하인 자 사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다.</p>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="webpage-link">
+                                                                <h4 class="webpage-title">사전<span class="highlight">채무</span>조정·프리워크아웃 (연체31~89일 이하)</h4>
+                                                                <img src="/type/www/images/ic/sub/ic_Outlink.svg" alt="새창 열기" class="icon-new-window">
+                                                            </a>
+                                                            <p class="webpage-desc">사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다. 연체기간 31일 이상 89일 이하 단기연체 상태의 취약채무자로 소득 및 재산이 일정 수준 이하인 자 사전채무조정(프리워크아웃)은 장기간 분할상환 또는 일시적 어려움으로 조기 상환이 가능하신 분에게 유리한 개인<span class="highlight">채무</span>조정 제도 입니다.</p>
+                                                        </li>
+                                                    </ul>
+
+                                                    <!-- pagination -->
+                                                    <div class="krds-pagination">
+                                                        <span class="page-navi prev disabled" href="#">이전</span>
+                                                        <div class="page-links">
+                                                            <a class="page-link" href="#">1</a>
+                                                            <a class="page-link" href="#">2</a>
+                                                            <a class="page-link" href="#">3</a>
+                                                            <a class="page-link active" href="#"><span class="sr-only">현재페이지 </span>4</a>
+                                                            <a class="page-link" href="#">5</a>
+                                                            <a class="page-link" href="#">6</a>
+                                                            <a class="page-link" href="#">7</a>
+                                                            <a class="page-link" href="#">8</a>
+                                                            <span class="page-link link-dot"></span>
+                                                            <a class="page-link" href="#">99</a>
+                                                        </div>
+                                                        <a class="page-navi next" href="#">다음</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main contents:e -->
+
+		<!-- Quick Menu:s -->
+		<div id="quickmenu-container"></div>
+        <!-- Quick Menu:e -->
+                <!-- Footer:s -->
+        <div id="footer-container"></div>
+        <!-- Footer:e -->
+    </div>
+    <!-- all-menu 사이트맵 -->
+    <div id="allmenu-container"></div>
+    <!-- //all-menu 사이트맵 -->
+    <!-- 검색영역 -->
+    <div id="search-container"></div>
+    <!-- 검색영역 -->
+
+    <script src="/type/www/js/jquery-2.2.4.min.js?ver=2.0"></script>
+	<script src="/type/www/js/plugins/swiper.min.js?ver=2.0"></script>
+	<script src="/type/www/js/plugins/aos.js?ver=2.0"></script>
+	<script src="/type/www/js/component/ui-script.js?ver=2.0"></script>
+	<script src="/type/www/js/common.js?ver=2.0"></script>
+    <!-- <script src="/type/www/js/layout.js"></script>
+    <script src="/type/www/js/script.js"></script> 
+    공통 header 분리하기 위해 init.js 임시 추가  -->
+	<script src="includes/init.js?ver=2.0"></script>
+
+    <!-- 2️⃣ 아코디언 토글 스크립트 -->
+    <script>
+        $(function () {                       // DOMContentLoaded 와 동일
+            // ① 요소 캐시
+            const $toggleBtn = $('#toggleButton');
+            const $toggleText = $('#toggleText');
+            const $arrowIcon = $('#arrowIcon');
+            const $separator = $('#separator');
+            const $support = $('#supportContent');
+
+            // ② 클릭 이벤트 핸들러
+            $toggleBtn.on('click', function () {
+                //   - 클래스 토글과 현재 상태 확인
+                //   - .toggleClass() 은 토글 후 현재 상태를 반환하지 않으므로
+                //     .hasClass() 로 현재가 열렸는지 판단
+                const isOpen = $support.toggleClass('open').hasClass('open');
+
+                //   - 열림/닫힘에 따라 UI 업데이트
+                if (isOpen) {
+                    $toggleText.text('지원내용 닫기');
+                    $arrowIcon.removeClass('rotate-90').addClass('rotate-270');
+                    $separator.show();               // display:block
+                } else {
+                    $toggleText.text('지원내용 보기');
+                    $arrowIcon.removeClass('rotate-270').addClass('rotate-90');
+                    $separator.hide();                // display:none
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

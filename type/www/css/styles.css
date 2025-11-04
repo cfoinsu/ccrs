@@ -7414,7 +7414,15 @@ input[type=radio]:checked+label.fillter-chip {
 .shadow-hover:hover {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
-    border-radius: 24px;
+    border-radius: 26px;
+}
+
+.shadow-hover .hover,
+.shadow-hover:hover .default {
+    display: none;
+}
+.shadow-hover:hover .hover {
+    display: block;
 }
 
 .youtube-btn-red {
