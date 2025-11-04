@@ -1,12 +1,36 @@
 /* 헤더 스크립트:s */
-$(window).scroll(function () {
-	if ($(this).scrollTop() > 150) {
-		$("#header").addClass("is-hide");
-	} else {
-		$("#header").removeClass("is-hide");
-	}
-});
+// $(window).scroll(function () {
+// 	if ($(this).scrollTop() > 150) {
+// 		$("#header").addClass("is-hide");
+// 	} else {
+// 		$("#header").removeClass("is-hide");
+// 	}
+// });
+var lastScrollTop = 0;
+var delta = 5;
 
+// 스크롤 이벤트
+$(window).scroll(function() {
+  var nowScrollTop = $(this).scrollTop();
+
+  // 임계값 및 150px 이상일 때만 처리
+  if(Math.abs(lastScrollTop - nowScrollTop) >= delta && nowScrollTop > 150) {
+    if (nowScrollTop > lastScrollTop) {
+      // 아래로 스크롤 -> 헤더 숨김
+      $("#header").addClass("is-hide");
+    } else {
+      // 위로 스크롤 -> 헤더 보임
+      $("#header").removeClass("is-hide");
+    }
+    lastScrollTop = nowScrollTop;
+  }
+  
+  // 150px 이하일 때는 항상 헤더 보임
+  if(nowScrollTop <= 150){
+    $("#header").removeClass("is-hide");
+    lastScrollTop = nowScrollTop;
+  }
+});
 //헤더메뉴 dropdown, focus 이벤트
 $(function () {
 	$(".gnb").on("mouseenter focusin", function () {
