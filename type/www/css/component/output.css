@@ -23765,7 +23765,7 @@ body {
   color: var(--krds-light-color-text-subtle);
 }
 .g-wrap .krds-table-wrap .tbl tbody td {
-  padding: 4px 8px;
+  padding: 8px;
 }
 .g-wrap .krds-table-wrap .tbl .g-desc-area .g-btn-area {
   gap: var(--krds-gap-3);
