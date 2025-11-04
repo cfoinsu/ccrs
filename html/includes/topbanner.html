@@ -1,0 +1,67 @@
+<!-- topbanner -->
+<div class="top-banner slidetopbox">
+	<div class="swiper-container topswiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img src="/type/www/images/bg/bg_top_banner01.png?ver=1.9" alt="">
+			</div>
+			<div class="swiper-slide">
+				<img src="/type/www/images/bg/bg_top_banner01.png?ver=1.9" alt="">
+			</div>
+		</div>
+		<div class="containe">
+			<div class="sw-pagingbox">
+				<div class="topswiper-pagination"></div>
+				<div class="top-banner-control">
+					<button type="button" class="autoplay-toggle on" aria-label="자동재생 일시정지">
+						<span class="text sr-only">일시정지</span>
+					</button>
+				</div>
+			</div>
+			<div class="top-banner-close">
+				<button type="button" class="top-banner-hide-1day">
+					<span>1일 동안 보지 않기</span>
+				</button>
+				<button type="button" class="top-banner-close-btn">
+					<span class="hide sr-only">배너닫기</span>
+					<i class="topbanner_close"></i>
+				</button>
+			</div>
+			<script>
+				// Swiper 초기화
+				var topswiper = new Swiper(".topswiper", {
+					spaceBetween: 0,
+					centeredSlides: true,
+					autoplay: {
+					delay: 4000,
+					disableOnInteraction: false,
+					},
+					loop: true,
+					loopedSlides: 2,
+					pagination: {
+					el: ".topswiper-pagination",
+					clickable: true,
+					}
+				});
+
+				// 토글 버튼 클릭 시 재생/일시정지
+				$(document).on('click', '.autoplay-toggle', function() {
+					var $btn = $(this);
+
+					if ($btn.hasClass('on')) {
+					// 자동재생 중 → 정지
+					topswiper.autoplay.stop();
+					$btn.removeClass('on').addClass('off').attr('aria-label', '자동재생 시작');
+					$btn.find('.text').text('재생');
+					} else {
+					// 정지 상태 → 재생 시작
+					topswiper.autoplay.start();
+					$btn.removeClass('off').addClass('on').attr('aria-label', '자동재생 일시정지');
+					$btn.find('.text').text('일시정지');
+					}
+				});
+			</script>
+		</div>
+	</div>
+</div>
+<!-- //topbanner -->
