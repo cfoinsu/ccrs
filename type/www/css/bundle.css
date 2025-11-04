@@ -1,9 +1,10 @@
 /* bundle.css - 국문 페이지용 통합 CSS */
-@import '/type/www/css/common.css';
-@import '/type/www/css/main.css';
-@import '/type/www/css/all.min.css';
 @import '/type/www/css/plugins/swiper.min.css';
-@import '/type/www/css/layout.css';
-@import '/type/www/css/component/output.css';
-@import '/type/www/css/styles.css';
+@import '/type/www/css/all.min.css';
 @import 'https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css';
+@import '/type/www/css/component/output.css';
+@import '/type/www/css/common.css';
+@import '/type/www/css/layout.css';
+@import '/type/www/css/main.css';
+@import '/type/www/css/styles.css';
+@import '/type/www/css/search.css';
