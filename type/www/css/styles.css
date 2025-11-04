@@ -5293,8 +5293,9 @@ table.comparison-table td:first-child {
     height: 24px;
     background: url(../img/icons/bullet.svg) no-repeat center;
     position: absolute;
-    top: 15%;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
 }
 .krds-info-list + .krds-table-wrap {margin-top: 2rem;}
 .g-wrap .g-conts-area .conts-desc {
