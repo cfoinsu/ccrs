@@ -172,7 +172,7 @@ fontsize-normal
 }
 
 .sidebar-header {
-    background: var(--krds-light-color-element-primary) url(../img/logo/ccrs_symbol_white_alpha10.svg) no-repeat 140px 13px;
+    background: var(--krds-light-color-element-primary) url(../img/logo/ccrs_symbol_white_alpha10.svg) no-repeat 140px 16px;
     background-size: 120px;
     color: white;
     padding: 40px 20px;
@@ -7389,6 +7389,13 @@ input[type=radio]:checked + label.fillter-chip {
 .effect-box.bgnone {
     padding: 0;
     background: transparent;
+}
+.effect-box.bgnone .boxc1,
+.effect-box.bgnone .boxc2,
+.effect-box.bgnone .boxc3 {
+    padding: 0;
+    border: none;
+    border-radius: 0;
 }
 .effect-box .boxc1 {
     min-width: 100%;

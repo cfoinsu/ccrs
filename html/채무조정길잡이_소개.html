@@ -29,7 +29,7 @@
             <div class="container">
                 <div class="content-layout">
                     <!-- Sidebar -->
-                    <aside class="sidebar">
+                    <aside class="sidebar" style="position:sticky; top:2vh;">
                         <div class="sidebar-header">
                             <h2>채무조정</h2>
                         </div>
@@ -492,8 +492,53 @@
             </div>
         </main>
 
-		<!-- Quick Menu:s -->
-		<div id="quickmenu-container"></div>
+		<!-- Quick Menu:s
+		<div id="quickmenu-container"></div>-->
+        <!--퀵메뉴 위치 시연용, 확정되면 삭제할 예정입니다-->
+        <div class="quick-menu" style="right: 5vw; border-radius: 24px; top: 46%;">
+			<a class="quick-item" href="https://cyber.ccrs.or.kr/login.do" target="_blank" title="나의 진행상황 새창 이동">
+				<img src="/type/www/images/ic/quickmenu/icon_mydata.png?ver=1.9" alt="">
+				<span>나의<br>진행상황</span>
+			</a>
+			<div class="quick-item book">
+				<span>상담<br>예약신청</span>
+				<div class="quick-showbox">
+					<a href="상담안내.html" class="showbox-item showbox-arrow">
+						<img src="/type/www/images/ic/quickmenu/icon_book_show1.svg" alt="">
+						<p class="link-title">방문상담 예약</p>
+					</a>
+					<a href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_blank" title="새창열림" class="showbox-item showbox-arrow">
+						<img src="/type/www/images/ic/quickmenu/icon_book_show2.svg" alt="">
+						<p class="link-title">인터넷상담 예약</p>
+					</a>
+					<a href="tel:16005500" class="showbox-item">
+						<img src="/type/www/images/ic/quickmenu/icon_book_show3.svg" alt="">
+						<p class="link-title">전화상담 예약<span>1600-5500</span></p>
+					</a>
+				</div>
+			</div>
+			<a class="quick-item" href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1300" target="_blank" title="자주 묻는 질문 새창 이동">
+				<img src="/type/www/images/ic/quickmenu/icon_qna.png?ver=1.9" alt="">
+				<span>자주 묻는<br>질문</span>
+			</a>
+			<a class="quick-item" href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=190" target="_blank" title="간편진단 새창 이동">
+				<img src="/type/www/images/ic/quickmenu/icon_check.png?ver=1.9" alt="">
+				<span>간편진단</span>
+			</a>
+			<a class="quick-item" href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=500" target="_blank" title="협약기관 새창 이동">
+				<img src="/type/www/images/ic/quickmenu/icon_fine.png?ver=1.9" alt="">
+				<span>협약기관</span>
+			</a>
+			<a class="quick-item" href="지부위치안내.html" target="_blank" title="지부위치 새창 이동">
+				<img src="/type/www/images/ic/quickmenu/icon_spot.png?ver=1.9" alt="">
+				<span>지부위치</span>
+			</a>
+			<!-- <img src="/type/www/images/bg/quick-menu-chat.png?ver=1.9" style="transform: translate(6px, -40px);"> -->
+		</div>
+        <a href="#" class="quick-chat" style="right: 5.4vw; top: calc(55% + 175px);">
+            <img src="/type/www/img/icons/quickmenu/icon_bot.svg" alt="">
+            <span>챗봇</span>
+        </a>
         <!-- Quick Menu:e -->
         <!-- Footer:s -->
         <div id="footer-container"></div>
