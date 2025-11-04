@@ -188,6 +188,7 @@
   display: none;
   position: fixed;
   top: 0;
+  z-index: 1000;
   opacity: 0;
   right: -100%;
   width: 100%;
@@ -283,13 +284,13 @@
   top: 0;
   right: -30%;
   width: 30%;
+  z-index: 1001;
   padding: 10vh 4rem 6vh;
   background-color: #fff;
   border-left: 1px solid #d9d9d9;
   height: 100vh;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  z-index: 10;
 }
 .search-menu a {
   cursor: pointer;
