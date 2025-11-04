@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institution Carousel Test</title>
+    <link rel="stylesheet" href="/type/www/css/bundle.css">
+    <style>
+        body {
+            padding: 20px;
+            font-family: sans-serif;
+        }
+        .debug-panel {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            max-width: 400px;
+            z-index: 9999;
+        }
+        .debug-panel h3 {
+            margin: 0 0 10px 0;
+            color: #4CAF50;
+        }
+        .debug-log {
+            background: #000;
+            padding: 10px;
+            border-radius: 3px;
+            max-height: 300px;
+            overflow-y: auto;
+            font-size: 12px;
+            font-family: monospace;
+        }
+        .debug-log div {
+            margin: 3px 0;
+        }
+        .log-info { color: #2196F3; }
+        .log-success { color: #4CAF50; }
+        .log-error { color: #f44336; }
+        .log-warn { color: #ff9800; }
+    </style>
+</head>
+<body>
+    <h1>Institution Carousel Test Page</h1>
+    <p>이 페이지는 institution carousel의 초기화를 테스트합니다.</p>
+
+    <!-- Debug Panel -->
+    <div class="debug-panel">
+        <h3>🔍 Debug Console</h3>
+        <div class="debug-log" id="debugLog"></div>
+    </div>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="/type/www/js/jquery-2.2.4.min.js?ver=1.9"></script>
+    <script src="/type/www/js/plugins/swiper.min.js?ver=1.9"></script>
+    <script src="/type/www/js/plugins/aos.js?ver=1.9"></script>
+    <script src="/type/www/js/common.js?ver=1.9"></script>
+
+    <script>
+        // Custom debug logger
+        const debugLog = document.getElementById('debugLog');
+        function log(message, type = 'info') {
+            const div = document.createElement('div');
+            div.className = `log-${type}`;
+            div.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            debugLog.appendChild(div);
+            debugLog.scrollTop = debugLog.scrollHeight;
+
+            // Also log to console
+            console[type === 'error' ? 'error' : type === 'warn' ? 'warn' : 'log'](message);
+        }
+
+        // Override console methods to capture all logs
+        const originalConsoleLog = console.log;
+        const originalConsoleError = console.error;
+        const originalConsoleWarn = console.warn;
+
+        console.log = function(...args) {
+            log(args.join(' '), 'info');
+            originalConsoleLog.apply(console, args);
+        };
+
+        console.error = function(...args) {
+            log(args.join(' '), 'error');
+            originalConsoleError.apply(console, args);
+        };
+
+        console.warn = function(...args) {
+            log(args.join(' '), 'warn');
+            originalConsoleWarn.apply(console, args);
+        };
+
+        // Test initialization
+        $(function() {
+            log('jQuery ready', 'success');
+            log('Swiper available: ' + (typeof Swiper !== 'undefined'), 'info');
+            log('Loading footer...', 'info');
+
+            $('#footer-container').load('includes/footer.html', function(response, status, xhr) {
+                if (status === 'error') {
+                    log('Footer load failed: ' + xhr.status + ' ' + xhr.statusText, 'error');
+                    return;
+                }
+
+                log('Footer loaded successfully', 'success');
+
+                // Check if carousel element exists
+                const carouselElement = document.querySelector('.institution-carousel-swiper');
+                log('Carousel element found: ' + (carouselElement !== null), 'info');
+
+                // Wait a bit for DOM to settle
+                setTimeout(function() {
+                    log('Attempting to initialize carousel...', 'info');
+
+                    if (typeof initInstitutionCarousel === 'function') {
+                        log('initInstitutionCarousel function found', 'success');
+                        const result = initInstitutionCarousel();
+
+                        if (result) {
+                            log('Carousel initialized successfully!', 'success');
+                        } else {
+                            log('Carousel initialization returned null/undefined', 'warn');
+                        }
+                    } else {
+                        log('initInstitutionCarousel function NOT found', 'error');
+                    }
+                }, 100);
+            });
+        });
+    </script>
+</body>
+</html>
