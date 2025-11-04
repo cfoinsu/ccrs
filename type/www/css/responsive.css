@@ -20,4 +20,93 @@
   .scroll-to-top {
     display: none !important;
   }
-}/*# sourceMappingURL=responsive.css.map */
+  .footer .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .footer .footer-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .footer .footer-content .grid-row {
+    width: 100%;
+  }
+  .footer .footer-content .footer-contact {
+    width: 100%;
+    padding: 24px;
+    margin-top: 0;
+  }
+  .footer .footer-content .footer-icon {
+    width: 100%;
+    gap: 24px;
+  }
+}
+@media (max-width: 1279px) and (max-width: 767px) {
+  .footer .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer .footer-logo {
+    margin-bottom: 24px;
+  }
+  .footer .footer-logo img {
+    max-width: 180px;
+  }
+  .footer .footer-content {
+    gap: 24px;
+  }
+  .footer .footer-content .footer-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer .footer-content .footer-links .footer-link:not(:last-child)::after {
+    display: none;
+  }
+  .footer .footer-content .footer-info,
+  .footer .footer-content .footer-contact {
+    font-size: 13px;
+  }
+  .footer .footer-content .footer-info p,
+  .footer .footer-content .footer-contact p {
+    line-height: 1.6;
+  }
+  .footer .footer-content .footer-contact {
+    padding: 20px;
+  }
+  .footer .footer-content .footer-icon {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .footer .footer-content .footer-icon .sns {
+    gap: 16px;
+  }
+  .footer .footer-content .footer-icon .sns a img {
+    width: 32px;
+    height: 32px;
+  }
+  .footer .footer-content .footer-icon .certi img {
+    max-width: 80px;
+  }
+}
+@media (max-width: 1279px) {
+  .section-institution .institution-links.container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (max-width: 1279px) and (max-width: 767px) {
+  .section-institution .institution-links.container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section-institution .institution-carousel-wrapper .institution-nav {
+    gap: 8px;
+  }
+  .section-institution .institution-carousel-wrapper .institution-nav .institution-nav-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */
