@@ -236,12 +236,6 @@
     gap: 8px;
 }
 
-.arrow-btn {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 4px;
-}
 
 /* 진단 카드 */
 .diagnosis-card {
