@@ -7590,6 +7590,6 @@ table .table-center {
     position: absolute;
     z-index: 2 !important;
     top: 33%;
-    left: 46%;
+    left: calc(831px*0.5);
     width: 80px;
 }
