@@ -8,8 +8,8 @@ $(function() {
     // Header 로드
     $('#header-container').load('includes/header_en.html', function() {
         // Header가 로드된 후 스크립트 초기화
-        $.getScript('/type/www/js/layout.js?ver=1.9');
-        $.getScript('/type/www/js/script.js?ver=1.9');
+        $.getScript('/type/www/js/layout.js');
+        $.getScript('/type/www/js/script.js');
     });
 
     // Footer 로드
