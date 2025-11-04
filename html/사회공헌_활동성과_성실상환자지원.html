@@ -8,7 +8,7 @@
     <meta name="keywords" content="신용회복위원회" />
     <meta name="description" content="신용회복위원회" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>활동성과</title>
+    <title>사회공헌_활동성과</title>
     <link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
 
     <link rel="stylesheet" href="/type/www/css/common.css?ver=1.9">
@@ -236,7 +236,7 @@
                                 <ul class="nav-subsection">
                                     <li><a href="사업소개.html" class="nav-subitem">사업소개</a></li>
                                     <li><a href="기부현황_기부금현황.html" class="nav-subitem">기부현황</a></li>
-                                    <li><a href="사회공헌_활동성과_채무금융지원.html" class="nav-subitem active">활동성과</a></li>
+                                    <li><a href="사회공헌_활동성과.html" class="nav-subitem active">활동성과</a></li>
                                     <li><a href="공시자료.html" class="nav-subitem">공시자료</a></li>
                                 </ul>
                             </div>
@@ -289,22 +289,22 @@
                         </div>
                         <div class="tab fill full">
                             <ul role="tablist">
+                                <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02"
+                                    data-listener-attached="true">
+                                    <a href="사회공헌_활동성과.html" class="btn-tab">채무·금융지원</a>
+                                </li>
                                 <li id="tab01" role="tab" aria-selected="false" aria-controls="tabpanel01"
                                     class="active" data-listener-attached="true">
-                                    <a href="개인워크아웃(연체90일이상)_일반.html" class="btn-tab">채무∙금융지원<i
+                                    <a href="사회공헌_활동성과_성실상환자지원.html" class="btn-tab">성실상환자 지원<i
                                             class="sr-only created">선택됨</i></a>
                                 </li>
                                 <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02"
                                     data-listener-attached="true">
-                                    <a href="개인워크아웃(연체90일이상)_지원대상별특례_미취업청년대학생.html" class="btn-tab">성실상환자 지원</a>
+                                    <a href="사회공헌_활동성과_미래세대.html" class="btn-tab">미래세대</a>
                                 </li>
                                 <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02"
                                     data-listener-attached="true">
-                                    <a href="개인워크아웃(연체90일이상)_지원대상별특례_미취업청년대학생.html" class="btn-tab">미래세대</a>
-                                </li>
-                                <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02"
-                                    data-listener-attached="true">
-                                    <a href="개인워크아웃(연체90일이상)_지원대상별특례_미취업청년대학생.html" class="btn-tab">지역사회공헌</a>
+                                    <a href="사회공헌_활동성과_지역사회공헌.html" class="btn-tab">지역사회공헌</a>
                                 </li>
                             </ul>
                         </div>
@@ -313,13 +313,13 @@
                         <div class="content-sections g-wrap">
                             <div class="g-conts-area white-box">
                                 <div class="g-img mt10">
-                                    <img src="/type/www/images/img/활동성과_채무금융지원01.png" alt="">
+                                    <img src="/type/www/images/img/활동성과_성실상환자지원01.png" alt="">
                                 </div>
                                 <div class="g-img mt60">
-                                    <img src="/type/www/images/img/활동성과_채무금융지원02.png" alt="">
+                                    <img src="/type/www/images/img/활동성과_성실상환자지원02.png" alt="">
                                 </div>
                                 <div class="g-img mt60">
-                                    <img src="/type/www/images/img/활동성과_채무금융지원03.png" alt="">
+                                    <img src="/type/www/images/img/활동성과_성실상환자지원03.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -758,7 +758,6 @@
     <script src="/type/www/js/jquery-2.2.4.min.js?ver=1.9"></script>
     <script src="/type/www/js/plugins/swiper.min.js?ver=1.9"></script>
     <script src="/type/www/js/plugins/aos.js?ver=1.9"></script>
-    <script src="includes/init.js"></script>
     <script src="/type/www/js/common.js?ver=1.9"></script>
     <script src="/type/www/js/layout.js?ver=1.9"></script>
     <script src="/type/www/js/script.js?ver=1.9"></script>
@@ -766,7 +765,35 @@
     <!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
 
     <!-- 2️⃣ 아코디언 토글 스크립트 -->
-    
+    <script>
+        $(function () {                       // DOMContentLoaded 와 동일
+            // ① 요소 캐시
+            const $toggleBtn = $('#toggleButton');
+            const $toggleText = $('#toggleText');
+            const $arrowIcon = $('#arrowIcon');
+            const $separator = $('#separator');
+            const $support = $('#supportContent');
+
+            // ② 클릭 이벤트 핸들러
+            $toggleBtn.on('click', function () {
+                //   - 클래스 토글과 현재 상태 확인
+                //   - .toggleClass() 은 토글 후 현재 상태를 반환하지 않으므로
+                //     .hasClass() 로 현재가 열렸는지 판단
+                const isOpen = $support.toggleClass('open').hasClass('open');
+
+                //   - 열림/닫힘에 따라 UI 업데이트
+                if (isOpen) {
+                    $toggleText.text('지원내용 닫기');
+                    $arrowIcon.removeClass('rotate-90').addClass('rotate-270');
+                    $separator.show();               // display:block
+                } else {
+                    $toggleText.text('지원내용 보기');
+                    $arrowIcon.removeClass('rotate-270').addClass('rotate-90');
+                    $separator.hide();                // display:none
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
