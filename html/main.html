@@ -620,63 +620,6 @@
 	<script src="/type/www/js/plugins/aos.js?ver=1.9"></script>
 	<script src="/type/www/js/common.js?ver=1.9"></script>
 	<script src="includes/init.js"></script>
-	<!-- 반드시 jQuery 파일을 먼저 로드하세요 -->
-	<script type="text/javascript">
-		//페이지(section) 앵커 스크롤 이벤트
-		$(window).scroll(function () {
-		if ($(this).scrollTop() >= $("#section4").offset().top-1) {
-			$(".m-anchor-list>li").removeClass("on");
-			$(".fourthpage").addClass("on");
-		} 
-		else if ((($(this).scrollTop()) >= ($("#section3").offset().top-1)) && (($(this).scrollTop()) < ($("#section4").offset().top-100))) {
-			$(".m-anchor-list>li").removeClass("on");
-			$(".thirdpage").addClass("on");
-		} 
-		else if ((($(this).scrollTop()) >= ($("#section2").offset().top-1)) && (($(this).scrollTop()) < ($("#section3").offset().top-100))) {
-			$(".m-anchor-list>li").removeClass("on");
-			$(".secondpage").addClass("on");
-		} 
-		else if ($(this).scrollTop() < $("#section2").offset().top-1) {
-			$(".m-anchor-list>li").removeClass("on");
-			$(".firstpage").addClass("on");
-		}
-		else {
-			return false;
-		}
-		});
-
-		$('.btn-scroll').click(function(e) {
-			e.preventDefault();
-			
-			// 현재 스크롤 위치 기준으로 현재 섹션 확인
-			let currentSection;
-			let scrollTop = $(window).scrollTop();
-			
-			if (scrollTop >= $("#section4").offset().top-1) {
-				currentSection = 4;
-			} 
-			else if (scrollTop >= $("#section3").offset().top-1) {
-				currentSection = 3;
-			}
-			else if (scrollTop >= $("#section2").offset().top-1) {
-				currentSection = 2;
-			}
-			else {
-				currentSection = 1;
-			}
-			
-			// 다음 섹션으로 스크롤
-			let nextSection = currentSection + 1;
-			if (nextSection > 4) nextSection = 4; // 마지막 섹션이면 첫 섹션으로
-			
-			// 스무스 스크롤 애니메이션
-			$('html, body').animate({
-				scrollTop: $("#section" + nextSection).offset().top
-			}, 800, 'swing');
-		});
-		$(".intro .close").click(function () {
-			$(this).parent().removeClass("show");
-		});
-	</script>
+	<script src="/type/www/js/main.js?ver=1.9"></script>
 </body>
 </html>
