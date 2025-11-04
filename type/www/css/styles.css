@@ -7436,6 +7436,10 @@ input[type=radio]:checked + label.fillter-chip {
     border-bottom: 1px solid var(--krds-light-color-border-gray-light);
     width: 100%;
 }
+.effect-box .key-img.border-none{
+    border-bottom: none;
+    padding-bottom: 0;
+}
 .effect-box .key-img img{
     width: fit-content;
 }
