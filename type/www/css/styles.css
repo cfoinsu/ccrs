@@ -7396,16 +7396,24 @@ input[type=radio]:checked + label.fillter-chip {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     text-align: center;
+    padding: 24px 18px;
+    background-color: var(--krds-color-light-gray-0);
+    border-radius: var(--krds-radius-xlarge2);
+    border: 1px solid var(--krds-light-color-border-gray-light);
 }
 .effect-box .boxc2 {
     flex: calc(100%/2 - 16px) 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     text-align: center;
+    padding: 24px 18px;
+    background-color: var(--krds-color-light-gray-0);
+    border-radius: var(--krds-radius-xlarge2);
+    border: 1px solid var(--krds-light-color-border-gray-light);
 }
 .effect-box .boxc3 {
     flex: calc(100%/3 - 16px) 0;
@@ -7414,7 +7422,7 @@ input[type=radio]:checked + label.fillter-chip {
     align-items: center;
     gap: 15px;
     text-align: center;
-    padding: 24px;
+    padding: 24px 18px;
     background-color: var(--krds-color-light-gray-0);
     border-radius: var(--krds-radius-xlarge2);
     border: 1px solid var(--krds-light-color-border-gray-light);
