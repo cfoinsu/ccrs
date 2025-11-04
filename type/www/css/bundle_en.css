@@ -1,9 +1,10 @@
-@import '../css/common.css';
-@import '../css/main.css';
 @import '../css/all.min.css';
 @import '../css/plugins/swiper.min.css';
-@import '../css/layout.css';
+@import 'https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css';
 @import '../css/component/output.css';
+@import '../css/common.css';
+@import '../css/layout.css';
+@import '../css/main.css';
 @import '../css/styles.css';
 @import '../css/layout_en_override.css';
 @import '../css/main_en.css';

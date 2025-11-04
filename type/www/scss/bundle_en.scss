@@ -5,44 +5,28 @@
 // This file bundles all styles for English pages
 
 // ==========================================
-// 1. Base Styles (Korean site base)
-// ==========================================
-@import '../css/common.css';
-@import '../css/main.css';
-
-// ==========================================
-// 2. Third-party Libraries
+// 1. Third-party Libraries
 // ==========================================
 @import '../css/all.min.css';
 @import '../css/plugins/swiper.min.css';
+@import 'https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css';
 
 // ==========================================
-// 3. Layout (Korean site layout)
-// ==========================================
-@import '../css/layout.css';
-
-// ==========================================
-// 4. Components
+// 2. Components
 // ==========================================
 @import '../css/component/output.css';
 
 // ==========================================
-// 5. General Styles (Korean site)
+// 3. Base Styles (Korean site base)
 // ==========================================
+@import '../css/common.css';
+@import '../css/layout.css';
+@import '../css/main.css';
 @import '../css/styles.css';
 
 // ==========================================
-// 6. English Layout Overrides
+// 4. English Layout Overrides
 // ==========================================
-// Header, Footer, Navigation, All-menu, Search-menu
-// Common layout components used across all English pages
 @import '../css/layout_en_override.css';
-
-// ==========================================
-// 7. English Page-Specific Styles
-// ==========================================
-// Main page only (hero, sections 1-4, accordion, etc.)
 @import '../css/main_en.css';
-
-// Sub pages only (content boxes, tables, grids, etc.)
 @import '../css/styles_en_override.css';
