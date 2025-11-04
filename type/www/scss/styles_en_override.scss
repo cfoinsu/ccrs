@@ -1160,6 +1160,10 @@
 // 15. Performance Page
 // ==========================================
 
+.content-performance {
+    gap: 100px;
+}
+
 .performance-section {
 
     .section-title {
@@ -1202,6 +1206,11 @@
         color: #555;
         font-size: 14px;
     }
+}
+
+.chart-container {
+    box-shadow: none !important;
+    border: 1px solid #ddd;
 }
 
 // ==========================================
