@@ -8,6 +8,8 @@ $(function() {
     initSectionAnchorNavigation();
     // 인트로 팝업 닫기
     initIntroPopup();
+    // Swiper 슬라이더 초기화
+    initSwiperSliders();
 });
 
 /**
@@ -82,4 +84,46 @@ function initIntroPopup() {
     $(".intro .close").click(function () {
         $(this).parent().removeClass("show");
     });
+}
+
+/**
+ * Swiper 슬라이더 초기화
+ * 메인 배너와 하단 배너 슬라이더 설정
+ */
+function initSwiperSliders() {
+    // 메인 배너 슬라이더
+    if ($(".swiper-container").length > 0) {
+        var mainSwiper = new Swiper(".swiper-container", {
+            spaceBetween: 0,
+            centeredSlides: true,
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
+            loop: true,
+            loopedSlides: 3,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
+
+    // 하단 배너 슬라이더
+    if ($("#mainslider02").length > 0) {
+        var bottomSwiper = new Swiper("#mainslider02", {
+            spaceBetween: 0,
+            centeredSlides: true,
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
+            loop: true,
+            loopedSlides: 3,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
 }

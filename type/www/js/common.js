@@ -127,3 +127,101 @@ function initInstitutionCarousel() {
         return null;
     }
 }
+
+////패밀리사이트 클릭이벤트
+//$(function () {
+//	$(".family-list").hide();
+//	$(".family").click(function () {
+//		$(this).find(".family-list").slideToggle();
+//		$(this).find(".family-list").toggleClass("on");
+//	});
+//});
+//패밀리사이트 클릭이벤트
+$(function () {
+	$(".family-list").hide();
+	$(".family-tag").click(function () {
+		$(".family-list").slideToggle();
+		$(".family-list").toggleClass("on");
+	});
+});
+
+//패밀리사이트 hover 이벤트
+$(function () {
+	$(".family-list-item").find("li").hover(function () {
+		$(this).toggleClass("is-active");
+	});
+
+	$(".family-list-item").hover(function () {
+		$(this).toggleClass("highlight");
+	});
+});
+/* 푸터 스크립트:e */
+// 팝업스크립트
+const openYoutubeUrl = (url) => {
+	if (!url) {
+		url = "/index.do";
+	}
+
+	var name = 'workoutPopup';
+	var specs = [
+		'width=960',
+		'height=600',
+		'left=' + Math.max(0, (screen.width - 960) / 2),
+		'top=' + Math.max(0, (screen.height - 600) / 2),
+		'resizable=yes',
+		'scrollbars=yes',
+		'toolbar=no',
+		'menubar=no',
+		'location=no',
+		'status=no'
+	].join(',');
+
+	var win = window.open(url, name, specs);
+	if (win) {
+		win.opener = null; // 보안 권장
+		win.focus();
+	} else {
+		alert('팝업이 차단되었습니다. 팝업 허용 후 다시 시도하세요.');
+	}
+}
+/**
+ * 버튼 클릭 시 특정 URL로 이동하는 함수
+ * @param {string} url - 이동할 웹 주소 (URL)
+ */
+function goToPage(url) {
+    // window.location.href 속성에 원하는 URL을 할당하면
+    // 브라우저는 해당 주소로 페이지를 이동(리디렉션)합니다.
+    window.location.href = url;
+}
+// 탭 클릭 이벤트
+$(function() {
+  // 초기화: 첫번째 li만 "선택됨" 요소 추가
+//   $('ul[role="tablist"] > li').each(function(idx){
+//     var $btn = $(this).find('.btn-tab');
+//     $btn.find('.sr-only.created').remove(); // 모두 삭제 후
+//     if(idx === 0){
+//       $btn.append('<i class="sr-only created">선택됨</i>');
+//       $(this).addClass('active').attr('aria-selected', 'true');
+//     } else {
+//       $(this).removeClass('active').attr('aria-selected', 'false');
+//     }
+//   });
+
+  
+  $('.search-list-top ul[role="tablist"] .btn-tab').on('click', function(e) {
+    e.preventDefault();
+    var $li = $(this).closest('li');
+
+    // 모든 탭 비활성화 및 "선택됨" 요소 삭제
+    $li.siblings('li').each(function(){
+      $(this).removeClass('active').attr('aria-selected', 'false');
+      $(this).find('.btn-tab .sr-only.created').remove();
+    });
+
+    // 선택된 탭에 "선택됨" 추가 및 활성화
+    $li.addClass('active').attr('aria-selected', 'true');
+    var $btn = $li.find('.btn-tab');
+    $btn.find('.sr-only.created').remove();
+    $btn.append('<i class="sr-only created">선택됨</i>');
+  });
+});

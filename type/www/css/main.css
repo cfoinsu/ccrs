@@ -265,12 +265,6 @@
     gap: 8px;
 }
 
-.arrow-btn {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 4px;
-}
 
 /* 진단 카드 */
 .diagnosis-card {
@@ -482,6 +476,7 @@
 
 .arrow-btn:hover {
     color: #F48F01;
+    background: transparent;
 }
 
 
@@ -937,12 +932,6 @@
 }
 
 /* 메인 컨텐츠 스타일 */
-/* main .container {
-    max-width: 1596px;
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-} */
 main .container section img {
     width: 100%;
     height: auto;

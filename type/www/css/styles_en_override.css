@@ -1144,6 +1144,10 @@
   }
 }
 
+.content-performance {
+  gap: 100px;
+}
+
 .performance-section .section-title {
   font-size: 24px;
   font-weight: 700;
@@ -1179,6 +1183,12 @@
   margin-bottom: 5px;
   color: #555;
   font-size: 14px;
+}
+
+.chart-container {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 1px solid #ddd;
 }
 
 .global-network-section {
