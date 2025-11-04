@@ -1,0 +1,14 @@
+// ============================================
+// Responsive Styles Entry Point
+// ============================================
+// 반응형 스타일 메인 파일
+// PC → Tablet → Mobile 순으로 적용
+
+// Import existing variables and mixins
+@import 'variables';
+@import 'mixins/breakpoints';
+
+// Import responsive modules
+@import 'responsive/common';      // 공통 반응형 (폰트, 여백, 그리드)
+@import 'responsive/layout';      // 레이아웃 (header, footer, nav 등)
+@import 'responsive/components';  // 컴포넌트 (버튼, 카드, 폼 등)

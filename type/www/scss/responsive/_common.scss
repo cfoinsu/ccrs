@@ -1,0 +1,22 @@
+// ============================================
+// Common Responsive Styles
+// ============================================
+// 공통 반응형: 폰트, 여백, 그리드, 컨테이너 등
+// KRDS 브레이크포인트: Mobile ~767px / Tablet ~1023px / Desktop ~1279px
+
+// ============================================
+// @include desktopLess { ... } : Desktop 이하 (~ 1279px)
+// @include tabletLess { ... } : Tablet 이하 (~ 1023px)
+// @include mobile { ... } : Mobile 이하 (~ 767px)
+// ============================================
+@include desktopLess {
+  main .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    
+    @include mobile {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

@@ -73,13 +73,6 @@ body {
     word-break: keep-all;
     word-spacing: -0.2rem;
 }
-
-.container {
-    max-width: 1710px;
-    margin: 0 auto;
-    /* padding: 0 20px; */
-    position: relative;
-}
 /* 폰트 스타일 */
 .fontsize-small{
     font-size: var(--krds-pc-font-size-body-small);
@@ -3535,83 +3528,6 @@ box-shadow: 0px 8px 16px 0px #0000001F;
 
 .phone-number {
     color: #ff8c29;
-}
-
-/* Institution Links */
-.section-institution {
-    background: #fff;
-    border-top: 1px solid #e1e5e9;
-    padding: 0;
-}
-.institution-links {
-    max-width: 1340px;
-    margin: 0 auto;
-}
-.institution-links .swiper {
-    flex:1;
-    overflow: hidden;
-    max-width: 1180px;
-}
-.institution-links .institution-carousel-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.institution-links img {
-    max-width: none;
-    width: 100%;
-}
-
-.institution-carousel {
-    display: flex;
-    align-items: center;
-    margin-top: -1px;
-    height: 90px;
-}
-
-.institution-item {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.institution-item.swiper-slide {
-    width: auto;
-    flex-shrink: 0;
-    height: 90px;
-}
-
-.institution-item img {
-    max-width: 100%;
-    width: auto;
-    height: 89px;
-    object-fit: contain;
-    transition: opacity 0.3s ease;
-}
-
-.institution-item:hover img {
-    opacity: 1;
-}
-
-.institution-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
-}
-
-.institution-nav .institution-nav-btn {
-    width: 32px;
-    height: 32px;
-    background: #fff;
-    border: 1px solid #D2D6DA;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.institution-nav .institution-nav-btn i {
-    font-size: 15px;
 }
 
 /* Responsive Design */

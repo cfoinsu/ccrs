@@ -1,0 +1,24 @@
+// ============================================
+// Layout Responsive Styles
+// ============================================
+// 레이아웃 반응형: header, footer, allmenu, quickmenu, skip navigation 등
+// KRDS 브레이크포인트: Mobile ~767px / Tablet ~1023px
+
+// ============================================
+// @include desktopLess { ... } : Desktop 이하 (~ 1279px)
+// @include tabletLess { ... } : Tablet 이하 (~ 1023px)
+// @include mobile { ... } : Mobile 이하 (~ 767px)
+// ============================================
+@include desktopLess {
+  .sidebar {
+    display: none;
+  }
+
+  #quickmenu-container {
+    display: none;
+  }
+
+  .scroll-to-top {
+    display: none !important;
+  }
+}

@@ -1,0 +1,23 @@
+@media (max-width: 1279px) {
+  main .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media (max-width: 1279px) and (max-width: 767px) {
+  main .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 1279px) {
+  .sidebar {
+    display: none;
+  }
+  #quickmenu-container {
+    display: none;
+  }
+  .scroll-to-top {
+    display: none !important;
+  }
+}/*# sourceMappingURL=responsive.css.map */

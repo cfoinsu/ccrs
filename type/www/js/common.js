@@ -72,7 +72,7 @@ function initInstitutionCarousel() {
     try {
         var institutionSwiper = new Swiper('.institution-carousel-swiper', {
             slidesPerView: 'auto',
-            spaceBetween: 64,
+            spaceBetween: 40,
             loop: true,
             loopedSlides: 6,
             autoplay: {
