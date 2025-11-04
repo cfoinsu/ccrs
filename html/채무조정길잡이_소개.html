@@ -12,6 +12,19 @@
 	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
 
     <link rel="stylesheet" href="/type/www/css/bundle.css?ver=2.0">
+
+    <style>
+        body:has(.is-hide) aside{
+            position:sticky;
+            top: 2vh;
+            transition: all 0.6s ease;
+        }
+        body aside {
+            position:sticky;
+            top: calc(2vh + 160px);
+            transition: all 0.6s ease;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,7 +42,7 @@
             <div class="container">
                 <div class="content-layout">
                     <!-- Sidebar -->
-                    <aside class="sidebar" style="position:sticky; top:2vh;">
+                    <aside class="sidebar" style="">
                         <div class="sidebar-header">
                             <h2>채무조정</h2>
                         </div>
