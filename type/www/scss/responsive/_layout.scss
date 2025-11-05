@@ -10,6 +10,20 @@
 // @include mobile { ... } : Mobile 이하 (~ 767px)
 // ============================================
 @include desktopLess {
+  // Header
+  #header {
+    .header-container {
+      position: relative;
+      z-index: 10;
+    }
+    .gnb-wrap .utils {
+      top: -72px;
+      right: 52px;
+    }
+  }
+  .utility-right {
+    display: none;
+  }
   .sidebar {
     display: none;
   }
@@ -89,12 +103,8 @@
         .certi {
           display: none;
         }
-
       }
-
     }
-
-
   }
 
   // Institution Links (관련기관 캐러셀)
@@ -123,4 +133,7 @@
       }
     }
   }
+}
+
+@include tabletLess {
 }
