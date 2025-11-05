@@ -2535,7 +2535,11 @@ body:has(.intro.show) {
   background: #FFE6C3;
 }
 
-.col-debt2-1 a {
+.col-debt2-1 {
+  height: 434px;
+  background: url(/type/www/images/main/debt2-bg.png);
+}
+.col-debt2-1 .swiper-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2543,29 +2547,53 @@ body:has(.intro.show) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 434px;
+  width: 436px;
   padding: 32px 36px;
-  background: url(/type/www/images/main/debt2-bg.svg);
 }
-.col-debt2-1 a em {
+.col-debt2-1 .swiper-slide em {
   display: block;
   font-size: 19px;
   font-weight: 700;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+  -webkit-transition: -webkit-transform 0.5s ease 0.1s;
+  transition: -webkit-transform 0.5s ease 0.1s;
+  transition: transform 0.5s ease 0.1s;
+  transition: transform 0.5s ease 0.1s, -webkit-transform 0.5s ease 0.1s;
 }
-.col-debt2-1 a strong {
+.col-debt2-1 .swiper-slide strong {
   display: block;
   margin-top: 48px;
   font-size: 32px;
   font-weight: 700;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+  -webkit-transition: -webkit-transform 0.5s ease 0.2s;
+  transition: -webkit-transform 0.5s ease 0.2s;
+  transition: transform 0.5s ease 0.2s;
+  transition: transform 0.5s ease 0.2s, -webkit-transform 0.5s ease 0.2s;
 }
-.col-debt2-1 a p {
+.col-debt2-1 .swiper-slide p {
   margin-top: 24px;
   font-size: 19px;
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+  -webkit-transition: -webkit-transform 0.5s ease 0.3s;
+  transition: -webkit-transform 0.5s ease 0.3s;
+  transition: transform 0.5s ease 0.3s;
+  transition: transform 0.5s ease 0.3s, -webkit-transform 0.5s ease 0.3s;
 }
-.col-debt2-1 a span {
-  margin-top: auto;
-  font-size: 19px;
-  opacity: 0.7;
+.col-debt2-1 .swiper-slide.swiper-slide-active em {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.col-debt2-1 .swiper-slide.swiper-slide-active strong {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.col-debt2-1 .swiper-slide.swiper-slide-active p {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .col-debt2-2 a {

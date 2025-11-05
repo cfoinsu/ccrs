@@ -2055,32 +2055,50 @@ body:has(.intro.show) {
   background: #FFE6C3;
 }
 
-.col-debt2-1 a {
-  display: flex;
-  flex-direction: column;
+.col-debt2-1 {
   height: 434px;
-  padding: 32px 36px;
-  background: url(/type/www/images/main/debt2-bg.svg);
-  em {
-    display: block;
-    font-size: 19px;
-    font-weight: 700;
+  background: url(/type/www/images/main/debt2-bg.png);
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    width: 436px;
+    padding: 32px 36px;
+
+    em {
+      display: block;
+      font-size: 19px;
+      font-weight: 700;
+      transform: translateX(-30px);
+      transition: transform 0.5s ease 0.1s;
+    }
+    strong {
+      display: block;
+      margin-top: 48px;
+      font-size: 32px;
+      font-weight: 700;
+      transform: translateX(-30px);
+      transition: transform 0.5s ease 0.2s;
+    }
+    p {
+      margin-top: 24px;
+      font-size: 19px;
+      transform: translateX(-30px);
+      transition: transform 0.5s ease 0.3s;
+    }
+
+    &.swiper-slide-active {
+      em {
+        transform: translateX(0);
+      }
+      strong {
+        transform: translateX(0);
+      }
+      p {
+        transform: translateX(0);
+      }
+    }
   }
-  strong {
-    display: block;
-    margin-top: 48px;
-    font-size: 32px;
-    font-weight: 700;
-  }
-  p {
-    margin-top: 24px;
-    font-size: 19px;
-  }
-  span {
-    margin-top: auto;
-    font-size: 19px;
-    opacity: 0.7;
-  }
+
 }
 
 .col-debt2-2 a {
