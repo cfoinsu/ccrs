@@ -2053,10 +2053,6 @@ fontsize-normal .font-bold {
     font-size: 2rem;
 }
 
-.modal-conts .g-wrap .g-conts-area .con-tit.bullet::before {
-    top: 10%;
-}
-
 .compare-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
