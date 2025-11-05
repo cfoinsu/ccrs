@@ -112,7 +112,7 @@
 
                             <div class="g-conts-area">
                                 <div class="g-wrap">
-                                    <div class="chairman-box">
+                                    <div class="chairman-box scroll-fadeup">
                                         <div class="g-img">
                                             <img src="/type/www/img/contents/png/ccrs_chairman.png?ver=2.5">
                                         </div>
@@ -226,6 +226,15 @@
     <script src="/type/www/js/script.js"></script> 
     공통 header 분리하기 위해 init.js 임시 추가  -->
 	<script src="includes/init.js?ver=2.5"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.querySelectorAll('.scroll-fadeup').forEach(function(el) {
+                el.classList.add('active');
+                });
+            }, 0);
+        });
+    </script>
 </body>
 
 </html>
