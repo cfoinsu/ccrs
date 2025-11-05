@@ -183,6 +183,13 @@
     position: absolute;
 }
 
+.main-banner.slidebox .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .banner-image {
     position: absolute;
     top: 0;
