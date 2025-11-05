@@ -2616,6 +2616,8 @@ body:has(.intro.show) {
 
 .col-debt3 {
   border-radius: 24px;
+  background: #FFE6C3;
+  padding: 36px 32px;
 }
 
 .grid-finance {
