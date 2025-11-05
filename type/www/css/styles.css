@@ -4325,10 +4325,12 @@ span.sub4InputLabel {
     z-index: 10;
 }
 
-
 .results-content-wrapper .graph-wrap .hover-box .graph-hover.left span {
     bottom: 18px;
     left: 4px;
+}
+.results-content-wrapper .graph-wrap.zoom .hover-box .graph-hover.left:hover span {
+    bottom: 18px;
 }
 
 .results-content-wrapper .graph-wrap .hover-box .graph-hover.center span {
@@ -4371,12 +4373,28 @@ span.sub4InputLabel {
 }
 
 .results-content-wrapper .graph-wrap .freeworkout .hover-box .graph-hover.center span {
-    bottom: 86px;
+    bottom: 96px;
     left: 50%;
 }
 
 .results-content-wrapper .graph-wrap .freeworkout .hover-box .graph-hover.right span {
     bottom: 126px;
+    left: auto;
+    right: 3px;
+    border-radius: 10px 10px 0 10px;
+}
+.results-content-wrapper .graph-wrap.zoom .freeworkout .hover-box .graph-hover.left span {
+    bottom: 56px;
+    left: 4px;
+}
+
+.results-content-wrapper .graph-wrap.zoom .freeworkout .hover-box .graph-hover.center span {
+    bottom: 113px;
+    left: 50%;
+}
+
+.results-content-wrapper .graph-wrap.zoom .freeworkout .hover-box .graph-hover.right span {
+    bottom: 158px;
     left: auto;
     right: 3px;
     border-radius: 10px 10px 0 10px;
