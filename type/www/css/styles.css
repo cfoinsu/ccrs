@@ -4348,7 +4348,10 @@ span.sub4InputLabel {
     display: block
 }
 .results-content-wrapper .graph-wrap.zoom .hover-box .graph-hover:hover span {
-    display: block
+    bottom: 83px;
+}
+.results-content-wrapper .graph-wrap.zoom .hover-box .graph-hover.right:hover span {
+    bottom: 132px;
 }
 
 .results-content-wrapper .graph-wrap .freeworkout .hover-box .graph-hover.left span {
