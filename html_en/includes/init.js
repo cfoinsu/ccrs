@@ -1,9 +1,12 @@
-// Header, Footer, AllMenu, Search 로딩 및 스크립트 초기화
+// Skip Nav, Header, Footer, AllMenu, Search 로딩 및 스크립트 초기화
 $(function() {
     // AOS 초기화
     if (typeof AOS !== 'undefined') {
         AOS.init();
     }
+
+    // Skip Navigation 로드
+    $('#skip-nav-container').load('includes/skip_nav_en.html');
 
     // Header 로드
     $('#header-container').load('includes/header_en.html', function() {
