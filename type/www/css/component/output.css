@@ -3206,7 +3206,7 @@ caption {
   content: "";
   background: url(../../img/icons/check_circle_bullet.svg) center no-repeat;
   background-size: 1.6rem;
-  top: 0.4rem;
+  top: 0.5rem;
   left: 0;
 }
 .roundcheck .krds-info-list.dash > li::before {
