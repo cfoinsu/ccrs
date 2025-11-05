@@ -1446,7 +1446,7 @@ section {
   /* width: 80vw; */
   height: auto;
   margin: 0 auto;
-  padding: 0 0 50px;
+  padding: 0 0 100px;
 }
 
 .card-scroll .title-box {
@@ -2494,6 +2494,14 @@ body:has(.intro.show) {
   overflow: hidden;
   border-radius: 24px;
 }
+.col-debt1 .debt-card img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.col-debt1 .debt-card:hover img {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
 .col-debt1 .debt-card__text {
   position: absolute;
   bottom: 80px;
@@ -2529,10 +2537,8 @@ body:has(.intro.show) {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(45.5%, rgba(0, 0, 0, 0)), to(#000));
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 45.5%, #000 100%);
   opacity: 0.8;
-}
-
-.sec-pluses {
-  background: #FFE6C3;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .col-debt2-1 {
@@ -2606,4 +2612,33 @@ body:has(.intro.show) {
 .col-debt2-2 a strong {
   font-size: 24px;
   color: #fff;
+}
+
+.col-debt3 {
+  border-radius: 24px;
+}
+
+.grid-finance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+.grid-finance .grid-col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 436px;
+}
+.grid-finance .grid-col2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }/*# sourceMappingURL=main.css.map */
