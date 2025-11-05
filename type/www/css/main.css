@@ -142,6 +142,19 @@
 }
 
 /* 메인 컨텐츠 */
+.grid-width {
+    display: flex;
+}
+.grid-width .grid-col1 {
+    max-width: 549px;
+}
+.grid-width .grid-col2 {
+    max-width: 436px;
+}
+.grid-width .grid-col3 {
+    max-width: 323px;
+}
+
 .main-section {
     display: flex;
     gap: 16px;
@@ -158,8 +171,6 @@
 }
 .main-banner.slidebox {
     flex: none;
-    width: 654px;
-    max-width: 100%;
     height: 100%;
     overflow: hidden;
 }
@@ -198,6 +209,11 @@
     height: 100%;
 }
 
+.main-banner.center .diagnosis-card-top a:hover .diagnosis-card-btn {
+    background: #F48F01;
+    transform: translateY(-10px);
+}
+
 .main-banner.center .diagnosis-card-top .diagnosis-card-btn {
     position: absolute;
     bottom: 0;
@@ -214,7 +230,7 @@
     align-self: flex-end;
     padding: 0;
     margin-top: auto;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     color: #fff;
 
 }
@@ -235,7 +251,7 @@
     display: block;
 }
 
-.main-banner.center .diagnosis-card-bottom {
+.main-banner.center .diagnosis-card-bottom a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -541,10 +557,18 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    background: #FFE6C3;
-    border-radius: 24px;
     padding: 26px 33px;
+    /* background: #FFE6C3; */
+    background: #e9e9e9;
+    border-radius: 24px;
     position: relative;
+    transition: all 0.3s;
+}
+.bottom-section .bottom-section-box:hover {
+    background: #FFE6C3;
+}
+.bottom-section .bottom-section-box:hover h2 {
+    color: #F48F01;
 }
 .bottom-section .bottom-section-box a {
     display: flex;
@@ -1252,9 +1276,11 @@ section {
     padding: 6px 22px;
     min-height: 100%;
     display: flex;
+    overflow: hidden;
 }
 .hoverline ul {
     width: 100%;
+    height: 277px;
 }
 .hoverline ul li {
     color:#fff;
@@ -1271,6 +1297,10 @@ section {
 .hoverline ul li:hover{
     height: 110px;
 }
+.hoverline ul:has(li:hover) li:not(:hover):not(.on) {
+    height: 80px;
+}
+
 .hoverline ul li + li {
     border-top: 1px solid rgba(255, 255, 255, 0.20);
 }
@@ -1907,4 +1937,10 @@ body:has(.intro.show) {
   width: 2rem;
   border-radius: var(--krds-radius-max);
   background-color: #1B2025;
+}
+
+
+/* 251105 디자인 수정 적용 */
+.section-header .main-tit {
+    font-size: 4rem;
 }

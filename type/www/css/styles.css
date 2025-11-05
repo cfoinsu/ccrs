@@ -3789,6 +3789,21 @@ fontsize-normal .font-bold {
     justify-content: space-evenly;
 }
 
+.g-wrap .g-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.g-wrap .g-flex .g-img {
+    width: 100%;
+}
+
+.g-wrap .g-flex .g-wrap { 
+    width: 100%;
+}
+
 /* bbs_write */
 .boardHead {
     padding: 0 5px 10px;
