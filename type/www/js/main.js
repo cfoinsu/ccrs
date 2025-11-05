@@ -82,7 +82,7 @@ function initSectionAnchorNavigation() {
  */
 function initIntroPopup() {
     $(".intro .close").click(function () {
-        $(this).parent().removeClass("show");
+        $(".intro").removeClass("show");
     });
 }
 

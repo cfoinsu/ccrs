@@ -246,4 +246,16 @@ ul.circle-30 li::before {position: absolute; content: ''; display: block; width:
 /* background */
 .bg-point {background: linear-gradient(180deg, rgba(243, 248, 239, 0) 50%, #F3F8EF 50%); width: fit-content;}
 
+.sr_only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
 
