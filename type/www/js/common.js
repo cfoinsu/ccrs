@@ -136,6 +136,12 @@ function initInstitutionCarousel() {
 //		$(this).find(".family-list").toggleClass("on");
 //	});
 //});
+//툴팁작업 클릭이벤트
+$(function () {
+	$(".clickon").click(function () {
+		$(this).next(".item-share").toggleClass("active");
+	});
+});
 //패밀리사이트 클릭이벤트
 $(function () {
 	$(".family-list").hide();

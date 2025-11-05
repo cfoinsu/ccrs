@@ -1800,8 +1800,8 @@ fontsize-normal .font-bold {
 }
 
 .feedback-card h3 {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 19px;
+    font-weight: 700;
     margin-bottom: 24px;
     color: #222;
 }
@@ -7278,15 +7278,6 @@ input[type=radio]:checked+label.fillter-chip {
     opacity: 1;
 }
 
-.g-img.bgact.spark:hover::after,
-.g-img.bgact.spark:focus::after {
-    animation: ripple-circle 0.8s ease-out;
-    width: 0;
-    height: 0;
-    transform: translate(-50%, -50%) scale(4);
-    opacity: 0;
-}
-
 @keyframes ripple-circle {
     0% {
         width: 0;
@@ -7305,6 +7296,35 @@ input[type=radio]:checked+label.fillter-chip {
         height: 100%;
         transform: translate(-50%, -50%) scale(4);
         opacity: 1;
+    }
+}
+.g-img.bgact.spark:hover::after,
+.g-img.bgact.spark:focus::after {
+    animation: ripple-circlezero 0.8s ease-out;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+}
+
+@keyframes ripple-circlezero {
+    0% {
+        width: 0;
+        height: 0;
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0.2;
+    }
+
+    80% {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0.8;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%) scale(4);
+        opacity: 0;
     }
 }
 
@@ -7696,6 +7716,7 @@ input[type=radio]:checked+label.fillter-chip {
     padding: 0;
     border: none;
     border-radius: 0;
+    position: relative;
 }
 
 .effect-box .boxc1 {
@@ -7770,7 +7791,9 @@ input[type=radio]:checked+label.fillter-chip {
     font-weight: 400;
     font-size: 1.5rem;
 }
-
+.effect-box .item-share {
+    top: 152px;
+}
 .keybox .key-text span {
     font-weight: 400;
     font-size: 1.3rem;
