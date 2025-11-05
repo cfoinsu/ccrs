@@ -236,15 +236,32 @@
 }
 
 .main-banner.center .diagnosis-card-bottom {
-    width: 436px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
     height: 147px;
+    padding: 25px 33px;
+    background: #444FA2;
+    border-radius: 24px;
+}
+.main-banner.center .diagnosis-card-bottom h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+.main-banner.center .diagnosis-card-bottom p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff;
 }
 
 .main-banner.center .diagnosis-card-bottom img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 24px;
+    position: absolute;
+    right: 12px;
+    width: 114px;
+    height: 114px;
 }
 .main-banner.last .topbox {
     width: 323px;
