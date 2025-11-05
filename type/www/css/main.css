@@ -268,11 +268,18 @@
     height: 289px;
 }
 .main-banner.last .bottombox {
+    position: relative;
     width: 323px;
     height: 248px;
 }
 .main-banner.last .bottombox .ban-txt {
+    display: none;
+}
+.main-banner.last .bottombox .swiper-pagination {
     position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: auto;
 }
 
 .main-banner.slidebox .swiper-pagination {
@@ -522,7 +529,6 @@
 }
 
 /* 하단 섹션 */
-
 .bottom-section {
     padding: 20px 0 0;
     display: flex;
@@ -532,11 +538,41 @@
 }
 
 .bottom-section .bottom-section-box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
     background: #FFE6C3;
     border-radius: 24px;
     padding: 26px 33px;
     position: relative;
 }
+.bottom-section .bottom-section-box a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    height: 100%;
+}
+.bottom-section .bottom-section-box h2 {
+    margin-top: 5px;
+    font-size: 19px;
+    font-weight: 700;
+}
+.bottom-section .bottom-section-box p {
+    font-size: 15px;
+    font-weight: 400;
+}
+.bottom-section .bottom-section-box i {
+    font-weight: 700;
+    font-size: 19px;
+    margin-left: auto;
+}
+.bottom-section .bottom-section-box .arrow-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
 .consulting-section {
     width: 549px;
     height: 120px;
