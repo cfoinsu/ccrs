@@ -1,899 +1,1465 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="format-detection" content="telephone=no, address=no, email=no"/>
-	<meta name="keywords" content="신용회복위원회"/>
-	<meta name="description" content="신용회복위원회"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title>CCRS</title>
-	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
-	<link rel="stylesheet" href="/type/www/css/bundle_en.css?ver=2.2">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <meta
+      name="keywords"
+      content="신용회복위원회"
+    />
+    <meta
+      name="description"
+      content="신용회복위원회"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>CCRS</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/type/www/images/favicon/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="/type/www/css/bundle_en.css?ver=2.2"
+    />
     <!-- <link rel="stylesheet" href="/type/www/css/webfonts.css?ver=2.2"> -->
-	
-	<script src="/type/www/js/jquery-2.2.4.min.js?ver=2.2"></script>
-	<!-- GSAP -->
-	<script src="/type/www/js/plugins/gsap.min.js?ver=2.2"></script>
-</head>
-<body class="en">
+
+    <script src="/type/www/js/jquery-2.2.4.min.js?ver=2.2"></script>
+    <!-- GSAP -->
+    <script src="/type/www/js/plugins/gsap.min.js?ver=2.2"></script>
+  </head>
+  <body class="en">
     <script src="/type/www/js/plugins/aos.js?ver=2.2"></script>
-	<script src="/type/www/js/common.js?ver=2.2"></script>
+    <script src="/type/www/js/common.js?ver=2.2"></script>
     <script src="/type/www/js/layout.js?ver=2.2"></script>
     <script src="/type/www/js/plugins/swiper.min.js?ver=2.2"></script>
-	<div id="skipNav">
-	    <a href="#contents">skip navigation</a>
-	</div>
-	<div id="container" class="main-en">
-		<!-- header:s -->
-		<header id="header" class="header header-en header-en-main">		
-			<div class="header-container">
-				<div class="gnb-wrap">
-					<a href="main_en.html" class="logo">
-						CCRS
-					</a>
-					<nav>
-						<ul class="gnb">
-							<li>
-								<a href="#" class="menu-label">
-									About CCRS
-								</a>
-								<ul class="depth2">
-										<li><a href="messagefromtheCEO.html">Message from the CEO</a></li>
-										<li><a href="missionandVision.html">Mission and Vision</a></li>
-										<li><a href="microCreditSupportAct.html">Micro Credit Support Act</a></li>
-										<li><a href="history.html">History</a></li>
-										<!-- <li><a href="whatWeDo.html">What We Do</a></li> -->
-										<li><a href="CI&Mascot.html">CI & Mascot</a></li>
-										<li><a href="organization.html">Organization</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#" class="menu-label">
-									Our Services
-								</a>
-								<ul class="depth2">
-									<li><a href="generalCounseling.html">Credit Counseling</a></li>
-									<li><a href="HouseholddebtreliefprogramsbytheCCRS.html">CCRS Debt Relief Programs</a></li>
-									
-									<li><a href="debtAdjustmentPrograms.html">Debt Adjustment Programs</a></li>
-									<li><a href="creditandWelfareCounseling.html">Credit and Welfare Counseling</a></li>
-									<li><a href="microCredit.html">Micro Credit</a></li>
-									<li><a href="crediteducation.html">Credit education</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#" class="menu-label">
-									Performance
-								</a>
-								<ul class="depth2">
-									<li><a href="performance.html">Performance</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#" class="menu-label">
-									Global Network
-								</a>
-								<ul class="depth2">
-									<li><a href="globalNetwork.html">Global Network</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#" class="menu-label">
-									Contact
-								</a>
-								<ul class="depth2">
-									<li><a href="headquarter.html">Headquarter</a></li>
-									<li><a href="regionalOffices.html">Regional Offices</a></li>
-								</ul>
-							</li>
-						</ul>
-					</nav>
-					<ul class="utils">
-						<li class="en"><a href="/html/main.html" class="language-change">
-							<span class="sr_only">Change Language</span>
-						</a></li>
-						<li class="hamburger-wrap">
-							<a href="#" id="hamburgerBtn" class="hamburger" title="전체메뉴 열기">
-								<span class="sr_only">전체메뉴</span>
-								<i class="fa-solid fa-bars"></i>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</header>
-		<!-- header:e -->
-		<div id="m-anchor">
-			<div></div>
-			<ul class="m-anchor-list">
-				<li class="firstpage on"><a href="#section1"><span class="hide">go to first Section</span></a></li>
-				<li class="secondpage"><a href="#section2"><span class="hide">go to second Section</span></a></li>
-				<li class="thirdpage"><a href="#section3"><span class="hide">go to third Section</span></a></li>
-				<li class="fourthpage"><a href="#section4"><span class="hide">go to fourth Section</span></a></li>
-			</ul>
-			<div><a href="javascript:void(0);" class="btn-scroll move-bottom">Scroll&nbsp;down</a></div>
-		</div>
-		<!-- main contents:s -->
-		<main class="main-content" id="main-content">
-			<!-- section1:s -->
-			<section class="section card-scroll" id="section1">
-				<div class="hero-swiper swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="hero-text" data-name="텍스트">
-								<div class="inner">
-									<strong class="hero-title">
-										<p class="hero-title-1">TOGETHER</p>
-										<p class="hero-title-2">Beyond Debt</p>
-									</strong>
-									<p class="hero-subtitle">
-										building lives, dreams, and communities that last.
-										</p>
-								</div>
-							</div>
-							<img src="/type/www/images/en/en_main_intro1.png?ver=2.2" alt="">
-						</div>
-						<div class="swiper-slide">
-							<div class="hero-text">
-								<strong class="hero-title">
-									<p class="hero-title-1">Your Partner</p>
-									<p class="hero-title-2">for Financial</p>
-									<p class="hero-title-3">Recovery</p>
-								</strong>
-								<p class="hero-subtitle">
-										Together, We build Hope Beyond Debt
-									</p>
-							</div>
-							<img src="/type/www/images/en/en_main_intro2.png?ver=2.2" alt="">
-						</div>
+    <div id="skip-nav-container"></div>
+    <div
+      id="container"
+      class="main-en"
+    >
+      <!-- header:s -->
+      <header
+        id="header"
+        class="header header-en header-en-main"
+      >
+        <div class="header-container">
+          <div class="gnb-wrap">
+            <a
+              href="main_en.html"
+              class="logo"
+            >
+              CCRS
+            </a>
+            <nav>
+              <ul class="gnb">
+                <li>
+                  <a
+                    href="#"
+                    class="menu-label"
+                  >
+                    About CCRS
+                  </a>
+                  <ul class="depth2">
+                    <li>
+                      <a href="messagefromtheCEO.html">Message from the CEO</a>
+                    </li>
+                    <li>
+                      <a href="missionandVision.html">Mission and Vision</a>
+                    </li>
+                    <li>
+                      <a href="microCreditSupportAct.html"
+                        >Micro Credit Support Act</a
+                      >
+                    </li>
+                    <li><a href="history.html">History</a></li>
+                    <!-- <li><a href="whatWeDo.html">What We Do</a></li> -->
+                    <li><a href="CI&Mascot.html">CI & Mascot</a></li>
+                    <li><a href="organization.html">Organization</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="menu-label"
+                  >
+                    Our Services
+                  </a>
+                  <ul class="depth2">
+                    <li>
+                      <a href="generalCounseling.html">Credit Counseling</a>
+                    </li>
+                    <li>
+                      <a href="HouseholddebtreliefprogramsbytheCCRS.html"
+                        >CCRS Debt Relief Programs</a
+                      >
+                    </li>
 
-						<!-- Pagination -->
-						<!-- <div class="swiper-pagination"></div> -->
+                    <li>
+                      <a href="debtAdjustmentPrograms.html"
+                        >Debt Adjustment Programs</a
+                      >
+                    </li>
+                    <li>
+                      <a href="creditandWelfareCounseling.html"
+                        >Credit and Welfare Counseling</a
+                      >
+                    </li>
+                    <li><a href="microCredit.html">Micro Credit</a></li>
+                    <li><a href="crediteducation.html">Credit education</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="menu-label"
+                  >
+                    Performance
+                  </a>
+                  <ul class="depth2">
+                    <li><a href="performance.html">Performance</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="menu-label"
+                  >
+                    Global Network
+                  </a>
+                  <ul class="depth2">
+                    <li><a href="globalNetwork.html">Global Network</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="menu-label"
+                  >
+                    Contact
+                  </a>
+                  <ul class="depth2">
+                    <li><a href="headquarter.html">Headquarter</a></li>
+                    <li><a href="regionalOffices.html">Regional Offices</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <ul class="utils">
+              <li class="en">
+                <a
+                  href="/html/main.html"
+                  class="language-change"
+                >
+                  <span class="sr_only">Change Language</span>
+                </a>
+              </li>
+              <li class="hamburger-wrap">
+                <a
+                  href="#"
+                  id="hamburgerBtn"
+                  class="hamburger"
+                  title="전체메뉴 열기"
+                >
+                  <span class="sr_only">전체메뉴</span>
+                  <i class="fa-solid fa-bars"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- header:e -->
+      <div id="m-anchor">
+        <div></div>
+        <ul class="m-anchor-list">
+          <li class="firstpage on">
+            <a href="#section1"
+              ><span class="hide">go to first Section</span></a
+            >
+          </li>
+          <li class="secondpage">
+            <a href="#section2"
+              ><span class="hide">go to second Section</span></a
+            >
+          </li>
+          <li class="thirdpage">
+            <a href="#section3"
+              ><span class="hide">go to third Section</span></a
+            >
+          </li>
+          <li class="fourthpage">
+            <a href="#section4"
+              ><span class="hide">go to fourth Section</span></a
+            >
+          </li>
+        </ul>
+        <div>
+          <a
+            href="javascript:void(0);"
+            class="btn-scroll move-bottom"
+            >Scroll&nbsp;down</a
+          >
+        </div>
+      </div>
+      <!-- main contents:s -->
+      <main
+        class="main-content"
+        id="main-content"
+      >
+        <!-- section1:s -->
+        <section
+          class="section card-scroll"
+          id="section1"
+        >
+          <div class="hero-swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="hero-text"
+                  data-name="텍스트"
+                >
+                  <div class="inner">
+                    <strong class="hero-title">
+                      <p class="hero-title-1">TOGETHER</p>
+                      <p class="hero-title-2">Beyond Debt</p>
+                    </strong>
+                    <p class="hero-subtitle">
+                      building lives, dreams, and communities that last.
+                    </p>
+                  </div>
+                </div>
+                <img
+                  src="/type/www/images/en/en_main_intro1.png?ver=2.2"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <div class="hero-text">
+                  <strong class="hero-title">
+                    <p class="hero-title-1">Your Partner</p>
+                    <p class="hero-title-2">for Financial</p>
+                    <p class="hero-title-3">Recovery</p>
+                  </strong>
+                  <p class="hero-subtitle">
+                    Together, We build Hope Beyond Debt
+                  </p>
+                </div>
+                <img
+                  src="/type/www/images/en/en_main_intro2.png?ver=2.2"
+                  alt=""
+                />
+              </div>
 
-						<!-- Navigation buttons -->
-						<!-- <div class="swiper-button-prev"></div>
+              <!-- Pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+
+              <!-- Navigation buttons -->
+              <!-- <div class="swiper-button-prev"></div>
 						<div class="swiper-button-next"></div> -->
-					</div>
-				</div>
-			</section>
-			<!-- section1:e -->
-			
-			<!-- section2:s -->
-			<section class="section card-scroll" id="section2">
-					<div class="inner">
-						<h2 class="section-title">Our Purpose</h2>
+            </div>
+          </div>
+        </section>
+        <!-- section1:e -->
 
-						<div class="accordion-container">
-							<!-- Accordion Item 1: MISSION -->
-							<div class="accordion-item active">
-								<button class="accordion-header">
-									<span class="accordion-number">01</span>
-									<span class="accordion-title">MISSION</span>
-									<span class="accordion-icon">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-											<path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-									</span>
-								</button>
-								<div class="accordion-cont">
-									<div class="accordion-body">
-										<div class="content-text">
-											<p>A “comprehensive credit counseling hub” 
-that supports debt relief as well as economic
-independence</p>
-											<a href="#" class="view-more-btn">View more</a>
-										</div>
-										<div class="content-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" width="204" height="204" viewBox="0 0 204 204" fill="none">
-  <path d="M92 168V127.142L63.1101 156.032L48.968 141.89L77.8589 113H37V93H77.8579L48.967 64.11L63.1089 49.968L91.999 78.858V38H111.999V78.859L140.89 49.968L155.032 64.11L126.141 93H167V113H126.143L155.034 141.89L140.892 156.032L112 127.142V168H92Z" fill="#CEB8A5"/>
-  <path d="M101 30C106.523 30 111 25.5228 111 20C111 14.4772 106.523 10 101 10C95.4772 10 91 14.4772 91 20C91 25.5228 95.4772 30 101 30Z" fill="#4D331C"/>
-  <path d="M101 196C106.523 196 111 191.523 111 186C111 180.477 106.523 176 101 176C95.4772 176 91 180.477 91 186C91 191.523 95.4772 196 101 196Z" fill="#4D331C"/>
-  <path d="M185 113C190.523 113 195 108.523 195 103C195 97.4772 190.523 93 185 93C179.477 93 175 97.4772 175 103C175 108.523 179.477 113 185 113Z" fill="#F5A12B"/>
-  <path d="M19 113C24.5228 113 29 108.523 29 103C29 97.4772 24.5228 93 19 93C13.4772 93 9 97.4772 9 103C9 108.523 13.4772 113 19 113Z" fill="#F5A12B"/>
-  <path d="M43 55C48.5228 55 53 50.5228 53 45C53 39.4772 48.5228 35 43 35C37.4772 35 33 39.4772 33 45C33 50.5228 37.4772 55 43 55Z" fill="white"/>
-  <path d="M43 171C48.5228 171 53 166.523 53 161C53 155.477 48.5228 151 43 151C37.4772 151 33 155.477 33 161C33 166.523 37.4772 171 43 171Z" fill="white"/>
-  <path d="M161 55C166.523 55 171 50.5228 171 45C171 39.4772 166.523 35 161 35C155.477 35 151 39.4772 151 45C151 50.5228 155.477 55 161 55Z" fill="white"/>
-  <path d="M161 171C166.523 171 171 166.523 171 161C171 155.477 166.523 151 161 151C155.477 151 151 155.477 151 161C151 166.523 155.477 171 161 171Z" fill="white"/>
-</svg>
-										</div>
-									</div>
-								</div>
-							</div>
+        <!-- section2:s -->
+        <section
+          class="section card-scroll"
+          id="section2"
+        >
+          <div class="inner">
+            <h2 class="section-title">Our Purpose</h2>
 
-							<!-- Accordion Item 2: VISION -->
-							<div class="accordion-item">
-								<button class="accordion-header">
-									<span class="accordion-number">02</span>
-									<span class="accordion-title">VISION</span>
-									<span class="accordion-icon">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-											<path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-									</span>
-								</button>
-								<div class="accordion-cont">
-									<div class="accordion-body">
-										<div class="content-text">
-											<p>A 'comprehensive credit counseling hub' that supports debt relief as well as economic independence</p>
-											<a href="#" class="view-more-btn">View more</a>
-										</div>
-										<div class="content-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" width="204" height="204" viewBox="0 0 204 204" fill="none">
-  <path d="M189 69H105V97H189V69Z" fill="white"/>
-  <path d="M147 105H63V133H147V105Z" fill="#CEB8A5"/>
-  <path d="M100 141H16V169H100V141Z" fill="#4D331C"/>
-  <path d="M174 65C182.284 65 189 58.2843 189 50C189 41.7157 182.284 35 174 35C165.716 35 159 41.7157 159 50C159 58.2843 165.716 65 174 65Z" fill="#F5A12B"/>
-</svg>
-										</div>
-									</div>
-								</div>
-							</div>
+            <div class="accordion-container">
+              <!-- Accordion Item 1: MISSION -->
+              <div class="accordion-item active">
+                <button class="accordion-header">
+                  <span class="accordion-number">01</span>
+                  <span class="accordion-title">MISSION</span>
+                  <span class="accordion-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 9L12 16L5 9"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion-cont">
+                  <div class="accordion-body">
+                    <div class="content-text">
+                      <p>
+                        A “comprehensive credit counseling hub” that supports
+                        debt relief as well as economic independence
+                      </p>
+                      <a
+                        href="#"
+                        class="view-more-btn"
+                        >View more</a
+                      >
+                    </div>
+                    <div class="content-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="204"
+                        height="204"
+                        viewBox="0 0 204 204"
+                        fill="none"
+                      >
+                        <path
+                          d="M92 168V127.142L63.1101 156.032L48.968 141.89L77.8589 113H37V93H77.8579L48.967 64.11L63.1089 49.968L91.999 78.858V38H111.999V78.859L140.89 49.968L155.032 64.11L126.141 93H167V113H126.143L155.034 141.89L140.892 156.032L112 127.142V168H92Z"
+                          fill="#CEB8A5"
+                        />
+                        <path
+                          d="M101 30C106.523 30 111 25.5228 111 20C111 14.4772 106.523 10 101 10C95.4772 10 91 14.4772 91 20C91 25.5228 95.4772 30 101 30Z"
+                          fill="#4D331C"
+                        />
+                        <path
+                          d="M101 196C106.523 196 111 191.523 111 186C111 180.477 106.523 176 101 176C95.4772 176 91 180.477 91 186C91 191.523 95.4772 196 101 196Z"
+                          fill="#4D331C"
+                        />
+                        <path
+                          d="M185 113C190.523 113 195 108.523 195 103C195 97.4772 190.523 93 185 93C179.477 93 175 97.4772 175 103C175 108.523 179.477 113 185 113Z"
+                          fill="#F5A12B"
+                        />
+                        <path
+                          d="M19 113C24.5228 113 29 108.523 29 103C29 97.4772 24.5228 93 19 93C13.4772 93 9 97.4772 9 103C9 108.523 13.4772 113 19 113Z"
+                          fill="#F5A12B"
+                        />
+                        <path
+                          d="M43 55C48.5228 55 53 50.5228 53 45C53 39.4772 48.5228 35 43 35C37.4772 35 33 39.4772 33 45C33 50.5228 37.4772 55 43 55Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M43 171C48.5228 171 53 166.523 53 161C53 155.477 48.5228 151 43 151C37.4772 151 33 155.477 33 161C33 166.523 37.4772 171 43 171Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M161 55C166.523 55 171 50.5228 171 45C171 39.4772 166.523 35 161 35C155.477 35 151 39.4772 151 45C151 50.5228 155.477 55 161 55Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M161 171C166.523 171 171 166.523 171 161C171 155.477 166.523 151 161 151C155.477 151 151 155.477 151 161C151 166.523 155.477 171 161 171Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-							<!-- Accordion Item 3: Spirit of Service -->
-							<div class="accordion-item">
-								<button class="accordion-header">
-									<span class="accordion-number">03</span>
-									<span class="accordion-title">Spirit of Service</span>
-									<span class="accordion-icon">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-											<path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-									</span>
-								</button>
-								<div class="accordion-cont">
-									<div class="accordion-body">
-										<div class="content-text">
-											<p>Dedicated to serving our clients with empathy, professionalism, and unwavering commitment</p>
-											<a href="#" class="view-more-btn">View more</a>
-										</div>
-										<div class="content-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" width="204" height="204" viewBox="0 0 204 204" fill="none">
-  <mask id="mask0_4334_70243" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="60" y="92" width="84" height="42">
-    <path d="M144 92H60V134H144V92Z" fill="white"/>
-  </mask>
-  <g mask="url(#mask0_4334_70243)">
-    <path d="M102 164C118.569 164 132 150.569 132 134C132 117.431 118.569 104 102 104C85.4315 104 72 117.431 72 134C72 150.569 85.4315 164 102 164Z" stroke="white" stroke-width="24"/>
-  </g>
-  <path d="M101 88C109.284 88 116 81.2843 116 73C116 64.7157 109.284 58 101 58C92.7157 58 86 64.7157 86 73C86 81.2843 92.7157 88 101 88Z" fill="white"/>
-  <g style="mix-blend-mode:multiply" opacity="0.3">
-    <mask id="mask1_4334_70243" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="120" y="92" width="84" height="42">
-      <path d="M204 92H120V134H204V92Z" fill="white"/>
-    </mask>
-    <g mask="url(#mask1_4334_70243)">
-      <path d="M162 164C178.569 164 192 150.569 192 134C192 117.431 178.569 104 162 104C145.431 104 132 117.431 132 134C132 150.569 145.431 164 162 164Z" stroke="#6B4B43" stroke-width="24"/>
-    </g>
-    <path d="M161 88C169.284 88 176 81.2843 176 73C176 64.7157 169.284 58 161 58C152.716 58 146 64.7157 146 73C146 81.2843 152.716 88 161 88Z" fill="#6B4B43"/>
-  </g>
-  <g opacity="0.8">
-    <mask id="mask2_4334_70243" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="92" width="84" height="42">
-      <path d="M84 92H0V134H84V92Z" fill="white"/>
-    </mask>
-    <g mask="url(#mask2_4334_70243)">
-      <path d="M42 164C58.5685 164 72 150.569 72 134C72 117.431 58.5685 104 42 104C25.4315 104 12 117.431 12 134C12 150.569 25.4315 164 42 164Z" stroke="#F48F01" stroke-width="24"/>
-    </g>
-    <path d="M41 88C49.2843 88 56 81.2843 56 73C56 64.7157 49.2843 58 41 58C32.7157 58 26 64.7157 26 73C26 81.2843 32.7157 88 41 88Z" fill="#F48F01"/>
-  </g>
-</svg>
-										</div>
-									</div>
-								</div>
-							</div>
+              <!-- Accordion Item 2: VISION -->
+              <div class="accordion-item">
+                <button class="accordion-header">
+                  <span class="accordion-number">02</span>
+                  <span class="accordion-title">VISION</span>
+                  <span class="accordion-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 9L12 16L5 9"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion-cont">
+                  <div class="accordion-body">
+                    <div class="content-text">
+                      <p>
+                        A 'comprehensive credit counseling hub' that supports
+                        debt relief as well as economic independence
+                      </p>
+                      <a
+                        href="#"
+                        class="view-more-btn"
+                        >View more</a
+                      >
+                    </div>
+                    <div class="content-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="204"
+                        height="204"
+                        viewBox="0 0 204 204"
+                        fill="none"
+                      >
+                        <path
+                          d="M189 69H105V97H189V69Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M147 105H63V133H147V105Z"
+                          fill="#CEB8A5"
+                        />
+                        <path
+                          d="M100 141H16V169H100V141Z"
+                          fill="#4D331C"
+                        />
+                        <path
+                          d="M174 65C182.284 65 189 58.2843 189 50C189 41.7157 182.284 35 174 35C165.716 35 159 41.7157 159 50C159 58.2843 165.716 65 174 65Z"
+                          fill="#F5A12B"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-							<!-- Accordion Item 4: Emphasis on Trust -->
-							<div class="accordion-item">
-								<button class="accordion-header">
-									<span class="accordion-number">04</span>
-									<span class="accordion-title">Emphasis on Trust</span>
-									<span class="accordion-icon">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-											<path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-									</span>
-								</button>
-								<div class="accordion-cont">
-									<div class="accordion-body">
-										<div class="content-text">
-											<p>Building lasting relationships through transparency, integrity, and trustworthy service delivery</p>
-											<a href="#" class="view-more-btn">View more</a>
-										</div>
-										<div class="content-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" width="204" height="204" viewBox="0 0 204 204" fill="none">
-  <path d="M103 116.853C111.284 116.853 118 110.137 118 101.853C118 93.5685 111.284 86.8528 103 86.8528C94.7157 86.8528 88 93.5685 88 101.853C88 110.137 94.7157 116.853 103 116.853Z" fill="#F5A12B"/>
-  <mask id="mask0_4334_70275" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="33" y="86" width="86" height="86">
-    <path d="M117.294 143.421L89.7164 170.998L33.855 115.137L61.4321 87.5595L117.294 143.421Z" fill="white" stroke="white"/>
-  </mask>
-  <g mask="url(#mask0_4334_70275)">
-    <path d="M89.3628 115.49C104.789 130.916 104.789 155.926 89.3628 171.352C73.9371 186.777 48.9271 186.777 33.5014 171.352C18.0757 155.926 18.0757 130.916 33.5014 115.49C48.9271 100.065 73.9371 100.065 89.3628 115.49Z" stroke="#4D331C"/>
-    <path d="M41.9867 162.866C52.7261 173.606 70.1381 173.606 80.8776 162.866C91.617 152.127 91.617 134.715 80.8776 123.975C70.1381 113.236 52.7261 113.236 41.9867 123.975C31.2473 134.715 31.2473 152.127 41.9867 162.866Z" stroke="#4D331C" stroke-width="25"/>
-  </g>
-  <mask id="mask1_4334_70275" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="87" y="32" width="86" height="85">
-    <path d="M87.9993 60.2842L144.568 116.853L172.852 88.5685L116.284 32L87.9993 60.2842Z" fill="white"/>
-  </mask>
-  <g mask="url(#mask1_4334_70275)">
-    <path d="M164.013 40.8389C153.274 30.0994 135.862 30.0994 125.122 40.8389C114.383 51.5783 114.383 68.9903 125.122 79.7297C135.862 90.4692 153.274 90.4692 164.013 79.7297C174.753 68.9903 174.753 51.5783 164.013 40.8389Z" stroke="white" stroke-width="25"/>
-  </g>
-  <mask id="mask2_4334_70275" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="88" y="86" width="85" height="86">
-    <path d="M116.284 171.705L172.853 115.137L144.569 86.8526L88.0002 143.421L116.284 171.705Z" fill="white"/>
-  </mask>
-  <g mask="url(#mask2_4334_70275)">
-    <path d="M125.123 123.976C114.384 134.715 114.384 152.127 125.123 162.867C135.863 173.606 153.275 173.606 164.014 162.867C174.753 152.127 174.753 134.715 164.014 123.976C153.275 113.236 135.863 113.236 125.123 123.976Z" stroke="#CEB8A5" stroke-width="25"/>
-  </g>
-  <mask id="mask3_4334_70275" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="32" y="32" width="85" height="85">
-    <path d="M88.5685 32.7073L116.146 60.2845L60.2843 116.146L32.7071 88.5687L88.5685 32.7073Z" fill="white" stroke="white"/>
-  </mask>
-  <g mask="url(#mask3_4334_70275)">
-    <path d="M32.3536 32.3537C47.7794 16.928 72.7894 16.928 88.2151 32.3537C103.641 47.7794 103.641 72.7894 88.2151 88.2151C72.7894 103.641 47.7794 103.641 32.3536 88.2151C16.9279 72.7894 16.9279 47.7794 32.3536 32.3537Z" stroke="#F5A12B"/>
-    <path d="M79.7299 79.7299C90.4693 68.9904 90.4693 51.5784 79.7299 40.839C68.9904 30.0996 51.5784 30.0996 40.839 40.839C30.0996 51.5784 30.0996 68.9904 40.839 79.7299C51.5784 90.4693 68.9904 90.4693 79.7299 79.7299Z" stroke="#F5A12B" stroke-width="25"/>
-  </g>
-</svg>
-										</div>
-									</div>
-								</div>
-							</div>
+              <!-- Accordion Item 3: Spirit of Service -->
+              <div class="accordion-item">
+                <button class="accordion-header">
+                  <span class="accordion-number">03</span>
+                  <span class="accordion-title">Spirit of Service</span>
+                  <span class="accordion-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 9L12 16L5 9"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion-cont">
+                  <div class="accordion-body">
+                    <div class="content-text">
+                      <p>
+                        Dedicated to serving our clients with empathy,
+                        professionalism, and unwavering commitment
+                      </p>
+                      <a
+                        href="#"
+                        class="view-more-btn"
+                        >View more</a
+                      >
+                    </div>
+                    <div class="content-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="204"
+                        height="204"
+                        viewBox="0 0 204 204"
+                        fill="none"
+                      >
+                        <mask
+                          id="mask0_4334_70243"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="60"
+                          y="92"
+                          width="84"
+                          height="42"
+                        >
+                          <path
+                            d="M144 92H60V134H144V92Z"
+                            fill="white"
+                          />
+                        </mask>
+                        <g mask="url(#mask0_4334_70243)">
+                          <path
+                            d="M102 164C118.569 164 132 150.569 132 134C132 117.431 118.569 104 102 104C85.4315 104 72 117.431 72 134C72 150.569 85.4315 164 102 164Z"
+                            stroke="white"
+                            stroke-width="24"
+                          />
+                        </g>
+                        <path
+                          d="M101 88C109.284 88 116 81.2843 116 73C116 64.7157 109.284 58 101 58C92.7157 58 86 64.7157 86 73C86 81.2843 92.7157 88 101 88Z"
+                          fill="white"
+                        />
+                        <g
+                          style="mix-blend-mode: multiply"
+                          opacity="0.3"
+                        >
+                          <mask
+                            id="mask1_4334_70243"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="120"
+                            y="92"
+                            width="84"
+                            height="42"
+                          >
+                            <path
+                              d="M204 92H120V134H204V92Z"
+                              fill="white"
+                            />
+                          </mask>
+                          <g mask="url(#mask1_4334_70243)">
+                            <path
+                              d="M162 164C178.569 164 192 150.569 192 134C192 117.431 178.569 104 162 104C145.431 104 132 117.431 132 134C132 150.569 145.431 164 162 164Z"
+                              stroke="#6B4B43"
+                              stroke-width="24"
+                            />
+                          </g>
+                          <path
+                            d="M161 88C169.284 88 176 81.2843 176 73C176 64.7157 169.284 58 161 58C152.716 58 146 64.7157 146 73C146 81.2843 152.716 88 161 88Z"
+                            fill="#6B4B43"
+                          />
+                        </g>
+                        <g opacity="0.8">
+                          <mask
+                            id="mask2_4334_70243"
+                            style="mask-type: luminance"
+                            maskUnits="userSpaceOnUse"
+                            x="0"
+                            y="92"
+                            width="84"
+                            height="42"
+                          >
+                            <path
+                              d="M84 92H0V134H84V92Z"
+                              fill="white"
+                            />
+                          </mask>
+                          <g mask="url(#mask2_4334_70243)">
+                            <path
+                              d="M42 164C58.5685 164 72 150.569 72 134C72 117.431 58.5685 104 42 104C25.4315 104 12 117.431 12 134C12 150.569 25.4315 164 42 164Z"
+                              stroke="#F48F01"
+                              stroke-width="24"
+                            />
+                          </g>
+                          <path
+                            d="M41 88C49.2843 88 56 81.2843 56 73C56 64.7157 49.2843 58 41 58C32.7157 58 26 64.7157 26 73C26 81.2843 32.7157 88 41 88Z"
+                            fill="#F48F01"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-							<!-- Accordion Item 5: Professional virtues -->
-							<div class="accordion-item">
-								<button class="accordion-header">
-									<span class="accordion-number">05</span>
-									<span class="accordion-title">Professional virtues</span>
-									<span class="accordion-icon">
-										<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-											<path d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-										</svg>
-									</span>
-								</button>
-								<div class="accordion-cont">
-									<div class="accordion-body">
-										<div class="content-text">
-											<p>Upholding the highest standards of professional excellence and ethical conduct in all our operations</p>
-											<a href="#" class="view-more-btn">View more</a>
-										</div>
-										<div class="content-icon">
-											<svg xmlns="http://www.w3.org/2000/svg" width="204" height="204" viewBox="0 0 204 204" fill="none">
-  <path d="M98 117C107.941 117 116 108.941 116 99C116 89.0589 107.941 81 98 81C88.0589 81 80 89.0589 80 99C80 108.941 88.0589 117 98 117Z" stroke="#4D331C" stroke-width="16"/>
-  <path d="M98 171C107.941 171 116 162.941 116 153C116 143.059 107.941 135 98 135C88.0589 135 80 143.059 80 153C80 162.941 88.0589 171 98 171Z" stroke="#CEB8A5" stroke-width="16"/>
-  <path d="M44 171C53.9411 171 62 162.941 62 153C62 143.059 53.9411 135 44 135C34.0589 135 26 143.059 26 153C26 162.941 34.0589 171 44 171Z" stroke="#F5A12B" stroke-width="16"/>
-  <path d="M152 117C161.941 117 170 108.941 170 99C170 89.0589 161.941 81 152 81C142.059 81 134 89.0589 134 99C134 108.941 142.059 117 152 117Z" stroke="white" stroke-width="16"/>
-  <path d="M152 171C161.941 171 170 162.941 170 153C170 143.059 161.941 135 152 135C142.059 135 134 143.059 134 153C134 162.941 142.059 171 152 171Z" stroke="white" stroke-width="16"/>
-  <path d="M152 63C161.941 63 170 54.9411 170 45C170 35.0589 161.941 27 152 27C142.059 27 134 35.0589 134 45C134 54.9411 142.059 63 152 63Z" stroke="#F5A12B" stroke-width="16"/>
-</svg>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-				</div>
-			</section>
-			<!-- section2:e -->
-			
-			<!-- section3:s -->
-			<section class="section card-scroll" id="section3">
-				<div class="inner">
-						<h2 class="section-title white">Our Work</h2>
-						<img src="/type/www/images/en/en_main_work_img.svg" alt="Our Work">
-				</div>
-			</section>
-			<!-- section3:e -->
-			<!-- section4:s -->
-			<section class="section card-scroll" id="section4">
-				<div class="inner">
-						<h2 class="section-title">Contact Us</h2>
-						<div class="contact-container">
-							<div class="contact-item">
-								<!-- Address Section -->
-								<div class="contact-info-group">
-									<div class="contact-info-content">
-										<h3 class="contact-info-label">Address</h3>
-										<p class="contact-info-text">3F, 6-8F, Korea Press Center, 124, Sejong-daero,<br>Jung-gu, Seoul (Zip Code : 04520)</p>
-									</div>
-								</div>
+              <!-- Accordion Item 4: Emphasis on Trust -->
+              <div class="accordion-item">
+                <button class="accordion-header">
+                  <span class="accordion-number">04</span>
+                  <span class="accordion-title">Emphasis on Trust</span>
+                  <span class="accordion-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 9L12 16L5 9"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion-cont">
+                  <div class="accordion-body">
+                    <div class="content-text">
+                      <p>
+                        Building lasting relationships through transparency,
+                        integrity, and trustworthy service delivery
+                      </p>
+                      <a
+                        href="#"
+                        class="view-more-btn"
+                        >View more</a
+                      >
+                    </div>
+                    <div class="content-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="204"
+                        height="204"
+                        viewBox="0 0 204 204"
+                        fill="none"
+                      >
+                        <path
+                          d="M103 116.853C111.284 116.853 118 110.137 118 101.853C118 93.5685 111.284 86.8528 103 86.8528C94.7157 86.8528 88 93.5685 88 101.853C88 110.137 94.7157 116.853 103 116.853Z"
+                          fill="#F5A12B"
+                        />
+                        <mask
+                          id="mask0_4334_70275"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="33"
+                          y="86"
+                          width="86"
+                          height="86"
+                        >
+                          <path
+                            d="M117.294 143.421L89.7164 170.998L33.855 115.137L61.4321 87.5595L117.294 143.421Z"
+                            fill="white"
+                            stroke="white"
+                          />
+                        </mask>
+                        <g mask="url(#mask0_4334_70275)">
+                          <path
+                            d="M89.3628 115.49C104.789 130.916 104.789 155.926 89.3628 171.352C73.9371 186.777 48.9271 186.777 33.5014 171.352C18.0757 155.926 18.0757 130.916 33.5014 115.49C48.9271 100.065 73.9371 100.065 89.3628 115.49Z"
+                            stroke="#4D331C"
+                          />
+                          <path
+                            d="M41.9867 162.866C52.7261 173.606 70.1381 173.606 80.8776 162.866C91.617 152.127 91.617 134.715 80.8776 123.975C70.1381 113.236 52.7261 113.236 41.9867 123.975C31.2473 134.715 31.2473 152.127 41.9867 162.866Z"
+                            stroke="#4D331C"
+                            stroke-width="25"
+                          />
+                        </g>
+                        <mask
+                          id="mask1_4334_70275"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="87"
+                          y="32"
+                          width="86"
+                          height="85"
+                        >
+                          <path
+                            d="M87.9993 60.2842L144.568 116.853L172.852 88.5685L116.284 32L87.9993 60.2842Z"
+                            fill="white"
+                          />
+                        </mask>
+                        <g mask="url(#mask1_4334_70275)">
+                          <path
+                            d="M164.013 40.8389C153.274 30.0994 135.862 30.0994 125.122 40.8389C114.383 51.5783 114.383 68.9903 125.122 79.7297C135.862 90.4692 153.274 90.4692 164.013 79.7297C174.753 68.9903 174.753 51.5783 164.013 40.8389Z"
+                            stroke="white"
+                            stroke-width="25"
+                          />
+                        </g>
+                        <mask
+                          id="mask2_4334_70275"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="88"
+                          y="86"
+                          width="85"
+                          height="86"
+                        >
+                          <path
+                            d="M116.284 171.705L172.853 115.137L144.569 86.8526L88.0002 143.421L116.284 171.705Z"
+                            fill="white"
+                          />
+                        </mask>
+                        <g mask="url(#mask2_4334_70275)">
+                          <path
+                            d="M125.123 123.976C114.384 134.715 114.384 152.127 125.123 162.867C135.863 173.606 153.275 173.606 164.014 162.867C174.753 152.127 174.753 134.715 164.014 123.976C153.275 113.236 135.863 113.236 125.123 123.976Z"
+                            stroke="#CEB8A5"
+                            stroke-width="25"
+                          />
+                        </g>
+                        <mask
+                          id="mask3_4334_70275"
+                          style="mask-type: luminance"
+                          maskUnits="userSpaceOnUse"
+                          x="32"
+                          y="32"
+                          width="85"
+                          height="85"
+                        >
+                          <path
+                            d="M88.5685 32.7073L116.146 60.2845L60.2843 116.146L32.7071 88.5687L88.5685 32.7073Z"
+                            fill="white"
+                            stroke="white"
+                          />
+                        </mask>
+                        <g mask="url(#mask3_4334_70275)">
+                          <path
+                            d="M32.3536 32.3537C47.7794 16.928 72.7894 16.928 88.2151 32.3537C103.641 47.7794 103.641 72.7894 88.2151 88.2151C72.7894 103.641 47.7794 103.641 32.3536 88.2151C16.9279 72.7894 16.9279 47.7794 32.3536 32.3537Z"
+                            stroke="#F5A12B"
+                          />
+                          <path
+                            d="M79.7299 79.7299C90.4693 68.9904 90.4693 51.5784 79.7299 40.839C68.9904 30.0996 51.5784 30.0996 40.839 40.839C30.0996 51.5784 30.0996 68.9904 40.839 79.7299C51.5784 90.4693 68.9904 90.4693 79.7299 79.7299Z"
+                            stroke="#F5A12B"
+                            stroke-width="25"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-								<!-- Tel Section -->
-								<div class="contact-info-group">
-									<div class="contact-info-content">
-										<h3 class="contact-info-label">Tel</h3>
-										<p class="contact-info-text">+82-2-6337-2000</p>
-									</div>
-								</div>
+              <!-- Accordion Item 5: Professional virtues -->
+              <div class="accordion-item">
+                <button class="accordion-header">
+                  <span class="accordion-number">05</span>
+                  <span class="accordion-title">Professional virtues</span>
+                  <span class="accordion-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M19 9L12 16L5 9"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+                <div class="accordion-cont">
+                  <div class="accordion-body">
+                    <div class="content-text">
+                      <p>
+                        Upholding the highest standards of professional
+                        excellence and ethical conduct in all our operations
+                      </p>
+                      <a
+                        href="#"
+                        class="view-more-btn"
+                        >View more</a
+                      >
+                    </div>
+                    <div class="content-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="204"
+                        height="204"
+                        viewBox="0 0 204 204"
+                        fill="none"
+                      >
+                        <path
+                          d="M98 117C107.941 117 116 108.941 116 99C116 89.0589 107.941 81 98 81C88.0589 81 80 89.0589 80 99C80 108.941 88.0589 117 98 117Z"
+                          stroke="#4D331C"
+                          stroke-width="16"
+                        />
+                        <path
+                          d="M98 171C107.941 171 116 162.941 116 153C116 143.059 107.941 135 98 135C88.0589 135 80 143.059 80 153C80 162.941 88.0589 171 98 171Z"
+                          stroke="#CEB8A5"
+                          stroke-width="16"
+                        />
+                        <path
+                          d="M44 171C53.9411 171 62 162.941 62 153C62 143.059 53.9411 135 44 135C34.0589 135 26 143.059 26 153C26 162.941 34.0589 171 44 171Z"
+                          stroke="#F5A12B"
+                          stroke-width="16"
+                        />
+                        <path
+                          d="M152 117C161.941 117 170 108.941 170 99C170 89.0589 161.941 81 152 81C142.059 81 134 89.0589 134 99C134 108.941 142.059 117 152 117Z"
+                          stroke="white"
+                          stroke-width="16"
+                        />
+                        <path
+                          d="M152 171C161.941 171 170 162.941 170 153C170 143.059 161.941 135 152 135C142.059 135 134 143.059 134 153C134 162.941 142.059 171 152 171Z"
+                          stroke="white"
+                          stroke-width="16"
+                        />
+                        <path
+                          d="M152 63C161.941 63 170 54.9411 170 45C170 35.0589 161.941 27 152 27C142.059 27 134 35.0589 134 45C134 54.9411 142.059 63 152 63Z"
+                          stroke="#F5A12B"
+                          stroke-width="16"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section2:e -->
 
-								<!-- E-Mail Section -->
-								<div class="contact-info-group">
-									<div class="contact-info-content">
-										<h3 class="contact-info-label">E-Mail</h3>
-										<p class="contact-info-text">cyber@ccrs.or.kr</p>
-									</div>
-								</div>
+        <!-- section3:s -->
+        <section
+          class="section card-scroll"
+          id="section3"
+        >
+          <div class="inner">
+            <h2 class="section-title white">Our Work</h2>
+            <img
+              src="/type/www/images/en/en_main_work_img.svg"
+              alt="Our Work"
+            />
+          </div>
+        </section>
+        <!-- section3:e -->
+        <!-- section4:s -->
+        <section
+          class="section card-scroll"
+          id="section4"
+        >
+          <div class="inner">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+              <div class="contact-item">
+                <!-- Address Section -->
+                <div class="contact-info-group">
+                  <div class="contact-info-content">
+                    <h3 class="contact-info-label">Address</h3>
+                    <p class="contact-info-text">
+                      3F, 6-8F, Korea Press Center, 124, Sejong-daero,<br />Jung-gu,
+                      Seoul (Zip Code : 04520)
+                    </p>
+                  </div>
+                </div>
 
-								<!-- Directions Section -->
-								<div class="contact-info-group">
-									<div class="contact-info-content">
-										<h3 class="contact-info-label">Directions</h3>
-										<div class="contact-directions-buttons">
-											<a href="headquarter.html" class="contact-direction-btn">
-												<span class="btn-text">Headquarter</span>
-												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="btn-icon">
-													<path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-												</svg>
-											</a>
-											<a href="regionalOffices.html" class="contact-direction-btn">
-												<span class="btn-text">Regional Offices</span>
-												<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="btn-icon">
-													<path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-												</svg>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="contact-map">
-								<img src="/type/www/images/en/en_main_map.png?ver=2.2" alt="Map">
-							</div>
-						</div>
-				</div>
-			</section>
-			<!-- section4:e -->		
-		</main>
-		<!-- main contents:e -->
-		
-		<!-- Footer:s -->
-		<footer class="footer footer-en">
-			<div class="footer-container">
-				<!-- Logo -->
-				<div class="footer-logo">
-					<img src="/type/www/img/logo/ccrs_logo_eng_dark.svg" alt="CCRS Logo">
-				</div>
+                <!-- Tel Section -->
+                <div class="contact-info-group">
+                  <div class="contact-info-content">
+                    <h3 class="contact-info-label">Tel</h3>
+                    <p class="contact-info-text">+82-2-6337-2000</p>
+                  </div>
+                </div>
 
-				<!-- Footer Info -->
-				<div class="footer-info">
-					<!-- Address -->
-					 <address>
-						<div class="footer-info-item">
-							<span class="footer-info-label">Address</span>
-							<span class="footer-info-text">6th floor, Korea Press Center, 124 Sejong-daero, Jung-gu, Seoul (Zip code: 04520), South Korea</span>
-						</div>
+                <!-- E-Mail Section -->
+                <div class="contact-info-group">
+                  <div class="contact-info-content">
+                    <h3 class="contact-info-label">E-Mail</h3>
+                    <p class="contact-info-text">cyber@ccrs.or.kr</p>
+                  </div>
+                </div>
 
-						<!-- Tel -->
-						<div class="footer-info-item">
-							<span class="footer-info-label">Tel</span>
-							<span class="footer-info-text">+82-2-6337-2000</span>
-						</div>						
-					 </address>
+                <!-- Directions Section -->
+                <div class="contact-info-group">
+                  <div class="contact-info-content">
+                    <h3 class="contact-info-label">Directions</h3>
+                    <div class="contact-directions-buttons">
+                      <a
+                        href="headquarter.html"
+                        class="contact-direction-btn"
+                      >
+                        <span class="btn-text">Headquarter</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          class="btn-icon"
+                        >
+                          <path
+                            d="M7.5 15L12.5 10L7.5 5"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href="regionalOffices.html"
+                        class="contact-direction-btn"
+                      >
+                        <span class="btn-text">Regional Offices</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          class="btn-icon"
+                        >
+                          <path
+                            d="M7.5 15L12.5 10L7.5 5"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-map">
+                <img
+                  src="/type/www/images/en/en_main_map.png?ver=2.2"
+                  alt="Map"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section4:e -->
+      </main>
+      <!-- main contents:e -->
 
-					<!-- Copyright -->
-					<div class="footer-copyright">
-						<p>© Credit Counseling and Recovery Service. All Rights Reserved.</p>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- Footer:e -->
-	</div>
-	
-	<div class="all-menu" id="allMenuTag">
-		<nav>
-			<ul class="all-menu-list">
-				<li>
-					<a href="#" class="depth1">채무조정</a>
-					<ul class="depth2">
-						<li class="depth3"><a href="#">채무조정 길잡이</a></li>
-						<li class="depth3"><a href="#">나에게 맞는 채무조정 찾기</a></li>
-						<li class="depth3"><a href="#">맞춤형 채무조정제도</a></li>
-						<li class="depth3"><a href="#">개인회생·파산 제도</a></li>
-						<li class="depth3"><a href="#">금융회사 채무조정</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#" class="depth1">
-						맞춤 상환
-					</a>
-					<ul class="depth2">
-						<li class="depth3"><a href="#">소액금융</a></li>
-						<li class="depth3"><a href="#">성실상환 혜택</a></li>
-						<li class="depth3"><a href="#">실효위기 지원</a></li>
-						<li class="depth3"><a href="#">상환 단계별 안내</a></li>
-									<li class="depth3"><a href="#">나의 진행현황</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#" class="depth1">
-						금융생활
-					</a>
-					<ul class="depth2">
-						<li class="depth3"><a href="#">금융·고용·복지 복합지원</a></li>
-						<li class="depth3"><a href="#">컨설팅 지원</a></li>
-						<li class="depth3"><a href="#">신용교육</a></li>
-						<li class="depth3"><a href="#">신용상담사 자격시험</a></li>
-						<li class="depth3"><a href="#">불법사금융 알아보기</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#" class="depth1">
-						알림과 홍보
-					</a>
-					<ul class="depth2">
-						<li class="depth3"><a href="#">새소식</a></li>
-						<li class="depth3"><a href="#">인재채용</a></li>
-						<li class="depth3"><a href="#">공고</a></li>
-						<li class="depth3"><a href="#">홍보활동</a></li>
-						<li class="depth3"><a href="#">사회공헌</a></li>
-						<li class="depth3"><a href="#">자료실</a></li>
-						<li class="depth3"><a href="#">결산현황</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#" class="depth1">
-						소통과 참여
-					</a>
-					<ul class="depth2">
-						<li class="depth3"><a href="#">자주묻는 질문(FAQ)</a></li>
-						<li class="depth3"><a href="#">열린참여공간</a></li>
-						<li class="depth3"><a href="#">군복무자 전용 질의응답</a></li>
-						<li class="depth3"><a href="이용수기.html">이용 수기</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#" class="depth1">
-						위원회 소개
-					</a>
-					<ul class="depth2">
-						<li class="depth3"><a href="#">위원장 인사말</a></li>
-						<li class="depth3"><a href="#">기관소개</a></li>
-						<li class="depth3"><a href="#">사회적 가치</a></li>
-						<li class="depth3"><a href="#">청렴경영</a></li>
-						
-						<li class="depth3"><a href="#">지부위치 안내</a></li>
-					</ul>
-				</li>
-			</ul>
-			<div class="allmenu-util">
-				<a href="#" class="util1 hamburger-wrap">
-					<img src="/type/www/img/icons/ico_close.svg" alt="전체메뉴 닫기">
-				</a>
-				<a href="#" class="util2 search-open">
-					<img src="/type/www/img/icons/ico_sch.svg" alt="검색메뉴">
-				</a>
-				<a href="#" class="util3">
-					<img src="/type/www/img/icons/globe.svg" alt="언어변경">
-				</a>
-			</div>
-		</nav>
-	</div>
-	<div class="search-menu" id="searchTag">
-		<h5>통합검색</h5>
-		<div class="search-area-header">
-				<label for="searchText" class="hide">검색</label>
-				<input type="text" name="commonSearchText" id="searchText" placeholder="검색어를 입력하세요" onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요'">
-				<a class="btn-search-header" onclick="javascript:fn_commonSearch(1);"></a>
-		</div>
-		<div class="result-title">
-			<h5>검색결과</h5><span id="common_total_cnt" class="sp">0</span><h5> 건</h5>
-		</div>
-		<a href="#" class="btn-close">
-			<img src="/type/www/img/icons/ico_close.svg" alt="검색메뉴 닫기">
-		</a>
-		<div class="result-area">
-			<div id="commonSearchItemDiv" class="list-body" style="margin-bottom: 24px;">
-				
-			</div>
-			<div id="commonSearchPagenationDiv" class="pagenation">
-				
-			</div>
-		</div>
-	</div>
-	<script type="text/javascript">
-		//페이지(section) 앵커 스크롤 이벤트
-		$(window).scroll(function () {
-		if ($(this).scrollTop() >= $("#section4").offset().top-100) {
-			$(".m-anchor-list>li").removeClass("on");
-			$(".fourthpage").addClass("on");
-		} 
-		else if ((($(this).scrollTop()) >= ($("#section3").offset().top)) && (($(this).scrollTop()) < ($("#section4").offset().top-100))) {
-			$(".m-anchor-list>li").removeClass("on");
-			$(".thirdpage").addClass("on");
-		} 
-		else if ((($(this).scrollTop()) >= ($("#section2").offset().top)) && (($(this).scrollTop()) < ($("#section3").offset().top-100))) {
-			$(".m-anchor-list>li").removeClass("on");
-			$(".secondpage").addClass("on");
-		} 
-		else if ($(this).scrollTop() < $("#section2").offset().top) {
-			$(".m-anchor-list>li").removeClass("on");
-			$(".firstpage").addClass("on");
-		}
-		else {
-			return false;
-		}
-		});
+      <!-- Footer:s -->
+      <footer class="footer footer-en">
+        <div class="footer-container">
+          <!-- Logo -->
+          <div class="footer-logo">
+            <img
+              src="/type/www/img/logo/ccrs_logo_eng_dark.svg"
+              alt="CCRS Logo"
+            />
+          </div>
 
-		$('.btn-scroll').click(function(e) {
-			e.preventDefault();
-			
-			// 현재 스크롤 위치 기준으로 현재 섹션 확인
-			let currentSection;
-			let scrollTop = $(window).scrollTop();
-			
-			if (scrollTop >= $("#section4").offset().top-1) {
-				currentSection = 4;
-			} 
-			else if (scrollTop >= $("#section3").offset().top-1) {
-				currentSection = 3;
-			}
-			else if (scrollTop >= $("#section2").offset().top-1) {
-				currentSection = 2;
-			}
-			else {
-				currentSection = 1;
-			}
-			
-			// 다음 섹션으로 스크롤
-			let nextSection = currentSection + 1;
-			if (nextSection > 4) nextSection = 1; // 마지막 섹션이면 첫 섹션으로
-			
-			// 스무스 스크롤 애니메이션
-			$('html, body').animate({
-				scrollTop: $("#section" + nextSection).offset().top
-			}, 800, 'swing');
-		});
+          <!-- Footer Info -->
+          <div class="footer-info">
+            <!-- Address -->
+            <address>
+              <div class="footer-info-item">
+                <span class="footer-info-label">Address</span>
+                <span class="footer-info-text"
+                  >6th floor, Korea Press Center, 124 Sejong-daero, Jung-gu,
+                  Seoul (Zip code: 04520), South Korea</span
+                >
+              </div>
 
-		// 히어로 텍스트 초기 상태로 리셋하는 함수
-		function resetHeroText(slide) {
-			const $slide = $(slide);
-			const $title1 = $slide.find('.hero-title-1');
-			const $title2 = $slide.find('.hero-title-2');
-			const $title3 = $slide.find('.hero-title-3');
-			const $subtitle = $slide.find('.hero-subtitle');
+              <!-- Tel -->
+              <div class="footer-info-item">
+                <span class="footer-info-label">Tel</span>
+                <span class="footer-info-text">+82-2-6337-2000</span>
+              </div>
+            </address>
 
-			// 즉시 초기 상태로 설정
-			if ($title1.length) {
-				gsap.set($title1[0], { opacity: 0, x: 100 });
-			}
-			if ($title2.length) {
-				gsap.set($title2[0], { opacity: 0, x: -100 });
-			}
-			if ($title3.length) {
-				gsap.set($title3[0], { opacity: 0, x: 100 });
-			}
-			if ($subtitle.length) {
-				gsap.set($subtitle[0], { opacity: 0, y: 50 });
-			}
-		}
+            <!-- Copyright -->
+            <div class="footer-copyright">
+              <p>
+                © Credit Counseling and Recovery Service. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer:e -->
+    </div>
 
-		// GSAP Hero Text Animation Function
-		function animateHeroText(slide) {
-			const $slide = $(slide);
-			const $title1 = $slide.find('.hero-title-1');
-			const $title2 = $slide.find('.hero-title-2');
-			const $title3 = $slide.find('.hero-title-3');
-			const $subtitle = $slide.find('.hero-subtitle');
+    <div
+      class="all-menu"
+      id="allMenuTag"
+    >
+      <nav>
+        <ul class="all-menu-list">
+          <li>
+            <a
+              href="#"
+              class="depth1"
+              >채무조정</a
+            >
+            <ul class="depth2">
+              <li class="depth3"><a href="#">채무조정 길잡이</a></li>
+              <li class="depth3"><a href="#">나에게 맞는 채무조정 찾기</a></li>
+              <li class="depth3"><a href="#">맞춤형 채무조정제도</a></li>
+              <li class="depth3"><a href="#">개인회생·파산 제도</a></li>
+              <li class="depth3"><a href="#">금융회사 채무조정</a></li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="depth1"
+            >
+              맞춤 상환
+            </a>
+            <ul class="depth2">
+              <li class="depth3"><a href="#">소액금융</a></li>
+              <li class="depth3"><a href="#">성실상환 혜택</a></li>
+              <li class="depth3"><a href="#">실효위기 지원</a></li>
+              <li class="depth3"><a href="#">상환 단계별 안내</a></li>
+              <li class="depth3"><a href="#">나의 진행현황</a></li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="depth1"
+            >
+              금융생활
+            </a>
+            <ul class="depth2">
+              <li class="depth3"><a href="#">금융·고용·복지 복합지원</a></li>
+              <li class="depth3"><a href="#">컨설팅 지원</a></li>
+              <li class="depth3"><a href="#">신용교육</a></li>
+              <li class="depth3"><a href="#">신용상담사 자격시험</a></li>
+              <li class="depth3"><a href="#">불법사금융 알아보기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="depth1"
+            >
+              알림과 홍보
+            </a>
+            <ul class="depth2">
+              <li class="depth3"><a href="#">새소식</a></li>
+              <li class="depth3"><a href="#">인재채용</a></li>
+              <li class="depth3"><a href="#">공고</a></li>
+              <li class="depth3"><a href="#">홍보활동</a></li>
+              <li class="depth3"><a href="#">사회공헌</a></li>
+              <li class="depth3"><a href="#">자료실</a></li>
+              <li class="depth3"><a href="#">결산현황</a></li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="depth1"
+            >
+              소통과 참여
+            </a>
+            <ul class="depth2">
+              <li class="depth3"><a href="#">자주묻는 질문(FAQ)</a></li>
+              <li class="depth3"><a href="#">열린참여공간</a></li>
+              <li class="depth3"><a href="#">군복무자 전용 질의응답</a></li>
+              <li class="depth3"><a href="이용수기.html">이용 수기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="depth1"
+            >
+              위원회 소개
+            </a>
+            <ul class="depth2">
+              <li class="depth3"><a href="#">위원장 인사말</a></li>
+              <li class="depth3"><a href="#">기관소개</a></li>
+              <li class="depth3"><a href="#">사회적 가치</a></li>
+              <li class="depth3"><a href="#">청렴경영</a></li>
 
-			// 요소가 없으면 리턴
-			if (!$title1.length && !$title2.length && !$title3.length && !$subtitle.length) {
-				return;
-			}
+              <li class="depth3"><a href="#">지부위치 안내</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="allmenu-util">
+          <a
+            href="#"
+            class="util1 hamburger-wrap"
+          >
+            <img
+              src="/type/www/img/icons/ico_close.svg"
+              alt="전체메뉴 닫기"
+            />
+          </a>
+          <a
+            href="#"
+            class="util2 search-open"
+          >
+            <img
+              src="/type/www/img/icons/ico_sch.svg"
+              alt="검색메뉴"
+            />
+          </a>
+          <a
+            href="#"
+            class="util3"
+          >
+            <img
+              src="/type/www/img/icons/globe.svg"
+              alt="언어변경"
+            />
+          </a>
+        </div>
+      </nav>
+    </div>
+    <div
+      class="search-menu"
+      id="searchTag"
+    >
+      <h5>통합검색</h5>
+      <div class="search-area-header">
+        <label
+          for="searchText"
+          class="hide"
+          >검색</label
+        >
+        <input
+          type="text"
+          name="commonSearchText"
+          id="searchText"
+          placeholder="검색어를 입력하세요"
+          onfocus="this.placeholder=''"
+          onblur="this.placeholder='검색어를 입력하세요'"
+        />
+        <a
+          class="btn-search-header"
+          onclick="javascript:fn_commonSearch(1);"
+        ></a>
+      </div>
+      <div class="result-title">
+        <h5>검색결과</h5>
+        <span
+          id="common_total_cnt"
+          class="sp"
+          >0</span
+        >
+        <h5>건</h5>
+      </div>
+      <a
+        href="#"
+        class="btn-close"
+      >
+        <img
+          src="/type/www/img/icons/ico_close.svg"
+          alt="검색메뉴 닫기"
+        />
+      </a>
+      <div class="result-area">
+        <div
+          id="commonSearchItemDiv"
+          class="list-body"
+          style="margin-bottom: 24px"
+        ></div>
+        <div
+          id="commonSearchPagenationDiv"
+          class="pagenation"
+        ></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      //페이지(section) 앵커 스크롤 이벤트
+      $(window).scroll(function () {
+        if ($(this).scrollTop() >= $('#section4').offset().top - 100) {
+          $('.m-anchor-list>li').removeClass('on');
+          $('.fourthpage').addClass('on');
+        } else if (
+          $(this).scrollTop() >= $('#section3').offset().top &&
+          $(this).scrollTop() < $('#section4').offset().top - 100
+        ) {
+          $('.m-anchor-list>li').removeClass('on');
+          $('.thirdpage').addClass('on');
+        } else if (
+          $(this).scrollTop() >= $('#section2').offset().top &&
+          $(this).scrollTop() < $('#section3').offset().top - 100
+        ) {
+          $('.m-anchor-list>li').removeClass('on');
+          $('.secondpage').addClass('on');
+        } else if ($(this).scrollTop() < $('#section2').offset().top) {
+          $('.m-anchor-list>li').removeClass('on');
+          $('.firstpage').addClass('on');
+        } else {
+          return false;
+        }
+      });
 
-			// 기존 애니메이션 정리
-			gsap.killTweensOf([$title1[0], $title2[0], $title3[0], $subtitle[0]]);
+      $('.btn-scroll').click(function (e) {
+        e.preventDefault();
 
-			// 애니메이션 타임라인 생성
-			const heroTimeline = gsap.timeline({
-				defaults: {
-					ease: 'power3.out'
-				}
-			});
+        // 현재 스크롤 위치 기준으로 현재 섹션 확인
+        let currentSection;
+        let scrollTop = $(window).scrollTop();
 
-			// hero-title-1: 오른쪽에서 왼쪽으로 (첫줄 앞쪽으로)
-			if ($title1.length) {
-				heroTimeline.fromTo($title1[0],
-					{
-						opacity: 0,
-						x: 100
-					},
-					{
-						opacity: 1,
-						x: -100,
-						duration: 1.2
-					},
-					0
-				);
-			}
+        if (scrollTop >= $('#section4').offset().top - 1) {
+          currentSection = 4;
+        } else if (scrollTop >= $('#section3').offset().top - 1) {
+          currentSection = 3;
+        } else if (scrollTop >= $('#section2').offset().top - 1) {
+          currentSection = 2;
+        } else {
+          currentSection = 1;
+        }
 
-			// hero-title-2: 왼쪽에서 오른쪽으로 (둘째줄 뒷쪽으로)
-			if ($title2.length) {
-				heroTimeline.fromTo($title2[0],
-					{
-						opacity: 0,
-						x: -100
-					},
-					{
-						opacity: 1,
-						x: 100,
-						duration: 1.2
-					},
-					0.3
-				);
-			}
+        // 다음 섹션으로 스크롤
+        let nextSection = currentSection + 1;
+        if (nextSection > 4) nextSection = 1; // 마지막 섹션이면 첫 섹션으로
 
-			// hero-title-3: 오른쪽에서 왼쪽으로 (셋째줄 앞쪽으로)
-			if ($title3.length) {
-				heroTimeline.fromTo($title3[0],
-					{
-						opacity: 0,
-						x: 100
-					},
-					{
-						opacity: 1,
-						x: 15,
-						duration: 1.2
-					},
-					0.6
-				);
-			}
+        // 스무스 스크롤 애니메이션
+        $('html, body').animate(
+          {
+            scrollTop: $('#section' + nextSection).offset().top,
+          },
+          800,
+          'swing'
+        );
+      });
 
-			// hero-subtitle: 아래에서 위로
-			if ($subtitle.length) {
-				heroTimeline.fromTo($subtitle[0],
-					{
-						opacity: 0,
-						y: 50
-					},
-					{
-						opacity: 1,
-						y: 0,
-						duration: 1.2
-					},
-					0.9
-				);
-			}
-		}
+      // 히어로 텍스트 초기 상태로 리셋하는 함수
+      function resetHeroText(slide) {
+        const $slide = $(slide);
+        const $title1 = $slide.find('.hero-title-1');
+        const $title2 = $slide.find('.hero-title-2');
+        const $title3 = $slide.find('.hero-title-3');
+        const $subtitle = $slide.find('.hero-subtitle');
 
-		// 페이지 로드 시 첫 슬라이드 애니메이션
-		$(document).ready(function() {
-			setTimeout(function() {
-				const firstSlide = $('.hero-swiper .swiper-slide-active')[0];
-				if (firstSlide) {
-					animateHeroText(firstSlide);
-				}
-			}, 300);
-		});
+        // 즉시 초기 상태로 설정
+        if ($title1.length) {
+          gsap.set($title1[0], { opacity: 0, x: 100 });
+        }
+        if ($title2.length) {
+          gsap.set($title2[0], { opacity: 0, x: -100 });
+        }
+        if ($title3.length) {
+          gsap.set($title3[0], { opacity: 0, x: 100 });
+        }
+        if ($subtitle.length) {
+          gsap.set($subtitle[0], { opacity: 0, y: 50 });
+        }
+      }
 
-		// Accordion Menu Animation
-		$(document).ready(function() {
-			// 페이지 로드 시 active 상태의 아코디언 초기화
-			$('.accordion-item.active').each(function() {
-				const $item = $(this);
-				const $content = $item.find('.accordion-cont');
+      // GSAP Hero Text Animation Function
+      function animateHeroText(slide) {
+        const $slide = $(slide);
+        const $title1 = $slide.find('.hero-title-1');
+        const $title2 = $slide.find('.hero-title-2');
+        const $title3 = $slide.find('.hero-title-3');
+        const $subtitle = $slide.find('.hero-subtitle');
 
-				// padding을 먼저 설정
-				if ($content.length) {
-					gsap.set($content[0], {
-						paddingTop: 24,
-						paddingBottom: 32,
-						height: 'auto',
-						opacity: 1
-					});
-				}
-			});
+        // 요소가 없으면 리턴
+        if (
+          !$title1.length &&
+          !$title2.length &&
+          !$title3.length &&
+          !$subtitle.length
+        ) {
+          return;
+        }
 
-			$('.accordion-header').on('click', function(e) {
-				e.preventDefault();
+        // 기존 애니메이션 정리
+        gsap.killTweensOf([$title1[0], $title2[0], $title3[0], $subtitle[0]]);
 
-				const $item = $(this).parent('.accordion-item');
-				const $content = $item.find('.accordion-cont');
-				const isCurrentlyActive = $item.hasClass('active');
+        // 애니메이션 타임라인 생성
+        const heroTimeline = gsap.timeline({
+          defaults: {
+            ease: 'power3.out',
+          },
+        });
 
-				// 다른 모든 아코디언 닫기
-				$('.accordion-item').not($item).each(function() {
-					const $otherItem = $(this);
-					const $otherContent = $otherItem.find('.accordion-cont');
+        // hero-title-1: 오른쪽에서 왼쪽으로 (첫줄 앞쪽으로)
+        if ($title1.length) {
+          heroTimeline.fromTo(
+            $title1[0],
+            {
+              opacity: 0,
+              x: 100,
+            },
+            {
+              opacity: 1,
+              x: -100,
+              duration: 1.2,
+            },
+            0
+          );
+        }
 
-					if ($otherItem.hasClass('active')) {
-						$otherItem.removeClass('active');
+        // hero-title-2: 왼쪽에서 오른쪽으로 (둘째줄 뒷쪽으로)
+        if ($title2.length) {
+          heroTimeline.fromTo(
+            $title2[0],
+            {
+              opacity: 0,
+              x: -100,
+            },
+            {
+              opacity: 1,
+              x: 100,
+              duration: 1.2,
+            },
+            0.3
+          );
+        }
 
-						// 다른 아코디언 닫기 애니메이션
-						gsap.to($otherContent[0], {
-							height: 0,
-							opacity: 0,
-							paddingTop: 0,
-							paddingBottom: 0,
-							duration: 0.4,
-							ease: 'power3.inOut'
-						});
+        // hero-title-3: 오른쪽에서 왼쪽으로 (셋째줄 앞쪽으로)
+        if ($title3.length) {
+          heroTimeline.fromTo(
+            $title3[0],
+            {
+              opacity: 0,
+              x: 100,
+            },
+            {
+              opacity: 1,
+              x: 15,
+              duration: 1.2,
+            },
+            0.6
+          );
+        }
 
-						// 다른 아코디언 아이콘 원위치
-						gsap.to($otherItem.find('.accordion-icon svg')[0], {
-							rotation: 0,
-							duration: 0.4,
-							ease: 'power3.inOut'
-						});
-					}
-				});
+        // hero-subtitle: 아래에서 위로
+        if ($subtitle.length) {
+          heroTimeline.fromTo(
+            $subtitle[0],
+            {
+              opacity: 0,
+              y: 50,
+            },
+            {
+              opacity: 1,
+              y: 0,
+              duration: 1.2,
+            },
+            0.9
+          );
+        }
+      }
 
-				// 클릭한 아코디언 토글
-				if (!isCurrentlyActive) {
-					// 열기
-					$item.addClass('active');
+      // 페이지 로드 시 첫 슬라이드 애니메이션
+      $(document).ready(function () {
+        setTimeout(function () {
+          const firstSlide = $('.hero-swiper .swiper-slide-active')[0];
+          if (firstSlide) {
+            animateHeroText(firstSlide);
+          }
+        }, 300);
+      });
 
-					// padding을 먼저 설정하고 height 계산
-					gsap.set($content[0], {
-						paddingTop: 33,
-						paddingBottom: 42,
-						height: 'auto'
-					});
-					const autoHeight = $content[0].offsetHeight;
-					gsap.set($content[0], { height: 0, opacity: 0 });
+      // Accordion Menu Animation
+      $(document).ready(function () {
+        // 페이지 로드 시 active 상태의 아코디언 초기화
+        $('.accordion-item.active').each(function () {
+          const $item = $(this);
+          const $content = $item.find('.accordion-cont');
 
-					gsap.to($content[0], {
-						height: autoHeight,
-						opacity: 1,
-						duration: 0.5,
-						ease: 'power3.out',
-						onComplete: function() {
-							gsap.set($content[0], { height: 'auto' });
-						}
-					});
+          // padding을 먼저 설정
+          if ($content.length) {
+            gsap.set($content[0], {
+              paddingTop: 24,
+              paddingBottom: 32,
+              height: 'auto',
+              opacity: 1,
+            });
+          }
+        });
 
-					gsap.to($item.find('.accordion-icon svg')[0], {
-						rotation: 180,
-						duration: 0.4,
-						ease: 'power3.out'
-					});
-				} else {
-					// 닫기
-					$item.removeClass('active');
+        $('.accordion-header').on('click', function (e) {
+          e.preventDefault();
 
-					gsap.to($content[0], {
-						height: 0,
-						opacity: 0,
-						paddingTop: 0,
-						paddingBottom: 0,
-						duration: 0.4,
-						ease: 'power3.inOut'
-					});
+          const $item = $(this).parent('.accordion-item');
+          const $content = $item.find('.accordion-cont');
+          const isCurrentlyActive = $item.hasClass('active');
 
-					gsap.to($item.find('.accordion-icon svg')[0], {
-						rotation: 0,
-						duration: 0.4,
-						ease: 'power3.inOut'
-					});
-				}
-			});
-		});
+          // 다른 모든 아코디언 닫기
+          $('.accordion-item')
+            .not($item)
+            .each(function () {
+              const $otherItem = $(this);
+              const $otherContent = $otherItem.find('.accordion-cont');
 
-		// Hero Swiper Initialization
-		$(document).ready(function() {
-			const heroSwiper = new Swiper('.hero-swiper', {
-				loop: true,
-				speed: 800,
-				effect: 'fade',
-				fadeEffect: {
-					crossFade: true
-				},
-				// autoplay: {
-				// 	delay: 5000,
-				// 	disableOnInteraction: false,
-				// },
-				pagination: {
-					el: '.swiper-pagination',
-					clickable: true,
-				},
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-				},
-				on: {
-					slideChange: function() {
-						// 다음 슬라이드의 텍스트를 초기 상태로 리셋
-						const nextSlide = this.slides[this.activeIndex];
-						resetHeroText(nextSlide);
-					},
-					slideChangeTransitionEnd: function() {
-						// 슬라이드 전환이 끝나면 텍스트 애니메이션 실행
-						const activeSlide = this.slides[this.activeIndex];
-						animateHeroText(activeSlide);
-					}
-				}
-			});
-		});
-	</script>
-</body>
+              if ($otherItem.hasClass('active')) {
+                $otherItem.removeClass('active');
+
+                // 다른 아코디언 닫기 애니메이션
+                gsap.to($otherContent[0], {
+                  height: 0,
+                  opacity: 0,
+                  paddingTop: 0,
+                  paddingBottom: 0,
+                  duration: 0.4,
+                  ease: 'power3.inOut',
+                });
+
+                // 다른 아코디언 아이콘 원위치
+                gsap.to($otherItem.find('.accordion-icon svg')[0], {
+                  rotation: 0,
+                  duration: 0.4,
+                  ease: 'power3.inOut',
+                });
+              }
+            });
+
+          // 클릭한 아코디언 토글
+          if (!isCurrentlyActive) {
+            // 열기
+            $item.addClass('active');
+
+            // padding을 먼저 설정하고 height 계산
+            gsap.set($content[0], {
+              paddingTop: 33,
+              paddingBottom: 42,
+              height: 'auto',
+            });
+            const autoHeight = $content[0].offsetHeight;
+            gsap.set($content[0], { height: 0, opacity: 0 });
+
+            gsap.to($content[0], {
+              height: autoHeight,
+              opacity: 1,
+              duration: 0.5,
+              ease: 'power3.out',
+              onComplete: function () {
+                gsap.set($content[0], { height: 'auto' });
+              },
+            });
+
+            gsap.to($item.find('.accordion-icon svg')[0], {
+              rotation: 180,
+              duration: 0.4,
+              ease: 'power3.out',
+            });
+          } else {
+            // 닫기
+            $item.removeClass('active');
+
+            gsap.to($content[0], {
+              height: 0,
+              opacity: 0,
+              paddingTop: 0,
+              paddingBottom: 0,
+              duration: 0.4,
+              ease: 'power3.inOut',
+            });
+
+            gsap.to($item.find('.accordion-icon svg')[0], {
+              rotation: 0,
+              duration: 0.4,
+              ease: 'power3.inOut',
+            });
+          }
+        });
+      });
+
+      // Hero Swiper Initialization
+      $(document).ready(function () {
+        const heroSwiper = new Swiper('.hero-swiper', {
+          loop: true,
+          speed: 800,
+          effect: 'fade',
+          fadeEffect: {
+            crossFade: true,
+          },
+          // autoplay: {
+          // 	delay: 5000,
+          // 	disableOnInteraction: false,
+          // },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          on: {
+            slideChange: function () {
+              // 다음 슬라이드의 텍스트를 초기 상태로 리셋
+              const nextSlide = this.slides[this.activeIndex];
+              resetHeroText(nextSlide);
+            },
+            slideChangeTransitionEnd: function () {
+              // 슬라이드 전환이 끝나면 텍스트 애니메이션 실행
+              const activeSlide = this.slides[this.activeIndex];
+              animateHeroText(activeSlide);
+            },
+          },
+        });
+      });
+    </script>
+  </body>
 </html>
