@@ -7200,7 +7200,7 @@ input[type=radio]:checked+label.fillter-chip {
     color: #1178A1;
 }
 
-.shadow-tit::after {
+/*.shadow-tit::after {
     content: '';
     display: block;
     height: 12px;
@@ -7227,7 +7227,7 @@ input[type=radio]:checked+label.fillter-chip {
 .shadow-tit.green::after {
     background: #A3E8F5;
 
-}
+}*/
 
 /* boxi콘텐츠 - Flexbox 기반 */
 .boxi-content-flex {
