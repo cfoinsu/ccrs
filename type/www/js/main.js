@@ -92,8 +92,8 @@ function initIntroPopup() {
  */
 function initSwiperSliders() {
     // 메인 배너 슬라이더
-    if ($(".swiper-container").length > 0) {
-        var mainSwiper = new Swiper(".swiper-container", {
+    if ($("#mainSlider").length > 0) {
+        var mainSwiper = new Swiper("#mainSlider", {
             spaceBetween: 0,
             centeredSlides: true,
             // autoplay: {
@@ -103,15 +103,15 @@ function initSwiperSliders() {
             loop: true,
             loopedSlides: 3,
             pagination: {
-                el: ".swiper-pagination",
+                el: "#mainSlider-pagination",
                 clickable: true,
             },
         });
     }
 
     // 하단 배너 슬라이더
-    if ($("#mainslider02").length > 0) {
-        var bottomSwiper = new Swiper("#mainslider02", {
+    if ($("#bnrSlider").length > 0) {
+        var bottomSwiper = new Swiper("#bnrSlider", {
             spaceBetween: 0,
             centeredSlides: true,
             // autoplay: {
@@ -121,7 +121,7 @@ function initSwiperSliders() {
             loop: true,
             loopedSlides: 3,
             pagination: {
-                el: ".swiper-pagination",
+                el: "#bnrSlider-pagination",
                 clickable: true,
             },
         });
