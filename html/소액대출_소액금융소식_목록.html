@@ -7,7 +7,7 @@
 	<meta name="keywords" content="신용회복위원회"/>
 	<meta name="description" content="신용회복위원회"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>소액대출_소액금융소식</title>
+    <title>소액대출 | 소액금융소식</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
      
     <link rel="stylesheet" href="/type/www/css/bundle.css?ver=2.7">
@@ -132,26 +132,48 @@
                                 <!-- 검색 입력폼 -->
                                 <div class="search-top-box">
                                     <div class="sch-filter-box">
-                                        <div class="filter-form">
-                                        <div>
-                                            <label class="label hide" for="appl-sch-sel1">선택 분류</label>
-                                            <select id="appl-sch-sel1" class="krds-form-select medium">
-                                            <option value="">전체</option>
-                                            <option value="">항목</option>
-                                            <option value="">항목</option>
-                                            </select>
-                                        </div>
-                                        <!-- 검색 입력폼 -->
-                                        <div class="sch-form-wrap">
-                                            <div class="sch-input">
-                                            <input type="text" class="krds-input" placeholder="검색어를 입력해주세요" title="검색어 입력">
-                                            <button type="button" class="krds-btn medium icon ico-search">
-                                                <span class="sr-only">검색</span>
-                                                <i class="svg-icon ico-sch"></i>
-                                            </button>
+                                        <div class="filter-form row">
+                                            <div class="search-area">
+                                                <!-- <label class="label" for="appl-sch-sel0">카테고리</label>
+                                                <select id="appl-sch-sel1" class="krds-form-select medium" name="SEARCH_FLD">
+                                                    <option value="">전체</option>
+                                                    <option value="SUBJECT">제목</option>
+                                                    <option value="WRITER">작성자</option>
+                                                </select> -->
+                                                <label class="label" for="appl-sch-sel1">구분</label>
+                                                <select id="appl-sch-sel1" class="krds-form-select medium" name="SEARCH_FLD">
+                                                    <option value="">전체</option>
+                                                    <option value="SUBJECT">제목</option>
+                                                    <option value="WRITER">작성자</option>
+                                                </select>
+                                                <!-- 검색 입력폼 -->
+                                                <div class="sch-form-wrap">
+                                                    <div class="sch-input">
+                                                        <input type="text" name="SEARCH" class="krds-input" placeholder="검색어를 입력해주세요" title="검색어 입력" onkeypress="if(event.keyCode == 13){fn_linkPage(1);return false;}">
+                                                        <button type="button" class="krds-btn medium icon ico-search btn_search">
+                                                            <span class="sr-only">검색</span>
+                                                            <i class="svg-icon ico-sch"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <!-- //검색 입력폼 -->
                                             </div>
-                                        </div>
-                                        <!-- //검색 입력폼 -->
+                                            <div class="period">
+                                                <label class="label" for="appl-sch-sel3">기간</label>
+                                                <div class="optSetDate">
+                                                    <input type="text" class="krds-input medium" name="START_DT" id="START_DT" title="시작 날짜 입력 (YYYY/MM/DD)" value="" style="width:188px;"><a href="#START_DT" class="date-picker-control" title="달력 보기" id="fd-but-START_DT" role="button" aria-haspopup="true" tabindex="0"><span>&nbsp;</span><span class="fd-screen-reader">달력 보기</span></a>
+                                                    <span class="picker_txt">~</span>
+                                                    <input type="text" class="krds-input medium" name="END_DT" id="END_DT" title="종료 날짜 입력 (YYYY/MM/DD)" value="" style="width:188px;"><a href="#END_DT" class="date-picker-control" title="달력 보기" id="fd-but-END_DT" role="button" aria-haspopup="true" tabindex="0"><span>&nbsp;</span><span class="fd-screen-reader">달력 보기</span></a>
+                                                </div>
+                                                <div class="choose-date">
+                                                    <input type="radio" name="dateRangeRadio" id="date1" value="30">
+                                                    <label for="date1" class="fillter-chip">최근 1개월</label>
+                                                    <input type="radio" name="dateRangeRadio" id="date2" value="90">
+                                                    <label for="date2" class="fillter-chip">최근 3개월</label>
+                                                    <input type="radio" name="dateRangeRadio" id="date3" value="choose">
+                                                    <label for="date3" class="fillter-chip">기간선택</label>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
