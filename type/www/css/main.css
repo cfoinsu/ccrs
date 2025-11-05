@@ -163,13 +163,80 @@
     height: 100%;
     overflow: hidden;
 }
-.main-banner.center .top {
+.main-banner.center .diagnosis-card-top {
     width: 436px;
     height: 390px;
+    background: url(/type/www/images/main/diagnosis-bg.png);
+    border-radius: 24px;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
 }
-.main-banner.center .bottom {
+
+.main-banner.center .diagnosis-card-top .diagnosis-card-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #17191B;
+}
+
+.main-banner.center .diagnosis-card-top .diagnosis-card-text {
+    font-size: 32px;
+    font-weight: 700;
+    color: #17191B;
+}
+
+.main-banner.center .diagnosis-card-top .diagnosis-card-subtext {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.main-banner.center .diagnosis-card-top .diagnosis-card-btn {
+    position: absolute;
+    bottom: 32px;
+    right: 32px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #444FA2;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    padding: 0;
+    margin-top: auto;
+    transition: transform 0.3s ease;
+    color: #fff;
+
+}
+
+.main-banner.center .diagnosis-card-top .diagnosis-card-btn:hover {
+    transform: translateX(4px);
+}
+
+.main-banner.center .diagnosis-card-top .diagnosis-card-btn:focus {
+    outline: 2px solid #F48F01;
+    outline-offset: 4px;
+    border-radius: 50%;
+}
+
+.main-banner.center .diagnosis-card-top .diagnosis-card-btn svg {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.main-banner.center .diagnosis-card-bottom {
     width: 436px;
     height: 147px;
+}
+
+.main-banner.center .diagnosis-card-bottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
 }
 .main-banner.last .topbox {
     width: 323px;
