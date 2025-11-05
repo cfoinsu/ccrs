@@ -2,49 +2,328 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://www.youtube.com https://s.ytimg.com">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="format-detection" content="telephone=no, address=no, email=no"/>
 	<meta name="keywords" content="신용회복위원회"/>
 	<meta name="description" content="신용회복위원회"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>영상FAQ_갤러리</title>
+    <title>영상FAQ</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
      
     <link rel="stylesheet" href="/type/www/css/bundle.css?ver=2.5">
 
     
     
-    <script src="/type/www/js/component/ui-script.js?ver=2.5"></script>
+    
     
     
     
 </head>
 <body>
-    
-            <!-- modal btn -->
-            <div class="modal-btn btn-wrap">
-                <button type="button" class="krds-btn medium tertiary close-modal">아니요</button>
-                <button type="button" class="krds-btn medium primary close-modal">예</button>
+    <!-- Skip Navigation -->
+    <div id="skip-nav-container"></div>
+
+    <div id="container" class="g-wrap krds-scaled-layout scroll-up">
+	    <!-- header:s -->
+        <header id="header" class="header">
+			<div id="header-content-container"></div>
+		</header>
+        <!-- header:e -->
+		<!-- main contents:s -->
+        <main class="main-content" id="main-content">
+            <div class="container">
+                <div class="content-layout">
+                    <!-- Sidebar -->
+                    <aside class="sidebar">
+                        <div class="sidebar-header">
+                            <h2>소통과 참여</h2>
+                        </div>
+                        <nav class="sidebar-nav">
+                            <div class="nav-section active">
+                                <button class="nav-section-title">
+                                    자주묻는 질문 (FAQ)
+                                    <i class="nav-arrow"></i>
+                                </button>
+                                <ul class="nav-subsection">
+                                    <li><a href="자주묻는질문_FAQ.html" class="nav-subitem">FAQ</a></li>
+                                    <li><a href="영상FAQ_갤러리.html" class="nav-subitem active">영상 FAQ</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-section">
+                                <button class="nav-section-title">
+                                    고객소통
+                                    <i class="nav-arrow"></i>
+                                </button>
+                                <ul class="nav-subsection">
+                                    <li><a href="고객의소리_선택.html" class="nav-subitem">고객의 소리</a></li>
+                                    <li><a href="고마워요신복위_동의.html" class="nav-subitem">칭찬합니다</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-section">
+                                <a href="군복무자전용질의응답_동의.html" class="nav-section-title">군복무자 전용 질의응답</a>
+                            </div>
+                            <div class="nav-section">
+                                <button class="nav-section-title">
+                                    신용회복 스토리
+                                    <i class="nav-arrow"></i>
+                                </button>
+                                <ul class="nav-subsection">
+                                    <li><a href="이용수기.html" class="nav-subitem">이용수기</a></li>
+                                    <li><a href="수기영상.html" class="nav-subitem">이용수기영상</a></li>
+                                    <li><a href="고객의감사편지_목록.html" class="nav-subitem">감사편지</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </aside>
+
+                    <!-- Content Area -->
+                    <div class="content-area">
+                        <!-- Breadcrumb -->
+                        <nav class="breadcrumb">
+                            <a href="#" class="breadcrumb-item">
+                                <i class="fas fa-home"></i>
+                                홈
+                            </a>
+                            <span class="breadcrumb-separator"></span>
+                            <a href="#" class="breadcrumb-item">소통과 참여 </a>
+                            <span class="breadcrumb-separator"></span>
+                            <a href="#" class="breadcrumb-item">자주묻는 질문 (FAQ)</a>
+                            <span class="breadcrumb-separator"></span>
+                            <span class="breadcrumb-item current">영상FAQ</span>
+                        </nav>
+                        <!-- Page Header -->
+                        <div class="page-header">
+                            <div class="title-wrap">
+                                <h1>영상FAQ</h1>
+                                <div class="page-actions">
+
+                                    <button class="action-btn" aria-label="인쇄">
+                                        <i class="fas fa-print"></i>
+                                    </button>
+                                    <button class="action-btn" aria-label="공유">
+                                        <i class="fas fa-share-alt"></i>
+                                    </button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- Content Sections -->
+                        <div class="content-sections g-wrap">
+                            <div class="board-list">
+                                <!-- 검색 입력폼 -->
+                                <div class="search-top-box">
+                                    <div class="sch-filter-box">
+                                        <div class="filter-form">
+                                        <div>
+                                            <label class="label hide" for="appl-sch-sel1">선택 분류</label>
+                                            <select id="appl-sch-sel1" class="krds-form-select medium">
+                                            <option value="">전체</option>
+                                            <option value="">항목</option>
+                                            <option value="">항목</option>
+                                            </select>
+                                        </div>
+                                        <!-- 검색 입력폼 -->
+                                        <div class="sch-form-wrap">
+                                            <div class="sch-input">
+                                            <input type="text" class="krds-input" placeholder="검색어를 입력해주세요" title="검색어 입력">
+                                            <button type="button" class="krds-btn medium icon ico-search">
+                                                <span class="sr-only">검색</span>
+                                                <i class="svg-icon ico-sch"></i>
+                                            </button>
+                                            </div>
+                                        </div>
+                                        <!-- //검색 입력폼 -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //검색 입력폼 -->
+
+                                <!-- 검색 결과 : 리스트 상단 -->
+                                <div class="search-list-top">
+                                    <ul class="sch-info" aria-live="polite">
+                                        <li>검색 결과 <span class="point">24</span>건</li>
+                                    </ul>
+                                    <ul class="sch-sort">
+                                        <li class="m-hide">
+                                            <strong class="sort-label"><label for="search_result_count">목록 표시 개수</label></strong>
+                                            <select class="krds-form-select-sort" id="search_result_count">
+                                                <option>10개</option>
+                                                <option>9개</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //검색 결과 : 리스트 상단 -->
+                                <ul class="krds-structured-list gallery">
+                                    <li class="gallery-item">
+                                        <a href="#" onclick="openYoutubeUrl('https://www.youtube.com/watch?v=0PDd8zUGCN0'); return false;" target="_blank" title="새창열림">
+
+                                            <div class="card-top">
+                                                <img src="/type/www/images/img/thumbnail-img02.jpg" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <!-- <p class="gall-txt">카테고리</p> -->
+                                                <div class="gall-text">
+                                                    <p class="gall-tit">
+                                                        [직원 #인터뷰] 선배에게 #직접듣는 신용회복위원회 입사 꿀팁~!
+                                                        <span class="ic-new"></span>
+                                                    </p>
+                                                    <div class="gall-txt">
+                                                        안녕하세요~! 신복위 티비입니다. <br>신용회복위원회 2020년 신입사원 모집이 진행 중입니다.<br>모집기간은 2020.05.18.~2020.06.02.(화) 입니다. <br>미래의 후배를 위해 2019년 하반기 신입사원 공채로 입사한 송대근 심사역이 신용회복위원회 입사 꿀팁을 전달해 드립니다.<br>입사지원에 많은 참고 부탁드리며 함께 근무할 가족이 될 여러분을 기다리고 있겠습니다.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-btm">
+                                            <span class="stat">관리자</span>
+                                            <span class="stat">2025.01.31</span>
+                                            <span class="stat">조회수
+                                                <span class="cnt">9,999</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="gallery-item">
+                                        <a href="#" onclick="openYoutubeUrl('https://www.youtube.com/watch?v=69Dbd_ZclZw'); return false;" target="_blank" title="새창열림">
+
+                                            <div class="card-top">
+                                                <img src="/type/www/images/img/thumbnail-img01.jpg" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <!-- <p class="gall-txt">카테고리</p> -->
+                                                <div class="gall-text">
+                                                    <p class="gall-tit">
+                                                        [ 직원 #인터뷰 ] #선배에게 직접듣는 신용회복위원회 #입사꿀팁~! Part 2.
+                                                        <span class="ic-new"></span>
+                                                    </p>
+                                                    <div class="gall-txt">
+                                                        미래의 #후배를 위해 2019년 하반기 #신입사원 #공개채용 으로 입사한 송대근 심사역이 신용회복위원회 #입사꿀팁을 전달해 드립니다.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-btm">
+                                            <span class="stat">관리자</span>
+                                            <span class="stat">2025.01.31</span>
+                                            <span class="stat">조회수
+                                                <span class="cnt">9,999</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="gallery-item">
+                                        <a href="#" onclick="openYoutubeUrl('https://www.youtube.com/watch?v=-kWFbxzl0gI&t=12s'); return false;" target="_blank" title="새창열림">
+
+                                            <div class="card-top">
+                                                <img src="/type/www/images/img/thumbnail-img03.jpg" alt="">
+                                            </div>
+                                            <div class="card-body">
+                                                <!-- <p class="gall-txt">카테고리</p> -->
+                                                <div class="gall-text">
+                                                    <p class="gall-tit">
+                                                        현직자 선배들의 금융권 합격 꿀팁! 😁 #치트키 인터뷰 3편 [2025 금융권 공동채용 박람회]
+                                                        <span class="ic-new"></span>
+                                                    </p>
+                                                    <div class="gall-txt">
+                                                        “청년의 내일(My Job+Tomorrow), 금융을 더하다” <br>「2025 금융권 공동채용 박람회」
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="card-btm">
+                                            <span class="stat">관리자</span>
+                                            <span class="stat">2025.01.31</span>
+                                            <span class="stat">조회수
+                                                <span class="cnt">9,999</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- pagination -->
+                                <div class="krds-pagination">
+                                <span class="page-navi prev disabled" href="#">이전</span>
+                                <div class="page-links">
+                                    <a class="page-link" href="#">1</a>
+                                    <a class="page-link" href="#">2</a>
+                                    <a class="page-link" href="#">3</a>
+                                    <a class="page-link active" href="#"><span class="sr-only">현재페이지 </span>4</a>
+                                    <a class="page-link" href="#">5</a>
+                                    <a class="page-link" href="#">6</a>
+                                    <a class="page-link" href="#">7</a>
+                                    <a class="page-link" href="#">8</a>
+                                    <span class="page-link link-dot"></span>
+                                    <a class="page-link" href="#">99</a>
+                                </div>
+                                <a class="page-navi next" href="#">다음</a>
+                                </div>
+                                <!-- //pagination -->
+                            </div>
+
+                        </div>
+                        <!-- //Content Sections -->
+                        <!-- Feedback Section -->
+                        <div class="feedback-section noprint">
+                            <div class="feedback-card">
+                                <h3>이 페이지에서 제공하는 정보에 대하여 어느 정도 만족하셨습니까?</h3>
+                                <div class="rating-options">
+                                    <label class="rating-option">
+                                        <input type="radio" name="satisfaction" value="5">
+                                        <span class="radio-custom"></span>
+                                        매우 만족
+                                    </label>
+                                    <label class="rating-option">
+                                        <input type="radio" name="satisfaction" value="4">
+                                        <span class="radio-custom"></span>
+                                        만족
+                                    </label>
+                                    <label class="rating-option">
+                                        <input type="radio" name="satisfaction" value="3">
+                                        <span class="radio-custom"></span>
+                                        보통
+                                    </label>
+                                    <label class="rating-option">
+                                        <input type="radio" name="satisfaction" value="2">
+                                        <span class="radio-custom"></span>
+                                        불만족
+                                    </label>
+                                    <label class="rating-option">
+                                        <input type="radio" name="satisfaction" value="1">
+                                        <span class="radio-custom"></span>
+                                        매우 불만족
+                                    </label>
+                                </div>
+                                <div class="feedback-input">
+                                    <label class="hide" for="feedback-text">의견 입력</label>
+                                    <textarea id="feedback-text"  rows="1"></textarea>
+                                    <button type="button" class="submit-btn">제출</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <!-- //modal btn -->
-            <!-- close button -->
-            <button type="button" class="krds-btn medium icon btn-close close-modal">
-                <span class="sr-only">닫기</span>
-                <i class="svg-icon ico-popup-close"></i>
-            </button>
-            <!-- //close button -->
-            </div>
-        </div>
-        <div class="modal-back"></div>
-    </section>
-    <!-- //modal -->
+        </main>
+
+		<!-- Quick Menu:s -->
+		<div id="quickmenu-container"></div>
+        <!-- Quick Menu:e -->
+		        <!-- Footer:s -->
+        <div id="footer-container"></div>
+        <!-- Footer:e -->
+    </div>
     <!-- all-menu 사이트맵 -->
     <div id="allmenu-container"></div>
     <!-- //all-menu 사이트맵 -->
     <!-- 검색영역 -->
     <div id="search-container"></div>
     <!-- 검색영역 -->
-     
+
+    
+    
+    
+    
+    
+    
+
 	<script src="/type/www/js/jquery-2.2.4.min.js?ver=2.5"></script>
 	<script src="/type/www/js/plugins/swiper.min.js?ver=2.5"></script>
 	<script src="/type/www/js/plugins/aos.js?ver=2.5"></script>

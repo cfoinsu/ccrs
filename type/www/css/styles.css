@@ -5100,6 +5100,9 @@ table.comparison-table td:first-child {
     height: 100%;
     justify-content: space-between;
 }
+.g-wrap .g-info-box.full .g-desc-box.fcg0 {
+    align-items: center;
+}
 
 .g-wrap.row {
     display: flex;
