@@ -7823,7 +7823,8 @@ input[type=radio]:checked+label.fillter-chip {
     font-size: 1.5rem;
 }
 .effect-box .item-share {
-    top: 152px;
+    top: 66px;
+    right: 100px;
 }
 .keybox .key-text span {
     font-weight: 400;
@@ -8045,4 +8046,8 @@ table .table-center {
 
 .position-td {
     position: relative;
+}
+
+.logo-h30 {
+    height: 30px;
 }
