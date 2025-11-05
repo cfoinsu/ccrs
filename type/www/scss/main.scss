@@ -1,3 +1,6 @@
+$boxPaddingX: 32px;
+$boxPaddingY: 36px;
+
 
 * {
     margin: 0;
@@ -166,7 +169,7 @@
     height: 390px;
     background: url(/type/www/images/main/diagnosis-bg.png);
     border-radius: 24px;
-    padding: 40px 32px;
+    padding: $boxPaddingY $boxPaddingX;
 }
 
 .main-banner.center .diagnosis-card-top .diagnosis-card-title {
@@ -245,7 +248,7 @@
     position: relative;
     width: 100%;
     height: 147px;
-    padding: 25px 33px;
+    padding: 25px $boxPaddingX;
     background: #444FA2;
     border-radius: 24px;
 }
@@ -544,7 +547,8 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    padding: 26px 33px;
+    height: 105px;
+    padding: 0 $boxPaddingX;
     /* background: #FFE6C3; */
     background: #e9e9e9;
     border-radius: 24px;
@@ -584,16 +588,7 @@
 }
 
 
-.consulting-section {
-    width: 549px;
-    height: 120px;
-}
-.intro-section {
-    width: 436px;
-    height: 120px;
-}
-.people-section {
-    width: 323px;
+.consulting-section, .intro-section, .people-section {
     height: 120px;
 }
 
@@ -1260,7 +1255,7 @@ section {
 .hoverline{
     background-color: #F48F01;
     border-radius: 24px;
-    padding: 6px 22px;
+    padding: 6px $boxPaddingX;
     min-height: 100%;
     display: flex;
     overflow: hidden;
@@ -1930,23 +1925,51 @@ body:has(.intro.show) {
 /* 251105 디자인 수정 적용 */
 .arr-circle-right {
   position: relative;
+  &:hover::after {
+    transform: translateY(-5px);
+  }
   &::after {
     content: '';
     position: absolute;
-    right: 30px;
-    bottom: 30px;
+    right: $boxPaddingX;
+    bottom: $boxPaddingY;
     width: 30px;
     height: 30px;
-    background: url(/type/www/images/ic/arr_circle_orange_right.svg);
+    background: url(/type/www/images/ic/arr_circle_orange_right.svg) no-repeat 0 0;
+    transition: all 0.3s;
+  }
+  &.white {
+    &::after {
+      background: url(/type/www/images/ic/arr_circle_white_right.svg) no-repeat 0 0;
+    }
   }
 }
+
+.arr-circle-right-w {
+  position: relative;
+  &:hover::after {
+    transform: translateY(-5px);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    right: $boxPaddingX;
+    bottom: $boxPaddingY;
+    width: 30px;
+    height: 30px;
+    background: url(/type/www/images/ic/arr_circle_white_right.svg) no-repeat 0 0 / cover;
+    transition: all 0.3s;
+  }
+}
+
 .grid-width {
   display: flex;
   gap: 16px;
   .grid-col1, .grid-col2, .grid-col3 {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    justify-content: space-between;
+    // gap: 16px;
     width: 100%;
     > div {
       width: 100%;
@@ -1969,8 +1992,14 @@ body:has(.intro.show) {
     .swiper-pagination {
       position: absolute;
       bottom: 20px;
-      left: 20px;
+      left: $boxPaddingX;
+      transform: none;
       width: auto;
+      &.white {
+        .swiper-pagination-bullet {
+          background-color: #fff;
+        }
+      }
     }
   }
 }
@@ -1985,9 +2014,9 @@ body:has(.intro.show) {
     border-radius: 24px;
   .debt-card__text {
     position: absolute;
-    bottom: 50px;
-    left: 42px;
-    right: 42px;
+    bottom: 80px;
+    left: $boxPaddingX;
+    right: $boxPaddingX;
     color: #fff;
     h3 {
       font-size: 44px;
@@ -2026,49 +2055,36 @@ body:has(.intro.show) {
   background: #FFE6C3;
 }
 
-.col-debt2-1 {
+.col-debt2-1 a {
+  display: flex;
+  flex-direction: column;
   height: 434px;
-  background: url(/type/www/images/main/debt2-bg.png);
-  .swiper-slide {
-    padding: 32px 36px;
-
-    em {
-      display: block;
-      font-size: 19px;
-      font-weight: 700;
-      transform: translateX(-30px);
-      transition: transform 0.5s ease 0.1s;
-    }
-    strong {
-      display: block;
-      margin-top: 48px;
-      font-size: 32px;
-      font-weight: 700;
-      transform: translateX(-30px);
-      transition: transform 0.5s ease 0.2s;
-    }
-    p {
-      margin-top: 24px;
-      font-size: 19px;
-      transform: translateX(-30px);
-      transition: transform 0.5s ease 0.3s;
-    }
-
-    &.swiper-slide-active {
-      em {
-        transform: translateX(0);
-      }
-      strong {
-        transform: translateX(0);
-      }
-      p {
-        transform: translateX(0);
-      }
-    }
+  padding: 32px 36px;
+  background: url(/type/www/images/main/debt2-bg.svg);
+  em {
+    display: block;
+    font-size: 19px;
+    font-weight: 700;
+  }
+  strong {
+    display: block;
+    margin-top: 48px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+  p {
+    margin-top: 24px;
+    font-size: 19px;
+  }
+  span {
+    margin-top: auto;
+    font-size: 19px;
+    opacity: 0.7;
   }
 }
 
-.col-debt2-2 {
+.col-debt2-2 a {
+  display: block;
   height: 181px;
   padding: 34px 36px;
   border-radius: 24px;
