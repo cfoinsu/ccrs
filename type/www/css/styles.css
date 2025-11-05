@@ -175,7 +175,7 @@ fontsize-normal .font-bold {
 }
 
 .sidebar-header {
-    background: var(--krds-light-color-element-primary) url(../img/logo/ccrs_symbol_white_alpha10.svg) no-repeat 140px 16px;
+    background: var(--krds-light-color-element-primary) url(../img/logo/ccrs_symbol_white_alpha10.svg) no-repeat 140px 20px;
     background-size: 120px;
     color: white;
     padding: 40px 20px;
