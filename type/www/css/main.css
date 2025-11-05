@@ -233,7 +233,7 @@
   height: 390px;
   background: url(/type/www/images/main/diagnosis-bg.png);
   border-radius: 24px;
-  padding: 40px 32px;
+  padding: 36px 32px;
 }
 
 .main-banner.center .diagnosis-card-top .diagnosis-card-title {
@@ -335,7 +335,7 @@
   position: relative;
   width: 100%;
   height: 147px;
-  padding: 25px 33px;
+  padding: 25px 32px;
   background: #444FA2;
   border-radius: 24px;
 }
@@ -668,7 +668,8 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 16px;
-  padding: 26px 33px;
+  height: 105px;
+  padding: 0 32px;
   /* background: #FFE6C3; */
   background: #e9e9e9;
   border-radius: 24px;
@@ -721,18 +722,7 @@
   gap: 20px;
 }
 
-.consulting-section {
-  width: 549px;
-  height: 120px;
-}
-
-.intro-section {
-  width: 436px;
-  height: 120px;
-}
-
-.people-section {
-  width: 323px;
+.consulting-section, .intro-section, .people-section {
   height: 120px;
 }
 
@@ -1553,7 +1543,7 @@ section {
 .hoverline {
   background-color: #F48F01;
   border-radius: 24px;
-  padding: 6px 22px;
+  padding: 6px 32px;
   min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2410,14 +2400,42 @@ body:has(.intro.show) {
 .arr-circle-right {
   position: relative;
 }
+.arr-circle-right:hover::after {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
 .arr-circle-right::after {
   content: "";
   position: absolute;
-  right: 30px;
-  bottom: 30px;
+  right: 32px;
+  bottom: 36px;
   width: 30px;
   height: 30px;
-  background: url(/type/www/images/ic/arr_circle_orange_right.svg);
+  background: url(/type/www/images/ic/arr_circle_orange_right.svg) no-repeat 0 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.arr-circle-right.white::after {
+  background: url(/type/www/images/ic/arr_circle_white_right.svg) no-repeat 0 0;
+}
+
+.arr-circle-right-w {
+  position: relative;
+}
+.arr-circle-right-w:hover::after {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+.arr-circle-right-w::after {
+  content: "";
+  position: absolute;
+  right: 32px;
+  bottom: 36px;
+  width: 30px;
+  height: 30px;
+  background: url(/type/www/images/ic/arr_circle_white_right.svg) no-repeat 0 0/cover;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .grid-width {
@@ -2434,7 +2452,9 @@ body:has(.intro.show) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
 }
 .grid-width .grid-col1 > div, .grid-width .grid-col2 > div, .grid-width .grid-col3 > div {
@@ -2456,8 +2476,13 @@ body:has(.intro.show) {
 .main-content .swiper-container .swiper-pagination {
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  left: 32px;
+  -webkit-transform: none;
+          transform: none;
   width: auto;
+}
+.main-content .swiper-container .swiper-pagination.white .swiper-pagination-bullet {
+  background-color: #fff;
 }
 
 .section-header .main-tit {
@@ -2471,9 +2496,9 @@ body:has(.intro.show) {
 }
 .col-debt1 .debt-card__text {
   position: absolute;
-  bottom: 50px;
-  left: 42px;
-  right: 42px;
+  bottom: 80px;
+  left: 32px;
+  right: 32px;
   color: #fff;
 }
 .col-debt1 .debt-card__text h3 {
@@ -2510,66 +2535,47 @@ body:has(.intro.show) {
   background: #FFE6C3;
 }
 
-.col-debt2-1 {
+.col-debt2-1 a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 434px;
-  background: url(/type/www/images/main/debt2-bg.png);
-}
-.col-debt2-1 .swiper-slide {
   padding: 32px 36px;
+  background: url(/type/www/images/main/debt2-bg.svg);
 }
-.col-debt2-1 .swiper-slide em {
+.col-debt2-1 a em {
   display: block;
   font-size: 19px;
   font-weight: 700;
-  -webkit-transform: translateX(-30px);
-          transform: translateX(-30px);
-  -webkit-transition: -webkit-transform 0.5s ease 0.1s;
-  transition: -webkit-transform 0.5s ease 0.1s;
-  transition: transform 0.5s ease 0.1s;
-  transition: transform 0.5s ease 0.1s, -webkit-transform 0.5s ease 0.1s;
 }
-.col-debt2-1 .swiper-slide strong {
+.col-debt2-1 a strong {
   display: block;
   margin-top: 48px;
   font-size: 32px;
   font-weight: 700;
-  -webkit-transform: translateX(-30px);
-          transform: translateX(-30px);
-  -webkit-transition: -webkit-transform 0.5s ease 0.2s;
-  transition: -webkit-transform 0.5s ease 0.2s;
-  transition: transform 0.5s ease 0.2s;
-  transition: transform 0.5s ease 0.2s, -webkit-transform 0.5s ease 0.2s;
 }
-.col-debt2-1 .swiper-slide p {
+.col-debt2-1 a p {
   margin-top: 24px;
   font-size: 19px;
-  -webkit-transform: translateX(-30px);
-          transform: translateX(-30px);
-  -webkit-transition: -webkit-transform 0.5s ease 0.3s;
-  transition: -webkit-transform 0.5s ease 0.3s;
-  transition: transform 0.5s ease 0.3s;
-  transition: transform 0.5s ease 0.3s, -webkit-transform 0.5s ease 0.3s;
 }
-.col-debt2-1 .swiper-slide.swiper-slide-active em {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-.col-debt2-1 .swiper-slide.swiper-slide-active strong {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-.col-debt2-1 .swiper-slide.swiper-slide-active p {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+.col-debt2-1 a span {
+  margin-top: auto;
+  font-size: 19px;
+  opacity: 0.7;
 }
 
-.col-debt2-2 {
+.col-debt2-2 a {
+  display: block;
   height: 181px;
   padding: 34px 36px;
   border-radius: 24px;
   background: url(/type/www/images/main/debt3-bg.svg) 0 0 no-repeat;
 }
-.col-debt2-2 strong {
+.col-debt2-2 a strong {
   font-size: 24px;
   color: #fff;
 }/*# sourceMappingURL=main.css.map */
