@@ -10,6 +10,8 @@ $(function() {
     initIntroPopup();
     // Swiper 슬라이더 초기화
     initSwiperSliders();
+    // 뉴스 탭 초기화
+    initNewsTabs();
 });
 
 /**
@@ -146,4 +148,50 @@ function initSwiperSliders() {
           },
         });
     }
+
+    // 금융 배너 슬라이더
+    if ($('#financeSlider').length > 0) {
+      var bottomSwiper = new Swiper('#financeSlider', {
+        spaceBetween: 0,
+        centeredSlides: true,
+        //   autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false,
+        //   },
+        loop: true,
+        loopedSlides: 3,
+        pagination: {
+          el: '#financeSlider-pagination',
+          clickable: true,
+        },
+      });
+    }
+}
+
+/**
+ * 뉴스 탭 전환
+ * 탭 버튼 클릭 시 해당하는 콘텐츠 표시
+ */
+function initNewsTabs() {
+    // 오른쪽 보도자료/유투브/블로그/카페 탭
+    $('.news-right .tab-button').click(function() {
+        var index = $(this).index();
+
+        $('.news-right .tab-button').removeClass('active');
+        $(this).addClass('active');
+
+        $('.press-grid').removeClass('active');
+        $('.press-grid').eq(index).addClass('active');
+    });
+
+    // 왼쪽 공지사항/입찰공고/채용공고 탭
+    $('.news-left .tab-button').click(function() {
+        var index = $(this).index();
+
+        $('.news-left .tab-button').removeClass('active');
+        $(this).addClass('active');
+
+        $('.news-list').removeClass('active');
+        $('.news-list').eq(index).addClass('active');
+    });
 }
