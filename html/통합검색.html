@@ -11,7 +11,7 @@
     <title>통합검색</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
     
-    <link rel="stylesheet" href="/type/www/css/bundle.css?ver=3.0">
+    <link rel="stylesheet" href="/type/www/css/bundle.css?ver=3.1">
 </head>
 
 <body>
@@ -88,6 +88,37 @@
                                                     placeholder="검색어를 입력하세요"
                                                     value="채무"
                                                     aria-describedby="searchHelp">
+                                                <ul class="autocomplete" id="suggestions"></ul>
+                                                <script>
+                                                const keywords = ["채무", "채무자", "채권", "채권자", "채무불이행", "채무상환"];
+                                                const input = document.getElementById("searchKeywordMain");
+                                                const suggestions = document.getElementById("suggestions");
+
+                                                input.addEventListener("input", function() {
+                                                const val = this.value.trim();
+                                                suggestions.innerHTML = "";
+                                                if (val.length === 0) {
+                                                    suggestions.style.display = "none";
+                                                    return;
+                                                }
+                                                const matches = keywords.filter(word => word.startsWith(val));
+                                                if (matches.length > 0) {
+                                                    suggestions.style.display = "block";
+                                                    matches.forEach(word => {
+                                                    const li = document.createElement("li");
+                                                    li.textContent = word;
+                                                    li.style.padding = "4px";
+                                                    li.onclick = function() {
+                                                        input.value = word;
+                                                        suggestions.style.display = "none";
+                                                    };
+                                                    suggestions.appendChild(li);
+                                                    });
+                                                } else {
+                                                    suggestions.style.display = "none";
+                                                }
+                                                });
+                                                </script>
                                                 <button type="button" class="search-btn" id="mainSearchBtn" aria-label="검색 실행">
                                                     <img src="/type/www/images/ic/header-search.svg" alt="검색" class="search-icon">
                                                 </button>
@@ -102,19 +133,19 @@
                                                     <span class="search-tag">
                                                         채무조정
                                                         <button type="button" class="tag-remove-btn" aria-label="채무조정 제거">
-                                                            <img src="/type/www/images/ic/close.png?ver=3.0" alt="제거" class="tag-remove-icon">
+                                                            <img src="/type/www/images/ic/close.png?ver=3.1" alt="제거" class="tag-remove-icon">
                                                         </button>
                                                     </span>
                                                     <span class="search-tag">
                                                         신속
                                                         <button type="button" class="tag-remove-btn" aria-label="신속 제거">
-                                                            <img src="/type/www/images/ic/close.png?ver=3.0" alt="제거" class="tag-remove-icon">
+                                                            <img src="/type/www/images/ic/close.png?ver=3.1" alt="제거" class="tag-remove-icon">
                                                         </button>
                                                     </span>
                                                     <span class="search-tag">
                                                         신용회복지원
                                                         <button type="button" class="tag-remove-btn" aria-label="신용회복지원 제거">
-                                                            <img src="/type/www/images/ic/close.png?ver=3.0" alt="제거" class="tag-remove-icon">
+                                                            <img src="/type/www/images/ic/close.png?ver=3.1" alt="제거" class="tag-remove-icon">
                                                         </button>
                                                     </span>
                                                 </div>
@@ -333,7 +364,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                                 <div class="gallery-image">
-                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                                 </div>
                                                                 <div class="gallery-info">
                                                                     <h4 class="gallery-title">[자영업지원센터] <span class="highlight">채무</span> 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -345,7 +376,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                             <div class="gallery-image">
-                                                                <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                             </div>
                                                             <div class="gallery-info">
                                                                 <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -357,7 +388,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                                 <div class="gallery-image">
-                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                                 </div>
                                                                 <div class="gallery-info">
                                                                     <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -369,7 +400,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                                 <div class="gallery-image">
-                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                                 </div>
                                                                 <div class="gallery-info">
                                                                     <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -382,7 +413,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                                 <div class="gallery-image">
-                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                                 </div>
                                                                 <div class="gallery-info">
                                                                     <h4 class="gallery-title">[자영업지원센터] <span class="highlight">채무</span> 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -394,7 +425,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                             <div class="gallery-image">
-                                                                <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                             </div>
                                                             <div class="gallery-info">
                                                                 <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -406,7 +437,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                             <div class="gallery-image">
-                                                                <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                             </div>
                                                             <div class="gallery-info">
                                                                 <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -418,7 +449,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                             <div class="gallery-image">
-                                                                <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                             </div>
                                                             <div class="gallery-info">
                                                                 <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -518,7 +549,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                                 <div class="gallery-image">
-                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                                 </div>
                                                                 <div class="gallery-info">
                                                                     <h4 class="gallery-title">[자영업지원센터] <span class="highlight">채무</span> 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -530,7 +561,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                             <div class="gallery-image">
-                                                                <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                             </div>
                                                             <div class="gallery-info">
                                                                 <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -542,7 +573,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                                 <div class="gallery-image">
-                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                                 </div>
                                                                 <div class="gallery-info">
                                                                     <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -554,7 +585,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                                 <div class="gallery-image">
-                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                                 </div>
                                                                 <div class="gallery-info">
                                                                     <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -567,7 +598,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                                 <div class="gallery-image">
-                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                    <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                                 </div>
                                                                 <div class="gallery-info">
                                                                     <h4 class="gallery-title">[자영업지원센터] <span class="highlight">채무</span> 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -579,7 +610,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                             <div class="gallery-image">
-                                                                <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                             </div>
                                                             <div class="gallery-info">
                                                                 <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -591,7 +622,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                             <div class="gallery-image">
-                                                                <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                             </div>
                                                             <div class="gallery-info">
                                                                 <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -603,7 +634,7 @@
                                                         <li>
                                                             <a href="#" class="gallery-link">
                                                             <div class="gallery-image">
-                                                                <img src="/type/www/images/img/news-img01.png?ver=3.0" alt="사진영상 썸네일">
+                                                                <img src="/type/www/images/img/news-img01.png?ver=3.1" alt="사진영상 썸네일">
                                                             </div>
                                                             <div class="gallery-info">
                                                                 <h4 class="gallery-title">[자영업지원센터] 2024년 컨설팅 우수 지원사례 모집 및 평가계획 알림 알림알림</h4>
@@ -746,16 +777,16 @@
     <div id="search-container"></div>
     <!-- 검색영역 -->
 
-    <script src="/type/www/js/jquery-2.2.4.min.js?ver=3.0"></script>
-	<script src="/type/www/js/plugins/swiper.min.js?ver=3.0"></script>
-	<script src="/type/www/js/plugins/aos.js?ver=3.0"></script>
-	<script src="/type/www/js/component/ui-script.js?ver=3.0"></script>
-	<script src="/type/www/js/common.js?ver=3.0"></script>
-	<script src="/type/www/js/main.js?ver=3.0"></script>
+    <script src="/type/www/js/jquery-2.2.4.min.js?ver=3.1"></script>
+	<script src="/type/www/js/plugins/swiper.min.js?ver=3.1"></script>
+	<script src="/type/www/js/plugins/aos.js?ver=3.1"></script>
+	<script src="/type/www/js/component/ui-script.js?ver=3.1"></script>
+	<script src="/type/www/js/common.js?ver=3.1"></script>
+	<script src="/type/www/js/main.js?ver=3.1"></script>
     <!-- <script src="/type/www/js/layout.js"></script>
     <script src="/type/www/js/script.js"></script> 
     공통 header 분리하기 위해 init.js 임시 추가  -->
-	<script src="includes/init.js?ver=3.0"></script>
+	<script src="includes/init.js?ver=3.1"></script>
 
     <!-- 2️⃣ 아코디언 토글 스크립트 -->
     <script>
