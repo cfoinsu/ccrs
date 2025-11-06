@@ -1343,7 +1343,7 @@ fontsize-normal .font-bold {
     border-radius: 0.375rem;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     max-width: 980rem;
-    min-width: 250px;
+    min-width: 180px;
 }
 
 .tooltip-content {
@@ -8068,4 +8068,14 @@ table .table-center {
 
 .logo-h30 {
     height: 30px;
+}
+.autocomplete {
+    display:none;
+    border:1px solid #aaa;
+    position:absolute;
+    background:#fff;
+    z-index:10;
+    width:480px;
+    top:40px;
+    left:0"
 }
