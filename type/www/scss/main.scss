@@ -2155,9 +2155,29 @@ body:has(.intro.show) {
 
 .grid-col3 {
     .bottombox {
+        position: relative;
+        height: 248px;
+        padding: $boxPaddingY $boxPaddingX;
         border-radius: $boxRound;
         background: #F0EFEB;
-
+        .bottombox-txt {
+            font-size: 19px;
+            strong {
+                display: block;
+                color: #ED7801;
+            }
+        }
+        .bottombox-img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 195px;
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+        
     }
 }
 
