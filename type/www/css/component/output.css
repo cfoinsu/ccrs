@@ -3002,8 +3002,8 @@ caption {
   font-weight: var(--krds-font-weight-regular);
   text-align: center;
 } */
-.krds-table-wrap .tbl.board tbody th,
-.krds-table-wrap .tbl.board tbody td {
+.g-wrap .krds-table-wrap .tbl.board tbody th,
+.g-wrap .krds-table-wrap .tbl.board tbody td {
   padding: var(--krds-table--data-tbody-padding) var(--krds-table--data-tbody-padding-sides);
   background-color: var(--krds-table--data-tbody-color-surface);
   border-bottom: var(--krds-table--data-border-width) solid var(--krds-table--data-tbody-color-divider);
