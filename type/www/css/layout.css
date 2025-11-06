@@ -3014,11 +3014,12 @@ dl.flex-list {
   display: block;
 }
 .slidetopbox .swiper-slide img {
-  width: 1920px;
-  height: 119px;
-  display: block;
-  object-fit: none;
-}
+    width: 1920px;
+    height: 119px;
+    display: block;
+    object-fit: none;
+    margin: 0 auto;
+}   
 #header:has(.slidetopbox.show) {
   position: fixed;
   top: 0px;

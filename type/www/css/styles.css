@@ -167,7 +167,7 @@ fontsize-normal .font-bold {
 }
 
 .sidebar-header {
-    background: var(--krds-light-color-element-primary) url(../img/logo/ccrs_symbol_white_alpha10.svg) no-repeat 140px 16px;
+    background: var(--krds-light-color-element-primary) url(../img/logo/ccrs_symbol_white_alpha10.svg) no-repeat 140px 20px;
     background-size: 120px;
     color: white;
     padding: 40px 20px;
@@ -1335,7 +1335,7 @@ fontsize-normal .font-bold {
     border-radius: 0.375rem;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     max-width: 980rem;
-    min-width: 250px;
+    min-width: 180px;
 }
 
 .tooltip-content {
@@ -1792,8 +1792,8 @@ fontsize-normal .font-bold {
 }
 
 .feedback-card h3 {
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 19px;
+    font-weight: 700;
     margin-bottom: 24px;
     color: #222;
 }
@@ -2043,10 +2043,6 @@ fontsize-normal .font-bold {
 
 .modal-conts .g-wrap .g-conts-area .con-tit.bullet {
     font-size: 2rem;
-}
-
-.modal-conts .g-wrap .g-conts-area .con-tit.bullet::before {
-    top: 10%;
 }
 
 .compare-cards {
@@ -3663,6 +3659,21 @@ fontsize-normal .font-bold {
     justify-content: space-evenly;
 }
 
+.g-wrap .g-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.g-wrap .g-flex .g-img {
+    width: 100%;
+}
+
+.g-wrap .g-flex .g-wrap { 
+    width: 100%;
+}
+
 /* bbs_write */
 .boardHead {
     padding: 0 5px 10px;
@@ -4094,8 +4105,8 @@ span.sub4InputLabel {
 }
 
 .results-content-wrapper .graph-wrap.zoom {
-    width: 362px;
-    height: 362px;
+    width: 374px;
+    height: 361px;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -4104,7 +4115,6 @@ span.sub4InputLabel {
 }
 
 .results-content-wrapper .graph-wrap.zoom .graph-img {
-    transform: scale(1.3);
 }
 
 .results-content-wrapper .graph-img {
@@ -4126,14 +4136,19 @@ span.sub4InputLabel {
 .results-content-wrapper .graph-wrap .manwon {
     position: absolute;
     font-size: 1.4rem;
-    top: 117px;
+    top: 127px;
     right: 200px;
     height: 2.4rem;
     padding: 2px 5px;
-    background-color: #012063;
+    background-color: #fff;
     border-radius: 20px;
-    color: #fff;
+    color: #012063;
     text-align: right;
+    font-weight: 700;
+}
+.results-content-wrapper .graph-wrap.zoom .manwon {
+    right: 265px;
+    top: 150px;
 }
 
 .results-content-wrapper .graph-wrap .manwon::after {
@@ -4147,6 +4162,15 @@ span.sub4InputLabel {
     height: 134px;
     top: 73px;
     left: 93px;
+    display: flex;
+    gap: 2px;
+}
+.results-content-wrapper .graph-wrap.zoom .hover-box {
+    position: absolute;
+    width: 203px;
+    height: 170px;
+    top: 79px;
+    left: 116px;
     display: flex;
     gap: 2px;
 }
@@ -4171,27 +4195,19 @@ span.sub4InputLabel {
     z-index: 10;
 }
 
-.results-content-wrapper .graph-wrap .hover-box span::after {
-    content: '';
-    position: absolute;
-    left: -8px;
-    bottom: -8px;
-    border: 2px solid #00A8A6;
-    border-radius: 100%;
-    height: 10px;
-    width: 10px;
-    background-color: #fff;
-    box-sizing: border-box;
-}
-
 .results-content-wrapper .graph-wrap .hover-box .graph-hover.left span {
     bottom: 18px;
     left: 4px;
 }
+.results-content-wrapper .graph-wrap.zoom .hover-box .graph-hover.left:hover span {
+    bottom: 18px;
+}
 
 .results-content-wrapper .graph-wrap .hover-box .graph-hover.center span {
     bottom: 61px;
-    left: 30px;
+    left: 50%;
+    border-radius: 1000px;
+    transform: translateX(-50%);
 }
 
 .results-content-wrapper .graph-wrap .hover-box .graph-hover.right span {
@@ -4201,6 +4217,11 @@ span.sub4InputLabel {
     border-radius: 10px 10px 0 10px;
 }
 
+.results-content-wrapper .graph-wrap .hover-box .graph-hover.center span::after {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+}
 .results-content-wrapper .graph-wrap .hover-box .graph-hover.right span::after {
     left: auto;
     right: -8px
@@ -4209,6 +4230,12 @@ span.sub4InputLabel {
 .results-content-wrapper .graph-wrap .hover-box .graph-hover:hover span {
     display: block
 }
+.results-content-wrapper .graph-wrap.zoom .hover-box .graph-hover:hover span {
+    bottom: 83px;
+}
+.results-content-wrapper .graph-wrap.zoom .hover-box .graph-hover.right:hover span {
+    bottom: 132px;
+}
 
 .results-content-wrapper .graph-wrap .freeworkout .hover-box .graph-hover.left span {
     bottom: 45px;
@@ -4216,12 +4243,28 @@ span.sub4InputLabel {
 }
 
 .results-content-wrapper .graph-wrap .freeworkout .hover-box .graph-hover.center span {
-    bottom: 86px;
-    left: 30px;
+    bottom: 96px;
+    left: 50%;
 }
 
 .results-content-wrapper .graph-wrap .freeworkout .hover-box .graph-hover.right span {
     bottom: 126px;
+    left: auto;
+    right: 3px;
+    border-radius: 10px 10px 0 10px;
+}
+.results-content-wrapper .graph-wrap.zoom .freeworkout .hover-box .graph-hover.left span {
+    bottom: 56px;
+    left: 4px;
+}
+
+.results-content-wrapper .graph-wrap.zoom .freeworkout .hover-box .graph-hover.center span {
+    bottom: 113px;
+    left: 50%;
+}
+
+.results-content-wrapper .graph-wrap.zoom .freeworkout .hover-box .graph-hover.right span {
+    bottom: 158px;
     left: auto;
     right: 3px;
     border-radius: 10px 10px 0 10px;
@@ -4959,6 +5002,9 @@ table.comparison-table td:first-child {
 .g-wrap .g-desc-box {
     height: 100%;
     justify-content: space-between;
+}
+.g-wrap .g-info-box.full .g-desc-box.fcg0 {
+    align-items: center;
 }
 
 .g-wrap.row {
@@ -5889,6 +5935,7 @@ table.comparison-table td:first-child {
 .chairman-box h4 {
     font-size: 3.6rem;
     line-height: 1.3;
+    font-weight: bold;
 }
 
 .chairman-box h4 .primary {
@@ -7041,7 +7088,7 @@ input[type=radio]:checked+label.fillter-chip {
     color: #1178A1;
 }
 
-.shadow-tit::after {
+/*.shadow-tit::after {
     content: '';
     display: block;
     height: 12px;
@@ -7068,7 +7115,7 @@ input[type=radio]:checked+label.fillter-chip {
 .shadow-tit.green::after {
     background: #A3E8F5;
 
-}
+}*/
 
 /* boxi콘텐츠 - Flexbox 기반 */
 .boxi-content-flex {
@@ -7147,15 +7194,6 @@ input[type=radio]:checked+label.fillter-chip {
     opacity: 1;
 }
 
-.g-img.bgact.spark:hover::after,
-.g-img.bgact.spark:focus::after {
-    animation: ripple-circle 0.8s ease-out;
-    width: 0;
-    height: 0;
-    transform: translate(-50%, -50%) scale(4);
-    opacity: 0;
-}
-
 @keyframes ripple-circle {
     0% {
         width: 0;
@@ -7174,6 +7212,35 @@ input[type=radio]:checked+label.fillter-chip {
         height: 100%;
         transform: translate(-50%, -50%) scale(4);
         opacity: 1;
+    }
+}
+.g-img.bgact.spark:hover::after,
+.g-img.bgact.spark:focus::after {
+    animation: ripple-circlezero 0.8s ease-out;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+}
+
+@keyframes ripple-circlezero {
+    0% {
+        width: 0;
+        height: 0;
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0.2;
+    }
+
+    80% {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0.8;
+    }
+
+    100% {
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%) scale(4);
+        opacity: 0;
     }
 }
 
@@ -7268,7 +7335,10 @@ input[type=radio]:checked+label.fillter-chip {
 }
 
 .shadow.br24 {
-    border-radius: 24px;
+    border-radius: 24px !important;
+}
+.shadow.br8 {
+    border-radius: 8px !important;
 }
 
 .g-img.shadow img {
@@ -7389,12 +7459,12 @@ input[type=radio]:checked+label.fillter-chip {
 .orange-info {
     display: inline-block;
     padding-left: 26px;
-    background: url(../img/icons/orange-info.svg) no-repeat left top;
+    background: url(../img/icons/ico_information_fill.svg) no-repeat left top;
     background-size: 24px;
-    color: #F48F01;
-    font-weight: 700;
+    font-weight: 400;
     vertical-align: middle;
     line-height: 24px;
+    margin-top: 1.2rem;
 }
 
 .orange-link {
@@ -7565,6 +7635,7 @@ input[type=radio]:checked+label.fillter-chip {
     padding: 0;
     border: none;
     border-radius: 0;
+    position: relative;
 }
 
 .effect-box .boxc1 {
@@ -7639,7 +7710,10 @@ input[type=radio]:checked+label.fillter-chip {
     font-weight: 400;
     font-size: 1.5rem;
 }
-
+.effect-box .item-share {
+    top: 66px;
+    right: 100px;
+}
 .keybox .key-text span {
     font-weight: 400;
     font-size: 1.3rem;
@@ -7856,4 +7930,22 @@ table .table-center {
     top: 33%;
     left: calc(831px*0.5);
     width: 80px;
+}
+
+.position-td {
+    position: relative;
+}
+
+.logo-h30 {
+    height: 30px;
+}
+.autocomplete {
+    display:none;
+    border:1px solid #aaa;
+    position:absolute;
+    background:#fff;
+    z-index:10;
+    width:480px;
+    top:40px;
+    left:0"
 }
