@@ -1905,6 +1905,7 @@ dl.flex-list {
     height: 119px;
     display: block;
     object-fit: none;
+    margin: 0 auto;
 }   
 #header:has(.slidetopbox.show) {
     position: fixed;
