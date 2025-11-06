@@ -2366,8 +2366,28 @@ body:has(.intro.show) {
 }
 
 .grid-col3 .bottombox {
+  position: relative;
+  height: 248px;
+  padding: 36px 32px;
   border-radius: 24px;
   background: #F0EFEB;
+}
+.grid-col3 .bottombox .bottombox-txt {
+  font-size: 19px;
+}
+.grid-col3 .bottombox .bottombox-txt strong {
+  display: block;
+  color: #ED7801;
+}
+.grid-col3 .bottombox .bottombox-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 195px;
+}
+.grid-col3 .bottombox .bottombox-img img {
+  width: auto;
+  height: 100%;
 }
 
 .col-debt1 {
