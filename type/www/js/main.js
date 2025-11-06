@@ -93,19 +93,19 @@ function initIntroPopup() {
 function initSwiperSliders() {
     // 메인 배너 슬라이더
     if ($("#mainSlider").length > 0) {
-        var mainSwiper = new Swiper("#mainSlider", {
-            spaceBetween: 0,
-            centeredSlides: true,
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
-            loop: true,
-            loopedSlides: 3,
-            pagination: {
-                el: "#mainSlider-pagination",
-                clickable: true,
-            },
+        var mainSwiper = new Swiper('#mainSlider', {
+          spaceBetween: 0,
+          centeredSlides: true,
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+          loop: true,
+          loopedSlides: 3,
+          pagination: {
+            el: '#mainSlider-pagination',
+            clickable: true,
+          },
         });
     }
 
@@ -114,10 +114,10 @@ function initSwiperSliders() {
         var bottomSwiper = new Swiper("#bnrSlider", {
             spaceBetween: 0,
             centeredSlides: true,
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
             loop: true,
             loopedSlides: 3,
             pagination: {
@@ -131,19 +131,19 @@ function initSwiperSliders() {
 
     // 상환 배너 슬라이더
     if ($("#debtSlider").length > 0) {
-        var bottomSwiper = new Swiper("#debtSlider", {
-            spaceBetween: 0,
-            centeredSlides: true,
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
-            loop: true,
-            loopedSlides: 3,
-            pagination: {
-                el: "#debtSlider-pagination",
-                clickable: true,
-            },
+        var bottomSwiper = new Swiper('#debtSlider', {
+          spaceBetween: 0,
+          centeredSlides: true,
+        //   autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false,
+        //   },
+          loop: true,
+          loopedSlides: 3,
+          pagination: {
+            el: '#debtSlider-pagination',
+            clickable: true,
+          },
         });
     }
 }
