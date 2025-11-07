@@ -71,30 +71,43 @@ function initInstitutionCarousel() {
 
     try {
         var institutionSwiper = new Swiper('.institution-carousel-swiper', {
-            slidesPerView: 'auto',
-            spaceBetween: 64,
+            slidesPerView: 2,
+            spaceBetween: 10,
             loop: true,
-            loopedSlides: 6,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
+            loopedSlides: 12,
+            autoplay: false,
             navigation: {
                 nextEl: '.institution-nav-btn.next',
                 prevEl: '.institution-nav-btn.prev',
             },
             breakpoints: {
-                320: {
-                    slidesPerView: 'auto',
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 'auto',
-                    spaceBetween: 30,
+                744: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
                 },
                 1024: {
-                    slidesPerView: 'auto',
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                },
+                1280: {
+                    slidesPerView: 5,
                     spaceBetween: 40,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                },
+                1440: {
+                    slidesPerView: 6,
+                    spaceBetween: 64,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
                 },
             },
         });

@@ -488,56 +488,6 @@
 }
 
 /* 길잡이 카드 */
-.guide-card-a {
-  width: 386px;
-  height: 662px;
-  background: #f48f01;
-  border-radius: 24px;
-  position: relative;
-  padding: 32px;
-  overflow: hidden;
-}
-
-.guide-title {
-  font-size: 25px;
-  font-weight: 700;
-  color: white;
-  margin-bottom: 56px;
-}
-
-.guide-menu {
-  margin-bottom: 28px;
-}
-
-.menu-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.menu-item:hover {
-  background: rgba(255, 255, 255, 0.1);
-  margin: 0 -32px;
-  padding: 20px 32px;
-}
-
-.menu-text {
-  font-size: 21px;
-  font-weight: 700;
-  color: white;
-  width: 290px;
-}
-
 .guide-bottom-card {
   width: 100%;
   height: 310px;

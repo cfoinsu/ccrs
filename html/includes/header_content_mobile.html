@@ -1,0 +1,210 @@
+<!-- Mobile/Tablet Header -->
+<div class="mobile-header" data-depth="main">
+	<div class="mobile-header-inner">
+		<!-- 좌측: 로고 -->
+		<div class="header-left">
+			<a href="main.html" class="logo">
+				<img src="/type/www/images/logo/logo.svg" alt="신용회복위원회">
+			</a>
+		</div>
+
+		<!-- 우측: 유틸리티 버튼 -->
+		<div class="header-right">
+			<button class="btn-search" aria-label="검색">
+				<img src="/type/www/images/ic/header-search.svg" alt="검색">
+			</button>
+			<button class="btn-lang" aria-label="영문전환">
+				<a href="/html_en/main_en.html">
+					<img src="/type/www/img/icons/ico_language.svg" alt="영문">
+				</a>
+			</button>
+			<button class="btn-menu" id="mobileMenuBtn" aria-label="전체메뉴">
+				<span class="hamburger-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- Mobile Search Panel (검색 패널 - 토글) -->
+<div class="mobile-search-panel" id="mobileSearchPanel" style="display: none;">
+	<div class="search-panel-inner">
+		<form action="/search" method="get" class="mobile-search-form">
+			<input type="text" name="q" placeholder="검색어를 입력하세요" class="search-input">
+			<button type="submit" class="search-submit" aria-label="검색">
+				<img src="/type/www/images/ic/header-search.svg" alt="검색">
+			</button>
+		</form>
+		<button class="search-close" aria-label="검색 닫기">×</button>
+	</div>
+</div>
+
+<!-- Mobile Menu (전체메뉴 - 사이드 슬라이드) -->
+<div class="mobile-menu-overlay" id="mobileMenuOverlay" style="display: none;">
+	<div class="mobile-menu-panel">
+		<div class="mobile-menu-header">
+			<h2>전체메뉴</h2>
+			<button class="mobile-menu-close" aria-label="전체메뉴 닫기">×</button>
+		</div>
+
+		<nav class="mobile-menu-nav">
+			<ul class="mobile-gnb">
+				<li>
+					<a href="채무조정길잡이_소개.html" class="menu-depth1">채무조정</a>
+					<button class="submenu-toggle" aria-label="하위메뉴 열기">
+						<i class="icon-arrow-down"></i>
+					</button>
+					<ul class="mobile-depth2">
+						<li><a href="채무조정길잡이_소개.html">채무조정 길잡이</a></li>
+						<li><a href="신속채무조정(연체30일이하)_일반.html">채무조정 자세히 알아보기</a></li>
+						<li><a href="개인회생·파산제도_개인회생이란.html">그 밖의 채무조정</a></li>
+						<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=190" target="_blank">나에게 맞는 채무조정 찾기</a></li>
+						<li><a href="상담안내.html">채무조정 상담안내</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="상환도우미소개.html" class="menu-depth1">상환도우미</a>
+					<button class="submenu-toggle" aria-label="하위메뉴 열기">
+						<i class="icon-arrow-down"></i>
+					</button>
+					<ul class="mobile-depth2">
+						<li><a href="상환도우미소개.html">상환도우미 소개</a></li>
+						<li><a href="성실상환이란.html">성실상환 혜택</a></li>
+						<li><a href="실효란.html">실효위기 지원</a></li>
+						<li><a href="https://cyber.ccrs.or.kr/member/correct/myPage.do" target="_blank">나의 진행현황</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="금융과생활소개.html" class="menu-depth1">금융과 생활</a>
+					<button class="submenu-toggle" aria-label="하위메뉴 열기">
+						<i class="icon-arrow-down"></i>
+					</button>
+					<ul class="mobile-depth2">
+						<li><a href="금융과생활소개.html">금융과 생활 소개</a></li>
+						<li><a href="소액대출_제도소개.html">소액금융</a></li>
+						<li><a href="복합지원개요.html">금융·고용·복지 복합지원</a></li>
+						<li><a href="신용복지컨설팅.html">컨설팅 지원</a></li>
+						<li><a href="신용교육프로그램신청_신용교육소개.html">신용교육</a></li>
+						<li><a href="불법사금융알아보기_예방가이드.html">불법사금융 예방∙신고</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=840" target="_blank" class="menu-depth1">알림과 홍보</a>
+					<button class="submenu-toggle" aria-label="하위메뉴 열기">
+						<i class="icon-arrow-down"></i>
+					</button>
+					<ul class="mobile-depth2">
+						<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=840" target="_blank">공지사항</a></li>
+						<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=850" target="_blank">보도자료</a></li>
+						<li><a href="공고_입찰공고_목록.html">입찰공고</a></li>
+						<li><a href="영상광고게시판.html">홍보활동</a></li>
+						<li><a href="인재상.html">인재채용</a></li>
+						<li><a href="사업소개.html">사회공헌</a></li>
+						<li><a href="서식다운로드_목록.html">자료실</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="자주묻는질문_FAQ.html" class="menu-depth1">소통과 참여</a>
+					<button class="submenu-toggle" aria-label="하위메뉴 열기">
+						<i class="icon-arrow-down"></i>
+					</button>
+					<ul class="mobile-depth2">
+						<li><a href="자주묻는질문_FAQ.html">자주하는 질문(FAQ)</a></li>
+						<li><a href="고객의소리_선택.html">고객소통</a></li>
+						<li><a href="군복무자전용질의응답_동의.html">군복무자 전용 질의응답</a></li>
+						<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1610">신용회복 스토리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=440" class="menu-depth1">위원회 소개</a>
+					<button class="submenu-toggle" aria-label="하위메뉴 열기">
+						<i class="icon-arrow-down"></i>
+					</button>
+					<ul class="mobile-depth2">
+						<li><a href="위원장인사말.html">위원장 인사말</a></li>
+						<li><a href="신용회복위원회소개.html">기관소개</a></li>
+						<li><a href="사회적가치_목록.html">사회적 가치 실현보고서</a></li>
+						<li><a href="윤리와책임_윤리헌장.html">청렴경영</a></li>
+						<li><a href="신용상담사자격시험.html">신용상담사</a></li>
+						<li><a href="지부위치안내.html" target="_blank">지부위치 안내</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<!-- 추가 링크 -->
+			<div class="mobile-menu-footer">
+				<ul class="mobile-quick-links">
+					<li><a href="http://cyber.ccrs.or.kr/" target="_blank">사이버상담</a></li>
+					<li><a href="https://www.educredit.or.kr/" target="_blank">신용교육원</a></li>
+					<li><a href="https://counselor.ccrs.or.kr/ccedu/main/main.do" target="_blank">신용상담사</a></li>
+				</ul>
+				<div class="mobile-contact">
+					<p class="contact-label">상담전화</p>
+					<p class="contact-number">1600-5500</p>
+				</div>
+			</div>
+		</nav>
+	</div>
+</div>
+
+<script>
+// 모바일 헤더 인터랙션
+(function() {
+	// 검색 토글
+	const searchBtn = document.querySelector('.mobile-header .btn-search');
+	const searchPanel = document.getElementById('mobileSearchPanel');
+	const searchClose = document.querySelector('.search-close');
+
+	if (searchBtn && searchPanel) {
+		searchBtn.addEventListener('click', () => {
+			searchPanel.style.display = searchPanel.style.display === 'none' ? 'block' : 'none';
+		});
+
+		searchClose?.addEventListener('click', () => {
+			searchPanel.style.display = 'none';
+		});
+	}
+
+	// 전체메뉴 토글
+	const menuBtn = document.getElementById('mobileMenuBtn');
+	const menuOverlay = document.getElementById('mobileMenuOverlay');
+	const menuClose = document.querySelector('.mobile-menu-close');
+
+	if (menuBtn && menuOverlay) {
+		menuBtn.addEventListener('click', () => {
+			menuOverlay.style.display = 'block';
+			document.body.style.overflow = 'hidden';
+		});
+
+		menuClose?.addEventListener('click', () => {
+			menuOverlay.style.display = 'none';
+			document.body.style.overflow = '';
+		});
+
+		menuOverlay.addEventListener('click', (e) => {
+			if (e.target === menuOverlay) {
+				menuOverlay.style.display = 'none';
+				document.body.style.overflow = '';
+			}
+		});
+	}
+
+	// 서브메뉴 토글
+	const submenuToggles = document.querySelectorAll('.submenu-toggle');
+	submenuToggles.forEach(toggle => {
+		toggle.addEventListener('click', function(e) {
+			e.preventDefault();
+			const parent = this.parentElement;
+			const submenu = parent.querySelector('.mobile-depth2');
+
+			parent.classList.toggle('active');
+			if (submenu) {
+				submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+			}
+		});
+	});
+})();
+</script>
