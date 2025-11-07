@@ -528,16 +528,16 @@ $boxRound: 24px;
         height: 105px;
         padding: 0 $boxPaddingX;
         /* background: #FFE6C3; */
-        background: #f3f3f3;
+        background: #f8f8f8;
         border-radius: $boxRound;
         position: relative;
         transition: all 0.3s;
 
         &:hover {
-            background: #FFE6C3;
+            background: #fff3e3;
 
             h2 {
-                color: #F48F01;
+                color: #e57300;
             }
         }
 
@@ -564,6 +564,7 @@ $boxRound: 24px;
             font-weight: 700;
             font-size: 19px;
             margin-left: auto;
+            opacity: 0.5;
         }
 
         .arrow-buttons {
