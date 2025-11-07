@@ -7070,6 +7070,7 @@ input[type=radio]:checked+label.fillter-chip {
     display: inline-block;
     font-size: 2.4rem;
     font-weight: 700;
+    cursor:pointer;
 }
 
 .shadow-tit.yellow {
