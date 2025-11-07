@@ -577,7 +577,7 @@
           flex: 1;
   background: #fff;
   overflow-y: auto;
-  padding: 24px;
+  padding: 7px;
 }
 .menu-right .submenu-panel {
   display: none;
@@ -639,10 +639,15 @@
 .menu-right .mobile-menu-group .mobile-menu-group-title:hover i {
   color: #ED7801;
 }
+.menu-right .mobile-menu-group .mobile-menu-head.open,
+.menu-right .mobile-menu-group .mobile-menu-group-title.open {
+  background: #fff5ed;
+}
 .menu-right .mobile-menu-group .mobile-menu-head.open i,
 .menu-right .mobile-menu-group .mobile-menu-group-title.open i {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  color: #ED7801;
 }
 .menu-right .mobile-menu-group .mobile-menu-head.single,
 .menu-right .mobile-menu-group .mobile-menu-group-title.single {
