@@ -642,6 +642,7 @@
 .menu-right .mobile-menu-group .mobile-menu-head.open,
 .menu-right .mobile-menu-group .mobile-menu-group-title.open {
   background: #fff5ed;
+  color: #ED7801;
 }
 .menu-right .mobile-menu-group .mobile-menu-head.open i,
 .menu-right .mobile-menu-group .mobile-menu-group-title.open i {
