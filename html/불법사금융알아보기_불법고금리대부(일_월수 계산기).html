@@ -486,27 +486,6 @@
     <script src="/type/www/js/script.js"></script> 
     공통 header 분리하기 위해 init.js 임시 추가  -->
 	<script src="includes/init.js?ver=3.4"></script>
-
-	<!-- 숫자 입력 제한 스크립트 -->
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			// 정수만 입력 가능한 필드
-			const numericInputs = document.querySelectorAll('input[inputmode="numeric"]');
-			numericInputs.forEach(input => {
-				input.addEventListener('input', function(e) {
-					this.value = this.value.replace(/[^0-9]/g, '');
-				});
-			});
-
-			// 소수점 입력 가능한 필드 (연이자율)
-			const decimalInputs = document.querySelectorAll('input[inputmode="decimal"]');
-			decimalInputs.forEach(input => {
-				input.addEventListener('input', function(e) {
-					this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
-				});
-			});
-		});
-	</script>
 </body>
 
 </html>
