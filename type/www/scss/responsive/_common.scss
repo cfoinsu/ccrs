@@ -10,15 +10,6 @@
 // @include mobile { ... } : Mobile 이하 (~ 767px)
 // ============================================
 @include desktopLess {
-  .container {
-    padding-left: 32px;
-    padding-right: 32px;
-    
-    @include mobile {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-  }
 
   // 테이블 반응형
   .krds-table-wrap {
@@ -42,6 +33,21 @@
     &::-webkit-scrollbar-track {
       background-color: rgba(0, 0, 0, 0.05);
       border-radius: 6px;
+    }
+  }
+
+  // tabs
+  .tab.fill.full {
+    ul li {
+      flex: 1;
+    }
+    .active .btn-tab {
+      background: #F48F01;
+      color: #fff !important;
+    }
+    .btn-tab {
+      background: #eee;
+      font-weight: 400;
     }
   }
 }
