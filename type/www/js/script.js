@@ -345,22 +345,7 @@ $(document).ready(function() {
             alert('모든 필수 필드를 입력해주세요.');
         }
     });
-    
-    // Responsive sidebar toggle for mobile
-    if ($(window).width() <= 768) {
-        $('.sidebar').hide();
-        
-        // Add sidebar toggle button for mobile
-        $('.main-content').prepend(
-            '<button class="sidebar-toggle" style="display: block; margin-bottom: 16px; padding: 8px 16px; background: #f97316; color: white; border: none; border-radius: 4px; cursor: pointer;">메뉴</button>'
-        );
-        
-        $('.sidebar-toggle').on('click', function() {
-            $('.sidebar').slideToggle(300);
-        });
-    }
-    
-    
+
     // Add loading animation for buttons
     $('.action-button, .compare-btn, .subscribe-btn, .access-btn').on('click', function() {
         const $button = $(this);
