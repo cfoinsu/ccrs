@@ -335,6 +335,7 @@ fontsize-normal .font-bold {
     width: 100%;
     text-align: center;
     color: #474E55;
+    font-weight: 700;
 }
 
 .page-description.bgYellow {
