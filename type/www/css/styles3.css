@@ -179,6 +179,10 @@
     width: 1px;
     height: 86%;
     background: #E6E8EA;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
   }
 
   @media (max-width: 767px) {
@@ -236,6 +240,7 @@
   font-size: 15px;
   color: #1A1F27;
   transition: all 0.2s;
+  text-align: right;
 
   &:focus {
     outline: none;
@@ -258,6 +263,7 @@
 
   .form-input {
     padding-right: 45px;
+    text-align: right;
   }
 
   .unit {
