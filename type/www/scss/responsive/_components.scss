@@ -9,7 +9,42 @@
 // ============================================
 
 @include tabletLess {
-  .page-description.bgBlue p {
-    font-size: 17px;
+  .page-description.bgBlue {
+    padding: 15px;
+    p {
+      font-size: 17px;
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .summary-box {
+    padding: 20px 16px;
+    .summary-tit {
+      margin-bottom: 10px;
+      font-size: 2.6rem;
+    }
+    .summary-link {
+      flex-direction: column;
+      gap: 20px;
+      b {
+        font-weight: 400;
+      }
+      .youtube-btn-red {
+        width: 100%;
+      }
+    }
+    .summary-key {
+      .keybox {
+        flex: auto;
+        width: 49%;
+        border-radius: 14px;
+        b {
+          font-weight: 400;
+          font-size: 1.9rem;
+        }
+      }
+    }
   }
 }
