@@ -420,6 +420,11 @@
     display: none;
   }
 }
+@media (max-width: 1023px) {
+  .page-description.bgBlue p {
+    font-size: 17px;
+  }
+}
 .mobile-allmenu-overlay {
   position: fixed;
   top: 0;
