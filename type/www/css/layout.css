@@ -102,6 +102,10 @@ Version : v1.0
   height: 64px;
 }
 
+#header .header-mobile {
+  display: none;
+}
+
 #header .gnb-wrap .logo {
   position: absolute;
   top: 25px;
