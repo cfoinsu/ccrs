@@ -7948,3 +7948,6 @@ table .table-center {
     top:40px;
     left:0"
 }
+.krds-accordion.type-heading .accordion-item.active .btn-accordion::after {
+    background-size: contain;
+}

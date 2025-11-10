@@ -264,5 +264,255 @@
 			}
 		});
 	}
+
+	// Breadcrumb 드롭다운 토글
+	const breadcrumbToggles = document.querySelectorAll('.breadcrumb-toggle');
+
+	breadcrumbToggles.forEach(toggle => {
+		toggle.addEventListener('click', function(e) {
+			e.preventDefault();
+			const parent = this.closest('.breadcrumb-item');
+			const isActive = parent.classList.contains('active');
+
+			// 다른 모든 breadcrumb 닫기
+			document.querySelectorAll('.breadcrumb-item').forEach(item => {
+				if (item !== parent) {
+					item.classList.remove('active');
+				}
+			});
+
+			// 클릭한 breadcrumb 토글
+			if (isActive) {
+				parent.classList.remove('active');
+			} else {
+				parent.classList.add('active');
+			}
+		});
+	});
+
+	// Breadcrumb 외부 클릭시 닫기
+	document.addEventListener('click', function(e) {
+		if (!e.target.closest('.mobile-breadcrumb-nav')) {
+			document.querySelectorAll('.breadcrumb-item').forEach(item => {
+				item.classList.remove('active');
+			});
+		}
+	});
+
+	// ============================================
+	// Breadcrumb 자동 설정
+	// ============================================
+
+	// 파일명 → 브레드크럼 경로 매핑
+	const breadcrumbMapping = {
+		// 채무조정
+		'채무조정길잡이_소개.html': '채무조정 > 채무조정 길잡이',
+		'신속채무조정(연체30일이하)_일반.html': '채무조정 > 채무조정 자세히 알아보기',
+		'개인회생·파산제도_개인회생이란.html': '채무조정 > 그 밖의 채무조정',
+		'상담안내.html': '채무조정 > 채무조정 상담안내',
+
+		// 상환도우미
+		'상환도우미소개.html': '상환도우미 > 상환도우미 소개',
+		'성실상환이란.html': '상환도우미 > 성실상환 혜택',
+		'실효란.html': '상환도우미 > 실효위기 지원',
+
+		// 금융과 생활
+		'금융과생활소개.html': '금융과 생활 > 금융과 생활 소개',
+		'소액대출_제도소개.html': '금융과 생활 > 소액금융',
+		'복합지원개요.html': '금융과 생활 > 금융·고용·복지 복합지원',
+		'신용복지컨설팅.html': '금융과 생활 > 컨설팅 지원',
+		'신용교육프로그램신청_신용교육소개.html': '금융과 생활 > 신용교육',
+		'불법사금융알아보기_예방가이드.html': '금융과 생활 > 불법사금융 예방∙신고',
+
+		// 알림과 홍보
+		'공고_입찰공고_목록.html': '알림과 홍보 > 입찰공고',
+		'영상광고게시판.html': '알림과 홍보 > 홍보활동',
+		'인재상.html': '알림과 홍보 > 인재채용',
+		'사업소개.html': '알림과 홍보 > 사회공헌',
+		'서식다운로드_목록.html': '알림과 홍보 > 자료실',
+
+		// 소통과 참여
+		'자주묻는질문_FAQ.html': '소통과 참여 > 자주하는 질문(FAQ)',
+		'고객의소리_선택.html': '소통과 참여 > 고객소통',
+		'군복무자전용질의응답_동의.html': '소통과 참여 > 군복무자 전용 질의응답',
+
+		// 위원회 소개
+		'위원장인사말.html': '위원회 소개 > 위원장 인사말',
+		'신용회복위원회소개.html': '위원회 소개 > 기관소개',
+		'사회적가치_목록.html': '위원회 소개 > 사회적 가치 실현보고서',
+		'윤리와책임_윤리헌장.html': '위원회 소개 > 청렴경영',
+		'신용상담사자격시험.html': '위원회 소개 > 신용상담사',
+		'지부위치안내.html': '위원회 소개 > 지부위치 안내'
+	};
+
+	// Depth별 드롭다운 메뉴 데이터
+	const depth1Menus = {
+		'채무조정': [
+			{ text: '채무조정', href: '채무조정길잡이_소개.html' },
+			{ text: '상환도우미', href: '상환도우미소개.html' },
+			{ text: '금융과 생활', href: '금융과생활소개.html' },
+			{ text: '알림과 홍보', href: '#' },
+			{ text: '소통과 참여', href: '자주묻는질문_FAQ.html' },
+			{ text: '위원회 소개', href: '#' }
+		],
+		'상환도우미': [
+			{ text: '채무조정', href: '채무조정길잡이_소개.html' },
+			{ text: '상환도우미', href: '상환도우미소개.html' },
+			{ text: '금융과 생활', href: '금융과생활소개.html' },
+			{ text: '알림과 홍보', href: '#' },
+			{ text: '소통과 참여', href: '자주묻는질문_FAQ.html' },
+			{ text: '위원회 소개', href: '#' }
+		],
+		'금융과 생활': [
+			{ text: '채무조정', href: '채무조정길잡이_소개.html' },
+			{ text: '상환도우미', href: '상환도우미소개.html' },
+			{ text: '금융과 생활', href: '금융과생활소개.html' },
+			{ text: '알림과 홍보', href: '#' },
+			{ text: '소통과 참여', href: '자주묻는질문_FAQ.html' },
+			{ text: '위원회 소개', href: '#' }
+		],
+		'알림과 홍보': [
+			{ text: '채무조정', href: '채무조정길잡이_소개.html' },
+			{ text: '상환도우미', href: '상환도우미소개.html' },
+			{ text: '금융과 생활', href: '금융과생활소개.html' },
+			{ text: '알림과 홍보', href: '#' },
+			{ text: '소통과 참여', href: '자주묻는질문_FAQ.html' },
+			{ text: '위원회 소개', href: '#' }
+		],
+		'소통과 참여': [
+			{ text: '채무조정', href: '채무조정길잡이_소개.html' },
+			{ text: '상환도우미', href: '상환도우미소개.html' },
+			{ text: '금융과 생활', href: '금융과생활소개.html' },
+			{ text: '알림과 홍보', href: '#' },
+			{ text: '소통과 참여', href: '자주묻는질문_FAQ.html' },
+			{ text: '위원회 소개', href: '#' }
+		],
+		'위원회 소개': [
+			{ text: '채무조정', href: '채무조정길잡이_소개.html' },
+			{ text: '상환도우미', href: '상환도우미소개.html' },
+			{ text: '금융과 생활', href: '금융과생활소개.html' },
+			{ text: '알림과 홍보', href: '#' },
+			{ text: '소통과 참여', href: '자주묻는질문_FAQ.html' },
+			{ text: '위원회 소개', href: '#' }
+		]
+	};
+
+	const depth2Menus = {
+		'채무조정': [
+			{ text: '채무조정 길잡이', href: '채무조정길잡이_소개.html' },
+			{ text: '채무조정 자세히 알아보기', href: '신속채무조정(연체30일이하)_일반.html' },
+			{ text: '그 밖의 채무조정', href: '개인회생·파산제도_개인회생이란.html' },
+			{ text: '나에게 맞는 채무조정 찾기', href: '#' },
+			{ text: '채무조정 상담안내', href: '상담안내.html' }
+		],
+		'상환도우미': [
+			{ text: '상환도우미 소개', href: '상환도우미소개.html' },
+			{ text: '성실상환 혜택', href: '성실상환이란.html' },
+			{ text: '실효위기 지원', href: '실효란.html' },
+			{ text: '나의 진행현황', href: '#' }
+		],
+		'금융과 생활': [
+			{ text: '금융과 생활 소개', href: '금융과생활소개.html' },
+			{ text: '소액금융', href: '소액대출_제도소개.html' },
+			{ text: '금융·고용·복지 복합지원', href: '복합지원개요.html' },
+			{ text: '컨설팅 지원', href: '신용복지컨설팅.html' },
+			{ text: '신용교육', href: '신용교육프로그램신청_신용교육소개.html' },
+			{ text: '불법사금융 예방∙신고', href: '불법사금융알아보기_예방가이드.html' }
+		],
+		'알림과 홍보': [
+			{ text: '공지사항', href: '#' },
+			{ text: '보도자료', href: '#' },
+			{ text: '입찰공고', href: '공고_입찰공고_목록.html' },
+			{ text: '홍보활동', href: '영상광고게시판.html' },
+			{ text: '인재채용', href: '인재상.html' },
+			{ text: '사회공헌', href: '사업소개.html' },
+			{ text: '자료실', href: '서식다운로드_목록.html' }
+		],
+		'소통과 참여': [
+			{ text: '자주하는 질문(FAQ)', href: '자주묻는질문_FAQ.html' },
+			{ text: '고객소통', href: '고객의소리_선택.html' },
+			{ text: '군복무자 전용 질의응답', href: '군복무자전용질의응답_동의.html' },
+			{ text: '신용회복 스토리', href: '#' }
+		],
+		'위원회 소개': [
+			{ text: '위원장 인사말', href: '위원장인사말.html' },
+			{ text: '기관소개', href: '신용회복위원회소개.html' },
+			{ text: '사회적 가치 실현보고서', href: '사회적가치_목록.html' },
+			{ text: '청렴경영', href: '윤리와책임_윤리헌장.html' },
+			{ text: '신용상담사', href: '신용상담사자격시험.html' },
+			{ text: '지부위치 안내', href: '지부위치안내.html' }
+		]
+	};
+
+	// 현재 페이지 파일명 가져오기
+	const currentPage = window.location.pathname.split('/').pop();
+
+	// meta 태그에서 breadcrumb 정보 가져오기
+	const metaBreadcrumb = document.querySelector('meta[name="breadcrumb"]');
+	let breadcrumbPath = null;
+
+	if (metaBreadcrumb) {
+		// meta 태그가 있으면 우선 사용
+		breadcrumbPath = metaBreadcrumb.getAttribute('content');
+	} else if (breadcrumbMapping[currentPage]) {
+		// meta 태그가 없으면 매핑에서 찾기
+		breadcrumbPath = breadcrumbMapping[currentPage];
+	}
+
+	// breadcrumb 설정 함수
+	function setBreadcrumb(path) {
+		if (!path) return;
+
+		const parts = path.split(' > ').map(p => p.trim());
+		const breadcrumbItems = document.querySelectorAll('.mobile-breadcrumb-nav .breadcrumb-item');
+
+		// Depth 1 설정
+		if (parts[0] && breadcrumbItems[0]) {
+			const depth1Btn = breadcrumbItems[0].querySelector('.breadcrumb-toggle span');
+			const depth1Dropdown = breadcrumbItems[0].querySelector('.breadcrumb-dropdown ul');
+
+			if (depth1Btn) depth1Btn.textContent = parts[0];
+
+			// Depth 1 드롭다운 메뉴 생성
+			if (depth1Dropdown && depth1Menus[parts[0]]) {
+				depth1Dropdown.innerHTML = depth1Menus[parts[0]]
+					.map(item => `<li><a href="${item.href}">${item.text}</a></li>`)
+					.join('');
+			}
+		}
+
+		// Depth 2 설정
+		if (parts[1] && breadcrumbItems[1]) {
+			const depth2Btn = breadcrumbItems[1].querySelector('.breadcrumb-toggle span');
+			const depth2Dropdown = breadcrumbItems[1].querySelector('.breadcrumb-dropdown ul');
+
+			if (depth2Btn) depth2Btn.textContent = parts[1];
+
+			// Depth 2 드롭다운 메뉴 생성
+			if (depth2Dropdown && depth2Menus[parts[0]]) {
+				depth2Dropdown.innerHTML = depth2Menus[parts[0]]
+					.map(item => `<li><a href="${item.href}">${item.text}</a></li>`)
+					.join('');
+			}
+
+			breadcrumbItems[1].style.display = 'block';
+		} else if (breadcrumbItems[1]) {
+			breadcrumbItems[1].style.display = 'none';
+		}
+
+		// Depth 3 설정
+		if (parts[2] && breadcrumbItems[2]) {
+			const depth3Btn = breadcrumbItems[2].querySelector('.breadcrumb-toggle span');
+			if (depth3Btn) depth3Btn.textContent = parts[2];
+			breadcrumbItems[2].style.display = 'block';
+		} else if (breadcrumbItems[2]) {
+			breadcrumbItems[2].style.display = 'none';
+		}
+	}
+
+	// breadcrumb 적용
+	if (breadcrumbPath) {
+		setBreadcrumb(breadcrumbPath);
+	}
 })();
 </script>

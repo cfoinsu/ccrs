@@ -411,7 +411,7 @@
     height: auto;
   }
   .main-content {
-    padding-top: 72px;
+    padding-top: 117px;
   }
   .content-layout {
     margin-top: 30px;
@@ -421,8 +421,14 @@
   }
 }
 @media (max-width: 1023px) {
+  .page-description.bgBlue {
+    padding: 15px;
+  }
   .page-description.bgBlue p {
     font-size: 17px;
+  }
+  .page-description.bgBlue p br {
+    display: none;
   }
 }
 .mobile-allmenu-overlay {
@@ -766,7 +772,7 @@
   background: linear-gradient(45deg, #f6f9ff 0%, #dae5ff 100%);
   border-top: 1px solid #cbdaff;
   border-bottom: 1px solid #cbdaff;
-  padding: 2px 0 2px 8px;
+  padding: 0 0 0 8px;
   overflow: visible;
 }
 @media (max-width: 1023px) {
@@ -836,7 +842,6 @@
   font-size: 14px;
 }
 .mobile-breadcrumb-nav .breadcrumb-item {
-  width: 30%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -852,6 +857,9 @@
   margin: auto 0;
   right: 0;
   position: absolute;
+}
+.mobile-breadcrumb-nav .breadcrumb-item:last-child .breadcrumb-toggle {
+  font-weight: 700;
 }
 .mobile-breadcrumb-nav .breadcrumb-item:last-child::after {
   display: none;
@@ -870,7 +878,6 @@
   width: 100%;
   height: 40px;
   padding: 6px 14px;
-  border-radius: 6px;
   color: #333;
   font-size: 14px;
   font-weight: 500;
@@ -901,12 +908,10 @@
   transition: transform 0.3s, -webkit-transform 0.3s;
 }
 .mobile-breadcrumb-nav .breadcrumb-item .breadcrumb-toggle:hover {
-  background: #fff5ed;
   border-color: #ED7801;
   color: #ED7801;
 }
 .mobile-breadcrumb-nav .breadcrumb-item.active .breadcrumb-toggle {
-  background: #fff5ed;
   border-color: #ED7801;
   color: #ED7801;
 }
@@ -915,28 +920,32 @@
           transform: rotate(180deg);
 }
 .mobile-breadcrumb-nav .breadcrumb-item.active .breadcrumb-dropdown {
+  display: block;
+  max-height: 400px;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 .mobile-breadcrumb-nav .breadcrumb-item .breadcrumb-dropdown {
+  display: none;
   overflow: hidden;
   position: absolute;
-  top: calc(100% + 12px);
+  top: calc(100% + 1px);
   left: 0;
   right: 0;
-  height: 0;
+  max-height: 0;
   background: #fff;
   border: 1px solid #e0e0e0;
-  border-top: none;
   border-radius: 0 0 8px 8px;
   -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease, max-height 0.3s ease;
+  transition: all 0.3s ease, max-height 0.3s ease;
   z-index: 1000;
 }
 .mobile-breadcrumb-nav .breadcrumb-item .breadcrumb-dropdown ul {
