@@ -210,19 +210,25 @@ if ('IntersectionObserver' in window) {
 // Mobile Menu Toggle (if needed)
 function createMobileMenu() {
     const navMenu = document.querySelector('.nav-menu');
+
+    // navMenu가 존재하지 않으면 함수 종료
+    if (!navMenu) {
+        return;
+    }
+
     const mobileToggle = document.createElement('button');
     mobileToggle.className = 'mobile-menu-toggle';
     mobileToggle.innerHTML = '☰';
     mobileToggle.setAttribute('aria-label', '메뉴 열기');
-    
+
     mobileToggle.addEventListener('click', () => {
         navMenu.classList.toggle('mobile-open');
         mobileToggle.innerHTML = navMenu.classList.contains('mobile-open') ? '✕' : '☰';
-        mobileToggle.setAttribute('aria-label', 
+        mobileToggle.setAttribute('aria-label',
             navMenu.classList.contains('mobile-open') ? '메뉴 닫기' : '메뉴 열기'
         );
     });
-    
+
     // Insert mobile toggle before nav menu
     navMenu.parentNode.insertBefore(mobileToggle, navMenu);
 }
