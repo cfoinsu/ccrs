@@ -444,6 +444,8 @@
   .page-description.bgBlue p br {
     display: none;
   }
+}
+@media (max-width: 767px) {
   .summary-box {
     padding: 20px 16px;
   }
@@ -463,30 +465,16 @@
   }
   .summary-box .summary-key .keybox {
     flex: auto;
-    align-items: center;
-    justify-content: space-between;
     width: 49%;
     border-radius: 14px;
     padding: 16px;
   }
-}
-@media (max-width: 1023px) and (max-width: 767px) {
-  .summary-box .summary-key .keybox {
-    flex-direction: row;
-    gap: 20px;
-  }
-}
-@media (max-width: 1023px) {
-  .summary-box .summary-key .keybox img {
-    margin-bottom: 0;
-  }
   .summary-box .summary-key .keybox b {
     display: block;
-    flex-grow: 0;
-    flex-shrink: 0;
-    width: 66%;
+    padding-left: 31px;
     font-weight: 400;
     font-size: 1.9rem;
+    color: #595959;
   }
 }
 .mobile-allmenu-overlay {
@@ -796,7 +784,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  overflow-x: hidden;
 }
 .mobile-breadcrumb-nav .breadcrumb-home {
   position: relative;
@@ -930,7 +917,7 @@
 }
 .mobile-breadcrumb-nav .breadcrumb-item .breadcrumb-dropdown ul li a {
   display: block;
-  padding: 10px 16px;
+  padding: 6px 16px;
   color: #333;
   font-size: 14px;
   text-decoration: none;

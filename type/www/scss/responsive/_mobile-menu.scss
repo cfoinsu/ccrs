@@ -358,7 +358,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    overflow-x: hidden;
   }
 
   .breadcrumb-home {
@@ -508,7 +507,7 @@
         li {
           a {
             display: block;
-            padding: 10px 16px;
+            padding: 6px 16px;
             color: #333;
             font-size: 14px;
             text-decoration: none;
