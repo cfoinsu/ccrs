@@ -102,9 +102,18 @@ Version : v1.0
   height: 64px;
 }
 
-#header .header-mobile {
+/* #header .header-mobile {
   display: none;
 }
+
+@media screen and (min-width: 1024px) {
+  #header .header-desktop {
+    display: none;
+  }
+  #header .header-mobile {
+    display: block;
+  }
+} */
 
 #header .gnb-wrap .logo {
   position: absolute;
