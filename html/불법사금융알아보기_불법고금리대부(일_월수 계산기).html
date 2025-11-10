@@ -195,13 +195,13 @@
 
                                                             <div class="form-group">
                                                                 <label for="loanAmount1" class="form-label">상환하기로 한 원수</label>
-                                                                <input type="text" id="loanAmount1" class="form-input" placeholder="">
+                                                                <input type="text" inputmode="numeric" pattern="[0-9]*" id="loanAmount1" class="form-input" placeholder="">
                                                             </div>
 
                                                             <div class="form-group">
                                                                 <label for="repayAmount1" class="form-label">1회에 상환하는 원리금</label>
                                                                 <div class="input-with-unit">
-                                                                    <input type="text" id="repayAmount1" class="form-input" placeholder="">
+                                                                    <input type="text" inputmode="numeric" pattern="[0-9]*" id="repayAmount1" class="form-input" placeholder="">
                                                                     <span class="unit">원</span>
                                                                 </div>
                                                             </div>
@@ -209,7 +209,7 @@
                                                             <div class="form-group">
                                                                 <label for="borrowAmount1" class="form-label">차입원금</label>
                                                                 <div class="input-with-unit">
-                                                                    <input type="text" id="borrowAmount1" class="form-input" placeholder="">
+                                                                    <input type="text" inputmode="numeric" pattern="[0-9]*" id="borrowAmount1" class="form-input" placeholder="">
                                                                     <span class="unit">원</span>
                                                                 </div>
                                                             </div>
@@ -219,8 +219,8 @@
                                                                     납입주기
                                                                     <span class="form-hint">(예:매일=1, 매주=7)</span>
                                                                 </label>
-                                                                <input type="text" id="repayPeriod1" class="form-input" placeholder="">
-                                                                
+                                                                <input type="text" inputmode="numeric" pattern="[0-9]*" id="repayPeriod1" class="form-input" placeholder="">
+
                                                             </div>
 
                                                             <div class="result-box">
@@ -238,20 +238,20 @@
                                                             <div class="form-group">
                                                                 <label for="interestRate2" class="form-label">연이자율</label>
                                                                 <div class="input-with-unit">
-                                                                    <input type="text" id="interestRate2" class="form-input" placeholder="">
+                                                                    <input type="text" inputmode="decimal" pattern="[0-9.]*" id="interestRate2" class="form-input" placeholder="">
                                                                     <span class="unit">%</span>
                                                                 </div>
                                                             </div>
 
                                                             <div class="form-group">
                                                                 <label for="loanAmount2" class="form-label">상환하기로 한 원수</label>
-                                                                <input type="text" id="loanAmount2" class="form-input" placeholder="">
+                                                                <input type="text" inputmode="numeric" pattern="[0-9]*" id="loanAmount2" class="form-input" placeholder="">
                                                             </div>
 
                                                             <div class="form-group">
                                                                 <label for="borrowAmount2" class="form-label">차입원금</label>
                                                                 <div class="input-with-unit">
-                                                                    <input type="text" id="borrowAmount2" class="form-input" placeholder="">
+                                                                    <input type="text" inputmode="numeric" pattern="[0-9]*" id="borrowAmount2" class="form-input" placeholder="">
                                                                     <span class="unit">원</span>
                                                                 </div>
                                                             </div>
@@ -261,7 +261,7 @@
                                                                     납입주기
                                                                     <span class="form-hint">(예:매일=1, 매주=7)</span>
                                                                 </label>
-                                                                <input type="text" id="repayPeriod2" class="form-input" placeholder="">
+                                                                <input type="text" inputmode="numeric" pattern="[0-9]*" id="repayPeriod2" class="form-input" placeholder="">
                                                             </div>
 
                                                             <div class="result-box">
@@ -486,6 +486,27 @@
     <script src="/type/www/js/script.js"></script> 
     공통 header 분리하기 위해 init.js 임시 추가  -->
 	<script src="includes/init.js?ver=3.4"></script>
+
+	<!-- 숫자 입력 제한 스크립트 -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			// 정수만 입력 가능한 필드
+			const numericInputs = document.querySelectorAll('input[inputmode="numeric"]');
+			numericInputs.forEach(input => {
+				input.addEventListener('input', function(e) {
+					this.value = this.value.replace(/[^0-9]/g, '');
+				});
+			});
+
+			// 소수점 입력 가능한 필드 (연이자율)
+			const decimalInputs = document.querySelectorAll('input[inputmode="decimal"]');
+			decimalInputs.forEach(input => {
+				input.addEventListener('input', function(e) {
+					this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');
+				});
+			});
+		});
+	</script>
 </body>
 
 </html>
