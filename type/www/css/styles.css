@@ -7371,7 +7371,7 @@ input[type=radio]:checked+label.fillter-chip {
     background: #D63D4A;
     border-color: #D63D4A;
     border-radius: 1000px;
-    box-shadow: 5px 5px 15px 0px #0000002E;
+    /* box-shadow: 5px 5px 15px 0px #0000002E; */
     padding: 0 16px;
     color: #fff;
     font-size: 1.7rem;
@@ -7403,6 +7403,10 @@ input[type=radio]:checked+label.fillter-chip {
     margin-top: 0.8rem;
     margin-bottom: 3.2rem;
     font-size: 1.9rem;
+}
+
+.summary-link b {
+    font-weight: 400;
 }
 
 .summary-key {
