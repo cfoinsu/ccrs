@@ -335,6 +335,7 @@ fontsize-normal .font-bold {
     width: 100%;
     text-align: center;
     color: #474E55;
+    font-weight: 700;
 }
 
 .page-description.bgYellow {
@@ -7792,6 +7793,10 @@ input[type=radio]:checked+label.fillter-chip {
 
 .krds-info-list.decimal .bullet.small::before {
     height: 20px;
+}
+
+.krds-info-list>li:not(first-child) {
+    margin-top: 10px;
 }
 
 table .krds-info-list>li>.krds-info-list>li,
