@@ -416,6 +416,9 @@
   .content-layout {
     margin-top: 30px;
   }
+  .content-layout .breadcrumb {
+    display: none;
+  }
 }
 .mobile-allmenu-overlay {
   position: fixed;

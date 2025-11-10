@@ -355,5 +355,8 @@ $hdH-t: 72px;
   }
   .content-layout {
     margin-top: 30px;
+    .breadcrumb {
+      display: none;
+    }
   }
 }
