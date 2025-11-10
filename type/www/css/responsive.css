@@ -18,6 +18,11 @@
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 6px;
   }
+  .tab.fill.full ul li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
   .tab.fill.full .active .btn-tab {
     background: #F48F01;
     color: #fff !important;
@@ -439,7 +444,11 @@
     display: none;
   }
   .summary-box {
-    padding: 20px;
+    padding: 20px 16px;
+  }
+  .summary-box .summary-tit {
+    margin-bottom: 10px;
+    font-size: 2.6rem;
   }
   .summary-box .summary-link {
     -webkit-box-orient: vertical;
@@ -460,6 +469,10 @@
             flex: auto;
     width: 49%;
     border-radius: 14px;
+  }
+  .summary-box .summary-key .keybox b {
+    font-weight: 400;
+    font-size: 1.9rem;
   }
 }
 .mobile-allmenu-overlay {

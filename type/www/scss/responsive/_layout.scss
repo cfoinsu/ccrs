@@ -31,6 +31,16 @@ $hdH-t: 72px;
 }
 
 @include desktopLess {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+    
+    @include mobile {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
   // Header
   #header {
     .utility-right {
@@ -351,7 +361,7 @@ $hdH-t: 72px;
     height: auto;
   }
   .main-content {
-    padding-top: $hdH-t;
+    padding-top: 117px;
   }
   .content-layout {
     margin-top: 30px;
