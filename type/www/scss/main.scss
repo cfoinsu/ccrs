@@ -2141,10 +2141,13 @@ body:has(.intro.show) {
     }
     .bottombox {
         position: relative;
-        height: 248px;
-        padding: $boxPaddingY $boxPaddingX;
         border-radius: $boxRound;
         background: #F0EFEB;
+        .swiper-slide a {
+            display: block;
+            height: 248px;
+            padding: $boxPaddingY $boxPaddingX;
+        }
         .bottombox-txt {
             font-size: 22px;
             font-weight: 700;
