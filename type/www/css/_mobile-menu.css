@@ -294,7 +294,7 @@
   background: linear-gradient(45deg, #f6f9ff 0%, #dae5ff 100%);
   border-top: 1px solid #cbdaff;
   border-bottom: 1px solid #cbdaff;
-  padding: 2px 0 2px 8px;
+  padding: 0 0 0 8px;
   overflow: visible;
 }
 @media (max-width: 1023px) {
@@ -306,15 +306,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  white-space: nowrap;
-}
-.mobile-breadcrumb-nav .breadcrumb-inner::-webkit-scrollbar {
-  height: 4px;
-}
-.mobile-breadcrumb-nav .breadcrumb-inner::-webkit-scrollbar-thumb {
-  background: #ddd;
-  border-radius: 2px;
+  overflow-x: hidden;
 }
 .mobile-breadcrumb-nav .breadcrumb-home {
   position: relative;
@@ -350,9 +342,9 @@
   font-size: 14px;
 }
 .mobile-breadcrumb-nav .breadcrumb-item {
-  width: 30%;
-  flex: 1;
   position: relative;
+  flex: 1;
+  min-width: 0;
 }
 .mobile-breadcrumb-nav .breadcrumb-item::after {
   content: "";
@@ -379,7 +371,6 @@
   width: 100%;
   height: 40px;
   padding: 6px 14px;
-  border-radius: 6px;
   color: #333;
   font-size: 14px;
   font-weight: 500;
@@ -391,6 +382,7 @@
   overflow: hidden;
   width: 100%;
   text-overflow: ellipsis;
+  white-space: nowrap;
   text-align: left;
 }
 .mobile-breadcrumb-nav .breadcrumb-item .breadcrumb-toggle::after {
@@ -406,12 +398,10 @@
   transition: transform 0.3s;
 }
 .mobile-breadcrumb-nav .breadcrumb-item .breadcrumb-toggle:hover {
-  background: #fff5ed;
   border-color: #ED7801;
   color: #ED7801;
 }
 .mobile-breadcrumb-nav .breadcrumb-item.active .breadcrumb-toggle {
-  background: #fff5ed;
   border-color: #ED7801;
   color: #ED7801;
 }
@@ -419,15 +409,17 @@
   transform: rotate(180deg);
 }
 .mobile-breadcrumb-nav .breadcrumb-item.active .breadcrumb-dropdown {
+  display: block;
   max-height: 400px;
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 .mobile-breadcrumb-nav .breadcrumb-item .breadcrumb-dropdown {
+  display: none;
   overflow: hidden;
   position: absolute;
-  top: calc(100% + 4px);
+  top: calc(100% + 1px);
   left: 0;
   right: 0;
   max-height: 0;
@@ -457,16 +449,6 @@
 .mobile-breadcrumb-nav .breadcrumb-item .breadcrumb-dropdown ul li a:hover {
   background: #fff5ed;
   color: #ED7801;
-}
-
-@media (max-width: 480px) {
-  .mobile-breadcrumb-nav {
-    padding: 10px 12px;
-  }
-  .mobile-breadcrumb-nav .breadcrumb-toggle {
-    padding: 5px 8px;
-    font-size: 13px;
-  }
 }
 
 /*# sourceMappingURL=_mobile-menu.css.map */

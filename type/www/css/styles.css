@@ -7378,7 +7378,7 @@ input[type=radio]:checked+label.fillter-chip {
     font-weight: 700;
     height: 48px;
     flex-shrink: 0;
-    gap: 4px;
+    gap: 10px;
 }
 
 .youtube-btn-red:hover,
@@ -7427,6 +7427,10 @@ input[type=radio]:checked+label.fillter-chip {
     width: 0;
 }
 
+.keybox img {
+    margin-bottom: 7px;
+}
+
 .keybox.full {
     flex: 100%;
     flex-shrink: 0;
@@ -7438,7 +7442,6 @@ input[type=radio]:checked+label.fillter-chip {
 }
 
 .keybox b {
-    margin-top: 7px;
     font-weight: 700;
     font-size: 1.5rem;
     color: #000;
