@@ -10,7 +10,7 @@
 // @include mobile { ... } : Mobile 이하 (~ 767px)
 // ============================================
 
-$hdH-t: 72px;
+$hdH-t: 53px;
 
 
 // Desktop/Mobile 헤더 표시/숨김
@@ -84,10 +84,7 @@ $hdH-t: 72px;
       .logo {
         display: block;
         img {
-          height: 36px;
-          @include mobile {
-            height: 32px;
-          }
+          height: 27px;
         }
       }
     }
@@ -234,6 +231,37 @@ $hdH-t: 72px;
             display: block;
           }
         }
+      }
+    }
+
+    .g-grid-wrap.contect {
+      flex-direction: column;
+      .g-info-box {
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 3rem;
+        .g-desc-box {
+          width: 80%;
+          gap: 2px !important;
+          .g-text-wrap .g-subtit {
+            font-size: 1.6rem;
+            color: #666;
+          }
+          .conts-desc {
+            margin-bottom: 0;
+          }
+        }
+        .g-img {
+          display: flex;
+          justify-content: center;
+          width: 70px;
+          transform: scale(0.9);
+          img {
+            display: block;
+            height: 70%;
+          }
+        }
+        
       }
     }
   }
