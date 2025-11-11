@@ -1667,3 +1667,18 @@
         }
     }
 }
+
+.sec-tit {
+    padding-left: 20px;
+    font-size: 3.2rem;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 28px;
+            background: url(/type/www/images/ic/tit_accordian.svg) no-repeat 0 0 / contain;
+    }
+}
