@@ -1655,4 +1655,68 @@
   width: 10px;
   height: 28px;
   background: url(/type/www/images/ic/tit_accordian.svg) no-repeat 0 0/contain;
+}
+
+.bullet {
+  font-size: 2.4rem;
+  color: #01133b;
+  padding-left: 12px;
+  position: relative;
+}
+.bullet::before {
+  content: "";
+  width: 4px;
+  height: 24px;
+  background: url(../img/icons/bullet.svg) no-repeat center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.lst-micro {
+  margin-top: 20px;
+}
+.lst-micro li {
+  margin-bottom: 20px;
+}
+.lst-micro li strong {
+  position: relative;
+  padding-left: 15px;
+}
+.lst-micro li strong::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  margin-right: 10px;
+  background: #666;
+  border-radius: 50%;
+}
+.lst-micro li p {
+  padding-left: 15px;
+}
+
+.counseling-desc {
+  font-size: 1.7rem;
+  color: #666;
+}
+
+.counseling-lst p {
+  padding: 10px 0;
+  font-size: 1.7rem;
+  color: #666;
+}
+
+.btn-accordion .sec-tit::before {
+  display: none;
+}
+
+.unit4 .g-info-box {
+  background: #f3f3f3;
 }/*# sourceMappingURL=styles_en_override.css.map */
