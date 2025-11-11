@@ -5505,6 +5505,10 @@ table.comparison-table td:first-child {
     border-radius: 2.4rem;
 }
 
+.roundcheck.green .krds-info-list.decimal > li::before {
+    background: url(../../img/icons/check_circle_bullet_green.png) no-repeat center;
+}
+
 .agree-text {
     margin-bottom: 2rem;
 }
@@ -7741,6 +7745,27 @@ input[type=radio]:checked+label.fillter-chip {
     width: 100%;
 }
 
+.effect-box .boxc2.row {
+    flex-direction: row;
+}
+
+.effect-box .boxc2.row .key-img {
+    flex-direction: row;
+    gap: 12px;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.effect-box .boxc2.row .key-img p,
+.effect-box .boxc2.row .key-img span {
+    text-align: left;
+    width: auto;
+}
+
+.effect-box .boxc2.row .key-text {
+    text-align: left;
+}
+
 .effect-box .key-img.border-none {
     border-bottom: none;
     padding-bottom: 0;
@@ -7757,6 +7782,7 @@ input[type=radio]:checked+label.fillter-chip {
 
 .effect-box .key-text {
     font-size: 1.9rem;
+    width: 100%;
 }
 
 .effect-box .key-text span {
