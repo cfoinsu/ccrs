@@ -3166,7 +3166,7 @@ caption {
 .krds-info-list > li > .krds-info-list > li {
   padding-left: var(--krds-info-list--depth2-padding-left);
   color: var(--krds-info-list--depth2-color-text);
-  font-size: var(--krds-info-list--pc-text-depth2);
+  /*font-size: var(--krds-info-list--pc-text-depth2);*/
 }
 @media (max-width: 767px) {
   .krds-info-list > li > .krds-info-list > li {
