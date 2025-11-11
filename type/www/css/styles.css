@@ -8542,3 +8542,12 @@ table .table-center {
         font-size: 28px;
     }
 }
+
+.g-info-box .info-content .highlightbg {
+    font-size: 19px;
+    font-weight: 700;
+    display: inline-block;
+    background: linear-gradient(to top, #FFE5CA 20%, transparent 20%);
+    background-position: 0 25px;
+    padding: 0 4px;
+}
