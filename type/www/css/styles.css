@@ -284,6 +284,34 @@ body {
     background: #ed7801;
 }
 
+/*사이드메뉴 따라오게 만들기*/
+body:has(.is-hide) aside {
+    position: sticky;
+    top: 2vh;
+    transition: all 0.6s ease;
+}
+
+body aside {
+    position: sticky;
+    top: calc(2vh + 160px);
+    transition: all 0.6s ease;
+}
+
+/* 사이드바 높이가 뷰포트보다 클 때만 스크롤 적용 */
+@media (max-height: 900px) {
+    body aside .sidebar-nav {
+        max-height: calc(100vh - 360px); /* 헤더(160px) + sticky top(2vh) + 여백(~200px) */
+        overflow-y: auto;
+    }
+}
+
+@media (max-height: 700px) {
+    body aside .sidebar-nav {
+        max-height: calc(100vh - 300px);
+        overflow-y: auto;
+    }
+}
+
 /* Content Area */
 .content-area {
     background: #ffffff;
@@ -5256,7 +5284,7 @@ table.comparison-table td:first-child {
     width: 100%;
 }
 
-.krds-info-list > li {
+.krds-info-list>li {
     font-size: 1.7rem;
 }
 
@@ -5505,7 +5533,7 @@ table.comparison-table td:first-child {
     border-radius: 2.4rem;
 }
 
-.roundcheck.green .krds-info-list.decimal > li::before {
+.roundcheck.green .krds-info-list.decimal>li::before {
     background: url(../../img/icons/check_circle_bullet_green.png) no-repeat center;
 }
 
@@ -7774,7 +7802,7 @@ input[type=radio]:checked+label.fillter-chip {
 
 .effect-box .boxc1.row .key-img .img,
 .effect-box .boxc2.row .key-img .img {
-    padding:14px;
+    padding: 14px;
     border-radius: 50%;
     background-color: #EDF4FF;
     width: 60px;
