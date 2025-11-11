@@ -183,7 +183,7 @@ Version : v1.0
   opacity: 0;
   visibility: hidden;
   min-height: 0;
-  height: auto;
+  height: 312px;
   position: absolute;
   transition: all 0.2s ease;
   top: 80px;
