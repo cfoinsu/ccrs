@@ -7747,6 +7747,8 @@ input[type=radio]:checked+label.fillter-chip {
 
 .effect-box .boxc2.row {
     flex-direction: row;
+    border: none;
+    border-radius: 0;
 }
 
 .effect-box .boxc2.row .key-img {
@@ -7754,6 +7756,13 @@ input[type=radio]:checked+label.fillter-chip {
     gap: 12px;
     padding-bottom: 0;
     border-bottom: none;
+}
+
+.effect-box .boxc2.row .key-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #EDF4FF;
 }
 
 .effect-box .boxc2.row .key-img p,
