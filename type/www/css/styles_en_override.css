@@ -1860,4 +1860,15 @@
   left: 0;
   display: inline-block !important;
   font-family: Arial, sans-serif;
+}
+
+.en .debt-relief-table thead th, .en .debt-relief-table thead td, .en .debt-relief-table tbody th, .en .debt-relief-table tbody td {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  font-size: 15px !important;
+}
+.en .debt-relief-table thead th span, .en .debt-relief-table thead td span, .en .debt-relief-table tbody th span, .en .debt-relief-table tbody td span {
+  display: block;
+  font-size: 14px;
+  color: #666;
 }/*# sourceMappingURL=styles_en_override.css.map */
