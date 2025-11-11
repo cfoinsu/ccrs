@@ -1155,8 +1155,8 @@
   position: absolute;
   top: 320px;
   left: 50%;
-  -webkit-transform: translateX(-157%);
-          transform: translateX(-157%);
+  -webkit-transform: translateX(-125%);
+          transform: translateX(-125%);
   color: #fff;
 }
 #section4 .contact-container {
