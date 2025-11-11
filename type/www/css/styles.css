@@ -7838,7 +7838,7 @@ input[type=radio]:checked+label.fillter-chip {
     height: 20px;
 }
 
-.krds-info-list>li:not(first-child) {
+.krds-info-list>li:not(:first-child) {
     margin-top: 10px;
 }
 
