@@ -112,6 +112,10 @@ body {
     font-weight: 500;
 }
 
+.fw-bold {
+    font-weight: 700;
+}
+
 
 /* Breadcrumb */
 .breadcrumb {
