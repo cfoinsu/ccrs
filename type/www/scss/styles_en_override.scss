@@ -1639,3 +1639,31 @@
         margin-top: 51px;
     }
 }
+
+.micro-lst {
+    margin-top: 20px;
+    border-top: 1px solid #d2d6da;
+    li {
+        padding: 20px 0;
+        strong {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 20px;
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                margin-right: 10px;
+                background: #000;
+                border-radius: 50%;
+                vertical-align: middle;
+                margin-top: -3px;
+            }
+        }
+        p {
+            padding-left: 15px;
+            color: #555;
+        }
+    }
+}

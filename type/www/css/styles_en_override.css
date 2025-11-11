@@ -1611,4 +1611,32 @@
           flex-direction: column;
   gap: 20px;
   margin-top: 51px;
+}
+
+.micro-lst {
+  margin-top: 20px;
+  border-top: 1px solid #d2d6da;
+}
+.micro-lst li {
+  padding: 20px 0;
+}
+.micro-lst li strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.micro-lst li strong::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 10px;
+  background: #000;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+.micro-lst li p {
+  padding-left: 15px;
+  color: #555;
 }/*# sourceMappingURL=styles_en_override.css.map */
