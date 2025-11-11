@@ -8517,6 +8517,21 @@ table .table-center {
     margin: 0;
 }
 
+.organization-desc {
+    margin-top: 12px;
+    font-size: 19px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.organization-desc.blue {
+    color: #2191C0;
+}
+
+.organization-desc.orange {
+    color: #F48F01;
+}
+
 @media (max-width: 768px) {
     .support-organization-header h3 {
         font-size: 24px;
