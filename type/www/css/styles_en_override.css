@@ -1639,4 +1639,20 @@
 .micro-lst li p {
   padding-left: 15px;
   color: #555;
+}
+
+.sec-tit {
+  padding-left: 20px;
+  font-size: 3.2rem;
+}
+.sec-tit::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 10px;
+  height: 28px;
+  background: url(/type/www/images/ic/tit_accordian.svg) no-repeat 0 0/contain;
 }/*# sourceMappingURL=styles_en_override.css.map */
