@@ -4940,6 +4940,10 @@ table.comparison-table td:first-child {
     align-items: flex-end;
 }
 
+.g-info-box.row.start {
+    align-items: flex-start;
+}
+
 .g-tit.flex {
     display: flex;
     flex-direction: row;
@@ -5269,6 +5273,7 @@ table.comparison-table td:first-child {
 .krds-info-list.dash li.before-none,
 .krds-info-list.decimal .before-none::before,
 .krds-info-list.decimal li.before-none {
+    content: '';
     background-color: transparent;
     padding-left: 0;
 }
