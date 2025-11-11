@@ -73,6 +73,7 @@ body {
     word-break: keep-all;
     word-spacing: -0.2rem;
 }
+
 /* 폰트 스타일 */
 .fontsize-small {
     font-size: var(--krds-pc-font-size-body-small);
@@ -3669,7 +3670,7 @@ fontsize-normal .font-bold {
     width: 100%;
 }
 
-.g-wrap .g-flex .g-wrap { 
+.g-wrap .g-flex .g-wrap {
     width: 100%;
 }
 
@@ -4113,8 +4114,7 @@ span.sub4InputLabel {
     border-radius: 24px;
 }
 
-.results-content-wrapper .graph-wrap.zoom .graph-img {
-}
+.results-content-wrapper .graph-wrap.zoom .graph-img {}
 
 .results-content-wrapper .graph-img {
     position: relative;
@@ -4145,6 +4145,7 @@ span.sub4InputLabel {
     text-align: right;
     font-weight: 700;
 }
+
 .results-content-wrapper .graph-wrap.zoom .manwon {
     right: 265px;
     top: 150px;
@@ -4164,6 +4165,7 @@ span.sub4InputLabel {
     display: flex;
     gap: 2px;
 }
+
 .results-content-wrapper .graph-wrap.zoom .hover-box {
     position: absolute;
     width: 203px;
@@ -4198,6 +4200,7 @@ span.sub4InputLabel {
     bottom: 18px;
     left: 4px;
 }
+
 .results-content-wrapper .graph-wrap.zoom .hover-box .graph-hover.left:hover span {
     bottom: 18px;
 }
@@ -4221,6 +4224,7 @@ span.sub4InputLabel {
     right: auto;
     transform: translateX(-50%);
 }
+
 .results-content-wrapper .graph-wrap .hover-box .graph-hover.right span::after {
     left: auto;
     right: -8px
@@ -4229,9 +4233,11 @@ span.sub4InputLabel {
 .results-content-wrapper .graph-wrap .hover-box .graph-hover:hover span {
     display: block
 }
+
 .results-content-wrapper .graph-wrap.zoom .hover-box .graph-hover:hover span {
     bottom: 83px;
 }
+
 .results-content-wrapper .graph-wrap.zoom .hover-box .graph-hover.right:hover span {
     bottom: 132px;
 }
@@ -4252,6 +4258,7 @@ span.sub4InputLabel {
     right: 3px;
     border-radius: 10px 10px 0 10px;
 }
+
 .results-content-wrapper .graph-wrap.zoom .freeworkout .hover-box .graph-hover.left span {
     bottom: 56px;
     left: 4px;
@@ -5002,6 +5009,7 @@ table.comparison-table td:first-child {
     height: 100%;
     justify-content: space-between;
 }
+
 .g-wrap .g-info-box.full .g-desc-box.fcg0 {
     align-items: center;
 }
@@ -7069,7 +7077,7 @@ input[type=radio]:checked+label.fillter-chip {
     display: inline-block;
     font-size: 2.4rem;
     font-weight: 700;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .shadow-tit.yellow {
@@ -7214,6 +7222,7 @@ input[type=radio]:checked+label.fillter-chip {
         opacity: 1;
     }
 }
+
 .g-img.bgact.spark:hover::after,
 .g-img.bgact.spark:focus::after {
     animation: ripple-circlezero 0.8s ease-out;
@@ -7337,6 +7346,7 @@ input[type=radio]:checked+label.fillter-chip {
 .shadow.br24 {
     border-radius: 24px !important;
 }
+
 .shadow.br8 {
     border-radius: 8px !important;
 }
@@ -7361,6 +7371,7 @@ input[type=radio]:checked+label.fillter-chip {
 .shadow-hover:hover .default {
     display: none;
 }
+
 .shadow-hover:hover .hover {
     display: block;
 }
@@ -7718,10 +7729,12 @@ input[type=radio]:checked+label.fillter-chip {
     font-weight: 400;
     font-size: 1.5rem;
 }
+
 .effect-box .item-share {
     top: 66px;
     right: 100px;
 }
+
 .keybox .key-text span {
     font-weight: 400;
     font-size: 1.3rem;
@@ -7951,25 +7964,30 @@ table .table-center {
 .logo-h30 {
     height: 30px;
 }
+
 .autocomplete {
-    display:none;
-    border:1px solid #aaa;
-    position:absolute;
-    background:#fff;
-    z-index:10;
-    width:480px;
-    top:40px;
-    left:0"
+    display: none;
+    border: 1px solid #aaa;
+    position: absolute;
+    background: #fff;
+    z-index: 10;
+    width: 480px;
+    top: 40px;
+    left: 0"
+
 }
+
 .krds-accordion.type-heading .accordion-item.active .btn-accordion::after {
     background-size: contain;
 }
+
 .logo-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 1rem;
 }
+
 .logo-grid .logo-box {
     overflow: hidden;
     border: 1px solid #eee;
@@ -7977,8 +7995,35 @@ table .table-center {
     width: 19%;
     padding: 5px;
 }
+
 .logo-grid .logo-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.credential-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-top: -8px;
+}
+
+.credential-info-table th {
+    padding: 12px 0;
+    text-align: left;
+    font-weight: 700;
+    color: #333;
+    vertical-align: top;
+}
+
+.credential-info-table td {
+    padding: 12px 0;
+    color: #333;
+    vertical-align: top;
+}
+
+.credential-info-table .highlight-orange {
+    color: #ff8a00;
+    font-weight: 700;
 }
