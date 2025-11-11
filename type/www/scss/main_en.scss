@@ -942,8 +942,15 @@ opacity: 0.8;
 
 #section4 {
     position: relative;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: #1B2025;
+
+    .section-title {
+        position: absolute;
+        top: 320px;
+        left: 50%;
+        transform: translateX(-157%);
+        color: #fff;
+    }
 
     .contact-container {
         display: flex;
@@ -963,6 +970,9 @@ opacity: 0.8;
 
         .contact-map {
             width: 60%;
+            img {
+                transform: translateX(130px);
+            }
         }
     }
 
@@ -1031,7 +1041,7 @@ opacity: 0.8;
         justify-content: center;
         flex: 1;
         gap: 10px;
-        background-color: #fff;
+        background-color: #F48F01;
         border-radius: 28px;
         padding: 13px 24px 13px;
         text-decoration: none;
@@ -1044,19 +1054,18 @@ opacity: 0.8;
             font-weight: 600;
             font-size: 16px;
             line-height: normal;
-            color: #000;
+            color: #fff;
         }
 
         .btn-icon {
             width: 20px;
             height: 20px;
             flex-shrink: 0;
-            color: #000;
+            color: #fff;
         }
 
         &:hover {
-            background-color: #f0f0f0;
-            transform: translateY(-1px);
+            background-color: #1b2026;
         }
     }
 }

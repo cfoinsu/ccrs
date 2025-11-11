@@ -1314,6 +1314,7 @@
 // ==========================================
 
 .headquarter-section {
+    width: 100%;
     margin-bottom: 80px;
 
     @include tabletLess {
@@ -1328,7 +1329,7 @@
         display: grid;
         grid-template-columns: 232px 1fr;
         gap: 32px;
-        margin-bottom: 40px;
+        margin-bottom: 100px;
 
         @include tabletLess {
             grid-template-columns: 180px 1fr;
@@ -1357,7 +1358,7 @@
     .contact-info-container {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
 
         @include tabletLess {
             gap: 32px;
@@ -1378,7 +1379,7 @@
             height: 24px;
             color: #1b2025;
             flex-shrink: 0;
-            margin-top: 5px;
+            margin-top: 2px;
 
             i {
                 font-size: 20px;
@@ -1598,8 +1599,14 @@
         background: #E1EEFA;
     }
     .g-wrap .g-conts-area .conts-desc {
-        margin-bottom: 60px;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 10px;
         font-size: 17px;
+        .g-tit {
+            text-align: right;
+        }
     }
 
     .g-info-box.full .g-desc-box.row {

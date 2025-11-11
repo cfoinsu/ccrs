@@ -925,8 +925,15 @@
 
 #section4 {
   position: relative;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #1B2025;
+}
+#section4 .section-title {
+  position: absolute;
+  top: 320px;
+  left: 50%;
+  -webkit-transform: translateX(-157%);
+          transform: translateX(-157%);
+  color: #fff;
 }
 #section4 .contact-container {
   display: -webkit-box;
@@ -956,6 +963,10 @@
 }
 #section4 .contact-container .contact-map {
   width: 60%;
+}
+#section4 .contact-container .contact-map img {
+  -webkit-transform: translateX(130px);
+          transform: translateX(130px);
 }
 #section4 .contact-info-group {
   display: -webkit-box;
@@ -1042,7 +1053,7 @@
       -ms-flex: 1;
           flex: 1;
   gap: 10px;
-  background-color: #fff;
+  background-color: #F48F01;
   border-radius: 28px;
   padding: 13px 24px 13px;
   text-decoration: none;
@@ -1056,19 +1067,17 @@
   font-weight: 600;
   font-size: 16px;
   line-height: normal;
-  color: #000;
+  color: #fff;
 }
 #section4 .contact-direction-btn .btn-icon {
   width: 20px;
   height: 20px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  color: #000;
+  color: #fff;
 }
 #section4 .contact-direction-btn:hover {
-  background-color: #f0f0f0;
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  background-color: #1b2026;
 }
 
 .btn-main-01 {

@@ -43,7 +43,7 @@
 // ==========================================
 .en {
     #container {
-        padding-top: 86px;
+        padding-top: 92px;
         &.main-en {
             padding-top: 0;
         }
@@ -61,6 +61,9 @@
             padding: 0 16px;
         }
     }
+    .content-layout {
+        margin-top: 60px;
+    }
 }
 
 // ==========================================
@@ -71,7 +74,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 83px;
+    height: 92px;
     &::before {
         display: none;
     }
@@ -138,6 +141,7 @@
     &.header-en-main {
         background-color: transparent;
         box-shadow: none;
+        border-bottom: none;
         .gnb-wrap {
             .logo {
                 background: url(/type/www/img/logo/ccrs_logo_eng_dark.svg) no-repeat;
@@ -891,9 +895,12 @@
 .en {
     #header .gnb-wrap > nav .gnb > li .menu-label {
         font-size: 20px;
+        white-space: nowrap;
+        padding: 16px 34px;
+        line-height: 1.5;
     }
     #header .gnb-wrap > nav {
-        width: 960px;
+        width: auto;
     }
     #header .gnb-wrap > nav .gnb > li .depth2 {
         padding-top: 10px;
