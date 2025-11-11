@@ -706,6 +706,7 @@ opacity: 0.8;
     background-attachment: fixed;
     background-size: cover;
     background-image: url('/type/www/images/en/en_main_work_bg.png');
+    background-position: 0 50%;
 
     .contents-wrap {
         width: 67.6vw;
@@ -934,6 +935,205 @@ opacity: 0.8;
             }
         }
     }
+
+    .section-cont {
+        position: relative;
+    }
+    /* CCRS 중앙 원 */
+    .ccrs-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: #EF8200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 60px;
+    position: relative;
+    z-index: 2;
+    }
+
+    .ccrs-circle span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    color: #fff;
+    }
+
+    /* 연결선 */
+    .connector-line {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    width: 1px;
+    height: 61px;
+    border-left: 1px dotted #EF8200;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 99;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: -5px;
+        width: 10px;
+        height: 10px;
+        background: #EF8200;
+        border-radius: 50%;
+    }
+    }
+
+    /* 5개 카드 래퍼 */
+    .work-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 30px;
+    border-radius: 352px;
+    margin-top: 0;
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgba(255,255,255,0.7);
+    }
+
+    /* 개별 카드 */
+    .work-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    flex: 0 0 auto;
+    margin: 0 -20px;
+    }
+
+    /* 카드 원 */
+    .work-card-circle {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    transition: all 0.3s ease;
+    position: relative;
+    }
+
+    .work-card-circle:hover {
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.09);
+    }
+
+    /* 아이콘 플레이스홀더 */
+    .icon-simple {
+        height: 100px;
+        img {
+            height: 100%;
+        }
+        &.img1 {
+            width: 70px;
+        }
+        &.img2 {
+            width: 95px;
+        }
+        &.img3 {
+            width: 104px;
+        }
+        &.img4 {
+            width: 60px;
+        }
+        &.img5 {
+            width: 80px;
+        }
+    }
+
+    /* 카드 텍스트 */
+    .work-card-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 200px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1280px) {
+    .work-cards-wrapper {
+        gap: 30px;
+    }
+
+    .work-card-circle {
+        width: 180px;
+        height: 180px;
+    }
+
+    .work-card-text {
+        font-size: 14px;
+    }
+    }
+
+    @media (max-width: 1023px) {
+    .connector-line {
+        display: none;
+    }
+
+    .work-cards-wrapper {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .work-card {
+        flex: 0 0 calc(50% - 20px);
+        max-width: 300px;
+    }
+    }
+
+    @media (max-width: 767px) {
+    .ccrs-circle {
+        width: 140px;
+        height: 140px;
+        margin-bottom: 40px;
+    }
+
+    .ccrs-circle span {
+        font-size: 36px;
+    }
+
+    .work-cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .work-card {
+        flex: none;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .work-card-circle {
+        width: 160px;
+        height: 160px;
+    }
+
+    .icon-simple {
+        width: 50px;
+        height: 50px;
+    }
+
+    .work-card-text {
+        font-size: 13px;
+    }
+    }
 }
 
 // ==========================================
@@ -1069,6 +1269,8 @@ opacity: 0.8;
         }
     }
 }
+
+
 
 // ==========================================
 // 9. Main Page Buttons

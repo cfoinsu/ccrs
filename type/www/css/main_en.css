@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 .en .section {
   position: relative;
@@ -682,6 +683,15 @@
   background-attachment: fixed;
   background-size: cover;
   background-image: url("/type/www/images/en/en_main_work_bg.png");
+  background-position: 0 50%;
+  /* CCRS 중앙 원 */
+  /* 연결선 */
+  /* 5개 카드 래퍼 */
+  /* 개별 카드 */
+  /* 카드 원 */
+  /* 아이콘 플레이스홀더 */
+  /* 카드 텍스트 */
+  /* Responsive */
 }
 #section3 .contents-wrap {
   width: 67.6vw;
@@ -921,6 +931,220 @@
   font-weight: 500;
   height: 120px;
   line-height: 24px;
+}
+#section3 .section-cont {
+  position: relative;
+}
+#section3 .ccrs-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #EF8200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 60px;
+  position: relative;
+  z-index: 2;
+}
+#section3 .ccrs-circle span {
+  font-family: "Poppins", sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  color: #fff;
+}
+#section3 .connector-line {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 90%;
+  width: 1px;
+  height: 61px;
+  border-left: 1px dotted #EF8200;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 99;
+}
+#section3 .connector-line::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  background: #EF8200;
+  border-radius: 50%;
+}
+#section3 .work-cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  padding: 30px;
+  border-radius: 352px;
+  margin-top: 0;
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+#section3 .work-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0 -20px;
+}
+#section3 .work-card-circle {
+  width: 290px;
+  height: 290px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+#section3 .work-card-circle:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.09);
+}
+#section3 .icon-simple {
+  height: 100px;
+}
+#section3 .icon-simple img {
+  height: 100%;
+}
+#section3 .icon-simple.img1 {
+  width: 70px;
+}
+#section3 .icon-simple.img2 {
+  width: 95px;
+}
+#section3 .icon-simple.img3 {
+  width: 104px;
+}
+#section3 .icon-simple.img4 {
+  width: 60px;
+}
+#section3 .icon-simple.img5 {
+  width: 80px;
+}
+#section3 .work-card-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  line-height: 1.4;
+  margin: 0;
+  max-width: 200px;
+}
+@media (max-width: 1280px) {
+  #section3 .work-cards-wrapper {
+    gap: 30px;
+  }
+  #section3 .work-card-circle {
+    width: 180px;
+    height: 180px;
+  }
+  #section3 .work-card-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1023px) {
+  #section3 .connector-line {
+    display: none;
+  }
+  #section3 .work-cards-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #section3 .work-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 20px);
+            flex: 0 0 calc(50% - 20px);
+    max-width: 300px;
+  }
+}
+@media (max-width: 767px) {
+  #section3 .ccrs-circle {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 40px;
+  }
+  #section3 .ccrs-circle span {
+    font-size: 36px;
+  }
+  #section3 .work-cards-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+  #section3 .work-card {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 100%;
+    max-width: 250px;
+  }
+  #section3 .work-card-circle {
+    width: 160px;
+    height: 160px;
+  }
+  #section3 .icon-simple {
+    width: 50px;
+    height: 50px;
+  }
+  #section3 .work-card-text {
+    font-size: 13px;
+  }
 }
 
 #section4 {
