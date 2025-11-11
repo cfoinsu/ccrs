@@ -7681,6 +7681,11 @@ input[type=radio]:checked+label.fillter-chip {
     background: #EDF4FF;
 }
 
+.effect-box.nogap {
+    gap: 0;
+    padding: 0;
+}
+
 .effect-box.bgnone {
     padding: 0;
     background: transparent;
@@ -7749,6 +7754,12 @@ input[type=radio]:checked+label.fillter-chip {
     flex-direction: row;
     border: none;
     border-radius: 0;
+    padding: 24px 0;
+    border-bottom: 1px solid #D2D6DA;
+}
+
+.effect-box .boxc2.row.noborder {
+    border-bottom: none;
 }
 
 .effect-box .boxc2.row .key-img {
@@ -7762,6 +7773,8 @@ input[type=radio]:checked+label.fillter-chip {
     padding:14px;
     border-radius: 50%;
     background-color: #EDF4FF;
+    width: 60px;
+    height: 60px;
 }
 
 .effect-box .boxc2.row .key-img p,
