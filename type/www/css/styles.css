@@ -5839,6 +5839,25 @@ table.comparison-table td:first-child {
     gap: 16px;
 }
 
+.timeline-event-content-flex span {
+    position: relative;
+    display: block;
+    font-size: 1.4rem;
+    opacity: 0.8;
+    padding-left: 18px;
+    line-height: 1.3;
+    margin-top: 5px;
+}
+.timeline-event-content-flex span::before {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 2px;
+    width: 6px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
 .timeline-placeholder-flex .icon {
     width: 80px;
     height: 80px;
