@@ -1627,6 +1627,8 @@
             display: block;
             font-size: 0.9em;
             color: #666;
+            padding-left: 1.2em;
+            // text-indent: -1.2em;
         }
     }
     .krds-info-list > li {
@@ -1684,7 +1686,7 @@
         transform: translateY(-50%);
         width: 10px;
         height: 28px;
-            background: url(/type/www/images/ic/tit_accordian.svg) no-repeat 0 0 / contain;
+        background: url(/type/www/images/ic/tit_accordian.svg) no-repeat 0 0 / contain;
     }
 }
 
@@ -1708,25 +1710,22 @@
 .lst-micro {
     margin-top: 20px;
     li {
-        margin-bottom: 20px;
-        strong {
-            position: relative;
-            padding-left: 15px;
-            &::before {
-                content: '';
-                position: absolute;
-                top: 50%;
-                left: 0;
-                transform: translateY(-50%);
-                width: 5px;
-                height: 5px;
-                margin-right: 10px;
-                background: #666;
-                border-radius: 50%;
-            }
+        position: relative;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 11px;
+            left: 0;
+            width: 5px;
+            height: 5px;
+            margin-right: 10px;
+            background: #666;
+            border-radius: 50%;
         }
         p {
-            padding-left: 15px;
+            padding-left: 2px;
         }
     }
 }
@@ -1737,9 +1736,9 @@
 }
 .counseling-lst {
     p {
-        padding: 10px 0;
+        padding: 10px 12px;
         font-size: 1.7rem;
-        color: #666;
+        color: #777;
     }
 }
 
@@ -1865,4 +1864,34 @@
             padding-top: 0;
         }
     }
+}
+
+.en .krds-table-wrap {
+    .g-tit {
+        margin-bottom: 10px;
+    }
+    ol {
+        list-style-type: none !important;
+        counter-reset: list-counter;
+        margin-top: 5px;
+        padding-left: 0 !important;
+
+        li {
+            font-size: 16px;
+            color: #666;
+            display: list-item !important;
+            padding-left: 1.8em;
+            position: relative;
+            counter-increment: list-counter;
+
+            &::before {
+                content: counter(list-counter) " " !important;
+                position: absolute;
+                left: 0;
+                display: inline-block !important;
+                font-family: Arial, sans-serif;
+            }
+        }
+    }
+
 }
