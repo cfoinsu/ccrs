@@ -5860,6 +5860,7 @@ table.comparison-table td:first-child {
     font-size: 16px;
     color: var(--krds-light-color-text-basic);
     line-height: 1.5;
+    transform:translateY(-3px);
 }
 
 .timeline-event-multi-flex {
