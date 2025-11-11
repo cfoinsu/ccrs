@@ -7758,9 +7758,8 @@ input[type=radio]:checked+label.fillter-chip {
     border-bottom: none;
 }
 
-.effect-box .boxc2.row .key-img img {
-    width: 60px;
-    height: 60px;
+.effect-box .boxc2.row .key-img .img {
+    padding:14px;
     border-radius: 50%;
     background-color: #EDF4FF;
 }
