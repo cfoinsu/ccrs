@@ -7757,6 +7757,7 @@ input[type=radio]:checked+label.fillter-chip {
 
 .effect-box .key-text {
     font-size: 1.9rem;
+    width: 100%;
 }
 
 .effect-box .key-text span {
