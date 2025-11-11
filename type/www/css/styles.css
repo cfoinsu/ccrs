@@ -5505,6 +5505,10 @@ table.comparison-table td:first-child {
     border-radius: 2.4rem;
 }
 
+.roundcheck.green .krds-info-list.decimal > li::before {
+    background: url(../../img/icons/check_circle_bullet_green.png) no-repeat center;
+}
+
 .agree-text {
     margin-bottom: 2rem;
 }
