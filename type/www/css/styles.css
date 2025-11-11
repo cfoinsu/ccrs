@@ -7750,6 +7750,7 @@ input[type=radio]:checked+label.fillter-chip {
     width: 100%;
 }
 
+.effect-box .boxc1.row,
 .effect-box .boxc2.row {
     flex-direction: row;
     border: none;
@@ -7758,10 +7759,12 @@ input[type=radio]:checked+label.fillter-chip {
     border-bottom: 1px solid #D2D6DA;
 }
 
+.effect-box .boxc1.row.noborder,
 .effect-box .boxc2.row.noborder {
     border-bottom: none;
 }
 
+.effect-box .boxc1.row .key-img,
 .effect-box .boxc2.row .key-img {
     flex-direction: row;
     gap: 12px;
@@ -7769,6 +7772,7 @@ input[type=radio]:checked+label.fillter-chip {
     border-bottom: none;
 }
 
+.effect-box .boxc1.row .key-img .img,
 .effect-box .boxc2.row .key-img .img {
     padding:14px;
     border-radius: 50%;
