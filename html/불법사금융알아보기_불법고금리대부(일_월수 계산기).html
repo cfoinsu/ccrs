@@ -175,6 +175,24 @@
                                         <div class="accordion-body">
                                             <!-- accordion contents -->
                                             <div class="g-desc-box">
+                                                <div class="conts-desc">
+                                                    <div class="g-conts-area conts-desc roundcheck">
+                                                        <ul class="krds-info-list decimal" role="list">
+                                                            <li role="listitem">
+                                                                등록대부업자 또는 미등록대부업자가 법정최고금리 연20%를 초과하는 이자율로 대부계약을 한 경우
+                                                                불법고금리대부에 해당합니다.
+                                                            </li>
+                                                            <li role="listitem">
+                                                                대출금 실제 사용기간의 이자납입 주기(일, 월, 분기 등)에 따라 환산한 이자율이 법정최고금리를
+                                                                초과하지 않아야 합니다.
+                                                            </li>
+                                                        </ul>
+                                                        <p class="noti fontsize-normal primary"><i
+                                                                class="svg-icon ico-information-fill"></i><strong>연이율
+                                                                60% 초과 대출은 원금과 이자 모두 무효(25년 7월 22일 이후 계약)이므로, 갚지 않아도
+                                                                됩니다.</strong></p>
+                                                    </div>
+                                                </div>
                                                 <div class="g-img">
                                                     <img src="/type/www/images/img/불법사금융_고금리대부란.png?ver=3.8" alt="">
                                                 </div>
@@ -187,126 +205,21 @@
                                 <div class="accordion-item active">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
                                             class="btn-accordion" aria-controls="accordionCollapseSample02"><span
-                                                class="sec-tit">이런 것이 불법고금리 대부입니다.</span></button></h4>
+                                                class="sec-tit">이자율 계산하기</span></button></h4>
                                     <div id="accordionCollapseSample01" class="accordion-collapse collapse"
                                         aria-labelledby="accordionHeaderSample01">
                                         <div class="accordion-body">
                                             <!-- accordion contents -->
                                             <div class="g-desc-box">
-                                                <div class="g-img">
+                                                <!--<div class="g-img">
                                                     <img src="/type/www/images/img/불법_대부1-img1.png?ver=3.8" alt="">
-                                                </div>
-
-                                                <!-- 이자율계산기 -->
-                                                <div class="sec-sm">
-                                                    <div class="tit-sm">이자율계산기</div>
-                                                    <div class="wrap-calculator">
-                                                        <!-- 이자율을 모를 때 이자율 계산하기 -->
-                                                        <div class="calculator-box">
-                                                            <h4 class="calc-title">이자율을 모를 때 이자율 계산하기</h4>
-
-                                                            <div class="form-group">
-                                                                <label for="loanAmount1" class="form-label">상환하기로 한
-                                                                    원수</label>
-                                                                <input type="text" inputmode="numeric" pattern="[0-9]*"
-                                                                    id="loanAmount1" class="form-input" placeholder="">
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <label for="repayAmount1" class="form-label">1회에 상환하는
-                                                                    원리금</label>
-                                                                <div class="input-with-unit">
-                                                                    <input type="text" inputmode="numeric"
-                                                                        pattern="[0-9]*" id="repayAmount1"
-                                                                        class="form-input" placeholder="">
-                                                                    <span class="unit">원</span>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <label for="borrowAmount1"
-                                                                    class="form-label">차입원금</label>
-                                                                <div class="input-with-unit">
-                                                                    <input type="text" inputmode="numeric"
-                                                                        pattern="[0-9]*" id="borrowAmount1"
-                                                                        class="form-input" placeholder="">
-                                                                    <span class="unit">원</span>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <label for="repayPeriod1" class="form-label">
-                                                                    납입주기
-                                                                    <span class="form-hint">(예:매일=1, 매주=7)</span>
-                                                                </label>
-                                                                <input type="text" inputmode="numeric" pattern="[0-9]*"
-                                                                    id="repayPeriod1" class="form-input" placeholder="">
-
-                                                            </div>
-
-                                                            <div class="result-box">
-                                                                <span class="result-label">연이자율 환산시</span>
-                                                                <strong class="result-value">2.5%</strong>
-                                                            </div>
-
-                                                            <button type="button" class="btn-calculate">계산하기</button>
-                                                        </div>
-
-                                                        <!-- 이자율을 알고 있을 때 원리금 계산하기 -->
-                                                        <div class="calculator-box">
-                                                            <h4 class="calc-title">이자율을 알고 있을 때 원리금 계산하기</h4>
-
-                                                            <div class="form-group">
-                                                                <label for="interestRate2"
-                                                                    class="form-label">연이자율</label>
-                                                                <div class="input-with-unit">
-                                                                    <input type="text" inputmode="decimal"
-                                                                        pattern="[0-9.]*" id="interestRate2"
-                                                                        class="form-input" placeholder="">
-                                                                    <span class="unit">%</span>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <label for="loanAmount2" class="form-label">상환하기로 한
-                                                                    원수</label>
-                                                                <input type="text" inputmode="numeric" pattern="[0-9]*"
-                                                                    id="loanAmount2" class="form-input" placeholder="">
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <label for="borrowAmount2"
-                                                                    class="form-label">차입원금</label>
-                                                                <div class="input-with-unit">
-                                                                    <input type="text" inputmode="numeric"
-                                                                        pattern="[0-9]*" id="borrowAmount2"
-                                                                        class="form-input" placeholder="">
-                                                                    <span class="unit">원</span>
-                                                                </div>
-                                                            </div>
-
-                                                            <div class="form-group">
-                                                                <label for="repayPeriod2" class="form-label">
-                                                                    납입주기
-                                                                    <span class="form-hint">(예:매일=1, 매주=7)</span>
-                                                                </label>
-                                                                <input type="text" inputmode="numeric" pattern="[0-9]*"
-                                                                    id="repayPeriod2" class="form-input" placeholder="">
-                                                            </div>
-
-                                                            <div class="result-box">
-                                                                <span class="result-label">1회에 상환하는 원리금</span>
-                                                                <strong class="result-value">648만원</strong>
-                                                            </div>
-
-                                                            <button type="button" class="btn-calculate">계산하기</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                </div>-->
+                                                <p>대부약정서에 기재된 이자율이나 송금내역 등으로 실제 납입이자를 계산한 후 이자율이 법정최고이자율 연20%를 초과하는지 확인할
+                                                    수 있습니다.</p>
 
                                                 <!-- 월수계산기 -->
                                                 <div class="sec-sm">
-                                                    <div class="tit-sm">월수계산기</div>
+                                                    <div class="tit-sm">이자율 계산기</div>
                                                     <div class="wrap-calculator">
                                                         <!-- 이자율을 모를 때 이자율 계산하기 -->
                                                         <div class="calculator-box">
@@ -388,6 +301,112 @@
                                                     </div>
                                                 </div>
                                             </div>
+
+
+                                            <!-- 이자율계산기 -->
+                                            <div class="sec-sm">
+                                                <div class="tit-sm">일수 계산기</div>
+                                                <div class="wrap-calculator">
+                                                    <!-- 이자율을 모를 때 이자율 계산하기 -->
+                                                    <div class="calculator-box">
+                                                        <h4 class="calc-title">이자율을 모를 때 이자율 계산하기</h4>
+
+                                                        <div class="form-group">
+                                                            <label for="loanAmount1" class="form-label">상환하기로 한
+                                                                원수</label>
+                                                            <input type="text" inputmode="numeric" pattern="[0-9]*"
+                                                                id="loanAmount1" class="form-input" placeholder="">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="repayAmount1" class="form-label">1회에 상환하는
+                                                                원리금</label>
+                                                            <div class="input-with-unit">
+                                                                <input type="text" inputmode="numeric" pattern="[0-9]*"
+                                                                    id="repayAmount1" class="form-input" placeholder="">
+                                                                <span class="unit">원</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="borrowAmount1" class="form-label">차입원금</label>
+                                                            <div class="input-with-unit">
+                                                                <input type="text" inputmode="numeric" pattern="[0-9]*"
+                                                                    id="borrowAmount1" class="form-input"
+                                                                    placeholder="">
+                                                                <span class="unit">원</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="repayPeriod1" class="form-label">
+                                                                납입주기
+                                                                <span class="form-hint">(예:매일=1, 매주=7)</span>
+                                                            </label>
+                                                            <input type="text" inputmode="numeric" pattern="[0-9]*"
+                                                                id="repayPeriod1" class="form-input" placeholder="">
+
+                                                        </div>
+
+                                                        <div class="result-box">
+                                                            <span class="result-label">연이자율 환산시</span>
+                                                            <strong class="result-value">2.5%</strong>
+                                                        </div>
+
+                                                        <button type="button" class="btn-calculate">계산하기</button>
+                                                    </div>
+
+                                                    <!-- 이자율을 알고 있을 때 원리금 계산하기 -->
+                                                    <div class="calculator-box">
+                                                        <h4 class="calc-title">이자율을 알고 있을 때 원리금 계산하기</h4>
+
+                                                        <div class="form-group">
+                                                            <label for="interestRate2" class="form-label">연이자율</label>
+                                                            <div class="input-with-unit">
+                                                                <input type="text" inputmode="decimal" pattern="[0-9.]*"
+                                                                    id="interestRate2" class="form-input"
+                                                                    placeholder="">
+                                                                <span class="unit">%</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="loanAmount2" class="form-label">상환하기로 한
+                                                                원수</label>
+                                                            <input type="text" inputmode="numeric" pattern="[0-9]*"
+                                                                id="loanAmount2" class="form-input" placeholder="">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="borrowAmount2" class="form-label">차입원금</label>
+                                                            <div class="input-with-unit">
+                                                                <input type="text" inputmode="numeric" pattern="[0-9]*"
+                                                                    id="borrowAmount2" class="form-input"
+                                                                    placeholder="">
+                                                                <span class="unit">원</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label for="repayPeriod2" class="form-label">
+                                                                납입주기
+                                                                <span class="form-hint">(예:매일=1, 매주=7)</span>
+                                                            </label>
+                                                            <input type="text" inputmode="numeric" pattern="[0-9]*"
+                                                                id="repayPeriod2" class="form-input" placeholder="">
+                                                        </div>
+
+                                                        <div class="result-box">
+                                                            <span class="result-label">1회에 상환하는 원리금</span>
+                                                            <strong class="result-value">648만원</strong>
+                                                        </div>
+
+                                                        <button type="button" class="btn-calculate">계산하기</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
                                             <!-- //accordion contents -->
                                         </div>
                                     </div>
@@ -397,14 +416,34 @@
                                 <div class="accordion-item active">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
                                             class="btn-accordion" aria-controls="accordionCollapseSample02"><span
-                                                class="sec-tit">최고이자율 확인</span></button></h4>
+                                                class="sec-tit">대응요령</span></button></h4>
                                     <div id="accordionCollapseSample02" class="accordion-collapse collapse"
                                         aria-labelledby="accordionHeaderSample02">
                                         <div class="accordion-body">
                                             <!-- accordion contents -->
                                             <div class="g-desc-box">
-                                                <div class="g-img">
-                                                    <img src="/type/www/images/img/불법_대부2.png?ver=3.8" alt="">
+                                                <div class="conts-desc">
+                                                    <div class="g-conts-area conts-desc roundcheck">
+                                                        <ul class="krds-info-list decimal" role="list">
+                                                            <li role="listitem">
+                                                                '25.7.22일부터 연이율이 60%를 초과하는 불법 대부계약은 원금과 이지가 전부 무효입니다.
+                                                                (대부업법 제8조의2)<br>
+                                                                불법사금융업자에게 원금과 이자를 지급할 의무가 없으며, 불법사금융업자는 지급받은 원금과 이자가 있으면
+                                                                이를 반환해야 합니다.
+                                                            </li>
+                                                            <li role="listitem">
+                                                                연이율에 관계없이 불법사금융업자와의 이자계약은 무효입니다. (대부업법 제11조)<br>
+                                                                불법사금융업자에게 이자를 지급할 의무가 없습니다.
+                                                            </li>
+                                                        </ul>
+                                                        <!--<p class="noti fontsize-normal primary"><i
+                                                                class="svg-icon ico-information-fill"></i><strong>연이율
+                                                                60% 초과 대출은 원금과 이자 모두 무효(25년 7월 22일 이후 계약)이므로, 갚지 않아도
+                                                                됩니다.</strong></p>-->
+                                                    </div>
+                                                    <div class="g-img mt20">
+                                                        <img src="/type/www/images/img/불법_대부2.png?ver=3.8" alt="">
+                                                    </div>
                                                 </div>
                                             </div>
                                             <!-- //accordion contents -->
@@ -412,11 +451,13 @@
                                     </div>
                                 </div>
 
-
+                                <div class="g-img" style="width: 100%;">
+                                    <img src="/type/www/images/img/불법사금융_신고안내.png?ver=3.8" alt="" style="width:100%;">
+                                </div>
                             </div>
 
                         </div>
-                        <!-- //Content Sections -->
+                        <!-- //Content Sections 
                         <div class="g-conts-area">
                             <div class="g-desc-body">
                                 <div class="g-grid-wrap contect">
@@ -459,7 +500,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                         <!-- Feedback Section -->
                         <div class="feedback-section noprint">
                             <div class="feedback-card">
