@@ -4798,6 +4798,10 @@ table.comparison-table td:first-child {
     color: var(--krds-light-color-text-point);
 }
 
+.g-wrap .g-info-box.point .g-tit .colorbasic {
+    color: var(--krds-light-color-text-basic);
+}
+
 .g-wrap .g-info-box .g-desc-box .g-tit {
     font-size: var(--krds-pc-font-size-heading-small);
 }
