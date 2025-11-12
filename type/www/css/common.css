@@ -258,4 +258,6 @@ ul.circle-30 li::before {position: absolute; content: ''; display: block; width:
 	border-width: 0;
 }
 
-
+.w-full {
+	width: 100%;
+}
