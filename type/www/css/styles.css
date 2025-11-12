@@ -7845,12 +7845,12 @@ table .table-center {
 }
 
 .postion .positionbtn.posbtn16 {
-    top: 480px;
-    left: 60px;
-    background: #D2D6DA;
-    color: #7b8187;
-    font-weight: 700;
-    font-size: 17px;
+    top: 567px;
+    left: 465px;
+}
+.postion .positionbtn.posbtn17 {
+    top: 567px;
+    left: 343px;
 }
 
 .postion .positionbtn:hover {
