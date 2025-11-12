@@ -99,6 +99,9 @@
 }
 .en #header.header-en .gnb-wrap .logo {
   position: static;
+  width: 220px;
+  height: 33px;
+  background: url(/type/www/img/logo/ccrs_logo_eng.svg) no-repeat 0 50% / contain;
 }
 .en #header.header-en .gnb-wrap > nav .gnb > li.is-active::after {
   bottom: -11px;

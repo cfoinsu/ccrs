@@ -55,11 +55,10 @@
       >
         <div class="container">
           <div class="gnb-wrap">
-            <a
-              href="main_en.html"
-              class="logo"
-            >
-              CCRS
+            <a href="main_en.html" class="logo">
+                <span class="sr-only">
+                    CCRS Credit Counseling & Recover Service
+                </span>
             </a>
             <nav>
               <ul class="gnb">
@@ -1195,22 +1194,33 @@
     <script type="text/javascript">
       //페이지(section) 앵커 스크롤 이벤트
       $(window).scroll(function () {
-        if ($(this).scrollTop() >= $('#section4').offset().top - 100) {
+        const scrollTop = $(this).scrollTop();
+        const $header = $('#header');
+
+        // 헤더 클래스 관리: top에 있으면 header-en-main 추가, 아니면 제거
+        if (scrollTop === 0) {
+          $header.addClass('header-en-main');
+        } else {
+          $header.removeClass('header-en-main');
+        }
+
+        // 앵커 네비게이션
+        if (scrollTop >= $('#section4').offset().top - 100) {
           $('.m-anchor-list>li').removeClass('on');
           $('.fourthpage').addClass('on');
         } else if (
-          $(this).scrollTop() >= $('#section3').offset().top &&
-          $(this).scrollTop() < $('#section4').offset().top - 100
+          scrollTop >= $('#section3').offset().top &&
+          scrollTop < $('#section4').offset().top - 100
         ) {
           $('.m-anchor-list>li').removeClass('on');
           $('.thirdpage').addClass('on');
         } else if (
-          $(this).scrollTop() >= $('#section2').offset().top &&
-          $(this).scrollTop() < $('#section3').offset().top - 100
+          scrollTop >= $('#section2').offset().top &&
+          scrollTop < $('#section3').offset().top - 100
         ) {
           $('.m-anchor-list>li').removeClass('on');
           $('.secondpage').addClass('on');
-        } else if ($(this).scrollTop() < $('#section2').offset().top) {
+        } else if (scrollTop < $('#section2').offset().top) {
           $('.m-anchor-list>li').removeClass('on');
           $('.firstpage').addClass('on');
         } else {
