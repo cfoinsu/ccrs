@@ -5139,7 +5139,7 @@ table.comparison-table td:first-child {
 .noti {
     margin-top: var(--krds-gap-4);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: var(--krds-gap-2);
     width: 100%;
     font-size: var(--krds-pc-font-size-body-medium);
@@ -5148,6 +5148,8 @@ table.comparison-table td:first-child {
 .noti .svg-icon {
     width: 18px;
     height: 18px;
+    margin-top: 4px;
+    flex-shrink: 0;
 }
 
 .noti .primary {
