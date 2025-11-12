@@ -3394,6 +3394,7 @@ body aside {
     gap: var(--krds-gap-5);
 }
 
+
 .g-wrap .g-grid-wrap.unit2,
 .g-wrap .g-grid-wrap.unit3 {
     gap: var(--krds-gap-5);
@@ -3406,6 +3407,10 @@ body aside {
 
 .g-wrap .g-grid-wrap.sp-lg {
     row-gap: var(--krds-gap-9);
+}
+
+.g-wrap .g-grid-wrap.gap-small {
+    gap: 8px;
 }
 
 @media (max-width: 767px) {
@@ -7271,6 +7276,10 @@ input[type=radio]:checked+label.fillter-chip {
     color: var(--krds-light-color-text-basic);
     font-size: 1.7rem;
     gap: 4px;
+}
+
+.keybox.row img {
+    margin-bottom: 0;
 }
 
 .keybox img {
