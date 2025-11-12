@@ -5142,6 +5142,7 @@ table.comparison-table td:first-child {
     align-items: center;
     gap: var(--krds-gap-2);
     width: 100%;
+    font-size: var(--krds-pc-font-size-body-medium);
 }
 
 .noti .svg-icon {
@@ -7484,6 +7485,11 @@ input[type=radio]:checked+label.fillter-chip {
     padding: 0;
 }
 
+.effect-box.nogap .boxc1.row {
+    padding: 4px 0;
+    border-bottom: none;
+}
+
 .effect-box.bgnone {
     padding: 0;
     background: transparent;
@@ -7601,6 +7607,14 @@ input[type=radio]:checked+label.fillter-chip {
 .effect-box .key-img p {
     font-size: 2.4rem;
     font-weight: bold;
+}
+
+.effect-box .key-img .fontsize-normal { 
+    font-size: 1.9rem;
+}
+
+.effect-box .key-img .fontsize-small {
+    font-size: 1.7rem;
 }
 
 .effect-box .key-text {
