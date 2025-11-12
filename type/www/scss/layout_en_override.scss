@@ -42,6 +42,9 @@
 // 2. Common Inner Container
 // ==========================================
 .en {
+    aside {
+        top: calc(2vh + 120px);
+    }
     #container {
         padding-top: 92px;
         &.main-en {
@@ -62,7 +65,10 @@
         }
     }
     .content-layout {
-        margin-top: 60px;
+        margin-top: 40px;
+    }
+    .page-header {
+        margin-bottom: 70px;
     }
 }
 

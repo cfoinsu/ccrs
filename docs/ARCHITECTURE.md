@@ -152,7 +152,7 @@ cms-publish/
   - About CCRS
   - Our Services
   - Performance
-  - Global Network
+  - Global Partnership
   - Contact
 - 언어 선택 (KO/EN)
 - 검색 버튼

@@ -334,8 +334,27 @@
     <script src="/type/www/js/common.js?ver=3.7"></script>
     <script src="/type/www/js/common_en.js?ver=3.7"></script>
     <!-- <script src="/type/www/js/layout.js"></script>
-    <script src="/type/www/js/script.js"></script> 
+    <script src="/type/www/js/script.js"></script>
     공통 header 분리하기 위해 init.js 임시 추가  -->
     <script src="includes/init.js?ver=3.7"></script>
+
+    <script>
+    $(document).ready(function() {
+        // Tab click event
+        $('.tab-item').on('click', function() {
+            const region = $(this).data('region');
+
+            // Update active tab
+            $('.tab-item').removeClass('active');
+            $(this).addClass('active');
+
+            // Hide all offices
+            $('.office-item').hide();
+
+            // Show selected region offices
+            $('.office-item[data-region="' + region + '"]').show();
+        });
+    });
+    </script>
 </body>
 </html>
