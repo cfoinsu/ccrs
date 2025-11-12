@@ -767,6 +767,7 @@ ol.list-number {
   margin: 0;
   margin-bottom: 20px;
   line-height: 1.5;
+  font-size: 17px;
 }
 
 .term-cont-list.condition {
@@ -839,9 +840,13 @@ ol.list-number {
   row-gap: 1.6rem;
 }
 
+.term-cont-list .trem-cont .box-terms .list-number a {
+  color: blue;
+}
+
 .term-cont-list .trem-cont .box-terms .list-number > li {
   position: relative;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 .term-cont-list .trem-cont .box-terms .list-number > li i {
@@ -871,7 +876,7 @@ ol.list-number {
   margin-top: 10px;
 }
 
-.term-cont-list .trem-cont .box-terms .btn-box a {
+.term-cont-list .trem-cont .box-terms .btn-box button {
   display: inline-block;
   background: #666;
   border-radius: 6px;
@@ -947,4 +952,105 @@ ol.list-number {
   .term-anchor-list.row {
     max-height: none;
   }
+}
+.term-wrap table {
+  margin-top: 17px;
+  font-size: 16px;
+  line-height: inherit;
+  table-layout: fixed;
+}
+
+.term-wrap table th,
+.term-wrap table td {
+  padding: 5px 12px 3px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.term-wrap table thead th {
+  border-bottom: 0 none;
+  background-color: #eee;
+  text-align: center;
+}
+
+.term-wrap table tbody th {
+  font-weight: normal;
+}
+
+/* Privacy Policy Popup Styles
+========================================================================== */
+.popup-wrap body {
+  padding: 20px;
+  font-family: "Pretendard", -apple-system, sans-serif;
+}
+
+.popup-header {
+  border-bottom: 2px solid #01133b;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.popup-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #01133b;
+  margin: 0;
+}
+
+.popup-content {
+  line-height: 1.8;
+  padding-bottom: 30px;
+}
+.popup-content p {
+  margin-bottom: 15px;
+}
+.popup-content strong {
+  font-weight: 600;
+}
+.popup-content ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+.popup-content ul li {
+  margin-top: 8px;
+}
+
+.popup-close-btn,
+.close-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px 30px;
+  background: #01133b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+.popup-close-btn:hover,
+.close-btn:hover {
+  background: #022357;
+}
+
+.popup-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 15px;
+}
+.popup-content table th, .popup-content table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+.popup-content table thead th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+.popup-content table tbody th {
+  font-weight: 600;
 }/*# sourceMappingURL=styles3.css.map */
