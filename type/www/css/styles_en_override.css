@@ -1109,7 +1109,7 @@
   }
 }
 .credit-education-section .talent-donation-list {
-  margin-top: 40px;
+  margin-top: 10px;
 }
 @media (max-width: 767px) {
   .credit-education-section .talent-donation-list {
@@ -1117,8 +1117,8 @@
   }
 }
 .credit-education-section .talent-donation-list .donation-item {
-  border-bottom: 1px solid #d2d6da;
-  padding: 24px 0;
+  /* border-bottom: 1px solid #d2d6da; */
+  padding: 12px 0;
 }
 @media (max-width: 767px) {
   .credit-education-section .talent-donation-list .donation-item {
@@ -1126,7 +1126,7 @@
   }
 }
 .credit-education-section .talent-donation-list .donation-item:first-child {
-  border-top: 1px solid #1b2025;
+  /* border-top: 1px solid #1b2025; */
 }
 .credit-education-section .talent-donation-list .donation-item .donation-title {
   font-size: 19px;
