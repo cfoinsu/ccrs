@@ -348,7 +348,7 @@ body {
   --krds-light-color-text-basic-inverse: var(--krds-color-light-gray-0);
   --krds-light-color-text-subtle-inverse: var(--krds-color-light-gray-30);
   --krds-light-color-text-inverse-static: var(--krds-color-light-gray-0);
-  --krds-light-color-text-static: var(--krds-color-light-gray-90);
+  --krds-light-color-text-static: var(--krds-color-light-gray-95);
   --krds-light-color-icon-gray: var(--krds-color-light-gray-80);
   --krds-light-color-icon-gray-fill: var(--krds-color-light-gray-20);
   --krds-light-color-icon-inverse: var(--krds-color-light-gray-0);
