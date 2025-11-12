@@ -18,45 +18,29 @@
   font-size: 14px;
   font-weight: 700;
   font-style: normal;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   line-height: 1;
 }
 
 .credit-education-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
   margin: 40px 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .credit-education-btn {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   padding: 30px 0;
   border: 2px solid #ffcf8c;
   border-radius: 8px;
   background-color: #fff7ea;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   text-decoration: none;
   display: block;
@@ -66,7 +50,6 @@
   font-size: 20px;
   font-weight: 700;
   color: #434343;
-  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
@@ -76,12 +59,8 @@
   background-color: #f5f5f5;
   border-radius: 10px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 15px;
 }
 
@@ -103,10 +82,7 @@
 
 @media (max-width: 768px) {
   .credit-education-buttons {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 20px;
   }
   .credit-education-btn {
@@ -192,9 +168,7 @@
 
 .calculator-box {
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   padding: 32px;
 }
 .calculator-box:not(:last-child)::after {
@@ -202,8 +176,7 @@
   position: absolute;
   top: 50%;
   right: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 1px;
   height: 86%;
   background: #E6E8EA;
@@ -234,16 +207,9 @@
 }
 
 .form-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   margin-bottom: 13px;
 }
 .form-group:last-of-type {
@@ -277,27 +243,13 @@
   border-radius: 8px;
   font-size: 15px;
   color: #1A1F27;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   text-align: right;
 }
 .form-input:focus {
   outline: none;
   border-color: #2E5AAC;
-  -webkit-box-shadow: 0 0 0 3px rgba(46, 90, 172, 0.1);
-          box-shadow: 0 0 0 3px rgba(46, 90, 172, 0.1);
-}
-.form-input::-webkit-input-placeholder {
-  color: #9EA4AA;
-}
-.form-input::-moz-placeholder {
-  color: #9EA4AA;
-}
-.form-input:-ms-input-placeholder {
-  color: #9EA4AA;
-}
-.form-input::-ms-input-placeholder {
-  color: #9EA4AA;
+  box-shadow: 0 0 0 3px rgba(46, 90, 172, 0.1);
 }
 .form-input::placeholder {
   color: #9EA4AA;
@@ -320,8 +272,7 @@
   position: absolute;
   right: 16px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 15px;
   color: #6D7882;
   pointer-events: none;
@@ -349,15 +300,9 @@
   border: 1px solid #F48F01;
   border-radius: 8px;
   padding: 16px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 12px;
   margin-top: 24px;
   margin-bottom: 24px;
@@ -399,7 +344,6 @@
   font-weight: 600;
   color: #2E5AAC;
   cursor: pointer;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 .btn-calculate:hover {
@@ -407,8 +351,7 @@
   color: #FFFFFF;
 }
 .btn-calculate:active {
-  -webkit-transform: scale(0.98);
-          transform: scale(0.98);
+  transform: scale(0.98);
 }
 @media (max-width: 767px) {
   .btn-calculate {
@@ -419,13 +362,8 @@
 
 /* 안내사항2 (하늘색) */
 .box-help-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1.2rem 0;
   padding: 1.6rem 1.6rem 1.6rem 4.4rem;
   border: 0.1rem solid #D6E0EB;
@@ -480,14 +418,11 @@
     padding: 1.6rem;
   }
   .box-help-info .tit {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 0 0.6rem;
   }
   .box-help-info .tit::before {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     position: static;
     margin-top: 0.2rem;
   }
@@ -661,13 +596,8 @@ ol.list-number {
   margin-top: 20px;
 }
 .term-wrap .section-5 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 0.8rem;
 }
 .term-wrap .title {
@@ -695,18 +625,13 @@ ol.list-number {
 }
 
 .term-anchor-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 1.2rem 4rem;
   margin-top: 2.4rem;
 }
 
 .term-anchor-list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: calc(50% - 2.1rem);
   margin-top: 0;
@@ -730,13 +655,8 @@ ol.list-number {
 }
 
 .term-anchor-list.row .list-dash {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 0.8rem;
   margin-top: 1.6rem;
 }
@@ -750,13 +670,8 @@ ol.list-number {
 }
 
 .term-cont-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 4rem;
   margin: 7rem 0 0;
   padding: 0;
@@ -775,26 +690,16 @@ ol.list-number {
 }
 
 .term-cont-list .trem-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1.6rem;
   padding-top: 4rem;
   border-top: 1px solid #e1e1e1;
 }
 
 .term-cont-list .trem-cont .box-terms .list-terms {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 1.6rem;
   list-style-type: none;
   margin: 0;
@@ -830,13 +735,8 @@ ol.list-number {
 }
 
 .term-cont-list .trem-cont .box-terms .list-number {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 1.6rem;
 }
 
@@ -901,13 +801,8 @@ ol.list-number {
 }
 
 .term-cont-list .trem-cont .box-terms .list-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   row-gap: 1.6rem;
   list-style-type: none;
   margin: 0;
@@ -931,8 +826,6 @@ ol.list-number {
     margin-top: 1.6rem;
   }
   .term-anchor-list li {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
   }
@@ -1040,7 +933,6 @@ ol.list-number {
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  -webkit-transition: background 0.3s ease;
   transition: background 0.3s ease;
 }
 .popup-close-btn:hover,
@@ -1065,4 +957,82 @@ ol.list-number {
 }
 .popup-content table tbody th {
   font-weight: 600;
-}/*# sourceMappingURL=styles3.css.map */
+}
+
+/* Privacy History List Styles
+========================================================================== */
+.privacy-history-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.privacy-history-list li {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 12px;
+}
+.privacy-history-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.privacy-history-list li a {
+  display: block;
+  padding: 14px 20px;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-right: 50px;
+}
+.privacy-history-list li a::after {
+  content: "→";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #666;
+  transition: all 0.3s ease;
+}
+.privacy-history-list li a:hover {
+  background: #e9ecef;
+  border-color: #01133b;
+  color: #01133b;
+  transform: translateX(4px);
+}
+.privacy-history-list li a:hover::after {
+  color: #01133b;
+  right: 15px;
+}
+.privacy-history-list li a:active {
+  transform: translateX(2px);
+}
+@media (max-width: 768px) {
+  .privacy-history-list {
+    gap: 10px;
+  }
+  .privacy-history-list li {
+    padding-bottom: 10px;
+  }
+  .privacy-history-list li a {
+    padding: 12px 16px;
+    padding-right: 45px;
+    font-size: 14px;
+  }
+  .privacy-history-list li a::after {
+    right: 16px;
+    font-size: 16px;
+  }
+  .privacy-history-list li a:hover::after {
+    right: 12px;
+  }
+}
+
+/*# sourceMappingURL=styles3.css.map */
