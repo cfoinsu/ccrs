@@ -1643,7 +1643,7 @@
   color: #555;
 }
 
-/* .sec-tit {
+.sec-tit {
   padding-left: 20px;
   font-size: 3.2rem;
 }
@@ -1657,7 +1657,7 @@
   width: 10px;
   height: 28px;
   background: url(/type/www/images/ic/tit_accordian.svg) no-repeat 0 0/contain;
-} */
+}
 
 .bullet {
   font-size: 2.4rem;
@@ -1870,14 +1870,5 @@
 .en .debt-relief-table thead th span, .en .debt-relief-table thead td span, .en .debt-relief-table tbody th span, .en .debt-relief-table tbody td span {
   display: block;
   font-size: 14px;
+  color: #666;
 }/*# sourceMappingURL=styles_en_override.css.map */
-
-.en .g-wrap .krds-table-wrap .tbl.data tbody td {
-  padding: 12px 8px;
-}
-.en .krds-info-list>li:not(:first-child) {
-  margin-top: 0;
-}
-.main-en #header .gnb-wrap > nav .gnb > li .depth2 {
-  height: 307px;
-}

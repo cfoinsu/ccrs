@@ -1146,9 +1146,9 @@ opacity: 0.8;
 
     .section-title {
         position: absolute;
-        top: 320px;
+        top: 250px;
         left: 50%;
-        transform: translateX(-157%);
+        transform: translateX(-122%);
         color: #fff;
     }
 
@@ -1169,9 +1169,8 @@ opacity: 0.8;
         }
 
         .contact-map {
-            width: 60%;
+            width: 572px;
             img {
-                transform: translateX(130px);
             }
         }
     }
@@ -1220,12 +1219,12 @@ opacity: 0.8;
     }
 
     .contact-info-text {
-        font-family: 'Pretendard', sans-serif;
-        font-weight: 600;
+        display: inline-block;
         font-size: 19px;
-        line-height: normal;
-        color: #000;
         margin: 0;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     // Directions Buttons
