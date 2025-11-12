@@ -457,7 +457,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
 
 
 .term-cont-list {display:flex; flex-direction:column; gap:4rem; margin:7rem 0 0; padding:0; list-style:none;}
-.term-cont-list p {margin:0; margin-bottom: 20px;line-height: 1.5;}
+.term-cont-list p {margin:0; margin-bottom: 20px;line-height: 1.5;font-size: 17px;}
 .term-cont-list.condition {gap:3.2rem;}
 .term-cont-list .trem-cont {display:flex; flex-direction:column; gap:1.6rem;padding-top: 4rem;border-top: 1px solid #e1e1e1;}
 
@@ -471,14 +471,15 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
 .term-cont-list .trem-cont .box-terms .section-5 > .list-bull {margin-left:0;}
 
 .term-cont-list .trem-cont .box-terms .list-number {display:flex; flex-direction:column; row-gap:1.6rem;}
-.term-cont-list .trem-cont .box-terms .list-number > li {position: relative;padding-left: 20px;}
+.term-cont-list .trem-cont .box-terms .list-number a {color: blue;}
+.term-cont-list .trem-cont .box-terms .list-number > li {position: relative;padding-left: 25px;}
 .term-cont-list .trem-cont .box-terms .list-number > li i {position: absolute;top: 0;left: 0;}
 .term-cont-list .trem-cont .box-terms .list-number > li > .refer {margin:0.8rem 0 0 0.8rem;}
 .term-cont-list .trem-cont .box-terms .list-number > li > .list-refer {margin:0.8rem 0 0 0.8rem;}
 .term-cont-list .trem-cont .box-terms .list-number .list-number {row-gap:0.8rem; margin:0.8rem 0 0 0;}
 .term-cont-list .trem-cont .box-terms .list-number .tbl-wrap {margin-top:0.8rem;}
 .term-cont-list .trem-cont .box-terms .btn-box {margin-top: 10px;}
-.term-cont-list .trem-cont .box-terms .btn-box a {display: inline-block;background: #666;border-radius: 6px;font-size: 16px;padding: 6px 10px; color: #fff; border: 1px solid #000;}
+.term-cont-list .trem-cont .box-terms .btn-box button {display: inline-block;background: #666;border-radius: 6px;font-size: 16px;padding: 6px 10px; color: #fff; border: 1px solid #000;}
 
 .term-cont-list .trem-cont .box-terms .list-number .list-bull {margin-left:0.2rem; margin-top:1.2rem;}
 .term-cont-list .trem-cont .box-terms .list-number .list-bull .list-circle {margin-top:1.2rem;}
@@ -497,4 +498,95 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
 	.term-cont-list .trem-cont {gap:1.2rem; }
 	.term-cont-list li {gap:1.2rem}
 	.term-anchor-list.row {max-height:none;}
+}
+
+
+.term-wrap table{margin-top:17px;font-size:16px;line-height:inherit;table-layout:fixed}
+.term-wrap table th,
+.term-wrap table td{padding:5px 12px 3px;border:1px solid #ddd;text-align:left}
+.term-wrap table thead th{border-bottom:0 none;background-color:#eee;text-align:center}
+.term-wrap table tbody th{font-weight:normal}
+
+/* Privacy Policy Popup Styles
+========================================================================== */
+.popup-wrap {
+  body {
+    padding: 20px;
+    font-family: 'Pretendard', -apple-system, sans-serif;
+  }
+}
+
+.popup-header {
+  border-bottom: 2px solid #01133b;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.popup-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #01133b;
+  margin: 0;
+}
+
+.popup-content {
+  line-height: 1.8;
+  padding-bottom: 30px;
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  strong {
+    font-weight: 600;
+  }
+
+  ul {
+    margin: 10px 0;
+    padding-left: 20px;
+
+    li {
+      margin-top: 8px;
+    }
+  }
+}
+
+.popup-close-btn,
+.close-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 20px 30px;
+  background: #01133b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: #022357;
+  }
+}
+
+.popup-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 15px;
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  thead th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+  }
+  tbody th {
+    font-weight: 600;
+  }
 }

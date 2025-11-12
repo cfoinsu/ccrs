@@ -242,3 +242,35 @@ $(function() {
     $btn.append('<i class="sr-only created">선택됨</i>');
   });
 });
+
+/**
+ * Open privacy policy popup
+ * 개인정보처리방침 팝업 열기
+ * @param {string} type - Popup type (ITEM, OFFER, ENTRUST, ALIAS)
+ */
+function searchPop(type) {
+  const popupUrls = {
+    'ITEM': '/html/popup/item.html',        // 처리하는 개인정보 항목
+    'OFFER': '/html/popup/offer.html',      // 개인정보의 제3자 제공
+    'ENTRUST': '/html/popup/entrust.html',  // 개인정보처리의 위탁 현황
+    'ALIAS': '/html/popup/alias.html'       // 가명정보 처리현황
+  };
+
+  const url = popupUrls[type];
+
+  if (!url) {
+    console.error('Invalid popup type:', type);
+    return;
+  }
+
+  // 팝업 창 옵션
+  const popupWidth = 900;
+  const popupHeight = 700;
+  const left = (window.screen.width - popupWidth) / 2;
+  const top = (window.screen.height - popupHeight) / 2;
+
+  const options = `width=${popupWidth},height=${popupHeight},left=${left},top=${top},scrollbars=yes,resizable=yes`;
+
+  // 팝업 열기
+  window.open(url, 'privacyPopup', options);
+}
