@@ -7421,6 +7421,10 @@ input[type=radio]:checked+label.fillter-chip {
     height: 220px;
 }
 
+.abslogocenter.kinfa {
+    background: url(../images/img/round-logo-kinfa.png) center no-repeat;
+}
+
 /* 서머리박스 */
 .summary-box {
     display: block;
