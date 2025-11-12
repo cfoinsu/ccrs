@@ -2777,6 +2777,12 @@ body:has(.intro.show) {
     font-size: 1.6rem;
     color: #374151;
     line-height: 1.5;
+    display: -webkit-box;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .news-grid {
@@ -2803,7 +2809,7 @@ body:has(.intro.show) {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: flex-start;
 }
 .news-grid .news-left .news-item {
   display: -webkit-box;
