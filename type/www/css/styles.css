@@ -7558,6 +7558,12 @@ input[type=radio]:checked+label.fillter-chip {
     color: #000;
 }
 
+.keybox .stitle {
+    font-size: 1.5rem;
+    color: #474E55;
+    font-weight: 700;
+}
+
 .black-info {
     display: inline-block;
     padding-left: 26px;
