@@ -83,6 +83,10 @@ body {
     font-size: var(--krds-pc-font-size-body-small);
 }
 
+.fontsize-normal {
+    font-size: var(--krds-pc-font-size-body-medium);
+}
+
 .fontsize-normal .font-bold {
     font-weight: 600;
 }
@@ -7246,6 +7250,26 @@ input[type=radio]:checked+label.fillter-chip {
     width: 0;
 }
 
+.keybox.row {
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.keybox.row .stitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--krds-light-color-text-basic);
+    font-size: 1.7rem;
+    gap: 4px;
+}
+
 .keybox img {
     margin-bottom: 7px;
 }
@@ -8065,6 +8089,10 @@ table .table-center {
     background-color: #EEF9E8 !important;
 }
 
+.boxbg-white {
+    background-color: white !important;
+}
+
 
 .consulting-cards-wrap {
     padding: 32px;
@@ -8198,12 +8226,23 @@ table .table-center {
 }
 
 .support-organization-card {
-    background: linear-gradient(180deg, #F7931E 0%, #F7931E 112px, #FFF5E8 112px, #FFF5E8 100%);
     border-radius: 24px;
     padding: 0;
     overflow: hidden;
     text-align: center;
     width: 100%;
+}
+
+.support-organization-card .support-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #C8DDFF;
+    padding: 8px 0;
+}
+
+.support-organization-card .support-body {
+    padding: 12px 0;
+    border-radius: 0 0 24px 24px;
 }
 
 .support-organization-header {
