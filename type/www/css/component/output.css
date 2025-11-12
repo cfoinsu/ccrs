@@ -2755,6 +2755,14 @@ caption {
   flex-grow: 0;
   min-width: 15rem;
 }
+.tab.middle.fill.point>ul>li .btn-tab {
+  border: 2px solid #D2D6DA !important;
+  background-color: #fff;
+}
+.tab.middle.fill.point>ul>li.active .btn-tab {
+  background-color: #F48F01;
+  border-color: transparent !important;
+}
 .tab.middle.fill.full>ul>li {
   flex-grow: 1;
   min-width: 15rem;
@@ -2788,7 +2796,6 @@ caption {
 .tab.line.full .btn-tab:before {
   bottom: -0.2rem;
 }
-
 .tab-conts-wrap {
   width: 100%;
 }

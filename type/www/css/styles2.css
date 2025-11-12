@@ -44,3 +44,12 @@
 .terms-sucess li + li {
     margin-top: 12px;
 }
+
+/* 들여쓰기 처리 */
+.indent-flex {
+    display: flex;
+    gap:3px;
+}
+.indent-flex > span{
+
+}
