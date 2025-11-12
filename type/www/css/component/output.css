@@ -3208,7 +3208,7 @@ caption {
   top: 0.5rem;
   left: 0;
 }
-.roundcheck .krds-info-list.dash.primary > li {
+.roundcheck .krds-info-list.dash.primary > li strong {
   font-weight: 700;
   color: var(--krds-color-light-primary-50);
 }
