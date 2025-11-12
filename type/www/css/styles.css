@@ -8034,6 +8034,10 @@ table .table-center {
     line-height: 1.6;
 }
 
+.activity-card-content .fontsize-small {
+    font-size: 1.7rem;
+}
+
 .benefit-card {
     border-radius: 16px;
     padding: 32px 28px;
