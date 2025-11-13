@@ -64,71 +64,136 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
 
 
 .term-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
   margin-top: 20px;
   .section-5 {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
   }
+  .sec-tit {
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    background: url(/type/www/images/ic/tit_accordian.svg) left center no-repeat;
+    padding-left: 20px;
+    background-size: 8px 24px;
+  }
   .title {
     margin: 0;
     margin-bottom: 20px;
     color: #1e2124;
-    font-size: 2.4rem;
+    font-size: 3.2rem;
     font-weight: 700;
   }
+  .bullet {
+    font-size: 2.4rem;
+    color: #01133b;
+    padding-left: 12px;
+    position: relative;
+    &::before {
+      content: '';
+      width: 4px;
+      height: 24px;
+      background: url(../img/icons/bullet.svg) no-repeat center;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
 }
+
+// 주요 목차
+.krds-tab-area {
+  gap: 16px !important;
+  .tab.line.full {
+    ul {
+      display:flex; gap:15px; margin-top:2.4rem;
+    }
+    li.active {
+      .btn-tab {
+        background: #fff;
+        border: 1px solid #0C4DCF;
+        color: #181818;
+        &::before {
+          display: none;
+        }
+      }
+    }
+    .btn-tab {
+      flex: 1;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      height: 150px;
+      margin-top:0;
+      background: #F6FAFF;
+      border-radius: 24px;
+        border: 1px solid #F6FAFF;
+        font-size: 17px;
+        img {
+          display: block;
+          width: 65px;
+        }
+      }
+  }
+    .tab-conts-wrap {
+        padding: 24px 32px;
+        background: #fff;
+        border: 1px solid #0C4DCF;
+        border-radius: 24px;
+        li {
+          display: flex;
+          gap: 10px;
+          strong {
+            flex-shrink: 0;
+            width: 250px;
+            font-size: 19px;
+            color: #012063;
+          }
+          .txt {
+            font-size: 17px;
+            color: #17191B;
+          }
+        }
+    }
+  
+ }
+
+//  일반 목차
+.term-anchor-list {
+  padding: 12px 32px;
+  margin-top: 24px;
+  border-radius: 24px;
+  border: 1px solid #D2D6DA;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  li:not(:last-child):not(:nth-last-child(2)) {
+    border-bottom: 1px solid #D2D6DA;
+  }
+  
+  .btn-anchor {
+    display: flex;
+    gap: 14px;
+    padding: 15px 0;
+    img {
+      display: block;
+      width: 26px;
+    }
+  }
+}
+
 
 /*개인정보처리방침, 약관동의*/
 .term-txt-lg {color:var(--iw-gray-90); font-size:var(--iw-fz-b-lg);}
 .term-txt-lg .list-refer li {padding:0; color:var(--iw-gray-90);}
 .term-txt-lg .list-refer li::before {display:inline; position:static; margin-right:0.4rem;}
 
-.term-anchor-list {
-  display:flex; gap:15px; margin-top:2.4rem;
-  .tab-item {
-    flex: 1;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    height: 150px;
-    margin-top:0;
-    background: #F6FAFF;
-    border-radius: 24px;
-      border: 1px solid #F6FAFF;
-    &.active {
-      background: #fff;
-      border: 1px solid #0C4DCF;
-      color: #181818;
-    }
-    img {
-      display: block;
-      width: 65px;
-    }
-  }
- }
- .term-list {
-    margin-top: 16px;
-    padding: 24px 32px;
-    background: #fff;
-    border: 1px solid #0C4DCF;
-    border-radius: 24px;
-    li {
-      display: flex;
-      gap: 10px;
-      strong {
-        width: 180px;
-        font-size: 19px;
-        color: #012063;
-      }
-      .txt {
-        font-size: 17px;
-        color: #17191B;
-      }
-    }
- }
 
 .mt40 {
   margin-top: 40px;
@@ -166,42 +231,6 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
 .list-text {display:flex; flex-direction:column; row-gap:1.6rem; list-style-type:none; margin:0; padding:0;}
 .list-number .list-text {row-gap:0.8rem; margin:0.8rem 0 0 0.8rem;}
 
-@media only screen and (max-width:1024px) {
-	.term-wrap {margin-top:0.8rem;}
-	.term-wrap .section-5 {gap:0.8rem;}
-	.term-anchor-list {gap:1.2rem; margin-top:1.6rem;}
-	.term-anchor-list li {display:flex; width:100%;}
-	.term-cont-list {gap:3.2rem; margin-top:3.2rem;}
-	.term-cont-list.condition {gap:2.4rem;}
-	.term-cont-list .trem-cont {gap:1.2rem; }
-	.term-cont-list li {gap:1.2rem}
-	.term-anchor-list.row {max-height:none;}
-
-  // 카드형 반응형
-  .term-anchor-list.term-anchor-cards {
-    grid-template-columns: 1fr;
-    gap: 12px;
-
-    li .btn-anchor {
-      padding: 14px 16px;
-      padding-left: 40px;
-      font-size: 15px;
-
-      &::before {
-        font-size: 16px;
-        left: 14px;
-      }
-
-      &:hover::before {
-        left: 18px;
-      }
-    }
-  }
-
-  .mt40 {
-    margin-top: 30px;
-  }
-}
 
 .term-wrap table{margin-top:17px;font-size:16px;line-height:inherit;table-layout:fixed}
 .term-wrap table th,
@@ -813,10 +842,3 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
   }
 }
 
-.sec-tit {
-    font-size: 2.4rem;
-    font-weight: 700;
-    background: url(/type/www/images/ic/tit_accordian.svg) left center no-repeat;
-    padding-left: 20px;
-    background-size: 8px 24px;
-}
