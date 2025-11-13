@@ -442,8 +442,8 @@ ol.list-number {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.6rem;
-  padding-top: 4rem;
-  border-top: 1px solid #e1e1e1;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .list-terms {
