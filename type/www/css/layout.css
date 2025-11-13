@@ -3079,3 +3079,15 @@ dl.flex-list {
   height: 10px;
 }
 /* img {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);transition: all 0.5s;width: 100%;height: 100%;object-fit: cover;} */
+/* 추후 영문 css 옮기기 */
+.en #header.header-en .gnb-wrap .logo {
+  background: url(/type/www/img/logo/ccrs_logo_eng.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 264px;
+  height: 40px;
+  text-indent: -9999px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* 추후 영문 css 옮기기 */
