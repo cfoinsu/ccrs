@@ -7559,6 +7559,18 @@ input[type=radio]:checked+label.fillter-chip {
     border-radius: var(--krds-radius-xlarge2);
     border: 1px solid var(--krds-light-color-border-gray-light);
 }
+.effect-box .boxc4 {
+    flex: calc(100%/4 - 16px) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    padding: 24px 18px;
+    background-color: var(--krds-color-light-gray-0);
+    border-radius: var(--krds-radius-xlarge2);
+    border: 1px solid var(--krds-light-color-border-gray-light);
+}
 
 .effect-box .key-img {
     display: flex;
@@ -8357,7 +8369,7 @@ table .table-center {
 }
 
 .g-info-box .info-content .highlightbg {
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 700;
     display: inline-block;
     background: linear-gradient(to top, #FFE5CA 20%, transparent 20%);
