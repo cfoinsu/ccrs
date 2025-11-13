@@ -71,45 +71,53 @@ function initInstitutionCarousel() {
 
     try {
         var institutionSwiper = new Swiper('.institution-carousel-swiper', {
-            slidesPerView: 2,
-            spaceBetween: 10,
-            loop: true,
-            loopedSlides: 12,
-            autoplay: false,
-            navigation: {
-                nextEl: '.institution-nav-btn.next',
-                prevEl: '.institution-nav-btn.prev',
+          slidesPerView: 2,
+          spaceBetween: 10,
+          loop: true,
+          loopedSlides: 12,
+          autoplay: false,
+          navigation: {
+            nextEl: '.institution-nav-btn.next',
+            prevEl: '.institution-nav-btn.prev',
+          },
+          breakpoints: {
+            744: {
+              slidesPerView: 3,
+              spaceBetween: 15,
             },
-            breakpoints: {
-                744: {
-                    slidesPerView: 3,
-                    spaceBetween: 15,
-                },
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                    autoplay: {
-                        delay: 3000,
-                        disableOnInteraction: false,
-                    },
-                },
-                1280: {
-                    slidesPerView: 5,
-                    spaceBetween: 40,
-                    autoplay: {
-                        delay: 3000,
-                        disableOnInteraction: false,
-                    },
-                },
-                1440: {
-                    slidesPerView: 6,
-                    spaceBetween: 64,
-                    autoplay: {
-                        delay: 3000,
-                        disableOnInteraction: false,
-                    },
-                },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 20,
+              autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+              },
             },
+            1280: {
+              slidesPerView: 5,
+              spaceBetween: 40,
+              autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+              },
+            },
+            1440: {
+              slidesPerView: 6,
+              spaceBetween: 64,
+              autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+              },
+            },
+            1920: {
+              slidesPerView: 6,
+              spaceBetween: 64,
+              autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+              },
+            },
+          },
         });
 
         // Pause/Play 버튼 기능
