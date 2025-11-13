@@ -95,6 +95,10 @@ body {
     color: var(--krds-light-color-text-primary);
 }
 
+.fcOrange {
+    color: var(--krds-light-color-text-primary);
+}
+
 .fcGreen {
     color: #228738;
 }
@@ -7630,8 +7634,7 @@ input[type=radio]:checked+label.fillter-chip {
 }
 
 .effect-box .key-text {
-    font-size: 1.9rem;
-    width: 100%;
+    font-size: 1.7rem;
 }
 
 .effect-box .key-text span {
@@ -7715,10 +7718,6 @@ input[type=radio]:checked+label.fillter-chip {
 
 .krds-info-list.decimal .bullet.small::before {
     height: 20px;
-}
-
-.krds-info-list>li:not(:first-child) {
-    margin-top: 10px;
 }
 
 table .krds-info-list>li>.krds-info-list>li,
