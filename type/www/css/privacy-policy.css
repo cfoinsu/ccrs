@@ -284,7 +284,7 @@ ol.list-number {
   gap: 15px;
   margin-top: 2.4rem;
 }
-.term-anchor-list button {
+.term-anchor-list .tab-item {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -308,13 +308,37 @@ ol.list-number {
   border-radius: 24px;
   border: 1px solid #F6FAFF;
 }
-.term-anchor-list button.active {
+.term-anchor-list .tab-item.active {
   background: #fff;
   border: 1px solid #0C4DCF;
+  color: #181818;
 }
-.term-anchor-list button img {
+.term-anchor-list .tab-item img {
   display: block;
   width: 65px;
+}
+
+.term-list {
+  margin-top: 16px;
+  padding: 24px 32px;
+  background: #fff;
+  border: 1px solid #0C4DCF;
+  border-radius: 24px;
+}
+.term-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.term-list li strong {
+  width: 180px;
+  font-size: 19px;
+  color: #012063;
+}
+.term-list li .txt {
+  font-size: 17px;
+  color: #17191B;
 }
 
 .mt40 {
@@ -359,7 +383,7 @@ ol.list-number {
   border-top: 1px solid #e1e1e1;
 }
 
-.term-cont-list .trem-cont .box-terms .list-terms {
+.list-terms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,35 +397,35 @@ ol.list-number {
   padding: 0;
 }
 
-.term-cont-list .trem-cont .box-terms .list-terms > li {
+.list-terms > li {
   margin: 0;
   padding: 0;
 }
 
-.term-cont-list .trem-cont .box-terms .list-terms > li .txt {
+.list-terms > li .txt {
   margin-top: 0.8rem;
   color: var(--iw-gray-70);
 }
 
-.term-cont-list .trem-cont .box-terms .list-terms .list-number {
+.list-terms .list-number {
   row-gap: 0.8rem;
   margin: 0.8rem 0 0 0.8rem;
 }
 
-.term-cont-list .trem-cont .box-terms .list-terms .list-number .list-bull li > .txt {
+.list-terms .list-number .list-bull li > .txt {
   margin-left: 1.2rem;
   margin-bottom: 1.2rem;
 }
 
-.term-cont-list .trem-cont .box-terms .list-terms .list-bull {
+.list-terms .list-bull {
   margin-top: 0.8rem;
 }
 
-.term-cont-list .trem-cont .box-terms .section-5 > .list-bull {
+.section-5 > .list-bull {
   margin-left: 0;
 }
 
-.term-cont-list .trem-cont .box-terms .list-number {
+.list-number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,43 +436,43 @@ ol.list-number {
   row-gap: 1.6rem;
 }
 
-.term-cont-list .trem-cont .box-terms .list-number a {
+.list-number a {
   color: blue;
 }
 
-.term-cont-list .trem-cont .box-terms .list-number > li {
+.list-number > li {
   position: relative;
   padding-left: 25px;
 }
 
-.term-cont-list .trem-cont .box-terms .list-number > li i {
+.list-number > li i {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.term-cont-list .trem-cont .box-terms .list-number > li > .refer {
+.list-number > li > .refer {
   margin: 0.8rem 0 0 0.8rem;
 }
 
-.term-cont-list .trem-cont .box-terms .list-number > li > .list-refer {
+.list-number > li > .list-refer {
   margin: 0.8rem 0 0 0.8rem;
 }
 
-.term-cont-list .trem-cont .box-terms .list-number .list-number {
+.list-number .list-number {
   row-gap: 0.8rem;
   margin: 0.8rem 0 0 0;
 }
 
-.term-cont-list .trem-cont .box-terms .list-number .tbl-wrap {
+.list-number .tbl-wrap {
   margin-top: 0.8rem;
 }
 
-.term-cont-list .trem-cont .box-terms .btn-box {
+.btn-box {
   margin-top: 10px;
 }
 
-.term-cont-list .trem-cont .box-terms .btn-box button {
+.btn-box button {
   display: inline-block;
   background: #666;
   border-radius: 6px;
@@ -458,21 +482,21 @@ ol.list-number {
   border: 1px solid #000;
 }
 
-.term-cont-list .trem-cont .box-terms .list-number .list-bull {
+.list-number .list-bull {
   margin-left: 0.2rem;
   margin-top: 1.2rem;
 }
 
-.term-cont-list .trem-cont .box-terms .list-number .list-bull .list-circle {
+.list-number .list-bull .list-circle {
   margin-top: 1.2rem;
 }
 
-.term-cont-list .trem-cont .box-terms .list-number .list-bull .list-dash {
+.list-number .list-bull .list-dash {
   margin-left: 1.2rem;
   margin-top: 1.2rem;
 }
 
-.term-cont-list .trem-cont .box-terms .list-text {
+.list-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,7 +510,7 @@ ol.list-number {
   padding: 0;
 }
 
-.term-cont-list .trem-cont .box-terms .list-number .list-text {
+.list-number .list-text {
   row-gap: 0.8rem;
   margin: 0.8rem 0 0 0.8rem;
 }
