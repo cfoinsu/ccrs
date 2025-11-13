@@ -84,6 +84,7 @@
 }
 .en #header.header-en.is-active::after {
   top: 80px;
+  height: 340px;
 }
 .en #header.header-en.is-active .gnb-wrap .utils li .language-change {
   background: url(/type/www/images/img/en/header-language-kr-b.svg) no-repeat center;
