@@ -2692,6 +2692,7 @@ body:has(.intro.show) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 16px;
   width: 436px;
 }
 .grid-finance .grid-col1 .col-debt2-1 {

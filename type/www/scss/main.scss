@@ -2546,6 +2546,7 @@ body:has(.intro.show) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 16px;
     width: 436px;
 
     .col-debt2-1 {
