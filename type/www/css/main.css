@@ -213,7 +213,8 @@
           transform: translateX(-50%);
 }
 .main-banner.center .diagnosis-card-top {
-  width: 436px;
+  overflow: hidden;
+  width: 100%;
   height: 390px;
   background: url(/type/www/images/main/diagnosis-bg.png);
   border-radius: 24px;
@@ -2102,9 +2103,8 @@ body:has(.intro.show) {
 }
 
 .grid-width {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 42% 33% 25%;
   gap: 16px;
 }
 .grid-width .grid-col1, .grid-width .grid-col2, .grid-width .grid-col3 {
@@ -2118,7 +2118,7 @@ body:has(.intro.show) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  gap: 16px;
 }
 .grid-width .grid-col1 > div, .grid-width .grid-col2 > div, .grid-width .grid-col3 > div {
   width: 100%;
@@ -2126,15 +2126,6 @@ body:has(.intro.show) {
 .grid-width .grid-col1 .col-tit, .grid-width .grid-col2 .col-tit, .grid-width .grid-col3 .col-tit {
   font-size: 19px;
   font-weight: 700;
-}
-.grid-width .grid-col1 {
-  max-width: 549px;
-}
-.grid-width .grid-col2 {
-  max-width: 436px;
-}
-.grid-width .grid-col3 {
-  max-width: 323px;
 }
 
 .main-content .swiper-container {
@@ -2160,11 +2151,14 @@ body:has(.intro.show) {
 }
 
 .grid-col1 .swiper-container {
-  background: url(/type/www/images/main/mainvisual_bg.png);
+  overflow: hidden;
+  background: url(/type/www/images/main/mainvisual_bg.png) no-repeat 50% 50%/cover;
+  height: 100%;
+  border-radius: 24px;
 }
 .grid-col1 .swiper-slide {
   position: relative;
-  height: 553px !important;
+  max-height: 553px !important;
   border-radius: 24px;
 }
 .grid-col1 .slide-txt {
@@ -2342,11 +2336,16 @@ body:has(.intro.show) {
 .col-debt1 .debt-card {
   display: block;
   position: relative;
+  height: 100%;
 }
 .col-debt1 .debt-card .debt-card__image {
   position: relative;
+  height: 100%;
 }
 .col-debt1 .debt-card .debt-card__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }

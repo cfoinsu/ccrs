@@ -98,10 +98,10 @@ function initSwiperSliders() {
         var mainSwiper = new Swiper('#mainSlider', {
           spaceBetween: 0,
           centeredSlides: true,
-          autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-          },
+          //   autoplay: {
+          //     delay: 4000,
+          //     disableOnInteraction: false,
+          //   },
           loop: true,
           loopedSlides: 3,
           pagination: {
