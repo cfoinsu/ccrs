@@ -4638,6 +4638,13 @@ table.comparison-table td:first-child {
 }
 
 .krds-info-list>li {
+    font-size: 1.9rem;
+}
+.krds-info-list>li>ul>li {
+    font-size: 1.7rem;
+    line-height: 1.2;
+}
+table .krds-info-list>li {
     font-size: 1.7rem;
 }
 
