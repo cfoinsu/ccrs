@@ -4154,6 +4154,7 @@ caption {
   box-shadow: none;
   border-radius: 0;
 }
+span.sec-tit,
 .krds-accordion.type-heading .accordion-item .btn-accordion {
   padding: 0;
   font-size: 19px;
@@ -4163,6 +4164,7 @@ caption {
   background: none;
   color: var(--krds-color-light-primary-60);
 }
+span.sec-tit,
 .krds-accordion.type-heading .accordion-item .btn-accordion span.sec-tit {
   font-size: var(--krds-pc-font-size-heading-medium);
   background: url(../../images/ic/tit_accordian.svg) left center no-repeat;
