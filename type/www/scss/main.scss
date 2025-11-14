@@ -164,7 +164,8 @@ $boxRound: 24px;
 
     &.center {
         .diagnosis-card-top {
-            width: 436px;
+            overflow: hidden;
+            width: 100%;
             height: 390px;
             background: url(/type/www/images/main/diagnosis-bg.png);
             border-radius: $boxRound;
@@ -1965,14 +1966,15 @@ body:has(.intro.show) {
 }
 
 .grid-width {
-  display: flex;
+  display: grid;
+  grid-template-columns: 42% 33% 25%;
   gap: 16px;
+
   .grid-col1, .grid-col2, .grid-col3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // gap: 16px;
-    width: 100%;
+    gap: 16px;
     > div {
       width: 100%;
     }
@@ -1980,15 +1982,6 @@ body:has(.intro.show) {
         font-size: 19px;
         font-weight: 700;
     }
-  }
-  .grid-col1 {
-    max-width: 549px;
-  }
-  .grid-col2 {
-    max-width: 436px;
-  }
-  .grid-col3 {
-    max-width: 323px;
   }
 }
 
@@ -2023,13 +2016,16 @@ body:has(.intro.show) {
 // row1
 .grid-col1 {
     .swiper-container {
-        background: url(/type/www/images/main/mainvisual_bg.png);
+        overflow: hidden;
+        background: url(/type/www/images/main/mainvisual_bg.png) no-repeat 50% 50% / cover;
+    height: 100%;
+    border-radius: 24px;
 
 
     }
     .swiper-slide {
         position: relative;
-        height: 553px !important;
+        max-height: 553px !important;
         border-radius: 24px;
     }
     .slide-txt {
@@ -2196,11 +2192,16 @@ body:has(.intro.show) {
   .debt-card {
     display: block;
     position: relative;
+    height: 100%;
 
     .debt-card__image {
       position: relative;
+        height: 100%;
 
       img {
+        display: block;
+        width: 100%;
+        height: 100%;
         transition: all 0.3s;
       }
 
