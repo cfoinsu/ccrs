@@ -2,6 +2,9 @@ $boxPaddingX: 32px;
 $boxPaddingY: 36px;
 $boxRound: 24px;
 
+@import "variables";
+@import "mixins/breakpoints";
+
 /* 네비게이션 */
 .top-nav {
     display: flex;
@@ -1965,10 +1968,30 @@ body:has(.intro.show) {
   }
 }
 
+// 기본 그리드 레이아웃
 .grid-width {
   display: grid;
   grid-template-columns: 42% 33% 25%;
   gap: 16px;
+
+  @include desktopLess {
+    grid-template-columns: 1fr 1fr;
+
+    .swiper-container {
+      overflow: hidden !important;
+      width: 100% !important;
+
+      .swiper-wrapper {
+        display: flex !important;
+        width: 100% !important;
+      }
+
+      .swiper-slide {
+        flex-shrink: 0 !important;
+        width: 100% !important;
+      }
+    }
+  }
 
   .grid-col1, .grid-col2, .grid-col3 {
     display: flex;
@@ -1983,11 +2006,124 @@ body:has(.intro.show) {
         font-weight: 700;
     }
   }
+
+  @include desktopLess {
+    .grid-col1 {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .grid-col2 {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .grid-col3 {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      flex-direction: row;
+    }
+  }
 }
+
+@include desktopLess {
+    // .bottom-section 그리드 레이아웃
+    .bottom-section {
+    &.grid-width {
+        display: grid;
+        grid-template-columns: 42% 33% 25%;
+        gap: 16px;
+
+        @include desktopLess {
+        grid-template-columns: 1fr 1fr;
+
+        .grid-col1 {
+            grid-column: 1 / -1;
+            grid-row: 1;
+        }
+        .grid-col2 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        .grid-col3 {
+            grid-column: 2;
+            grid-row: 2;
+        }
+        }
+    }
+    }
+
+    // debt-section
+    .debt-section {
+        &.grid-width {
+            display: grid;
+            grid-template-columns: 42% 33% 25%;
+            gap: 16px;
+
+            .grid-col1, .grid-col2, .grid-col3 {
+                width: 100%;
+                min-width: 0;
+            }
+
+            @include desktopLess {
+                grid-template-columns: 1fr 1fr;
+
+                .grid-col1 {
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+                .grid-col2 {
+                    grid-column: 2;
+                    grid-row: 1;
+                }
+                .grid-col3 {
+                    grid-column: 1 / -1;
+                    grid-row: 2;
+                    justify-content: flex-start;
+                    align-items: center;
+                    height: 180px;
+                    .plus-lst {
+                        display: flex;
+                        flex-direction: row;
+                        margin-left: 30px;
+                        li {
+                            min-width: 0;
+                            padding: 0 20px;
+                            white-space: nowrap;
+                            border-bottom: none;
+                            border-right: 1px solid rgba(0,0,0,0.1);
+                            &:last-child {
+                                border-right: none;
+                            }
+                        }
+                    }
+                    a {
+                        margin-left: auto;
+                    }
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 .main-content {
   .swiper-container {
     position: relative;
+    overflow: hidden !important;
+    width: 100%;
+
+    .swiper-wrapper {
+      display: flex;
+      width: 100%;
+    }
+
+    .swiper-slide {
+      flex-shrink: 0;
+      width: 100%;
+    }
+
     .swiper-pagination {
       position: absolute;
       bottom: 20px;
@@ -2154,6 +2290,18 @@ body:has(.intro.show) {
         position: relative;
         border-radius: $boxRound;
         background: #F0EFEB;
+        overflow: hidden;
+
+        .swiper-container {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            width: 100%;
+        }
+
         .swiper-slide a {
             display: block;
             height: 248px;
@@ -2262,22 +2410,42 @@ body:has(.intro.show) {
   height: 434px;
   background: #F0EFEB;
   border-radius: $boxRound;
-    position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url(/type/www/images/main/debt2-1-bg.svg);
+  position: relative;
+  overflow: hidden;
 
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: url(/type/www/images/main/debt2-1-bg.svg);
+//   }
+
+  // When col-debt2-1 is also swiper-container
+  &.swiper-container {
+    overflow: hidden !important;
+    width: 100%;
+    height: 100%;
+
+    .swiper-wrapper {
+      display: flex;
+      width: 100%;
     }
-    
+  }
+
+  // When swiper-container is a child
+  .swiper-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+
   .swiper-slide {
     display: flex;
     flex-direction: column;
-    width: 436px;
+    width: 100%;
     padding: 32px 36px;
 
     img {
@@ -2332,7 +2500,7 @@ body:has(.intro.show) {
     height: 181px;
     padding: 34px 36px;
     border-radius: 24px;
-    background: url(/type/www/images/main/debt2-2-bg.svg) 0 0 no-repeat;
+    background: #F48F02 url(/type/www/images/main/debt2-2-bg.svg) 100% 100% no-repeat;
     strong {
       font-size: 24px;
       color: #fff;
@@ -2378,6 +2546,7 @@ body:has(.intro.show) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 16px;
     width: 436px;
 
     .col-debt2-1 {
@@ -2387,9 +2556,29 @@ body:has(.intro.show) {
       background: #EBEFF3;
       overflow: hidden;
 
+      // When col-debt2-1 is also swiper-container
+      &.swiper-container {
+        overflow: hidden !important;
+        width: 100%;
+        height: 100%;
+
+        .swiper-wrapper {
+          display: flex;
+          width: 100%;
+        }
+      }
+
+      // When swiper-container is a child
+      .swiper-container {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+      }
+
       .swiper-slide {
         display: flex;
         flex-direction: column;
+        width: 100%;
         padding: 32px 36px;
 
         a {

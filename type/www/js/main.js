@@ -96,6 +96,7 @@ function initSwiperSliders() {
     // 메인 배너 슬라이더
     if ($("#mainSlider").length > 0) {
         var mainSwiper = new Swiper('#mainSlider', {
+          slidesPerView: 1,
           spaceBetween: 0,
           centeredSlides: true,
           //   autoplay: {
@@ -114,6 +115,7 @@ function initSwiperSliders() {
     // 하단 배너 슬라이더
     if ($("#bnrSlider").length > 0) {
         var bottomSwiper = new Swiper("#bnrSlider", {
+            slidesPerView: 1,
             spaceBetween: 0,
             centeredSlides: true,
             autoplay: {
@@ -133,7 +135,8 @@ function initSwiperSliders() {
 
     // 상환 배너 슬라이더
     if ($("#debtSlider").length > 0) {
-        var bottomSwiper = new Swiper('#debtSlider', {
+        var debtSwiper = new Swiper('#debtSlider', {
+          slidesPerView: 1,
           spaceBetween: 0,
           centeredSlides: true,
         //   autoplay: {
@@ -151,7 +154,8 @@ function initSwiperSliders() {
 
     // 금융 배너 슬라이더
     if ($('#financeSlider').length > 0) {
-      var bottomSwiper = new Swiper('#financeSlider', {
+      var financeSwiper = new Swiper('#financeSlider', {
+        slidesPerView: 1,
         spaceBetween: 0,
         centeredSlides: true,
         //   autoplay: {

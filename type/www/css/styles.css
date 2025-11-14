@@ -4638,6 +4638,15 @@ table.comparison-table td:first-child {
 }
 
 .krds-info-list>li {
+    font-size: 1.9rem;
+}
+
+.krds-info-list>li>ul>li {
+    font-size: 1.7rem;
+    line-height: 1.2;
+}
+
+table .krds-info-list>li {
     font-size: 1.7rem;
 }
 
@@ -7653,6 +7662,61 @@ table .table-center {
 
 .activity-card-content .fontsize-small {
     font-size: 1.5rem;
+}
+
+.activity-card-content .activity-card-image {
+    position: absolute;
+    top: 3.2rem;
+    right: 3.2rem
+}
+
+.activity-card-content .plusbox {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-card-content .plusbox img {
+    width: 14px;
+    height: 14px;
+}
+
+.activity-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activity-card-content .content-wrapper {
+    flex: 0 0 auto;
+}
+
+.activity-card-content .plusbox {
+    margin-top: auto;
+}
+
+.g-grid-wrap a {
+    display: block;
+    height: 100%;
+}
+
+.activity-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.activity-card-content .content-wrapper {
+    flex: 0 0 auto;
+}
+
+.activity-card-content .plusbox {
+    margin-top: auto;
 }
 
 .benefit-card {
