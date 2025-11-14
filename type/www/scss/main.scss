@@ -2870,12 +2870,14 @@ body:has(.intro.show) {
       }
       strong {
         flex: 1;
+        min-width: 0;
         font-size: 17px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        max-width: 70%;
         @include mobile {
-            max-width: 400px;
+            max-width: 280px;
         }
       }
       span {

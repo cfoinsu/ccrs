@@ -3132,14 +3132,16 @@ body:has(.intro.show) {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  min-width: 0;
   font-size: 17px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 70%;
 }
 @media (max-width: 767px) {
   #section4 .news-grid .news-left .news-item strong {
-    max-width: 400px;
+    max-width: 280px;
   }
 }
 #section4 .news-grid .news-left .news-item span {
