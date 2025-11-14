@@ -3163,7 +3163,7 @@ caption {
   line-height: 0;
 }
 .krds-info-list > li > .krds-info-list {
-  gap: var(--krds-info-list--gap-layout-depth4-li-li);
+  gap: 0.3em;
   margin-top: var(--krds-info-list--depth2-list-margin-top);
 }
 .krds-info-list > li > .krds-info-list > li {
