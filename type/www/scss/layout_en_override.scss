@@ -129,6 +129,14 @@
                     align-items: center;
                     justify-content: center;
                 }
+                .search-open {
+                    i {
+                        font-size: 30px;
+                        color: #000;
+                        transform: scaleX(-1);
+                        display: inline-block;
+                    }
+                }
                 .language-change {
                     background: url(/type/www/images/img/en/header-language-kr.svg) no-repeat center;
                     background-size: contain;
@@ -162,6 +170,11 @@
             }
             .utils {
                 li {
+                    .search-open {
+                        i {
+                            color: #fff;
+                        }
+                    }
                     .language-change {
                         background: url(/type/www/images/img/en/header-language-kr-w.svg) no-repeat center;
                         background-size: contain;

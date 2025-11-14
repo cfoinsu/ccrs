@@ -18,6 +18,22 @@
     overflow: hidden;
     padding: 150px 0 150px;
 
+    @include max1280 {
+        padding: 120px 0 120px;
+    }
+
+    @include max1024 {
+        padding: 100px 0 100px;
+    }
+
+    @include max768 {
+        padding: 80px 0 80px;
+    }
+
+    @include max320 {
+        padding: 60px 0 60px;
+    }
+
     .section-title {
         font-size: 80px;
         font-weight: 600;
@@ -25,6 +41,26 @@
         margin-bottom: 45px;
         text-align: center;
         font-family: 'Poppins', sans-serif;
+
+        @include max1280 {
+            font-size: 64px;
+            margin-bottom: 40px;
+        }
+
+        @include max1024 {
+            font-size: 48px;
+            margin-bottom: 35px;
+        }
+
+        @include max768 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        @include max320 {
+            font-size: 28px;
+            margin-bottom: 24px;
+        }
 
         &.white {
             color: #fff;
@@ -105,6 +141,14 @@
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+
+    @include max1024 {
+        width: 60px;
+    }
+
+    @include max768 {
+        display: none;
+    }
 
     .m-anchor-list {
         display: flex;
@@ -253,6 +297,22 @@ opacity: 0.8;
             text-transform: uppercase;
             letter-spacing: -0.02em;
 
+            @include max1280 {
+                font-size: 10rem;
+            }
+
+            @include max1024 {
+                font-size: 7rem;
+            }
+
+            @include max768 {
+                font-size: 4rem;
+            }
+
+            @include max320 {
+                font-size: 3rem;
+            }
+
             .hero-title-1,
             .hero-title-2,
             .hero-title-3 {
@@ -295,6 +355,29 @@ opacity: 0.8;
             color: #fff;
             white-space: nowrap;
             transform: translate(170px, 30px);
+
+            @include max1280 {
+                font-size: 2rem;
+                padding-left: 80px;
+            }
+
+            @include max1024 {
+                font-size: 1.6rem;
+                padding-left: 60px;
+                white-space: normal;
+            }
+
+            @include max768 {
+                font-size: 1.4rem;
+                padding-left: 40px;
+                margin-top: 16px;
+            }
+
+            @include max320 {
+                font-size: 1.2rem;
+                padding-left: 30px;
+                margin-top: 12px;
+            }
             &::before {
                 content: '';
                 position: absolute;
@@ -423,10 +506,34 @@ opacity: 0.8;
 
     .swiper-button-prev {
         left: 40px;
+
+        @include max1024 {
+            left: 20px;
+            width: 40px;
+            height: 40px;
+        }
+
+        @include max768 {
+            left: 10px;
+            width: 35px;
+            height: 35px;
+        }
     }
 
     .swiper-button-next {
         right: 40px;
+
+        @include max1024 {
+            right: 20px;
+            width: 40px;
+            height: 40px;
+        }
+
+        @include max768 {
+            right: 10px;
+            width: 35px;
+            height: 35px;
+        }
     }
 
     // Swiper Pagination
@@ -491,6 +598,19 @@ opacity: 0.8;
 
         .accordion-body {
             padding-left: 230px;
+
+            @include max1280 {
+                padding-left: 180px;
+            }
+
+            @include max1024 {
+                padding-left: 0;
+                flex-direction: column;
+            }
+
+            @include max768 {
+                gap: 24px;
+            }
         }
 
         &.active {
@@ -519,6 +639,26 @@ opacity: 0.8;
         text-align: left;
         transition: all 0.2s ease;
 
+        @include max1280 {
+            padding: 18px 28px;
+            gap: 20px;
+        }
+
+        @include max1024 {
+            padding: 16px 24px;
+            gap: 16px;
+        }
+
+        @include max768 {
+            padding: 14px 20px;
+            gap: 12px;
+        }
+
+        @include max320 {
+            padding: 12px 16px;
+            gap: 10px;
+        }
+
         &:hover {
             opacity: 0.9;
         }
@@ -530,6 +670,21 @@ opacity: 0.8;
             font-weight: 400;
             color: #1B2025;
             min-width: 30px;
+
+            @include max1024 {
+                width: 150px;
+                font-size: 14px;
+            }
+
+            @include max768 {
+                width: 80px;
+                font-size: 12px;
+            }
+
+            @include max320 {
+                width: 60px;
+                font-size: 11px;
+            }
         }
 
         .accordion-title {
@@ -538,6 +693,22 @@ opacity: 0.8;
             font-weight: 400;
             font-family: 'Poppins', sans-serif;
             color: #000;
+
+            @include max1280 {
+                font-size: 36px;
+            }
+
+            @include max1024 {
+                font-size: 28px;
+            }
+
+            @include max768 {
+                font-size: 22px;
+            }
+
+            @include max320 {
+                font-size: 18px;
+            }
         }
 
         .accordion-icon {
@@ -614,6 +785,32 @@ opacity: 0.8;
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include max1280 {
+            width: 140px;
+            height: 140px;
+            right: 80px;
+        }
+
+        @include max1024 {
+            position: relative;
+            top: auto;
+            right: auto;
+            transform: none;
+            width: 120px;
+            height: 120px;
+            margin-top: 20px;
+        }
+
+        @include max768 {
+            width: 100px;
+            height: 100px;
+        }
+
+        @include max320 {
+            width: 80px;
+            height: 80px;
+        }
 
         svg {
             width: 100%;
@@ -1068,74 +1265,128 @@ opacity: 0.8;
     }
 
     /* Responsive */
-    @media (max-width: 1280px) {
-    .work-cards-wrapper {
-        gap: 30px;
+    @include max1280 {
+        .work-cards-wrapper {
+            gap: 30px;
+            padding: 24px;
+        }
+
+        .work-card-circle {
+            width: 180px;
+            height: 180px;
+        }
+
+        .work-card-text {
+            font-size: 14px;
+        }
+
+        .ccrs-circle {
+            width: 220px;
+            height: 220px;
+        }
+
+        .ccrs-circle span {
+            font-size: 48px;
+        }
     }
 
-    .work-card-circle {
-        width: 180px;
-        height: 180px;
+    @include max1024 {
+        .connector-line {
+            display: none;
+        }
+
+        .work-cards-wrapper {
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            border-radius: 200px;
+            padding: 20px;
+        }
+
+        .work-card {
+            flex: 0 0 calc(50% - 20px);
+            max-width: 300px;
+        }
+
+        .ccrs-circle {
+            width: 180px;
+            height: 180px;
+        }
+
+        .ccrs-circle span {
+            font-size: 42px;
+        }
     }
 
-    .work-card-text {
-        font-size: 14px;
-    }
+    @include max768 {
+        .ccrs-circle {
+            width: 140px;
+            height: 140px;
+            margin-bottom: 40px;
+        }
+
+        .ccrs-circle span {
+            font-size: 36px;
+        }
+
+        .work-cards-wrapper {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            border-radius: 100px;
+            padding: 16px;
+        }
+
+        .work-card {
+            flex: none;
+            width: 100%;
+            max-width: 250px;
+        }
+
+        .work-card-circle {
+            width: 160px;
+            height: 160px;
+        }
+
+        .icon-simple {
+            width: 50px;
+            height: 50px;
+        }
+
+        .work-card-text {
+            font-size: 13px;
+        }
     }
 
-    @media (max-width: 1023px) {
-    .connector-line {
-        display: none;
-    }
+    @include max320 {
+        .ccrs-circle {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 30px;
+        }
 
-    .work-cards-wrapper {
-        flex-wrap: wrap;
-        gap: 40px;
-        justify-content: center;
-    }
+        .ccrs-circle span {
+            font-size: 28px;
+        }
 
-    .work-card {
-        flex: 0 0 calc(50% - 20px);
-        max-width: 300px;
-    }
-    }
+        .work-cards-wrapper {
+            gap: 20px;
+            padding: 12px;
+        }
 
-    @media (max-width: 767px) {
-    .ccrs-circle {
-        width: 140px;
-        height: 140px;
-        margin-bottom: 40px;
-    }
+        .work-card-circle {
+            width: 120px;
+            height: 120px;
+        }
 
-    .ccrs-circle span {
-        font-size: 36px;
-    }
+        .icon-simple {
+            width: 40px;
+            height: 40px;
+        }
 
-    .work-cards-wrapper {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .work-card {
-        flex: none;
-        width: 100%;
-        max-width: 250px;
-    }
-
-    .work-card-circle {
-        width: 160px;
-        height: 160px;
-    }
-
-    .icon-simple {
-        width: 50px;
-        height: 50px;
-    }
-
-    .work-card-text {
-        font-size: 13px;
-    }
+        .work-card-text {
+            font-size: 11px;
+        }
     }
 }
 
@@ -1154,6 +1405,18 @@ opacity: 0.8;
         left: 50%;
         transform: translateX(-122%);
         color: #fff;
+
+        @include max1280 {
+            top: 200px;
+            transform: translateX(-50%);
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        @include max768 {
+            top: auto;
+            margin-bottom: 30px;
+        }
     }
 
     .contact-container {
@@ -1161,6 +1424,15 @@ opacity: 0.8;
         justify-content: space-between;
         align-items: center;
         gap: 13px;
+
+        @include max1280 {
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        @include max768 {
+            gap: 20px;
+        }
 
         .contact-item {
             width: 40%;
@@ -1170,11 +1442,33 @@ opacity: 0.8;
             display: flex;
             flex-direction: column;
             gap: 28px;
+
+            @include max1280 {
+                width: 100%;
+                padding: 32px 32px 10px;
+            }
+
+            @include max768 {
+                padding: 24px 24px 10px;
+                gap: 20px;
+            }
+
+            @include max320 {
+                padding: 20px 20px 10px;
+                gap: 16px;
+            }
         }
 
         .contact-map {
             width: 572px;
+
+            @include max1280 {
+                width: 100%;
+            }
+
             img {
+                width: 100%;
+                height: auto;
             }
         }
     }
@@ -1220,12 +1514,37 @@ opacity: 0.8;
         line-height: normal;
         color: #000;
         margin: 0;
+
+        @include max1024 {
+            font-size: 20px;
+        }
+
+        @include max768 {
+            font-size: 18px;
+        }
+
+        @include max320 {
+            font-size: 16px;
+        }
     }
 
     .contact-info-text {
         display: inline-block;
         font-size: 19px;
         margin: 0;
+
+        @include max1024 {
+            font-size: 17px;
+        }
+
+        @include max768 {
+            font-size: 15px;
+        }
+
+        @include max320 {
+            font-size: 14px;
+        }
+
         &:hover {
             text-decoration: underline;
         }
@@ -1236,6 +1555,11 @@ opacity: 0.8;
         display: flex;
         gap: 8px;
         margin-top: 8px;
+
+        @include max768 {
+            flex-direction: column;
+            gap: 12px;
+        }
     }
 
     .contact-direction-btn {
@@ -1252,12 +1576,30 @@ opacity: 0.8;
         border: none;
         cursor: pointer;
 
+        @include max768 {
+            padding: 12px 20px;
+            border-radius: 24px;
+        }
+
+        @include max320 {
+            padding: 10px 16px;
+            border-radius: 20px;
+        }
+
         .btn-text {
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
             font-size: 16px;
             line-height: normal;
             color: #fff;
+
+            @include max768 {
+                font-size: 14px;
+            }
+
+            @include max320 {
+                font-size: 12px;
+            }
         }
 
         .btn-icon {
@@ -1339,8 +1681,14 @@ opacity: 0.8;
 // 10. Responsive Media Queries
 // ==========================================
 
-@media (max-width: 1280px) {
+@include max1280 {
     .btn-main-02 {
         margin-top: 0;
+    }
+}
+
+@include max768 {
+    .popslider-Wrap {
+        display: none;
     }
 }

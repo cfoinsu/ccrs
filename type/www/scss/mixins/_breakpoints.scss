@@ -23,3 +23,35 @@
 		@content;
 	}
 }
+
+// ============================================
+// Specific Breakpoint Mixins for EN pages
+// ============================================
+
+// 1280px 이하
+@mixin max1280 {
+	@media (max-width: 1280px) {
+		@content;
+	}
+}
+
+// 1024px 이하
+@mixin max1024 {
+	@media (max-width: 1024px) {
+		@content;
+	}
+}
+
+// 768px 이하
+@mixin max768 {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+
+// 320px 이하
+@mixin max320 {
+	@media (max-width: 320px) {
+		@content;
+	}
+}

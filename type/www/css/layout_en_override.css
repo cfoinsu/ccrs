@@ -134,6 +134,13 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+.en #header.header-en .gnb-wrap .utils li .search-open i {
+  font-size: 30px;
+  color: #000;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  display: inline-block;
+}
 .en #header.header-en .gnb-wrap .utils li .language-change {
   background: url(/type/www/images/img/en/header-language-kr.svg) no-repeat center;
   background-size: contain;
@@ -161,6 +168,9 @@
   text-indent: -9999px;
   overflow: hidden;
   white-space: nowrap;
+}
+.en #header.header-en.header-en-main .gnb-wrap .utils li .search-open i {
+  color: #fff;
 }
 .en #header.header-en.header-en-main .gnb-wrap .utils li .language-change {
   background: url(/type/www/images/img/en/header-language-kr-w.svg) no-repeat center;
