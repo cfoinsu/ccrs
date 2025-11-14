@@ -11,7 +11,7 @@
     <title>맞춤형 채무조정</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/type/www/images/favicon/favicon.ico">
     
-    <link rel="stylesheet" href="/type/www/css/bundle.css?ver=4.0">
+    <link rel="stylesheet" href="/type/www/css/bundle.css?ver=4.1">
 
     
     
@@ -865,45 +865,15 @@
     
     
 
-    <script src="/type/www/js/jquery-2.2.4.min.js?ver=4.0"></script>
-	<script src="/type/www/js/plugins/swiper.min.js?ver=4.0"></script>
-	<script src="/type/www/js/plugins/aos.js?ver=4.0"></script>
-	<script src="/type/www/js/component/ui-script.js?ver=4.0"></script>
-	<script src="/type/www/js/common.js?ver=4.0"></script>
-	<script src="/type/www/js/main.js?ver=4.0"></script>
+    <script src="/type/www/js/jquery-2.2.4.min.js?ver=4.1"></script>
+	<script src="/type/www/js/plugins/swiper.min.js?ver=4.1"></script>
+	<script src="/type/www/js/plugins/aos.js?ver=4.1"></script>
+	<script src="/type/www/js/component/ui-script.js?ver=4.1"></script>
+	<script src="/type/www/js/common.js?ver=4.1"></script>
+	<script src="/type/www/js/main.js?ver=4.1"></script>
     <!-- <script src="/type/www/js/layout.js"></script>
     <script src="/type/www/js/script.js"></script> 
     공통 header 분리하기 위해 init.js 임시 추가  -->
-	<script src="includes/init.js?ver=4.0"></script>
-    <script>
-    $(function () {                       // DOMContentLoaded 와 동일
-        // ① 요소 캐시
-        const $toggleBtn   = $('.toggle-button');
-        const $toggleText  = $('.toggle-text');
-        const $arrowIcon   = $('.arrow-icon');
-        const $separator   = $('.separator');
-        const $support     = $('.support-content');
-        const $toggleContainer     = $('.toggle-container');
-
-        // ② 클릭 이벤트 핸들러
-        $toggleBtn.on('click', function () {
-        //   - 클래스 토글과 현재 상태 확인
-        //   - .toggleClass() 은 토글 후 현재 상태를 반환하지 않으므로
-        //     .hasClass() 로 현재가 열렸는지 판단
-        const isOpen = $support.toggleClass('open').hasClass('open');
-
-        //   - 열림/닫힘에 따라 UI 업데이트
-        if (isOpen) {
-            $toggleText.text('지원내용 닫기');
-            $toggleContainer.addClass('active');
-            $separator.slideDown();               // display:block
-        } else {
-            $toggleText.text('지원내용 보기');
-            $toggleContainer.removeClass('active');
-            $separator.slideUp();                // display:none
-        }
-        });
-    });
-    </script>
+	<script src="includes/init.js?ver=4.1"></script>
 </body>
 </html>
