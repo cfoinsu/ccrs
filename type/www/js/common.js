@@ -12,6 +12,9 @@ AOS.init({
 $(function() {
     // Initialize toggle buttons for support content
     initSupportContentToggle();
+
+    // Initialize institution carousel
+    initInstitutionCarousel();
 });
 
 /**
