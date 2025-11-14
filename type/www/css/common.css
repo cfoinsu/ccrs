@@ -87,6 +87,7 @@ section::-webkit-scrollbar-thumb {display: none;}
 /* margin & padding */
 .mp0 {margin: 0 !important; padding: 0 !important;}
 .mt0 {margin-top: 0rem !important;}
+.mt4 {margin-top: 0.4rem !important;}
 .mt8 {margin-top: 0.8rem !important;}
 .mt10 {margin-top: 1rem !important;}
 .mt16 {margin-top: 1.6rem !important;}
@@ -106,6 +107,7 @@ section::-webkit-scrollbar-thumb {display: none;}
 .mt100 {margin-top: 10rem !important;}
 
 .mb0 {margin-bottom: 0rem !important;}
+.mb4 {margin-bottom: 0.4rem !important;}
 .mb8 {margin-bottom: 0.8rem !important;}
 .mb10 {margin-bottom: 1rem !important;}
 .mb16 {margin-bottom: 1.6rem !important;}

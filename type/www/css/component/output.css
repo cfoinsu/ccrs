@@ -1688,6 +1688,7 @@ caption {
 }
 .krds-btn.tertiary:hover {
   background-color: var(--krds-button--color-tertiary-fill-hover);
+  color: var(--krds-button--color-tertiary-text);
 }
 .krds-btn.tertiary:active, .krds-btn.tertiary:focus {
   background-color: var(--krds-button--color-tertiary-fill-pressed);
@@ -1777,7 +1778,7 @@ caption {
 }
 .krds-btn:hover {
   background-color: var(--krds-button--color-primary-fill-hover);
-  color: var(--krds-light-color-action-white);
+  /* color: var(--krds-light-color-action-white); */
 }
 /* .krds-btn:active, .krds-btn:focus {
   background-color: var(--krds-button--color-primary-fill-pressed);
@@ -3163,7 +3164,7 @@ caption {
   line-height: 0;
 }
 .krds-info-list > li > .krds-info-list {
-  gap: var(--krds-info-list--gap-layout-depth4-li-li);
+  gap: 0.3em;
   margin-top: var(--krds-info-list--depth2-list-margin-top);
 }
 .krds-info-list > li > .krds-info-list > li {
@@ -4117,6 +4118,7 @@ caption {
   width:12.5rem;
   min-width:12.5rem;
   line-height:2.4rem;
+  font-size: 1.7rem;
   flex:none;
 }
 .krds-accordion.type-line .accordion-item .btn-accordion:has(.catego) {
