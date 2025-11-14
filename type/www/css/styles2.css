@@ -383,3 +383,13 @@
     font-weight: 700;
     line-height: 1.5;
 }
+.blue-info {
+    padding-left: 24px;
+    background: url(../img/icons/annotation-info-blue.svg) left top no-repeat;
+    background-size: 20px;
+    font-size: 1.5rem;
+}
+.bpop_add {background:#ebebeb;border:1px solid #ddd;padding:20px 30px;margin-top:30px;}
+.bpop_add > p {color:#333;font-size:16px;border-bottom:1px solid #ccc;padding-bottom:20px;margin-bottom:20px}
+.bpop_add > p + p {font-size:14px;border-bottom:none;margin-bottom:0;padding-bottom:0}
+.bpop_add > p span {margin:0 15px}
