@@ -1688,6 +1688,7 @@ caption {
 }
 .krds-btn.tertiary:hover {
   background-color: var(--krds-button--color-tertiary-fill-hover);
+  color: var(--krds-button--color-tertiary-text);
 }
 .krds-btn.tertiary:active, .krds-btn.tertiary:focus {
   background-color: var(--krds-button--color-tertiary-fill-pressed);
@@ -1777,7 +1778,7 @@ caption {
 }
 .krds-btn:hover {
   background-color: var(--krds-button--color-primary-fill-hover);
-  color: var(--krds-light-color-action-white);
+  /* color: var(--krds-light-color-action-white); */
 }
 /* .krds-btn:active, .krds-btn:focus {
   background-color: var(--krds-button--color-primary-fill-pressed);
@@ -4117,6 +4118,7 @@ caption {
   width:12.5rem;
   min-width:12.5rem;
   line-height:2.4rem;
+  font-size: 1.7rem;
   flex:none;
 }
 .krds-accordion.type-line .accordion-item .btn-accordion:has(.catego) {
