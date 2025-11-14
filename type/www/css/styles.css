@@ -7655,6 +7655,31 @@ table .table-center {
     font-size: 1.5rem;
 }
 
+.activity-card-content .textbox {
+    width: calc(100% - 65px);
+}
+
+.activity-card-content .activity-card-image {
+    position: absolute;
+    top: 3.2rem;
+    right: 3.2rem
+}
+
+.activity-card-content .plusbox {
+    width:32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-card-content .plusbox img {
+    width: 14px;
+    height: 14px;
+}
+
 .benefit-card {
     border-radius: 16px;
     padding: 32px 28px;
