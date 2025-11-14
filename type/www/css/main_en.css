@@ -14,11 +14,11 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
-.en .section .section-title::before {
-  display: none;
-}
 .en .section .section-title.white {
   color: #fff;
+}
+.en .section .section-title::before {
+  display: none;
 }
 
 .popslider-Wrap {
@@ -1157,7 +1157,7 @@
 }
 #section4 .section-title {
   position: absolute;
-  top: 130px;
+  top: 250px;
   left: 50%;
   -webkit-transform: translateX(-122%);
           transform: translateX(-122%);
@@ -1188,7 +1188,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 28px;
-  margin-top: 40px;
 }
 #section4 .contact-container .contact-map {
   width: 572px;
