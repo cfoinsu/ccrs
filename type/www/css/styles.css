@@ -7685,10 +7685,11 @@ table .table-center {
     height: 14px;
 }
 
-.activity-card-content {
+.activity-card-content.space-between {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
 }
 
 .activity-card-content .content-wrapper {
@@ -7701,13 +7702,6 @@ table .table-center {
 
 .g-grid-wrap a {
     display: block;
-    height: 100%;
-}
-
-.activity-card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     height: 100%;
 }
 
