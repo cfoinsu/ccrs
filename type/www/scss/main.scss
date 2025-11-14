@@ -55,6 +55,9 @@ $boxRound: 24px;
 .search-section {
     padding: 20px 0;
     background: white;
+    @include mobile {
+        padding: 16px 0 24px;
+    }
 }
 
 .search-container {
@@ -62,6 +65,10 @@ $boxRound: 24px;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+    @include mobile {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
 
 .search-box {
@@ -73,6 +80,9 @@ $boxRound: 24px;
     display: flex;
     align-items: center;
     padding: 0 40px;
+    @include mobile {
+        width: 100%;
+    }
 }
 
 .search-input {
@@ -2079,11 +2089,29 @@ body:has(.intro.show) {
                     grid-row: 2;
                     justify-content: flex-start;
                     align-items: center;
-                    height: 180px;
+                    height: 120px;
+
+                    @include mobile {
+                        height: 181px;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 16px;
+                        .plus-lst {
+                            margin-left: 0;
+                        }
+                        a {
+                            margin-left: 0;
+                        }
+                    }
+
                     .plus-lst {
                         display: flex;
                         flex-direction: row;
                         margin-left: 30px;
+                        @include mobile {
+                            margin-left: -20px;
+                        }
                         li {
                             min-width: 0;
                             padding: 0 20px;
@@ -2103,6 +2131,76 @@ body:has(.intro.show) {
                     }
                 }
             }
+        }
+    }
+}
+
+@include mobile {
+    .bottom-section {
+        &.grid-width {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            
+            .grid-col1 {
+                order: 2;
+            }
+            .grid-col2 {
+                order: 1;
+            }
+            .grid-col3 {
+                order: 3;
+            }
+        }
+    }
+    
+    .debt-section {
+        &.grid-width {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            
+            .grid-col1 {
+                order: 1;
+            }
+            .grid-col2 {
+                order: 2;
+            }
+            .grid-col3 {
+                order: 3;
+            }
+        }
+    }
+    .main-section {
+        &.grid-width {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            .grid-col1 {
+                order: 1;
+            }
+            .grid-col2 {
+                order: 2;
+            }
+            .grid-col3 {
+                order: 3;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .grid-finance {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .grid-col1 {
+            order: 2;
+        }
+        .grid-col2 {
+            order: 1;
+        }
+        .grid-col3 {
+            order: 3;
         }
     }
 }
@@ -2163,6 +2261,9 @@ body:has(.intro.show) {
         position: relative;
         max-height: 553px !important;
         border-radius: 24px;
+        @include mobile {
+            height: 328px !important;
+        }
     }
     .slide-txt {
         position: relative;
@@ -2189,6 +2290,9 @@ body:has(.intro.show) {
                 font-size: 24px;
                 transform: translateX(-30px);
                 transition: transform 0.5s ease 0.2s;
+                @include mobile {
+                    display: none;
+                }
             }
             strong {
                 display: block;
@@ -2197,6 +2301,9 @@ body:has(.intro.show) {
                 line-height: 1.2;
                 transform: translateX(-30px);
                 transition: transform 0.5s ease 0.3s;
+                @include desktopLess {
+                    font-size: 32px;
+                }
             }
         }
 
@@ -2220,6 +2327,12 @@ body:has(.intro.show) {
             height: 489px;
             transform: translateY(30px);
             transition: all 0.8s ease 0.3s;
+            @include desktopLess {
+                height: 389px;
+            }
+            @include mobile {
+                height: 285px;
+            }
         }
     }
     .swiper-slide-active .slide-img {
@@ -2291,7 +2404,9 @@ body:has(.intro.show) {
         border-radius: $boxRound;
         background: #F0EFEB;
         overflow: hidden;
-
+        @include mobile {
+            height: 246px;
+        }
         .swiper-container {
             overflow: hidden;
             width: 100%;
@@ -2304,7 +2419,7 @@ body:has(.intro.show) {
 
         .swiper-slide a {
             display: block;
-            height: 248px;
+            height: 100%;
             padding: $boxPaddingY $boxPaddingX;
         }
         .bottombox-txt {
@@ -2322,6 +2437,9 @@ body:has(.intro.show) {
             bottom: 0;
             right: 0;
             height: 195px;
+            @include desktopLess {
+                height: 285px;
+            }
             img {
                 width: auto;
                 height: 100%;
@@ -2548,6 +2666,9 @@ body:has(.intro.show) {
     justify-content: space-between;
     gap: 16px;
     width: 436px;
+    @include mobile {
+        width: 100%;
+    }
 
     .col-debt2-1 {
         width: 100%;
@@ -2628,6 +2749,12 @@ body:has(.intro.show) {
     height: 628px;
     border-radius: $boxRound;
     background: url(/type/www/images/main/finance-2.png);
+    @include mobile {
+        height: auto;
+    }
+  }
+  img {
+    display: none;
   }
   .ille-cont {
     display: flex;
@@ -2641,6 +2768,11 @@ body:has(.intro.show) {
     background: #D9EDFE;
     border-radius: $boxRound;
     padding: 30px;
+    @include mobile {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
     h3 {
         font-size: 32px;
     }
@@ -2703,16 +2835,24 @@ body:has(.intro.show) {
 
 }
 
-.news-grid {
-  display: flex !important;
+#section4 .news-grid {
+    display: grid;
+    grid-template-columns: 436px 1fr;
+    gap: 16px;
+
+    @include desktopLess {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
 
   .news-left {
-    width: 437px;
     .news-list {
       height: 341px;
       padding: 24px 32px;
       border: 1px solid #D2D6DA;
       border-radius: 24px;
+      box-sizing: border-box;
+      width: 100%;
       &.active {
         display: flex;
         flex-direction: column;
@@ -2734,6 +2874,9 @@ body:has(.intro.show) {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        @include mobile {
+            max-width: 400px;
+        }
       }
       span {
         color: #6D7882;
@@ -2744,12 +2887,14 @@ body:has(.intro.show) {
   }
 
   .news-right {
-    flex:1;
     .press-image {
         position: relative;
       height: 17rem;
       border-radius: 17px;
       overflow: hidden;
+      @include mobile {
+        height: 38rem;
+      }
       &::after {
         content: '';
         position: absolute;
@@ -2773,8 +2918,9 @@ body:has(.intro.show) {
     }
     .press-content {
       background-color: transparent;
-      padding: 24px;
+      padding: 24px 24px 10px;
       font-weight: 700;
+      font-size: 19px;
     }
     span {
       display: block;
@@ -2791,6 +2937,10 @@ body:has(.intro.show) {
 
   .press-grid {
     display: none;
+    height: 341px;
+    @include mobile {
+        height: auto;
+    }
     &.active {
         display: grid;
         gap: 16px;
@@ -2813,6 +2963,6 @@ body:has(.intro.show) {
 
 .grid-finance {
     .col-debt2-2 a {
-        background: url(/type/www/images/main/fina-2-bg.svg) 0 0 no-repeat;
+        background: #444FA2 url(/type/www/images/main/fina-2-bg.svg) 100% 100% no-repeat;
     }
 }

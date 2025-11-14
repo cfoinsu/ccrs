@@ -114,20 +114,20 @@ function initSwiperSliders() {
 
     // 하단 배너 슬라이더
     if ($("#bnrSlider").length > 0) {
-        var bottomSwiper = new Swiper("#bnrSlider", {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            centeredSlides: true,
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            loop: true,
-            loopedSlides: 3,
-            pagination: {
-                el: "#bnrSlider-pagination",
-                clickable: true,
-            },
+        var bottomSwiper = new Swiper('#bnrSlider', {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          centeredSlides: true,
+          // autoplay: {
+          //     delay: 4000,
+          //     disableOnInteraction: false,
+          // },
+          loop: true,
+          loopedSlides: 3,
+          pagination: {
+            el: '#bnrSlider-pagination',
+            clickable: true,
+          },
         });
     }
 
