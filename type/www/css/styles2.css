@@ -275,6 +275,9 @@
 .results-content-wrapper .stats-description .result-list li {
     position: relative;
     padding-left: 14px;
+    font-size: 1.9rem;
+    line-height: 29px;
+    margin-bottom: 4px;
 }
 .results-content-wrapper .stats-description .result-list li::before {
     content: '';
@@ -285,19 +288,6 @@
     height: 4px;
     border-radius: 4px;
     background: #6D7882;
-}
-
-.stats-section {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-.stats-section .stats-description {
-    color: #17191B;
-    font-size: 2.4rem;
-    line-height: 1.5;
-    margin-top: 3.2rem;
 }
 
 .stats-section .stats-description .btn-place {
