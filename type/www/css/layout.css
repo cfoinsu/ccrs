@@ -2587,6 +2587,7 @@ main.map-content {
 }
 main.map-content .container {
   max-width: 100%;
+  padding: 0;
 }
 .map-content .tab-layout {
   display: flex;
@@ -2638,12 +2639,14 @@ main.map-content .container {
   width: 390px;
   flex-shrink: 0;
   border: none;
+  top: 0;
 }
 .map-content .content-layout .sidebar.on {
   background: #ffffff;
   position: relative;
   z-index: 10;
   left: 0;
+  top:0;
 }
 .map-content .content-layout .sidebar .sideba-btn {
   border-top: 1px solid #d2d6da;

@@ -51,10 +51,13 @@
     gap:3px;
 }
 /* 나에게 맞는 채무조정찾기 결과 */
+.page-description.bgBlue p.fs_24 {
+    font-size: 2.4rem;
+}
 .result-card-container {
     max-width: 100%;
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 6px;
 }
 .result-card-inner-wrapper {
     width: 100%;
@@ -63,8 +66,15 @@
     border: 1px solid #D2D6DA;
 }
 .top_line {
+    margin-top: 3rem;
     padding-top: 2.4rem;
     border-top: 1px solid #D2D6DA;
+}
+.top_line .orange-info {
+    font-size: 2rem;
+}
+.txtline {
+    text-decoration: underline;
 }
 .result-card-inner-wrapper .result-main-title {
     font-size: 4rem;
@@ -77,6 +87,17 @@
 .result-card-inner-wrapper .result-title-section .btn-place {
     margin-top: 2.4rem;
     font-size: 1.7rem;
+}
+.result-card-inner-wrapper .result-title-section .krds-info-list li {
+    margin-top: 2.4rem;
+    font-size: 2rem;
+    padding-left: 2.4rem;
+    line-height: 1.5;
+}
+.result-card-inner-wrapper .result-title-section .roundcheck .krds-info-list.decimal > li::before {
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
 }
 .result-card-inner-wrapper .stats-section {
     margin-top: 3rem;

@@ -1464,7 +1464,7 @@ caption {
   --krds-button--pc-font-size-large: var(--krds-pc-font-size-label-large);
   --krds-button--mobile-font-size-large: var(--krds-mobile-font-size-label-large);
   --krds-button--font-weight-large: var(--krds-font-weight-regular);
-  --krds-button--size-height-xlarge: var(--krds-size-height-9);
+  --krds-button--size-height-xlarge: var(--krds-size-height-8);
   --krds-button--padding-x-xlarge: var(--krds-padding-8);
   --krds-button--padding-y-xlarge: 0;
   --krds-button--gap-xlarge: var(--krds-gap-2);
@@ -1807,7 +1807,7 @@ caption {
   --krds-button--size-height-large: var(--krds-size-height-6);
   --krds-button--padding-x-large: var(--krds-padding-1);
   --krds-button--padding-y-large: 0.5rem;
-  --krds-button--size-height-xlarge: var(--krds-size-height-7);
+  --krds-button--size-height-xlarge: var(--krds-size-height-8);
   --krds-button--padding-x-xlarge: var(--krds-padding-1);
   --krds-button--padding-y-xlarge: 0.9rem;
   display: inline-block;
