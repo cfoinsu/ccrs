@@ -3043,7 +3043,7 @@ dl.flex-list {
   max-width: 1404px;
   padding-left: 32px;
   padding-right: 32px;
-  height: 119px;
+  height: 0;
   margin: 0 auto;
   z-index: 1;
 }
@@ -3051,7 +3051,7 @@ dl.flex-list {
 /* pagination 정렬 */
 .sw-pagingbox {
   position: absolute;
-  bottom: 12px;
+  top: 81px;
   right: 0;
   display: flex;
   gap: 8px;

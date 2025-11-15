@@ -398,6 +398,52 @@ $(document).ready(function() {
     });
 });
 // 개발예외코딩
+$(function() {
+  const CookieUtil = {
+    set(name, value, days) {
+      const date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      document.cookie = `${name}=${encodeURIComponent(value)}; expires=${date.toUTCString()}; path=/`;
+      console.log('쿠키 저장됨:', name, value); // 디버깅용 출력
+    },
+    get(name) {
+      const value = `; ${document.cookie}`;
+      const parts = value.split(`; ${name}=`);
+      if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
+    },
+    remove(name) {
+      document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
+    }
+  };
+
+  /* top-banner 처리 */
+  if (!CookieUtil.get('hideTopBanner')) {
+    $('.top-banner').addClass('show');
+  }
+
+  $(document).on('click', '.top-banner-close-btn', function() {
+    $('.top-banner').removeClass('show');
+  });
+
+  $(document).on('click', '.top-banner-hide-1day', function() {
+    CookieUtil.set('hideTopBanner', 'true', 1);
+    $('.top-banner').removeClass('show');
+  });
+
+  /* intro 영역 */
+  if (!CookieUtil.get('hideIntroToday')) {
+    $('.intro').addClass('show');
+  }
+
+  $(document).on('click', '.intro-hide .close', function() {
+    $('.intro').removeClass('show');
+    if ($('#chk_1').is(':checked')) {
+      CookieUtil.set('hideIntroToday', 'true', 1);
+    } else {
+      CookieUtil.remove('hideIntroToday');
+    }
+  });
+});
 // 개발예외코딩
 // $(function(){ $('body').css('display','none').fadeIn(600); });
 
