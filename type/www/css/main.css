@@ -2539,7 +2539,7 @@ body:has(.intro.show) {
   right: 0;
 }
 .grid-col1 .slide-img img {
-  height: 489px;
+  height: 460px;
   -webkit-transform: translateY(30px);
           transform: translateY(30px);
   -webkit-transition: all 0.8s ease 0.3s;
