@@ -2258,8 +2258,8 @@ body aside {
     }
 
     .institution-carousel {
-        flex-wrap: wrap;
-        gap: 20px;
+        /* flex-wrap: wrap; */
+        /* gap: 20px; */
     }
 
     .util-bar .container {
@@ -3283,8 +3283,8 @@ body aside {
     }
 
     .institution-carousel {
-        flex-wrap: wrap;
-        gap: 20px;
+        /* flex-wrap: wrap; */
+        /* gap: 20px; */
     }
 
     .util-bar .container {

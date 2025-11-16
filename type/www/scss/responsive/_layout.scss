@@ -12,7 +12,6 @@
 
 $hdH-t: 53px;
 
-
 // Desktop/Mobile 헤더 표시/숨김
 .header-desktop {
   display: block;
@@ -22,6 +21,14 @@ $hdH-t: 53px;
 }
 
 @include tabletLess {
+  #m-anchor {
+    display: none;
+  }
+  .header {
+    &::after, &::before {
+      display: none;
+    }
+  }
   .header-desktop {
     display: none;
   }
@@ -30,6 +37,8 @@ $hdH-t: 53px;
   }
 }
 
+
+// 나머지 레이아웃 반응형
 @include desktopLess {
   .container {
     padding-left: 24px;
@@ -294,6 +303,23 @@ $hdH-t: 53px;
       }
 
       .institution-carousel-wrapper {
+        .institution-carousel-swiper {
+          overflow: hidden;
+          
+          .swiper-wrapper {
+            .swiper-slide {
+              width: 100% !important;
+              max-width: 100% !important;
+              margin-right: 0 !important;
+              flex-shrink: 0 !important;
+              
+              .institution-item {
+                width: 100% !important;
+              }
+            }
+          }
+        }
+
         .institution-nav {
           gap: 8px;
 
@@ -365,6 +391,9 @@ $hdH-t: 53px;
           display: flex;
           gap: 10px;
           flex-wrap: wrap;
+          @include mobile {
+            gap: 4px;
+          }
         }
         @include tabletLess {
           width: 100%;
@@ -386,10 +415,14 @@ $hdH-t: 53px;
 @include tabletLess {
   #header {
     overflow: visible; // mobile-menu-overlay가 밖으로 나갈 수 있도록
-    height: auto;
+    height: auto !important;
   }
   .main-content {
-    padding-top: 117px;
+    padding-top: 96px !important;
+
+    .main & {
+      padding-top: 54px !important;
+    }
   }
   .content-layout {
     margin-top: 30px;

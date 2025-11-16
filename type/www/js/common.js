@@ -73,77 +73,125 @@ function initInstitutionCarousel() {
     }
 
     try {
-        var institutionSwiper = new Swiper('.institution-carousel-swiper', {
-          slidesPerView: 2,
-          spaceBetween: 10,
-          loop: true,
-          loopedSlides: 12,
-          autoplay: false,
-          navigation: {
-            nextEl: '.institution-nav-btn.next',
-            prevEl: '.institution-nav-btn.prev',
+      var institutionSwiper = new Swiper('.institution-carousel-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: false,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        watchOverflow: true,
+        centeredSlides: false,
+        slideToClickedSlide: false,
+        navigation: {
+          nextEl: '.institution-nav-btn.next',
+          prevEl: '.institution-nav-btn.prev',
+        },
+        breakpoints: {
+          744: {
+            slidesPerView: 2,
+            loop: true,
+            loopedSlides: 12,
           },
-          breakpoints: {
-            744: {
-              slidesPerView: 3,
-              spaceBetween: 15,
-            },
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 20,
-              autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-              },
-            },
-            1280: {
-              slidesPerView: 5,
-              spaceBetween: 40,
-              autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-              },
-            },
-            1440: {
-              slidesPerView: 6,
-              spaceBetween: 64,
-              autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-              },
-            },
-            1920: {
-              slidesPerView: 6,
-              spaceBetween: 64,
-              autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-              },
+          768: {
+            slidesPerView: 3,
+            loop: true,
+            loopedSlides: 12,
+          },
+          1024: {
+            slidesPerView: 4,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
             },
           },
-        });
+          1280: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+          },
+          1440: {
+            slidesPerView: 6,
+            spaceBetween: 64,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+          },
+          1920: {
+            slidesPerView: 6,
+            spaceBetween: 64,
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+            },
+          },
+        },
+      });
 
-        // Pause/Play 버튼 기능
-        var pauseBtn = document.querySelector('.institution-nav-btn.pause');
-        var isPaused = false;
-
-        if (pauseBtn) {
-            pauseBtn.addEventListener('click', function() {
-                if (isPaused) {
-                    institutionSwiper.autoplay.start();
-                    this.innerHTML = '<i class="las la-pause"></i>';
-                    this.setAttribute('aria-label', '일시정지');
-                    isPaused = false;
-                } else {
-                    institutionSwiper.autoplay.stop();
-                    this.innerHTML = '<i class="las la-play"></i>';
-                    this.setAttribute('aria-label', '재생');
-                    isPaused = true;
-                }
+      // 초기화 후 위치 조정 (모바일에서 transform 문제 해결)
+      if (institutionSwiper) {
+        // 모바일에서 슬라이드 너비 재계산
+        var isMobile = window.innerWidth <= 767;
+        if (isMobile) {
+          // 슬라이드 너비를 컨테이너 너비로 강제 설정
+          var swiperContainer = document.querySelector('.institution-carousel-swiper');
+          if (swiperContainer) {
+            var containerWidth = swiperContainer.offsetWidth;
+            var slides = swiperContainer.querySelectorAll('.swiper-slide');
+            slides.forEach(function (slide) {
+              slide.style.width = containerWidth + 'px';
             });
+          }
         }
+        institutionSwiper.update();
+        institutionSwiper.slideTo(0, 0);
 
-        return institutionSwiper;
+        // resize 이벤트에서도 업데이트
+        var resizeTimer;
+        window.addEventListener('resize', function () {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(function () {
+            if (window.innerWidth <= 767 && institutionSwiper) {
+              var swiperContainer = document.querySelector('.institution-carousel-swiper');
+              if (swiperContainer) {
+                var containerWidth = swiperContainer.offsetWidth;
+                var slides = swiperContainer.querySelectorAll('.swiper-slide');
+                slides.forEach(function (slide) {
+                  slide.style.width = containerWidth + 'px';
+                });
+              }
+              institutionSwiper.update();
+            }
+          }, 250);
+        });
+      }
+
+      // Pause/Play 버튼 기능
+      var pauseBtn = document.querySelector('.institution-nav-btn.pause');
+      var isPaused = false;
+
+      if (pauseBtn) {
+        pauseBtn.addEventListener('click', function () {
+          if (isPaused) {
+            institutionSwiper.autoplay.start();
+            this.innerHTML = '<i class="las la-pause"></i>';
+            this.setAttribute('aria-label', '일시정지');
+            isPaused = false;
+          } else {
+            institutionSwiper.autoplay.stop();
+            this.innerHTML = '<i class="las la-play"></i>';
+            this.setAttribute('aria-label', '재생');
+            isPaused = true;
+          }
+        });
+      }
+
+      return institutionSwiper;
     } catch (error) {
         console.error('Failed to initialize institution carousel:', error);
         return null;

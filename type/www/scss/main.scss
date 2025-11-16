@@ -1,9 +1,24 @@
+// SCSS 변수 (기본값, 컴파일 타임)
 $boxPaddingX: 32px;
 $boxPaddingY: 36px;
 $boxRound: 24px;
 
 @import "variables";
 @import "mixins/breakpoints";
+
+// CSS 변수 (런타임 반응형 지원)
+:root {
+    --box-padding-x: #{$boxPaddingX};
+    --box-padding-y: #{$boxPaddingY};
+    --box-round: #{$boxRound};
+}
+
+@media (max-width: 767px) {
+    :root {
+        --box-padding-x: 24px;
+        --box-padding-y: 24px;
+    }
+}
 
 /* 네비게이션 */
 .top-nav {
@@ -91,9 +106,11 @@ $boxRound: 24px;
     background: transparent;
     font-size: 21px;
     font-weight: 700;
-    color: #58616a;
+    color: #a3a3a3;
     outline: none;
-
+    @include mobile {
+        font-size: 17px;
+    }
     &::placeholder {
         color: #58616a;
     }
@@ -135,6 +152,9 @@ $boxRound: 24px;
     font-weight: 700;
     color: #17191b;
     padding: 4px 14px;
+    @include mobile {
+        font-size: 14px;
+    }
 }
 
 .tag {
@@ -181,8 +201,8 @@ $boxRound: 24px;
             width: 100%;
             height: 390px;
             background: url(/type/www/images/main/diagnosis-bg.png);
-            border-radius: $boxRound;
-            padding: $boxPaddingY $boxPaddingX;
+            border-radius: var(--box-round);
+            padding: var(--box-padding-y) var(--box-padding-x);
 
             img {
                 position: absolute;
@@ -270,9 +290,9 @@ $boxRound: 24px;
                 position: relative;
                 width: 100%;
                 height: 147px;
-                padding: 25px $boxPaddingX;
+                padding: 25px var(--box-padding-x);
                 background: #444FA2;
-                border-radius: $boxRound;
+                border-radius: var(--box-round);
             }
 
             h2 {
@@ -385,7 +405,7 @@ $boxRound: 24px;
     width: 520px;
     height: 466px;
     background: #f9f2e8;
-    border-radius: $boxRound;
+    border-radius: var(--box-round);
     position: relative;
     padding: 32px;
     overflow: hidden;
@@ -450,7 +470,7 @@ $boxRound: 24px;
 //     width: 386px;
 //     height: 662px;
 //     background: #f48f01;
-//     border-radius: $boxRound;
+//     border-radius: var(--box-round);
 //     position: relative;
 //     padding: 32px;
 //     overflow: hidden;
@@ -549,10 +569,10 @@ $boxRound: 24px;
         align-items: center;
         gap: 16px;
         height: 105px;
-        padding: 0 $boxPaddingX;
+        padding: 0 var(--box-padding-x);
         /* background: #FFE6C3; */
         background: #f8f8f8;
-        border-radius: $boxRound;
+        border-radius: var(--box-round);
         position: relative;
         transition: all 0.3s;
 
@@ -631,6 +651,14 @@ $boxRound: 24px;
     }
 }
 
+.bottom-section-box-title-wrap {
+    display: flex; align-items: center;gap: 10px;
+    @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+}
 .bottom-section-box-title {
     font-size: 1.9rem;
     font-weight: 700;
@@ -650,7 +678,7 @@ $boxRound: 24px;
 .news-card {
     width: 386px;
     height: 180px;
-    border-radius: $boxRound;
+    border-radius: var(--box-round);
     padding: 32px;
     position: relative;
     overflow: hidden;
@@ -727,7 +755,7 @@ $boxRound: 24px;
 .support-image {
     width: 100%;
     height: 430px;
-    border-radius: $boxRound;
+    border-radius: var(--box-round);
     overflow: hidden;
     margin-bottom: 24px;
     position: relative;
@@ -759,7 +787,7 @@ $boxRound: 24px;
 
 .benefit-card {
     background: white;
-    border-radius: $boxRound;
+    border-radius: var(--box-round);
     padding: 40px;
     position: relative;
 }
@@ -803,7 +831,7 @@ $boxRound: 24px;
     height: 120px;
     display: flex;
     align-items: center;
-    border-radius: $boxRound;
+    border-radius: var(--box-round);
 
     h3 {
         font-size: 32px;
@@ -1537,6 +1565,9 @@ section {
     z-index: 1000;
     top:-120vh;
     padding: 50px;
+    @include desktopLess {
+        padding: 32px;
+    }
 
     &.show {
         top: 0;
@@ -1563,11 +1594,26 @@ section {
         cursor: pointer;
 
         &.btn01 {
-            background: url(../images/main/intro_close.png) no-repeat;
+            background: url(../images/main/intro_close.png) no-repeat center center;
             right: 40px;
             top: 40px;
             width: 32px;
             height: 32px;
+            @include desktopLess {
+                right: 24px;
+                top: 24px;
+            }
+            @include mobile {
+                right: 16px;
+                top: 16px;
+            }
+        }
+    }
+
+    .img-logo {
+        height: 30px;
+        img {
+            height: 100%;
         }
     }
 
@@ -1576,10 +1622,14 @@ section {
         width: 100%;
         height: 64px;
         margin-top: 32px;
+        @include desktopLess {
+            margin-top: 24px;
+        }
 
         .search-box {
             position: relative;
-            width: 705px;
+            max-width: 705px;
+            width: 100%;
             height: 64px;
             margin: 0 auto;
             background: #fff;
@@ -1587,11 +1637,22 @@ section {
             border-radius: 1000px;
             padding: 0 60px 0 30px;
 
+            @include desktopLess {
+                max-width: 550px;
+                height: 56px;
+            }
+
             .search-btn {
                 width: 48px;
                 height: 48px;
                 background-color: #F48F01;
                 border-radius: 1000px;
+
+                @include desktopLess {
+                    width: 44px;
+                    height: 44px;
+                    right: 6px;
+                }
 
                 .search-icon-white {
                     width: 20px;
@@ -1605,6 +1666,9 @@ section {
     .tellphon {
         margin: 30px auto;
         text-align: center;
+        @include desktopLess {
+            margin: 12px auto 25px;
+        }
 
         .call {
             font-size: 17px;
@@ -1635,25 +1699,39 @@ section {
 
     .intro-linkbox {
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 428px 1fr;
+        grid-template-rows: 250px 1fr;
         gap: 20px;
+        // justify-content: center;
+        // align-items: start;
+        max-width: 1208px;
+        margin: 0 auto;
 
-        .boxLcol {
+        .box1 {
             position: relative;
+            grid-column: 1;
+            grid-row: 1 / 3;
             width: 428px;
             height: 500px;
             background: #FFE2CB url(../images/main/bg_intro_leftbox.svg) top 67px right -15px no-repeat;
             background-size: 244px 259px;
             padding: 37px 32px 32px;
             border-radius: 24px;
+            @include desktopLess {
+                padding: 24px;
+                background-size: 117px 117px;
+                background-position: 90% 30px;
+            }
 
             .bigtit {
                 font-size: 40px;
                 font-weight: 700;
                 color: #17191B;
                 line-height: 1.5;
+                @include desktopLess {
+                    font-size: 24px;
+                }
             }
 
             .contsDesc {
@@ -1662,6 +1740,9 @@ section {
                 color: #17191B;
                 line-height: 1.5;
                 margin-top: 6px;
+                @include desktopLess {
+                    font-size: 15px;
+                }
             }
 
             .boxlinkbottom {
@@ -1672,16 +1753,25 @@ section {
                 position: absolute;
                 width: calc(100% - 64px);
                 bottom: 32px;
+                @include desktopLess {
+                    gap: 8px;
+                }
 
                 .arrowlink-w {
                     font-size: 18px;
                     font-weight: 500;
                     padding: 19px 30px 19px 14px;
-                    background: #fff url(../images/main/link_btn_m.svg) center right 14px no-repeat;
-                    background-size: 20px 14px;
+                    background: #fff url(../images/main/link_btn_m.svg) center right 24px no-repeat;
+                    background-size: 17px 14px;
                     border-radius: 1000px;
                     line-height: 1;
                     height: 56px;
+                    @include desktopLess {
+                        padding: 0 24px;
+                        font-size: 17px;
+                        height: 48px;
+                        line-height: 48px;
+                    }
 
                     &.full {
                         width: 100%;
@@ -1689,8 +1779,160 @@ section {
 
                     &.half {
                         width: calc(50% - 3px);
+                        @include desktopLess {
+                            width: 100%;
+                        }
                     }
                 }
+            }
+        }
+
+        .box2 {
+            position: relative;
+            grid-column: 2;
+            grid-row: 1;
+            width: 100%;
+            height: 100%;
+            background: #FFE3A6;
+            border-radius: 24px;
+            padding: 32px;
+            box-sizing: border-box;
+
+            .cyberlinkbox {
+                position: absolute;
+                bottom: 32px;
+                width: calc(100% - 64px);
+                display: flex;
+                justify-content: space-between;
+                @include desktopLess {
+                    flex-wrap: wrap;
+                    bottom: 24px;
+                }
+
+                .iconlink {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 8px;
+                    width: 0;
+                    flex: 1;
+                    @include desktopLess {
+                        flex: 1 1 50%;
+                        font-size: 15px;
+                        margin-bottom: 10px;
+                    }
+
+                    .g-img {
+                        display: flex;
+                        align-items: center;
+                        height: 80px;
+                        img {
+                            height: 100%;
+                        }
+                        @include desktopLess {
+                            height: 50px;
+                        }
+                    }
+
+                    // &::before {
+                    //     content: '';
+                    //     display: block;
+                    //     height: 80px;
+                    //     width: 100%;
+                    // }
+
+                    &.ico_cyber01::before {
+                        background: url(../images/main/img_intro_cyber01.svg) center no-repeat;
+                        background-size: 77px 80px;
+                    }
+
+                    &.ico_cyber02::before {
+                        background: url(../images/main/img_intro_cyber02.svg) center no-repeat;
+                        background-size: 74px 62px;
+                    }
+
+                    &.ico_cyber03::before {
+                        background: url(../images/main/img_intro_cyber03.svg) center no-repeat;
+                        background-size: 72px 56px;
+                    }
+
+                    &.ico_cyber04::before {
+                        background: url(../images/main/img_intro_cyber04.svg) center no-repeat;
+                        background-size: 52px 60px;
+                    }
+
+                    &.ico_cyber05::before {
+                        background: url(../images/main/img_intro_cyber05.svg) center no-repeat;
+                        background-size: 58px 71px;
+                    }
+
+                    &.ico_cyber06::before {
+                        background: url(../images/main/img_intro_cyber06.svg) center no-repeat;
+                        background-size: 60px 59px;
+                    }
+                }
+            }
+        }
+        .box-bottom-wrapper {
+            grid-column: 2;
+            grid-row: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: stretch;
+            height: 100%;
+        }
+
+        .box3 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #FFCC84 url(../images/main/img_intro_edu01.svg) bottom 32px right 32px no-repeat;
+            background-size: 104px 90px;
+            border-radius: 24px;
+            padding: 32px;
+            box-sizing: border-box;
+        }
+
+        .box4 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #FFCC84 url(../images/main/img_intro_test01.svg) bottom 16px right -16px no-repeat;
+            background-size: 182px 144px;
+            border-radius: 24px;
+            padding: 32px;
+            box-sizing: border-box;
+        }
+
+        .boxtit {
+            font-size: 24px;
+            font-weight: 700;
+            color: #17191B;
+            line-height: 1.5;
+        }
+
+        .usefullinkbox {
+            position: absolute;
+            bottom: 32px;
+            width: calc(100% - 64px);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: flex-start;
+            @include mobile {
+                gap: 0;
+            }
+
+            .arrowlink-s {
+                font-size: 19px;
+                // font-weight: 700;
+                padding: 0px 23px 0 0;
+                background: transparent url(../images/main/link_btn_s.svg) center right no-repeat;
+                background-size: 17px 12px;
+                line-height: 1;
+                height: 29px;
+                line-height: 29px;
             }
         }
 
@@ -1703,132 +1945,99 @@ section {
             flex-wrap: wrap;
             gap: 20px;
 
-            .boxtit {
-                font-size: 24px;
-                font-weight: 700;
-                color: #17191B;
-                line-height: 1.5;
-            }
-
-            .boxRtop {
-                position: relative;
-                width: 100%;
-                height: 250px;
-                background: #FFE3A6;
-                border-radius: 24px;
-                padding: 32px;
-                box-sizing: border-box;
-
-                .cyberlinkbox {
-                    position: absolute;
-                    bottom: 32px;
-                    width: calc(100% - 64px);
-                    display: flex;
-                    justify-content: space-between;
-
-                    .iconlink {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        gap: 8px;
-                        width: 0;
-                        flex: 1;
-
-                        .g-img {
-                            display: flex;
-                            align-items: center;
-                            height: 80px;
-                        }
-
-                        // &::before {
-                        //     content: '';
-                        //     display: block;
-                        //     height: 80px;
-                        //     width: 100%;
-                        // }
-
-                        &.ico_cyber01::before {
-                            background: url(../images/main/img_intro_cyber01.svg) center no-repeat;
-                            background-size: 77px 80px;
-                        }
-
-                        &.ico_cyber02::before {
-                            background: url(../images/main/img_intro_cyber02.svg) center no-repeat;
-                            background-size: 74px 62px;
-                        }
-
-                        &.ico_cyber03::before {
-                            background: url(../images/main/img_intro_cyber03.svg) center no-repeat;
-                            background-size: 72px 56px;
-                        }
-
-                        &.ico_cyber04::before {
-                            background: url(../images/main/img_intro_cyber04.svg) center no-repeat;
-                            background-size: 52px 60px;
-                        }
-
-                        &.ico_cyber05::before {
-                            background: url(../images/main/img_intro_cyber05.svg) center no-repeat;
-                            background-size: 58px 71px;
-                        }
-
-                        &.ico_cyber06::before {
-                            background: url(../images/main/img_intro_cyber06.svg) center no-repeat;
-                            background-size: 60px 59px;
-                        }
-                    }
-                }
-            }
-
             .boxRbottom {
                 width: 100%;
                 height: 230px;
                 display: flex;
                 gap: 20px;
 
-                .edubox {
-                    position: relative;
-                    flex: 1;
-                    width: 370px;
-                    background: #FFCC84 url(../images/main/img_intro_edu01.svg) bottom 32px right 32px no-repeat;
-                    background-size: 104px 90px;
-                    border-radius: 24px;
-                    padding: 32px;
-                    box-sizing: border-box;
-                }
+                
 
-                .textbox {
-                    position: relative;
-                    flex: 1;
-                    width: 370px;
-                    background: #FFCC84 url(../images/main/img_intro_test01.svg) bottom 16px right -16px no-repeat;
-                    background-size: 182px 144px;
-                    border-radius: 24px;
-                    padding: 32px;
-                    box-sizing: border-box;
-                }
-
-                .usefullinkbox {
-                    position: absolute;
-                    bottom: 32px;
-                    width: calc(100% - 64px);
-                    display: flex;
-                    flex-direction: column;
-                    gap: 12px;
-                    align-items: flex-start;
-
-                    .arrowlink-s {
-                        font-size: 19px;
-                        font-weight: 700;
-                        padding: 0px 23px 0 0;
-                        background: transparent url(../images/main/link_btn_s.svg) center right no-repeat;
-                        background-size: 17px 12px;
-                        line-height: 1;
-                        height: 29px;
-                        line-height: 29px;
-                    }
-                }
+                
             }
+        }
+
+        @include desktopLess {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            max-width: 768px;
+            height: calc(100vh - 322px);
+            max-height: 646px;
+
+            .box1 {
+                grid-column: 1;
+                grid-row: 1;
+                width: 100%;
+                height: 100%;
+                min-height: 400px;
+            }
+
+            .box2 {
+                grid-column: 2;
+                grid-row: 1;
+                width: 100%;
+                height: 100%;
+                min-height: 400px;
+            }
+
+            .box-bottom-wrapper {
+                grid-column: 1 / 3;
+                grid-row: 2;
+                width: 100%;
+                height: auto;
+            }
+
+            .box3,
+            .box4 {
+                height: auto;
+                min-height: 230px;
+            }
+        }
+
+        @include mobile {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            max-width: 100%;
+            gap: 0;
+            height: auto;
+
+            .box1 {
+                grid-column: 1;
+                grid-row: 1 / 3;
+                width: 100%;
+                height: 400px;
+            }
+
+            .box2 {
+                grid-column: 2;
+                grid-row: 1 / 3;
+                width: 100%;
+                height: 400px;
+            }
+
+            .box-bottom-wrapper {
+                grid-column: 3;
+                grid-row: 1 / 3;
+                width: 100%;
+                height: 400px;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 12px;
+            }
+
+            .box3, .box4 {
+                height: 50%;
+                min-height: 194px;
+            }
+        }
+    }
+
+    .introSwiper-pagination {
+        display: none;
+        bottom: -10px;
+        @include mobile {
+            display: block;
         }
     }
 
@@ -2118,6 +2327,9 @@ body:has(.intro.show) {
                             white-space: nowrap;
                             border-bottom: none;
                             border-right: 1px solid rgba(0,0,0,0.1);
+                            @include mobile {
+                                font-size: 19px;
+                            }
                             &:last-child {
                                 border-right: none;
                             }
@@ -2225,7 +2437,7 @@ body:has(.intro.show) {
     .swiper-pagination {
       position: absolute;
       bottom: 20px;
-      left: $boxPaddingX;
+      left: var(--box-padding-x);
       transform: none;
       width: auto;
       &.white {
@@ -2268,7 +2480,7 @@ body:has(.intro.show) {
     .slide-txt {
         position: relative;
         z-index: 1;
-        padding: $boxPaddingY $boxPaddingX;
+        padding: var(--box-padding-y) var(--box-padding-x);
         em {
             display: inline-block;
             margin-bottom: 15px;
@@ -2324,7 +2536,7 @@ body:has(.intro.show) {
         bottom: 0;
         right: 0;
         img {
-            height: 489px;
+            height: 430px;
             transform: translateY(30px);
             transition: all 0.8s ease 0.3s;
             @include desktopLess {
@@ -2346,7 +2558,7 @@ body:has(.intro.show) {
     .hoverline{
         background-color: #F48F01;
         border-radius: 24px;
-        padding: 6px $boxPaddingX;
+        padding: 6px var(--box-padding-x);
         min-height: 100%;
         display: flex;
         overflow: hidden;
@@ -2401,7 +2613,7 @@ body:has(.intro.show) {
     }
     .bottombox {
         position: relative;
-        border-radius: $boxRound;
+        border-radius: var(--box-round);
         background: #F0EFEB;
         overflow: hidden;
         @include mobile {
@@ -2420,7 +2632,7 @@ body:has(.intro.show) {
         .swiper-slide a {
             display: block;
             height: 100%;
-            padding: $boxPaddingY $boxPaddingX;
+            padding: var(--box-padding-y) var(--box-padding-x);
         }
         .bottombox-txt {
             position: relative;
@@ -2500,19 +2712,30 @@ body:has(.intro.show) {
     .debt-card__text {
       position: absolute;
       bottom: 80px;
-      left: $boxPaddingX;
-      right: $boxPaddingX;
+      left: var(--box-padding-x);
+      right: var(--box-padding-x);
       color: #fff;
       z-index: 1;
+      @include mobile {
+        bottom: 40px;
+      }
 
       h3 {
         font-size: 44px;
         font-weight: 700;
+        @include mobile {
+            font-size: 30px;
+        }
       }
       p {
         margin-top: 20px;
         font-size: 19px;
         font-weight: 400;
+        @include mobile {
+            br {
+                display: none;
+            }
+        }
       }
     }
 
@@ -2527,7 +2750,7 @@ body:has(.intro.show) {
 .col-debt2-1 {
   height: 434px;
   background: #F0EFEB;
-  border-radius: $boxRound;
+  border-radius: var(--box-round);
   position: relative;
   overflow: hidden;
 
@@ -2561,11 +2784,14 @@ body:has(.intro.show) {
   }
 
   .swiper-slide {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 32px 36px;
-
+    padding: var(--box-padding-y) var(--box-padding-x);
+    @include mobile {
+        padding-bottom: 80px;
+    }
     img {
         position: absolute;
         top: 0;
@@ -2616,7 +2842,7 @@ body:has(.intro.show) {
   a {
     display: block;
     height: 181px;
-    padding: 34px 36px;
+    padding: var(--box-padding-y) var(--box-padding-x);
     border-radius: 24px;
     background: #F48F02 url(/type/www/images/main/debt2-2-bg.svg) 100% 100% no-repeat;
     strong {
@@ -2629,7 +2855,7 @@ body:has(.intro.show) {
 .col-debt3 {
   border-radius: 24px;
   background: #fff3e3;
-  padding: $boxPaddingY $boxPaddingX;
+  padding: var(--box-padding-y) var(--box-padding-x);
   .plus-lst {
     li {
         display: flex;
@@ -2700,7 +2926,11 @@ body:has(.intro.show) {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 32px 36px;
+        padding: var(--box-padding-y) var(--box-padding-x);
+        @include mobile {
+            height: auto !important;
+            padding-bottom: 80px;
+        }
 
         a {
           display: flex;
@@ -2747,7 +2977,7 @@ body:has(.intro.show) {
     flex:1;
     position: relative;
     height: 628px;
-    border-radius: $boxRound;
+    border-radius: var(--box-round);
     background: url(/type/www/images/main/finance-2.png);
     @include mobile {
         height: auto;
@@ -2761,13 +2991,13 @@ body:has(.intro.show) {
     flex-direction: column;
     gap: 13px;
     position: absolute;
-    bottom: $boxPaddingY;
-    right: $boxPaddingX;
+    bottom: var(--box-padding-y);
+    right: var(--box-padding-x);
     width: 352px;
     height: 340px;
     background: #D9EDFE;
-    border-radius: $boxRound;
-    padding: 30px;
+    border-radius: var(--box-round);
+    padding: var(--box-padding-y) var(--box-padding-x);
     @include mobile {
         position: static;
         width: 100%;
@@ -2848,11 +3078,18 @@ body:has(.intro.show) {
   .news-left {
     .news-list {
       height: 341px;
-      padding: 24px 32px;
+      padding: var(--box-padding-y) var(--box-padding-x);
       border: 1px solid #D2D6DA;
       border-radius: 24px;
       box-sizing: border-box;
       width: 100%;
+      @include mobile {
+        height: auto;
+        gap: 0;
+        strong {
+            font-weight: normal;
+        }
+      }
       &.active {
         display: flex;
         flex-direction: column;
@@ -2877,7 +3114,7 @@ body:has(.intro.show) {
         text-overflow: ellipsis;
         max-width: 70%;
         @include mobile {
-            max-width: 280px;
+            max-width: 210px;
         }
       }
       span {
@@ -2920,7 +3157,7 @@ body:has(.intro.show) {
     }
     .press-content {
       background-color: transparent;
-      padding: 24px 24px 10px;
+      padding: var(--box-padding-y) var(--box-padding-x) 10px;
       font-weight: 700;
       font-size: 19px;
     }

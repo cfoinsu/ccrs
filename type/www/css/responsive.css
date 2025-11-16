@@ -103,6 +103,12 @@
 }
 
 @media (max-width: 1023px) {
+  #m-anchor {
+    display: none;
+  }
+  .header::after, .header::before {
+    display: none;
+  }
   .header-desktop {
     display: none;
   }
@@ -403,6 +409,19 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .section-institution .institution-carousel-wrapper .institution-carousel-swiper {
+    overflow: hidden;
+  }
+  .section-institution .institution-carousel-wrapper .institution-carousel-swiper .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+    -ms-flex-negative: 0 !important;
+        flex-shrink: 0 !important;
+  }
+  .section-institution .institution-carousel-wrapper .institution-carousel-swiper .swiper-wrapper .swiper-slide .institution-item {
+    width: 100% !important;
+  }
   .section-institution .institution-carousel-wrapper .institution-nav {
     gap: 8px;
   }
@@ -501,6 +520,11 @@
         flex-wrap: wrap;
   }
 }
+@media (max-width: 1279px) and (max-width: 767px) {
+  .footer .footer-content .footer-contact .tel-box {
+    gap: 4px;
+  }
+}
 @media (max-width: 1279px) and (max-width: 1023px) {
   .footer .footer-content .footer-contact {
     width: 100%;
@@ -517,10 +541,13 @@
 @media (max-width: 1023px) {
   #header {
     overflow: visible;
-    height: auto;
+    height: auto !important;
   }
   .main-content {
-    padding-top: 117px;
+    padding-top: 96px !important;
+  }
+  .main .main-content {
+    padding-top: 54px !important;
   }
   .content-layout {
     margin-top: 30px;
@@ -889,12 +916,16 @@
   color: #ED7801;
 }
 
-@media (min-width: 1024px) {
+.mobile-allmenu-overlay {
+  display: none !important;
+}
+
+@media (max-width: 1023px) {
   .mobile-allmenu-overlay {
-    display: none !important;
+    display: block !important;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .menu-left {
     width: 35%;
   }
@@ -920,6 +951,9 @@
   border-bottom: 1px solid #cbdaff;
   padding: 0 0 0 8px;
   overflow: visible;
+}
+.main .mobile-breadcrumb-nav {
+  display: none;
 }
 @media (max-width: 1023px) {
   .mobile-breadcrumb-nav {

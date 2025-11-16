@@ -92,82 +92,119 @@ function initIntroPopup() {
  * Swiper 슬라이더 초기화
  * 메인 배너와 하단 배너 슬라이더 설정
  */
+var introSwiper = null;
+
+function initIntroSwiper() {
+  // 인트로 배너 슬라이더 - mobile에서만 작동
+  if ($('#introSwiper').length > 0) {
+    var isMobile = window.innerWidth <= 767;
+
+    if (isMobile && !introSwiper) {
+      // mobile일 때만 swiper 초기화
+      introSwiper = new Swiper('#introSwiper', {
+        slidesPerView: 1,
+        spaceBetween: 12,
+        centeredSlides: true,
+        pagination: {
+          el: '.introSwiper-pagination',
+          clickable: true,
+        },
+      });
+    } else if (!isMobile && introSwiper) {
+      // tablet 이상일 때 swiper 해제
+      introSwiper.destroy(true, true);
+      introSwiper = null;
+    }
+  }
+}
+
 function initSwiperSliders() {
-    // 메인 배너 슬라이더
-    if ($('#mainSlider').length > 0) {
-      var mainSwiper = new Swiper('#mainSlider', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        centeredSlides: true,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        loop: true,
-        loopedSlides: 3,
-        pagination: {
-          el: '#mainSlider-pagination',
-          clickable: true,
-        },
-      });
-    }
+  // 인트로 배너 슬라이더 초기화
+  initIntroSwiper();
 
-    // 하단 배너 슬라이더
-    if ($('#bnrSlider').length > 0) {
-      var bottomSwiper = new Swiper('#bnrSlider', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        centeredSlides: true,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
-        loop: true,
-        loopedSlides: 3,
-        pagination: {
-          el: '#bnrSlider-pagination',
-          clickable: true,
-        },
-      });
-    }
+  // 화면 크기 변경 시 인트로 swiper만 재초기화
+  var resizeTimer;
+  $(window).on('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      initIntroSwiper();
+    }, 250);
+  });
+  // 메인 배너 슬라이더
+  if ($('#mainSlider').length > 0) {
+    var mainSwiper = new Swiper('#mainSlider', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      centeredSlides: true,
+      // autoplay: {
+      //   delay: 4000,
+      //   disableOnInteraction: false,
+      // },
+      loop: true,
+      loopedSlides: 3,
+      pagination: {
+        el: '#mainSlider-pagination',
+        clickable: true,
+      },
+    });
+  }
 
-    // 상환 배너 슬라이더
-    if ($('#debtSlider').length > 0) {
-      var debtSwiper = new Swiper('#debtSlider', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        centeredSlides: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        loop: true,
-        loopedSlides: 3,
-        pagination: {
-          el: '#debtSlider-pagination',
-          clickable: true,
-        },
-      });
-    }
+  // 하단 배너 슬라이더
+  if ($('#bnrSlider').length > 0) {
+    var bottomSwiper = new Swiper('#bnrSlider', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      centeredSlides: true,
+      // autoplay: {
+      //   delay: 4000,
+      //   disableOnInteraction: false,
+      // },
+      loop: true,
+      loopedSlides: 3,
+      pagination: {
+        el: '#bnrSlider-pagination',
+        clickable: true,
+      },
+    });
+  }
 
-    // 금융 배너 슬라이더
-    if ($('#financeSlider').length > 0) {
-      var financeSwiper = new Swiper('#financeSlider', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        centeredSlides: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        loop: true,
-        loopedSlides: 3,
-        pagination: {
-          el: '#financeSlider-pagination',
-          clickable: true,
-        },
-      });
-    }
+  // 상환 배너 슬라이더
+  if ($('#debtSlider').length > 0) {
+    var debtSwiper = new Swiper('#debtSlider', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      centeredSlides: true,
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // },
+      loop: true,
+      loopedSlides: 3,
+      pagination: {
+        el: '#debtSlider-pagination',
+        clickable: true,
+      },
+    });
+  }
+
+  // 금융 배너 슬라이더
+  if ($('#financeSlider').length > 0) {
+    var financeSwiper = new Swiper('#financeSlider', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      centeredSlides: true,
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // },
+      loop: true,
+      loopedSlides: 3,
+      pagination: {
+        el: '#financeSlider-pagination',
+        clickable: true,
+      },
+    });
+  }
 }
 
 /**

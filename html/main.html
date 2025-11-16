@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div id="skip-nav-container"></div>
-	<div id="container">
+	<div id="container" class="main">
 		<!-- header:s -->
 	    <header id="header" class="header">
 			<div id="topbanner-container"></div>
@@ -105,19 +105,9 @@
 											</div>
 											<!-- <img src="/type/www/images/main/mainvisual_01.png?ver=4.2" alt="재무조정 삶이 무너졌을 때 다시 일어설 수 있도록 함께"> -->
 										</div>
-										<div class="swiper-slide">
-											<!-- <div class="slide-txt">
-												<em>재무조정</em>
-												<div class="tit">
-													<span>삶이 무너졌을 때</span>
-													<strong>다시 일어설 수 <br>있도록 함께</strong>
-												</div>
-											</div>
-											<div class="slide-img">
-												<img src="/type/www/images/main/mainvisual_img03.png?ver=4.2" alt="재무조정 이미지" class="slide-img3">
-											</div> -->
+										<!-- <div class="swiper-slide">
 											<img src="/type/www/images/main/mainvisual_01.png?ver=4.2" alt="재무조정 삶이 무너졌을 때 다시 일어설 수 있도록 함께">
-										</div>
+										</div> -->
 
 									</div>
 									<div class="swiper-pagination" id="mainSlider-pagination"></div>
@@ -221,11 +211,9 @@
 								<div class="bottom-section-box consulting-section">
 									<img src="/type/www/images/main/bottom-img-01.png?ver=4.2" alt="">
 									<div style="display: flex;flex-direction: column;">
-										<div>
-											<div style="display: flex; align-items: center;gap: 10px;">
-												<h2 class="bottom-section-box-title">컨설팅 지원</h2>
-												<p class="bottom-section-box-subtitle">종합적인 컨설팅을 받아보고 싶어요.</p>
-											</div>
+										<div class="bottom-section-box-title-wrap">
+											<h2 class="bottom-section-box-title">컨설팅 지원</h2>
+											<p class="bottom-section-box-subtitle">종합적인 컨설팅을 받아보고 싶어요.</p>
 										</div>
 										<div class="arrow-buttons">
 											<button type="button" onclick="goToPage('신용복지컨설팅.html')" class="arrow-btn">
@@ -688,19 +676,19 @@
 			</div>
 		</div>
 		<div class="tellphon"><p class="call">희망으로 거는 전화 <strong>1600-5500</strong></p></div>
-		<div class="intro-linkbox">
-			<div class="boxLcol">
-				<p class="bigtit">처음 방문하셨나요?</p>
-				<p class="contsDesc">나에게 맞는 채무조정을<br>알아보세요.</p>
-				<div class="boxlinkbottom">
-					<a href="#" class="arrowlink-w half">인터넷상담신청</a>
-					<a href="#" class="arrowlink-w half">방문예약신청</a>
-					<a href="#" class="arrowlink-w full">나에게 맞는 채무조정 찾기</a>
-					<a href="채무조정제도비교_장단점비교.html" class="arrowlink-w full">채무조정제도 비교</a>
+		<div class="swiper" id="introSwiper">
+			<div class="intro-linkbox swiper-wrapper">
+				<div class="swiper-slide box1">
+					<p class="bigtit">처음 방문하셨나요?</p>
+					<p class="contsDesc">나에게 맞는 채무조정을<br>알아보세요.</p>
+					<div class="boxlinkbottom">
+						<a href="#" class="arrowlink-w half">인터넷상담신청</a>
+						<a href="#" class="arrowlink-w half">방문예약신청</a>
+						<a href="#" class="arrowlink-w full">나에게 맞는 채무조정 찾기</a>
+						<a href="채무조정제도비교_장단점비교.html" class="arrowlink-w full">채무조정제도 비교</a>
+					</div>
 				</div>
-			</div>
-			<div class="boxRcol">
-				<div class="boxRtop">
+				<div class="swiper-slide box2">
 					<p class="boxtit">사이버상담</p>
 					<div class="cyberlinkbox">
 						<a href="#" class="iconlink ico_cyber01">
@@ -740,15 +728,15 @@
 							제증명발급</a>
 					</div>
 				</div>
-				<div class="boxRbottom">
-					<div class="edubox">
-						<p class="boxtit">신용교육원</p>
-						<div class="usefullinkbox">
-							<a href="#" class="arrowlink-s">온라인 신용교육</a>
-							<a href="#" class="arrowlink-s">찾아가는 신용교육</a>
-						</div>
+				<div class="swiper-slide box-bottom-wrapper">
+					<div class="box3">
+							<p class="boxtit">신용교육원</p>
+							<div class="usefullinkbox">
+								<a href="#" class="arrowlink-s">온라인 신용교육</a>
+								<a href="#" class="arrowlink-s">찾아가는 신용교육</a>
+							</div>
 					</div>
-					<div class="textbox">
+					<div class="box4">
 						<p class="boxtit">신용상담사 교육</p>
 						<div class="usefullinkbox">
 							<a href="https://counselor.ccrs.or.kr/ccedu/online/onlineDetailList.do?mtScCode=SC5000&eduVer=v1" target="_blank" title="새창열림" class="arrowlink-s">수강하기</a>
@@ -756,6 +744,7 @@
 					</div>
 				</div>
 			</div>
+			<div class="swiper-pagination introSwiper-pagination"></div>
 		</div>
 		<div class="intro-hide">
 			<div class="krds-form-check">
