@@ -65,6 +65,9 @@
     border-radius: 16px;
     border: 1px solid #D2D6DA;
 }
+.result-card-inner-wrapper + .result-card-inner-wrapper {
+    margin-top: 3.7rem;
+}
 .top_line {
     margin-top: 3rem;
     padding-top: 2.4rem;
