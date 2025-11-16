@@ -43,19 +43,76 @@
                             </li>
                         </ul>
                     </div>
-					<div class="institution-nav">
-						<button type="button" class="institution-nav-btn prev" aria-label="이전">
-							<i class="las la-angle-left"></i>
-						</button>
-						<button type="button" class="institution-nav-btn next" aria-label="다음">
-							<i class="las la-angle-right"></i>
-						</button>
-						<button type="button" class="institution-nav-btn pause" aria-label="일시정지">
-							<i class="las la-pause"></i>
-						</button>
-					</div>
-				</div>
-			</div>
+                    
+                </div>
+                <div class="buttons-wrap">
+                    <div class="swiper-button-prev"><i class="las la-angle-left"></i></div>
+                    <div class="swiper-button-next"><i class="las la-angle-right"></i></div>
+                    <div class="swiper-button-pause"><i class="las la-pause"></i></div>
+                </div>
+            </div>
+            <script>
+                var swiper = new Swiper("#institution-swiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                    loop: true,
+                    loopedSlides: 10,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                    watchOverflow: true,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    breakpoints: {
+                        570: {
+                            slidesPerView: 1,
+                            spaceBetween: 10,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 40,
+                        },
+                        1280: {
+                            slidesPerView: 4,
+                            spaceBetween: 50,
+                        },
+                        1440: {
+                            slidesPerView: 5,
+                            spaceBetween: 60,
+                        },
+                        1920: {
+                            slidesPerView: 6,
+                            spaceBetween: 60,
+                        },
+                    },
+                });
+                
+                // Pause/Play 버튼 기능
+                var pauseBtn = document.querySelector('.swiper-button-pause');
+                var isPaused = false;
+                if (pauseBtn && swiper) {
+                    pauseBtn.addEventListener('click', function() {
+                        if (isPaused) {
+                            swiper.autoplay.start();
+                            this.innerHTML = '<i class="las la-pause"></i>';
+                            this.setAttribute('aria-label', '일시정지');
+                            isPaused = false;
+                        } else {
+                            swiper.autoplay.stop();
+                            this.innerHTML = '<i class="las la-play"></i>';
+                            this.setAttribute('aria-label', '재생');
+                            isPaused = true;
+                        }
+                    });
+                }
+            </script>
 		</div>
         <!-- Institution Links:e -->
         <!-- Footer:s -->

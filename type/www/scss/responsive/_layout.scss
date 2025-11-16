@@ -37,6 +37,41 @@ $hdH-t: 53px;
   }
 }
 
+// Institution Swiper
+.section-institution {
+  position: relative;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .institution-swiper {
+    overflow: hidden;
+    position: relative;
+    width: calc(100% - 200px);
+    .swiper-wrapper {
+      align-items: center;
+    }
+  }
+  .buttons-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .swiper-button-next, .swiper-button-prev, .swiper-button-pause {
+    background: none;
+    position: static;
+    margin-top: 0;
+    cursor: pointer;
+    &::after {
+      display: none;
+    }
+    &:hover {
+      background: #eee;
+    }
+  }
+}
+
 
 // 나머지 레이아웃 반응형
 @include desktopLess {

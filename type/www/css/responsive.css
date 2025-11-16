@@ -116,6 +116,52 @@
     display: block;
   }
 }
+.section-institution {
+  position: relative;
+}
+.section-institution .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-institution .institution-swiper {
+  overflow: hidden;
+  position: relative;
+  width: calc(100% - 200px);
+}
+.section-institution .institution-swiper .swiper-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section-institution .buttons-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.section-institution .swiper-button-next, .section-institution .swiper-button-prev, .section-institution .swiper-button-pause {
+  background: none;
+  position: static;
+  margin-top: 0;
+  cursor: pointer;
+}
+.section-institution .swiper-button-next::after, .section-institution .swiper-button-prev::after, .section-institution .swiper-button-pause::after {
+  display: none;
+}
+.section-institution .swiper-button-next:hover, .section-institution .swiper-button-prev:hover, .section-institution .swiper-button-pause:hover {
+  background: #eee;
+}
+
 @media (max-width: 1279px) {
   .container {
     padding-left: 24px;
