@@ -91,7 +91,7 @@ $boxRound: 24px;
     background: transparent;
     font-size: 21px;
     font-weight: 700;
-    color: #58616a;
+    color: #a3a3a3;
     outline: none;
 
     &::placeholder {
@@ -1537,6 +1537,9 @@ section {
     z-index: 1000;
     top:-120vh;
     padding: 50px;
+    @include desktopLess {
+        padding: 32px;
+    }
 
     &.show {
         top: 0;
@@ -1679,12 +1682,20 @@ section {
             background-size: 244px 259px;
             padding: 37px 32px 32px;
             border-radius: 24px;
+            @include desktopLess {
+                padding: 24px;
+                background-size: 117px 117px;
+                background-position: 90% 30px;
+            }
 
             .bigtit {
                 font-size: 40px;
                 font-weight: 700;
                 color: #17191B;
                 line-height: 1.5;
+                @include desktopLess {
+                    font-size: 24px;
+                }
             }
 
             .contsDesc {
@@ -1693,6 +1704,9 @@ section {
                 color: #17191B;
                 line-height: 1.5;
                 margin-top: 6px;
+                @include desktopLess {
+                    font-size: 15px;
+                }
             }
 
             .boxlinkbottom {
@@ -1703,16 +1717,25 @@ section {
                 position: absolute;
                 width: calc(100% - 64px);
                 bottom: 32px;
+                @include desktopLess {
+                    gap: 8px;
+                }
 
                 .arrowlink-w {
                     font-size: 18px;
                     font-weight: 500;
                     padding: 19px 30px 19px 14px;
-                    background: #fff url(../images/main/link_btn_m.svg) center right 14px no-repeat;
-                    background-size: 20px 14px;
+                    background: #fff url(../images/main/link_btn_m.svg) center right 24px no-repeat;
+                    background-size: 17px 14px;
                     border-radius: 1000px;
                     line-height: 1;
                     height: 56px;
+                    @include desktopLess {
+                        padding: 0 24px;
+                        font-size: 17px;
+                        height: 48px;
+                        line-height: 48px;
+                    }
 
                     &.full {
                         width: 100%;
@@ -1720,6 +1743,9 @@ section {
 
                     &.half {
                         width: calc(50% - 3px);
+                        @include desktopLess {
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -1730,7 +1756,7 @@ section {
             grid-column: 2;
             grid-row: 1;
             width: 100%;
-            height: 250px;
+            height: 100%;
             background: #FFE3A6;
             border-radius: 24px;
             padding: 32px;
@@ -1742,6 +1768,10 @@ section {
                 width: calc(100% - 64px);
                 display: flex;
                 justify-content: space-between;
+                @include desktopLess {
+                    flex-wrap: wrap;
+                    bottom: 24px;
+                }
 
                 .iconlink {
                     display: flex;
@@ -1750,11 +1780,22 @@ section {
                     gap: 8px;
                     width: 0;
                     flex: 1;
+                    @include desktopLess {
+                        flex: 1 1 50%;
+                        font-size: 15px;
+                        margin-bottom: 10px;
+                    }
 
                     .g-img {
                         display: flex;
                         align-items: center;
                         height: 80px;
+                        img {
+                            height: 100%;
+                        }
+                        @include desktopLess {
+                            height: 50px;
+                        }
                     }
 
                     // &::before {
@@ -1882,6 +1923,8 @@ section {
             grid-template-rows: auto auto;
             max-width: 768px;
             padding: 0 20px;
+            height: calc(100vh - 322px);
+            max-height: 646px;
 
             .box1 {
                 grid-column: 1;
