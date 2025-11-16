@@ -99,10 +99,10 @@ function initSwiperSliders() {
         slidesPerView: 1,
         spaceBetween: 0,
         centeredSlides: true,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 4000,
+        //   disableOnInteraction: false,
+        // },
         loop: true,
         loopedSlides: 3,
         pagination: {
@@ -118,10 +118,10 @@ function initSwiperSliders() {
         slidesPerView: 1,
         spaceBetween: 0,
         centeredSlides: true,
-        autoplay: {
-          delay: 4000,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 4000,
+        //   disableOnInteraction: false,
+        // },
         loop: true,
         loopedSlides: 3,
         pagination: {
@@ -137,10 +137,10 @@ function initSwiperSliders() {
         slidesPerView: 1,
         spaceBetween: 0,
         centeredSlides: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        // },
         loop: true,
         loopedSlides: 3,
         pagination: {
@@ -156,10 +156,10 @@ function initSwiperSliders() {
         slidesPerView: 1,
         spaceBetween: 0,
         centeredSlides: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
+        // autoplay: {
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        // },
         loop: true,
         loopedSlides: 3,
         pagination: {

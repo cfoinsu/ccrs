@@ -1,9 +1,24 @@
+// SCSS 변수 (기본값, 컴파일 타임)
 $boxPaddingX: 32px;
 $boxPaddingY: 36px;
 $boxRound: 24px;
 
 @import "variables";
 @import "mixins/breakpoints";
+
+// CSS 변수 (런타임 반응형 지원)
+:root {
+    --box-padding-x: #{$boxPaddingX};
+    --box-padding-y: #{$boxPaddingY};
+    --box-round: #{$boxRound};
+}
+
+@media (max-width: 767px) {
+    :root {
+        --box-padding-x: 24px;
+        --box-padding-y: 24px;
+    }
+}
 
 /* 네비게이션 */
 .top-nav {
@@ -93,7 +108,9 @@ $boxRound: 24px;
     font-weight: 700;
     color: #a3a3a3;
     outline: none;
-
+    @include mobile {
+        font-size: 17px;
+    }
     &::placeholder {
         color: #58616a;
     }
@@ -181,8 +198,8 @@ $boxRound: 24px;
             width: 100%;
             height: 390px;
             background: url(/type/www/images/main/diagnosis-bg.png);
-            border-radius: $boxRound;
-            padding: $boxPaddingY $boxPaddingX;
+            border-radius: var(--box-round);
+            padding: var(--box-padding-y) var(--box-padding-x);
 
             img {
                 position: absolute;
@@ -270,9 +287,9 @@ $boxRound: 24px;
                 position: relative;
                 width: 100%;
                 height: 147px;
-                padding: 25px $boxPaddingX;
+                padding: 25px var(--box-padding-x);
                 background: #444FA2;
-                border-radius: $boxRound;
+                border-radius: var(--box-round);
             }
 
             h2 {
@@ -385,7 +402,7 @@ $boxRound: 24px;
     width: 520px;
     height: 466px;
     background: #f9f2e8;
-    border-radius: $boxRound;
+    border-radius: var(--box-round);
     position: relative;
     padding: 32px;
     overflow: hidden;
@@ -450,7 +467,7 @@ $boxRound: 24px;
 //     width: 386px;
 //     height: 662px;
 //     background: #f48f01;
-//     border-radius: $boxRound;
+//     border-radius: var(--box-round);
 //     position: relative;
 //     padding: 32px;
 //     overflow: hidden;
@@ -549,10 +566,10 @@ $boxRound: 24px;
         align-items: center;
         gap: 16px;
         height: 105px;
-        padding: 0 $boxPaddingX;
+        padding: 0 var(--box-padding-x);
         /* background: #FFE6C3; */
         background: #f8f8f8;
-        border-radius: $boxRound;
+        border-radius: var(--box-round);
         position: relative;
         transition: all 0.3s;
 
@@ -631,6 +648,14 @@ $boxRound: 24px;
     }
 }
 
+.bottom-section-box-title-wrap {
+    display: flex; align-items: center;gap: 10px;
+    @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+}
 .bottom-section-box-title {
     font-size: 1.9rem;
     font-weight: 700;
@@ -650,7 +675,7 @@ $boxRound: 24px;
 .news-card {
     width: 386px;
     height: 180px;
-    border-radius: $boxRound;
+    border-radius: var(--box-round);
     padding: 32px;
     position: relative;
     overflow: hidden;
@@ -727,7 +752,7 @@ $boxRound: 24px;
 .support-image {
     width: 100%;
     height: 430px;
-    border-radius: $boxRound;
+    border-radius: var(--box-round);
     overflow: hidden;
     margin-bottom: 24px;
     position: relative;
@@ -759,7 +784,7 @@ $boxRound: 24px;
 
 .benefit-card {
     background: white;
-    border-radius: $boxRound;
+    border-radius: var(--box-round);
     padding: 40px;
     position: relative;
 }
@@ -803,7 +828,7 @@ $boxRound: 24px;
     height: 120px;
     display: flex;
     align-items: center;
-    border-radius: $boxRound;
+    border-radius: var(--box-round);
 
     h3 {
         font-size: 32px;
@@ -1955,6 +1980,47 @@ section {
                 min-height: 230px;
             }
         }
+
+        @include mobile {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            max-width: 100%;
+            padding: 0 20px;
+            gap: 20px;
+
+            .box1 {
+                grid-column: 1;
+                grid-row: 1 / 3;
+                width: 100%;
+                height: 100%;
+            }
+
+            .box2 {
+                grid-column: 2;
+                grid-row: 1 / 3;
+                width: 100%;
+                height: 100%;
+            }
+
+            .box-bottom-wrapper {
+                grid-column: 3;
+                grid-row: 1 / 3;
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 20px;
+            }
+
+            .box3 {
+                height: 100%;
+            }
+
+            .box4 {
+                height: 100%;
+            }
+        }
     }
 
     .intro-hide {
@@ -2243,6 +2309,9 @@ body:has(.intro.show) {
                             white-space: nowrap;
                             border-bottom: none;
                             border-right: 1px solid rgba(0,0,0,0.1);
+                            @include mobile {
+                                font-size: 19px;
+                            }
                             &:last-child {
                                 border-right: none;
                             }
@@ -2350,7 +2419,7 @@ body:has(.intro.show) {
     .swiper-pagination {
       position: absolute;
       bottom: 20px;
-      left: $boxPaddingX;
+      left: var(--box-padding-x);
       transform: none;
       width: auto;
       &.white {
@@ -2393,7 +2462,7 @@ body:has(.intro.show) {
     .slide-txt {
         position: relative;
         z-index: 1;
-        padding: $boxPaddingY $boxPaddingX;
+        padding: var(--box-padding-y) var(--box-padding-x);
         em {
             display: inline-block;
             margin-bottom: 15px;
@@ -2471,7 +2540,7 @@ body:has(.intro.show) {
     .hoverline{
         background-color: #F48F01;
         border-radius: 24px;
-        padding: 6px $boxPaddingX;
+        padding: 6px var(--box-padding-x);
         min-height: 100%;
         display: flex;
         overflow: hidden;
@@ -2526,7 +2595,7 @@ body:has(.intro.show) {
     }
     .bottombox {
         position: relative;
-        border-radius: $boxRound;
+        border-radius: var(--box-round);
         background: #F0EFEB;
         overflow: hidden;
         @include mobile {
@@ -2545,7 +2614,7 @@ body:has(.intro.show) {
         .swiper-slide a {
             display: block;
             height: 100%;
-            padding: $boxPaddingY $boxPaddingX;
+            padding: var(--box-padding-y) var(--box-padding-x);
         }
         .bottombox-txt {
             position: relative;
@@ -2625,19 +2694,30 @@ body:has(.intro.show) {
     .debt-card__text {
       position: absolute;
       bottom: 80px;
-      left: $boxPaddingX;
-      right: $boxPaddingX;
+      left: var(--box-padding-x);
+      right: var(--box-padding-x);
       color: #fff;
       z-index: 1;
+      @include mobile {
+        bottom: 40px;
+      }
 
       h3 {
         font-size: 44px;
         font-weight: 700;
+        @include mobile {
+            font-size: 30px;
+        }
       }
       p {
         margin-top: 20px;
         font-size: 19px;
         font-weight: 400;
+        @include mobile {
+            br {
+                display: none;
+            }
+        }
       }
     }
 
@@ -2652,7 +2732,7 @@ body:has(.intro.show) {
 .col-debt2-1 {
   height: 434px;
   background: #F0EFEB;
-  border-radius: $boxRound;
+  border-radius: var(--box-round);
   position: relative;
   overflow: hidden;
 
@@ -2686,11 +2766,14 @@ body:has(.intro.show) {
   }
 
   .swiper-slide {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 32px 36px;
-
+    padding: var(--box-padding-y) var(--box-padding-x);
+    @include mobile {
+        padding-bottom: 80px;
+    }
     img {
         position: absolute;
         top: 0;
@@ -2741,7 +2824,7 @@ body:has(.intro.show) {
   a {
     display: block;
     height: 181px;
-    padding: 34px 36px;
+    padding: var(--box-padding-y) var(--box-padding-x);
     border-radius: 24px;
     background: #F48F02 url(/type/www/images/main/debt2-2-bg.svg) 100% 100% no-repeat;
     strong {
@@ -2754,7 +2837,7 @@ body:has(.intro.show) {
 .col-debt3 {
   border-radius: 24px;
   background: #fff3e3;
-  padding: $boxPaddingY $boxPaddingX;
+  padding: var(--box-padding-y) var(--box-padding-x);
   .plus-lst {
     li {
         display: flex;
@@ -2825,7 +2908,11 @@ body:has(.intro.show) {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 32px 36px;
+        padding: var(--box-padding-y) var(--box-padding-x);
+        @include mobile {
+            height: auto !important;
+            padding-bottom: 80px;
+        }
 
         a {
           display: flex;
@@ -2872,7 +2959,7 @@ body:has(.intro.show) {
     flex:1;
     position: relative;
     height: 628px;
-    border-radius: $boxRound;
+    border-radius: var(--box-round);
     background: url(/type/www/images/main/finance-2.png);
     @include mobile {
         height: auto;
@@ -2886,13 +2973,13 @@ body:has(.intro.show) {
     flex-direction: column;
     gap: 13px;
     position: absolute;
-    bottom: $boxPaddingY;
-    right: $boxPaddingX;
+    bottom: var(--box-padding-y);
+    right: var(--box-padding-x);
     width: 352px;
     height: 340px;
     background: #D9EDFE;
-    border-radius: $boxRound;
-    padding: 30px;
+    border-radius: var(--box-round);
+    padding: var(--box-padding-y) var(--box-padding-x);
     @include mobile {
         position: static;
         width: 100%;
@@ -2973,11 +3060,18 @@ body:has(.intro.show) {
   .news-left {
     .news-list {
       height: 341px;
-      padding: 24px 32px;
+      padding: var(--box-padding-y) var(--box-padding-x);
       border: 1px solid #D2D6DA;
       border-radius: 24px;
       box-sizing: border-box;
       width: 100%;
+      @include mobile {
+        height: auto;
+        gap: 0;
+        strong {
+            font-weight: normal;
+        }
+      }
       &.active {
         display: flex;
         flex-direction: column;
@@ -3002,7 +3096,7 @@ body:has(.intro.show) {
         text-overflow: ellipsis;
         max-width: 70%;
         @include mobile {
-            max-width: 280px;
+            max-width: 250px;
         }
       }
       span {
@@ -3045,7 +3139,7 @@ body:has(.intro.show) {
     }
     .press-content {
       background-color: transparent;
-      padding: 24px 24px 10px;
+      padding: var(--box-padding-y) var(--box-padding-x) 10px;
       font-weight: 700;
       font-size: 19px;
     }

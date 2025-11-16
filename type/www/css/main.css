@@ -1,4 +1,16 @@
 @charset "UTF-8";
+:root {
+  --box-padding-x: 32px;
+  --box-padding-y: 36px;
+  --box-round: 24px;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --box-padding-x: 24px;
+    --box-padding-y: 24px;
+  }
+}
 /* 네비게이션 */
 .top-nav {
   display: -webkit-box;
@@ -119,6 +131,11 @@
   color: #a3a3a3;
   outline: none;
 }
+@media (max-width: 767px) {
+  .search-input {
+    font-size: 17px;
+  }
+}
 .search-input::-webkit-input-placeholder {
   color: #58616a;
 }
@@ -236,8 +253,8 @@
   width: 100%;
   height: 390px;
   background: url(/type/www/images/main/diagnosis-bg.png);
-  border-radius: 24px;
-  padding: 36px 32px;
+  border-radius: var(--box-round);
+  padding: var(--box-padding-y) var(--box-padding-x);
 }
 .main-banner.center .diagnosis-card-top img {
   position: absolute;
@@ -338,9 +355,9 @@
   position: relative;
   width: 100%;
   height: 147px;
-  padding: 25px 32px;
+  padding: 25px var(--box-padding-x);
   background: #444FA2;
-  border-radius: 24px;
+  border-radius: var(--box-round);
 }
 .main-banner.center .diagnosis-card-bottom h2 {
   font-size: 24px;
@@ -455,7 +472,7 @@
   width: 520px;
   height: 466px;
   background: #f9f2e8;
-  border-radius: 24px;
+  border-radius: var(--box-round);
   position: relative;
   padding: 32px;
   overflow: hidden;
@@ -584,10 +601,10 @@
           align-items: center;
   gap: 16px;
   height: 105px;
-  padding: 0 32px;
+  padding: 0 var(--box-padding-x);
   /* background: #FFE6C3; */
   background: #f8f8f8;
-  border-radius: 24px;
+  border-radius: var(--box-round);
   position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -673,6 +690,28 @@
   background: transparent;
 }
 
+.bottom-section-box-title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .bottom-section-box-title-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 0;
+  }
+}
+
 .bottom-section-box-title {
   font-size: 1.9rem;
   font-weight: 700;
@@ -693,7 +732,7 @@
 .news-card {
   width: 386px;
   height: 180px;
-  border-radius: 24px;
+  border-radius: var(--box-round);
   padding: 32px;
   position: relative;
   overflow: hidden;
@@ -768,7 +807,7 @@
 .support-image {
   width: 100%;
   height: 430px;
-  border-radius: 24px;
+  border-radius: var(--box-round);
   overflow: hidden;
   margin-bottom: 24px;
   position: relative;
@@ -800,7 +839,7 @@
 
 .benefit-card {
   background: white;
-  border-radius: 24px;
+  border-radius: var(--box-round);
   padding: 40px;
   position: relative;
 }
@@ -858,7 +897,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 24px;
+  border-radius: var(--box-round);
 }
 .benefit-info h3 {
   font-size: 32px;
@@ -2114,6 +2153,43 @@ section {
     min-height: 230px;
   }
 }
+@media (max-width: 767px) {
+  .intro .intro-linkbox {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100%;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  .intro .intro-linkbox .box1 {
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+  }
+  .intro .intro-linkbox .box2 {
+    grid-column: 2;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+  }
+  .intro .intro-linkbox .box-bottom-wrapper {
+    grid-column: 3;
+    grid-row: 1/3;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+  .intro .intro-linkbox .box3 {
+    height: 100%;
+  }
+  .intro .intro-linkbox .box4 {
+    height: 100%;
+  }
+}
 .intro .intro-hide {
   position: absolute;
   display: block;
@@ -2433,6 +2509,13 @@ body:has(.intro.show) {
     border-bottom: none;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
   }
+}
+@media (max-width: 1279px) and (max-width: 1279px) and (max-width: 767px) {
+  .debt-section.grid-width .grid-col3 .plus-lst li {
+    font-size: 19px;
+  }
+}
+@media (max-width: 1279px) and (max-width: 1279px) {
   .debt-section.grid-width .grid-col3 .plus-lst li:last-child {
     border-right: none;
   }
@@ -2568,7 +2651,7 @@ body:has(.intro.show) {
 .main-content .swiper-container .swiper-pagination {
   position: absolute;
   bottom: 20px;
-  left: 32px;
+  left: var(--box-padding-x);
   -webkit-transform: none;
           transform: none;
   width: auto;
@@ -2603,7 +2686,7 @@ body:has(.intro.show) {
 .grid-col1 .slide-txt {
   position: relative;
   z-index: 1;
-  padding: 36px 32px;
+  padding: var(--box-padding-y) var(--box-padding-x);
 }
 .grid-col1 .slide-txt em {
   display: inline-block;
@@ -2705,7 +2788,7 @@ body:has(.intro.show) {
 .grid-col3 .hoverline {
   background-color: #F48F01;
   border-radius: 24px;
-  padding: 6px 32px;
+  padding: 6px var(--box-padding-x);
   min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2758,7 +2841,7 @@ body:has(.intro.show) {
 }
 .grid-col3 .bottombox {
   position: relative;
-  border-radius: 24px;
+  border-radius: var(--box-round);
   background: #F0EFEB;
   overflow: hidden;
 }
@@ -2778,7 +2861,7 @@ body:has(.intro.show) {
 .grid-col3 .bottombox .swiper-slide a {
   display: block;
   height: 100%;
-  padding: 36px 32px;
+  padding: var(--box-padding-y) var(--box-padding-x);
 }
 .grid-col3 .bottombox .bottombox-txt {
   position: relative;
@@ -2856,19 +2939,34 @@ body:has(.intro.show) {
 .col-debt1 .debt-card .debt-card__text {
   position: absolute;
   bottom: 80px;
-  left: 32px;
-  right: 32px;
+  left: var(--box-padding-x);
+  right: var(--box-padding-x);
   color: #fff;
   z-index: 1;
+}
+@media (max-width: 767px) {
+  .col-debt1 .debt-card .debt-card__text {
+    bottom: 40px;
+  }
 }
 .col-debt1 .debt-card .debt-card__text h3 {
   font-size: 44px;
   font-weight: 700;
 }
+@media (max-width: 767px) {
+  .col-debt1 .debt-card .debt-card__text h3 {
+    font-size: 30px;
+  }
+}
 .col-debt1 .debt-card .debt-card__text p {
   margin-top: 20px;
   font-size: 19px;
   font-weight: 400;
+}
+@media (max-width: 767px) {
+  .col-debt1 .debt-card .debt-card__text p br {
+    display: none;
+  }
 }
 .col-debt1 .debt-card:hover .debt-card__image img {
   -webkit-transform: scale(1.03);
@@ -2878,7 +2976,7 @@ body:has(.intro.show) {
 .col-debt2-1 {
   height: 434px;
   background: #F0EFEB;
-  border-radius: 24px;
+  border-radius: var(--box-round);
   position: relative;
   overflow: hidden;
 }
@@ -2899,6 +2997,7 @@ body:has(.intro.show) {
   height: 100%;
 }
 .col-debt2-1 .swiper-slide {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2907,7 +3006,12 @@ body:has(.intro.show) {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 32px 36px;
+  padding: var(--box-padding-y) var(--box-padding-x);
+}
+@media (max-width: 767px) {
+  .col-debt2-1 .swiper-slide {
+    padding-bottom: 80px;
+  }
 }
 .col-debt2-1 .swiper-slide img {
   position: absolute;
@@ -2966,7 +3070,7 @@ body:has(.intro.show) {
 .col-debt2-2 a {
   display: block;
   height: 181px;
-  padding: 34px 36px;
+  padding: var(--box-padding-y) var(--box-padding-x);
   border-radius: 24px;
   background: #F48F02 url(/type/www/images/main/debt2-2-bg.svg) 100% 100% no-repeat;
 }
@@ -2978,7 +3082,7 @@ body:has(.intro.show) {
 .col-debt3 {
   border-radius: 24px;
   background: #fff3e3;
-  padding: 36px 32px;
+  padding: var(--box-padding-y) var(--box-padding-x);
 }
 .col-debt3 .plus-lst li {
   display: -webkit-box;
@@ -3065,7 +3169,13 @@ body:has(.intro.show) {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 32px 36px;
+  padding: var(--box-padding-y) var(--box-padding-x);
+}
+@media (max-width: 767px) {
+  .grid-finance .grid-col1 .col-debt2-1 .swiper-slide {
+    height: auto !important;
+    padding-bottom: 80px;
+  }
 }
 .grid-finance .grid-col1 .col-debt2-1 .swiper-slide a {
   display: -webkit-box;
@@ -3127,7 +3237,7 @@ body:has(.intro.show) {
           flex: 1;
   position: relative;
   height: 628px;
-  border-radius: 24px;
+  border-radius: var(--box-round);
   background: url(/type/www/images/main/finance-2.png);
 }
 @media (max-width: 767px) {
@@ -3148,13 +3258,13 @@ body:has(.intro.show) {
           flex-direction: column;
   gap: 13px;
   position: absolute;
-  bottom: 36px;
-  right: 32px;
+  bottom: var(--box-padding-y);
+  right: var(--box-padding-x);
   width: 352px;
   height: 340px;
   background: #D9EDFE;
-  border-radius: 24px;
-  padding: 30px;
+  border-radius: var(--box-round);
+  padding: var(--box-padding-y) var(--box-padding-x);
 }
 @media (max-width: 767px) {
   .grid-finance .ille-cont {
@@ -3239,12 +3349,21 @@ body:has(.intro.show) {
 }
 #section4 .news-grid .news-left .news-list {
   height: 341px;
-  padding: 24px 32px;
+  padding: var(--box-padding-y) var(--box-padding-x);
   border: 1px solid #D2D6DA;
   border-radius: 24px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
+}
+@media (max-width: 767px) {
+  #section4 .news-grid .news-left .news-list {
+    height: auto;
+    gap: 0;
+  }
+  #section4 .news-grid .news-left .news-list strong {
+    font-weight: normal;
+  }
 }
 #section4 .news-grid .news-left .news-list.active {
   display: -webkit-box;
@@ -3283,7 +3402,7 @@ body:has(.intro.show) {
 }
 @media (max-width: 767px) {
   #section4 .news-grid .news-left .news-item strong {
-    max-width: 280px;
+    max-width: 250px;
   }
 }
 #section4 .news-grid .news-left .news-item span {
@@ -3325,7 +3444,7 @@ body:has(.intro.show) {
 }
 #section4 .news-grid .news-right .press-content {
   background-color: transparent;
-  padding: 24px 24px 10px;
+  padding: var(--box-padding-y) var(--box-padding-x) 10px;
   font-weight: 700;
   font-size: 19px;
 }

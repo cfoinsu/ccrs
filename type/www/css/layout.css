@@ -2958,6 +2958,11 @@ dl.flex-list {
 .slidetopbox.show {
   display: block;
 }
+@media (max-width: 1023px) {
+  .slidetopbox.show {
+    display: none !important;
+  }
+}
 .slidetopbox .swiper-slide img {
     width: 1920px;
     height: 119px;
