@@ -105,6 +105,64 @@
         </div>
     </div>
 
+    <!-- Mobile Breadcrumb Navigation -->
+    <div class="mobile-breadcrumb-nav">
+        <div class="breadcrumb-inner">
+            <!-- Home Icon -->
+            <a href="main_en.html" class="breadcrumb-home" aria-label="Home">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 10L10 3L17 10V17C17 17.5304 16.7893 18.0391 16.4142 18.4142C16.0391 18.7893 15.5304 19 15 19H5C4.46957 19 3.96086 18.7893 3.58579 18.4142C3.21071 18.0391 3 17.5304 3 17V10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+
+            <!-- Depth 1 -->
+            <div class="breadcrumb-item depth1">
+                <button class="breadcrumb-toggle" type="button">
+                    <span>About CCRS</span>
+                </button>
+                <div class="breadcrumb-dropdown">
+                    <ul>
+                        <li><a href="messagefromtheCEO.html">About CCRS</a></li>
+                        <li><a href="generalCounseling.html">Our Services</a></li>
+                        <li><a href="globalNetwork.html">Global Partnership</a></li>
+                        <li><a href="headquarter.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Depth 2 -->
+            <div class="breadcrumb-item depth2">
+                <button class="breadcrumb-toggle" type="button">
+                    <span>Message from the CEO</span>
+                </button>
+                <div class="breadcrumb-dropdown">
+                    <ul>
+                        <li><a href="messagefromtheCEO.html">Message from the CEO</a></li>
+                        <li><a href="missionandVision.html">Mission and Vision</a></li>
+                        <li><a href="microCreditSupportAct.html">Micro Credit Support Act</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="CI&Mascot.html">CI & Mascot</a></li>
+                        <li><a href="organization.html">Organization</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Depth 3 -->
+            <div class="breadcrumb-item depth3">
+                <button class="breadcrumb-toggle" type="button">
+                    <span>Introduction</span>
+                </button>
+                <div class="breadcrumb-dropdown">
+                    <ul>
+                        <li><a href="#">Introduction</a></li>
+                        <li><a href="#">How to Apply</a></li>
+                        <li><a href="#">Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Mobile Search Panel -->
     <div class="mobile-search-panel" id="mobileSearchPanel" style="display: none;">
         <div class="search-panel-inner">
@@ -138,17 +196,237 @@
     }
 
     // 전체메뉴 토글 (모바일 전용 메뉴 사용)
-    const menuBtn = document.getElementById('mobileMenuBtn');
-
-    if (menuBtn) {
-        menuBtn.addEventListener('click', () => {
-            // 모바일 전용 메뉴 열기
+    function initMobileMenuBtn() {
+        // 전역 함수가 있으면 사용, 없으면 직접 초기화
+        if (window.initMobileMenuEvents) {
+            window.initMobileMenuEvents();
+        } else {
+            const menuBtn = document.getElementById('mobileMenuBtn');
             const mobileMenu = document.getElementById('mobileAllmenuOverlay');
-            if (mobileMenu) {
-                mobileMenu.classList.add('active');
-                document.body.style.overflow = 'hidden';
+
+            if (menuBtn && mobileMenu) {
+                // 기존 이벤트 리스너 제거를 위해 새로 등록
+                menuBtn.onclick = function() {
+                    mobileMenu.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                };
+            } else if (menuBtn && !mobileMenu) {
+                // 모바일 메뉴가 아직 로드되지 않았으면 잠시 후 재시도
+                setTimeout(initMobileMenuBtn, 200);
+            }
+        }
+    }
+
+    // 초기화
+    initMobileMenuBtn();
+
+    // 화면 크기 변경 시에도 재초기화
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            if (window.innerWidth < 1024) {
+                initMobileMenuBtn();
+            }
+        }, 250);
+    });
+
+    // Breadcrumb 드롭다운 토글
+    const breadcrumbToggles = document.querySelectorAll('.breadcrumb-toggle');
+
+    breadcrumbToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            const parent = this.closest('.breadcrumb-item');
+            const isActive = parent.classList.contains('active');
+
+            // 다른 모든 breadcrumb 닫기
+            document.querySelectorAll('.breadcrumb-item').forEach(item => {
+                if (item !== parent) {
+                    item.classList.remove('active');
+                }
+            });
+
+            // 클릭한 breadcrumb 토글
+            if (isActive) {
+                parent.classList.remove('active');
+            } else {
+                parent.classList.add('active');
             }
         });
+    });
+
+    // Breadcrumb 외부 클릭시 닫기
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.mobile-breadcrumb-nav')) {
+            document.querySelectorAll('.breadcrumb-item').forEach(item => {
+                item.classList.remove('active');
+            });
+        }
+    });
+
+    // ============================================
+    // Breadcrumb 자동 설정 (English)
+    // ============================================
+
+    // 파일명 → 브레드크럼 경로 매핑
+    const breadcrumbMapping = {
+        // About CCRS
+        'messagefromtheCEO.html': 'About CCRS > Message from the CEO',
+        'missionandVision.html': 'About CCRS > Mission and Vision',
+        'microCreditSupportAct.html': 'About CCRS > Micro Credit Support Act',
+        'history.html': 'About CCRS > History',
+        'CI&Mascot.html': 'About CCRS > CI & Mascot',
+        'organization.html': 'About CCRS > Organization',
+        'whatWeDo.html': 'About CCRS > What We Do',
+
+        // Our Services
+        'generalCounseling.html': 'Our Services > Credit Counseling',
+        'HouseholddebtreliefprogramsbytheCCRS.html': 'Our Services > Household debt relief programs by the CCRS',
+        'CCRSDebtReliefPrograms.html': 'Our Services > Household debt relief programs by the CCRS',
+        'debtAdjustmentPrograms.html': 'Our Services > Debt Adjustment Programs',
+        'debtReliefProgramsinKorea.html': 'Our Services > Debt Adjustment Programs > Debt Relief Programs in Korea',
+        'prosandConsofDebtReliefProgramsinKorea.html': 'Our Services > Debt Adjustment Programs > Pros and Cons of Debt Relief Programs in Korea',
+        'unitedStatesBankruptcyOverview.html': 'Our Services > Debt Adjustment Programs > United States Bankruptcy Overview',
+        'debtManagement.html': 'Our Services > Debt Management',
+        'creditandWelfareCounseling.html': 'Our Services > Credit and Welfare Counseling',
+        'microCredit.html': 'Our Services > Micro Credit',
+        'crediteducation.html': 'Our Services > Credit education',
+        'performance.html': 'Our Services > Performance',
+
+        // Global Partnership
+        'globalNetwork.html': 'Global Partnership > Global Partnership',
+
+        // Contact
+        'headquarter.html': 'Contact > Headquarter',
+        'regionalOffices.html': 'Contact > Regional Offices'
+    };
+
+    // Depth별 드롭다운 메뉴 데이터
+    const depth1Menus = {
+        'About CCRS': [
+            { text: 'About CCRS', href: 'messagefromtheCEO.html' },
+            { text: 'Our Services', href: 'generalCounseling.html' },
+            { text: 'Global Partnership', href: 'globalNetwork.html' },
+            { text: 'Contact', href: 'headquarter.html' }
+        ],
+        'Our Services': [
+            { text: 'About CCRS', href: 'messagefromtheCEO.html' },
+            { text: 'Our Services', href: 'generalCounseling.html' },
+            { text: 'Global Partnership', href: 'globalNetwork.html' },
+            { text: 'Contact', href: 'headquarter.html' }
+        ],
+        'Global Partnership': [
+            { text: 'About CCRS', href: 'messagefromtheCEO.html' },
+            { text: 'Our Services', href: 'generalCounseling.html' },
+            { text: 'Global Partnership', href: 'globalNetwork.html' },
+            { text: 'Contact', href: 'headquarter.html' }
+        ],
+        'Contact': [
+            { text: 'About CCRS', href: 'messagefromtheCEO.html' },
+            { text: 'Our Services', href: 'generalCounseling.html' },
+            { text: 'Global Partnership', href: 'globalNetwork.html' },
+            { text: 'Contact', href: 'headquarter.html' }
+        ]
+    };
+
+    const depth2Menus = {
+        'About CCRS': [
+            { text: 'Message from the CEO', href: 'messagefromtheCEO.html' },
+            { text: 'Mission and Vision', href: 'missionandVision.html' },
+            { text: 'Micro Credit Support Act', href: 'microCreditSupportAct.html' },
+            { text: 'History', href: 'history.html' },
+            { text: 'CI & Mascot', href: 'CI&Mascot.html' },
+            { text: 'Organization', href: 'organization.html' }
+        ],
+        'Our Services': [
+            { text: 'Credit Counseling', href: 'generalCounseling.html' },
+            { text: 'Household debt relief programs by the CCRS', href: 'HouseholddebtreliefprogramsbytheCCRS.html' },
+            { text: 'Debt Adjustment Programs', href: 'debtAdjustmentPrograms.html' },
+            { text: 'Debt Management', href: 'debtManagement.html' },
+            { text: 'Credit and Welfare Counseling', href: 'creditandWelfareCounseling.html' },
+            { text: 'Micro Credit', href: 'microCredit.html' },
+            { text: 'Credit education', href: 'crediteducation.html' },
+            { text: 'Performance', href: 'performance.html' }
+        ],
+        'Global Partnership': [
+            { text: 'Global Partnership', href: 'globalNetwork.html' }
+        ],
+        'Contact': [
+            { text: 'Headquarter', href: 'headquarter.html' },
+            { text: 'Regional Offices', href: 'regionalOffices.html' }
+        ]
+    };
+
+    // 현재 페이지 파일명 가져오기
+    const currentPage = window.location.pathname.split('/').pop();
+
+    // meta 태그에서 breadcrumb 정보 가져오기
+    const metaBreadcrumb = document.querySelector('meta[name="breadcrumb"]');
+    let breadcrumbPath = null;
+
+    if (metaBreadcrumb) {
+        // meta 태그가 있으면 우선 사용
+        breadcrumbPath = metaBreadcrumb.getAttribute('content');
+    } else if (breadcrumbMapping[currentPage]) {
+        // meta 태그가 없으면 매핑에서 찾기
+        breadcrumbPath = breadcrumbMapping[currentPage];
+    }
+
+    // breadcrumb 설정 함수
+    function setBreadcrumb(path) {
+        if (!path) return;
+
+        const parts = path.split(' > ').map(p => p.trim());
+        const breadcrumbItems = document.querySelectorAll('.mobile-breadcrumb-nav .breadcrumb-item');
+
+        // Depth 1 설정
+        if (parts[0] && breadcrumbItems[0]) {
+            const depth1Btn = breadcrumbItems[0].querySelector('.breadcrumb-toggle span');
+            const depth1Dropdown = breadcrumbItems[0].querySelector('.breadcrumb-dropdown ul');
+
+            if (depth1Btn) depth1Btn.textContent = parts[0];
+
+            // Depth 1 드롭다운 메뉴 생성
+            if (depth1Dropdown && depth1Menus[parts[0]]) {
+                depth1Dropdown.innerHTML = depth1Menus[parts[0]]
+                    .map(item => `<li><a href="${item.href}">${item.text}</a></li>`)
+                    .join('');
+            }
+        }
+
+        // Depth 2 설정
+        if (parts[1] && breadcrumbItems[1]) {
+            const depth2Btn = breadcrumbItems[1].querySelector('.breadcrumb-toggle span');
+            const depth2Dropdown = breadcrumbItems[1].querySelector('.breadcrumb-dropdown ul');
+
+            if (depth2Btn) depth2Btn.textContent = parts[1];
+
+            // Depth 2 드롭다운 메뉴 생성
+            if (depth2Dropdown && depth2Menus[parts[0]]) {
+                depth2Dropdown.innerHTML = depth2Menus[parts[0]]
+                    .map(item => `<li><a href="${item.href}">${item.text}</a></li>`)
+                    .join('');
+            }
+
+            breadcrumbItems[1].style.display = 'block';
+        } else if (breadcrumbItems[1]) {
+            breadcrumbItems[1].style.display = 'none';
+        }
+
+        // Depth 3 설정
+        if (parts[2] && breadcrumbItems[2]) {
+            const depth3Btn = breadcrumbItems[2].querySelector('.breadcrumb-toggle span');
+            if (depth3Btn) depth3Btn.textContent = parts[2];
+            breadcrumbItems[2].style.display = 'block';
+        } else if (breadcrumbItems[2]) {
+            breadcrumbItems[2].style.display = 'none';
+        }
+    }
+
+    // breadcrumb 적용
+    if (breadcrumbPath) {
+        setBreadcrumb(breadcrumbPath);
     }
 })();
 </script>

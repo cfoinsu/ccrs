@@ -345,13 +345,190 @@
 // ==========================================
 
 // CEO 메시지 페이지
-.en .ceo-message-section {
-    .message-content {
-        line-height: 1.8;
-        font-size: var(--krds-pc-font-size-body-large);
+.en {
+    // CEO 메시지 그리드 레이아웃 (float 사용)
+    .g-grid-wrap.unit2 {
+        display: block;
+        overflow: hidden; // float clearfix
 
         @include mobile {
-            font-size: var(--krds-pc-font-size-body-small);
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    // 회장 이미지 float
+    .g-grid-wrap.unit2 .conts-desc img {
+        float: left;
+        width: 432px; // 이미지 크기 더 줄임
+        max-width: 48%; // 이미지 크기 줄여서 텍스트 영역 확보
+        height: auto;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        shape-outside: margin-box;
+        shape-margin: 40px; // 텍스트와 이미지 사이 간격
+
+        @include tabletLess {
+            width: 220px;
+            max-width: 28%;
+            margin-right: 32px;
+            margin-bottom: 16px;
+            shape-margin: 32px;
+        }
+
+        @include mobile {
+            float: none;
+            width: 100%;
+            max-width: none;
+            margin: 0 auto 20px;
+            display: block;
+            shape-outside: none;
+            shape-margin: 0;
+        }
+    }
+
+    // CEO 메시지 제목
+    .g-grid-wrap.unit2 h4 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.6;
+        color: #1b2025;
+        margin-bottom: 20px;
+
+        @include tabletLess {
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+
+        @include mobile {
+            font-size: 18px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+    }
+
+    // CEO 메시지 본문
+    .g-grid-wrap.unit2 .conts-desc {
+        font-size: 17px;
+        line-height: 1.8;
+        color: #333;
+        margin-top: 0;
+        overflow: hidden; // float clearfix
+        word-break: normal; // 단어 단위로 줄바꿈 (영어에 적합)
+        word-wrap: break-word; // 긴 단어만 줄바꿈
+        hyphens: manual; // 자동 하이픈 제거
+        text-align: left; // 왼쪽 정렬로 자연스러운 흐름
+        min-width: 0; // 텍스트 영역 최소 너비 보장
+
+        // 텍스트가 이미지 옆에서 충분한 공간 확보
+        &::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        strong {
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: #1b2025;
+            margin-bottom: 20px;
+            word-break: normal;
+            text-align: left; // 제목은 왼쪽 정렬
+
+            @include tabletLess {
+                font-size: 22px;
+                margin-bottom: 16px;
+            }
+
+            @include mobile {
+                font-size: 18px;
+                margin-bottom: 16px;
+                text-align: center;
+            }
+        }
+
+        @include tabletLess {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        @include mobile {
+            font-size: 15px;
+            line-height: 1.7;
+            text-align: left;
+            text-align-last: left;
+        }
+    }
+
+    // 하단 메시지 텍스트
+    .content-sections > .g-conts-area > .g-wrap > div:not(.g-grid-wrap) {
+        font-size: 17px;
+        line-height: 1.8;
+        color: #333;
+        margin-top: 24px;
+
+        @include tabletLess {
+            font-size: 16px;
+            line-height: 1.7;
+            margin-top: 20px;
+        }
+
+        @include mobile {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-top: 16px;
+        }
+    }
+
+    // 회장 서명 부분
+    .chairman-signiture {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        margin-top: 40px;
+
+        @include tabletLess {
+            margin-top: 32px;
+            gap: 12px;
+        }
+
+        @include mobile {
+            margin-top: 24px;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .g-tit {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1b2025;
+            line-height: 1.6;
+            margin: 0;
+
+            @include tabletLess {
+                font-size: 17px;
+            }
+
+            @include mobile {
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+
+        img {
+            max-width: 200px;
+            height: auto;
+
+            @include tabletLess {
+                max-width: 180px;
+            }
+
+            @include mobile {
+                max-width: 150px;
+            }
         }
     }
 }
