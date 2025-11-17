@@ -7195,7 +7195,7 @@ input[type=radio]:checked+label.fillter-chip {
     top: 66px;
     right: 100px;
 }
-
+.effect-box .krds-info-list li {font-size: 1.7rem;}
 .keybox .key-text span {
     font-weight: 400;
     font-size: 1.3rem;
