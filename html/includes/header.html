@@ -252,18 +252,40 @@
 	}
 
 	// 전체메뉴 토글 (모바일 전용 메뉴 사용)
-	const menuBtn = document.getElementById('mobileMenuBtn');
-
-	if (menuBtn) {
-		menuBtn.addEventListener('click', () => {
-			// 모바일 전용 메뉴 열기
+	function initMobileMenuBtn() {
+		// 전역 함수가 있으면 사용, 없으면 직접 초기화
+		if (window.initMobileMenuEvents) {
+			window.initMobileMenuEvents();
+		} else {
+			const menuBtn = document.getElementById('mobileMenuBtn');
 			const mobileMenu = document.getElementById('mobileAllmenuOverlay');
-			if (mobileMenu) {
-				mobileMenu.classList.add('active');
-				document.body.style.overflow = 'hidden';
+
+			if (menuBtn && mobileMenu) {
+				// 기존 이벤트 리스너 제거를 위해 새로 등록
+				menuBtn.onclick = function() {
+					mobileMenu.classList.add('active');
+					document.body.style.overflow = 'hidden';
+				};
+			} else if (menuBtn && !mobileMenu) {
+				// 모바일 메뉴가 아직 로드되지 않았으면 잠시 후 재시도
+				setTimeout(initMobileMenuBtn, 200);
 			}
-		});
+		}
 	}
+
+	// 초기화
+	initMobileMenuBtn();
+
+	// 화면 크기 변경 시에도 재초기화
+	let resizeTimer;
+	window.addEventListener('resize', function() {
+		clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(function() {
+			if (window.innerWidth < 1024) {
+				initMobileMenuBtn();
+			}
+		}, 250);
+	});
 
 	// Breadcrumb 드롭다운 토글
 	const breadcrumbToggles = document.querySelectorAll('.breadcrumb-toggle');

@@ -570,7 +570,7 @@
 .en aside {
   top: calc(2vh + 120px);
 }
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .en aside {
     display: none;
   }
@@ -585,6 +585,11 @@
 }
 .en #container.main-en {
   padding-top: 0;
+}
+@media (max-width: 1023px) {
+  .en #container .breadcrumb {
+    display: none;
+  }
 }
 .en .inner {
   max-width: 1400px;
@@ -793,6 +798,11 @@
 .en .header-mobile .mobile-header .header-left .logo img {
   height: 27px;
   width: auto;
+}
+@media (max-width: 1023px) {
+  .en .header-mobile .mobile-header .header-left .logo img {
+    height: 22px;
+  }
 }
 .en .header-mobile .mobile-header .header-right {
   display: -webkit-box;
@@ -1401,14 +1411,52 @@
   padding: 0 40px;
   position: relative;
 }
+@media (max-width: 1023px) {
+  .footer-en .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+    padding: 0 32px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-en .footer-container {
+    gap: 32px;
+    padding: 0 20px;
+  }
+}
 .footer-en .footer-logo {
   width: auto;
   height: auto;
   margin-bottom: 3.8rem;
 }
+@media (max-width: 1023px) {
+  .footer-en .footer-logo {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .footer-en .footer-logo {
+    margin-bottom: 1.5rem;
+  }
+}
 .footer-en .footer-logo img {
   max-width: 100%;
   height: auto;
+}
+@media (max-width: 1023px) {
+  .footer-en .footer-logo img {
+    height: 40px;
+    width: auto;
+  }
+}
+@media (max-width: 767px) {
+  .footer-en .footer-logo img {
+    height: 32px;
+    width: auto;
+  }
 }
 .footer-en .footer-info {
   display: -webkit-box;
@@ -1421,13 +1469,18 @@
   gap: 1.1rem;
   margin-top: 0;
 }
+@media (max-width: 767px) {
+  .footer-en .footer-info {
+    gap: 0.8rem;
+  }
+}
 .footer-en .footer-info-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 8px;
   line-height: 1.5;
   color: #ffffff;
@@ -1440,6 +1493,19 @@
   color: #ffffff;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  width: 90px;
+}
+@media (max-width: 1023px) {
+  .footer-en .footer-info-label {
+    font-size: 17px;
+    width: 75px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-en .footer-info-label {
+    font-size: 15px;
+    width: 65px;
+  }
 }
 .footer-en .footer-info-text {
   font-family: "Pretendard GOV", sans-serif;
@@ -1448,9 +1514,34 @@
   line-height: 1.5;
   color: #ffffff;
 }
+@media (max-width: 1023px) {
+  .footer-en .footer-info-text {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 767px) {
+  .footer-en .footer-info-text {
+    font-size: 14px;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+}
 .footer-en .footer-copyright {
   text-align: left;
   white-space: nowrap;
+  margin-top: 1rem;
+}
+@media (max-width: 1023px) {
+  .footer-en .footer-copyright {
+    white-space: normal;
+    margin-top: 0.8rem;
+  }
+}
+@media (max-width: 767px) {
+  .footer-en .footer-copyright {
+    margin-top: 0.5rem;
+  }
 }
 .footer-en .footer-copyright p {
   font-family: "Pretendard GOV", sans-serif;
@@ -1459,6 +1550,17 @@
   line-height: 1.5;
   color: #ffffff;
   margin: 0;
+}
+@media (max-width: 1023px) {
+  .footer-en .footer-copyright p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-en .footer-copyright p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
 }
 .footer-en .footer-top-btn {
   position: absolute;
@@ -1471,6 +1573,22 @@
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
+@media (max-width: 1023px) {
+  .footer-en .footer-top-btn {
+    right: 40px;
+    top: 40px;
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-en .footer-top-btn {
+    right: 20px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+  }
+}
 .footer-en .footer-top-btn img {
   width: 100%;
   height: 100%;
@@ -1479,6 +1597,17 @@
 }
 .footer-en .footer-top-btn:hover {
   opacity: 0.8;
+}
+@media (max-width: 1023px) {
+  .footer-en {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .footer-en {
+    padding: 32px 0 24px;
+    min-height: auto;
+  }
 }
 
 @media (max-width: 1280px) {
