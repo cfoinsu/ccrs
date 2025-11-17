@@ -756,7 +756,9 @@
 }
 
 .en #header.header-desktop {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .en #header-mobile.header-mobile {
   display: none;

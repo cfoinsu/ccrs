@@ -240,7 +240,7 @@
 .en {
     // Mobile Header 표시/숨김
     #header.header-desktop {
-        display: block;
+        display: flex;
     }
     #header-mobile.header-mobile {
         display: none;
