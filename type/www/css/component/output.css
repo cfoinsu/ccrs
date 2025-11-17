@@ -18618,9 +18618,9 @@ a:hover .d-card .c-tit {
   width: 59px;
 }
 .search-top-box .sch-filter-box .filter-form.row .period .optSetDate {
-  width: 390px;
+  width: 400px;
   display: block;
-  flex-shrink: 0;
+  flex: 0 1 auto;
 }
 .search-top-box .sch-filter-box .filter-form.row .period .optSetDate .inp_t {
   border-radius: 0.6rem;
