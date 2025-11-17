@@ -2801,6 +2801,121 @@
     }
 }
 
+// Micro Credit Support Act - Establishment Timeline
+.en {
+    .establishment-timeline {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: #fff9f2;
+        border-radius: 24px;
+        padding: 40px var(--krds-pc-padding-card-small);
+        width: 100%;
+        max-width: 980px;
+        margin: 0 auto 50px;
+        position: relative;
+        min-height: 448px;
+
+        @include tabletLess {
+            margin-bottom: 40px;
+        }
+
+        @include mobile {
+            margin-bottom: 30px;
+            border-radius: 16px;
+        }
+
+        .establishment-timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .establishment-timeline-date {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 8px;
+
+                @include mobile {
+                    gap: 6px;
+                    margin-bottom: 6px;
+                }
+
+                .establishment-timeline-icon {
+                    width: 21px;
+                    height: 21px;
+                    flex-shrink: 0;
+
+                    @include tabletLess {
+                        width: 18px;
+                        height: 18px;
+                    }
+
+                    @include mobile {
+                        width: 16px;
+                        height: 16px;
+                    }
+                }
+
+                .establishment-date-text {
+                    font-family: 'Pretendard GOV', sans-serif;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 1.5;
+                    color: #ed7801;
+
+                    @include tabletLess {
+                        font-size: 22px;
+                    }
+
+                    @include mobile {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .establishment-timeline-content {
+                padding-left: 29px; // 아이콘 너비(21px) + 간격(8px)
+
+                @include tabletLess {
+                    padding-left: 26px;
+                }
+
+                @include mobile {
+                    padding-left: 22px;
+                }
+
+                p {
+                    font-family: 'Pretendard GOV', sans-serif;
+                    font-weight: 400;
+                    font-size: 19px;
+                    line-height: 1.5;
+                    color: #17191b;
+                    margin: 0;
+                    white-space: normal;
+
+                    @include tabletLess {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 34px;
+            top: 49px;
+            bottom: 90px;
+            width: 2px;
+            background: #ffd89f;
+        }
+    }
+}
+
 // .en .content-sections {
 //     gap: 100px;
 //     margin-top: 50px;

@@ -2895,4 +2895,130 @@
   display: block;
   font-size: 14px;
   color: #1B2025;
+}
+
+.en .establishment-timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fff9f2;
+  border-radius: 24px;
+  padding: 40px var(--krds-pc-padding-card-small);
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto 50px;
+  position: relative;
+  min-height: 448px;
+}
+@media (max-width: 1023px) {
+  .en .establishment-timeline {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .en .establishment-timeline {
+    margin-bottom: 30px;
+    border-radius: 16px;
+  }
+}
+.en .establishment-timeline .establishment-timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+.en .establishment-timeline .establishment-timeline-item:last-child {
+  margin-bottom: 0;
+}
+.en .establishment-timeline .establishment-timeline-item .establishment-timeline-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+@media (max-width: 767px) {
+  .en .establishment-timeline .establishment-timeline-item .establishment-timeline-date {
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+}
+.en .establishment-timeline .establishment-timeline-item .establishment-timeline-date .establishment-timeline-icon {
+  width: 21px;
+  height: 21px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media (max-width: 1023px) {
+  .en .establishment-timeline .establishment-timeline-item .establishment-timeline-date .establishment-timeline-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .en .establishment-timeline .establishment-timeline-item .establishment-timeline-date .establishment-timeline-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+.en .establishment-timeline .establishment-timeline-item .establishment-timeline-date .establishment-date-text {
+  font-family: "Pretendard GOV", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #ed7801;
+}
+@media (max-width: 1023px) {
+  .en .establishment-timeline .establishment-timeline-item .establishment-timeline-date .establishment-date-text {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .en .establishment-timeline .establishment-timeline-item .establishment-timeline-date .establishment-date-text {
+    font-size: 18px;
+  }
+}
+.en .establishment-timeline .establishment-timeline-item .establishment-timeline-content {
+  padding-left: 29px;
+}
+@media (max-width: 1023px) {
+  .en .establishment-timeline .establishment-timeline-item .establishment-timeline-content {
+    padding-left: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .en .establishment-timeline .establishment-timeline-item .establishment-timeline-content {
+    padding-left: 22px;
+  }
+}
+.en .establishment-timeline .establishment-timeline-item .establishment-timeline-content p {
+  font-family: "Pretendard GOV", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.5;
+  color: #17191b;
+  margin: 0;
+  white-space: normal;
+}
+@media (max-width: 1023px) {
+  .en .establishment-timeline .establishment-timeline-item .establishment-timeline-content p {
+    font-size: 17px;
+  }
+}
+.en .establishment-timeline::before {
+  content: "";
+  position: absolute;
+  left: 34px;
+  top: 49px;
+  bottom: 90px;
+  width: 2px;
+  background: #ffd89f;
 }/*# sourceMappingURL=styles_en_override.css.map */

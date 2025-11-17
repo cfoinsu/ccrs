@@ -12,6 +12,18 @@ Version : v1.0
   padding-right: 32px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1279px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 
 /* 본문 바로가기 */
 #skipNav {
