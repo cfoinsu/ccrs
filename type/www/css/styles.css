@@ -7589,8 +7589,9 @@ table .table-center {
 
 .activity-card-content .activity-card-image {
     position: absolute;
-    top: 3.2rem;
-    right: 3.2rem
+    top: 1.2rem;
+    right: 1.2rem;
+    width: 50px;
 }
 
 .activity-card-content .plusbox {
