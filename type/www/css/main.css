@@ -414,7 +414,8 @@
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(46.656%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46.656%, rgba(0, 0, 0, 0.7) 100%);
-  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
 }
 
 .banner-text {
@@ -581,7 +582,8 @@
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(46.656%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46.656%, rgba(0, 0, 0, 0.7) 100%);
-  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
 }
 
 .bottom-card-text {

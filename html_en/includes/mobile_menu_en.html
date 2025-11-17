@@ -1,0 +1,180 @@
+<!-- 모바일 전용 전체메뉴 (English) -->
+<div class="mobile-allmenu-overlay" id="mobileAllmenuOverlay">
+	<div class="mobile-allmenu-panel">
+		<!-- 헤더 -->
+		<div class="mobile-allmenu-header">
+			<a href="main_en.html" class="logo">
+				<img src="/type/www/img/logo/ccrs_logo_eng.svg" alt="CCRS Credit Counseling & Recover Service">
+			</a>
+			<button class="btn-close-menu" aria-label="Close Menu">
+				<i class="las la-times"></i>
+			</button>
+		</div>
+
+		<!-- 메뉴 컨텐츠 (2단 레이아웃) -->
+		<div class="mobile-allmenu-content">
+			<!-- 좌측: Depth1 메뉴 -->
+			<div class="menu-left">
+				<button class="menu-item" data-menu="menu1">
+					<span class="menu-title">About CCRS</span>
+					<i class="las la-angle-right"></i>
+				</button>
+				<button class="menu-item" data-menu="menu2">
+					<span class="menu-title">Our Services</span>
+					<i class="las la-angle-right"></i>
+				</button>
+				<button class="menu-item" data-menu="menu3">
+					<span class="menu-title">Global Partnership</span>
+					<i class="las la-angle-right"></i>
+				</button>
+				<button class="menu-item" data-menu="menu4">
+					<span class="menu-title">Contact</span>
+					<i class="las la-angle-right"></i>
+				</button>
+			</div>
+
+			<!-- 우측: Depth2/3 서브메뉴 -->
+			<div class="menu-right">
+				<!-- 1. About CCRS -->
+				<div class="submenu-panel" id="menu1">
+					<h3 class="submenu-title">About CCRS</h3>
+
+					<div class="mobile-menu-group">
+						<a href="messagefromtheCEO.html" class="mobile-menu-head single">Message from the CEO</a>
+					</div>
+
+					<div class="mobile-menu-group">
+						<a href="missionandVision.html" class="mobile-menu-head single">Mission and Vision</a>
+					</div>
+
+					<div class="mobile-menu-group">
+						<a href="microCreditSupportAct.html" class="mobile-menu-head single">Micro Credit Support Act</a>
+					</div>
+
+					<div class="mobile-menu-group">
+						<a href="history.html" class="mobile-menu-head single">History</a>
+					</div>
+
+					<div class="mobile-menu-group">
+						<a href="CI&Mascot.html" class="mobile-menu-head single">CI & Mascot</a>
+					</div>
+
+					<div class="mobile-menu-group">
+						<a href="organization.html" class="mobile-menu-head single">Organization</a>
+					</div>
+				</div>
+
+				<!-- 2. Our Services -->
+				<div class="submenu-panel" id="menu2">
+					<h3 class="submenu-title">Our Services</h3>
+
+					<div class="mobile-menu-group">
+						<a href="generalCounseling.html" class="mobile-menu-head single">Credit Counseling</a>
+					</div>
+
+					<div class="mobile-menu-group">
+						<a href="HouseholddebtreliefprogramsbytheCCRS.html" class="mobile-menu-head single">Household debt relief programs by the CCRS</a>
+					</div>
+
+					<div class="mobile-menu-group">
+						<a href="debtAdjustmentPrograms.html" class="mobile-menu-head single">Debt Adjustment Programs</a>
+					</div>
+
+					<div class="mobile-menu-group">
+						<a href="creditandWelfareCounseling.html" class="mobile-menu-head single">Credit and Welfare Counseling</a>
+					</div>
+
+					<div class="mobile-menu-group">
+						<a href="microCredit.html" class="mobile-menu-head single">Micro Credit</a>
+					</div>
+
+					<div class="mobile-menu-group">
+						<a href="crediteducation.html" class="mobile-menu-head single">Credit education</a>
+					</div>
+
+					<div class="mobile-menu-group">
+						<a href="performance.html" class="mobile-menu-head single">Performance</a>
+					</div>
+				</div>
+
+				<!-- 3. Global Partnership -->
+				<div class="submenu-panel" id="menu3">
+					<h3 class="submenu-title">Global Partnership</h3>
+
+					<div class="mobile-menu-group">
+						<a href="globalNetwork.html" class="mobile-menu-head single">Global Partnership</a>
+					</div>
+				</div>
+
+				<!-- 4. Contact -->
+				<div class="submenu-panel" id="menu4">
+					<h3 class="submenu-title">Contact</h3>
+
+					<div class="mobile-menu-group">
+						<a href="headquarter.html" class="mobile-menu-head single">Headquarter</a>
+					</div>
+
+					<div class="mobile-menu-group">
+						<a href="regionalOffices.html" class="mobile-menu-head single">Regional Offices</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+(function() {
+	// 좌측 메뉴 아이템 클릭 이벤트
+	const menuItems = document.querySelectorAll('.menu-item');
+	const submenuPanels = document.querySelectorAll('.submenu-panel');
+
+	menuItems.forEach(item => {
+		item.addEventListener('click', function() {
+			// 모든 활성화 제거
+			menuItems.forEach(mi => mi.classList.remove('active'));
+			submenuPanels.forEach(panel => panel.classList.remove('active'));
+
+			// 클릭한 메뉴 활성화
+			this.classList.add('active');
+
+			// 해당 서브메뉴 표시
+			const menuId = this.getAttribute('data-menu');
+			const targetPanel = document.getElementById(menuId);
+			if (targetPanel) {
+				targetPanel.classList.add('active');
+			}
+		});
+	});
+
+	// 첫 번째 메뉴 기본 활성화
+	if (menuItems.length > 0 && submenuPanels.length > 0) {
+		menuItems[0].classList.add('active');
+		submenuPanels[0].classList.add('active');
+	}
+
+	// 닫기 버튼
+	const closeBtn = document.querySelector('.btn-close-menu');
+	if (closeBtn) {
+		closeBtn.addEventListener('click', () => {
+			const overlay = document.getElementById('mobileAllmenuOverlay');
+			if (overlay) {
+				overlay.classList.remove('active');
+				document.body.style.overflow = '';
+			}
+		});
+	}
+
+	// 오버레이 클릭 시 닫기
+	const overlay = document.getElementById('mobileAllmenuOverlay');
+	if (overlay) {
+		overlay.addEventListener('click', (e) => {
+			if (e.target === overlay) {
+				overlay.classList.remove('active');
+				document.body.style.overflow = '';
+			}
+		});
+	}
+})();
+</script>
+

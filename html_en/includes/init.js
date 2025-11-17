@@ -21,6 +21,12 @@ $(function() {
     // AllMenu 로드
     $('#allmenu-container').load('includes/allmenu_en.html');
 
+    // Mobile Menu 로드 (모바일 전용)
+    if ($('#mobile-menu-container').length > 0 || $(window).width() < 1024) {
+        $('body').append('<div id="mobile-menu-container"></div>');
+        $('#mobile-menu-container').load('includes/mobile_menu_en.html');
+    }
+
     // Search 로드
     $('#search-container').load('includes/search_en.html');
 });

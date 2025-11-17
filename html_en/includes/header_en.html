@@ -1,4 +1,5 @@
-<header id="header" class="header header-en">
+<!-- Desktop Header (1024px 이상) -->
+<header id="header" class="header header-en header-desktop">
     <div class="container">
         <div class="gnb-wrap">
             <a href="main_en.html" class="logo">
@@ -71,3 +72,83 @@
         </div>
     </div>
 </header>
+
+<!-- Mobile/Tablet Header (1024px 미만) -->
+<div id="header-mobile" class="header-mobile">
+    <div class="mobile-header" data-depth="main">
+        <div class="mobile-header-inner">
+            <!-- 좌측: 로고 -->
+            <div class="header-left">
+                <a href="main_en.html" class="logo">
+                    <img src="/type/www/img/logo/ccrs_logo_eng.svg" alt="CCRS Credit Counseling & Recover Service">
+                </a>
+            </div>
+
+            <!-- 우측: 유틸리티 버튼 -->
+            <div class="header-right">
+                <button class="btn-search" aria-label="Search">
+                    <img src="/type/www/images/ic/header-search.svg" alt="Search">
+                </button>
+                <button class="btn-lang" aria-label="Change Language">
+                    <a href="/html/main.html">
+                        <img src="/type/www/images/img/en/header-language-kr.svg" alt="Korean">
+                    </a>
+                </button>
+                <button class="btn-menu" id="mobileMenuBtn" aria-label="Menu">
+                    <span class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Search Panel -->
+    <div class="mobile-search-panel" id="mobileSearchPanel" style="display: none;">
+        <div class="search-panel-inner">
+            <form action="/search" method="get" class="mobile-search-form">
+                <input type="text" name="q" placeholder="Enter search keyword" class="search-input">
+                <button type="submit" class="search-submit" aria-label="Search">
+                    <img src="/type/www/images/ic/header-search.svg" alt="Search">
+                </button>
+            </form>
+            <button class="search-close" aria-label="Close search">×</button>
+        </div>
+    </div>
+</div>
+
+<script>
+// 모바일 헤더 인터랙션
+(function() {
+    // 검색 토글
+    const searchBtn = document.querySelector('.mobile-header .btn-search');
+    const searchPanel = document.getElementById('mobileSearchPanel');
+    const searchClose = document.querySelector('.search-close');
+
+    if (searchBtn && searchPanel) {
+        searchBtn.addEventListener('click', () => {
+            searchPanel.style.display = searchPanel.style.display === 'none' ? 'block' : 'none';
+        });
+
+        searchClose?.addEventListener('click', () => {
+            searchPanel.style.display = 'none';
+        });
+    }
+
+    // 전체메뉴 토글 (모바일 전용 메뉴 사용)
+    const menuBtn = document.getElementById('mobileMenuBtn');
+
+    if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            // 모바일 전용 메뉴 열기
+            const mobileMenu = document.getElementById('mobileAllmenuOverlay');
+            if (mobileMenu) {
+                mobileMenu.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    }
+})();
+</script>
