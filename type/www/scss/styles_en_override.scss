@@ -533,6 +533,711 @@
     }
 }
 
+// Mission and Vision
+.en {
+    // Mission and Vision 페이지 전체 레이아웃
+    .content-layout {
+        @include tabletLess {
+            flex-direction: column;
+        }
+    }
+
+    .content-area {
+        @include tabletLess {
+            width: 100%;
+        }
+    }
+
+    .mission-vision-section {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        margin-bottom: 100px;
+
+        @include tabletLess {
+            gap: 60px;
+            margin-bottom: 60px;
+            padding: 0;
+        }
+
+        @include mobile {
+            gap: 40px;
+            margin-bottom: 40px;
+            padding: 0;
+        }
+
+        // Purpose of Establishment
+        .purpose-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            width: 100%;
+            max-width: 980px;
+            margin: 0 auto;
+
+            .section-title {
+                font-family: 'Pretendard GOV', sans-serif;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 1.5;
+                color: #ed7801;
+                text-align: center;
+                margin: 0;
+                padding-left: 0; // 공통 스타일의 padding-left 제거
+                
+                // 공통 스타일의 ::before 제거
+                &::before {
+                    display: none;
+                    content: none;
+                }
+
+                @include tabletLess {
+                    font-size: 32px;
+                }
+
+                @include mobile {
+                    font-size: 28px;
+                }
+            }
+
+            .purpose-content {
+                background: #ebf2fe;
+                border-radius: 32px;
+                padding: 32px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 100%;
+
+                @include tabletLess {
+                    padding: 28px;
+                    gap: 18px;
+                }
+
+                @include mobile {
+                    padding: 24px;
+                    gap: 16px;
+                    border-radius: 24px;
+                }
+
+                p {
+                    font-family: 'Pretendard GOV', sans-serif;
+                    font-size: 20px;
+                    line-height: 1.5;
+                    color: #1b2025;
+                    margin: 0;
+
+                    @include tabletLess {
+                        font-size: 18px;
+                    }
+
+                    @include mobile {
+                        font-size: 16px;
+                    }
+
+                    strong {
+                        font-family: 'Pretendard GOV', sans-serif;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+
+        // Mission & Vision Grid
+        .mission-vision-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0; // gap 제거
+            width: 100%;
+            max-width: 980px;
+            margin: 0 auto;
+
+            @include tabletLess {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .mission-box,
+            .vision-box {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+                
+                // 박스 겹치기: 양쪽에서 동일하게 당기기
+                &:first-child {
+                    margin-right: -10px; // 왼쪽 박스는 오른쪽으로 당기기
+                    
+                    @include tabletLess {
+                        margin-right: -8px;
+                    }
+                    
+                    @include mobile {
+                        margin-right: 0; // 모바일에서는 겹치지 않음
+                    }
+                }
+                
+                &:last-child {
+                    margin-left: -10px; // 오른쪽 박스는 왼쪽으로 당기기
+                    
+                    @include tabletLess {
+                        margin-left: -8px;
+                    }
+                    
+                    @include mobile {
+                        margin-left: 0; // 모바일에서는 겹치지 않음
+                    }
+                }
+
+                .section-title {
+                    font-family: 'Pretendard GOV', sans-serif;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 1.5;
+                    color: #ed7801;
+                    text-align: center;
+                    margin: 0;
+                    padding-left: 0; // 공통 스타일의 padding-left 제거
+                    
+                    // 공통 스타일의 ::before 제거
+                    &::before {
+                        display: none;
+                        content: none;
+                    }
+
+                    @include tabletLess {
+                        font-size: 32px;
+                    }
+
+                    @include mobile {
+                        font-size: 28px;
+                    }
+                }
+
+                .mission-content,
+                .vision-content {
+                    background: #ebf2fe;
+                    border-radius: 1000px;
+                    padding: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-height: 184px;
+                    width: 100%;
+                    mix-blend-mode: multiply;
+
+                    @include tabletLess {
+                        padding: 28px;
+                        min-height: 160px;
+                    }
+
+                    @include mobile {
+                        padding: 24px;
+                        min-height: auto;
+                        border-radius: 32px;
+                    }
+
+                    p {
+                        font-family: 'Pretendard GOV', sans-serif;
+                        font-size: 20px;
+                        line-height: 1.5;
+                        color: #1b2025;
+                        margin: 0;
+                        text-align: center;
+
+                        @include tabletLess {
+                            font-size: 18px;
+                        }
+
+                        @include mobile {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            .mission-box {
+                .mission-content {
+                    max-width: 498px;
+
+                    @include tabletLess {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .vision-box {
+                .vision-content {
+                    max-width: 498px;
+
+                    @include tabletLess {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    // Core Values Section
+    .core-values-section {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        width: 100%;
+        max-width: 980px;
+        margin: 0 auto 50px;
+
+        @include tabletLess {
+            margin-bottom: 40px;
+        }
+
+        @include mobile {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-family: 'Pretendard GOV', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 1.5;
+            color: #ed7801;
+            text-align: center;
+            margin: 0;
+            padding-left: 0;
+            
+            &::before {
+                display: none;
+                content: none;
+            }
+
+            @include tabletLess {
+                font-size: 32px;
+            }
+
+            @include mobile {
+                font-size: 24px;
+            }
+        }
+
+        .core-values-container {
+            border: 1px solid #d2d6da;
+            border-radius: 32px;
+            padding: 70px;
+            width: 100%;
+            background: #fff;
+            overflow: hidden;
+
+            @include tabletLess {
+                padding: 50px 30px;
+            }
+
+            @include mobile {
+                padding: 70px 16px 30px;
+                border-radius: 24px;
+            }
+        }
+
+        .core-values-diagram {
+            position: relative;
+            width: 100%;
+            height: 758px;
+            min-height: 758px;
+
+            @include tabletLess {
+                height: 600px;
+                min-height: 600px;
+            }
+
+            @include mobile {
+                height: auto;
+                min-height: auto;
+            }
+
+            // Background Circle
+            .diagram-bg-circle {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 610px;
+                height: 610px;
+                border: 1px dashed #000;
+                opacity: 0.3;
+                border-radius: 50%;
+
+                @include tabletLess {
+                    width: 450px;
+                    height: 450px;
+                }
+
+                @include mobile {
+                    display: none;
+                }
+            }
+
+            // Central Logo
+            .central-logo {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, calc(-50% + 74px));
+                width: 250px;
+                height: 250px;
+                z-index: 10;
+
+                @include tabletLess {
+                    width: 180px;
+                    height: 180px;
+                    transform: translate(-50%, calc(-50% + 40px));
+                }
+
+                @include mobile {
+                    position: relative;
+                    left: auto;
+                    top: auto;
+                    transform: none;
+                    margin: 0 auto 90px;
+                    width: 160px;
+                    height: 160px;
+                }
+
+                .diagram-bg-circle {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 610px;
+                    height: 610px;
+                    border: 1px dashed #000;
+                    opacity: 0.3;
+                    border-radius: 50%;
+
+                    @include tabletLess {
+                        width: 400px;
+                        height: 400px;
+                    }
+
+                    @include mobile {
+                        display: none;
+                    }
+                }
+
+                .logo-outer-ring {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 316px;
+                    height: 316px;
+                    background: #edf4ff;
+                    border-radius: 1000px;
+                    z-index: 1;
+
+                    @include tabletLess {
+                        width: 220px;
+                        height: 220px;
+                    }
+
+                    @include mobile {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+
+                .logo-inner-circle {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 258px;
+                    height: 258px;
+                    background: #fff;
+                    border: 1px solid #9fbbe8;
+                    border-radius: 1000px;
+                    z-index: 2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @include tabletLess {
+                        width: 180px;
+                        height: 180px;
+                    }
+
+                    @include mobile {
+                        width: 258px;
+                        height: 258px;
+                    }
+                }
+
+                .logo-icon {
+                    width: 102px;
+                    height: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @include tabletLess {
+                        width: 70px;
+                        height: 68px;
+                    }
+
+                    @include mobile {
+                        width: 60px;
+                        height: 58px;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            // Value Nodes
+            .value-node {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                z-index: 15;
+
+                @include mobile {
+                    position: relative;
+                    margin-bottom: 40px;
+                }
+
+                .value-circle {
+                    width: 260px;
+                    height: 260px;
+                    border-radius: 1000px;
+                    background: url('https://www.figma.com/api/mcp/asset/c981949b-a4c2-4757-934c-2f65b84b0711') no-repeat center;
+                    background-size: contain;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    padding: 32px 16px;
+                    box-sizing: border-box;
+
+                    @include tabletLess {
+                        width: 200px;
+                        height: 200px;
+                        padding: 24px 12px;
+                    }
+
+                    @include mobile {
+                        width: 260px;
+                        height: 260px;
+                        padding: 20px 10px;
+                    }
+
+                    .value-icon {
+                        width: 64px;
+                        height: 64px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 16px;
+                        flex-shrink: 0;
+
+                        @include tabletLess {
+                            width: 50px;
+                            height: 50px;
+                            margin-bottom: 12px;
+                        }
+
+                        @include mobile {
+                            width: 45px;
+                            height: 45px;
+                            margin-bottom: 10px;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .value-content {
+                        // flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        text-align: center;
+                        color: #fff;
+
+                        .value-title {
+                            font-family: 'Pretendard GOV', sans-serif;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 1.5;
+                            color: #fff;
+                            margin: 0 0 8px;
+                            white-space: nowrap;
+
+                            @include tabletLess {
+                                font-size: 20px;
+                                margin-bottom: 6px;
+                            }
+
+                            @include mobile {
+                                font-size: 18px;
+                                white-space: normal;
+                                margin-bottom: 6px;
+                            }
+                        }
+
+                        .value-description {
+                            font-family: 'Pretendard GOV', sans-serif;
+                            font-weight: 400;
+                            font-size: 17px;
+                            line-height: 1.2;
+                            color: #fff;
+                            margin: 0;
+
+                            @include tabletLess {
+                                font-size: 15px;
+                            }
+
+                            @include mobile {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+
+                .connection-line {
+                    position: absolute;
+                    width: 2px;
+                    background: repeating-linear-gradient(
+                        to bottom,
+                        #d2d6da 0px,
+                        #d2d6da 4px,
+                        transparent 4px,
+                        transparent 8px
+                    );
+                    z-index: 1;
+
+                    @include mobile {
+                        display: none;
+                    }
+                }
+
+                // Top Node
+                &.value-top {
+                    left: 50%;
+                    top: 0;
+                    transform: translateX(-50%);
+
+                    @include tabletLess {
+                        top: 0;
+                    }
+
+                    .value-circle {
+                        background-image: url('https://www.figma.com/api/mcp/asset/c981949b-a4c2-4757-934c-2f65b84b0711');
+                    }
+
+                    .connection-line.line-top {
+                        top: 260px;
+                        left: 50%;
+                        height: 148px;
+                        transform: translateX(-50%);
+
+                        @include tabletLess {
+                            top: 200px;
+                            height: 100px;
+                        }
+                    }
+                }
+
+                // Bottom Left Node
+                &.value-bottom-left {
+                    left: 0;
+                    top: 487px;
+
+                    @include tabletLess {
+                        top: 340px;
+                        left: 50%;
+                        transform: translateX(-320px);
+                    }
+
+                    @include mobile {
+                        left: auto;
+                        top: auto;
+                        position: relative;
+                        transform: none;
+                    }
+
+                    .value-circle {
+                        background-image: url('https://www.figma.com/api/mcp/asset/8e455e18-b2d2-4a7d-bf60-8d6cc2da471a');
+                    }
+
+                    .connection-line.line-bottom-left {
+                        top: -148px;
+                        left: 130px;
+                        width: 295px;
+                        height: 2px;
+                        transform: rotate(-30deg);
+                        transform-origin: left center;
+
+                        @include tabletLess {
+                            top: -100px;
+                            left: 100px;
+                            width: 180px;
+                        }
+                    }
+                }
+
+                // Bottom Right Node
+                &.value-bottom-right {
+                    right: 0;
+                    top: 487px;
+
+                    @include tabletLess {
+                        top: 350px;
+                        left: 50%;
+                        transform: translateX(0);
+                    }
+
+                    @include mobile {
+                        right: auto;
+                        top: auto;
+                        position: relative;
+                        transform: translateX(-50%);
+                    }
+
+                    .value-circle {
+                        background-image: url('https://www.figma.com/api/mcp/asset/4ec5388d-ae74-43db-8251-a1e7f285b14e');
+                    }
+
+                    .connection-line.line-bottom-right {
+                        top: -148px;
+                        right: 130px;
+                        width: 295px;
+                        height: 2px;
+                        transform: rotate(30deg);
+                        transform-origin: right center;
+
+                        @include tabletLess {
+                            top: -100px;
+                            right: 100px;
+                            width: 180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // 히스토리 페이지
 .en .history-section {
     .timeline-item {

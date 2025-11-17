@@ -525,6 +525,827 @@
   }
 }
 
+@media (max-width: 1023px) {
+  .en .content-layout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 1023px) {
+  .en .content-area {
+    width: 100%;
+  }
+}
+.en .mission-vision-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 100px;
+  margin-bottom: 100px;
+}
+@media (max-width: 1023px) {
+  .en .mission-vision-section {
+    gap: 60px;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .en .mission-vision-section {
+    gap: 40px;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+}
+.en .mission-vision-section .purpose-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.en .mission-vision-section .purpose-section .section-title {
+  font-family: "Pretendard GOV", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #ed7801;
+  text-align: center;
+  margin: 0;
+  padding-left: 0;
+}
+.en .mission-vision-section .purpose-section .section-title::before {
+  display: none;
+  content: none;
+}
+@media (max-width: 1023px) {
+  .en .mission-vision-section .purpose-section .section-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .en .mission-vision-section .purpose-section .section-title {
+    font-size: 28px;
+  }
+}
+.en .mission-vision-section .purpose-section .purpose-content {
+  background: #ebf2fe;
+  border-radius: 32px;
+  padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+@media (max-width: 1023px) {
+  .en .mission-vision-section .purpose-section .purpose-content {
+    padding: 28px;
+    gap: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .en .mission-vision-section .purpose-section .purpose-content {
+    padding: 24px;
+    gap: 16px;
+    border-radius: 24px;
+  }
+}
+.en .mission-vision-section .purpose-section .purpose-content p {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1b2025;
+  margin: 0;
+}
+@media (max-width: 1023px) {
+  .en .mission-vision-section .purpose-section .purpose-content p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .en .mission-vision-section .purpose-section .purpose-content p {
+    font-size: 16px;
+  }
+}
+.en .mission-vision-section .purpose-section .purpose-content p strong {
+  font-family: "Pretendard GOV", sans-serif;
+  font-weight: 700;
+}
+.en .mission-vision-section .mission-vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+@media (max-width: 1023px) {
+  .en .mission-vision-section .mission-vision-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+.en .mission-vision-section .mission-vision-grid .mission-box,
+.en .mission-vision-section .mission-vision-grid .vision-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.en .mission-vision-section .mission-vision-grid .mission-box:first-child,
+.en .mission-vision-section .mission-vision-grid .vision-box:first-child {
+  margin-right: -10px;
+}
+@media (max-width: 1023px) {
+  .en .mission-vision-section .mission-vision-grid .mission-box:first-child,
+  .en .mission-vision-section .mission-vision-grid .vision-box:first-child {
+    margin-right: -8px;
+  }
+}
+@media (max-width: 767px) {
+  .en .mission-vision-section .mission-vision-grid .mission-box:first-child,
+  .en .mission-vision-section .mission-vision-grid .vision-box:first-child {
+    margin-right: 0;
+  }
+}
+.en .mission-vision-section .mission-vision-grid .mission-box:last-child,
+.en .mission-vision-section .mission-vision-grid .vision-box:last-child {
+  margin-left: -10px;
+}
+@media (max-width: 1023px) {
+  .en .mission-vision-section .mission-vision-grid .mission-box:last-child,
+  .en .mission-vision-section .mission-vision-grid .vision-box:last-child {
+    margin-left: -8px;
+  }
+}
+@media (max-width: 767px) {
+  .en .mission-vision-section .mission-vision-grid .mission-box:last-child,
+  .en .mission-vision-section .mission-vision-grid .vision-box:last-child {
+    margin-left: 0;
+  }
+}
+.en .mission-vision-section .mission-vision-grid .mission-box .section-title,
+.en .mission-vision-section .mission-vision-grid .vision-box .section-title {
+  font-family: "Pretendard GOV", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #ed7801;
+  text-align: center;
+  margin: 0;
+  padding-left: 0;
+}
+.en .mission-vision-section .mission-vision-grid .mission-box .section-title::before,
+.en .mission-vision-section .mission-vision-grid .vision-box .section-title::before {
+  display: none;
+  content: none;
+}
+@media (max-width: 1023px) {
+  .en .mission-vision-section .mission-vision-grid .mission-box .section-title,
+  .en .mission-vision-section .mission-vision-grid .vision-box .section-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .en .mission-vision-section .mission-vision-grid .mission-box .section-title,
+  .en .mission-vision-section .mission-vision-grid .vision-box .section-title {
+    font-size: 28px;
+  }
+}
+.en .mission-vision-section .mission-vision-grid .mission-box .mission-content,
+.en .mission-vision-section .mission-vision-grid .mission-box .vision-content,
+.en .mission-vision-section .mission-vision-grid .vision-box .mission-content,
+.en .mission-vision-section .mission-vision-grid .vision-box .vision-content {
+  background: #ebf2fe;
+  border-radius: 1000px;
+  padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 184px;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+@media (max-width: 1023px) {
+  .en .mission-vision-section .mission-vision-grid .mission-box .mission-content,
+  .en .mission-vision-section .mission-vision-grid .mission-box .vision-content,
+  .en .mission-vision-section .mission-vision-grid .vision-box .mission-content,
+  .en .mission-vision-section .mission-vision-grid .vision-box .vision-content {
+    padding: 28px;
+    min-height: 160px;
+  }
+}
+@media (max-width: 767px) {
+  .en .mission-vision-section .mission-vision-grid .mission-box .mission-content,
+  .en .mission-vision-section .mission-vision-grid .mission-box .vision-content,
+  .en .mission-vision-section .mission-vision-grid .vision-box .mission-content,
+  .en .mission-vision-section .mission-vision-grid .vision-box .vision-content {
+    padding: 24px;
+    min-height: auto;
+    border-radius: 32px;
+  }
+}
+.en .mission-vision-section .mission-vision-grid .mission-box .mission-content p,
+.en .mission-vision-section .mission-vision-grid .mission-box .vision-content p,
+.en .mission-vision-section .mission-vision-grid .vision-box .mission-content p,
+.en .mission-vision-section .mission-vision-grid .vision-box .vision-content p {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1b2025;
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 1023px) {
+  .en .mission-vision-section .mission-vision-grid .mission-box .mission-content p,
+  .en .mission-vision-section .mission-vision-grid .mission-box .vision-content p,
+  .en .mission-vision-section .mission-vision-grid .vision-box .mission-content p,
+  .en .mission-vision-section .mission-vision-grid .vision-box .vision-content p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .en .mission-vision-section .mission-vision-grid .mission-box .mission-content p,
+  .en .mission-vision-section .mission-vision-grid .mission-box .vision-content p,
+  .en .mission-vision-section .mission-vision-grid .vision-box .mission-content p,
+  .en .mission-vision-section .mission-vision-grid .vision-box .vision-content p {
+    font-size: 16px;
+  }
+}
+.en .mission-vision-section .mission-vision-grid .mission-box .mission-content {
+  max-width: 498px;
+}
+@media (max-width: 1023px) {
+  .en .mission-vision-section .mission-vision-grid .mission-box .mission-content {
+    max-width: 100%;
+  }
+}
+.en .mission-vision-section .mission-vision-grid .vision-box .vision-content {
+  max-width: 498px;
+}
+@media (max-width: 1023px) {
+  .en .mission-vision-section .mission-vision-grid .vision-box .vision-content {
+    max-width: 100%;
+  }
+}
+.en .core-values-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto 50px;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section {
+    margin-bottom: 30px;
+  }
+}
+.en .core-values-section .section-title {
+  font-family: "Pretendard GOV", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #ed7801;
+  text-align: center;
+  margin: 0;
+  padding-left: 0;
+}
+.en .core-values-section .section-title::before {
+  display: none;
+  content: none;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .section-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .section-title {
+    font-size: 24px;
+  }
+}
+.en .core-values-section .core-values-container {
+  border: 1px solid #d2d6da;
+  border-radius: 32px;
+  padding: 70px;
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-container {
+    padding: 50px 30px;
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-container {
+    padding: 70px 16px 30px;
+    border-radius: 24px;
+  }
+}
+.en .core-values-section .core-values-diagram {
+  position: relative;
+  width: 100%;
+  height: 758px;
+  min-height: 758px;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram {
+    height: 600px;
+    min-height: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram {
+    height: auto;
+    min-height: auto;
+  }
+}
+.en .core-values-section .core-values-diagram .diagram-bg-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 610px;
+  height: 610px;
+  border: 1px dashed #000;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .diagram-bg-circle {
+    width: 450px;
+    height: 450px;
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram .diagram-bg-circle {
+    display: none;
+  }
+}
+.en .core-values-section .core-values-diagram .central-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, calc(-50% + 74px));
+          transform: translate(-50%, calc(-50% + 74px));
+  width: 250px;
+  height: 250px;
+  z-index: 10;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .central-logo {
+    width: 180px;
+    height: 180px;
+    -webkit-transform: translate(-50%, calc(-50% + 40px));
+            transform: translate(-50%, calc(-50% + 40px));
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram .central-logo {
+    position: relative;
+    left: auto;
+    top: auto;
+    -webkit-transform: none;
+            transform: none;
+    margin: 0 auto 90px;
+    width: 160px;
+    height: 160px;
+  }
+}
+.en .core-values-section .core-values-diagram .central-logo .diagram-bg-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 610px;
+  height: 610px;
+  border: 1px dashed #000;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .central-logo .diagram-bg-circle {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram .central-logo .diagram-bg-circle {
+    display: none;
+  }
+}
+.en .core-values-section .core-values-diagram .central-logo .logo-outer-ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 316px;
+  height: 316px;
+  background: #edf4ff;
+  border-radius: 1000px;
+  z-index: 1;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .central-logo .logo-outer-ring {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram .central-logo .logo-outer-ring {
+    width: 200px;
+    height: 200px;
+  }
+}
+.en .core-values-section .core-values-diagram .central-logo .logo-inner-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 258px;
+  height: 258px;
+  background: #fff;
+  border: 1px solid #9fbbe8;
+  border-radius: 1000px;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .central-logo .logo-inner-circle {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram .central-logo .logo-inner-circle {
+    width: 258px;
+    height: 258px;
+  }
+}
+.en .core-values-section .core-values-diagram .central-logo .logo-icon {
+  width: 102px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .central-logo .logo-icon {
+    width: 70px;
+    height: 68px;
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram .central-logo .logo-icon {
+    width: 60px;
+    height: 58px;
+  }
+}
+.en .core-values-section .core-values-diagram .central-logo .logo-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.en .core-values-section .core-values-diagram .value-node {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 15;
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram .value-node {
+    position: relative;
+    margin-bottom: 40px;
+  }
+}
+.en .core-values-section .core-values-diagram .value-node .value-circle {
+  width: 260px;
+  height: 260px;
+  border-radius: 1000px;
+  background: url("https://www.figma.com/api/mcp/asset/c981949b-a4c2-4757-934c-2f65b84b0711") no-repeat center;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding: 32px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .value-node .value-circle {
+    width: 200px;
+    height: 200px;
+    padding: 24px 12px;
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram .value-node .value-circle {
+    width: 260px;
+    height: 260px;
+    padding: 20px 10px;
+  }
+}
+.en .core-values-section .core-values-diagram .value-node .value-circle .value-icon {
+  width: 64px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .value-node .value-circle .value-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram .value-node .value-circle .value-icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+  }
+}
+.en .core-values-section .core-values-diagram .value-node .value-circle .value-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.en .core-values-section .core-values-diagram .value-node .value-circle .value-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.en .core-values-section .core-values-diagram .value-node .value-circle .value-content .value-title {
+  font-family: "Pretendard GOV", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0 0 8px;
+  white-space: nowrap;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .value-node .value-circle .value-content .value-title {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram .value-node .value-circle .value-content .value-title {
+    font-size: 18px;
+    white-space: normal;
+    margin-bottom: 6px;
+  }
+}
+.en .core-values-section .core-values-diagram .value-node .value-circle .value-content .value-description {
+  font-family: "Pretendard GOV", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.2;
+  color: #fff;
+  margin: 0;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .value-node .value-circle .value-content .value-description {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram .value-node .value-circle .value-content .value-description {
+    font-size: 14px;
+  }
+}
+.en .core-values-section .core-values-diagram .value-node .connection-line {
+  position: absolute;
+  width: 2px;
+  background: repeating-linear-gradient(to bottom, #d2d6da 0px, #d2d6da 4px, transparent 4px, transparent 8px);
+  z-index: 1;
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram .value-node .connection-line {
+    display: none;
+  }
+}
+.en .core-values-section .core-values-diagram .value-node.value-top {
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .value-node.value-top {
+    top: 0;
+  }
+}
+.en .core-values-section .core-values-diagram .value-node.value-top .value-circle {
+  background-image: url("https://www.figma.com/api/mcp/asset/c981949b-a4c2-4757-934c-2f65b84b0711");
+}
+.en .core-values-section .core-values-diagram .value-node.value-top .connection-line.line-top {
+  top: 260px;
+  left: 50%;
+  height: 148px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .value-node.value-top .connection-line.line-top {
+    top: 200px;
+    height: 100px;
+  }
+}
+.en .core-values-section .core-values-diagram .value-node.value-bottom-left {
+  left: 0;
+  top: 487px;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .value-node.value-bottom-left {
+    top: 340px;
+    left: 50%;
+    -webkit-transform: translateX(-320px);
+            transform: translateX(-320px);
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram .value-node.value-bottom-left {
+    left: auto;
+    top: auto;
+    position: relative;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+.en .core-values-section .core-values-diagram .value-node.value-bottom-left .value-circle {
+  background-image: url("https://www.figma.com/api/mcp/asset/8e455e18-b2d2-4a7d-bf60-8d6cc2da471a");
+}
+.en .core-values-section .core-values-diagram .value-node.value-bottom-left .connection-line.line-bottom-left {
+  top: -148px;
+  left: 130px;
+  width: 295px;
+  height: 2px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .value-node.value-bottom-left .connection-line.line-bottom-left {
+    top: -100px;
+    left: 100px;
+    width: 180px;
+  }
+}
+.en .core-values-section .core-values-diagram .value-node.value-bottom-right {
+  right: 0;
+  top: 487px;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .value-node.value-bottom-right {
+    top: 350px;
+    left: 50%;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@media (max-width: 767px) {
+  .en .core-values-section .core-values-diagram .value-node.value-bottom-right {
+    right: auto;
+    top: auto;
+    position: relative;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+.en .core-values-section .core-values-diagram .value-node.value-bottom-right .value-circle {
+  background-image: url("https://www.figma.com/api/mcp/asset/4ec5388d-ae74-43db-8251-a1e7f285b14e");
+}
+.en .core-values-section .core-values-diagram .value-node.value-bottom-right .connection-line.line-bottom-right {
+  top: -148px;
+  right: 130px;
+  width: 295px;
+  height: 2px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+}
+@media (max-width: 1023px) {
+  .en .core-values-section .core-values-diagram .value-node.value-bottom-right .connection-line.line-bottom-right {
+    top: -100px;
+    right: 100px;
+    width: 180px;
+  }
+}
+
 .en .history-section .timeline-item {
   padding: 24px 0;
 }
