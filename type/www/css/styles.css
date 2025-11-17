@@ -6996,6 +6996,10 @@ input[type=radio]:checked+label.fillter-chip {
 
 .abslogocenter.kinfa {
     background: url(../images/img/round-logo-kinfa.png) center no-repeat;
+    background-size: 100%;
+    width: 17%;
+    height: 100%;
+    top: 56%;
 }
 
 /* 서머리박스 */

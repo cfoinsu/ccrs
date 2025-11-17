@@ -414,8 +414,7 @@
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(46.656%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46.656%, rgba(0, 0, 0, 0.7) 100%);
-  -webkit-backdrop-filter: blur(7.5px);
-          backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(7.5px);
 }
 
 .banner-text {
@@ -582,8 +581,7 @@
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(46.656%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7)));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 46.656%, rgba(0, 0, 0, 0.7) 100%);
-  -webkit-backdrop-filter: blur(7.5px);
-          backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(7.5px);
 }
 
 .bottom-card-text {
@@ -2911,6 +2909,12 @@ body:has(.intro.show) {
 .grid-col3 .bottombox .bottombox-txt strong {
   display: block;
   color: #ED7801;
+}
+.grid-col3 .bottombox .bottombox-txt span {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
 }
 .grid-col3 .bottombox .bottombox-img {
   position: absolute;
