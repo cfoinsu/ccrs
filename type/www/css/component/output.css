@@ -18626,7 +18626,6 @@ a:hover .d-card .c-tit {
   border-radius: 0.6rem;
 }
 .search-top-box .sch-filter-box .filter-form.row .period .choose-date {
-  width: 100%;
   display: flex;
   gap: 8px;
   align-items: center;
