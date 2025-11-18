@@ -8476,8 +8476,19 @@ a.customer-service-card {
     pointer-events: none;
 }
 
+.grouptree-bg-line.en {
+    background: url(../images/en/GroupTree_bgline.png) left top no-repeat;
+    background-size: contain;
+    top: 516px;
+    left: 68px;
+}
+
 .region-branch-title {
     display: none;
+}
+
+.region-branches.en {
+    margin-top: -40px;
 }
 
 @media (max-width: 1400px) {
@@ -8489,5 +8500,8 @@ a.customer-service-card {
     }
     .region-branches {
         margin-top: 20px;
+    }
+    .region-branches.en {
+    margin-top: 20px;
     }
 }
