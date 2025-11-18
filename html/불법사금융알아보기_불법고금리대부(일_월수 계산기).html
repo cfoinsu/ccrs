@@ -587,6 +587,106 @@
                 });
             });
         });
+        // 이자율 계산기(월수 or 일수, "이자율을 모를 때")
+        $('.calculator-box:contains("이자율을 모를 때") .btn-calculate').click(function (){
+            // input id 네이밍에 따라 알아서 매칭
+            var periods   = minusComma($('#loanAmount1').val());
+            var payment   = minusComma($('#repayAmount1').val());
+            var present   = minusComma($('#borrowAmount1').val());
+            var periodTag = $('#repayPeriod1'); // 일수계산기만 사용
+
+            let result_val;
+            if(periodTag.length) {
+                // 일수계산기 (납입주기 있음)
+                var future = minusComma(periodTag.val());
+                result_val = (setRate(periods, payment, -present, 0, 0) * (365 / future) * 100).toFixed(1);
+                $(this).closest('.calculator-box').find('.result-value').text(result_val + "%");
+            } else {
+                // 월수계산기 (납입주기 없음)
+                result_val = ((setRate(periods, payment, -present, 0, 0) * 12) * 100).toFixed(1);
+                $(this).closest('.calculator-box').find('.result-value').text(result_val + "%");
+            }
+        });
+        // 원리금 계산기(월수 or 일수, "이자율을 알고 있을 때")
+        $('.calculator-box:contains("이자율을 알고 있을 때") .btn-calculate').click(function (){
+            var rate     = minusComma($('#interestRate2').val());
+            var periods  = minusComma($('#loanAmount2').val());
+            var present  = minusComma($('#borrowAmount2').val());
+            var periodTag = $('#repayPeriod2'); // 일수계산기만 사용
+
+            let result_val;
+            if(periodTag.length) {
+                // 일수계산기 (납입주기 있음)
+                var future = minusComma(periodTag.val());
+                result_val = ((present * ((rate * 0.01) / (365 / future))) *
+                            Math.pow((1 + ((rate * 0.01) / (365 / future))), periods)
+                            /(Math.pow((1 + ((rate * 0.01) / (365 / future))), periods) - 1 )).toFixed(1);
+                $(this).closest('.calculator-box').find('.result-value').text(addComma(result_val) + "원");
+            } else {
+                // 월수계산기 (납입주기 없음)
+                result_val = (setPmt(present, rate, periods)).toFixed(1);
+                $(this).closest('.calculator-box').find('.result-value').text(addComma(result_val) + "원");
+            }
+        });
+        function minusComma(val) {
+            return String(val || '').replace(/,/g, '');
+        }
+        function addComma(val) {
+            val = String(val || '').replace(/,/g, '');
+            return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+        // setRate, setPmt 함수는 기존코드와 동일하게 사용
+        function setPmt(a,b,c){
+            var pmt;
+            pmt =  (a * ((b * 0.01) / 12))
+                            * Math.pow((1 + ((b * 0.01) / 12)), c )
+                            /(Math.pow((1 + ((b * 0.01) / 12)), c ) - 1 );
+            return pmt;
+        }
+
+        function setRate(periods, payment, present, future, type, guess) {                               
+            guess = (guess === undefined) ? 0.01 : guess;                 
+            future = (future === undefined) ? 0 : future;                 
+            type = (type === undefined) ? 0 : type;                       
+
+            var epsMax = 1e-10;                                           
+            var iterMax = 10;                                             
+
+            var y, y0, y1, x0, x1 = 0,                                   
+            f = 0,                                                       
+            i = 0;                                                       
+
+            var rate = guess;                                            
+
+            if (Math.abs(rate) < epsMax) {                                
+                y = present * (1 + periods * rate) + payment * (1 + rate * type) * periods + future;      
+            } else {                                                     
+                f = Math.exp(periods * Math.log(1 + rate));              
+                y = present * f + payment * (1 / rate + type) * (f - 1) + future;
+            }                                                            
+                y0 = present + payment * periods + future;               
+                y1 = present * f + payment * (1 / rate + type) * (f - 1) + future;
+                i = x0 = 0;  
+                x1 = rate;  
+            while ((Math.abs(y0 - y1) > epsMax) && (i < iterMax)) {       
+                rate = (y1 * x0 - y0 * x1) / (y1 - y0); 
+                x0 = x1; 
+                x1 = rate; 
+                if (Math.abs(rate) < epsMax) { 
+                    y = present * (1 + periods * rate) + payment * (1 + rate * type) * periods + future;
+                } else {
+                    f = Math.exp(periods * Math.log(1 + rate));
+                    y = present * f + payment * (1 / rate + type) * (f - 1) + future;
+                }
+                y0 = y1;
+                y1 = y;
+                ++i;
+            }   
+            return rate;                                               
+        }
+
+
+
     </script>
 </body>
 
