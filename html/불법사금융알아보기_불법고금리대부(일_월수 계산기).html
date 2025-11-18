@@ -587,9 +587,6 @@
                 });
             });
         });
-        $(document).on('input', 'input[inputmode="numeric"]', function() {
-            this.value = this.value.replace(/[^0-9]/g, '').slice(0,4);
-        });
         $(document).on('input', '.input-with-unit .form-input', function() {
             let val = $(this).val().replace(/[^0-9]/g, '');
             if(val) {
