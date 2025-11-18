@@ -287,23 +287,28 @@
 }
 .stats-sub-section .graph-wrap .manwon {
     background-color: transparent;
-    top: 133px;
-    right: 193px;
+    top: 134px;
+    right: 248px;
 }
 .stats-sub-section .graph-wrap .freeworkout .manwon {
     right: 249px;
     top: 157px;
 }
 .stats-sub-section .graph-wrap .nofilter .manwon {
-    right: 199px;
-    top: 161px;
+    right: 249px;
+    top: 163px;
 }
 .graph-wrap.zoom .manwon {
     right: 300px;
     top: 110px;
+    background-color: #FFFAED;
+}
+.graph-wrap.zoom .manwon::after {
+    content: '만원';
+    display: inline;
 }
 .graph-wrap.zoom .freeworkout .manwon {
-    right: 304px;
+    right: 308px;
     top: 110px;
 }
 .graph-wrap.zoom.type_box3 .manwon {
@@ -312,10 +317,10 @@
 }
 .graph-wrap .hover-box {
     position: absolute;
-    width: 58%;
+    width: 162px;
     height: 120px;
-    top: 30%;
-    left: 31%;
+    top: 77px;
+    left: 63px;
     display: flex;
     gap: 2px;
 }
@@ -328,6 +333,10 @@
     left: 116px;
     display: flex;
     gap: 2px;
+}
+.graph-wrap.zoom  .freeworkout .hover-box {
+    top: 59px;
+    left: 116px;
 }
 
 .graph-wrap .hover-box .graph-hover {
