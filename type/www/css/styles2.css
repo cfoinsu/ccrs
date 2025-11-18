@@ -650,3 +650,19 @@
     color: #ED7801;
     font-size: 17px;
 }
+
+.complex-wrapper {
+    display: block;
+    position: absolute;
+    border-radius: 200px;
+    width: 16%;
+    height: 20%;
+    top: 42%;
+    left: 69%;
+
+}
+.complex-wrapper:hover .branch-list-box {
+    opacity: 1;
+    visibility: visible;
+    top: -100%;
+}

@@ -18621,6 +18621,7 @@ a:hover .d-card .c-tit {
   width: 400px;
   display: block;
   flex: 0 1 auto;
+  flex-shrink: 0;
 }
 .search-top-box .sch-filter-box .filter-form.row .period .optSetDate .inp_t {
   border-radius: 0.6rem;
