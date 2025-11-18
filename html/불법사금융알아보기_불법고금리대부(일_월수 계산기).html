@@ -228,7 +228,7 @@
                                                             <div class="form-group">
                                                                 <label for="loanAmount1" class="form-label">상환하기로 한
                                                                     횟수</label>
-                                                                <input type="text" id="loanAmount1" class="form-input"
+                                                                <input type="number" maxlength="4" id="loanAmount1" class="form-input"
                                                                     placeholder="">
                                                             </div>
 
@@ -254,7 +254,7 @@
 
                                                             <div class="result-box">
                                                                 <span class="result-label">연이자율 환산시</span>
-                                                                <strong class="result-value">2.5%</strong>
+                                                                <strong class="result-value"></strong>
                                                             </div>
 
                                                             <button type="button" class="btn-calculate">계산하기</button>
@@ -265,27 +265,27 @@
                                                             <h4 class="calc-title">이자율을 알고 있을 때 원리금 계산하기</h4>
 
                                                             <div class="form-group">
-                                                                <label for="interestRate2"
+                                                                <label for="interestRate2-2"
                                                                     class="form-label">연이자율</label>
                                                                 <div class="input-with-unit">
-                                                                    <input type="text" id="interestRate2"
+                                                                    <input type="text" id="interestRate2-2"
                                                                         class="form-input" placeholder="">
                                                                     <span class="unit">%</span>
                                                                 </div>
                                                             </div>
 
                                                             <div class="form-group">
-                                                                <label for="loanAmount2" class="form-label">상환하기로 한
+                                                                <label for="loanAmount2-2" class="form-label">상환하기로 한
                                                                     횟수</label>
-                                                                <input type="text" id="loanAmount2" class="form-input"
+                                                                <input type="text" id="loanAmount2-2" class="form-input"
                                                                     placeholder="">
                                                             </div>
 
                                                             <div class="form-group">
-                                                                <label for="borrowAmount2"
+                                                                <label for="borrowAmount2-2"
                                                                     class="form-label">차입원금</label>
                                                                 <div class="input-with-unit">
-                                                                    <input type="text" id="borrowAmount2"
+                                                                    <input type="text" id="borrowAmount2-2"
                                                                         class="form-input" placeholder="">
                                                                     <span class="unit">원</span>
                                                                 </div>
@@ -293,7 +293,7 @@
 
                                                             <div class="result-box">
                                                                 <span class="result-label">1회에 상환하는 원리금</span>
-                                                                <strong class="result-value">648만원</strong>
+                                                                <strong class="result-value"></strong>
                                                             </div>
 
                                                             <button type="button" class="btn-calculate">계산하기</button>
@@ -312,45 +312,45 @@
                                                         <h4 class="calc-title">이자율을 모를 때 이자율 계산하기</h4>
 
                                                         <div class="form-group">
-                                                            <label for="loanAmount1" class="form-label">상환하기로 한
+                                                            <label for="loanAmount1-1" class="form-label">상환하기로 한
                                                                 횟수</label>
                                                             <input type="text" inputmode="numeric" pattern="[0-9]*"
-                                                                id="loanAmount1" class="form-input" placeholder="">
+                                                                id="loanAmount1-1" class="form-input" placeholder="">
                                                         </div>
 
                                                         <div class="form-group">
-                                                            <label for="repayAmount1" class="form-label">1회에 상환하는
+                                                            <label for="repayAmount1-1" class="form-label">1회에 상환하는
                                                                 원리금</label>
                                                             <div class="input-with-unit">
                                                                 <input type="text" inputmode="numeric" pattern="[0-9]*"
-                                                                    id="repayAmount1" class="form-input" placeholder="">
+                                                                    id="repayAmount1-1" class="form-input" placeholder="">
                                                                 <span class="unit">원</span>
                                                             </div>
                                                         </div>
 
                                                         <div class="form-group">
-                                                            <label for="borrowAmount1" class="form-label">차입원금</label>
+                                                            <label for="borrowAmount1-1" class="form-label">차입원금</label>
                                                             <div class="input-with-unit">
                                                                 <input type="text" inputmode="numeric" pattern="[0-9]*"
-                                                                    id="borrowAmount1" class="form-input"
+                                                                    id="borrowAmount1-1" class="form-input"
                                                                     placeholder="">
                                                                 <span class="unit">원</span>
                                                             </div>
                                                         </div>
 
                                                         <div class="form-group">
-                                                            <label for="repayPeriod1" class="form-label">
+                                                            <label for="repayPeriod1-1" class="form-label">
                                                                 납입주기
                                                                 <span class="form-hint">(예:매일=1, 매주=7)</span>
                                                             </label>
                                                             <input type="text" inputmode="numeric" pattern="[0-9]*"
-                                                                id="repayPeriod1" class="form-input" placeholder="">
+                                                                id="repayPeriod1-1" class="form-input" placeholder="">
 
                                                         </div>
 
                                                         <div class="result-box">
                                                             <span class="result-label">연이자율 환산시</span>
-                                                            <strong class="result-value">2.5%</strong>
+                                                            <strong class="result-value"></strong>
                                                         </div>
 
                                                         <button type="button" class="btn-calculate">계산하기</button>
@@ -398,7 +398,7 @@
 
                                                         <div class="result-box">
                                                             <span class="result-label">1회에 상환하는 원리금</span>
-                                                            <strong class="result-value">648만원</strong>
+                                                            <strong class="result-value"></strong>
                                                         </div>
 
                                                         <button type="button" class="btn-calculate">계산하기</button>
@@ -587,13 +587,51 @@
                 });
             });
         });
-        // 이자율 계산기(월수 or 일수, "이자율을 모를 때")
-        $('.calculator-box:contains("이자율을 모를 때") .btn-calculate').click(function (){
+        $(document).on('input', 'input[inputmode="numeric"]', function() {
+            this.value = this.value.replace(/[^0-9]/g, '').slice(0,4);
+        });
+        $(document).on('input', '.input-with-unit .form-input', function() {
+            let val = $(this).val().replace(/[^0-9]/g, '');
+            if(val) {
+                val = val.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+            $(this).val(val);
+        });
+        // 이자율 계산기(월수 , "이자율을 모를 때")
+        $('.sec-sm:contains("이자율 계산기") .calculator-box:contains("이자율을 모를 때") .btn-calculate').click(function (){
+            const fieldsForRateUnknown = [
+                { id: "loanAmount1",   label: "상환하기로 한 횟수" },
+                { id: "repayAmount1",  label: "1회에 상환하는 원리금(원)" },
+                { id: "borrowAmount1", label: "차입원금(원)" },
+            ];
+
+            if (!validateInputs(fieldsForRateUnknown)) return;
             // input id 네이밍에 따라 알아서 매칭
             var periods   = minusComma($('#loanAmount1').val());
             var payment   = minusComma($('#repayAmount1').val());
             var present   = minusComma($('#borrowAmount1').val());
-            var periodTag = $('#repayPeriod1'); // 일수계산기만 사용
+
+            let result_val;
+
+            // 월수계산기 (납입주기 없음)
+            result_val = ((setRate(periods, payment, -present, 0, 0) * 12) * 100).toFixed(1);
+            $(this).closest('.calculator-box').find('.result-value').text(result_val + "%");
+        });
+        // 일수 계산기(일수, "이자율을 모를 때")
+        $('.sec-sm:contains("일수 계산기") .calculator-box:contains("이자율을 모를 때") .btn-calculate').click(function (){
+            const fieldsForRateUnknown = [
+                { id: "loanAmount1-1",   label: "상환하기로 한 횟수" },
+                { id: "repayAmount1-1",  label: "1회에 상환하는 원리금(원)" },
+                { id: "borrowAmount1-1", label: "차입원금(원)" },
+                { id: "repayPeriod1-1",  label: "납입주기" },
+            ];
+
+            if (!validateInputs(fieldsForRateUnknown)) return;
+            // input id 네이밍에 따라 알아서 매칭
+            var periods   = minusComma($('#loanAmount1-1').val());
+            var payment   = minusComma($('#repayAmount1-1').val());
+            var present   = minusComma($('#borrowAmount1-1').val());
+            var periodTag = $('#repayPeriod1-1'); // 일수계산기만 사용
 
             let result_val;
             if(periodTag.length) {
@@ -607,27 +645,47 @@
                 $(this).closest('.calculator-box').find('.result-value').text(result_val + "%");
             }
         });
-        // 원리금 계산기(월수 or 일수, "이자율을 알고 있을 때")
-        $('.calculator-box:contains("이자율을 알고 있을 때") .btn-calculate').click(function (){
+
+        // 원리금 계산기(일수, "이자율을 알고 있을 때")
+        $('.sec-sm:contains("이자율 계산기") .calculator-box:contains("이자율을 알고 있을 때") .btn-calculate').click(function (){
+            const fieldsForRateKnown = [
+                { id: "interestRate2-2", label: "연이자율(%)" },
+                { id: "loanAmount2-2",   label: "상환하기로 한 횟수" },
+                { id: "borrowAmount2-2", label: "차입원금(원)" },
+            ];
+
+            if (!validateInputs(fieldsForRateKnown)) return;
+            
+		    var rate     = minusComma($('#interestRate2-2').val());
+            var periods  = minusComma($('#loanAmount2-2').val());
+            var present  = minusComma($('#borrowAmount2-2').val());
+		     
+			result_val =  (setPmt(present, rate, periods)).toFixed(1);
+
+            $(this).closest('.calculator-box').find('.result-value').text(addComma(result_val) + "원");
+        });
+
+        $('.sec-sm:contains("일수 계산기") .calculator-box:contains("이자율을 알고 있을 때") .btn-calculate').click(function (){
+            const fieldsForRateKnown = [
+                { id: "interestRate2", label: "연이자율(%)" },
+                { id: "loanAmount2",   label: "상환하기로 한 횟수" },
+                { id: "borrowAmount2", label: "차입원금(원)" },
+                { id: "repayPeriod2",  label: "납입주기" },
+            ];
+
+            if (!validateInputs(fieldsForRateKnown)) return;
+
             var rate     = minusComma($('#interestRate2').val());
             var periods  = minusComma($('#loanAmount2').val());
             var present  = minusComma($('#borrowAmount2').val());
-            var periodTag = $('#repayPeriod2'); // 일수계산기만 사용
 
             let result_val;
-            if(periodTag.length) {
-                // 일수계산기 (납입주기 있음)
-                var future = minusComma(periodTag.val());
-                result_val = ((present * ((rate * 0.01) / (365 / future))) *
-                            Math.pow((1 + ((rate * 0.01) / (365 / future))), periods)
-                            /(Math.pow((1 + ((rate * 0.01) / (365 / future))), periods) - 1 )).toFixed(1);
-                $(this).closest('.calculator-box').find('.result-value').text(addComma(result_val) + "원");
-            } else {
-                // 월수계산기 (납입주기 없음)
-                result_val = (setPmt(present, rate, periods)).toFixed(1);
-                $(this).closest('.calculator-box').find('.result-value').text(addComma(result_val) + "원");
-            }
+
+            // 월수계산기 (납입주기 없음)
+            result_val = (setPmt(present, rate, periods)).toFixed(1);
+            $(this).closest('.calculator-box').find('.result-value').text(addComma(result_val) + "원");
         });
+        
         function minusComma(val) {
             return String(val || '').replace(/,/g, '');
         }
@@ -683,6 +741,19 @@
                 ++i;
             }   
             return rate;                                               
+        }
+
+        function validateInputs(fields) {
+            for (let i = 0; i < fields.length; i++) {
+                const { id, label } = fields[i];
+                const val = minusComma($('#' + id).val());
+                if (val === '' || val === '0') {
+                    alert(label + "를 입력 해 주세요");
+                    $('#' + id).focus();
+                    return false;
+                }
+            }
+            return true;
         }
 
 
