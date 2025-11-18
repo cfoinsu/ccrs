@@ -748,6 +748,9 @@
   background: url(/type/www/images/img/en/header-language-kr.svg) no-repeat center;
   background-size: contain;
 }
+.en #header.header-en.header-en-main.is-active .gnb-wrap .utils li .search-open i {
+  color: #000;
+}
 .en #header.header-en.header-en-main.is-active .gnb-wrap > nav .gnb > li .menu-label {
   color: #000;
 }
