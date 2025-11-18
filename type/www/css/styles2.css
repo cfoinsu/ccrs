@@ -661,8 +661,19 @@
     left: 69%;
 
 }
+.complex-wrapper .branch-list-box {
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+}
 .complex-wrapper:hover .branch-list-box {
     opacity: 1;
     visibility: visible;
-    top: -100%;
+    top: 0;
+    left: 217px;
+    min-width: 0;
+}
+.complex-wrapper .branch-list-box p {
+    font-size: 15px;
+    padding: 4px 8px;
 }

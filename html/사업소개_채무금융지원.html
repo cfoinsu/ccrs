@@ -186,7 +186,7 @@
                                                 <div class="stat-icon">
                                                     <img src="/type/www/images/img/icon_achivement_goal.png?ver=4.8" alt="지원건수 아이콘">
                                                 </div>
-                                                <div class="stat-number">2,943<span>건</span></div>
+                                                <div class="stat-number" data-year="17,597<span>건</span>" data-total="19,480<span>건</span>">2,943<span>건</span></div>
                                                 <div class="stat-label">지원건수</div>
                                             </div>
                                             <div class="stat-divider"></div>
@@ -194,7 +194,7 @@
                                                 <div class="stat-icon">
                                                     <img src="/type/www/images/img/icon_achivement_money.png?ver=4.8" alt="소송비용 지원 아이콘">
                                                 </div>
-                                                <div class="stat-number">7.3<span>억원</span></div>
+                                                <div class="stat-number" data-year="7.3<span>억원</span>" data-total="51<span>억원</span>">7.3<span>억원</span></div>
                                                 <div class="stat-label">소송비용 지원</div>
                                             </div>
                                         </div>
@@ -232,7 +232,7 @@
                                                 <div class="stat-icon">
                                                     <img src="/type/www/images/img/icon_achivement_goal.png?ver=4.8" alt="지원건수 아이콘">
                                                 </div>
-                                                <div class="stat-number">17,597<span>건</span></div>
+                                                <div class="stat-number" data-year="17,597<span>건</span>" data-total="71,370<span>건</span>" >17,597<span>건</span></div>
                                                 <div class="stat-label">지원건수</div>
                                             </div>
                                             <div class="stat-divider"></div>
@@ -240,7 +240,7 @@
                                                 <div class="stat-icon">
                                                     <img src="/type/www/images/img/icon_achivement_money.png?ver=4.8" alt="소송비용 지원 아이콘">
                                                 </div>
-                                                <div class="stat-number">2.1<span>억원</span></div>
+                                                <div class="stat-number" data-year="2.1<span>억원</span>" data-total="7.7<span>억원</span>" >2.1<span>억원</span></div>
                                                 <div class="stat-label">보증료 지원</div>
                                             </div>
                                         </div>
@@ -326,6 +326,31 @@
     <script src="/type/www/js/script.js"></script> 
     공통 header 분리하기 위해 init.js 임시 추가  -->
     <script src="includes/init.js?ver=4.8"></script>
+
+    <script>
+        $('.achievement-content').each(function() {
+            var $area = $(this);
+            $area.find('.achievement-badge').on('click', function() {
+                $area.find('.achievement-badge').removeClass('active');
+                $(this).addClass('active');
+
+                // 누적 badge 클릭 시
+                if($(this).text().trim() === '누적') {
+                $area.find('.stat-number').each(function() {
+                    var totalValue = $(this).data('total');
+                    $(this).html(totalValue);
+                });
+                }
+                // 24년 badge 클릭 시
+                else {
+                $area.find('.stat-number').each(function() {
+                    var yearValue = $(this).data('year');
+                    $(this).html(yearValue);
+                });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
