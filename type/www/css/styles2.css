@@ -75,6 +75,10 @@
 }
 .top_line .orange-info {
     font-size: 2rem;
+    margin-top: 0;
+    line-height: 1.6;
+    background-position: left top 5px;
+    background-size: 20px;
 }
 .txtline {
     text-decoration: underline;
@@ -128,7 +132,7 @@
     margin-top: 10px;
     display: flex;
     flex-wrap: nowrap;
-    gap: 2rem;
+    gap: 0;
     background: #FFFAED;
     padding: 20px 30px;
     border-radius: 24px;
@@ -195,7 +199,7 @@
 .result-card-inner-wrapper .stats-sub-section {
     margin-top: 1.6rem;
     border-radius: 2.4rem;
-    padding: 1.6rem;
+    padding: 1.6rem 0;
     background: #F6FAFF;
 }
 .result-card-inner-wrapper .flex-3box {
@@ -204,8 +208,13 @@
 }
 .result-card-inner-wrapper .flex-3box .stats-sub-section {
     display: flex;
-    min-width: calc(100%/3 - 16px);
+    min-width: 288px;
     max-width: 100%;
+    justify-content: center;
+}
+.result-card-inner-wrapper .stats-sub-section .graph-wrap {
+    max-width: 280px;
+    margin: 0 auto;
 }
 .result-card-inner-wrapper .stats-sub-section .graph-wrap .graph-img {
     position: relative;
@@ -260,25 +269,26 @@
 } */
 .graph-wrap .manwon {
     position: absolute;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     top: 127px;
     right: 200px;
     height: 2.4rem;
-    padding: 2px 5px;
-    background-color: #FFFAED;
+    padding: 0;
+    background-color: transparent;
     border-radius: 20px;
     color: #ED7801;
     text-align: right;
     font-weight: 700;
+    letter-spacing: 0;
 }
 .stats-sub-section .graph-wrap .manwon {
-    background-color: #F6FAFF;
+    background-color: transparent;
     top: 133px;
     right: 193px;
 }
 .stats-sub-section .graph-wrap .freeworkout .manwon {
-    right: 199px;
-    top: 156px;
+    right: 249px;
+    top: 157px;
 }
 .stats-sub-section .graph-wrap .nofilter .manwon {
     right: 199px;
@@ -296,12 +306,6 @@
     right: 300px;
     top: 125px;
 }
-
-.graph-wrap .manwon::after {
-    content: '만원';
-    margin-left: 2px;
-}
-
 .graph-wrap .hover-box {
     position: absolute;
     width: 58%;
@@ -566,6 +570,12 @@
 }
 .info-list.g-wrap.row .g-info-box {
     flex: 0 calc(100%/3);
+}
+.info-list.g-wrap.row .g-info-box p{
+    font-size: 15px;
+}
+.info-list.g-wrap.row .g-info-box p strong {
+    font-size: 17px;
 }
 .info-item {
     display: flex;
