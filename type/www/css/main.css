@@ -2916,7 +2916,7 @@ body:has(.intro.show) {
   display: block;
   margin-top: 10px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4;
 }
 .grid-col3 .bottombox .bottombox-img {
