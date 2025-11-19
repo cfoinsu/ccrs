@@ -188,15 +188,14 @@
     gap: 40px;
   }
 }
-
-.calculator-box {
+.wrap-calculator .calculator-box {
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 32px;
 }
-.calculator-box:not(:last-child)::after {
+.wrap-calculator .calculator-box:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -208,17 +207,16 @@
   background: #E6E8EA;
 }
 @media (max-width: 1024px) {
-  .calculator-box:not(:last-child)::after {
+  .wrap-calculator .calculator-box:not(:last-child)::after {
     display: none;
   }
 }
 @media (max-width: 767px) {
-  .calculator-box {
+  .wrap-calculator .calculator-box {
     padding: 24px 16px;
   }
 }
-
-.calc-title {
+.wrap-calculator .calc-title {
   margin: 0 0 24px 0;
   font-size: 19px;
   font-weight: 700;
@@ -226,13 +224,12 @@
   line-height: 1.4;
 }
 @media (max-width: 767px) {
-  .calc-title {
+  .wrap-calculator .calc-title {
     font-size: 16px;
     margin-bottom: 20px;
   }
 }
-
-.form-group {
+.wrap-calculator .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,29 +242,26 @@
           align-items: center;
   margin-bottom: 13px;
 }
-.form-group:last-of-type {
+.wrap-calculator .form-group:last-of-type {
   margin-bottom: 24px;
 }
-
-.form-group .form-label {
+.wrap-calculator .form-group .form-label {
   display: block;
   font-size: 17px;
   font-weight: 600;
   color: #222;
 }
 @media (max-width: 767px) {
-  .form-group .form-label {
+  .wrap-calculator .form-group .form-label {
     font-size: 14px;
   }
 }
-
-.form-group .form-label span {
+.wrap-calculator .form-group .form-label span {
   font-weight: 400;
   font-size: 13px;
   color: #666;
 }
-
-.form-input {
+.wrap-calculator .form-input {
   width: 200px;
   height: 48px;
   padding: 0 16px;
@@ -280,42 +274,41 @@
   transition: all 0.2s;
   text-align: right;
 }
-.form-input:focus {
+.wrap-calculator .form-input:focus {
   outline: none;
   border-color: #2E5AAC;
   -webkit-box-shadow: 0 0 0 3px rgba(46, 90, 172, 0.1);
           box-shadow: 0 0 0 3px rgba(46, 90, 172, 0.1);
 }
-.form-input::-webkit-input-placeholder {
+.wrap-calculator .form-input::-webkit-input-placeholder {
   color: #9EA4AA;
 }
-.form-input::-moz-placeholder {
+.wrap-calculator .form-input::-moz-placeholder {
   color: #9EA4AA;
 }
-.form-input:-ms-input-placeholder {
+.wrap-calculator .form-input:-ms-input-placeholder {
   color: #9EA4AA;
 }
-.form-input::-ms-input-placeholder {
+.wrap-calculator .form-input::-ms-input-placeholder {
   color: #9EA4AA;
 }
-.form-input::placeholder {
+.wrap-calculator .form-input::placeholder {
   color: #9EA4AA;
 }
 @media (max-width: 767px) {
-  .form-input {
+  .wrap-calculator .form-input {
     height: 44px;
     font-size: 14px;
   }
 }
-
-.input-with-unit {
+.wrap-calculator .input-with-unit {
   position: relative;
 }
-.input-with-unit .form-input {
+.wrap-calculator .input-with-unit .form-input {
   padding-right: 45px;
   text-align: right;
 }
-.input-with-unit .unit {
+.wrap-calculator .input-with-unit .unit {
   position: absolute;
   right: 16px;
   top: 50%;
@@ -326,24 +319,22 @@
   pointer-events: none;
 }
 @media (max-width: 767px) {
-  .input-with-unit .unit {
+  .wrap-calculator .input-with-unit .unit {
     font-size: 14px;
   }
 }
-
-.form-hint {
+.wrap-calculator .form-hint {
   display: block;
   margin-top: 6px;
   font-size: 13px;
   color: #6D7882;
 }
 @media (max-width: 767px) {
-  .form-hint {
+  .wrap-calculator .form-hint {
     font-size: 12px;
   }
 }
-
-.result-box {
+.wrap-calculator .result-box {
   background: #FFF6DE;
   border: 1px solid #F48F01;
   border-radius: 8px;
@@ -362,33 +353,30 @@
   margin-bottom: 24px;
 }
 @media (max-width: 767px) {
-  .result-box {
+  .wrap-calculator .result-box {
     padding: 14px 16px;
   }
 }
-
-.result-label {
+.wrap-calculator .result-label {
   font-size: 15px;
   color: #2C3540;
 }
 @media (max-width: 767px) {
-  .result-label {
+  .wrap-calculator .result-label {
     font-size: 14px;
   }
 }
-
-.result-value {
+.wrap-calculator .result-value {
   font-size: 24px;
   font-weight: 700;
   color: #1A1F27;
 }
 @media (max-width: 767px) {
-  .result-value {
+  .wrap-calculator .result-value {
     font-size: 20px;
   }
 }
-
-.btn-calculate {
+.wrap-calculator .btn-calculate {
   width: 100%;
   height: 52px;
   background: #FFFFFF;
@@ -401,16 +389,16 @@
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-.btn-calculate:hover {
+.wrap-calculator .btn-calculate:hover {
   background: #2E5AAC;
   color: #FFFFFF;
 }
-.btn-calculate:active {
+.wrap-calculator .btn-calculate:active {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
 }
 @media (max-width: 767px) {
-  .btn-calculate {
+  .wrap-calculator .btn-calculate {
     height: 48px;
     font-size: 15px;
   }
@@ -432,8 +420,7 @@
     gap: 40px;
   }
 }
-
-.adjustment-category {
+.other-debt-adjustment .adjustment-category {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -443,27 +430,26 @@
           flex-direction: column;
   position: relative;
 }
-.adjustment-category.category-court {
+.other-debt-adjustment .adjustment-category.category-court {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   max-width: 592px;
 }
-.adjustment-category.category-financial {
+.other-debt-adjustment .adjustment-category.category-financial {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 304px;
           flex: 0 0 304px;
 }
 @media (max-width: 1023px) {
-  .adjustment-category.category-court, .adjustment-category.category-financial {
+  .other-debt-adjustment .adjustment-category.category-court, .other-debt-adjustment .adjustment-category.category-financial {
     max-width: 100%;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
 }
-
-.category-header {
+.other-debt-adjustment .category-header {
   background: #f3f2ff;
   border-radius: 1000px;
   height: 56px;
@@ -480,15 +466,14 @@
   position: relative;
   z-index: 2;
 }
-.category-header .category-title {
+.other-debt-adjustment .category-header .category-title {
   font-family: "Pretendard GOV", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #17191b;
   line-height: 1.5;
 }
-
-.category-connector {
+.other-debt-adjustment .category-connector {
   position: relative;
   height: 44px;
   display: -webkit-box;
@@ -502,7 +487,7 @@
           align-items: center;
   margin: -8px 0 0 0;
 }
-.category-connector .connector-dot {
+.other-debt-adjustment .category-connector .connector-dot {
   width: 15px;
   height: 15px;
   background: #2E5AAC;
@@ -510,7 +495,7 @@
   position: relative;
   z-index: 2;
 }
-.category-connector .connector-dot::after {
+.other-debt-adjustment .category-connector .connector-dot::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -522,7 +507,7 @@
   background: #1E3D82;
   border-radius: 50%;
 }
-.category-connector .connector-line {
+.other-debt-adjustment .category-connector .connector-line {
   position: absolute;
   top: 50%;
   left: 0;
@@ -531,8 +516,7 @@
   border-top: 1px dashed #2E5AAC;
   opacity: 0.3;
 }
-
-.category-cards {
+.other-debt-adjustment .category-cards {
   position: relative;
   z-index: 20;
   display: -webkit-box;
@@ -545,7 +529,7 @@
           flex: 1;
 }
 @media (max-width: 767px) {
-  .category-cards {
+  .other-debt-adjustment .category-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -553,8 +537,7 @@
     gap: 16px;
   }
 }
-
-.adjustment-card {
+.other-debt-adjustment .adjustment-card {
   position: relative;
   background: #ffffff;
   border: 1px solid #d2d6da;
@@ -573,7 +556,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.adjustment-card::before {
+.other-debt-adjustment .adjustment-card::before {
   content: "";
   position: absolute;
   top: -33px;
@@ -585,12 +568,12 @@
   background: url(/type/www/images/ic/dot-line.svg) no-repeat 0 0/cover;
 }
 @media (max-width: 767px) {
-  .adjustment-card {
+  .other-debt-adjustment .adjustment-card {
     padding: 20px;
     min-height: auto;
   }
 }
-.adjustment-card .card-title {
+.other-debt-adjustment .adjustment-card .card-title {
   font-family: "Pretendard GOV", sans-serif;
   font-size: 24px;
   font-weight: 700;
@@ -599,12 +582,12 @@
   margin: 0 0 19px 0;
 }
 @media (max-width: 767px) {
-  .adjustment-card .card-title {
+  .other-debt-adjustment .adjustment-card .card-title {
     font-size: 20px;
     margin-bottom: 16px;
   }
 }
-.adjustment-card .card-description {
+.other-debt-adjustment .adjustment-card .card-description {
   font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 400;
@@ -616,15 +599,378 @@
           flex: 1;
 }
 @media (max-width: 767px) {
-  .adjustment-card .card-description {
+  .other-debt-adjustment .adjustment-card .card-description {
     font-size: 16px;
   }
 }
-.adjustment-card .card-description strong {
+.other-debt-adjustment .adjustment-card .card-description strong {
   font-weight: 700;
 }
-
-.category-court .category-connector {
+.other-debt-adjustment .category-court .category-connector {
   position: relative;
   z-index: 20;
+}
+
+.new-leap-fund-flow {
+  position: relative;
+  max-width: 920px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+@media (max-width: 1023px) {
+  .new-leap-fund-flow {
+    padding: 0 16px;
+  }
+}
+.new-leap-fund-flow .flow-header {
+  position: relative;
+  max-width: 311px;
+  margin: 0 auto;
+}
+.new-leap-fund-flow .flow-header .header-title {
+  background: #41b9e3;
+  border-radius: 24px 24px 0 0;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.new-leap-fund-flow .flow-header .header-title .title-text {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.5;
+}
+.new-leap-fund-flow .flow-header .header-content {
+  background: #eaf9ff;
+  border-radius: 0 0 24px 24px;
+  padding: 13px 38px 13px 34px;
+}
+.new-leap-fund-flow .flow-header .header-content .content-main {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #17191b;
+  line-height: 1.5;
+  margin: 0 0 8px 0;
+}
+.new-leap-fund-flow .flow-header .header-content .content-note {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #3d9fc8;
+  line-height: 1.5;
+  margin: 0;
+}
+.new-leap-fund-flow .flow-connector {
+  position: relative;
+  height: 110px;
+  margin-bottom: 40px;
+}
+.new-leap-fund-flow .flow-connector .connector-line-vertical {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 2px;
+  height: 31px;
+  background: #4b68a4;
+}
+.new-leap-fund-flow .flow-connector .connector-branch {
+  position: absolute;
+  left: 50%;
+  top: 31px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 438px;
+  height: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #4b68a4;
+}
+@media (max-width: 1023px) {
+  .new-leap-fund-flow .flow-connector .connector-branch {
+    width: 100%;
+    max-width: 438px;
+  }
+}
+.new-leap-fund-flow .flow-connector .connector-branch .branch-line-left,
+.new-leap-fund-flow .flow-connector .connector-branch .branch-line-right {
+  width: 2px;
+  height: 80px;
+  background: #4b68a4;
+  position: relative;
+}
+.new-leap-fund-flow .flow-connector .connector-branch .branch-line-left::after,
+.new-leap-fund-flow .flow-connector .connector-branch .branch-line-right::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 9px solid #4b68a4;
+}
+.new-leap-fund-flow .flow-connector .connector-branch .branch-line-left {
+  margin-left: 0;
+}
+.new-leap-fund-flow .flow-connector .connector-branch .branch-line-right {
+  margin-right: 0;
+}
+.new-leap-fund-flow .flow-connector .branch-labels {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+@media (max-width: 1023px) {
+  .new-leap-fund-flow .flow-connector .branch-labels {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.new-leap-fund-flow .flow-connector .branch-labels .branch-label-left,
+.new-leap-fund-flow .flow-connector .branch-labels .branch-label-right {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #17191b;
+  line-height: 1.5;
+  position: relative;
+}
+@media (max-width: 1023px) {
+  .new-leap-fund-flow .flow-connector .branch-labels .branch-label-left,
+  .new-leap-fund-flow .flow-connector .branch-labels .branch-label-right {
+    text-align: center;
+  }
+}
+.new-leap-fund-flow .flow-connector .branch-labels .branch-label-left {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(88%);
+          transform: translateX(88%);
+  background: #fff;
+}
+@media (max-width: 1023px) {
+  .new-leap-fund-flow .flow-connector .branch-labels .branch-label-left {
+    padding-left: 0;
+  }
+}
+.new-leap-fund-flow .flow-connector .branch-labels .branch-label-right {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  -webkit-transform: translateX(-95%);
+          transform: translateX(-95%);
+  background: #fff;
+}
+@media (max-width: 1023px) {
+  .new-leap-fund-flow .flow-connector .branch-labels .branch-label-right {
+    padding-right: 0;
+  }
+}
+.new-leap-fund-flow .flow-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 1023px) {
+  .new-leap-fund-flow .flow-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+  }
+}
+.new-leap-fund-flow .flow-card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 362px;
+          flex: 0 0 362px;
+  max-width: 362px;
+}
+@media (max-width: 1023px) {
+  .new-leap-fund-flow .flow-card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.new-leap-fund-flow .flow-card .card-header {
+  height: 56px;
+  border-radius: 24px 24px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0;
+}
+.new-leap-fund-flow .flow-card .card-header .card-title {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.5;
+}
+.new-leap-fund-flow .flow-card .card-header.writeoff-header {
+  background: #41b9e3;
+}
+.new-leap-fund-flow .flow-card .card-header.adjustment-header {
+  background: #f48f01;
+}
+.new-leap-fund-flow .flow-card .card-body {
+  border-radius: 0 0 24px 24px;
+  padding: 20px 24px 24px;
+  min-height: 240px;
+}
+.new-leap-fund-flow .flow-card .card-body.writeoff-body {
+  background: #eaf9ff;
+}
+.new-leap-fund-flow .flow-card .card-body.adjustment-body {
+  background: #fff9f2;
+}
+.new-leap-fund-flow .flow-card .card-body .card-logo {
+  height: 30px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.new-leap-fund-flow .flow-card .card-body .card-logo img {
+  height: 100%;
+  width: auto;
+}
+.new-leap-fund-flow .flow-card .card-body .card-divider {
+  height: 1px;
+  background: #d2d6da;
+  margin: 0 0 20px 0;
+}
+.new-leap-fund-flow .flow-card .card-body .card-criteria .criteria-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.new-leap-fund-flow .flow-card .card-body .card-criteria .criteria-header .criteria-condition {
+  margin-bottom: 0;
+}
+.new-leap-fund-flow .flow-card .card-body .card-criteria .criteria-title {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #17191b;
+  line-height: 1.5;
+  margin: 0 0 8px 0;
+  position: relative;
+}
+.new-leap-fund-flow .flow-card .card-body .card-criteria .criteria-condition {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #474e55;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+.new-leap-fund-flow .flow-card .card-body .card-criteria .criteria-condition strong {
+  font-weight: 700;
+}
+.new-leap-fund-flow .flow-card .card-body .card-criteria .criteria-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.new-leap-fund-flow .flow-card .card-body .card-criteria .criteria-list li {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #17191b;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  padding-left: 8px;
+}
+.new-leap-fund-flow .flow-card .card-body .card-criteria .criteria-list li:last-child {
+  margin-bottom: 0;
+}
+
+.blue-underline {
+  position: relative;
+  display: inline-block;
+}
+.blue-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 6px;
+  background: #aceaff;
+}
+
+.orange-underline {
+  position: relative;
+  display: inline-block;
+}
+.orange-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 6px;
+  background: #ffe5ca;
 }/*# sourceMappingURL=styles3.css.map */

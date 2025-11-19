@@ -162,195 +162,196 @@
     grid-template-columns: 1fr;
     gap: 40px;
   }
-}
 
-.calculator-box {
-  position: relative;
-  flex: 1;
-  padding: 32px;
+  .calculator-box {
+    position: relative;
+    flex: 1;
+    padding: 32px;
 
-  &:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 86%;
-    background: #E6E8EA;
+    &:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 86%;
+      background: #E6E8EA;
 
-    @media (max-width: 1024px) {
-      display: none;
+      @media (max-width: 1024px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 767px) {
+      padding: 24px 16px;
     }
   }
 
-  @media (max-width: 767px) {
-    padding: 24px 16px;
-  }
-}
+  .calc-title {
+    margin: 0 0 24px 0;
+    font-size: 19px;
+    font-weight: 700;
+    color: #012063;
+    line-height: 1.4;
 
-.calc-title {
-  margin: 0 0 24px 0;
-  font-size: 19px;
-  font-weight: 700;
-  color: #012063;
-  line-height: 1.4;
-
-  @media (max-width: 767px) {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-}
-
-.form-group {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 13px;
-
-  &:last-of-type {
-    margin-bottom: 24px;
-  }
-}
-
-.form-group .form-label {
-  display: block;
-  font-size: 17px;
-  font-weight: 600;
-  color: #222;
-
-  @media (max-width: 767px) {
-    font-size: 14px;
-  }
-}
-.form-group .form-label span {
-  font-weight: 400;
-  font-size: 13px;
-  color: #666;
-}
-
-.form-input {
-  width: 200px;
-  height: 48px;
-  padding: 0 16px;
-  background: #FFFFFF;
-  border: 1px solid #D1D6DC;
-  border-radius: 8px;
-  font-size: 15px;
-  color: #1A1F27;
-  transition: all 0.2s;
-  text-align: right;
-
-  &:focus {
-    outline: none;
-    border-color: #2E5AAC;
-    box-shadow: 0 0 0 3px rgba(46, 90, 172, 0.1);
+    @media (max-width: 767px) {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
   }
 
-  &::placeholder {
-    color: #9EA4AA;
-  }
+  .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 13px;
 
-  @media (max-width: 767px) {
-    height: 44px;
-    font-size: 14px;
-  }
-}
+    &:last-of-type {
+      margin-bottom: 24px;
+    }
 
-.input-with-unit {
-  position: relative;
+    .form-label {
+      display: block;
+      font-size: 17px;
+      font-weight: 600;
+      color: #222;
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 13px;
+        color: #666;
+      }
+    }
+  }
 
   .form-input {
-    padding-right: 45px;
+    width: 200px;
+    height: 48px;
+    padding: 0 16px;
+    background: #FFFFFF;
+    border: 1px solid #D1D6DC;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #1A1F27;
+    transition: all 0.2s;
     text-align: right;
+
+    &:focus {
+      outline: none;
+      border-color: #2E5AAC;
+      box-shadow: 0 0 0 3px rgba(46, 90, 172, 0.1);
+    }
+
+    &::placeholder {
+      color: #9EA4AA;
+    }
+
+    @media (max-width: 767px) {
+      height: 44px;
+      font-size: 14px;
+    }
   }
 
-  .unit {
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 15px;
+  .input-with-unit {
+    position: relative;
+
+    .form-input {
+      padding-right: 45px;
+      text-align: right;
+    }
+
+    .unit {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 15px;
+      color: #6D7882;
+      pointer-events: none;
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .form-hint {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
     color: #6D7882;
-    pointer-events: none;
+
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+
+  .result-box {
+    background: #FFF6DE;
+    border: 1px solid #F48F01;
+    border-radius: 8px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    @media (max-width: 767px) {
+      padding: 14px 16px;
+    }
+  }
+
+  .result-label {
+    font-size: 15px;
+    color: #2C3540;
 
     @media (max-width: 767px) {
       font-size: 14px;
     }
   }
-}
 
-.form-hint {
-  display: block;
-  margin-top: 6px;
-  font-size: 13px;
-  color: #6D7882;
+  .result-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1A1F27;
 
-  @media (max-width: 767px) {
-    font-size: 12px;
-  }
-}
-
-.result-box {
-  background: #FFF6DE;
-  border: 1px solid #F48F01;
-  border-radius: 8px;
-  padding: 16px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-
-  @media (max-width: 767px) {
-    padding: 14px 16px;
-  }
-}
-
-.result-label {
-  font-size: 15px;
-  color: #2C3540;
-
-  @media (max-width: 767px) {
-    font-size: 14px;
-  }
-}
-
-.result-value {
-  font-size: 24px;
-  font-weight: 700;
-  color: #1A1F27;
-
-  @media (max-width: 767px) {
-    font-size: 20px;
-  }
-}
-
-.btn-calculate {
-  width: 100%;
-  height: 52px;
-  background: #FFFFFF;
-  border: 1px solid #2E5AAC;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #2E5AAC;
-  cursor: pointer;
-  transition: all 0.2s;
-
-  &:hover {
-    background: #2E5AAC;
-    color: #FFFFFF;
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
   }
 
-  &:active {
-    transform: scale(0.98);
-  }
+  .btn-calculate {
+    width: 100%;
+    height: 52px;
+    background: #FFFFFF;
+    border: 1px solid #2E5AAC;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2E5AAC;
+    cursor: pointer;
+    transition: all 0.2s;
 
-  @media (max-width: 767px) {
-    height: 48px;
-    font-size: 15px;
+    &:hover {
+      background: #2E5AAC;
+      color: #FFFFFF;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+
+    @media (max-width: 767px) {
+      height: 48px;
+      font-size: 15px;
+    }
   }
 }
 
@@ -364,9 +365,8 @@
     flex-direction: column;
     gap: 40px;
   }
-}
 
-.adjustment-category {
+  .adjustment-category {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -528,4 +528,342 @@
   position: relative;
   z-index: 20;
 }
+}
 
+// 새도약기금 플로우차트
+.new-leap-fund-flow {
+  position: relative;
+  max-width: 920px;
+  margin: 40px auto;
+  padding: 0 20px;
+
+  @media (max-width: 1023px) {
+    padding: 0 16px;
+  }
+
+  .flow-header {
+    position: relative;
+    max-width: 311px;
+    margin: 0 auto;
+
+    .header-title {
+      background: #41b9e3;
+      border-radius: 24px 24px 0 0;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .title-text {
+        font-family: 'Pretendard GOV', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #ffffff;
+        line-height: 1.5;
+      }
+    }
+
+    .header-content {
+      background: #eaf9ff;
+      border-radius: 0 0 24px 24px;
+      padding: 13px 38px 13px 34px;
+
+      .content-main {
+        font-family: 'Pretendard GOV', sans-serif;
+        font-size: 19px;
+        font-weight: 700;
+        color: #17191b;
+        line-height: 1.5;
+        margin: 0 0 8px 0;
+      }
+
+      .content-note {
+        font-family: 'Pretendard GOV', sans-serif;
+        font-size: 17px;
+        font-weight: 400;
+        color: #3d9fc8;
+        line-height: 1.5;
+        margin: 0;
+      }
+    }
+  }
+
+  .flow-connector {
+    position: relative;
+    height: 110px;
+    margin-bottom: 40px;
+
+    .connector-line-vertical {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 31px;
+      background: #4b68a4;
+    }
+
+    .connector-branch {
+      position: absolute;
+      left: 50%;
+      top: 31px;
+      transform: translateX(-50%);
+      width: 438px;
+      height: 2px;
+      display: flex;
+      justify-content: space-between;
+      background: #4b68a4;
+
+      @media (max-width: 1023px) {
+        width: 100%;
+        max-width: 438px;
+      }
+
+      .branch-line-left,
+      .branch-line-right {
+        width: 2px;
+        height: 80px;
+        background: #4b68a4;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 0;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          border-top: 9px solid #4b68a4;
+        }
+      }
+
+      .branch-line-left {
+        margin-left: 0;
+      }
+
+      .branch-line-right {
+        margin-right: 0;
+      }
+    }
+
+    .branch-labels {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 57px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+
+      @media (max-width: 1023px) {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .branch-label-left,
+      .branch-label-right {
+        font-family: 'Pretendard GOV', sans-serif;
+        font-size: 19px;
+        font-weight: 400;
+        color: #17191b;
+        line-height: 1.5;
+        position: relative;
+
+        @media (max-width: 1023px) {
+          text-align: center;
+        }
+      }
+
+      .branch-label-left {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(88%);
+        background: #fff;
+
+        @media (max-width: 1023px) {
+          padding-left: 0;
+        }
+      }
+
+      .branch-label-right {
+        position: absolute;
+        top: 0;
+        right: 50%;
+        transform: translateX(-95%);
+        background: #fff;
+
+        @media (max-width: 1023px) {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .flow-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    @media (max-width: 1023px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  .flow-card {
+    flex: 0 0 362px;
+    max-width: 362px;
+
+    @media (max-width: 1023px) {
+      flex: 1;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .card-header {
+      height: 56px;
+      border-radius: 24px 24px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+
+      .card-title {
+        font-family: 'Pretendard GOV', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #ffffff;
+        line-height: 1.5;
+      }
+
+      &.writeoff-header {
+        background: #41b9e3;
+      }
+
+      &.adjustment-header {
+        background: #f48f01;
+      }
+    }
+
+    .card-body {
+      border-radius: 0 0 24px 24px;
+      padding: 20px 24px 24px;
+      min-height: 240px;
+
+      &.writeoff-body {
+        background: #eaf9ff;
+      }
+
+      &.adjustment-body {
+        background: #fff9f2;
+      }
+
+      .card-logo {
+        height: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+
+      .card-divider {
+        height: 1px;
+        background: #d2d6da;
+        margin: 0 0 20px 0;
+      }
+
+      .card-criteria {
+        .criteria-header {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .criteria-condition {
+            margin-bottom: 0;
+          }
+        }
+        .criteria-title {
+          font-family: 'Pretendard GOV', sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+          color: #17191b;
+          line-height: 1.5;
+          margin: 0 0 8px 0;
+          position: relative;
+        }
+
+        .criteria-condition {
+          font-family: 'Pretendard GOV', sans-serif;
+          font-size: 15px;
+          font-weight: 400;
+          color: #474e55;
+          line-height: 1.5;
+          margin: 0 0 16px 0;
+
+          strong {
+            font-weight: 700;
+          }
+        }
+
+        .criteria-list {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+
+          li {
+            font-family: 'Pretendard GOV', sans-serif;
+            font-size: 19px;
+            font-weight: 400;
+            color: #17191b;
+            line-height: 1.5;
+            margin-bottom: 8px;
+            padding-left: 8px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.blue-underline {
+  position: relative;
+  display: inline-block;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 6px;
+    background: #aceaff;
+  }
+}
+.orange-underline {
+  position: relative;
+  display: inline-block;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 6px;
+    background: #ffe5ca;
+  }
+}
