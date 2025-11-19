@@ -217,6 +217,7 @@
 .result-card-inner-wrapper .stats-sub-section .graph-wrap {
     max-width: 280px;
     margin: 0 auto;
+    min-height: 409px;
 }
 .result-card-inner-wrapper .stats-sub-section .graph-wrap .top_line {
     margin-top: 10px;
