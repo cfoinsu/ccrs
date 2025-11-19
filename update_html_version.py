@@ -36,7 +36,7 @@ def update_html_version(html_file_path):
     # 4.7, 날짜 형식 등 모든 버전을 오늘 날짜로 교체
     old_patterns = [
         'bundle_en.css?ver=4.7',
-        'bundle_en.css?ver=5.0',
+        'bundle_en.css?ver=5.1',
     ]
     
     changed_by_replace = False
