@@ -6241,6 +6241,10 @@ table .krds-info-list>li {
     gap: 2px;
     flex-direction: column;
 }
+.appdown+.item-share.active .g-qr-box .qr-box img {
+    width: 72px;
+    height: 72px;
+}
 
 .sns-type {
     display: flex;
