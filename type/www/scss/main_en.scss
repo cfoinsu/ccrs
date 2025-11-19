@@ -18,19 +18,19 @@
     overflow: hidden;
     padding: 150px 0 150px;
 
-    @include max1280 {
+    @include desktopLess {
         padding: 120px 0 120px;
     }
 
-    @include max1024 {
+    @include tabletLess {
         padding: 100px 0 100px;
     }
 
-    @include max768 {
+    @include mobile {
         padding: 80px 0 80px;
     }
 
-    @include max320 {
+    @include mobile {
         padding: 60px 0 60px;
     }
 
@@ -42,22 +42,22 @@
         text-align: center;
         font-family: 'Poppins', sans-serif;
 
-        @include max1280 {
+        @include desktopLess {
             font-size: 64px;
             margin-bottom: 40px;
         }
 
-        @include max1024 {
+        @include tabletLess {
             font-size: 48px;
             margin-bottom: 35px;
         }
 
-        @include max768 {
+        @include mobile {
             font-size: 36px;
             margin-bottom: 30px;
         }
 
-        @include max320 {
+        @include mobile {
             font-size: 28px;
             margin-bottom: 24px;
         }
@@ -142,11 +142,11 @@
     flex-direction: column;
     align-items: center;
 
-    @include max1024 {
+    @include tabletLess {
         width: 60px;
     }
 
-    @include max768 {
+    @include mobile {
         display: none;
     }
 
@@ -297,19 +297,19 @@ opacity: 0.8;
             text-transform: uppercase;
             letter-spacing: -0.02em;
 
-            @include max1280 {
+            @include desktopLess {
                 font-size: 10rem;
             }
 
-            @include max1024 {
+            @include tabletLess {
                 font-size: 7rem;
             }
 
-            @include max768 {
+            @include mobile {
                 font-size: 4rem;
             }
 
-            @include max320 {
+            @include mobile {
                 font-size: 3rem;
             }
 
@@ -356,24 +356,24 @@ opacity: 0.8;
             white-space: nowrap;
             transform: translate(170px, 30px);
 
-            @include max1280 {
+            @include desktopLess {
                 font-size: 2rem;
                 padding-left: 80px;
             }
 
-            @include max1024 {
+            @include tabletLess {
                 font-size: 1.6rem;
                 padding-left: 60px;
                 white-space: normal;
             }
 
-            @include max768 {
+            @include mobile {
                 font-size: 1.4rem;
                 padding-left: 40px;
                 margin-top: 16px;
             }
 
-            @include max320 {
+            @include mobile {
                 font-size: 1.2rem;
                 padding-left: 30px;
                 margin-top: 12px;
@@ -507,13 +507,13 @@ opacity: 0.8;
     .swiper-button-prev {
         left: 40px;
 
-        @include max1024 {
+        @include tabletLess {
             left: 20px;
             width: 40px;
             height: 40px;
         }
 
-        @include max768 {
+        @include mobile {
             left: 10px;
             width: 35px;
             height: 35px;
@@ -523,13 +523,13 @@ opacity: 0.8;
     .swiper-button-next {
         right: 40px;
 
-        @include max1024 {
+        @include tabletLess {
             right: 20px;
             width: 40px;
             height: 40px;
         }
 
-        @include max768 {
+        @include mobile {
             right: 10px;
             width: 35px;
             height: 35px;
@@ -599,16 +599,16 @@ opacity: 0.8;
         .accordion-body {
             padding-left: 230px;
 
-            @include max1280 {
+            @include desktopLess {
                 padding-left: 180px;
             }
 
-            @include max1024 {
+            @include tabletLess {
                 padding-left: 0;
                 flex-direction: column;
             }
 
-            @include max768 {
+            @include mobile {
                 gap: 24px;
             }
         }
@@ -639,22 +639,22 @@ opacity: 0.8;
         text-align: left;
         transition: all 0.2s ease;
 
-        @include max1280 {
+        @include desktopLess {
             padding: 18px 28px;
             gap: 20px;
         }
 
-        @include max1024 {
+        @include tabletLess {
             padding: 16px 24px;
             gap: 16px;
         }
 
-        @include max768 {
+        @include mobile {
             padding: 14px 20px;
             gap: 12px;
         }
 
-        @include max320 {
+        @include mobile {
             padding: 12px 16px;
             gap: 10px;
         }
@@ -671,19 +671,12 @@ opacity: 0.8;
             color: #1B2025;
             min-width: 30px;
 
-            @include max1024 {
+            @include tabletLess {
                 width: 150px;
-                font-size: 14px;
             }
 
-            @include max768 {
+            @include mobile {
                 width: 80px;
-                font-size: 12px;
-            }
-
-            @include max320 {
-                width: 60px;
-                font-size: 11px;
             }
         }
 
@@ -694,19 +687,19 @@ opacity: 0.8;
             font-family: 'Poppins', sans-serif;
             color: #000;
 
-            @include max1280 {
+            @include desktopLess {
                 font-size: 36px;
             }
 
-            @include max1024 {
+            @include tabletLess {
                 font-size: 28px;
             }
 
-            @include max768 {
+            @include mobile {
                 font-size: 22px;
             }
 
-            @include max320 {
+            @include mobile {
                 font-size: 18px;
             }
         }
@@ -786,13 +779,13 @@ opacity: 0.8;
         align-items: center;
         justify-content: center;
 
-        @include max1280 {
+        @include desktopLess {
             width: 140px;
             height: 140px;
             right: 80px;
         }
 
-        @include max1024 {
+        @include tabletLess {
             position: relative;
             top: auto;
             right: auto;
@@ -802,12 +795,12 @@ opacity: 0.8;
             margin-top: 20px;
         }
 
-        @include max768 {
+        @include mobile {
             width: 100px;
             height: 100px;
         }
 
-        @include max320 {
+        @include mobile {
             width: 80px;
             height: 80px;
         }
@@ -903,10 +896,22 @@ opacity: 0.8;
 
 #section3 {
     position: relative;
-    background-attachment: fixed;
-    background-size: cover;
-    background-image: url('/type/www/images/en/en_main_work_bg.png');
-    background-position: 0 50%;
+    // background-attachment: fixed;
+    // background-size: cover;
+    // background-image: url('/type/www/images/en/en_main_work_bg.png');
+    // background-position: 0 50%;
+
+    // Background image as img tag
+    .section-bg-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: -1;
+    }
 
     .contents-wrap {
         width: 67.6vw;
@@ -1186,48 +1191,70 @@ opacity: 0.8;
 
     /* 5개 카드 래퍼 */
     .work-cards-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    padding: 30px;
-    border-radius: 352px;
-    margin-top: 0;
-    position: relative;
-    z-index: 2;
-    border: 1px solid rgba(255,255,255,0.7);
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 352px;
+        margin-top: 0;
+        position: relative;
+        z-index: 2;
+        border: 1px solid rgba(255,255,255,0.7);
+        @include desktopLess {
+            flex-wrap: wrap;
+            border-radius: 180px;
+            gap: 0;
+        }
+        @include tabletLess {
+        }
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0;
+        }
     }
 
-    /* 개별 카드 */
-    .work-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    flex: 0 0 auto;
-    margin: 0 -20px;
-    }
 
     /* 카드 원 */
     .work-card-circle {
-    width: 290px;
-    height: 290px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background: rgba(255, 255, 255, 0.06);
-    transition: all 0.3s ease;
-    position: relative;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        flex: 1;
+        margin: 0 -20px;
+        min-width: 0;
+        width: 100%;
+        max-width: 300px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background: rgba(255, 255, 255, 0.06);
+        transition: all 0.3s ease;
+        position: relative;
+        &:hover {
+            transform: scale(1.05);
+            border-color: rgba(255, 255, 255, 0.6);
+            background: rgba(255, 255, 255, 0.09);
+        }
 
-    .work-card-circle:hover {
-    transform: scale(1.05);
-    border-color: rgba(255, 255, 255, 0.6);
-    background: rgba(255, 255, 255, 0.09);
+        @include desktopLess {
+            flex: 0 0 calc(50% - 20px);
+            max-width: 280px;
+            width: calc(50% - 20px);
+        }
+
+        @include mobile {
+            flex: none;
+            width: 100%;
+            margin: -20px;
+        }
     }
 
     /* 아이콘 플레이스홀더 */
@@ -1265,127 +1292,41 @@ opacity: 0.8;
     }
 
     /* Responsive */
-    @include max1280 {
-        .work-cards-wrapper {
-            gap: 30px;
-            padding: 24px;
+    .connector-line {
+        @include tabletLess {
+            display: none;
         }
+    }
 
-        .work-card-circle {
-            width: 180px;
-            height: 180px;
-        }
-
-        .work-card-text {
-            font-size: 14px;
-        }
-
-        .ccrs-circle {
+    .ccrs-circle {
+        @include desktopLess {
             width: 220px;
             height: 220px;
         }
 
-        .ccrs-circle span {
-            font-size: 48px;
-        }
-    }
-
-    @include max1024 {
-        .connector-line {
-            display: none;
-        }
-
-        .work-cards-wrapper {
-            flex-wrap: wrap;
-            gap: 40px;
-            justify-content: center;
-            border-radius: 200px;
-            padding: 20px;
-        }
-
-        .work-card {
-            flex: 0 0 calc(50% - 20px);
-            max-width: 300px;
-        }
-
-        .ccrs-circle {
+        @include tabletLess {
             width: 180px;
             height: 180px;
         }
 
-        .ccrs-circle span {
-            font-size: 42px;
-        }
-    }
-
-    @include max768 {
-        .ccrs-circle {
+        @include mobile {
             width: 140px;
             height: 140px;
             margin-bottom: 40px;
         }
 
-        .ccrs-circle span {
-            font-size: 36px;
-        }
+        span {
+            @include desktopLess {
+                font-size: 48px;
+            }
 
-        .work-cards-wrapper {
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-            border-radius: 100px;
-            padding: 16px;
-        }
+            @include tabletLess {
+                font-size: 42px;
+            }
 
-        .work-card {
-            flex: none;
-            width: 100%;
-            max-width: 250px;
-        }
-
-        .work-card-circle {
-            width: 160px;
-            height: 160px;
-        }
-
-        .icon-simple {
-            width: 50px;
-            height: 50px;
-        }
-
-        .work-card-text {
-            font-size: 13px;
-        }
-    }
-
-    @include max320 {
-        .ccrs-circle {
-            width: 100px;
-            height: 100px;
-            margin-bottom: 30px;
-        }
-
-        .ccrs-circle span {
-            font-size: 28px;
-        }
-
-        .work-cards-wrapper {
-            gap: 20px;
-            padding: 12px;
-        }
-
-        .work-card-circle {
-            width: 120px;
-            height: 120px;
-        }
-
-        .icon-simple {
-            width: 40px;
-            height: 40px;
-        }
-
-        .work-card-text {
-            font-size: 11px;
+            @include mobile {
+                font-size: 36px;
+            }
         }
     }
 }
@@ -1405,14 +1346,13 @@ opacity: 0.8;
         transform: translateX(-122%);
         color: #fff;
 
-        @include max1280 {
-            top: 200px;
-            transform: translateX(-50%);
-            position: relative;
+        @include desktopLess {
+            position: static;
             margin-bottom: 40px;
+            transform: none;
         }
 
-        @include max768 {
+        @include mobile {
             top: auto;
             margin-bottom: 30px;
         }
@@ -1424,13 +1364,9 @@ opacity: 0.8;
         align-items: center;
         gap: 13px;
 
-        @include max1280 {
+        @include tabletLess {
             flex-direction: column;
             gap: 24px;
-        }
-
-        @include max768 {
-            gap: 20px;
         }
 
         .contact-item {
@@ -1442,17 +1378,17 @@ opacity: 0.8;
             flex-direction: column;
             gap: 28px;
 
-            @include max1280 {
+            @include desktopLess {
                 width: 100%;
                 padding: 32px 32px 10px;
             }
 
-            @include max768 {
+            @include mobile {
                 padding: 24px 24px 10px;
                 gap: 20px;
             }
 
-            @include max320 {
+            @include mobile {
                 padding: 20px 20px 10px;
                 gap: 16px;
             }
@@ -1461,13 +1397,19 @@ opacity: 0.8;
         .contact-map {
             width: 572px;
 
-            @include max1280 {
+            @include desktopLess {
                 width: 100%;
             }
 
             img {
+                display: block;
                 width: 100%;
                 height: auto;
+                margin: 0 auto;
+
+                @include mobile {
+                    max-width: 320px;
+                }
             }
         }
     }
@@ -1514,15 +1456,15 @@ opacity: 0.8;
         color: #000;
         margin: 0;
 
-        @include max1024 {
+        @include tabletLess {
             font-size: 20px;
         }
 
-        @include max768 {
+        @include mobile {
             font-size: 18px;
         }
 
-        @include max320 {
+        @include mobile {
             font-size: 16px;
         }
     }
@@ -1532,16 +1474,8 @@ opacity: 0.8;
         font-size: 19px;
         margin: 0;
 
-        @include max1024 {
+        @include tabletLess {
             font-size: 17px;
-        }
-
-        @include max768 {
-            font-size: 15px;
-        }
-
-        @include max320 {
-            font-size: 14px;
         }
 
         &:hover {
@@ -1555,7 +1489,7 @@ opacity: 0.8;
         gap: 8px;
         margin-top: 8px;
 
-        @include max768 {
+        @include mobile {
             flex-direction: column;
             gap: 12px;
         }
@@ -1575,12 +1509,12 @@ opacity: 0.8;
         border: none;
         cursor: pointer;
 
-        @include max768 {
+        @include mobile {
             padding: 12px 20px;
             border-radius: 24px;
         }
 
-        @include max320 {
+        @include mobile {
             padding: 10px 16px;
             border-radius: 20px;
         }
@@ -1591,14 +1525,6 @@ opacity: 0.8;
             font-size: 16px;
             line-height: normal;
             color: #fff;
-
-            @include max768 {
-                font-size: 14px;
-            }
-
-            @include max320 {
-                font-size: 12px;
-            }
         }
 
         .btn-icon {
@@ -1680,14 +1606,15 @@ opacity: 0.8;
 // 10. Responsive Media Queries
 // ==========================================
 
-@include max1280 {
+@include desktopLess {
     .btn-main-02 {
         margin-top: 0;
     }
 }
 
-@include max768 {
+@include mobile {
     .popslider-Wrap {
         display: none;
     }
 }
+

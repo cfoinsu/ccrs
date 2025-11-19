@@ -612,6 +612,11 @@
 .en .page-header {
   margin-bottom: 70px;
 }
+@media (max-width: 1023px) {
+  .en .page-header {
+    margin-bottom: 40px;
+  }
+}
 
 .en #header.header-en {
   display: -webkit-box;
@@ -1489,6 +1494,7 @@
   gap: 8px;
   line-height: 1.5;
   color: #ffffff;
+  margin-bottom: 10px;
 }
 .footer-en .footer-info-label {
   font-family: "Pretendard GOV", sans-serif;
@@ -1506,36 +1512,17 @@
     width: 75px;
   }
 }
-@media (max-width: 767px) {
-  .footer-en .footer-info-label {
-    font-size: 15px;
-    width: 65px;
-  }
-}
 .footer-en .footer-info-text {
-  font-family: "Pretendard GOV", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 1.5;
-  color: #ffffff;
-}
-@media (max-width: 1023px) {
-  .footer-en .footer-info-text {
-    font-size: 15px;
-    line-height: 1.6;
-  }
-}
-@media (max-width: 767px) {
-  .footer-en .footer-info-text {
-    font-size: 14px;
-    line-height: 1.6;
-    word-break: break-word;
-  }
+  color: #fff;
 }
 .footer-en .footer-copyright {
   text-align: left;
   white-space: nowrap;
   margin-top: 1rem;
+  opacity: 0.8;
 }
 @media (max-width: 1023px) {
   .footer-en .footer-copyright {
@@ -1555,17 +1542,6 @@
   line-height: 1.5;
   color: #ffffff;
   margin: 0;
-}
-@media (max-width: 1023px) {
-  .footer-en .footer-copyright p {
-    font-size: 15px;
-  }
-}
-@media (max-width: 767px) {
-  .footer-en .footer-copyright p {
-    font-size: 13px;
-    line-height: 1.6;
-  }
 }
 .footer-en .footer-top-btn {
   position: absolute;
