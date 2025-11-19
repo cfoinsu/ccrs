@@ -414,4 +414,217 @@
     height: 48px;
     font-size: 15px;
   }
+}
+
+.other-debt-adjustment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+@media (max-width: 1023px) {
+  .other-debt-adjustment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.adjustment-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+.adjustment-category.category-court {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 592px;
+}
+.adjustment-category.category-financial {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 304px;
+          flex: 0 0 304px;
+}
+@media (max-width: 1023px) {
+  .adjustment-category.category-court, .adjustment-category.category-financial {
+    max-width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.category-header {
+  background: #f3f2ff;
+  border-radius: 1000px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+.category-header .category-title {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #17191b;
+  line-height: 1.5;
+}
+
+.category-connector {
+  position: relative;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -8px 0 0 0;
+}
+.category-connector .connector-dot {
+  width: 15px;
+  height: 15px;
+  background: #2E5AAC;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+.category-connector .connector-dot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 7px;
+  height: 7px;
+  background: #1E3D82;
+  border-radius: 50%;
+}
+.category-connector .connector-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1px dashed #2E5AAC;
+  opacity: 0.3;
+}
+
+.category-cards {
+  position: relative;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  margin-top: 24px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+@media (max-width: 767px) {
+  .category-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.adjustment-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #d2d6da;
+  border-radius: 24px;
+  padding: 24px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 170px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.adjustment-card::before {
+  content: "";
+  position: absolute;
+  top: -33px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 15px;
+  height: 34px;
+  background: url(/type/www/images/ic/dot-line.svg) no-repeat 0 0/cover;
+}
+@media (max-width: 767px) {
+  .adjustment-card {
+    padding: 20px;
+    min-height: auto;
+  }
+}
+.adjustment-card .card-title {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #17191b;
+  line-height: 1.5;
+  margin: 0 0 19px 0;
+}
+@media (max-width: 767px) {
+  .adjustment-card .card-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+.adjustment-card .card-description {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  color: #17191b;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+@media (max-width: 767px) {
+  .adjustment-card .card-description {
+    font-size: 16px;
+  }
+}
+.adjustment-card .card-description strong {
+  font-weight: 700;
+}
+
+.category-court .category-connector {
+  position: relative;
+  z-index: 20;
 }/*# sourceMappingURL=styles3.css.map */
