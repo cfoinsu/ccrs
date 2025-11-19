@@ -2520,6 +2520,11 @@ body aside {
     display: block;
     font-size: 21px;
 }
+.quick-item .quick-showbox .showbox-item p.link-title span.board-ph {
+    display: block;
+    font-size: 13px;
+    color: #17191b;
+}
 
 .quick-item.book.on span {
     color: #ED7801;
@@ -4491,11 +4496,20 @@ table.comparison-table td:first-child {
     font-size: var(--krds-pc-font-size-heading-medium);
     font-weight: 700;
     line-height: 150%;
+    margin-bottom: 0;
+}
+.g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc.largetext.primary span.board-ph {
+    display: block;
+    color: #17191b;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 150%;
 }
 
 .g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc {
     display: flex;
     align-items: center;
+    height: auto;
 }
 
 .g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc img {
