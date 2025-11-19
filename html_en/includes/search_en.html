@@ -5,7 +5,9 @@
         <label for="searchText" class="hide">Search</label>
         <input type="text" name="commonSearchText" id="searchText" placeholder="Enter search term"
             onfocus="this.placeholder=''" onblur="this.placeholder='Enter search term'">
-        <a class="btn-search-header" onclick="javascript:fn_commonSearch(1);"></a>
+        <a class="btn-search-header" onclick="javascript:fn_commonSearch(1);" aria-label="Search">
+            <span class="sr-only">Search</span>
+        </a>
     </div>
     <div class="result-title">
         <h5>Search Results</h5><span id="common_total_cnt" class="sp">0</span>

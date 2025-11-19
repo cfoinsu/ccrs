@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -89,10 +89,10 @@
                                 <div class="page-actions">
                                     
 
-                                    <button class="action-btn" aria-label="인쇄">
+                                    <button class="action-btn" aria-label="Print">
                                         <i class="fas fa-print"></i>
                                     </button>
-                                    <button class="action-btn" aria-label="공유">
+                                    <button class="action-btn" aria-label="Share">
                                         <i class="fas fa-share-alt"></i>
                                     </button>
                                 </div>
@@ -428,6 +428,21 @@
 
             // 페이지 로드 시 기본 콘텐츠 표시
             updateTimelineContent('2023-2021');
+
+            // 탭 스크롤 가능 여부 감지 및 인디케이터 표시
+            function checkTabScrollable() {
+                const $tabWrap = $('.year-tab-wrap');
+                if ($tabWrap.length) {
+                    const isScrollable = $tabWrap[0].scrollWidth > $tabWrap[0].clientWidth;
+                    $tabWrap.toggleClass('scrollable', isScrollable);
+                }
+            }
+
+            // 초기 체크
+            checkTabScrollable();
+
+            // 윈도우 리사이즈 시 재체크
+            $(window).on('resize', checkTabScrollable);
         });
     </script>
 </body>
