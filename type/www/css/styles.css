@@ -172,7 +172,7 @@ body {
 .content-layout {
     display: flex;
     /* grid-template-columns: 280px 1fr; */
-    gap: 80px;
+    gap: 40px;
     margin-top: 40px;
     justify-content: space-between;
 }
