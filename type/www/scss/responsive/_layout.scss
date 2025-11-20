@@ -314,10 +314,6 @@ $hdH-t: 53px;
     display: none;
   }
 
-  #quickmenu-container {
-    display: none;
-  }
-
   // Institution Links (관련기관 캐러셀)
   .section-institution {
     .institution-links.container {
@@ -463,6 +459,34 @@ $hdH-t: 53px;
     margin-top: 30px;
     .breadcrumb {
       display: none;
+    }
+  }
+}
+
+// Quick Menu
+#quickmenu-container {
+  .quick-menu {
+    display: block;
+  }
+  .quick-mobile-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #FF7614;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    z-index: 1000;
+    i {
+      font-size: 18px;
     }
   }
 }

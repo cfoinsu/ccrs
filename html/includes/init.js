@@ -105,4 +105,74 @@ $(function () {
 
   // QuickMenu 로드
   $('#quickmenu-container').load('includes/quickmenu.html');
+
+  // Mobile QuickMenu 이벤트 초기화
+  function initMobileQuickMenu() {
+    const toggleBtn = document.querySelector('.mobile-quickmenu-toggle');
+    const closeBtn = document.querySelector('.mobile-quickmenu-close');
+    const panel = document.querySelector('.mobile-quickmenu-panel');
+    const quickMenu = document.querySelector('.mobile-quickmenu');
+    const bookItem = document.querySelector('.mobile-quick-item-book');
+
+    if (toggleBtn && panel && quickMenu) {
+      // 토글 버튼 클릭
+      toggleBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        quickMenu.classList.toggle('active');
+        toggleBtn.classList.toggle('active');
+        panel.classList.toggle('active');
+        document.body.style.overflow = quickMenu.classList.contains('active') ? 'hidden' : '';
+      });
+
+      // 닫기 버튼 클릭
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          quickMenu.classList.remove('active');
+          toggleBtn.classList.remove('active');
+          panel.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+
+      // 오버레이 클릭 시 닫기
+      const overlay = document.querySelector('.mobile-quickmenu-overlay');
+      if (overlay) {
+        overlay.addEventListener('click', function(e) {
+          e.stopPropagation();
+          quickMenu.classList.remove('active');
+          toggleBtn.classList.remove('active');
+          panel.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+
+      // 패널 내부 클릭 시 이벤트 전파 방지
+      if (panel) {
+        panel.addEventListener('click', function(e) {
+          e.stopPropagation();
+        });
+      }
+
+      // 상담 예약신청 메뉴 토글
+      if (bookItem) {
+        bookItem.addEventListener('click', function(e) {
+          if (window.innerWidth <= 1023) {
+            e.preventDefault();
+            e.stopPropagation();
+            const showbox = this.querySelector('.mobile-quick-showbox');
+            if (showbox) {
+              showbox.classList.toggle('active');
+              this.classList.toggle('active');
+            }
+          }
+        });
+      }
+    }
+  }
+
+  // 모바일 퀵메뉴 초기화 (DOM 로드 후)
+  setTimeout(function() {
+    initMobileQuickMenu();
+  }, 500);
 });
