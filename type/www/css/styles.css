@@ -3138,6 +3138,7 @@ body aside {
     position: fixed;
     right: 0;
     top: 50%;
+    width: 82px;
     transform: translateY(-50%);
     z-index: 100;
     display: flex;
@@ -3279,6 +3280,19 @@ body aside {
 
     .application-methods {
         grid-template-columns: 1fr;
+    }
+
+    .quick-menu {
+        width: auto;
+        margin-bottom: 3px;
+        padding: 10px 0;
+        transform: translateY(20px);
+        visibility: hidden;
+        opacity: 0;
+        max-height: 80vh;
+        overflow-y: auto;
+        transition: transform 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
+        z-index: 1001;
     }
 
     .quick-menu.active {
