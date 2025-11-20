@@ -8543,10 +8543,12 @@ a.customer-service-card {
 }
 
 .grouptree-bg-line.en {
-    background: url(../images/en/GroupTree_bgline.png) left top no-repeat;
+    background: url(../images/en/GroupTree_bgline.png) right top no-repeat;
     background-size: contain;
-    top: 516px;
-    left: 68px;
+    top: 522px;
+    left: 62px;
+    width: 915px;
+    height: 380px;
 }
 
 /* 조직도 인재경영부, 사회공헌팀 */
@@ -8557,9 +8559,18 @@ a.customer-service-card {
         position: absolute;
         top: 225px;
         right: 250px;
-        width: 160px;
+            width: 160px;
+        &.en {
+            top: 238px;
+            right: 211px;
+            width: 183px;
+
+        }
         &.second {
             top: 316px;
+            &.en {
+                top: 334px;
+            }
         }
         
         &:hover {
@@ -8570,7 +8581,6 @@ a.customer-service-card {
         }
         .group-title {
             display: block;
-            width: 160px;
             height: 55px;
             text-indent: -9999px;
             overflow: hidden;
@@ -8596,7 +8606,7 @@ a.customer-service-card {
 }
 
 .region-branches.en {
-    margin-top: -40px;
+    margin-top: 50px;
 }
 
 @media (max-width: 1400px) {
