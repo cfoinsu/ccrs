@@ -599,40 +599,6 @@
     display: none;
   }
 }
-#quickmenu-container .quick-menu {
-  display: block;
-}
-#quickmenu-container .quick-mobile-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: #FF7614;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 13px;
-  z-index: 1000;
-}
-#quickmenu-container .quick-mobile-btn i {
-  font-size: 18px;
-}
-
 @media (max-width: 1023px) {
   .page-description.bgBlue {
     padding: 15px;

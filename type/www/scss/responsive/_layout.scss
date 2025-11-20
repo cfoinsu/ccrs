@@ -462,31 +462,3 @@ $hdH-t: 53px;
     }
   }
 }
-
-// Quick Menu
-#quickmenu-container {
-  .quick-menu {
-    display: block;
-  }
-  .quick-mobile-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: #FF7614;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
-    z-index: 1000;
-    i {
-      font-size: 18px;
-    }
-  }
-}
