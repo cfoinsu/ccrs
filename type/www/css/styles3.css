@@ -1706,17 +1706,22 @@
   }
 }
 
-.financial-support-section {
+.financial-support-section,
+.employment-support-section {
   position: relative;
   width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 1023px) {
-  .financial-support-section {
+  .financial-support-section,
+  .employment-support-section {
     padding: 0 16px;
   }
 }
-.financial-support-section .financial-support-intro {
+.financial-support-section .financial-support-intro,
+.financial-support-section .employment-support-intro,
+.employment-support-section .financial-support-intro,
+.employment-support-section .employment-support-intro {
   margin-bottom: 40px;
   font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
@@ -1724,27 +1729,26 @@
   line-height: 1.5;
   color: #17191b;
 }
-.financial-support-section .financial-support-intro b {
-  color: #6a57dd;
-}
-.financial-support-section .financial-support-intro p {
-  margin: 0 0 8px 0;
-}
-.financial-support-section .financial-support-intro p:last-child {
-  margin-bottom: 0;
-}
-.financial-support-section .financial-support-intro strong {
+.financial-support-section .financial-support-intro b,
+.financial-support-section .employment-support-intro b,
+.employment-support-section .financial-support-intro b,
+.employment-support-section .employment-support-intro b {
   font-weight: 700;
 }
 @media (max-width: 767px) {
-  .financial-support-section .financial-support-intro {
+  .financial-support-section .financial-support-intro,
+  .financial-support-section .employment-support-intro,
+  .employment-support-section .financial-support-intro,
+  .employment-support-section .employment-support-intro {
     font-size: 16px;
     margin-bottom: 32px;
   }
 }
-.financial-support-section .financial-support-header {
+.financial-support-section .financial-support-header,
+.financial-support-section .employment-support-header,
+.employment-support-section .financial-support-header,
+.employment-support-section .employment-support-header {
   position: relative;
-  background: #6a57dd;
   border-radius: 0 24px 0 24px;
   height: 64px;
   display: -webkit-box;
@@ -1760,26 +1764,10 @@
   margin: 0 auto;
   max-width: 247px;
 }
-.financial-support-section .financial-support-header .header-icon {
-  width: 32px;
-  height: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.financial-support-section .financial-support-header .header-icon img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.financial-support-section .financial-support-header .header-title {
+.financial-support-section .financial-support-header .header-title,
+.financial-support-section .employment-support-header .header-title,
+.employment-support-section .financial-support-header .header-title,
+.employment-support-section .employment-support-header .header-title {
   font-family: "Pretendard GOV", sans-serif;
   font-size: 21px;
   font-weight: 700;
@@ -1788,19 +1776,24 @@
   margin: 0;
 }
 @media (max-width: 767px) {
-  .financial-support-section .financial-support-header {
+  .financial-support-section .financial-support-header,
+  .financial-support-section .employment-support-header,
+  .employment-support-section .financial-support-header,
+  .employment-support-section .employment-support-header {
     height: 56px;
     max-width: 200px;
   }
-  .financial-support-section .financial-support-header .header-title {
+  .financial-support-section .financial-support-header .header-title,
+  .financial-support-section .employment-support-header .header-title,
+  .employment-support-section .financial-support-header .header-title,
+  .employment-support-section .employment-support-header .header-title {
     font-size: 18px;
   }
-  .financial-support-section .financial-support-header .header-icon {
-    width: 28px;
-    height: 28px;
-  }
 }
-.financial-support-section .financial-support-arrow {
+.financial-support-section .financial-support-arrow,
+.financial-support-section .employment-support-arrow,
+.employment-support-section .financial-support-arrow,
+.employment-support-section .employment-support-arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1815,31 +1808,43 @@
   max-width: 642px;
   margin-bottom: 8px;
 }
-.financial-support-section .financial-support-arrow img {
+.financial-support-section .financial-support-arrow img,
+.financial-support-section .employment-support-arrow img,
+.employment-support-section .financial-support-arrow img,
+.employment-support-section .employment-support-arrow img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 @media (max-width: 767px) {
-  .financial-support-section .financial-support-arrow {
+  .financial-support-section .financial-support-arrow,
+  .financial-support-section .employment-support-arrow,
+  .employment-support-section .financial-support-arrow,
+  .employment-support-section .employment-support-arrow {
     height: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
 }
-.financial-support-section .financial-support-cards {
+.financial-support-section .financial-support-cards,
+.financial-support-section .employment-support-cards,
+.employment-support-section .financial-support-cards,
+.employment-support-section .employment-support-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 0;
 }
 @media (max-width: 1023px) {
-  .financial-support-section .financial-support-cards {
+  .financial-support-section .financial-support-cards,
+  .financial-support-section .employment-support-cards,
+  .employment-support-section .financial-support-cards,
+  .employment-support-section .employment-support-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1850,16 +1855,15 @@
     gap: 40px;
   }
 }
-.financial-support-section .support-card {
+.financial-support-section .support-card,
+.employment-support-section .support-card {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 446px;
           flex: 0 0 446px;
   max-width: 446px;
   position: relative;
-  background: #f3f2ff;
   border-radius: 24px;
   padding: 32px;
-  min-height: 477px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1869,7 +1873,8 @@
           flex-direction: column;
 }
 @media (max-width: 1023px) {
-  .financial-support-section .support-card {
+  .financial-support-section .support-card,
+  .employment-support-section .support-card {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -1879,11 +1884,13 @@
   }
 }
 @media (max-width: 767px) {
-  .financial-support-section .support-card {
+  .financial-support-section .support-card,
+  .employment-support-section .support-card {
     padding: 24px;
   }
 }
-.financial-support-section .support-card .card-header {
+.financial-support-section .support-card .card-header,
+.employment-support-section .support-card .card-header {
   background: transparent;
   border-radius: 0;
   height: auto;
@@ -1896,20 +1903,29 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  font-family: "Pretendard GOV", sans-serif;
-  font-size: 19px;
-  font-weight: 700;
-  color: #17191b;
   margin: 0 0 24px 0;
   padding: 0;
 }
+.financial-support-section .support-card .card-header img,
+.employment-support-section .support-card .card-header img {
+  height: 50px;
+  width: auto;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 @media (max-width: 767px) {
-  .financial-support-section .support-card .card-header {
-    font-size: 17px;
+  .financial-support-section .support-card .card-header,
+  .employment-support-section .support-card .card-header {
     margin-bottom: 20px;
   }
+  .financial-support-section .support-card .card-header img,
+  .employment-support-section .support-card .card-header img {
+    height: 42px;
+  }
 }
-.financial-support-section .support-card .card-body {
+.financial-support-section .support-card .card-body,
+.employment-support-section .support-card .card-body {
   background: transparent;
   border-radius: 0;
   padding: 0;
@@ -1925,30 +1941,8 @@
       -ms-flex: 1;
           flex: 1;
 }
-.financial-support-section .support-card .card-body .card-logo {
-  height: 50px;
-  margin-bottom: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.financial-support-section .support-card .card-body .card-logo img {
-  height: 100%;
-  width: auto;
-  max-width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-@media (max-width: 767px) {
-  .financial-support-section .support-card .card-body .card-logo {
-    height: 42px;
-    margin-bottom: 20px;
-  }
-}
-.financial-support-section .support-card .card-body .card-content {
+.financial-support-section .support-card .card-body .card-content,
+.employment-support-section .support-card .card-body .card-content {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1963,7 +1957,8 @@
   padding: 0;
   margin-bottom: 24px;
 }
-.financial-support-section .support-card .card-body .card-item {
+.financial-support-section .support-card .card-body .card-item,
+.employment-support-section .support-card .card-body .card-item {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1976,7 +1971,8 @@
           flex-direction: column;
   gap: 4px;
 }
-.financial-support-section .support-card .card-body .card-item .item-header {
+.financial-support-section .support-card .card-body .card-item .item-header,
+.employment-support-section .support-card .card-body .card-item .item-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1986,14 +1982,16 @@
   gap: 4px;
   margin-bottom: 0;
 }
-.financial-support-section .support-card .card-body .card-item .item-header .item-title {
+.financial-support-section .support-card .card-body .card-item .item-header .item-title,
+.employment-support-section .support-card .card-body .card-item .item-header .item-title {
   font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 700;
   color: #17191b;
   line-height: 1.5;
 }
-.financial-support-section .support-card .card-body .card-item .item-description {
+.financial-support-section .support-card .card-body .card-item .item-description,
+.employment-support-section .support-card .card-body .card-item .item-description {
   padding-left: 20px;
   font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
@@ -2001,20 +1999,15 @@
   color: #17191b;
   line-height: 1.5;
 }
-.financial-support-section .support-card .card-body .card-item .item-description p {
-  margin: 0;
-  font-size: 19px;
-}
 @media (max-width: 767px) {
-  .financial-support-section .support-card .card-body .card-item .item-description {
+  .financial-support-section .support-card .card-body .card-item .item-description,
+  .employment-support-section .support-card .card-body .card-item .item-description {
     font-size: 16px;
     padding-left: 16px;
   }
-  .financial-support-section .support-card .card-body .card-item .item-description p {
-    font-size: 16px;
-  }
 }
-.financial-support-section .support-card .card-body .card-note {
+.financial-support-section .support-card .card-body .card-note,
+.employment-support-section .support-card .card-body .card-note {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2024,16 +2017,8 @@
   gap: 4px;
   margin-top: auto;
 }
-.financial-support-section .support-card .card-body .card-note .icon-info {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  background: url(/type/www/images/ic/icon-info.svg) no-repeat center;
-  background-size: contain;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-.financial-support-section .support-card .card-body .card-note span {
+.financial-support-section .support-card .card-body .card-note span,
+.employment-support-section .support-card .card-body .card-note span {
   font-family: "Pretendard GOV", sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -2041,7 +2026,30 @@
   line-height: 1.5;
 }
 @media (max-width: 767px) {
-  .financial-support-section .support-card .card-body .card-note span {
+  .financial-support-section .support-card .card-body .card-note span,
+  .employment-support-section .support-card .card-body .card-note span {
     font-size: 15px;
   }
+}
+
+.financial-support-section .financial-support-intro b {
+  color: #6a57dd;
+}
+.financial-support-section .financial-support-header {
+  background: #6a57dd;
+}
+.financial-support-section .support-card {
+  background: #f3f2ff;
+  min-height: 477px;
+}
+
+.employment-support-section .employment-support-intro b {
+  color: #1c7fa7;
+}
+.employment-support-section .employment-support-header {
+  background: #1c7fa7;
+}
+.employment-support-section .support-card {
+  background: #def9fe;
+  min-height: 407px;
 }/*# sourceMappingURL=styles3.css.map */

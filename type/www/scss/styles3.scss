@@ -1483,8 +1483,9 @@
   }
 }
 
-// 금융지원 연계 섹션
-.financial-support-section {
+// 공통 지원 연계 섹션 스타일 (금융/고용/복지/기타 공통)
+.financial-support-section,
+.employment-support-section {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -1493,26 +1494,17 @@
     padding: 0 16px;
   }
 
-  .financial-support-intro {
+  // Intro 공통 스타일
+  .financial-support-intro,
+  .employment-support-intro {
     margin-bottom: 40px;
     font-family: 'Pretendard GOV', sans-serif;
     font-size: 19px;
     font-weight: 700;
     line-height: 1.5;
     color: #17191b;
+
     b {
-      color: #6a57dd;
-    }
-
-    p {
-      margin: 0 0 8px 0;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    strong {
       font-weight: 700;
     }
 
@@ -1522,9 +1514,10 @@
     }
   }
 
-  .financial-support-header {
+  // Header 공통 스타일
+  .financial-support-header,
+  .employment-support-header {
     position: relative;
-    background: #6a57dd;
     border-radius: 0 24px 0 24px;
     height: 64px;
     display: flex;
@@ -1533,20 +1526,6 @@
     gap: 12px;
     margin: 0 auto;
     max-width: 247px;
-
-    .header-icon {
-      width: 32px;
-      height: 32px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-    }
 
     .header-title {
       font-family: 'Pretendard GOV', sans-serif;
@@ -1564,15 +1543,12 @@
       .header-title {
         font-size: 18px;
       }
-
-      .header-icon {
-        width: 28px;
-        height: 28px;
-      }
     }
   }
 
-  .financial-support-arrow {
+  // Arrow 공통 스타일
+  .financial-support-arrow,
+  .employment-support-arrow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1594,10 +1570,12 @@
     }
   }
 
-  .financial-support-cards {
+  // Cards 공통 스타일
+  .financial-support-cards,
+  .employment-support-cards {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 0;
 
     @media (max-width: 1023px) {
@@ -1607,14 +1585,13 @@
     }
   }
 
+  // Card 공통 스타일
   .support-card {
     flex: 0 0 446px;
     max-width: 446px;
     position: relative;
-    background: #f3f2ff;
     border-radius: 24px;
     padding: 32px;
-    min-height: 477px;
     display: flex;
     flex-direction: column;
 
@@ -1636,16 +1613,22 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      font-family: 'Pretendard GOV', sans-serif;
-      font-size: 19px;
-      font-weight: 700;
-      color: #17191b;
       margin: 0 0 24px 0;
       padding: 0;
 
+      img {
+        height: 50px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+      }
+
       @media (max-width: 767px) {
-        font-size: 17px;
         margin-bottom: 20px;
+
+        img {
+          height: 42px;
+        }
       }
     }
 
@@ -1657,25 +1640,6 @@
       display: flex;
       flex-direction: column;
       flex: 1;
-
-      .card-logo {
-        height: 50px;
-        margin-bottom: 24px;
-        display: flex;
-        align-items: center;
-
-        img {
-          height: 100%;
-          width: auto;
-          max-width: 100%;
-          object-fit: contain;
-        }
-
-        @media (max-width: 767px) {
-          height: 42px;
-          margin-bottom: 20px;
-        }
-      }
 
       .card-content {
         flex: 1;
@@ -1715,18 +1679,9 @@
           color: #17191b;
           line-height: 1.5;
 
-          p {
-            margin: 0;
-            font-size: 19px;
-          }
-
           @media (max-width: 767px) {
             font-size: 16px;
             padding-left: 16px;
-
-            p {
-              font-size: 16px;
-            }
           }
         }
       }
@@ -1736,15 +1691,6 @@
         align-items: center;
         gap: 4px;
         margin-top: auto;
-
-        .icon-info {
-          width: 20px;
-          height: 20px;
-          display: inline-block;
-          background: url(/type/www/images/ic/icon-info.svg) no-repeat center;
-          background-size: contain;
-          flex-shrink: 0;
-        }
 
         span {
           font-family: 'Pretendard GOV', sans-serif;
@@ -1761,5 +1707,37 @@
         }
       }
     }
+  }
+}
+
+// 금융지원 연계 섹션 색상 오버라이드
+.financial-support-section {
+  .financial-support-intro b {
+    color: #6a57dd;
+  }
+
+  .financial-support-header {
+    background: #6a57dd;
+  }
+
+  .support-card {
+    background: #f3f2ff;
+    min-height: 477px;
+  }
+}
+
+// 고용지원 연계 섹션 색상 오버라이드
+.employment-support-section {
+  .employment-support-intro b {
+    color: #1c7fa7;
+  }
+
+  .employment-support-header {
+    background: #1c7fa7;
+  }
+
+  .support-card {
+    background: #def9fe;
+    min-height: 407px;
   }
 }
