@@ -8074,6 +8074,7 @@ table .table-center {
     background-color: white;
     color: #1d3d82;
     border: 1px solid #84b4ff;
+    cursor: pointer;
 }
 
 .region-branch-item:hover {
@@ -8546,6 +8547,48 @@ a.customer-service-card {
     background-size: contain;
     top: 516px;
     left: 68px;
+}
+
+/* 조직도 인재경영부, 사회공헌팀 */
+.g-conts-area {
+    position: relative;
+    .grouptree-list {
+        overflow: hidden;
+        position: absolute;
+        top: 225px;
+        right: 250px;
+        width: 160px;
+        &.second {
+            top: 316px;
+        }
+        
+        &:hover {
+            .grouptree-list-item {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .group-title {
+            display: block;
+            width: 160px;
+            height: 55px;
+            text-indent: -9999px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .grouptree-list-item {
+            text-align: center;
+            background: #fff;
+            border-radius: 6px;
+            padding: 10px;
+            border: 1px solid #84b4ff;
+            opacity: 0;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            li {
+                padding: 4px;
+            }
+    }
 }
 
 .region-branch-title {
