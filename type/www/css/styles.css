@@ -8561,15 +8561,15 @@ a.customer-service-card {
         right: 250px;
             width: 160px;
         &.en {
-            top: 238px;
-            right: 211px;
-            width: 183px;
+            top: 227px;
+            right: 245px;
+            width: 175px;
 
         }
         &.second {
             top: 316px;
             &.en {
-                top: 334px;
+                top: 318px;
             }
         }
         
