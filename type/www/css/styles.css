@@ -8592,13 +8592,19 @@ a.customer-service-card {
             text-align: center;
             background: #fff;
             border-radius: 6px;
-            padding: 10px;
+            padding: 10px 0;
             border: 1px solid #84b4ff;
             opacity: 0;
             transform: translateY(-10px);
             transition: all 0.3s ease;
-            li {
-                padding: 4px;
+            >li {
+                padding: 8px 10px;
+                font-size: 1.5rem;
+                line-height: 1.2;
+                &:hover {
+                    background-color: #f0f4ff;
+                    color: #1d3d82;
+                }
             }
     }
 }
@@ -8628,14 +8634,14 @@ a.customer-service-card {
                 }
             }
             ul {
-                width: 130px;
+                width: auto;
                 top: -4px;
-                left: auto;
-                right: -136px;
+                left: 224px;
+                right: auto;
                 transform: none;
                 &::after {
                     top: 24px;
-                    left: -7px;
+                    left: -8px;
                     transform: translateY(-50%) rotate(-90deg);
                     /* 왼쪽 방향 세모 */
                     border-left: 6px solid transparent;
@@ -8675,11 +8681,11 @@ a.customer-service-card {
             position: absolute;
             top: 110px;
             left: 50%;
-            transform: translate(-50%, -10px);
+            transform: translate(-50%, -8px);
             text-align: center;
             background: #fff;
             border-radius: 6px;
-            padding: 10px;
+            padding: 10px 0;
             border: 1px solid #84b4ff;
             opacity: 0;
             transition: all 0.3s ease;
@@ -8702,11 +8708,14 @@ a.customer-service-card {
                 z-index: 10;
             }
             
-            li {
-                padding: 4px;
-                text-indent: 0;
-                color: #333;
-                font-size: 14px;
+            >li {
+                padding: 4px 10px;
+                font-size: 1.5rem;
+                line-height: 1.2;
+                &:hover {
+                    background-color: #f0f4ff;
+                    color: #1d3d82;
+                }
             }
         }
         
@@ -8723,7 +8732,7 @@ a.customer-service-card {
 }
 
 .region-branches.en {
-    margin-top: 50px;
+    margin-top: 36px;
 }
 
 @media (max-width: 1400px) {
