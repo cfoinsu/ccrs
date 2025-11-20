@@ -3361,6 +3361,39 @@ body aside {
     justify-content: space-between;
     gap: 60px;
 }
+.flextop .g-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+}
+.flextop .g-flex .section-title {
+    font-size: 3.2rem;
+}
+.flextop .g-flex .itext {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+b .icon-ph,
+strong .icon-ph {
+    background: url(/type/www/img/icons/bold_telephone.svg) center no-repeat;
+
+}
+.icon-ph {
+    background: url(/type/www/img/icons/noraml_telephone.svg) center no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin: 0 1px;
+}
+.flextop .g-flex .krds-info-list {
+    margin-top: 20px;
+}
+.flextop .g-flex .krds-info-list>li {
+    font-size: 1.7rem;
+}
 
 .g-wrap .g-flex .g-img {
     width: 100%;
