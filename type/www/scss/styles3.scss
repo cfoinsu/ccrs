@@ -1,43 +1,103 @@
-
-
-  .btn-apply {
-    width: 100%;
-    height: 48px;
-    background: #3871ca;
-    border: none;
-    border-radius: 1000px;
-    color: #ffffff;
-    font-family: 'Pretendard GOV', sans-serif;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.5;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12), 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
-    transition: all 0.2s ease;
-    margin-top: auto;
-
-    &:hover {
-      background: #2e5aac;
-    }
-
-    &:active {
-      transform: scale(0.98);
-    }
-
-    i {
-      margin-top: -4px;
-      font-size: 16px;
-    }
-
-    @media (max-width: 767px) {
-      height: 44px;
-      font-size: 16px;
-    }
+.fa-circle-check {
+  margin-top: -2px;
+  font-size: 16px;
+  color: #344D82;
+}
+.fa-check {
+  margin-top: -2px;
+  font-size: 14px;
+  color: #F48F01;
+  &.red {
+  font-size: 12px;
+    color: #D63D4A;
   }
+}
+
+.btn-apply {
+  width: 100%;
+  height: 48px;
+  background: #3871ca;
+  border: none;
+  border-radius: 1000px;
+  color: #ffffff;
+  font-family: 'Pretendard GOV', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12), 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+  margin-top: auto;
+
+  &:hover {
+    background: #2e5aac;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  i {
+    margin-top: -4px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 767px) {
+    height: 44px;
+    font-size: 16px;
+  }
+}
+
+.btn-action {
+  height: 48px;
+  background: #f48f01;
+  border: none;
+  border-radius: 1000px;
+  color: #ffffff;
+  font-family: 'Pretendard GOV', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 0 24px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12), 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+  &::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(/type/www/images/ic/icon-newwindow.svg) no-repeat center center / contain;
+  }
+
+  &:hover {
+    background: #e68000;
+    color: #ffffff;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  .fa-arrow-up-right-from-square {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 44px;
+    font-size: 16px;
+  }
+}
 
 .icon-info {
   position: relative;
@@ -909,6 +969,243 @@
   }
 }
 
+// 복합지원 신청 방법 섹션
+.application-methods {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 40px;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .method-card {
+    display: flex;
+    flex-direction: column;
+    background: #edf4ff;
+    border-radius: 24px;
+    padding: 32px;
+    position: relative;
+    flex: 1;
+    min-height: 351px;
+
+    @media (max-width: 1023px) {
+      flex: 1;
+      max-width: 100%;
+      width: 100%;
+      min-height: auto;
+    }
+
+    @media (max-width: 767px) {
+      padding: 24px;
+    }
+
+    &.non-face-to-face {
+      min-height: 351px;
+    }
+
+    &.face-to-face {
+      min-height: 351px;
+    }
+
+    .card-header {
+      position: relative;
+      margin-bottom: 4px;
+
+      .header-decoration {
+        position: absolute;
+        top: 57px;
+        left: 0;
+        height: 6px;
+        background: #c8ddff;
+      }
+
+      &.non-face-to-face .header-decoration {
+        width: 110px;
+      }
+
+      &.face-to-face .header-decoration {
+        width: 89px;
+      }
+
+      .header-title {
+        font-family: 'Pretendard GOV', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #17191b;
+        line-height: 1.5;
+        margin: 0 0 0 0;
+      }
+
+      .header-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+
+      .content-item {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .item-header {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+
+          .item-title {
+            font-family: 'Pretendard GOV', sans-serif;
+            font-size: 19px;
+            font-weight: 700;
+            color: #17191b;
+            line-height: 1.5;
+          }
+        }
+
+        .item-bullet {
+          display: flex;
+          align-items: flex-start;
+          padding-left: 20px;
+          padding-top: 8px;
+
+          .fa-check {
+            width: 12px;
+            height: 11px;
+            color: #f48f01;
+            flex-shrink: 0;
+          }
+        }
+
+        .item-description {
+          margin-top: 10px;
+          padding-left: 20px;
+          font-size: 17px;
+          font-weight: 400;
+          color: #17191b;
+          line-height: 1.5;
+          text-align: left;
+          display: flex;
+          gap: 4px;
+          i {
+            margin-right: 5px;
+            margin-top: 2px;
+          }
+          span {
+            flex: 1;
+          }
+
+          @media (max-width: 767px) {
+            font-size: 16px;
+            padding-left: 16px;
+          }
+        }
+      }
+    }
+
+    .card-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: auto;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+
+      
+    }
+  }
+}
+
+.application-notice {
+  background: #ffeee9;
+  border-radius: 24px;
+  padding: 25px 32px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 1023px) {
+    margin-top: 32px;
+    padding: 20px 24px;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 20px;
+  }
+
+  .notice-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: -4px;
+
+    .fa-info-circle {
+      width: 40px;
+      height: 40px;
+      color: #c2421f;
+    }
+
+    @media (max-width: 767px) {
+      width: 32px;
+      height: 32px;
+
+      .fa-info-circle {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  .notice-text {
+    font-family: 'Pretendard GOV', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #17191b;
+    margin: 0;
+
+    .text-red {
+      color: #c2421f;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+    }
+  }
+}
+
 // 기타지원 연계 섹션
 .other-support-section {
   position: relative;
@@ -1017,7 +1314,7 @@
   .other-support-cards {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 0;
 
     @media (max-width: 1023px) {
@@ -1183,14 +1480,5 @@
     }
   }
 
-  .fa-circle-check {
-    margin-top: -2px;
-    font-size: 16px;
-    color: #344D82;
-  }
-  .fa-check {
-    margin-top: -2px;
-    font-size: 12px;
-    color: #D63D4A;
-  }
+  
 }

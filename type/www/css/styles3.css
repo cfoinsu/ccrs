@@ -1,3 +1,19 @@
+.fa-circle-check {
+  margin-top: -2px;
+  font-size: 16px;
+  color: #344D82;
+}
+
+.fa-check {
+  margin-top: -2px;
+  font-size: 14px;
+  color: #F48F01;
+}
+.fa-check.red {
+  font-size: 12px;
+  color: #D63D4A;
+}
+
 .btn-apply {
   width: 100%;
   height: 48px;
@@ -39,6 +55,61 @@
 }
 @media (max-width: 767px) {
   .btn-apply {
+    height: 44px;
+    font-size: 16px;
+  }
+}
+
+.btn-action {
+  height: 48px;
+  background: #f48f01;
+  border: none;
+  border-radius: 1000px;
+  color: #ffffff;
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4px;
+  padding: 0 24px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12), 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12), 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn-action::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(/type/www/images/ic/icon-newwindow.svg) no-repeat center center/contain;
+}
+.btn-action:hover {
+  background: #e68000;
+  color: #ffffff;
+}
+.btn-action:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+.btn-action .fa-arrow-up-right-from-square {
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .btn-action {
+    width: 100%;
     height: 44px;
     font-size: 16px;
   }
@@ -1021,6 +1092,298 @@
   background: #ffe5ca;
 }
 
+.application-methods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 24px;
+  margin-top: 40px;
+}
+@media (max-width: 1023px) {
+  .application-methods {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+  }
+}
+.application-methods .method-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #edf4ff;
+  border-radius: 24px;
+  padding: 32px;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 351px;
+}
+@media (max-width: 1023px) {
+  .application-methods .method-card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 100%;
+    width: 100%;
+    min-height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .application-methods .method-card {
+    padding: 24px;
+  }
+}
+.application-methods .method-card.non-face-to-face {
+  min-height: 351px;
+}
+.application-methods .method-card.face-to-face {
+  min-height: 351px;
+}
+.application-methods .method-card .card-header {
+  position: relative;
+  margin-bottom: 4px;
+}
+.application-methods .method-card .card-header .header-decoration {
+  position: absolute;
+  top: 57px;
+  left: 0;
+  height: 6px;
+  background: #c8ddff;
+}
+.application-methods .method-card .card-header.non-face-to-face .header-decoration {
+  width: 110px;
+}
+.application-methods .method-card .card-header.face-to-face .header-decoration {
+  width: 89px;
+}
+.application-methods .method-card .card-header .header-title {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #17191b;
+  line-height: 1.5;
+  margin: 0 0 0 0;
+}
+.application-methods .method-card .card-header .header-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 64px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.application-methods .method-card .card-header .header-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.application-methods .method-card .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.application-methods .method-card .card-content .content-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+}
+.application-methods .method-card .card-content .content-item .item-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+}
+.application-methods .method-card .card-content .content-item .item-header .item-title {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #17191b;
+  line-height: 1.5;
+}
+.application-methods .method-card .card-content .content-item .item-bullet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 20px;
+  padding-top: 8px;
+}
+.application-methods .method-card .card-content .content-item .item-bullet .fa-check {
+  width: 12px;
+  height: 11px;
+  color: #f48f01;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.application-methods .method-card .card-content .content-item .item-description {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #17191b;
+  line-height: 1.5;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+}
+.application-methods .method-card .card-content .content-item .item-description i {
+  margin-right: 5px;
+  margin-top: 2px;
+}
+.application-methods .method-card .card-content .content-item .item-description span {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+@media (max-width: 767px) {
+  .application-methods .method-card .card-content .content-item .item-description {
+    font-size: 16px;
+    padding-left: 16px;
+  }
+}
+.application-methods .method-card .card-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: auto;
+}
+@media (max-width: 767px) {
+  .application-methods .method-card .card-actions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.application-notice {
+  background: #ffeee9;
+  border-radius: 24px;
+  padding: 25px 32px;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1023px) {
+  .application-notice {
+    margin-top: 32px;
+    padding: 20px 24px;
+  }
+}
+@media (max-width: 767px) {
+  .application-notice {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 12px;
+    padding: 16px 20px;
+  }
+}
+.application-notice .notice-icon {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-top: -4px;
+}
+.application-notice .notice-icon .fa-info-circle {
+  width: 40px;
+  height: 40px;
+  color: #c2421f;
+}
+@media (max-width: 767px) {
+  .application-notice .notice-icon {
+    width: 32px;
+    height: 32px;
+  }
+  .application-notice .notice-icon .fa-info-circle {
+    width: 32px;
+    height: 32px;
+  }
+}
+.application-notice .notice-text {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #17191b;
+  margin: 0;
+}
+.application-notice .notice-text .text-red {
+  color: #c2421f;
+}
+@media (max-width: 767px) {
+  .application-notice .notice-text {
+    font-size: 16px;
+  }
+}
+
 .other-support-section {
   position: relative;
   width: 100%;
@@ -1142,9 +1505,9 @@
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 0;
 }
 @media (max-width: 1023px) {
@@ -1338,14 +1701,4 @@
     font-size: 15px;
     margin-top: 32px;
   }
-}
-.other-support-section .fa-circle-check {
-  margin-top: -2px;
-  font-size: 16px;
-  color: #344D82;
-}
-.other-support-section .fa-check {
-  margin-top: -2px;
-  font-size: 12px;
-  color: #D63D4A;
 }/*# sourceMappingURL=styles3.css.map */
