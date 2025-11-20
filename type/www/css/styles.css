@@ -3148,6 +3148,7 @@ body aside {
 }
 .quick-menu {    
     position: static;
+    width: 82px;
     transform: none;
     background: white;
     border-radius: 24px 0 0 24px;
@@ -3236,7 +3237,7 @@ body aside {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: #FF7614;
+    background: radial-gradient(59.17% 59.17% at 50% 50%, #FF7614 0%, #F08D01 100%);
     color: #fff;
     border: none;
     cursor: pointer;
@@ -3255,6 +3256,13 @@ body aside {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+    .quickmenu-container {
+        top: auto;
+        right: 0;
+        bottom: 20px;
+        transform: none;
+        gap: 8px;
+    }
     .content-layout {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -3273,8 +3281,14 @@ body aside {
         grid-template-columns: 1fr;
     }
 
-    .quick-menu {
-        display: none;
+    .quick-menu.active {
+        transform: translateY(0);
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .quick-item {
+        padding: 8px;
     }
 
     .quick-mobile-btn {
