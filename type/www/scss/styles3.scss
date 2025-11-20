@@ -867,3 +867,325 @@
     background: #ffe5ca;
   }
 }
+
+// 기타지원 연계 섹션
+.other-support-section {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 1023px) {
+    padding: 0 16px;
+  }
+
+  .other-support-intro {
+    margin-bottom: 40px;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #17191b;
+
+    p {
+      margin: 0 0 8px 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .bold {
+      font-weight: 700;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .other-support-header {
+    position: relative;
+    background: #3871ca;
+    border-radius: 0 24px 0 24px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 auto;
+    max-width: 247px;
+
+    .header-icon {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .header-title {
+      font-family: 'Pretendard GOV', sans-serif;
+      font-size: 21px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    @media (max-width: 767px) {
+      height: 56px;
+      max-width: 200px;
+
+      .header-title {
+        font-size: 18px;
+      }
+
+      .header-icon {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+
+  .other-support-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    margin: 0 auto;
+    max-width: 642px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    @media (max-width: 767px) {
+      height: 40px;
+    }
+  }
+
+  .other-support-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 0;
+
+    @media (max-width: 1023px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  .support-card {
+    flex: 0 0 292px;
+    max-width: 292px;
+    position: relative;
+
+    @media (max-width: 1023px) {
+      flex: 1;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .card-header {
+      background: #c8ddff;
+      border-radius: 24px 24px 0 0;
+      height: 53px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Pretendard GOV', sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: #17191b;
+      line-height: 1.5;
+      margin: 0;
+
+      @media (max-width: 767px) {
+        height: 48px;
+        font-size: 17px;
+      }
+    }
+
+    .card-body {
+      background: #edf4ff;
+      border-radius: 0 0 24px 24px;
+      padding: 32px;
+      min-height: 322px;
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 767px) {
+        padding: 24px;
+        min-height: auto;
+      }
+
+      .card-logo {
+        height: 42px;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+
+        img {
+          height: 100%;
+          width: auto;
+          max-width: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .card-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .card-item {
+        flex: 1;
+
+        .item-header {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          margin-bottom: 4px;
+
+          .icon-check {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            background: url(/type/www/images/ic/icon-check-circle.svg) no-repeat center;
+            background-size: contain;
+            flex-shrink: 0;
+          }
+
+          .item-title {
+            font-family: 'Pretendard GOV', sans-serif;
+            font-size: 19px;
+            font-weight: 700;
+            color: #17191b;
+            line-height: 1.5;
+          }
+        }
+
+        .item-description {
+          padding-left: 20px;
+          font-family: 'Pretendard GOV', sans-serif;
+          font-size: 19px;
+          font-weight: 400;
+          color: #17191b;
+          line-height: 1.5;
+
+          p {
+            margin: 0;
+          }
+
+          @media (max-width: 767px) {
+            font-size: 16px;
+            padding-left: 16px;
+          }
+        }
+      }
+
+      .btn-apply {
+        width: 100%;
+        height: 48px;
+        background: #3871ca;
+        border: none;
+        border-radius: 1000px;
+        color: #ffffff;
+        font-family: 'Pretendard GOV', sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1.5;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12), 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
+        transition: all 0.2s ease;
+        margin-top: auto;
+
+        &:hover {
+          background: #2e5aac;
+        }
+
+        &:active {
+          transform: scale(0.98);
+        }
+
+        .icon-arrow-right {
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          background: url(/type/www/images/ic/icon-arrow-right-white.svg) no-repeat center;
+          background-size: contain;
+        }
+
+        @media (max-width: 767px) {
+          height: 44px;
+          font-size: 16px;
+        }
+      }
+
+      .card-note {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-top: 6px;
+
+        .icon-info {
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          background: url(/type/www/images/ic/icon-info.svg) no-repeat center;
+          background-size: contain;
+          flex-shrink: 0;
+        }
+
+        span {
+          font-family: 'Pretendard GOV', sans-serif;
+          font-size: 17px;
+          font-weight: 700;
+          color: #ab2b36;
+          line-height: 1.5;
+        }
+
+        @media (max-width: 767px) {
+          span {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .other-support-footer {
+    margin-top: 40px;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #17191b;
+
+    .text-red {
+      color: #ab2b36;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 15px;
+      margin-top: 32px;
+    }
+  }
+}
