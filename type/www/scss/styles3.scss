@@ -1129,6 +1129,7 @@
       gap: 12px;
       flex-wrap: wrap;
       margin-top: auto;
+      padding-left: 20px;
 
       @media (max-width: 767px) {
         flex-direction: column;
@@ -1315,7 +1316,7 @@
   .other-support-cards {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 0;
 
     @media (max-width: 1023px) {
@@ -1478,6 +1479,287 @@
     @media (max-width: 767px) {
       font-size: 15px;
       margin-top: 32px;
+    }
+  }
+}
+
+// 금융지원 연계 섹션
+.financial-support-section {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 1023px) {
+    padding: 0 16px;
+  }
+
+  .financial-support-intro {
+    margin-bottom: 40px;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #17191b;
+    b {
+      color: #6a57dd;
+    }
+
+    p {
+      margin: 0 0 8px 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .financial-support-header {
+    position: relative;
+    background: #6a57dd;
+    border-radius: 0 24px 0 24px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 auto;
+    max-width: 247px;
+
+    .header-icon {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .header-title {
+      font-family: 'Pretendard GOV', sans-serif;
+      font-size: 21px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    @media (max-width: 767px) {
+      height: 56px;
+      max-width: 200px;
+
+      .header-title {
+        font-size: 18px;
+      }
+
+      .header-icon {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+
+  .financial-support-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    margin: 0 auto;
+    max-width: 642px;
+    margin-bottom: 8px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    @media (max-width: 767px) {
+      height: 40px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .financial-support-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 0;
+
+    @media (max-width: 1023px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+
+  .support-card {
+    flex: 0 0 446px;
+    max-width: 446px;
+    position: relative;
+    background: #f3f2ff;
+    border-radius: 24px;
+    padding: 32px;
+    min-height: 477px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1023px) {
+      flex: 1;
+      max-width: 100%;
+      width: 100%;
+      min-height: auto;
+    }
+
+    @media (max-width: 767px) {
+      padding: 24px;
+    }
+
+    .card-header {
+      background: transparent;
+      border-radius: 0;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: 'Pretendard GOV', sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: #17191b;
+      margin: 0 0 24px 0;
+      padding: 0;
+
+      @media (max-width: 767px) {
+        font-size: 17px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .card-body {
+      background: transparent;
+      border-radius: 0;
+      padding: 0;
+      min-height: auto;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      .card-logo {
+        height: 50px;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+
+        img {
+          height: 100%;
+          width: auto;
+          max-width: 100%;
+          object-fit: contain;
+        }
+
+        @media (max-width: 767px) {
+          height: 42px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .card-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 0;
+        margin-bottom: 24px;
+      }
+
+      .card-item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .item-header {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          margin-bottom: 0;
+
+          .item-title {
+            font-family: 'Pretendard GOV', sans-serif;
+            font-size: 19px;
+            font-weight: 700;
+            color: #17191b;
+            line-height: 1.5;
+          }
+        }
+
+        .item-description {
+          padding-left: 20px;
+          font-family: 'Pretendard GOV', sans-serif;
+          font-size: 19px;
+          font-weight: 400;
+          color: #17191b;
+          line-height: 1.5;
+
+          p {
+            margin: 0;
+            font-size: 19px;
+          }
+
+          @media (max-width: 767px) {
+            font-size: 16px;
+            padding-left: 16px;
+
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+
+      .card-note {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-top: auto;
+
+        .icon-info {
+          width: 20px;
+          height: 20px;
+          display: inline-block;
+          background: url(/type/www/images/ic/icon-info.svg) no-repeat center;
+          background-size: contain;
+          flex-shrink: 0;
+        }
+
+        span {
+          font-family: 'Pretendard GOV', sans-serif;
+          font-size: 17px;
+          font-weight: 700;
+          color: #ab2b36;
+          line-height: 1.5;
+        }
+
+        @media (max-width: 767px) {
+          span {
+            font-size: 15px;
+          }
+        }
+      }
     }
   }
 }
