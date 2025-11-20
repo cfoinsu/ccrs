@@ -1,3 +1,47 @@
+.blue-underline {
+  position: relative;
+  display: inline-block;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 6px;
+    background: #aceaff;
+  }
+}
+.orange-underline {
+  position: relative;
+  display: inline-block;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 6px;
+    background: #ffe5ca;
+  }
+}
+.yellow-underline {
+  position: relative;
+  display: inline-block;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 6px;
+    background: #ffe398;
+  }
+}
+
+
 .fa-circle-check {
   margin-top: -2px;
   font-size: 16px;
@@ -941,35 +985,6 @@
   }
 }
 
-.blue-underline {
-  position: relative;
-  display: inline-block;
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 6px;
-    background: #aceaff;
-  }
-}
-.orange-underline {
-  position: relative;
-  display: inline-block;
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: 8px;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 6px;
-    background: #ffe5ca;
-  }
-}
-
 // 복합지원 신청 방법 섹션
 .application-methods {
   display: flex;
@@ -1485,7 +1500,8 @@
 
 // 공통 지원 연계 섹션 스타일 (금융/고용/복지/기타 공통)
 .financial-support-section,
-.employment-support-section {
+.employment-support-section,
+.welfare-support-section {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -1496,7 +1512,8 @@
 
   // Intro 공통 스타일
   .financial-support-intro,
-  .employment-support-intro {
+  .employment-support-intro,
+  .welfare-support-intro {
     margin-bottom: 40px;
     font-family: 'Pretendard GOV', sans-serif;
     font-size: 19px;
@@ -1516,7 +1533,8 @@
 
   // Header 공통 스타일
   .financial-support-header,
-  .employment-support-header {
+  .employment-support-header,
+  .welfare-support-header {
     position: relative;
     border-radius: 0 24px 0 24px;
     height: 64px;
@@ -1548,7 +1566,8 @@
 
   // Arrow 공통 스타일
   .financial-support-arrow,
-  .employment-support-arrow {
+  .employment-support-arrow,
+  .welfare-support-arrow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1572,9 +1591,10 @@
 
   // Cards 공통 스타일
   .financial-support-cards,
-  .employment-support-cards {
+  .employment-support-cards,
+  .welfare-support-cards {
     display: flex;
-    gap: 20px;
+    gap: 24px;
     justify-content: center;
     margin-top: 0;
 
@@ -1587,8 +1607,7 @@
 
   // Card 공통 스타일
   .support-card {
-    flex: 0 0 446px;
-    max-width: 446px;
+    flex: 1;
     position: relative;
     border-radius: 24px;
     padding: 32px;
@@ -1611,10 +1630,12 @@
       border-radius: 0;
       height: auto;
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
       justify-content: flex-start;
       margin: 0 0 24px 0;
       padding: 0;
+      position: relative;
 
       img {
         height: 50px;
@@ -1623,11 +1644,31 @@
         object-fit: contain;
       }
 
+      .card-header-title {
+        font-family: 'Pretendard GOV', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        color: #17191b;
+        line-height: 1.5;
+        margin: 0 0 0 0;
+        padding-bottom: 8px;
+      }
+
+      .card-header-underline {
+        height: 6px;
+        background: #ffe398;
+        margin-top: 0;
+      }
+
       @media (max-width: 767px) {
         margin-bottom: 20px;
 
         img {
           height: 42px;
+        }
+
+        .card-header-title {
+          font-size: 20px;
         }
       }
     }
@@ -1673,15 +1714,25 @@
 
         .item-description {
           padding-left: 20px;
-          font-family: 'Pretendard GOV', sans-serif;
           font-size: 19px;
           font-weight: 400;
           color: #17191b;
           line-height: 1.5;
 
+          .item-description-note {
+            display: block;
+            font-size: 17px;
+            color: #17191b;
+            margin-top: 4px;
+          }
+
           @media (max-width: 767px) {
             font-size: 16px;
             padding-left: 16px;
+
+            .item-description-note {
+              font-size: 15px;
+            }
           }
         }
       }
@@ -1739,5 +1790,29 @@
   .support-card {
     background: #def9fe;
     min-height: 407px;
+  }
+}
+
+// 복지지원 연계 섹션 색상 오버라이드
+.welfare-support-section {
+  .welfare-support-intro b {
+    color: #f48f01;
+  }
+
+  .welfare-support-header {
+    background: #f48f01;
+  }
+
+  .support-card {
+    background: #fff6de;
+    min-height: 416px;
+
+    &:nth-child(1) .card-header .card-header-underline {
+      width: 123px;
+    }
+
+    &:nth-child(2) .card-header .card-header-underline {
+      width: 193px;
+    }
   }
 }

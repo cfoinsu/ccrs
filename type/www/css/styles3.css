@@ -1,3 +1,48 @@
+.blue-underline {
+  position: relative;
+  display: inline-block;
+}
+.blue-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 6px;
+  background: #aceaff;
+}
+
+.orange-underline {
+  position: relative;
+  display: inline-block;
+}
+.orange-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 6px;
+  background: #ffe5ca;
+}
+
+.yellow-underline {
+  position: relative;
+  display: inline-block;
+}
+.yellow-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 6px;
+  background: #ffe398;
+}
+
 .fa-circle-check {
   margin-top: -2px;
   font-size: 16px;
@@ -1064,36 +1109,6 @@
   margin-bottom: 0;
 }
 
-.blue-underline {
-  position: relative;
-  display: inline-block;
-}
-.blue-underline::before {
-  content: "";
-  position: absolute;
-  bottom: 8px;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 6px;
-  background: #aceaff;
-}
-
-.orange-underline {
-  position: relative;
-  display: inline-block;
-}
-.orange-underline::before {
-  content: "";
-  position: absolute;
-  bottom: 8px;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 6px;
-  background: #ffe5ca;
-}
-
 .application-methods {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1707,21 +1722,28 @@
 }
 
 .financial-support-section,
-.employment-support-section {
+.employment-support-section,
+.welfare-support-section {
   position: relative;
   width: 100%;
   margin: 0 auto;
 }
 @media (max-width: 1023px) {
   .financial-support-section,
-  .employment-support-section {
+  .employment-support-section,
+  .welfare-support-section {
     padding: 0 16px;
   }
 }
 .financial-support-section .financial-support-intro,
 .financial-support-section .employment-support-intro,
+.financial-support-section .welfare-support-intro,
 .employment-support-section .financial-support-intro,
-.employment-support-section .employment-support-intro {
+.employment-support-section .employment-support-intro,
+.employment-support-section .welfare-support-intro,
+.welfare-support-section .financial-support-intro,
+.welfare-support-section .employment-support-intro,
+.welfare-support-section .welfare-support-intro {
   margin-bottom: 40px;
   font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
@@ -1731,23 +1753,38 @@
 }
 .financial-support-section .financial-support-intro b,
 .financial-support-section .employment-support-intro b,
+.financial-support-section .welfare-support-intro b,
 .employment-support-section .financial-support-intro b,
-.employment-support-section .employment-support-intro b {
+.employment-support-section .employment-support-intro b,
+.employment-support-section .welfare-support-intro b,
+.welfare-support-section .financial-support-intro b,
+.welfare-support-section .employment-support-intro b,
+.welfare-support-section .welfare-support-intro b {
   font-weight: 700;
 }
 @media (max-width: 767px) {
   .financial-support-section .financial-support-intro,
   .financial-support-section .employment-support-intro,
+  .financial-support-section .welfare-support-intro,
   .employment-support-section .financial-support-intro,
-  .employment-support-section .employment-support-intro {
+  .employment-support-section .employment-support-intro,
+  .employment-support-section .welfare-support-intro,
+  .welfare-support-section .financial-support-intro,
+  .welfare-support-section .employment-support-intro,
+  .welfare-support-section .welfare-support-intro {
     font-size: 16px;
     margin-bottom: 32px;
   }
 }
 .financial-support-section .financial-support-header,
 .financial-support-section .employment-support-header,
+.financial-support-section .welfare-support-header,
 .employment-support-section .financial-support-header,
-.employment-support-section .employment-support-header {
+.employment-support-section .employment-support-header,
+.employment-support-section .welfare-support-header,
+.welfare-support-section .financial-support-header,
+.welfare-support-section .employment-support-header,
+.welfare-support-section .welfare-support-header {
   position: relative;
   border-radius: 0 24px 0 24px;
   height: 64px;
@@ -1766,8 +1803,13 @@
 }
 .financial-support-section .financial-support-header .header-title,
 .financial-support-section .employment-support-header .header-title,
+.financial-support-section .welfare-support-header .header-title,
 .employment-support-section .financial-support-header .header-title,
-.employment-support-section .employment-support-header .header-title {
+.employment-support-section .employment-support-header .header-title,
+.employment-support-section .welfare-support-header .header-title,
+.welfare-support-section .financial-support-header .header-title,
+.welfare-support-section .employment-support-header .header-title,
+.welfare-support-section .welfare-support-header .header-title {
   font-family: "Pretendard GOV", sans-serif;
   font-size: 21px;
   font-weight: 700;
@@ -1778,22 +1820,37 @@
 @media (max-width: 767px) {
   .financial-support-section .financial-support-header,
   .financial-support-section .employment-support-header,
+  .financial-support-section .welfare-support-header,
   .employment-support-section .financial-support-header,
-  .employment-support-section .employment-support-header {
+  .employment-support-section .employment-support-header,
+  .employment-support-section .welfare-support-header,
+  .welfare-support-section .financial-support-header,
+  .welfare-support-section .employment-support-header,
+  .welfare-support-section .welfare-support-header {
     height: 56px;
     max-width: 200px;
   }
   .financial-support-section .financial-support-header .header-title,
   .financial-support-section .employment-support-header .header-title,
+  .financial-support-section .welfare-support-header .header-title,
   .employment-support-section .financial-support-header .header-title,
-  .employment-support-section .employment-support-header .header-title {
+  .employment-support-section .employment-support-header .header-title,
+  .employment-support-section .welfare-support-header .header-title,
+  .welfare-support-section .financial-support-header .header-title,
+  .welfare-support-section .employment-support-header .header-title,
+  .welfare-support-section .welfare-support-header .header-title {
     font-size: 18px;
   }
 }
 .financial-support-section .financial-support-arrow,
 .financial-support-section .employment-support-arrow,
+.financial-support-section .welfare-support-arrow,
 .employment-support-section .financial-support-arrow,
-.employment-support-section .employment-support-arrow {
+.employment-support-section .employment-support-arrow,
+.employment-support-section .welfare-support-arrow,
+.welfare-support-section .financial-support-arrow,
+.welfare-support-section .employment-support-arrow,
+.welfare-support-section .welfare-support-arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1810,8 +1867,13 @@
 }
 .financial-support-section .financial-support-arrow img,
 .financial-support-section .employment-support-arrow img,
+.financial-support-section .welfare-support-arrow img,
 .employment-support-section .financial-support-arrow img,
-.employment-support-section .employment-support-arrow img {
+.employment-support-section .employment-support-arrow img,
+.employment-support-section .welfare-support-arrow img,
+.welfare-support-section .financial-support-arrow img,
+.welfare-support-section .employment-support-arrow img,
+.welfare-support-section .welfare-support-arrow img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -1820,8 +1882,13 @@
 @media (max-width: 767px) {
   .financial-support-section .financial-support-arrow,
   .financial-support-section .employment-support-arrow,
+  .financial-support-section .welfare-support-arrow,
   .employment-support-section .financial-support-arrow,
-  .employment-support-section .employment-support-arrow {
+  .employment-support-section .employment-support-arrow,
+  .employment-support-section .welfare-support-arrow,
+  .welfare-support-section .financial-support-arrow,
+  .welfare-support-section .employment-support-arrow,
+  .welfare-support-section .welfare-support-arrow {
     height: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -1829,12 +1896,17 @@
 }
 .financial-support-section .financial-support-cards,
 .financial-support-section .employment-support-cards,
+.financial-support-section .welfare-support-cards,
 .employment-support-section .financial-support-cards,
-.employment-support-section .employment-support-cards {
+.employment-support-section .employment-support-cards,
+.employment-support-section .welfare-support-cards,
+.welfare-support-section .financial-support-cards,
+.welfare-support-section .employment-support-cards,
+.welfare-support-section .welfare-support-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 24px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1843,8 +1915,13 @@
 @media (max-width: 1023px) {
   .financial-support-section .financial-support-cards,
   .financial-support-section .employment-support-cards,
+  .financial-support-section .welfare-support-cards,
   .employment-support-section .financial-support-cards,
-  .employment-support-section .employment-support-cards {
+  .employment-support-section .employment-support-cards,
+  .employment-support-section .welfare-support-cards,
+  .welfare-support-section .financial-support-cards,
+  .welfare-support-section .employment-support-cards,
+  .welfare-support-section .welfare-support-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1856,11 +1933,11 @@
   }
 }
 .financial-support-section .support-card,
-.employment-support-section .support-card {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 446px;
-          flex: 0 0 446px;
-  max-width: 446px;
+.employment-support-section .support-card,
+.welfare-support-section .support-card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   position: relative;
   border-radius: 24px;
   padding: 32px;
@@ -1874,7 +1951,8 @@
 }
 @media (max-width: 1023px) {
   .financial-support-section .support-card,
-  .employment-support-section .support-card {
+  .employment-support-section .support-card,
+  .welfare-support-section .support-card {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -1885,47 +1963,81 @@
 }
 @media (max-width: 767px) {
   .financial-support-section .support-card,
-  .employment-support-section .support-card {
+  .employment-support-section .support-card,
+  .welfare-support-section .support-card {
     padding: 24px;
   }
 }
 .financial-support-section .support-card .card-header,
-.employment-support-section .support-card .card-header {
+.employment-support-section .support-card .card-header,
+.welfare-support-section .support-card .card-header {
   background: transparent;
   border-radius: 0;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin: 0 0 24px 0;
   padding: 0;
+  position: relative;
 }
 .financial-support-section .support-card .card-header img,
-.employment-support-section .support-card .card-header img {
+.employment-support-section .support-card .card-header img,
+.welfare-support-section .support-card .card-header img {
   height: 50px;
   width: auto;
   max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
+.financial-support-section .support-card .card-header .card-header-title,
+.employment-support-section .support-card .card-header .card-header-title,
+.welfare-support-section .support-card .card-header .card-header-title {
+  font-family: "Pretendard GOV", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #17191b;
+  line-height: 1.5;
+  margin: 0 0 0 0;
+  padding-bottom: 8px;
+}
+.financial-support-section .support-card .card-header .card-header-underline,
+.employment-support-section .support-card .card-header .card-header-underline,
+.welfare-support-section .support-card .card-header .card-header-underline {
+  height: 6px;
+  background: #ffe398;
+  margin-top: 0;
+}
 @media (max-width: 767px) {
   .financial-support-section .support-card .card-header,
-  .employment-support-section .support-card .card-header {
+  .employment-support-section .support-card .card-header,
+  .welfare-support-section .support-card .card-header {
     margin-bottom: 20px;
   }
   .financial-support-section .support-card .card-header img,
-  .employment-support-section .support-card .card-header img {
+  .employment-support-section .support-card .card-header img,
+  .welfare-support-section .support-card .card-header img {
     height: 42px;
+  }
+  .financial-support-section .support-card .card-header .card-header-title,
+  .employment-support-section .support-card .card-header .card-header-title,
+  .welfare-support-section .support-card .card-header .card-header-title {
+    font-size: 20px;
   }
 }
 .financial-support-section .support-card .card-body,
-.employment-support-section .support-card .card-body {
+.employment-support-section .support-card .card-body,
+.welfare-support-section .support-card .card-body {
   background: transparent;
   border-radius: 0;
   padding: 0;
@@ -1942,7 +2054,8 @@
           flex: 1;
 }
 .financial-support-section .support-card .card-body .card-content,
-.employment-support-section .support-card .card-body .card-content {
+.employment-support-section .support-card .card-body .card-content,
+.welfare-support-section .support-card .card-body .card-content {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1958,7 +2071,8 @@
   margin-bottom: 24px;
 }
 .financial-support-section .support-card .card-body .card-item,
-.employment-support-section .support-card .card-body .card-item {
+.employment-support-section .support-card .card-body .card-item,
+.welfare-support-section .support-card .card-body .card-item {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -1972,7 +2086,8 @@
   gap: 4px;
 }
 .financial-support-section .support-card .card-body .card-item .item-header,
-.employment-support-section .support-card .card-body .card-item .item-header {
+.employment-support-section .support-card .card-body .card-item .item-header,
+.welfare-support-section .support-card .card-body .card-item .item-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1983,7 +2098,8 @@
   margin-bottom: 0;
 }
 .financial-support-section .support-card .card-body .card-item .item-header .item-title,
-.employment-support-section .support-card .card-body .card-item .item-header .item-title {
+.employment-support-section .support-card .card-body .card-item .item-header .item-title,
+.welfare-support-section .support-card .card-body .card-item .item-header .item-title {
   font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 700;
@@ -1991,23 +2107,38 @@
   line-height: 1.5;
 }
 .financial-support-section .support-card .card-body .card-item .item-description,
-.employment-support-section .support-card .card-body .card-item .item-description {
+.employment-support-section .support-card .card-body .card-item .item-description,
+.welfare-support-section .support-card .card-body .card-item .item-description {
   padding-left: 20px;
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 400;
   color: #17191b;
   line-height: 1.5;
 }
+.financial-support-section .support-card .card-body .card-item .item-description .item-description-note,
+.employment-support-section .support-card .card-body .card-item .item-description .item-description-note,
+.welfare-support-section .support-card .card-body .card-item .item-description .item-description-note {
+  display: block;
+  font-size: 17px;
+  color: #17191b;
+  margin-top: 4px;
+}
 @media (max-width: 767px) {
   .financial-support-section .support-card .card-body .card-item .item-description,
-  .employment-support-section .support-card .card-body .card-item .item-description {
+  .employment-support-section .support-card .card-body .card-item .item-description,
+  .welfare-support-section .support-card .card-body .card-item .item-description {
     font-size: 16px;
     padding-left: 16px;
   }
+  .financial-support-section .support-card .card-body .card-item .item-description .item-description-note,
+  .employment-support-section .support-card .card-body .card-item .item-description .item-description-note,
+  .welfare-support-section .support-card .card-body .card-item .item-description .item-description-note {
+    font-size: 15px;
+  }
 }
 .financial-support-section .support-card .card-body .card-note,
-.employment-support-section .support-card .card-body .card-note {
+.employment-support-section .support-card .card-body .card-note,
+.welfare-support-section .support-card .card-body .card-note {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2018,7 +2149,8 @@
   margin-top: auto;
 }
 .financial-support-section .support-card .card-body .card-note span,
-.employment-support-section .support-card .card-body .card-note span {
+.employment-support-section .support-card .card-body .card-note span,
+.welfare-support-section .support-card .card-body .card-note span {
   font-family: "Pretendard GOV", sans-serif;
   font-size: 17px;
   font-weight: 700;
@@ -2027,7 +2159,8 @@
 }
 @media (max-width: 767px) {
   .financial-support-section .support-card .card-body .card-note span,
-  .employment-support-section .support-card .card-body .card-note span {
+  .employment-support-section .support-card .card-body .card-note span,
+  .welfare-support-section .support-card .card-body .card-note span {
     font-size: 15px;
   }
 }
@@ -2052,4 +2185,21 @@
 .employment-support-section .support-card {
   background: #def9fe;
   min-height: 407px;
+}
+
+.welfare-support-section .welfare-support-intro b {
+  color: #f48f01;
+}
+.welfare-support-section .welfare-support-header {
+  background: #f48f01;
+}
+.welfare-support-section .support-card {
+  background: #fff6de;
+  min-height: 416px;
+}
+.welfare-support-section .support-card:nth-child(1) .card-header .card-header-underline {
+  width: 123px;
+}
+.welfare-support-section .support-card:nth-child(2) .card-header .card-header-underline {
+  width: 193px;
 }/*# sourceMappingURL=styles3.css.map */
