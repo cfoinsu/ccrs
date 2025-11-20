@@ -8007,7 +8007,7 @@ table .table-center {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 20px;
+    gap: 19px;
     margin-top: 60px;
     flex-wrap: wrap;
 }
@@ -8499,12 +8499,12 @@ a.customer-service-card {
 /*조직도 하단 선*/
 .grouptree-bg-line {
     position: absolute;
-    top: 530px;
-    left: 65px;
-    width: 93%;
-    height: 100%;
+    top: 535px;
+    left: 60px;
+    width: 916px;
+    height: 189px;
     background: url(../img/contents/png/GroupTree_bgline.png) left top no-repeat;
-    background-size: contain;
+    background-size: 100%;
     pointer-events: none;
 }
 
