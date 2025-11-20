@@ -89,6 +89,8 @@
 }
 .btn-action::after {
   content: "";
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
   width: 20px;
   height: 20px;
   background: url(/type/www/images/ic/icon-newwindow.svg) no-repeat center center/contain;
