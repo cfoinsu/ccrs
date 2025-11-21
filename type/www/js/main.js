@@ -108,6 +108,11 @@ function initIntroSwiper() {
         pagination: {
           el: '.introSwiper-pagination',
           clickable: true,
+          bulletClass: 'swiper-pagination-bullet',
+          bulletActiveClass: 'swiper-pagination-bullet-active',
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '" role="button" aria-label="인트로 ' + (index + 1) + '번 슬라이드로 이동" tabindex="0"></span>';
+          },
         },
       });
     } else if (!isMobile && introSwiper) {
@@ -145,6 +150,11 @@ function initSwiperSliders() {
       pagination: {
         el: '#mainSlider-pagination',
         clickable: true,
+        bulletClass: 'swiper-pagination-bullet',
+        bulletActiveClass: 'swiper-pagination-bullet-active',
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '" role="button" aria-label="메인 배너 ' + (index + 1) + '번 슬라이드로 이동" tabindex="0"></span>';
+        },
       },
     });
   }
@@ -164,6 +174,11 @@ function initSwiperSliders() {
       pagination: {
         el: '#bnrSlider-pagination',
         clickable: true,
+        bulletClass: 'swiper-pagination-bullet',
+        bulletActiveClass: 'swiper-pagination-bullet-active',
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '" role="button" aria-label="하단 배너 ' + (index + 1) + '번 슬라이드로 이동" tabindex="0"></span>';
+        },
       },
     });
   }
@@ -183,6 +198,11 @@ function initSwiperSliders() {
       pagination: {
         el: '#debtSlider-pagination',
         clickable: true,
+        bulletClass: 'swiper-pagination-bullet',
+        bulletActiveClass: 'swiper-pagination-bullet-active',
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '" role="button" aria-label="상환 배너 ' + (index + 1) + '번 슬라이드로 이동" tabindex="0"></span>';
+        },
       },
     });
   }
@@ -202,6 +222,11 @@ function initSwiperSliders() {
       pagination: {
         el: '#financeSlider-pagination',
         clickable: true,
+        bulletClass: 'swiper-pagination-bullet',
+        bulletActiveClass: 'swiper-pagination-bullet-active',
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '" role="button" aria-label="금융 배너 ' + (index + 1) + '번 슬라이드로 이동" tabindex="0"></span>';
+        },
       },
     });
   }
