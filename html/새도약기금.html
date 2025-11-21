@@ -36,13 +36,13 @@
                         <div class="sidebar-header">
                             <h2>채무조정</h2>
                         </div>
-                        <nav class="sidebar-nav">
+                        <nav class="sidebar-nav" role="navigation" aria-label="채무조정 서브메뉴">
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-guide">
                                     채무조정 길잡이
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-guide">
                                     <li><a href="채무조정길잡이_소개.html" class="nav-subitem">채무조정제도 소개</a></li>
                                     <li><a href="채무조정제도비교_종류비교.html" class="nav-subitem">채무조정제도 비교</a></li>
                                     <li><a href="채무조정절차.html" class="nav-subitem">채무조정 절차</a></li>
@@ -50,11 +50,11 @@
                                 </ul>
                             </div>
                             <div class="nav-section active">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="true" aria-controls="nav-subsection-detail">
                                     채무조정 자세히 알아보기
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-detail">
                                     <li><a href="신속채무조정(연체30일이하)_일반.html" class="nav-subitem">신속채무조정</a></li>
                                     <li><a href="신속채무조정프리워크아웃(연체89일이하)_일반.html" class="nav-subitem">사전채무조정</a></li>
                                     <li><a href="개인워크아웃(연체90일이상)_일반.html" class="nav-subitem">개인워크아웃</a></li>
@@ -64,18 +64,18 @@
                                 </ul>
                             </div>
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-other">
                                     그 밖의 채무조정제도
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-other">
                                     <li><a href="개인회생·파산제도_개인회생이란.html" class="nav-subitem">개인회생·파산제도</a></li>
                                     <li><a href="금융회사채무조정.html" class="nav-subitem">금융회사 채무조정</a></li>
                                 </ul>
                             </div>
                             <div class="nav-section">
                                 <a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=190" target="_blank"
-                                    title="간편진단 새창 이동" class="nav-section-title">나에게 맞는 채무조정 찾기</a>
+                                    title="간편진단 새창 이동" class="nav-section-title" aria-label="나에게 맞는 채무조정 찾기 - 새 창">나에게 맞는 채무조정 찾기</a>
                             </div>
                             <div class="nav-section">
                                 <a href="상담안내.html" class="nav-section-title">채무조정 상담안내</a>
@@ -86,17 +86,17 @@
                     <!-- Content Area -->
                     <div class="content-area">
                         <!-- Breadcrumb -->
-                        <nav class="breadcrumb">
-                            <a href="#" class="breadcrumb-item">
-                                <i class="fas fa-home"></i>
+                        <nav class="breadcrumb" aria-label="경로">
+                            <a href="#" class="breadcrumb-item" aria-label="홈으로 이동">
+                                <i class="fas fa-home" aria-hidden="true"></i>
                                 홈
                             </a>
-                            <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">채무조정 </a>
-                            <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">채무조정 자세히 알아보기</a>
-                            <span class="breadcrumb-separator"></span>
-                            <span class="breadcrumb-item current">새도약기금</span>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <a href="#" class="breadcrumb-item" aria-label="채무조정으로 이동">채무조정 </a>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <a href="#" class="breadcrumb-item" aria-label="채무조정 자세히 알아보기로 이동">채무조정 자세히 알아보기</a>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <span class="breadcrumb-item current" aria-current="page">새도약기금</span>
                         </nav>
                         <!-- Page Header -->
                         <div class="page-header">
@@ -105,10 +105,10 @@
                                 <div class="page-actions">
 
                                     <button class="action-btn" aria-label="인쇄">
-                                        <i class="fas fa-print"></i>
+                                        <i class="fas fa-print" aria-hidden="true"></i>
                                     </button>
                                     <button class="action-btn" aria-label="공유">
-                                        <i class="fas fa-share-alt"></i>
+                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
                                     </button>
                                 </div>
 
@@ -122,24 +122,24 @@
                                     제도입니다.</p>
                                 <a href="#" class="youtube-btn-red"
                                     onclick="openYoutubeUrl('https://www.youtube.com/watch?v=jL-dGtrB7Ig'); return false;"
-                                    target="_blank" title="새창열림">새도약기금 알아보기 <i class="icon-youtube"></i></a>
+                                    target="_blank" title="새창열림" aria-label="새도약기금 알아보기 영상 보기 - 새 창">새도약기금 알아보기 <i class="icon-youtube" aria-hidden="true"></i></a>
                             </div>
                             <div class="tab fill full">
-                                <ul role="tablist">
-                                    <li id="tab01" role="tab" aria-selected="false" aria-controls="tabpanel01"
+                                <ul role="tablist" aria-label="새도약기금 유형 선택">
+                                    <li id="tab01" role="tab" aria-selected="true" aria-controls="tabpanel01"
                                         class="active" data-listener-attached="true">
-                                        <a href="새도약기금.html" class="btn-tab">새도약기금<i class="sr-only created">선택됨</i></a>
+                                        <a href="새도약기금.html" class="btn-tab" aria-label="새도약기금 (현재 선택됨)"><span class="sr-only">현재 선택된 탭: </span>새도약기금</a>
                                     </li>
                                     <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02"
                                         data-listener-attached="true">
-                                        <a href="장기연체자특별채무조정.html" class="btn-tab">장기연체자 특별채무조정</a>
+                                        <a href="장기연체자특별채무조정.html" class="btn-tab" aria-label="장기연체자 특별채무조정">장기연체자 특별채무조정</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="krds-accordion type-heading" data-type="multiOpen">
                                 <div class="accordion-item active">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                                            class="btn-accordion" aria-controls="accordionCollapseSample01"><span
+                                            class="btn-accordion" aria-expanded="true" aria-controls="accordionCollapseSample01"><span
                                                 class="sec-tit">새도약기금 소개</span></button></h4>
                                     <div id="accordionCollapseSample01" class="accordion-collapse collapse"
                                         aria-labelledby="accordionHeaderSample01">
@@ -224,11 +224,11 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item active">
-                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                                            class="btn-accordion" aria-controls="accordionCollapseSample02"><span
+                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample02"
+                                            class="btn-accordion" aria-expanded="true" aria-controls="accordionCollapseSample02"><span
                                                 class="sec-tit">신청 대상</span></button></h4>
                                     <div id="accordionCollapseSample02" class="accordion-collapse collapse"
-                                        aria-labelledby="accordionHeaderSample01">
+                                        aria-labelledby="accordionHeaderSample02">
                                         <div class="accordion-body">
                                             <!-- accordion contents -->
                                             <div class="conts-desc roundcheck">
@@ -243,11 +243,11 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item active">
-                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                                            class="btn-accordion" aria-controls="accordionCollapseSample02"><span
+                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample03"
+                                            class="btn-accordion" aria-expanded="true" aria-controls="accordionCollapseSample03"><span
                                                 class="sec-tit">지원 내용</span></button></h4>
-                                    <div id="accordionCollapseSample02" class="accordion-collapse collapse"
-                                        aria-labelledby="accordionHeaderSample01">
+                                    <div id="accordionCollapseSample03" class="accordion-collapse collapse"
+                                        aria-labelledby="accordionHeaderSample03">
                                         <div class="accordion-body">
                                             <!-- accordion contents -->
                                             <div class="g-img row between">
@@ -257,12 +257,12 @@
                                                     </div>
                                                     <div class="support-organization-body blue">
                                                         <div class="support-organization-logo">
-                                                            <img
-                                                                src="/type/www/images/logo/grid/logo_새도약기금.png?ver=5.2">
+                                                                <img
+                                                                src="/type/www/images/logo/grid/logo_새도약기금.png?ver=5.2" alt="새도약기금 로고">
                                                         </div>
                                                         <p class="organization-desc blue">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="12"
-                                                                height="11" viewBox="0 0 12 11" fill="none">
+                                                                height="11" viewBox="0 0 12 11" fill="none" aria-hidden="true">
                                                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                                                     d="M11.4898 0.201994C12.0235 0.562783 12.1605 1.28328 11.7958 1.81126L5.797 10.4954C5.60052 10.7798 5.28619 10.9629 4.93944 10.995C4.59268 11.027 4.24952 10.9046 4.00318 10.6611L0.343089 7.04273C-0.114161 6.59069 -0.114393 5.85756 0.342572 5.40524C0.799537 4.95292 1.54066 4.95269 1.99791 5.40473L4.66012 8.0366L9.86297 0.504727C10.2277 -0.0232568 10.956 -0.158795 11.4898 0.201994Z"
                                                                     fill="#2191C0" />
@@ -278,11 +278,11 @@
                                                     <div class="support-organization-body orange">
                                                         <div class="support-organization-logo">
                                                             <img
-                                                                src="/type/www/images/logo/logo.svg?ver=5.2">
+                                                                src="/type/www/images/logo/logo.svg?ver=5.2" alt="신용회복위원회 로고">
                                                         </div>
                                                         <p class="organization-desc orange">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="12"
-                                                                height="11" viewBox="0 0 12 11" fill="none">
+                                                                height="11" viewBox="0 0 12 11" fill="none" aria-hidden="true">
                                                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                                                     d="M11.4898 0.201994C12.0235 0.562783 12.1605 1.28328 11.7958 1.81126L5.797 10.4954C5.60052 10.7798 5.28619 10.9629 4.93944 10.995C4.59268 11.027 4.24952 10.9046 4.00318 10.6611L0.343089 7.04273C-0.114161 6.59069 -0.114393 5.85756 0.342572 5.40524C0.799537 4.95292 1.54066 4.95269 1.99791 5.40473L4.66012 8.0366L9.86297 0.504727C10.2277 -0.0232568 10.956 -0.158795 11.4898 0.201994Z"
                                                                     fill="#F48F01" />
@@ -297,11 +297,11 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item active">
-                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                                            class="btn-accordion" aria-controls="accordionCollapseSample02"><span
+                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample04"
+                                            class="btn-accordion" aria-expanded="true" aria-controls="accordionCollapseSample04"><span
                                                 class="sec-tit">신청 문의</span></button></h4>
-                                    <div id="accordionCollapseSample02" class="accordion-collapse collapse"
-                                        aria-labelledby="accordionHeaderSample01">
+                                    <div id="accordionCollapseSample04" class="accordion-collapse collapse"
+                                        aria-labelledby="accordionHeaderSample04">
                                         <div class="accordion-body">
                                             <!-- accordion contents -->
                                             <div class="g-desc-body roundcheck">
@@ -331,30 +331,30 @@
                                             </div>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_booking.png?ver=5.2" />
+                                            <img src="/type/www/img/contents/png/icon_booking.png?ver=5.2" alt="전화 예약 아이콘" />
                                         </div>
                                     </div>
                                     <div class="g-info-box lightblue shadow">
                                         <div class="g-desc-box">
                                             <p class="g-tit">새도약기금 홈페이지</p>
                                             <a class="conts-desc" href="https://www.newleap.or.kr/" target="_blank"
-                                                title="새창열림">바로가기<img src="/type/www/img/icons/arrow-right.svg" /></a>
+                                                title="새창열림" aria-label="새도약기금 홈페이지 바로가기 - 새 창">바로가기<img src="/type/www/img/icons/arrow-right.svg" aria-hidden="true" /></a>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_newjump.png?ver=5.2" />
+                                            <img src="/type/www/img/contents/png/icon_newjump.png?ver=5.2" alt="새도약기금 홈페이지 아이콘" />
                                         </div>
                                     </div>
                                     <div class="g-info-box lightpurple shadow">
                                         <div class="g-desc-box">
                                             <p class="g-tit">채무조정 상담예약</p>
                                             <a href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_blank"
-                                                title="새창열림" class="conts-desc">
+                                                title="새창열림" class="conts-desc" aria-label="채무조정 상담예약 바로가기 - 새 창">
                                                 바로가기
-                                                <img src="/type/www/img/icons/arrow-right.svg" />
+                                                <img src="/type/www/img/icons/arrow-right.svg" aria-hidden="true" />
                                             </a>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_timebooking.png?ver=5.2" />
+                                            <img src="/type/www/img/contents/png/icon_timebooking.png?ver=5.2" alt="채무조정 상담예약 아이콘" />
                                         </div>
                                     </div>
                                 </div>
@@ -366,37 +366,37 @@
                         <div class="feedback-section noprint">
                             <div class="feedback-card">
                                 <h3>이 페이지에서 제공하는 정보에 대하여 어느 정도 만족하셨습니까?</h3>
-                                <div class="rating-options">
+                                <div class="rating-options" role="radiogroup" aria-label="페이지 만족도">
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="5">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="5" aria-label="매우 만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         매우 만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="4">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="4" aria-label="만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="3">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="3" aria-label="보통">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         보통
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="2">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="2" aria-label="불만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         불만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="1">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="1" aria-label="매우 불만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         매우 불만족
                                     </label>
                                 </div>
                                 <div class="feedback-input">
                                     <label class="hide" for="feedback-text">의견 입력</label>
-                                    <textarea id="feedback-text" placeholder="내용을 입력하세요" rows="1"></textarea>
-                                    <button type="button" class="submit-btn">제출</button>
+                                    <textarea id="feedback-text" placeholder="내용을 입력하세요" rows="1" aria-label="의견 입력"></textarea>
+                                    <button type="button" class="submit-btn" aria-label="의견 제출">제출</button>
                                 </div>
                             </div>
                         </div>

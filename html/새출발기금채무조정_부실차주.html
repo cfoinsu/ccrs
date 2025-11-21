@@ -39,13 +39,13 @@
                         <div class="sidebar-header">
                             <h2>채무조정</h2>
                         </div>
-                        <nav class="sidebar-nav">
+                        <nav class="sidebar-nav" role="navigation" aria-label="채무조정 서브메뉴">
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-guide">
                                     채무조정 길잡이
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-guide">
                                     <li><a href="채무조정길잡이_소개.html" class="nav-subitem">채무조정제도 소개</a></li>
                                     <li><a href="채무조정제도비교_종류비교.html" class="nav-subitem">채무조정제도 비교</a></li>
                                     <li><a href="채무조정절차.html" class="nav-subitem">채무조정 절차</a></li>
@@ -53,11 +53,11 @@
                                 </ul>
                             </div>
                             <div class="nav-section active">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="true" aria-controls="nav-subsection-detail">
                                     채무조정 자세히 알아보기
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-detail">
                                     <li><a href="신속채무조정(연체30일이하)_일반.html" class="nav-subitem">신속채무조정</a></li>
                                     <li><a href="신속채무조정프리워크아웃(연체89일이하)_일반.html" class="nav-subitem">사전채무조정</a></li>
                                     <li><a href="개인워크아웃(연체90일이상)_일반.html" class="nav-subitem">개인워크아웃</a></li>
@@ -68,18 +68,18 @@
                                 </ul>
                             </div>
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-other">
                                     그 밖의 채무조정제도
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-other">
                                     <li><a href="개인회생·파산제도_개인회생이란.html" class="nav-subitem">개인회생·파산제도</a></li>
                                     <li><a href="금융회사채무조정.html" class="nav-subitem">금융회사 채무조정</a></li>
                                 </ul>
                             </div>
                             <div class="nav-section">
                                 <a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=190" target="_blank"
-                                    title="간편진단 새창 이동" class="nav-section-title">나에게 맞는 채무조정 찾기</a>
+                                    title="간편진단 새창 이동" class="nav-section-title" aria-label="나에게 맞는 채무조정 찾기 - 새 창">나에게 맞는 채무조정 찾기</a>
                             </div>
                             <div class="nav-section">
                                 <a href="상담안내.html" class="nav-section-title">채무조정 상담안내</a>
@@ -90,17 +90,17 @@
                     <!-- Content Area -->
                     <div class="content-area">
                         <!-- Breadcrumb -->
-                        <nav class="breadcrumb">
-                            <a href="#" class="breadcrumb-item">
-                                <i class="fas fa-home"></i>
+                        <nav class="breadcrumb" aria-label="경로">
+                            <a href="#" class="breadcrumb-item" aria-label="홈으로 이동">
+                                <i class="fas fa-home" aria-hidden="true"></i>
                                 홈
                             </a>
-                            <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">채무조정 </a>
-                            <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">채무조정 자세히 알아보기</a>
-                            <span class="breadcrumb-separator"></span>
-                            <span class="breadcrumb-item current">새출발기금 중개형</span>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <a href="#" class="breadcrumb-item" aria-label="채무조정으로 이동">채무조정 </a>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <a href="#" class="breadcrumb-item" aria-label="채무조정 자세히 알아보기로 이동">채무조정 자세히 알아보기</a>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <span class="breadcrumb-item current" aria-current="page">새출발기금 중개형</span>
                         </nav>
                         <!-- Page Header -->
                         <div class="page-header">
@@ -109,25 +109,24 @@
                                 <div class="page-actions">
 
                                     <button class="action-btn" aria-label="인쇄">
-                                        <i class="fas fa-print"></i>
+                                        <i class="fas fa-print" aria-hidden="true"></i>
                                     </button>
                                     <button class="action-btn" aria-label="공유">
-                                        <i class="fas fa-share-alt"></i>
+                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
                                     </button>
                                 </div>
 
                             </div>
                         </div>
                         <div class="tab fill full">
-                            <ul role="tablist">
+                            <ul role="tablist" aria-label="새출발기금 중개형 유형 선택">
                                 <li id="tab01" role="tab" aria-selected="false" aria-controls="tabpanel01"
                                     data-listener-attached="true">
-                                    <a href="새출발기금채무조정_부실우려차주.html" class="btn-tab">부실우려차주(연체 89일 이하)</a>
+                                    <a href="새출발기금채무조정_부실우려차주.html" class="btn-tab" aria-label="부실우려차주(연체 89일 이하)">부실우려차주(연체 89일 이하)</a>
                                 </li>
-                                <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02"
+                                <li id="tab02" role="tab" aria-selected="true" aria-controls="tabpanel02"
                                     class="active" data-listener-attached="true">
-                                    <a href="새출발기금채무조정_부실차주.html" class="btn-tab">부실차주(연체90일 이상)<i
-                                            class="sr-only created">선택됨</i></a>
+                                    <a href="새출발기금채무조정_부실차주.html" class="btn-tab" aria-label="부실차주(연체90일 이상) (현재 선택됨)"><span class="sr-only">현재 선택된 탭: </span>부실차주(연체90일 이상)</a>
                                 </li>
 
                             </ul>
@@ -142,33 +141,33 @@
                                             조정·상환기간 연장 등의 지원을 받을 수 있습니다.</b></p>
                                     <a href="#" class="youtube-btn-red"
                                         onclick="openYoutubeUrl('https://www.youtube.com/watch?v=D4qPv1wynpg'); return false;"
-                                        target="_blank" title="새창열림">새출발기금 알아보기 <i class="icon-youtube"></i></a>
+                                        target="_blank" title="새창열림" aria-label="새출발기금 알아보기 영상 보기 - 새 창">새출발기금 알아보기 <i class="icon-youtube" aria-hidden="true"></i></a>
                                 </div>
                                 <div class="summary-key">
                                     <div class="keybox">
                                         <div class="stitle">
-                                            <img src="/type/www/images/img/keyword/keyword_연체기간.png?ver=5.2" alt="">
+                                            <img src="/type/www/images/img/keyword/keyword_연체기간.png?ver=5.2" alt="연체기간 아이콘">
                                             <span>연체기간</span>
                                         </div>
                                         <b class="key-text">90일 이상</b>
                                     </div>
                                     <div class="keybox">
                                         <div class="stitle">
-                                            <img src="/type/www/images/img/keyword/keyword_추심중단.png?ver=5.2" alt="">
+                                            <img src="/type/www/images/img/keyword/keyword_추심중단.png?ver=5.2" alt="추심중단 아이콘">
                                             <span>추심중단</span>
                                         </div>
                                         <b class="key-text">신청 다음날부터 즉시</b>
                                     </div>
                                     <div class="keybox">
                                         <div class="stitle">
-                                            <img src="/type/www/images/img/keyword/keyword_상환유예.png?ver=5.2" alt="">
+                                            <img src="/type/www/images/img/keyword/keyword_상환유예.png?ver=5.2" alt="상환유예 아이콘">
                                             <span>상환유예</span>
                                         </div>
                                         <b class="key-text">최장 3년</b>
                                     </div>
                                     <div class="keybox">
                                         <div class="stitle">
-                                            <img src="/type/www/images/img/keyword/keyword_상환기간·방식.png?ver=5.2" alt="">
+                                            <img src="/type/www/images/img/keyword/keyword_상환기간·방식.png?ver=5.2" alt="상환기간 아이콘">
                                             <span>상환기간</span>
                                         </div>
                                         <b class="key-text">무담보 최장 10년 <br>주택담보 최장 20년 원리금균등분할</b>
@@ -178,7 +177,7 @@
                             <div class="krds-accordion type-heading" data-type="multiOpen">
                                 <div class="accordion-item active">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                                            class="btn-accordion" aria-controls="accordionCollapseSample01"><span
+                                            class="btn-accordion" aria-expanded="true" aria-controls="accordionCollapseSample01"><span
                                                 class="sec-tit">지원대상</span></button></h4>
                                     <div id="accordionCollapseSample01" class="accordion-collapse collapse"
                                         aria-labelledby="accordionHeaderSample01">
@@ -279,7 +278,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <p class="noti mt0"><i class="svg-icon ico-information-fill"></i>기존 신용회복지원제도, 개인회생·개인파산 이용자는 새출발기금 프로그램의 지원대상이 아닙니다.</p>
+                                                            <p class="noti mt0"><i class="svg-icon ico-information-fill" aria-hidden="true"></i>기존 신용회복지원제도, 개인회생·개인파산 이용자는 새출발기금 프로그램의 지원대상이 아닙니다.</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -288,11 +287,11 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item active">
-                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                                            class="btn-accordion" aria-controls="accordionCollapseSample01"><span
+                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample02"
+                                            class="btn-accordion" aria-expanded="true" aria-controls="accordionCollapseSample02"><span
                                                 class="sec-tit">지원 내용</span></button></h4>
-                                    <div id="accordionCollapseSample01" class="accordion-collapse collapse"
-                                        aria-labelledby="accordionHeaderSample01">
+                                    <div id="accordionCollapseSample02" class="accordion-collapse collapse"
+                                        aria-labelledby="accordionHeaderSample02">
                                         <div class="accordion-body">
                                             <div class="g-conts-area">
                                                 <div class="krds-table-wrap">
@@ -313,7 +312,7 @@
                                                                 <th scope="col" class="">금융취약계층
                                                                     <div class="tooltip-trigger" data-tooltip="
 																		개인사업자 중 기초수급자, 중증장애인, 70세이상자, 소액채무·저소득자
-																		"><i class="fas fa-question-circle"></i>
+																		"><i class="fas fa-question-circle" aria-hidden="true"></i>
 																	</div>
                                                                 </th>
                                                             </tr>
@@ -403,11 +402,11 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item active">
-                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                                            class="btn-accordion" aria-controls="accordionCollapseSample01"><span
+                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample03"
+                                            class="btn-accordion" aria-expanded="true" aria-controls="accordionCollapseSample03"><span
                                                 class="sec-tit">신청서류</span></button></h4>
-                                    <div id="accordionCollapseSample01" class="accordion-collapse collapse"
-                                        aria-labelledby="accordionHeaderSample01">
+                                    <div id="accordionCollapseSample03" class="accordion-collapse collapse"
+                                        aria-labelledby="accordionHeaderSample03">
                                         <div class="accordion-body">
                                             <div class="conts-desc">
                                                 상담 시 <span class="primary">신분증</span>을 지참해야 합니다.
@@ -469,7 +468,7 @@
                                                 </table>
                                             </div>
                                             <p class="noti">
-                                                <i class="svg-icon ico-information-fill"></i>
+                                                <i class="svg-icon ico-information-fill" aria-hidden="true"></i>
                                                 <span class="primary">소득, 재산, 신청조건 확인 등</span>을 위해 추가 서류가 필요할 수 있습니다.
                                             </p>
                                             <div class="g-conts-area mt40 mb20">
@@ -560,7 +559,7 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                            <div class="noti mt10"><i class="svg-icon ico-information-fill"></i>
+                                            <div class="noti mt10"><i class="svg-icon ico-information-fill" aria-hidden="true"></i>
                                                 법인소상공인의 경우 본인 또는 대표이사 확인서류를 필수 지참하셔야 상담받으실 수 있으며, 채무조정 접수 시 소득증명서류,
                                                 재산증명서류, 기타서류를 추가로 제출하셔야 합니다.
                                             </div>
@@ -682,7 +681,7 @@
                                             </div>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_booking.png?ver=5.2">
+                                            <img src="/type/www/img/contents/png/icon_booking.png?ver=5.2" alt="전화 예약 아이콘">
                                         </div>
                                     </div>
                                     <div class="g-info-box lightblue">
@@ -691,13 +690,13 @@
                                                 <p class="g-tit">인터넷 예약</p>
                                                 <span class="g-subtit">방문·온라인 상담</span>
                                             </div>
-                                            <a class="conts-desc" href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_blank" title="새창열림">
+                                            <a class="conts-desc" href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_blank" title="새창열림" aria-label="인터넷 예약 바로가기 - 새 창">
                                                 바로가기
-                                                <img src="/type/www/img/icons/arrow-right.svg" />
+                                                <img src="/type/www/img/icons/arrow-right.svg" aria-hidden="true" />
                                             </a>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_online_booking.png?ver=5.2">
+                                            <img src="/type/www/img/contents/png/icon_online_booking.png?ver=5.2" alt="인터넷 예약 아이콘">
                                         </div>
                                     </div>
                                     <div class="g-info-box lightpurple appdown shadow">
@@ -705,11 +704,11 @@
                                             <p class="g-tit">모바일(APP) 예약</p>
                                             <div class="conts-desc">
                                                 바로가기
-                                                <img src="/type/www/img/icons/arrow-right.svg">
+                                                <img src="/type/www/img/icons/arrow-right.svg" aria-hidden="true">
                                             </div>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_mobile.png?ver=5.2">
+                                            <img src="/type/www/img/contents/png/icon_mobile.png?ver=5.2" alt="모바일 예약 아이콘">
                                         </div>
                                     </div>
                                 </div>
@@ -719,37 +718,37 @@
                         <div class="feedback-section noprint">
                             <div class="feedback-card">
                                 <h3>이 페이지에서 제공하는 정보에 대하여 어느 정도 만족하셨습니까?</h3>
-                                <div class="rating-options">
+                                <div class="rating-options" role="radiogroup" aria-label="페이지 만족도">
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="5">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="5" aria-label="매우 만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         매우 만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="4">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="4" aria-label="만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="3">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="3" aria-label="보통">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         보통
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="2">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="2" aria-label="불만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         불만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="1">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="1" aria-label="매우 불만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         매우 불만족
                                     </label>
                                 </div>
                                 <div class="feedback-input">
                                     <label class="hide" for="feedback-text">의견 입력</label>
-                                    <textarea id="feedback-text" placeholder="내용을 입력해주세요" rows="1"></textarea>
-                                    <button type="button" class="submit-btn">제출</button>
+                                    <textarea id="feedback-text" placeholder="내용을 입력해주세요" rows="1" aria-label="의견 입력"></textarea>
+                                    <button type="button" class="submit-btn" aria-label="의견 제출">제출</button>
                                 </div>
                             </div>
                         </div>

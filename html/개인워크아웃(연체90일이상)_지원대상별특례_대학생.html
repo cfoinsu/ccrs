@@ -41,13 +41,13 @@
                         <div class="sidebar-header">
                             <h2>채무조정</h2>
                         </div>
-                        <nav class="sidebar-nav">
+                        <nav class="sidebar-nav" role="navigation" aria-label="채무조정 서브메뉴">
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-guide">
                                     채무조정 길잡이
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-guide">
                                     <li><a href="채무조정길잡이_소개.html" class="nav-subitem">채무조정제도 소개</a></li>
                                     <li><a href="채무조정제도비교_종류비교.html" class="nav-subitem">채무조정제도 비교</a></li>
                                     <li><a href="채무조정절차.html" class="nav-subitem">채무조정 절차</a></li>
@@ -55,11 +55,11 @@
                                 </ul>
                             </div>
                             <div class="nav-section active">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="true" aria-controls="nav-subsection-detail">
                                     채무조정 자세히 알아보기
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-detail">
                                     <li><a href="신속채무조정(연체30일이하)_일반.html" class="nav-subitem">신속채무조정</a></li>
                                     <li><a href="신속채무조정프리워크아웃(연체89일이하)_일반.html" class="nav-subitem">사전채무조정</a></li>
                                     <li><a href="개인워크아웃(연체90일이상)_일반.html" class="nav-subitem active">개인워크아웃</a></li>
@@ -69,17 +69,17 @@
                                 </ul>
                             </div>
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-other">
                                     그 밖의 채무조정제도
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-other">
                                     <li><a href="개인회생·파산제도_개인회생이란.html" class="nav-subitem">개인회생·파산제도</a></li>
                                     <li><a href="금융회사채무조정.html" class="nav-subitem">금융회사 채무조정</a></li>
                                 </ul>
                             </div>
                             <div class="nav-section">
-                                <a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=190" target="_blank" title="간편진단 새창 이동"  class="nav-section-title">나에게 맞는 채무조정 찾기</a>
+                                <a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=190" target="_blank" title="간편진단 새창 이동" class="nav-section-title" aria-label="나에게 맞는 채무조정 찾기 - 새 창">나에게 맞는 채무조정 찾기</a>
                             </div>
                             <div class="nav-section">
                                 <a href="상담안내.html" class="nav-section-title">채무조정 상담안내</a>
@@ -90,17 +90,17 @@
                     <!-- Content Area -->
                     <div class="content-area">
                         <!-- Breadcrumb -->
-                        <nav class="breadcrumb">
-                            <a href="#" class="breadcrumb-item">
-                                <i class="fas fa-home"></i>
+                        <nav class="breadcrumb" aria-label="경로">
+                            <a href="#" class="breadcrumb-item" aria-label="홈으로 이동">
+                                <i class="fas fa-home" aria-hidden="true"></i>
                                 홈
                             </a>
-                            <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">채무조정</a>
-                            <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">채무조정 자세히 알아보기</a>
-                            <span class="breadcrumb-separator"></span>
-                            <span class="breadcrumb-item current">개인워크아웃</span>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <a href="#" class="breadcrumb-item" aria-label="채무조정으로 이동">채무조정</a>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <a href="#" class="breadcrumb-item" aria-label="채무조정 자세히 알아보기로 이동">채무조정 자세히 알아보기</a>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <span class="breadcrumb-item current" aria-current="page">개인워크아웃</span>
                         </nav>
                         <!-- Page Header -->
                         <div class="page-header">
@@ -110,23 +110,23 @@
 
                                     
                                     <button class="action-btn" aria-label="인쇄">
-                                        <i class="fas fa-print"></i>
+                                        <i class="fas fa-print" aria-hidden="true"></i>
                                     </button>
                                     <button class="action-btn" aria-label="공유">
-                                        <i class="fas fa-share-alt"></i>
+                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
                                     </button>
                                 </div>
 
                             </div>
                         </div>
                         <div class="tab fill full">
-                            <ul role="tablist">
+                            <ul role="tablist" aria-label="개인워크아웃 유형 선택">
                                 <li id="tab01" role="tab" aria-selected="false" aria-controls="tabpanel01" data-listener-attached="true">
-                                    <a href="개인워크아웃(연체90일이상)_일반.html" class="btn-tab">일반</a>
+                                    <a href="개인워크아웃(연체90일이상)_일반.html" class="btn-tab" aria-label="일반">일반</a>
                                 </li>
-                                <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02"
+                                <li id="tab02" role="tab" aria-selected="true" aria-controls="tabpanel02"
                                     class="active" data-listener-attached="true">
-                                    <a href="개인워크아웃(연체90일이상)_지원대상별특례_미취업청년대학생.html" class="btn-tab">지원대상별 특례<i class="sr-only created">선택됨</i></a>
+                                    <a href="개인워크아웃(연체90일이상)_지원대상별특례_미취업청년대학생.html" class="btn-tab" aria-label="지원대상별 특례 (현재 선택됨)"><span class="sr-only">현재 선택된 탭: </span>지원대상별 특례</a>
                                 </li>
                             </ul>
                         </div>
@@ -136,19 +136,19 @@
                                 <h3 class="summary-tit">개인워크아웃</h3>
                                 <div class="summary-link">
                                     <p class="w-full"><b>연체가 오래된(90일 이상) 취약채무자는 원금을 대폭 감면받아 장기 분할상환할 수 있습니다.</b></p>
-                                    <a href="#" class="youtube-btn-red" onclick="openYoutubeUrl('https://www.youtube.com/watch?v=d5cXqzKWnuM'); return false;" target="_blank" title="새창열림">개인워크아웃 알아보기 <i class="icon-youtube"></i></a>
+                                    <a href="#" class="youtube-btn-red" onclick="openYoutubeUrl('https://www.youtube.com/watch?v=d5cXqzKWnuM'); return false;" target="_blank" title="새창열림" aria-label="개인워크아웃 알아보기 영상 보기 - 새 창">개인워크아웃 알아보기 <i class="icon-youtube" aria-hidden="true"></i></a>
                                 </div>
                                 <div class="summary-key">
                                     <div class="keybox">
                                         <div class="stitle">
-                                            <img src="/type/www/images/img/keyword/keyword_연체기간.png?ver=5.2" alt="">
+                                            <img src="/type/www/images/img/keyword/keyword_연체기간.png?ver=5.2" alt="연체기간 아이콘">
                                             <span>연체기간</span>
                                         </div>
                                         <b class="key-text">90일 이상</b>
                                     </div>
                                     <div class="keybox">
                                         <div class="stitle">
-                                            <img src="/type/www/images/img/keyword/keyword_대상.png?ver=5.2" alt="">
+                                            <img src="/type/www/images/img/keyword/keyword_대상.png?ver=5.2" alt="대상 아이콘">
                                             <span>대상</span>
                                         </div>
                                         <b class="key-text">만 34세 이하의 대학생</b>
@@ -157,49 +157,49 @@
                             </div>
 
                             <div class="tab fill middle wrap">
-                                <ul role="tablist">
+                                <ul role="tablist" aria-label="지원대상별 특례 유형 선택">
                                     <li id="stab01" role="tab" aria-selected="false" aria-controls="stabpanel01"
                                         data-listener-attached="true">
-                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_미취업청년대학생.html" class="btn-tab">미취업청년·대학생</a>
+                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_미취업청년대학생.html" class="btn-tab" aria-label="미취업청년·대학생">미취업청년·대학생</a>
                                     </li>
-                                    <li id="stab01-1" class="active" role="tab" aria-selected="false"
+                                    <li id="stab01-1" class="active" role="tab" aria-selected="true"
                                         aria-controls="stabpanel01" data-listener-attached="true">
-                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_대학생.html" class="btn-tab">대학생<i class="sr-only created">선택됨</i></a>
+                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_대학생.html" class="btn-tab" aria-label="대학생 (현재 선택됨)"><span class="sr-only">현재 선택된 탭: </span>대학생</a>
                                     </li>
                                     <li id="stab02" role="tab" aria-selected="false" aria-controls="stabpanel02"
                                         data-listener-attached="true">
-                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_군복무자.html" class="btn-tab">군복무자</a>
+                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_군복무자.html" class="btn-tab" aria-label="군복무자">군복무자</a>
                                     </li>
                                     <li id="stab03" role="tab" aria-selected="false" aria-controls="stabpanel03"
                                         data-listener-attached="true">
-                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_소상공인자영업자.html" class="btn-tab">자영업자</a>
+                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_소상공인자영업자.html" class="btn-tab" aria-label="자영업자">자영업자</a>
                                     </li>
                                     <li id="stab04" role="tab" aria-selected="false" aria-controls="stabpanel04"
                                         data-listener-attached="true">
-                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_중소기업인재창업.html" class="btn-tab">중소기업인 재창업</a>
+                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_중소기업인재창업.html" class="btn-tab" aria-label="중소기업인 재창업">중소기업인 재창업</a>
                                     </li>
                                     <li id="stab06" role="tab" aria-selected="false" aria-controls="stabpanel06"
                                     data-listener-attached="true">
-                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_취약채무자특별면책.html" class="btn-tab">취약채무자 특별면책</a>
+                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_취약채무자특별면책.html" class="btn-tab" aria-label="취약채무자 특별면책">취약채무자 특별면책</a>
                                     </li>
                                     <li id="stab07" role="tab" aria-selected="false" aria-controls="stabpanel07"
                                     data-listener-attached="true">
-                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_소액취약채무자.html" class="btn-tab">소액채무자 면책</a>
+                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_소액취약채무자.html" class="btn-tab" aria-label="소액채무자 면책">소액채무자 면책</a>
                                     </li>
                                     <li id="stab08" role="tab" aria-selected="false" aria-controls="stabpanel08"
                                         data-listener-attached="true">
-                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_장기연체자특별채무조정.html" class="btn-tab">장기연체자 특별채무조정</a>
+                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_장기연체자특별채무조정.html" class="btn-tab" aria-label="장기연체자 특별채무조정">장기연체자 특별채무조정</a>
                                     </li>
                                     <li id="stab05" role="tab" aria-selected="false" aria-controls="stabpanel05"
                                         data-listener-attached="true">
-                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_해외동포지원.html" class="btn-tab">재외동포</a>
+                                        <a href="개인워크아웃(연체90일이상)_지원대상별특례_해외동포지원.html" class="btn-tab" aria-label="재외동포">재외동포</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="krds-accordion type-heading" data-type="multiOpen">
                                 <div class="accordion-item active">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                                                                         class="btn-accordion" aria-controls="accordionCollapseSample01"><span
+                                                                         class="btn-accordion" aria-expanded="true" aria-controls="accordionCollapseSample01"><span
                                             class="sec-tit">지원대상</span></button></h4>
                                     <div id="accordionCollapseSample01" class="accordion-collapse collapse"
                                          aria-labelledby="accordionHeaderSample01">
@@ -218,37 +218,37 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item active">
-                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                                            class="btn-accordion" aria-controls="accordionCollapseSample02"><span
+                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample02"
+                                            class="btn-accordion" aria-expanded="true" aria-controls="accordionCollapseSample02"><span
                                                 class="sec-tit">지원 내용</span></button></h4>
                                     <div id="accordionCollapseSample02" class="accordion-collapse collapse"
-                                        aria-labelledby="accordionHeaderSample01">
+                                        aria-labelledby="accordionHeaderSample02">
                                         <div class="accordion-body">
                                             <!-- accordion contents -->
                                             <div class="effect-box">
                                                 <div class="boxc3">
-                                                    <img src="/type/www/images/img/keyword/img_채무감면.png?ver=5.2" alt="">
+                                                    <img src="/type/www/images/img/keyword/img_채무감면.png?ver=5.2" alt="채무감면 아이콘">
                                                     <div class="key-text">
                                                         이자, 연체이자 <b class="fcOrange">전액 감면</b><br>
                                                         미상각채권 원금 최대 30%<br>상각채권 원금 최대 20~70% <br>범위내에서 감면
                                                     </div>
                                                 </div>
                                                 <div class="boxc3">
-                                                    <img src="/type/www/images/img/keyword/img_상환유예.png?ver=5.2" alt="">
+                                                    <img src="/type/www/images/img/keyword/img_상환유예.png?ver=5.2" alt="상환유예 아이콘">
                                                     <div class="key-text">대학 졸업 시까지 채무상환유예 <br>졸업 후 취업 시까지 최장 4년 이내에서 추가 상환유예</div>
                                                 </div>
                                             </div>
-                                            <p class="noti"><i class="svg-icon ico-information-fill"></i><b>신청비용(5만원) 면제</b></p>
+                                            <p class="noti"><i class="svg-icon ico-information-fill" aria-hidden="true"></i><b>신청비용(5만원) 면제</b></p>
                                         </div>
                                         <!-- //accordion contents -->
                                     </div>
                                 </div>
                                 <div class="accordion-item active">
-                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                                                                         class="btn-accordion" aria-controls="accordionCollapseSample02"><span
+                                    <h4 class="accordion-header"><button type="button" id="accordionHeaderSample03"
+                                                                         class="btn-accordion" aria-expanded="true" aria-controls="accordionCollapseSample03"><span
                                             class="sec-tit">신청서류</span></button></h4>
-                                    <div id="accordionCollapseSample02" class="accordion-collapse collapse"
-                                         aria-labelledby="accordionHeaderSample01">
+                                    <div id="accordionCollapseSample03" class="accordion-collapse collapse"
+                                         aria-labelledby="accordionHeaderSample03">
                                         <div class="accordion-body">
                                             <!-- accordion contents -->
                                             <div class="g-desc-body">
@@ -320,16 +320,16 @@
                                             </div>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_booking.png?ver=5.2">
+                                            <img src="/type/www/img/contents/png/icon_booking.png?ver=5.2" alt="전화 예약 아이콘">
                                         </div>
                                     </div>
                                     <div class="g-info-box lightblue">
                                         <div class="g-desc-box">
                                             <p class="g-tit">인터넷 상담예약</p>
-                                            <a class="conts-desc" href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_blank" title="새창열림">바로가기<img src="/type/www/img/icons/arrow-right.svg" /></a>
+                                            <a class="conts-desc" href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_blank" title="새창열림" aria-label="인터넷 상담예약 바로가기 - 새 창">바로가기<img src="/type/www/img/icons/arrow-right.svg" aria-hidden="true" /></a>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_online_booking.png?ver=5.2">
+                                            <img src="/type/www/img/contents/png/icon_online_booking.png?ver=5.2" alt="인터넷 예약 아이콘">
                                         </div>
                                     </div>
                                     <div class="g-info-box lightpurple appdown shadow">
@@ -337,11 +337,11 @@
                                             <p class="g-tit">모바일(APP) 예약</p>
                                             <div class="conts-desc">
                                                 바로가기
-                                                <img src="/type/www/img/icons/arrow-right.svg">
+                                                <img src="/type/www/img/icons/arrow-right.svg" aria-hidden="true">
                                             </div>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_mobile.png?ver=5.2">
+                                            <img src="/type/www/img/contents/png/icon_mobile.png?ver=5.2" alt="모바일 예약 아이콘">
                                         </div>
                                     </div>
                                 </div>
@@ -351,37 +351,37 @@
                         <div class="feedback-section noprint">
                             <div class="feedback-card">
                                 <h3>이 페이지에서 제공하는 정보에 대하여 어느 정도 만족하셨습니까?</h3>
-                                <div class="rating-options">
+                                <div class="rating-options" role="radiogroup" aria-label="만족도 평가">
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="5">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="5" aria-label="매우 만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         매우 만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="4">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="4" aria-label="만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="3">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="3" aria-label="보통">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         보통
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="2">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="2" aria-label="불만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         불만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="1">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="1" aria-label="매우 불만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         매우 불만족
                                     </label>
                                 </div>
                                 <div class="feedback-input">
                                     <label class="hide" for="feedback-text">의견 입력</label>
-                                    <textarea id="feedback-text" placeholder="내용을 입력해주세요" rows="1"></textarea>
-                                    <button type="button" class="submit-btn">제출</button>
+                                    <textarea id="feedback-text" placeholder="내용을 입력해주세요" rows="1" aria-label="의견 입력"></textarea>
+                                    <button type="button" class="submit-btn" aria-label="의견 제출">제출</button>
                                 </div>
                             </div>
                         </div>
