@@ -253,11 +253,12 @@
 
   .credit-education-btn {
     max-width: 100%;
-    padding: 25px 30px;
+    padding: 20px;
   }
 
   .credit-education-btn .btn-title {
-    font-size: 18px;
+    font-size: 17px;
+    font-weight: 400;
   }
 
   .credit-education-info {
@@ -384,7 +385,7 @@
       font-weight: 600;
       color: #222;
 
-      @media (max-width: 767px) {
+      @media (max-width: 1024px) {
         font-size: 14px;
       }
 
@@ -418,7 +419,8 @@
       color: #9EA4AA;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
+      max-width: 180px;
       height: 44px;
       font-size: 14px;
     }
