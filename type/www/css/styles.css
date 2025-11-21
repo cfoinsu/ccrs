@@ -2479,9 +2479,14 @@ body aside {
     border-radius: 24px;
     z-index: 1;
     box-shadow: 0px 0px 2px 0px #00000014;
-
     box-shadow: 0px 8px 16px 0px #0000001F;
+}
 
+@media (max-width: 1024px) {
+    .quick-item .quick-showbox {
+        top: 8px;
+        right: 83px;
+    }
 }
 
 .quick-item .quick-showbox .showbox-item {

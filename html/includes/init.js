@@ -123,7 +123,7 @@ $(function () {
         quickmenuContainer.classList.toggle('active');
         quickMenu.classList.toggle('active');
         mobileBtn.classList.toggle('active');
-        document.body.style.overflow = quickMenu.classList.contains('active') ? 'hidden' : '';
+        // document.body.style.overflow = quickMenu.classList.contains('active') ? 'hidden' : '';
       });
 
       // 오버레이 클릭 시 닫기
