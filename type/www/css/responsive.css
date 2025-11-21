@@ -611,9 +611,6 @@
   .footer .footer-content .footer-icon .certi {
     display: none;
   }
-  .scroll-to-top {
-    display: none !important;
-  }
 }
 @media (max-width: 1023px) {
   #header {

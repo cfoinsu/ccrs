@@ -3265,7 +3265,7 @@ body aside {
     .quickmenu-container {
         top: auto;
         right: 0;
-        bottom: 20px;
+        bottom: 80px;
         transform: none;
         gap: 8px;
     }
