@@ -98,6 +98,34 @@
             color: #4CAF50;
             text-decoration: line-through;
         }
+        .check-item.depth-1 {
+            padding-left: 20px;
+            font-weight: 500;
+            background: #f0f0f0;
+        }
+        .check-item.depth-2 {
+            padding-left: 40px;
+            color: #666;
+        }
+        .check-item.depth-3 {
+            padding-left: 60px;
+            color: #888;
+            font-size: 13px;
+        }
+        .sub-section {
+            margin-left: 0;
+            border-left: 3px solid #4CAF50;
+            padding-left: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .sub-section-title {
+            font-weight: 600;
+            color: #333;
+            margin: 10px 0 10px 0;
+            padding-left: 0;
+            font-size: 16px;
+        }
         .stats {
             display: flex;
             gap: 20px;
@@ -197,10 +225,10 @@
         
         <div class="note">
             <strong>작업 계획:</strong><br>
-            1. 공통 컴포넌트 (includes/) 먼저 작업<br>
-            2. 복합지원 신청 페이지 4개 작업<br>
-            3. 유형별 샘플 1개씩 작업하여 패턴 확정<br>
-            4. 나머지 페이지 일괄 적용
+            1. 공통 컴포넌트 (includes/) 먼저 작업 ✅<br>
+            2. 메인 페이지 작업 ✅<br>
+            3. 유형별 샘플 1개씩 작업하여 패턴 확정 ✅<br>
+            4. GNB 메뉴별로 페이지 작업 진행
         </div>
 
         <!-- 1. 공통 컴포넌트 -->
@@ -286,121 +314,742 @@
 
         <!-- 4. 유형별 샘플 페이지 (패턴 확정용) -->
         <div class="section">
-            <h2 class="section-title in-progress">4. 유형별 샘플 페이지 (패턴 확정용) 🔄</h2>
+            <h2 class="section-title completed">4. 유형별 샘플 페이지 (패턴 확정용) ✅</h2>
             <div class="checklist">
-                <div class="check-item">
-                    <input type="checkbox" id="게시판_일반_목록">
+                <div class="check-item completed">
+                    <input type="checkbox" id="게시판_일반_목록" checked disabled>
                     <label for="게시판_일반_목록">게시판_일반_목록.html (게시판 목록형)</label>
                 </div>
-                <div class="check-item">
-                    <input type="checkbox" id="게시판_상세">
+                <div class="check-item completed">
+                    <input type="checkbox" id="게시판_상세" checked disabled>
                     <label for="게시판_상세">게시판_상세.html (게시판 상세형)</label>
                 </div>
-                <div class="check-item">
-                    <input type="checkbox" id="게시판_등록">
+                <div class="check-item completed">
+                    <input type="checkbox" id="게시판_등록" checked disabled>
                     <label for="게시판_등록">게시판_등록.html (폼 페이지)</label>
                 </div>
-                <div class="check-item">
-                    <input type="checkbox" id="통합검색">
+                <div class="check-item completed">
+                    <input type="checkbox" id="통합검색" checked disabled>
                     <label for="통합검색">통합검색.html (검색 페이지)</label>
                 </div>
-                <div class="check-item">
-                    <input type="checkbox" id="자주묻는질문_FAQ">
+                <div class="check-item completed">
+                    <input type="checkbox" id="자주묻는질문_FAQ" checked disabled>
                     <label for="자주묻는질문_FAQ">자주묻는질문_FAQ.html (FAQ/아코디언)</label>
                 </div>
-                <div class="check-item">
-                    <input type="checkbox" id="결과페이지">
-                    <label for="결과페이지">결과 페이지 샘플 (예: 개인워크아웃_결과.html)</label>
+            </div>
+        </div>
+
+        <!-- 5. 채무조정 메뉴 -->
+        <div class="section">
+            <h2 class="section-title">5. 채무조정 메뉴</h2>
+            <p style="color: #666; font-size: 14px; margin-bottom: 15px;">GNB 메뉴: 채무조정</p>
+            <div class="checklist">
+                <!-- 채무조정 길잡이 -->
+                <div class="sub-section">
+                    <div class="sub-section-title">채무조정 길잡이</div>
+                    <div class="check-item depth-2 completed">
+                        <input type="checkbox" id="채무조정길잡이_소개" checked>
+                        <label for="채무조정길잡이_소개">채무조정제도 소개 (채무조정길잡이_소개.html)</label>
+                    </div>
+                    <div class="check-item depth-2 completed">
+                        <input type="checkbox" id="채무조정제도비교_종류비교" checked>
+                        <label for="채무조정제도비교_종류비교">채무조정제도 비교 (채무조정제도비교_종류비교.html)</label>
+                    </div>
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="채무조정제도비교_장단점비교">
+                        <label for="채무조정제도비교_장단점비교">채무조정제도 비교 - 장단점 (채무조정제도비교_장단점비교.html)</label>
+                    </div>
+                    <div class="check-item depth-2 completed">
+                        <input type="checkbox" id="채무조정절차" checked>
+                        <label for="채무조정절차">채무조정 절차 (채무조정절차.html)</label>
+                    </div>
+                    <div class="check-item depth-2 completed">
+                        <input type="checkbox" id="협약기관조회" checked>
+                        <label for="협약기관조회">채무조정 협약기관 (협약기관조회.html)</label>
+                    </div>
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="채무조정동의현황">
+                        <label for="채무조정동의현황">채무조정동의현황.html</label>
+                    </div>
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="채무조정동의현황_상세">
+                        <label for="채무조정동의현황_상세">채무조정동의현황_상세.html</label>
+                    </div>
+                </div>
+                
+                <!-- 채무조정 자세히 알아보기 -->
+                <div class="sub-section">
+                    <div class="sub-section-title">채무조정 자세히 알아보기</div>
+                    <!-- 신속채무조정 -->
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="신속채무조정(연체30일이하)_일반">
+                        <label for="신속채무조정(연체30일이하)_일반">신속채무조정 (신속채무조정(연체30일이하)_일반.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="신속채무조정(연체30일이하)_특례">
+                        <label for="신속채무조정(연체30일이하)_특례">- 특례 (신속채무조정(연체30일이하)_특례.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="신속채무조정1_결과">
+                        <label for="신속채무조정1_결과">- 결과1 (신속채무조정1_결과.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="신속채무조정2_결과">
+                        <label for="신속채무조정2_결과">- 결과2 (신속채무조정2_결과.html)</label>
+                    </div>
+                    
+                    <!-- 사전채무조정 -->
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="신속채무조정프리워크아웃(연체89일이하)_일반">
+                        <label for="신속채무조정프리워크아웃(연체89일이하)_일반">사전채무조정 (신속채무조정프리워크아웃(연체89일이하)_일반.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="신속채무조정프리워크아웃(연체89일이하)_특례">
+                        <label for="신속채무조정프리워크아웃(연체89일이하)_특례">- 특례 (신속채무조정프리워크아웃(연체89일이하)_특례.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="사전채무조정_결과">
+                        <label for="사전채무조정_결과">- 결과 (사전채무조정_결과.html)</label>
+                    </div>
+                    
+                    <!-- 개인워크아웃 -->
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_일반">
+                        <label for="개인워크아웃(연체90일이상)_일반">개인워크아웃 (개인워크아웃(연체90일이상)_일반.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_지원내용별특례_일반">
+                        <label for="개인워크아웃(연체90일이상)_지원내용별특례_일반">- 지원내용별특례 일반</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_지원내용별특례_특례">
+                        <label for="개인워크아웃(연체90일이상)_지원내용별특례_특례">- 지원내용별특례 특례</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_지원내용별특례_개인회생주택담보대출">
+                        <label for="개인워크아웃(연체90일이상)_지원내용별특례_개인회생주택담보대출">- 지원내용별특례 개인회생주택담보대출</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_지원내용별특례_담보권실행유예">
+                        <label for="개인워크아웃(연체90일이상)_지원내용별특례_담보권실행유예">- 지원내용별특례 담보권실행유예</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_지원내용별특례_담보주택매매지원">
+                        <label for="개인워크아웃(연체90일이상)_지원내용별특례_담보주택매매지원">- 지원내용별특례 담보주택매매지원</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_지원대상별특례_군복무자">
+                        <label for="개인워크아웃(연체90일이상)_지원대상별특례_군복무자">- 지원대상별특례 군복무자</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_지원대상별특례_대학생">
+                        <label for="개인워크아웃(연체90일이상)_지원대상별특례_대학생">- 지원대상별특례 대학생</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_지원대상별특례_미취업청년대학생">
+                        <label for="개인워크아웃(연체90일이상)_지원대상별특례_미취업청년대학생">- 지원대상별특례 미취업청년대학생</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_지원대상별특례_소상공인자영업자">
+                        <label for="개인워크아웃(연체90일이상)_지원대상별특례_소상공인자영업자">- 지원대상별특례 소상공인자영업자</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_지원대상별특례_소액취약채무자">
+                        <label for="개인워크아웃(연체90일이상)_지원대상별특례_소액취약채무자">- 지원대상별특례 소액취약채무자</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_지원대상별특례_장기연체자특별채무조정">
+                        <label for="개인워크아웃(연체90일이상)_지원대상별특례_장기연체자특별채무조정">- 지원대상별특례 장기연체자특별채무조정</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_지원대상별특례_중소기업인재창업">
+                        <label for="개인워크아웃(연체90일이상)_지원대상별특례_중소기업인재창업">- 지원대상별특례 중소기업인재창업</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_지원대상별특례_취약채무자특별면책">
+                        <label for="개인워크아웃(연체90일이상)_지원대상별특례_취약채무자특별면책">- 지원대상별특례 취약채무자특별면책</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃(연체90일이상)_지원대상별특례_해외동포지원">
+                        <label for="개인워크아웃(연체90일이상)_지원대상별특례_해외동포지원">- 지원대상별특례 해외동포지원</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인워크아웃_결과">
+                        <label for="개인워크아웃_결과">- 결과 (개인워크아웃_결과.html)</label>
+                    </div>
+                    
+                    <!-- 주택담보대출 채무조정 -->
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="주택담보대출채무조정_일반">
+                        <label for="주택담보대출채무조정_일반">주택담보대출 채무조정 (주택담보대출채무조정_일반.html)</label>
+                    </div>
+                    
+                    <!-- 새출발기금/새도약기금 -->
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="새출발기금채무조정_부실우려차주">
+                        <label for="새출발기금채무조정_부실우려차주">새출발기금 중개형 (새출발기금채무조정_부실우려차주.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="새출발기금채무조정_부실차주">
+                        <label for="새출발기금채무조정_부실차주">- 부실차주 (새출발기금채무조정_부실차주.html)</label>
+                    </div>
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="새도약기금">
+                        <label for="새도약기금">새도약기금 (새도약기금.html)</label>
+                    </div>
+                </div>
+                
+                <!-- 그 밖의 채무조정제도 -->
+                <div class="sub-section">
+                    <div class="sub-section-title">그 밖의 채무조정제도</div>
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="개인회생·파산제도_개인회생이란">
+                        <label for="개인회생·파산제도_개인회생이란">개인회생·파산제도 (개인회생·파산제도_개인회생이란.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인회생·파산제도_개인파산이란">
+                        <label for="개인회생·파산제도_개인파산이란">- 개인파산이란 (개인회생·파산제도_개인파산이란.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인회생·파산제도_신청지원">
+                        <label for="개인회생·파산제도_신청지원">- 신청지원 (개인회생·파산제도_신청지원.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인회생1_결과">
+                        <label for="개인회생1_결과">- 개인회생 결과1 (개인회생1_결과.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인회생2_결과">
+                        <label for="개인회생2_결과">- 개인회생 결과2 (개인회생2_결과.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인파산1_결과">
+                        <label for="개인파산1_결과">- 개인파산 결과1 (개인파산1_결과.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인파산2_결과">
+                        <label for="개인파산2_결과">- 개인파산 결과2 (개인파산2_결과.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="개인파산3_결과">
+                        <label for="개인파산3_결과">- 개인파산 결과3 (개인파산3_결과.html)</label>
+                    </div>
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="금융회사채무조정">
+                        <label for="금융회사채무조정">금융회사 채무조정 (금융회사채무조정.html)</label>
+                    </div>
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="장기연체자특별채무조정">
+                        <label for="장기연체자특별채무조정">장기연체자특별채무조정 (장기연체자특별채무조정.html)</label>
+                    </div>
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="수정조정">
+                        <label for="수정조정">수정조정 (수정조정.html)</label>
+                    </div>
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="재조정">
+                        <label for="재조정">재조정 (재조정.html)</label>
+                    </div>
+                </div>
+                
+                <!-- 나에게 맞는 채무조정 찾기 -->
+                <div class="sub-section">
+                    <div class="sub-section-title">나에게 맞는 채무조정 찾기</div>
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="나에게맞는채무조정찾기">
+                        <label for="나에게맞는채무조정찾기">나에게 맞는 채무조정 찾기 (나에게맞는채무조정찾기.html)</label>
+                    </div>
+                    <div class="check-item depth-3">
+                        <input type="checkbox" id="나에게맞는채무조정찾기_결과">
+                        <label for="나에게맞는채무조정찾기_결과">- 결과 (나에게맞는채무조정찾기_결과.html)</label>
+                    </div>
+                    <div class="check-item depth-2">
+                        <input type="checkbox" id="맞춤형채무조정_비교하기">
+                        <label for="맞춤형채무조정_비교하기">맞춤형 채무조정 비교하기 (맞춤형채무조정_비교하기.html)</label>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- 5. 채무조정 관련 페이지 -->
+        <!-- 6. 상환도우미 메뉴 -->
         <div class="section">
-            <h2 class="section-title">5. 채무조정 관련 페이지</h2>
+            <h2 class="section-title">6. 상환도우미 메뉴</h2>
+            <p style="color: #666; font-size: 14px; margin-bottom: 15px;">GNB 메뉴: 상환도우미</p>
             <div class="checklist">
                 <div class="check-item">
-                    <input type="checkbox" id="개인워크아웃(연체90일이상)_일반">
-                    <label for="개인워크아웃(연체90일이상)_일반">개인워크아웃(연체90일이상)_일반.html</label>
+                    <input type="checkbox" id="상환도우미소개">
+                    <label for="상환도우미소개">상환도우미소개.html</label>
                 </div>
                 <div class="check-item">
-                    <input type="checkbox" id="개인워크아웃_결과">
-                    <label for="개인워크아웃_결과">개인워크아웃_결과.html</label>
+                    <input type="checkbox" id="성실상환이란">
+                    <label for="성실상환이란">성실상환이란.html</label>
                 </div>
                 <div class="check-item">
-                    <input type="checkbox" id="사전채무조정_결과">
-                    <label for="사전채무조정_결과">사전채무조정_결과.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="신속채무조정1_결과">
-                    <label for="신속채무조정1_결과">신속채무조정1_결과.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="신속채무조정2_결과">
-                    <label for="신속채무조정2_결과">신속채무조정2_결과.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="개인파산1_결과">
-                    <label for="개인파산1_결과">개인파산1_결과.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="개인파산2_결과">
-                    <label for="개인파산2_결과">개인파산2_결과.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="개인파산3_결과">
-                    <label for="개인파산3_결과">개인파산3_결과.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="개인회생1_결과">
-                    <label for="개인회생1_결과">개인회생1_결과.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="개인회생2_결과">
-                    <label for="개인회생2_결과">개인회생2_결과.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="나에게맞는채무조정찾기">
-                    <label for="나에게맞는채무조정찾기">나에게맞는채무조정찾기.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="나에게맞는채무조정찾기_결과">
-                    <label for="나에게맞는채무조정찾기_결과">나에게맞는채무조정찾기_결과.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="맞춤형채무조정_비교하기">
-                    <label for="맞춤형채무조정_비교하기">맞춤형채무조정_비교하기.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="채무조정절차">
-                    <label for="채무조정절차">채무조정절차.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="채무조정제도비교_종류비교">
-                    <label for="채무조정제도비교_종류비교">채무조정제도비교_종류비교.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="채무조정제도비교_장단점비교">
-                    <label for="채무조정제도비교_장단점비교">채무조정제도비교_장단점비교.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="채무조정동의현황">
-                    <label for="채무조정동의현황">채무조정동의현황.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="채무조정동의현황_상세">
-                    <label for="채무조정동의현황_상세">채무조정동의현황_상세.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="채무조정길잡이_소개">
-                    <label for="채무조정길잡이_소개">채무조정길잡이_소개.html</label>
+                    <input type="checkbox" id="실효란">
+                    <label for="실효란">실효란.html</label>
                 </div>
             </div>
         </div>
 
-        <!-- 6. 게시판 페이지 -->
+        <!-- 7. 금융과 생활 메뉴 -->
         <div class="section">
-            <h2 class="section-title">6. 게시판 페이지</h2>
+            <h2 class="section-title">7. 금융과 생활 메뉴</h2>
+            <p style="color: #666; font-size: 14px; margin-bottom: 15px;">GNB 메뉴: 금융과 생활</p>
+            <div class="checklist">
+                <div class="check-item">
+                    <input type="checkbox" id="금융과생활소개">
+                    <label for="금융과생활소개">금융과생활소개.html</label>
+                </div>
+                <!-- 소액금융 -->
+                <div class="check-item">
+                    <input type="checkbox" id="소액대출_제도소개">
+                    <label for="소액대출_제도소개">소액대출_제도소개.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="소액대출_지원절차">
+                    <label for="소액대출_지원절차">소액대출_지원절차.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="소액대출_대출종류">
+                    <label for="소액대출_대출종류">소액대출_대출종류.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="소액대출_특별상품">
+                    <label for="소액대출_특별상품">소액대출_특별상품.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="소액대출_비대면소액대출">
+                    <label for="소액대출_비대면소액대출">소액대출_비대면소액대출.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="소액대출_소액금융소식_목록">
+                    <label for="소액대출_소액금융소식_목록">소액대출_소액금융소식_목록.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="소액대출_소액금융소식_상세">
+                    <label for="소액대출_소액금융소식_상세">소액대출_소액금융소식_상세.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="소액대출_소액금융소식_갤러리">
+                    <label for="소액대출_소액금융소식_갤러리">소액대출_소액금융소식_갤러리.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="소액금융소식_목록">
+                    <label for="소액금융소식_목록">소액금융소식_목록.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="소액금융소식_상세">
+                    <label for="소액금융소식_상세">소액금융소식_상세.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="소액신용카드발급_카드종류">
+                    <label for="소액신용카드발급_카드종류">소액신용카드발급_카드종류.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="소액신용카드발급_카드발급소개">
+                    <label for="소액신용카드발급_카드발급소개">소액신용카드발급_카드발급소개.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="소액신용카드발급_지원절차">
+                    <label for="소액신용카드발급_지원절차">소액신용카드발급_지원절차.html</label>
+                </div>
+                <!-- 복합지원 -->
+                <div class="check-item completed">
+                    <input type="checkbox" id="복합지원신청_고용지원" checked disabled>
+                    <label for="복합지원신청_고용지원">복합지원신청_고용지원.html</label>
+                </div>
+                <div class="check-item completed">
+                    <input type="checkbox" id="복합지원신청_기타지원" checked disabled>
+                    <label for="복합지원신청_기타지원">복합지원신청_기타지원.html</label>
+                </div>
+                <div class="check-item completed">
+                    <input type="checkbox" id="복합지원신청_복지지원" checked disabled>
+                    <label for="복합지원신청_복지지원">복합지원신청_복지지원.html</label>
+                </div>
+                <div class="check-item completed">
+                    <input type="checkbox" id="복합지원신청_금융지원" checked disabled>
+                    <label for="복합지원신청_금융지원">복합지원신청_금융지원.html</label>
+                </div>
+                <div class="check-item completed">
+                    <input type="checkbox" id="복합지원신청하기" checked disabled>
+                    <label for="복합지원신청하기">복합지원신청하기.html</label>
+                </div>
+                <div class="check-item completed">
+                    <input type="checkbox" id="복합지원신청_신청방법" checked disabled>
+                    <label for="복합지원신청_신청방법">복합지원신청_신청방법.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="복합지원개요">
+                    <label for="복합지원개요">복합지원개요.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="금융연계">
+                    <label for="금융연계">금융연계.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="고용연계">
+                    <label for="고용연계">고용연계.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="복지연계">
+                    <label for="복지연계">복지연계.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="기타연계">
+                    <label for="기타연계">기타연계.html</label>
+                </div>
+                <!-- 컨설팅 지원 -->
+                <div class="check-item">
+                    <input type="checkbox" id="신용복지컨설팅">
+                    <label for="신용복지컨설팅">신용복지컨설팅.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="소상공인맞춤형컨설팅">
+                    <label for="소상공인맞춤형컨설팅">소상공인맞춤형컨설팅.html</label>
+                </div>
+                <!-- 신용교육 -->
+                <div class="check-item">
+                    <input type="checkbox" id="신용교육프로그램신청_신용교육소개">
+                    <label for="신용교육프로그램신청_신용교육소개">신용교육프로그램신청_신용교육소개.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="신용교육프로그램신청_온라인신용교육">
+                    <label for="신용교육프로그램신청_온라인신용교육">신용교육프로그램신청_온라인신용교육.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="신용교육프로그램신청_찾아가는신용교육">
+                    <label for="신용교육프로그램신청_찾아가는신용교육">신용교육프로그램신청_찾아가는신용교육.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="신용교육프로그램신청_신용교육활동과성과">
+                    <label for="신용교육프로그램신청_신용교육활동과성과">신용교육프로그램신청_신용교육활동과성과.html</label>
+                </div>
+                <!-- 불법사금융 예방∙신고 -->
+                <div class="check-item">
+                    <input type="checkbox" id="불법사금융알아보기_예방가이드">
+                    <label for="불법사금융알아보기_예방가이드">불법사금융알아보기_예방가이드.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="불법사금융알아보기_대출사기">
+                    <label for="불법사금융알아보기_대출사기">불법사금융알아보기_대출사기.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="불법사금융알아보기_미등록대부">
+                    <label for="불법사금융알아보기_미등록대부">불법사금융알아보기_미등록대부.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="불법사금융알아보기_보이스피싱">
+                    <label for="불법사금융알아보기_보이스피싱">불법사금융알아보기_보이스피싱.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="불법사금융알아보기_불법고금리대부">
+                    <label for="불법사금융알아보기_불법고금리대부">불법사금융알아보기_불법고금리대부(일_월수 계산기).html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="불법사금융알아보기_불법채권추심">
+                    <label for="불법사금융알아보기_불법채권추심">불법사금융알아보기_불법채권추심.html</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. 알림과 홍보 메뉴 -->
+        <div class="section">
+            <h2 class="section-title">8. 알림과 홍보 메뉴</h2>
+            <p style="color: #666; font-size: 14px; margin-bottom: 15px;">GNB 메뉴: 알림과 홍보</p>
+            <div class="checklist">
+                <!-- 공지사항, 보도자료, 입찰공고는 외부 링크 -->
+                <div class="check-item">
+                    <input type="checkbox" id="공지사항_목록">
+                    <label for="공지사항_목록">공지사항_목록.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="공지사항_상세">
+                    <label for="공지사항_상세">공지사항_상세.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="보도자료_목록">
+                    <label for="보도자료_목록">보도자료_목록.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="보도자료_상세">
+                    <label for="보도자료_상세">보도자료_상세.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="보도자료_갤러리_목록">
+                    <label for="보도자료_갤러리_목록">보도자료_갤러리_목록.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="보도자료_갤러리_상세">
+                    <label for="보도자료_갤러리_상세">보도자료_갤러리_상세.html</label>
+                </div>
+                <!-- 홍보활동 -->
+                <div class="check-item">
+                    <input type="checkbox" id="영상광고게시판">
+                    <label for="영상광고게시판">영상광고게시판.html</label>
+                </div>
+                <!-- 인재채용 -->
+                <div class="check-item">
+                    <input type="checkbox" id="인재상">
+                    <label for="인재상">인재상.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="채용공고_목록">
+                    <label for="채용공고_목록">채용공고_목록.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="채용공고_상세">
+                    <label for="채용공고_상세">채용공고_상세.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="채용절차">
+                    <label for="채용절차">채용절차.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="채용문의">
+                    <label for="채용문의">채용문의.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="채용홍보영상_갤러리">
+                    <label for="채용홍보영상_갤러리">채용홍보영상_갤러리.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="임직원행동강령">
+                    <label for="임직원행동강령">임직원행동강령.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="임직원친인척채용인원공개_목록">
+                    <label for="임직원친인척채용인원공개_목록">임직원친인척채용인원공개_목록.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="임직원친인척채용인원공개_상세">
+                    <label for="임직원친인척채용인원공개_상세">임직원친인척채용인원공개_상세.html</label>
+                </div>
+                <!-- 사회공헌 -->
+                <div class="check-item">
+                    <input type="checkbox" id="사업소개">
+                    <label for="사업소개">사업소개.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="사업소개_미래세대">
+                    <label for="사업소개_미래세대">사업소개_미래세대.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="사업소개_성실상환자지원">
+                    <label for="사업소개_성실상환자지원">사업소개_성실상환자지원.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="사업소개_채무금융지원">
+                    <label for="사업소개_채무금융지원">사업소개_채무금융지원.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="사업소개_채무지역사회공헌">
+                    <label for="사업소개_채무지역사회공헌">사업소개_채무지역사회공헌.html</label>
+                </div>
+                <!-- 자료실 -->
+                <div class="check-item">
+                    <input type="checkbox" id="게시판_갤러리_목록">
+                    <label for="게시판_갤러리_목록">게시판_갤러리_목록.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="게시판_목록형_목록">
+                    <label for="게시판_목록형_목록">게시판_목록형_목록.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="게시판_아코디언">
+                    <label for="게시판_아코디언">게시판_아코디언.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="게시판_준비중">
+                    <label for="게시판_준비중">게시판_준비중.html</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. 소통과 참여 메뉴 -->
+        <div class="section">
+            <h2 class="section-title">9. 소통과 참여 메뉴</h2>
+            <p style="color: #666; font-size: 14px; margin-bottom: 15px;">GNB 메뉴: 소통과 참여</p>
+            <div class="checklist">
+                <!-- 자주하는 질문(FAQ) -->
+                <div class="check-item completed">
+                    <input type="checkbox" id="자주묻는질문_FAQ" checked disabled>
+                    <label for="자주묻는질문_FAQ">자주묻는질문_FAQ.html</label>
+                </div>
+                <!-- 고객소통 -->
+                <div class="check-item">
+                    <input type="checkbox" id="고객의소리_목록">
+                    <label for="고객의소리_목록">고객의소리_목록.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="고객의소리_상세">
+                    <label for="고객의소리_상세">고객의소리_상세.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="고객의소리_입력">
+                    <label for="고객의소리_입력">고객의소리_입력.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="고객의소리_선택">
+                    <label for="고객의소리_선택">고객의소리_선택.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="고객의소리_동의">
+                    <label for="고객의소리_동의">고객의소리_동의.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="고객의소리_결과">
+                    <label for="고객의소리_결과">고객의소리_결과.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="고객의감사편지_목록">
+                    <label for="고객의감사편지_목록">고객의감사편지_목록.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="고객의감사편지_상세">
+                    <label for="고객의감사편지_상세">고객의감사편지_상세.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="고마워요신복위_목록">
+                    <label for="고마워요신복위_목록">고마워요신복위_목록.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="고마워요신복위_상세">
+                    <label for="고마워요신복위_상세">고마워요신복위_상세.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="고마워요신복위_입력">
+                    <label for="고마워요신복위_입력">고마워요신복위_입력.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="고마워요신복위_동의">
+                    <label for="고마워요신복위_동의">고마워요신복위_동의.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="고마워요신복위_결과">
+                    <label for="고마워요신복위_결과">고마워요신복위_결과.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="칭찬합니다_고마워요신복위_목록">
+                    <label for="칭찬합니다_고마워요신복위_목록">칭찬합니다_고마워요신복위_목록.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="칭찬합니다_동의">
+                    <label for="칭찬합니다_동의">칭찬합니다_동의.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="칭찬합니다_선택">
+                    <label for="칭찬합니다_선택">칭찬합니다_선택.html</label>
+                </div>
+                <!-- 군복무자 전용 질의응답 -->
+                <div class="check-item">
+                    <input type="checkbox" id="군복무자전용질의응답_동의">
+                    <label for="군복무자전용질의응답_동의">군복무자전용질의응답_동의.html</label>
+                </div>
+                <!-- 신용회복 스토리 -->
+                <div class="check-item">
+                    <input type="checkbox" id="이용수기">
+                    <label for="이용수기">이용수기.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="이용수기_상세">
+                    <label for="이용수기_상세">이용수기_상세.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="수기영상">
+                    <label for="수기영상">수기영상.html</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10. 위원회 소개 메뉴 -->
+        <div class="section">
+            <h2 class="section-title">10. 위원회 소개 메뉴</h2>
+            <p style="color: #666; font-size: 14px; margin-bottom: 15px;">GNB 메뉴: 위원회 소개</p>
+            <div class="checklist">
+                <div class="check-item">
+                    <input type="checkbox" id="위원장인사말">
+                    <label for="위원장인사말">위원장인사말.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="신용회복위원회소개">
+                    <label for="신용회복위원회소개">신용회복위원회소개.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="미션과비전">
+                    <label for="미션과비전">미션과비전.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="연혁">
+                    <label for="연혁">연혁.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="조직도및연락처_조직도">
+                    <label for="조직도및연락처_조직도">조직도및연락처_조직도.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="조직도및연락처_담당자연락처">
+                    <label for="조직도및연락처_담당자연락처">조직도및연락처_담당자연락처.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="위원회상징">
+                    <label for="위원회상징">위원회상징.html</label>
+                </div>
+                <!-- 청렴경영 -->
+                <div class="check-item">
+                    <input type="checkbox" id="윤리와책임_윤리헌장">
+                    <label for="윤리와책임_윤리헌장">윤리와책임_윤리헌장.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="윤리와책임_윤리강령">
+                    <label for="윤리와책임_윤리강령">윤리와책임_윤리강령.html</label>
+                </div>
+                <!-- 신용상담사 -->
+                <div class="check-item">
+                    <input type="checkbox" id="신용상담사자격시험">
+                    <label for="신용상담사자격시험">신용상담사자격시험.html</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11. 기타 페이지 (메뉴에 없는 페이지들) -->
+        <div class="section">
+            <h2 class="section-title">11. 기타 페이지 (메뉴에 없는 페이지들)</h2>
+            <p style="color: #666; font-size: 14px; margin-bottom: 15px;">GNB 메뉴에 직접 연결되지 않은 페이지들</p>
+            <div class="checklist" id="remainingPages">
+                <!-- 나머지 페이지들은 JavaScript로 동적 생성 -->
+            </div>
+        </div>
+
+        <!-- 12. 테스트/샘플 페이지 (제외 가능) -->
+        <div class="section">
+            <h2 class="section-title">12. 테스트/샘플 페이지 (선택 작업)</h2>
+            <div class="checklist">
+                <div class="check-item">
+                    <input type="checkbox" id="main_copy">
+                    <label for="main_copy">main copy.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="sample_style">
+                    <label for="sample_style">sample_style.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="test_carousel">
+                    <label for="test_carousel">test_carousel.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="youtube">
+                    <label for="youtube">youtube.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="chat">
+                    <label for="chat">chat.html</label>
+                </div>
+                <div class="check-item">
+                    <input type="checkbox" id="loadingbar">
+                    <label for="loadingbar">loadingbar.html</label>
+                </div>
+            </div>
+        </div>
             <div class="checklist">
                 <div class="check-item">
                     <input type="checkbox" id="공지사항_목록">
@@ -509,199 +1158,6 @@
             </div>
         </div>
 
-        <!-- 7. 소액금융 관련 페이지 -->
-        <div class="section">
-            <h2 class="section-title">7. 소액금융 관련 페이지</h2>
-            <div class="checklist">
-                <div class="check-item">
-                    <input type="checkbox" id="소액대출_제도소개">
-                    <label for="소액대출_제도소개">소액대출_제도소개.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="소액대출_지원절차">
-                    <label for="소액대출_지원절차">소액대출_지원절차.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="소액대출_대출종류">
-                    <label for="소액대출_대출종류">소액대출_대출종류.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="소액대출_특별상품">
-                    <label for="소액대출_특별상품">소액대출_특별상품.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="소액대출_비대면소액대출">
-                    <label for="소액대출_비대면소액대출">소액대출_비대면소액대출.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="소액대출_소액금융소식_목록">
-                    <label for="소액대출_소액금융소식_목록">소액대출_소액금융소식_목록.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="소액대출_소액금융소식_상세">
-                    <label for="소액대출_소액금융소식_상세">소액대출_소액금융소식_상세.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="소액대출_소액금융소식_갤러리">
-                    <label for="소액대출_소액금융소식_갤러리">소액대출_소액금융소식_갤러리.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="소액금융소식_목록">
-                    <label for="소액금융소식_목록">소액금융소식_목록.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="소액금융소식_상세">
-                    <label for="소액금융소식_상세">소액금융소식_상세.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="소액신용카드발급_카드종류">
-                    <label for="소액신용카드발급_카드종류">소액신용카드발급_카드종류.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="소액신용카드발급_카드발급소개">
-                    <label for="소액신용카드발급_카드발급소개">소액신용카드발급_카드발급소개.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="소액신용카드발급_지원절차">
-                    <label for="소액신용카드발급_지원절차">소액신용카드발급_지원절차.html</label>
-                </div>
-            </div>
-        </div>
-
-        <!-- 8. 기타 주요 페이지 -->
-        <div class="section">
-            <h2 class="section-title">8. 기타 주요 페이지</h2>
-            <div class="checklist">
-                <div class="check-item">
-                    <input type="checkbox" id="신용복지컨설팅">
-                    <label for="신용복지컨설팅">신용복지컨설팅.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="소상공인맞춤형컨설팅">
-                    <label for="소상공인맞춤형컨설팅">소상공인맞춤형컨설팅.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="신용교육프로그램신청_신용교육소개">
-                    <label for="신용교육프로그램신청_신용교육소개">신용교육프로그램신청_신용교육소개.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="신용교육프로그램신청_온라인신용교육">
-                    <label for="신용교육프로그램신청_온라인신용교육">신용교육프로그램신청_온라인신용교육.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="신용교육프로그램신청_찾아가는신용교육">
-                    <label for="신용교육프로그램신청_찾아가는신용교육">신용교육프로그램신청_찾아가는신용교육.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="신용교육프로그램신청_신용교육활동과성과">
-                    <label for="신용교육프로그램신청_신용교육활동과성과">신용교육프로그램신청_신용교육활동과성과.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="불법사금융알아보기_예방가이드">
-                    <label for="불법사금융알아보기_예방가이드">불법사금융알아보기_예방가이드.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="불법사금융알아보기_대출사기">
-                    <label for="불법사금융알아보기_대출사기">불법사금융알아보기_대출사기.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="불법사금융알아보기_미등록대부">
-                    <label for="불법사금융알아보기_미등록대부">불법사금융알아보기_미등록대부.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="불법사금융알아보기_보이스피싱">
-                    <label for="불법사금융알아보기_보이스피싱">불법사금융알아보기_보이스피싱.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="불법사금융알아보기_불법고금리대부">
-                    <label for="불법사금융알아보기_불법고금리대부">불법사금융알아보기_불법고금리대부(일_월수 계산기).html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="불법사금융알아보기_불법채권추심">
-                    <label for="불법사금융알아보기_불법채권추심">불법사금융알아보기_불법채권추심.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="금융과생활소개">
-                    <label for="금융과생활소개">금융과생활소개.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="복합지원개요">
-                    <label for="복합지원개요">복합지원개요.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="금융연계">
-                    <label for="금융연계">금융연계.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="고용연계">
-                    <label for="고용연계">고용연계.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="복지연계">
-                    <label for="복지연계">복지연계.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="기타연계">
-                    <label for="기타연계">기타연계.html</label>
-                </div>
-            </div>
-        </div>
-
-        <!-- 9. 회사소개/조직 관련 페이지 -->
-        <div class="section">
-            <h2 class="section-title">9. 회사소개/조직 관련 페이지</h2>
-            <div class="checklist">
-                <div class="check-item">
-                    <input type="checkbox" id="신용회복위원회소개">
-                    <label for="신용회복위원회소개">신용회복위원회소개.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="위원장인사말">
-                    <label for="위원장인사말">위원장인사말.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="미션과비전">
-                    <label for="미션과비전">미션과비전.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="연혁">
-                    <label for="연혁">연혁.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="조직도및연락처_조직도">
-                    <label for="조직도및연락처_조직도">조직도및연락처_조직도.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="조직도및연락처_담당자연락처">
-                    <label for="조직도및연락처_담당자연락처">조직도및연락처_담당자연락처.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="위원회상징">
-                    <label for="위원회상징">위원회상징.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="사업소개">
-                    <label for="사업소개">사업소개.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="사업소개_미래세대">
-                    <label for="사업소개_미래세대">사업소개_미래세대.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="사업소개_성실상환자지원">
-                    <label for="사업소개_성실상환자지원">사업소개_성실상환자지원.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="사업소개_채무금융지원">
-                    <label for="사업소개_채무금융지원">사업소개_채무금융지원.html</label>
-                </div>
-                <div class="check-item">
-                    <input type="checkbox" id="사업소개_채무지역사회공헌">
-                    <label for="사업소개_채무지역사회공헌">사업소개_채무지역사회공헌.html</label>
-                </div>
-            </div>
-        </div>
-
         <!-- 10. 기타 페이지 (나머지) -->
         <div class="section">
             <h2 class="section-title">10. 기타 페이지 (나머지)</h2>
@@ -710,7 +1166,7 @@
             </div>
         </div>
 
-        <!-- 11. 테스트/샘플 페이지 (제외 가능) -->
+        <!-- 11. 테스트/샘플 페이지 (선택 작업) -->
         <div class="section">
             <h2 class="section-title">11. 테스트/샘플 페이지 (선택 작업)</h2>
             <div class="checklist">
@@ -880,4 +1336,6 @@
     </script>
 </body>
 </html>
+
+
 
