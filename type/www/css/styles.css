@@ -7676,7 +7676,7 @@ table .table-center {
     overflow: hidden;
     border: 1px solid #eee;
     border-radius: .5rem;
-    width: 19%;
+    width: calc(20% - 1rem);
     padding: 5px;
 }
 
