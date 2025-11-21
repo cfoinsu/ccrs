@@ -3,13 +3,13 @@
 	<div class="swiper-container topswiper">
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
-				<a href="#">
-					<img src="/type/www/images/bg/bg_top_banner01.png?ver=5.2" alt="">
+				<a href="#" aria-label="상단 배너 1">
+					<img src="/type/www/images/bg/bg_top_banner01.png?ver=5.2" alt="상단 배너 이미지 1" aria-hidden="true">
 				</a>
 			</div>
 			<div class="swiper-slide">
-				<a href="#">
-					<img src="/type/www/images/bg/bg_top_banner01.png?ver=5.2" alt="">
+				<a href="#" aria-label="상단 배너 2">
+					<img src="/type/www/images/bg/bg_top_banner01.png?ver=5.2" alt="상단 배너 이미지 2" aria-hidden="true">
 				</a>
 			</div>
 		</div>
@@ -23,12 +23,12 @@
 				</div>
 			</div>
 			<div class="top-banner-close">
-				<button type="button" class="top-banner-hide-1day">
+				<button type="button" class="top-banner-hide-1day" aria-label="1일 동안 보지 않기">
 					<span>1일 동안 보지 않기</span>
 				</button>
-				<button type="button" class="top-banner-close-btn">
+				<button type="button" class="top-banner-close-btn" aria-label="상단 배너 닫기">
 					<span class="hide sr-only">배너닫기</span>
-					<i class="topbanner_close"></i>
+					<i class="topbanner_close" aria-hidden="true"></i>
 				</button>
 			</div>
 		</div>
@@ -47,6 +47,11 @@
 			pagination: {
 			el: ".topswiper-pagination",
 			clickable: true,
+			bulletClass: 'swiper-pagination-bullet',
+			bulletActiveClass: 'swiper-pagination-bullet-active',
+			renderBullet: function (index, className) {
+				return '<span class="' + className + '" role="button" aria-label="상단 배너 ' + (index + 1) + '번 슬라이드로 이동" tabindex="0"></span>';
+			},
 			}
 		});
 

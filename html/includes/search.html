@@ -1,16 +1,18 @@
     <!-- 검색영역 -->
-    <div class="search-menu" id="searchTag">
-        <h5>통합검색</h5>
+    <div class="search-menu" id="searchTag" role="dialog" aria-modal="true" aria-labelledby="search-title">
+        <h5 id="search-title">통합검색</h5>
         <div class="search-area-header">
-            <label for="searchText" class="hide">검색</label>
+            <label for="searchText" class="sr-only">검색어 입력</label>
             <input type="text" name="commonSearchText" id="searchText" placeholder="검색어를 입력하세요"
-                onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요'">
-            <a href="통합검색.html" class="btn-search-header"></a>
+                onfocus="this.placeholder=''" onblur="this.placeholder='검색어를 입력하세요'" aria-label="검색어 입력">
+            <button type="button" onclick="window.location.href='통합검색.html'" class="btn-search-header" aria-label="검색 실행">
+                <span class="sr-only">검색</span>
+            </button>
         </div>
 
-        <a href="#" class="btn-close">
-            <img src="/type/www/img/icons/ico_close.svg" alt="검색메뉴 닫기">
-        </a>
+        <button type="button" class="btn-close" aria-label="검색 메뉴 닫기">
+            <img src="/type/www/img/icons/ico_close.svg" alt="닫기" aria-hidden="true">
+        </button>
 
     </div>
     <!-- 검색영역 -->

@@ -1,45 +1,46 @@
 <!-- 모바일 전용 전체메뉴 -->
-<div class="mobile-allmenu-overlay" id="mobileAllmenuOverlay">
+<div class="mobile-allmenu-overlay" id="mobileAllmenuOverlay" role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title">
+	<h2 id="mobile-menu-title" class="sr-only">모바일 전체 메뉴</h2>
 	<div class="mobile-allmenu-panel">
 		<!-- 헤더 -->
 		<div class="mobile-allmenu-header">
-			<a href="main.html" class="logo">
+			<a href="main.html" class="logo" aria-label="신용회복위원회 홈으로 이동">
 				<img src="/type/www/images/logo/logo.svg" alt="신용회복위원회">
 			</a>
-			<button class="btn-close-menu" aria-label="전체메뉴 닫기">
-				<i class="las la-times"></i>
+			<button type="button" class="btn-close-menu" aria-label="전체메뉴 닫기">
+				<i class="las la-times" aria-hidden="true"></i>
 			</button>
 		</div>
 
 		<!-- 메뉴 컨텐츠 (2단 레이아웃) -->
 		<div class="mobile-allmenu-content">
 			<!-- 좌측: Depth1 메뉴 -->
-			<div class="menu-left">
-				<button class="menu-item" data-menu="menu1">
+			<nav class="menu-left" role="navigation" aria-label="주 메뉴">
+				<button type="button" class="menu-item" data-menu="menu1" aria-label="채무조정 메뉴 열기" aria-expanded="false">
 					<span class="menu-title">채무조정</span>
-					<i class="las la-angle-right"></i>
+					<i class="las la-angle-right" aria-hidden="true"></i>
 				</button>
-				<button class="menu-item" data-menu="menu2">
+				<button type="button" class="menu-item" data-menu="menu2" aria-label="상환도우미 메뉴 열기" aria-expanded="false">
 					<span class="menu-title">상환도우미</span>
-					<i class="las la-angle-right"></i>
+					<i class="las la-angle-right" aria-hidden="true"></i>
 				</button>
-				<button class="menu-item" data-menu="menu3">
+				<button type="button" class="menu-item" data-menu="menu3" aria-label="금융과 생활 메뉴 열기" aria-expanded="false">
 					<span class="menu-title">금융과 생활</span>
-					<i class="las la-angle-right"></i>
+					<i class="las la-angle-right" aria-hidden="true"></i>
 				</button>
-				<button class="menu-item" data-menu="menu4">
+				<button type="button" class="menu-item" data-menu="menu4" aria-label="알림과 홍보 메뉴 열기" aria-expanded="false">
 					<span class="menu-title">알림과 홍보</span>
-					<i class="las la-angle-right"></i>
+					<i class="las la-angle-right" aria-hidden="true"></i>
 				</button>
-				<button class="menu-item" data-menu="menu5">
+				<button type="button" class="menu-item" data-menu="menu5" aria-label="소통과 참여 메뉴 열기" aria-expanded="false">
 					<span class="menu-title">소통과 참여</span>
-					<i class="las la-angle-right"></i>
+					<i class="las la-angle-right" aria-hidden="true"></i>
 				</button>
-				<button class="menu-item" data-menu="menu6">
+				<button type="button" class="menu-item" data-menu="menu6" aria-label="위원회 소개 메뉴 열기" aria-expanded="false">
 					<span class="menu-title">위원회 소개</span>
-					<i class="las la-angle-right"></i>
+					<i class="las la-angle-right" aria-hidden="true"></i>
 				</button>
-			</div>
+			</nav>
 
 			<!-- 우측: Depth2/3 서브메뉴 -->
 			<div class="menu-right">
@@ -49,9 +50,9 @@
 
 					<!-- 채무조정 길잡이 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-head">
+						<button type="button" class="mobile-menu-head" aria-label="채무조정 길잡이 메뉴 열기" aria-expanded="false">
 							채무조정 길잡이
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
 							<li><a href="채무조정길잡이_소개.html">채무조정제도 소개</a></li>
@@ -63,9 +64,9 @@
 
 					<!-- 채무조정 자세히 알아보기 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-head">
+						<button type="button" class="mobile-menu-head" aria-label="채무조정 자세히 알아보기 메뉴 열기" aria-expanded="false">
 							채무조정 자세히 알아보기
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
 							<li><a href="신속채무조정(연체30일이하)_일반.html">신속채무조정</a></li>
@@ -79,9 +80,9 @@
 
 					<!-- 그 밖의 채무조정제도 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-head">
+						<button type="button" class="mobile-menu-head" aria-label="그 밖의 채무조정제도 메뉴 열기" aria-expanded="false">
 							그 밖의 채무조정제도
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
 							<li><a href="개인회생·파산제도_개인회생이란.html">개인회생·파산제도</a></li>
@@ -91,12 +92,12 @@
 
 					<!-- 나에게 맞는 채무조정 찾기 -->
 					<div class="mobile-menu-group">
-						<a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=190" target="_blank" class="mobile-menu-head single">나에게 맞는 채무조정 찾기</a>
+						<a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=190" target="_blank" class="mobile-menu-head single" aria-label="나에게 맞는 채무조정 찾기 - 새창 열림">나에게 맞는 채무조정 찾기</a>
 					</div>
 
 					<!-- 채무조정 상담안내 -->
 					<div class="mobile-menu-group">
-						<a href="상담안내.html" class="mobile-menu-head single">채무조정 상담안내</a>
+						<a href="상담안내.html" class="mobile-menu-head single" aria-label="채무조정 상담안내">채무조정 상담안내</a>
 					</div>
 				</div>
 
@@ -111,9 +112,9 @@
 
 					<!-- 성실상환 혜택 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-head">
+						<button type="button" class="mobile-menu-head" aria-label="성실상환 혜택 메뉴 열기" aria-expanded="false">
 							성실상환 혜택
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
 							<li><a href="성실상환이란.html">성실상환이란</a></li>
@@ -128,9 +129,9 @@
 
 					<!-- 실효위기 지원 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-head">
+						<button type="button" class="mobile-menu-head" aria-label="실효위기 지원 메뉴 열기" aria-expanded="false">
 							실효위기 지원
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
 							<li><a href="실효란.html">실효란?</a></li>
@@ -143,7 +144,7 @@
 
 					<!-- 나의 진행현황 -->
 					<div class="mobile-menu-group">
-						<a href="https://cyber.ccrs.or.kr/member/correct/myPage.do" target="_blank" class="mobile-menu-head single">나의 진행현황</a>
+						<a href="https://cyber.ccrs.or.kr/member/correct/myPage.do" target="_blank" class="mobile-menu-head single" aria-label="나의 진행현황 - 새창 열림">나의 진행현황</a>
 					</div>
 				</div>
 
@@ -153,14 +154,14 @@
 
 					<!-- 금융과 생활 소개 -->
 					<div class="mobile-menu-group">
-						<a href="금융과생활소개.html" class="mobile-menu-group-title single">금융과 생활 소개</a>
+						<a href="금융과생활소개.html" class="mobile-menu-group-title single" aria-label="금융과 생활 소개">금융과 생활 소개</a>
 					</div>
 
 					<!-- 소액금융 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-group-title">
+						<button type="button" class="mobile-menu-group-title" aria-label="소액금융 메뉴 열기" aria-expanded="false">
 							소액금융
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
 							<li><a href="소액대출_제도소개.html">소액대출</a></li>
@@ -170,9 +171,9 @@
 
 					<!-- 금융·고용·복지 복합지원 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-group-title">
+						<button type="button" class="mobile-menu-group-title" aria-label="금융·고용·복지 복합지원 메뉴 열기" aria-expanded="false">
 							금융·고용·복지 복합지원
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
 							<li><a href="복합지원개요.html">복합지원 개요</a></li>
@@ -182,17 +183,17 @@
 
 					<!-- 컨설팅 지원 -->
 					<div class="mobile-menu-group">
-						<a href="신용복지컨설팅.html" class="mobile-menu-group-title single">컨설팅 지원</a>
+						<a href="신용복지컨설팅.html" class="mobile-menu-group-title single" aria-label="컨설팅 지원">컨설팅 지원</a>
 					</div>
 
 					<!-- 신용교육 -->
 					<div class="mobile-menu-group">
-						<a href="신용교육프로그램신청_신용교육소개.html" class="mobile-menu-group-title single">신용교육</a>
+						<a href="신용교육프로그램신청_신용교육소개.html" class="mobile-menu-group-title single" aria-label="신용교육">신용교육</a>
 					</div>
 
 					<!-- 불법사금융 예방∙신고 -->
 					<div class="mobile-menu-group">
-						<a href="불법사금융알아보기_예방가이드.html" class="mobile-menu-group-title single">불법사금융 예방∙신고</a>
+						<a href="불법사금융알아보기_예방가이드.html" class="mobile-menu-group-title single" aria-label="불법사금융 예방∙신고">불법사금융 예방∙신고</a>
 					</div>
 				</div>
 
@@ -202,24 +203,24 @@
 
 					<!-- 공지사항 -->
 					<div class="mobile-menu-group">
-						<a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=840" target="_blank" class="mobile-menu-group-title single">공지사항</a>
+						<a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=840" target="_blank" class="mobile-menu-group-title single" aria-label="공지사항 - 새창 열림">공지사항</a>
 					</div>
 
 					<!-- 보도자료 -->
 					<div class="mobile-menu-group">
-						<a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=850" target="_blank" class="mobile-menu-group-title single">보도자료</a>
+						<a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=850" target="_blank" class="mobile-menu-group-title single" aria-label="보도자료 - 새창 열림">보도자료</a>
 					</div>
 
 					<!-- 입찰공고 -->
 					<div class="mobile-menu-group">
-						<a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=920" target="_blank" title="새창열림" class="mobile-menu-group-title single">입찰공고</a>
+						<a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=920" target="_blank" title="새창열림" class="mobile-menu-group-title single" aria-label="입찰공고 - 새창 열림">입찰공고</a>
 					</div>
 
 					<!-- 홍보활동 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-group-title">
+						<button type="button" class="mobile-menu-group-title" aria-label="홍보활동 메뉴 열기" aria-expanded="false">
 							홍보활동
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
 							<li><a href="영상광고게시판.html">홍보영상</a></li>
@@ -230,9 +231,9 @@
 
 					<!-- 인재채용 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-group-title">
+						<button type="button" class="mobile-menu-group-title" aria-label="인재채용 메뉴 열기" aria-expanded="false">
 							인재채용
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
 							<li><a href="인재상.html">인재상</a></li>
@@ -246,30 +247,30 @@
 
 					<!-- 사회공헌 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-group-title">
+						<button type="button" class="mobile-menu-group-title" aria-label="사회공헌 메뉴 열기" aria-expanded="false">
 							사회공헌
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
 							<li><a href="사업소개.html">사업소개</a></li>
 							<li><a href="기부현황_교육지원.html">기부현황</a></li>
 							<li><a href="사회공헌_활동성과_상세.html">활동성과</a></li>
-							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1830" target="_blank" title="새창열림">공시자료</a></li>
+							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1830" target="_blank" title="새창열림" aria-label="공시자료 - 새창 열림">공시자료</a></li>
 						</ul>
 					</div>
 
 					<!-- 자료실 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-group-title">
+						<button type="button" class="mobile-menu-group-title" aria-label="자료실 메뉴 열기" aria-expanded="false">
 							자료실
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
-							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1000" target="_blank" title="새창열림">위원회 서식</a></li>
-							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1010" target="_blank" title="새창열림">협약·법률</a></li>
-							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=940" target="_blank" title="새창열림">채무조정동의 현황</a></li>
-							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1210" target="_blank" title="새창열림">연구자료</a></li>
-							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=380" target="_blank" title="새창열림">결산자료</a></li>
+							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1000" target="_blank" title="새창열림" aria-label="위원회 서식 - 새창 열림">위원회 서식</a></li>
+							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1010" target="_blank" title="새창열림" aria-label="협약·법률 - 새창 열림">협약·법률</a></li>
+							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=940" target="_blank" title="새창열림" aria-label="채무조정동의 현황 - 새창 열림">채무조정동의 현황</a></li>
+							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1210" target="_blank" title="새창열림" aria-label="연구자료 - 새창 열림">연구자료</a></li>
+							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=380" target="_blank" title="새창열림" aria-label="결산자료 - 새창 열림">결산자료</a></li>
 						</ul>
 					</div>
 				</div>
@@ -280,21 +281,21 @@
 
 					<!-- 자주묻는 질문 (FAQ) -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-group-title">
+						<button type="button" class="mobile-menu-group-title" aria-label="자주묻는 질문 (FAQ) 메뉴 열기" aria-expanded="false">
 							자주묻는 질문 (FAQ)
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
-							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1300" target="_blank" title="새창열림">FAQ</a></li>
-							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1310" target="_blank" title="새창열림">영상 FAQ</a></li>
+							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1300" target="_blank" title="새창열림" aria-label="FAQ - 새창 열림">FAQ</a></li>
+							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1310" target="_blank" title="새창열림" aria-label="영상 FAQ - 새창 열림">영상 FAQ</a></li>
 						</ul>
 					</div>
 
 					<!-- 고객소통 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-group-title">
+						<button type="button" class="mobile-menu-group-title" aria-label="고객소통 메뉴 열기" aria-expanded="false">
 							고객소통
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
 							<li><a href="고객의소리_선택.html">고객의 소리</a></li>
@@ -304,17 +305,17 @@
 
 					<!-- 군복무자 전용 질의응답 -->
 					<div class="mobile-menu-group">
-						<a href="군복무자전용질의응답_동의.html" class="mobile-menu-group-title single">군복무자 전용 질의응답</a>
+						<a href="군복무자전용질의응답_동의.html" class="mobile-menu-group-title single" aria-label="군복무자 전용 질의응답">군복무자 전용 질의응답</a>
 					</div>
 
 					<!-- 신용회복 스토리 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-group-title">
+						<button type="button" class="mobile-menu-group-title" aria-label="신용회복 스토리 메뉴 열기" aria-expanded="false">
 							신용회복 스토리
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
-							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1610" target="_blank" title="새창열림">이용수기</a></li>
+							<li><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1610" target="_blank" title="새창열림" aria-label="이용수기 - 새창 열림">이용수기</a></li>
 							<li><a href="수기영상.html">이용수기영상</a></li>
 							<li><a href="고객의감사편지_목록.html">감사편지</a></li>
 						</ul>
@@ -327,14 +328,14 @@
 
 					<!-- 위원장 인사말 -->
 					<div class="mobile-menu-group">
-						<a href="위원장인사말.html" class="mobile-menu-group-title single">위원장 인사말</a>
+						<a href="위원장인사말.html" class="mobile-menu-group-title single" aria-label="위원장 인사말">위원장 인사말</a>
 					</div>
 
 					<!-- 기관소개 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-group-title">
+						<button type="button" class="mobile-menu-group-title" aria-label="기관소개 메뉴 열기" aria-expanded="false">
 							기관소개
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
 							<li><a href="신용회복위원회소개.html">신용회복위원회 소개</a></li>
@@ -347,14 +348,14 @@
 
 					<!-- 사회적 가치 실현 보고서 -->
 					<div class="mobile-menu-group">
-						<a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=440" target="_blank" title="새창열림" class="mobile-menu-group-title single">사회적 가치 실현 보고서</a>
+						<a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=440" target="_blank" title="새창열림" class="mobile-menu-group-title single" aria-label="사회적 가치 실현 보고서 - 새창 열림">사회적 가치 실현 보고서</a>
 					</div>
 
 					<!-- 청렴경영 -->
 					<div class="mobile-menu-group">
-						<button class="mobile-menu-group-title">
+						<button type="button" class="mobile-menu-group-title" aria-label="청렴경영 메뉴 열기" aria-expanded="false">
 							청렴경영
-							<i class="las la-angle-down"></i>
+							<i class="las la-angle-down" aria-hidden="true"></i>
 						</button>
 						<ul class="mobile-menu-list">
 							<li><a href="윤리와책임_윤리헌장.html">윤리헌장·윤리강령</a></li>
@@ -365,12 +366,12 @@
 
 					<!-- 신용상담사 -->
 					<div class="mobile-menu-group">
-						<a href="신용상담사자격시험.html" class="mobile-menu-group-title single">신용상담사</a>
+						<a href="신용상담사자격시험.html" class="mobile-menu-group-title single" aria-label="신용상담사">신용상담사</a>
 					</div>
 
 					<!-- 지부위치 안내 -->
 					<div class="mobile-menu-group">
-						<a href="https://svc.onebite.tech/branchInfo.do" target="_blank" class="mobile-menu-group-title single">지부위치 안내</a>
+						<a href="https://svc.onebite.tech/branchInfo.do" target="_blank" class="mobile-menu-group-title single" aria-label="지부위치 안내 - 새창 열림">지부위치 안내</a>
 					</div>
 				</div>
 			</div>
@@ -389,14 +390,18 @@
 		item.addEventListener('click', function() {
 			const menuId = this.getAttribute('data-menu');
 
-			// 모든 메뉴 아이템 비활성화
-			menuItems.forEach(mi => mi.classList.remove('active'));
+			// 모든 메뉴 아이템 비활성화 및 aria-expanded 업데이트
+			menuItems.forEach(mi => {
+				mi.classList.remove('active');
+				mi.setAttribute('aria-expanded', 'false');
+			});
 
 			// 모든 서브메뉴 숨김
 			submenuPanels.forEach(panel => panel.classList.remove('active'));
 
 			// 현재 메뉴 활성화
 			this.classList.add('active');
+			this.setAttribute('aria-expanded', 'true');
 
 			// 해당 서브메뉴 표시
 			const targetPanel = document.getElementById(menuId);
@@ -438,6 +443,9 @@
 				if (!isOpen) {
 					menuList.classList.add('open');
 					menuHead.classList.add('open');
+					menuHead.setAttribute('aria-expanded', 'true');
+				} else {
+					menuHead.setAttribute('aria-expanded', 'false');
 				}
 			}
 		}

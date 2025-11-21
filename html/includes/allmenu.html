@@ -1,6 +1,7 @@
     <!-- all-menu 사이트맵 -->
-    <div class="all-menu" id="allMenuTag">
-        <nav>
+    <div class="all-menu" id="allMenuTag" role="dialog" aria-modal="true" aria-labelledby="allmenu-title">
+        <h2 id="allmenu-title" class="sr-only">전체 메뉴</h2>
+        <nav role="navigation" aria-label="사이트맵">
             <ul class="all-menu-list">
                 <li>
                     <a href="#" class="depth1">채무조정</a>
@@ -61,7 +62,7 @@
                         <li class="depth3"><a href="#">자주하는 질문(FAQ)</a></li>
                         <li class="depth3"><a href="#">고객소통</a></li>
                         <li class="depth3"><a href="#">군복무자 전용 질의응답</a></li>
-                        <li class="depth3"><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1610" target="_blank" title="새창열림">이용수기</a></li>
+                        <li class="depth3"><a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=1610" target="_blank" title="새창열림" aria-label="이용수기 - 새창 열림">이용수기</a></li>
                     </ul>
                 </li>
                 <li>
@@ -79,14 +80,14 @@
                 </li>
             </ul>
             <div class="allmenu-util">
-                <a href="#" class="util1 hamburger-wrap">
-                    <img src="/type/www/img/icons/ico_close.svg" alt="전체메뉴 닫기">
+                <a href="#" class="util1 hamburger-wrap" aria-label="전체메뉴 닫기" role="button" tabindex="0">
+                    <img src="/type/www/img/icons/ico_close.svg" alt="닫기" aria-hidden="true">
                 </a>
-                <a href="#" class="util2 search-open">
-                    <img src="/type/www/img/icons/ico_sch.svg" alt="검색메뉴">
+                <a href="#" class="util2 search-open" aria-label="검색 메뉴 열기" role="button" tabindex="0">
+                    <img src="/type/www/img/icons/ico_sch.svg" alt="검색" aria-hidden="true">
                 </a>
-                <a href="#" class="util3">
-                    <img src="/type/www/img/icons/globe.svg" alt="언어변경">
+                <a href="/html_en/main_en.html" class="util3" aria-label="영문 페이지로 이동">
+                    <img src="/type/www/img/icons/globe.svg" alt="영문" aria-hidden="true">
                 </a>
             </div>
         </nav>
