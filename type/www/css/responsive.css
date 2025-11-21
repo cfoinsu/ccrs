@@ -66,6 +66,7 @@
     padding-bottom: 0;
   }
   .effect-box .boxc3 .key-img p {
+    width: 100%;
     font-size: 2rem;
     line-height: 1.3;
   }

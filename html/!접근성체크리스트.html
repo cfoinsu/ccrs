@@ -13,7 +13,7 @@
             line-height: 1.6;
         }
         .container {
-            max-width: 1400px;
+            max-width: 1680px;
             margin: 0 auto;
             background: white;
             padding: 30px;
@@ -78,15 +78,16 @@
             background: #f9f9f9;
             border-radius: 4px;
             transition: all 0.2s;
+            gap: 10px;
         }
         .check-item:hover {
             background: #f0f0f0;
         }
         .check-item input[type="checkbox"] {
-            margin-right: 10px;
             width: 18px;
             height: 18px;
             cursor: pointer;
+            flex-shrink: 0;
         }
         .check-item label {
             cursor: pointer;
@@ -97,6 +98,26 @@
         .check-item.completed label {
             color: #4CAF50;
             text-decoration: line-through;
+        }
+        .responsive-check {
+            margin-left: auto;
+        }
+        .responsive-label {
+            font-size: 12px;
+            color: #666;
+            flex: 0 0 auto;
+            margin-right: 0;
+        }
+        .responsive-label:before {
+            content: "반응형 ";
+        }
+        .check-item input.responsive-check:not(:checked) + .responsive-label {
+            color: #ff5722;
+            font-weight: bold;
+        }
+        .check-item input.responsive-check:not(:checked) + .responsive-label:after {
+            content: " 미완료";
+            color: #ff5722;
         }
         .check-item.depth-1 {
             padding-left: 20px;
@@ -220,6 +241,10 @@
             <div class="legend-item">
                 <div class="legend-color pending"></div>
                 <span>대기중</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ff5722;"></div>
+                <span>반응형 미완료</span>
             </div>
         </div>
         
@@ -381,34 +406,38 @@
                 <div class="sub-section">
                     <div class="sub-section-title">채무조정 자세히 알아보기</div>
                     <!-- 신속채무조정 -->
-                    <div class="check-item depth-2">
-                        <input type="checkbox" id="신속채무조정(연체30일이하)_일반">
+                    <div class="check-item depth-2 completed">
+                        <input type="checkbox" id="신속채무조정(연체30일이하)_일반" checked>
                         <label for="신속채무조정(연체30일이하)_일반">신속채무조정 (신속채무조정(연체30일이하)_일반.html)</label>
                     </div>
-                    <div class="check-item depth-3">
-                        <input type="checkbox" id="신속채무조정(연체30일이하)_특례">
+                    <div class="check-item depth-3 completed">
+                        <input type="checkbox" id="신속채무조정(연체30일이하)_특례" checked>
                         <label for="신속채무조정(연체30일이하)_특례">- 특례 (신속채무조정(연체30일이하)_특례.html)</label>
                     </div>
-                    <div class="check-item depth-3">
-                        <input type="checkbox" id="신속채무조정1_결과">
+                    <div class="check-item depth-3 completed">
+                        <input type="checkbox" id="신속채무조정1_결과" checked>
                         <label for="신속채무조정1_결과">- 결과1 (신속채무조정1_결과.html)</label>
+                        <input type="checkbox" id="신속채무조정1_결과_responsive" class="responsive-check">
+                        <label for="신속채무조정1_결과_responsive" class="responsive-label"></label>
                     </div>
-                    <div class="check-item depth-3">
-                        <input type="checkbox" id="신속채무조정2_결과">
+                    <div class="check-item depth-3 completed">
+                        <input type="checkbox" id="신속채무조정2_결과" checked>
                         <label for="신속채무조정2_결과">- 결과2 (신속채무조정2_결과.html)</label>
+                        <input type="checkbox" id="신속채무조정2_결과_responsive" class="responsive-check">
+                        <label for="신속채무조정2_결과_responsive" class="responsive-label"></label>
                     </div>
                     
                     <!-- 사전채무조정 -->
-                    <div class="check-item depth-2">
-                        <input type="checkbox" id="신속채무조정프리워크아웃(연체89일이하)_일반">
+                    <div class="check-item depth-2 completed">
+                        <input type="checkbox" id="신속채무조정프리워크아웃(연체89일이하)_일반" checked>
                         <label for="신속채무조정프리워크아웃(연체89일이하)_일반">사전채무조정 (신속채무조정프리워크아웃(연체89일이하)_일반.html)</label>
                     </div>
-                    <div class="check-item depth-3">
-                        <input type="checkbox" id="신속채무조정프리워크아웃(연체89일이하)_특례">
+                    <div class="check-item depth-3 completed">
+                        <input type="checkbox" id="신속채무조정프리워크아웃(연체89일이하)_특례" checked>
                         <label for="신속채무조정프리워크아웃(연체89일이하)_특례">- 특례 (신속채무조정프리워크아웃(연체89일이하)_특례.html)</label>
                     </div>
-                    <div class="check-item depth-3">
-                        <input type="checkbox" id="사전채무조정_결과">
+                    <div class="check-item depth-3 completed">
+                        <input type="checkbox" id="사전채무조정_결과" checked>
                         <label for="사전채무조정_결과">- 결과 (사전채무조정_결과.html)</label>
                     </div>
                     
