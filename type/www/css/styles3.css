@@ -1,3 +1,19 @@
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
 .blue-underline {
   position: relative;
   display: inline-block;
@@ -779,13 +795,20 @@
 }
 @media (max-width: 1023px) {
   .new-leap-fund-flow {
-    padding: 0 16px;
+    padding: 0;
+    margin: 0;
   }
 }
 .new-leap-fund-flow .flow-header {
   position: relative;
   max-width: 311px;
   margin: 0 auto;
+}
+@media (max-width: 1023px) {
+  .new-leap-fund-flow .flow-header {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
 }
 .new-leap-fund-flow .flow-header .header-title {
   background: #41b9e3;
@@ -830,6 +853,11 @@
   position: relative;
   height: 110px;
   margin-bottom: 40px;
+}
+@media (max-width: 1023px) {
+  .new-leap-fund-flow .flow-connector {
+    display: none;
+  }
 }
 .new-leap-fund-flow .flow-connector .connector-line-vertical {
   position: absolute;
@@ -991,6 +1019,12 @@
     width: 100%;
   }
 }
+.new-leap-fund-flow .flow-card .title {
+  font-size: 19px;
+  font-weight: 700;
+  color: #17191b;
+  margin-bottom: 16px;
+}
 .new-leap-fund-flow .flow-card .card-header {
   height: 56px;
   border-radius: 24px 24px 0 0;
@@ -1006,6 +1040,7 @@
   margin-bottom: 0;
 }
 .new-leap-fund-flow .flow-card .card-header .card-title {
+  margin-bottom: 0;
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;

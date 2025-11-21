@@ -4509,6 +4509,12 @@ table.comparison-table td:first-child {
     align-items: flex-end;
 }
 
+@media (max-width: 1024px) {
+    .g-info-box.full .g-desc-box.row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
 .g-info-box.full .g-desc-box,
 .g-grid-wrap.unit2 .g-info-box.sm .g-desc-box,
 .g-grid-wrap.unit4 .g-info-box.sm .g-desc-box {
@@ -7118,9 +7124,9 @@ input[type=radio]:checked+label.fillter-chip {
 .abslogocenter.kinfa {
     background: url(../images/img/round-logo-kinfa.png) center no-repeat;
     background-size: 100%;
-    width: 17%;
+    width: 80px;
     height: 100%;
-    top: 56%;
+    top: 60%;
 }
 
 /* 서머리박스 */
@@ -7236,6 +7242,11 @@ input[type=radio]:checked+label.fillter-chip {
     background-color: var(--krds-color-light-gray-0);
     border-radius: var(--krds-radius-xlarge2);
     border: 1px solid var(--krds-light-color-border-gray-light);
+}
+@media (max-width: 1024px) {
+    .effect-box .boxc4 {
+        flex: 1;
+    }
 }
 
 .effect-box .key-img {
@@ -7627,12 +7638,14 @@ table .table-center {
     font-weight: 700;
     color: #333;
     vertical-align: top;
+    white-space: nowrap;
 }
 
 .credential-info-table td {
     padding: 12px 0;
     color: #333;
     vertical-align: top;
+    width: calc(50% - 12px);
 }
 
 .credential-info-table .highlight-orange {
@@ -7679,6 +7692,11 @@ table .table-center {
     background: linear-gradient(to top, #D3E4FF 20%, transparent 20%);
     background-position: 0 25px;
     padding: 0 4px;
+}
+@media (max-width: 768px) {
+    .ptext {
+        font-size: 1.7rem !important;
+    }
 }
 
 .activity-card-content.bluegreen h3 {
@@ -7981,6 +7999,11 @@ table .table-center {
     .consulting-card-large h3 {
         font-size: 22px;
     }
+}
+
+.support-organization-wrap {
+    flex-direction: column !important;
+    gap: 20px !important;
 }
 
 .support-organization-card {
