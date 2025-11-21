@@ -3436,7 +3436,7 @@ body aside {
         flex-direction: column;
         gap: 20px;
     }
-    .g-wrap .g-flex.even {
+    .g-wrap .g-flex:nth-child(even) {
         flex-direction: column-reverse;
     }
 }
@@ -7534,7 +7534,11 @@ table .table-center {
     background-color: transparent;
     font-weight: 400;
 }
-
+@media (max-width: 1024px) {
+    .postion .positionbtn {
+        display: none;
+    }
+}
 .postion .positionbtn.posbtn01 {
     top: 78px;
     left: 666px;
