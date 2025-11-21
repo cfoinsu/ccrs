@@ -3423,6 +3423,16 @@ body aside {
     justify-content: space-between;
     gap: 60px;
 }
+
+@media (max-width: 1024px) {
+    .g-wrap .g-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .g-wrap .g-flex.even {
+        flex-direction: column-reverse;
+    }
+}
 .flextop .g-flex {
     display: flex;
     align-items: flex-start;
@@ -7196,6 +7206,14 @@ input[type=radio]:checked+label.fillter-chip {
     position: relative;
 }
 
+@media (max-width: 1024px) {
+    .effect-box.bgnone .boxc1,
+    .effect-box.bgnone .boxc2,
+    .effect-box.bgnone .boxc3 {
+        width: 100%;
+        flex: 1;
+    }
+}
 .effect-box .boxc1 {
     min-width: 100%;
     flex: 100%;

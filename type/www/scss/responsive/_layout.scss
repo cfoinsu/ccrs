@@ -51,6 +51,10 @@ $hdH-t: 53px;
     width: calc(100% - 200px);
     .swiper-wrapper {
       align-items: center;
+      img {
+        width: auto;
+        height: 86px;
+      }
     }
   }
   .buttons-wrap {

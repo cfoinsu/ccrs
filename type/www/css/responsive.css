@@ -170,6 +170,10 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.section-institution .institution-swiper .swiper-wrapper img {
+  width: auto;
+  height: 86px;
+}
 .section-institution .buttons-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
