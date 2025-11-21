@@ -1032,7 +1032,8 @@
   @media (max-width: 1023px) {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
+    margin-top: 10px;
   }
 
   .method-card {
@@ -1266,10 +1267,6 @@
   width: 100%;
   margin: 0 auto;
 
-  @media (max-width: 1023px) {
-    padding: 0 16px;
-  }
-
   .other-support-intro {
     margin-bottom: 40px;
     
@@ -1334,6 +1331,7 @@
     @media (max-width: 767px) {
       height: 56px;
       max-width: 200px;
+      margin-bottom: 20px;
 
       .header-title {
         font-size: 18px;
@@ -1361,7 +1359,7 @@
     }
 
     @media (max-width: 767px) {
-      height: 40px;
+      display: none;
     }
   }
 
@@ -1374,7 +1372,7 @@
     @media (max-width: 1023px) {
       flex-direction: column;
       align-items: center;
-      gap: 40px;
+      gap: 20px;
     }
   }
 
@@ -1543,9 +1541,9 @@
   width: 100%;
   margin: 0 auto;
 
-  @media (max-width: 1023px) {
-    padding: 0 16px;
-  }
+  // @media (max-width: 1023px) {
+  //   padding: 0 16px;
+  // }
 
   // Intro 공통 스타일
   .financial-support-intro,
@@ -1562,7 +1560,7 @@
       font-weight: 700;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
       font-size: 16px;
       margin-bottom: 32px;
     }
@@ -1583,7 +1581,6 @@
     max-width: 247px;
 
     .header-title {
-      
       font-size: 21px;
       font-weight: 700;
       color: #ffffff;
@@ -1591,9 +1588,10 @@
       margin: 0;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
       height: 56px;
       max-width: 200px;
+      margin-bottom: 20px;
 
       .header-title {
         font-size: 18px;
@@ -1619,7 +1617,8 @@
       object-fit: contain;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 1024px) {
+      display: none;
       height: 40px;
       margin-top: 20px;
       margin-bottom: 20px;
@@ -1638,7 +1637,7 @@
     @media (max-width: 1023px) {
       flex-direction: column;
       align-items: center;
-      gap: 40px;
+      gap: 20px;
     }
   }
 
@@ -1814,6 +1813,13 @@
   }
 }
 
+@include tabletLess {
+  .financial-support-section {
+    .support-card {
+      min-height: 0;
+    }
+  }
+}
 // 고용지원 연계 섹션 색상 오버라이드
 .employment-support-section {
   .employment-support-intro b {
