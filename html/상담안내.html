@@ -41,13 +41,13 @@
                         <div class="sidebar-header">
                             <h2>채무조정</h2>
                         </div>
-                        <nav class="sidebar-nav">
+                        <nav class="sidebar-nav" role="navigation" aria-label="채무조정 서브메뉴">
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-guide">
                                     채무조정 길잡이
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-guide">
                                     <li><a href="채무조정길잡이_소개.html" class="nav-subitem">채무조정제도 소개</a></li>
                                     <li><a href="채무조정제도비교_종류비교.html" class="nav-subitem">채무조정제도 비교</a></li>
                                     <li><a href="채무조정절차.html" class="nav-subitem">채무조정 절차</a></li>
@@ -55,11 +55,11 @@
                                 </ul>
                             </div>
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-detail">
                                     채무조정 자세히 알아보기
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-detail">
                                     <li><a href="신속채무조정(연체30일이하)_일반.html" class="nav-subitem">신속채무조정</a></li>
                                     <li><a href="신속채무조정프리워크아웃(연체89일이하)_일반.html" class="nav-subitem">사전채무조정</a></li>
                                     <li><a href="개인워크아웃(연체90일이상)_일반.html" class="nav-subitem">개인워크아웃</a></li>
@@ -69,18 +69,18 @@
                                 </ul>
                             </div>
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-other">
                                     그 밖의 채무조정제도
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-other">
                                     <li><a href="개인회생·파산제도_개인회생이란.html" class="nav-subitem">개인회생·파산제도</a></li>
                                     <li><a href="금융회사채무조정.html" class="nav-subitem">금융회사 채무조정</a></li>
                                 </ul>
                             </div>
                             <div class="nav-section">
                                 <a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=190" target="_blank"
-                                    title="간편진단 새창 이동" class="nav-section-title">나에게 맞는 채무조정 찾기</a>
+                                    title="간편진단 새창 이동" class="nav-section-title" aria-label="나에게 맞는 채무조정 찾기 - 새 창">나에게 맞는 채무조정 찾기</a>
                             </div>
                             <div class="nav-section active">
                                 <a href="상담안내.html" class="nav-section-title">채무조정 상담안내</a>
@@ -91,17 +91,17 @@
                     <!-- Content Area -->
                     <div class="content-area">
                         <!-- Breadcrumb -->
-                        <nav class="breadcrumb">
-                            <a href="#" class="breadcrumb-item">
-                                <i class="fas fa-home"></i>
+                        <nav class="breadcrumb" aria-label="경로">
+                            <a href="#" class="breadcrumb-item" aria-label="홈으로 이동">
+                                <i class="fas fa-home" aria-hidden="true"></i>
                                 홈
                             </a>
-                            <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">채무조정 </a>
-                            <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">채무조정길잡이</a>
-                            <span class="breadcrumb-separator"></span>
-                            <span class="breadcrumb-item current">채무조정 상담안내</span>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <a href="#" class="breadcrumb-item" aria-label="채무조정으로 이동">채무조정 </a>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <a href="#" class="breadcrumb-item" aria-label="채무조정길잡이로 이동">채무조정길잡이</a>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <span class="breadcrumb-item current" aria-current="page">채무조정 상담안내</span>
                         </nav>
                         <!-- Page Header -->
                         <div class="page-header">
@@ -110,10 +110,10 @@
                                 <div class="page-actions">
 
                                     <button class="action-btn" aria-label="인쇄">
-                                        <i class="fas fa-print"></i>
+                                        <i class="fas fa-print" aria-hidden="true"></i>
                                     </button>
                                     <button class="action-btn" aria-label="공유">
-                                        <i class="fas fa-share-alt"></i>
+                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
                                     </button>
                                 </div>
                             </div>
@@ -125,20 +125,19 @@
                             <div class="page-description bgBlue" style="flex-wrap: nowrap;">
                                 <p class="w-full">전국 서민금융통합지원센터에서 <span class="fBlue">서민금융 유관기관의 지원제도</span>를 연계해 드립니다.</p>
                                 <a href="https://svc.onebite.tech/branchInfo.do" target="_blank" title="새창열림"
-                                    style="font-size: 15px;line-height: 17px;" class="orange-link">센터위치 바로가기 <i
-                                        class="icon-link-white"></i></a>
+                                    style="font-size: 15px;line-height: 17px;" class="orange-link" aria-label="센터위치 바로가기 - 새 창">센터위치 바로가기 <i
+                                        class="icon-link-white" aria-hidden="true"></i></a>
                             </div>
                             <div class="tab fill full mt30">
-                                <ul role="tablist">
-                                    <li id="tab01" role="tab" aria-selected="false" aria-controls="tabpanel01"
+                                <ul role="tablist" aria-label="상담안내 탭 선택">
+                                    <li id="tab01" role="tab" aria-selected="true" aria-controls="tabpanel01"
                                         class="active" data-listener-attached="true">
-                                        <a href="상담안내.html" class="btn-tab">서민금융통합지원센터<i
-                                                class="sr-only created">선택됨</i></a>
+                                        <a href="상담안내.html" class="btn-tab" aria-label="서민금융통합지원센터 (현재 선택됨)"><span class="sr-only">현재 선택된 탭: </span>서민금융통합지원센터</a>
 
                                     </li>
                                     <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02"
                                         data-listener-attached="true">
-                                        <a href="상담안내_특례.html" class="btn-tab">상담안내</a>
+                                        <a href="상담안내_특례.html" class="btn-tab" aria-label="상담안내">상담안내</a>
                                     </li>
                                 </ul>
                             </div>
@@ -192,7 +191,7 @@
                                             </div>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_booking.png?ver=5.2">
+                                            <img src="/type/www/img/contents/png/icon_booking.png?ver=5.2" alt="" aria-hidden="true">
                                         </div>
                                     </div>
                                     <div class="g-info-box lightblue">
@@ -201,13 +200,13 @@
                                                 <p class="g-tit">인터넷 예약</p>
                                                 <span class="g-subtit">방문·온라인 상담</span>
                                             </div>
-                                            <a class="conts-desc" href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_blank" title="새창열림">
+                                            <a class="conts-desc" href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_blank" title="새창열림" aria-label="인터넷 예약 바로가기 - 새 창">
                                                 바로가기
-                                                <img src="/type/www/img/icons/arrow-right.svg" />
+                                                <img src="/type/www/img/icons/arrow-right.svg" alt="" aria-hidden="true" />
                                             </a>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_online_booking.png?ver=5.2">
+                                            <img src="/type/www/img/contents/png/icon_online_booking.png?ver=5.2" alt="" aria-hidden="true">
                                         </div>
                                     </div>
                                     <div class="g-info-box lightpurple appdown shadow">
@@ -215,11 +214,11 @@
                                             <p class="g-tit">모바일(APP) 예약</p>
                                             <div class="conts-desc">
                                                 바로가기
-                                                <img src="/type/www/img/icons/arrow-right.svg">
+                                                <img src="/type/www/img/icons/arrow-right.svg" alt="" aria-hidden="true">
                                             </div>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_mobile.png?ver=5.2">
+                                            <img src="/type/www/img/contents/png/icon_mobile.png?ver=5.2" alt="" aria-hidden="true">
                                         </div>
                                     </div>
                                 </div>

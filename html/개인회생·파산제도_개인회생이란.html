@@ -36,13 +36,13 @@
                         <div class="sidebar-header">
                             <h2>채무조정</h2>
                         </div>
-                        <nav class="sidebar-nav">
+                        <nav class="sidebar-nav" role="navigation" aria-label="채무조정 서브메뉴">
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-guide">
                                     채무조정 길잡이
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-guide">
                                     <li><a href="채무조정길잡이_소개.html" class="nav-subitem">채무조정제도 소개</a></li>
                                     <li><a href="채무조정제도비교_종류비교.html" class="nav-subitem">채무조정제도 비교</a></li>
                                     <li><a href="채무조정절차.html" class="nav-subitem">채무조정 절차</a></li>
@@ -50,11 +50,11 @@
                                 </ul>
                             </div>
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-detail">
                                     채무조정 자세히 알아보기
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-detail">
                                     <li><a href="신속채무조정(연체30일이하)_일반.html" class="nav-subitem">신속채무조정</a></li>
                                     <li><a href="신속채무조정프리워크아웃(연체89일이하)_일반.html" class="nav-subitem">사전채무조정</a></li>
                                     <li><a href="개인워크아웃(연체90일이상)_일반.html" class="nav-subitem">개인워크아웃</a></li>
@@ -64,18 +64,18 @@
                                 </ul>
                             </div>
                             <div class="nav-section active">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="true" aria-controls="nav-subsection-other">
                                     그 밖의 채무조정제도
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-other">
                                     <li><a href="개인회생·파산제도_개인회생이란.html" class="nav-subitem active">개인회생·파산제도</a></li>
                                     <li><a href="금융회사채무조정.html" class="nav-subitem">금융회사 채무조정</a></li>
                                 </ul>
                             </div>
                             <div class="nav-section">
                                 <a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=190" target="_blank"
-                                    title="간편진단 새창 이동" class="nav-section-title">나에게 맞는 채무조정 찾기</a>
+                                    title="간편진단 새창 이동" class="nav-section-title" aria-label="나에게 맞는 채무조정 찾기 - 새 창">나에게 맞는 채무조정 찾기</a>
                             </div>
                             <div class="nav-section">
                                 <a href="상담안내.html" class="nav-section-title">채무조정 상담안내</a>
@@ -86,17 +86,17 @@
                     <!-- Content Area -->
                     <div class="content-area">
                         <!-- Breadcrumb -->
-                        <nav class="breadcrumb">
-                            <a href="#" class="breadcrumb-item">
-                                <i class="fas fa-home"></i>
+                        <nav class="breadcrumb" aria-label="경로">
+                            <a href="#" class="breadcrumb-item" aria-label="홈으로 이동">
+                                <i class="fas fa-home" aria-hidden="true"></i>
                                 홈
                             </a>
-                            <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">채무조정</a>
-                            <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">개인회생·파산제도</a>
-                            <span class="breadcrumb-separator"></span>
-                            <span class="breadcrumb-item current">개인회생이란</span>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <a href="#" class="breadcrumb-item" aria-label="채무조정으로 이동">채무조정</a>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <a href="#" class="breadcrumb-item" aria-label="개인회생·파산제도로 이동">개인회생·파산제도</a>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <span class="breadcrumb-item current" aria-current="page">개인회생이란</span>
                         </nav>
                         <!-- Page Header -->
                         <div class="page-header">
@@ -105,10 +105,10 @@
                                 <div class="page-actions">
 
                                     <button class="action-btn" aria-label="인쇄">
-                                        <i class="fas fa-print"></i>
+                                        <i class="fas fa-print" aria-hidden="true"></i>
                                     </button>
                                     <button class="action-btn" aria-label="공유">
-                                        <i class="fas fa-share-alt"></i>
+                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
                                     </button>
                                 </div>
                             </div>
@@ -117,25 +117,24 @@
                             <p class="w-full">자신의 모든 재산으로도 채무를 변제할 수 없는 개인 채무자를 위한 채무조정 제도입니다.</p>
                             <a href="#"
                                 onclick="openYoutubeUrl('https://www.youtube.com/watch?v=5xDIB0-LGwc'); return false;"
-                                target="_blank" title="새창열림" class="krds-btn medium btn-blue shadow">
+                                target="_blank" title="새창열림" class="krds-btn medium btn-blue shadow" aria-label="개인회생·파산제도 알아보기 - 새 창">
                                 개인회생&middot;파산제도 알아보기
-                                <i class="icon_youtube"></i>
+                                <i class="icon_youtube" aria-hidden="true"></i>
                             </a>
                         </div>
                         <div class="tab fill full">
-                            <ul role="tablist">
-                                <li id="tab01" role="tab" aria-selected="false" aria-controls="tabpanel01"
+                            <ul role="tablist" aria-label="개인회생·파산제도 탭 선택">
+                                <li id="tab01" role="tab" aria-selected="true" aria-controls="tabpanel01"
                                     class="active" data-listener-attached="true">
-                                    <a href="개인회생·파산제도_개인회생이란.html" class="btn-tab">개인회생이란<i
-                                            class="sr-only created">선택됨</i></a>
+                                    <a href="개인회생·파산제도_개인회생이란.html" class="btn-tab" aria-label="개인회생이란 (현재 선택됨)"><span class="sr-only">현재 선택된 탭: </span>개인회생이란</a>
                                 </li>
                                 <li id="tab02" role="tab" aria-selected="false" aria-controls="tabpanel02"
                                     data-listener-attached="true">
-                                    <a href="개인회생·파산제도_개인파산이란.html" class="btn-tab">개인파산이란</a>
+                                    <a href="개인회생·파산제도_개인파산이란.html" class="btn-tab" aria-label="개인파산이란">개인파산이란</a>
                                 </li>
                                 <li id="tab03" role="tab" aria-selected="false" aria-controls="tabpanel03"
                                     data-listener-attached="true">
-                                    <a href="개인회생·파산제도_신청지원.html" class="btn-tab">개인회생·파산 신청지원</a>
+                                    <a href="개인회생·파산제도_신청지원.html" class="btn-tab" aria-label="개인회생·파산 신청지원">개인회생·파산 신청지원</a>
                                 </li>
                             </ul>
                         </div>
@@ -173,16 +172,16 @@
                                             aria-labelledby="accordionHeaderSample01">
                                             <div class="accordion-body">
                                                 <div class="conts-desc roundcheck">
-                                                    <ul class="krds-info-list decimal">
-                                                        <li class="mb8"><strong>개인채무자</strong>만 신청할 수 있습니다.</li>
-                                                        <li class="mb8"><strong>지급불능 또는 그러한 염려</strong>가 있어야 합니다.
-                                                            <ul class="krds-info-list dash mt4">
-                                                                <li>재산 합계액이 채무 총액보다 큰 경우 지급불능으로 보기 어렵습니다.</li>
+                                                    <ul class="krds-info-list decimal" role="list">
+                                                        <li role="listitem" class="mb8"><strong>개인채무자</strong>만 신청할 수 있습니다.</li>
+                                                        <li role="listitem" class="mb8"><strong>지급불능 또는 그러한 염려</strong>가 있어야 합니다.
+                                                            <ul class="krds-info-list dash mt4" role="list">
+                                                                <li role="listitem">재산 합계액이 채무 총액보다 큰 경우 지급불능으로 보기 어렵습니다.</li>
                                                             </ul>
                                                         </li>
-                                                        <li class="mb8"><strong>계속적이고 반복적인 수입</strong>이 있어야 합니다.</li>
-                                                        <li class="mb8">채무 총액이 무담보 10억원, 담보부 15억원 이하여야 합니다.</li>
-                                                        <li>과거 개인회생·파산제도 면책 이력이 있는 경우, 각 <strong>면책일로부터 5년이 경과</strong>해야 합니다.</li>
+                                                        <li role="listitem" class="mb8"><strong>계속적이고 반복적인 수입</strong>이 있어야 합니다.</li>
+                                                        <li role="listitem" class="mb8">채무 총액이 무담보 10억원, 담보부 15억원 이하여야 합니다.</li>
+                                                        <li role="listitem">과거 개인회생·파산제도 면책 이력이 있는 경우, 각 <strong>면책일로부터 5년이 경과</strong>해야 합니다.</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -240,29 +239,29 @@
                                                 <div class="g-info-box roundcheck">
                                                     <p><strong>개인회생 변제계획안은 <span class="primary">아래 5가지 기준을 모두
                                                                 충족</span>해야 합니다.</strong></p>
-                                                    <ul class="krds-info-list dash mt20">
-                                                        <li class="info-content">
+                                                    <ul class="krds-info-list dash mt20" role="list">
+                                                        <li role="listitem" class="info-content">
                                                             <p class="highlightbg">가용소득 전부 제공의 원칙</p>
                                                             <p class="fs_17">
                                                                 계속적이고 반복적인 수입에서 부양가족 수를 고려한 생계비를 제외한 <strong>가용소득의 전부가
                                                                     변제에 제공</strong>되어야 합니다.
                                                             </p>
                                                         </li>
-                                                        <li class="info-content">
+                                                        <li role="listitem" class="info-content">
                                                             <p class="highlightbg">청산가치 보장의 원칙</p>
                                                             <p class="fs_17">
                                                                 개인회생채권에 대한 총 변제금의 채무자가 파산하는 때에 <strong>배당 받을 총액보다 적지
                                                                     않아야</strong> 합니다.
                                                             </p>
                                                         </li>
-                                                        <li class="info-content">
+                                                        <li role="listitem" class="info-content">
                                                             <p class="highlightbg">변제계획의 공정·형평의 원칙</p>
                                                             <p class="fs_17">
                                                                 변제계획은 공정·형평의 원칙에 부합해야 합니다. 그러나 법에서 <strong>우선권을 부여한 채권은
                                                                     우선하여 변제</strong>해야 합니다.
                                                             </p>
                                                         </li>
-                                                        <li class="info-content">
+                                                        <li role="listitem" class="info-content">
                                                             <p class="highlightbg">최저변제액 제공원칙</p>
                                                             <p class="fs_17">
                                                                 개인회생 총 변제금이 3천만원 이하인 경우에는 인가결정일을 기준으로 한 개인회생채권 총 금액이
@@ -272,7 +271,7 @@
                                                                     변제</strong>해야 합니다.
                                                             </p>
                                                         </li>
-                                                        <li class="info-content">
+                                                        <li role="listitem" class="info-content">
                                                             <p class="highlightbg">수행가능성의 원칙</p>
                                                             <p class="fs_17">
                                                                 변제계획안은 <strong>수행 가능<strong>해야 합니다.
@@ -309,20 +308,21 @@
                                                                 합니다.
                                                             </p>
                                                         </div>
-                                                        <a href="https://www.scourt.go.kr/region/location/RegionSearchListAction.work" class="btn-outline large" target="_blank" title="새창열림">
+                                                        <a href="https://www.scourt.go.kr/region/location/RegionSearchListAction.work" class="btn-outline large" target="_blank" title="새창열림" aria-label="나의 관할법원 찾기 바로가기 - 새 창">
                                                             나의 관할법원 찾기 바로가기
-                                                            <img src="/type/www/img/icons/open-new-window.svg?ver=5.2" alt="화살표">
+                                                            <img src="/type/www/img/icons/open-new-window.svg?ver=5.2" alt="" aria-hidden="true">
                                                         </a>
                                                     </div>
                                                 </div>
                                                 <!--<a href="#" class="g-img mt10">
                                                     <img src="/type/www/images/img/개인회생03.png?ver=5.2" alt="" />
                                                 </a>-->
-                                                <p class="noti mt0"><i class="svg-icon ico-information-fill"></i>신용회복위원회에서 개인회생을 신청하는 경우 개시신청서 및 변제계획안 작성을 무료로
+                                                <p class="noti mt0"><i class="svg-icon ico-information-fill" aria-hidden="true"></i>신용회복위원회에서 개인회생을 신청하는 경우 개시신청서 및 변제계획안 작성을 무료로
                                                     지원해드립니다.</p>
                                                 <h4 class="con-tit bullet mt40">개인회생절차 개시신청서</h4>
                                                 <div class="g-info-box">
                                                     <table class="credential-info-table">
+                                                        <caption class="sr-only">개인회생절차 개시신청서 제출 서류 목록</caption>
                                                         <colgroup>
                                                             <col style="width: 3%;">
                                                             <col style="width: 46%;">
@@ -331,26 +331,26 @@
                                                         </colgroup>
                                                         <tbody>
                                                             <tr>
-                                                                <th class="highlight-orange">1.</th>
+                                                                <th class="highlight-orange" scope="row">1.</th>
                                                                 <td class="fw-normal">개인회생 채권자목록</td>
-                                                                <th class="highlight-orange">5.</th>
+                                                                <th class="highlight-orange" scope="row">5.</th>
                                                                 <td class="fw-normal">진술서</td>
                                                             </tr>
                                                             <tr>
-                                                                <th class="highlight-orange">2.</th>
+                                                                <th class="highlight-orange" scope="row">2.</th>
                                                                 <td class="fw-normal">재산 목록</td>
-                                                                <th class="highlight-orange" rowspan="2">6.</th>
+                                                                <th class="highlight-orange" rowspan="2" scope="row">6.</th>
                                                                 <td rowspan="2" class="fw-normal">신청일 전 10년 이내에 회생사건,
                                                                     화의사건, 파산사건 또는 개인회생사건을 신청한 사실이 있는 때에는 그 밖의 서류</td>
                                                             </tr>
                                                             <tr>
-                                                                <th class="highlight-orange">3.</th>
+                                                                <th class="highlight-orange" scope="row">3.</th>
                                                                 <td class="fw-normal">채무자의 수입 및 지출에 관한 목록</td>
                                                             </tr>
                                                             <tr>
-                                                                <th class="highlight-orange">4.</th>
+                                                                <th class="highlight-orange" scope="row">4.</th>
                                                                 <td class="fw-normal">급여소득자 또는 영업소득자임을 증명하는 자료</td>
-                                                                <th class="highlight-orange">7.</th>
+                                                                <th class="highlight-orange" scope="row">7.</th>
                                                                 <td class="fw-normal">그 밖에 대법원 규칙이 정하는 서류</td>
                                                             </tr>
                                                         </tbody>
@@ -380,7 +380,7 @@
                                             </div>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_booking.png?ver=5.2">
+                                            <img src="/type/www/img/contents/png/icon_booking.png?ver=5.2" alt="" aria-hidden="true">
                                         </div>
                                     </div>
                                     <div class="g-info-box lightblue">
@@ -389,13 +389,13 @@
                                                 <p class="g-tit">인터넷 예약</p>
                                                 <span class="g-subtit">방문·온라인 상담</span>
                                             </div>
-                                            <a class="conts-desc" href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_blank" title="새창열림">
+                                            <a class="conts-desc" href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_blank" title="새창열림" aria-label="인터넷 예약 바로가기 - 새 창">
                                                 바로가기
-                                                <img src="/type/www/img/icons/arrow-right.svg" />
+                                                <img src="/type/www/img/icons/arrow-right.svg" alt="" aria-hidden="true" />
                                             </a>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_online_booking.png?ver=5.2">
+                                            <img src="/type/www/img/contents/png/icon_online_booking.png?ver=5.2" alt="" aria-hidden="true">
                                         </div>
                                     </div>
                                     <div class="g-info-box lightpurple appdown shadow">
@@ -403,11 +403,11 @@
                                             <p class="g-tit">모바일(APP) 예약</p>
                                             <div class="conts-desc">
                                                 바로가기
-                                                <img src="/type/www/img/icons/arrow-right.svg">
+                                                <img src="/type/www/img/icons/arrow-right.svg" alt="" aria-hidden="true">
                                             </div>
                                         </div>
                                         <div class="g-img">
-                                            <img src="/type/www/img/contents/png/icon_mobile.png?ver=5.2">
+                                            <img src="/type/www/img/contents/png/icon_mobile.png?ver=5.2" alt="" aria-hidden="true">
                                         </div>
                                     </div>
                                 </div>
