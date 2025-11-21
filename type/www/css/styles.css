@@ -4981,6 +4981,21 @@ table .krds-info-list>li {
     gap: var(--krds-gap-4);
 }
 
+@media (max-width: 1024px) {
+    .charter-wrap {
+        padding: 10px;
+    }
+    .charter-box {
+        padding: 80px 10px;
+    }
+    .charter-box svg {
+        display: none;
+    }
+    .charter-title {
+        flex-direction: column;
+    }
+}
+
 .charter-title img {
     height: 42px;
 }
@@ -5419,6 +5434,13 @@ table .krds-info-list>li {
 .chairman-box {
     display: flex;
     gap: 48px;
+}
+
+@media (max-width: 1024px) {
+    .chairman-box {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 .chairman-box h4 {
@@ -8442,6 +8464,12 @@ a.customer-service-card {
 .fraud-response-item {
     padding: 24px;
     position: relative;
+}
+
+@media (max-width: 1024px) {
+    .fraud-response-item {
+        padding: 16px 0;
+    }
 }
 
 .fraud-response-item:nth-child(2),
