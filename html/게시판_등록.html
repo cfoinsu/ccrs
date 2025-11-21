@@ -39,13 +39,13 @@
                         <div class="sidebar-header">
                             <h2>채무조정</h2>
                         </div>
-                        <nav class="sidebar-nav">
+                        <nav class="sidebar-nav" role="navigation" aria-label="채무조정 서브메뉴">
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-1">
                                     채무조정 길잡이
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-1">
                                     <li><a href="채무조정길잡이_소개.html" class="nav-subitem">채무조정제도 소개</a></li>
                                     <li><a href="채무조정제도비교_종류비교.html" class="nav-subitem">채무조정제도 비교</a></li>
                                     <li><a href="채무조정절차.html" class="nav-subitem">채무조정 절차</a></li>
@@ -53,11 +53,11 @@
                                 </ul>
                             </div>
                             <div class="nav-section active">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="true" aria-controls="nav-subsection-2">
                                     채무조정 자세히 알아보기
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-2">
                                     <li><a href="신속채무조정(연체30일이하)_일반.html" class="nav-subitem active">신속채무조정 (연체30일 이하)</a></li>
                                     <li><a href="신속채무조정(연체30일이하)_일반.html" class="nav-subitem">신속채무조정</a></li>
                                     <li><a href="신속채무조정프리워크아웃(연체89일이하)_일반.html" class="nav-subitem">사전채무조정</a></li>
@@ -68,17 +68,17 @@
                                 </ul>
                             </div>
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-3">
                                     그 밖의 채무조정제도
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-3">
                                     <li><a href="개인회생·파산제도_개인회생이란.html" class="nav-subitem">개인회생·파산제도</a></li>
                                     <li><a href="금융회사채무조정.html" class="nav-subitem">금융회사 채무조정</a></li>
                                 </ul>
                             </div>
                             <div class="nav-section">
-                                <a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=190" target="_blank" title="간편진단 새창 이동"  class="nav-section-title">나에게 맞는 채무조정 찾기</a>
+                                <a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=190" target="_blank" title="간편진단 새창 이동" class="nav-section-title" aria-label="나에게 맞는 채무조정 찾기 (새 창)">나에게 맞는 채무조정 찾기</a>
                             </div>
                             <div class="nav-section">
                                 <a href="상담안내.html" class="nav-section-title">채무조정 상담안내</a>
@@ -89,17 +89,17 @@
                     <!-- Content Area -->
                     <div class="content-area">
                         <!-- Breadcrumb -->
-                        <nav class="breadcrumb">
+                        <nav class="breadcrumb" aria-label="현재 위치">
                             <a href="#" class="breadcrumb-item">
-                                <i class="fas fa-home"></i>
+                                <i class="fas fa-home" aria-hidden="true"></i>
                                 홈
                             </a>
-                            <span class="breadcrumb-separator"></span>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
                             <a href="#" class="breadcrumb-item">채무조정 </a>
-                            <span class="breadcrumb-separator"></span>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
                             <a href="#" class="breadcrumb-item">채무조정길잡이</a>
-                            <span class="breadcrumb-separator"></span>
-                            <span class="breadcrumb-item current">채무조정제도 소개</span>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <span class="breadcrumb-item current" aria-current="page">채무조정제도 소개</span>
                         </nav>
                         <!-- Page Header -->
                         <div class="page-header">
@@ -108,10 +108,10 @@
                                 <div class="page-actions">
 
                                     <button class="action-btn" aria-label="인쇄">
-                                        <i class="fas fa-print"></i>
+                                        <i class="fas fa-print" aria-hidden="true"></i>
                                     </button>
                                     <button class="action-btn" aria-label="공유">
-                                        <i class="fas fa-share-alt"></i>
+                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
                                     </button>
                                 </div>
                                 
@@ -121,7 +121,7 @@
                         <div class="content-sections g-wrap">
                             <div class="board-form">
                                 <div class="boardHead">
-                                    <span class="ico"><em class="blind">필수입력</em></span>는 필수입력 항목입니다.
+                                    <span class="ico" aria-label="필수입력"><em class="blind">필수입력</em></span>는 필수입력 항목입니다.
                                 </div>
                                 <div class="bbs_write">
                                     <table>
@@ -136,10 +136,10 @@
                                                 <td>
                                                     <div class="form-group">
                                                         <div class="form-conts btn-ico-wrap" data-delete="true">
-          <input type="text" id="name" name="name" title="작성자입력" class="krds-input" placeholder="내용을 입력하세요">
-          <button type="button" class="krds-btn medium icon pure btn-delete-input">
+          <input type="text" id="name" name="name" title="작성자입력" class="krds-input" placeholder="내용을 입력하세요" aria-required="true">
+          <button type="button" class="krds-btn medium icon pure btn-delete-input" aria-label="작성자 입력 내용 삭제">
             <span class="sr-only">내용 삭제</span>
-            <i class="svg-icon ico-delete-fill"></i>
+            <i class="svg-icon ico-delete-fill" aria-hidden="true"></i>
           </button>
         </div>
                                                     </div>
@@ -150,10 +150,10 @@
                                                 <td>
                                                     <div class="form-group">
     <div class="form-conts btn-ico-wrap">
-      <input type="password"  id="password" name="password" title="비밀번호입력" class="krds-input" placeholder="8-12자의 영문자, 숫자, 특수문자 조합" value="1234567890">
-      <button type="button" class="krds-btn medium icon">
+      <input type="password"  id="password" name="password" title="비밀번호입력" class="krds-input" placeholder="8-12자의 영문자, 숫자, 특수문자 조합" value="1234567890" aria-required="true">
+      <button type="button" class="krds-btn medium icon" aria-label="입력한 비밀번호 보기">
         <span class="sr-only">입력한 비밀번호 보기</span>
-        <i class="svg-icon ico-pw-visible"></i>
+        <i class="svg-icon ico-pw-visible" aria-hidden="true"></i>
       </button>
     </div>
   </div>
@@ -165,10 +165,10 @@
                                                     <div class="form-group">
 
                                                         <div class="form-conts btn-ico-wrap" data-delete="true">
-          <input type="text" id="c_name1" name="c_name1" title="업체명입력" class="krds-input" placeholder="내용을 입력하세요">
-          <button type="button" class="krds-btn medium icon pure btn-delete-input">
+          <input type="text" id="c_name1" name="c_name1" title="업체명입력" class="krds-input" placeholder="내용을 입력하세요" aria-required="true">
+          <button type="button" class="krds-btn medium icon pure btn-delete-input" aria-label="업체명 입력 내용 삭제">
             <span class="sr-only">내용 삭제</span>
-            <i class="svg-icon ico-delete-fill"></i>
+            <i class="svg-icon ico-delete-fill" aria-hidden="true"></i>
           </button>
         </div>
                                                     </div>
@@ -180,10 +180,10 @@
                                                     <div class="form-group">
 
                                                         <div class="form-conts btn-ico-wrap" data-delete="true">
-          <input type="text" id="c_name2" name="c_name2" title="부서/직급입력" class="krds-input" placeholder="내용을 입력하세요">
-          <button type="button" class="krds-btn medium icon pure btn-delete-input">
+          <input type="text" id="c_name2" name="c_name2" title="부서/직급입력" class="krds-input" placeholder="내용을 입력하세요" aria-required="true">
+          <button type="button" class="krds-btn medium icon pure btn-delete-input" aria-label="부서/직급 입력 내용 삭제">
             <span class="sr-only">내용 삭제</span>
-            <i class="svg-icon ico-delete-fill"></i>
+            <i class="svg-icon ico-delete-fill" aria-hidden="true"></i>
           </button>
         </div>
                                                     </div>
@@ -195,10 +195,10 @@
                                                     <div class="form-group">
 
                                                         <div class="form-conts btn-ico-wrap" data-delete="true">
-          <input type="text" id="email" name="email" title="이메일입력" class="krds-input" placeholder="내용을 입력하세요">
-          <button type="button" class="krds-btn medium icon pure btn-delete-input">
+          <input type="text" id="email" name="email" title="이메일입력" class="krds-input" placeholder="내용을 입력하세요" aria-required="true">
+          <button type="button" class="krds-btn medium icon pure btn-delete-input" aria-label="이메일 입력 내용 삭제">
             <span class="sr-only">내용 삭제</span>
-            <i class="svg-icon ico-delete-fill"></i>
+            <i class="svg-icon ico-delete-fill" aria-hidden="true"></i>
           </button>
         </div>
                                                     </div>
@@ -210,10 +210,10 @@
                                                     <div class="form-group">
 
                                                         <div class="form-conts btn-ico-wrap" data-delete="true">
-                                                            <input type="text" id="mobile" name="mobile" title="연락처입력" class="krds-input" placeholder="내용을 입력하세요">
-                                                            <button type="button" class="krds-btn medium icon pure btn-delete-input">
+                                                            <input type="text" id="mobile" name="mobile" title="연락처입력" class="krds-input" placeholder="내용을 입력하세요" aria-required="true">
+                                                            <button type="button" class="krds-btn medium icon pure btn-delete-input" aria-label="연락처 입력 내용 삭제">
                                                                 <span class="sr-only">내용 삭제</span>
-                                                                <i class="svg-icon ico-delete-fill"></i>
+                                                                <i class="svg-icon ico-delete-fill" aria-hidden="true"></i>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -229,10 +229,10 @@
                                                     <div class="form-group">
 
                                                         <div class="form-conts btn-ico-wrap" data-delete="true">
-          <input type="text" id="title" name="title" title="제목입력" class="krds-input" placeholder="내용을 입력하세요">
-          <button type="button" class="krds-btn medium icon pure btn-delete-input">
+          <input type="text" id="title" name="title" title="제목입력" class="krds-input" placeholder="내용을 입력하세요" aria-required="true">
+          <button type="button" class="krds-btn medium icon pure btn-delete-input" aria-label="제목 입력 내용 삭제">
             <span class="sr-only">내용 삭제</span>
-            <i class="svg-icon ico-delete-fill"></i>
+            <i class="svg-icon ico-delete-fill" aria-hidden="true"></i>
           </button>
         </div>
                                                     </div>
@@ -242,7 +242,7 @@
                                                 <th scope="row"><span class="ico"><em class="blind">필수입력</em></span><label for="title">내용</label></th>
                                                 <td>
                                                      <div class="textarea-wrap">
-      <textarea class="krds-input" placeholder="에디터영역" cols="125" rows="20" name="content" id="content" title="내용"></textarea>
+      <textarea class="krds-input" placeholder="에디터영역" cols="125" rows="20" name="content" id="content" title="내용" aria-required="true"></textarea>
     </div>
                                                 </td>
                                             </tr>
@@ -256,9 +256,9 @@
                                                     <div class="file-upload">
                                                         <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
                                                         <div class="file-upload-btn-wrap">
-                                                        <input type="file" name="myFile" id="fileu-upload" hidden>
+                                                        <input type="file" name="myFile" id="fileu-upload" hidden aria-label="파일 업로드">
                                                         <label for="fileu-upload">
-                                                            <button type="button" class="krds-btn medium"><i class="svg-icon ico-upload"></i>파일선택</button>
+                                                            <button type="button" class="krds-btn medium" aria-label="파일 선택"><i class="svg-icon ico-upload" aria-hidden="true"></i>파일선택</button>
                                                         </label>
                                                         </div>
                                                     </div>
@@ -291,7 +291,7 @@
                                                             <div class="file-info">
                                                             <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
                                                             <div class="btn-wrap">
-                                                                <button type="button" class="krds-btn medium text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                                                                <button type="button" class="krds-btn medium text" aria-label="파일 삭제">삭제 <i class="svg-icon ico-delete-fill" aria-hidden="true"></i></button>
                                                             </div>
                                                             </div>
                                                         </li>
@@ -299,7 +299,7 @@
                                                             <div class="file-info">
                                                             <div class="file-name">전입재등록신고서 [주민등록법 시행령 : 별지서식 15, 15호의2호] [hwp, 17KB]</div>
                                                             <div class="btn-wrap">
-                                                                <button type="button" class="krds-btn medium text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                                                                <button type="button" class="krds-btn medium text" aria-label="파일 삭제">삭제 <i class="svg-icon ico-delete-fill" aria-hidden="true"></i></button>
                                                             </div>
                                                             </div>
                                                             <p class="file-hint-invalid">
@@ -311,14 +311,14 @@
                                                             <div class="file-info m-column">
                                                             <div class="file-name">위임장(주민등록법 시행령 별지 제15호의2호서식) [hwp, 17KB] </div>
                                                             <div class="btn-wrap">
-                                                                <button type="button" class="krds-btn medium text">다운로드 <i class="svg-icon ico-down"></i></button>
-                                                                <button type="button" class="krds-btn medium text">바로보기 <i class="svg-icon ico-angle right"></i></button>
+                                                                <button type="button" class="krds-btn medium text" aria-label="파일 다운로드">다운로드 <i class="svg-icon ico-down" aria-hidden="true"></i></button>
+                                                                <button type="button" class="krds-btn medium text" aria-label="파일 바로보기">바로보기 <i class="svg-icon ico-angle right" aria-hidden="true"></i></button>
                                                             </div>
                                                             </div>
                                                         </li>
                                                         </ul>
                                                         <div class="upload-delete-btn">
-                                                        <button type="button" class="krds-btn xsmall tertiary">전체 파일 삭제<i class="svg-icon ico-angle right"></i></button>
+                                                        <button type="button" class="krds-btn xsmall tertiary" aria-label="전체 파일 삭제">전체 파일 삭제<i class="svg-icon ico-angle right" aria-hidden="true"></i></button>
                                                         </div>
                                                     </div>
                                                     <!-- //파일 리스트 영역 -->
@@ -337,37 +337,37 @@
                         <div class="feedback-section noprint">
                             <div class="feedback-card">
                                 <h3>이 페이지에서 제공하는 정보에 대하여 어느 정도 만족하셨습니까?</h3>
-                                <div class="rating-options">
+                                <div class="rating-options" role="radiogroup" aria-label="만족도 평가">
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="5">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="5" aria-label="매우 만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         매우 만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="4">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="4" aria-label="만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="3">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="3" aria-label="보통">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         보통
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="2">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="2" aria-label="불만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         불만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="1">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="1" aria-label="매우 불만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         매우 불만족
                                     </label>
                                 </div>
                                 <div class="feedback-input">
                                     <label class="hide" for="feedback-text">의견 입력</label>
-                                    <textarea id="feedback-text"  rows="1"></textarea>
-                                    <button type="button" class="submit-btn">제출</button>
+                                    <textarea id="feedback-text" rows="1" aria-label="의견 입력"></textarea>
+                                    <button type="button" class="submit-btn" aria-label="의견 제출">제출</button>
                                 </div>
                             </div>
                         </div>

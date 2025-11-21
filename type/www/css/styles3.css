@@ -89,6 +89,7 @@
 }
 .btn-apply:hover {
   background: #2e5aac;
+  color: #ffffff;
 }
 .btn-apply:active {
   -webkit-transform: scale(0.98);

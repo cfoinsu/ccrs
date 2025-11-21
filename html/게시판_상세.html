@@ -39,13 +39,13 @@
                         <div class="sidebar-header">
                             <h2>채무조정</h2>
                         </div>
-                        <nav class="sidebar-nav">
+                        <nav class="sidebar-nav" role="navigation" aria-label="채무조정 서브메뉴">
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-1">
                                     채무조정 길잡이
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-1">
                                     <li><a href="채무조정길잡이_소개.html" class="nav-subitem">채무조정제도 소개</a></li>
                                     <li><a href="채무조정제도비교_종류비교.html" class="nav-subitem">채무조정제도 비교</a></li>
                                     <li><a href="채무조정절차.html" class="nav-subitem">채무조정 절차</a></li>
@@ -53,11 +53,11 @@
                                 </ul>
                             </div>
                             <div class="nav-section active">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="true" aria-controls="nav-subsection-2">
                                     채무조정 자세히 알아보기
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-2">
                                     <li><a href="신속채무조정(연체30일이하)_일반.html" class="nav-subitem active">신속채무조정 (연체30일 이하)</a></li>
                                     <li><a href="신속채무조정(연체30일이하)_일반.html" class="nav-subitem">신속채무조정</a></li>
                                     <li><a href="신속채무조정프리워크아웃(연체89일이하)_일반.html" class="nav-subitem">사전채무조정</a></li>
@@ -68,17 +68,17 @@
                                 </ul>
                             </div>
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-3">
                                     그 밖의 채무조정제도
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
+                                <ul class="nav-subsection" id="nav-subsection-3">
                                     <li><a href="개인회생·파산제도_개인회생이란.html" class="nav-subitem">개인회생·파산제도</a></li>
                                     <li><a href="금융회사채무조정.html" class="nav-subitem">금융회사 채무조정</a></li>
                                 </ul>
                             </div>
                             <div class="nav-section">
-                                <a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=190" target="_blank" title="간편진단 새창 이동"  class="nav-section-title">나에게 맞는 채무조정 찾기</a>
+                                <a href="https://svc.onebite.tech/cms/com/index.do?MENU_ID=190" target="_blank" title="간편진단 새창 이동" class="nav-section-title" aria-label="나에게 맞는 채무조정 찾기 (새 창)">나에게 맞는 채무조정 찾기</a>
                             </div>
                             <div class="nav-section">
                                 <a href="상담안내.html" class="nav-section-title">채무조정 상담안내</a>
@@ -89,17 +89,17 @@
                     <!-- Content Area -->
                     <div class="content-area">
                         <!-- Breadcrumb -->
-                        <nav class="breadcrumb">
+                        <nav class="breadcrumb" aria-label="현재 위치">
                             <a href="#" class="breadcrumb-item">
-                                <i class="fas fa-home"></i>
+                                <i class="fas fa-home" aria-hidden="true"></i>
                                 홈
                             </a>
-                            <span class="breadcrumb-separator"></span>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
                             <a href="#" class="breadcrumb-item">채무조정 </a>
-                            <span class="breadcrumb-separator"></span>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
                             <a href="#" class="breadcrumb-item">채무조정길잡이</a>
-                            <span class="breadcrumb-separator"></span>
-                            <span class="breadcrumb-item current">채무조정제도 소개</span>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <span class="breadcrumb-item current" aria-current="page">채무조정제도 소개</span>
                         </nav>
                         <!-- Page Header -->
                         <div class="page-header">
@@ -108,10 +108,10 @@
                                 <div class="page-actions">
 
                                     <button class="action-btn" aria-label="인쇄">
-                                        <i class="fas fa-print"></i>
+                                        <i class="fas fa-print" aria-hidden="true"></i>
                                     </button>
                                     <button class="action-btn" aria-label="공유">
-                                        <i class="fas fa-share-alt"></i>
+                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
                                     </button>
                                 </div>
                                 
@@ -125,7 +125,7 @@
                                     <p class="info">
                                         <span class="category">안내자</span>
                                         <span class="category">등록일</span>
-                                        <span class="date">2024.12.12</span>
+                                        <time class="date" datetime="2024-12-12">2024.12.12</time>
                                     </p>
                                 </div>
                                 
@@ -133,11 +133,12 @@
                                     <div class="g-description-area" id="contents">
                                         <div class="g-attach-file-wrap" style="display: block;" id="attach-file">
                                             <div class="conts-area">
-                                                <ul class="file-list" id="file-list"> 
-                                                    <li>
+                                                <h3 class="sr-only">첨부파일</h3>
+                                                <ul class="file-list" id="file-list" role="list"> 
+                                                    <li role="listitem">
                                                         <p class="name">디지털 정부서비스 UIUX 가이드라인(24년 2월).pdf [PDF, 28.54 MB]</p>
                                                         <div class="btn-download">
-                                                        <button type="button" class="krds-btn medium text" data-atch-file-id="FILE_000000000000503" data-file-sn="0">다운로드<i class="svg-icon ico-down"></i></button>
+                                                        <button type="button" class="krds-btn medium text" data-atch-file-id="FILE_000000000000503" data-file-sn="0" aria-label="디지털 정부서비스 UIUX 가이드라인(24년 2월).pdf 다운로드">다운로드<i class="svg-icon ico-down" aria-hidden="true"></i></button>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -145,29 +146,29 @@
                                         </div>
                                         <p>디지털 정부서비스 UI/UX 가이드라인 공표 및 기존 '전자정부 웹사이트 UI·UX 가이드라인'에서 '디지털 정부서비스 UI/UX 가이드라인' 으로 대체됨을 알려드립니다.</p>
                                         <p>'디지털 정부서비스 UI/UX 가이드라인'은 디지털 서비스를 구성하는 여러 사용자 인터페이스(User Interface; UI) 요소 중 사용 빈도가 높고 사용자 경험(User Experience; UX) 품질에 큰 영향을 주는 공통 구성 요소, 핵심 과업에 대한 설계·구현 가이드 등 「전자정부법」, 「행정기관 및 공공기관 정보시스템 구축·운영 지침」, 「전자정부 웹사이트 품질관리 지침」에 따라 행정기관 및 공공기관이 준수해야 할 디지털 정부서비스 UI/UX에 대한 세부 사항을 제시해드립니다.</p>
-                                        <img src="/type/www/images/img/detail-img01.png?ver=5.2" alt="">
+                                        <img src="/type/www/images/img/detail-img01.png?ver=5.2" alt="디지털 정부서비스 UIUX 가이드라인 관련 이미지">
                                     </div>
                                 </div>
                             </div>
-                            <dl class="com-post-move-box">
+                            <nav class="com-post-move-box" aria-label="이전글 다음글">
                                 <div class="prev-box">
-                                    <dt><img src="/type/www/images/ic/ic_dropdown.svg" alt="이전글"> 이전글</dt>
+                                    <dt><img src="/type/www/images/ic/ic_dropdown.svg" alt="" aria-hidden="true"> 이전글</dt>
                                     <dd>
-                                        <a href="#" title="이전글">이전글내용</a>
+                                        <a href="#" title="이전글" aria-label="이전글: 이전글내용">이전글내용</a>
                                     </dd>
                                 </div>
                                 <div>
-                                    <dt><img src="/type/www/images/ic/ic_dropdown.svg" alt="다음글"> 다음글</dt>
+                                    <dt><img src="/type/www/images/ic/ic_dropdown.svg" alt="" aria-hidden="true"> 다음글</dt>
                                     <dd>
-                                        <a href="#" title="다음글">다음글 내용</a>
+                                        <a href="#" title="다음글" aria-label="다음글: 다음글 내용">다음글 내용</a>
                                     </dd>
                                 </div>
-                            </dl>
+                            </nav>
                             <div class="button-area">
                                 <!-- button -->
-                                <button type="button" class="krds-btn primary">수정</button>
-                                <button type="button" class="krds-btn secondary">삭제</button>
-                                <button type="button" class="krds-btn tertiary">목록</button>
+                                <button type="button" class="krds-btn primary" aria-label="게시글 수정">수정</button>
+                                <button type="button" class="krds-btn secondary" aria-label="게시글 삭제">삭제</button>
+                                <button type="button" class="krds-btn tertiary" aria-label="목록으로 이동">목록</button>
                                 <!-- //button -->
                             </div>
                         </div>
@@ -176,37 +177,37 @@
                         <div class="feedback-section noprint">
                             <div class="feedback-card">
                                 <h3>이 페이지에서 제공하는 정보에 대하여 어느 정도 만족하셨습니까?</h3>
-                                <div class="rating-options">
+                                <div class="rating-options" role="radiogroup" aria-label="만족도 평가">
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="5">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="5" aria-label="매우 만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         매우 만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="4">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="4" aria-label="만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="3">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="3" aria-label="보통">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         보통
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="2">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="2" aria-label="불만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         불만족
                                     </label>
                                     <label class="rating-option">
-                                        <input type="radio" name="satisfaction" value="1">
-                                        <span class="radio-custom"></span>
+                                        <input type="radio" name="satisfaction" value="1" aria-label="매우 불만족">
+                                        <span class="radio-custom" aria-hidden="true"></span>
                                         매우 불만족
                                     </label>
                                 </div>
                                 <div class="feedback-input">
                                     <label class="hide" for="feedback-text">의견 입력</label>
-                                    <textarea id="feedback-text"  rows="1"></textarea>
-                                    <button type="button" class="submit-btn">제출</button>
+                                    <textarea id="feedback-text" rows="1" aria-label="의견 입력"></textarea>
+                                    <button type="button" class="submit-btn" aria-label="의견 제출">제출</button>
                                 </div>
                             </div>
                         </div>
