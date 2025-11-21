@@ -4801,7 +4801,7 @@ table .krds-info-list>li {
 
 .noti {
     margin-top: var(--krds-gap-4);
-    display: flex;
+    /* display: flex; */
     align-items: flex-start;
     gap: var(--krds-gap-2);
     width: 100%;
@@ -4811,7 +4811,6 @@ table .krds-info-list>li {
 .noti .svg-icon {
     width: 18px;
     height: 18px;
-    margin-top: 4px;
     flex-shrink: 0;
 }
 
@@ -7116,13 +7115,19 @@ input[type=radio]:checked+label.fillter-chip {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: url(../images/img/round-logo.png) center no-repeat;
+    background: url(../images/img/round-logo.png) no-repeat center center / contain;
     width: 220px;
     height: 220px;
 }
+@media (max-width: 1024px) {
+    .abslogocenter {
+        width: 130px;
+        height: 130px;
+    }
+}
 
 .abslogocenter.kinfa {
-    background: url(../images/img/round-logo-kinfa.png) center no-repeat;
+    background: url(../images/img/round-logo-kinfa.png) no-repeat center center / contain;
     background-size: 100%;
     width: 80px;
     height: 100%;
@@ -8001,9 +8006,9 @@ table .table-center {
     }
 }
 
-.support-organization-wrap {
-    flex-direction: column !important;
-    gap: 20px !important;
+.g-img.row.between.support-organization-wrap {
+    flex-direction: column;
+    gap: 20px;
 }
 
 .support-organization-card {
