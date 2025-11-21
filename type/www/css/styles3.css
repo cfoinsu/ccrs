@@ -66,7 +66,6 @@
   border: none;
   border-radius: 1000px;
   color: #ffffff;
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.5;
@@ -112,7 +111,6 @@
   border: none;
   border-radius: 1000px;
   color: #ffffff;
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.5;
@@ -632,7 +630,6 @@
   z-index: 2;
 }
 .other-debt-adjustment .category-header .category-title {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #17191b;
@@ -739,7 +736,6 @@
   }
 }
 .other-debt-adjustment .adjustment-card .card-title {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #17191b;
@@ -753,7 +749,6 @@
   }
 }
 .other-debt-adjustment .adjustment-card .card-description {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 400;
   color: #17191b;
@@ -807,7 +802,6 @@
           justify-content: center;
 }
 .new-leap-fund-flow .flow-header .header-title .title-text {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
@@ -819,7 +813,6 @@
   padding: 13px 38px 13px 34px;
 }
 .new-leap-fund-flow .flow-header .header-content .content-main {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 700;
   color: #17191b;
@@ -827,7 +820,6 @@
   margin: 0 0 8px 0;
 }
 .new-leap-fund-flow .flow-header .header-content .content-note {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 17px;
   font-weight: 400;
   color: #3d9fc8;
@@ -925,7 +917,6 @@
 }
 .new-leap-fund-flow .flow-connector .branch-labels .branch-label-left,
 .new-leap-fund-flow .flow-connector .branch-labels .branch-label-right {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 400;
   color: #17191b;
@@ -1015,7 +1006,6 @@
   margin-bottom: 0;
 }
 .new-leap-fund-flow .flow-card .card-header .card-title {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
@@ -1073,7 +1063,6 @@
   margin-bottom: 0;
 }
 .new-leap-fund-flow .flow-card .card-body .card-criteria .criteria-title {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #17191b;
@@ -1082,7 +1071,6 @@
   position: relative;
 }
 .new-leap-fund-flow .flow-card .card-body .card-criteria .criteria-condition {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #474e55;
@@ -1098,7 +1086,6 @@
   margin: 0;
 }
 .new-leap-fund-flow .flow-card .card-body .card-criteria .criteria-list li {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 400;
   color: #17191b;
@@ -1188,7 +1175,6 @@
   width: 89px;
 }
 .application-methods .method-card .card-header .header-title {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #17191b;
@@ -1248,7 +1234,6 @@
   gap: 4px;
 }
 .application-methods .method-card .card-content .content-item .item-header .item-title {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 700;
   color: #17191b;
@@ -1387,7 +1372,6 @@
   }
 }
 .application-notice .notice-text {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 700;
   line-height: 1.5;
@@ -1415,7 +1399,6 @@
 }
 .other-support-section .other-support-intro {
   margin-bottom: 40px;
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 400;
   line-height: 1.5;
@@ -1474,7 +1457,6 @@
      object-fit: contain;
 }
 .other-support-section .other-support-header .header-title {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 21px;
   font-weight: 700;
   color: #ffffff;
@@ -1570,7 +1552,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 700;
   color: #17191b;
@@ -1649,7 +1630,6 @@
   margin-bottom: 4px;
 }
 .other-support-section .support-card .card-body .card-item .item-header .item-title {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 700;
   color: #17191b;
@@ -1657,7 +1637,6 @@
 }
 .other-support-section .support-card .card-body .card-item .item-description {
   padding-left: 20px;
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 400;
   color: #17191b;
@@ -1693,7 +1672,6 @@
       flex-shrink: 0;
 }
 .other-support-section .support-card .card-body .card-note span {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 17px;
   font-weight: 700;
   color: #ab2b36;
@@ -1706,7 +1684,6 @@
 }
 .other-support-section .other-support-footer {
   margin-top: 40px;
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 1.5;
@@ -1746,7 +1723,6 @@
 .welfare-support-section .employment-support-intro,
 .welfare-support-section .welfare-support-intro {
   margin-bottom: 40px;
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 700;
   line-height: 1.5;
@@ -1811,7 +1787,6 @@
 .welfare-support-section .financial-support-header .header-title,
 .welfare-support-section .employment-support-header .header-title,
 .welfare-support-section .welfare-support-header .header-title {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 21px;
   font-weight: 700;
   color: #ffffff;
@@ -2004,7 +1979,6 @@
 .financial-support-section .support-card .card-header .card-header-title,
 .employment-support-section .support-card .card-header .card-header-title,
 .welfare-support-section .support-card .card-header .card-header-title {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 24px;
   font-weight: 700;
   color: #17191b;
@@ -2101,7 +2075,6 @@
 .financial-support-section .support-card .card-body .card-item .item-header .item-title,
 .employment-support-section .support-card .card-body .card-item .item-header .item-title,
 .welfare-support-section .support-card .card-body .card-item .item-header .item-title {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 19px;
   font-weight: 700;
   color: #17191b;
@@ -2152,7 +2125,6 @@
 .financial-support-section .support-card .card-body .card-note span,
 .employment-support-section .support-card .card-body .card-note span,
 .welfare-support-section .support-card .card-body .card-note span {
-  font-family: "Pretendard GOV", sans-serif;
   font-size: 17px;
   font-weight: 700;
   color: #ab2b36;
@@ -2203,4 +2175,246 @@
 }
 .welfare-support-section .support-card:nth-child(2) .card-header .card-header-underline {
   width: 193px;
+}
+
+.enhanced-debt-adjustment-flow {
+  position: relative;
+  width: 100%;
+  max-width: 920px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+@media (max-width: 1023px) {
+  .enhanced-debt-adjustment-flow {
+    padding: 0 16px;
+  }
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0;
+}
+@media (max-width: 1023px) {
+  .enhanced-debt-adjustment-flow .enhanced-debt-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 446px;
+          flex: 0 0 446px;
+  max-width: 446px;
+  border-radius: 24px;
+  padding: 24px 32px;
+  min-height: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+@media (max-width: 1023px) {
+  .enhanced-debt-adjustment-flow .enhanced-debt-card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .enhanced-debt-adjustment-flow .enhanced-debt-card {
+    padding: 20px 24px;
+    min-height: auto;
+  }
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-card.enhanced-debt-card-blue {
+  background: #edf4ff;
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-card.enhanced-debt-card-red {
+  background: #ffeee9;
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-card .card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #17191b;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+@media (max-width: 767px) {
+  .enhanced-debt-adjustment-flow .enhanced-debt-card .card-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-card .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8px;
+  padding: 0;
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-card .card-content .card-icon {
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-top: 2px;
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-card .card-content .card-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 19px;
+  font-weight: 400;
+  color: #17191b;
+  line-height: 1.5;
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-card .card-content .card-text p {
+  margin: 0;
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-card .card-content .card-text p:not(:last-child) {
+  margin-bottom: 4px;
+}
+@media (max-width: 767px) {
+  .enhanced-debt-adjustment-flow .enhanced-debt-card .card-content .card-text {
+    font-size: 16px;
+  }
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-connector {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px auto 0;
+  max-width: 303px;
+  padding: 0 20px;
+}
+@media (max-width: 767px) {
+  .enhanced-debt-adjustment-flow .enhanced-debt-connector {
+    padding: 0 16px;
+  }
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-connector .connector-logo {
+  position: relative;
+  z-index: 1;
+  width: 284px;
+  height: 52px;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-connector .connector-logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 767px) {
+  .enhanced-debt-adjustment-flow .enhanced-debt-connector .connector-logo {
+    width: 240px;
+    height: 44px;
+  }
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-connector .connector-arrow {
+  width: 303px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scaleY(-1) translateY(30px);
+          transform: scaleY(-1) translateY(30px);
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-connector .connector-arrow img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 767px) {
+  .enhanced-debt-adjustment-flow .enhanced-debt-connector .connector-arrow {
+    width: 100%;
+    max-width: 303px;
+    height: 80px;
+  }
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-footer {
+  background: #f48f01;
+  border-radius: 1000px;
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  max-width: 593px;
+  margin-top: 0;
+}
+.enhanced-debt-adjustment-flow .enhanced-debt-footer p {
+  font-size: 26px;
+  color: #ffffff;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .enhanced-debt-adjustment-flow .enhanced-debt-footer p {
+    font-size: 20px;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .enhanced-debt-adjustment-flow .enhanced-debt-footer {
+    height: 64px;
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=styles3.css.map */
