@@ -3023,7 +3023,7 @@ body:has(.intro.show) {
     bottom: var(--box-padding-y);
     right: var(--box-padding-x);
     width: 352px;
-    height: 340px;
+    height: auto;
     background: #D9EDFE;
     border-radius: var(--box-round);
     padding: var(--box-padding-y) var(--box-padding-x);
