@@ -36,31 +36,31 @@
                         <div class="sidebar-header">
                             <h2>금융과 생활</h2>
                         </div>
-                        <nav class="sidebar-nav">
+                        <nav class="sidebar-nav" role="navigation" aria-label="사이드바 네비게이션">
                             <div class="nav-section">
-                                <a href="금융과생활소개.html" class="nav-section-title">금융과 생활 소개</a>
+                                <a href="금융과생활소개.html" class="nav-section-title" aria-label="금융과 생활 소개 페이지로 이동">금융과 생활 소개</a>
                             </div>
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-소액금융">
                                     소액금융
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
-                                    <li><a href="소액대출_제도소개.html" class="nav-subitem">소액대출</a></li>
-                                    <li><a href="소액신용카드발급_카드종류.html" class="nav-subitem">소액신용(체크)카드 발급</a></li>
+                                <ul class="nav-subsection" id="nav-subsection-소액금융">
+                                    <li><a href="소액대출_제도소개.html" class="nav-subitem" aria-label="소액대출 페이지로 이동">소액대출</a></li>
+                                    <li><a href="소액신용카드발급_카드종류.html" class="nav-subitem" aria-label="소액신용(체크)카드 발급 페이지로 이동">소액신용(체크)카드 발급</a></li>
                                 </ul>
                             </div>
                             <div class="nav-section active">
-                                <a href="복합지원신청하기.html" class="nav-section-title">금융·고용·복지 복합지원</a>
+                                <a href="복합지원신청하기.html" class="nav-section-title" aria-label="금융·고용·복지 복합지원 페이지로 이동">금융·고용·복지 복합지원</a>
                             </div>
                             <div class="nav-section">
-                                <a href="신용복지컨설팅.html" class="nav-section-title">컨설팅 지원</a>
+                                <a href="신용복지컨설팅.html" class="nav-section-title" aria-label="컨설팅 지원 페이지로 이동">컨설팅 지원</a>
                             </div>
                             <div class="nav-section">
-                                <a href="신용교육프로그램신청_신용교육소개.html" class="nav-section-title">신용교육</a>
+                                <a href="신용교육프로그램신청_신용교육소개.html" class="nav-section-title" aria-label="신용교육 페이지로 이동">신용교육</a>
                             </div>
                             <div class="nav-section">
-                                <a href="불법사금융알아보기_예방가이드.html" class="nav-section-title">불법사금융 예방∙신고</a>
+                                <a href="불법사금융알아보기_예방가이드.html" class="nav-section-title" aria-label="불법사금융 예방∙신고 페이지로 이동">불법사금융 예방∙신고</a>
                             </div>
                         </nav>
                     </aside>
@@ -68,16 +68,16 @@
                     <!-- Content Area -->
                     <div class="content-area">
                         <!-- Breadcrumb -->
-                        <nav class="breadcrumb">
-                            <a href="#" class="breadcrumb-item">
-                                <i class="fas fa-home"></i>
+                        <nav class="breadcrumb" aria-label="현재 위치">
+                            <a href="#" class="breadcrumb-item" aria-label="홈으로 이동">
+                                <i class="fas fa-home" aria-hidden="true"></i>
                                 홈
                             </a>
-                            <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">금융과 생활 </a>
-                            <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">금융·고용·복지 복합지원</a>
-                            <span class="breadcrumb-separator"></span>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <a href="#" class="breadcrumb-item" aria-label="금융과 생활 섹션으로 이동">금융과 생활 </a>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <a href="#" class="breadcrumb-item" aria-label="금융·고용·복지 복합지원 섹션으로 이동">금융·고용·복지 복합지원</a>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
                             <span class="breadcrumb-item current">복합지원 신청하기</span>
                         </nav>
                         <!-- Page Header -->
@@ -86,10 +86,10 @@
                                 <h1>복합지원 신청하기</h1>
                                 <div class="page-actions">
                                     <button class="action-btn" aria-label="인쇄">
-                                        <i class="fas fa-print"></i>
+                                        <i class="fas fa-print" aria-hidden="true"></i>
                                     </button>
                                     <button class="action-btn" aria-label="공유">
-                                        <i class="fas fa-share-alt"></i>
+                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
                                     </button>
                                 </div>
                             </div>
@@ -131,7 +131,7 @@
                                 <div class="krds-accordion type-heading" data-type="multiOpen">
                                     <div class="accordion-item active">
                                         <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                                                class="btn-accordion" aria-controls="accordionCollapseSample01"><span
+                                                class="btn-accordion" aria-controls="accordionCollapseSample01" aria-expanded="true"><span
                                                     class="sec-tit">복합지원이란?</span></button></h4>
                                         <div id="accordionCollapseSample01" class="accordion-collapse collapse"
                                             aria-labelledby="accordionHeaderSample01">
@@ -150,7 +150,18 @@
                                                     </ul>
                                                 </div>
                                                 <div class="g-img" style="position: relative;">
-                                                    <img src="/type/www/images/img/복합지원흐름도.png?ver=5.2" alt="">
+                                                    <img src="/type/www/images/img/복합지원흐름도.png?ver=5.2" alt="복합지원 흐름도" aria-hidden="true">
+                                                    <div class="sr-only">
+                                                        <h4>금융 고용 복지 복합지원</h4>
+                                                        <p>중앙에 금융·고용·복지 복합지원이 위치하며, 주변에 4개의 기관이 원형으로 배치되어 있습니다.</p>
+                                                        <ul>
+                                                            <li>상단: 사용자 - 정보제공 및 금융·고용·복지상담 의뢰를 신용회복위원회에 전달</li>
+                                                            <li>좌측: 신용회복위원회 - 서민금융통합지원센터 방문 및 채무조정제도 지원을 사회보장정보 시스템에 전달</li>
+                                                            <li>하단: 사회보장정보 시스템(SSis) - 복합서비스 지원 및 공공보장기관 방문 안내를 공공보장기관에 전달</li>
+                                                            <li>우측: 공공보장기관 - 채무상담 의뢰 및 정보제공을 사용자에게 전달</li>
+                                                        </ul>
+                                                        <p>공공보장기관에는 지방자치단체, 고용복지플러스센터, 서민금융진흥원, 금융감독원 등이 포함됩니다.</p>
+                                                    </div>
                                                     <div class="complex-wrapper">
                                                         <div class="branch-list-box">
                                                             <p>지방자치단체</p>
@@ -165,15 +176,15 @@
                                     </div>
 
                                     <div class="accordion-item active">
-                                        <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                                                class="btn-accordion" aria-controls="accordionCollapseSample01"><span
+                                        <h4 class="accordion-header"><button type="button" id="accordionHeaderSample02"
+                                                class="btn-accordion" aria-controls="accordionCollapseSample02" aria-expanded="true"><span
                                                     class="sec-tit">복합지원 종류</span></button></h4>
                                         <div id="accordionCollapseSample02" class="accordion-collapse collapse"
                                             aria-labelledby="accordionHeaderSample02">
                                             <div class="accordion-body">
                                                 <div class="g-desc-body">
                                                     <div class="g-grid-wrap unit2">
-                                                        <a href="복합지원신청_금융지원.html" target="_blank">
+                                                        <a href="복합지원신청_금융지원.html" target="_blank" aria-label="금융지원 페이지로 이동 - 새창 열림">
                                                             <div class="g-info-box boxbg-blue activity-card-content blue space-between">
                                                                 <div class="content-wrapper">
                                                                     <h3>금융지원</h3>
@@ -183,14 +194,14 @@
                                                                     </p>
                                                                 </div>
                                                                 <img src="/type/www/images/img/img_hand01.png?ver=5.2"
-                                                                    alt="" class="activity-card-image">
+                                                                    alt="금융지원 이미지" class="activity-card-image" aria-hidden="true">
                                                                 <div class="plusbox mt10">
                                                                     <img src="/type/www/images/ic/ic-plus.svg?ver=5.2"
-                                                                        alt="">
+                                                                        alt="" aria-hidden="true">
                                                                 </div>
                                                             </div>
                                                         </a>
-                                                        <a href="복합지원신청_고용지원.html" target="_blank">
+                                                        <a href="복합지원신청_고용지원.html" target="_blank" aria-label="고용지원 페이지로 이동 - 새창 열림">
                                                             <div
                                                                 class="g-info-box boxbg-blue activity-card-content blue space-between">
                                                                 <div class="content-wrapper">
@@ -202,14 +213,14 @@
                                                                     </p>
                                                                 </div>
                                                                 <img src="/type/www/images/img/img_job01.png?ver=5.2"
-                                                                    alt="" class="activity-card-image">
+                                                                    alt="고용지원 이미지" class="activity-card-image" aria-hidden="true">
                                                                 <div class="plusbox mt10">
                                                                     <img src="/type/www/images/ic/ic-plus.svg?ver=5.2"
-                                                                        alt="">
+                                                                        alt="" aria-hidden="true">
                                                                 </div>
                                                             </div>
                                                         </a>
-                                                        <a href="복합지원신청_복지지원.html" target="_blank">
+                                                        <a href="복합지원신청_복지지원.html" target="_blank" aria-label="복지지원 페이지로 이동 - 새창 열림">
                                                             <div class="g-info-box boxbg-blue activity-card-content blue space-between">
                                                                 <div class="content-wrapper">
                                                                     <h3>복지지원</h3>
@@ -219,14 +230,14 @@
                                                                     </p>
                                                                 </div>
                                                                 <img src="/type/www/images/img/img_present.png?ver=5.2"
-                                                                    alt="" class="activity-card-image">
+                                                                    alt="복지지원 이미지" class="activity-card-image" aria-hidden="true">
                                                                 <div class="plusbox mt10">
                                                                     <img src="/type/www/images/ic/ic-plus.svg?ver=5.2"
-                                                                        alt="">
+                                                                        alt="" aria-hidden="true">
                                                                 </div>
                                                             </div>
                                                         </a>
-                                                        <a href="복합지원신청_기타지원.html" target="_blank">
+                                                        <a href="복합지원신청_기타지원.html" target="_blank" aria-label="기타지원 페이지로 이동 - 새창 열림">
                                                             <div class="g-info-box boxbg-blue activity-card-content blue space-between">
                                                                 <div class="content-wrapper">
                                                                     <h3>기타지원</h3>
@@ -235,11 +246,11 @@
                                                                             공공보장기관의 제도</strong>를 연계하고 있습니다.
                                                                     </p>
                                                                 </div>
-                                                                <img src="/type/www/images/img/img_note.png?ver=5.2" alt=""
-                                                                    class="activity-card-image">
+                                                                <img src="/type/www/images/img/img_note.png?ver=5.2" alt="기타지원 이미지"
+                                                                    class="activity-card-image" aria-hidden="true">
                                                                 <div class="plusbox mt10">
                                                                     <img src="/type/www/images/ic/ic-plus.svg?ver=5.2"
-                                                                        alt="">
+                                                                        alt="" aria-hidden="true">
                                                                 </div>
                                                             </div>
                                                         </a>
@@ -283,7 +294,7 @@
                                             <div class="feedback-input">
                                                 <label class="hide" for="feedback-text">의견 입력</label>
                                                 <textarea id="feedback-text" rows="1"></textarea>
-                                                <button type="button" class="submit-btn">제출</button>
+                                                <button type="button" class="submit-btn" aria-label="만족도 평가 제출">제출</button>
                                             </div>
                                         </div>
                                     </div>

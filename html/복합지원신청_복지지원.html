@@ -36,31 +36,31 @@
                         <div class="sidebar-header">
                             <h2>금융과 생활</h2>
                         </div>
-                        <nav class="sidebar-nav">
+                        <nav class="sidebar-nav" role="navigation" aria-label="사이드바 네비게이션">
                             <div class="nav-section">
-                                <a href="금융과생활소개.html" class="nav-section-title">금융과 생활 소개</a>
+                                <a href="금융과생활소개.html" class="nav-section-title" aria-label="금융과 생활 소개 페이지로 이동">금융과 생활 소개</a>
                             </div>
                             <div class="nav-section">
-                                <button class="nav-section-title">
+                                <button class="nav-section-title" aria-expanded="false" aria-controls="nav-subsection-소액금융">
                                     소액금융
-                                    <i class="nav-arrow"></i>
+                                    <i class="nav-arrow" aria-hidden="true"></i>
                                 </button>
-                                <ul class="nav-subsection">
-                                    <li><a href="소액대출_제도소개.html" class="nav-subitem">소액대출</a></li>
-                                    <li><a href="소액신용카드발급_카드종류.html" class="nav-subitem">소액신용(체크)카드 발급</a></li>
+                                <ul class="nav-subsection" id="nav-subsection-소액금융">
+                                    <li><a href="소액대출_제도소개.html" class="nav-subitem" aria-label="소액대출 페이지로 이동">소액대출</a></li>
+                                    <li><a href="소액신용카드발급_카드종류.html" class="nav-subitem" aria-label="소액신용(체크)카드 발급 페이지로 이동">소액신용(체크)카드 발급</a></li>
                                 </ul>
                             </div>
                             <div class="nav-section active">
-                                <a href="복합지원신청하기.html" class="nav-section-title">금융·고용·복지 복합지원</a>
+                                <a href="복합지원신청하기.html" class="nav-section-title" aria-label="금융·고용·복지 복합지원 페이지로 이동">금융·고용·복지 복합지원</a>
                             </div>
                             <div class="nav-section">
-                                <a href="신용복지컨설팅.html" class="nav-section-title">컨설팅 지원</a>
+                                <a href="신용복지컨설팅.html" class="nav-section-title" aria-label="컨설팅 지원 페이지로 이동">컨설팅 지원</a>
                             </div>
                             <div class="nav-section">
-                                <a href="신용교육프로그램신청_신용교육소개.html" class="nav-section-title">신용교육</a>
+                                <a href="신용교육프로그램신청_신용교육소개.html" class="nav-section-title" aria-label="신용교육 페이지로 이동">신용교육</a>
                             </div>
                             <div class="nav-section">
-                                <a href="불법사금융알아보기_예방가이드.html" class="nav-section-title">불법사금융 예방∙신고</a>
+                                <a href="불법사금융알아보기_예방가이드.html" class="nav-section-title" aria-label="불법사금융 예방∙신고 페이지로 이동">불법사금융 예방∙신고</a>
                             </div>
                         </nav>
                     </aside>
@@ -68,16 +68,16 @@
                     <!-- Content Area -->
                     <div class="content-area">
                         <!-- Breadcrumb -->
-                        <nav class="breadcrumb">
-                            <a href="#" class="breadcrumb-item">
-                                <i class="fas fa-home"></i>
+                        <nav class="breadcrumb" aria-label="현재 위치">
+                            <a href="#" class="breadcrumb-item" aria-label="홈으로 이동">
+                                <i class="fas fa-home" aria-hidden="true"></i>
                                 홈
                             </a>
-                            <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">금융과 생활 </a>
-                            <span class="breadcrumb-separator"></span>
-                            <a href="#" class="breadcrumb-item">금융·고용·복지 복합지원</a>
-                            <span class="breadcrumb-separator"></span>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <a href="#" class="breadcrumb-item" aria-label="금융과 생활 섹션으로 이동">금융과 생활 </a>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
+                            <a href="#" class="breadcrumb-item" aria-label="금융·고용·복지 복합지원 섹션으로 이동">금융·고용·복지 복합지원</a>
+                            <span class="breadcrumb-separator" aria-hidden="true"></span>
                             <span class="breadcrumb-item current">복합지원 신청하기</span>
                         </nav>
                         <!-- Page Header -->
@@ -86,10 +86,10 @@
                                 <h1>복합지원 신청하기</h1>
                                 <div class="page-actions">
                                     <button class="action-btn" aria-label="인쇄">
-                                        <i class="fas fa-print"></i>
+                                        <i class="fas fa-print" aria-hidden="true"></i>
                                     </button>
                                     <button class="action-btn" aria-label="공유">
-                                        <i class="fas fa-share-alt"></i>
+                                        <i class="fas fa-share-alt" aria-hidden="true"></i>
                                     </button>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@
                             <div class="krds-accordion type-heading" data-type="multiOpen">
                                 <div class="accordion-item active">
                                     <h4 class="accordion-header"><button type="button" id="accordionHeaderSample01"
-                                            class="btn-accordion" aria-controls="accordionCollapseSample01"><span
+                                            class="btn-accordion" aria-controls="accordionCollapseSample01" aria-expanded="true"><span
                                                 class="sec-tit">복지지원 연계 소개</span></button></h4>
                                     <div id="accordionCollapseSample01" class="accordion-collapse collapse"
                                         aria-labelledby="accordionHeaderSample01">
@@ -143,7 +143,7 @@
                                                 </div>
                                                 
                                                 <div class="welfare-support-arrow">
-                                                    <img src="/type/www/images/logo/arrow-flow-down-2.svg" alt="">
+                                                    <img src="/type/www/images/logo/arrow-flow-down-2.svg" alt="" aria-hidden="true">
                                                 </div>
                                                 
                                                 <div class="welfare-support-cards">
@@ -155,7 +155,7 @@
                                                             <div class="card-content">
                                                                 <div class="card-item">
                                                                     <div class="item-header">
-                                                                        <i class="fa-solid fa-circle-check"></i>
+                                                                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                                                                         <span class="item-title">국민기초생활보장제도</span>
                                                                     </div>
                                                                     <div class="item-description">
@@ -166,7 +166,7 @@
                                                                 
                                                                 <div class="card-item">
                                                                     <div class="item-header">
-                                                                        <i class="fa-solid fa-circle-check"></i>
+                                                                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                                                                         <span class="item-title">긴급복지지원제도</span>
                                                                     </div>
                                                                     <div class="item-description">
@@ -176,7 +176,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="card-note">
-                                                                <i class="fa-solid fa-check red"></i>
+                                                                <i class="fa-solid fa-check red" aria-hidden="true"></i>
                                                                 <span>대면/비대면 신청 가능</span>
                                                             </div>
                                                         </div>
@@ -190,7 +190,7 @@
                                                             <div class="card-content">
                                                                 <div class="card-item">
                                                                     <div class="item-header">
-                                                                        <i class="fa-solid fa-circle-check"></i>
+                                                                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                                                                         <span class="item-title">정신건강상담지원</span>
                                                                     </div>
                                                                     <div class="item-description">
@@ -201,7 +201,7 @@
                                                                 
                                                                 <div class="card-item">
                                                                     <div class="item-header">
-                                                                        <i class="fa-solid fa-circle-check"></i>
+                                                                        <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
                                                                         <span class="item-title">심리상담 지원</span>
                                                                     </div>
                                                                     <div class="item-description">
@@ -211,7 +211,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="card-note">
-                                                                <i class="fa-solid fa-check red"></i>
+                                                                <i class="fa-solid fa-check red" aria-hidden="true"></i>
                                                                 <span>대면 신청 가능</span>
                                                             </div>
                                                         </div>
@@ -233,7 +233,7 @@
                                             <div class="header-decoration"></div>
                                             <h3 class="header-title blue-underline">대면 신청</h3>
                                             <div class="header-icon">
-                                                <img src="/type/www/images/ic/ico-phone.png" alt="">
+                                                <img src="/type/www/images/ic/ico-phone.png" alt="전화 아이콘" aria-hidden="true">
                                             </div>
                                         </div>
                                         <div class="card-content">
@@ -243,7 +243,7 @@
                                                     <span class="item-title">전국 서민금융통합지원센터</span>
                                                 </div>
                                                 <div class="item-description">
-                                                    <i class="fa-solid fa-check"></i>
+                                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
                                                     <span>
                                                         모든 복합지원 연계 프로그램을 신청하실 수 있습니다.
                                                     </span>
@@ -251,7 +251,7 @@
                                             </div>
                                         </div>
                                         <div class="card-actions">
-                                            <a href="#" target="_blank" title="새창열림" class="btn-action">상담 예약</a>
+                                            <a href="#" target="_blank" title="새창열림" class="btn-action" aria-label="상담 예약 - 새창 열림">상담 예약</a>
                                         </div>
                                     </div>
                                     
@@ -260,7 +260,7 @@
                                             <div class="header-decoration"></div>
                                             <h3 class="header-title blue-underline">비대면 신청</h3>
                                             <div class="header-icon">
-                                                <img src="/type/www/images/ic/icon_letter.png" alt="">
+                                                <img src="/type/www/images/ic/icon_letter.png" alt="편지 아이콘" aria-hidden="true">
                                             </div>
                                         </div>
                                         <div class="card-content">
@@ -270,13 +270,13 @@
                                                     <span class="item-title">신용회복위원회 앱/웹</span>
                                                 </div>
                                                 <div class="item-description">
-                                                    <i class="fa-solid fa-check"></i>
+                                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
                                                     <span>
                                                         금융지원(서민금웅진흥원), 고용지원(고용복지플러스 센터), 복지지원(행정복지지원센터)의 연계 프로그램을 신청하실 수 있습니다.
                                                     </span>
                                                 </div>
                                                 <div class="item-description">
-                                                    <i class="fa-solid fa-check"></i>
+                                                    <i class="fa-solid fa-check" aria-hidden="true"></i>
                                                     <span>
                                                         비대면으로 신청하실 수 있는 복합연계 프로그램은 지속적으로 확대될 예정입니다.
                                                     </span>
@@ -284,15 +284,15 @@
                                             </div>
                                         </div>
                                         <div class="card-actions">
-                                            <a href="#" target="_blank" title="새창열림" class="btn-action">사이버상담부</a>
-                                            <a href="#" target="_blank" title="새창열림" class="btn-action">앱 설치</a>
+                                            <a href="#" target="_blank" title="새창열림" class="btn-action" aria-label="사이버상담부 - 새창 열림">사이버상담부</a>
+                                            <a href="#" target="_blank" title="새창열림" class="btn-action" aria-label="앱 설치 - 새창 열림">앱 설치</a>
                                         </div>
                                     </div>
                                 </div>
                                 
                                 <div class="application-notice">
                                     <div class="notice-icon">
-                                        <img src="/type/www/images/ic/ico_speaker.png" alt="">
+                                        <img src="/type/www/images/ic/ico_speaker.png" alt="알림 아이콘" aria-hidden="true">
                                     </div>
                                     <p class="notice-text">
                                         <span class="text-red">복합지원은 누구나, 서류 없이 </span>
@@ -337,7 +337,7 @@
                                     <label class="hide" for="feedback-text">의견 입력</label>
                                     <textarea id="feedback-text" 
                                         rows="1"></textarea>
-                                    <button type="button" class="submit-btn">제출</button>
+                                    <button type="button" class="submit-btn" aria-label="만족도 평가 제출">제출</button>
                                 </div>
                             </div>
                         </div>
