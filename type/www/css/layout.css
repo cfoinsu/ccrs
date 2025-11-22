@@ -160,7 +160,7 @@ Version : v1.0
 }
 
 #header .gnb-wrap > nav .gnb {
-  height: 64px;
+  height: 6.4rem;
   display: flex;
   justify-content: flex-start;
   gap: 0;
@@ -324,7 +324,7 @@ Version : v1.0
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
+  height: 7.5rem;
 }
 
 .utility-left {
@@ -350,7 +350,7 @@ Version : v1.0
 .utility-right .linkbox {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
   color: var(--krds-light-color-text-basic);
   font-weight: 400;
   font-size: var(--krds-pc-font-size-label-medium);
@@ -359,7 +359,7 @@ Version : v1.0
   position: relative;
 }
 .utility-right .linkbox li + li {
-  padding-left: 10px;
+  padding-left: 1rem;
   position: relative;
   display: flex;
 }
@@ -384,19 +384,19 @@ Version : v1.0
   display: flex;
   align-items: center;
   gap: 0;
-  margin-left: 20px;
+  margin-left: 2rem;
   background: #ebeff3;
   border-radius: 20px;
   padding: 0;
-  height: 42px;
+  height: 4.2rem;
 }
 .utility-right .grayroundbox li {
-  padding: 4px 20px;
+  padding: 0.4rem 2rem;
 }
 .utility-right .grayroundbox li.on {
   background: #f48f01;
   color: #fff;
-  padding: 4px 20px;
+  padding: 0.4rem 2rem;
   border-radius: 20px;
   line-height: 34px;
   font-weight: 700;
@@ -492,7 +492,7 @@ Version : v1.0
   position: absolute;
   top: 0;
   right: 32px;
-  height: 64px;
+  height: 6.4rem;
   display: flex;
   align-items: center;
 }
@@ -506,8 +506,8 @@ Version : v1.0
 #header .header-quickmenu-box {
   position: relative;
   display: inline-block;
-  width: 200px;
-  height: 33px;
+  width: 20rem;
+  height: 3.3rem;
   z-index: 99;
 }
 #header .header-quickmenu-box:hover {
@@ -559,16 +559,16 @@ Version : v1.0
 .icon-sp.ic_arrow_out_white::before {
   content: '';
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 1.2rem;
+  height: 1.2rem;
   background: url(../img/icons/icon-quickmenu.svg) no-repeat center;
   background-size: 12px;
   transition: 350ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 #header .header-quickmenu-box .top-box .quickmenu-btn .icon-sp {
-  width: 12px;
-  height: 12px;
+  width: 1.2rem;
+  height: 1.2rem;
   transform: none;
   transform-origin: center;
 }
@@ -682,7 +682,7 @@ Version : v1.0
 }
 
 .all-menu .allmenu-util a.util1 img {
-  width: 32px;
+  width: 3.2rem;
   vertical-align: middle;
 }
 
@@ -693,7 +693,7 @@ Version : v1.0
 }
 
 .all-menu .allmenu-util a.util2 img {
-  width: 32px;
+  width: 3.2rem;
   vertical-align: middle;
 }
 
@@ -704,7 +704,7 @@ Version : v1.0
 }
 
 .all-menu .allmenu-util a.util3 img {
-  width: 32px;
+  width: 3.2rem;
   vertical-align: middle;
 }
 
@@ -736,7 +736,7 @@ Version : v1.0
   position: relative;
   color: var(--text-color1);
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
   display: block;
   padding-left: calc((1.4rem - 2px) * 2);
 }
@@ -935,16 +935,16 @@ Version : v1.0
 
 .search-menu #searchText {
   width: calc(100% - 52px);
-  height: 44px;
-  padding: 0 8px;
+  height: 4.4rem;
+  padding: 0 0.8rem;
   border: 2px solid var(--text-color1);
   border-radius: 3px;
 }
 
 .search-menu .btn-search-header {
-  height: 44px;
-  width: 44px;
-  margin-left: 4px;
+  height: 4.4rem;
+  width: 4.4rem;
+  margin-left: 0.4rem;
   background: url(../img/icons/ico_sch.svg) no-repeat center;
   background-size: 36px;
 }
@@ -960,7 +960,7 @@ Version : v1.0
 
 .search-menu .result-item {
   display: block;
-  padding: 16px 0;
+  padding: 1.6rem 0;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -969,17 +969,17 @@ Version : v1.0
 }
 
 .search-menu .result-item .board-info {
-  margin-top: 8px;
+  margin-top: 0.8rem;
 }
 
 .search-menu .result-item .board-info li {
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 0.8rem;
   color: var(--main-color1);
 }
 
 .search-menu .result-item div.over3lines {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .search-menu .result-item p {
@@ -994,18 +994,18 @@ Version : v1.0
 }
 
 .search-menu .result-item.notfound .notfound-bg {
-  width: 54px;
-  height: 54px;
+  width: 5.4rem;
+  height: 5.4rem;
   background: url(../images/ic/pop-search-question.svg) no-repeat;
 }
 
 .search-menu .result-item.notfound h6 {
-  margin-top: 24px;
+  margin-top: 2.4rem;
 }
 
 #commonSearchPagenationDiv ul li {
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
 }
 
 @media (max-width: 1280px) {
@@ -1017,12 +1017,12 @@ Version : v1.0
 
 /* Main Content */
 .main-content {
-  min-height: calc(100vh - 140px);
-  padding: 140px 0 100px;
+  min-height: calc(100vh - 14rem);
+  padding: 14rem 0 10rem;
   transition: all 0.3s;
 }
 .institution-links img {
-  max-width: 1404px;
+  max-width: 140.4rem;
   width: 100%;
   text-align: center;
   display: block;
@@ -1032,8 +1032,8 @@ Version : v1.0
 #footer {
   position: relative;
   background: var(--text-color2);
-  padding: 62px;
-  height: 306px;
+  padding: 6.2rem;
+  height: 30.6rem;
   display: flex;
   align-items: center;
 }
@@ -1042,7 +1042,7 @@ Version : v1.0
 .footer {
   background: #0a1c2a;
   color: white;
-  padding: 40px 0;
+  padding: 4rem 0;
   /* margin-top: 60px; */
 }
 .footer img {
@@ -1056,12 +1056,12 @@ Version : v1.0
 } */
 
 .footer-logo img {
-  height: 33px;
+  height: 3.3rem;
 }
 
 .footer-links {
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -1073,7 +1073,7 @@ Version : v1.0
   position: relative;
 }
 .footer-link:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 0.8rem;
 }
 .footer-link:not(:last-child)::after {
   content: '|';
@@ -1114,7 +1114,7 @@ Version : v1.0
 
 .footer-info {
   grid-column: span 2;
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 .footer-info p:last-child {
   font-size: 1.5rem;
@@ -1167,13 +1167,13 @@ Version : v1.0
 .footer-contact {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  max-width: 30rem;
 }
 .footer-contact a {
-  margin-bottom: 38px;
+  margin-bottom: 3.8rem;
 }
 .footer-contact p {
-  margin-bottom: 4px;
+  margin-bottom: 0.4rem;
 }
 .footer-content .grid-right {
   display: flex;
@@ -1185,13 +1185,13 @@ Version : v1.0
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 27px;
+  margin-top: 2.7rem;
 }
 .footer-icon .certi {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 17px;
+  margin-top: 1.7rem;
 }
 
 .footer .krds-form-select {
@@ -1203,7 +1203,7 @@ Version : v1.0
   font-size: 1.7rem;
   border: 1px solid #d2d6da;
   color: #fff;
-  min-width: 200px;
+  min-width: 20rem;
 }
 .footer .krds-form-select:focus {
   outline: none;
@@ -1229,16 +1229,16 @@ Version : v1.0
 }
 
 #footer .footer-wrap .footer-left ul.foot-menu {
-  margin-bottom: 40px;
-  padding-top: 16px;
+  margin-bottom: 4rem;
+  padding-top: 1.6rem;
 }
 
 #footer .footer-wrap .footer-left ul.foot-logo {
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
 }
 
 #footer .footer-wrap .footer-left ul.foot-logo .logo1 img {
-  height: 42px;
+  height: 4.2rem;
   width: auto;
 }
 
@@ -1254,9 +1254,9 @@ Version : v1.0
 #footer .footer-wrap .footer-left .family-tag {
   cursor: pointer;
   border-bottom: 1px solid #fff;
-  height: 58px;
-  margin-bottom: 16px;
-  padding-top: 16px;
+  height: 5.8rem;
+  margin-bottom: 1.6rem;
+  padding-top: 1.6rem;
 }
 
 #footer .footer-wrap .footer-left .family-tag > a {
@@ -1270,8 +1270,8 @@ Version : v1.0
   position: absolute;
   content: '';
   display: block;
-  width: 12.5px;
-  height: 12.5px;
+  width: 1.25rem;
+  height: 1.25rem;
   top: 6px;
   right: 12.5px;
   background: url(../images/ic/footer-family.png) no-repeat;
@@ -1280,16 +1280,16 @@ Version : v1.0
 #footer .footer-wrap .footer-right {
   display: flex;
   flex-direction: column;
-  width: 267px;
+  width: 26.7rem;
   height: 100%;
 }
 
 #footer .footer-wrap .footer-right .family-tag {
   cursor: pointer;
   border-bottom: 1px solid #fff;
-  height: 58px;
-  margin-bottom: 16px;
-  padding-top: 16px;
+  height: 5.8rem;
+  margin-bottom: 1.6rem;
+  padding-top: 1.6rem;
 }
 
 #footer .footer-wrap .footer-right .family-tag > a {
@@ -1316,8 +1316,8 @@ Version : v1.0
 
 #footer .footer-wrap .footer-right .family .family-list {
   position: absolute;
-  padding: 104px 10vw;
-  bottom: 306px;
+  padding: 10.4rem 10vw;
+  bottom: 30.6rem;
   left: 0;
   display: flex;
   justify-content: space-between;
@@ -1334,7 +1334,7 @@ Version : v1.0
   left: 0;
   width: 500%;
   background: url(../images/bg/FAMILY\ SITE.svg) repeat-x;
-  height: 58px;
+  height: 5.8rem;
   content: '';
   display: block;
   will-change: transform;
@@ -1349,7 +1349,7 @@ Version : v1.0
 
 #footer .footer-wrap .footer-right .family .family-list .family-list-item {
   width: 33%;
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -1360,7 +1360,7 @@ Version : v1.0
 
 #footer .footer-wrap .footer-right .family .family-list .family-list-item h5 {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
   font-weight: 400;
   width: fit-content;
   background: #181818;
@@ -1373,8 +1373,8 @@ Version : v1.0
   background: url(../images/ic/footer-text.svg) no-repeat;
   right: -57px;
   top: -47px;
-  width: 115px;
-  height: 115px;
+  width: 11.5rem;
+  height: 11.5rem;
   z-index: -1;
   animation: rotate360 60s linear infinite;
   transform-origin: 50% 50%;
@@ -1386,7 +1386,7 @@ Version : v1.0
 
 #footer .footer-wrap .footer-right .family .family-list .family-list-item li {
   position: relative;
-  padding: 8px 0;
+  padding: 0.8rem 0;
   font-size: 1.8rem;
   color: #aaa;
   display: block;
@@ -1402,8 +1402,8 @@ Version : v1.0
   position: absolute;
   right: -57px;
   top: 11px;
-  width: 50px;
-  height: 20px;
+  width: 5rem;
+  height: 2rem;
   content: '';
   display: none;
   background: url(../images/ic/footer-arrow.svg) no-repeat;
@@ -1417,7 +1417,7 @@ Version : v1.0
 
 #footer .footer-wrap .footer-right .family-tag-close {
   position: absolute;
-  top: 60px;
+  top: 6rem;
   right: 6vw;
 }
 
@@ -1430,9 +1430,9 @@ Version : v1.0
 .institution-links .swiper {
   flex: 1;
   overflow: hidden;
-  max-width: 1200px;
+  max-width: 120rem;
   width: calc(100% - 200px);
-  margin-left: -25px;
+  margin-left: -2.5rem;
   @media screen and (max-width: 767px) {
     margin-left: 0;
     
@@ -1452,19 +1452,19 @@ Version : v1.0
   display: flex;
   align-items: center;
   margin-top: -1px;
-  height: 90px;
+  height: 9rem;
 }
 
 .institution-item.swiper-slide {
   width: auto;
   flex-shrink: 0;
-  height: 90px;
+  height: 9rem;
 }
 
 .institution-item img {
   max-width: 100%;
   width: auto;
-  height: 89px;
+  height: 8.9rem;
   object-fit: contain;
   transition: opacity 0.3s ease;
   padding: 0; 
@@ -1482,8 +1482,8 @@ Version : v1.0
 }
 
 .institution-nav .institution-nav-btn {
-  width: 32px;
-  height: 32px;
+  width: 3.2rem;
+  height: 3.2rem;
   background: #fff;
   border: 1px solid #d2d6da;
   border-radius: 50%;
@@ -1505,8 +1505,8 @@ Version : v1.0
   content: '';
   right: 0;
   bottom: 0px;
-  width: 88px;
-  height: 88px;
+  width: 8.8rem;
+  height: 8.8rem;
   background: var(--main-color1);
   color: #fff;
 }
@@ -1517,9 +1517,9 @@ Version : v1.0
 
 .topbtn .ictop {
   display: block;
-  margin: 6px auto;
-  width: 21px;
-  height: 10px;
+  margin: 0.6rem auto;
+  width: 2.1rem;
+  height: 1rem;
   background: url(../images/ic/ic_topbtn.png) no-repeat;
 }
 
@@ -1530,17 +1530,17 @@ Version : v1.0
     top: 18px;
   }
   #header .gnb-wrap .logo a img {
-    height: 20px;
+    height: 2rem;
   }
   #header .gnb-wrap .hamburger {
     background: url(../img/icons/menu.svg) center no-repeat;
   }
   #header .gnb-wrap #hamburgerBtn {
-    width: 30px;
-    height: 30px;
-    padding: 6px;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.6rem;
     top: 10px;
-    right: 25px;
+    right: 2.5rem;
   }
   #header .gnb-wrap .allmenu-util {
     width: 100vw;
@@ -1575,12 +1575,12 @@ Version : v1.0
   }
   .popslider-Wrap {
     right: 0;
-    width: 376px;
-    height: 180px;
+    width: 37.6rem;
+    height: 18rem;
   }
   #pop-box .pop-img {
-    width: 330px;
-    height: 180px;
+    width: 33rem;
+    height: 18rem;
   }
   #m-anchor {
     display: none;
@@ -1616,12 +1616,12 @@ Version : v1.0
     font-size: 2rem;
   }
   #section2 .card-scroll .title-box .borderR1 {
-    height: 28px;
+    height: 2.8rem;
   }
   #section2 .card-scroll .title-box p {
     letter-spacing: 0.046em;
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 0.8rem;
     letter-spacing: -0.03em;
   }
   #section2 .card-scroll .title-box h1 {
@@ -1634,11 +1634,11 @@ Version : v1.0
   }
   #section2 .card-scroll .card .card-img {
     width: 100%;
-    max-width: 670px;
+    max-width: 67rem;
   }
   #section2 .card-scroll .card .card-text {
     width: 100%;
-    max-width: 670px;
+    max-width: 67rem;
     margin-top: 4rem;
   }
   #section3 {
@@ -1655,8 +1655,8 @@ Version : v1.0
   }
   #section3 .contents-wrap .list-wrap ul.tab-list li {
     width: 100%;
-    height: 80px;
-    line-height: 80px;
+    height: 8rem;
+    line-height: 8rem;
     border-bottom: 1px solid var(--main-color7);
     margin: 0;
     color: var(--text-color1);
@@ -1675,9 +1675,9 @@ Version : v1.0
     position: absolute;
     content: '';
     right: 1.6rem;
-    top: 28px;
-    width: 24px;
-    height: 24px;
+    top: 2.8rem;
+    width: 2.4rem;
+    height: 2.4rem;
     display: block;
     background: url(../images/ic/btn-arrow_normal.png) no-repeat;
   }
@@ -1708,7 +1708,7 @@ Version : v1.0
     width: 100%;
     text-align: center;
     background: linear-gradient(180deg, rgba(243, 248, 239, 0) 70%, #f3f8ef 70%);
-    padding: 20px;
+    padding: 2rem;
     filter: none;
   }
   #section3 .contents-wrap .poster-area .poster-box .poster-img a {
@@ -1719,17 +1719,17 @@ Version : v1.0
   }
   #section3 .contents-wrap .poster-area .poster-box .poster-text {
     width: 100%;
-    margin: 60px 0 40px;
+    margin: 6rem 0 4rem;
   }
   #section3 .contents-wrap .poster-area .poster-box:first-child .poster-text {
-    margin: 0 0 40px;
+    margin: 0 0 4rem;
   }
   #section3 .contents-wrap .poster-area .poster-box .poster-text h4 {
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
     font-size: 2.4rem;
   }
   #section3 .contents-wrap .poster-area .poster-box .poster-text p {
-    height: 72px;
+    height: 7.2rem;
     -webkit-line-clamp: 3;
   }
   #footer .footer-wrap .footer-left {
@@ -1737,7 +1737,7 @@ Version : v1.0
   }
   #footer .footer-wrap .footer-left ul.foot-logo {
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 2.4rem;
   }
   #footer .footer-wrap .footer-left ul li {
     margin-right: 0;
@@ -1749,10 +1749,10 @@ Version : v1.0
     justify-content: center;
   }
   #footer .topbtn {
-    width: 62px;
-    height: 62px;
+    width: 6.2rem;
+    height: 6.2rem;
     position: absolute;
-    top: -62px;
+    top: -6.2rem;
   }
 }
 
@@ -1761,13 +1761,13 @@ Version : v1.0
     display: none;
   }
   #header::before {
-    height: 64px;
+    height: 6.4rem;
   }
   #header .gnb-wrap {
     display: none;
   }
   .utility-bar {
-    height: 90px;
+    height: 9rem;
   }
   #header .gnb-wrap > nav {
     display: none;
@@ -1778,18 +1778,18 @@ Version : v1.0
     left: 16px;
   }
   #section1 .controller-bar {
-    left: calc(50% - 125px);
-    top: calc(36vh + 310px);
+    left: calc(50% - 12.5rem);
+    top: calc(36vh + 31rem);
   }
 
   /* .card-scroll {
     width: calc(100% - 4.8rem);
   } */
   .card-scroll .title-box {
-    margin-bottom: 80px;
+    margin-bottom: 8rem;
   }
   .card-scroll .card {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
   }
   .card-scroll .card .card-img {
     border-radius: 0;
@@ -1798,7 +1798,7 @@ Version : v1.0
     width: 100%;
   }
   .card-scroll .card .card-text p {
-    height: 72px;
+    height: 7.2rem;
     -webkit-line-clamp: 3;
     line-height: 24px;
   }
@@ -1807,25 +1807,25 @@ Version : v1.0
   }
   #section3 .contents-wrap {
     width: calc(100% - 4.8rem);
-    padding: 50px 0 100px;
+    padding: 5rem 0 10rem;
   }
   #section3 .contents-wrap:nth-child(2) {
-    padding: 50px 0;
+    padding: 5rem 0;
   }
   #section3 .contents-wrap .contents-title {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
   }
   #section3 .contents-wrap .news-area {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 2rem;
   }
   #section3 .contents-wrap .news-area .news-box > ul {
     width: 100%;
-    height: 214px;
+    height: 21.4rem;
   }
   #section3 .contents-wrap .news-area .news-box p {
-    height: 72px;
+    height: 7.2rem;
     -webkit-line-clamp: 3;
   }
   #section3 .contents-wrap .poster-area .poster-box .poster-img a img {
@@ -1835,11 +1835,11 @@ Version : v1.0
 
 @media (max-width: 500px) {
   .board-navi > a:first-child {
-    padding: 24px 20px 24px 36px;
+    padding: 2.4rem 2rem 2.4rem 3.6rem;
     background: url(../images/ic/sub/ic_nav-left.svg) no-repeat left 0px top 50%;
   }
   .board-navi > a:last-child {
-    padding: 24px 36px 24px 20px;
+    padding: 2.4rem 3.6rem 2.4rem 2rem;
     background: url(../images/ic/sub/ic_nav-right.svg) no-repeat right 0px top 50%;
   }
 }
@@ -1864,11 +1864,11 @@ Version : v1.0
 }
 @media (max-width: 1280px) {
   #contents .c-header {
-    height: 454px;
-    padding: 208px 0 0;
+    height: 45.4rem;
+    padding: 20.8rem 0 0;
   }
   .c-tabbox {
-    height: 72px;
+    height: 7.2rem;
     border-bottom: none;
   }
   .c-tabbox .c-tab-area {
@@ -1886,9 +1886,9 @@ Version : v1.0
   .c-tabbox .c-tab-area .c-tab-label {
     position: relative;
     display: block;
-    padding: 0 24px;
+    padding: 0 2.4rem;
     width: 100%;
-    height: 72px;
+    height: 7.2rem;
     line-height: 72px;
     border-bottom: 1px solid #d9d9d9;
     z-index: 10;
@@ -1922,7 +1922,7 @@ Version : v1.0
   }
   .c-tabbox .c-tab-area .c-tab li {
     border-bottom: 1px solid #d9d9d9;
-    padding: 16px 24px;
+    padding: 1.6rem 2.4rem;
     font-size: 2rem;
     font-weight: 600;
     background: #fff;
@@ -1943,22 +1943,22 @@ Version : v1.0
   }
   .c-main-wrap {
     width: 90vw;
-    padding: 0 0 88px;
+    padding: 0 0 8.8rem;
   }
   .c-main-wrap .c-section {
-    padding: 60px 0;
+    padding: 6rem 0;
   }
   .c-main-wrap .box-table-wrap {
-    padding: 40px 0;
+    padding: 4rem 0;
   }
   .c-main-wrap .box-table .row {
     flex-direction: column;
   }
   .c-main-wrap .box-table .table-head {
     width: 100%;
-    min-height: 54px;
-    margin: 0 0 16px 0;
-    padding: 8px 0;
+    min-height: 5.4rem;
+    margin: 0 0 1.6rem 0;
+    padding: 0.8rem 0;
   }
   .c-main-wrap .box-table .table-body-1 {
     width: 100%;
@@ -1971,7 +1971,7 @@ Version : v1.0
     margin-right: 0;
   }
   .c-main-wrap .box-table .table-body-2 .box-check:nth-child(5) {
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
   }
   .c-main-wrap .box-table .table-body-3 {
     grid-template-columns: 1fr;
@@ -1981,7 +1981,7 @@ Version : v1.0
     margin-right: 0;
   }
   .c-main-wrap .box-table .table-body-3 .b-type1 .table-body-1 {
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
   }
   .c-main-wrap .box-table .table-body-3 .table-body-1.body-last {
     margin-bottom: 0;
@@ -2000,10 +2000,10 @@ Version : v1.0
   .c-tabbox .c-anchor .anchor-list {
     display: flex;
     overflow-x: auto;
-    height: 46px;
+    height: 4.6rem;
     border-bottom: 1px solid #d9d9d9;
     background: #fff;
-    padding: 0 24px;
+    padding: 0 2.4rem;
   }
   .c-tabbox .c-anchor .anchor-list::-webkit-scrollbar {
     display: none;
@@ -2055,23 +2055,23 @@ Version : v1.0
     font-size: 3.8rem;
   }
   .director-wrap .director-img {
-    margin-left: 40px;
+    margin-left: 4rem;
   }
   .director-wrap {
     padding: 0 5vw;
   }
   .director-wrap div:first-child {
     padding-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
   }
   .board-view {
-    margin: 40px 0;
+    margin: 4rem 0;
   }
   .board-view .board-contents {
-    padding: 40px;
+    padding: 4rem;
   }
   .board-view .board-file {
-    padding: 32px 40px;
+    padding: 3.2rem 4rem;
   }
   .btn-area {
     margin: 0;
@@ -2088,13 +2088,13 @@ Version : v1.0
   }
   .ms10-wrap .ms10-item .ms10-txt {
     width: calc(100% - 34vw);
-    height: 240px;
+    height: 24rem;
   }
   .org-diagram p {
-    padding: 0 16px;
+    padding: 0 1.6rem;
   }
   .o3-item ul {
-    padding: 0 16px;
+    padding: 0 1.6rem;
   }
   .mi-img img {
     height: 30%;
@@ -2126,31 +2126,31 @@ Version : v1.0
 }
 @media (max-width: 768px) {
   .c-tabbox {
-    height: 64px;
+    height: 6.4rem;
   }
   .c-tabbox .c-anchor {
-    top: 63px;
+    top: 6.3rem;
     z-index: 9;
   }
   .c-tabbox .c-tab-area .c-tab {
     top: 64px;
   }
   .c-tabbox .c-tab-area .c-tab-label {
-    height: 64px;
+    height: 6.4rem;
     line-height: 64px;
   }
   .c-main-wrap .c-section {
-    padding: 40px 0 0;
+    padding: 4rem 0 0;
   }
   .c-main-wrap .section-title {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
   }
   .c-main-wrap .undertab-title {
-    margin-top: 46px;
-    margin-bottom: 40px;
+    margin-top: 4.6rem;
+    margin-bottom: 4rem;
   }
   .d-main-wrap .section-title:first-child {
-    margin-top: 40px;
+    margin-top: 4rem;
   }
   .c-main-wrap .box-bg-grey {
     padding: 2.4rem;
@@ -2163,16 +2163,16 @@ Version : v1.0
     width: calc(100% - 43px);
   }
   .c-main-wrap .box-table .table-body-1 {
-    padding: 16px;
+    padding: 1.6rem;
   }
   .c-main-wrap .box-table .table-body-1 strong {
     font-size: 2.4rem;
   }
   .c-main-wrap .box-table .table-body-2 .b-type2 {
-    padding: 16px;
+    padding: 1.6rem;
   }
   .c-main-wrap .box-table .table-body-3 .b-type1 .box-check {
-    padding: 28px 16px;
+    padding: 2.8rem 1.6rem;
   }
   .c-main-wrap .num-txt h5 {
     background: none;
@@ -2185,19 +2185,19 @@ Version : v1.0
   }
   .c-main-wrap .history-box .history-item .history-year {
     padding-left: 0;
-    width: 116px;
+    width: 11.6rem;
   }
   .c-main-wrap .history-box .history-item .history-year::after {
-    right: 20px;
+    right: 2rem;
   }
   .c-main-wrap .history-box .history-item .history-info {
-    padding-left: 108px;
+    padding-left: 10.8rem;
     display: flex;
     flex-direction: column;
   }
   .c-main-wrap .history-box .history-item .history-info strong {
     text-align: inherit;
-    margin-bottom: 8px;
+    margin-bottom: 0.8rem;
   }
   .director-wrap {
     flex-direction: column-reverse;
@@ -2208,28 +2208,28 @@ Version : v1.0
     width: 100%;
   }
   .director-wrap .director-img {
-    width: 340px;
-    height: 392px;
+    width: 34rem;
+    height: 39.2rem;
     margin-left: 0;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
   }
   .director-wrap .director-img img {
     border-radius: 0;
   }
   .director-header {
-    margin: 60px 0;
+    margin: 6rem 0;
   }
   .c-main-wrap .d-target .board-wrap .board-item {
-    padding: 20px 8px;
+    padding: 2rem 0.8rem;
   }
   .c-main-wrap .d-target .board-wrap .board-item:hover {
-    padding: 20px 8px;
+    padding: 2rem 0.8rem;
   }
   .board-util {
-    margin: 24px 0;
+    margin: 2.4rem 0;
   }
   .board-view {
-    margin: 0 0 40px;
+    margin: 0 0 4rem;
   }
   .board-view .board-title-02 {
     text-align: center;
@@ -2249,7 +2249,7 @@ Version : v1.0
     max-width: 100%;
   }
   .board-view .board-file {
-    padding: 32px 24px;
+    padding: 3.2rem 2.4rem;
     flex-direction: column;
   }
   .board-view .board-file .file-list {
@@ -2280,7 +2280,7 @@ Version : v1.0
     grid-template-columns: 1fr;
   }
   .ms-wrap .ms-item {
-    height: 118px;
+    height: 11.8rem;
   }
   .ms4-wrap .ms4-item {
     flex-direction: column;
@@ -2288,7 +2288,7 @@ Version : v1.0
   .ms4-wrap .ms4-item div {
     width: 100%;
     margin-bottom: 16px;
-    padding: 16px 24px;
+    padding: 1.6rem 2.4rem;
   }
   .ms4-wrap .ms4-item div:nth-child(2) {
     margin-bottom: 0;
@@ -2313,10 +2313,10 @@ Version : v1.0
   .ms10-wrap .ms10-item .ms10-txt {
     width: 100%;
     height: auto;
-    margin-top: 24px;
+    margin-top: 2.4rem;
   }
   .ms10-wrap .ms10-item .ms10-txt div {
-    margin-top: 24px;
+    margin-top: 2.4rem;
   }
   .ms10-wrap .ms10-item .ms10-txt p {
     font-size: 2.4rem;
@@ -2326,7 +2326,7 @@ Version : v1.0
   }
   .o-item {
     width: 100%;
-    margin: 24px 0;
+    margin: 2.4rem 0;
   }
   .o2-item {
     width: 40%;
@@ -2339,7 +2339,7 @@ Version : v1.0
     display: none;
   }
   .o3-item {
-    margin: 16px 0;
+    margin: 1.6rem 0;
   }
   .o3-item p::after {
     display: none;
@@ -2348,11 +2348,11 @@ Version : v1.0
     grid-template-columns: 1fr 1fr;
   }
   .micolor-wrap .mi-color div {
-    height: 100px;
-    margin: 0 auto 24px;
+    height: 10rem;
+    margin: 0 auto 2.4rem;
   }
   .mi-img {
-    height: 240px;
+    height: 24rem;
   }
   .mi-img img {
     width: 70vw;
@@ -2362,13 +2362,13 @@ Version : v1.0
     row-gap: 24px;
   }
   .mitype-wrap .mitype-img {
-    height: 160px;
+    height: 16rem;
   }
   .mitype-wrap .mitype-img img {
-    height: 60px;
+    height: 6rem;
   }
   .map-area {
-    height: calc(100vw - 108px);
+    height: calc(100vw - 10.8rem);
   }
   .list-dropdown {
     width: 16rem;
@@ -2384,14 +2384,14 @@ Version : v1.0
     display: none;
   }
   .list-body .list-item .li2 p {
-    margin: 12px 4px 8px;
+    margin: 1.2rem 0.4rem 0.8rem;
   }
   .list-body .list-item .li3 {
     width: 100%;
-    padding: 0 8px;
+    padding: 0 0.8rem;
   }
   .list-body .list-item .li3 ul {
-    margin-bottom: 8px;
+    margin-bottom: 0.8rem;
     flex-direction: column;
     text-align: start;
     align-items: flex-start;
@@ -2410,7 +2410,7 @@ Version : v1.0
     line-height: inherit;
   }
   .list-body .list-item-01 .li1 p {
-    margin: 12px 4px 8px;
+    margin: 1.2rem 0.4rem 0.8rem;
   }
   .list-body .list-item-01 .li2 {
     width: 100%;
@@ -2447,25 +2447,25 @@ Version : v1.0
     flex-direction: column-reverse;
   }
   .head-line .logo-wrap {
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
   }
   .head-line .mark-wrap {
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
   }
   .comm-group .comm-item {
-    height: 240px;
+    height: 24rem;
   }
   .video-body {
     grid-template-columns: 1fr;
   }
   .video-item .img-wrap {
-    height: calc(100vw - 88px);
+    height: calc(100vw - 8.8px);
   }
   .cell-box {
-    margin: 40px auto;
+    margin: 4rem auto;
   }
   .c-main-wrap ul.p-type4 {
-    padding: 0 26px;
+    padding: 0 2.6rem;
   }
   .c-main-wrap ul.p-type4 > li ul li {
     padding-left: 0;
@@ -2474,18 +2474,18 @@ Version : v1.0
     line-height: 23px;
   }
   .c-main-wrap ul.p-type4 > li::before {
-    width: 18px;
-    height: 18px;
+    width: 1.8rem;
+    height: 1.8rem;
     left: -26px;
     background-size: contain;
   }
   .p-type3 {
-    padding-left: 20px;
+    padding-left: 2rem;
     line-height: 26px;
   }
   .p-type3::before {
-    width: 16px;
-    height: 17px;
+    width: 1.6rem;
+    height: 1.7rem;
     background-size: contain;
   }
   ul.date-info {
@@ -2496,25 +2496,25 @@ Version : v1.0
     display: none;
   }
   .forgn-map {
-    height: calc(100vw - 160px);
+    height: calc(100vw - 16rem);
     background: url(../images/img/forgn_img2.png) no-repeat;
     background-size: contain;
     background-position: center;
   }
   .forgn-map .map-mark {
-    width: 120px;
-    height: 36px;
+    width: 12rem;
+    height: 3.6rem;
     display: none;
   }
   .forgn-map .map-mark > a {
-    width: 120px;
-    height: 36px;
+    width: 12rem;
+    height: 3.6rem;
   }
   .forgn-map .map-mark ul {
-    width: 120px;
+    width: 12rem;
   }
   .forgn-map .map-mark ul li img {
-    width: 100px;
+    width: 10rem;
     height: auto;
   }
   .forgn-map .map-mark.America {
@@ -2532,8 +2532,8 @@ Version : v1.0
 }
 @media (max-width: 500px) {
   .pagenation li {
-    width: 32px;
-    height: 32px;
+    width: 3.2rem;
+    height: 3.2rem;
   }
 }
 @media (max-width: 390px) {
@@ -2545,7 +2545,7 @@ Version : v1.0
     font-size: 1.6rem;
   }
   .o3-item {
-    margin: 16px 0 0;
+    margin: 1.6rem 0 0;
   }
   .mi-img img {
     width: 80%;
@@ -2583,7 +2583,7 @@ Version : v1.0
 }
 .header.map .linkbox .sch-input .krds-input {
   height: 4.8rem;
-  width: 340px;
+  width: 34rem;
 }
 
 main.map-content {
@@ -2602,10 +2602,10 @@ main.map-content .container {
   padding: 9px 24px;
   border-bottom: 1px solid #d2d6da;
   border-top: 1px solid #d2d6da;
-  height: 75px;
+  height: 7.5rem;
 }
 .map-content .tab-layout .top-box {
-  width: 190px;
+  width: 19rem;
   flex-shrink: 0;
 }
 .map-content .tab-layout .region {
@@ -2620,7 +2620,7 @@ main.map-content .container {
   line-height: 26px;
   text-align: center;
   vertical-align: middle;
-  padding: 6px 24px;
+  padding: 0.6rem 2.4rem;
   border-radius: 1000px;
 }
 .map-content .tab-layout .region li.on {
@@ -2642,7 +2642,7 @@ main.map-content .container {
   z-index: 10;
   left: -390px;
   transition: all 0.3s ease-in-out;
-  width: 390px;
+  width: 39rem;
   flex-shrink: 0;
   border: none;
   top: 0;
@@ -2666,8 +2666,8 @@ main.map-content .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 46px;
+  width: 2.4rem;
+  height: 4.6rem;
   background: #fff;
 }
 .map-content .content-layout .sidebar .sideba-btn i {
@@ -2678,7 +2678,7 @@ main.map-content .container {
 }
 .map-content .content-layout .sidebar-header {
   background: #fff;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   border-radius: 0;
   text-align: left;
   color: #474e55;
@@ -2697,7 +2697,7 @@ main.map-content .container {
 }
 .sidebar-scroll-nav .target-section {
   border-bottom: 1px solid #e6e8ea;
-  padding: 24px;
+  padding: 2.4rem;
 }
 .sidebar-scroll-nav .target-section .map-tit {
   position: relative;
@@ -2705,14 +2705,14 @@ main.map-content .container {
   font-weight: 700;
   color: #17191b;
   display: block;
-  padding-right: 20px;
+  padding-right: 2rem;
   position: relative;
 }
 .sidebar-scroll-nav .target-section .map-tit::after {
   content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   right: 0;
   top: 0;
   background: url(../img/icons/arrow-down.svg) center no-repeat;
@@ -2720,8 +2720,8 @@ main.map-content .container {
 .sidebar-scroll-nav .target-section.active .map-tit::after {
   content: '';
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   right: 0;
   top: 0;
   background: url(../img/icons/arrow-top.svg) center no-repeat;
@@ -2730,25 +2730,25 @@ main.map-content .container {
   background-color: #fff6ea;
 }
 .sidebar-scroll-nav .target-section .root-go {
-  height: 40px;
-  padding: 2px 20px;
+  height: 4rem;
+  padding: 0.2rem 2rem;
   border: 1px solid #b1b8be;
   background: #fff;
   color: #ed7801;
   font-size: 1.5rem;
   line-height: 28px;
   border-radius: 6px;
-  margin-top: 8px;
+  margin-top: 0.8rem;
 }
 .sidebar-scroll-nav .target-section .map-addr {
   font-size: 1.5rem;
   color: #17191b;
-  margin-top: 8px;
+  margin-top: 0.8rem;
 }
 .sidebar-scroll-nav .target-section .workday {
   font-size: 1.5rem;
   color: #17191b;
-  margin-top: 8px;
+  margin-top: 0.8rem;
 }
 .sidebar-scroll-nav .target-section .root-show {
   max-height: 0;
@@ -2756,7 +2756,7 @@ main.map-content .container {
   transition: max-height 0.3s;
 }
 .sidebar-scroll-nav .target-section.active .root-show {
-  max-height: 500px;
+  max-height: 50rem;
   overflow: initial;
 }
 .sidebar-scroll-nav .target-section .root-show p {
@@ -2765,10 +2765,10 @@ main.map-content .container {
   font-weight: 400;
 }
 .root-show p span.subway-tag + span.subway-tag {
-  margin-left: 4px;
+  margin-left: 0.4rem;
 }
 .root-show p span.subway-tag:last-child {
-  margin-right: 8px;
+  margin-right: 0.8rem;
 }
 .sidebar-scroll-nav .target-section .root-show p span.subway-tag {
   border-radius: 50%;
@@ -2776,8 +2776,8 @@ main.map-content .container {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 18px;
-  height: 18px;
+  width: 1.8rem;
+  height: 1.8rem;
   color: #fff;
   padding: 0;
 }
@@ -2810,7 +2810,7 @@ main.map-content .container {
 }
 .map-content .content-area {
   position: relative;
-  max-height: calc(100vh - 75px);
+  max-height: calc(100vh - 7.5rem);
   overflow: hidden;
   width: 100%;
 }
@@ -2821,11 +2821,11 @@ main.map-content .container {
 /*.map-content .content-area .g-imag img {object-fit: none;}*/
 .map-content .content-area .ab_note {
   position: absolute;
-  right: 24px;
-  bottom: 24px;
-  height: 52px;
+  right: 2.4rem;
+  bottom: 2.4rem;
+  height: 5.2rem;
   line-height: 50px;
-  padding: 0 24px;
+  padding: 0 2.4rem;
   box-shadow: 0px 0px 2px 0px #0000000d;
   box-shadow: 0px 4px 8px 0px #00000014;
   background-color: #fff;
@@ -2837,8 +2837,8 @@ main.map-content .container {
 }
 
 .g-imag-hover {
-  height: 541px;
-  width: calc(50% - 16px);
+  height: 54.1rem;
+  width: calc(50% - 1.6rem);
   border-radius: 24px;
   border: 1px solid #d2d6da;
   text-align: center;
@@ -2846,15 +2846,15 @@ main.map-content .container {
 .g-map-images {
   position: relative;
   display: block;
-  width: 338px;
-  height: 479px;
+  width: 33.8rem;
+  height: 47.9rem;
   background: url(../images/img/map/map.png) center no-repeat;
-  margin: 32px auto 0;
+  margin: 3.2rem auto 0;
 }
 .g-imag-hover .map-choose {
   position: absolute;
-  width: 42px;
-  height: 24px;
+  width: 4.2rem;
+  height: 2.4rem;
   background: transparent;
   z-index: 3;
   border-radius: 1000px;
@@ -2938,19 +2938,19 @@ dl.flex-list {
   display: flex;
   flex-wrap: wrap; /* 요소가 넘칠 경우 줄바꿈 허용 */
   margin: 0;
-  padding: 10px 0;
+  padding: 1rem 0;
 }
 .flex-list dt {
   flex-basis: 100%;
   font-weight: bold;
-  padding: 5px 10px 5px 0;
+  padding: 0.5rem 1rem 0.5rem 0;
 }
 
 .flex-list dd {
   /* 나머지 공간을 채우도록 설정 */
   flex-basis: 100%;
   /* 또는 flex-grow: 1; */
-  padding: 5px 0;
+  padding: 0.5rem 0;
   margin: 0;
 }
 
@@ -2970,8 +2970,8 @@ dl.flex-list {
   }
 }
 .slidetopbox .swiper-slide img {
-    width: 1920px;
-    height: 119px;
+    width: 192rem;
+    height: 11.9rem;
     display: block;
     object-fit: none;
     margin: 0 auto;
@@ -2982,7 +2982,7 @@ dl.flex-list {
   left: 0;
   z-index: 99;
   width: 100%;
-  height: 140px;
+  height: 14rem;
   background-color: #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -2991,7 +2991,7 @@ dl.flex-list {
 #header:has(.slidetopbox.show)::before {
   content: '';
   width: 100%;
-  height: 140px;
+  height: 14rem;
   background-color: #fff;
   position: absolute;
   top: 119px;
@@ -3005,7 +3005,7 @@ dl.flex-list {
 #header:has(.slidetopbox.show)::after {
   content: '';
   width: 100%;
-  height: 140px;
+  height: 14rem;
   background-color: #fff;
   position: absolute;
   top: -270px;
@@ -3025,7 +3025,7 @@ dl.flex-list {
   top: -270px;
 }
 #header:has(.slidetopbox.show) ~ .main-content {
-  padding-top: 260px;
+  padding-top: 26rem;
 }
 .containe .top-banner-close {
   position: absolute;
@@ -3040,8 +3040,8 @@ dl.flex-list {
 }
 .containe .top-banner-close .topbanner_close {
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   background: url(../images/common/ic_topbanner_close.svg) no-repeat center;
   background-size: contain;
   cursor: pointer;
@@ -3054,9 +3054,9 @@ dl.flex-list {
   right: 0;
   max-width: 100%;
   width: 100%;
-  max-width: 1404px;
-  padding-left: 32px;
-  padding-right: 32px;
+  max-width: 140.4rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
   height: 0;
   margin: 0 auto;
   z-index: 1;
@@ -3071,7 +3071,7 @@ dl.flex-list {
   gap: 8px;
   align-items: center;
   background: #0000001a;
-  height: 26px;
+  height: 2.6rem;
   border-radius: 1000px;
   padding: 0 12px;
 }
@@ -3083,15 +3083,15 @@ dl.flex-list {
   content: '';
   display: block;
   background: url(../images/main/icon_playoff.svg) center no-repeat;
-  width: 10px;
-  height: 10px;
+  width: 1rem;
+  height: 1rem;
 }
 .autoplay-toggle.off::after {
   content: '';
   display: block;
   background: url(../images/main/icon_playon.svg) center no-repeat;
-  width: 10px;
-  height: 10px;
+  width: 1rem;
+  height: 1rem;
 }
 /* img {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);transition: all 0.5s;width: 100%;height: 100%;object-fit: cover;} */
 /* 추후 영문 css 옮기기 */
@@ -3099,8 +3099,8 @@ dl.flex-list {
   background: url(/type/www/img/logo/ccrs_logo_eng.svg) no-repeat;
   background-size: contain;
   background-position: center;
-  width: 264px;
-  height: 40px;
+  width: 26.4rem;
+  height: 4rem;
   text-indent: -9999px;
   overflow: hidden;
   white-space: nowrap;
