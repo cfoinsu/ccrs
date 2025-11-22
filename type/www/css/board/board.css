@@ -1725,7 +1725,7 @@ dd .add_openNoti {width:100%;margin-left:0px;}
 
 /* faq */
 .lineList_ul.typeFaq li {position:relative;padding:0;white-space:normal;}
-.lineList_ul.typeFaq dt {position:relative;min-height:31px;background:url(../img/board/faq_arrB_black.png) no-repeat right 25px top 48px;}
+.lineList_ul.typeFaq dt {position:relative;min-height:31px;background:url(../img/board/faq_arrB_black.png) no-repeat right 25px top 4.8rem;}
 .lineList_ul.typeFaq dt>button {display:block;width:100%;box-sizing:border-box;padding:16px 180px 17px 145px;}
 .lineList_ul.typeFaq .typeCateg dt>button {display:block;width:100%;box-sizing:border-box;padding:15px 50px 5px 185px;}
 .lineList_ul.typeFaq dt .txtInfo {padding-top:10px;text-align:left;}
@@ -1780,7 +1780,7 @@ dd .add_openNoti {width:100%;margin-left:0px;}
 .lineList_ul.typeFaq dd .fileArea>p  .file_bmp {padding-left:28px;background-image:url(../img/common/file_bmp.png)}
 .lineList_ul.typeFaq dd .fileArea>p  .file_avi {padding-left:28px;background-image:url(../img/common/file_avi.png)}
 
-.lineList_ul.typeFaq li dt.on {background:url(../img/board/faq_arrT_black.png) no-repeat right 25px top 48px;}
+.lineList_ul.typeFaq li dt.on {background:url(../img/board/faq_arrT_black.png) no-repeat right 25px top 4.8rem;}
 .lineList_ul.typeFaq li dt.on .txtL>p {white-space:normal;}
 .lineList_ul.typeFaq li dd.on {display:block;height:auto;padding-bottom:20px;padding-left:70px;}
 
@@ -2393,7 +2393,7 @@ dd .add_openNoti {width:100%;margin-left:0px;}
 	.lineList_ul2 li .txtInfo span{font-size: 13px; margin-right: 10px; padding-right: 11px;}
 	.lineList_ul2 li .txtInfo span::before{height: 12px;}
 
-	.BBSlist_v.Link_View dt p.Link_TitTxt{padding: 15px; font-size: 16px;}
+	.BBSlist_v.Link_View dt p.Link_TitTxt{padding: 15px; font-size: 1.6rem;}
 	.BBSlist_v.Link_View .txtViewInfo{padding: 15px;}
 	.BBSlist_v.Link_View .txtViewInfo p{font-size: 13px; padding-left: 60px; width: 100%;}
 	.BBSlist_v.Link_View .txtViewInfo p:nth-of-type(n+2){margin-top: 7px;}

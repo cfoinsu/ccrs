@@ -24,7 +24,7 @@
 }
 
 .nav-left .logo {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     color: #17191b;
 }
@@ -43,7 +43,7 @@
 .nav-link {
     text-decoration: none;
     color: #17191b;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
     transition: color 0.3s;
 }
@@ -84,7 +84,7 @@
     flex: 1;
     border: none;
     background: transparent;
-    font-size: 21px;
+    font-size: 2.1rem;
     font-weight: 700;
     color: #58616a;
     outline: none;
@@ -126,7 +126,7 @@
 }
 
 .tag-label {
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 700;
     color: #17191b;
     padding: 4px 14px;
@@ -136,7 +136,7 @@
     background: #ebeff3;
     border-radius: 20px;
     padding: 4px 14px;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #17191b;
     white-space: nowrap;
 }
@@ -183,20 +183,20 @@
 }
 
 .main-banner.center .diagnosis-card-top .diagnosis-card-title {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 700;
     color: #17191B;
 }
 
 .main-banner.center .diagnosis-card-top .diagnosis-card-text {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 700;
     color: #17191B;
     line-height: 1.4;
 }
 
 .main-banner.center .diagnosis-card-top .diagnosis-card-subtext {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -263,12 +263,12 @@
     border-radius: 24px;
 }
 .main-banner.center .diagnosis-card-bottom h2 {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     color: #fff;
 }
 .main-banner.center .diagnosis-card-bottom p {
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 400;
     color: #fff;
 }
@@ -338,13 +338,13 @@
 }
 
 .banner-subtitle {
-    font-size: 21px;
+    font-size: 2.1rem;
     font-weight: 700;
     margin-bottom: 43px;
 }
 
 .banner-title {
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -365,7 +365,7 @@
 
 .indicator-line {
     width: 120px;
-    height: 2px;
+    height: 0.2rem;
     background: rgba(255, 255, 255, 0.3);
     margin-right: 16px;
 }
@@ -377,7 +377,7 @@
 
 .indicator-text {
     color: white;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 500;
     margin: 0 16px;
 }
@@ -416,7 +416,7 @@
 }
 
 .card-title {
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #17191b;
     margin-bottom: 89px;
@@ -425,7 +425,7 @@
 }
 
 .card-main-text {
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 700;
     color: #17191b;
     line-height: 1.3;
@@ -435,7 +435,7 @@
 }
 
 .card-description {
-    font-size: 21px;
+    font-size: 2.1rem;
     font-weight: 500;
     color: #17191b;
     line-height: 1.4;
@@ -465,7 +465,7 @@
 }
 
 .guide-title {
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 700;
     color: white;
     margin-bottom: 56px;
@@ -492,7 +492,7 @@
 }
 
 .menu-text {
-    font-size: 21px;
+    font-size: 2.1rem;
     font-weight: 700;
     color: white;
     width: 290px;
@@ -536,7 +536,7 @@
     position: absolute;
     top: 24px;
     left: 24px;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #17191B;
     line-height: 1.4;
@@ -579,16 +579,16 @@
 }
 .bottom-section .bottom-section-box h2 {
     margin-top: 5px;
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 700;
 }
 .bottom-section .bottom-section-box p {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 .bottom-section .bottom-section-box i {
     font-weight: 700;
-    font-size: 19px;
+    font-size: 1.9rem;
     margin-left: auto;
 }
 .bottom-section .bottom-section-box .arrow-buttons {
@@ -682,14 +682,14 @@
 }
 
 .news-title {
-    font-size: 21px;
+    font-size: 2.1rem;
     font-weight: 700;
     color: white;
     margin-bottom: 24px;
 }
 
 .news-subtitle {
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 700;
     color: white;
     line-height: 1.4;
@@ -741,12 +741,12 @@
     color: white;
     padding: 4px 10px;
     border-radius: 4px;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .support-card h3 {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: bold;
     color: #17191b;
     line-height: 1.3;
@@ -754,7 +754,7 @@
 }
 
 .support-card p {
-    font-size: 21px;
+    font-size: 2.1rem;
     color: #17191b;
     line-height: 1.4;
 }
@@ -781,7 +781,7 @@
 }
 
 .small-loan h3 {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: bold;
 }
 
@@ -795,12 +795,12 @@
 }
 
 .faithful-payment h3 {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: bold;
 }
 
 .faithful-payment p {
-    font-size: 21px;
+    font-size: 2.1rem;
     line-height: 1.3;
 }
 
@@ -814,7 +814,7 @@
 }
 
 .benefit-info h3 {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: bold;
     color: #050505;
     line-height: 1.3;
@@ -869,20 +869,20 @@
 }
 
 .stat-card h4 {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: bold;
     margin-bottom: 16px;
 }
 
 .stat-amount {
-    font-size: 56px;
+    font-size: 5.6rem;
     font-weight: bold;
     display: flex;
     align-items: baseline;
 }
 
 .stat-amount span {
-    font-size: 25px;
+    font-size: 2.5rem;
     margin-left: 8px;
 }
 
@@ -923,7 +923,7 @@
 .chart-labels {
     display: flex;
     justify-content: space-between;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #111;
 }
@@ -1284,7 +1284,7 @@ section {
 }
 .hoverline ul li {
     color:#fff;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     display: flex;
     flex-wrap: wrap;
@@ -1305,10 +1305,10 @@ section {
     border-top: 1px solid rgba(255, 255, 255, 0.20);
 }
 .hoverline ul li p span {
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 .hoverline ul li .sub {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     margin-top: 5px;
 }
@@ -1362,7 +1362,7 @@ section {
     width: 100%;
     content: '';
     display: block;
-    height: 3px;
+    height: 0.3rem;
     border-radius: 2px;
     position: absolute;
     left: 0;
@@ -1629,8 +1629,8 @@ body:has(.intro.show) {
     padding: 0 60px 0 30px;
 }
 .intro .search-container .search-box .search-btn {
-    width: 48px;
-    height: 48px;
+    width: 4.8rem;
+    height: 4.8rem;
     background-color: #F48F01;
     border-radius: 1000px;
 }
@@ -1644,7 +1644,7 @@ body:has(.intro.show) {
     text-align: center;
 }
 .intro .tellphon .call {
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 700;
     color: #ED7801;
     display: flex;
@@ -1663,7 +1663,7 @@ body:has(.intro.show) {
     vertical-align: middle;
 }
 .intro .tellphon .call strong {
-    font-size: 24px;
+    font-size: 2.4rem;
     margin-left: 6px;
 }
 .intro .intro-linkbox {
@@ -1683,13 +1683,13 @@ body:has(.intro.show) {
     border-radius: 24px;
 }
 .intro .intro-linkbox .boxLcol .bigtit {
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 700;
     color: #17191B;
     line-height: 1.5;
 }
 .intro .intro-linkbox .boxLcol .contsDesc {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 400;
     color: #17191B;
     line-height: 1.5;
@@ -1705,7 +1705,7 @@ body:has(.intro.show) {
     bottom: 32px;
 }
 .intro .intro-linkbox .boxLcol .boxlinkbottom .arrowlink-w {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     padding: 19px 30px 19px 14px;
     background: #fff url(../images/main/link_btn_m.svg) center right 14px no-repeat;
@@ -1739,7 +1739,7 @@ body:has(.intro.show) {
     box-sizing: border-box;
 }
 .intro .intro-linkbox .boxRcol .boxtit {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     color: #17191B;
     line-height: 1.5;
@@ -1825,7 +1825,7 @@ body:has(.intro.show) {
     align-items: flex-start;
 }
 .intro .intro-linkbox .boxRcol .boxRbottom .usefullinkbox .arrowlink-s {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 700;
     padding: 0px 23px 0 0;
     background: transparent url(../images/main/link_btn_s.svg) center right no-repeat;
@@ -1857,7 +1857,7 @@ body:has(.intro.show) {
     border: 1px solid #6D7882;
     border-radius: 4px;
     line-height: 30px;
-    font-size: 13px;
+    font-size: 1.3rem;
     color: #17191B;
     text-align: center;
 }

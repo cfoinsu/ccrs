@@ -59,7 +59,7 @@
     border: none;
     border-radius: 50%;
     color: #333;
-    font-size: 24px;
+    font-size: 2.4rem;
     cursor: pointer;
     transition: all 0.2s;
 
@@ -95,7 +95,7 @@
     border: none;
     border-bottom: 1px solid #e0e0e0;
     color: #333;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
     text-align: left;
     cursor: pointer;
@@ -106,7 +106,7 @@
     }
 
     i {
-      font-size: 16px;
+      font-size: 1.6rem;
       color: #999;
     }
 
@@ -159,7 +159,7 @@
   .submenu-title {
     display: none;
     color: #333;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
     margin: 0 0 20px 0;
     padding-bottom: 12px;
@@ -181,7 +181,7 @@
       border: none;
       border-radius: 8px;
       color: #333;
-      font-size: 15px;
+      font-size: 1.5rem;
       font-weight: 600;
       text-align: left;
       text-decoration: none;
@@ -190,7 +190,7 @@
 
       i {
         color: #999;
-        font-size: 18px;
+        font-size: 1.8rem;
         transition: transform 0.3s ease;
       }
 
@@ -236,7 +236,7 @@
           display: block;
           padding: 10px 16px 10px 32px;
           color: #666;
-          font-size: 14px;
+          font-size: 1.4rem;
           text-decoration: none;
           border-radius: 6px;
           position: relative;
@@ -247,7 +247,7 @@
             left: 20px;
             top: 50%;
             transform: translateY(-50%);
-            font-size: 16px;
+            font-size: 1.6rem;
             color: #999;
           }
 
@@ -277,7 +277,7 @@
         display: block;
         padding: 14px 16px;
         color: #666;
-        font-size: 15px;
+        font-size: 1.5rem;
         text-decoration: none;
         border-radius: 8px;
         position: relative;
@@ -289,7 +289,7 @@
           left: 12px;
           top: 50%;
           transform: translateY(-50%);
-          font-size: 18px;
+          font-size: 1.8rem;
           color: #999;
         }
 
@@ -323,7 +323,7 @@
 
     .menu-item {
       padding: 20px 16px;
-      font-size: 16px;
+      font-size: 1.6rem;
     }
   }
 
@@ -331,11 +331,11 @@
     padding: 6px;
 
     .submenu-title {
-      font-size: 18px;
+      font-size: 1.8rem;
     }
 
     .submenu-list li a {
-      font-size: 14px;
+      font-size: 1.4rem;
       padding: 12px 14px;
     }
   }
@@ -400,7 +400,7 @@
 
   .breadcrumb-separator {
     color: #999;
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 
   .breadcrumb-item {
@@ -436,7 +436,7 @@
       height: 40px;
       padding: 6px 14px;
       color: #333;
-      font-size: 14px;
+      font-size: 1.4rem;
       font-weight: 500;
       cursor: pointer;
       transition: all 0.2s;
@@ -453,7 +453,7 @@
         content: "\f107";
         font-family: 'Line Awesome Free';
         font-weight: 900;
-        font-size: 13px;
+        font-size: 1.3rem;
         opacity: 0.5;
       }
 
@@ -516,7 +516,7 @@
             display: block;
             padding: 6px 16px;
             color: #333;
-            font-size: 14px;
+            font-size: 1.4rem;
             text-decoration: none;
             transition: all 0.2s;
 

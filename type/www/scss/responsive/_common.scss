@@ -18,7 +18,7 @@
 
     // 스크롤바 커스텀 (얇고 예쁘게)
     &::-webkit-scrollbar {
-      height: 3px; // 가로 스크롤바 높이
+      height: 0.3rem; // 가로 스크롤바 높이
     }
 
     &::-webkit-scrollbar-thumb {
@@ -111,7 +111,7 @@
       
       // 스크롤바 커스텀
       &::-webkit-scrollbar {
-        height: 3px;
+        height: 0.3rem;
       }
       &::-webkit-scrollbar-thumb {
         background-color: rgba(0, 0, 0, 0.2);

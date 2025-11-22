@@ -1,9 +1,3 @@
-// ==========================================
-// Main EN - English Main Page Styles
-// ==========================================
-// Only styles specific to main_en.html
-// Layout styles (header, footer, nav) are in layout_en_override.scss
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "variables";
 @import "mixins/breakpoints";
@@ -16,50 +10,50 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding: 150px 0 150px;
+    padding: 15rem 0 15rem;
 
     @include desktopLess {
-        padding: 120px 0 120px;
+        padding: 12rem 0 12rem;
     }
 
     @include tabletLess {
-        padding: 100px 0 100px;
+        padding: 10rem 0 10rem;
     }
 
     @include mobile {
-        padding: 80px 0 80px;
+        padding: 8rem 0 8rem;
     }
 
     @include mobile {
-        padding: 60px 0 60px;
+        padding: 6rem 0 6rem;
     }
 
     .section-title {
-        font-size: 80px;
+        font-size: 8rem;
         font-weight: 600;
         color: #000;
-        margin-bottom: 45px;
+        margin-bottom: 4.5rem;
         text-align: center;
         font-family: 'Poppins', sans-serif;
 
         @include desktopLess {
-            font-size: 64px;
-            margin-bottom: 40px;
+            font-size: 6.4rem;
+            margin-bottom: 4rem;
         }
 
         @include tabletLess {
-            font-size: 48px;
+            font-size: 4.8rem;
             margin-bottom: 35px;
         }
 
         @include mobile {
-            font-size: 36px;
-            margin-bottom: 30px;
+            font-size: 3.6rem;
+            margin-bottom: 3rem;
         }
 
         @include mobile {
-            font-size: 28px;
-            margin-bottom: 24px;
+            font-size: 2.8rem;
+            margin-bottom: 2.4rem;
         }
 
         &.white {
@@ -81,7 +75,7 @@
     bottom: 0;
     right: 88px;
     width: 696px;
-    height: 360px;
+    height: 36rem;
     z-index: 10;
     display: flex;
 }
@@ -90,9 +84,9 @@
     display: flex;
     align-items: center;
     color: #ccc;
-    height: 20px;
+    height: 2rem;
     transform: rotate(-90deg);
-    margin-top: 30px;
+    margin-top: 3rem;
     padding-top: 6px;
     font-weight: 400;
 
@@ -107,13 +101,13 @@
 }
 
 #pop-box {
-    height: 360px;
+    height: 36rem;
     display: flex;
 
     .pop-img {
         position: relative;
-        width: 640px;
-        height: 360px;
+        width: 64rem;
+        height: 36rem;
         overflow: hidden;
 
         img {
@@ -143,7 +137,7 @@
     align-items: center;
 
     @include tabletLess {
-        width: 60px;
+        width: 6rem;
     }
 
     @include mobile {
@@ -161,7 +155,7 @@
             position: relative;
             width: 31px;
             height: 31px;
-            margin: 16px 0;
+            margin: 1.6rem 0;
 
             a {
                 position: relative;
@@ -176,8 +170,8 @@
                     display: block;
                     width: 5px;
                     height: 5px;
-                    left: 13px;
-                    top: 13px;
+                    left: 1.3rem;
+                    top: 1.3rem;
                     border-radius: 50%;
                     background-color: #ccc;
                 }
@@ -206,7 +200,7 @@
     .btn-scroll {
         display: block;
         line-height: 36px;
-        margin: 0 auto 60px;
+        margin: 0 auto 6rem;
         position: relative;
         color: #ccc;
         writing-mode: vertical-rl;
@@ -348,40 +342,40 @@ opacity: 0.8;
 
         .hero-subtitle {
             opacity: 0;
-            margin-top: 20px;
-            padding-left: 100px;
+            margin-top: 2rem;
+            padding-left: 10rem;
             font-size: 2.4rem;
             line-height: 1.5;
             color: #fff;
             white-space: nowrap;
-            transform: translate(170px, 30px);
+            transform: translate(170px, 3rem);
 
             @include desktopLess {
                 font-size: 2rem;
-                padding-left: 80px;
+                padding-left: 8rem;
             }
 
             @include tabletLess {
                 font-size: 1.6rem;
-                padding-left: 60px;
+                padding-left: 6rem;
                 white-space: normal;
             }
 
             @include mobile {
                 font-size: 1.4rem;
-                padding-left: 40px;
-                margin-top: 16px;
+                padding-left: 4rem;
+                margin-top: 1.6rem;
             }
 
             @include mobile {
                 font-size: 1.2rem;
-                padding-left: 30px;
-                margin-top: 12px;
+                padding-left: 3rem;
+                margin-top: 1.2rem;
             }
             &::before {
                 content: '';
                 position: absolute;
-                top: 18px;
+                top: 1.8rem;
                 left: 0;
                 width: 75px;
                 height: 1px;
@@ -495,7 +489,7 @@ opacity: 0.8;
         transition: all 0.3s ease;
 
         &:after {
-            font-size: 20px;
+            font-size: 2rem;
             font-weight: bold;
         }
 
@@ -505,32 +499,32 @@ opacity: 0.8;
     }
 
     .swiper-button-prev {
-        left: 40px;
+        left: 4rem;
 
         @include tabletLess {
-            left: 20px;
-            width: 40px;
-            height: 40px;
+            left: 2rem;
+            width: 4rem;
+            height: 4rem;
         }
 
         @include mobile {
-            left: 10px;
+            left: 1rem;
             width: 35px;
             height: 35px;
         }
     }
 
     .swiper-button-next {
-        right: 40px;
+        right: 4rem;
 
         @include tabletLess {
-            right: 20px;
-            width: 40px;
-            height: 40px;
+            right: 2rem;
+            width: 4rem;
+            height: 4rem;
         }
 
         @include mobile {
-            right: 10px;
+            right: 1rem;
             width: 35px;
             height: 35px;
         }
@@ -538,11 +532,11 @@ opacity: 0.8;
 
     // Swiper Pagination
     .swiper-pagination {
-        bottom: 40px !important;
+        bottom: 4rem !important;
 
         .swiper-pagination-bullet {
-            width: 12px;
-            height: 12px;
+            width: 1.2rem;
+            height: 1.2rem;
             background: #fff;
             opacity: 0.5;
             transition: all 0.3s ease;
@@ -575,15 +569,15 @@ opacity: 0.8;
         display: flex;
         flex-direction: column;
         gap: 2px;
-        padding-top: 45px;
+        padding-top: 4.5rem;
     }
 
     .accordion-item {
         position: relative;
         margin-top: -50px;
-        padding: 20px 10px 55px;
+        padding: 2rem 1rem 55px;
         background: #F5F3F1;
-        border-radius: 24px;
+        border-radius: 2.4rem;
         overflow: hidden;
         transition: all 0.3s ease;
 
@@ -597,10 +591,10 @@ opacity: 0.8;
         }
 
         .accordion-body {
-            padding-left: 230px;
+            padding-left: 23rem;
 
             @include desktopLess {
-                padding-left: 180px;
+                padding-left: 18rem;
             }
 
             @include tabletLess {
@@ -609,7 +603,7 @@ opacity: 0.8;
             }
 
             @include mobile {
-                gap: 24px;
+                gap: 2.4rem;
             }
         }
 
@@ -631,8 +625,8 @@ opacity: 0.8;
         width: 100%;
         display: flex;
         align-items: center;
-        gap: 24px;
-        padding: 20px 32px;
+        gap: 2.4rem;
+        padding: 2rem 32px;
         background: transparent;
         border: none;
         cursor: pointer;
@@ -640,23 +634,23 @@ opacity: 0.8;
         transition: all 0.2s ease;
 
         @include desktopLess {
-            padding: 18px 28px;
-            gap: 20px;
+            padding: 1.8rem 2.8rem;
+            gap: 2rem;
         }
 
         @include tabletLess {
-            padding: 16px 24px;
-            gap: 16px;
+            padding: 1.6rem 2.4rem;
+            gap: 1.6rem;
         }
 
         @include mobile {
-            padding: 14px 20px;
-            gap: 12px;
+            padding: 1.4rem 2rem;
+            gap: 1.2rem;
         }
 
         @include mobile {
-            padding: 12px 16px;
-            gap: 10px;
+            padding: 1.2rem 1.6rem;
+            gap: 1rem;
         }
 
         &:hover {
@@ -666,41 +660,41 @@ opacity: 0.8;
         .accordion-number {
             display: block;
             width: 200px;
-            font-size: 16px;
+            font-size: 1.6rem;
             font-weight: 400;
             color: #1B2025;
-            min-width: 30px;
+            min-width: 3rem;
 
             @include tabletLess {
-                width: 150px;
+                width: 15rem;
             }
 
             @include mobile {
-                width: 80px;
+                width: 8rem;
             }
         }
 
         .accordion-title {
             flex: 1;
-            font-size: 42px;
+            font-size: 4.2rem;
             font-weight: 400;
             font-family: 'Poppins', sans-serif;
             color: #000;
 
             @include desktopLess {
-                font-size: 36px;
+                font-size: 3.6rem;
             }
 
             @include tabletLess {
-                font-size: 28px;
+                font-size: 2.8rem;
             }
 
             @include mobile {
-                font-size: 22px;
+                font-size: 2.2rem;
             }
 
             @include mobile {
-                font-size: 18px;
+                font-size: 1.8rem;
             }
         }
 
@@ -726,7 +720,7 @@ opacity: 0.8;
     .accordion-body {
         display: flex;
         align-items: flex-start;
-        gap: 48px;
+        gap: 4.8rem;
         justify-content: space-between;
     }
 
@@ -734,11 +728,11 @@ opacity: 0.8;
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 24px;
-        max-width: 430px;
+        gap: 2.4rem;
+        max-width: 43rem;
 
         p {
-            font-size: 19px;
+            font-size: 1.9rem;
             font-weight: 500;
             font-family: 'Poppins', sans-serif;
             color: #000;
@@ -751,7 +745,7 @@ opacity: 0.8;
             justify-content: center;
             width: 282px;
             height: 56px;
-            margin-top: 110px;
+            margin-top: 11rem;
             background: #fff;
             border-radius: 56px;
             font-weight: 600;
@@ -770,7 +764,7 @@ opacity: 0.8;
     .content-icon {
         position: absolute;
         top: 50%;
-        right: 100px;
+        right: 10rem;
         transform: translateY(-50%);
         flex-shrink: 0;
         width: 170px;
@@ -780,9 +774,9 @@ opacity: 0.8;
         justify-content: center;
 
         @include desktopLess {
-            width: 140px;
-            height: 140px;
-            right: 80px;
+            width: 14rem;
+            height: 14rem;
+            right: 8rem;
         }
 
         @include tabletLess {
@@ -790,19 +784,19 @@ opacity: 0.8;
             top: auto;
             right: auto;
             transform: none;
-            width: 120px;
-            height: 120px;
-            margin-top: 20px;
+            width: 12rem;
+            height: 12rem;
+            margin-top: 2rem;
         }
 
         @include mobile {
-            width: 100px;
-            height: 100px;
+            width: 10rem;
+            height: 10rem;
         }
 
         @include mobile {
-            width: 80px;
-            height: 80px;
+            width: 8rem;
+            height: 8rem;
         }
 
         svg {
@@ -826,7 +820,7 @@ opacity: 0.8;
         flex-direction: column;
         display: flex;
         align-items: center;
-        margin-bottom: 100px;
+        margin-bottom: 10rem;
 
         .borderR1 {
             width: 1px;
@@ -848,11 +842,11 @@ opacity: 0.8;
     .card {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 100px;
+        margin-bottom: 10rem;
 
         .card-img {
             width: 51.7%;
-            border-radius: 20px;
+            border-radius: 2rem;
             overflow: hidden;
             object-fit: cover;
 
@@ -882,8 +876,8 @@ opacity: 0.8;
                 color: var(--text-color4);
                 font-weight: 500;
                 font-size: 2rem;
-                height: 150px;
-                line-height: 30px;
+                height: 15rem;
+                line-height: 3rem;
                 margin-top: 2.4rem;
             }
         }
@@ -915,21 +909,21 @@ opacity: 0.8;
 
     .contents-wrap {
         width: 67.6vw;
-        padding: 100px 0;
+        padding: 10rem 0;
         margin: 0 auto;
 
         .contents-title {
-            margin-bottom: 80px;
+            margin-bottom: 8rem;
             display: flex;
             justify-content: space-between;
         }
 
         .list-wrap {
-            margin-bottom: 30px;
+            margin-bottom: 3rem;
 
             ul.tab-list li {
                 display: inline-block;
-                margin: 0 20px;
+                margin: 0 2rem;
                 color: #1B2025;
                 cursor: pointer;
                 font-size: 2rem;
@@ -947,11 +941,11 @@ opacity: 0.8;
                             width: 100%;
                             content: '';
                             display: block;
-                            height: 3px;
+                            height: 3.5rem;
                             border-radius: 2px;
                             position: absolute;
                             left: 0;
-                            bottom: -3px;
+                            bottom: -3.5rem;
                         }
                     }
                 }
@@ -965,7 +959,7 @@ opacity: 0.8;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                height: 78px;
+                height: 7.8rem;
                 letter-spacing: -0.04em;
                 border-bottom: 1px solid #ccc;
 
@@ -978,7 +972,7 @@ opacity: 0.8;
                     font-size: 2rem;
                     width: 10%;
                     text-align: center;
-                    max-width: 100px;
+                    max-width: 10rem;
                 }
 
                 .list-item-title {
@@ -988,7 +982,7 @@ opacity: 0.8;
                     height: 100%;
                     display: flex;
                     align-items: center;
-                    padding: 0 4px;
+                    padding: 0 0.4rem;
 
                     a {
                         display: block;
@@ -1002,14 +996,14 @@ opacity: 0.8;
                     display: flex;
                     justify-content: flex-end;
                     width: 35%;
-                    margin-right: 20px;
+                    margin-right: 2rem;
 
                     li {
                         margin: 0 4px;
                         text-align: right;
 
                         &:last-child {
-                            min-width: 90px;
+                            min-width: 9rem;
                         }
                     }
                 }
@@ -1030,9 +1024,9 @@ opacity: 0.8;
 
             .news-box {
                 padding: 3rem;
-                width: calc((100% - 120px) / 4);
-                border-radius: 20px;
-                margin-right: 40px;
+                width: calc((100% - 12rem) / 4);
+                border-radius: 2rem;
+                margin-right: 4rem;
                 border: 1px solid #d9d9d9;
                 letter-spacing: -0.02em;
                 transition: 0.5s ease;
@@ -1045,7 +1039,7 @@ opacity: 0.8;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    height: 176px;
+                    height: 17.6rem;
                 }
 
                 .news-class {
@@ -1056,7 +1050,7 @@ opacity: 0.8;
                     align-items: center;
 
                     li {
-                        margin-right: 4px;
+                        margin-right: 0.4rem;
                     }
                 }
 
@@ -1068,8 +1062,8 @@ opacity: 0.8;
                 p {
                     font-size: 1.6rem;
                     color: var(--text-color3);
-                    height: 120px;
-                    line-height: 24px;
+                    height: 12rem;
+                    line-height: 2.4rem;
                 }
 
                 span {
@@ -1097,18 +1091,18 @@ opacity: 0.8;
             justify-content: space-between;
 
             .poster-box {
-                width: calc((100% - 50px) / 2);
+                width: calc((100% - 5rem) / 2);
                 display: flex;
                 justify-content: space-between;
 
                 &:last-child {
-                    margin-right: 24px;
+                    margin-right: 2.4rem;
                 }
 
                 .poster-img {
-                    width: 207px;
+                    width: 20.7rem;
                     overflow: hidden;
-                    filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.25));
+                    filter: drop-shadow(2px 4px 1rem rgba(0, 0, 0, 0.25));
                     text-align: right;
 
                     a {
@@ -1116,13 +1110,13 @@ opacity: 0.8;
                         display: block;
 
                         img {
-                            height: 292px;
+                            height: 29.2rem;
                         }
                     }
                 }
 
                 .poster-text {
-                    width: calc(100% - 267px);
+                    width: calc(100% - 26.7rem);
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -1134,8 +1128,8 @@ opacity: 0.8;
 
                 p {
                     font-weight: 500;
-                    height: 120px;
-                    line-height: 24px;
+                    height: 12rem;
+                    line-height: 2.4rem;
                 }
             }
         }
@@ -1146,21 +1140,21 @@ opacity: 0.8;
     }
     /* CCRS 중앙 원 */
     .ccrs-circle {
-    width: 250px;
-    height: 250px;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
     background: #EF8200;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 60px;
+    margin: 0 auto 6rem;
     position: relative;
     z-index: 2;
     }
 
     .ccrs-circle span {
     font-family: 'Poppins', sans-serif;
-    font-size: 54px;
+    font-size: 5.4rem;
     font-weight: 700;
     color: #fff;
     }
@@ -1168,12 +1162,12 @@ opacity: 0.8;
     /* 연결선 */
     .connector-line {
     position: absolute;
-    top: 250px;
+    top: 25rem;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
     width: 1px;
-    height: 61px;
+    height: 6.1rem;
     border-left: 1px dotted #EF8200;
     background: rgba(255, 255, 255, 0.3);
     z-index: 99;
@@ -1182,8 +1176,8 @@ opacity: 0.8;
         position: absolute;
         bottom: -4px;
         left: -5px;
-        width: 10px;
-        height: 10px;
+        width: 1rem;
+        height: 1rem;
         background: #EF8200;
         border-radius: 50%;
     }
@@ -1193,17 +1187,17 @@ opacity: 0.8;
     .work-cards-wrapper {
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 2rem;
         width: 100%;
-        padding: 30px;
-        border-radius: 352px;
+        padding: 3rem;
+        border-radius: 35.2rem;
         margin-top: 0;
         position: relative;
         z-index: 2;
         border: 1px solid rgba(255,255,255,0.7);
         @include desktopLess {
             flex-wrap: wrap;
-            border-radius: 180px;
+            border-radius: 18rem;
             gap: 0;
         }
         @include tabletLess {
@@ -1211,7 +1205,7 @@ opacity: 0.8;
         @include mobile {
             flex-direction: column;
             align-items: center;
-            padding: 50px 0;
+            padding: 5rem 0;
         }
     }
 
@@ -1221,12 +1215,12 @@ opacity: 0.8;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 25px;
+        gap: 2.5rem;
         flex: 1;
-        margin: 0 -20px;
+        margin: 0 -2rem;
         min-width: 0;
         width: 100%;
-        max-width: 300px;
+        max-width: 30rem;
         aspect-ratio: 1;
         border-radius: 50%;
         border: 1px solid rgba(255, 255, 255);
@@ -1234,7 +1228,7 @@ opacity: 0.8;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 20px;
+        gap: 2rem;
         background: rgba(255, 255, 255, 0.06);
         transition: all 0.3s ease;
         position: relative;
@@ -1245,50 +1239,50 @@ opacity: 0.8;
         }
 
         @include desktopLess {
-            flex: 0 0 calc(50% - 20px);
-            max-width: 280px;
-            width: calc(50% - 20px);
+            flex: 0 0 calc(50% - 2rem);
+            max-width: 28rem;
+            width: calc(50% - 2rem);
         }
 
         @include mobile {
             flex: none;
             width: 100%;
-            margin: -20px;
+            margin: -2rem;
         }
     }
 
     /* 아이콘 플레이스홀더 */
     .icon-simple {
-        height: 100px;
+        height: 10rem;
         img {
             height: 100%;
         }
         &.img1 {
-            width: 70px;
+            width: 7rem;
         }
         &.img2 {
-            width: 95px;
+            width: 9.5rem;
         }
         &.img3 {
-            width: 104px;
+            width: 10.4rem;
         }
         &.img4 {
-            width: 60px;
+            width: 6.4rem;
         }
         &.img5 {
-            width: 80px;
+            width: 8rem;
         }
     }
 
     /* 카드 텍스트 */
     .work-card-text {
-    font-size: 15px;
+    font-size: 1.7rem;
     font-weight: 600;
     color: #fff;
     text-align: center;
     line-height: 1.4;
     margin: 0;
-    max-width: 200px;
+    max-width: 20rem;
     }
 
     /* Responsive */
@@ -1300,32 +1294,32 @@ opacity: 0.8;
 
     .ccrs-circle {
         @include desktopLess {
-            width: 220px;
-            height: 220px;
+            width: 22rem;
+            height: 22rem;
         }
 
         @include tabletLess {
-            width: 180px;
-            height: 180px;
+            width: 18rem;
+            height: 18rem;
         }
 
         @include mobile {
-            width: 140px;
-            height: 140px;
-            margin-bottom: 40px;
+            width: 14rem;
+            height: 14rem;
+            margin-bottom: 4rem;
         }
 
         span {
             @include desktopLess {
-                font-size: 48px;
+                font-size: 4.8rem;
             }
 
             @include tabletLess {
-                font-size: 42px;
+                font-size: 4.2rem;
             }
 
             @include mobile {
-                font-size: 36px;
+                font-size: 3.6rem;
             }
         }
     }
@@ -1341,20 +1335,20 @@ opacity: 0.8;
 
     .section-title {
         position: absolute;
-        top: 250px;
+        top: 25rem;
         left: 50%;
         transform: translateX(-122%);
         color: #fff;
 
         @include desktopLess {
             position: static;
-            margin-bottom: 40px;
+            margin-bottom: 4rem;
             transform: none;
         }
 
         @include mobile {
             top: auto;
-            margin-bottom: 30px;
+            margin-bottom: 3rem;
         }
     }
 
@@ -1362,40 +1356,40 @@ opacity: 0.8;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 13px;
+        gap: 1.3rem;
 
         @include tabletLess {
             flex-direction: column;
-            gap: 24px;
+            gap: 2.4rem;
         }
 
         .contact-item {
             width: 40%;
             background-color: #f5f3f1;
-            border-radius: 24px;
-            padding: 40px 40px 10px;
+            border-radius: 2.4rem;
+            padding: 4rem 4rem 1rem;
             display: flex;
             flex-direction: column;
-            gap: 28px;
+            gap: 2.8rem;
 
             @include desktopLess {
                 width: 100%;
-                padding: 32px 32px 10px;
+                padding: 32px 32px 1rem;
             }
 
             @include mobile {
-                padding: 24px 24px 10px;
-                gap: 20px;
+                padding: 2.4rem 2.4rem 1rem;
+                gap: 2rem;
             }
 
             @include mobile {
-                padding: 20px 20px 10px;
-                gap: 16px;
+                padding: 2rem 2rem 1rem;
+                gap: 1.6rem;
             }
         }
 
         .contact-map {
-            width: 572px;
+            width: 57.2rem;
 
             @include desktopLess {
                 width: 100%;
@@ -1408,7 +1402,7 @@ opacity: 0.8;
                 margin: 0 auto;
 
                 @include mobile {
-                    max-width: 320px;
+                    max-width: 32rem;
                 }
             }
         }
@@ -1417,7 +1411,7 @@ opacity: 0.8;
     // Contact Info Group Styles
     .contact-info-group {
         display: flex;
-        gap: 16px;
+        gap: 1.6rem;
         align-items: flex-start;
         border-bottom: 1px solid #C8C9CD;
         &:last-child {
@@ -1426,8 +1420,8 @@ opacity: 0.8;
     }
 
     .contact-icon-wrapper {
-        width: 48px;
-        height: 48px;
+        width: 4.8rem;
+        height: 4.8rem;
         flex-shrink: 0;
         display: flex;
         align-items: center;
@@ -1448,34 +1442,34 @@ opacity: 0.8;
     }
 
     .contact-info-label {
-        padding-bottom: 10px;
+        padding-bottom: 1rem;
         font-family: 'Pretendard', sans-serif;
         font-weight: 600;
-        font-size: 24px;
+        font-size: 2.4rem;
         line-height: normal;
         color: #000;
         margin: 0;
 
         @include tabletLess {
-            font-size: 20px;
+            font-size: 2rem;
         }
 
         @include mobile {
-            font-size: 18px;
+            font-size: 1.8rem;
         }
 
         @include mobile {
-            font-size: 16px;
+            font-size: 1.6rem;
         }
     }
 
     .contact-info-text {
         display: inline-block;
-        font-size: 19px;
+        font-size: 1.9rem;
         margin: 0;
 
         @include tabletLess {
-            font-size: 17px;
+            font-size: 1.7rem;
         }
 
         &:hover {
@@ -1486,12 +1480,12 @@ opacity: 0.8;
     // Directions Buttons
     .contact-directions-buttons {
         display: flex;
-        gap: 8px;
-        margin-top: 8px;
+        gap: 0.8rem;
+        margin-top: 0.8rem;
 
         @include mobile {
             flex-direction: column;
-            gap: 12px;
+            gap: 1.2rem;
         }
     }
 
@@ -1500,36 +1494,36 @@ opacity: 0.8;
         align-items: center;
         justify-content: center;
         flex: 1;
-        gap: 10px;
+        gap: 1rem;
         background-color: #F48F01;
-        border-radius: 28px;
-        padding: 13px 24px 13px;
+        border-radius: 2.8rem;
+        padding: 1.3rem 2.4rem 1.3rem;
         text-decoration: none;
         transition: all 0.3s ease;
         border: none;
         cursor: pointer;
 
         @include mobile {
-            padding: 12px 20px;
-            border-radius: 24px;
+            padding: 1.2rem 2rem;
+            border-radius: 2.4rem;
         }
 
         @include mobile {
-            padding: 10px 16px;
-            border-radius: 20px;
+            padding: 1rem 1.6rem;
+            border-radius: 2rem;
         }
 
         .btn-text {
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 1.6rem;
             line-height: normal;
             color: #fff;
         }
 
         .btn-icon {
-            width: 20px;
-            height: 20px;
+            width: 2rem;
+            height: 2rem;
             flex-shrink: 0;
             color: #fff;
         }
@@ -1548,10 +1542,10 @@ opacity: 0.8;
 
 .btn-main-01 {
     display: inline-block;
-    width: 138px;
-    height: 52px;
+    width: 13.8rem;
+    height: 5.2rem;
     line-height: 50px;
-    border-radius: 26px;
+    border-radius: 2.6rem;
     border: 1px solid #fff;
     color: #fff;
     transition: 0.5s ease;
@@ -1566,11 +1560,11 @@ opacity: 0.8;
 
 .btn-main-02 {
     display: inline-block;
-    width: 138px;
-    height: 52px;
+    width: 13.8rem;
+    height: 5.2rem;
     line-height: 50px;
-    margin-top: 24px;
-    border-radius: 26px;
+    margin-top: 2.4rem;
+    border-radius: 2.6rem;
     border: 1px solid var(--main-color1);
     color: var(--main-color1);
     transition: 0.5s ease;
@@ -1584,8 +1578,8 @@ opacity: 0.8;
 }
 
 .btn-main-plus {
-    width: 35px;
-    height: 35px;
+    width: 3.5rem;
+    height: 3.5rem;
     background: url(../images/ic/plus_normal.png) no-repeat;
     transition: 0.5s ease;
 

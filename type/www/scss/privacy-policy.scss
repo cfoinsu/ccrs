@@ -135,7 +135,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
       background: #F6FAFF;
       border-radius: 24px;
         border: 1px solid #F6FAFF;
-        font-size: 17px;
+        font-size: 1.7rem;
         img {
           display: block;
           width: 65px;
@@ -153,11 +153,11 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
           strong {
             flex-shrink: 0;
             width: 250px;
-            font-size: 19px;
+            font-size: 1.9rem;
             color: #012063;
           }
           .txt {
-            font-size: 17px;
+            font-size: 1.7rem;
             color: #17191B;
           }
         }
@@ -200,7 +200,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
 }
 
 .term-cont-list {display:flex; flex-direction:column; gap:4rem; margin:7rem 0 0; padding:0; list-style:none;}
-.term-cont-list p {margin:0; margin-bottom: 20px;line-height: 1.5;font-size: 17px;}
+.term-cont-list p {margin:0; margin-bottom: 20px;line-height: 1.5;font-size: 1.7rem;}
 .term-cont-list.condition {gap:3.2rem;}
 .term-cont-list .trem-cont {display:flex; flex-direction:column; gap:1.6rem;padding-bottom: 4rem;border-bottom: 1px solid #e1e1e1;}
 
@@ -255,7 +255,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
 }
 
 .popup-title {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   color: #01133b;
   margin: 0;
@@ -264,7 +264,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
 .popup-content {
   line-height: 1.8;
   padding: 15px 15px 80px;
-  font-size: 15px;
+  font-size: 1.5rem;
   color: #333;
 
   .pd_r10 {
@@ -277,7 +277,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
     color: #01133b;
     margin-top: 40px;
@@ -291,7 +291,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
     color: #01133b;
     margin-top: 25px;
@@ -340,7 +340,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
     margin: 30px 0;
 
     h2 {
-      font-size: 20px;
+      font-size: 2rem;
       font-weight: 700;
       color: #01133b;
       margin: 0 0 20px 0;
@@ -351,7 +351,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
     p {
       margin-top: 20px;
       color: #dd5e17;
-      font-size: 14px;
+      font-size: 1.4rem;
       line-height: 1.6;
     }
 
@@ -383,7 +383,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
         border: 1px solid #dee2e6;
         border-radius: 8px;
         color: #333;
-        font-size: 15px;
+        font-size: 1.5rem;
         font-weight: 500;
         transition: all 0.3s ease;
         position: relative;
@@ -395,7 +395,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
           top: 50%;
           transform: translateY(-50%);
           color: #666;
-          font-size: 16px;
+          font-size: 1.6rem;
           transition: all 0.3s ease;
         }
       }
@@ -447,7 +447,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
           border-radius: 8px;
           color: #333;
           text-decoration: none;
-          font-size: 15px;
+          font-size: 1.5rem;
           transition: all 0.3s ease;
           position: relative;
           padding-left: 35px;
@@ -458,7 +458,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
             left: 12px;
             top: 11px;
             color: #666;
-            font-size: 16px;
+            font-size: 1.6rem;
             transition: all 0.3s ease;
           }
 
@@ -486,7 +486,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
       display: flex;
       align-items: center;
       gap: 10px;
-      font-size: 20px;
+      font-size: 2rem;
       font-weight: 700;
       color: #01133b;
       margin-top: 50px !important;
@@ -642,7 +642,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
     .terms_labeling {
 
       h2 {
-        font-size: 18px;
+        font-size: 1.8rem;
         margin-bottom: 15px;
         padding-bottom: 12px;
       }
@@ -653,12 +653,12 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
       }
 
       .labeling_li h4 {
-        font-size: 14px;
+        font-size: 1.4rem;
         padding: 10px 12px;
         padding-left: 30px;
 
         &::before {
-          font-size: 14px;
+          font-size: 1.4rem;
           left: 10px;
         }
       }
@@ -670,7 +670,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
 
     dl {
       dt {
-        font-size: 16px;
+        font-size: 1.6rem;
         padding: 15px;
 
         img {
@@ -686,11 +686,11 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
 
     .bu_list li {
       padding-left: 25px;
-      font-size: 14px;
+      font-size: 1.4rem;
     }
 
     .table_person {
-      font-size: 13px;
+      font-size: 1.3rem;
 
       th, td {
         padding: 10px 8px;
@@ -710,7 +710,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 600;
   transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(1, 19, 59, 0.3);
@@ -730,7 +730,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
-  font-size: 14px;
+  font-size: 1.4rem;
   border: 1px solid #ddd;
 
   th, td {
@@ -783,7 +783,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
       border-radius: 8px;
       color: #333;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 1.6rem;
       line-height: 1.5;
       transition: all 0.3s ease;
       position: relative;
@@ -795,7 +795,7 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
         right: 20px;
         top: 50%;
         transform: translateY(-50%);
-        font-size: 18px;
+        font-size: 1.8rem;
         color: #666;
         transition: all 0.3s ease;
       }
@@ -827,11 +827,11 @@ ol.list-number {margin:0; padding:0; list-style-type:none;}
       a {
         padding: 12px 16px;
         padding-right: 45px;
-        font-size: 14px;
+        font-size: 1.4rem;
 
         &::after {
           right: 16px;
-          font-size: 16px;
+          font-size: 1.6rem;
         }
 
         &:hover::after {

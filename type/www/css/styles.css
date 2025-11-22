@@ -113,7 +113,7 @@ body {
 
 .nav-menu {
     display: flex;
-    gap: 48px;
+    gap: 4.8rem;
 }
 
 .fw-normal {
@@ -199,7 +199,7 @@ body {
 }
 
 .sidebar-header h2 {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -223,7 +223,7 @@ body {
     border: none;
     padding: 16px 0;
     text-align: left;
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 700;
     cursor: pointer;
     display: flex;
@@ -274,7 +274,7 @@ body {
     padding: 6px 0 6px 7px;
     color: #333;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1.5rem;
     position: relative;
 }
 
@@ -284,8 +284,8 @@ body {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 3px;
-    height: 3px;
+    width: 0.3rem;
+    height: 0.3rem;
     background: #999;
     border-radius: 50%;
 }
@@ -352,7 +352,7 @@ body aside {
 }
 
 .page-header h1 {
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 700;
     color: var(--krds-light-color-text-static);
     margin-bottom: 0;
@@ -381,7 +381,7 @@ body aside {
 
 .page-description.bgBlue p {
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     width: 100%;
     text-align: center;
     color: #474E55;
@@ -400,7 +400,7 @@ body aside {
 
 .page-description.bgYellow p {
     display: block;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     width: 100%;
     text-align: center;
@@ -498,7 +498,7 @@ body aside {
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 13px;
+    font-size: 1.3rem;
     border: 1px solid var(--krds-light-color-border-gray-light);
     padding: 6px 12px;
     border-radius: var(--krds-radius-max);
@@ -596,7 +596,7 @@ body aside {
     border: 1px solid #d0d0d0;
     border-right: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
     transition: all 0.3s ease;
@@ -749,12 +749,12 @@ body aside {
 }
 
 .card-step .card-step-header .step-label {
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #ED7801;
 }
 
 .card-step .card-step-header .title {
-    font-size: 32px;
+    font-size: 3.2rem;
     color: #17191B;
     font-weight: 700;
 }
@@ -832,7 +832,7 @@ body aside {
 }
 
 .overview-item h3 {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 16px;
     color: #222;
@@ -845,7 +845,7 @@ body aside {
 
 .overview-item li {
     padding: 4px 0;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #333;
     position: relative;
     padding-left: 12px;
@@ -857,14 +857,14 @@ body aside {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 3px;
-    height: 3px;
+    width: 0.3rem;
+    height: 0.3rem;
     background: #666;
     border-radius: 50%;
 }
 
 .overview-item p {
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #333;
 }
 
@@ -890,7 +890,7 @@ body aside {
     top: 50%;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 0.2rem;
     background: #C4C9D4;
     border-style: dashed;
     border-width: 0 0 2px 0;
@@ -928,7 +928,7 @@ body aside {
 .timeline-marker::after {
     content: '✓';
     color: white;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: bold;
 }
 
@@ -937,7 +937,7 @@ body aside {
 }
 
 .timeline-label {
-    font-size: 14px;
+    font-size: 1.4rem;
     text-align: center;
     white-space: nowrap;
     font-weight: 500;
@@ -958,7 +958,7 @@ body aside {
 }
 
 .info-section h2 {
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 20px;
     color: #222;
@@ -970,7 +970,7 @@ body aside {
 
 .info-list li {
     padding: 8px 0;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 1.6;
     position: relative;
     padding-left: 16px;
@@ -981,8 +981,8 @@ body aside {
     position: absolute;
     left: 0;
     top: 14px;
-    width: 3px;
-    height: 3px;
+    width: 0.3rem;
+    height: 0.3rem;
     background: #666;
     border-radius: 50%;
 }
@@ -996,13 +996,13 @@ body aside {
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #0B78CB;
 }
 
 /* Application Section */
 .application-section h2 {
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 30px;
     color: #222;
@@ -1035,19 +1035,19 @@ body aside {
 }
 
 .method-card h3 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 12px;
     color: #222;
 }
 
 .method-card p {
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #666;
 }
 
 .method-phone {
-    font-size: 20px !important;
+    font-size: 2rem !important;
     font-weight: 700 !important;
     color: #ed7801 !important;
 }
@@ -1069,7 +1069,7 @@ body aside {
 
 .form-group label {
     display: block;
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 700;
 }
 
@@ -1089,11 +1089,11 @@ body aside {
     border-radius: 4px;
     padding: 8px 12px;
     text-align: right;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .input-label {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #6b7280;
     margin-top: 4px;
 }
@@ -1103,7 +1103,7 @@ body aside {
     border: 1px solid #d1d5db;
     border-radius: 4px;
     padding: 8px 12px;
-    font-size: 14px;
+    font-size: 1.4rem;
     background: white;
 }
 
@@ -1137,7 +1137,7 @@ body aside {
 }
 
 .form-group label.form-label-small {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 500;
     color: #1f2937;
     display: block;
@@ -1152,7 +1152,7 @@ body aside {
 
 .form-input {
     width: 100%;
-    height: 48px;
+    height: 4.8rem;
     padding-left: 1rem;
     padding-right: 3rem;
     border: 1px solid #d1d5db;
@@ -1167,7 +1167,7 @@ body aside {
 
 .form-select {
     width: 100%;
-    height: 48px;
+    height: 4.8rem;
     padding-left: 1rem;
     border: 1px solid #d1d5db;
     border-radius: 0.375rem;
@@ -1248,25 +1248,25 @@ body aside {
 /* 버튼 스타일 */
 .btn {
     display: inline-flex;
-    height: 48px;
+    height: 4.8rem;
     align-items: center;
     justify-content: center;
     padding: 8px 20px;
     border-radius: 8px;
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 500;
     transition: background-color 0.15s ease-in-out;
     outline: none;
 }
 
 .btn.btn-primary {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 400;
 }
 
 .info-item .btn.btn-primary,
 .result-card .btn.btn-primary {
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .info-item .info-text-content {
@@ -1390,7 +1390,7 @@ body aside {
     z-index: 50;
     background-color: #111827;
     color: white;
-    font-size: 14px;
+    font-size: 1.4rem;
     padding: 5px 8px;
     border-radius: 0.375rem;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -1617,11 +1617,11 @@ body aside {
 }
 
 .selected-label {
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .product-name {
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .compare-btn {
@@ -1657,7 +1657,7 @@ body aside {
 }
 
 .action-label {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #6b7280;
     margin-bottom: 8px;
 }
@@ -1691,7 +1691,7 @@ body aside {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .result-info {
@@ -1700,11 +1700,11 @@ body aside {
 
 .result-title {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .result-details {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #6b7280;
     margin-top: 2px;
 }
@@ -1724,7 +1724,7 @@ body aside {
 }
 
 .btn-secondary {
-    font-size: 14px;
+    font-size: 1.4rem;
     background: #f3f4f6;
     border: none;
     padding: 4px 8px;
@@ -1737,11 +1737,11 @@ body aside {
     color: var(--krds-light-color-text-bolder-inverse);
     border: none;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .more-info-btn {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #2563eb;
     background: none;
     border: none;
@@ -1774,7 +1774,7 @@ body aside {
 }
 
 .feedback-card h3 {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 700;
     margin-bottom: 24px;
     color: #222;
@@ -1805,7 +1805,7 @@ body aside {
     align-items: center;
     gap: 8px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .rating-option input[type="radio"] {
@@ -1851,7 +1851,7 @@ body aside {
     border-radius: 8px;
     resize: vertical;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .submit-btn {
@@ -1860,7 +1860,7 @@ body aside {
     border: none;
     padding: 12px 24px;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -1897,7 +1897,7 @@ body aside {
 .footer-link {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     position: relative;
 }
@@ -1920,7 +1920,7 @@ body aside {
 .footer-info p,
 .footer-contact p {
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.5;
 }
 
@@ -1992,7 +1992,7 @@ body aside {
 }
 
 .modal-header h2 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -2053,7 +2053,7 @@ body aside {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .card-icon.orange {
@@ -2077,11 +2077,11 @@ body aside {
 
 .card-info h3 {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .card-subtitle {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #6b7280;
 }
 
@@ -2090,7 +2090,7 @@ body aside {
     border: none;
     color: #9ca3af;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .card-details {
@@ -2101,7 +2101,7 @@ body aside {
     display: flex;
     justify-content: space-between;
     padding: 12px 0;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .card-action-btn {
@@ -2111,7 +2111,7 @@ body aside {
     border: none;
     padding: 8px;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 1.4rem;
     cursor: pointer;
 }
 
@@ -2226,15 +2226,15 @@ body aside {
     }
 
     .nav-item {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .page-header h1 {
-        font-size: 28px;
+        font-size: 2.8rem;
     }
 
     .page-description {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     .tab-navigation {
@@ -2371,7 +2371,7 @@ body aside {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
-    font-size: 20px;
+    font-size: 2rem;
     color: #fff;
 }
 
@@ -2398,7 +2398,7 @@ body aside {
 }
 
 .hero-card h3 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -2416,7 +2416,7 @@ body aside {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .nav-dots {
@@ -2523,11 +2523,11 @@ body aside {
 
 .quick-item .quick-showbox .showbox-item p.link-title span {
     display: block;
-    font-size: 21px;
+    font-size: 2.1rem;
 }
 .quick-item .quick-showbox .showbox-item p.link-title span.board-ph {
     display: block;
-    font-size: 13px;
+    font-size: 1.3rem;
     color: #17191b;
 }
 
@@ -2713,7 +2713,7 @@ body aside {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #666;
 }
 
@@ -2731,7 +2731,7 @@ body aside {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .feature-bullet {
@@ -2882,7 +2882,7 @@ body aside {
     bottom: -1px;
     left: 0;
     right: 0;
-    height: 2px;
+    height: 0.2rem;
     background-color: #111;
 }
 
@@ -3172,7 +3172,7 @@ body aside {
     padding: 11px 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-size: 12px;
+    font-size: 1.2rem;
     text-align: center;
     color: #333;
     min-width: 80px;
@@ -3224,7 +3224,7 @@ body aside {
     border-radius: 50%;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     color: #fff;
-    font-size: 13px;
+    font-size: 1.3rem;
     transition: transform 0.3s ease;
 }
 
@@ -3247,10 +3247,10 @@ body aside {
     color: #fff;
     border: none;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 1.3rem;
     z-index: 1000;
     i {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 }
 
@@ -3325,15 +3325,15 @@ body aside {
     }
 
     .nav-item {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .page-header h1 {
-        font-size: 26px;
+        font-size: 2.6rem;
     }
 
     .page-description {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     .tab-navigation {
@@ -3499,7 +3499,7 @@ strong .icon-ph {
     text-align: left;
     background: var(--krds-color-light-secondary-5);
     padding-left: 15px;
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 700;
     color: var(--krds-color-light-gray-95)
 }
@@ -3566,7 +3566,7 @@ strong .icon-ph {
 }
 
 .bbs_write.sub4 table tbody td {
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 span.sub4InputLabel {
@@ -3592,7 +3592,7 @@ span.sub4InputLabel {
 
 .com-post-move-box dt {
     flex-shrink: 0;
-    font-size: 16px;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -3609,7 +3609,7 @@ span.sub4InputLabel {
 }
 
 .com-post-move-box dd a {
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .com-post-move-box dd a:where(:hover, :focus) {
@@ -3930,7 +3930,7 @@ table.comparison-table td {
     border-right: 1px solid #E1E1E1;
     padding: 2.2rem;
     text-align: left;
-    font-size: 17px;
+    font-size: 1.7rem;
     text-align: center;
 }
 
@@ -4024,13 +4024,13 @@ table.comparison-table td:first-child {
 .support-text {
     font-family: 'Pretendard-Gov-Regular', sans-serif;
     color: #17191b;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.5;
 }
 
 @media (min-width: 640px) {
     .support-text {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 }
 
@@ -4066,13 +4066,13 @@ table.comparison-table td:first-child {
 .toggle-text {
     font-family: 'Pretendard-Gov-Bold', sans-serif;
     color: #17191b;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.5;
 }
 
 @media (min-width: 640px) {
     .toggle-text {
-        font-size: 15px;
+        font-size: 1.5rem;
     }
 }
 
@@ -4299,7 +4299,7 @@ table.comparison-table td:first-child {
     gap: 20px;
     margin-bottom: 20px;
     background: linear-gradient(93deg, #FFF6EA 0%, #FFEBD0 100%);
-    padding: 48px 36px;
+    padding: 4.8rem 36px;
     border-radius: var(--krds-radius-xlarge2);
 }
 
@@ -4312,7 +4312,7 @@ table.comparison-table td:first-child {
 }
 
 .voc-result-cont strong {
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 .voc-result-cont button {
@@ -4371,7 +4371,7 @@ table.comparison-table td:first-child {
     font-size: 1.5rem;
     border-radius: 20px;
     padding: 0 8px;
-    font-size: 15px;
+    font-size: 1.5rem;
     white-space: nowrap;
     font-weight: 400;
     box-sizing: border-box;
@@ -4434,7 +4434,7 @@ table.comparison-table td:first-child {
     justify-content: space-between;
 }
 .g-wrap .g-desc-box>p {
-    font-size: 19px;
+    font-size: 1.9rem;
 }
 
 .g-wrap .g-info-box.full .g-desc-box.fcg0 {
@@ -4467,7 +4467,7 @@ table.comparison-table td:first-child {
 }
 
 .g-wrap .g-info-box .g-desc-box .g-tit.info {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .g-wrap .g-info-box .g-desc-box .g-tit.big {
@@ -4487,7 +4487,7 @@ table.comparison-table td:first-child {
 }
 
 .g-wrap .g-info-box .g-desc-box .small {
-    font-size: 13px;
+    font-size: 1.3rem;
 }
 
 .g-wrap .g-info-box.point .krds-info-list>li {
@@ -4623,7 +4623,7 @@ table.comparison-table td:first-child {
 .g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc.largetext.primary span.board-ph {
     display: block;
     color: #17191b;
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 700;
     line-height: 150%;
 }
@@ -4810,7 +4810,7 @@ table .krds-info-list>li {
     background-color: #fff;
     padding: 7px 12px;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 1.7rem;
     line-height: 26px;
     color: #17191B;
     border-radius: 1000px;
@@ -5165,7 +5165,7 @@ table .krds-info-list>li {
 }
 
 .year-tab.active .year-border {
-    height: 2px;
+    height: 0.2rem;
     background-color: var(--krds-light-color-border-gray-dark);
 }
 
@@ -5244,7 +5244,7 @@ table .krds-info-list>li {
 }
 
 .timeline-year-flex {
-    font-size: 44px;
+    font-size: 4.4rem;
     color: var(--krds-light-color-text-primary);
     font-weight: 700;
     line-height: 1.2;
@@ -5291,14 +5291,14 @@ table .krds-info-list>li {
 } */
 
 .timeline-date-flex {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--krds-light-color-text-bolder);
     line-height: 1.4;
 }
 
 .timeline-event-content-flex {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: var(--krds-light-color-text-basic);
     line-height: 1.5;
     transform: translateY(-3px);
@@ -5372,7 +5372,7 @@ table .krds-info-list>li {
     }
 
     .timeline-year-flex {
-        font-size: 36px;
+        font-size: 3.6rem;
     }
 }
 
@@ -5393,7 +5393,7 @@ table .krds-info-list>li {
     }
 
     .timeline-year-flex {
-        font-size: 32px;
+        font-size: 3.2rem;
     }
 
     .timeline-event-item-flex {
@@ -5418,7 +5418,7 @@ table .krds-info-list>li {
     }
 
     .timeline-year-flex {
-        font-size: 28px;
+        font-size: 2.8rem;
     }
 
     .timeline-event-item-flex {
@@ -5428,11 +5428,11 @@ table .krds-info-list>li {
     }
 
     .timeline-date-flex {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     .timeline-event-content-flex {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     .timeline-image-card {
@@ -5443,7 +5443,7 @@ table .krds-info-list>li {
 /*위원장 인사말 스타일*/
 .chairman-box {
     display: flex;
-    gap: 48px;
+    gap: 4.8rem;
 }
 
 @media (max-width: 1024px) {
@@ -5545,7 +5545,7 @@ table .krds-info-list>li {
     border-radius: 12px 12px 0 0;
     font-family: 'Pretendard GOV', sans-serif;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 1.5;
     text-align: center;
     cursor: pointer;
@@ -5612,8 +5612,8 @@ table .krds-info-list>li {
 /* 아이콘 영역 - flexbox 기준 */
 .figma-step-icon {
     flex-shrink: 0;
-    width: 48px;
-    height: 48px;
+    width: 4.8rem;
+    height: 4.8rem;
     margin-top: 4px;
 }
 
@@ -5641,7 +5641,7 @@ table .krds-info-list>li {
 .figma-step-title {
     font-family: 'Pretendard GOV', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.5;
     color: #17191b;
     width: 100%;
@@ -5650,7 +5650,7 @@ table .krds-info-list>li {
 .figma-step-subtitle {
     font-family: 'Pretendard GOV', sans-serif;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 1.5;
     color: #17191b;
     width: 100%;
@@ -5660,7 +5660,7 @@ table .krds-info-list>li {
 .figma-input-box {
     background-color: white;
     border-radius: 6px;
-    height: 48px;
+    height: 4.8rem;
     width: 100%;
     /* max-width: 448px; */
     box-sizing: border-box;
@@ -5676,7 +5676,7 @@ table .krds-info-list>li {
     top: 50%;
     transform: translateY(-50%);
     font-family: 'Pretendard GOV', sans-serif;
-    font-size: 17px;
+    font-size: 1.7rem;
     color: #17191b;
     white-space: nowrap;
 }
@@ -5694,7 +5694,7 @@ table .krds-info-list>li {
     outline: none;
     font-family: 'Pretendard GOV', sans-serif;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 1.9rem;
     color: #17191b;
     text-align: right;
     margin-left: auto;
@@ -5711,13 +5711,13 @@ table .krds-info-list>li {
 .figma-input-value {
     font-family: 'Pretendard GOV', sans-serif;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 1.9rem;
     color: #17191b;
 }
 
 .figma-input-unit {
     font-family: 'Pretendard GOV', sans-serif;
-    font-size: 17px;
+    font-size: 1.7rem;
     color: #8a949e;
 }
 
@@ -5737,12 +5737,12 @@ table .krds-info-list>li {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 48px;
+    height: 4.8rem;
     width: calc(50% - 4px);
     border-radius: 6px;
     padding: 0 12px;
     font-family: 'Pretendard GOV', sans-serif;
-    font-size: 17px;
+    font-size: 1.7rem;
     line-height: 1.5;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -5775,11 +5775,11 @@ table .krds-info-list>li {
 }
 
 .figma-btn {
-    height: 48px;
+    height: 4.8rem;
     width: 252px;
     border-radius: 6px;
     font-family: 'Pretendard GOV', sans-serif;
-    font-size: 17px;
+    font-size: 1.7rem;
     line-height: 1.5;
     cursor: pointer;
     border: none;
@@ -5836,7 +5836,7 @@ table .krds-info-list>li {
     .figma-step-tab {
         width: 100%;
         padding: 12px 16px;
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     .figma-step-container {
@@ -5852,8 +5852,8 @@ table .krds-info-list>li {
 
     .figma-step-icon {
         margin-top: 0;
-        width: 48px;
-        height: 48px;
+        width: 4.8rem;
+        height: 4.8rem;
     }
 
     .figma-step-inner {
@@ -5867,7 +5867,7 @@ table .krds-info-list>li {
     }
 
     .figma-step-title {
-        font-size: 18px;
+        font-size: 1.8rem;
         line-height: 24px;
     }
 
@@ -5962,11 +5962,11 @@ table .krds-info-list>li {
     justify-content: center;
     overflow: hidden;
     padding: 0 12px;
-    height: 48px;
+    height: 4.8rem;
     border-radius: 6px;
     border: 1px solid #e6e8ea;
     font-family: 'Pretendard GOV', sans-serif;
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 400;
     line-height: 1.5;
     color: #17191b;
@@ -6196,7 +6196,7 @@ table .krds-info-list>li {
         height: 297mm;
         margin: 0;
         padding: 0;
-        font-size: 10px;
+        font-size: 1rem;
         line-height: 1.4;
         color: #000;
         background: #fff;
@@ -6471,29 +6471,29 @@ table .krds-info-list>li {
 
 .flexbox.gap48 {
     display: flex;
-    gap: 48px;
+    gap: 4.8rem;
 }
 
 .fillter-chip {
     text-align: center;
-    height: 48px;
+    height: 4.8rem;
     line-height: 46px;
     border: 1px solid #B1B8BE;
     border-radius: 8px;
     color: #17191B;
-    font-size: 19px;
+    font-size: 1.9rem;
     background-color: #fff;
     padding: 0 16px;
 }
 
 input[type=radio]:checked+label.fillter-chip {
     text-align: center;
-    height: 48px;
+    height: 4.8rem;
     line-height: 46px;
     border: 1px solid #F48F01;
     border-radius: 8px;
     color: #ED7801;
-    font-size: 19px;
+    font-size: 1.9rem;
     background-color: #FFF9F2;
 }
 
@@ -6570,7 +6570,7 @@ input[type=radio]:checked+label.fillter-chip {
     line-height: 20px;
     text-align: center;
     color: #fff;
-    font-size: 13px;
+    font-size: 1.3rem;
     min-width: 46px;
     border-radius: 1000px;
     font-weight: 700;
@@ -6913,7 +6913,7 @@ input[type=radio]:checked+label.fillter-chip {
     color: #fff;
     font-size: 1.7rem;
     font-weight: 700;
-    height: 48px;
+    height: 4.8rem;
     flex-shrink: 0;
     gap: 10px;
     min-width: 170px;
@@ -7053,7 +7053,7 @@ input[type=radio]:checked+label.fillter-chip {
     align-items: center;
     vertical-align: middle;
     font-size: 1.7rem;
-    height: 48px;
+    height: 4.8rem;
     gap: 4px;
     min-width: 170px;
 }
@@ -7485,11 +7485,11 @@ input[type=radio]:checked+label.fillter-chip {
 }
 
 .conts-desc {
-    font-size: 19px;
+    font-size: 1.9rem;
 }
 
 .krds-info-list.decimal .bullet.small {
-    font-size: 19px;
+    font-size: 1.9rem;
 }
 
 .krds-info-list.decimal .bullet.small::before {
@@ -7498,7 +7498,7 @@ input[type=radio]:checked+label.fillter-chip {
 
 table .krds-info-list>li>.krds-info-list>li,
 table .krds-info-list>li {
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 
 .g-wrap .krds-table-wrap .tbl.data tbody th {
@@ -7527,7 +7527,7 @@ table .table-center {
     height: 32px;
     border: none;
     border-radius: 1000px;
-    font-size: 17px;
+    font-size: 1.7rem;
     text-align: center;
     padding: 4px 8px;
     display: flex;
@@ -7765,7 +7765,7 @@ table .table-center {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 4rem;
     overflow: hidden;
 }
 
@@ -7777,7 +7777,7 @@ table .table-center {
 
 .activity-card-content h3 {
     margin: 0 0 12px;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     display: inline-block;
     background: linear-gradient(to top, #D3E4FF 20%, transparent 20%);
@@ -7817,7 +7817,7 @@ table .table-center {
 
 .activity-card-content p {
     margin: 0;
-    font-size: 19px;
+    font-size: 1.9rem;
     line-height: 1.6;
 }
 
@@ -7897,7 +7897,7 @@ table .table-center {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 .benefit-card-content {
@@ -7925,7 +7925,7 @@ table .table-center {
     border-radius: 20px;
     padding: 3px 8px;
     color: #58616A;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 600;
     margin-top: 4px;
 }
@@ -7976,17 +7976,17 @@ table .table-center {
 .consulting-cards-wrap h3 {
     color: #080478;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 3.2rem;
     margin-bottom: 12px;
 }
 
 .consulting-cards-wrap p {
-    font-size: 19px;
+    font-size: 1.9rem;
 }
 
 @media (max-width: 1024px) {
     .consulting-cards-wrap p {
-        font-size: 17px;
+        font-size: 1.7rem;
         br {
             display: none;
         }
@@ -8017,14 +8017,14 @@ table .table-center {
 }
 
 .consulting-card h3 {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     color: #080478;
     margin: 0;
 }
 
 .consulting-card-subtitle {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #666;
     margin: 0;
 }
@@ -8064,7 +8064,7 @@ table .table-center {
     border: none;
     border-radius: 30px;
     padding: 14px 24px;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     cursor: pointer;
     display: inline-flex;
@@ -8088,7 +8088,7 @@ table .table-center {
 }
 
 .consulting-card-large h3 {
-    font-size: 28px;
+    font-size: 2.8rem;
 }
 
 .consulting-card-large .consulting-card-button {
@@ -8113,7 +8113,7 @@ table .table-center {
     }
 
     .consulting-card h3 {
-        font-size: 20px;
+        font-size: 2rem;
     }
 }
 
@@ -8157,7 +8157,7 @@ table .table-center {
 }
 
 .support-organization-header h3 {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
     margin: 0;
     color: white;
@@ -8193,7 +8193,7 @@ table .table-center {
 }
 
 .support-organization-name {
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 700;
     color: #1a1a1a;
     margin: 0;
@@ -8201,7 +8201,7 @@ table .table-center {
 
 .organization-desc {
     margin-top: 12px;
-    font-size: 19px;
+    font-size: 1.9rem;
     line-height: 1.5;
     font-weight: 700;
 }
@@ -8216,16 +8216,16 @@ table .table-center {
 
 @media (max-width: 768px) {
     .support-organization-header h3 {
-        font-size: 24px;
+        font-size: 2.4rem;
     }
 
     .support-organization-name {
-        font-size: 28px;
+        font-size: 2.8rem;
     }
 }
 
 .g-info-box .info-content .highlightbg {
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 700;
     display: inline-block;
     background: linear-gradient(to top, #FFE5CA 20%, transparent 20%);
@@ -8261,7 +8261,7 @@ table .table-center {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.5;
     transition: all 0.3s ease;
@@ -8311,7 +8311,7 @@ table .table-center {
 .branch-list-box p {
     margin: 0;
     padding: 8px 20px;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.5;
     color: #17191b;
@@ -8333,7 +8333,7 @@ table .table-center {
     .region-branch-item {
         width: 110px;
         height: 110px;
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     .branch-list-box {
@@ -8354,13 +8354,13 @@ table .table-center {
     .region-branch-item {
         width: 100px;
         height: 100px;
-        font-size: 13px;
+        font-size: 1.3rem;
         padding: 20px 15px;
     }
 
     .branch-list-box {
         top: 110px;
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     .region-branch-wrapper:hover .branch-list-box {
@@ -8412,19 +8412,19 @@ table .table-center {
 }
 
 .loan-total-box .price-tit {
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: 700;
     color: #fff;
 }
 
 .loan-total-box .price-num {
     color: #FFEE71;
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 700;
 }
 
 .loan-total-box .price-num span {
-    font-size: 44px;
+    font-size: 4.4rem;
 }
 
 .loan-box span {
@@ -8527,7 +8527,7 @@ a.customer-service-card {
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1.6rem;
     flex-shrink: 0;
 }
 
@@ -8580,7 +8580,7 @@ a.customer-service-card {
 }
 
 .achievement-header h4 {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
     color: #1D3D82;
     margin: 0;
@@ -8596,7 +8596,7 @@ a.customer-service-card {
 .achievement-badge {
     padding: 5px 16px 5px 12px;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     background: transparent;
     color: #666;
@@ -8630,7 +8630,7 @@ a.customer-service-card {
 }
 
 .stat-number {
-    font-size: 48px;
+    font-size: 4.8rem;
     font-weight: 800;
     color: #1D3D82;
     line-height: 1.2;
@@ -8639,7 +8639,7 @@ a.customer-service-card {
 }
 
 .stat-number span {
-    font-size: 17px;
+    font-size: 1.7rem;
     margin-left: 4px;
     color: #17191B
 }
@@ -8709,14 +8709,14 @@ a.customer-service-card {
     padding: 8px 20px;
     background: #FFD5C9;
     border-radius: 24px;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
     color: #B15D40;
     flex-shrink: 0;
 }
 
 .links-text {
-    font-size: 20px;
+    font-size: 2rem;
     color: #B15D40;
     font-weight: 700;
 }
@@ -8725,7 +8725,7 @@ a.customer-service-card {
     flex-shrink: 0;
     padding: 8px 10px;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
     text-decoration: none;
     transition: all 0.2s;

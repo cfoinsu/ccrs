@@ -240,7 +240,7 @@ Version : v3.2	date : 2023-05-04 (웹접근성 3차 수정)
     display: block;
     content: '';
     width: 100%;
-    height: 3px;
+    height: 0.3rem;
     bottom: -1px;
     left: 0;
     background: var(--main-color1);
@@ -305,7 +305,7 @@ Version : v3.2	date : 2023-05-04 (웹접근성 3차 수정)
     top: 50%;
     left: -40px;
     width: 0;
-    height: 3px;
+    height: 0.3rem;
     border-radius: 1.5px;
     background-color: var(--main-color1);
     -webkit-transition: all .2s .1s;
@@ -397,7 +397,7 @@ Version : v3.2	date : 2023-05-04 (웹접근성 3차 수정)
     position: absolute;
     bottom: -12px;
     left: 50%;
-    width: 2px;
+    width: 0.2rem;
     height: 12px;
     background-color: #d9d9d9;
 }
@@ -416,8 +416,8 @@ Version : v3.2	date : 2023-05-04 (웹접근성 3차 수정)
     position: absolute;
     top: 10px;
     left: 24.5px;
-    width: calc(100% - 48px);
-    height: 2px;
+    width: calc(100% - 4.8rem);
+    height: 0.2rem;
     background-color: #d9d9d9;
 }
 
@@ -436,7 +436,7 @@ Version : v3.2	date : 2023-05-04 (웹접근성 3차 수정)
     position: absolute;
     top: -12px;
     left: 50%;
-    width: 2px;
+    width: 0.2rem;
     height: 12px;
     background-color: #d9d9d9;
 }
@@ -783,7 +783,7 @@ Version : v3.2	date : 2023-05-04 (웹접근성 3차 수정)
     width: 100%;
     height: 100%;
 }
-.c-main-wrap .d-target .board-wrap .board-item .board-title {font-size: 20px;font-weight: bold;}
+.c-main-wrap .d-target .board-wrap .board-item .board-title {font-size: 2rem;font-weight: bold;}
 .c-main-wrap .d-target .board-wrap .board-item .board-info {
     margin-top: 8px;
 }
@@ -1445,7 +1445,7 @@ Version : v3.2	date : 2023-05-04 (웹접근성 3차 수정)
     position: absolute;
     left: 50%;
     top: 54px;
-    width: 2px;
+    width: 0.2rem;
     height: 192px;
     background: #d9d9d9;
     display: block;
@@ -1470,7 +1470,7 @@ Version : v3.2	date : 2023-05-04 (웹접근성 3차 수정)
     left: -66.7%;
     top: 50%;
     width: 67%;
-    height: 2px;
+    height: 0.2rem;
     background: #d9d9d9;
     display: block;
     content: '';
@@ -1489,7 +1489,7 @@ Version : v3.2	date : 2023-05-04 (웹접근성 3차 수정)
     left: 15%;
     top: 0;
     width: 70%;
-    height: 2px;
+    height: 0.2rem;
     background: #d9d9d9;
     display: block;
     content: '';
@@ -1519,7 +1519,7 @@ Version : v3.2	date : 2023-05-04 (웹접근성 3차 수정)
     position: absolute;
     left: 50%;
     top: -44px;
-    width: 2px;
+    width: 0.2rem;
     height: 44px;
     background: #d9d9d9;
     display: block;
@@ -1704,7 +1704,7 @@ Version : v3.2	date : 2023-05-04 (웹접근성 3차 수정)
 }
 
 .cell-box img {
-    max-width: calc(100vw - 48px);
+    max-width: calc(100vw - 4.8rem);
 }
 
 /* 서브 컨텐츠 스타일 - 연구성과 */
@@ -2121,8 +2121,8 @@ ul.date-info li {
 .list-dropdown .d1 {
     display: block;
     border: 1px solid #181818;
-    height: 48px;
-    line-height: 48px;
+    height: 4.8rem;
+    line-height: 4.8rem;
     padding: 0 40px 0 16px;
 }
 
@@ -2156,8 +2156,8 @@ ul.date-info li {
 
 .list-dropdown ul li {
     background: #fff;
-    height: 48px;
-    line-height: 48px;
+    height: 4.8rem;
+    line-height: 4.8rem;
 }
 
 .list-dropdown ul li a {
@@ -2295,7 +2295,7 @@ span.sp {
 
 .list-body .list-item .li1 {
     width: 10%;
-    min-width: 48px;
+    min-width: 4.8rem;
     line-height: 92px;
 }
 
@@ -2837,7 +2837,7 @@ sup.sp1 {
     display: inline-block;
     margin-right: 16px;
     color: #fff;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 600;
     line-height: 30px;
 }
@@ -2950,7 +2950,7 @@ sup.sp1 {
 }
 
 .sns-link>div a i {
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 .sns-link .btn-sns a:first-child {
@@ -2958,7 +2958,7 @@ sup.sp1 {
 }
 
 .sns-link .btn-sns a {
-    font-size: 24px;
+    font-size: 2.4rem;
     display: none;
 }
 
@@ -2994,7 +2994,7 @@ sup.sp1 {
 }
 
 .sns-link .btn-print a {
-    font-size: 24px;
+    font-size: 2.4rem;
     display: none;
 }
 
@@ -3148,7 +3148,7 @@ sup.sp1 {
 .content_info li ~ li::before {
     content: "";
     display: inline-block;
-    width: 2px;
+    width: 0.2rem;
     height: 1.1rem;
     background-color: #d3d8dd;
     margin: 0 .4rem;

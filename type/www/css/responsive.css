@@ -5,7 +5,7 @@
     overflow-x: auto;
   }
   .krds-table-wrap::-webkit-scrollbar {
-    height: 3px;
+    height: 0.3rem;
   }
   .krds-table-wrap::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.2);
@@ -85,7 +85,7 @@
         flex-wrap: nowrap;
   }
   .tab.fill.full ul::-webkit-scrollbar {
-    height: 3px;
+    height: 0.3rem;
   }
   .tab.fill.full ul::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.2);
@@ -296,7 +296,7 @@
   }
   .mobile-header .header-right a.btn-menu .hamburger-icon span, .mobile-header .header-right button.btn-menu .hamburger-icon span {
     width: 20px;
-    height: 2px;
+    height: 0.2rem;
     background: #000;
     display: block;
   }
@@ -337,7 +337,7 @@
             flex: 1;
     padding: 12px 16px;
     border: none;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   .mobile-search-panel .mobile-search-form .search-input::-webkit-input-placeholder {
     color: #999;
@@ -355,7 +355,7 @@
     color: #999;
   }
   .mobile-search-panel .mobile-search-form .search-submit {
-    width: 48px;
+    width: 4.8rem;
     background: #ed7801;
     border: none;
     cursor: pointer;
@@ -378,7 +378,7 @@
   .mobile-search-panel .search-close {
     width: 36px;
     height: 36px;
-    font-size: 28px;
+    font-size: 2.8rem;
     line-height: 1;
     background: none;
     border: none;
@@ -406,7 +406,7 @@
   .all-menu .all-menu-list > li > a.depth1 {
     display: block;
     padding: 16px 0;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     color: #000;
   }
@@ -418,7 +418,7 @@
   .all-menu .all-menu-list > li .depth2 .depth3 a {
     display: block;
     padding: 10px 0;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #666;
     text-decoration: none;
   }
@@ -505,7 +505,7 @@
   .section-institution .institution-carousel-wrapper .institution-nav .institution-nav-btn {
     width: 36px;
     height: 36px;
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
 @media (max-width: 1279px) {
@@ -635,7 +635,7 @@
     padding: 15px;
   }
   .page-description.bgBlue p {
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 400;
   }
   .page-description.bgBlue p br {
@@ -755,7 +755,7 @@
   border: none;
   border-radius: 50%;
   color: #333;
-  font-size: 24px;
+  font-size: 2.4rem;
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -796,7 +796,7 @@
   border: none;
   border-bottom: 1px solid #e0e0e0;
   color: #333;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
   text-align: left;
   cursor: pointer;
@@ -808,7 +808,7 @@
           flex: 1;
 }
 .menu-left .menu-item i {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #999;
 }
 .menu-left .menu-item:hover {
@@ -853,7 +853,7 @@
 .menu-right .submenu-title {
   display: none;
   color: #333;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0 0 20px 0;
   padding-bottom: 12px;
@@ -878,7 +878,7 @@
   border: none;
   border-radius: 8px;
   color: #333;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 600;
   text-align: left;
   text-decoration: none;
@@ -889,7 +889,7 @@
 .menu-right .mobile-menu-group .mobile-menu-head i,
 .menu-right .mobile-menu-group .mobile-menu-group-title i {
   color: #999;
-  font-size: 18px;
+  font-size: 1.8rem;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -936,7 +936,7 @@
   display: block;
   padding: 10px 16px 10px 32px;
   color: #666;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-decoration: none;
   border-radius: 6px;
   position: relative;
@@ -948,7 +948,7 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #999;
 }
 .menu-right .mobile-menu-group .mobile-menu-list li a:hover {
@@ -970,7 +970,7 @@
   display: block;
   padding: 14px 16px;
   color: #666;
-  font-size: 15px;
+  font-size: 1.5rem;
   text-decoration: none;
   border-radius: 8px;
   position: relative;
@@ -983,7 +983,7 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #999;
 }
 .menu-right .submenu-list li a:hover {
@@ -1009,16 +1009,16 @@
   }
   .menu-left .menu-item {
     padding: 20px 16px;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   .menu-right {
     padding: 6px;
   }
   .menu-right .submenu-title {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   .menu-right .submenu-list li a {
-    font-size: 14px;
+    font-size: 1.4rem;
     padding: 12px 14px;
   }
 }
@@ -1086,7 +1086,7 @@
 }
 .mobile-breadcrumb-nav .breadcrumb-separator {
   color: #999;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 .mobile-breadcrumb-nav .breadcrumb-item {
   position: relative;
@@ -1127,7 +1127,7 @@
   height: 40px;
   padding: 6px 14px;
   color: #333;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
   cursor: pointer;
   -webkit-transition: all 0.2s;
@@ -1145,7 +1145,7 @@
   content: "\f107";
   font-family: "Line Awesome Free";
   font-weight: 900;
-  font-size: 13px;
+  font-size: 1.3rem;
   opacity: 0.5;
 }
 .mobile-breadcrumb-nav .breadcrumb-item .breadcrumb-toggle svg {
@@ -1206,7 +1206,7 @@
   display: block;
   padding: 6px 16px;
   color: #333;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-decoration: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;

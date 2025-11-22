@@ -3982,11 +3982,11 @@ caption {
 .krds-accordion.type-line .accordion-item .btn-accordion {
   padding: var(--krds-accordion--line-padding) var(--krds-accordion--line-button-padding-right) var(--krds-accordion--line-padding) 0;
   
-  font-size: 19px;
+  font-size: 1.9rem;
   font-weight: 700;
 }
 .krds-accordion.type-line .accordion-item .btn-accordion span{
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 .krds-accordion.type-line .accordion-item .btn-accordion::after {
@@ -4019,7 +4019,7 @@ caption {
 }
 .krds-accordion.type-heading .accordion-item .btn-accordion {
   padding: 0;
-  font-size: 19px;
+  font-size: 1.9rem;
   font-weight: 700;
 }
 .krds-accordion.type-heading .accordion-item .btn-accordion:hover {
@@ -7755,7 +7755,7 @@ caption {
   justify-content:center;
 }
 .krds-structured-list.unit4 .card-body .c-text .c-txt{
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 .krds-structured-list.unit4 .card-body .c-text .c-tit .span {
   display: inline;
@@ -7764,7 +7764,7 @@ caption {
   display:none;
 }
 .krds-structured-list.unit4 .card-btm .tag {
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 .krds-structured-list.type-check .card-btn {
   top: calc(var(--krds-structured-list--list-gap) + var(--krds-structured-list--card-buttons-position-top-medium-size) + var(--krds-size-height-5));
@@ -26848,7 +26848,7 @@ body {
 }
 
 .feedback-card h3 {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: 24px;
     color: #222;
@@ -26866,7 +26866,7 @@ body {
     align-items: center;
     gap: 8px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .rating-option input[type="radio"] {
@@ -26912,7 +26912,7 @@ body {
     border-radius: 8px;
     resize: vertical;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .submit-btn {
@@ -26921,7 +26921,7 @@ body {
     border: none;
     padding: 12px 24px;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -26935,7 +26935,7 @@ body {
 .page-description {
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.5;
     color: #333;
     margin-bottom: 20px;
@@ -26951,7 +26951,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 1.4rem;
     background: url(../../images/ic/icon_noti.svg) center no-repeat;
 }
 
@@ -27002,7 +27002,7 @@ body {
     text-align: left;
     background: var(--krds-color-light-secondary-5);
     padding-left: 15px;
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 700;
     color: var(--krds-color-light-gray-95)
 }
@@ -27069,7 +27069,7 @@ body {
 }
 
 .bbs_write.sub4 table tbody td {
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 span.sub4InputLabel {
@@ -27095,7 +27095,7 @@ span.sub4InputLabel {
 
 .com-post-move-box dt {
     flex-shrink: 0;
-    font-size: 16px;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -27112,7 +27112,7 @@ span.sub4InputLabel {
 }
 
 .com-post-move-box dd a {
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .com-post-move-box dd a:where(:hover, :focus) {
@@ -27559,7 +27559,7 @@ table.comparison-table td {
     border-right: 1px solid #E1E1E1;
     padding: 2.2rem;
     text-align: left;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 table.comparison-table th {
@@ -27698,33 +27698,33 @@ table.comparison-table td:first-child {
 .stat-label {
     font-family: 'Pretendard-Gov-Bold', sans-serif;
     color: #222222;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.5;
 }
 
 @media (min-width: 640px) {
     .stat-label {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 }
 
 .stat-value {
     font-family: 'Pretendard-Gov-Regular', sans-serif;
     color: #222222;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 1.5;
 }
 
 @media (min-width: 640px) {
     .stat-value {
-        font-size: 24px;
+        font-size: 2.4rem;
     }
 }
 
 @media (min-width: 1024px) {
     .stat-value {
-        font-size: 30px;
+        font-size: 3rem;
     }
 }
 
@@ -27799,13 +27799,13 @@ table.comparison-table td:first-child {
 .support-text {
     font-family: 'Pretendard-Gov-Regular', sans-serif;
     color: #17191b;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.5;
 }
 
 @media (min-width: 640px) {
     .support-text {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 }
 
@@ -27841,13 +27841,13 @@ table.comparison-table td:first-child {
 .toggle-text {
     font-family: 'Pretendard-Gov-Bold', sans-serif;
     color: #17191b;
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 1.5;
 }
 
 @media (min-width: 640px) {
     .toggle-text {
-        font-size: 15px;
+        font-size: 1.5rem;
     }
 }
 
@@ -28074,7 +28074,7 @@ table.comparison-table td:first-child {
     gap: 20px;
     margin-bottom: 20px;
     background: linear-gradient(93deg, #FFF6EA 0%, #FFEBD0 100%);
-    padding: 48px 36px;
+    padding: 4.8rem 36px;
     border-radius: var(--krds-radius-xlarge2);
 }
 
@@ -28087,7 +28087,7 @@ table.comparison-table td:first-child {
 }
 
 .voc-result-cont strong {
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 .voc-result-cont button {
@@ -28142,7 +28142,7 @@ table.comparison-table td:first-child {
     font-size: 1.5rem;
     border-radius: 20px;
     padding: 0 8px;
-    font-size: 15px;
+    font-size: 1.5rem;
     white-space: nowrap;
     font-weight: 400;
     box-sizing: border-box;
@@ -28465,7 +28465,7 @@ table.comparison-table td:first-child {
     background-color: #fff;
     padding: 7px 12px;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 1.7rem;
     line-height: 26px;
     color: #17191B;
     border-radius: 1000px;
@@ -28753,7 +28753,7 @@ table.comparison-table td:first-child {
 }
 
 .year-tab.active .year-border {
-    height: 2px;
+    height: 0.2rem;
     background-color: var(--krds-light-color-border-gray-dark);
 }
 
@@ -28817,7 +28817,7 @@ table.comparison-table td:first-child {
 }
 
 .timeline-year-flex {
-    font-size: 44px;
+    font-size: 4.4rem;
     color: var(--krds-light-color-text-primary);
     font-weight: 700;
     line-height: 1.2;
@@ -28863,14 +28863,14 @@ table.comparison-table td:first-child {
 }
 
 .timeline-date-flex {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 700;
     color: var(--krds-light-color-text-bolder);
     line-height: 1.4;
 }
 
 .timeline-event-content-flex {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: var(--krds-light-color-text-basic);
     line-height: 1.5;
 }
@@ -28923,7 +28923,7 @@ table.comparison-table td:first-child {
     }
 
     .timeline-year-flex {
-        font-size: 36px;
+        font-size: 3.6rem;
     }
 }
 
@@ -28944,7 +28944,7 @@ table.comparison-table td:first-child {
     }
 
     .timeline-year-flex {
-        font-size: 32px;
+        font-size: 3.2rem;
     }
 
     .timeline-event-item-flex {
@@ -28969,7 +28969,7 @@ table.comparison-table td:first-child {
     }
 
     .timeline-year-flex {
-        font-size: 28px;
+        font-size: 2.8rem;
     }
 
     .timeline-event-item-flex {
@@ -28979,11 +28979,11 @@ table.comparison-table td:first-child {
     }
 
     .timeline-date-flex {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     .timeline-event-content-flex {
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     .timeline-image-card {
@@ -29072,7 +29072,7 @@ table.comparison-table td:first-child {
     border-radius: 12px 12px 0 0;
     font-family: 'Pretendard GOV', sans-serif;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 1.5;
     text-align: center;
     cursor: pointer;
@@ -29139,8 +29139,8 @@ table.comparison-table td:first-child {
 /* 아이콘 영역 - flexbox 기준 */
 .figma-step-icon {
     flex-shrink: 0;
-    width: 48px;
-    height: 48px;
+    width: 4.8rem;
+    height: 4.8rem;
     margin-top: 4px;
 }
 
@@ -29168,7 +29168,7 @@ table.comparison-table td:first-child {
 .figma-step-title {
     font-family: 'Pretendard GOV', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 1.5;
     color: #17191b;
     width: 100%;
@@ -29177,7 +29177,7 @@ table.comparison-table td:first-child {
 .figma-step-subtitle {
     font-family: 'Pretendard GOV', sans-serif;
     font-weight: normal;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 1.5;
     color: #17191b;
     width: 100%;
@@ -29187,7 +29187,7 @@ table.comparison-table td:first-child {
 .figma-input-box {
     background-color: white;
     border-radius: 6px;
-    height: 48px;
+    height: 4.8rem;
     width: 100%;
     /* max-width: 448px; */
     box-sizing: border-box;
@@ -29203,7 +29203,7 @@ table.comparison-table td:first-child {
     top: 50%;
     transform: translateY(-50%);
     font-family: 'Pretendard GOV', sans-serif;
-    font-size: 17px;
+    font-size: 1.7rem;
     color: #17191b;
     white-space: nowrap;
 }
@@ -29221,7 +29221,7 @@ table.comparison-table td:first-child {
     outline: none;
     font-family: 'Pretendard GOV', sans-serif;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 1.9rem;
     color: #17191b;
     text-align: right;
     margin-left: auto;
@@ -29238,13 +29238,13 @@ table.comparison-table td:first-child {
 .figma-input-value {
     font-family: 'Pretendard GOV', sans-serif;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 1.9rem;
     color: #17191b;
 }
 
 .figma-input-unit {
     font-family: 'Pretendard GOV', sans-serif;
-    font-size: 17px;
+    font-size: 1.7rem;
     color: #8a949e;
 }
 
@@ -29264,12 +29264,12 @@ table.comparison-table td:first-child {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 48px;
+    height: 4.8rem;
     width: calc(50% - 4px);
     border-radius: 6px;
     padding: 0 12px;
     font-family: 'Pretendard GOV', sans-serif;
-    font-size: 17px;
+    font-size: 1.7rem;
     line-height: 1.5;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -29302,11 +29302,11 @@ table.comparison-table td:first-child {
 }
 
 .figma-btn {
-    height: 48px;
+    height: 4.8rem;
     width: 252px;
     border-radius: 6px;
     font-family: 'Pretendard GOV', sans-serif;
-    font-size: 17px;
+    font-size: 1.7rem;
     line-height: 1.5;
     cursor: pointer;
     border: none;
@@ -29363,7 +29363,7 @@ table.comparison-table td:first-child {
     .figma-step-tab {
         width: 100%;
         padding: 12px 16px;
-        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     .figma-step-container {
@@ -29379,8 +29379,8 @@ table.comparison-table td:first-child {
 
     .figma-step-icon {
         margin-top: 0;
-        width: 48px;
-        height: 48px;
+        width: 4.8rem;
+        height: 4.8rem;
     }
 
     .figma-step-inner {
@@ -29394,7 +29394,7 @@ table.comparison-table td:first-child {
     }
 
     .figma-step-title {
-        font-size: 18px;
+        font-size: 1.8rem;
         line-height: 24px;
     }
 
@@ -29489,11 +29489,11 @@ table.comparison-table td:first-child {
     justify-content: center;
     overflow: hidden;
     padding: 0 12px;
-    height: 48px;
+    height: 4.8rem;
     border-radius: 6px;
     border: 1px solid #e6e8ea;
     font-family: 'Pretendard GOV', sans-serif;
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 400;
     line-height: 1.5;
     color: #17191b;
@@ -29694,7 +29694,7 @@ table.comparison-table td:first-child {
     height: 297mm;
     margin: 0;
     padding: 0;
-    font-size: 10px;
+    font-size: 1rem;
     line-height: 1.4;
     color: #000;
     background: #fff;

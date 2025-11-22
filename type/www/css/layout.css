@@ -186,7 +186,7 @@ Version : v1.0
   bottom: -1px;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 0.3rem;
   border-radius: 2px;
   background: var(--main-color1);
 }
@@ -403,13 +403,13 @@ Version : v1.0
 }
 .utility-right .grayroundbox li {
   color: #474e55;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 .utility-right .phone-number {
   color: #f97316;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 2.1rem;
   margin-left: 10px;
 }
 /* #header .header-container {
@@ -447,7 +447,7 @@ Version : v1.0
   bottom: -1px;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 0.3rem;
   border-radius: 2px;
   background: var(--main-color1);
 }
@@ -633,7 +633,7 @@ Version : v1.0
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1.25;
   letter-spacing: -0.03em;
@@ -644,7 +644,7 @@ Version : v1.0
 }
 @media screen and (max-width: 1499px) {
   #header .header-quickmenu-list li a {
-    font-size: 17px;
+    font-size: 1.7rem;
   }
 }
 
@@ -1068,7 +1068,7 @@ Version : v1.0
 .footer-link {
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
   position: relative;
 }
@@ -1093,7 +1093,7 @@ Version : v1.0
 .footer-info p,
 .footer-contact p {
   margin-bottom: 4px;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.5;
 }
 
@@ -1117,7 +1117,7 @@ Version : v1.0
   margin-top: 40px;
 }
 .footer-info p:last-child {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -1196,11 +1196,11 @@ Version : v1.0
 
 .footer .krds-form-select {
   position: relative;
-  height: 48px;
+  height: 4.8rem;
   background-color: transparent !important;
   background-image: url(/type/www/images/ic/arrow-down_active.png);
   background-size: 12px auto !important;
-  font-size: 17px;
+  font-size: 1.7rem;
   border: 1px solid #d2d6da;
   color: #fff;
   min-width: 200px;
@@ -1491,7 +1491,7 @@ Version : v1.0
 }
 
 .institution-nav .institution-nav-btn i {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 /* 탑버튼 */
@@ -1726,7 +1726,7 @@ Version : v1.0
   }
   #section3 .contents-wrap .poster-area .poster-box .poster-text h4 {
     margin-bottom: 24px;
-    font-size: 24px;
+    font-size: 2.4rem;
   }
   #section3 .contents-wrap .poster-area .poster-box .poster-text p {
     height: 72px;
@@ -1783,7 +1783,7 @@ Version : v1.0
   }
 
   /* .card-scroll {
-    width: calc(100% - 48px);
+    width: calc(100% - 4.8rem);
   } */
   .card-scroll .title-box {
     margin-bottom: 80px;
@@ -1806,7 +1806,7 @@ Version : v1.0
     display: none;
   }
   #section3 .contents-wrap {
-    width: calc(100% - 48px);
+    width: calc(100% - 4.8rem);
     padding: 50px 0 100px;
   }
   #section3 .contents-wrap:nth-child(2) {
@@ -2034,7 +2034,7 @@ Version : v1.0
     bottom: 0px;
     left: 0;
     top: inherit;
-    height: 2px;
+    height: 0.2rem;
     border-radius: 0;
     transform-origin: center;
   }
@@ -2307,8 +2307,8 @@ Version : v1.0
     margin-bottom: 6rem;
   }
   .ms10-wrap .ms10-item .ms10-img {
-    width: calc(100vw - 48px);
-    height: calc((100vw - 48px) / 2);
+    width: calc(100vw - 4.8rem);
+    height: calc((100vw - 4.8rem) / 2);
   }
   .ms10-wrap .ms10-item .ms10-txt {
     width: 100%;
@@ -2569,7 +2569,7 @@ Version : v1.0
   width: 100%;
 }
 .header.map .logo {
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 .header.map .utility-right .linkbox li > * {
@@ -2582,7 +2582,7 @@ Version : v1.0
   display: none;
 }
 .header.map .linkbox .sch-input .krds-input {
-  height: 48px;
+  height: 4.8rem;
   width: 340px;
 }
 
@@ -2686,7 +2686,7 @@ main.map-content .container {
 }
 .map-content .content-layout .sidebar-header p {
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #474e55;
 }
 .map-content .content-layout .sidebar-scroll-nav {

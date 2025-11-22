@@ -162,7 +162,7 @@ $hdH-t: 53px;
 
           span {
             width: 20px;
-            height: 2px;
+            height: 0.2rem;
             background: #000;
             display: block;
           }
@@ -199,7 +199,7 @@ $hdH-t: 53px;
         flex: 1;
         padding: 12px 16px;
         border: none;
-        font-size: 16px;
+        font-size: 1.6rem;
 
         &::placeholder {
           color: #999;
@@ -207,7 +207,7 @@ $hdH-t: 53px;
       }
 
       .search-submit {
-        width: 48px;
+        width: 4.8rem;
         background: $color-primary;
         border: none;
         cursor: pointer;
@@ -226,7 +226,7 @@ $hdH-t: 53px;
     .search-close {
       width: 36px;
       height: 36px;
-      font-size: 28px;
+      font-size: 2.8rem;
       line-height: 1;
       background: none;
       border: none;
@@ -256,7 +256,7 @@ $hdH-t: 53px;
           > a.depth1 {
             display: block;
             padding: 16px 0;
-            font-size: 16px;
+            font-size: 1.6rem;
             font-weight: 600;
             color: #000;
           }
@@ -269,7 +269,7 @@ $hdH-t: 53px;
             .depth3 a {
               display: block;
               padding: 10px 0;
-              font-size: 14px;
+              font-size: 1.4rem;
               color: #666;
               text-decoration: none;
             }
@@ -361,7 +361,7 @@ $hdH-t: 53px;
           .institution-nav-btn {
             width: 36px;
             height: 36px;
-            font-size: 18px;
+            font-size: 1.8rem;
           }
         }
       }

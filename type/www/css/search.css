@@ -729,7 +729,7 @@
 @media (max-width: 1023px) {
   .krds-tab-area.layer .tab.line.full.search-tabs li[role=tab] {
     font-size: var(--krds-pc-font-size-body-small);
-    height: 48px;
+    height: 4.8rem;
     min-width: 60px;
     padding: 0 8px;
   }
