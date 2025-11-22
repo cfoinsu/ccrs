@@ -1,7 +1,7 @@
 // SCSS 변수 (기본값, 컴파일 타임)
-$boxPaddingX: 32px;
-$boxPaddingY: 36px;
-$boxRound: 24px;
+$boxPaddingX: 3.2rem;
+$boxPaddingY: 3.6rem;
+$boxRound: 2.4rem;
 
 @import "variables";
 @import "mixins/breakpoints";
@@ -3128,7 +3128,7 @@ body:has(.intro.show) {
     .news-item {
       display: flex;
       justify-content: space-between;
-      gap: 20px;
+      gap: 2rem;
       &:hover {
         strong {
             text-decoration: underline;
@@ -3144,7 +3144,7 @@ body:has(.intro.show) {
         max-width: 70%;
         font-weight: normal;
         @include mobile {
-            max-width: 210px;
+            max-width: 21rem;
         }
       }
       span {

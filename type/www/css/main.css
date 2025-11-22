@@ -1,8 +1,8 @@
 @charset "UTF-8";
 :root {
-  --box-padding-x: 32px;
-  --box-padding-y: 36px;
-  --box-round: 24px;
+  --box-padding-x: 3.2rem;
+  --box-padding-y: 3.6rem;
+  --box-round: 2.4rem;
 }
 
 @media (max-width: 767px) {
@@ -3446,7 +3446,7 @@ body:has(.intro.show) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 20px;
+  gap: 2rem;
 }
 #section4 .news-grid .news-left .news-item:hover strong {
   text-decoration: underline;
@@ -3465,7 +3465,7 @@ body:has(.intro.show) {
 }
 @media (max-width: 767px) {
   #section4 .news-grid .news-left .news-item strong {
-    max-width: 210px;
+    max-width: 21rem;
   }
 }
 #section4 .news-grid .news-left .news-item span {

@@ -75,14 +75,14 @@
   }
 
   .effect-box {
-    padding: 16px;
+    padding: 1.6rem;
     .boxc3, .boxc2 {
         flex: 100% 0;
         flex-direction: row;
-        padding: 20px 16px;
+        padding: 2rem 1.6rem;
         .key-img {
           flex-shrink: 0;
-          width: 70px;
+          width: 7rem;
           border-bottom: none;
           padding-bottom: 0;
           p {
@@ -149,7 +149,7 @@
   }
 
   .tab.wrap > ul {
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   }
 
 }
