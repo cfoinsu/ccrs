@@ -964,7 +964,7 @@
                     width: 26rem;
                     height: 26rem;
                     border-radius: 1000px;
-                    background: url('https://www.figma.com/api/mcp/asset/c981949b-a4c2-4757-934c-2f65b84b0711') no-repeat center;
+                    background: url('/type/www/images/en/en_circle.svg') no-repeat center;
                     background-size: contain;
                     display: flex;
                     flex-direction: column;
@@ -1091,10 +1091,6 @@
                         top: 0;
                     }
 
-                    .value-circle {
-                        background-image: url('https://www.figma.com/api/mcp/asset/c981949b-a4c2-4757-934c-2f65b84b0711');
-                    }
-
                     .connection-line.line-top {
                         top: 26rem;
                         left: 50%;
@@ -1124,10 +1120,6 @@
                         top: auto;
                         position: relative;
                         transform: none;
-                    }
-
-                    .value-circle {
-                        background-image: url('https://www.figma.com/api/mcp/asset/8e455e18-b2d2-4a7d-bf60-8d6cc2da471a');
                     }
 
                     .connection-line.line-bottom-left {
@@ -1162,10 +1154,6 @@
                         top: auto;
                         position: relative;
                         transform: translateX(-50%);
-                    }
-
-                    .value-circle {
-                        background-image: url('https://www.figma.com/api/mcp/asset/4ec5388d-ae74-43db-8251-a1e7f285b14e');
                     }
 
                     .connection-line.line-bottom-right {

@@ -54,7 +54,7 @@ Version : v1.0
     left: 0;
     width: 100%;
     text-align: center;
-    height: 30px;
+    height: 3rem;
     line-height: 30px
 }
 
@@ -129,15 +129,15 @@ body {
 .breadcrumb {
     display: flex;
     align-items: center;
-    gap: 6px;
-    margin-bottom: 20px;
+    gap: 0.6rem;
+    margin-bottom: 2rem;
     font-size: 1.4rem;
 }
 
 .breadcrumb-item {
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: 0.2rem;
     color: var(--krds-light-color-text-subtle);
     text-decoration: none;
 }
@@ -182,7 +182,7 @@ body {
     background: #ffffff;
     border: 1px solid #D2D6DA;
     border-radius: 12px;
-    width: 280px;
+    width: 28rem;
     flex-shrink: 0;
     height: 100%;
 }
