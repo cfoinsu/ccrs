@@ -1,6 +1,6 @@
 @charset "utf-8";
 .g-colorbox {
-    padding: 32px;
+    padding: 3.2rem;
     color: #17191B;
 
     &.bg-yellow {
@@ -22,7 +22,7 @@
         text-align: right;
     }
     .shadow-tit {
-        margin-bottom: 13px;
+        margin-bottom: 1.3rem;
         font-size: 2.4rem;
         font-weight: 700;
     }
@@ -33,7 +33,7 @@
 }
 @media (max-width: 768px) {
     .g-colorbox {
-        padding: 16px;
+        padding: 1.6rem;
     }
 }
 
@@ -43,12 +43,12 @@
 .terms-sucess li {
     background: url(../img/icons/system-success.svg) left top no-repeat;
     background-size: 24px;
-    padding-left: 30px;
+    padding-left: 3rem;
     font-size: 1.9rem;
     vertical-align: middle;
 }
 .terms-sucess li + li {
-    margin-top: 12px;
+    margin-top: 1.2rem;
 }
 
 /* 들여쓰기 처리 */
@@ -67,7 +67,7 @@
 }
 .result-card-inner-wrapper {
     width: 100%;
-    padding: 30px 50px;
+    padding: 3rem 5rem;
     border-radius: 16px;
     border: 1px solid #D2D6DA;
 }
@@ -124,8 +124,8 @@
     font-size: 1.7rem;
 }
 .result-card-inner-wrapper .result-title-section .roundcheck .krds-info-list.decimal > li::before {
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     background-size: 20px;
 }
 .result-card-inner-wrapper .stats-section {
@@ -141,13 +141,13 @@
     flex-wrap: nowrap;
     gap: 0;
     background: #FFFAED;
-    padding: 20px 30px;
+    padding: 2rem 3rem;
     border-radius: 24px;
 }
 .qr-section {
-    margin-top: 24px;
+    margin-top: 2.4rem;
     border-radius: 24px;
-    padding: 14px 22px;
+    padding: 1.4rem 2.2rem;
     background: #f4f4f4;
     display: flex;
     flex-direction: column;
@@ -168,7 +168,7 @@
     font-weight: 400;
 }
 .qr-areas {
-    margin: 15px auto;
+    margin: 1.5rem auto;
     display: flex;
     gap: 50px;
 }
@@ -178,7 +178,7 @@
 }
 .qr-areas .qr-boxlink .g-img-qr {
     display: block;
-    padding: 10px;
+    padding: 1rem;
     border-radius: 10px;
     background: #fff;
 }
@@ -197,7 +197,7 @@
     font-weight: 700;
 }
 .qr-areas .qr-boxlink .qr-linker .qr-a {
-    padding: 6px 34px 6px 14px;
+    padding: 0.6rem 3.4rem 0.6rem 1.4rem;
     background: #2E2A93 url(/type/www/img/contents/png/plan/icon_qr-a.svg) center right 14px no-repeat;
     color: #fff;
     font-size: 1.5rem;
@@ -232,7 +232,7 @@
     position: relative;
     padding: 0;
     flex-shrink: 0;
-    width: 280px;
+    width: 28rem;
     margin:0 auto;
 }
 .result-card-inner-wrapper .stats-sub-section .graph-wrap .graph-img .graph-tit {
@@ -255,7 +255,7 @@
 }
 
 .results-content-wrapper .graph-wrap.zoom {
-    width: 374px;
+    width: 37.4rem;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -325,8 +325,8 @@
 }
 .graph-wrap .hover-box {
     position: absolute;
-    width: 162px;
-    height: 120px;
+    width: 16.2rem;
+    height: 12rem;
     top: 77px;
     left: 63px;
     display: flex;
@@ -335,8 +335,8 @@
 
 .graph-wrap.zoom .hover-box {
     position: absolute;
-    width: 203px;
-    height: 170px;
+    width: 20.3rem;
+    height: 17rem;
     top: 79px;
     left: 116px;
     display: flex;
@@ -461,9 +461,9 @@
     position: absolute;
     top: 12px;
     left: 0;
-    width: 4px;
-    height: 4px;
-    border-radius: 4px;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 0.4rem;
     background: #6D7882;
 }
 
@@ -551,7 +551,7 @@
     line-height: 1.5;
 }
 .blue-info {
-    padding-left: 24px;
+    padding-left: 2.4rem;
     background: url(../img/icons/annotation-info-blue.svg) left top no-repeat;
     background-size: 20px;
     font-size: 1.5rem;
