@@ -2731,13 +2731,13 @@ body:has(.intro.show) {
 
     .debt-card__text {
       position: absolute;
-      bottom: 80px;
+      bottom: 8rem;
       left: var(--box-padding-x);
       right: var(--box-padding-x);
       color: #fff;
       z-index: 1;
       @include mobile {
-        bottom: 40px;
+        bottom: 4rem;
       }
 
       h3 {
@@ -2748,7 +2748,7 @@ body:has(.intro.show) {
         }
       }
       p {
-        margin-top: 20px;
+        margin-top: 2rem;
         font-size: 1.9rem;
         font-weight: 400;
         @include mobile {
@@ -2810,7 +2810,7 @@ body:has(.intro.show) {
     width: 100%;
     padding: var(--box-padding-y) var(--box-padding-x);
     @include mobile {
-        padding-bottom: 80px;
+        padding-bottom: 8rem;
     }
     img {
         position: absolute;
@@ -2952,7 +2952,7 @@ body:has(.intro.show) {
         padding: var(--box-padding-y) var(--box-padding-x);
         @include mobile {
             height: auto !important;
-            padding-bottom: 80px;
+            padding-bottom: 8rem;
         }
 
         a {

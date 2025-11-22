@@ -13,7 +13,7 @@ body {
 }
 
 .pdf-sidebar {
-  width: 195px;
+  width: 19.5rem;
   background: var(--krds-color-light-gray-0);
   border-right: 1px solid var(--krds-color-light-gray-20);
   padding: var(--krds-number-11);
@@ -122,8 +122,8 @@ body {
   color: inherit;
 }
 .pdf-sidebar .pdf-download-btn {
-  width: 125px;
-  height: 125px;
+  width: 12.5rem;
+  height: 12.5rem;
   background: var(--krds-color-light-primary-50);
   border-radius: var(--krds-number-10);
   display: -webkit-box;
@@ -261,7 +261,7 @@ body {
 
 @media (max-width: 1024px) {
   .pdf-sidebar {
-    width: 140px;
+    width: 14rem;
     padding: var(--krds-number-9);
   }
   .pdf-sidebar .sidebar-logo img {
@@ -274,7 +274,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 2px;
+    gap: 0.2rem;
   }
   .pdf-sidebar .page-nav {
     -webkit-box-orient: vertical;
@@ -287,8 +287,8 @@ body {
             transform: translate(-50%, -50%);
   }
   .pdf-sidebar .pdf-download-btn {
-    width: 100px;
-    height: 100px;
+    width: 10rem;
+    height: 10rem;
     font-size: var(--krds-pc-font-size-body-small);
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -308,7 +308,7 @@ body {
   .pdf-sidebar {
     width: 100%;
     height: auto;
-    min-height: 70px;
+    min-height: 7rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -320,7 +320,7 @@ body {
     position: relative;
   }
   .pdf-sidebar .sidebar-logo {
-    width: 100px;
+    width: 10rem;
     margin: 0;
     padding: 0;
   }
@@ -338,7 +338,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 4px;
+    gap: 0.4rem;
     width: auto;
   }
   .pdf-sidebar .page-nav {
@@ -356,14 +356,14 @@ body {
   }
   .pdf-sidebar .page-prev,
   .pdf-sidebar .page-next {
-    width: 36px;
-    height: 36px;
+    width: 3.6rem;
+    height: 3.6rem;
     -ms-flex-negative: 0;
         flex-shrink: 0;
   }
   .pdf-sidebar .pdf-download-btn {
     width: auto;
-    height: 36px;
+    height: 3.6rem;
     padding: 0 var(--krds-number-9);
     font-size: var(--krds-pc-font-size-body-small);
     position: relative;
@@ -379,8 +379,8 @@ body {
   }
   .pdf-sidebar .pdf-download-btn svg {
     margin-top: 0;
-    width: 16px;
-    height: 16px;
+    width: 1.6rem;
+    height: 1.6rem;
   }
   .pdf-sidebar .pdf-download-btn span {
     display: none;
@@ -409,7 +409,7 @@ body {
 }
 @media (max-width: 480px) {
   .pdf-sidebar .sidebar-logo {
-    width: 80px;
+    width: 8rem;
   }
   .pdf-sidebar .sidebar-title {
     font-size: var(--krds-pc-font-size-body-small);
@@ -417,11 +417,11 @@ body {
   }
   .pdf-sidebar .page-prev,
   .pdf-sidebar .page-next {
-    width: 32px;
-    height: 32px;
+    width: 3.2rem;
+    height: 3.2rem;
   }
   .pdf-sidebar .pdf-download-btn {
-    height: 32px;
+    height: 3.2rem;
     padding: 0 var(--krds-number-6);
     font-size: var(--krds-pc-font-size-body-xsmall);
   }

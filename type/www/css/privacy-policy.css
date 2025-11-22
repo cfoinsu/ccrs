@@ -247,8 +247,8 @@ ol.list-number {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 80px;
-  margin-top: 20px;
+  gap: 8rem;
+  margin-top: 2rem;
 }
 .term-wrap .section-5 {
   display: -webkit-box;
@@ -261,16 +261,16 @@ ol.list-number {
   gap: 0.8rem;
 }
 .term-wrap .sec-tit {
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
   font-size: 2.4rem;
   font-weight: 700;
   background: url(/type/www/images/ic/tit_accordian.svg) left center no-repeat;
-  padding-left: 20px;
+  padding-left: 2rem;
   background-size: 8px 24px;
 }
 .term-wrap .title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   color: #1e2124;
   font-size: 3.2rem;
   font-weight: 700;
@@ -278,13 +278,13 @@ ol.list-number {
 .term-wrap .bullet {
   font-size: 2.4rem;
   color: #01133b;
-  padding-left: 12px;
+  padding-left: 1.2rem;
   position: relative;
 }
 .term-wrap .bullet::before {
   content: "";
-  width: 4px;
-  height: 24px;
+  width: 0.4rem;
+  height: 2.4rem;
   background: url(../img/icons/bullet.svg) no-repeat center;
   position: absolute;
   top: 50%;
@@ -294,13 +294,13 @@ ol.list-number {
 }
 
 .krds-tab-area {
-  gap: 16px !important;
+  gap: 1.6rem !important;
 }
 .krds-tab-area .tab.line.full ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 15px;
+  gap: 1.5rem;
   margin-top: 2.4rem;
 }
 .krds-tab-area .tab.line.full li.active .btn-tab {
@@ -328,8 +328,8 @@ ol.list-number {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 12px;
-  height: 150px;
+  gap: 1.2rem;
+  height: 15rem;
   margin-top: 0;
   background: #F6FAFF;
   border-radius: 24px;
@@ -338,10 +338,10 @@ ol.list-number {
 }
 .krds-tab-area .tab.line.full .btn-tab img {
   display: block;
-  width: 65px;
+  width: 6.5rem;
 }
 .krds-tab-area .tab-conts-wrap {
-  padding: 24px 32px;
+  padding: 2.4rem 3.2rem;
   background: #fff;
   border: 1px solid #0C4DCF;
   border-radius: 24px;
@@ -350,12 +350,12 @@ ol.list-number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 1rem;
 }
 .krds-tab-area .tab-conts-wrap li strong {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 250px;
+  width: 25rem;
   font-size: 1.9rem;
   color: #012063;
 }
@@ -365,9 +365,9 @@ ol.list-number {
 }
 
 .term-anchor-list {
-  padding: 12px 32px;
-  margin-top: 24px;
-  border-radius: 24px;
+  padding: 1.2rem 3.2rem;
+  margin-top: 2.4rem;
+  border-radius: 2.4rem;
   border: 1px solid #D2D6DA;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -379,12 +379,12 @@ ol.list-number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 14px;
-  padding: 15px 0;
+  gap: 1.4rem;
+  padding: 1.5rem 0;
 }
 .term-anchor-list .btn-anchor img {
   display: block;
-  width: 26px;
+  width: 2.6rem;
 }
 
 /*개인정보처리방침, 약관동의*/
@@ -424,7 +424,7 @@ ol.list-number {
 
 .term-cont-list p {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   line-height: 1.5;
   font-size: 1.7rem;
 }
@@ -605,15 +605,15 @@ ol.list-number {
 /* Privacy Policy Popup Styles
 ========================================================================== */
 .popup-wrap body {
-  padding: 20px;
+  padding: 2rem;
   font-family: "Pretendard", -apple-system, sans-serif;
 }
 
 .popup-header {
   width: 100%;
   border-bottom: 2px solid #01133b;
-  padding: 15px;
-  margin-bottom: 25px;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .popup-title {
@@ -625,57 +625,57 @@ ol.list-number {
 
 .popup-content {
   line-height: 1.8;
-  padding: 15px 15px 80px;
+  padding: 1.5rem 1.5rem 8rem;
   font-size: 1.5rem;
   color: #333;
 }
 .popup-content .pd_r10 {
-  padding-right: 10px;
+  padding-right: 1rem;
 }
 .popup-content p {
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
   line-height: 1.7;
 }
 .popup-content h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #01133b;
-  margin-top: 40px;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #e5e5e5;
 }
 .popup-content h2:first-of-type {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 .popup-content h3 {
   font-size: 1.8rem;
   font-weight: 600;
   color: #01133b;
-  margin-top: 25px;
-  margin-bottom: 12px;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
 }
 .popup-content strong {
   font-weight: 600;
   color: #01133b;
 }
 .popup-content ul {
-  margin: 15px 0;
-  padding-left: 20px;
+  margin: 1.5rem 0;
+  padding-left: 2rem;
 }
 .popup-content ul li {
   position: relative;
-  margin-top: 8px;
-  padding-left: 15px;
+  margin-top: 0.8rem;
+  padding-left: 1.5rem;
   line-height: 1.7;
 }
 .popup-content ul li::before {
   content: "";
   position: absolute;
-  top: 11px;
+  top: 1.1rem;
   left: 0;
-  width: 4px;
-  height: 4px;
+  width: 0.4rem;
+  height: 0.4rem;
   background: #01133b;
   border-radius: 50%;
 }
@@ -687,18 +687,18 @@ ol.list-number {
   text-decoration: underline;
 }
 .popup-content .terms_labeling {
-  margin: 30px 0;
+  margin: 3rem 0;
 }
 .popup-content .terms_labeling h2 {
   font-size: 2rem;
   font-weight: 700;
   color: #01133b;
-  margin: 0 0 20px 0;
-  padding-bottom: 15px;
+  margin: 0 0 2rem 0;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid #e5e5e5;
 }
 .popup-content .terms_labeling p {
-  margin-top: 20px;
+  margin-top: 2rem;
   color: #dd5e17;
   font-size: 1.4rem;
   line-height: 1.6;
@@ -706,8 +706,8 @@ ol.list-number {
 .popup-content .terms_labeling .labeling_ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
-  margin-top: 20px;
+  gap: 1rem;
+  margin-top: 2rem;
   list-style: none;
   padding: 0;
 }
@@ -723,11 +723,11 @@ ol.list-number {
 .popup-content .terms_labeling .labeling_li h4 {
   display: block;
   margin: 0 !important;
-  padding: 12px 16px;
-  padding-left: 35px;
+  padding: 1.2rem 1.6rem;
+  padding-left: 3.5rem;
   background: white;
   border: 1px solid #dee2e6;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   color: #333;
   font-size: 1.5rem;
   font-weight: 500;
@@ -738,7 +738,7 @@ ol.list-number {
 .popup-content .terms_labeling .labeling_li h4::before {
   content: "→";
   position: absolute;
-  left: 12px;
+  left: 1.2rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -756,21 +756,21 @@ ol.list-number {
 }
 .popup-content .terms_labeling .labeling_li:hover h4::before {
   color: #01133b;
-  left: 16px;
+  left: 1.6rem;
 }
 .popup-content .terms_labeling .labeling_li .label_layer {
   display: none;
 }
 .popup-content .terms_content {
-  margin: 25px 0;
+  margin: 2.5rem 0;
 }
 .popup-content .terms_content .cnt_list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 12px;
+  gap: 1.2rem;
   list-style: none;
   padding: 0;
-  margin: 15px 0;
+  margin: 1.5rem 0;
 }
 .popup-content .terms_content .cnt_list li {
   margin: 0;
@@ -781,23 +781,23 @@ ol.list-number {
 }
 .popup-content .terms_content .cnt_list li a {
   display: block;
-  padding: 12px 16px;
+  padding: 1.2rem 1.6rem;
   background: #f8f9fa;
   border: 1px solid #dee2e6;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   color: #333;
   text-decoration: none;
   font-size: 1.5rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: relative;
-  padding-left: 35px;
+  padding-left: 3.5rem;
 }
 .popup-content .terms_content .cnt_list li a::before {
   content: "→";
   position: absolute;
-  left: 12px;
-  top: 11px;
+  left: 1.2rem;
+  top: 1.1rem;
   color: #666;
   font-size: 1.6rem;
   -webkit-transition: all 0.3s ease;
@@ -812,7 +812,7 @@ ol.list-number {
 }
 .popup-content .terms_content .cnt_list li a:hover::before {
   color: #01133b;
-  left: 16px;
+  left: 1.6rem;
 }
 .popup-content dl {
   margin: 0;
@@ -824,11 +824,11 @@ ol.list-number {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 1rem;
   font-size: 2rem;
   font-weight: 700;
   color: #01133b;
-  margin-top: 50px !important;
+  margin-top: 5rem !important;
   padding-top: 4rem;
   border-top: 1px solid #e1e1e1;
 }
@@ -843,30 +843,30 @@ ol.list-number {
 }
 .popup-content dl dt img {
   display: none;
-  width: 32px;
-  height: 32px;
+  width: 3.2rem;
+  height: 3.2rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .popup-content dl dd {
-  margin: 20px 0 0 0;
-  padding: 0 10px;
+  margin: 2rem 0 0 0;
+  padding: 0 1rem;
   line-height: 1.8;
   color: #333;
 }
 .popup-content dl dd p {
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
   line-height: 1.8;
 }
 .popup-content dl dd .btn-box {
-  margin: 20px 0;
+  margin: 2rem 0;
 }
 .popup-content dl dd .btn-box a {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 1.2rem 2.4rem;
   background: #01133b;
   color: white;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   text-decoration: none;
   font-weight: 600;
   -webkit-transition: all 0.3s ease;
@@ -883,13 +883,13 @@ ol.list-number {
 }
 .popup-content .bu_list {
   list-style: none;
-  margin: 15px 0;
+  margin: 1.5rem 0;
   padding: 0;
 }
 .popup-content .bu_list li {
   position: relative;
-  margin-top: 12px;
-  padding-left: 30px;
+  margin-top: 1.2rem;
+  padding-left: 3rem;
   line-height: 1.8;
 }
 .popup-content .bu_list li::before {
@@ -905,7 +905,7 @@ ol.list-number {
 .popup-content .table_person {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 2rem 0;
   border: 1px solid #ddd;
 }
 .popup-content .table_person caption {
@@ -921,7 +921,7 @@ ol.list-number {
 }
 .popup-content .table_person th, .popup-content .table_person td {
   border: 1px solid #ddd;
-  padding: 15px;
+  padding: 1.5rem;
   text-align: left;
   line-height: 1.6;
 }
@@ -945,85 +945,85 @@ ol.list-number {
   padding: 0;
 }
 .popup-content .table_person tbody td ul li {
-  margin: 5px 0;
+  margin: 0.5rem 0;
   padding: 0;
 }
 .popup-content .table_person tbody td ul li::before {
   display: none;
 }
 .popup-content .mar_t10 {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 .popup-content .mar_t20 {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 .popup-content .mar_b0 {
   margin-bottom: 0;
 }
 .popup-content .mar_l10 {
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 .popup-content .mt10 {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 .popup-content .mt20 {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 @media (max-width: 768px) {
   .popup-content .terms_labeling h2 {
     font-size: 1.8rem;
-    margin-bottom: 15px;
-    padding-bottom: 12px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.2rem;
   }
   .popup-content .terms_labeling .labeling_ul {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 1rem;
   }
   .popup-content .terms_labeling .labeling_li h4 {
     font-size: 1.4rem;
-    padding: 10px 12px;
-    padding-left: 30px;
+    padding: 1rem 1.2rem;
+    padding-left: 3rem;
   }
   .popup-content .terms_labeling .labeling_li h4::before {
     font-size: 1.4rem;
-    left: 10px;
+    left: 1rem;
   }
   .popup-content .terms_content .cnt_list {
     grid-template-columns: 1fr;
   }
   .popup-content dl dt {
     font-size: 1.6rem;
-    padding: 15px;
+    padding: 1.5rem;
   }
   .popup-content dl dt img {
-    width: 24px;
-    height: 24px;
+    width: 2.4rem;
+    height: 2.4rem;
   }
   .popup-content dl dd {
-    padding: 0 10px;
+    padding: 0 1rem;
   }
   .popup-content .bu_list li {
-    padding-left: 25px;
+    padding-left: 2.5rem;
     font-size: 1.4rem;
   }
   .popup-content .table_person {
     font-size: 1.3rem;
   }
   .popup-content .table_person th, .popup-content .table_person td {
-    padding: 10px 8px;
+    padding: 1rem 0.8rem;
   }
 }
 
 .popup-close-btn,
 .close-btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 20px 30px;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 2rem 3rem;
   background: #01133b;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 0.6rem;
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: 600;
@@ -1049,13 +1049,13 @@ ol.list-number {
 .popup-content table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 2rem 0;
   font-size: 1.4rem;
   border: 1px solid #ddd;
 }
 .popup-content table th, .popup-content table td {
   border: 1px solid #ddd;
-  padding: 12px 15px;
+  padding: 1.2rem 1.5rem;
   text-align: left;
   line-height: 1.6;
 }
@@ -1086,7 +1086,7 @@ ol.list-number {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 12px;
+  gap: 1.2rem;
 }
 .privacy-history-list li:last-child {
   border-bottom: none;
@@ -1094,10 +1094,10 @@ ol.list-number {
 }
 .privacy-history-list li a {
   display: block;
-  padding: 14px 20px;
+  padding: 1.4rem 2rem;
   background: #f8f9fa;
   border: 1px solid #dee2e6;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   color: #333;
   text-decoration: none;
   font-size: 1.6rem;
@@ -1105,12 +1105,12 @@ ol.list-number {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: relative;
-  padding-right: 50px;
+  padding-right: 5rem;
 }
 .privacy-history-list li a::after {
   content: "→";
   position: absolute;
-  right: 20px;
+  right: 2rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1128,7 +1128,7 @@ ol.list-number {
 }
 .privacy-history-list li a:hover::after {
   color: #01133b;
-  right: 15px;
+  right: 1.5rem;
 }
 .privacy-history-list li a:active {
   -webkit-transform: translateX(2px);
@@ -1136,21 +1136,21 @@ ol.list-number {
 }
 @media (max-width: 768px) {
   .privacy-history-list {
-    gap: 10px;
+    gap: 1rem;
   }
   .privacy-history-list li {
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
   }
   .privacy-history-list li a {
-    padding: 12px 16px;
-    padding-right: 45px;
+    padding: 1.2rem 1.6rem;
+    padding-right: 4.5rem;
     font-size: 1.4rem;
   }
   .privacy-history-list li a::after {
-    right: 16px;
+    right: 1.6rem;
     font-size: 1.6rem;
   }
   .privacy-history-list li a:hover::after {
-    right: 12px;
+    right: 1.2rem;
   }
 }/*# sourceMappingURL=privacy-policy.css.map */

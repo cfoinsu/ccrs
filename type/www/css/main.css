@@ -2988,7 +2988,7 @@ body:has(.intro.show) {
 }
 .col-debt1 .debt-card .debt-card__text {
   position: absolute;
-  bottom: 80px;
+  bottom: 8rem;
   left: var(--box-padding-x);
   right: var(--box-padding-x);
   color: #fff;
@@ -2996,7 +2996,7 @@ body:has(.intro.show) {
 }
 @media (max-width: 767px) {
   .col-debt1 .debt-card .debt-card__text {
-    bottom: 40px;
+    bottom: 4rem;
   }
 }
 .col-debt1 .debt-card .debt-card__text h3 {
@@ -3009,7 +3009,7 @@ body:has(.intro.show) {
   }
 }
 .col-debt1 .debt-card .debt-card__text p {
-  margin-top: 20px;
+  margin-top: 2rem;
   font-size: 1.9rem;
   font-weight: 400;
 }
@@ -3060,7 +3060,7 @@ body:has(.intro.show) {
 }
 @media (max-width: 767px) {
   .col-debt2-1 .swiper-slide {
-    padding-bottom: 80px;
+    padding-bottom: 8rem;
   }
 }
 .col-debt2-1 .swiper-slide img {
@@ -3228,7 +3228,7 @@ body:has(.intro.show) {
 @media (max-width: 767px) {
   .grid-finance .grid-col1 .col-debt2-1 .swiper-slide {
     height: auto !important;
-    padding-bottom: 80px;
+    padding-bottom: 8rem;
   }
 }
 .grid-finance .grid-col1 .col-debt2-1 .swiper-slide a {
