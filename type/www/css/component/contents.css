@@ -3111,6 +3111,7 @@ caption {
   top: 0.5rem;
   left: 0;
 }
+
 .krds-info-list.dash > li::before {
   content: "-";
 }

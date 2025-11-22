@@ -4490,6 +4490,10 @@ table.comparison-table td:first-child {
     font-size: 13px;
 }
 
+.g-wrap .g-info-box.point .krds-info-list>li {
+    letter-spacing: -0.05em;
+}
+
 .g-wrap .g-info-box.gray {
     background-color: var(--krds-light-color-surface-gray-subtler);
     border: none;
@@ -4697,6 +4701,7 @@ table.comparison-table td:first-child {
 .krds-info-list>li {
     font-size: 1.9rem;
 }
+
 
 .krds-info-list>li>ul>li {
     font-size: 1.7rem;
