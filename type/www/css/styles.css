@@ -1383,8 +1383,11 @@ body aside {
     transform: scale(0.8);
     margin-top: -5px;
 }
-
+.tooltip-trigger:hover .tooltip {
+    display: block;
+}
 .tooltip {
+    display: none;
     position: absolute;
     transform: translate(-50%, -100%);
     z-index: 50;
@@ -7966,10 +7969,26 @@ table .table-center {
     background-color: #EDF4FF;
     border-radius: 24px;
 }
-
+.consulting-cards-wrap .info-img {
+    float: right;
+    margin-left: 20px;
+    width: 144px;
+}
+.consulting-cards-wrap .info-img img {
+    width: auto;
+    max-width: 100%;
+}
+.consulting-cards-wrap .info-img::after {
+    content: '';
+    display: block;
+    clear: both;
+}
 @media (max-width: 1024px) {
     .consulting-cards-wrap {
         padding: 20px;
+    }
+    .consulting-cards-wrap .info-img {
+    width: 10%;
     }
 }
 
@@ -8115,12 +8134,12 @@ table .table-center {
     .consulting-card h3 {
         font-size: 2rem;
     }
+    .g-img.row.between.support-organization-wrap {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
-.g-img.row.between.support-organization-wrap {
-    flex-direction: column;
-    gap: 20px;
-}
 
 .support-organization-card {
     border-radius: 24px;
@@ -8969,4 +8988,8 @@ a.customer-service-card {
     .region-branches.en {
     margin-top: 20px;
     }
+}
+.fline {
+    display: flex;
+    gap: 0.2rem;
 }

@@ -835,7 +835,8 @@
 .new-leap-fund-flow .flow-header .header-content {
   background: #eaf9ff;
   border-radius: 0 0 24px 24px;
-  padding: 1.3rem 3.8rem 1.3rem 3.4rem;
+  padding: 1.3rem 1.4rem 1.3rem 1.4rem;
+  text-align: center;
 }
 .new-leap-fund-flow .flow-header .header-content .content-main {
   font-size: 1.9rem;
