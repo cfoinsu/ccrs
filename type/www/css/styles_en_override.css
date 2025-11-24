@@ -3591,6 +3591,7 @@
   height: auto !important;
   opacity: 1 !important;
   visibility: visible !important;
+  max-height: 100% !important;
 }
 .en .accordion-item.accordion-none .btn-accordion.active {
   border: none;
