@@ -972,6 +972,7 @@
 
                 currentStep = stepNumber;
                 updateButtons();
+                centerActiveTab();
             });
 
             // "없음" 버튼 클릭 이벤트
@@ -1040,6 +1041,7 @@
                     $('.figma-step-container').attr('data-current-step', currentStep);
 
                     updateButtons();
+                    centerActiveTab();
                 }
             });
 
@@ -1059,6 +1061,7 @@
                     $('.figma-step-container').attr('data-current-step', currentStep);
 
                     updateButtons();
+                    centerActiveTab();
                 }
             });
 
@@ -1072,6 +1075,30 @@
                 } else {
                     $('#figma-next-btn').text('다음');
                 }
+            }
+
+            function centerActiveTab() {
+                const $activeTab = $('.figma-step-tab.active');
+                const $container = $('.figma-step-tabs');
+                
+                if ($activeTab.length === 0 || $container.length === 0) return;
+                
+                // 모바일에서만 동작
+                if ($(window).width() > 768) return;
+
+                const containerWidth = $container.width();
+                const tabWidth = $activeTab.outerWidth();
+                const scrollLeft = $container.scrollLeft();
+                
+                // 탭의 상대 위치 계산
+                const tabOffsetLeft = $activeTab.offset().left;
+                const containerOffsetLeft = $container.offset().left;
+                const relativeTabLeft = tabOffsetLeft - containerOffsetLeft;
+
+                // 중앙 정렬을 위한 스크롤 위치 계산
+                const targetScrollLeft = scrollLeft + relativeTabLeft - (containerWidth / 2) + (tabWidth / 2);
+
+                $container.stop().animate({ scrollLeft: targetScrollLeft }, 300);
             }
 
             // 초기 버튼 상태 설정
