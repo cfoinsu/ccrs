@@ -1174,6 +1174,7 @@
       -ms-flex: 1;
           flex: 1;
   min-height: 35.1rem;
+  z-index:50;
 }
 @media (max-width: 1023px) {
   .application-methods .method-card {
