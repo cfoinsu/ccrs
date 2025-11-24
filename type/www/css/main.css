@@ -2379,7 +2379,7 @@ body:has(.intro.show) {
 
 .grid-width {
   display: grid;
-  grid-template-columns: 42% 33% 25%;
+  grid-template-columns: calc(42% - 1.6rem) calc(33% - 1.6rem) 25%;
   gap: 1.6rem;
 }
 @media (max-width: 1279px) {
