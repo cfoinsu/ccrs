@@ -2926,6 +2926,7 @@ body:has(.intro.show) {
   bottom: 0;
   right: 0;
   height: 19.5rem;
+  z-index: -1;
 }
 @media (max-width: 1279px) {
   .grid-col3 .bottombox .bottombox-img {
