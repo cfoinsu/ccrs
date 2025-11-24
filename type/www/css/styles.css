@@ -6393,7 +6393,7 @@ table .krds-info-list>li {
 
 .item-share.active {
     display: block;
-    top: 6rem;
+    top: 40rem;
     right: 10rem;
     z-index: 100;
 }
