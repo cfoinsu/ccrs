@@ -5528,8 +5528,7 @@ table .krds-info-list>li {
 
 /* 나에게 맞는 채무 조정 찾기 신규 디자인 스타일 */
 .figma-step-container {
-    max-width: 98rem;
-    margin: 0 auto;
+    max-width: 100%;
     position: relative;
 }
 
@@ -5555,6 +5554,7 @@ table .krds-info-list>li {
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 .figma-step-tab.active {
@@ -5565,17 +5565,6 @@ table .krds-info-list>li {
 .figma-step-tab:not(.active) {
     background-color: #e6e8ea;
     color: #6d7882;
-}
-
-.figma-step-tab:nth-child(1),
-.figma-step-tab:nth-child(2) {
-    width: 19.5rem;
-}
-
-.figma-step-tab:nth-child(3),
-.figma-step-tab:nth-child(4),
-.figma-step-tab:nth-child(5) {
-    width: 19.4rem;
 }
 
 /* 컨텐츠 영역 */
@@ -5806,12 +5795,11 @@ table .krds-info-list>li {
 @media (max-width: 1024px) {
     .figma-step-container {
         max-width: 100%;
-        padding: 0 2rem;
     }
 
     .figma-step-item[data-step="1"],
     .figma-step-item[data-step="2"] {
-        gap: 12px;
+        gap: 36px;
     }
 
     .figma-step-inner {
@@ -5824,6 +5812,7 @@ table .krds-info-list>li {
 
     .figma-chips-container {
         max-width: 40rem;
+        margin:0;
     }
 
     .figma-chip {
@@ -5833,25 +5822,28 @@ table .krds-info-list>li {
 
 @media (max-width: 768px) {
     .figma-step-tabs {
-        flex-direction: column;
-        gap: 12px;
-        padding: 0 1.6rem;
+        flex-direction: row;
+        gap: 0;
+        padding: 0;
+        height: auto;
+        overflow-x: auto;
+    }
+
+    .figma-step-tabs::-webkit-scrollbar {
+        display: none;
     }
 
     .figma-step-tab {
-        width: 100%;
+        width: 25%;
         padding: 1.2rem 1.6rem;
         font-size: 1.4rem;
-    }
-
-    .figma-step-container {
-        padding: 0 1.6rem;
+        white-space: nowrap;
+        flex-shrink: 0;
     }
 
     .figma-step-item[data-step="1"],
     .figma-step-item[data-step="2"] {
         flex-direction: column;
-        gap: 16px;
         align-items: center;
     }
 
@@ -5894,6 +5886,11 @@ table .krds-info-list>li {
 
     .figma-btn {
         width: 100%;
+    }
+
+    .figma-step-group {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -5955,6 +5952,16 @@ table .krds-info-list>li {
 .figma-input-wrapper .figma-input-box {
     flex: 1;
     /* 남은 공간을 모두 차지 */
+}
+
+@media (max-width: 1024px) {
+    .figma-input-wrapper {
+        width: 100%;
+        margin-left: 0;
+    }
+    .figma-step-content {
+        height: auto;
+    }
 }
 
 /* Figma에서 가져온 버튼 스타일 */
