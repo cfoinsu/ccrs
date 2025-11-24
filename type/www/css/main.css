@@ -1861,6 +1861,10 @@ section {
   font-size: 2.4rem;
   margin-left: 0.6rem;
 }
+.intro .tellphon .call .board-ph{
+  font-weight: 400;
+  color: #17191B;
+}
 .intro .intro-linkbox {
   position: relative;
   display: grid;
