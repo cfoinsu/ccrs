@@ -87,6 +87,7 @@ section::-webkit-scrollbar-thumb {display: none;}
 /* margin & padding */
 .mAuto {margin: 0 auto !important;}
 .mp0 {margin: 0 !important; padding: 0 !important;}
+.ma0 {margin: 0 !important;}
 .mt0 {margin-top: 0rem !important;}
 .mt4 {margin-top: 0.4rem !important;}
 .mt8 {margin-top: 0.8rem !important;}
@@ -149,6 +150,7 @@ section::-webkit-scrollbar-thumb {display: none;}
 .mr80 {margin-right: 8rem !important;}
 .mr100 {margin-right: 10rem !important;}
 
+.pd0 {padding: 0 !important;}
 .pt0 {padding-top: 0 !important;}
 .pt4 {padding-top: 0.4rem !important;}
 .pt10 {padding-top: 1rem !important;}
@@ -160,26 +162,26 @@ section::-webkit-scrollbar-thumb {display: none;}
 .pl11 {padding-left: 11rem !important;}
 
 /* font */
-.fs_8 {font-size: 0.8rem;}
-.fs_9 {font-size: 0.9rem;}
-.fs_10 {font-size: 1rem;}
-.fs_11 {font-size: 1.1rem;}
-.fs_12 {font-size: 1.2rem;}
-.fs_13 {font-size: 1.3rem;}
-.fs_14 {font-size: 1.4rem;}
-.fs_15 {font-size: 1.5rem;}
-.fs_16 {font-size: 1.6rem;}
-.fs_17 {font-size: 1.7rem;}
-.fs_18 {font-size: 1.8rem;}
-.fs_19 {font-size: 1.9rem;}
-.fs_20 {font-size: 2rem;}
-.fs_22 {font-size: 2.2rem;}
-.fs_24 {font-size: 2.4rem;}
-.fs_26 {font-size: 2.6rem;}
-.fs_28 {font-size: 2.8rem;}
-.fs_30 {font-size: 3rem !important;;}
-.fs_32 {font-size: 3.2rem !important;;}
-.fs_36 {font-size: 3.6rem !important;;}
+.fs_8 {font-size: 0.8rem !important;}
+.fs_9 {font-size: 0.9rem !important;}
+.fs_10 {font-size: 1rem !important;}
+.fs_11 {font-size: 1.1rem !important;}
+.fs_12 {font-size: 1.2rem !important;}
+.fs_13 {font-size: 1.3rem !important;}
+.fs_14 {font-size: 1.4rem !important;}
+.fs_15 {font-size: 1.5rem !important;}
+.fs_16 {font-size: 1.6rem !important;}
+.fs_17 {font-size: 1.7rem !important;}
+.fs_18 {font-size: 1.8rem !important;}
+.fs_19 {font-size: 1.9rem !important;}
+.fs_20 {font-size: 2rem !important;}
+.fs_22 {font-size: 2.2rem !important;}
+.fs_24 {font-size: 2.4rem !important;}
+.fs_26 {font-size: 2.6rem !important;}
+.fs_28 {font-size: 2.8rem !important;}
+.fs_30 {font-size: 3rem !important;}
+.fs_32 {font-size: 3.2rem !important;}
+.fs_36 {font-size: 3.6rem !important;}
 .fs_40 {font-size: 4rem !important;}
 .fs_42 {font-size: 4.2rem !important;}
 .fs_48 {font-size: 4.8rem !important;}
