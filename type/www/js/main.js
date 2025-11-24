@@ -238,15 +238,15 @@ function initSwiperSliders() {
  */
 function initNewsTabs() {
     // 오른쪽 보도자료/유투브/블로그/카페 탭
-    $('.news-right .tab-button').click(function() {
-        var index = $(this).index();
+    // $('.news-right .tab-button').click(function() {
+    //     var index = $(this).index();
 
-        $('.news-right .tab-button').removeClass('active');
-        $(this).addClass('active');
+    //     $('.news-right .tab-button').removeClass('active');
+    //     $(this).addClass('active');
 
-        $('.press-grid').removeClass('active');
-        $('.press-grid').eq(index).addClass('active');
-    });
+    //     $('.press-grid').removeClass('active');
+    //     $('.press-grid').eq(index).addClass('active');
+    // });
 
     // 왼쪽 공지사항/입찰공고/채용공고 탭
     $('.news-left .tab-button').click(function() {
