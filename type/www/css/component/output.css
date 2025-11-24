@@ -4106,11 +4106,11 @@ caption {
 .krds-accordion.type-line .accordion-item .btn-accordion {
   padding: var(--krds-accordion--line-padding) var(--krds-accordion--line-button-padding-right) var(--krds-accordion--line-padding) 0;
   
-  font-size: 19px;
+  font-size: 1.9rem;
   font-weight: 700;
 }
 .krds-accordion.type-line .accordion-item .btn-accordion span{
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 400;
 }
 .krds-accordion.type-line .accordion-item .btn-accordion span.catego {
@@ -4157,7 +4157,7 @@ caption {
 span.sec-tit,
 .krds-accordion.type-heading .accordion-item .btn-accordion {
   padding: 0;
-  font-size: 19px;
+  font-size: 1.9rem;
   font-weight: 700;
 }
 .krds-accordion.type-heading .accordion-item .btn-accordion:hover {
@@ -7903,7 +7903,7 @@ span.sec-tit,
   justify-content:center;
 }
 .krds-structured-list.unit4 .card-body .c-text .c-txt{
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 .krds-structured-list.unit4 .card-body .c-text .c-tit .span {
   display: inline;
@@ -7912,7 +7912,7 @@ span.sec-tit,
   display:none;
 }
 .krds-structured-list.unit4 .card-btm .tag {
-  font-size: 13px;
+  font-size: 1.3rem;
 }
 .krds-structured-list.type-check .card-btn {
   top: calc(var(--krds-structured-list--list-gap) + var(--krds-structured-list--card-buttons-position-top-medium-size) + var(--krds-size-height-5));
@@ -18733,7 +18733,7 @@ a:hover .d-card .c-tit {
   border: 1px solid #6D7882;
   border-radius: 6px;
   background-color: #fff;
-  height: 48px;
+  height: 4.8rem;
   gap:0;
 }
 .search-list-top .sch-sort .toggleswtich button {
@@ -18748,8 +18748,8 @@ a:hover .d-card .c-tit {
 }
 .search-list-top .sch-sort .toggleswtich button.tp-gal.active {
   background: #F48F01 url(../../img/common/gallery_card_on.svg) center no-repeat;
-  width: 48px;
-  height: 48px;
+  width: 4.8rem;
+  height: 4.8rem;
   transform:translate(-1px, -1px);
 }
 .search-list-top .sch-sort .toggleswtich button.tp-list {
@@ -18757,8 +18757,8 @@ a:hover .d-card .c-tit {
 }
 .search-list-top .sch-sort .toggleswtich button.tp-list.active {
   background: #F48F01 url(../../img/common/gallery_list_on.svg) center no-repeat;
-  width: 48px;
-  height: 48px;
+  width: 4.8rem;
+  height: 4.8rem;
   transform:translate(1px, -1px);
 }
 .search-list-top .sch-sort .toggleswtich button:hover {

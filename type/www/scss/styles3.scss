@@ -28,7 +28,7 @@
     left: 0;
     z-index: -1;
     width: 100%;
-    height: 6px;
+    height: 0.6rem;
     background: #aceaff;
   }
 }
@@ -42,7 +42,7 @@
     left: 0;
     z-index: -1;
     width: 100%;
-    height: 6px;
+    height: 0.6rem;
     background: #ffe5ca;
   }
 }
@@ -56,43 +56,43 @@
     left: 0;
     z-index: -1;
     width: 100%;
-    height: 6px;
+    height: 0.6rem;
     background: #ffe398;
   }
 }
 
 
 .fa-circle-check {
-  margin-top: -2px;
-  font-size: 16px;
+  margin-top: -0.2rem;
+  font-size: 1.6rem;
   color: #344D82;
 }
 .fa-check {
-  margin-top: -2px;
-  font-size: 14px;
+  margin-top: -0.2rem;
+  font-size: 1.4rem;
   color: #F48F01;
   &.red {
-  font-size: 12px;
+  font-size: 1.2rem;
     color: #D63D4A;
   }
 }
 
 .btn-apply {
   width: 100%;
-  height: 48px;
+  height: 4.8rem;
   background: #3871ca;
   border: none;
   border-radius: 1000px;
   color: #ffffff;
   
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 1.5;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 0.4rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12), 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
   transition: all 0.2s ease;
   margin-top: auto;
@@ -107,39 +107,39 @@
   }
 
   i {
-    margin-top: -4px;
-    font-size: 16px;
+    margin-top: -0.4rem;
+    font-size: 1.6rem;
   }
 
   @media (max-width: 767px) {
-    height: 44px;
-    font-size: 16px;
+    height: 4.4rem;
+    font-size: 1.6rem;
   }
 }
 
 .btn-action {
-  height: 48px;
+  height: 4.8rem;
   background: #f48f01;
   border: none;
   border-radius: 1000px;
   color: #ffffff;
   
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 700;
   line-height: 1.5;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  padding: 0 24px;
+  gap: 0.4rem;
+  padding: 0 2.4rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12), 0px 0px 2px 0px rgba(0, 0, 0, 0.08);
   transition: all 0.2s ease;
   &::after {
     content: '';
     transform: translateY(-2px);
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     background: url(/type/www/images/ic/icon-newwindow.svg) no-repeat center center / contain;
   }
 
@@ -153,15 +153,15 @@
   }
 
   .fa-arrow-up-right-from-square {
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     flex-shrink: 0;
   }
 
   @media (max-width: 767px) {
     width: 100%;
-    height: 44px;
-    font-size: 16px;
+    height: 4.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -174,13 +174,13 @@
   position: absolute;
   top: 3px;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   background-color: #fff;
   border-radius: 50%;
   border: 1px solid #f97316;
   color: #f97316;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 700;
   font-style: normal;
   display: flex;
@@ -192,17 +192,17 @@
 
 .credit-education-buttons {
   display: flex;
-  gap: 30px;
-  margin: 40px 0;
+  gap: 3rem;
+  margin: 4rem 0;
   justify-content: center;
   align-items: center;
 }
 
 .credit-education-btn {
   flex: 1;
-  padding: 30px 0;
+  padding: 3rem 0;
   border: 2px solid #ffcf8c;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   background-color: #fff7ea;
   text-align: center;
   cursor: pointer;
@@ -212,26 +212,26 @@
 }
 
 .credit-education-btn .btn-title {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   color: #434343;
   transition: color 0.3s ease;
 }
 
 .credit-education-info {
-  margin-top: 30px;
-  padding: 20px;
+  margin-top: 3rem;
+  padding: 2rem;
   background-color: #f5f5f5;
-  border-radius: 10px;
+  border-radius: 1rem;
   position: relative;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 1.5rem;
 }
 
 .credit-education-info p {
   margin: 0;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
@@ -248,32 +248,32 @@
 @media (max-width: 768px) {
   .credit-education-buttons {
     flex-direction: column;
-    gap: 20px;
+    gap: 2rem;
   }
 
   .credit-education-btn {
     max-width: 100%;
-    padding: 20px;
+    padding: 2rem;
   }
 
   .credit-education-btn .btn-title {
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 400;
   }
 
   .credit-education-info {
-    padding: 15px;
-    gap: 10px;
+    padding: 1.5rem;
+    gap: 1rem;
   }
 
   .credit-education-info i {
-    width: 18px;
-    height: 18px;
-    font-size: 12px;
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 1.2rem;
   }
 
   .credit-education-info p {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 
@@ -285,8 +285,8 @@
   color: blue;
 }
 .krds-info-list > li .desc {
-  margin-top: 10px;
-  padding-left: 15px;
+  margin-top: 1rem;
+  padding-left: 1.5rem;
   color: #555;
 }
 .krds-info-list > li .desc::before {
@@ -294,8 +294,8 @@
   position: absolute;
   top: 13px;
   left: 0;
-  width: 6px;
-  height: 2px;
+  width: 0.6rem;
+  height: 0.2rem;
   background: #555;
 }
 
@@ -304,9 +304,9 @@
 }
 .sec-sm .tit-sm {
   position: relative;
-  margin-top: 40px;
-  padding-left: 15px;
-  font-size: 19px;
+  margin-top: 4rem;
+  padding-left: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 700;
 }
 .sec-sm .tit-sm::before {
@@ -315,26 +315,26 @@
   top: 5px;
   left: 0;
   width: 4px;
-  height: 18px;
+  height: 1.8rem;
   background: url(/type/www/images/ic/ic-bullet.svg) no-repeat 0 0 / contain;
 }
 
 .wrap-calculator {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 17px;
+  margin-top: 1.7rem;
   background: #F4F5F6;
   border-radius: 12px;
 
   @media (max-width: 1023px) {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 4rem;
   }
 
   .calculator-box {
     position: relative;
     flex: 1;
-    padding: 32px;
+    padding: 3.2rem;
 
     &:not(:last-child)::after {
       content: '';
@@ -352,20 +352,20 @@
     }
 
     @media (max-width: 767px) {
-      padding: 24px 16px;
+      padding: 2.4rem 1.6rem;
     }
   }
 
   .calc-title {
-    margin: 0 0 24px 0;
-    font-size: 19px;
+    margin: 0 0 2.4rem 0;
+    font-size: 1.9rem;
     font-weight: 700;
     color: #012063;
     line-height: 1.4;
 
     @media (max-width: 767px) {
-      font-size: 16px;
-      margin-bottom: 20px;
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -373,38 +373,38 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 13px;
+    margin-bottom: 1.3rem;
 
     &:last-of-type {
-      margin-bottom: 24px;
+      margin-bottom: 2.4rem;
     }
 
     .form-label {
       display: block;
-      font-size: 17px;
+      font-size: 1.7rem;
       font-weight: 600;
       color: #222;
 
       @media (max-width: 1024px) {
-        font-size: 14px;
+        font-size: 1.4rem;
       }
 
       span {
         font-weight: 400;
-        font-size: 13px;
+        font-size: 1.3rem;
         color: #666;
       }
     }
   }
 
   .form-input {
-    width: 200px;
-    height: 48px;
+    width: 20rem;
+    height: 4.8rem;
     padding: 0 16px;
     background: #FFFFFF;
     border: 1px solid #D1D6DC;
-    border-radius: 8px;
-    font-size: 15px;
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
     color: #1A1F27;
     transition: all 0.2s;
     text-align: right;
@@ -420,9 +420,9 @@
     }
 
     @media (max-width: 1024px) {
-      max-width: 180px;
-      height: 44px;
-      font-size: 14px;
+      max-width: 18rem;
+      height: 4.4rem;
+      font-size: 1.4rem;
     }
   }
 
@@ -430,7 +430,7 @@
     position: relative;
 
     .form-input {
-      padding-right: 45px;
+      padding-right: 4.5rem;
       text-align: right;
     }
 
@@ -439,24 +439,24 @@
       right: 16px;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 15px;
+      font-size: 1.5rem;
       color: #6D7882;
       pointer-events: none;
 
       @media (max-width: 767px) {
-        font-size: 14px;
+        font-size: 1.4rem;
       }
     }
   }
 
   .form-hint {
     display: block;
-    margin-top: 6px;
-    font-size: 13px;
+    margin-top: 0.6rem;
+    font-size: 1.3rem;
     color: #6D7882;
 
     @media (max-width: 767px) {
-      font-size: 12px;
+      font-size: 1.2rem;
     }
   }
 
@@ -464,35 +464,35 @@
     background: #FFF6DE;
     border: 1px solid #F48F01;
     border-radius: 8px;
-    padding: 16px 20px;
+    padding: 1.6rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    gap: 1.2rem;
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
 
     @media (max-width: 767px) {
-      padding: 14px 16px;
+      padding: 1.4rem 1.6rem;
     }
   }
 
   .result-label {
-    font-size: 15px;
+    font-size: 1.5rem;
     color: #2C3540;
 
     @media (max-width: 767px) {
-      font-size: 14px;
+      font-size: 1.4rem;
     }
   }
 
   .result-value {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     color: #1A1F27;
 
     @media (max-width: 767px) {
-      font-size: 20px;
+      font-size: 2rem;
     }
   }
 
@@ -502,7 +502,7 @@
     background: #FFFFFF;
     border: 1px solid #2E5AAC;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     color: #2E5AAC;
     cursor: pointer;
@@ -518,8 +518,8 @@
     }
 
     @media (max-width: 767px) {
-      height: 48px;
-      font-size: 15px;
+      height: 4.8rem;
+      font-size: 1.5rem;
     }
   }
 }
@@ -527,12 +527,12 @@
 // 그 밖의 채무조정제도
 .other-debt-adjustment {
   display: flex;
-  gap: 20px;
-  margin-top: 40px;
+  gap: 2rem;
+  margin-top: 4rem;
 
   @media (max-width: 1023px) {
     flex-direction: column;
-    gap: 40px;
+    gap: 4rem;
   }
 
   .adjustment-category {
@@ -542,11 +542,11 @@
 
   &.category-court {
     flex: 1;
-    max-width: 592px;
+    max-width: 59.2rem;
   }
 
   &.category-financial {
-    flex: 0 0 304px;
+    flex: 0 0 30.4rem;
   }
 
   @media (max-width: 1023px) {
@@ -561,7 +561,7 @@
 .category-header {
   background: #f3f2ff;
   border-radius: 1000px;
-  height: 56px;
+  height: 5.6rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -571,7 +571,7 @@
 
   .category-title {
     
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     color: #17191b;
     line-height: 1.5;
@@ -580,15 +580,15 @@
 
 .category-connector {
   position: relative;
-  height: 44px;
+  height: 4.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: -8px 0 0 0;
 
   .connector-dot {
-    width: 15px;
-    height: 15px;
+    width: 1.5rem;
+    height: 1.5rem;
     background: #2E5AAC;
     border-radius: 50%;
     position: relative;
@@ -600,8 +600,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 7px;
-      height: 7px;
+      width: 0.7rem;
+      height: 0.7rem;
       background: #1E3D82;
       border-radius: 50%;
     }
@@ -623,12 +623,12 @@
   z-index: 20;
   display: flex;
   gap: 4px;
-  margin-top: 24px;
+  margin-top: 2.4rem;
   flex: 1;
 
   @media (max-width: 767px) {
     flex-direction: column;
-    gap: 16px;
+    gap: 1.6rem;
   }
 }
 
@@ -637,45 +637,45 @@
   background: #ffffff;
   border: 1px solid #d2d6da;
   border-radius: 24px;
-  padding: 24px;
+  padding: 2.4rem;
   flex: 1;
-  min-height: 170px;
+  min-height: 17rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   &::before {
     content: '';
     position: absolute;
-    top: -33px;
+    top: -3.3rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 15px;
-    height: 34px;
+    width: 1.5rem;
+    height: 3.4rem;
     background: url(/type/www/images/ic/dot-line.svg) no-repeat 0 0 / cover;
   }
 
   @media (max-width: 767px) {
-    padding: 20px;
+    padding: 2rem;
     min-height: auto;
   }
 
   .card-title {
     
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     color: #17191b;
     line-height: 1.5;
-    margin: 0 0 19px 0;
+    margin: 0 0 1.9rem 0;
 
     @media (max-width: 767px) {
-      font-size: 20px;
-      margin-bottom: 16px;
+      font-size: 2rem;
+      margin-bottom: 1.6rem;
     }
   }
 
   .card-description {
     
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 400;
     color: #17191b;
     line-height: 1.5;
@@ -683,7 +683,7 @@
     flex: 1;
 
     @media (max-width: 767px) {
-      font-size: 16px;
+      font-size: 1.6rem;
     }
 
     strong {
@@ -703,7 +703,7 @@
 .new-leap-fund-flow {
   position: relative;
   max-width: 920px;
-  margin: 40px auto;
+  margin: 4rem auto;
   padding: 0 20px;
 
   @include tabletLess {
@@ -717,21 +717,21 @@
     margin: 0 auto;
 
     @include tabletLess {
-      margin-bottom: 20px;
+      margin-bottom: 2rem;
       max-width: 100%;
     }
 
     .header-title {
       background: #41b9e3;
       border-radius: 24px 24px 0 0;
-      height: 56px;
+      height: 5.6rem;
       display: flex;
       align-items: center;
       justify-content: center;
 
       .title-text {
         
-        font-size: 24px;
+        font-size: 2.4rem;
         font-weight: 700;
         color: #ffffff;
         line-height: 1.5;
@@ -741,20 +741,20 @@
     .header-content {
       background: #eaf9ff;
       border-radius: 0 0 24px 24px;
-      padding: 13px 38px 13px 34px;
+      padding: 1.3rem 3.8rem 1.3rem 3.4rem;
 
       .content-main {
         
-        font-size: 19px;
+        font-size: 1.9rem;
         font-weight: 700;
         color: #17191b;
         line-height: 1.5;
-        margin: 0 0 8px 0;
+        margin: 0 0 0.8rem 0;
       }
 
       .content-note {
         
-        font-size: 17px;
+        font-size: 1.7rem;
         font-weight: 400;
         color: #3d9fc8;
         line-height: 1.5;
@@ -766,7 +766,7 @@
   .flow-connector {
     position: relative;
     height: 110px;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     @include tabletLess {
       display: none;
     }
@@ -776,8 +776,8 @@
       left: 50%;
       top: 0;
       transform: translateX(-50%);
-      width: 2px;
-      height: 31px;
+      width: 0.2rem;
+      height: 3.1rem;
       background: #4b68a4;
     }
 
@@ -786,28 +786,28 @@
       left: 50%;
       top: 31px;
       transform: translateX(-50%);
-      width: 438px;
-      height: 2px;
+      width: 43.8rem;
+      height: 0.2rem;
       display: flex;
       justify-content: space-between;
       background: #4b68a4;
 
       @media (max-width: 1023px) {
         width: 100%;
-        max-width: 438px;
+        max-width: 43.8rem;
       }
 
       .branch-line-left,
       .branch-line-right {
-        width: 2px;
-        height: 80px;
+        width: 0.2rem;
+        height: 8rem;
         background: #4b68a4;
         position: relative;
 
         &::after {
           content: '';
           position: absolute;
-          bottom: -10px;
+          bottom: -1rem;
           left: 50%;
           transform: translateX(-50%);
           width: 0;
@@ -834,18 +834,18 @@
       top: 57px;
       display: flex;
       justify-content: space-between;
-      padding: 0 20px;
+      padding: 0 2rem;
 
       @media (max-width: 1023px) {
         flex-direction: column;
-        gap: 20px;
+        gap: 2rem;
         align-items: center;
       }
 
       .branch-label-left,
       .branch-label-right {
         
-        font-size: 19px;
+        font-size: 1.9rem;
         font-weight: 400;
         color: #17191b;
         line-height: 1.5;
@@ -884,19 +884,19 @@
 
   .flow-cards {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
     justify-content: center;
 
     @media (max-width: 1023px) {
       flex-direction: column;
       align-items: center;
-      gap: 40px;
+      gap: 4rem;
     }
   }
 
   .flow-card {
-    flex: 0 0 362px;
-    max-width: 362px;
+    flex: 0 0 36.2rem;
+    max-width: 36.2rem;
 
     @media (max-width: 1023px) {
       flex: 1;
@@ -905,14 +905,14 @@
     }
 
     .title {
-      font-size: 19px;
+      font-size: 1.9rem;
       font-weight: 700;
       color: #17191b;
-      margin-bottom: 16px;
+      margin-bottom: 1.6rem;
     }
 
     .card-header {
-      height: 56px;
+      height: 5.6rem;
       border-radius: 24px 24px 0 0;
       display: flex;
       align-items: center;
@@ -921,7 +921,7 @@
 
       .card-title {
         margin-bottom: 0;
-        font-size: 24px;
+        font-size: 2.4rem;
         font-weight: 700;
         color: #ffffff;
         line-height: 1.5;
@@ -938,8 +938,8 @@
 
     .card-body {
       border-radius: 0 0 24px 24px;
-      padding: 20px 24px 24px;
-      min-height: 240px;
+      padding: 2rem 2.4rem 2.4rem;
+      min-height: 24rem;
 
       &.writeoff-body {
         background: #eaf9ff;
@@ -950,8 +950,8 @@
       }
 
       .card-logo {
-        height: 30px;
-        margin-bottom: 20px;
+        height: 3rem;
+        margin-bottom: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -965,35 +965,35 @@
       .card-divider {
         height: 1px;
         background: #d2d6da;
-        margin: 0 0 20px 0;
+        margin: 0 0 2rem 0;
       }
 
       .card-criteria {
         .criteria-header {
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 1rem;
           .criteria-condition {
             margin-bottom: 0;
           }
         }
         .criteria-title {
           
-          font-size: 24px;
+          font-size: 2.4rem;
           font-weight: 700;
           color: #17191b;
           line-height: 1.5;
-          margin: 0 0 8px 0;
+          margin: 0 0 0.8rem 0;
           position: relative;
         }
 
         .criteria-condition {
           
-          font-size: 15px;
+          font-size: 1.5rem;
           font-weight: 400;
           color: #474e55;
           line-height: 1.5;
-          margin: 0 0 16px 0;
+          margin: 0 0 1.6rem 0;
 
           strong {
             font-weight: 700;
@@ -1007,12 +1007,12 @@
 
           li {
             
-            font-size: 19px;
+            font-size: 1.9rem;
             font-weight: 400;
             color: #17191b;
             line-height: 1.5;
-            margin-bottom: 8px;
-            padding-left: 8px;
+            margin-bottom: 0.8rem;
+            padding-left: 0.8rem;
 
             &:last-child {
               margin-bottom: 0;
@@ -1028,14 +1028,14 @@
 .application-methods {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
-  margin-top: 40px;
+  gap: 2.4rem;
+  margin-top: 4rem;
 
   @media (max-width: 1023px) {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    margin-top: 10px;
+    gap: 2rem;
+    margin-top: 1rem;
   }
 
   .method-card {
@@ -1043,10 +1043,10 @@
     flex-direction: column;
     background: #edf4ff;
     border-radius: 24px;
-    padding: 32px;
+    padding: 3.2rem;
     position: relative;
     flex: 1;
-    min-height: 351px;
+    min-height: 35.1rem;
 
     @media (max-width: 1023px) {
       flex: 1;
@@ -1056,40 +1056,40 @@
     }
 
     @media (max-width: 767px) {
-      padding: 24px;
+      padding: 2.4rem;
     }
 
     &.non-face-to-face {
-      min-height: 351px;
+      min-height: 35.1rem;
     }
 
     &.face-to-face {
-      min-height: 351px;
+      min-height: 35.1rem;
     }
 
     .card-header {
       position: relative;
-      margin-bottom: 4px;
+      margin-bottom: 0.4rem;
 
       .header-decoration {
         position: absolute;
         top: 57px;
         left: 0;
-        height: 6px;
+        height: 0.6rem;
         background: #c8ddff;
       }
 
       &.non-face-to-face .header-decoration {
-        width: 110px;
+        width: 11rem;
       }
 
       &.face-to-face .header-decoration {
-        width: 89px;
+        width: 8.9rem;
       }
 
       .header-title {
         
-        font-size: 24px;
+        font-size: 2.4rem;
         font-weight: 700;
         color: #17191b;
         line-height: 1.5;
@@ -1100,8 +1100,8 @@
         position: absolute;
         top: 0;
         right: 0;
-        width: 64px;
-        height: 64px;
+        width: 6.4rem;
+        height: 6.4rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1117,22 +1117,22 @@
     .card-content {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 1.2rem;
       margin-bottom: 24px;
 
       .content-item {
         display: flex;
         flex-direction: column;
-        gap: 4px;
+        gap: 0.4rem;
 
         .item-header {
           display: flex;
           align-items: center;
-          gap: 4px;
+          gap: 0.4rem;
 
           .item-title {
             
-            font-size: 19px;
+            font-size: 1.9rem;
             font-weight: 700;
             color: #17191b;
             line-height: 1.5;
@@ -1142,38 +1142,38 @@
         .item-bullet {
           display: flex;
           align-items: flex-start;
-          padding-left: 20px;
-          padding-top: 8px;
+          padding-left: 2rem;
+          padding-top: 0.8rem;
 
           .fa-check {
-            width: 12px;
-            height: 11px;
+            width: 1.2rem;
+            height: 1.1rem;
             color: #f48f01;
             flex-shrink: 0;
           }
         }
 
         .item-description {
-          margin-top: 10px;
-          padding-left: 20px;
-          font-size: 17px;
+          margin-top: 1rem;
+          padding-left: 2rem;
+          font-size: 1.7rem;
           font-weight: 400;
           color: #17191b;
           line-height: 1.5;
           text-align: left;
           display: flex;
-          gap: 4px;
+          gap: 0.4rem;
           i {
-            margin-right: 5px;
-            margin-top: 2px;
+            margin-right: 0.5rem;
+            margin-top: 0.2rem;
           }
           span {
             flex: 1;
           }
 
           @media (max-width: 767px) {
-            font-size: 16px;
-            padding-left: 16px;
+            font-size: 1.6rem;
+            padding-left: 1.6rem;
           }
         }
       }
@@ -1181,10 +1181,10 @@
 
     .card-actions {
       display: flex;
-      gap: 12px;
+      gap: 1.2rem;
       flex-wrap: wrap;
       margin-top: auto;
-      padding-left: 20px;
+      padding-left: 2rem;
 
       @media (max-width: 767px) {
         flex-direction: column;
@@ -1198,30 +1198,30 @@
 .application-notice {
   background: #ffeee9;
   border-radius: 24px;
-  padding: 25px 32px;
-  margin-top: 40px;
+  padding: 2.5rem 3.2rem;
+  margin-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 1.6rem;
   margin-left: auto;
   margin-right: auto;
 
   @media (max-width: 1023px) {
-    margin-top: 32px;
-    padding: 20px 24px;
+    margin-top: 3.2rem;
+    padding: 2rem 2.4rem;
   }
 
   @media (max-width: 767px) {
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
-    padding: 16px 20px;
+    gap: 1.2rem;
+    padding: 1.6rem 2rem;
   }
 
   .notice-icon {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1229,25 +1229,25 @@
     margin-top: -4px;
 
     .fa-info-circle {
-      width: 40px;
-      height: 40px;
+      width: 4rem;
+      height: 4rem;
       color: #c2421f;
     }
 
     @media (max-width: 767px) {
-      width: 32px;
-      height: 32px;
+      width: 3.2rem;
+      height: 3.2rem;
 
       .fa-info-circle {
-        width: 32px;
-        height: 32px;
+        width: 3.2rem;
+        height: 3.2rem;
       }
     }
   }
 
   .notice-text {
     
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 700;
     line-height: 1.5;
     color: #17191b;
@@ -1258,7 +1258,7 @@
     }
 
     @media (max-width: 767px) {
-      font-size: 16px;
+      font-size: 1.6rem;
     }
   }
 }
@@ -1270,15 +1270,15 @@
   margin: 0 auto;
 
   .other-support-intro {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 400;
     line-height: 1.5;
     color: #17191b;
 
     p {
-      margin: 0 0 8px 0;
+      margin: 0 0 0.8rem 0;
 
       &:last-child {
         margin-bottom: 0;
@@ -1290,8 +1290,8 @@
     }
 
     @media (max-width: 767px) {
-      font-size: 16px;
-      margin-bottom: 32px;
+      font-size: 1.6rem;
+      margin-bottom: 3.2rem;
     }
   }
 
@@ -1299,17 +1299,17 @@
     position: relative;
     background: #3871ca;
     border-radius: 0 24px 0 24px;
-    height: 64px;
+    height: 6.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 1.2rem;
     margin: 0 auto;
-    max-width: 247px;
+    max-width: 24.7rem;
 
     .header-icon {
-      width: 32px;
-      height: 32px;
+      width: 3.2rem;
+      height: 3.2rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1323,7 +1323,7 @@
 
     .header-title {
       
-      font-size: 21px;
+      font-size: 2.1rem;
       font-weight: 700;
       color: #ffffff;
       line-height: 1.5;
@@ -1331,17 +1331,17 @@
     }
 
     @media (max-width: 767px) {
-      height: 56px;
-      max-width: 200px;
-      margin-bottom: 20px;
+      height: 5.6rem;
+      max-width: 20rem;
+      margin-bottom: 2rem;
 
       .header-title {
-        font-size: 18px;
+        font-size: 1.8rem;
       }
 
       .header-icon {
-        width: 28px;
-        height: 28px;
+        width: 2.8rem;
+        height: 2.8rem;
       }
     }
   }
@@ -1350,9 +1350,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 55px;
+    height: 5.5rem;
     margin: 0 auto;
-    max-width: 642px;
+    max-width: 64.2rem;
 
     img {
       width: 100%;
@@ -1367,20 +1367,20 @@
 
   .other-support-cards {
     display: flex;
-    gap: 20px;
+    gap: 2rem;
     justify-content: center;
     margin-top: 0;
 
     @media (max-width: 1023px) {
       flex-direction: column;
       align-items: center;
-      gap: 20px;
+      gap: 2rem;
     }
   }
 
   .support-card {
-    flex: 0 0 292px;
-    max-width: 292px;
+    flex: 0 0 29.2rem;
+    max-width: 29.2rem;
     position: relative;
 
     @media (max-width: 1023px) {
@@ -1392,39 +1392,39 @@
     .card-header {
       background: #c8ddff;
       border-radius: 24px 24px 0 0;
-      height: 53px;
+      height: 5.3rem;
       display: flex;
       align-items: center;
       justify-content: center;
       
-      font-size: 19px;
+      font-size: 1.9rem;
       font-weight: 700;
       color: #17191b;
       margin: 0;
       padding: 0;
 
       @media (max-width: 767px) {
-        height: 48px;
-        font-size: 17px;
+        height: 4.8rem;
+        font-size: 1.7rem;
       }
     }
 
     .card-body {
       background: #edf4ff;
       border-radius: 0 0 24px 24px;
-      padding: 32px;
-      min-height: 322px;
+      padding: 3.2rem;
+      min-height: 32.2rem;
       display: flex;
       flex-direction: column;
 
       @media (max-width: 767px) {
-        padding: 24px;
+        padding: 2.4rem;
         min-height: auto;
       }
 
       .card-logo {
-        height: 42px;
-        margin-bottom: 24px;
+        height: 4.2rem;
+        margin-bottom: 2.4rem;
         display: flex;
         align-items: center;
 
@@ -1440,7 +1440,7 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 1.2rem;
         padding: 0;
       }
 
@@ -1450,12 +1450,12 @@
         .item-header {
           display: flex;
           align-items: center;
-          gap: 4px;
+          gap: 0.4rem;
           margin-bottom: 4px;
 
           .item-title {
             
-            font-size: 19px;
+            font-size: 1.9rem;
             font-weight: 700;
             color: #17191b;
             line-height: 1.5;
@@ -1463,20 +1463,20 @@
         }
 
         .item-description {
-          padding-left: 20px;
+          padding-left: 2rem;
           
-          font-size: 19px;
+          font-size: 1.9rem;
           font-weight: 400;
           color: #17191b;
           line-height: 1.5;
 
           p {
             margin: 0;
-            font-size: 19px;
+            font-size: 1.9rem;
           }
 
           @media (max-width: 767px) {
-            font-size: 16px;
+            font-size: 1.6rem;
             padding-left: 16px;
           }
         }
@@ -1487,12 +1487,12 @@
       .card-note {
         display: flex;
         align-items: center;
-        gap: 4px;
-        margin-top: 6px;
+        gap: 0.4rem;
+        margin-top: 0.6rem;
 
         .icon-info {
-          width: 20px;
-          height: 20px;
+          width: 2rem;
+          height: 2rem;
           display: inline-block;
           background: url(/type/www/images/ic/icon-info.svg) no-repeat center;
           background-size: contain;
@@ -1501,7 +1501,7 @@
 
         span {
           
-          font-size: 17px;
+          font-size: 1.7rem;
           font-weight: 700;
           color: #ab2b36;
           line-height: 1.5;
@@ -1509,7 +1509,7 @@
 
         @media (max-width: 767px) {
           span {
-            font-size: 15px;
+            font-size: 1.5rem;
           }
         }
       }
@@ -1517,9 +1517,9 @@
   }
 
   .other-support-footer {
-    margin-top: 40px;
+    margin-top: 4rem;
     
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 700;
     line-height: 1.5;
     color: #17191b;
@@ -1529,8 +1529,8 @@
     }
 
     @media (max-width: 767px) {
-      font-size: 15px;
-      margin-top: 32px;
+      font-size: 1.5rem;
+      margin-top: 3.2rem;
     }
   }
 }
@@ -1551,9 +1551,9 @@
   .financial-support-intro,
   .employment-support-intro,
   .welfare-support-intro {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     
-    font-size: 19px;
+    font-size: 1.9rem;
     font-weight: 700;
     line-height: 1.5;
     color: #17191b;
@@ -1563,8 +1563,8 @@
     }
 
     @media (max-width: 1024px) {
-      font-size: 16px;
-      margin-bottom: 32px;
+      font-size: 1.6rem;
+      margin-bottom: 3.2rem;
     }
   }
 
@@ -1574,16 +1574,16 @@
   .welfare-support-header {
     position: relative;
     border-radius: 0 24px 0 24px;
-    height: 64px;
+    height: 6.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 1.2rem;
     margin: 0 auto;
-    max-width: 247px;
+    max-width: 24.7rem;
 
     .header-title {
-      font-size: 21px;
+      font-size: 2.1rem;
       font-weight: 700;
       color: #ffffff;
       line-height: 1.5;
@@ -1591,12 +1591,12 @@
     }
 
     @media (max-width: 1024px) {
-      height: 56px;
-      max-width: 200px;
-      margin-bottom: 20px;
+      height: 5.6rem;
+      max-width: 20rem;
+      margin-bottom: 2rem;
 
       .header-title {
-        font-size: 18px;
+        font-size: 1.8rem;
       }
     }
   }
@@ -1608,10 +1608,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 55px;
+    height: 5.5rem;
     margin: 0 auto;
-    max-width: 642px;
-    margin-bottom: 8px;
+    max-width: 64.2rem;
+    margin-bottom: 0.8rem;
 
     img {
       width: 100%;
@@ -1621,9 +1621,9 @@
 
     @media (max-width: 1024px) {
       display: none;
-      height: 40px;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      height: 4rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -1632,14 +1632,14 @@
   .employment-support-cards,
   .welfare-support-cards {
     display: flex;
-    gap: 24px;
+    gap: 2.4rem;
     justify-content: center;
     margin-top: 0;
 
     @media (max-width: 1023px) {
       flex-direction: column;
       align-items: center;
-      gap: 20px;
+      gap: 2rem;
     }
   }
 
@@ -1648,7 +1648,7 @@
     flex: 1;
     position: relative;
     border-radius: 24px;
-    padding: 32px;
+    padding: 3.2rem;
     display: flex;
     flex-direction: column;
 
@@ -1660,7 +1660,7 @@
     }
 
     @media (max-width: 767px) {
-      padding: 24px;
+      padding: 2.4rem;
     }
 
     .card-header {
@@ -1671,12 +1671,12 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
-      margin: 0 0 24px 0;
+      margin: 0 0 2.4rem 0;
       padding: 0;
       position: relative;
 
       img {
-        height: 50px;
+        height: 5rem;
         width: auto;
         max-width: 100%;
         object-fit: contain;
@@ -1684,29 +1684,29 @@
 
       .card-header-title {
         
-        font-size: 24px;
+        font-size: 2.4rem;
         font-weight: 700;
         color: #17191b;
         line-height: 1.5;
         margin: 0 0 0 0;
-        padding-bottom: 8px;
+        padding-bottom: 0.8rem;
       }
 
       .card-header-underline {
-        height: 6px;
+        height: 0.6rem;
         background: #ffe398;
         margin-top: 0;
       }
 
       @media (max-width: 767px) {
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
 
         img {
-          height: 42px;
+          height: 4.2rem;
         }
 
         .card-header-title {
-          font-size: 20px;
+          font-size: 2rem;
         }
       }
     }
@@ -1724,26 +1724,26 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 1.2rem;
         padding: 0;
-        margin-bottom: 24px;
+        margin-bottom: 2.4rem;
       }
 
       .card-item {
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 4px;
+        gap: 0.4rem;
 
         .item-header {
           display: flex;
           align-items: center;
-          gap: 4px;
+          gap: 0.4rem;
           margin-bottom: 0;
 
           .item-title {
             
-            font-size: 19px;
+            font-size: 1.9rem;
             font-weight: 700;
             color: #17191b;
             line-height: 1.5;
@@ -1751,25 +1751,25 @@
         }
 
         .item-description {
-          padding-left: 20px;
-          font-size: 19px;
+          padding-left: 2rem;
+          font-size: 1.9rem;
           font-weight: 400;
           color: #17191b;
           line-height: 1.5;
 
           .item-description-note {
             display: block;
-            font-size: 17px;
+            font-size: 1.7rem;
             color: #17191b;
-            margin-top: 4px;
+            margin-top: 0.4rem;
           }
 
           @media (max-width: 767px) {
-            font-size: 16px;
-            padding-left: 16px;
+            font-size: 1.6rem;
+            padding-left: 1.6rem;
 
             .item-description-note {
-              font-size: 15px;
+              font-size: 1.5rem;
             }
           }
         }
@@ -1778,12 +1778,12 @@
       .card-note {
         display: flex;
         align-items: center;
-        gap: 4px;
+        gap: 0.4rem;
         margin-top: auto;
 
         span {
           
-          font-size: 17px;
+          font-size: 1.7rem;
           font-weight: 700;
           color: #ab2b36;
           line-height: 1.5;
@@ -1791,7 +1791,7 @@
 
         @media (max-width: 767px) {
           span {
-            font-size: 15px;
+            font-size: 1.5rem;
           }
         }
       }
@@ -1811,7 +1811,7 @@
 
   .support-card {
     background: #f3f2ff;
-    min-height: 477px;
+    min-height: 47.7rem;
   }
 }
 
@@ -1834,7 +1834,7 @@
 
   .support-card {
     background: #def9fe;
-    min-height: 407px;
+    min-height: 40.7rem;
   }
 }
 
@@ -1850,14 +1850,14 @@
 
   .support-card {
     background: #fff6de;
-    min-height: 416px;
+    min-height: 41.6rem;
 
     &:nth-child(1) .card-header .card-header-underline {
-      width: 123px;
+      width: 12.3rem;
     }
 
     &:nth-child(2) .card-header .card-header-underline {
-      width: 193px;
+      width: 19.3rem;
     }
   }
 }
@@ -1866,33 +1866,33 @@
 .enhanced-debt-adjustment-flow {
   position: relative;
   width: 100%;
-  max-width: 920px;
-  margin: 40px auto;
-  padding: 0 20px;
+  max-width: 92rem;
+  margin: 4rem auto;
+  padding: 0 2rem;
 
   @media (max-width: 1023px) {
-    padding: 0 16px;
+    padding: 0 1.6rem;
   }
 
   .enhanced-debt-cards {
     display: flex;
-    gap: 24px;
+    gap: 2.4rem;
     justify-content: center;
     margin-bottom: 0;
 
     @media (max-width: 1023px) {
       flex-direction: column;
       align-items: center;
-      gap: 20px;
+      gap: 2rem;
     }
   }
 
   .enhanced-debt-card {
-    flex: 0 0 446px;
-    max-width: 446px;
+    flex: 0 0 44.6rem;
+    max-width: 44.6rem;
     border-radius: 24px;
-    padding: 24px 32px;
-    min-height: 148px;
+    padding: 2.4rem 3.2rem;
+    min-height: 14.8rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1904,7 +1904,7 @@
     }
 
     @media (max-width: 767px) {
-      padding: 20px 24px;
+      padding: 2rem 2.4rem;
       min-height: auto;
     }
 
@@ -1918,15 +1918,15 @@
 
     .card-title {
       
-      font-size: 24px;
+      font-size: 2.4rem;
       font-weight: 700;
       color: #17191b;
       line-height: 1.5;
-      margin: 0 0 16px 0;
+      margin: 0 0 1.6rem 0;
 
       @media (max-width: 767px) {
-        font-size: 20px;
-        margin-bottom: 12px;
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
       }
     }
 
@@ -1934,20 +1934,20 @@
       display: flex;
       align-items: flex-start;
       flex-direction: row;
-      gap: 8px;
+      gap: 0.8rem;
       padding: 0;
 
       .card-icon {
-        width: 20px;
-        height: 20px;
+        width: 2rem;
+        height: 2rem;
         flex-shrink: 0;
-        margin-top: 2px;
+        margin-top: 0.2rem;
       }
 
       .card-text {
         flex: 1;
         
-        font-size: 19px;
+        font-size: 1.9rem;
         font-weight: 400;
         color: #17191b;
         line-height: 1.5;
@@ -1956,12 +1956,12 @@
           margin: 0;
 
           &:not(:last-child) {
-            margin-bottom: 4px;
+            margin-bottom: 0.4rem;
           }
         }
 
         @media (max-width: 767px) {
-          font-size: 16px;
+          font-size: 1.6rem;
         }
       }
     }
@@ -1972,20 +1972,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px auto 0;
+    margin: 4rem auto 0;
     max-width: 303px;
-    padding: 0 20px;
+    padding: 0 2rem;
 
     @media (max-width: 767px) {
-      padding: 0 16px;
+      padding: 0 1.6rem;
     }
 
     .connector-logo {
       position: relative;
       z-index: 1;
-      width: 284px;
-      height: 52px;
-      margin-bottom: 8px;
+      width: 28.4rem;
+      height: 5.2rem;
+      margin-bottom: 0.8rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1997,18 +1997,18 @@
       }
 
       @media (max-width: 767px) {
-        width: 240px;
-        height: 44px;
+        width: 24rem;
+        height: 4.4rem;
       }
     }
 
     .connector-arrow {
-      width: 303px;
-      height: 110px;
+      width: 30.3rem;
+      height: 11rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      transform: scaleY(-1) translateY(30px);
+      transform: scaleY(-1) translateY(3rem);
 
       img {
         width: 100%;
@@ -2018,8 +2018,8 @@
 
       @media (max-width: 767px) {
         width: 100%;
-        max-width: 303px;
-        height: 80px;
+        max-width: 30.3rem;
+        height: 8rem;
       }
     }
   }
@@ -2027,30 +2027,30 @@
   .enhanced-debt-footer {
     background: #f48f01;
     border-radius: 1000px;
-    height: 75px;
+    height: 7.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    max-width: 593px;
+    max-width: 59.3rem;
     margin-top: 0;
 
     p {
       
-      font-size: 26px;
+      font-size: 2.6rem;
       color: #ffffff;
       line-height: 1.5;
       margin: 0;
       text-align: center;
 
       @media (max-width: 767px) {
-        font-size: 20px;
-        padding: 0 20px;
+        font-size: 2rem;
+        padding: 0 2rem;
       }
     }
 
     @media (max-width: 767px) {
-      height: 64px;
+      height: 6.4rem;
       max-width: 100%;
     }
   }
@@ -2066,8 +2066,8 @@
         position: absolute;
         right: -16px;
         top: 0;
-        width: 30px;
-        height: 45px;
+        width: 3rem;
+        height: 4.5rem;
         background-image: linear-gradient(to right, transparent, #fff);
     }
     // 연도 탭 래퍼
@@ -2075,20 +2075,20 @@
         display: flex;
         gap: 0;
         border-bottom: 1px solid #d2d6da;
-        margin-bottom: 40px;
+        margin-bottom: 4rem;
         position: relative; // 스크롤 인디케이터를 위한 위치 지정
 
         @include tabletLess {
             overflow-x: auto;
             display: flex;
-            gap: 12px;
+            gap: 1.2rem;
             border-bottom: none;
-            margin-bottom: 32px;
+            margin-bottom: 3.2rem;
         }
 
         @include mobile {
-            margin-bottom: 24px;
-            gap: 8px;
+            margin-bottom: 2.4rem;
+            gap: 0.8rem;
         }
     }
 
@@ -2096,13 +2096,13 @@
     .year-tab {
         flex: 1;
         cursor: pointer;
-        padding: 20px 32px;
+        padding: 2rem 3.2rem;
         transition: all 0.3s ease;
         white-space: nowrap; // 텍스트 줄바꿈 방지
 
         @include tabletLess {
-            padding: 10px 16px;
-            border-radius: 8px;
+            padding: 1rem 1.6rem;
+            border-radius: 0.8rem;
             background-color: #f5f5f5; // gray 배경
             border: 1px solid #e6e8ea;
             margin-bottom: 0;
@@ -2118,7 +2118,7 @@
             }
 
             .year-text {
-                font-size: 20px;
+                font-size: 2rem;
                 font-weight: 600;
                 color: #8a949e; // gray 텍스트
                 transition: all 0.3s ease;
@@ -2151,10 +2151,10 @@
         }
 
         @include mobile {
-            padding: 10px 20px;
+            padding: 1rem 2rem;
             
             .year-text {
-                font-size: 16px;
+                font-size: 1.6rem;
             }
         }
 
@@ -2175,7 +2175,7 @@
             }
 
             .year-text {
-                font-size: 32px;
+                font-size: 3.2rem;
                 font-weight: 700;
                 color: #8a949e;
                 transition: color 0.3s ease;
@@ -2185,7 +2185,7 @@
                 display: block; // 데스크톱에서는 border 표시
                 height: 1px;
                 background-color: #d2d6da;
-                margin-top: 12px;
+                margin-top: 1.2rem;
                 transition: all 0.3s ease;
             }
 
@@ -2199,7 +2199,7 @@
                 }
 
                 .year-border {
-                    height: 2px;
+                    height: 0.2rem;
                     background-color: #1b2025;
                 }
             }
@@ -2223,27 +2223,27 @@
     .timeline-content-flex {
         display: flex;
         flex-direction: column;
-        gap: 60px;
+        gap: 6rem;
         padding: 0;
 
         @include tabletLess {
-            gap: 48px;
+            gap: 4.8rem;
         }
 
         @include mobile {
-            gap: 40px;
+            gap: 4rem;
         }
     }
 
     // 연도별 섹션
     .timeline-year-section {
         display: flex;
-        gap: 40px;
+        gap: 4rem;
         align-items: flex-start;
         padding: 0;
 
         @include tabletLess {
-            gap: 20px;
+            gap: 2rem;
             &::before {
                 display: none;
             }
@@ -2259,7 +2259,7 @@
         flex-shrink: 0;
 
         @include tabletLess {
-            width: 200px;
+            width: 20rem;
         }
 
         @include mobile {
@@ -2268,16 +2268,16 @@
     }
 
     .timeline-image-card {
-        width: 360px;
-        height: 230px;
+        width: 36rem;
+        height: 23rem;
         border-radius: 12px;
         overflow: hidden;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
         @include tabletLess {
-            width: 200px;
-            height: 266px;
-            max-width: 300px;
+            width: 20rem;
+            height: 26.6rem;
+            max-width: 30rem;
         }
 
         @include mobile {
@@ -2314,16 +2314,16 @@
             content: '';
             position: absolute;
             left: 12px; // 아이콘 중앙 위치 (24px / 2 = 12px)
-            top: 48px; // 연도 헤더 아래부터 시작
-            width: 2px;
-            height: calc(100% - 48px);
+            top: 4.8rem; // 연도 헤더 아래부터 시작
+            width: 0.2rem;
+            height: calc(100% - 4.8rem);
             background-color: #ffe4c4; // 연한 오렌지
             z-index: 0;
 
             @include tabletLess {
                 left: 10px;
-                top: 44px;
-                height: calc(100% - 44px);
+                top: 4.4rem;
+                height: calc(100% - 4.4rem);
             }
 
             @include mobile {
@@ -2349,8 +2349,8 @@
 
     .timeline-year-icon-flex {
         position: relative;
-        width: 24px;
-        height: 24px;
+        width: 2.4rem;
+        height: 2.4rem;
         flex-shrink: 0;
         display: flex;
         align-items: center;
@@ -2364,15 +2364,15 @@
         &::before {
             content: '';
             position: absolute;
-            width: 24px;
-            height: 24px;
+            width: 2.4rem;
+            height: 2.4rem;
             border-radius: 50%;
             background-color: #ffe4c4; // 연한 오렌지
             border: 1px solid #ffd4a3;
 
             @include mobile {
-                width: 20px;
-                height: 20px;
+                width: 2rem;
+                height: 2rem;
             }
         }
 
@@ -2380,22 +2380,22 @@
         &::after {
             content: '';
             position: absolute;
-            width: 8px;
-            height: 8px;
+            width: 0.8rem;
+            height: 0.8rem;
             border-radius: 50%;
             background-color: #f48f01; // primary 오렌지
             z-index: 1;
 
             @include mobile {
-                width: 6px;
-                height: 6px;
+                width: 0.6rem;
+                height: 0.6rem;
             }
         }
     }
 
 
     .timeline-year-flex {
-        font-size: 28px;
+        font-size: 2.8rem;
         font-weight: 700;
         color: #f48f01;
         line-height: 1.2;
@@ -2405,10 +2405,10 @@
     .timeline-events-flex {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 2rem;
 
         @include tabletLess {
-            gap: 16px;
+            gap: 1.6rem;
             padding: 0;
         }
     }
@@ -2416,7 +2416,7 @@
     // 이벤트 아이템
     .timeline-event-item-flex {
         display: flex;
-        gap: 24px;
+        gap: 2.4rem;
         align-items: flex-start;
 
         @include tabletLess {
@@ -2426,37 +2426,37 @@
     }
 
     .timeline-date-flex {
-        font-size: 17px;
+        font-size: 1.7rem;
         font-weight: 600;
         color: #17191b;
         white-space: nowrap;
         flex-shrink: 0;
-        min-width: 100px;
+        min-width: 10rem;
 
         @include tabletLess {
-            font-size: 16px;
-            min-width: 90px;
+            font-size: 1.6rem;
+            min-width: 9rem;
             text-align: left;
         }
     }
 
     .timeline-event-content-flex {
-        font-size: 17px;
+        font-size: 1.7rem;
         line-height: 1.6;
         color: #17191b;
         flex: 1;
 
         @include tabletLess {
-            font-size: 16px;
+            font-size: 1.6rem;
             text-align: left;
         }
 
         span {
             display: block;
-            margin-top: 8px;
+            margin-top: 0.8rem;
 
             @include mobile {
-                margin-top: 6px;
+                margin-top: 0.6rem;
             }
         }
     }

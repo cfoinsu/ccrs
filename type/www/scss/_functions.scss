@@ -1,0 +1,13 @@
+@function rem($px) {
+  $base: 10px;
+  $value: $px;
+  
+  // 단위를 제거하기 위한 로직
+  @if type-of($px) == 'number' and not unitless($px) {
+    $value: $px / ($px * 0 + 1);
+  }
+  
+  $base-value: $base / ($base * 0 + 1);
+  
+  @return #{$value / $base-value}rem;
+}
