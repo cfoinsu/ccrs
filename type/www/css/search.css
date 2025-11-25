@@ -700,6 +700,7 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
+  gap: 0;
 }
 .krds-tab-area.layer .tab.line.full.search-tabs li[role=tab] {
   -webkit-box-flex: 1;
