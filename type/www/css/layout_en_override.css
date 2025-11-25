@@ -652,12 +652,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 4rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.en #header .gnb-wrap > nav .gnb > li .depth2 {
+  height: 335px;
 }
 .en #header.header-en .gnb-wrap .logo {
   position: static;
@@ -1700,7 +1704,7 @@
   line-height: 1.5;
 }
 .en #header .gnb-wrap > nav {
-  width: auto;
+  width: calc(100% - 4rem);
 }
 .en #header .gnb-wrap > nav .gnb > li .depth2 {
   padding-top: 1rem;

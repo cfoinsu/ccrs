@@ -64,7 +64,6 @@
 .en .section .section-title::before {
   display: none;
 }
-
 .popslider-Wrap {
   overflow: hidden;
   position: fixed;
