@@ -3266,7 +3266,7 @@
 
 .purpose-text {
   text-align: center;
-  font-size: 17px;
+  font-size: 1.7rem;
   color: #111;
   font-weight: 600;
   line-height: 1.5;
@@ -3458,7 +3458,7 @@
 
 .history-date {
   color: #ed7801;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   font-family: 'Pretendard GOV', sans-serif;
   line-height: 1.5;
@@ -3466,11 +3466,12 @@
 
 .history-desc {
   color: #17191b;
-  font-size: 19px;
+  font-size: 1.9rem;
   font-family: 'Pretendard GOV', sans-serif;
   line-height: 1.5;
   word-break: keep-all;
   flex: 1;
+  margin-top: 5px;
 }
 
 /* Service Cards Styles */
@@ -3503,7 +3504,7 @@
 
 .service-card-title {
   color: #1d3d82;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 700;
   font-family: 'Pretendard GOV', sans-serif;
   line-height: 1.5;
@@ -3520,7 +3521,7 @@
 
 .service-card-desc {
   color: #17191b;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-family: 'Pretendard GOV', sans-serif;
   line-height: 1.5;
   width: 100%;
@@ -3595,7 +3596,7 @@
 }
 
 .common-banner .banner-title {
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 700;
   color: #17191b;
   line-height: 1.5;
@@ -3613,7 +3614,7 @@
 }
 
 .common-banner .banner-phone {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   color: #012063;
   font-family: 'Pretendard GOV', sans-serif;
