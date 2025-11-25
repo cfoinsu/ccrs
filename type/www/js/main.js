@@ -144,6 +144,7 @@ function initSwiperSliders() {
       autoplay: {
         delay: 4000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
       loop: true,
       loopedSlides: 3,
@@ -168,6 +169,7 @@ function initSwiperSliders() {
       autoplay: {
         delay: 4000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
       loop: true,
       loopedSlides: 3,
@@ -192,6 +194,7 @@ function initSwiperSliders() {
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
       loop: true,
       loopedSlides: 3,
