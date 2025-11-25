@@ -6393,8 +6393,7 @@ table .krds-info-list>li {
 
 .item-share.active {
     display: block;
-    top: 6rem;
-    right: 0;
+    top: 0;
     z-index: 100;
 }
 
@@ -6402,7 +6401,18 @@ table .krds-info-list>li {
     height: auto !important;
     width: 25rem;
 }
-
+.utility-right .appdown+.item-share.active {
+    top: 4rem;
+    right: 0;
+}
+.card-actions .appdown+.item-share.active {
+    top: 40rem;
+    right: 17rem;
+}
+.g-grid-wrap.contect .appdown+.item-share.active {
+    top: 10rem;
+    right: 22rem;
+}
 .appdown+.item-share.active .g-qr-box {
     display: flex;
     justify-content: space-between;
