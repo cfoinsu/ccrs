@@ -152,11 +152,7 @@
                                                 <div class="krds-disclosure conts-expand-area txt-box">
                                                 <div class="expand-wrap" id="disclosure-o70uns3" inert="">
                                                     <div class="conts-desc">
-                                                    신용회복위원회는 지난 21년 동안 과중한 채무로 어려움에 처한 서민의 채무문제 해결과 생활 안정을 위해 지속적으로 제도를 발전시키며 고객을 생각하는 마음으로 최선을 다해왔습니다.
-                                                    신용회복위원회는 지난 21년 동안 과중한 채무로 어려움에 처한 서민의 채무문제 해결과 생활 안정을 위해 지속적으로 제도를 발전시키며 고객을 생각하는 마음으로 최선을 다해왔습니다.
-                                                    신용회복위원회는 지난 21년 동안 과중한 채무로 어려움에 처한 서민의 채무문제 해결과 생활 안정을 위해 지속적으로 제도를 발전시키며 고객을 생각하는 마음으로 최선을 다해왔습니다.
-                                                    신용회복위원회는 지난 21년 동안 과중한 채무로 어려움에 처한 서민의 채무문제 해결과 생활 안정을 위해 지속적으로 제도를 발전시키며 고객을 생각하는 마음으로 최선을 다해왔습니다.
-                                                    신용회복위원회는 지난 21년 동안 과중한 채무로 어려움에 처한 서민의 채무문제 해결과 생활 안정을 위해 지속적으로 제도를 발전시키며 고객을 생각하는 마음으로 최선을 다해왔습니다.
+                                                    신용활 안정을 위해 지속적으로 제도를 발전시키며 고객을 생각하는 마음으로 최선을 다해왔습니다.
                                                     </div>
                                                 </div>
                                                 <button type="button" class="btn-conts-expand" aria-expanded="false" aria-controls="disclosure-o70uns3">2023년 신용회복 수기집 자세히 보기</button>
@@ -276,5 +272,18 @@
     <script src="/type/www/js/script.js"></script> 
     공통 header 분리하기 위해 init.js 임시 추가  -->
 	<script src="includes/init.js?ver=5.5"></script>
+    <script>
+        $(function () {
+            var $wrap = $('.conts-expand-area.txt-box .expand-wrap');
+            var $btn  = $('.btn-conts-expand');
+
+            // 실제 렌더된 높이 측정
+            var h = $wrap.outerHeight(); // padding 포함. 필요하면 .height()로 변경
+
+            if (h <= 150) {
+                $btn.hide(); // 또는 $btn.addClass('is-hidden');
+            }
+        });
+    </script>
 </body>
 </html>
