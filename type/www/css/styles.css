@@ -6413,6 +6413,10 @@ table .krds-info-list>li {
     top: 10rem;
     right: 22rem;
 }
+.page-actions .item-share.active {
+    top: 6rem;
+    right: 0;
+}
 .appdown+.item-share.active .g-qr-box {
     display: flex;
     justify-content: space-between;
