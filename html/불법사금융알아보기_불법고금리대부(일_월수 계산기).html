@@ -227,8 +227,8 @@
                                                             <div class="form-group">
                                                                 <label for="loanAmount1" class="form-label">상환하기로 한
                                                                     횟수</label>
-                                                                <input type="number" maxlength="4" id="loanAmount1" class="form-input"
-                                                                    placeholder="">
+                                                                <input type="number" maxlength="4" id="loanAmount1"
+                                                                    class="form-input" placeholder="">
                                                             </div>
 
                                                             <div class="form-group">
@@ -322,7 +322,8 @@
                                                                 원리금</label>
                                                             <div class="input-with-unit">
                                                                 <input type="text" inputmode="numeric" pattern="[0-9]*"
-                                                                    id="repayAmount1-1" class="form-input" placeholder="">
+                                                                    id="repayAmount1-1" class="form-input"
+                                                                    placeholder="">
                                                                 <span class="unit">원</span>
                                                             </div>
                                                         </div>
@@ -449,8 +450,57 @@
                                     </div>
                                 </div>
 
-                                <div class="g-img" style="width: 100%;">
-                                    <img src="/type/www/images/img/불법사금융_신고안내.png?ver=5.5" alt="" style="width:100%;">
+                                <div class="common-banner">
+                                    <div class="banner-item">
+                                        <div class="banner-icon">
+                                            <img src="/type/www/images/logo/police_symbol.png?ver=5.5" alt="경찰청 아이콘">
+                                        </div>
+                                        <p class="banner-title">불법사금융 피해신고</p>
+                                        <div class="banner-contact">
+                                            <p class="banner-org">경찰청</p>
+                                            <p class="banner-phone">112</p>
+                                        </div>
+                                    </div>
+                                    <div class="banner-item">
+                                        <div class="banner-icon">
+                                            <img src="/type/www/images/logo/fss_symbol.png?ver=5.5" alt="금융감독원 아이콘">
+                                        </div>
+                                        <p class="banner-title">불법사금융 피해상담<br>채무자대리인제도 신청</p>
+                                        <div class="banner-contact">
+                                            <p class="banner-org">금융감독원</p>
+                                            <p class="banner-phone">1332</p>
+                                        </div>
+                                    </div>
+                                    <div class="banner-item">
+                                        <div class="banner-icon">
+                                            <img src="/type/www/images/logo/klac_symbol.png?ver=5.5" alt="대한법률구조공단 아이콘">
+                                        </div>
+                                        <p class="banner-title">법률상담</p>
+                                        <div class="banner-contact">
+                                            <p class="banner-org">대한법률구조공단</p>
+                                            <p class="banner-phone">132</p>
+                                        </div>
+                                    </div>
+                                    <div class="banner-item">
+                                        <div class="banner-icon">
+                                            <img src="/type/www/images/logo/knifa_symbol.png?ver=5.5" alt="서민금융진흥원 아이콘">
+                                        </div>
+                                        <p class="banner-title">정책서민금융상담</p>
+                                        <div class="banner-contact">
+                                            <p class="banner-org">서민금융진흥원</p>
+                                            <p class="banner-phone">1397</p>
+                                        </div>
+                                    </div>
+                                    <div class="banner-item">
+                                        <div class="banner-icon">
+                                            <img src="/type/www/images/logo/ccrs_symbol.png?ver=5.5" alt="신용회복위원회 아이콘">
+                                        </div>
+                                        <p class="banner-title">채무상담<br>불법사금융 피해상담</p>
+                                        <div class="banner-contact">
+                                            <p class="banner-org">신용회복위원회</p>
+                                            <p class="banner-phone">1600-5500</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -592,26 +642,26 @@
                 });
             });
         });
-        $(document).on('input', '.input-with-unit .form-input', function() {
+        $(document).on('input', '.input-with-unit .form-input', function () {
             let val = $(this).val().replace(/[^0-9]/g, '');
-            if(val) {
+            if (val) {
                 val = val.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
             }
             $(this).val(val);
         });
         // 이자율 계산기(월수 , "이자율을 모를 때")
-        $('.sec-sm:contains("이자율 계산기") .calculator-box:contains("이자율을 모를 때") .btn-calculate').click(function (){
+        $('.sec-sm:contains("이자율 계산기") .calculator-box:contains("이자율을 모를 때") .btn-calculate').click(function () {
             const fieldsForRateUnknown = [
-                { id: "loanAmount1",   label: "상환하기로 한 횟수" },
-                { id: "repayAmount1",  label: "1회에 상환하는 원리금(원)" },
+                { id: "loanAmount1", label: "상환하기로 한 횟수" },
+                { id: "repayAmount1", label: "1회에 상환하는 원리금(원)" },
                 { id: "borrowAmount1", label: "차입원금(원)" },
             ];
 
             if (!validateInputs(fieldsForRateUnknown)) return;
             // input id 네이밍에 따라 알아서 매칭
-            var periods   = minusComma($('#loanAmount1').val());
-            var payment   = minusComma($('#repayAmount1').val());
-            var present   = minusComma($('#borrowAmount1').val());
+            var periods = minusComma($('#loanAmount1').val());
+            var payment = minusComma($('#repayAmount1').val());
+            var present = minusComma($('#borrowAmount1').val());
 
             let result_val;
 
@@ -620,23 +670,23 @@
             $(this).closest('.calculator-box').find('.result-value').text(result_val + "%");
         });
         // 일수 계산기(일수, "이자율을 모를 때")
-        $('.sec-sm:contains("일수 계산기") .calculator-box:contains("이자율을 모를 때") .btn-calculate').click(function (){
+        $('.sec-sm:contains("일수 계산기") .calculator-box:contains("이자율을 모를 때") .btn-calculate').click(function () {
             const fieldsForRateUnknown = [
-                { id: "loanAmount1-1",   label: "상환하기로 한 횟수" },
-                { id: "repayAmount1-1",  label: "1회에 상환하는 원리금(원)" },
+                { id: "loanAmount1-1", label: "상환하기로 한 횟수" },
+                { id: "repayAmount1-1", label: "1회에 상환하는 원리금(원)" },
                 { id: "borrowAmount1-1", label: "차입원금(원)" },
-                { id: "repayPeriod1-1",  label: "납입주기" },
+                { id: "repayPeriod1-1", label: "납입주기" },
             ];
 
             if (!validateInputs(fieldsForRateUnknown)) return;
             // input id 네이밍에 따라 알아서 매칭
-            var periods   = minusComma($('#loanAmount1-1').val());
-            var payment   = minusComma($('#repayAmount1-1').val());
-            var present   = minusComma($('#borrowAmount1-1').val());
+            var periods = minusComma($('#loanAmount1-1').val());
+            var payment = minusComma($('#repayAmount1-1').val());
+            var present = minusComma($('#borrowAmount1-1').val());
             var periodTag = $('#repayPeriod1-1'); // 일수계산기만 사용
 
             let result_val;
-            if(periodTag.length) {
+            if (periodTag.length) {
                 // 일수계산기 (납입주기 있음)
                 var future = minusComma(periodTag.val());
                 result_val = (setRate(periods, payment, -present, 0, 0) * (365 / future) * 100).toFixed(1);
@@ -649,37 +699,37 @@
         });
 
         // 원리금 계산기(일수, "이자율을 알고 있을 때")
-        $('.sec-sm:contains("이자율 계산기") .calculator-box:contains("이자율을 알고 있을 때") .btn-calculate').click(function (){
+        $('.sec-sm:contains("이자율 계산기") .calculator-box:contains("이자율을 알고 있을 때") .btn-calculate').click(function () {
             const fieldsForRateKnown = [
                 { id: "interestRate2-2", label: "연이자율(%)" },
-                { id: "loanAmount2-2",   label: "상환하기로 한 횟수" },
+                { id: "loanAmount2-2", label: "상환하기로 한 횟수" },
                 { id: "borrowAmount2-2", label: "차입원금(원)" },
             ];
 
             if (!validateInputs(fieldsForRateKnown)) return;
-            
-		    var rate     = minusComma($('#interestRate2-2').val());
-            var periods  = minusComma($('#loanAmount2-2').val());
-            var present  = minusComma($('#borrowAmount2-2').val());
-		     
-			result_val =  (setPmt(present, rate, periods)).toFixed(1);
+
+            var rate = minusComma($('#interestRate2-2').val());
+            var periods = minusComma($('#loanAmount2-2').val());
+            var present = minusComma($('#borrowAmount2-2').val());
+
+            result_val = (setPmt(present, rate, periods)).toFixed(1);
 
             $(this).closest('.calculator-box').find('.result-value').text(addComma(result_val) + "원");
         });
 
-        $('.sec-sm:contains("일수 계산기") .calculator-box:contains("이자율을 알고 있을 때") .btn-calculate').click(function (){
+        $('.sec-sm:contains("일수 계산기") .calculator-box:contains("이자율을 알고 있을 때") .btn-calculate').click(function () {
             const fieldsForRateKnown = [
                 { id: "interestRate2", label: "연이자율(%)" },
-                { id: "loanAmount2",   label: "상환하기로 한 횟수" },
+                { id: "loanAmount2", label: "상환하기로 한 횟수" },
                 { id: "borrowAmount2", label: "차입원금(원)" },
-                { id: "repayPeriod2",  label: "납입주기" },
+                { id: "repayPeriod2", label: "납입주기" },
             ];
 
             if (!validateInputs(fieldsForRateKnown)) return;
 
-            var rate     = minusComma($('#interestRate2').val());
-            var periods  = minusComma($('#loanAmount2').val());
-            var present  = minusComma($('#borrowAmount2').val());
+            var rate = minusComma($('#interestRate2').val());
+            var periods = minusComma($('#loanAmount2').val());
+            var present = minusComma($('#borrowAmount2').val());
 
             let result_val;
 
@@ -687,7 +737,7 @@
             result_val = (setPmt(present, rate, periods)).toFixed(1);
             $(this).closest('.calculator-box').find('.result-value').text(addComma(result_val) + "원");
         });
-        
+
         function minusComma(val) {
             return String(val || '').replace(/,/g, '');
         }
@@ -696,43 +746,43 @@
             return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         }
         // setRate, setPmt 함수는 기존코드와 동일하게 사용
-        function setPmt(a,b,c){
+        function setPmt(a, b, c) {
             var pmt;
-            pmt =  (a * ((b * 0.01) / 12))
-                            * Math.pow((1 + ((b * 0.01) / 12)), c )
-                            /(Math.pow((1 + ((b * 0.01) / 12)), c ) - 1 );
+            pmt = (a * ((b * 0.01) / 12))
+                * Math.pow((1 + ((b * 0.01) / 12)), c)
+                / (Math.pow((1 + ((b * 0.01) / 12)), c) - 1);
             return pmt;
         }
 
-        function setRate(periods, payment, present, future, type, guess) {                               
-            guess = (guess === undefined) ? 0.01 : guess;                 
-            future = (future === undefined) ? 0 : future;                 
-            type = (type === undefined) ? 0 : type;                       
+        function setRate(periods, payment, present, future, type, guess) {
+            guess = (guess === undefined) ? 0.01 : guess;
+            future = (future === undefined) ? 0 : future;
+            type = (type === undefined) ? 0 : type;
 
-            var epsMax = 1e-10;                                           
-            var iterMax = 10;                                             
+            var epsMax = 1e-10;
+            var iterMax = 10;
 
-            var y, y0, y1, x0, x1 = 0,                                   
-            f = 0,                                                       
-            i = 0;                                                       
+            var y, y0, y1, x0, x1 = 0,
+                f = 0,
+                i = 0;
 
-            var rate = guess;                                            
+            var rate = guess;
 
-            if (Math.abs(rate) < epsMax) {                                
-                y = present * (1 + periods * rate) + payment * (1 + rate * type) * periods + future;      
-            } else {                                                     
-                f = Math.exp(periods * Math.log(1 + rate));              
+            if (Math.abs(rate) < epsMax) {
+                y = present * (1 + periods * rate) + payment * (1 + rate * type) * periods + future;
+            } else {
+                f = Math.exp(periods * Math.log(1 + rate));
                 y = present * f + payment * (1 / rate + type) * (f - 1) + future;
-            }                                                            
-                y0 = present + payment * periods + future;               
-                y1 = present * f + payment * (1 / rate + type) * (f - 1) + future;
-                i = x0 = 0;  
-                x1 = rate;  
-            while ((Math.abs(y0 - y1) > epsMax) && (i < iterMax)) {       
-                rate = (y1 * x0 - y0 * x1) / (y1 - y0); 
-                x0 = x1; 
-                x1 = rate; 
-                if (Math.abs(rate) < epsMax) { 
+            }
+            y0 = present + payment * periods + future;
+            y1 = present * f + payment * (1 / rate + type) * (f - 1) + future;
+            i = x0 = 0;
+            x1 = rate;
+            while ((Math.abs(y0 - y1) > epsMax) && (i < iterMax)) {
+                rate = (y1 * x0 - y0 * x1) / (y1 - y0);
+                x0 = x1;
+                x1 = rate;
+                if (Math.abs(rate) < epsMax) {
                     y = present * (1 + periods * rate) + payment * (1 + rate * type) * periods + future;
                 } else {
                     f = Math.exp(periods * Math.log(1 + rate));
@@ -741,8 +791,8 @@
                 y0 = y1;
                 y1 = y;
                 ++i;
-            }   
-            return rate;                                               
+            }
+            return rate;
         }
 
         function validateInputs(fields) {
