@@ -3550,4 +3550,7 @@
   .history-item {
     flex-direction: column;
   }
+  .history-list::before {
+    display: none;
+  }
 }
