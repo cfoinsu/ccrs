@@ -2106,7 +2106,7 @@
   .financial-support-section .welfare-support-arrow,
   .employment-support-section .financial-support-arrow,
   .employment-support-section .employment-support-arrow,
-  .employment-support-section .welfare-support-arrow,
+  .employment-support_section .welfare-support-arrow,
   .welfare-support-section .financial-support-arrow,
   .welfare-support-section .employment-support-arrow,
   .welfare-support-section .welfare-support-arrow {
@@ -3534,23 +3534,118 @@
   .service-row {
     flex-direction: column;
   }
+
   .purpose-logo {
     width: 100px;
     height: 100px;
     top: 33%;
     left: 50%;
   }
+
   .purpose-container {
     flex-direction: column;
     gap: 3rem;
   }
+
   .purpose-item {
     width: 100%;
   }
+
   .history-item {
     flex-direction: column;
   }
+
   .history-list::before {
     display: none;
+  }
+}
+
+/*불법사금융 신고상담*/
+.common-banner {
+  background-color: #f6faff;
+  border-radius: 24px;
+  padding: 24px 0;
+  display: flex;
+  width: 100%;
+  margin: 32px 0;
+}
+
+.common-banner .banner-item {
+  flex: 1;
+  padding: 0 18px;
+  border-right: 1px solid #d2d6da;
+  position: relative;
+  min-height: 170px;
+}
+
+.common-banner .banner-item:last-child {
+  border-right: none;
+}
+
+.common-banner .banner-icon {
+  width: 47px;
+  height: 47px;
+  margin-bottom: 10px;
+}
+
+.common-banner .banner-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.common-banner .banner-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #17191b;
+  line-height: 1.5;
+  font-family: 'Pretendard GOV', sans-serif;
+  margin: 0;
+}
+
+.common-banner .banner-org {
+  font-size: 16px;
+  font-weight: 400;
+  color: #012063;
+  font-family: 'Pretendard GOV', sans-serif;
+  line-height: 1.3;
+  margin: 10px 0 0 0;
+}
+
+.common-banner .banner-phone {
+  font-size: 24px;
+  font-weight: 700;
+  color: #012063;
+  font-family: 'Pretendard GOV', sans-serif;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.banner-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-contact {
+    margin-top: auto;
+}
+
+@media (max-width: 767px) {
+  .common-banner {
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .common-banner .banner-item {
+    border-right: none;
+    border-bottom: 1px solid #d2d6da;
+    padding: 0 0 24px 0;
+    min-height: auto;
+  }
+
+  .common-banner .banner-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
   }
 }
