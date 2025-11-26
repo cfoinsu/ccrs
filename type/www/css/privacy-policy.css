@@ -659,7 +659,7 @@ ol.list-number {
   font-weight: 600;
   color: #01133b;
 }
-.popup-content ul {
+/* .popup-content ul {
   margin: 1.5rem 0;
   padding-left: 2rem;
 }
@@ -678,7 +678,7 @@ ol.list-number {
   height: 0.4rem;
   background: #01133b;
   border-radius: 50%;
-}
+} */
 .popup-content a {
   color: #0066cc;
   text-decoration: none;
