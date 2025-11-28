@@ -2410,11 +2410,11 @@ window.addEventListener("DOMContentLoaded", () => {
   krds_mainMenuMobile.init();
   krds_sideNavigation.init();
   krds_tab.init();
-  // krds_accordion.init();
+  krds_accordion.init();
   // 모든 아코디언이 닫아야 할 때 (allclose)
   //krds_accordion.init('allclos);
   // 모든 아코디언이 열어야 할 때 (allopen)
-  krds_accordion.init('allopen');
+  // krds_accordion.init('allopen');
   // 첫번째만 열려야 할 때 (프론트)
   // krds_accordion.init('front');
 

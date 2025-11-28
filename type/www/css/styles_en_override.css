@@ -1274,8 +1274,9 @@
   .en .core-values-section .core-values-diagram .value-node.value-bottom-right {
     top: 35rem;
     left: 50%;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    width: 20rem;;
+    -webkit-transform: translateX(130px);
+            transform: translateX(130px);
   }
 }
 @media (max-width: 767px) {

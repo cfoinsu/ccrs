@@ -8999,9 +8999,11 @@ a.customer-service-card {
 }
 
 @media (max-width: 1400px) {
+    .grouptree-team-list,
+    .grouptree-list,
     .grouptree-bg-line {
         display: none;
-    }
+    }    
     .region-branch-title {
         display: block;
     }

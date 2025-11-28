@@ -705,3 +705,18 @@
     font-size: 1.5rem;
     padding: 4px 8px;
 }
+@media (max-width: 1240px) {
+    .additional-info .info-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 24px;
+    }
+    .additional-info .info-list .info-text-content {
+        max-width: 100%;
+        border-right: none;
+        padding: 0;
+        margin-right: 0;
+        margin: 0;
+    }
+}

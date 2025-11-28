@@ -4087,7 +4087,7 @@ caption {
 }
 .krds-accordion .accordion-item.active .accordion-collapse {
   height: auto;
-  max-height: 1000vh;
+  max-height: 10000vh;
   transition: all 1.5s ease-in-out;
   visibility: visible;
   overflow: visible;

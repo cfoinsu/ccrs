@@ -17,7 +17,7 @@
 			<div class="sw-pagingbox">
 				<div class="topswiper-pagination"></div>
 				<div class="top-banner-control">
-					<button type="button" class="autoplay-toggle on" aria-label="자동재생 일시정지">
+					<button type="button" class="autoplay-toggle" aria-label="자동재생 일시정지">
 						<span class="text sr-only">일시정지</span>
 					</button>
 				</div>
@@ -43,7 +43,8 @@
 			// disableOnInteraction: false,
 			// },
 			loop: true,
-			loopedSlides: 2,
+			watchOverflow: true,            // 슬라이드 1개면 pager, 버튼 숨김[web:3][web:7]
+  			allowTouchMove: slideLength > 1,
 			pagination: {
 			el: ".topswiper-pagination",
 			clickable: true,
