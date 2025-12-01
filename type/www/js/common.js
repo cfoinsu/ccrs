@@ -1,9 +1,9 @@
 //aos init
-AOS.init({
-    duration: 600,
-    easing: "ease",
-    offset: 0,
-});
+// AOS.init({
+//     duration: 600,
+//     easing: "ease",
+//     offset: 0,
+// });
 
 /**
  * Common JavaScript functions for Korean pages
