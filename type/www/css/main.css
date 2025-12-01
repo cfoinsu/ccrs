@@ -2913,6 +2913,7 @@ body:has(.intro.show) {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 1.4;
+  width: 50%;
 }
 .grid-col3 .bottombox .bottombox-txt strong {
   display: block;
@@ -2929,7 +2930,7 @@ body:has(.intro.show) {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 19.5rem;
+  height: 100%;
   z-index: -1;
 }
 @media (max-width: 1279px) {
