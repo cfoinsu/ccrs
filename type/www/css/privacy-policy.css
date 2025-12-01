@@ -419,7 +419,7 @@ ol.list-number {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 4rem;
-  margin: 7rem 0 0;
+  margin: 2rem 0 0;
   padding: 0;
   list-style: none;
 }
