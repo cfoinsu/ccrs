@@ -3423,6 +3423,9 @@ body aside {
     .g-wrap .g-grid-wrap {
         grid-template-columns: auto;
     }
+    .g-wrap .g-grid-wrap.unit2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .g-wrap .g-btn-area.evenly {
@@ -3440,6 +3443,7 @@ body aside {
     .g-wrap .g-flex {
         flex-direction: column;
         gap: 20px;
+        align-items: flex-start;
     }
     .g-wrap .g-flex:nth-child(even) {
         flex-direction: column-reverse;
@@ -8454,6 +8458,12 @@ table .table-center {
     margin: 8px auto 0 auto;
 }
 
+@media (max-width: 768px) {
+    .loan-total-box {
+        width: 100%;
+    }
+}
+
 .loan-total-box .price-tit {
     font-size: 2.6rem;
     font-weight: 700;
@@ -9018,4 +9028,18 @@ a.customer-service-card {
 .fline {
     display: flex;
     gap: 0.2rem;
+}
+
+/*이미지 pc, mo 교체*/
+.img-mo {
+    display:none;
+}
+
+@media (max-width: 767px) {
+    .img-pc {
+        display:none;
+    }
+    .img-mo {
+        display:block;
+    }
 }
