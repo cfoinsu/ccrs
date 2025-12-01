@@ -289,7 +289,7 @@ $(document).ready(function() {
                             <i class="icon" aria-hidden="true">
                                 <img src="/type/www/img/icons/icon_logo_facebook.svg" alt="">
                             </i> 
-                            <span>facebook</span>
+                            <span>Facebook</span>
                         </a>
                         <a href="javascript:;" class="_btnX" title="new window">
                             <i class="icon" aria-hidden="true">
@@ -301,37 +301,37 @@ $(document).ready(function() {
                             <i class="icon" aria-hidden="true">
                                 <img src="/type/www/img/icons/icon_logo_kakao.svg" alt="">
                             </i> 
-                            <span>kakao story</span>
+                            <span>Kakao Story</span>
                         </a>
                         <a href="javascript:;" class="_btnBand" title="new window">
                             <i class="icon" aria-hidden="true">
                                 <img src="/type/www/img/icons/icon_logo_band.svg" alt="">
                             </i> 
-                            <span>naver band</span>
+                            <span>Naver Band</span>
                         </a>
                         <a href="javascript:;" class="_btnBlog" title="new window">
                             <i class="icon" aria-hidden="true">
                                 <img src="/type/www/img/icons/icon_logo_blog.svg" alt="">
                             </i> 
-                            <span>naver blog</span>
+                            <span>Naver Blog</span>
                         </a>
                         <a href="javascript:;" class="_btnTumblr" title="new window">
                             <i class="icon" aria-hidden="true">
                                 <img src="/type/www/img/icons/icon_logo_tumblr.svg" alt="">
                             </i> 
-                            <span>tumblr</span>
+                            <span>Tumblr</span>
                         </a>
                         <a href="javascript:;" class="_btnPinter" title="new window">
                             <i class="icon" aria-hidden="true">
                                 <img src="/type/www/img/icons/icon_logo_pinter.svg" alt="">
                             </i> 
-                            <span>pinterest</span>
+                            <span>Pinterest</span>
                         </a>
                         <a href="javascript:;" class="_btnInsta" title="new window">
                             <i class="icon" aria-hidden="true">
                                 <img src="/type/www/img/icons/icon_logo_insta.svg" alt="">
                             </i> 
-                            <span>instagram</span>
+                            <span>Instagram</span>
                         </a>
                     </div>
                     <button type="button" class="btn-close">
