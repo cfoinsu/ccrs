@@ -7549,6 +7549,8 @@ table .table-center {
 
 .postion {
     position: relative;
+    background-color: #F6FAFF;
+    border-radius: 24px;
 }
 
 .postion .positionbtn {
@@ -7564,7 +7566,7 @@ table .table-center {
     align-items: center;
     justify-content: center;
     top: 255px;
-    left: 112px;
+    left: 132px;
     color: transparent;
     background-color: transparent;
     font-weight: 400;
@@ -7577,96 +7579,132 @@ table .table-center {
 }
 .postion .positionbtn.posbtn01 {
     top: 77px;
-    left: 666px;
+    left: 687px;
 }
 
 .postion .positionbtn.posbtn02 {
     width: 139px;
     height: 30px;
     top: 110px;
-    left: 112px;
+    left: 132px;
 }
 
 .postion .positionbtn.posbtn03 {
     top: 122px;
-    left: 667px;
+    left: 687px;
 }
 
 .postion .positionbtn.posbtn04 {
     top: 159px;
-    left: 127px;
+    left: 147px;
 }
 
 .postion .positionbtn.posbtn05 {
     top: 182px;
-    left: 665px;
+    left: 687px;
 }
 
 .postion .positionbtn.posbtn06 {
     top: 212px;
-    left: 83px;
+    left: 103px;
 }
 
 .postion .positionbtn.posbtn07 {
     width: 139px;
     top: 234px;
-    left: 665px;
+    left: 687px;
 }
 
 .postion .positionbtn.posbtn08 {
     width: 139px;
     top: 255px;
-    left: 112px;
+    left: 132px;
 }
 
 .postion .positionbtn.posbtn09 {
     top: 288px;
-    left: 665px;
+    left: 687px;
 }
 
 .postion .positionbtn.posbtn10 {
     top: 305px;
-    left: 39px;
+    left: 59px;
 }
 
 .postion .positionbtn.posbtn11 {
     top: 348px;
-    left: 665px;
+    left: 687px;
 }
 
 .postion .positionbtn.posbtn12 {
     top: 355px;
-    left: 97px;
+    left: 117px;
 }
 
 .postion .positionbtn.posbtn13 {
     top: 400px;
-    left: 97px;
+    left: 117px;
 }
 
 .postion .positionbtn.posbtn14 {
     top: 409px;
-    left: 665px;
+    left: 687px;
 }
 
 .postion .positionbtn.posbtn15 {
     top: 480px;
-    left: 665px;
+    left: 687px;
 }
 
 .postion .positionbtn.posbtn16 {
     top: 567px;
-    left: 465px;
+    left: 485px;
 }
 
 .postion .positionbtn.posbtn17 {
     top: 567px;
-    left: 343px;
+    left: 363px;
 }
 
 .postion .positionbtn:hover {
     color: #fff;
     background-color: #F48F01;
+}
+
+/* 모바일용 2열 그리드 버튼 리스트 */
+.position-grid-mobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .position-grid-mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 0 2rem 5rem 2rem;
+    }
+    
+    .position-grid-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 8px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 1.4rem;
+        color: #333;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.2s ease;
+    }
+    
+    .position-grid-item:hover,
+    .position-grid-item:focus {
+        background-color: #F48F01;
+        border-color: #F48F01;
+        color: #fff;
+    }
 }
 
 .img-float {
@@ -9028,18 +9066,4 @@ a.customer-service-card {
 .fline {
     display: flex;
     gap: 0.2rem;
-}
-
-/*이미지 pc, mo 교체*/
-.img-mo {
-    display:none;
-}
-
-@media (max-width: 767px) {
-    .img-pc {
-        display:none;
-    }
-    .img-mo {
-        display:block;
-    }
 }
