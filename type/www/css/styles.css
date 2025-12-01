@@ -7564,6 +7564,7 @@ table .table-center {
     color: transparent;
     background-color: transparent;
     font-weight: 400;
+    letter-spacing: 0.25px;
 }
 @media (max-width: 1024px) {
     .postion .positionbtn {
@@ -7571,7 +7572,7 @@ table .table-center {
     }
 }
 .postion .positionbtn.posbtn01 {
-    top: 78px;
+    top: 77px;
     left: 666px;
 }
 
@@ -7583,8 +7584,8 @@ table .table-center {
 }
 
 .postion .positionbtn.posbtn03 {
-    top: 123px;
-    left: 665px;
+    top: 122px;
+    left: 667px;
 }
 
 .postion .positionbtn.posbtn04 {
@@ -7593,7 +7594,7 @@ table .table-center {
 }
 
 .postion .positionbtn.posbtn05 {
-    top: 183px;
+    top: 182px;
     left: 665px;
 }
 
@@ -7621,7 +7622,7 @@ table .table-center {
 
 .postion .positionbtn.posbtn10 {
     top: 305px;
-    left: 84px;
+    left: 39px;
 }
 
 .postion .positionbtn.posbtn11 {
@@ -8450,7 +8451,7 @@ table .table-center {
     background-size: 600px;
     width: 600px;
     height: 75px;
-    margin: 0 auto;
+    margin: 8px auto 0 auto;
 }
 
 .loan-total-box .price-tit {
