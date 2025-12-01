@@ -226,19 +226,15 @@
                                                 <div class="period">
                                                     <label class="label" for="appl-sch-sel3">기간</label>
                                                     <div class="optSetDate">
-                                                        <label for="START_DT" class="sr-only">시작 날짜</label>
-                                                        <input type="text" class="krds-input medium" name="START_DT" id="START_DT" title="시작 날짜 입력 (YYYY/MM/DD)" value="" style="width:188px;" aria-label="시작 날짜 입력"><a href="#START_DT" class="date-picker-control" title="달력 보기" id="fd-but-START_DT" role="button" aria-haspopup="true" aria-label="시작 날짜 달력 열기" tabindex="0"><span>&nbsp;</span><span class="fd-screen-reader">달력 보기</span></a>
-                                                        <span class="picker_txt" aria-hidden="true">~</span>
-                                                        <label for="END_DT" class="sr-only">종료 날짜</label>
-                                                        <input type="text" class="krds-input medium" name="END_DT" id="END_DT" title="종료 날짜 입력 (YYYY/MM/DD)" value="" style="width:188px;" aria-label="종료 날짜 입력"><a href="#END_DT" class="date-picker-control" title="달력 보기" id="fd-but-END_DT" role="button" aria-haspopup="true" aria-label="종료 날짜 달력 열기" tabindex="0"><span>&nbsp;</span><span class="fd-screen-reader">달력 보기</span></a>
+                                                        <input type="text" class="krds-input medium" name="START_DT" id="START_DT" title="시작 날짜 입력 (YYYY/MM/DD)" value="${param.START_DT}" style="width:188px;" maxlength="10"/>
+                                                        <span class="picker_txt">~</span>
+                                                        <input type="text" class="krds-input medium" name="END_DT" id="END_DT" title="종료 날짜 입력 (YYYY/MM/DD)" value="${param.END_DT}" style="width:188px;" maxlength="10"/>
                                                     </div>
-                                                    <div class="choose-date" role="radiogroup" aria-label="기간 선택">
-                                                        <input type="radio" name="dateRangeRadio" id="date1" value="30">
-                                                        <label for="date1" class="fillter-chip">최근 1개월</label>
-                                                        <input type="radio" name="dateRangeRadio" id="date2" value="90">
-                                                        <label for="date2" class="fillter-chip">최근 3개월</label>
-                                                        <input type="radio" name="dateRangeRadio" id="date3" value="choose">
-                                                        <label for="date3" class="fillter-chip">기간선택</label>
+
+                                                    <div class="choose-date">
+                                                        <button type="button" class="krds-btn medium tertiary" onclick="fn_setSearchDate('1M')">최근 1개월</button>
+                                                        <button type="button" class="krds-btn medium tertiary" onclick="fn_setSearchDate('3M')">최근 3개월</button>
+                                                        <button type="button" class="krds-btn medium tertiary" onclick="fn_setSearchDate('ALL')">전체</button>
                                                     </div>
                                                 </div>
                                             </div>

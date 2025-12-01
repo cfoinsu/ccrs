@@ -18630,7 +18630,9 @@ a:hover .d-card .c-tit {
   display: flex;
   gap: 8px;
   align-items: center;
-  margin-left: 8px;
+}
+.search-top-box .sch-filter-box .filter-form.row .period .choose-date .tertiary {
+  background-color: #fff;
 }
 
 /* 공통 - 결과 리스트 상단 */
