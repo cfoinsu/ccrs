@@ -48,28 +48,31 @@ $(function () {
 	$('.gnb > li').on('mouseleave focusout', function () {
 		$(this).removeClass('is-active');
 	});
+	$('.header').on('mouseleave focusout', function () {
+		$(this).removeClass('is-active');
+	});
 	
 //전체메뉴 click, hover 이벤트
-$(".hamburger-wrap").click(function () {
-	$(this).find('.hamburger').toggleClass("is-active");
-	$('.all-menu').toggleClass('is-active');
-	if($('.all-menu').hasClass("is-active")){
-		$(this).attr("title","대메뉴 닫기");
-	}else{
-		$(this).attr("title","대메뉴 열기");
-	}
-});
+    $(".hamburger-wrap").click(function () {
+        $(this).find('.hamburger').toggleClass("is-active");
+        $('.all-menu').toggleClass('is-active');
+        if($('.all-menu').hasClass("is-active")){
+            $(this).attr("title","대메뉴 닫기");
+        }else{
+            $(this).attr("title","대메뉴 열기");
+        }
+    });
 
-$(".all-menu-list > li").hover(function (e) {
-	if (e.type === "mouseenter") {
-		$(this).parent().addClass("darken");
-		$(this).addClass("highlight").siblings().removeClass("highlight");
-	}
-});
+    $(".all-menu-list > li").hover(function (e) {
+        if (e.type === "mouseenter") {
+            $(this).parent().addClass("darken");
+            $(this).addClass("highlight").siblings().removeClass("highlight");
+        }
+    });
 
-$(".depth3").hover(function (e) {
-	$(".depth3").removeClass("focus");
-	$(this).addClass("focus");
+    $(".depth3").hover(function (e) {
+        $(".depth3").removeClass("focus");
+        $(this).addClass("focus");
 	});
 	if ($(window).width() < 1279) {
 		mobileMenu();
@@ -530,7 +533,7 @@ $(function() {
     $('.intro').addClass('show');
     setTimeout(function () {
         $searchInput.focus();
-    }, 10);
+    }, 10); 
   }
 
   $(document).on('click', '.intro-hide .close', function() {
@@ -545,11 +548,9 @@ $(function() {
   // 팝업 오픈/클로즈 버튼 및 팝업 참조
     var $popup = $('.intro');
     var $searchInput = $('#intro-search-input');
-    var lastFocused = $('#skip-nav-container');
 
     function closePopup() {
         $popup.removeClass('show');
-        if (lastFocused) $(lastFocused).focus();
     }
 
     $(document).on('click', '.intro .close', closePopup);

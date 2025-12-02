@@ -12,6 +12,8 @@ $(function() {
     initSwiperSliders();
     // 뉴스 탭 초기화
     initNewsTabs();
+    // 스오이퍼 포커스
+    initSwiperFocus()
 });
 
 /**
@@ -158,6 +160,7 @@ function initSwiperSliders() {
         },
       },
     });
+    initSwiperFocus();
   }
 
   // 하단 배너 슬라이더
@@ -183,6 +186,7 @@ function initSwiperSliders() {
         },
       },
     });
+    initSwiperFocus();
   }
 
   // 상환 배너 슬라이더
@@ -208,6 +212,7 @@ function initSwiperSliders() {
         },
       },
     });
+    initSwiperFocus();
   }
 
   // 금융 배너 슬라이더
@@ -232,6 +237,7 @@ function initSwiperSliders() {
         },
       },
     });
+    initSwiperFocus();
   }
 }
 
@@ -261,4 +267,29 @@ function initNewsTabs() {
         $('.news-list').removeClass('active');
         $('.news-list').eq(index).addClass('active');
     });
+}
+/**
+ * 스와이퍼 포커스
+ */
+function initSwiperFocus() {
+    // 포커스되면 해당 슬라이드가 보이도록
+    $('.swiper-container').on(
+    'focus',
+    'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])',
+    function () {
+        var $slide = $(this).closest('.swiper-slide');
+        if (!$slide.length) return;
+
+        // loop 사용 여부에 따라 인덱스 구하기
+        var index = $slide.data('swiper-slide-index'); // loop일 때 원본 인덱스
+        if (typeof index === 'undefined') {
+        index = $slide.index(); // loop 사용 안 할 때
+        }
+
+        // 해당 슬라이드로 이동
+        swiper.slideToLoop
+        ? swiper.slideToLoop(index) // loop: true 인 경우
+        : swiper.slideTo(index);    // loop: false 인 경우
+    }
+    );
 }
