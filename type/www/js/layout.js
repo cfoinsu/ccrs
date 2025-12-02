@@ -148,10 +148,25 @@ $(document).ready(function () {
         var url = 'https://ichat.ccrs.or.kr/ichat/ichat.do?type=a&device=web';
         var win = window.open(url, 'popup', 'width=540,height=820,location=no,scrollbar=yes,resizable=yes');
     });
-	
-	$('.quick-item.book').click(function() {
-		$(this).toggleClass('on');
-	})
+
+    // 1) 마우스 클릭
+    $('.quick-item.book').on('click', function () {
+        $(this).toggleClass('on');
+        if ($(this).hasClass('on')) {
+            $(this).attr('title', '상담 예약신청 닫기');
+        } else {
+            $(this).attr('title', '상담 예약신청 열기');
+        }
+    });
+
+    // 2) 키보드 Enter / Space
+    $('.quick-item.book').on('keydown', function (e) {
+    // Enter(13) 또는 Space(32)
+    if (e.key === 'Enter' || e.key === ' ' || e.keyCode === 13 || e.keyCode === 32) {
+        e.preventDefault();          // Space 눌렀을 때 스크롤 방지
+        $(this).click();             // 기존 click 핸들러 재사용
+    }
+    });
 });
 $(document).ready(function() {
     $('.appdown').on('click', function() {
@@ -530,11 +545,11 @@ $(function() {
   // 팝업 오픈/클로즈 버튼 및 팝업 참조
     var $popup = $('.intro');
     var $searchInput = $('#intro-search-input');
-    var lastFocused = null;
+    var lastFocused = $('#skip-nav-container');
 
     function closePopup() {
-    $popup.removeClass('show');
-    if (lastFocused) $(lastFocused).focus();
+        $popup.removeClass('show');
+        if (lastFocused) $(lastFocused).focus();
     }
 
     $(document).on('click', '.intro .close', closePopup);
