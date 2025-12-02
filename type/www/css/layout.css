@@ -512,10 +512,12 @@ Version : v1.0
 }
 #header .header-quickmenu-box:hover {
 }
-#header .header-quickmenu-box:hover .top-box .quickmenu-btn {
+#header .header-quickmenu-box:hover .top-box .quickmenu-btn,
+#header .header-quickmenu-box:focus-within .top-box .quickmenu-btn {
   transform: rotate(180deg);
 }
-#header .header-quickmenu-box:hover .header-quickmenu-list-box {
+#header .header-quickmenu-box:hover .header-quickmenu-list-box,
+#header .header-quickmenu-box:focus-within .header-quickmenu-list-box {
   display: block;
   visibility: visible;
   opacity: 1;
