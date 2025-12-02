@@ -53,15 +53,67 @@ $(function () {
 	});
 	
 //전체메뉴 click, hover 이벤트
-    $(".hamburger-wrap").click(function () {
-        $(this).find('.hamburger').toggleClass("is-active");
-        $('.all-menu').toggleClass('is-active');
-        if($('.all-menu').hasClass("is-active")){
-            $(this).attr("title","대메뉴 닫기");
-        }else{
-            $(this).attr("title","대메뉴 열기");
+$(".hamburger-wrap").click(function () {
+    $(this).find('.hamburger').toggleClass("is-active");
+    $('.all-menu').toggleClass('is-active');
+    
+    const allmenu = document.querySelector('.all-menu');
+    const isActive = allmenu.classList.contains('is-active');
+    
+    if (isActive) {
+        $(this).attr("title", "대메뉴 닫기");
+        document.body.style.overflow = 'hidden';
+        
+        // ✅ 포커스를 메뉴 내부로 이동
+        const firstFocusable = allmenu.querySelector('a, button, [tabindex="0"]');
+        if (firstFocusable) {
+            setTimeout(() => firstFocusable.focus(), 100);
         }
-    });
+        
+        // ✅ 포커스 트랩 설정
+        allmenu.addEventListener('keydown', trapFocusAllmenu);
+    } else {
+        $(this).attr("title", "대메뉴 열기");
+        document.body.style.overflow = '';
+        allmenu.removeEventListener('keydown', trapFocusAllmenu);
+        
+        // ✅ 원래 버튼으로 포커스 복귀
+        document.getElementById('hamburgerBtn')?.focus();
+    }
+});
+
+// ✅ 포커스 트랩 함수
+function trapFocusAllmenu(e) {
+    const allmenu = document.querySelector('.all-menu');
+    
+    // ESC로 닫기
+    if (e.key === 'Escape') {
+        $('.hamburger-wrap').click(); // 닫기 트리거
+        return;
+    }
+    
+    if (e.key !== 'Tab') return;
+    
+    const focusableElements = allmenu.querySelectorAll(
+        'a[href], button:not([disabled]), [tabindex="0"]'
+    );
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+    
+    if (e.shiftKey) {
+        // Shift + Tab: 첫 번째에서 마지막으로
+        if (document.activeElement === firstElement) {
+            e.preventDefault();
+            lastElement.focus();
+        }
+    } else {
+        // Tab: 마지막에서 첫 번째로
+        if (document.activeElement === lastElement) {
+            e.preventDefault();
+            firstElement.focus();
+        }
+    }
+}
 
     $(".all-menu-list > li").hover(function (e) {
         if (e.type === "mouseenter") {
