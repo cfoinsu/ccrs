@@ -7593,8 +7593,6 @@ table .table-center {
 }
 
 .postion .positionbtn.posbtn02 {
-    width: 139px;
-    height: 30px;
     top: 110px;
     left: 112px;
 }
@@ -7626,7 +7624,6 @@ table .table-center {
 }
 
 .postion .positionbtn.posbtn08 {
-    width: 139px;
     top: 255px;
     left: 112px;
 }
