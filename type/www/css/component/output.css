@@ -1066,8 +1066,10 @@ body {
 
 *:focus {
   outline: none !important;
+  box-sizing: border-box;
   outline-offset: 0;
   box-shadow: none !important;
+  border: 3px dashed #AB0000 !important;
   transition: outline 0s, box-shadow 0s !important;
 }
 
