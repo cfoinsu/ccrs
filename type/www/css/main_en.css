@@ -728,7 +728,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2.4rem;
-  max-width: 43rem;
+  max-width: calc(100% - 27rem);
 }
 .en #section2 .content-text p {
   font-size: 1.9rem;
