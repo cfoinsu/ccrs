@@ -131,12 +131,83 @@ function trapFocusAllmenu(e) {
 	}
 	//검색버튼 click 이벤트
 	$('.search-open').on('click', function (e) {
+    const searchMenu = document.getElementById('searchTag');
+    $("#searchTag").addClass('is-active');
+    document.body.style.overflow = 'hidden';
+    
+    // 포커스를 검색 입력창으로 이동
+    const searchInput = document.getElementById('searchText');
+    if (searchInput) {
+        setTimeout(() => searchInput.focus(), 100);
+    }
+    
+    // 포커스 트랩 설정
+    searchMenu.addEventListener('keydown', trapFocusSearch);
+});
+
+$('#searchTag > .btn-close').on('click', function (e) {
+    const searchMenu = document.getElementById('searchTag');
+    $("#searchTag").removeClass('is-active');
+    document.body.style.overflow = '';
+    searchMenu.removeEventListener('keydown', trapFocusSearch);
+    
+    // 원래 버튼으로 포커스 복귀
+    document.querySelector('.search-open')?.focus();
+});
+
+// 검색 메뉴 포커스 트랩 함수
+function trapFocusSearch(e) {
+    const searchMenu = document.getElementById('searchTag');
+    
+    if (e.key === 'Escape') {
+        $('#searchTag > .btn-close').click();
+        return;
+    }
+    
+    if (e.key !== 'Tab') return;
+    
+    const focusableElements = searchMenu.querySelectorAll(
+        'input, button:not([disabled]), a[href], [tabindex="0"]'
+    );
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+    
+    if (e.shiftKey) {
+        if (document.activeElement === firstElement) {
+            e.preventDefault();
+            lastElement.focus();
+        }
+    } else {
+        if (document.activeElement === lastElement) {
+            e.preventDefault();
+            firstElement.focus();
+        }
+    }
+}
+
+    $(".all-menu-list > li").hover(function (e) {
+        if (e.type === "mouseenter") {
+            $(this).parent().addClass("darken");
+            $(this).addClass("highlight").siblings().removeClass("highlight");
+        }
+    });
+
+    $(".depth3").hover(function (e) {
+        $(".depth3").removeClass("focus");
+        $(this).addClass("focus");
+	});
+	if ($(window).width() < 1279) {
+		mobileMenu();
+	}
+	//검색버튼 click 이벤트
+	$('.search-open').on('click', function (e) {
 		$("#searchTag").addClass('is-active');
 	})
 	$('#searchTag > .btn-close').on('click', function (e) {
 		$("#searchTag").removeClass('is-active');
 	})
 });
+
 
 //전체메뉴 모바일 애니메이션
 function addListenerMulti(element, eventNames, listener) {
