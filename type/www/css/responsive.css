@@ -44,6 +44,8 @@
   }
   .krds-accordion.type-heading .accordion-item .accordion-collapse.collapse {
     display: block !important;
+    max-height: 10000vh !important;
+    visibility: visible !important;
   }
   .effect-box {
     padding: 1.6rem;
