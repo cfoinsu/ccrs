@@ -3,6 +3,7 @@
    English Site Layout Override
    - Header, Footer, Navigation, Common Layout Components
    ========================================== */
+   
 .mobile-allmenu-overlay {
   position: fixed;
   top: 0;
@@ -1697,6 +1698,7 @@
     height: 26px;
   }
 }
+
 .en #header .gnb-wrap > nav .gnb > li .menu-label {
   font-size: 2rem;
   white-space: nowrap;
@@ -1721,4 +1723,20 @@
 }
 .en .nav-subitem::before {
   top: 1.7rem;
-}/*# sourceMappingURL=layout_en_override.css.map */
+}
+
+@media (max-width: 1239px) {
+  .en #header .gnb-wrap > nav .gnb > li .menu-label {
+    padding: 1.6rem 1.4rem;
+  }
+  .en #header .gnb-wrap > nav {
+    width: calc(100% - 4rem);
+  }
+  .en #header.header-en.is-active::after {
+    height: 38rem;
+  }
+  .en #header .gnb-wrap > nav .gnb > li .depth2 {
+    height: 37.5rem;
+  }
+}
+/*# sourceMappingURL=layout_en_override.css.map */
