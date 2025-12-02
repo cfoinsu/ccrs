@@ -513,6 +513,9 @@ $(function() {
   /* intro 영역 */
   if (!CookieUtil.get('hideIntroToday')) {
     $('.intro').addClass('show');
+    setTimeout(function () {
+        $searchInput.focus();
+    }, 10);
   }
 
   $(document).on('click', '.intro-hide .close', function() {
@@ -523,6 +526,52 @@ $(function() {
       CookieUtil.remove('hideIntroToday');
     }
   });
+
+  // 팝업 오픈/클로즈 버튼 및 팝업 참조
+    var $popup = $('.intro');
+    var $searchInput = $('#intro-search-input');
+    var lastFocused = null;
+
+    function closePopup() {
+    $popup.removeClass('show');
+    if (lastFocused) $(lastFocused).focus();
+    }
+
+    $(document).on('click', '.intro .close', closePopup);
+
+    // 탭 트랩핑 및 ESC 닫기
+    $(document).on('keydown', function (e) {
+    if (!$popup.hasClass('show')) return;
+
+    var $focusables = $popup.find('a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])').filter(':visible');
+    var first = $focusables.first()[0];
+    var last = $focusables.last()[0];
+
+    // ESC 키로 닫기
+    if (e.key === 'Escape') {
+        closePopup();
+        return false;
+    }
+
+    // Tab 순환
+    if (e.key === 'Tab') {
+        if (e.shiftKey) {
+        if (document.activeElement === first) {
+            $(last).focus();
+            return false;
+        }
+        } else {
+        if (document.activeElement === last) {
+            $(first).focus();
+            return false;
+        }
+        }
+    }
+    });
+
+    // ★ 팝업 버튼에 이벤트 연결 예시
+    // $('#popup-open-btn').on('click', openPopup);
+
 });
 // 개발예외코딩
 // $(function(){ $('body').css('display','none').fadeIn(600); });
