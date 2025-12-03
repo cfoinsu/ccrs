@@ -8611,6 +8611,9 @@ table .table-center {
     font-size: 2.4rem;
     font-weight: 700;
     width: 100%;
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .loan-total-box {
