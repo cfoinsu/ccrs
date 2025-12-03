@@ -141,12 +141,12 @@ function initSwiperSliders() {
   if ($('#mainSlider').length > 0) {
     var mainSwiper = new Swiper('#mainSlider', {
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 1,
       centeredSlides: true,
       autoplay: {
         delay: 4000,
-        disableOnInteraction: false,
         pauseOnMouseEnter: true,
+        disableOnInteraction: false,
       },
       loop: true,
       loopedSlides: 3,
@@ -171,8 +171,8 @@ function initSwiperSliders() {
       centeredSlides: true,
       autoplay: {
         delay: 4000,
-        disableOnInteraction: false,
         pauseOnMouseEnter: true,
+        disableOnInteraction: false,
       },
       loop: true,
       loopedSlides: 3,
@@ -197,8 +197,8 @@ function initSwiperSliders() {
       centeredSlides: true,
       autoplay: {
         delay: 3000,
-        disableOnInteraction: false,
         pauseOnMouseEnter: true,
+        disableOnInteraction: false,
       },
       loop: true,
       loopedSlides: 3,
@@ -223,6 +223,7 @@ function initSwiperSliders() {
       centeredSlides: true,
       autoplay: {
         delay: 3000,
+        pauseOnMouseEnter: true,
         disableOnInteraction: false,
       },
       loop: true,
