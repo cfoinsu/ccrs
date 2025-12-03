@@ -7424,9 +7424,6 @@ input[type=radio]:checked+label.fillter-chip {
     flex-direction: column;
     align-items: center;
     gap: var(--krds-gap-4);
-    padding-bottom: 15px;
-    border-bottom: 1px solid var(--krds-light-color-border-gray-light);
-    width: 100%;
 }
 
 .effect-box .boxc1.row,
@@ -7514,8 +7511,17 @@ input[type=radio]:checked+label.fillter-chip {
 
 .effect-box .key-text {
     font-size: 1.7rem;
+    padding-top: 15px;
+    border-top: 1px solid var(--krds-light-color-border-gray-light);
+    width: 100%;
 }
-
+@media (max-width: 1023px) {
+    .effect-box .key-text {
+        padding-top: 0;
+        border-top: none;
+        width: 100%;
+    }
+}
 .effect-box .key-text span {
     font-weight: 400;
     font-size: 1.5rem;
