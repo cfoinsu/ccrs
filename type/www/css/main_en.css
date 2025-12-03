@@ -791,6 +791,9 @@
   }
 }
 @media (max-width: 1023px) {
+  .en #section2 .content-text {
+    max-width: 100%;
+  }
   .en #section2 .content-icon {
     position: relative;
     top: auto;
@@ -800,6 +803,7 @@
     width: 12rem;
     height: 12rem;
     margin-top: 2rem;
+    margin-left: auto;
   }
 }
 @media (max-width: 767px) {
