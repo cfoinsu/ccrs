@@ -1736,10 +1736,14 @@ section {
   box-sizing: border-box;
 }
 .intro>* {
-  display: none;
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
 }
 .intro.show>* {
-  display: inherit;
+  /* display: inherit; */
+  opacity: 1;
+  visibility: visible;
 }
 .intro .swiper {height: 500px;}
 @media (max-width: 1400px) {
