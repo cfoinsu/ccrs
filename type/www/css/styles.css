@@ -3717,7 +3717,8 @@ span.sub4InputLabel {
 }
 
 .desktop-title-h2 {
-    font-family: 'Pretendard-Gov-Bold', sans-serif;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-weight: 700;
     color: white;
     font-size: 1.5rem;
     line-height: 1.5;
@@ -3730,7 +3731,8 @@ span.sub4InputLabel {
 }
 
 .desktop-title-p {
-    font-family: 'Pretendard-Gov-Regular', sans-serif;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-weight: 400;
     color: white;
     font-size: 1.7rem;
     line-height: 1.5;
@@ -3760,14 +3762,16 @@ span.sub4InputLabel {
 }
 
 .mobile-title-h2 {
-    font-family: 'Pretendard-Gov-Bold', sans-serif;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-weight: 700;
     color: white;
     font-size: 1.25rem;
     line-height: 1.5;
 }
 
 .mobile-title-p {
-    font-family: 'Pretendard-Gov-Regular', sans-serif;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-weight: 400;
     color: white;
     font-size: 0.875rem;
     line-height: 1.5;
@@ -3822,7 +3826,8 @@ span.sub4InputLabel {
 }
 
 .product-title {
-    font-family: 'Pretendard-Gov-Bold', sans-serif;
+    font-family: 'Pretendard-GOV', sans-serif;
+    font-weight: 700;
     color: black;
     font-size: 1.9rem;
     line-height: 1.2;
@@ -3912,7 +3917,8 @@ span.sub4InputLabel {
 
 
 .open-compare-modal span {
-    font-family: 'Pretendard-Gov-Bold', sans-serif;
+    font-family: 'Pretendard-GOV', sans-serif;
+    font-weight: 700;
     color: white;
     font-size: 1.9rem;
     line-height: 1.5;
@@ -4082,7 +4088,8 @@ table.comparison-table td:first-child {
 }
 
 .support-text {
-    font-family: 'Pretendard-Gov-Regular', sans-serif;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-weight: 400;
     color: #17191b;
     font-size: 1.4rem;
     line-height: 1.5;
@@ -4124,7 +4131,8 @@ table.comparison-table td:first-child {
 }
 
 .toggle-text {
-    font-family: 'Pretendard-Gov-Bold', sans-serif;
+    font-family: 'Pretendard-GOV', sans-serif;
+    font-weight: 700;
     color: #17191b;
     font-size: 1.4rem;
     line-height: 1.5;

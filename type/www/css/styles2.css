@@ -541,21 +541,23 @@
 .stat-item {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     gap: 0.5rem;
     padding: 1rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .stat-label {
-    font-family: 'Pretendard-Gov-Bold', sans-serif;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-weight: 700;
     color: #222222;
     font-size: 1.4rem;
     line-height: 1.5;
 }
 
 .stat-value {
-    font-family: 'Pretendard-Gov-Regular', sans-serif;
+    font-family: 'Pretendard GOV', sans-serif;
+    font-weight: 400;
     color: #222222;
     font-size: 2rem;
     font-weight: 700;
