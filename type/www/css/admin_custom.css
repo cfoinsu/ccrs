@@ -47,7 +47,7 @@
 }
 .reN_cms header .top_util .userInfo {
     color: #666;
-    font-size: 1.4rem;
+    font-size: 14px;
     font-family: 'Roboto','Noto Sans KR',sans-serif;
     margin-right: 12px;
     font-weight: 400;
@@ -73,7 +73,7 @@
     color: #888 !important;
     background: none;
     padding: 0 10px;
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 400;
     line-height: 70px;
     transition: color 0.2s;
@@ -96,7 +96,7 @@
     height: 68px;
     line-height: 68px;
     color: #222 !important;
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: 500;
     border-bottom: 2px solid transparent;
     background: none;
@@ -109,10 +109,6 @@
     border-bottom: 2px solid #007AFF;
     background: none;
     border-left: none;
-}
-
-.reN_cms #contents>article {
-
 }
 
 /* ===== 헤더 잘림/overflow/정렬 보정 ===== */
@@ -233,10 +229,10 @@ body {
 /* (선택) 메뉴 텍스트 등 간격, 정렬을 더 깔끔하게 */
 .reN_cms .major_link > li > a {
     padding: 16px 16px 16px 24px !important;
-    font-size: 1.7rem;
+    font-size: 17px;
 }
 .reN_cms .majorS_link > li > a {
-    font-size: 1.5rem;
+    font-size: 15px;
 }
 
 #container {

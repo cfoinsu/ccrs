@@ -145,7 +145,7 @@ function initSwiperSliders() {
       centeredSlides: true,
       autoplay: {
         delay: 4000,
-        pauseOnMouseEnter: true,
+        pauseOnMouseEnter: false,
         disableOnInteraction: false,
       },
       loop: true,
@@ -159,6 +159,9 @@ function initSwiperSliders() {
           return '<span class="' + className + '" role="button" aria-label="메인 배너 ' + (index + 1) + '번 슬라이드로 이동" tabindex="0"></span>';
         },
       },
+      a111y: { 
+        enabled: true  // 접근성 기능 활성화
+      },
     });
     initSwiperFocus();
   }
@@ -171,7 +174,7 @@ function initSwiperSliders() {
       centeredSlides: true,
       autoplay: {
         delay: 4000,
-        pauseOnMouseEnter: true,
+        pauseOnMouseEnter: false,
         disableOnInteraction: false,
       },
       loop: true,
@@ -185,6 +188,9 @@ function initSwiperSliders() {
           return '<span class="' + className + '" role="button" aria-label="하단 배너 ' + (index + 1) + '번 슬라이드로 이동" tabindex="0"></span>';
         },
       },
+      a111y: { 
+        enabled: true  // 접근성 기능 활성화
+      },
     });
     initSwiperFocus();
   }
@@ -197,7 +203,7 @@ function initSwiperSliders() {
       centeredSlides: true,
       autoplay: {
         delay: 3000,
-        pauseOnMouseEnter: true,
+        pauseOnMouseEnter: false,
         disableOnInteraction: false,
       },
       loop: true,
@@ -211,6 +217,9 @@ function initSwiperSliders() {
           return '<span class="' + className + '" role="button" aria-label="상환 배너 ' + (index + 1) + '번 슬라이드로 이동" tabindex="0"></span>';
         },
       },
+      a111y: { 
+        enabled: true  // 접근성 기능 활성화
+      },
     });
     initSwiperFocus();
   }
@@ -223,7 +232,7 @@ function initSwiperSliders() {
       centeredSlides: true,
       autoplay: {
         delay: 3000,
-        pauseOnMouseEnter: true,
+        pauseOnMouseEnter: false,
         disableOnInteraction: false,
       },
       loop: true,
@@ -236,6 +245,9 @@ function initSwiperSliders() {
         renderBullet: function (index, className) {
           return '<span class="' + className + '" role="button" aria-label="금융 배너 ' + (index + 1) + '번 슬라이드로 이동" tabindex="0"></span>';
         },
+      },
+      a111y: { 
+      enabled: true  // 접근성 기능 활성화
       },
     });
     initSwiperFocus();
@@ -277,7 +289,7 @@ function initSwiperFocus() {
     $('.swiper-container').on(
     'focus',
     'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])',
-    function () {
+      function () {
         var $slide = $(this).closest('.swiper-slide');
         if (!$slide.length) return;
 
@@ -291,6 +303,6 @@ function initSwiperFocus() {
         swiper.slideToLoop
         ? swiper.slideToLoop(index) // loop: true 인 경우
         : swiper.slideTo(index);    // loop: false 인 경우
-    }
+      }
     );
 }
