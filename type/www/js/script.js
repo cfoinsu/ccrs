@@ -27,11 +27,14 @@ navSectionTitles.forEach(title => {
         // Close all sections
         document.querySelectorAll('.nav-section').forEach(s => {
             s.classList.remove('active');
+            const btn = s.querySelector('.nav-section-title');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
         });
         
         // Open clicked section if it wasn't active
         if (!isActive) {
             section.classList.add('active');
+            title.setAttribute('aria-expanded', 'true');
         }
     });
 });
