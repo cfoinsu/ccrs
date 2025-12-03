@@ -7973,27 +7973,27 @@ table .table-center {
 
 @media (max-width: 767px) {
     .activity-card-content h3 {
-        background: linear-gradient(to top, #D3E4FF 20%, transparent 20%) 0 46px;
+        background: linear-gradient(to top, #D3E4FF 20%, transparent 20%) 0 22px;
     }
 
     .activity-card-content.bluegreen h3 {
-        background: linear-gradient(to top, #A3E8F5 20%, transparent 20%) 0 46px;
+        background: linear-gradient(to top, #A3E8F5 20%, transparent 20%) 0 22px;
     }
 
     .activity-card-content.red h3 {
-        background: linear-gradient(to top, #FFD5C9 20%, transparent 20%) 0 46px;
+        background: linear-gradient(to top, #FFD5C9 20%, transparent 20%) 0 22px;
     }
 
     .activity-card-content.green h3 {
-        background: linear-gradient(to top, #D2F3C1 20%, transparent 20%) 0 46px;
+        background: linear-gradient(to top, #D2F3C1 20%, transparent 20%) 0 22px;
     }
 
     .activity-card-content.purple h3 {
-        background: linear-gradient(to top, #DED9FF 20%, transparent 20%) 0 46px;
+        background: linear-gradient(to top, #DED9FF 20%, transparent 20%) 0 22px;
     }
 
     .activity-card-content.yellow h3 {
-        background: linear-gradient(to top, #FFE398 20%, transparent 20%) 0 46px;
+        background: linear-gradient(to top, #FFE398 20%, transparent 20%) 0 22px;
     }
 }
 
@@ -8432,9 +8432,14 @@ table .table-center {
 .g-info-box .info-content .highlightbg {
     font-size: 1.9rem;
     font-weight: 700;
-    display: inline-block;
-    background: linear-gradient(to top, #FFE5CA 20%, transparent 20%);
-    background-position: 0 25px;
+    display: inline;
+    background: linear-gradient(to top, #FFE5CA 20%, transparent 20%) 0 20px;
+}
+
+@media (max-width: 767px) {
+    .g-info-box .info-content .highlightbg {
+        background: linear-gradient(to top, #FFE5CA 20%, transparent 20%) 0 36px;
+    }
 }
 
 .maxw500 {
