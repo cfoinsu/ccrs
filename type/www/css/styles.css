@@ -2486,7 +2486,9 @@ body aside {
     box-shadow: 0px 0px 2px 0px #00000014;
     box-shadow: 0px 8px 16px 0px #0000001F;
 }
-
+.quick-item .quick-showbox span {
+    margin-top: 0;
+}
 @media (max-width: 1024px) {
     .quick-item .quick-showbox {
         top: 8px;
@@ -3406,7 +3408,9 @@ body aside {
     gap: var(--krds-gap-5);
     margin-bottom: var(--krds-gap-10);
 }
-
+.g-wrap .g-grid-wrap.unit2>.g-colorbox {
+    width: 100%;
+}
 .g-wrap .g-grid-wrap.unit4 {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -3425,6 +3429,15 @@ body aside {
     }
     .g-wrap .g-grid-wrap.unit2 {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .g-wrap .g-grid-wrap.unit2>.g-colorbox br {
+        display: none;
+    }
+    .g-wrap .g-grid-wrap.unit2>.g-colorbox.text-right {
+        text-align: left;
+    }
+    .abslogocenter {
+        display: none;
     }
 }
 
@@ -7216,9 +7229,8 @@ input[type=radio]:checked+label.fillter-chip {
 .abslogocenter.kinfa {
     background: url(../images/img/round-logo-kinfa.png) no-repeat center center / contain;
     background-size: 100%;
-    width: 80px;
     height: 100%;
-    top: 60%;
+    top: 55%;
 }
 
 /* 서머리박스 */

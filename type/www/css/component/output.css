@@ -13738,11 +13738,11 @@ label {
 
 /* ** align ** */
 .text-right {
-  text-align: right !important;
+  text-align: right;
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: center;
 }
 
 /* ** margin ** */
