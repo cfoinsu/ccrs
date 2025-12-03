@@ -1736,12 +1736,10 @@ section {
   box-sizing: border-box;
 }
 .intro>* {
-  /* display: none; */
   opacity: 0;
   visibility: hidden;
 }
 .intro.show>* {
-  /* display: inherit; */
   opacity: 1;
   visibility: visible;
 }
