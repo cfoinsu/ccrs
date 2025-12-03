@@ -2820,25 +2820,35 @@ body:has(.intro.show) {
   position: absolute;
   bottom: 0;
   right: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 .grid-col1 .slide-img img {
-  height: 43rem;
+  /* height: 43rem; */
   -webkit-transform: translateY(3rem);
           transform: translateY(3rem);
   -webkit-transition: all 0.8s ease 0.3s;
   transition: all 0.8s ease 0.3s;
+  width: auto;
+  object-fit: contain;
 }
 @media (max-width: 1400px) {
   .grid-col1 .slide-img img {
-    height: 30rem;
+    height: auto;
+    width: auto;
   }
   .grid-col1 .slide-txt .tit {
     margin-top: 0;
   }
 }
 @media (max-width: 767px) {
+  .grid-col1 .slide-img {
+    height: 100%;
+  }
   .grid-col1 .slide-img img {
-    height: 28.5rem;
+    /* height: 28.5rem; */
+    height: 100%;
   }
 }
 .grid-col1 .swiper-slide-active .slide-img img {
