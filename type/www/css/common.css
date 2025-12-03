@@ -29,7 +29,7 @@ header, footer, article, section, aside, nav, main {display: block;}
 button, input, optgroup, select, textarea {font-family: inherit; font-size: inherit; font-weight: inherit; margin: 0;}
 pre {margin: 0; white-space: pre-wrap; font-family: "NotoSansKR", sans-serif; line-height: 1.6; color: #555;}
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	html {font-size: 8px;}
 }
 
@@ -228,7 +228,7 @@ p.lh3 {line-height: 3rem;}
 	.tablet-style {display: block !important;}
 	.mobile-style {display: none !important;}
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.pc-style {display: none !important;}
 	.pc-style-flex {display: none !important;}
 	.tablet-style {display: block !important;}

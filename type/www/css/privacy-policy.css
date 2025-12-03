@@ -971,7 +971,7 @@ ol.list-number {
 .popup-content .mt20 {
   margin-top: 2rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .popup-content .terms_labeling h2 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
@@ -1136,7 +1136,7 @@ ol.list-number {
   -webkit-transform: translateX(2px);
           transform: translateX(2px);
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .privacy-history-list {
     gap: 1rem;
   }

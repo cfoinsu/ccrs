@@ -294,7 +294,7 @@
   color: #0d47a1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .credit-education-buttons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -411,7 +411,7 @@
   background: #E6E8EA;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .wrap-calculator .calculator-box:not(:last-child)::after {
     display: none;
   }
@@ -463,7 +463,7 @@
   color: #222;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .wrap-calculator .form-group .form-label {
     font-size: 1.4rem;
   }
@@ -516,7 +516,7 @@
   color: #9EA4AA;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .wrap-calculator .form-input {
     max-width: 18rem;
     height: 4.4rem;
@@ -1973,7 +1973,7 @@
   font-weight: 700;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 
   .financial-support-section .financial-support-intro,
   .financial-support-section .employment-support-intro,
@@ -2031,7 +2031,7 @@
   margin: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 
   .financial-support-section .financial-support-header,
   .financial-support-section .employment-support-header,
@@ -2099,7 +2099,7 @@
   object-fit: contain;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 
   .financial-support-section .financial-support-arrow,
   .financial-support-section .employment-support-arrow,

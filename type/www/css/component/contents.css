@@ -28911,7 +28911,7 @@ table.comparison-table td:first-child {
 }
 
 /* 반응형 디자인 */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .timeline-content-flex {
         max-width: 100%;
         padding: 0 20px;
@@ -28927,7 +28927,7 @@ table.comparison-table td:first-child {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .timeline-year-section {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -29325,7 +29325,7 @@ table.comparison-table td:first-child {
 }
 
 /* 반응형 */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .figma-step-container {
         max-width: 100%;
         padding: 0 20px;
@@ -29353,7 +29353,7 @@ table.comparison-table td:first-child {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .figma-step-tabs {
         flex-direction: column;
         gap: 12px;

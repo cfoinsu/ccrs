@@ -1375,6 +1375,11 @@ caption {
   body {
     font-size: var(--krds-mobile-font-size-body-medium);
   }
+  .mob-only {
+    display: block !important;
+    width: 70% !important;
+    margin: 0 auto;
+  }
   .pc-only {
     display: none !important;
   }

@@ -1775,7 +1775,7 @@ Version : v1.0
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #header .gnb-wrap .logo {
     left: 16px;
   }
@@ -2126,7 +2126,7 @@ Version : v1.0
     margin: 0 8vw;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .c-tabbox {
     height: 6.4rem;
   }
