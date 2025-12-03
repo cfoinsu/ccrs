@@ -3602,7 +3602,7 @@ caption {
   }
   .krds-modal:not([data-type=bottom-sheet]) .modal-dialog .modal-conts {
     padding-inline: var(--krds-modal--mobile-padding);
-    padding-bottom: 0;
+    padding-bottom: 3.2rem;
   }
   .krds-modal:not([data-type=bottom-sheet]) .modal-dialog .modal-conts .conts-area > * {
     width: 100%;
@@ -3625,6 +3625,17 @@ caption {
   .krds-modal[data-type=full] .modal-dialog .btn-close {
     width: var(--krds-modal--full-mobile-btn-close-size);
     height: var(--krds-modal--full-mobile-btn-close-size);
+  }
+  .krds-modal .modal-dialog .modal-content {
+    max-height: 90vh;
+    max-height: 90dvh; /* 동적 뷰포트 높이 - 모바일 주소창 고려 */
+  }
+  
+  .krds-modal .modal-dialog .modal-conts {
+    max-height: calc(90vh - 60px); /* header 높이 제외 */
+    max-height: calc(90dvh - 60px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* iOS 부드러운 스크롤 */
   }
 }
 [data-krds-mode=high-contrast] .krds-modal {

@@ -6147,8 +6147,15 @@ table .krds-info-list>li {
 .g-img.row.between {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
+}
+
+@media (max-width: 767px) {
+    .g-img.row.between {
+        flex-direction: column;
+        gap: 12px;
+    }
 }
 
 .g-img.blue.round {
@@ -8406,6 +8413,13 @@ table .table-center {
     justify-content: center;
 }
 
+@media (max-width: 767px) {
+    .support-organization-logo.row {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
+
 .support-organization-logo img {
     max-width: 100%;
     height: auto;
@@ -8613,7 +8627,7 @@ table .table-center {
 }
 
 .loan-box {
-    padding: 28px;
+    padding: 2.8rem;
     border-radius: 24px;
     text-align: center;
     font-size: 2.4rem;
@@ -8661,7 +8675,7 @@ table .table-center {
 }
 
 .loan-box span {
-    font-size: 4rem;
+    font-size: 3.6rem;
 }
 
 .loan-box.blue {
