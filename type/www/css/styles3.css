@@ -2922,6 +2922,20 @@
   }
 }
 
+.ccrs-year .timeline-panel {
+  display: none;
+  width: 100%;
+}
+
+.ccrs-year .timeline-panel.active {
+  display: block;
+}
+
+.ccrs-year .timeline-panel::before,
+.ccrs-year .timeline-panel::after {
+  display: none;
+}
+
 .ccrs-year .timeline-content {
   width: 100%;
 }
