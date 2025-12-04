@@ -1386,6 +1386,12 @@ body aside {
     margin-top: -5px;
 }
 
+@media (max-width: 767px) {
+    .tooltip-trigger i.fas.fa-question-circle {
+        display: none;
+    }
+}
+
 .tooltip-trigger:hover .tooltip {
     display: block;
 }
