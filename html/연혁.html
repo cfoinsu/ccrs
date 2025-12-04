@@ -933,6 +933,20 @@
                 // 탭 active 토글
                 $('.year-tab').removeClass('active');
                 $(this).addClass('active');
+
+                // 모든 탭의 스타일 초기화
+                $('.year-tab .year-text').css('color', '#8a949e');
+                $('.year-tab .year-border').css({
+                    'height': '1px',
+                    'background-color': '#d2d6da'
+                });
+
+                // 활성 탭의 스타일 적용
+                $(this).find('.year-text').css('color', '#17191b');
+                $(this).find('.year-border').css({
+                    'height': '2px',
+                    'background-color': '#1b2025'
+                });
                 
                 // 패널 show/hide
                 $('.timeline-panel').removeClass('active');
