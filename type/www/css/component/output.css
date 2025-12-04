@@ -18924,12 +18924,9 @@ a:hover .d-card .c-tit {
   .search-top-box .sch-form-wrap.flex-inline .input-group {
     flex-direction: column;
   }
-  .search-top-box .sch-filter-box {
-    display: none;
-  }
   /* 공통 - 결과 리스트 상단 */
   .search-list-top {
-    flex-direction: column;
+    flex-direction: row;
     gap: var(--krds-gap-7);
     margin-top: var(--krds-mobile-gap-layout-h2-h3);
   }
@@ -18947,7 +18944,7 @@ a:hover .d-card .c-tit {
     gap: 0;
   }
   .search-list-top .sch-sort {
-    order: 1;
+    order: 2;
     margin-left: auto;
   }
   .search-list-top .sch-sort .w-hide {
@@ -18987,6 +18984,41 @@ a:hover .d-card .c-tit {
   /* 필터칩 박스 */
   .filter-chip {
     display: none;
+  }
+  .search-top-box .sch-filter-box .filter-form.row .period .optSetDate {
+    width: 100%;
+  }
+  .search-top-box .sch-filter-box .filter-form.row .period .optSetDate > .krds-input {
+    width: calc(50% - 20px);
+  }
+  .search-top-box .sch-filter-box .filter-form.row .period .optSetDate > .picker_txt {
+    padding-left: 0;
+  }
+  .search-top-box .sch-filter-box .filter-form.row .search-area .label ~ .label {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .search-top-box .sch-filter-box .filter-form.row .search-area {
+    display: block;
+    overflow: hidden;
+  }
+  .search-top-box .sch-filter-box .filter-form.row .search-area > * {
+    float: left;
+  }
+  .search-top-box .sch-filter-box .filter-form.row .search-area > .label {
+    clear: both;
+    vertical-align: middle;
+    line-height: 4.8rem;
+  }
+  .search-top-box .sch-filter-box .filter-form.row .search-area .krds-form-select {
+    width: 100%;
+  }
+  .search-top-box .sch-filter-box .filter-form.row .period {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
 [data-krds-mode=high-contrast] .search-top-box {
