@@ -5242,10 +5242,10 @@ table .krds-info-list>li {
 .timeline-content-area::before {
     content: '';
     position: absolute;
-    top: 34px;
-    left: 30px;
+    top: 27px;
+    left: 32px;
     width: 1px;
-    height: 200%;
+    height: 150%;
     background-color: #FFD89F;
 }
 

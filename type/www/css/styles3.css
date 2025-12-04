@@ -2931,6 +2931,11 @@
   display: block;
 }
 
+.ccrs-year .timeline-panel::before,
+.ccrs-year .timeline-panel::after {
+  display: none;
+}
+
 .ccrs-year .timeline-content {
   width: 100%;
 }

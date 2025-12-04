@@ -1712,6 +1712,11 @@
   display: block;
 }
 
+.en .ccrs-year .timeline-panel::before,
+.en .ccrs-year .timeline-panel::after {
+  display: none;
+}
+
 .en .ccrs-year .timeline-content {
   width: 100%;
 }
