@@ -1885,68 +1885,6 @@ body aside {
     background: #e67e01;
 }
 
-/* Footer */
-.footer {
-    background: #0a1c2a;
-    color: white;
-    padding: 4rem 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-logo img {
-    height: 3.3rem;
-}
-
-.footer-links {
-    display: flex;
-    gap: 1rem 2rem;
-    align-items: center;
-}
-
-.footer-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.6rem;
-    font-weight: 600;
-    position: relative;
-}
-
-.footer-link:not(:last-child)::after {
-    content: '|';
-    position: absolute;
-    right: -12px;
-    color: #666;
-}
-
-.footer-link.important {
-    color: #f48f01;
-}
-
-.footer-link:hover {
-    color: #f48f01;
-}
-
-.footer-info p,
-.footer-contact p {
-    margin-bottom: 0.8rem;
-    font-size: 1.6rem;
-    line-height: 1.5;
-}
-
-.footer-info strong,
-.footer-contact strong {
-    font-weight: 700;
-}
-
-.phone-number {
-    color: #ff8c29;
-}
-
 /* Institution Links */
 /* .institution-links {
     background: #fff;

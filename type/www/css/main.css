@@ -3481,7 +3481,7 @@ body:has(.intro.show) {
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: flex-start;
 }
 #section4 .news-grid .news-left .news-item {
   display: -webkit-box;
@@ -3618,4 +3618,9 @@ body:has(.intro.show) {
   width: 100%;
   height: 100%;
   z-index: 1; 
+}
+@media (max-width: 767px) {
+  .card-scroll {
+    padding-bottom: 2rem;
+  }
 }
