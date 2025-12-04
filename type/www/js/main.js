@@ -125,9 +125,28 @@ function initIntroSwiper() {
   }
 }
 
+function disableDuplicateFocus(swiper) {
+  if (!swiper || !swiper.el) return;
+
+  const duplicates = swiper.el.querySelectorAll('.swiper-slide-duplicate');
+
+  duplicates.forEach((slide) => {
+    slide.querySelectorAll('a, button, input, select, textarea, [tabindex]').forEach((el) => {
+      el.setAttribute('tabindex', '-1');
+      el.setAttribute('aria-hidden', 'true');
+    });
+  });
+}
+
+let swiperList = [];
+
 function initSwiperSliders() {
   // 인트로 배너 슬라이더 초기화
-  initIntroSwiper();
+
+  if (typeof initIntroSwiper === 'function') {
+    initIntroSwiper();
+  }
+  //initIntroSwiper();
 
   // 화면 크기 변경 시 인트로 swiper만 재초기화
   var resizeTimer;
@@ -148,8 +167,8 @@ function initSwiperSliders() {
         pauseOnMouseEnter: false,
         disableOnInteraction: false,
       },
-      loop: true,
-      loopedSlides: 3,
+      //loop: true,
+      //loopedSlides: 3,
       pagination: {
         el: '#mainSlider-pagination',
         clickable: true,
@@ -159,11 +178,25 @@ function initSwiperSliders() {
           return '<span class="' + className + '" role="button" aria-label="메인 배너 ' + (index + 1) + '번 슬라이드로 이동" tabindex="0"></span>';
         },
       },
-      a111y: { 
-        enabled: true  // 접근성 기능 활성화
+      a11y: { 
+        enabled: true,  // 접근성 기능 활성화
+        paginationBulletMessage: '메인 배너 {{index}}번 슬라이드로 이동'
       },
+      on: {
+        init: function () {
+          disableDuplicateFocus(this);
+        },
+        slideChange: function () {
+          disableDuplicateFocus(this);
+        },
+        update: function () {
+          disableDuplicateFocus(this);
+        }
+      }
     });
-    initSwiperFocus();
+    //initSwiperFocus();
+    swiperList.push(mainSwiper);
+    disableDuplicateFocus(mainSwiper);
   }
 
   // 하단 배너 슬라이더
@@ -188,11 +221,14 @@ function initSwiperSliders() {
           return '<span class="' + className + '" role="button" aria-label="하단 배너 ' + (index + 1) + '번 슬라이드로 이동" tabindex="0"></span>';
         },
       },
-      a111y: { 
-        enabled: true  // 접근성 기능 활성화
+      a11y: { 
+        enabled: true,  // 접근성 기능 활성화
+        paginationBulletMessage: '하단 배너 {{index}}번 슬라이드로 이동'
       },
     });
-    initSwiperFocus();
+    //initSwiperFocus();
+    swiperList.push(bottomSwiper);
+    disableDuplicateFocus(bottomSwiper);
   }
 
   // 상환 배너 슬라이더
@@ -217,11 +253,14 @@ function initSwiperSliders() {
           return '<span class="' + className + '" role="button" aria-label="상환 배너 ' + (index + 1) + '번 슬라이드로 이동" tabindex="0"></span>';
         },
       },
-      a111y: { 
-        enabled: true  // 접근성 기능 활성화
+      a11y: { 
+        enabled: true,  // 접근성 기능 활성화
+        paginationBulletMessage: '상환 배너 {{index}}번 슬라이드로 이동'
       },
     });
-    initSwiperFocus();
+    //initSwiperFocus();
+    swiperList.push(debtSwiper);
+    disableDuplicateFocus(debtSwiper);
   }
 
   // 금융 배너 슬라이더
@@ -246,12 +285,17 @@ function initSwiperSliders() {
           return '<span class="' + className + '" role="button" aria-label="금융 배너 ' + (index + 1) + '번 슬라이드로 이동" tabindex="0"></span>';
         },
       },
-      a111y: { 
-      enabled: true  // 접근성 기능 활성화
+      a11y: { 
+        enabled: true,  // 접근성 기능 활성화
+        paginationBulletMessage: '금융 배너 {{index}}번 슬라이드로 이동'
       },
     });
-    initSwiperFocus();
+    //initSwiperFocus();
+    swiperList.push(financeSwiper);
+    disableDuplicateFocus(financeSwiper);
   }
+
+  initSwiperFocus();
 }
 
 /**
@@ -285,24 +329,42 @@ function initNewsTabs() {
  * 스와이퍼 포커스
  */
 function initSwiperFocus() {
-    // 포커스되면 해당 슬라이드가 보이도록
-    $('.swiper-container').on(
+  $('.swiper-container').on(
     'focus',
     'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])',
-      function () {
-        var $slide = $(this).closest('.swiper-slide');
-        if (!$slide.length) return;
+    function () {
+      var $slide = $(this).closest('.swiper-slide');
+      if (!$slide.length) return;
 
-        // loop 사용 여부에 따라 인덱스 구하기
-        var index = $slide.data('swiper-slide-index'); // loop일 때 원본 인덱스
-        if (typeof index === 'undefined') {
-        index = $slide.index(); // loop 사용 안 할 때
-        }
+      // duplicate는 무시
+      if ($slide.hasClass('swiper-slide-duplicate')) return;
 
-        // 해당 슬라이드로 이동
-        swiper.slideToLoop
-        ? swiper.slideToLoop(index) // loop: true 인 경우
-        : swiper.slideTo(index);    // loop: false 인 경우
+      let container = $slide.closest('.swiper-container')[0];
+
+      // 정확히 해당 스와이퍼 찾기
+      let swiper = swiperList.find(s => s.el === container);
+      if (!swiper) return;
+
+      // autoplay 중단
+      if (swiper.autoplay) {
+        try { swiper.autoplay.stop(); } catch (e) {}
       }
-    );
+
+      // index 계산
+      let index = $slide.data('swiper-slide-index');
+      if (typeof index === 'undefined') index = $slide.index();
+
+      // loop이면 slideToLoop 사용
+      if (typeof swiper.slideToLoop === 'function') {
+        swiper.slideToLoop(index, 0);
+      } else {
+        swiper.slideTo(index, 0);
+      }
+
+      const el = this;
+      swiper.once('transitionEnd', () => {
+        try { el.focus(); } catch (e) {}
+      });
+    }
+  );
 }
