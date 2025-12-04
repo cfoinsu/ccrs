@@ -18503,6 +18503,8 @@ a:hover .d-card .c-tit {
   height: 260px;
   border-radius: 1.2rem;
   flex: none;
+  border: 1px solid var(--krds-light-color-divider-gray);
+  padding: 0.2rem;
 }
 .board-list .selected-card {
   display: flex;
@@ -18520,6 +18522,18 @@ a:hover .d-card .c-tit {
 .board-list .selected-card .content .conts-expand-area.txt-box {
   padding: 0;
   margin: 5rem 0;
+}
+@media (max-width: 767px) {
+  .board-list .selected-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 3.2rem 1.6rem 3.2rem 1.6rem;
+    gap: 3.2rem;
+  }
+  .g-wrap .g-card-list {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 }
 /*게시판 컴포넌트 스타일*/
 .search-top-box .sch-filter-box{
