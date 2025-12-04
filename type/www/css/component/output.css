@@ -18516,7 +18516,10 @@ a:hover .d-card .c-tit {
   width: 285px;
 }
 .board-list .selected-card .content {
-  display:block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
   flex:1;
 }
 .board-list .selected-card .content .conts-expand-area.txt-box {
