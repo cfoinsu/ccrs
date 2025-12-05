@@ -44,10 +44,20 @@ body {
   --krds-color-light-primary-40: #FFD89F;
   --krds-color-light-primary-50: #F48F01;
   --krds-color-light-primary-60: #ED7801;
-  --krds-color-light-primary-70: #CE6000;
   --krds-color-light-primary-80: #7C3F00;
   --krds-color-light-primary-90: #7C3F00;
   --krds-color-light-primary-95: #000000;
+  /* --krds-color-light-primary-5: #FFF5EB;
+  --krds-color-light-primary-10: #FFECD6;
+  --krds-color-light-primary-20: #FFDDB8;
+  --krds-color-light-primary-30: #FFC894;
+  --krds-color-light-primary-40: #F48F01;
+  --krds-color-light-primary-50: #EC6F01;
+  --krds-color-light-primary-60: #C55200;
+  --krds-color-light-primary-70: #A33B00;
+  --krds-color-light-primary-80: #852D00;
+  --krds-color-light-primary-90: #662000;
+  --krds-color-light-primary-95: #451400; */
   --krds-color-light-primary-100: #000000;
   --krds-color-light-secondary-0: #ffffff;
   --krds-color-light-secondary-5: #EBEEF3;

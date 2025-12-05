@@ -35,19 +35,19 @@ pre {margin: 0; white-space: pre-wrap; font-family: "NotoSansKR", sans-serif; li
 
 /* color */
 :root {
-	--main-color1: #ED7801;
-	--main-color2: #F48F01;
-	--main-color3: #D4E5C7;
-	--main-color4: #F3F8EF;
-	--main-color5: #777;
-	--main-color6: #aaa;
+	--main-color1: var(--krds-color-light-primary-60);
+	--main-color2: var(--krds-color-light-primary-50);
+	--main-color3: var(--krds-color-light-success-10);
+	--main-color4: var(--krds-color-light-success-5);
+	--main-color5: var(--krds-color-light-gray-60);
+	--main-color6: var(--krds-color-light-gray-30);
 	--main-color7: var(--krds-light-color-border-gray-light);
-	--main-color8: #f5f5f5;
+	--main-color8: var(--krds-color-light-gray-5);
 	--text-color1: var(--krds-light-color-icon-gray);
-	--text-color2: #242424;
-	--text-color3: #505050;
-	--text-color4: #666;
-	--text-colorW: #fff;
+	--text-color2: var(--krds-color-light-gray-90);
+	--text-color3: var(--krds-color-light-gray-50);
+	--text-color4: var(--krds-color-light-gray-60);
+	--text-colorW: var(--krds-color-light-gray-0);
 	--point-color1: #EA5212;
 	--point-color2: #C54235;
 	--point-color3: #47A8C7;

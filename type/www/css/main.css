@@ -23,7 +23,7 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 2rem 16.4rem;
-  background: var(--krds-light-color-text-inverse);
+  background: var(--krds-light-color-text-inverse-static);
   position: relative;
   z-index: 100;
 }
@@ -70,7 +70,7 @@
 /* 검색 섹션 */
 .search-section {
   padding: 2rem 0;
-  background: var(--krds-light-color-text-inverse);
+  background: var(--krds-light-color-text-inverse-static);
 }
 @media (max-width: 767px) {
   .search-section {
@@ -337,7 +337,7 @@
   margin-top: auto;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
 }
 .main-banner.center .diagnosis-card-top .diagnosis-card-btn:hover {
   -webkit-transform: translateX(4px);
@@ -374,12 +374,12 @@
 .main-banner.center .diagnosis-card-bottom h2 {
   font-size: 2.4rem;
   font-weight: 700;
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
 }
 .main-banner.center .diagnosis-card-bottom p {
   font-size: 1.7rem;
   font-weight: 400;
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
 }
 .main-banner.center .diagnosis-card-bottom img {
   position: absolute;
@@ -430,7 +430,7 @@
   position: absolute;
   left: 3.2rem;
   top: 41.7rem;
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   z-index: 10;
 }
 
@@ -474,11 +474,11 @@
 }
 .indicator-line.active {
   width: 3.3rem;
-  background: var(--krds-light-color-text-inverse);
+  background: var(--krds-light-color-text-inverse-static);
 }
 
 .indicator-text {
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   font-size: 1.5rem;
   font-weight: 500;
   margin: 0 1.6rem;
@@ -779,14 +779,14 @@
 .news-title {
   font-size: 2.1rem;
   font-weight: 700;
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   margin-bottom: 2.4rem;
 }
 
 .news-subtitle {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   line-height: 1.4;
   margin-bottom: 2.4rem;
 }
@@ -848,7 +848,7 @@
   top: 45.4rem;
   left: 0;
   background: var(--krds-color-light-element-primary);
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   padding: 0.4rem 1rem;
   border-radius: 0.4rem;
   font-size: 1.5rem;
@@ -862,7 +862,7 @@
 }
 
 .benefit-card {
-  background: var(--krds-light-color-text-inverse);
+  background: var(--krds-light-color-text-inverse-static);
   border-radius: var(--box-round);
   padding: 4rem;
   position: relative;
@@ -870,7 +870,7 @@
 
 .small-loan {
   background: var(--krds-color-light-element-primary);
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   height: 12rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -889,7 +889,7 @@
 
 .faithful-payment {
   background: var(--krds-color-light-element-primary);
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   height: 52rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -966,7 +966,7 @@
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=386&h=252&fit=crop&crop=center");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=386&h=252&fit=crop&crop=center");
   background-size: cover;
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   grid-column: 3/5;
 }
 
@@ -974,7 +974,7 @@
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=386&h=252&fit=crop&crop=center");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=386&h=252&fit=crop&crop=center");
   background-size: cover;
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   grid-column: 5;
 }
 
@@ -982,7 +982,7 @@
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=386&h=252&fit=crop&crop=center");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=386&h=252&fit=crop&crop=center");
   background-size: cover;
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   grid-column: 3;
   grid-row: 2;
 }
@@ -991,7 +991,7 @@
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=386&h=252&fit=crop&crop=center");
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=386&h=252&fit=crop&crop=center");
   background-size: cover;
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   grid-column: 4/6;
   grid-row: 2;
 }
@@ -1314,14 +1314,14 @@ section {
 #section1 .swiper-slide .overlay-text h1 {
   font-size: 4.8rem;
   font-weight: 600;
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
 }
 #section1 .swiper-slide .overlay-text p {
   font-size: 2.4rem;
   line-height: 1.8;
   margin: 3rem 0;
-  color: var(--krds-light-color-text-inverse);
-  /*var(--krds-light-color-text-inverse)-space: pre-line;*/
+  color: var(--krds-light-color-text-inverse-static);
+  /*var(--krds-light-color-text-inverse-static)-space: pre-line;*/
 }
 #section1 .controller-bar {
   position: sticky;
@@ -1337,7 +1337,7 @@ section {
 }
 #section1 .controller-bar a {
   display: inline-block;
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   margin: 0 0.8rem;
   line-height: 24px;
 }
@@ -1644,16 +1644,16 @@ section {
   cursor: pointer;
 }
 #section3 .contents-wrap .news-area .news-box:hover .news-class {
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
 }
 #section3 .contents-wrap .news-area .news-box:hover h6 {
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
 }
 #section3 .contents-wrap .news-area .news-box:hover p {
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
 }
 #section3 .contents-wrap .news-area .news-box:hover span {
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
 }
 #section3 .contents-wrap .poster-area {
   display: -webkit-box;
@@ -1812,7 +1812,7 @@ section {
   width: 100%;
   height: 6.4rem;
   margin: 0 auto;
-  background: var(--krds-light-color-text-inverse);
+  background: var(--krds-light-color-text-inverse-static);
   border: 1px solid var(--krds-light-color-border-primary);
   border-radius: 1000px;
   padding: 0 6rem 0 3rem;
@@ -1954,7 +1954,7 @@ section {
   font-size: 1.8rem;
   font-weight: 500;
   padding: 1.9rem 3rem 1.9rem 1.4rem;
-  background: var(--krds-light-color-text-inverse) url(../images/main/link_btn_m.svg) center right 24px no-repeat;
+  background: var(--krds-light-color-text-inverse-static) url(../images/main/link_btn_m.svg) center right 24px no-repeat;
   background-size: 1.7rem 1.4rem;
   border-radius: 1000px;
   line-height: 1;
@@ -2329,7 +2329,7 @@ body:has(.intro.show) {
   font-weight: var(--krds-font-weight-bold);
   border: var(--krds-light-border-width-variable-regular) solid var(--krds-light-color-border-gray-light);
   border-radius: var(--krds-radius-max);
-  background-color: var(--krds-light-color-surface-var(--krds-light-color-text-inverse));
+  background-color: var(--krds-light-color-surface-var(--krds-light-color-text-inverse-static));
 }
 .swiper-pagination.swiper-pagination-fraction .swiper-pagination-current {
   color: var(--krds-light-color-text-secondary);
@@ -2717,7 +2717,7 @@ body:has(.intro.show) {
   width: auto;
 }
 .main-content .swiper-container .swiper-pagination.white .swiper-pagination-bullet {
-  background-color: var(--krds-light-color-text-inverse);
+  background-color: var(--krds-light-color-text-inverse-static);
 }
 
 .section-header .main-tit {
@@ -2753,7 +2753,7 @@ body:has(.intro.show) {
   margin-bottom: 1.5rem;
   padding: 0.4rem 1rem;
   background: var(--krds-light-color-element-primary);
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   font-size: 1.5rem;
   border-radius: 3rem;
   -webkit-transform: translateX(-3rem);
@@ -2873,7 +2873,7 @@ body:has(.intro.show) {
   height: 27.7rem;
 }
 .grid-col3 .hoverline ul li {
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2952,7 +2952,7 @@ body:has(.intro.show) {
 }
 .grid-col3 .bottombox .bottombox-txt strong {
   display: block;
-  color: #ED7801;
+  color: var(--krds-color-light-primary-60);
 }
 .grid-col3 .bottombox .bottombox-txt span {
   display: block;
@@ -3034,7 +3034,7 @@ body:has(.intro.show) {
   bottom: 8rem;
   left: var(--box-padding-x);
   right: var(--box-padding-x);
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   z-index: 1;
 }
 @media (max-width: 767px) {
@@ -3165,11 +3165,11 @@ body:has(.intro.show) {
   height: 18.1rem;
   padding: var(--box-padding-y) var(--box-padding-x);
   border-radius: 24px;
-  background: var(--krds-color-light-primary-50) url(/type/www/images/main/debt2-2-bg.svg) 100% 100% no-repeat;
+  background: var(--krds-color-light-primary-50) url(/type/www/images/main/fina-2-bg.svg) 100% 100% no-repeat;
 }
 .col-debt2-2 a strong {
   font-size: 2.4rem;
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
 }
 
 .col-debt3 {

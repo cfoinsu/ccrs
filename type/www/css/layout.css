@@ -1077,9 +1077,6 @@ Version : v1.0
     height: 3.3rem;
 }
 
-.phone-number {
-    color: #ff8c29;
-}
 .footer-link {
   color: var(--krds-light-color-text-basic-inverse);
   text-decoration: none;
@@ -1103,7 +1100,7 @@ Version : v1.0
 }
 
 .footer-link.important {
-  color: var(--krds-light-color-text-primary);
+  color: var(--krds-color-light-primary-50);
 }
 
 .footer-link:hover {
