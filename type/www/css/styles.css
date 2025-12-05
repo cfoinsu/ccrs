@@ -3223,7 +3223,7 @@ body aside {
 /* Quick Menu */
 
 .phone-number {
-    color: #ff8c29;
+    color: var(--krds-color-light-primary-50);
 }
 
 /* Responsive Design */
