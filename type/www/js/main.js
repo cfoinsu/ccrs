@@ -168,7 +168,7 @@ function initSwiperSliders() {
         disableOnInteraction: false,
       },
       //loop: true,
-      //loopedSlides: 3,
+      loopedSlides: 3,
       pagination: {
         el: '#mainSlider-pagination',
         clickable: true,
@@ -180,18 +180,7 @@ function initSwiperSliders() {
       },
       a11y: { 
         enabled: true,  // 접근성 기능 활성화
-        paginationBulletMessage: '메인 배너 {{index}}번 슬라이드로 이동'
-      },
-      on: {
-        init: function () {
-          disableDuplicateFocus(this);
-        },
-        slideChange: function () {
-          disableDuplicateFocus(this);
-        },
-        update: function () {
-          disableDuplicateFocus(this);
-        }
+        paginationBulletMessage: '메인 배너 {{index}}번 슬라이드로 이동',
       }
     });
     //initSwiperFocus();
@@ -333,32 +322,35 @@ function initSwiperFocus() {
     'focus',
     'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])',
     function () {
+
+      if ($(this).hasClass('swiper-pagination-bullet')) {
+        return;
+      }
+
       var $slide = $(this).closest('.swiper-slide');
       if (!$slide.length) return;
 
-      // duplicate는 무시
       if ($slide.hasClass('swiper-slide-duplicate')) return;
 
       let container = $slide.closest('.swiper-container')[0];
-
-      // 정확히 해당 스와이퍼 찾기
       let swiper = swiperList.find(s => s.el === container);
       if (!swiper) return;
 
-      // autoplay 중단
       if (swiper.autoplay) {
         try { swiper.autoplay.stop(); } catch (e) {}
       }
 
-      // index 계산
       let index = $slide.data('swiper-slide-index');
       if (typeof index === 'undefined') index = $slide.index();
 
-      // loop이면 slideToLoop 사용
-      if (typeof swiper.slideToLoop === 'function') {
+      if (swiper.params.loop && typeof swiper.slideToLoop === 'function') {
         swiper.slideToLoop(index, 0);
+
+        console.log('111')
       } else {
         swiper.slideTo(index, 0);
+
+        console.log('222')
       }
 
       const el = this;
@@ -368,3 +360,7 @@ function initSwiperFocus() {
     }
   );
 }
+
+document.addEventListener('focusin', (e) => {
+  console.log(e.target);
+});
