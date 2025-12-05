@@ -9,7 +9,7 @@ Version : v1.0
 html {font-size: 10px; box-sizing: border-box; scroll-behavior: smooth;}
 *, *:before, *:after {box-sizing: border-box;}
 /* :focus {outline: 2px solid red;} */
-body {font-size: 1.6rem; margin: 0; padding: 0; font-weight: 400;  color: #181818;list-style: none; -webkit-text-size-adjust: none;}
+body {font-size: 1.6rem; margin: 0; padding: 0; font-weight: 400;  color: var(--krds-light-color-text-basic);list-style: none; -webkit-text-size-adjust: none;}
 ul, ol, li, dl, dt, dd {margin: 0; padding: 0; list-style: none;}
 p, h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0; transform: skew(-0.1deg);}
 a {color: inherit; text-decoration: none; transform: skew(0.2deg); cursor: pointer; text-underline-offset: 0.4rem;}
@@ -17,7 +17,7 @@ img {border: 0; vertical-align: middle; font-size: 0;}
 /* table {border-collapse: collapse; border-spacing: 0; width: 100%;} */
 th {font-weight: inherit;}
 caption, legend {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;}
-select, input {color: #555; vertical-align: middle;}
+select, input {color: var(--krds-color-light-gray-60); vertical-align: middle;}
 b, strong {font-weight: 700;}
 address, em, i {font-style: normal;}
 button {border: 0; background: none; cursor: pointer; color: inherit;}
@@ -27,7 +27,7 @@ fieldset, video {border: none; padding: 0; margin: 0; box-sizing: border-box;}
 input[type="submit"] {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
 header, footer, article, section, aside, nav, main {display: block;}
 button, input, optgroup, select, textarea {font-family: inherit; font-size: inherit; font-weight: inherit; margin: 0;}
-pre {margin: 0; white-space: pre-wrap; font-family: "NotoSansKR", sans-serif; line-height: 1.6; color: #555;}
+pre {margin: 0; white-space: pre-wrap; font-family: "NotoSansKR", sans-serif; line-height: 1.6; color: var(--krds-color-light-gray-60);}
 
 @media (max-width: 767px) {
 	html {font-size: 8px;}
@@ -41,9 +41,9 @@ pre {margin: 0; white-space: pre-wrap; font-family: "NotoSansKR", sans-serif; li
 	--main-color4: #F3F8EF;
 	--main-color5: #777;
 	--main-color6: #aaa;
-	--main-color7: #d9d9d9;
+	--main-color7: var(--krds-light-color-border-gray-light);
 	--main-color8: #f5f5f5;
-	--text-color1: #181818;
+	--text-color1: var(--krds-light-color-icon-gray);
 	--text-color2: #242424;
 	--text-color3: #505050;
 	--text-color4: #666;
@@ -237,13 +237,13 @@ p.lh3 {line-height: 3rem;}
 
 /* list style */
 ul.circle li {position: relative; margin-left: 15px;}
-ul.circle li::before {position: absolute; content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; top: 14px; left: -15px; background: #181818;}
+ul.circle li::before {position: absolute; content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; top: 14px; left: -15px; background: var(--krds-light-color-icon-gray);}
 ul.circle-30 li {position: relative; margin-left: 15px;}
-ul.circle-30 li::before {position: absolute; content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; top: 20px; left: -15px; background: #181818;}
+ul.circle-30 li::before {position: absolute; content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; top: 20px; left: -15px; background: var(--krds-light-color-icon-gray);}
 
 /* border */
-.borderT1 {width: 100%; border-top: 1px solid #d9d9d9;}
-.borderB1 {width: 100%; border-bottom: 1px solid #d9d9d9;}
+.borderT1 {width: 100%; border-top: 1px solid var(--krds-light-color-border-gray-light);}
+.borderB1 {width: 100%; border-bottom: 1px solid var(--krds-light-color-border-gray-light);}
 
 /* align */
 .align-left {text-align: left !important;}
@@ -251,7 +251,7 @@ ul.circle-30 li::before {position: absolute; content: ''; display: block; width:
 .align-center {text-align: center !important;}
 
 /* background */
-.bg-point {background: linear-gradient(180deg, rgba(243, 248, 239, 0) 50%, #F3F8EF 50%); width: fit-content;}
+.bg-point {background: linear-gradient(180deg, rgba(243, 248, 239, 0) 50%, var(--krds-color-light-success-5) 50%); width: fit-content;}
 
 .sr_only {
 	position: absolute;

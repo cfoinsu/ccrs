@@ -288,6 +288,7 @@ body {
   --krds-light-color-surface-gray-subtle: var(--krds-color-light-gray-10);
   --krds-light-color-surface-disabled: var(--krds-color-light-gray-20);
   --krds-light-color-surface-primary-subtler: var(--krds-color-light-primary-5);
+  --krds-light-color-surface-secondary: var(--krds-color-light-secondary-90);
   --krds-light-color-surface-secondary-subtler: var(--krds-color-light-secondary-5);
   --krds-light-color-surface-danger-subtler: var(--krds-color-light-danger-5);
   --krds-light-color-surface-warning-subtler: var(--krds-color-light-warning-5);
@@ -300,7 +301,7 @@ body {
   --krds-light-color-surface-inverse-static: var(--krds-color-light-gray-90);
   --krds-light-color-surface-white-subtle: var(--krds-color-light-gray-0);
   --krds-light-color-surface-white-subtler: var(--krds-color-light-gray-0);
-  --krds-light-color-border-gray-light: var(--krds-color-light-gray-20);
+  --krds-light-color-border-gray-light: var(--krds-color-light-gray-10);
   --krds-light-color-border-gray: var(--krds-color-light-gray-30);
   --krds-light-color-border-secondary-light: var(--krds-color-light-secondary-100);
   --krds-light-color-border-danger-light: var(--krds-color-light-danger-10);
@@ -347,7 +348,7 @@ body {
   --krds-light-color-text-bolder-inverse: var(--krds-color-light-gray-0);
   --krds-light-color-text-basic-inverse: var(--krds-color-light-gray-0);
   --krds-light-color-text-subtle-inverse: var(--krds-color-light-gray-30);
-  --krds-light-color-text-inverse-static: var(--krds-color-light-gray-0);
+  --krds-light-color-text-inverse: var(--krds-color-light-gray-0);
   --krds-light-color-text-static: var(--krds-color-light-gray-95);
   --krds-light-color-icon-gray: var(--krds-color-light-gray-80);
   --krds-light-color-icon-gray-fill: var(--krds-color-light-gray-20);
