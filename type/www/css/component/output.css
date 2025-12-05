@@ -29,6 +29,7 @@
   --krds-icon--size-medium: var(--krds-size-height-3);
   --krds-icon--size-large: var(--krds-size-height-4);
   --krds-icon--size-xlarge: var(--krds-size-height-4);
+  --krds-button--color-primary-text: var(--krds-light-color-text-inverse);
 }
 
 [data-krds-mode=high-contrast] :root {

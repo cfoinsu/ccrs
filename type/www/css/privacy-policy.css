@@ -18,11 +18,11 @@
 .box-help-info p {
   margin: 0;
   padding: 0;
-  color: #8a949e;
+  color: var(--krds-color-light-gray-40);
 }
 
 .box-help-info .hr-dash {
-  border-top-color: #8a949e;
+  border-top-color: var(--krds-color-light-gray-40);
 }
 
 .box-help-info .tit {
@@ -45,11 +45,11 @@
 }
 
 .box-help-info .txt {
-  color: #464c53;
+  color: var(--krds-color-light-gray-70);
 }
 
 .box-help-info .txt a {
-  color: #464c53;
+  color: var(--krds-color-light-gray-70);
 }
 
 /* 예외케이스 타이틀 없이 설명목록만 나오는 경우 (모달에 들어감) */
@@ -87,7 +87,7 @@
   position: relative;
   margin-top: 1.2rem;
   padding-left: 3.2rem;
-  color: #464c53;
+  color: var(--krds-color-light-gray-70);
 }
 
 .list-bull > li:first-child {
@@ -103,7 +103,7 @@
   width: 0.6rem;
   height: 0.6rem;
   border-radius: 0.6rem;
-  background-color: #464c53;
+  background-color: var(--krds-color-light-gray-70);
 }
 
 .list-bull.link li a {
@@ -147,7 +147,7 @@
   margin-top: 0.8rem;
   padding-left: 0.8rem;
   font-size: var(--iw-fz-b-sm);
-  color: #464c53;
+  color: var(--krds-color-light-gray-70);
 }
 
 .list-dot > li:first-child {
@@ -163,12 +163,12 @@
   width: 0.2rem;
   height: 0.2rem;
   border-radius: 0.2rem;
-  background-color: #464c53;
+  background-color: var(--krds-color-light-gray-70);
 }
 
 .list-dot.link li a {
   padding: 0;
-  color: #464c53;
+  color: var(--krds-color-light-gray-70);
 }
 
 /* list-dash */
@@ -182,7 +182,7 @@
   position: relative;
   margin-top: 0.8rem;
   padding-left: 2rem;
-  color: #464c53;
+  color: var(--krds-color-light-gray-70);
 }
 
 .list-dash > li:first-child {
@@ -197,7 +197,7 @@
   top: 1.5rem;
   width: 0.6rem;
   height: 0.12rem;
-  background-color: #464c53;
+  background-color: var(--krds-color-light-gray-70);
 }
 
 .list-dash.link li::before {
@@ -271,13 +271,13 @@ ol.list-number {
 .term-wrap .title {
   margin: 0;
   margin-bottom: 2rem;
-  color: #1e2124;
+  color: var(--krds-color-high-contrast-gray-90);
   font-size: 3.2rem;
   font-weight: 700;
 }
 .term-wrap .bullet {
   font-size: 2.4rem;
-  color: #01133b;
+  color: var(--krds-color-light-secondary-80);
   padding-left: 1.2rem;
   position: relative;
 }
@@ -304,7 +304,7 @@ ol.list-number {
   margin-top: 2.4rem;
 }
 .krds-tab-area .tab.line.full li.active .btn-tab {
-  background: #fff;
+  background: var(--krds-color-light-gray-0);
   border: 1px solid #0C4DCF;
   color: #181818;
 }
@@ -342,7 +342,7 @@ ol.list-number {
 }
 .krds-tab-area .tab-conts-wrap {
   padding: 2.4rem 3.2rem;
-  background: #fff;
+  background: var(--krds-color-light-gray-0);
   border: 1px solid #0C4DCF;
   border-radius: 24px;
 }
@@ -359,23 +359,23 @@ ol.list-number {
       flex-shrink: 0;
   width: 25rem;
   font-size: 1.9rem;
-  color: #012063;
+  color: var(--krds-color-light-secondary-70);
 }
 .krds-tab-area .tab-conts-wrap li .txt {
   font-size: 1.7rem;
-  color: #17191B;
+  color: var(--krds-color-light-gray-95);
 }
 
 .term-anchor-list {
   padding: 1.2rem 3.2rem;
   margin-top: 2.4rem;
   border-radius: 2.4rem;
-  border: 1px solid #D2D6DA;
+  border: 1px solid var(--krds-color-light-gray-20);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 .term-anchor-list li:not(:last-child):not(:nth-last-child(2)) {
-  border-bottom: 1px solid #D2D6DA;
+  border-bottom: 1px solid var(--krds-color-light-gray-20);
 }
 .term-anchor-list .btn-anchor {
   display: -webkit-box;
@@ -539,12 +539,12 @@ ol.list-number {
 
 .btn-box button {
   display: inline-block;
-  background: #666;
+  background: var(--krds-color-light-gray-50);
   border-radius: 6px;
   font-size: 16px;
   padding: 6px 10px;
-  color: #fff;
-  border: 1px solid #000;
+  color: var(--krds-color-light-gray-0);
+  border: 1px solid var(--krds-color-light-gray-100);
 }
 
 .list-number .list-bull {
@@ -613,7 +613,7 @@ ol.list-number {
 
 .popup-header {
   width: 100%;
-  border-bottom: 2px solid #01133b;
+  border-bottom: 2px solid var(--krds-color-light-secondary-80);
   padding: 1.5rem;
   margin-bottom: 2.5rem;
 }
@@ -621,7 +621,7 @@ ol.list-number {
 .popup-title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #01133b;
+  color: var(--krds-color-light-secondary-80);
   margin: 0;
 }
 
@@ -641,7 +641,7 @@ ol.list-number {
 .popup-content h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #01133b;
+  color: var(--krds-color-light-secondary-80);
   margin-top: 4rem;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
@@ -653,13 +653,13 @@ ol.list-number {
 .popup-content h3 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #01133b;
+  color: var(--krds-color-light-secondary-80);
   margin-top: 2.5rem;
   margin-bottom: 1.2rem;
 }
 .popup-content strong {
   font-weight: 600;
-  color: #01133b;
+  color: var(--krds-color-light-secondary-80);
 }
 /* .popup-content ul {
   margin: 1.5rem 0;
@@ -678,7 +678,7 @@ ol.list-number {
   left: 0;
   width: 0.4rem;
   height: 0.4rem;
-  background: #01133b;
+  background: var(--krds-color-light-secondary-80);
   border-radius: 50%;
 } */
 .popup-content a {
@@ -694,7 +694,7 @@ ol.list-number {
 .popup-content .terms_labeling h2 {
   font-size: 2rem;
   font-weight: 700;
-  color: #01133b;
+  color: var(--krds-color-light-secondary-80);
   margin: 0 0 2rem 0;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #e5e5e5;
@@ -744,20 +744,20 @@ ol.list-number {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: #666;
+  color: var(--krds-color-light-gray-50);
   font-size: 1.6rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .popup-content .terms_labeling .labeling_li:hover h4 {
-  background: #fff;
-  border-color: #01133b;
-  color: #01133b;
+  background: var(--krds-color-light-gray-0);
+  border-color: var(--krds-color-light-secondary-80);
+  color: var(--krds-color-light-secondary-80);
   -webkit-transform: translateX(4px);
           transform: translateX(4px);
 }
 .popup-content .terms_labeling .labeling_li:hover h4::before {
-  color: #01133b;
+  color: var(--krds-color-light-secondary-80);
   left: 1.6rem;
 }
 .popup-content .terms_labeling .labeling_li .label_layer {
@@ -800,20 +800,20 @@ ol.list-number {
   position: absolute;
   left: 1.2rem;
   top: 1.1rem;
-  color: #666;
+  color: var(--krds-color-light-gray-50);
   font-size: 1.6rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .popup-content .terms_content .cnt_list li a:hover {
   background: #e9ecef;
-  border-color: #01133b;
-  color: #01133b;
+  border-color: var(--krds-color-light-secondary-80);
+  color: var(--krds-color-light-secondary-80);
   -webkit-transform: translateX(4px);
           transform: translateX(4px);
 }
 .popup-content .terms_content .cnt_list li a:hover::before {
-  color: #01133b;
+  color: var(--krds-color-light-secondary-80);
   left: 1.6rem;
 }
 .popup-content dl {
@@ -829,7 +829,7 @@ ol.list-number {
   gap: 1rem;
   font-size: 2rem;
   font-weight: 700;
-  color: #01133b;
+  color: var(--krds-color-light-secondary-80);
   margin-top: 5rem !important;
   padding-top: 4rem;
   border-top: 1px solid #e1e1e1;
@@ -866,7 +866,7 @@ ol.list-number {
 .popup-content dl dd .btn-box a {
   display: inline-block;
   padding: 1.2rem 2.4rem;
-  background: #01133b;
+  background: var(--krds-color-light-secondary-80);
   color: white;
   border-radius: 0.8rem;
   text-decoration: none;
@@ -902,7 +902,7 @@ ol.list-number {
   left: 0;
   top: 0;
   font-weight: 600;
-  color: #01133b;
+  color: var(--krds-color-light-secondary-80);
 }
 .popup-content .table_person {
   width: 100%;
@@ -930,7 +930,7 @@ ol.list-number {
 .popup-content .table_person thead th {
   background-color: #f8f9fa;
   font-weight: 600;
-  color: #01133b;
+  color: var(--krds-color-light-secondary-80);
   text-align: center;
 }
 .popup-content .table_person thead th[style*="height:2px"] {
@@ -1022,7 +1022,7 @@ ol.list-number {
   bottom: 2rem;
   right: 2rem;
   padding: 2rem 3rem;
-  background: #01133b;
+  background: var(--krds-color-light-secondary-80);
   color: white;
   border: none;
   border-radius: 0.6rem;
@@ -1064,7 +1064,7 @@ ol.list-number {
 .popup-content table thead th {
   background-color: #f8f9fa;
   font-weight: 600;
-  color: #01133b;
+  color: var(--krds-color-light-secondary-80);
   text-align: center;
 }
 .popup-content table tbody th {
@@ -1117,19 +1117,19 @@ ol.list-number {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 1.8rem;
-  color: #666;
+  color: var(--krds-color-light-gray-50);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .privacy-history-list li a:hover {
   background: #e9ecef;
-  border-color: #01133b;
-  color: #01133b;
+  border-color: var(--krds-color-light-secondary-80);
+  color: var(--krds-color-light-secondary-80);
   -webkit-transform: translateX(4px);
           transform: translateX(4px);
 }
 .privacy-history-list li a:hover::after {
-  color: #01133b;
+  color: var(--krds-color-light-secondary-80);
   right: 1.5rem;
 }
 .privacy-history-list li a:active {
