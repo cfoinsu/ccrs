@@ -394,7 +394,7 @@ Version : v1.0
 }
 .utility-right .grayroundbox li.on {
   background: var(--krds-light-color-button-primary-fill);
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   padding: 0.4rem 2rem;
   border-radius: 20px;
   line-height: 34px;
@@ -1042,7 +1042,7 @@ Version : v1.0
 /* Footer */
 .footer {
   background: var(--krds-light-color-surface-secondary);
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   padding: 4rem 0;
   /* margin-top: 60px; */
 }
@@ -1122,7 +1122,7 @@ Version : v1.0
 }
 .main-footer {
   background-color: var(--krds-light-color-surface-inverse);
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   padding: 4rem 0;
 }
 
@@ -2644,7 +2644,7 @@ main.map-content .container {
 }
 .map-content .tab-layout .region li.on {
   background: var(--krds-light-color-text-primary);
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
 }
 .map-content .tab-layout .util-btns {
   display: flex;
@@ -2797,7 +2797,7 @@ main.map-content .container {
   text-align: center;
   width: 1.8rem;
   height: 1.8rem;
-  color: var(--krds-light-color-text-inverse);
+  color: var(--krds-light-color-text-inverse-static);
   padding: 0;
 }
 .subway-tag.nb01 {
