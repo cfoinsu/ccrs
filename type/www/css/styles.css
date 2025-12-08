@@ -386,7 +386,7 @@ body aside {
     font-size: 2rem;
     width: 100%;
     text-align: center;
-    color: var(--krds-color-light-gray-70);
+    color: var(--krds-color-light-gray-80);
     font-weight: 700;
 }
 
@@ -533,7 +533,7 @@ body aside {
 
 .action-btn.active,
 .action-btn:hover {
-    background-color: var(--krds-light-color-button-gray-fill);
+    background-color: var(--krds-light-color-button-primary-fill);
 }
 
 .action-btn .fa-question-circle:before {
@@ -1640,7 +1640,7 @@ body aside {
 }
 
 .compare-btn {
-    background: var(--krds-light-color-button-gray-fill);
+    background: var(--krds-light-color-button-primary-fill);
     color: var(--krds-color-light-gray-0);
     border: none;
     padding: 0.8rem 2.4rem;
@@ -1679,7 +1679,7 @@ body aside {
 
 .action-button {
     width: 100%;
-    background: var(--krds-light-color-button-gray-fill);
+    background: var(--krds-light-color-button-primary-fill);
     color: var(--krds-color-light-gray-0);
     border: none;
     padding: 0.8rem 1.6rem;
@@ -1748,7 +1748,7 @@ body aside {
 }
 
 .btn-primary {
-    background: var(--krds-light-color-button-gray-fill);
+    background: var(--krds-light-color-button-primary-fill);
     color: var(--krds-light-color-text-bolder-inverse);
     border: none;
     cursor: pointer;
@@ -5706,7 +5706,7 @@ table .krds-info-list>li {
     text-align: right;
     margin-left: auto;
     margin-right: 4px;
-    width: auto;
+    width: 100%;
     min-width: 60px;
 }
 
@@ -5778,7 +5778,6 @@ table .krds-info-list>li {
     display: flex;
     justify-content: center;
     gap: 8px;
-    padding: 0 20px;
 }
 
 .figma-btn {
@@ -5832,79 +5831,6 @@ table .krds-info-list>li {
     }
 }
 
-@media (max-width: 767px) {
-    .figma-step-tabs {
-        flex-direction: row;
-        gap: 0;
-        padding: 0;
-        height: auto;
-        overflow-x: auto;
-    }
-
-    .figma-step-tabs::-webkit-scrollbar {
-        display: none;
-    }
-
-    .figma-step-tab {
-        width: 25%;
-        padding: 1.2rem 1.6rem;
-        font-size: 1.4rem;
-        white-space: nowrap;
-        flex-shrink: 0;
-    }
-
-    .figma-step-item[data-step="1"],
-    .figma-step-item[data-step="2"] {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .figma-step-icon {
-        margin-top: 0;
-        width: 4.8rem;
-        height: 4.8rem;
-    }
-
-    .figma-step-inner {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .figma-step-header {
-        text-align: center;
-        margin-bottom: 1.6rem;
-    }
-
-    .figma-step-title {
-        font-size: 1.8rem;
-        line-height: 24px;
-    }
-
-    .figma-input-box,
-    .figma-chips-container {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    .figma-chip {
-        width: 100%;
-        margin-bottom: 8px;
-    }
-
-    .figma-buttons {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .figma-btn {
-        width: 100%;
-    }
-
-    .figma-step-group {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 
 /* 탭별 배경색 설정 */
 .figma-step-container[data-current-step="1"] .figma-step-content,
@@ -5974,6 +5900,81 @@ table .krds-info-list>li {
 
     .figma-step-content {
         height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .figma-step-tabs {
+        flex-direction: row;
+        gap: 0;
+        padding: 0;
+        height: auto;
+        overflow-x: auto;
+    }
+
+    .figma-step-tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .figma-step-tab {
+        width: auto;
+        padding: 1.2rem 1.6rem;
+        font-size: 1.4rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .figma-step-item[data-step="1"],
+    .figma-step-item[data-step="2"] {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .figma-step-icon {
+        margin-top: 0;
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+
+    .figma-step-inner {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .figma-step-header {
+        text-align: center;
+        margin-bottom: 1.6rem;
+    }
+
+    .figma-step-title {
+        font-size: 1.8rem;
+        line-height: 24px;
+    }
+
+    .figma-input-box,
+    .figma-chips-container {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .figma-chip {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .figma-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .figma-btn {
+        width: 100%;
+    }
+
+    .figma-step-group {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 }
 
@@ -7095,7 +7096,7 @@ input[type=radio]:checked+label.fillter-chip {
 }
 
 .orange-link {
-    background: var(--krds-color-light-gray-50);
+    background: var(--krds-color-light-primary-50);
     font-weight: 700;
     color: var(--krds-color-light-gray-0);
     padding: 0 16px;
