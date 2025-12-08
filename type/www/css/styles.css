@@ -1882,7 +1882,7 @@ body aside {
 }
 
 .submit-btn:hover {
-    background: var(--krds-color-light-primary-60);
+    background: var(--krds-color-light-pri);
 }
 
 /* Institution Links */
@@ -4627,15 +4627,15 @@ table.comparison-table td:first-child {
     margin: auto 0;
 }
 
-.g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc.largetext.gray {
-    color: var(--krds-light-color-text-gray);
+.g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc.largetext.primary {
+    color: var(--krds-light-color-text-primary);
     font-size: var(--krds-pc-font-size-heading-medium);
     font-weight: 700;
     line-height: 150%;
     margin-bottom: 0;
 }
 
-.g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc.largetext.gray span.board-ph {
+.g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc.largetext.primary span.board-ph {
     display: block;
     color: var(--krds-color-light-gray-95);
     font-size: 1.9rem;
