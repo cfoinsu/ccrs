@@ -3223,7 +3223,7 @@ body aside {
 /* Quick Menu */
 
 .phone-number {
-    color: var(--krds-color-light-gray-50);
+    color: var(--krds-color-light-primary-40);
 }
 
 /* Responsive Design */
@@ -4851,8 +4851,8 @@ table .krds-info-list>li {
     flex-shrink: 0;
 }
 
-.noti .gray {
-    color: var(--krds-light-color-text-gray);
+.noti .primary {
+    color: var(--krds-light-color-text-primary);
 }
 
 .conts-desc.row,
@@ -4985,7 +4985,7 @@ table .krds-info-list>li {
 /*행동강령 및 윤리헌장 스타일*/
 .charter-wrap {
     padding: 3.2rem;
-    background-color: var(--krds-color-light-gray-20);
+    background-color: var(--krds-color-light-primary-20);
     border-radius: var(--krds-radius-xlarge2);
 }
 
