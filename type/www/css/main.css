@@ -2971,6 +2971,12 @@ body:has(.intro.show) {
 @media (max-width: 1400px) {
   .grid-col3 .bottombox .bottombox-img {
     height: 28.5rem;
+    top: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .grid-col3 .bottombox .bottombox-img {
+    top: -3rem;
   }
 }
 .grid-col3 .bottombox .bottombox-img img {
