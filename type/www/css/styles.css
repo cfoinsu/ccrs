@@ -1882,7 +1882,7 @@ body aside {
 }
 
 .submit-btn:hover {
-    background: var(--krds-color-light-pri);
+    background: var(--krds-color-light-primary-60);
 }
 
 /* Institution Links */
