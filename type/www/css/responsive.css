@@ -683,6 +683,10 @@
     font-size: 1.9rem;
     color: #595959;
   }
+  .footer .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 .mobile-allmenu-overlay {
   position: fixed;

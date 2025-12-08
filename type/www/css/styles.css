@@ -7822,49 +7822,30 @@ table .table-center {
 }
 
 .credential-info-table th {
-    padding: 8px 0;
-    text-align: left;
-    font-weight: 700;
-    color: #333;
-    vertical-align: top;
-}
-
-.credential-info-table td {
-    padding: 8px 0;
-    color: #333;
-    vertical-align: top;
-}
-
-.credential-info-table .highlight-orange {
-    color: #ff8a00;
-    font-weight: 700;
-}
-
-.credential-info-table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed;
-}
-
-.credential-info-table th {
     padding: 12px 0;
     text-align: left;
     font-weight: 700;
-    color: #333;
     vertical-align: top;
     white-space: nowrap;
 }
 
 .credential-info-table td {
     padding: 12px 0;
-    color: #333;
     vertical-align: top;
     width: calc(50% - 12px);
 }
 
 .credential-info-table .highlight-orange {
-    color: #ff8a00;
+    color: var(--krds-light-color-text-primary);
     font-weight: 700;
+}
+
+@media (max-width: 767px) {
+    .credential-info-table {
+        td {
+            padding: 12px 8px;
+        }
+    }
 }
 
 .activity-cards {

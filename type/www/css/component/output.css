@@ -18671,6 +18671,17 @@ a:hover .d-card .c-tit {
   background-color: var(--krds-color-light-gray-0);
 }
 
+@media (max-width: 767px) {
+   .search-top-box .sch-filter-box {
+    padding: var(--krds-padding-8);
+    .filter-form {
+      flex-direction: column;
+      align-items: stretch;
+      gap: var(--krds-gap-6);
+    }
+  }
+}
+
 /* 공통 - 결과 리스트 상단 */
 .search-list-top {
   --search-list-color-text-primary: var(--krds-light-color-text-primary);
