@@ -3630,3 +3630,37 @@ body:has(.intro.show) {
     padding-bottom: 8rem;
   }
 }
+.pop_admin {
+  display: none;
+  background-color: #fff;
+  border-radius: 2.4rem;
+  border: 1px solid #000;
+  color: #1B2025;
+  outline-color: transparent;
+  transition: outline-color 0.1s;
+  box-shadow: 0 0 2px 0 #00000014, 0 4px 8px 0 #0000001A, 0 16px 24px 0 #0000001A;
+  .pop_ct {
+    padding: 3.2rem;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    overflow: auto;
+    max-width: 100%;
+    max-height: calc(100% - 40px);
+    img {
+      max-width: 100% !important;
+      object-fit: contain;
+    }
+  }
+  .closedArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 3.2rem 0.5rem;
+    height: 40px;
+    .inp_c{
+      label {
+        padding: 0;
+      }
+    }
+  }
+}
