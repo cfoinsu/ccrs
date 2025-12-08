@@ -1026,9 +1026,9 @@
 }
 .mobile-breadcrumb-nav {
   display: none;
-  background: linear-gradient(45deg, #f6f9ff 0%, #dae5ff 100%);
-  border-top: 1px solid #cbdaff;
-  border-bottom: 1px solid #cbdaff;
+  background: #fff;
+  border-top: 1px solid var(--krds-light-color-border-gray-light);
+  border-bottom: 1px solid var(--krds-light-color-border-gray-light);
   padding: 0 0 0 0.8rem;
   overflow: visible;
 }
