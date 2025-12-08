@@ -7083,7 +7083,7 @@ input[type=radio]:checked+label.fillter-chip {
 
 .orange-info {
     display: inline-block;
-    padding-left: 26px;
+    padding-left: 30px;
     background: url(../img/icons/ico_information_fill.svg) no-repeat left top;
     background-size: 24px;
     font-weight: 400;
