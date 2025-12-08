@@ -345,12 +345,8 @@ function initSwiperFocus() {
 
       if (swiper.params.loop && typeof swiper.slideToLoop === 'function') {
         swiper.slideToLoop(index, 0);
-
-        console.log('111')
       } else {
         swiper.slideTo(index, 0);
-
-        console.log('222')
       }
 
       const el = this;
@@ -361,6 +357,3 @@ function initSwiperFocus() {
   );
 }
 
-document.addEventListener('focusin', (e) => {
-  console.log(e.target);
-});
