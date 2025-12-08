@@ -238,6 +238,7 @@ body {
 }
 
 .nav-section.active .nav-subsection {
+    display: block;
     height: auto;
     transition: all 0.3s ease;
     padding-bottom: 1.6px;
@@ -261,6 +262,7 @@ body {
 }
 
 .nav-subsection {
+    display: none;
     list-style: none;
     padding: 0;
     background: var(--krds-light-color-surface-white);
