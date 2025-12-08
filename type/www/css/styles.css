@@ -7718,7 +7718,7 @@ table .table-center {
 
 .postion .positionbtn:hover {
     color: var(--krds-color-light-gray-0);
-    background-color: var(--krds-color-light-gray-50);
+    background-color: var(--krds-color-light-primary-50);
 }
 
 /* 모바일용 2열 그리드 버튼 리스트 */
