@@ -5245,8 +5245,8 @@ table .krds-info-list>li {
     top: 27px;
     left: 32px;
     width: 1px;
-    height: 150%;
-    background-color: var(--krds-color-light-primary-40);
+    height: 200%;
+    background-color: var(--krds-color-light-primary-30);
 }
 
 .timeline-year-section:last-child .timeline-content-area::before {
@@ -5782,7 +5782,6 @@ table .krds-info-list>li {
     height: 4.8rem;
     width: 25.2rem;
     border-radius: 6px;
-    font-family: 'Pretendard GOV', sans-serif;
     font-size: 1.7rem;
     line-height: 1.5;
     cursor: pointer;
@@ -5796,8 +5795,8 @@ table .krds-info-list>li {
     border: 1px solid #6d7882;
 }
 
-.figma-btn.gray {
-    background-color: var(--krds-color-light-gray-50);
+.figma-btn.primary {
+    background-color: var(--krds-color-light-primary-50);
     color: var(--krds-color-light-gray-0);
 }
 
