@@ -1836,8 +1836,8 @@ body aside {
 }
 
 .rating-option input[type="radio"]:checked+.radio-custom {
-    border-color: var(--krds-color-light-gray-50);
-    background: var(--krds-color-light-gray-50);
+    border-color: var(--krds-color-light-primary-50);
+    background: var(--krds-color-light-primary-50);
 }
 
 .rating-option input[type="radio"]:checked+.radio-custom::after {
@@ -2430,8 +2430,8 @@ body aside {
     background-color: var(--krds-color-light-gray-0);
     border-radius: 24px;
     z-index: 1;
-    box-shadow: 0px 0px 2px 0px #000014;
-    box-shadow: 0px 8px 16px 0px #00001F;
+    box-shadow: 0px 0px 2px 0px #00000014;
+    box-shadow: 0px 8px 16px 0px #0000001F;
 }
 
 .quick-item .quick-showbox span {
@@ -2489,7 +2489,7 @@ body aside {
 }
 
 .quick-item.book.on span {
-    color: var(--krds-color-light-gray-60);
+    color: var(--krds-color-light-primary-50);
 }
 
 .quick-item.book::before {
@@ -3185,7 +3185,8 @@ body aside {
     width: 6rem;
     height: 6rem;
     text-align: center;
-    background: radial-gradient(59.17% 59.17% at 50% 50%, #FF7614 0%, #F08D01 100%);
+    /* background: radial-gradient(59.17% 59.17% at 50% 50%, #FF7614 0%, #F08D01 100%); */
+    background: radial-gradient(59.17% 59.17% at 50% 50%, var(--krds-color-light-primary-50) 0%, var(--krds-color-light-primary-40) 100%);
     border-radius: 50%;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     color: var(--krds-color-light-gray-0);
@@ -3208,7 +3209,7 @@ body aside {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    background: radial-gradient(59.17% 59.17% at 50% 50%, #FF7614 0%, #F08D01 100%);
+    background: radial-gradient(59.17% 59.17% at 50% 50%, var(--krds-color-light-primary-50) 0%, var(--krds-color-light-primary-40) 100%);
     color: var(--krds-color-light-gray-0);
     border: none;
     cursor: pointer;
