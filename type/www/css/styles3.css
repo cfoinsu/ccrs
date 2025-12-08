@@ -3451,7 +3451,7 @@
   width: 21px;
   height: 21px;
   background-color: var(--krds-color-light-gray-0);
-  border: 2px solid #ed7801;
+  border: 2px solid var(--krds-color-light-primary-60);
   border-radius: 50%;
   box-sizing: border-box;
   flex-shrink: 0;
@@ -3466,12 +3466,12 @@
   transform: translate(-50%, -50%);
   width: 7px;
   height: 7px;
-  background-color: #ed7801;
+  background-color: var(--krds-color-light-primary-60);
   border-radius: 50%;
 }
 
 .history-date {
-  color: #ed7801;
+  color: var(--krds-color-light-primary-60);
   font-size: 2.4rem;
   font-weight: 700;
   font-family: 'Pretendard GOV', sans-serif;
