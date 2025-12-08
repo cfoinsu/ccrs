@@ -1261,13 +1261,13 @@ body aside {
     outline: none;
 }
 
-.btn.btn-gray {
+.btn.btn-primary {
     font-size: 1.9rem;
     font-weight: 400;
 }
 
-.info-item .btn.btn-gray,
-.result-card .btn.btn-gray {
+.info-item .btn.btn-primary,
+.result-card .btn.btn-primary {
     font-size: 1.4rem;
 }
 
@@ -1289,18 +1289,18 @@ body aside {
     cursor: not-allowed;
 }
 
-.btn-gray {
-    background-color: var(--krds-light-color-button-gray-fill);
+.btn-primary {
+    background-color: var(--krds-light-color-button-primary-fill);
     color: var(--krds-light-color-text-bolder-inverse);
 }
 
-.btn-gray:hover {
-    background-color: var(--krds-light-color-button-gray-hover);
+.btn-primary:hover {
+    background-color: var(--krds-light-color-button-primary-hover);
     color: var(--krds-color-light-gray-0);
 }
 
-.btn-gray:focus {
-    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), 0 0 0 4px var(--krds-light-color-button-gray-hover);
+.btn-primary:focus {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1), 0 0 0 4px var(--krds-light-color-button-primary-hover);
 }
 
 .btn-outline {
@@ -1745,7 +1745,7 @@ body aside {
     cursor: pointer;
 }
 
-.btn-gray {
+.btn-primary {
     background: var(--krds-light-color-button-gray-fill);
     color: var(--krds-light-color-text-bolder-inverse);
     border: none;
@@ -2759,8 +2759,8 @@ body aside {
     gap: 0.75rem;
 }
 
-.btn-gray {
-    background-color: var(--krds-light-color-button-gray-fill);
+.btn-primary {
+    background-color: var(--krds-light-color-button-primary-fill);
     color: var(--krds-light-color-text-bolder-inverse);
     padding: 0 1.6rem;
     border-radius: 0.5rem;
@@ -2772,8 +2772,8 @@ body aside {
     height: 46px;
 }
 
-.btn-gray:hover {
-    background-color: var(--krds-light-color-button-gray-fill-hover);
+.btn-primary:hover {
+    background-color: var(--krds-light-color-button-primary-fill-hover);
 }
 
 .btn-secondary {
@@ -8910,7 +8910,7 @@ a.customer-service-card {
     font-weight: 700;
 }
 
-.related-links-section .btn-gray {
+.related-links-section .btn-primary {
     flex-shrink: 0;
     padding: 8px 10px;
     border-radius: 8px;
@@ -8934,7 +8934,7 @@ a.customer-service-card {
         width: 100%;
     }
 
-    .related-links-section .btn-gray {
+    .related-links-section .btn-primary {
         width: 100%;
         text-align: center;
     }
