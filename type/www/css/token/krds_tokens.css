@@ -36,7 +36,7 @@ body {
 :root {
 
   /* PRIMITIVE */
-  --krds-color-light-primary-0: #ffffff;
+  /* --krds-color-light-primary-0: #ffffff;
   --krds-color-light-primary-5: #FFF9F2;
   --krds-color-light-primary-10: #FFF6EA;
   --krds-color-light-primary-20: #FFF2DB;
@@ -46,8 +46,8 @@ body {
   --krds-color-light-primary-60: #ED7801;
   --krds-color-light-primary-80: #7C3F00;
   --krds-color-light-primary-90: #7C3F00;
-  --krds-color-light-primary-95: #000000;
-  /* --krds-color-light-primary-5: #FFF5EB;
+  --krds-color-light-primary-95: #000000; */
+  --krds-color-light-primary-5: #FFF5EB;
   --krds-color-light-primary-10: #FFECD6;
   --krds-color-light-primary-20: #FFDDB8;
   --krds-color-light-primary-30: #FFC894;
@@ -57,7 +57,7 @@ body {
   --krds-color-light-primary-70: #A33B00;
   --krds-color-light-primary-80: #852D00;
   --krds-color-light-primary-90: #662000;
-  --krds-color-light-primary-95: #451400; */
+  --krds-color-light-primary-95: #451400;
   --krds-color-light-primary-100: #000000;
   --krds-color-light-secondary-0: #ffffff;
   --krds-color-light-secondary-5: #EBEEF3;
@@ -347,7 +347,7 @@ body {
   --krds-light-color-text-subtle: var(--krds-color-light-gray-95);
   --krds-light-color-text-disabled: var(--krds-color-light-gray-40);
   --krds-light-color-text-disabled-on: var(--krds-color-light-gray-50);
-  --krds-light-color-text-primary: var(--krds-color-light-primary-60);
+  --krds-light-color-text-primary: var(--krds-color-light-primary-50);
   --krds-light-color-text-secondary: var(--krds-color-light-secondary-80);
   --krds-light-color-text-danger: var(--krds-color-light-danger-60);
   --krds-light-color-text-warning: var(--krds-color-light-warning-60);
