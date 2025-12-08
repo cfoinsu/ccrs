@@ -5678,14 +5678,11 @@ table .krds-info-list>li {
 }
 
 .figma-input-label {
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: 'Pretendard GOV', sans-serif;
+    position: relative;
     font-size: 1.7rem;
     color: var(--krds-color-light-gray-95);
     white-space: nowrap;
+    margin-right: 0.8rem;
 }
 
 .figma-input-value-container {
