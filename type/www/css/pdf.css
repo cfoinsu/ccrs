@@ -330,7 +330,7 @@ body {
   .pdf-sidebar .sidebar-title {
     font-size: var(--krds-pc-font-size-body-medium);
     border-top: none;
-    border-left: 1px solid var(--krds-color-light-gray-20);
+    border-left: none;
     padding-top: 0;
     padding-left: var(--krds-number-6);
     margin: 0;
@@ -345,6 +345,7 @@ body {
     position: relative;
     top: auto;
     left: auto;
+    right: auto;
     -webkit-transform: none;
             transform: none;
     -webkit-box-orient: horizontal;
@@ -376,6 +377,7 @@ body {
             flex-direction: row;
     gap: var(--krds-number-4);
     border-radius: var(--krds-number-9);
+    bottom: 0;
   }
   .pdf-sidebar .pdf-download-btn svg {
     margin-top: 0;
@@ -387,6 +389,9 @@ body {
   }
   .pdf-sidebar .pdf-download-btn span:first-child {
     display: block;
+  }
+  .pdf-sidebar .pdf-download-btn span:first-child br{
+    display: none;
   }
   .pdf-content {
     padding: var(--krds-number-6);
