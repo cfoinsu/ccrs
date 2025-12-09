@@ -2478,7 +2478,7 @@ body aside {
 .quick-item .quick-showbox .showbox-item p.link-title {
     font-weight: 700;
     font-size: 1.7rem;
-    color: var(--krds-color-light-gray-100);
+    color: var(--krds-color-light-gray-95);
     text-align: left;
     line-height: 28px;
 }
@@ -2486,6 +2486,10 @@ body aside {
 .quick-item .quick-showbox .showbox-item p.link-title span {
     display: block;
     font-size: 2.1rem;
+}
+.quick-item .quick-showbox .showbox-item p.link-title>a {
+    display: block;
+    color: var(--krds-color-light-primary-50);
 }
 
 .quick-item .quick-showbox .showbox-item p.link-title .board-ph {
