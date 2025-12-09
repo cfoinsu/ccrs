@@ -9187,6 +9187,7 @@ a.customer-service-card {
 @media (max-width: 767px) {
     .conts-list-wrap .conts-list--flex {flex-direction: column;}
     .conts-list-wrap .krds-info-list {width: 100%;}
+    .conts-list-wrap .mo-flex-column .accordion-cont-img {width: 10rem;}
     .mo-flex-column {flex-direction: column !important;}
     .mo-flex-column .accordion-cont-img {width: fit-content;}
 
