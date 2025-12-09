@@ -7412,6 +7412,7 @@ input[type=radio]:checked+label.fillter-chip {
     .effect-box .boxc1.row .key-img,
     .effect-box .boxc2.row .key-img {
         flex-wrap: wrap;
+        width: 100%;
     }
 }
 
