@@ -2488,7 +2488,7 @@ body aside {
     font-size: 2.1rem;
 }
 
-.quick-item .quick-showbox .showbox-item p.link-title span.board-ph {
+.quick-item .quick-showbox .showbox-item p.link-title .board-ph {
     display: block;
     font-size: 1.3rem;
     color: var(--krds-color-light-gray-95);
@@ -4643,7 +4643,7 @@ table.comparison-table td:first-child {
     margin-bottom: 0;
 }
 
-.g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc.largetext.primary span.board-ph {
+.g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc.largetext.primary .board-ph {
     display: block;
     color: var(--krds-color-light-gray-95);
     font-size: 1.9rem;
@@ -9202,4 +9202,10 @@ a.customer-service-card {
     .credential-info-table--mo tr th, .credential-info-table--mo tr td {display: block; width: 100% !important;}
     .credential-info-table--mo tr th {padding: 2rem 0 0 0;}
     .credential-info-table--mo tr td {padding: .4rem 0 0 0;}
+
+    .g-grid-wrap.contect .appdown+.item-share.active {
+        top: auto;
+        bottom: -20rem;
+        right: 5rem;
+    }
 }
