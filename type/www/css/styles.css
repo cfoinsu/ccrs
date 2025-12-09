@@ -9169,3 +9169,18 @@ a.customer-service-card {
     display: flex;
     gap: 0.2rem;
 }
+
+.conts-list-wrap .accordion-cont-img {width: 10rem; height: 10rem !important; display: flex; align-items: center; justify-content: center; border-radius: 4rem !important;}
+.conts-list-wrap .conts-list {width: 100%;}
+.conts-list-wrap .krds-info-list > li {font-size: 1.7rem;}
+.conts-list-wrap .conts-list--flex {display: flex; width: 100%;}
+@media (max-width: 1280px) {
+    .conts-list-wrap .krds-info-list.ml40 {margin-left: 0 !important;}
+    .conts-list-wrap .krds-info-list {width: calc(50% - 2rem);}
+}
+@media (max-width: 767px) {
+    .conts-list-wrap .conts-list--flex {flex-direction: column;}
+    .conts-list-wrap .krds-info-list {width: 100%;}
+    .mo-flex-column {flex-direction: column !important;}
+    .mo-flex-column .accordion-cont-img {width: fit-content;}
+}
