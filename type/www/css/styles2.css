@@ -920,4 +920,8 @@
     .result-card-inner-wrapper .stats-sub-section .graph-wrap {
         min-height: 280px;
     }
+    
+    .info-content h4 br {
+        display: none;
+    }
 }
