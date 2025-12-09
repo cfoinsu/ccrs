@@ -5103,6 +5103,11 @@ table .krds-info-list>li {
     height: 12.7rem;
 }
 
+.charter-svg.top::before,
+.charter-svg.top::after,
+.charter-svg.bottom::before,
+.charter-svg.bottom::after {background-size: 100%;}
+
 /*윤리강령 아코디언 추가 스타일*/
 .board-list .g-tit {
     display: flex;
