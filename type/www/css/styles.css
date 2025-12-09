@@ -1388,12 +1388,6 @@ body aside {
     margin-top: -5px;
 }
 
-@media (max-width: 767px) {
-    .tooltip-trigger i.fas.fa-question-circle {
-        display: none;
-    }
-}
-
 .tooltip-trigger:hover .tooltip {
     display: block;
 }
@@ -1437,6 +1431,16 @@ body aside {
     transform: translateX(-50%);
     border: 4px solid transparent;
     border-top-color: var(--krds-color-light-gray-95);
+}
+
+@media (max-width: 767px) {
+    .tooltip-trigger i.fas.fa-question-circle {
+        display: none;
+    }
+    .tooltip-trigger:hover .tooltip {
+        display: none;
+    }
+
 }
 
 /* 배지 */
