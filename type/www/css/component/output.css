@@ -1378,8 +1378,6 @@ caption {
   }
   .mob-only {
     display: block !important;
-    width: 70% !important;
-    margin: 0 auto;
   }
   .pc-only {
     display: none !important;
