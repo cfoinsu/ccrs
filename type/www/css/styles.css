@@ -3400,8 +3400,8 @@ body aside {
     .g-wrap .g-grid-wrap {
         grid-template-columns: auto;
     }
-
-    .g-wrap .g-grid-wrap.unit2 {
+    .g-wrap .g-grid-wrap.unit2,
+    .g-wrap .g-grid-wrap.unit3 {
         grid-template-columns: repeat(1, 1fr);
     }
 
