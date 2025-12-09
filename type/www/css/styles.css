@@ -9188,6 +9188,18 @@ a.customer-service-card {
 @media (max-width: 1280px) {
     .conts-list-wrap .krds-info-list.ml40 {margin-left: 0 !important;}
     .conts-list-wrap .krds-info-list {width: calc(50% - 2rem);}
+
+    .contents-main {flex-wrap: wrap;}
+    .contents-main h3 {width: 100%;}
+    .contents-main label {width: 100%;}
+    .contents-main .krds-form-select {width: calc(100% - 23.1rem);}
+    .contents-main .krds-input {width: 150px !important;}
+    .contents-results {max-height: calc(100% - 11.5rem); padding-bottom: 3rem;}
+    .g-map-images {background-size: 100%;}
+}
+@media (max-width: 1024px) {
+    .map-search-box {flex-direction: column; align-items: center; gap: 3.2rem 0;}
+    .g-imag-hover, .centersearch {width: 100%;}
 }
 @media (max-width: 767px) {
     .conts-list-wrap .conts-list--flex {flex-direction: column;}
@@ -9202,4 +9214,34 @@ a.customer-service-card {
     .credential-info-table--mo tr th, .credential-info-table--mo tr td {display: block; width: 100% !important;}
     .credential-info-table--mo tr th {padding: 2rem 0 0 0;}
     .credential-info-table--mo tr td {padding: .4rem 0 0 0;}
+
+    .g-imag-hover .map-choose.seoul {top: 17%; left: 18%;}
+    .g-imag-hover .map-choose.kangwon {
+        top: 16%;
+        left: 51%;
+    }
+    .g-imag-hover .map-choose.gyunggi {
+        top: 25.8%;
+        left: 25%;
+    }
+    .g-imag-hover .map-choose.chungchung {
+        top: 40%;
+        left: 29%;
+    }
+    .g-imag-hover .map-choose.gyungsang {
+        top: 59%;
+        left: 59%;
+    }
+    .g-imag-hover .map-choose.jeonla {
+        top: 65%;
+        left: 20%;
+    }
+    .g-imag-hover .map-choose.jeju {
+        top: 92%;
+        left: 17%;
+    }
+    .contents-main .krds-form-select {width: 100%;}
+    .contents-main .krds-input {width: calc(100% - 6.5rem) !important;}
+    .centersearch {height: auto;}
+    .contents-results ul li {padding: 2rem 1.2rem;}
 }
