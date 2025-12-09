@@ -9200,6 +9200,11 @@ a.customer-service-card {
     .contents-main .krds-input {width: 150px !important;}
     .contents-results {max-height: calc(100% - 11.5rem); padding-bottom: 3rem;}
     .g-map-images {background-size: 100%;}
+
+    /* 지부위치안내 */
+    .map-content .sidebar {display: block;}
+    .map-content .content-area {height: 100vh;}
+    .map-content .content-area .ab_note {display: flex; align-items: center; justify-content: center; line-height: 1.5; text-align: center; height: auto; padding: .4rem 1.2rem;}
 }
 @media (max-width: 1024px) {
     .map-search-box {flex-direction: column; align-items: center; gap: 3.2rem 0;}
@@ -9219,31 +9224,23 @@ a.customer-service-card {
     .credential-info-table--mo tr th {padding: 2rem 0 0 0;}
     .credential-info-table--mo tr td {padding: .4rem 0 0 0;}
 
+    /* 지부위치안내 */
+    main.map-content {height: 100%; overflow-y: scroll;}
+    .map-content .tab-layout {flex-wrap: wrap; height: auto; gap: 16px 0;}
+    .map-content .tab-layout .region {margin: 0 -24px; padding: 0 24px; overflow-x: scroll;}
+    .map-content .content-layout {flex-direction: column-reverse;}
+    .map-content .content-layout .sidebar {width: 100%;}
+    .map-content .content-area {height: 40rem;}
+    .map-content .content-layout .sidebar-scroll-nav {height: auto; max-height: 100%;}
+    .specialMap.krds-modal .modal-dialog .modal-conts {padding: 0 1.6rem;}
+
     .g-imag-hover .map-choose.seoul {top: 17%; left: 18%;}
-    .g-imag-hover .map-choose.kangwon {
-        top: 16%;
-        left: 51%;
-    }
-    .g-imag-hover .map-choose.gyunggi {
-        top: 25.8%;
-        left: 25%;
-    }
-    .g-imag-hover .map-choose.chungchung {
-        top: 40%;
-        left: 29%;
-    }
-    .g-imag-hover .map-choose.gyungsang {
-        top: 59%;
-        left: 59%;
-    }
-    .g-imag-hover .map-choose.jeonla {
-        top: 65%;
-        left: 20%;
-    }
-    .g-imag-hover .map-choose.jeju {
-        top: 92%;
-        left: 17%;
-    }
+    .g-imag-hover .map-choose.kangwon {top: 16%; left: 51%;}
+    .g-imag-hover .map-choose.gyunggi {top: 25.8%; left: 25%;}
+    .g-imag-hover .map-choose.chungchung {top: 40%; left: 29%;}
+    .g-imag-hover .map-choose.gyungsang {top: 59%; left: 59%;}
+    .g-imag-hover .map-choose.jeonla {top: 65%; left: 20%;}
+    .g-imag-hover .map-choose.jeju {top: 92%; left: 17%;}
     .contents-main .krds-form-select {width: 100%;}
     .contents-main .krds-input {width: calc(100% - 6.5rem) !important;}
     .centersearch {height: auto;}
