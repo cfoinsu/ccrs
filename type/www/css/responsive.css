@@ -63,7 +63,7 @@
   .effect-box .boxc3 .key-img, .effect-box .boxc2 .key-img {
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    width: 7rem;
+    width: 10rem;
     border-bottom: none;
     padding-bottom: 0;
   }
