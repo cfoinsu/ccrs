@@ -3573,6 +3573,12 @@
   .history-list::before {
     display: none;
   }
+  .service-card-desc p {
+    display: inline-block;
+  }
+  .service-card-desc p br {
+    display: none;
+  }
 }
 
 /*불법사금융 신고상담*/
