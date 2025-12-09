@@ -3691,6 +3691,7 @@ span.sub4InputLabel {
     display: flex;
     gap: 1rem;
     overflow-x: auto;
+    width: 100%;
 }
 
 
@@ -3701,7 +3702,7 @@ span.sub4InputLabel {
 
 @media (max-width: 639px) {
     .mobile-title-section {
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         min-width: fit-content;
@@ -3932,7 +3933,7 @@ span.sub4InputLabel {
 }
 
 table.comparison-table {
-    width: 100%;
+    width: auto;
     border-collapse: collapse;
     border-top: 1px solid var(--krds-color-light-gray-100);
 }
