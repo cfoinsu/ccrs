@@ -9189,4 +9189,11 @@ a.customer-service-card {
     .conts-list-wrap .krds-info-list {width: 100%;}
     .mo-flex-column {flex-direction: column !important;}
     .mo-flex-column .accordion-cont-img {width: fit-content;}
+
+    /* 신용상담사 */
+    .credential-info-table--mo colgroup {display: none;}
+    .credential-info-table--mo tr {display: flex; flex-direction: column; width: 100% !important;}
+    .credential-info-table--mo tr th, .credential-info-table--mo tr td {display: block; width: 100% !important;}
+    .credential-info-table--mo tr th {padding: 2rem 0 0 0;}
+    .credential-info-table--mo tr td {padding: .4rem 0 0 0;}
 }
