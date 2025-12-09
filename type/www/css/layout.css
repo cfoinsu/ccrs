@@ -1030,14 +1030,6 @@ Version : v1.0
 }
 
 /* 푸터 스타일 */
-#footer {
-  position: relative;
-  background: var(--text-color2);
-  padding: 6.2rem;
-  height: 30.6rem;
-  display: flex;
-  align-items: center;
-}
 
 /* Footer */
 .footer {
