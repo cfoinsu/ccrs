@@ -180,9 +180,12 @@ Version : v1.0
   border-radius: 2px;
   background: var(--main-color1);
 }
-
-#header:not(:hover) .gnb-wrap > nav .gnb > li .depth2 {
+#header:has(:focus) .gnb-wrap > nav .gnb > li .depth2 {
   display: none;
+}
+#header .gnb-wrap > nav .gnb > li .depth2 {
+  opacity: 0;
+  visibility: hidden;
   min-height: 0;
   height: 312px;
   position: absolute;

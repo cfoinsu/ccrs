@@ -3922,3 +3922,23 @@
     padding-bottom: 3.2rem;
   }
 }
+
+.nt-big-tit {
+  position: relative;
+  padding-left: 5.2rem;
+  font-size: 3.4rem;
+  color: #1b2025;
+  font-weight: 700;
+  line-height: 5rem;
+}
+.nt-big-tit::before {
+  content: '';
+  background: url(../img/icons/icon_redalert.svg) no-repeat center left 2px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 49px;
+  height: 48px;
+  background-size: 100%;
+}
