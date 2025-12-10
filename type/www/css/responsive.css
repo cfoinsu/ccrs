@@ -672,6 +672,7 @@
     width: 49%;
     border-radius: 14px;
     padding: 1.6rem;
+    backdrop-filter: none;
   }
   .summary-box .summary-key .keybox .stitle img {
     margin: -0.2rem 0.5rem 0 0;

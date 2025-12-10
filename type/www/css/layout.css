@@ -100,13 +100,6 @@ Version : v1.0
   border-bottom-color: var(--main-color1);
 }
 
-#header.is-active .gnb-wrap nav .gnb > li .depth2 {
-  opacity: 1;
-  visibility: visible;
-  min-height: inherit;
-  display: block;
-}
-
 #header .header-container {
   height: 6.4rem;
 }
@@ -188,7 +181,7 @@ Version : v1.0
   background: var(--main-color1);
 }
 
-#header .gnb-wrap > nav .gnb > li .depth2 {
+#header:not(:hover) .gnb-wrap > nav .gnb > li .depth2 {
   display: none;
   min-height: 0;
   height: 312px;
@@ -306,6 +299,7 @@ Version : v1.0
   opacity: 1;
   visibility: visible;
   min-height: inherit;
+  display: block;
 }
 #header.is-active .gnb-wrap nav .gnb > li.is-active .depth2 {
   background: var(--krds-light-color-surface-primary-subtler);
