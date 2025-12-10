@@ -2975,6 +2975,9 @@ dl.flex-list {
   .slidetopbox.show {
     display: none !important;
   }
+  .action-btn:has(.fa-print) {
+    display: none;
+  }
 }
 .slidetopbox .swiper-slide img {
     width: 192rem;
