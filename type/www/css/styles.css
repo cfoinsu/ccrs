@@ -1434,11 +1434,17 @@ body aside {
 }
 
 @media (max-width: 767px) {
-    .tooltip-trigger i.fas.fa-question-circle {
+    /* .tooltip-trigger i.fas.fa-question-circle {
         display: none;
+    } */
+    .tooltip-trigger:focus-within .tooltip {
+        display: block;
+        max-width: 100%;
+        overflow: auto;
+        padding: 2rem;
     }
-    .tooltip-trigger:hover .tooltip {
-        display: none;
+    .tooltip-trigger:focus-within .tooltip .tbl {
+        min-width: 0;
     }
 
 }
