@@ -5040,5 +5040,7 @@
 .en .service-cards-container .service-card-item .service-card-topics .topics-list li:last-child {
   margin-bottom: 0;
 }
-
+@media (max-width: 767px) {
+  .en .establishment-timeline::before {left: 25px;}
+}
 /*# sourceMappingURL=styles_en_override.css.map */
