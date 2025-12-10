@@ -9207,6 +9207,9 @@ a.customer-service-card {
     .map-content .content-area .ab_note {display: flex; align-items: center; justify-content: center; line-height: 1.5; text-align: center; height: auto; padding: .4rem 1.2rem;}
 }
 @media (max-width: 1024px) {
+    /* 공통 */
+    .br-block--mo {display: block !important;}
+
     .map-search-box {flex-direction: column; align-items: center; gap: 3.2rem 0;}
     .g-imag-hover, .centersearch {width: 100%;}
 }
@@ -9261,4 +9264,6 @@ a.customer-service-card {
     .g-info--type2.g-info-box.row.start {align-items: center; gap: 2.4rem 0;}
     .g-info--type2 .g-desc-box.ml24 {margin-left: 0 !important;}
     .g-info--type2 .g-desc-box .btn-area {margin: 0 auto;}
+
+    .summary-box .summary-link .w-full br {display: none;}
 }
