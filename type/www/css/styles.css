@@ -4419,13 +4419,13 @@ table.comparison-table td:first-child {
 
 .g-info-box .g-desc-box .g-tit.info,
 .noti.g-tit.info,
-.noti.g-tit.exclamation,
-.exclamation {
+.noti.g-tit.exclamation {
     margin-left: 3rem;
 }
 
 .exclamation {
     margin-top: 1.6rem;
+    padding-left: 3rem;
 }
 
 .g-info-box .g-desc-box .g-tit.info::before,
@@ -4447,9 +4447,9 @@ table.comparison-table td:first-child {
     display: block;
     position: absolute;
     top: 0;
-    left: -30px;
-    width: 2.4rem;
-    height: 2.4rem;
+    left: 0;
+    width: 2.6rem;
+    height: 2.6rem;
     background: url(../img/icons/exclamation.svg) no-repeat center;
 }
 
@@ -4742,6 +4742,14 @@ table .krds-info-list>li {
 .krds-info-list.decimal {
     gap: 2px;
     text-align: left;
+}
+
+.krds-info-list.decimal ul {
+    width: 100%;
+}
+
+.krds-info-list.decimal p {
+    font-size: 1.9rem;
 }
 
 .krds-info-list>li>.krds-info-list {
@@ -7813,8 +7821,8 @@ table .table-center {
 }
 
 .logo-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     justify-content: flex-start;
     gap: 1rem;
 }
@@ -7823,7 +7831,6 @@ table .table-center {
     overflow: hidden;
     border: 1px solid #eee;
     border-radius: .5rem;
-    width: calc(20% - 1rem);
     padding: 5px;
 }
 
@@ -7865,6 +7872,10 @@ table .table-center {
             padding: 12px 8px;
         }
     }
+
+    .logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .activity-cards {
@@ -7879,6 +7890,14 @@ table .table-center {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+
+.activity-card p {
+    word-break: break-all;
+    overflow-wrap: break-word;
+    -webkit-text-size-adjust: 100%;
+    min-width: 0;
+    max-width: 100%;
 }
 
 .activity-card-icon {
@@ -9270,7 +9289,7 @@ a.customer-service-card {
     .charter-svg.top::before,
     .charter-svg.top::after,
     .charter-svg.bottom::before,
-    .charter-svg.bottom::after {width: 10rem; height: 10rem;}
+    .charter-svg.bottom::after {width: 8rem; height: 8rem;}
     .charter-box {padding: 80px 24px;}
     .charter-svg {width: calc(100% - 1.6rem);}
 
@@ -9286,4 +9305,7 @@ a.customer-service-card {
 
     .g-grid-wrap.contect .appdown+.item-share.active {bottom: -19.5rem;}
     .card-actions .appdown+.item-share.active {left: 50%; transform: translateX(-50%); bottom: -17.8rem;}
+
+    .conts-list-wrap .krds-info-list > li {font-size: 1.9rem;}
+    .g-wrap .g-conts-area .conts-desc {margin-bottom: var(--krds-gap-8);}
 }

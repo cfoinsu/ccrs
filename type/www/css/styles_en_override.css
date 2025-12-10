@@ -3035,8 +3035,11 @@
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   border: 1px solid #ddd;
+  overflow: auto;
 }
-
+.chart-container canvas {
+  margin: 0 auto;
+}
 .en .global-network-section {
   margin-bottom: 8rem;
 }
@@ -4254,7 +4257,6 @@
   .en .krds-table-wrap table.tbl thead th {
     font-size: 1.6rem;
     padding: 1.2rem 0.8rem;
-    white-space: nowrap;
   }
 }
 
