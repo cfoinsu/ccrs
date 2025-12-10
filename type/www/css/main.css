@@ -248,7 +248,15 @@
 .main-banner.slidebox a.arr-circle-right {
   display: block;
   height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
+/* .main-banner.slidebox .swiper-slide a.arr-circle-right {
+  display: none;
+}
+.main-banner.slidebox .swiper-slide.swiper-slide-active a.arr-circle-right {
+  display: block;
+} */
 .main-banner.slidebox .swiper-pagination {
   position: absolute;
   bottom: 1rem;

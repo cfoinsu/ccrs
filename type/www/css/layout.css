@@ -532,7 +532,6 @@ Version : v1.0
 
 #header .header-quickmenu-box .top-box .logo {
   display: inline-flex;
-  width: calc(192 / var(--base-font-size) * var(--default-font-size));
 }
 
 #header .header-quickmenu-box .top-box .logo img {
