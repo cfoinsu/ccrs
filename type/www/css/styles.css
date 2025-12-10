@@ -4476,6 +4476,10 @@ table.comparison-table td:first-child {
     font-size: 1.9rem;
 }
 
+.g-wrap .g-desc-box>.orange-info {
+    font-size: 1.7rem;
+}
+
 .g-wrap .g-info-box.full .g-desc-box.fcg0 {
     align-items: center;
 }
