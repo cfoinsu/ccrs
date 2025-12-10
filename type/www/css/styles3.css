@@ -3664,6 +3664,11 @@
     border-bottom: 1px solid var(--krds-color-light-gray-20);
     padding: 0 0 24px 0;
     min-height: auto;
+    text-align: center;
+  }
+
+  .common-banner .banner-icon {
+    margin: 0 auto 10px;
   }
 
   .common-banner .banner-item:last-child {

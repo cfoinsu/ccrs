@@ -5024,7 +5024,7 @@ table .krds-info-list>li {
     }
 
     .charter-box {
-        padding: 80px 10px;
+        padding: 80px 60px;
     }
 
     .charter-box svg {
@@ -9211,6 +9211,9 @@ a.customer-service-card {
     .g-imag-hover, .centersearch {width: 100%;}
 }
 @media (max-width: 767px) {
+    /* 공통 */
+    .row-reverse--mo {flex-direction: column-reverse;}
+
     .conts-list-wrap .conts-list--flex {flex-direction: column;}
     .conts-list-wrap .krds-info-list {width: 100%;}
     .conts-list-wrap .mo-flex-column .accordion-cont-img {width: 10rem;}
@@ -9245,4 +9248,17 @@ a.customer-service-card {
     .contents-main .krds-input {width: calc(100% - 6.5rem) !important;}
     .centersearch {height: auto;}
     .contents-results ul li {padding: 2rem 1.2rem;}
+
+    /* 임직원행동강령 */
+    .charter-svg.top::before,
+    .charter-svg.top::after,
+    .charter-svg.bottom::before,
+    .charter-svg.bottom::after {width: 10rem; height: 10rem;}
+    .charter-box {padding: 80px 24px;}
+    .charter-svg {width: calc(100% - 1.6rem);}
+
+    /* 공공정보 조기삭제 */
+    .g-info--type2.g-info-box.row.start {align-items: center; gap: 2.4rem 0;}
+    .g-info--type2 .g-desc-box.ml24 {margin-left: 0 !important;}
+    .g-info--type2 .g-desc-box .btn-area {margin: 0 auto;}
 }
