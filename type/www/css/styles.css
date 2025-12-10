@@ -7881,6 +7881,14 @@ table .table-center {
     align-items: center;
 }
 
+.activity-card p {
+    word-break: break-all;
+    overflow-wrap: break-word;
+    -webkit-text-size-adjust: 100%;
+    min-width: 0;
+    max-width: 100%;
+}
+
 .activity-card-icon {
     flex-shrink: 0;
     width: 80px;
@@ -9261,7 +9269,7 @@ a.customer-service-card {
     .charter-svg.top::before,
     .charter-svg.top::after,
     .charter-svg.bottom::before,
-    .charter-svg.bottom::after {width: 10rem; height: 10rem;}
+    .charter-svg.bottom::after {width: 8rem; height: 8rem;}
     .charter-box {padding: 80px 24px;}
     .charter-svg {width: calc(100% - 1.6rem);}
 
