@@ -18653,7 +18653,7 @@ a:hover .d-card .c-tit {
 }
 .search-top-box .sch-filter-box .filter-form.row .period .optSetDate {
   width: 400px;
-  display: block;
+  display: flex;
   flex: 0 1 auto;
   flex-shrink: 0;
 }
