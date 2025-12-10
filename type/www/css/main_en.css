@@ -549,7 +549,7 @@
 .en #section2 .accordion-item {
   position: relative;
   margin-top: -50px;
-  padding: 2rem 1rem 55px;
+  padding: 2rem 1rem 5.5rem;
   background: #F5F3F1;
   border-radius: 2.4rem;
   overflow: hidden;
