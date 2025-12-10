@@ -5971,6 +5971,10 @@ table .krds-info-list>li {
         width: 100%;
     }
 
+    .figma-input-box {width: calc(100% - 5.8rem);}
+    .figma-input-box .figma-input-field {width: auto;}
+    .figma-input-wrapper .figma-chip-button {width: 5rem;}
+
     .figma-chip {
         width: 100%;
         margin-bottom: 8px;
@@ -9267,4 +9271,7 @@ a.customer-service-card {
     .g-info--type2 .g-desc-box .btn-area {margin: 0 auto;}
 
     .summary-box .summary-link .w-full br {display: none;}
+
+    .btn-ghost {display: flex; align-items: center; gap: 0 .4rem;}
+    .btn-ghost img {width: 1.8rem; height: 1.8rem;}
 }
