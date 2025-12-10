@@ -9194,6 +9194,8 @@ a.customer-service-card {
 .conts-list-wrap .conts-list {width: 100%;}
 .conts-list-wrap .krds-info-list > li {font-size: 1.7rem;}
 .conts-list-wrap .conts-list--flex {display: flex; width: 100%;}
+
+.krds-modal .modal-dialog .modal-btn {justify-content: center !important;}
 @media (max-width: 1280px) {
     .conts-list-wrap .krds-info-list.ml40 {margin-left: 0 !important;}
     .conts-list-wrap .krds-info-list {width: calc(50% - 2rem);}
@@ -9217,6 +9219,13 @@ a.customer-service-card {
 
     .map-search-box {flex-direction: column; align-items: center; gap: 3.2rem 0;}
     .g-imag-hover, .centersearch {width: 100%;}
+}
+@media (max-width: 1023px) {
+    .g-grid-wrap.contect .appdown+.item-share.active {top: initial; right: 0; right: initial; left: 1.6rem; bottom: -17.5rem;}
+    .card-actions .appdown+.item-share.active {left: 8%; right: initial; top: initial; bottom: -15.5rem;}
+
+    .effect-box .boxc2.row.noborder {border-bottom: 1px solid var(--krds-color-light-gray-20)}
+    /* .effect-box .boxc2.row.noborder:last-of-type {border-bottom: none;}   */
 }
 @media (max-width: 767px) {
     /* 공통 */
@@ -9274,4 +9283,7 @@ a.customer-service-card {
 
     .btn-ghost {display: flex; align-items: center; gap: 0 .4rem;}
     .btn-ghost img {width: 1.8rem; height: 1.8rem;}
+
+    .g-grid-wrap.contect .appdown+.item-share.active {bottom: -19.5rem;}
+    .card-actions .appdown+.item-share.active {left: 50%; transform: translateX(-50%); bottom: -17.8rem;}
 }
