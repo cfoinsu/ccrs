@@ -1380,7 +1380,7 @@ body aside {
 .tooltip-trigger {
     position: relative;
     cursor: help;
-    display: inline-flex;
+    display: inline-block;
 }
 
 .tooltip-trigger i.fas.fa-question-circle {
@@ -1437,13 +1437,21 @@ body aside {
     /* .tooltip-trigger i.fas.fa-question-circle {
         display: none;
     } */
+     .tooltip-trigger:hover .tooltip,
+    .tooltip-trigger:focus .tooltip,
     .tooltip-trigger:focus-within .tooltip {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
         display: block;
         max-width: 100%;
+        max-height: 90vh;
         overflow: auto;
         padding: 2rem;
     }
-    .tooltip-trigger:focus-within .tooltip .tbl {
+    .tooltip-trigger .tooltip .tbl {
         min-width: 0;
     }
 
