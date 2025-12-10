@@ -9229,6 +9229,9 @@ a.customer-service-card {
 .conts-list-wrap .conts-list--flex {display: flex; width: 100%;}
 
 .krds-modal .modal-dialog .modal-btn {justify-content: center !important;}
+@media (max-width: 1340px) {
+    .customer-service-card .g-img {margin: 0;}
+}
 @media (max-width: 1280px) {
     .conts-list-wrap .krds-info-list.ml40 {margin-left: 0 !important;}
     .conts-list-wrap .krds-info-list {width: calc(50% - 2rem);}
