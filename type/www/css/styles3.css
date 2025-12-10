@@ -3040,7 +3040,11 @@
   -o-object-fit: cover;
   object-fit: cover;
 }
-
+@media (max-width: 767px) {
+  .ccrs-year .timeline-image-card img {
+    aspect-ratio: 36/23;
+  }
+}
 .ccrs-year .timeline-content-area {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -3924,7 +3928,7 @@
 .nt-big-tit {
   position: relative;
   padding-left: 5.2rem;
-  font-size: 3.4rem;
+  font-size: 2.8rem;
   color: #1b2025;
   font-weight: 700;
   line-height: 5rem;
@@ -3938,5 +3942,32 @@
   top: 2px;
   width: 49px;
   height: 48px;
-  background-size: 100%;
+  background-size: 3.8rem;
+}
+.g-wrap .g-info-box.silhyo {
+  background-color: #FFEEE9;
+  border: none;
+} 
+.silhyo .other-debt-adjustment .category-header {
+  background: #D63D4A;
+}
+.silhyo .other-debt-adjustment .category-header .category-title {
+  color: #fff;
+  font-size: 2.1rem;
+}
+.silhyo .other-debt-adjustment .category-cards {
+  gap: 2.2rem 1.2rem;
+}
+.silhyo .other-debt-adjustment .adjustment-card {
+  min-height: 0;
+  padding: 1.4rem;
+}
+.silhyo .other-debt-adjustment .adjustment-card .card-title{
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: center;
+}
+.silhyo .other-debt-adjustment .adjustment-card::before {
+  background: url(/type/www/images/ic/dot-line-red.svg) no-repeat 0 0 / cover;
 }
