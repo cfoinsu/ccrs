@@ -839,7 +839,6 @@
 
 @media (max-width: 767px) {
   .other-debt-adjustment .adjustment-card .card-title {
-    font-size: 2rem;
     margin-bottom: 1.6rem;
   }
 }
@@ -857,7 +856,7 @@
 
 @media (max-width: 767px) {
   .other-debt-adjustment .adjustment-card .card-description {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
   }
 }
 

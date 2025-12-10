@@ -9315,7 +9315,8 @@ a.customer-service-card {
     .g-info--type2 .g-desc-box.ml24 {margin-left: 0 !important;}
     .g-info--type2 .g-desc-box .btn-area {margin: 0 auto;}
 
-    .summary-box .summary-link .w-full br {display: none;}
+    .summary-box .summary-link .w-full br,
+    .category-cards br {display: none;}
 
     .btn-ghost {display: flex; align-items: center; gap: 0 .4rem;}
     .btn-ghost img {width: 1.8rem; height: 1.8rem;}
