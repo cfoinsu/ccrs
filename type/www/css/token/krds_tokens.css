@@ -454,7 +454,7 @@ body {
   --krds-light-color-input-border-active: var(--krds-color-light-primary-50);
   --krds-light-color-input-border-error: var(--krds-color-light-danger-50);
   --krds-light-color-input-surface: var(--krds-color-light-gray-0);
-  --krds-light-color-input-surface-disabled: var(--krds-color-light-gray-20);
+  --krds-light-color-input-surface-disabled: var(--krds-color-light-gray-0);
   --krds-light-color-graphic-blue-subtler: var(--krds-color-light-graphic-10);
   --krds-light-color-graphic-blue-subtle: var(--krds-color-light-graphic-30);
   --krds-light-color-graphic-blue: var(--krds-color-light-graphic-50);
