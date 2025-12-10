@@ -3574,9 +3574,11 @@
   .history-list::before {
     display: none;
   }
+
   .service-card-desc p {
     display: inline-block;
   }
+
   .service-card-desc p br {
     display: none;
   }
@@ -3644,12 +3646,12 @@
 }
 
 .banner-item {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner-contact {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 @media (max-width: 767px) {
@@ -3674,5 +3676,251 @@
   .common-banner .banner-item:last-child {
     border-bottom: none;
     padding-bottom: 0;
+  }
+}
+
+/*신용플러스 앱 스타일*/
+.cp-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.cp-header-section {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-end;
+  position: relative;
+}
+
+.cp-header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+  margin-bottom: 2.6rem;
+}
+
+.cp-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.cp-bold {
+  font-weight: 700;
+}
+
+.cp-header-image {
+  width: 100%;
+  max-width: 410px;
+  height: auto;
+  aspect-ratio: 410/130;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cp-header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cp-header-icon {
+  width: 100%;
+  max-width: 241px;
+  height: auto;
+  aspect-ratio: 241/245;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.cp-header-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cp-main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.consulting-cards.credit-plus {
+  margin: 0;
+}
+
+.cp-card-text {
+  color: var(--krds-light-color-text-basic);
+  font-size: 1.9rem;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.cp-card-text p {
+  margin: 0;
+}
+
+.cp-service-image {
+  width: 100%;
+  max-width: 204px;
+  height: auto;
+  aspect-ratio: 204/216;
+  position: relative;
+  border-radius: 12px;
+}
+
+.cp-service-image.wide {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 386/118;
+  max-width: none;
+}
+
+.cp-service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.consulting-card.credit-plus {
+  padding: 3.2rem 3.2rem 0 3.2rem;
+  gap: 1.4rem;
+  align-items: center;
+}
+
+.cp-download-section {
+  background-color: var(--krds-light-color-background-white);
+  border-radius: 24px;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.cp-download-section h3 {
+  margin: 0;
+}
+
+.cp-download-row {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.cp-store-card {
+  background-color: #EDF4FF;
+  border-radius: 24px;
+  padding: 2.4rem 2.4rem 2.4rem 3.2rem;
+  flex: 1;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cp-store-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 13rem;
+}
+
+.cp-store-name {
+  color: var(--krds-light-color-text-basic);
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.cp-store-btn {
+  background-color: #2e2a93;
+  color: var(--krds-color-light-gray-0);
+  border-radius: 1000px;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.9rem;
+  font-weight: 700;
+  gap: 0.4rem;
+}
+
+.cp-store-btn:hover {
+  background-color: #1a1760;
+  color: var(--krds-color-light-gray-0);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cp-store-btn i {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url(/type/www/img/icons/icon-link-white.svg) no-repeat center;
+  background-size: contain;
+
+}
+
+.cp-store-img {
+  width: 100%;
+  max-width: 110px;
+  height: auto;
+  aspect-ratio: 1/1;
+  background-color: var(--krds-light-color-background-white);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.cp-store-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .cp-header-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cp-header-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 410/130;
+  }
+
+  .cp-header-icon {
+    display: none;
+  }
+
+  .cp-services-row {
+    flex-direction: column;
+  }
+
+  .cp-download-row {
+    flex-direction: column;
+  }
+
+  .cp-store-card {
+    height: auto;
+    flex-direction: row;
+    padding: 1.6rem;
+  }
+
+  .cp-store-info {
+    align-items: center;
+  }
+
+  .cp-store-btn {
+    width: 100%;
+  }
+
+  .consulting-card.credit-plus:last-child {
+    padding-bottom: 3.2rem;
   }
 }
