@@ -8414,7 +8414,7 @@ table .table-center {
 }
 
 .organization-desc.orange {
-    color: var(--krds-color-light-gray-50);
+    color: var(--krds-color-light-primary-50);
 }
 
 @media (max-width: 767px) {
