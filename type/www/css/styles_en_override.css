@@ -5044,4 +5044,10 @@
 @media (max-width: 767px) {
   .en .establishment-timeline::before {left: 25px;}
 }
+
+.chart-container canvas {width: 958px; height: 383px;}
+@media (max-width: 767px) {
+    .chart-container {padding: 24px 12px !important;}
+    .chart-container canvas{width: auto; height: 320px;}
+}
 /*# sourceMappingURL=styles_en_override.css.map */
