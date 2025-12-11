@@ -255,7 +255,7 @@
 .en .content-table {
   width: 100%;
   border-collapse: collapse;
-  border-top: 2px solid #000;
+  border-top: 2px solid var(--krds-color-light-gray-100);
 }
 
 .en .content-table thead th {
@@ -298,7 +298,7 @@
 .en .content-table tbody td span {
   display: block;
   font-size: 1.4rem;
-  color: #1B2025;
+  color: var(--krds-color-light-gray-90);
   line-height: 1.3;
 }
 
@@ -320,7 +320,7 @@
   margin-bottom: 1.2rem;
   font-size: 1.7rem;
   line-height: 1.5;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
 }
 
 @media (max-width: 767px) {
@@ -399,7 +399,7 @@
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.6;
-  color: #1b2025;
+  color: var(--krds-color-light-gray-90);
   margin-bottom: 2rem;
 }
 
@@ -421,7 +421,7 @@
 .en .g-grid-wrap.unit2 .conts-desc {
   font-size: 1.7rem;
   line-height: 1.8;
-  color: #333;
+  color: var(--krds-color-light-gray-80);
   margin-top: 0;
   overflow: hidden;
   word-break: normal;
@@ -444,7 +444,7 @@
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.5;
-  color: #1b2025;
+  color: var(--krds-color-light-gray-90);
   margin-bottom: 2rem;
   word-break: normal;
   text-align: left;
@@ -485,7 +485,7 @@
 .en .content-sections>.g-conts-area>.g-wrap>div:not(.g-grid-wrap) {
   font-size: 1.7rem;
   line-height: 1.8;
-  color: #333;
+  color: var(--krds-color-light-gray-80);
   margin-top: 2.4rem;
 }
 
@@ -540,7 +540,7 @@
 .en .chairman-signiture .g-tit {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #1b2025;
+  color: var(--krds-color-light-gray-90);
   line-height: 1.6;
   margin: 0;
 }
@@ -638,7 +638,7 @@
 .en .mission-vision-section .purpose-section .section-title {
   font-weight: 700;
   font-size: 3.6rem;
-  color: #ed7801;
+  color: var(--krds-color-light-primary-50);
   text-align: center;
   margin: 0;
   padding-left: 0;
@@ -695,7 +695,7 @@
   font-family: "Pretendard GOV", sans-serif;
   font-size: 2rem;
   line-height: 1.5;
-  color: #1b2025;
+  color: var(--krds-color-light-gray-90);
   margin: 0;
 }
 
@@ -795,7 +795,7 @@
   font-weight: 700;
   font-size: 3.6rem;
   line-height: 1.5;
-  color: #ed7801;
+  color: var(--krds-color-light-primary-50);
   text-align: center;
   margin: 0;
   padding-left: 0;
@@ -874,7 +874,7 @@
   font-family: "Pretendard GOV", sans-serif;
   font-size: 2rem;
   line-height: 1.5;
-  color: #1b2025;
+  color: var(--krds-color-light-gray-90);
   margin: 0;
   text-align: center;
 }
@@ -953,7 +953,7 @@
   font-weight: 700;
   font-size: 3.6rem;
   line-height: 1.5;
-  color: #ed7801;
+  color: var(--krds-color-light-primary-50);
   text-align: center;
   margin: 0;
   padding-left: 0;
@@ -977,11 +977,11 @@
 }
 
 .en .core-values-section .core-values-container {
-  border: 1px solid #d2d6da;
+  border: 1px solid var(--krds-color-light-gray-20);
   border-radius: 3.2rem;
   padding: 7rem;
   width: 100%;
-  background: #fff;
+  background: var(--krds-color-light-gray-0);
   overflow: hidden;
 }
 
@@ -1027,7 +1027,7 @@
   transform: translate(-50%, -50%);
   width: 61rem;
   height: 61rem;
-  border: 1px dashed #000;
+  border: 1px dashed var(--krds-color-light-gray-100);
   opacity: 0.3;
   border-radius: 50%;
 }
@@ -1087,7 +1087,7 @@
   transform: translate(-50%, -50%);
   width: 61rem;
   height: 61rem;
-  border: 1px dashed #000;
+  border: 1px dashed var(--krds-color-light-gray-100);
   opacity: 0.3;
   border-radius: 50%;
 }
@@ -1140,7 +1140,7 @@
   transform: translate(-50%, -50%);
   width: 25.8rem;
   height: 25.8rem;
-  background: #fff;
+  background: var(--krds-color-light-gray-0);
   border: 1px solid #9fbbe8;
   border-radius: 1000px;
   z-index: 2;
@@ -1340,7 +1340,7 @@
   justify-content: center;
   width: 100%;
   text-align: center;
-  color: #fff;
+  color: var(--krds-color-light-gray-0);
 }
 
 .en .core-values-section .core-values-diagram .value-node .value-circle .value-content .value-title {
@@ -1348,7 +1348,7 @@
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 1.5;
-  color: #fff;
+  color: var(--krds-color-light-gray-0);
   margin: 0 0 0.8rem;
   white-space: nowrap;
 }
@@ -1373,7 +1373,7 @@
   font-weight: 400;
   font-size: 1.7rem;
   line-height: 1.2;
-  color: #fff;
+  color: var(--krds-color-light-gray-0);
   margin: 0;
   letter-spacing: -0.01em;
 }
@@ -1539,7 +1539,7 @@
   display: -ms-flexbox;
   display: flex;
   gap: 0;
-  border-bottom: 1px solid #d2d6da;
+  border-bottom: 1px solid var(--krds-color-light-gray-20);
   margin-bottom: 4rem;
   position: relative;
 }
@@ -1578,7 +1578,7 @@
   .en .ccrs-year .year-tab {
     padding: 1rem 1.6rem;
     border-radius: 0.8rem;
-    background-color: #f5f5f5;
+    background-color: var(--krds-color-light-gray-5);
     border: 1px solid #e6e8ea;
     margin-bottom: 0;
     width: auto;
@@ -1622,11 +1622,11 @@
 
   .en .ccrs-year .year-tab:hover:not(.active) {
     background-color: #e6e8ea;
-    border-color: #d2d6da;
+    border-color: var(--krds-color-light-gray-20);
   }
 
   .en .ccrs-year .year-tab:hover:not(.active) .year-text {
-    color: #17191b;
+    color: var(--krds-light-color-text-basic);
   }
 }
 
@@ -1673,7 +1673,7 @@
   .en .ccrs-year .year-tab .year-border {
     display: block;
     height: 1px;
-    background-color: #d2d6da;
+    background-color: var(--krds-color-light-gray-20);
     margin-top: 1.2rem;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -1685,13 +1685,13 @@
   }
 
   .en .ccrs-year .year-tab.active .year-text {
-    color: #17191b;
+    color: var(--krds-light-color-text-basic);
     font-weight: 600;
   }
 
   .en .ccrs-year .year-tab.active .year-border {
     height: 0.2rem;
-    background-color: #1b2025;
+    background-color: var(--krds-color-light-gray-90);
   }
 
   .en .ccrs-year .year-tab:hover:not(.active) {
@@ -1700,7 +1700,7 @@
   }
 
   .en .ccrs-year .year-tab:hover:not(.active) .year-text {
-    color: #17191b;
+    color: var(--krds-light-color-text-basic);
   }
 }
 
@@ -1994,7 +1994,7 @@
 .en .ccrs-year .timeline-date-flex {
   font-size: 1.7rem;
   font-weight: 600;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   white-space: nowrap;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -2012,7 +2012,7 @@
 .en .ccrs-year .timeline-event-content-flex {
   font-size: 1.7rem;
   line-height: 1.6;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -2079,7 +2079,7 @@
 .intro-section .section-title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin-bottom: 2rem;
   line-height: 1.5;
 }
@@ -2094,7 +2094,7 @@
   margin-bottom: 2rem;
   font-size: 1.7rem;
   line-height: 1.5;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
 }
 
 @media (max-width: 1023px) {
@@ -2167,7 +2167,7 @@
 }
 
 .benefits-section .benefits-grid .benefit-card {
-  border: 1px solid #d2d6da;
+  border: 1px solid var(--krds-color-light-gray-20);
   border-radius: 2.4rem;
   padding: 3.2rem;
   background: white;
@@ -2189,7 +2189,7 @@
 .benefits-section .benefits-grid .benefit-card .benefit-card-title {
   font-size: 1.7rem;
   font-weight: 700;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin-bottom: 3.2rem;
   line-height: 1.5;
   text-align: center;
@@ -2238,7 +2238,7 @@
 .benefits-section .benefits-grid .benefit-card .chart-container .pie-chart .chart-description {
   font-size: 1.3rem;
   line-height: 1.5;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   text-align: center;
   max-width: 30rem;
 }
@@ -2306,7 +2306,7 @@
 .benefits-section .benefits-grid .benefit-card .program-grid .program-item .program-text strong {
   font-size: 1.9rem;
   font-weight: 700;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
 }
 
 @media (max-width: 767px) {
@@ -2317,13 +2317,13 @@
 
 .benefits-section .benefits-grid .benefit-card .program-grid .program-item .program-text span {
   font-size: 1.3rem;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
 }
 
 .benefits-section .benefits-grid .benefit-card .program-grid .program-item .program-text p {
   font-size: 1.3rem;
   line-height: 1.5;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin-top: 0.8rem;
 }
 
@@ -2382,7 +2382,7 @@
 .benefits-section .benefits-grid .benefit-card .stats-grid .stat-item p {
   font-size: 1.3rem;
   line-height: 1.5;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   text-align: center;
   max-width: 12rem;
 }
@@ -2417,7 +2417,7 @@
 .services-section .section-title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin-bottom: 4rem;
   line-height: 1.5;
 }
@@ -2431,7 +2431,7 @@
 
 .services-section .service-card {
   margin-bottom: 4rem;
-  border: 1px solid #d2d6da;
+  border: 1px solid var(--krds-color-light-gray-20);
   border-radius: 2.4rem;
   padding: 3.2rem;
   background: white;
@@ -2459,7 +2459,7 @@
 .services-section .service-card .service-title {
   font-size: 1.9rem;
   font-weight: 700;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin-bottom: 1.2rem;
   text-align: center;
   line-height: 1.5;
@@ -2473,7 +2473,7 @@
 
 .services-section .service-card .service-subtitle {
   font-size: 1.7rem;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin-bottom: 3.2rem;
   text-align: center;
   line-height: 1.5;
@@ -2556,7 +2556,7 @@
   margin: 0;
   font-size: 1.7rem;
   line-height: 1.5;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
 }
 
 @media (max-width: 767px) {
@@ -2577,7 +2577,7 @@
   margin-bottom: 1.2rem;
   font-size: 1.7rem;
   line-height: 1.5;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
 }
 
 @media (max-width: 767px) {
@@ -2640,7 +2640,7 @@
 .micro-credit-section .section-title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin-bottom: 2.4rem;
   line-height: 1.5;
 }
@@ -2655,7 +2655,7 @@
 .micro-credit-section .section-description {
   font-size: 1.7rem;
   line-height: 1.7;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin-bottom: 4rem;
 }
 
@@ -2772,7 +2772,7 @@
 .credit-education-section .section-title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin-bottom: 2.4rem;
   line-height: 1.5;
 }
@@ -2787,7 +2787,7 @@
 .credit-education-section .section-description {
   font-size: 1.7rem;
   line-height: 1.7;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin-bottom: 4rem;
 }
 
@@ -2848,7 +2848,7 @@
 .credit-education-section .intro-content .intro-title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin-bottom: 1.2rem;
   line-height: 1.5;
 }
@@ -2862,7 +2862,7 @@
 .credit-education-section .intro-content .intro-description {
   font-size: 1.7rem;
   line-height: 1.5;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin: 0;
 }
 
@@ -2899,7 +2899,7 @@
 }
 
 .credit-education-section .image-frame {
-  border: 3px solid #1b2025;
+  border: 3px solid var(--krds-color-light-gray-90);
   border-radius: 2.4rem;
   padding: 2rem;
   overflow: hidden;
@@ -2937,7 +2937,7 @@
 }
 
 .credit-education-section .talent-donation-list .donation-item {
-  border-bottom: 1px solid #d2d6da;
+  border-bottom: 1px solid var(--krds-color-light-gray-20);
   padding: 2.4rem 0;
 }
 
@@ -2948,13 +2948,13 @@
 }
 
 .credit-education-section .talent-donation-list .donation-item:first-child {
-  border-top: 1px solid #1b2025;
+  border-top: 1px solid var(--krds-color-light-gray-90);
 }
 
 .credit-education-section .talent-donation-list .donation-item .donation-title {
   font-size: 1.9rem;
   font-weight: 700;
-  color: #1b2025;
+  color: var(--krds-color-light-gray-90);
   margin-bottom: 1.2rem;
   line-height: 1.5;
 }
@@ -2968,7 +2968,7 @@
 .credit-education-section .talent-donation-list .donation-item .donation-description {
   font-size: 1.7rem;
   line-height: 1.7;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin: 0;
 }
 
@@ -2985,7 +2985,7 @@
 .en .performance-section .section-title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin-bottom: 2.4rem;
   line-height: 1.5;
 }
@@ -3007,7 +3007,7 @@
 .en .performance-section .section-description {
   font-size: 1.7rem;
   line-height: 1.7;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin-bottom: 1rem;
 }
 
@@ -3253,7 +3253,7 @@
 .en .global-network-section .network-content-item .content-title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin-bottom: 2.4rem;
   line-height: 1.5;
 }
@@ -3268,7 +3268,7 @@
 .en .global-network-section .network-content-item .content-text {
   font-size: 1.7rem;
   line-height: 1.7;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
 }
 
 .en .global-network-section .network-content-item .content-text p {
@@ -3398,7 +3398,7 @@
 .headquarter-section .contact-info-item .contact-icon {
   width: 2.4rem;
   height: 2.4rem;
-  color: #1b2025;
+  color: var(--krds-color-light-gray-90);
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-top: 0.2rem;
@@ -3438,7 +3438,7 @@
 .headquarter-section .contact-info-item .contact-content .contact-label {
   font-size: 1.7rem;
   font-weight: 700;
-  color: #1b2025;
+  color: var(--krds-color-light-gray-90);
   margin-bottom: 1rem;
   line-height: 1.5;
 }
@@ -3460,7 +3460,7 @@
 .headquarter-section .contact-info-item .contact-content .contact-text {
   font-size: 1.7rem;
   line-height: 1.5;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin: 0;
 }
 
@@ -3484,7 +3484,7 @@
   height: 41.6rem;
   border-radius: 24px;
   overflow: hidden;
-  border: 1px solid #d2d6da;
+  border: 1px solid var(--krds-color-light-gray-20);
 }
 
 @media (max-width: 1023px) {
@@ -3522,7 +3522,7 @@
   transform: translate(-50%, -50%);
   width: 4.8rem;
   height: 6.4rem;
-  color: #ed7801;
+  color: var(--krds-color-light-primary-50);
 }
 
 .headquarter-section .headquarter-map .map-pin i {
@@ -3558,7 +3558,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  border: 1px solid #d2d6da;
+  border: 1px solid var(--krds-color-light-gray-20);
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 2.4rem;
@@ -3581,8 +3581,8 @@
   height: 5.6rem;
   background: transparent;
   border: none;
-  border-right: 1px solid #d2d6da;
-  border-bottom: 1px solid #d2d6da;
+  border-right: 1px solid var(--krds-color-light-gray-20);
+  border-bottom: 1px solid var(--krds-color-light-gray-20);
   font-size: 1.9rem;
   font-weight: 700;
   color: #474e55;
@@ -3622,7 +3622,7 @@
 
 .regional-offices-section .regional-tabs .tab-item.active {
   background: #344d82;
-  color: #ffffff;
+  color: var(--krds-color-light-gray-0);
 }
 
 @media (max-width: 767px) {
@@ -3630,7 +3630,7 @@
     width: 100%;
     border-right: none;
     border-left: none;
-    border-top: 1px solid #d2d6da;
+    border-top: 1px solid var(--krds-color-light-gray-20);
   }
 
   .regional-offices-section .regional-tabs .tab-item:first-child {
@@ -3652,7 +3652,7 @@
   .regional-offices-section .regional-tabs .tab-item:nth-child(6),
   .regional-offices-section .regional-tabs .tab-item:nth-child(7),
   .regional-offices-section .regional-tabs .tab-item:nth-child(8) {
-    border-top: 1px solid #d2d6da;
+    border-top: 1px solid var(--krds-color-light-gray-20);
     border-bottom: none;
   }
 }
@@ -3669,21 +3669,21 @@
 
 .regional-offices-section .office-item {
   padding: 2.4rem 0;
-  border-top: 1px solid #d2d6da;
+  border-top: 1px solid var(--krds-color-light-gray-20);
 }
 
 .regional-offices-section .office-item:first-child {
-  border-top: 1px solid #1b2025;
+  border-top: 1px solid var(--krds-color-light-gray-90);
 }
 
 .regional-offices-section .office-item.last {
-  border-bottom: 1px solid #d2d6da;
+  border-bottom: 1px solid var(--krds-color-light-gray-20);
 }
 
 .regional-offices-section .office-item .office-name {
   font-size: 1.9rem;
   font-weight: 700;
-  color: #1b2025;
+  color: var(--krds-color-light-gray-90);
   margin-bottom: 0.8rem;
   line-height: 1.5;
 }
@@ -3691,7 +3691,7 @@
 .regional-offices-section .office-item .office-address {
   font-size: 1.7rem;
   line-height: 1.5;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin: 0;
 }
 
@@ -3733,7 +3733,7 @@
 .en .krds-info-list.decimal span {
   display: block;
   font-size: 0.9em;
-  color: #1B2025;
+  color: var(--krds-color-light-gray-90);
   padding-left: 1.2em;
 }
 
@@ -3761,7 +3761,7 @@
 
 .micro-lst {
   margin-top: 2rem;
-  border-top: 1px solid #d2d6da;
+  border-top: 1px solid var(--krds-color-light-gray-20);
 }
 
 .micro-lst li {
@@ -3780,7 +3780,7 @@
   width: 5px;
   height: 5px;
   margin-right: 1rem;
-  background: #000;
+  background: var(--krds-color-light-gray-100);
   border-radius: 50%;
   vertical-align: middle;
   margin-top: -3px;
@@ -3855,7 +3855,7 @@
   width: 5px;
   height: 5px;
   margin-right: 1rem;
-  background: #1B2025;
+  background: var(--krds-color-light-gray-90);
   border-radius: 50%;
 }
 
@@ -3865,7 +3865,7 @@
 
 .counseling-desc {
   font-size: 1.7rem;
-  color: #1B2025;
+  color: var(--krds-color-light-gray-90);
 }
 
 @media (max-width: 1023px) {
@@ -4105,7 +4105,7 @@
 .household-info-box .household-info-content .household-info-title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #1b2025;
+  color: var(--krds-color-light-gray-90);
   margin-bottom: 1.2rem;
   line-height: 1.4;
 }
@@ -4120,7 +4120,7 @@
 .household-info-box .household-info-content .household-info-text {
   font-size: 1.7rem;
   line-height: 1.6;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin: 0;
 }
 
@@ -4215,7 +4215,7 @@
 
 .en .krds-table-wrap ol li {
   font-size: 1.6rem;
-  color: #1B2025;
+  color: var(--krds-color-light-gray-90);
   display: list-item !important;
   padding-left: 1.8em;
   position: relative;
@@ -4297,7 +4297,7 @@
 .en .debt-relief-table tbody td span {
   display: block;
   font-size: 1.4rem;
-  color: #1B2025;
+  color: var(--krds-color-light-gray-90);
 }
 
 .en .establishment-timeline {
@@ -4383,11 +4383,10 @@
 }
 
 .en .establishment-timeline .establishment-timeline-item .establishment-timeline-date .establishment-date-text {
-  font-family: "Pretendard GOV", sans-serif;
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 1.5;
-  color: #ed7801;
+  color: var(--krds-color-light-primary-60);
 }
 
 @media (max-width: 1023px) {
@@ -4423,7 +4422,7 @@
   font-weight: 400;
   font-size: 1.9rem;
   line-height: 1.5;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin: 0;
   white-space: normal;
 }
@@ -4558,8 +4557,8 @@
   max-width: 980px;
   margin: 0 auto;
   padding: 3rem 0;
-  background: #fff;
-  border: 1px solid #d2d6da;
+  background: var(--krds-color-light-gray-0);
+  border: 1px solid var(--krds-color-light-gray-20);
   border-radius: 24px;
   min-height: 622px;
 }
@@ -4619,7 +4618,7 @@
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.5;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   margin: 0 0 2rem 0;
   letter-spacing: 0;
 }
@@ -4648,7 +4647,7 @@
   font-size: 1.7rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #17191b;
+  color: var(--krds-light-color-text-basic);
   letter-spacing: 0;
 }
 
@@ -4799,7 +4798,7 @@
   transform: translate(-50%, -50%);
   width: 23rem;
   height: 23rem;
-  background: #fff;
+  background: var(--krds-color-light-gray-0);
   border-radius: 1000px;
   -webkit-box-shadow: 0px 0px 40px 0px rgba(113, 114, 119, 0.1);
   box-shadow: 0px 0px 40px 0px rgba(113, 114, 119, 0.1);
@@ -4885,7 +4884,7 @@
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  background: #fff;
+  background: var(--krds-color-light-gray-0);
   border-radius: 16px;
   padding: 2.4rem;
   display: -webkit-box;
@@ -4895,7 +4894,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 1px solid #d2d6da;
+  border: 1px solid var(--krds-color-light-gray-20);
 }
 
 @media (max-width: 1023px) {
@@ -4919,13 +4918,13 @@
   padding-bottom: 1.5rem;
   margin: 0 0 1.6rem 0;
   line-height: 1.4;
-  border-bottom: 1px solid #d2d6da;
+  border-bottom: 1px solid var(--krds-color-light-gray-20);
   text-align: center;
 }
 
 .en .service-cards-container .service-card-item .service-card-divider {
   border: none;
-  border-top: 1px solid #d2d6da;
+  border-top: 1px solid var(--krds-color-light-gray-20);
   margin: 0 0 2rem 0;
 }
 
@@ -4936,7 +4935,7 @@
 }
 
 .en .service-cards-container .service-card-item .service-card-description {
-  color: #1B2025;
+  color: var(--krds-color-light-gray-90);
   margin: 0 0 1.2rem 0;
 }
 
@@ -4997,7 +4996,7 @@
 .en .service-cards-container .service-card-item .service-card-topics .topics-label {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1B2025;
+  color: var(--krds-color-light-gray-90);
   margin: 0 0 1.2rem 0;
 }
 
@@ -5017,7 +5016,7 @@
 .en .service-cards-container .service-card-item .service-card-topics .topics-list li {
   font-size: 1.5rem;
   line-height: 1.6;
-  color: #1B2025;
+  color: var(--krds-color-light-gray-90);
   padding-left: 2rem;
   position: relative;
   margin-bottom: 0.8rem;
@@ -5034,7 +5033,7 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: #1B2025;
+  color: var(--krds-color-light-gray-90);
   font-weight: bold;
 }
 
