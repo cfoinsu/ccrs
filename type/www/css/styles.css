@@ -7485,7 +7485,7 @@ input[type=radio]:checked+label.fillter-chip {
 @media (max-width: 767px) {
     .effect-box .boxc1.row .key-img,
     .effect-box .boxc2.row .key-img {
-        flex-wrap:nowrap;
+        flex-wrap: wrap;
         width: 100%;
     }
 
