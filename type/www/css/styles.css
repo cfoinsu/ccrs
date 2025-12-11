@@ -9254,8 +9254,6 @@ a.customer-service-card {
 .krds-modal .modal-dialog .modal-btn {justify-content: center !important;}
 
 .g-info-box .g-info-box__link {position: absolute; width: 100%; height: 100%; top: 0; left: 0; bottom:0; right: 0; z-index: 1; display: none;}
-
-.card-actions .btn-action.applink {display: none;}
 @media (max-width: 1340px) {
     .customer-service-card .g-img {margin: 0;}
 }
@@ -9297,8 +9295,6 @@ a.customer-service-card {
     .item-share.item-share-wrap {display: none;}
 
     .g-info-box .g-info-box__link {display: block;}
-    .card-actions .btn-action.appdown {display: none;}
-    .card-actions .btn-action.applink {display: flex;}
 
     .conts-list-wrap .conts-list--flex {flex-direction: column;}
     .conts-list-wrap .krds-info-list {width: 100%;}
@@ -9359,4 +9355,123 @@ a.customer-service-card {
 
     .conts-list-wrap .krds-info-list > li {font-size: 1.9rem;}
     .g-wrap .g-conts-area .conts-desc {margin-bottom: var(--krds-gap-8);}
+}
+
+/* Donation Graph Styles */
+.donation-graph-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Pretendard_GOV', sans-serif;
+    padding: 20px 0;
+}
+
+.donation-title {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.donation-title .text {
+    font-size: 19px;
+    font-weight: 700;
+    color: #17191b;
+}
+
+.donation-title .highlight {
+    color: #ed7801;
+}
+
+.donation-title .year {
+    font-size: 15px;
+    color: #474e55;
+}
+
+.donation-chart-area {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donut-chart-wrap {
+    position: relative;
+    width: 240px;
+    height: 240px;
+}
+
+.donut-chart-svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-30deg);
+}
+
+.chart-center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: 700;
+    color: #1b2025;
+}
+
+.chart-label {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    padding: 6px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #17191b;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    white-space: nowrap;
+    z-index: 10;
+}
+
+/* Positioning labels */
+.label-pos-1 { /* 은행권 */
+    right: -20px;
+    bottom: 40px;
+}
+.label-pos-2 { /* 협력기관 */
+    left: -20px;
+    bottom: 40px;
+}
+.label-pos-3 { /* 보험업권 */
+    left: 0px;
+    top: 100px;
+}
+.label-pos-4 { /* 금투 */
+    left: 0;
+    top: 20px;
+}
+.label-pos-5 { /* 개인기부 */
+    right: 20px;
+    top: 20px;
+}
+
+@media (max-width: 768px) {
+    .donation-chart-area {
+        height: auto;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .donut-chart-wrap {
+        margin-bottom: 20px;
+    }
+    .chart-label {
+        position: static;
+        margin-bottom: 5px;
+        width: 100%;
+        text-align: center;
+        background: #f8f9fa;
+        box-shadow: none;
+        border: 1px solid #eee;
+    }
 }
