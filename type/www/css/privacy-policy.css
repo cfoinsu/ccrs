@@ -1338,4 +1338,42 @@ ol.list-number {
   }
 }
 
+/* 다운로드 버튼 스타일 */
+.popup-content .btn-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--krds-light-color-text-basic);
+    background-color: var(--krds-light-color-background-white);
+    border: 1px solid var(--krds-color-light-gray-20);
+    border-radius: 0.4rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* 버튼 내부 이미지(아이콘) 스타일 */
+.btn-download img {
+    width: 1.6rem; /* 기본 아이콘 크기 */
+    height: auto;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+/* 모바일 대응 */
+@media (max-width: 767px) {
+    .btn-download {
+        padding: 0.6rem 1rem;
+        font-size: 1.3rem;
+    }
+    .btn-download img {
+        width: 1.4rem;
+    }
+}
+
 /*# sourceMappingURL=privacy-policy.css.map */
