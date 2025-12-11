@@ -118,6 +118,7 @@
 .result-card-inner-wrapper .result-sub-title {
     font-size: 2.7rem;
     font-weight: 700;
+    word-break: break-all;
 }
 
 .result-card-inner-wrapper .result-sub-title span.colorblue {
@@ -281,6 +282,7 @@
 
 .result-card-inner-wrapper .stats-sub-section .graph-wrap .top_line {
     margin-top: 10px;
+    text-align: center;
 }
 
 .result-card-inner-wrapper .stats-sub-section .graph-wrap .graph-img {
