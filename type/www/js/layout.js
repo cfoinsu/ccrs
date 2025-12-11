@@ -302,7 +302,7 @@ $(document).ready(function() {
         // 팝업이 존재하지 않으면 생성하여 삽입
         if ($linkHtml.length === 0) {
             const linkHtml = `
-                <div class="item-share active">
+                <div class="item-share active item-share-wrap">
                     <strong class="section-subtit">앱 다운로드</strong>
                     <div class="g-qr-box">
                         <div class="qr-box">
