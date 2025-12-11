@@ -101,16 +101,13 @@
 
                         </div>
                         <!-- Content Sections -->
-                        <div class="content-sections">
+                        <div class="content-sections scroll-fadeup">
                             <div class="g-conts-area">
                                 <div class="g-wrap">
                                     <div class="g-grid-wrap unit2 mb20">
                                         <div class="conts-desc mt0">
                                             <img src="/type/www/img/contents/png/ccrs_chairman.png?ver=5.8">
-                                            <strong>
-                                                We support individuals facing financial hardship, 
-helping them manage debt and rebuild their financial lives.
-                                            </strong>
+                                            <strong>We support individuals facing financial hardship, helping them manage debt and rebuild their financial lives.</strong>
                                             As Korea’s statutory body for credit counseling and debt relief, we help people who struggle with debt and credit issues restore their credit and improve their financial lives. <br><br>
 
 Through one-on-one counseling, we review each person’s financial situation and provide tailored solutions, including lower interest rates, debt reduction or cancellation, and repayment deferrals for those having difficulty in their payments.<br><br>
@@ -170,5 +167,15 @@ Credit Counseling and Recovery Service</p> <br>
     <script src="/type/www/js/script.js"></script> 
     공통 header 분리하기 위해 init.js 임시 추가  -->
     <script src="includes/init.js?ver=5.8"></script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.querySelectorAll('.scroll-fadeup').forEach(function(el) {
+                    el.classList.add('active');
+                });
+            }, 0);
+        });
+    </script>
 </body>
 </html>
