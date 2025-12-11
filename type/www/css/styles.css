@@ -143,7 +143,7 @@ body {
 }
 
 .breadcrumb-item:hover:not(.current) {
-    color: var(--krds-light-color-text-gray);
+    color: var(--krds-light-color-text-disabled);
 }
 
 .breadcrumb-item.current {
@@ -1225,7 +1225,7 @@ body aside {
 }
 
 .radio-option:has(input:checked) .radio-label {
-    color: var(--krds-light-color-text-gray);
+    color: var(--krds-light-color-text-disabled);
 }
 
 .radio-option input[type="radio"] {
@@ -1335,7 +1335,7 @@ body aside {
 
 .btn-comparison {
     background-color: var(--krds-light-color-surface-gray-subtler);
-    color: var(--krds-light-color-text-gray);
+    color: var(--krds-light-color-text-disabled);
     border: 1px solid var(--krds-light-color-border-gray);
 }
 
@@ -2817,7 +2817,7 @@ body aside {
 
 .btn-line {
     background: var(--krds-color-light-gray-5);
-    color: var(--krds-light-color-text-gray);
+    color: var(--krds-light-color-text-disabled);
     padding: 0.75rem 1.5rem;
     border: 1px solid var(--krds-color-light-gray-40);
     border-radius: 0.5rem;
@@ -4420,7 +4420,7 @@ table.comparison-table td:first-child {
 }
 
 .g-tit.gray {
-    color: var(--krds-light-color-text-gray);
+    color: var(--krds-light-color-text-disabled);
 }
 
 .g-tit.blue {
@@ -4714,7 +4714,7 @@ table.comparison-table td:first-child {
 }
 
 .krds-info-list .gray {
-    color: var(--krds-light-color-text-gray) !important;
+    color: var(--krds-light-color-text-disabled) !important;
 }
 
 .krds-info-list li .krds-table-wrap {
@@ -5306,7 +5306,7 @@ table .krds-info-list>li {
 
 .timeline-year-flex {
     font-size: 4.4rem;
-    color: var(--krds-light-color-text-gray);
+    color: var(--krds-light-color-text-disabled);
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 1px;
@@ -9368,10 +9368,20 @@ a.customer-service-card {
 .donation-graph-container {
     position: relative;
     width: 100%;
-    max-width: 500px;
     margin: 0 auto;
-    font-family: 'Pretendard_GOV', sans-serif;
     padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.donation-col {
+    flex: 1;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .donation-title {
@@ -9379,21 +9389,27 @@ a.customer-service-card {
     align-items: baseline;
     gap: 10px;
     margin-bottom: 20px;
+    width: 100%;
+    justify-content: flex-start;
 }
 
 .donation-title .text {
     font-size: 19px;
     font-weight: 700;
-    color: #17191b;
+    color: var(--krds-light-color-text-basic);
 }
 
-.donation-title .highlight {
-    color: #ed7801;
+.donation-title .primary {
+    color: var(--krds-color-light-primary-50);
+}
+
+.donation-title .secondary {
+    color: var(--krds-color-light-secondary-50);
 }
 
 .donation-title .year {
     font-size: 15px;
-    color: #474e55;
+    color: var(--krds-light-color-text-disabled);
 }
 
 .donation-chart-area {
@@ -9424,7 +9440,7 @@ a.customer-service-card {
     transform: translate(-50%, -50%);
     font-size: 24px;
     font-weight: 700;
-    color: #1b2025;
+    color: var(--krds-light-color-text-basic);
 }
 
 .chart-label {
@@ -9435,7 +9451,7 @@ a.customer-service-card {
     border-radius: 15px;
     font-size: 13px;
     font-weight: 700;
-    color: #17191b;
+    color: var(--krds-light-color-text-basic);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     white-space: nowrap;
     z-index: 10;
@@ -9443,27 +9459,47 @@ a.customer-service-card {
 
 /* Positioning labels */
 .label-pos-1 { /* 은행권 */
-    right: -20px;
-    bottom: 40px;
+    right: 100px;
+    bottom: 58px;
 }
 .label-pos-2 { /* 협력기관 */
-    left: -20px;
-    bottom: 40px;
+    left: 20px;
+    bottom: 70px;
 }
 .label-pos-3 { /* 보험업권 */
-    left: 0px;
+    left: 20px;
     top: 100px;
 }
 .label-pos-4 { /* 금투 */
-    left: 0;
-    top: 20px;
+    left: 50px;
+    top: 40px;
 }
 .label-pos-5 { /* 개인기부 */
-    right: 20px;
+    right: 150px;
+    top: 20px;
+}
+.label-pos-6 { /* 소액대출 */
+    right: 100px;
+    bottom: 50px;
+}
+.label-pos-7 { /* 보증지원 */
+    left: 30px;
+    bottom: 120px;
+}
+.label-pos-8 { /* 사회공헌 */
+    left: 30px;
+    top: 70px;
+}
+.label-pos-9 { /* 기타 */
+    left: 100px;
+    top: 20px;
+}
+.label-pos-10 { /* 소송지원 */
+    right: 120px;
     top: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1340px) {
     .donation-chart-area {
         height: auto;
         flex-direction: column;
@@ -9477,8 +9513,14 @@ a.customer-service-card {
         margin-bottom: 5px;
         width: 100%;
         text-align: center;
-        background: #f8f9fa;
+        background: var(--krds-light-color-background-gray-subtler);
         box-shadow: none;
-        border: 1px solid #eee;
+        border: 1px solid var(--krds-light-color-border-gray-light);
+    }
+}
+
+@media (max-width: 767px) {
+    .donation-graph-container {
+        flex-direction: column;
     }
 }

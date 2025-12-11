@@ -187,46 +187,151 @@
                                         aria-labelledby="accordionHeaderSample01">
                                         <div class="accordion-body">
                                             <!-- accordion contents -->
-                                            <!-- <div class="donation-graph-container">
-                                                <div class="donation-title">
-                                                    <p class="text">누적 <span class="highlight">2,236.9억원</span> 기부</p>
-                                                    <p class="year">2024 기준</p>
-                                                </div>
-                                                <div class="donation-chart-area">
-                                                    <div class="donut-chart-wrap">
-                                                        <svg class="donut-chart-svg" viewBox="0 0 200 200">
-                                                            <circle cx="100" cy="100" r="70" fill="none"
-                                                                stroke="#ed7801" stroke-width="45"
-                                                                stroke-dasharray="294 440" stroke-dashoffset="0"
-                                                                transform="rotate(-90 100 100)" />
-                                                            <circle cx="100" cy="100" r="70" fill="none"
-                                                                stroke="#ffb81c" stroke-width="45"
-                                                                stroke-dasharray="106 440" stroke-dashoffset="-296"
-                                                                transform="rotate(-90 100 100)" />
-                                                            <circle cx="100" cy="100" r="70" fill="none"
-                                                                stroke="#69bd45" stroke-width="45"
-                                                                stroke-dasharray="33 440" stroke-dashoffset="-404"
-                                                                transform="rotate(-90 100 100)" />
-                                                            <circle cx="100" cy="100" r="70" fill="none"
-                                                                stroke="#231f20" stroke-width="45"
-                                                                stroke-dasharray="5 440" stroke-dashoffset="-439"
-                                                                transform="rotate(-90 100 100)" />
-                                                            <circle cx="100" cy="100" r="70" fill="none"
-                                                                stroke="#898989" stroke-width="45"
-                                                                stroke-dasharray="1 440" stroke-dashoffset="-445"
-                                                                transform="rotate(-90 100 100)" />
-                                                        </svg>
-                                                        <div class="chart-center-text">기부금</div>
+                                            <div class="donation-graph-container">
+
+                                                <!-- [그룹 1] 기부금 현황 (왼쪽) -->
+                                                <div class="donation-col">
+                                                    <div class="donation-title">
+                                                        <p class="text">누적 <span class="primary">2,236.9억원</span> 기부
+                                                        </p>
+                                                        <p class="year">2024 기준</p>
                                                     </div>
 
-                                                    <div class="chart-label label-pos-1">은행권 1495억원</div>
-                                                    <div class="chart-label label-pos-2">협력기관(협회 등) 541억원</div>
-                                                    <div class="chart-label label-pos-3">보험업권 171억원</div>
-                                                    <div class="chart-label label-pos-4">금투·여전업권 27억원</div>
-                                                    <div class="chart-label label-pos-5">개인기부 3억원</div>
+                                                    <div class="donation-chart-area">
+                                                        <div class="donation-chart-wrapper" data-total="2236.9"
+                                                            data-chart='[
+                                                                {"label": "은행권", "value": 1295, "color": "url(#grad-101)"},
+                                                                {"label": "협력기관", "value": 341, "color": "url(#grad-102)"},
+                                                                {"label": "보험업권", "value": 271, "color": "url(#grad-103)"},
+                                                                {"label": "금투·여전업권", "value": 227, "color": "url(#grad-104)"},
+                                                                {"label": "개인기부", "value": 103, "color": "url(#grad-105)"}
+                                                            ]'>
+                                                            <div class="donut-chart-wrap">
+                                                                <svg class="donut-chart-svg" viewBox="0 0 200 200">
+                                                                    <defs>
+                                                                        <linearGradient id="grad-101" x1="0%" y1="0%"
+                                                                            x2="100%" y2="100%">
+                                                                            <stop offset="0%"
+                                                                                style="stop-color:#ffc16b" />
+                                                                            <stop offset="100%"
+                                                                                style="stop-color:#f48f01" />
+                                                                        </linearGradient>
+                                                                        <linearGradient id="grad-102" x1="0%" y1="0%"
+                                                                            x2="100%" y2="100%">
+                                                                            <stop offset="0%"
+                                                                                style="stop-color:#db8b29" />
+                                                                            <stop offset="100%"
+                                                                                style="stop-color:#c17100" />
+                                                                        </linearGradient>
+                                                                        <linearGradient id="grad-103" x1="0%" y1="0%"
+                                                                            x2="100%" y2="100%">
+                                                                            <stop offset="0%"
+                                                                                style="stop-color:#f7a654" />
+                                                                            <stop offset="100%"
+                                                                                style="stop-color:#c17100" />
+                                                                        </linearGradient>
+                                                                        <linearGradient id="grad-104" x1="0%" y1="0%"
+                                                                            x2="100%" y2="100%">
+                                                                            <stop offset="0%"
+                                                                                style="stop-color:#f3ba79" />
+                                                                            <stop offset="100%"
+                                                                                style="stop-color:#c47b27" />
+                                                                        </linearGradient>
+                                                                        <linearGradient id="grad-105" x1="0%" y1="0%"
+                                                                            x2="100%" y2="100%">
+                                                                            <stop offset="0%"
+                                                                                style="stop-color:#FFD79F" />
+                                                                            <stop offset="100%"
+                                                                                style="stop-color:#FFD79F" />
+                                                                        </linearGradient>
+                                                                    </defs>
+                                                                </svg>
+                                                                <div class="chart-center-text">기부금</div>
+                                                            </div>
+                                                            <div class="chart-labels-container"></div>
+                                                        </div>
+                                                        <!-- 라벨들 -->
+                                                        <div class="chart-label label-pos-1">은행권 1495억원</div>
+                                                        <div class="chart-label label-pos-2">협력기관(협회 등) 541억원</div>
+                                                        <div class="chart-label label-pos-3">보험업권 171억원</div>
+                                                        <div class="chart-label label-pos-4">금투·여전업권 27억원</div>
+                                                        <div class="chart-label label-pos-5">개인기부 3억원</div>
+                                                    </div>
                                                 </div>
-                                            </div> -->
-                                            <div class="g-img row between">
+
+                                                <!-- [그룹 2] 취약계층 지원 (오른쪽) -->
+                                                <div class="donation-col">
+                                                    <div class="donation-title">
+                                                        <p class="text">누적 <span class="secondary">6,324.5억원</span> 지원
+                                                        </p>
+                                                        <p class="year">2024 기준</p>
+                                                    </div>
+
+                                                    <div class="donation-chart-area">
+                                                        <div class="donation-chart-wrapper" data-total="6324.5"
+                                                            data-chart='[
+                                                                {"label": "소액대출", "value": 4023, "color": "url(#grad-201)"},
+                                                                {"label": "보증지원", "value": 1080, "color": "url(#grad-202)"},
+                                                                {"label": "사회공헌", "value": 688, "color": "url(#grad-203)"},
+                                                                {"label": "기타", "value": 318, "color": "url(#grad-204)"},
+                                                                {"label": "소송지원", "value": 216, "color": "url(#grad-205)"}
+                                                            ]'>
+                                                            <div class="donut-chart-wrap">
+                                                                <svg class="donut-chart-svg" viewBox="0 0 200 200">
+                                                                    <defs>
+                                                                        <linearGradient id="grad-201" x1="0%" y1="0%"
+                                                                            x2="100%" y2="100%">
+                                                                            <stop offset="0%"
+                                                                                style="stop-color:#4485fd" />
+                                                                            <stop offset="100%"
+                                                                                style="stop-color:#8fb6ff" />
+                                                                        </linearGradient>
+                                                                        <linearGradient id="grad-202" x1="0%" y1="0%"
+                                                                            x2="100%" y2="100%">
+                                                                            <stop offset="0%"
+                                                                                style="stop-color:#4984f3" />
+                                                                            <stop offset="100%"
+                                                                                style="stop-color:#2c6ce2" />
+                                                                        </linearGradient>
+                                                                        <linearGradient id="grad-203" x1="0%" y1="0%"
+                                                                            x2="100%" y2="100%">
+                                                                            <stop offset="0%"
+                                                                                style="stop-color:#6191ea" />
+                                                                            <stop offset="100%"
+                                                                                style="stop-color:#9abeff" />
+                                                                        </linearGradient>
+                                                                        <linearGradient id="grad-204" x1="0%" y1="0%"
+                                                                            x2="100%" y2="100%">
+                                                                            <stop offset="0%"
+                                                                                style="stop-color:#c3d8ff" />
+                                                                            <stop offset="100%"
+                                                                                style="stop-color:#86b0ff" />
+                                                                        </linearGradient>
+                                                                        <linearGradient id="grad-205" x1="0%" y1="0%"
+                                                                            x2="100%" y2="100%">
+                                                                            <stop offset="0%"
+                                                                                style="stop-color:#dae7ff" />
+                                                                            <stop offset="100%"
+                                                                                style="stop-color:#aac8ff" />
+                                                                        </linearGradient>
+                                                                    </defs>
+                                                                </svg>
+                                                                <div class="chart-center-text">지원액</div>
+                                                            </div>
+                                                            <div class="chart-labels-container"></div>
+                                                        </div>
+                                                        <!-- 라벨들 -->
+                                                        <div class="chart-label label-pos-6">소액대출 5,723억원</div>
+                                                        <div class="chart-label label-pos-7">보증지원 380억원</div>
+                                                        <div class="chart-label label-pos-8">사회공헌 188.7억원</div>
+                                                        <div class="chart-label label-pos-9">기타 17.1억원</div>
+                                                        <div class="chart-label label-pos-10">소송지원 15.7억원</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- //donation-graph-container -->
+                                            <!-- <div class="g-img row between">
                                                 <img src="/type/www/images/img/기부금현황내용01.png?ver=5.8" alt="">
                                                 <img src="/type/www/images/img/기부금현황내용02.png?ver=5.8" alt="">
                                             </div>
@@ -256,7 +361,7 @@
                                                 <p>두 개의 도넛형 차트가 나란히 배열되어 있습니다. 왼쪽 차트는 주황색 계열로 누적 기부금을, 오른쪽 차트는 파란색 계열로
                                                     취약계층 지원액을 나타냅니다. 각 차트의 중앙에는 '기부금'과 '지원액'이라는 큰 글씨가 있으며, 각 부문의 세부 금액과
                                                     명칭이 차트 주변에 배치되어 있습니다.</p>
-                                            </div>
+                                            </div> -->
                                             <!-- //accordion contents -->
                                         </div>
                                     </div>
@@ -274,7 +379,8 @@
                                             <!-- accordion contents -->
                                             <div class="g-conts-area">
                                                 <p>금융회사 등의 법인카드 포인트와 기부금으로 조성한 범금융권 사회공헌기금입니다.</p>
-                                                <h4 class="cp-bold overview-item mt30 mb30">누적 기부금 <span class="primary">245억원</span> 돌파!</h4>
+                                                <h2 class="cp-bold overview-item mt30 mb30">누적 기부금 <span
+                                                        class="primary">245억원</span> 돌파!</h2>
                                                 <div class="g-img row between" style="justify-content: space-between;">
                                                     <img src="/type/www/images/img/새희망그래프01.png?ver=5.8" alt=" ">
                                                     <img src="/type/www/images/img/새희망그래프02.png?ver=5.8" alt=" ">
@@ -505,6 +611,63 @@
     <script src="/type/www/js/script.js"></script> 
     공통 header 분리하기 위해 init.js 임시 추가  -->
     <script src="includes/init.js?ver=5.8"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // 1. 모든 차트 래퍼를 찾습니다. (querySelector -> querySelectorAll)
+            const chartWrappers = document.querySelectorAll('.donation-chart-wrapper');
+
+            if (chartWrappers.length === 0) return;
+
+            // 2. 각 차트마다 반복 실행
+            chartWrappers.forEach(chartWrapper => {
+                const svg = chartWrapper.querySelector('svg');
+                const total = parseFloat(chartWrapper.dataset.total);
+
+                // 데이터 파싱 (에러 방지)
+                let data = [];
+                try {
+                    data = JSON.parse(chartWrapper.dataset.chart);
+                } catch (e) {
+                    console.error("Chart data parsing error:", e);
+                    return;
+                }
+
+                const radius = 70;
+                const circumference = 2 * Math.PI * radius; // 약 440
+                let currentOffset = 0; // 시작 지점
+
+                // 기존 원 초기화
+                const existingCircles = svg.querySelectorAll('circle');
+                existingCircles.forEach(circle => circle.remove());
+
+                data.forEach((item, index) => {
+                    const percentage = item.value / total;
+                    const strokeLength = circumference * percentage;
+
+                    const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+
+                    circle.setAttribute("cx", "100");
+                    circle.setAttribute("cy", "100");
+                    circle.setAttribute("r", radius);
+                    circle.setAttribute("fill", "none");
+                    circle.setAttribute("stroke", item.color); // 데이터에 정의된 색상 사용
+                    circle.setAttribute("stroke-width", "45");
+
+                    const startAngle = -60;
+                    circle.setAttribute("transform", `rotate(${startAngle} 100 100)`);
+
+                    circle.style.strokeDasharray = `${strokeLength} ${circumference}`;
+                    circle.style.strokeDashoffset = -currentOffset;
+                    circle.style.transition = "stroke-dasharray 0.3s ease";
+
+                    svg.appendChild(circle);
+
+                    currentOffset += strokeLength;
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
