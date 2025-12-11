@@ -9362,6 +9362,8 @@ a.customer-service-card {
 
     .conts-list-wrap .krds-info-list > li {font-size: 1.9rem;}
     .g-wrap .g-conts-area .conts-desc {margin-bottom: var(--krds-gap-8);}
+
+    .krds-structured-list.gallery .card-top img {width: 100%; height: auto;}
 }
 
 /* Donation Graph Styles */
