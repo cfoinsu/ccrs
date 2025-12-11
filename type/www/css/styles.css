@@ -2854,14 +2854,14 @@ body aside {
     border: none;
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--krds-light-color-text-subtle);
+    color: var(--krds-color-light-gray-60);
     padding-bottom: 1rem;
     cursor: pointer;
     position: relative;
 }
 
 .tab-button.active {
-    color: #111;
+    color: var(--krds-light-color-text-basic);
 }
 
 .tab-button.active::after {
