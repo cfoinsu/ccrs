@@ -3216,6 +3216,7 @@ body:has(.intro.show) {
 }
 .col-debt3 .plus-lst li svg {
   width: 2.4rem;
+  flex-shrink: 0;
 }
 .col-debt3 .link-more {
   display: inline-block;
@@ -3678,7 +3679,7 @@ body:has(.intro.show) {
 
 @media (max-width: 767px)  {
   .debt-section.grid-width .grid-col3 .plus-lst {margin-left: 0 !important; width: 100%;}
-  .debt-section.grid-width .grid-col3 .plus-lst li {padding: 0 .8rem; gap: 0 0.5rem;}
+  .debt-section.grid-width .grid-col3 .plus-lst li {padding-right: 1.6rem; padding-left: 1.6rem; gap: 0 0.5rem; align-items: stretch; flex: 1 0 0;}
   .debt-section.grid-width .grid-col3 .plus-lst li:last-child {padding-right: 0;}
   .debt-section.grid-width .grid-col3 .plus-lst li:first-child {padding-left: 0;}
 }
