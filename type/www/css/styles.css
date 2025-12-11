@@ -2854,7 +2854,7 @@ body aside {
     border: none;
     font-size: 2.5rem;
     font-weight: 700;
-    color: #9ca3af;
+    color: var(--krds-light-color-text-subtle);
     padding-bottom: 1rem;
     cursor: pointer;
     position: relative;
@@ -4658,7 +4658,7 @@ table.comparison-table td:first-child {
 }
 
 .g-grid-wrap.contect .g-info-box .g-desc-box .conts-desc.largetext.primary {
-    color: var(--krds-light-color-text-primary);
+    color: var(--krds-light-color-text-basic);
     font-size: var(--krds-pc-font-size-heading-medium);
     font-weight: 700;
     line-height: 150%;
@@ -4669,7 +4669,7 @@ table.comparison-table td:first-child {
     display: block;
     color: var(--krds-color-light-gray-95);
     font-size: 1.9rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 150%;
 }
 
