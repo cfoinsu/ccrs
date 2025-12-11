@@ -9366,6 +9366,8 @@ a.customer-service-card {
     .krds-structured-list.gallery .card-top img {width: 100%; height: auto;}
 
     .result-card-inner-wrapper .stats-section.top_line {padding: 2.4rem 0 0;}
+
+    .tab.fill.middle.wrap li .btn-tab {white-space: normal; text-align: center; word-break: keep-all; height: 42px; line-height: 1.2;}
 }
 
 /* Donation Graph Styles */
