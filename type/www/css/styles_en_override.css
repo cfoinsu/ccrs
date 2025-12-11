@@ -4823,8 +4823,8 @@
 
 @media (max-width: 767px) {
   .en .ccrs-service-diagram .center-logo {
-    width: 8rem;
-    height: 7.8rem;
+    width: 64px;
+    height: 64px;
     margin-bottom: 0.8rem;
   }
 }
