@@ -9369,6 +9369,14 @@ a.customer-service-card {
 
     .tab.fill.middle.wrap li .btn-tab {white-space: normal; text-align: center; word-break: keep-all; height: 42px; line-height: 1.2;}
 }
+@media (max-width: 360px) {
+    .cp-store-card .cp-store-btn {height: auto; padding: .6rem .4rem; font-size: 1.7rem;}
+    .cp-store-card .cp-store-btn i {width: 18px; height: 18px;}
+    .cp-store-card .cp-store-img {max-width: 80px;}
+}
+@media (max-width: 320px) {
+    .cp-download-row .cp-store-card {flex-direction: column; gap: 14px 0;}
+}
 
 /* Donation Graph Styles */
 .donation-graph-container {
