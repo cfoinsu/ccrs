@@ -204,6 +204,11 @@
     /*vertical-align:text-bottom;*/
     vertical-align:middle;
     resize:none;
+
+    width: 18px;
+    height: 18px;
+    background-position: bottom;
+    margin: 12px 0 0 -25px;
     }
 .date-picker-dateval:link,
 .date-picker-dateval:visited
@@ -221,14 +226,14 @@
 /*
     Hover states etc for the activation button
 */
-.date-picker-button-active:link,
+/* .date-picker-button-active:link,
 .date-picker-button-active:visited,
 .date-picker-control:focus,
 .date-picker-control:hover,
 .date-picker-control:active
     {
     background-position:0 0;
-    }
+    } */
 /*
     Disabled activation button
 */
