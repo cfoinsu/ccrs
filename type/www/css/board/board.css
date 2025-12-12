@@ -2608,4 +2608,10 @@ dd .add_openNoti {width:100%;margin-left:0px;}
 
 @media all and (max-width:768px){
     #pop_pwCheck {width:80%;}
+    
+    .board-detail #contents img {
+        max-width: 100% !important;
+        object-fit: contain;
+        height: auto !important;
+    }
 }

@@ -333,3 +333,26 @@ function searchPop(type) {
   // 팝업 열기
   window.open(url, 'privacyPopup', options);
 }
+$(function() {  
+    // Scroll to top functionality
+    $('body').append(
+      '<button class="scroll-to-top"><img src="/type/www/img/icons/ico_go_top.svg" alt="맨 위로 가기"</button>'
+    );
+
+  $(window).on('scroll', function() {
+    var scrollPosition = $(window).scrollTop(); // 현재 스크롤 위치 가져오기
+
+    if (scrollPosition > 200) {
+        $('.scroll-to-top').addClass('show');
+    } else {
+        $('.scroll-to-top').removeClass('show');
+    }
+
+  }).trigger('scroll');
+
+
+
+  $(document).on('click', '.scroll-to-top', function() {
+    $('html, body').animate({scrollTop: 0}, 500);
+  });
+});

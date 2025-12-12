@@ -250,22 +250,22 @@ function mobileMenu() {
 
     
 // Scroll to top functionality
-$(window).scroll(function() {
-	if ($(this).scrollTop() > 200) {
-		if (!$('.scroll-to-top').length) {
-			$('body').append(
-				'<button class="scroll-to-top" style="position: fixed; bottom: 20px; right: 10px; width: 6rem; height: 6rem; background: var(--krds-light-color-button-primary-fill); border: none; border-radius: 50%; cursor: pointer; z-index: 999; font-size: 18px;"><img src="/type/www/img/icons/ico_go_top.svg" alt="맨 위로 가기" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);"></button>'
-			);
-		}
-		$('.scroll-to-top').fadeIn();
-	} else {
-		$('.scroll-to-top').fadeOut();
-	}
-});
+// $(window).scroll(function() {
+// 	if ($(this).scrollTop() > 200) {
+// 		if (!$('.scroll-to-top').length) {
+// 			$('body').append(
+// 				'<button class="scroll-to-top" style="position: fixed; bottom: 20px; right: 10px; width: 6rem; height: 6rem; background: var(--krds-light-color-button-primary-fill); border: none; border-radius: 50%; cursor: pointer; z-index: 999; font-size: 18px;"><img src="/type/www/img/icons/ico_go_top.svg" alt="맨 위로 가기" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);"></button>'
+// 			);
+// 		}
+// 		$('.scroll-to-top').fadeIn();
+// 	} else {
+// 		$('.scroll-to-top').fadeOut();
+// 	}
+// });
 
-$(document).on('click', '.scroll-to-top', function() {
-	$('html, body').animate({scrollTop: 0}, 500);
-});
+// $(document).on('click', '.scroll-to-top', function() {
+// 	$('html, body').animate({scrollTop: 0}, 500);
+// });
 
 
 $(document).ready(function () {
