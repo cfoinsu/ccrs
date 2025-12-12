@@ -1864,7 +1864,7 @@ section {
 .intro .tellphon .call {
   font-size: 1.7rem;
   font-weight: 700;
-  color: var(--krds-light-color-text-primary);
+  color: var(--krds-color-light-primary-60);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

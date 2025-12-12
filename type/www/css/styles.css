@@ -3209,8 +3209,7 @@ body aside {
     width: 6rem;
     height: 6rem;
     text-align: center;
-    /* background: radial-gradient(59.17% 59.17% at 50% 50%, #FF7614 0%, #F08D01 100%); */
-    background: radial-gradient(59.17% 59.17% at 50% 50%, var(--krds-color-light-primary-50) 0%, var(--krds-color-light-primary-40) 100%);
+    background: radial-gradient(59.17% 59.17% at 50% 50%, #ED5401 0%, var(--krds-color-light-primary-50) 100%);
     border-radius: 50%;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     color: var(--krds-color-light-gray-0);
@@ -3233,7 +3232,7 @@ body aside {
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
-    background: radial-gradient(59.17% 59.17% at 50% 50%, var(--krds-color-light-primary-50) 0%, var(--krds-color-light-primary-40) 100%);
+    background: radial-gradient(59.17% 59.17% at 50% 50%, #ED5401 0%, var(--krds-color-light-primary-50) 100%);
     color: var(--krds-color-light-gray-0);
     border: none;
     cursor: pointer;
