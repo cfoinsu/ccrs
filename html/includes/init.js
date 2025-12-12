@@ -41,7 +41,7 @@ $(function () {
 
   // Mobile Menu 로드 함수
   function loadMobileMenu() {
-    const isMobile = $(window).width() < 1024;
+    const isMobile = $(window).width() < 1280;
     const container = $('#mobile-menu-container');
     
     if (isMobile) {
@@ -161,7 +161,7 @@ $(function () {
       // 상담 예약신청 메뉴 토글 (모바일에서만)
       if (bookItem) {
         bookItem.addEventListener('click', function(e) {
-          if (window.innerWidth <= 1023) {
+          if (window.innerWidth <= 1279) {
             e.preventDefault();
             e.stopPropagation();
             this.classList.toggle('on');

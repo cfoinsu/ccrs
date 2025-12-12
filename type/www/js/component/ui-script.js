@@ -3,7 +3,7 @@
 // 윈도우 사이즈 체크
 const windowSize = {
   winSize: null,
-  breakPoint: 1024,
+  breakPoint: 1279,
 
   setWinSize() {
     this.winSize = window.innerWidth >= this.breakPoint ? "pc" : "mob";
