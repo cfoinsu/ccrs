@@ -1708,4 +1708,19 @@
   .popslider-Wrap {
     display: none;
   }
-}/*# sourceMappingURL=main_en.css.map */
+  
+}
+
+@media (max-width: 767px) {
+  .en #section1 .hero-text .container {
+    overflow: visible;
+  }
+  .en #section1 .hero-text .hero-title {
+    font-size: 3rem;
+    .hero-title-1,
+    .hero-title-2,
+    .hero-title-3 {
+      text-align: center;
+    }
+  }
+}

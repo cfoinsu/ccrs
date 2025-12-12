@@ -1029,135 +1029,159 @@
 			);
 		});
 
-		// 히어로 텍스트 초기 상태로 리셋하는 함수
-		function resetHeroText(slide) {
-			const $slide = $(slide);
-			const $title1 = $slide.find('.hero-title-1');
-			const $title2 = $slide.find('.hero-title-2');
-			const $title3 = $slide.find('.hero-title-3');
-			const $subtitle = $slide.find('.hero-subtitle');
+		// Hero Text Animation 함수 (PC 버전) - 기존 코드 유지
+    function resetHeroText(slide) {
+        const $slide = $(slide);
+        const $title1 = $slide.find('.hero-title-1');
+        const $title2 = $slide.find('.hero-title-2');
+        const $title3 = $slide.find('.hero-title-3');
+        const $subtitle = $slide.find('.hero-subtitle');
 
-			// 즉시 초기 상태로 설정
-			if ($title1.length) {
-				gsap.set($title1[0], { opacity: 0, x: 100 });
-			}
-			if ($title2.length) {
-				gsap.set($title2[0], { opacity: 0, x: -100 });
-			}
-			if ($title3.length) {
-				gsap.set($title3[0], { opacity: 0, x: 100 });
-			}
-			if ($subtitle.length) {
-				gsap.set($subtitle[0], { opacity: 0, y: 50 });
-			}
-		}
+        if ($title1.length) {
+            gsap.set($title1[0], { opacity: 0, x: 100 });
+        }
+        if ($title2.length) {
+            gsap.set($title2[0], { opacity: 0, x: -100 });
+        }
+        if ($title3.length) {
+            gsap.set($title3[0], { opacity: 0, x: 100 });
+        }
+        if ($subtitle.length) {
+            gsap.set($subtitle[0], { opacity: 0, y: 50 });
+        }
+    }
 
-		// GSAP Hero Text Animation Function
-		function animateHeroText(slide) {
-			const $slide = $(slide);
-			const $title1 = $slide.find('.hero-title-1');
-			const $title2 = $slide.find('.hero-title-2');
-			const $title3 = $slide.find('.hero-title-3');
-			const $subtitle = $slide.find('.hero-subtitle');
+    function animateHeroText(slide) {
+        const $slide = $(slide);
+        const $title1 = $slide.find('.hero-title-1');
+        const $title2 = $slide.find('.hero-title-2');
+        const $title3 = $slide.find('.hero-title-3');
+        const $subtitle = $slide.find('.hero-subtitle');
 
-			// 요소가 없으면 리턴
-			if (
-				!$title1.length &&
-				!$title2.length &&
-				!$title3.length &&
-				!$subtitle.length
-			) {
-				return;
-			}
+        if (!$title1.length && !$title2.length && !$title3.length && !$subtitle.length) {
+            return;
+        }
 
-			// 기존 애니메이션 정리
-			gsap.killTweensOf([$title1[0], $title2[0], $title3[0], $subtitle[0]]);
+        gsap.killTweensOf([$title1[0], $title2[0], $title3[0], $subtitle[0]]);
 
-			// 애니메이션 타임라인 생성
-			const heroTimeline = gsap.timeline({
-				defaults: {
-					ease: 'power3.out',
-				},
-			});
+        const heroTimeline = gsap.timeline({
+            defaults: {
+                ease: 'power3.out',
+            },
+        });
 
-			// hero-title-1: 오른쪽에서 왼쪽으로 (첫줄 앞쪽으로)
-			if ($title1.length) {
-				heroTimeline.fromTo(
-					$title1[0],
-					{
-						opacity: 0,
-						x: 100,
-					},
-					{
-						opacity: 1,
-						x: -100,
-						duration: 1.2,
-					},
-					0
-				);
-			}
+        if ($title1.length) {
+            heroTimeline.fromTo($title1[0], { opacity: 0, x: 100 }, { opacity: 1, x: -100, duration: 1.2 }, 0);
+        }
+        if ($title2.length) {
+            heroTimeline.fromTo($title2[0], { opacity: 0, x: -100 }, { opacity: 1, x: 100, duration: 1.2 }, 0.3);
+        }
+        if ($title3.length) {
+            heroTimeline.fromTo($title3[0], { opacity: 0, x: 100 }, { opacity: 1, x: 15, duration: 1.2 }, 0.6);
+        }
+        if ($subtitle.length) {
+            heroTimeline.fromTo($subtitle[0], { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1.2 }, 0.9);
+        }
+    }
 
-			// hero-title-2: 왼쪽에서 오른쪽으로 (둘째줄 뒷쪽으로)
-			if ($title2.length) {
-				heroTimeline.fromTo(
-					$title2[0],
-					{
-						opacity: 0,
-						x: -100,
-					},
-					{
-						opacity: 1,
-						x: 100,
-						duration: 1.2,
-					},
-					0.3
-				);
-			}
+    // ----------------------------------------------------------------------
+    // Mobile Hero Text Animation 함수 (767px 이하) - 새로 추가된 코드
+    // ----------------------------------------------------------------------
 
-			// hero-title-3: 오른쪽에서 왼쪽으로 (셋째줄 앞쪽으로)
-			if ($title3.length) {
-				heroTimeline.fromTo(
-					$title3[0],
-					{
-						opacity: 0,
-						x: 100,
-					},
-					{
-						opacity: 1,
-						x: 15,
-						duration: 1.2,
-					},
-					0.6
-				);
-			}
+    // 모바일 해상도 (767px 이하) 전용 리셋 함수
+function resetHeroTextMobile(slide) {
+    const $slide = $(slide);
+    const $title1 = $slide.find('.hero-title-1');
+    const $title2 = $slide.find('.hero-title-2');
+    const $title3 = $slide.find('.hero-title-3');
+    const $subtitle = $slide.find('.hero-subtitle');
 
-			// hero-subtitle: 아래에서 위로
-			if ($subtitle.length) {
-				heroTimeline.fromTo(
-					$subtitle[0],
-					{
-						opacity: 0,
-						y: 50,
-					},
-					{
-						opacity: 1,
-						y: 0,
-						duration: 1.2,
-					},
-					0.9
-				);
-			}
-		}
+    if ($title1.length) {
+        gsap.set($title1[0], { opacity: 0, x: 20 });
+    }
+    if ($title2.length) {
+        gsap.set($title2[0], { opacity: 0, x: -20 });
+    }
+    if ($title3.length) {
+        gsap.set($title3[0], { opacity: 0, x: 20 });
+    }
+    if ($subtitle.length) {
+        gsap.set($subtitle[0], { opacity: 0, x: 20 });
+    }
+}
 
-		// 페이지 로드 시 첫 슬라이드 애니메이션
-		$(document).ready(function () {
-			setTimeout(function () {
-				const firstSlide = $('.hero-swiper .swiper-slide-active')[0];
-				if (firstSlide) {
-					animateHeroText(firstSlide);
-				}
-			}, 300);
-		});
+// 모바일 해상도 (767px 이하) 전용 애니메이션 함수
+function animateHeroTextMobile(slide) {
+    const $slide = $(slide);
+    const $title1 = $slide.find('.hero-title-1');
+    const $title2 = $slide.find('.hero-title-2');
+    const $title3 = $slide.find('.hero-title-3');
+    const $subtitle = $slide.find('.hero-subtitle');
+
+    if (!$title1.length && !$title2.length && !$title3.length && !$subtitle.length) {
+        return;
+    }
+
+    gsap.killTweensOf([$title1[0], $title2[0], $title3[0], $subtitle[0]]);
+
+    const heroTimeline = gsap.timeline({
+        defaults: {
+            ease: 'power3.out',
+            duration: 0.8, // PC보다 빠르게
+        },
+    });
+
+    if ($title1.length) {
+        heroTimeline.fromTo($title1[0], { opacity: 0, x: 20 }, { opacity: 1, x: 0 }, 0);
+    }
+    if ($title2.length) {
+        heroTimeline.fromTo($title2[0], { opacity: 0, x: -20 }, { opacity: 1, x: 0 }, 0.2); // 시차 축소
+    }
+    if ($title3.length) {
+        heroTimeline.fromTo($title3[0], { opacity: 0, x: 20 }, { opacity: 1, x: 0 }, 0.4); // 시차 축소
+    }
+    if ($subtitle.length) {
+        heroTimeline.fromTo($subtitle[0], { opacity: 0, x: 20 }, { opacity: 1, x: 0 }, 0.6); // 시차 축소
+    }
+}
+
+    // ----------------------------------------------------------------------
+    // PC/Mobile 분기 제어 함수 - 새로 추가된 코드
+    // ----------------------------------------------------------------------
+
+    function runHeroAnimation(slide, isReset = false) {
+        const isMobile = window.matchMedia('(max-width: 767px)').matches;
+        
+        if (isReset) {
+            if (isMobile) {
+                resetHeroTextMobile(slide);
+            } else {
+                resetHeroText(slide);
+            }
+        } else {
+            if (isMobile) {
+                animateHeroTextMobile(slide);
+            } else {
+                animateHeroText(slide);
+            }
+        }
+    }
+
+
+    // ----------------------------------------------------------------------
+    // Swiper 및 페이지 로드 이벤트 - 변경된 호출 코드
+    // ----------------------------------------------------------------------
+    
+    // 페이지 로드 시 첫 슬라이드 애니메이션
+    $(document).ready(function () {
+        setTimeout(function () {
+            const firstSlide = $('.hero-swiper .swiper-slide-active')[0];
+            if (firstSlide) {
+                // 수정된 runHeroAnimation 호출
+                runHeroAnimation(firstSlide, false);
+            }
+        }, 300);
+    });
 
 		// Accordion Menu Animation
 		$(document).ready(function () {
@@ -1289,16 +1313,25 @@
 					slideChange: function () {
 						// 다음 슬라이드의 텍스트를 초기 상태로 리셋
 						const nextSlide = this.slides[this.activeIndex];
-						resetHeroText(nextSlide);
+                runHeroAnimation(nextSlide, true);
 					},
 					slideChangeTransitionEnd: function () {
 						// 슬라이드 전환이 끝나면 텍스트 애니메이션 실행
 						const activeSlide = this.slides[this.activeIndex];
-						animateHeroText(activeSlide);
+                runHeroAnimation(activeSlide, false);
 					},
 				},
 			});
 		});
+		// 페이지 로드 시 첫 슬라이드 애니메이션 호출 수정
+$(document).ready(function () {
+    setTimeout(function () {
+        const firstSlide = $('.hero-swiper .swiper-slide-active')[0];
+        if (firstSlide) {
+            runHeroAnimation(firstSlide, false); // 첫 슬라이드 애니메이션 실행
+        }
+    }, 300);
+});
 	</script>
 
 	<!-- Mobile Menu Container -->
