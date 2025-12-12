@@ -9254,6 +9254,7 @@ a.customer-service-card {
 .krds-modal .modal-dialog .modal-btn {justify-content: center !important;}
 
 .g-info-box .g-info-box__link {position: absolute; width: 100%; height: 100%; top: 0; left: 0; bottom:0; right: 0; z-index: 1; display: none;}
+.g-info-box .g-info-box__link--type2 {position: absolute; width: 100%; height: 100%; top: 0; left: 0; bottom:0; right: 0; z-index: 1;}
 
 .card-actions .btn-action.applink,
 .g-grid-wrap .g-img__link-mo {display: none;}
