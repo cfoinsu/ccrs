@@ -7818,8 +7818,8 @@ table .table-center {
 
     .position-grid-item:hover,
     .position-grid-item:focus {
-        background-color: var(--krds-color-light-gray-50);
-        border-color: var(--krds-color-light-gray-50);
+        background-color: var(--krds-color-light-primary-50);
+        border-color: var(--krds-color-light-primary-50);
         color: var(--krds-color-light-gray-0);
     }
 }
