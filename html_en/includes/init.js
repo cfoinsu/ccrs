@@ -23,7 +23,7 @@ $(function() {
 
     // Mobile Menu 로드 함수
     function loadMobileMenu() {
-        const isMobile = $(window).width() < 1024;
+        const isMobile = $(window).width() < 1280;
         const container = $('#mobile-menu-container');
         
         if (isMobile) {
