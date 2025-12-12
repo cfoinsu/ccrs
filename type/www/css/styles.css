@@ -95,6 +95,10 @@ body {
     color: var(--krds-light-color-text-primary);
 }
 
+.primary-60 {
+    color: var(--krds-color-light-primary-60);
+}
+
 .fcOrange {
     color: var(--krds-light-color-text-primary);
 }
