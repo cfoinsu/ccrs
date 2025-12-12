@@ -370,7 +370,7 @@
 }
 @media (max-width: 767px) {
   .en #section1 .hero-text .hero-subtitle {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     padding-left: 3rem;
     margin-top: 1.2rem;
   }
@@ -1716,11 +1716,12 @@
     overflow: visible;
   }
   .en #section1 .hero-text .hero-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     .hero-title-1,
     .hero-title-2,
     .hero-title-3 {
       text-align: center;
     }
   }
+  .en #section1 .hero-text .hero-subtitle::before {width: 19px; top: 7px;}
 }
