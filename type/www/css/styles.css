@@ -9545,4 +9545,7 @@ a.customer-service-card {
     .donation-graph-container {
         flex-direction: column;
     }
+    .g-grid-wrap.contect .g-info-box.lightblue {
+        display: none;
+    }
 }
