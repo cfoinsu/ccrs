@@ -336,16 +336,16 @@ function searchPop(type) {
 $(function() {  
     // Scroll to top functionality
     $('body').append(
-      '<button class="scroll-to-top" style="position: fixed; bottom: 20px; right: 10px; width: 6rem; height: 6rem; background: var(--krds-light-color-button-primary-fill); border: none; border-radius: 50%; cursor: pointer; z-index: 999; font-size: 18px;"><img src="/type/www/img/icons/ico_go_top.svg" alt="맨 위로 가기" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);"></button>'
+      '<button class="scroll-to-top"><img src="/type/www/img/icons/ico_go_top.svg" alt="맨 위로 가기"</button>'
     );
 
   $(window).on('scroll', function() {
     var scrollPosition = $(window).scrollTop(); // 현재 스크롤 위치 가져오기
 
     if (scrollPosition > 200) {
-        $('.scroll-to-top').fadeIn();
+        $('.scroll-to-top').addClass('show');
     } else {
-        $('.scroll-to-top').fadeOut();
+        $('.scroll-to-top').removeClass('show');
     }
 
   }).trigger('scroll');
