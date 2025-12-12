@@ -90,7 +90,7 @@
           align-items: center;
   gap: 4rem;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .search-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2533,7 +2533,7 @@ body:has(.intro.show) {
     height: 12rem;
   }
 }
-@media (max-width: 1400px) and (max-width: 1400px) and (max-width: 1023px) {
+@media (max-width: 1400px) and (max-width: 1400px) and (max-width: 1279px) {
   .debt-section.grid-width .grid-col3 {
     height: 18.1rem;
     -webkit-box-orient: vertical;
@@ -2567,7 +2567,7 @@ body:has(.intro.show) {
     margin-left: 3rem;
   }
 }
-@media (max-width: 1400px) and (max-width: 1400px) and (max-width: 1023px) {
+@media (max-width: 1400px) and (max-width: 1400px) and (max-width: 1279px) {
   .debt-section.grid-width .grid-col3 .plus-lst {
     margin-left: -2rem !important;
   }
@@ -3206,7 +3206,7 @@ body:has(.intro.show) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 2.4rem;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .col-debt3 .plus-lst li {
     font-size: 1.9rem;
   }
@@ -3367,7 +3367,7 @@ body:has(.intro.show) {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .grid-finance img {
     display: none;
   }
@@ -3390,7 +3390,7 @@ body:has(.intro.show) {
   border-radius: var(--box-round);
   padding: var(--box-padding-y) var(--box-padding-x);
 }
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .grid-finance .ille-cont {
     position: static;
     width: 100%;

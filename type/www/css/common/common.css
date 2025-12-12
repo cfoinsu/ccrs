@@ -35,7 +35,7 @@
   --krds-box-shadow-outline-inset: inset 0 0 0 0.2rem var(--krds-high-contrast-color-border-primary);
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   :root {
     --krds-contents-padding-x: 16px;
   }

@@ -3361,7 +3361,7 @@ dl.flex-list {
   display: block;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .slidetopbox.show {
     display: none !important;
   }

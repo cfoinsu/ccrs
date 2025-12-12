@@ -6,7 +6,7 @@
   display: none;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .desktop {
     display: none;
   }
@@ -385,7 +385,7 @@
   border-radius: 12px;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .wrap-calculator {
     grid-template-columns: 1fr;
     gap: 4rem;
@@ -412,7 +412,7 @@
   background: var(--krds-color-light-gray-10);
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .wrap-calculator .calculator-box:not(:last-child)::after {
     display: none;
   }
@@ -464,7 +464,7 @@
   color: #222;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .wrap-calculator .form-group .form-label {
     font-size: 1.4rem;
   }
@@ -517,7 +517,7 @@
   color: #9EA4AA;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .wrap-calculator .form-input {
     max-width: 18rem;
     height: 4.4rem;
@@ -651,7 +651,7 @@
   margin-top: 4rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .other-debt-adjustment {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -684,7 +684,7 @@
   flex: 0 0 30.4rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
 
   .other-debt-adjustment .adjustment-category.category-court,
   .other-debt-adjustment .adjustment-category.category-financial {
@@ -876,7 +876,7 @@
   padding: 0 20px;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .new-leap-fund-flow {
     padding: 0;
     margin: 0;
@@ -889,7 +889,7 @@
   margin: 0 auto;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .new-leap-fund-flow .flow-header {
     margin-bottom: 2rem;
     max-width: 100%;
@@ -947,7 +947,7 @@
   margin-bottom: 4rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .new-leap-fund-flow .flow-connector {
     display: none;
   }
@@ -981,7 +981,7 @@
   background: #4b68a4;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .new-leap-fund-flow .flow-connector .connector-branch {
     width: 100%;
     max-width: 43.8rem;
@@ -1033,7 +1033,7 @@
   padding: 0 2rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .new-leap-fund-flow .flow-connector .branch-labels {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1055,7 +1055,7 @@
   position: relative;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
 
   .new-leap-fund-flow .flow-connector .branch-labels .branch-label-left,
   .new-leap-fund-flow .flow-connector .branch-labels .branch-label-right {
@@ -1072,7 +1072,7 @@
   background: var(--krds-color-light-gray-0);
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .new-leap-fund-flow .flow-connector .branch-labels .branch-label-left {
     padding-left: 0;
   }
@@ -1087,7 +1087,7 @@
   background: var(--krds-color-light-gray-0);
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .new-leap-fund-flow .flow-connector .branch-labels .branch-label-right {
     padding-right: 0;
   }
@@ -1103,7 +1103,7 @@
   justify-content: center;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .new-leap-fund-flow .flow-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1123,7 +1123,7 @@
   max-width: 36.2rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .new-leap-fund-flow .flow-card {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -1275,7 +1275,7 @@
   margin-top: 4rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .application-methods {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1308,7 +1308,7 @@
   z-index: 50;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .application-methods .method-card {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -1516,7 +1516,7 @@
   margin-right: auto;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .application-notice {
     margin-top: 3.2rem;
     padding: 2rem 2.4rem;
@@ -1725,7 +1725,7 @@
   margin-top: 0;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .other-support-section .other-support-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1746,7 +1746,7 @@
   position: relative;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .other-support-section .support-card {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -1971,7 +1971,7 @@
   font-weight: 700;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
 
   .financial-support-section .financial-support-intro,
   .financial-support-section .employment-support-intro,
@@ -2029,7 +2029,7 @@
   margin: 0;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
 
   .financial-support-section .financial-support-header,
   .financial-support-section .employment-support-header,
@@ -2097,7 +2097,7 @@
   object-fit: contain;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
 
   .financial-support-section .financial-support-arrow,
   .financial-support-section .employment-support-arrow,
@@ -2134,7 +2134,7 @@
   margin-top: 0;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
 
   .financial-support-section .financial-support-cards,
   .financial-support-section .employment-support-cards,
@@ -2174,7 +2174,7 @@
   flex-direction: column;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
 
   .financial-support-section .support-card,
   .employment-support-section .support-card,
@@ -2425,7 +2425,7 @@
   min-height: 47.7rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .financial-support-section .support-card {
     min-height: 0;
   }
@@ -2473,7 +2473,7 @@
   padding: 0 2rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .enhanced-debt-adjustment-flow {
     padding: 0 1.6rem;
   }
@@ -2490,7 +2490,7 @@
   margin-bottom: 0;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .enhanced-debt-adjustment-flow .enhanced-debt-cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2523,7 +2523,7 @@
   justify-content: flex-start;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .enhanced-debt-adjustment-flow .enhanced-debt-card {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -2760,7 +2760,7 @@
   position: relative;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .ccrs-year .year-tab-wrap {
     overflow-x: auto;
     display: -webkit-box;
@@ -2790,7 +2790,7 @@
   white-space: nowrap;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .ccrs-year .year-tab {
     padding: 1rem 1.6rem;
     border-radius: 0.8rem;
@@ -2950,7 +2950,7 @@
   padding: 0;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .ccrs-year .timeline-content-flex {
     gap: 4.8rem;
   }
@@ -2973,7 +2973,7 @@
   padding: 0;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .ccrs-year .timeline-year-section {
     gap: 2rem;
   }
@@ -2997,7 +2997,7 @@
   flex-shrink: 0;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .ccrs-year .timeline-image-area {
     width: 20rem;
   }
@@ -3018,7 +3018,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .ccrs-year .timeline-image-card {
     width: 20rem;
     height: 26.6rem;
@@ -3053,7 +3053,7 @@
   position: relative;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .ccrs-year .timeline-content-area::before {
     display: none;
   }
@@ -3076,7 +3076,7 @@
   z-index: 0;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .ccrs-year .timeline-content-area:not(:last-child)::after {
     left: 10px;
     top: 4.4rem;
@@ -3105,7 +3105,7 @@
   position: relative;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .ccrs-year .timeline-year-header-flex {
     gap: 10px;
     margin-bottom: 0;
@@ -3129,7 +3129,7 @@
   justify-content: center;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .ccrs-year .timeline-year-icon-flex {
     display: none;
   }
@@ -3187,7 +3187,7 @@
   gap: 2rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .ccrs-year .timeline-events-flex {
     gap: 1.6rem;
     padding: 0;
@@ -3204,7 +3204,7 @@
   align-items: flex-start;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .ccrs-year .timeline-event-item-flex {
     gap: 0;
     padding: 0;
@@ -3221,7 +3221,7 @@
   min-width: 10rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .ccrs-year .timeline-date-flex {
     font-size: 1.6rem;
     min-width: 9rem;
@@ -3238,7 +3238,7 @@
   flex: 1;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .ccrs-year .timeline-event-content-flex {
     font-size: 1.6rem;
     text-align: left;

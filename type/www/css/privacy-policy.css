@@ -58,7 +58,7 @@
   padding: 1.6rem;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1279px) {
   .box-help-info {
     padding: 1.6rem;
   }
@@ -1173,7 +1173,7 @@ ol.list-number {
 }
 
 /*태블릿 스타일*/
-@media (max-width: 1023px) {
+@media (max-width: 1279px) {
   .krds-tab-area {
     .tab.line.full ul {
       display: grid;
