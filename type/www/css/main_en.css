@@ -1711,6 +1711,10 @@
   
 }
 
+@media (max-width: 1280px) {
+  .en #section1 .hero-text .hero-subtitle::before {top: 11px; width: 50px;}
+}
+
 @media (max-width: 767px) {
   .en #section1 .hero-text .container {
     overflow: visible;
