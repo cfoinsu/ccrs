@@ -9368,6 +9368,10 @@ a.customer-service-card {
     .result-card-inner-wrapper .stats-section.top_line {padding: 2.4rem 0 0;}
 
     .tab.fill.middle.wrap li .btn-tab {white-space: normal; text-align: center; word-break: keep-all; height: 42px; line-height: 1.2;}
+
+    .picker_txt {width: 16px;}
+    .search-top-box .sch-filter-box .filter-form.row .period .optSetDate > .krds-input {width: calc(50% - 8px);}
+    .date-picker-control:link, .date-picker-control:visited {margin: 3px 7px 0 -25px !important;}
 }
 @media (max-width: 360px) {
     .cp-store-card .cp-store-btn {height: auto; padding: .6rem .4rem; font-size: 1.7rem;}
