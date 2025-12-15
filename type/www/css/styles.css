@@ -8552,7 +8552,6 @@ table .table-center {
     padding: 16px 0;
     min-width: 160px;
     opacity: 0;
-    visibility: hidden;
     transition: all 0.3s ease;
     z-index: 10;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
