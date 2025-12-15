@@ -880,6 +880,7 @@
   .new-leap-fund-flow {
     padding: 0;
     margin: 0;
+    max-width: 100%;
   }
 }
 
@@ -897,7 +898,7 @@
 }
 
 .new-leap-fund-flow .flow-header .header-title {
-  background: #41b9e3;
+  background: #3B94CF;
   border-radius: 24px 24px 0 0;
   height: 5.6rem;
   display: -webkit-box;
@@ -1164,7 +1165,7 @@
 }
 
 .new-leap-fund-flow .flow-card .card-header.writeoff-header {
-  background: #41b9e3;
+  background: #3B94CF;
 }
 
 .new-leap-fund-flow .flow-card .card-header.adjustment-header {
