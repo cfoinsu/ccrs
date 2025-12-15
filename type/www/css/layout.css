@@ -555,12 +555,12 @@ Version : v1.0
   transform: rotate(180deg);
 }
 
-#header .header-quickmenu-box:hover .header-quickmenu-list-box,
+/* #header .header-quickmenu-box:hover .header-quickmenu-list-box,
 #header .header-quickmenu-box:focus-within .header-quickmenu-list-box {
   display: block;
   visibility: visible;
   opacity: 1;
-}
+} */
 
 #header .header-quickmenu-box .top-box {
   position: relative;
@@ -1491,7 +1491,16 @@ Version : v1.0
   border-top: 1px solid #e1e5e9;
   padding: 0;
 }
-
+.section-institution .swiper-notification {
+  /* 웹 접근성 표준을 준수하며 시각적으로만 숨기는 CSS 기법 */
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden !important;
+}
 .institution-links .swiper {
   flex: 1;
   overflow: hidden;

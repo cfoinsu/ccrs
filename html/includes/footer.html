@@ -64,93 +64,160 @@
             <div tabindex="0" role="button" class="swiper-button-pause"><i class="las la-pause"></i></div>
         </div>
     </div>
-    <script>
-        var swiper = new Swiper("#institution-swiper", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            loop: true,
-            loopedSlides: 10,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            watchOverflow: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                570: {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 40,
-                },
-                1280: {
-                    slidesPerView: 4,
-                    spaceBetween: 50,
-                },
-                1440: {
-                    slidesPerView: 5,
-                    spaceBetween: 60,
-                },
-                1920: {
-                    slidesPerView: 6,
-                    spaceBetween: 60,
-                },
-            },
-        });
+<script>
+    // ==========================================================
+    // 💡 1. 핵심 유틸리티 함수 (Focus/Tabindex 처리)
+    // ==========================================================
+    function toggleFocusability(slide, enable) {
+        // a, button, input 등 모든 인터랙티브 요소를 선택
+        const focusableElements = slide.querySelectorAll('a[href], button, input, select, textarea, [tabindex]:not([tabindex="-1"])');
+        
+        const tabindexValue = enable ? '0' : '-1';
+        const ariaHiddenValue = enable ? 'false' : 'true';
 
-        // Pause/Play 버튼 기능
-        var pauseBtn = document.querySelector('.swiper-button-pause');
-        var isPaused = false;
-        var pauseBtn = document.querySelector('.swiper-button-pause');
-        var isPaused = false;
-
-        // 실행할 동작을 함수로 정의 (요소를 인자로 받도록 수정)
-        function pauseButtonClick(buttonElement) {
-            if (isPaused) {
-                swiper.autoplay.start();
-                buttonElement.innerHTML = '<i class="las la-pause"></i>';
-                buttonElement.setAttribute('aria-label', '일시정지');
-                isPaused = false;
-                console.log("상태: 재생 중");
-            } else {
-                swiper.autoplay.stop();
-                buttonElement.innerHTML = '<i class="las la-play"></i>';
-                buttonElement.setAttribute('aria-label', '재생');
-                isPaused = true;
-                console.log("상태: 일시정지");
-            }
-        }
-
-        if (pauseBtn && swiper) {
-            // 1. click 이벤트 처리: this를 인자로 전달
-            pauseBtn.addEventListener('click', function() {
-                // this는 여기서는 pauseBtn 요소
-                pauseButtonClick(this);
-            });
-
-            // 2. keydown 이벤트 처리 (Enter/Space)
-            pauseBtn.addEventListener('keydown', function (event) {
-                if (event.key === 'Enter' || event.key === ' ') {
-                    event.preventDefault();
-                    
-                    // pauseBtn 변수 자체를 인자로 전달 (해결책 핵심)
-                    pauseButtonClick(pauseBtn);
-                }
-            });
+        focusableElements.forEach(function(el) {
+            el.setAttribute('tabindex', tabindexValue);
             
-            // 초기 ARIA 설정 (접근성 향상)
-            pauseBtn.setAttribute('aria-label', '일시정지');
+            // ⭐ 포커스 이벤트 리스너 추가/제거 로직
+            el.removeEventListener('focus', handleFocusMove); // 중복 방지
+            if (enable) {
+                // 활성화 시에만 focus 이벤트 리스너 연결
+                el.addEventListener('focus', handleFocusMove);
+            }
+        });
+        
+        // 슬라이드 컨테이너 자체의 aria-hidden 속성 설정
+        slide.setAttribute('aria-hidden', ariaHiddenValue);
+    }
+
+    // ==========================================================
+    // 💡 2. 포커스 이벤트 핸들러 함수 (숨겨진 슬라이드 노출 처리)
+    // ==========================================================
+    function handleFocusMove(event) {
+        const focusedElement = event.currentTarget;
+        const focusedSlide = focusedElement.closest('.swiper-slide');
+        
+        if (!focusedSlide) return;
+
+        // **⭐ Swiper 4.5.1 loop 모드에서 정확한 DOM 인덱스 찾기**
+        const allSlides = [].slice.call(swiper.slides);
+        const absoluteIndex = allSlides.indexOf(focusedSlide);
+        
+        if (absoluteIndex !== -1) {
+            // 해당 DOM 위치의 슬라이드로 이동합니다. (숨겨진 슬라이드를 화면에 노출)
+            swiper.slideTo(absoluteIndex);
+            
+            // 슬라이드 이동 후에는 포커스가 깨질 수 있으므로, 딜레이 후 포커스를 다시 잡아줍니다.
+            // swiper.params.speed는 기본적으로 300ms입니다.
+            setTimeout(() => {
+                focusedElement.focus();
+            }, swiper.params.speed + 10);
         }
-    </script>
+    }
+    
+    // ----------------------------------------------------------
+    // 💡 3. Swiper 초기화 및 옵션 설정
+    // ----------------------------------------------------------
+    var swiper = new Swiper("#institution-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        loopedSlides: 10,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        watchOverflow: true,
+        // **v4에서 visible 클래스 사용을 위한 필수 옵션**
+        watchSlidesVisibility: true, 
+        watchSlidesProgress: true,
+        
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            570: { slidesPerView: 1, spaceBetween: 10, },
+            768: { slidesPerView: 2, spaceBetween: 20, },
+            1024: { slidesPerView: 3, spaceBetween: 40, },
+            1280: { slidesPerView: 4, spaceBetween: 50, },
+            1440: { slidesPerView: 5, spaceBetween: 60, },
+            1920: { slidesPerView: 6, spaceBetween: 60, },
+        },
+    });
+
+    // ==========================================================
+    // 💡 4. 접근성 업데이트 메인 함수 (숨김 처리 로직)
+    // ==========================================================
+    function updateFocusability() {
+        
+        // **v4 호환성 확보 및 TypeError 방지:** swiper.slides를 안전하게 배열로 변환
+        const allSlides = [].slice.call(swiper.slides); 
+        
+        allSlides.forEach(function(slide) { 
+            
+            // A. 복제본 슬라이드는 무조건 차단합니다.
+            if (slide.classList.contains('swiper-slide-duplicate')) {
+                toggleFocusability(slide, false); // tabindex="-1"
+                return;
+            }
+
+            // B. 원본 슬라이드 중 'swiper-slide-visible' 클래스를 가진 요소만 활성화합니다.
+            if (slide.classList.contains('swiper-slide-visible')) {
+                toggleFocusability(slide, true); // tabindex="0"
+            } else {
+                toggleFocusability(slide, false); // tabindex="-1"
+            }
+        });
+    }
+
+    // ----------------------------------------------------------
+    // 💡 5. 이벤트 연결 및 초기 실행
+    // ----------------------------------------------------------
+    
+    // 초기 로드 시 실행
+    setTimeout(updateFocusability, 100); 
+
+    // 슬라이드 변경 시 동적 처리 (v4에서 가장 안정적인 transitionEnd 사용)
+    swiper.on('transitionEnd', updateFocusability);
+
+    // 리사이즈 시 동적 처리 (브레이크포인트 변경 대응)
+    swiper.on('resize', function() {
+        setTimeout(updateFocusability, 100); 
+    });
+
+
+    // ==========================================================
+    // 💡 6. Pause/Play 버튼 기능 (이전과 동일)
+    // ==========================================================
+    var pauseBtn = document.querySelector('.swiper-button-pause');
+    var isPaused = false;
+
+    function pauseButtonClick(buttonElement) {
+        if (isPaused) {
+            swiper.autoplay.start();
+            buttonElement.innerHTML = '<i class="las la-pause"></i>';
+            buttonElement.setAttribute('aria-label', '일시정지');
+            isPaused = false;
+        } else {
+            swiper.autoplay.stop();
+            buttonElement.innerHTML = '<i class="las la-play"></i>';
+            buttonElement.setAttribute('aria-label', '재생');
+            isPaused = true;
+        }
+    }
+
+    if (pauseBtn && swiper) {
+        pauseBtn.addEventListener('click', function() { pauseButtonClick(this); });
+        pauseBtn.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                pauseButtonClick(pauseBtn);
+            }
+        });
+        pauseBtn.setAttribute('aria-label', '일시정지');
+    }
+</script>
 </div>
 <!-- Institution Links:e -->
 <!-- Footer:s -->
