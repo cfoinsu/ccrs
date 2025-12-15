@@ -3040,11 +3040,13 @@
   -o-object-fit: cover;
   object-fit: cover;
 }
+
 @media (max-width: 767px) {
   .ccrs-year .timeline-image-card img {
     aspect-ratio: 36/23;
   }
 }
+
 .ccrs-year .timeline-content-area {
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -3933,6 +3935,7 @@
   font-weight: 700;
   line-height: 5rem;
 }
+
 .nt-big-tit::before {
   content: '';
   background: url(../img/icons/icon_redalert.svg) no-repeat center left 2px;
@@ -3944,30 +3947,128 @@
   height: 48px;
   background-size: 3.8rem;
 }
+
 .g-wrap .g-info-box.silhyo {
   background-color: #FFEEE9;
   border: none;
-} 
+}
+
 .silhyo .other-debt-adjustment .category-header {
   background: #D63D4A;
 }
+
 .silhyo .other-debt-adjustment .category-header .category-title {
   color: #fff;
   font-size: 2.1rem;
 }
+
 .silhyo .other-debt-adjustment .category-cards {
   gap: 2.2rem 1.2rem;
 }
+
 .silhyo .other-debt-adjustment .adjustment-card {
   min-height: 0;
   padding: 1.4rem;
 }
-.silhyo .other-debt-adjustment .adjustment-card .card-title{
+
+.silhyo .other-debt-adjustment .adjustment-card .card-title {
   font-size: 1.7rem;
   font-weight: 700;
   margin-bottom: 0;
   text-align: center;
 }
+
 .silhyo .other-debt-adjustment .adjustment-card::before {
   background: url(/type/www/images/ic/dot-line-red.svg) no-repeat 0 0 / cover;
+}
+
+/*소액신용카드발급_통이미지 퍼블리싱*/
+.donation-status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.donation-status-header .small {
+  color: var(--krds-color-light-gray-40);
+}
+
+.g-grid-wrap.unit2 .g-info-box.donation-card {
+  border-radius: 24px;
+  border: none;
+  padding: 2rem;
+}
+
+.g-grid-wrap.unit2 .g-info-box.donation-card .g-desc-box {
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.3rem;
+}
+
+.g-wrap .g-info-box .g-desc-box .flex.center.card-content,
+.g-wrap .g-info-box .g-desc-box .flex.center.amount-wrap {
+  flex-direction: row;
+  width: auto;
+  padding: 0;
+}
+
+.donation-card .logo-wrap {
+  margin-bottom: 0.6rem;
+}
+
+.donation-card .logo-img {
+  height: 30px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  .donation-card .logo-img {
+    height: 18px;
+  }
+}
+
+.donation-card .card-title {
+  margin-bottom: 0.5rem;
+}
+
+.donation-card .amount-num {
+  color: #1d3d82;
+  font-size: 4rem !important;
+}
+
+.donation-card .amount-unit {
+  font-size: 1.9rem;
+}
+
+.card-content {
+  gap: 1.5rem;
+}
+
+.g-conts-area .content-layout {
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    flex: 0 1 auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .g-conts-area .content-layout {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+    }
+  }
 }
