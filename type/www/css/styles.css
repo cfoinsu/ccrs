@@ -1848,10 +1848,6 @@ body aside {
     font-size: 1.6rem;
 }
 
-.rating-option input[type="radio"] {
-    display: none;
-}
-
 .radio-custom {
     width: 2rem;
     height: 2rem;
