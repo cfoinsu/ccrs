@@ -3140,7 +3140,6 @@ caption {
 .krds-info-list > li {
   position: relative;
   padding-left: var(--krds-info-list--depth1-padding-left);
-  color: var(--krds-info-list--depth1-color-text);
   font-size: var(--krds-info-list--pc-text-depth2);
 }
 .krds-info-list.lg > li {

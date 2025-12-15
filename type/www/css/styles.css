@@ -4565,7 +4565,7 @@ table.comparison-table td:first-child {
 
 .g-grid-wrap.unit2 .g-info-box,
 .g-grid-wrap.unit4 .g-info-box {
-    padding: 3.2rem;
+    padding: 2.4rem 3.2rem 3.2rem;
     margin: 0;
 }
 
@@ -7975,7 +7975,6 @@ table .table-center {
 }
 
 .activity-card-content h3 {
-    margin: 0 0 12px;
     font-size: 2.4rem;
     font-weight: 700;
     display: inline;
@@ -7984,6 +7983,10 @@ table .table-center {
     line-height: 1.8;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+}
+
+.activity-card-content h3 + div {
+    margin-top: 12px;
 }
 
 .activity-card-content.bluegreen h3 {
