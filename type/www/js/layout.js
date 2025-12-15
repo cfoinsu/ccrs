@@ -307,11 +307,11 @@ $(document).ready(function() {
                     <div class="g-qr-box">
                         <div class="qr-box">
                             <p class="font-bold">구글 플레이</p>
-                            <img src="/type/www/img/contents/png/qr-googleplay.png">
+                            <img src="/type/www/img/contents/png/qr-googleplay.png" alt="Google Play 스토어의 신용회복위원회 다운로드 페이지로 연결되는 QR 코드 : https://play.google.com/store/apps/details?id=kr.or.ccrs.cyber">
                         </div>
                         <div class="qr-box">
                             <p class="font-bold">앱 스토어</p>
-                            <img src="/type/www/img/contents/png/qr-appstore.png">
+                            <img src="/type/www/img/contents/png/qr-appstore.png" alt="App Store 스토어의 신용회복위원회 다운로드 페이지로 연결되는 QR 코드 : https://apps.apple.com/kr/app/%EC%8B%A0%EC%9A%A9%ED%9A%8C%EB%B3%B5%EC%9C%84%EC%9B%90%ED%9A%8C/id1478216021">
                         </div>
                     </div>
                     <button type="button" class="btn-close">
@@ -343,49 +343,49 @@ $(document).ready(function() {
                     <div class="sns-type">
                         <a href="javascript:;" class="_btnFacebook" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_facebook.svg" alt="">
+                                <img src="/type/www/img/icons/icon_logo_facebook.svg" alt="페이스북">
                             </i> 
                             <span>페이스북</span>
                         </a>
                         <a href="javascript:;" class="_btnX" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_x.svg" alt="">
+                                <img src="/type/www/img/icons/icon_logo_x.svg" alt="메타">
                             </i> 
                             <span>X</span>
                         </a>
                         <a href="javascript:;" class="_btnKakao" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_kakao.svg" alt="">
+                                <img src="/type/www/img/icons/icon_logo_kakao.svg" alt="카카오스토리">
                             </i> 
                             <span>카카오스토리</span>
                         </a>
                         <a href="javascript:;" class="_btnBand" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_band.svg" alt="">
+                                <img src="/type/www/img/icons/icon_logo_band.svg" alt="네이버밴드">
                             </i> 
                             <span>네이버밴드</span>
                         </a>
                         <a href="javascript:;" class="_btnBlog" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_blog.svg" alt="">
+                                <img src="/type/www/img/icons/icon_logo_blog.svg" alt="네이버블로그">
                             </i> 
                             <span>네이버블로그</span>
                         </a>
                         <a href="javascript:;" class="_btnTumblr" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_tumblr.svg" alt="">
+                                <img src="/type/www/img/icons/icon_logo_tumblr.svg" alt="텀블러">
                             </i> 
                             <span>텀블러</span>
                         </a>
                         <a href="javascript:;" class="_btnPinter" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_pinter.svg" alt="">
+                                <img src="/type/www/img/icons/icon_logo_pinter.svg" alt="핀터레스트">
                             </i> 
                             <span>핀터레스트</span>
                         </a>
                         <a href="javascript:;" class="_btnInsta" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_insta.svg" alt="">
+                                <img src="/type/www/img/icons/icon_logo_insta.svg" alt="인스타그램">
                             </i> 
                             <span>인스타그램</span>
                         </a>

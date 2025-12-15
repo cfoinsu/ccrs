@@ -59,9 +59,9 @@
 
         </div>
         <div class="buttons-wrap">
-            <div class="swiper-button-prev"><i class="las la-angle-left"></i></div>
-            <div class="swiper-button-next"><i class="las la-angle-right"></i></div>
-            <div class="swiper-button-pause"><i class="las la-pause"></i></div>
+            <div tabindex="0" role="button" class="swiper-button-prev"><i class="las la-angle-left"></i></div>
+            <div tabindex="0" role="button" class="swiper-button-next"><i class="las la-angle-right"></i></div>
+            <div tabindex="0" role="button" class="swiper-button-pause"><i class="las la-pause"></i></div>
         </div>
     </div>
     <script>
@@ -110,20 +110,45 @@
         // Pause/Play 버튼 기능
         var pauseBtn = document.querySelector('.swiper-button-pause');
         var isPaused = false;
+        var pauseBtn = document.querySelector('.swiper-button-pause');
+        var isPaused = false;
+
+        // 실행할 동작을 함수로 정의 (요소를 인자로 받도록 수정)
+        function pauseButtonClick(buttonElement) {
+            if (isPaused) {
+                swiper.autoplay.start();
+                buttonElement.innerHTML = '<i class="las la-pause"></i>';
+                buttonElement.setAttribute('aria-label', '일시정지');
+                isPaused = false;
+                console.log("상태: 재생 중");
+            } else {
+                swiper.autoplay.stop();
+                buttonElement.innerHTML = '<i class="las la-play"></i>';
+                buttonElement.setAttribute('aria-label', '재생');
+                isPaused = true;
+                console.log("상태: 일시정지");
+            }
+        }
+
         if (pauseBtn && swiper) {
-            pauseBtn.addEventListener('click', function () {
-                if (isPaused) {
-                    swiper.autoplay.start();
-                    this.innerHTML = '<i class="las la-pause"></i>';
-                    this.setAttribute('aria-label', '일시정지');
-                    isPaused = false;
-                } else {
-                    swiper.autoplay.stop();
-                    this.innerHTML = '<i class="las la-play"></i>';
-                    this.setAttribute('aria-label', '재생');
-                    isPaused = true;
+            // 1. click 이벤트 처리: this를 인자로 전달
+            pauseBtn.addEventListener('click', function() {
+                // this는 여기서는 pauseBtn 요소
+                pauseButtonClick(this);
+            });
+
+            // 2. keydown 이벤트 처리 (Enter/Space)
+            pauseBtn.addEventListener('keydown', function (event) {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    
+                    // pauseBtn 변수 자체를 인자로 전달 (해결책 핵심)
+                    pauseButtonClick(pauseBtn);
                 }
             });
+            
+            // 초기 ARIA 설정 (접근성 향상)
+            pauseBtn.setAttribute('aria-label', '일시정지');
         }
     </script>
 </div>
