@@ -18490,6 +18490,7 @@ a:hover .d-card .c-tit {
 }
 .g-wrap .g-card-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
   margin-top: 5rem;

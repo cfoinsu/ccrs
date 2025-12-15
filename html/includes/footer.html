@@ -67,31 +67,35 @@
 <script>
     // ==========================================================
     // 💡 1. 핵심 유틸리티 함수 (Focus/Tabindex 처리)
+    //    ⭐ aria-hidden 로직 완전히 제거 ⭐
     // ==========================================================
     function toggleFocusability(slide, enable) {
-        // a, button, input 등 모든 인터랙티브 요소를 선택
+        
+        // 1. 슬라이드 자체의 tabindex 설정 (새로운 핵심 로직)
+        // 슬라이드 자체는 Tab 순서에서 제외
+        slide.setAttribute('tabindex', '-1'); 
+        
+        // 2. 내부 인터랙티브 요소의 tabindex만 제어
         const focusableElements = slide.querySelectorAll('a[href], button, input, select, textarea, [tabindex]:not([tabindex="-1"])');
         
         const tabindexValue = enable ? '0' : '-1';
-        const ariaHiddenValue = enable ? 'false' : 'true';
-
+        
         focusableElements.forEach(function(el) {
             el.setAttribute('tabindex', tabindexValue);
             
-            // ⭐ 포커스 이벤트 리스너 추가/제거 로직
-            el.removeEventListener('focus', handleFocusMove); // 중복 방지
+            // 포커스 이벤트 리스너 추가/제거 로직 (handleFocusMove는 유지)
+            el.removeEventListener('focus', handleFocusMove);
             if (enable) {
-                // 활성화 시에만 focus 이벤트 리스너 연결
                 el.addEventListener('focus', handleFocusMove);
             }
         });
         
-        // 슬라이드 컨테이너 자체의 aria-hidden 속성 설정
-        slide.setAttribute('aria-hidden', ariaHiddenValue);
+        // **🚨 중요: 슬라이드 컨테이너에 aria-hidden 속성 설정 코드 제거됨**
     }
 
     // ==========================================================
     // 💡 2. 포커스 이벤트 핸들러 함수 (숨겨진 슬라이드 노출 처리)
+    //    ⭐ 포커스 재설정 로직 단순화 및 딜레이 제거 ⭐
     // ==========================================================
     function handleFocusMove(event) {
         const focusedElement = event.currentTarget;
@@ -99,24 +103,22 @@
         
         if (!focusedSlide) return;
 
-        // **⭐ Swiper 4.5.1 loop 모드에서 정확한 DOM 인덱스 찾기**
         const allSlides = [].slice.call(swiper.slides);
         const absoluteIndex = allSlides.indexOf(focusedSlide);
         
         if (absoluteIndex !== -1) {
-            // 해당 DOM 위치의 슬라이드로 이동합니다. (숨겨진 슬라이드를 화면에 노출)
+            // 해당 DOM 위치의 슬라이드로 이동 (노출 처리)
+            // 포커스 이동이 완료되면, Swiper의 transitionEnd 이벤트가 updateFocusability를 호출하여
+            // 자동으로 올바른 요소에 tabindex="0"이 설정되므로,
+            // 딜레이를 통한 강제 focus() 재설정은 필요 없거나 충돌 위험이 높습니다.
             swiper.slideTo(absoluteIndex);
-            
-            // 슬라이드 이동 후에는 포커스가 깨질 수 있으므로, 딜레이 후 포커스를 다시 잡아줍니다.
-            // swiper.params.speed는 기본적으로 300ms입니다.
-            setTimeout(() => {
-                focusedElement.focus();
-            }, swiper.params.speed + 10);
         }
+        
+        // **🚨 중요: setTimeout 및 focusedElement.focus() 호출 제거됨**
     }
     
     // ----------------------------------------------------------
-    // 💡 3. Swiper 초기화 및 옵션 설정
+    // 💡 3. Swiper 초기화 및 옵션 설정 (이전과 동일)
     // ----------------------------------------------------------
     var swiper = new Swiper("#institution-swiper", {
         slidesPerView: 1,
@@ -128,7 +130,6 @@
             disableOnInteraction: false,
         },
         watchOverflow: true,
-        // **v4에서 visible 클래스 사용을 위한 필수 옵션**
         watchSlidesVisibility: true, 
         watchSlidesProgress: true,
         
@@ -150,45 +151,37 @@
     // 💡 4. 접근성 업데이트 메인 함수 (숨김 처리 로직)
     // ==========================================================
     function updateFocusability() {
-        
-        // **v4 호환성 확보 및 TypeError 방지:** swiper.slides를 안전하게 배열로 변환
         const allSlides = [].slice.call(swiper.slides); 
         
         allSlides.forEach(function(slide) { 
             
             // A. 복제본 슬라이드는 무조건 차단합니다.
-            if (slide.classList.contains('swiper-slide-duplicate')) {
-                toggleFocusability(slide, false); // tabindex="-1"
-                return;
-            }
+            // if (slide.classList.contains('swiper-slide-duplicate')) {
+            //     toggleFocusability(slide, false);
+            //     return;
+            // }
 
             // B. 원본 슬라이드 중 'swiper-slide-visible' 클래스를 가진 요소만 활성화합니다.
             if (slide.classList.contains('swiper-slide-visible')) {
-                toggleFocusability(slide, true); // tabindex="0"
+                toggleFocusability(slide, true);
             } else {
-                toggleFocusability(slide, false); // tabindex="-1"
+                toggleFocusability(slide, false);
             }
         });
     }
-
+    
     // ----------------------------------------------------------
     // 💡 5. 이벤트 연결 및 초기 실행
     // ----------------------------------------------------------
-    
-    // 초기 로드 시 실행
     setTimeout(updateFocusability, 100); 
-
-    // 슬라이드 변경 시 동적 처리 (v4에서 가장 안정적인 transitionEnd 사용)
     swiper.on('transitionEnd', updateFocusability);
-
-    // 리사이즈 시 동적 처리 (브레이크포인트 변경 대응)
     swiper.on('resize', function() {
         setTimeout(updateFocusability, 100); 
     });
 
 
     // ==========================================================
-    // 💡 6. Pause/Play 버튼 기능 (이전과 동일)
+    // 💡 6. Autoplay 및 Pause/Play 버튼 기능 (이전과 동일)
     // ==========================================================
     var pauseBtn = document.querySelector('.swiper-button-pause');
     var isPaused = false;
@@ -216,6 +209,24 @@
             }
         });
         pauseBtn.setAttribute('aria-label', '일시정지');
+    }
+    
+    var swiperContainer = document.getElementById('institution-swiper');
+
+    if (swiperContainer && swiper.autoplay) {
+        swiperContainer.addEventListener('focusin', function() {
+            if (!isPaused) { 
+                swiper.autoplay.stop();
+            }
+        });
+
+        swiperContainer.addEventListener('focusout', function(event) {
+            if (!swiperContainer.contains(event.relatedTarget)) {
+                if (!isPaused) { 
+                    swiper.autoplay.start();
+                }
+            }
+        });
     }
 </script>
 </div>

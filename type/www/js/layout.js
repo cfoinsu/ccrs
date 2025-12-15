@@ -760,3 +760,90 @@ $(function() {
 //   $('.g-conts-area > *').addClass('scroll-fadeup'); // 초기 클래스 세팅
 //   runScrollFadeup(); // 로드시 체크 (첫 화면부터 등장할 수 있도록)
 // });
+
+$(document).ready(function() {
+    const $quickMenuBox = $('.header-quickmenu-box');
+    const $quickMenuBtn = $quickMenuBox.find('.quickmenu-btn');
+    const $quickMenuList = $('#header-quickmenu-list-box');
+    const $menuItems = $quickMenuList.find('a[role="menuitem"]');
+    const $firstMenuItem = $menuItems.first();
+    const $lastMenuItem = $menuItems.last();
+    
+    // 퀵 메뉴 열기/닫기 상태 토글 함수
+    function toggleQuickMenu(state) {
+        // state가 undefined인 경우 현재 상태의 반대를, 아니면 주어진 상태(true/false)를 사용
+        const isExpanded = state !== undefined ? state : $quickMenuBtn.attr('aria-expanded') === 'false';
+        
+        // 1. ARIA 상태 및 CSS 클래스 업데이트
+        $quickMenuBtn.attr('aria-expanded', isExpanded);
+        $quickMenuList.attr('aria-hidden', !isExpanded);
+        $quickMenuBox.toggleClass('is-open', isExpanded); // CSS로 실제 표시/숨김 처리
+
+        // 2. 포커스 관리 (키보드 이벤트에만 적용되어야 하므로, 여기서는 포커스 이동 로직을 제거합니다.)
+        // **키보드 접근성 유지:** 포커스 이동은 keydown이나 click 이벤트에서만 명시적으로 호출합니다.
+    }
+
+    // ==========================================================
+    // 💡 1. 마우스 호버 이벤트 처리 (메뉴 자동 열림/닫힘)
+    // ==========================================================
+    
+    // 마우스 진입 시 메뉴 열기
+    $quickMenuBox.on('mouseenter', function() {
+        toggleQuickMenu(true);
+    });
+
+    // 마우스 이탈 시 메뉴 닫기
+    $quickMenuBox.on('mouseleave', function() {
+        // 마우스가 영역을 벗어나면 닫기 (단, 키보드 포커스가 메뉴 안에 있을 경우 닫히지 않도록 추가적인 로직이 필요할 수 있으나,
+        // 단순 호버 효과를 위해 우선 이 상태로 유지합니다.)
+        // 마우스 호버 시에는 포커스 처리를 하지 않고, 키보드 탐색 시 포커스 처리를 담당합니다.
+        toggleQuickMenu(false);
+    });
+    
+    // ==========================================================
+    // 💡 2. 버튼 클릭 이벤트 (토글 및 포커스 처리)
+    // ==========================================================
+    $quickMenuBtn.on('click', function() {
+        const isCurrentlyExpanded = $quickMenuBtn.attr('aria-expanded') === 'true';
+        toggleQuickMenu(!isCurrentlyExpanded);
+        
+        // 클릭 시에만 명시적으로 포커스 이동 처리 (호버와 분리)
+        if (!isCurrentlyExpanded && $firstMenuItem.length) {
+            $firstMenuItem.focus();
+        } else {
+            $quickMenuBtn.focus();
+        }
+    });
+
+    // ==========================================================
+    // 💡 3. ESC 키로 메뉴 닫기 처리
+    // ==========================================================
+    $(document).on('keydown', function(event) {
+        if (event.key === 'Escape' && $quickMenuBtn.attr('aria-expanded') === 'true') {
+            toggleQuickMenu(false); 
+        }
+    });
+
+    // ==========================================================
+    // 💡 4. Tab 키 트랩 및 순환 처리 (키보드 포커스 관리)
+    // ==========================================================
+    if ($menuItems.length > 0) {
+        
+        // A. 마지막 메뉴 항목에서 Tab 키를 누르면 포커스를 퀵 메뉴 버튼으로 이동
+        $lastMenuItem.on('keydown', function(event) {
+            if (event.key === 'Tab' && !event.shiftKey) {
+                event.preventDefault();
+                toggleQuickMenu(false); // 메뉴 닫고 버튼으로 포커스 이동
+            }
+        });
+
+        // B. 첫 번째 메뉴 항목에서 Shift + Tab 키를 누르면 포커스를 퀵 메뉴 버튼으로 이동
+        $firstMenuItem.on('keydown', function(event) {
+            if (event.key === 'Tab' && event.shiftKey) {
+                event.preventDefault();
+                toggleQuickMenu(false); // 메뉴 닫고 버튼으로 포커스 이동
+            }
+        });
+    }
+
+});
