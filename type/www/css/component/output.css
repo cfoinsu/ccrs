@@ -1379,6 +1379,9 @@ caption {
   .mob-only {
     display: block !important;
   }
+  .btn-action.mob-only {
+    display: flex !important;
+  }
   .pc-only {
     display: none !important;
   }
