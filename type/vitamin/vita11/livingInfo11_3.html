@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신용비타민</title>
+</head>
+
+<body>
+    <div style="width:100%; height:100%;text-align:center;" class="vita">				
+        <img alt="" src="/type/vitamin/vita11/vita_v11_3.jpg" width="350" height="1969" style="text-align:center;" usemap="#map1">
+    </div>
+    <a href="/type/vitamin/vita11/livingInfo11.html"
+        style="margin: 0 auto;display: block;width: 350px;text-decoration: none;text-align: center;"><span
+            style="color: orange;padding-right: 10px;">〈</span>뒤로가기</a>
+</body>
+<!-- 개발중복 제거요소 -->
+<script src="/type/www/js/jquery-2.2.4.min.js?ver=5.9"></script>
+<!-- 개발중복 제거요소 -->
+<script>
+    $("#plusClick").on("click",function(){
+		let ua = window.navigator.userAgent.toLowerCase();
+		
+		if(ua.indexOf("android") > -1){
+	    	location.href = 'intent://creditplusapp#Intent;package=kr.or.ccrs.ccpm;scheme=ccpm;end';
+		}else{
+			
+			setTimeout(function(){
+				let url = 'https://apps.apple.com/kr/app/신용플러스-creditplus/id1665482651';
+				url = encodeURI(url)
+				location.href = url;
+			}, 1500);
+		}
+	});
+</script>
+</html>
