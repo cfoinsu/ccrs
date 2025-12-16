@@ -1889,6 +1889,7 @@ section {
 .intro .tellphon .call strong {
   font-size: 2.4rem;
   margin-left: 0.6rem;
+  display: block;
 }
 .intro .tellphon .call .board-ph{
   font-weight: 400;
@@ -2145,6 +2146,23 @@ section {
 @media (max-width: 767px) {
   .intro .intro-linkbox .usefullinkbox {
     gap: 0;
+  }
+  .intro .tellphon .call {
+    flex-direction: column;
+  }
+  .intro .tellphon .call::before {
+    display: none;
+  }
+  .intro .tellphon>span {
+    margin-right: 10px;
+  }
+  .intro .tellphon .call strong {
+    font-size: 2.4rem;
+    margin-left: 0;
+  }
+  .intro .tellphon .call strong a {
+    display: block;
+    text-align: center;
   }
 }
 .intro .intro-linkbox .usefullinkbox .arrowlink-s {

@@ -3036,10 +3036,13 @@
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   border: 1px solid #ddd;
-  overflow: auto;
+  overflow-x: auto;
+  position: relative;
+  max-width: 100%;
 }
 .chart-container canvas {
   margin: 0 auto;
+  aspect-ratio: 958 / 383;
 }
 .en .global-network-section {
   margin-bottom: 8rem;

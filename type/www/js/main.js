@@ -12,7 +12,7 @@
 //     initSwiperSliders();
 //     // 뉴스 탭 초기화
 //     initNewsTabs();
-//     // 스오이퍼 포커스
+//     // 스와이퍼 포커스
 //     initSwiperFocus()
 // });
 
