@@ -377,7 +377,7 @@ body aside {
 }
 
 .page-description.bgBlue {
-    background: var(--krds-color-light-secondary-5);
+    background: #E8EFF5;
     background-size: cover;
     padding: 2rem 3.6rem;
     align-items: center;
