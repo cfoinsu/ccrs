@@ -4162,7 +4162,7 @@ caption {
 .krds-accordion.type-heading .accordion-item {
   border: 1px solid #ccc;
   border-radius: 2.4rem;
-  padding: 2.4rem 3.1rem;
+  padding: 3.2rem;
   overflow: hidden;
 }
 .krds-accordion.type-heading .accordion-item .btn-accordion:focus {

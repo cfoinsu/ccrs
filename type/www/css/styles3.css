@@ -4073,3 +4073,115 @@
     }
   }
 }
+
+/*기부현황 박스 퍼블 분리*/
+.business-performance-card-wrap {
+  width: 50%;
+  max-width: 100%;
+}
+
+.business-performance-card {
+  background-color: var(--krds-color-light-warning-5);
+  border-radius: 24px;
+  padding: 2.4rem 2rem 1rem 2rem;
+  margin-top: 1.5rem;
+  box-sizing: border-box;
+}
+
+.business-performance-card .card-header {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.business-performance-card .card-content {
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+
+.business-performance-card .badge {
+  background-color: var(--krds-light-color-background-white);
+  border-radius: 16px;
+  color: var(--krds-light-color-border-primary);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 4px 10px;
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.business-performance-card .row-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+.business-performance-card .row-item:first-child {
+  padding-top: 0;
+}
+
+.business-performance-card .row-item:last-child {
+  border-bottom: none;
+}
+
+.business-performance-card .label {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.business-performance-card .data {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.business-performance-card .divider {
+  width: 1px;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.15);
+  display: inline-block;
+}
+
+.card-footer {
+  text-align: right;
+  color: var(--krds-color-light-gray-60);
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  padding-right: 0.8rem;
+}
+
+@media (max-width: 767px) {
+  .business-performance-card-wrap {
+    width: 100%;
+  }
+
+  .business-performance-card {
+    width: 100%;
+    min-width: auto;
+    flex-shrink: 0;
+  }
+
+  .business-performance-card .card-content,
+  .business-performance-card .card-header {
+    width: 100%;
+  }
+
+  .business-performance-card .data {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 360px) {
+  .business-performance-card .row-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+}

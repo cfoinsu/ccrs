@@ -2576,7 +2576,7 @@ body:has(.intro.show) {
   .debt-section.grid-width .grid-col3 .plus-lst li {
     min-width: 0;
     padding: 0 2rem;
-    white-space: nowrap;
+    white-space: normal;
     border-bottom: none;
     border-right: 1px solid var(--krds-light-color-border-gray-light);
   }
@@ -3686,6 +3686,6 @@ body:has(.intro.show) {
 
 @media (max-width: 360px) {
   .debt-section.grid-width .grid-col3 {height: auto;}
-  .debt-section.grid-width .grid-col3 .plus-lst {flex-direction: column;}
+  .debt-section.grid-width .grid-col3 .plus-lst {flex-wrap: wrap; justify-content: space-between;}
   .debt-section.grid-width .grid-col3 .plus-lst li {padding: 0; border-right: none;}
 }
