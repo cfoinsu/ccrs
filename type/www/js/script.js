@@ -19,59 +19,24 @@ tabItems.forEach((tab, index) => {
 });
 
 // Sidebar Navigation
-// navSectionTitles는 클래스 선택자를 통해 버튼 요소를 가져와야 합니다.
-
 navSectionTitles.forEach(title => {
-    // 앵커 태그(<a>)는 클릭 이벤트 대신 링크 이동이 목적이므로 이벤트에서 제외
-    // (단, 앵커 태그가 폴딩 버튼 역할을 해야 한다면 role="button"을 추가해야 함)
-    // 현재 HTML 구조에서는 <button> 태그만 폴딩 역할. <a> 태그는 일반 링크 역할.
-    if (title.tagName === 'BUTTON') { 
+    title.addEventListener('click', () => {
+        const section = title.closest('.nav-section');
+        const isActive = section.classList.contains('active');
         
-        title.addEventListener('click', () => {
-            const section = title.closest('.nav-section');
-            const subsectionId = title.getAttribute('aria-controls');
-            const subsection = document.getElementById(subsectionId);
-
-            // 현재 섹션이 활성화 상태인지 확인
-            const isActive = section.classList.contains('active');
-            
-            // ==========================================================
-            // 1. 모든 섹션 닫기 (아코디언 형태 유지를 위해)
-            // ==========================================================
-            document.querySelectorAll('.nav-section').forEach(s => {
-                const s_title = s.querySelector('.nav-section-title');
-                const s_subsection = s.querySelector('.nav-subsection');
-                
-                // Active 클래스 제거
-                s.classList.remove('active'); 
-
-                if (s_title && s_title.tagName === 'BUTTON') {
-                    // ARIA 상태 업데이트 (닫힘)
-                    s_title.setAttribute('aria-expanded', 'false');
-                }
-                if (s_subsection) {
-                    // ARIA 숨김 업데이트
-                    s_subsection.setAttribute('aria-hidden', 'true');
-                    // CSS 표시를 위해 display:none; 등을 적용해야 할 경우 여기에 추가
-                    // (대부분 CSS가 .nav-section:not(.active) .nav-subsection { display: none; } 로 처리)
-                }
-            });
-            
-            // ==========================================================
-            // 2. 클릭된 섹션 열기 (현재 닫혀 있었을 경우)
-            // ==========================================================
-            if (!isActive && subsection) {
-                // Active 클래스 추가 (CSS로 펼쳐지게 함)
-                section.classList.add('active'); 
-                
-                // ARIA 상태 업데이트 (펼침)
-                title.setAttribute('aria-expanded', 'true');
-                
-                // 하위 섹션의 ARIA 숨김 해제
-                subsection.setAttribute('aria-hidden', 'false');
-            }
+        // Close all sections
+        document.querySelectorAll('.nav-section').forEach(s => {
+            s.classList.remove('active');
+            const btn = s.querySelector('.nav-section-title');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
         });
-    }
+        
+        // Open clicked section if it wasn't active
+        if (!isActive) {
+            section.classList.add('active');
+            title.setAttribute('aria-expanded', 'true');
+        }
+    });
 });
 
 // Rating System
@@ -397,39 +362,39 @@ $(document).ready(function() {
     });
     
     // Scroll to top functionality
-    // $(window).scroll(function() {
-    //     if ($(this).scrollTop() > 200) {
-    //         if (!$('.scroll-to-top').length) {
-    //             $('body').append(
-    //                 '<button class="scroll-to-top" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; background: var(--krds-light-color-button-primary-fill); border: none; border-radius: 50%; cursor: pointer; z-index: 999; font-size: 18px;"><img src="/type/www/img/icons/ico_go_top.svg" alt="맨 위로 가기" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);"></button>'
-    //             );
-    //         }
-    //         $('.scroll-to-top').fadeIn();
-    //     } else {
-    //         $('.scroll-to-top').fadeOut();
-    //     }
-    // });
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            if (!$('.scroll-to-top').length) {
+                $('body').append(
+                    '<button class="scroll-to-top" style="position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; background: var(--krds-light-color-button-primary-fill); border: none; border-radius: 50%; cursor: pointer; z-index: 999; font-size: 18px;"><img src="/type/www/img/icons/ico_go_top.svg" alt="맨 위로 가기" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);"></button>'
+                );
+            }
+            $('.scroll-to-top').fadeIn();
+        } else {
+            $('.scroll-to-top').fadeOut();
+        }
+    });
     
-    // $(document).on('click', '.scroll-to-top', function() {
-    //     $('html, body').animate({scrollTop: 0}, 200);
-    // });
+    $(document).on('click', '.scroll-to-top', function() {
+        $('html, body').animate({scrollTop: 0}, 200);
+    });
     
     // Tooltip functionality
-    // $('[data-tooltip]').hover(
-    //     function() {
-    //         const tooltipText = $(this).data('tooltip');
-    //         $(this).append('<div class="tooltip">' + tooltipText + '</div>');
-    //         $('.tooltip').fadeIn(200);
-    //     },
-    //     function() {
-    //         $('.tooltip').remove();
-    //     }
-    // );
+    $('[data-tooltip]').hover(
+        function() {
+            const tooltipText = $(this).data('tooltip');
+            $(this).append('<div class="tooltip">' + tooltipText + '</div>');
+            $('.tooltip').fadeIn(200);
+        },
+        function() {
+            $('.tooltip').remove();
+        }
+    );
     
     // Print functionality
-    // $('.action-btn').filter(':contains("🖨")').on('click', function() {
-    //     window.print();
-    // });
+    $('.action-btn').filter(':contains("🖨")').on('click', function() {
+        window.print();
+    });
     
     // Share functionality
     // $('.action-btn').filter(':contains("🔗")').on('click', function() {
