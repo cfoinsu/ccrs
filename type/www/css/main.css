@@ -3103,10 +3103,13 @@ body:has(.intro.show) {
 
 .col-debt2-1 {
   height: 43.4rem;
-  background: #F0EFEB;
+  background: url(/type/www/images/main/debt2-1-bg.png) no-repeat 0 0/cover;
   border-radius: var(--box-round);
   position: relative;
   overflow: hidden;
+}
+.col-debt2-1 img {
+  display: none;
 }
 .col-debt2-1.swiper-container {
   overflow: hidden !important;
@@ -3274,8 +3277,11 @@ body:has(.intro.show) {
   width: 100%;
   height: 43.4rem;
   border-radius: 24px;
-  background: var(--krds-light-color-surface-secondary-subtler);
+  background: url(/type/www/images/main/finance-1_bg.png) no-repeat 0 0/cover;
   overflow: hidden;
+}
+.grid-finance .grid-col1 .col-debt2-1 img {
+  display: none;
 }
 .grid-finance .grid-col1 .col-debt2-1.swiper-container {
   overflow: hidden !important;
