@@ -1828,7 +1828,11 @@ body aside {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+label:has(>input[type=radio]:focus),
+label:has(>input[type=checkbox]:focus) {
+  box-shadow: var(--krds-box-shadow-outline-inset);
+  outline-offset: 0.4rem;
+}
 .feedback-card.noboder .rating-options {
     margin-bottom: 0;
 }
