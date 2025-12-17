@@ -4139,7 +4139,21 @@
   font-weight: 700;
   text-align: right;
 }
-
+.business-performance-card .jiwon .label {
+  font-size: 1.7rem;
+}
+.business-performance-card .jiwon .count {
+  font-size: 2.4rem;
+}
+.business-performance-card .jiwon .count .primary {
+  font-size: 3.6rem;
+}
+.business-performance-card .jiwon .unit {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #17191B;
+  margin-left: 0.4rem;
+}
 .business-performance-card .divider {
   width: 1px;
   height: 12px;
