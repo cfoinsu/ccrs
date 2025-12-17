@@ -253,9 +253,13 @@
 										<!-- <div class="swiper-slide">
 											<img src="/type/www/images/main/mainvisual_01.png?ver=5.9" alt="재무조정 삶이 무너졌을 때 다시 일어설 수 있도록 함께">
 										</div> -->
-
 									</div>
-									<div class="swiper-pagination" id="mainSlider-pagination"></div>
+									<div class="swiper-control-wrap">
+										<div class="swiper-pagination" id="mainSlider-pagination"></div>
+										<button type="button" class="autoplay-toggle on" aria-label="자동재생 일시정지">
+											<span class="text sr-only">일시정지</span>
+										</button>
+									</div>
 								</div>
 							</div>
 
@@ -341,9 +345,13 @@
 												</a>
 											</div>
 										</div>
-										<div class="swiper-pagination" id="bnrSlider-pagination"></div>
+										<div class="swiper-control-wrap">
+											<div class="swiper-pagination" id="bnrSlider-pagination"></div>
+											<button type="button" class="autoplay-toggle on" aria-label="자동재생 일시정지">
+												<span class="text sr-only">일시정지</span>
+											</button>
+										</div>
 									</div>
-
 								</div>
 							</div>
 						</div>
@@ -480,7 +488,12 @@
 											</a>
 										</div>
 									</div>
-									<div class="swiper-pagination" id="debtSlider-pagination"></div>
+									<div class="swiper-control-wrap">
+										<div class="swiper-pagination" id="debtSlider-pagination"></div>
+										<button type="button" class="autoplay-toggle on" aria-label="자동재생 일시정지">
+											<span class="text sr-only">일시정지</span>
+										</button>
+									</div>
 								</div>
 								<div class="col-debt2-2 arr-circle-right white hover-blue">
 									<a href="https://cyber.ccrs.or.kr/login.do" target="_blank" title="새창열림"
@@ -624,7 +637,12 @@
 												</a>
 											</div>
 										</div>
-										<div class="swiper-pagination" id="financeSlider-pagination"></div>
+										<div class="swiper-control-wrap">
+											<div class="swiper-pagination" id="financeSlider-pagination"></div>
+											<button type="button" class="autoplay-toggle on" aria-label="자동재생 일시정지">
+												<span class="text sr-only">일시정지</span>
+											</button>
+										</div>
 									</div>
 								</div>
 								<div class="grid-col2">
@@ -1220,6 +1238,7 @@
 			}
 
 			initSwiperFocus();
+			initSwiperAutoplayToggle();
 		}
 
 		/**
@@ -1290,6 +1309,40 @@
 					});
 				}
 			);
+		}
+
+		function initSwiperAutoplayToggle() {
+			$('.swiper-container').each(function () {
+				const $container = $(this);
+				const $toggleBtn = $container.find('.autoplay-toggle');
+
+				if ($toggleBtn.length === 0) return;
+
+				const swiper = swiperList.find(s => s.el === $container[0]);
+				if (!swiper || !swiper.autoplay) return;
+
+				$toggleBtn.on('click', function () {
+
+					const $btn = $(this);
+					const $text = $btn.find('.sr-only');
+
+					if ($btn.hasClass('on')) {
+						// ▶ autoplay 정지
+						swiper.autoplay.stop();
+
+						$btn.removeClass('on').addClass('off');
+						$btn.attr('aria-label', '자동재생 시작');
+						$text.text('재생');
+					} else {
+						// ▶ autoplay 시작
+						swiper.autoplay.start();
+
+						$btn.removeClass('off').addClass('on');
+						$btn.attr('aria-label', '자동재생 일시정지');
+						$text.text('일시정지');
+					}
+				});
+			});
 		}
 	</script>
 </body>

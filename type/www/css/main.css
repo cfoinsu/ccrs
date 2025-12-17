@@ -3103,13 +3103,10 @@ body:has(.intro.show) {
 
 .col-debt2-1 {
   height: 43.4rem;
-  background: url(/type/www/images/main/debt2-1-bg.png) no-repeat 0 0/cover;
+  background: #F0EFEB;
   border-radius: var(--box-round);
   position: relative;
   overflow: hidden;
-}
-.col-debt2-1 img {
-  display: none;
 }
 .col-debt2-1.swiper-container {
   overflow: hidden !important;
@@ -3277,11 +3274,8 @@ body:has(.intro.show) {
   width: 100%;
   height: 43.4rem;
   border-radius: 24px;
-  background: url(/type/www/images/main/finance-1_bg.png) no-repeat 0 0/cover;
+  background: var(--krds-light-color-surface-secondary-subtler);
   overflow: hidden;
-}
-.grid-finance .grid-col1 .col-debt2-1 img {
-  display: none;
 }
 .grid-finance .grid-col1 .col-debt2-1.swiper-container {
   overflow: hidden !important;
@@ -3700,6 +3694,10 @@ body:has(.intro.show) {
     }
   }
 }
+
+.swiper-container .swiper-control-wrap {display: flex; align-items: center; gap:0 8px; position: absolute; bottom: 2rem; left: var(--box-padding-x);}
+.swiper-container .swiper-control-wrap .swiper-pagination {position: relative; transform: initial; bottom: initial; left: initial; gap: 0 8px;}
+.swiper-container .swiper-control-wrap .autoplay-toggle {display: block; width: 8px; height: 8px;}
 
 @media (max-width: 767px)  {
   .debt-section.grid-width .grid-col3 .plus-lst {margin-left: 0 !important; width: 100%;}
