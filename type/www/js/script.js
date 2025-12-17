@@ -20,6 +20,15 @@ tabItems.forEach((tab, index) => {
 
 // Sidebar Navigation
 navSectionTitles.forEach(title => {
+    
+    document.querySelectorAll('.nav-section').forEach(s => {
+        const btn = s.querySelector('.nav-section-title');
+        if (btn) {
+            // active 클래스가 있으면 true, 없으면 false로 설정
+            const isActive = s.classList.contains('active');
+            btn.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+        }
+    });
     title.addEventListener('click', () => {
         const section = title.closest('.nav-section');
         const isActive = section.classList.contains('active');
