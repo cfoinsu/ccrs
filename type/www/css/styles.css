@@ -8548,21 +8548,25 @@ table .table-center {
     left: 50%;
     transform: translateX(-50%);
     background: var(--krds-color-light-gray-0);
-    border: 1px solid #84b4ff;
+    border: none;
     border-radius: 8px;
-    padding: 16px 0;
+    padding: 0;
     min-width: 160px;
     opacity: 0;
     transition: all 0.3s ease;
     z-index: 10;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 0;
+    overflow: hidden;
 }
 .region-branch-wrapper:focus .branch-list-box,
-.region-branch-wrapper:focus-within .branch-list-box,
 .region-branch-wrapper:hover .branch-list-box {
     opacity: 1;
     visibility: visible;
     top: 140px;
+    height: auto;
+    padding: 16px 0;
+    border: 1px solid #84b4ff;
 }
 
 .branch-list-box p {
