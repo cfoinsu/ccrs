@@ -8557,7 +8557,8 @@ table .table-center {
     z-index: 10;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
+.region-branch-wrapper:focus .branch-list-box,
+.region-branch-wrapper:focus-within .branch-list-box,
 .region-branch-wrapper:hover .branch-list-box {
     opacity: 1;
     visibility: visible;
@@ -9064,7 +9065,7 @@ a.customer-service-card {
             top: 318px;
         }
     }
-
+    &:focus,
     &:hover {
         .grouptree-list-item {
             opacity: 1;
@@ -9124,7 +9125,8 @@ a.customer-service-card {
                 width: 220px;
                 height: 50px;
             }
-
+            li:focus,
+            li:focus-within,
             li:hover {
                 ul {
                     opacity: 1;
@@ -9220,7 +9222,8 @@ a.customer-service-card {
                 }
             }
         }
-
+        &:focus>ul,
+        &:focus-within>ul,
         &:hover>ul {
             opacity: 1;
             transform: translate(-50%, 0);
