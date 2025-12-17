@@ -9300,7 +9300,7 @@ a.customer-service-card {
     /* 지부위치안내 */
     .map-content .sidebar {display: block;}
     .map-content .content-area {height: 100vh;}
-    .map-content .content-area .ab_note {display: flex; align-items: center; justify-content: center; line-height: 1.5; text-align: center; height: auto; padding: .4rem 1.2rem;}
+    .map-content .content-area .ab_note {display: flex; align-items: center; justify-content: center; line-height: 1.5; text-align: center; height: auto; padding: .4rem 1.2rem;font-size: 1.4rem;margin: 0 auto;left:2.4rem;}
 }
 @media (max-width: 1279px) {
     /* 공통 */

@@ -837,16 +837,19 @@
 
     .compare-flex-items {
         flex-direction: column;
+        padding-top: 1rem;
     }
 
     .products-flex-container {
         flex-direction: column;
     }
-
+    .product-card {
+        height: 50px;
+    }
     .add-slot-card {
         width: 100%;
         max-width: 280px;
-        height: 70px;
+        height: 50px;
     }
 
     .remove-btn {
@@ -860,6 +863,9 @@
 
     .desktop-title-section {
         margin-right: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     .desktop-title-h2 {
