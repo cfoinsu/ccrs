@@ -1313,35 +1313,38 @@
 
 		function initSwiperAutoplayToggle() {
 			$('.swiper-container').each(function () {
-				const $container = $(this);
-				const $toggleBtn = $container.find('.autoplay-toggle');
+				let $container = $(this);
+				let $toggleBtn = $container.find('.autoplay-toggle');
 
 				if ($toggleBtn.length === 0) return;
 
-				const swiper = swiperList.find(s => s.el === $container[0]);
-				if (!swiper || !swiper.autoplay) return;
+				let swiperInstance = swiperList.find(s => s.el === $container[0]);
+				if (!swiperInstance || !swiperInstance.autoplay) return;
 
-				$toggleBtn.on('click', function () {
+				$toggleBtn
+					.off('click.autoplayLocal')
+					.on('click.autoplayLocal', function (e) {
 
-					const $btn = $(this);
-					const $text = $btn.find('.sr-only');
+						e.preventDefault();
+						e.stopImmediatePropagation(); // 🔥 핵심
 
-					if ($btn.hasClass('on')) {
-						// ▶ autoplay 정지
-						swiper.autoplay.stop();
+						let $btn = $(this);
+						let $text = $btn.find('.text, .sr-only');
 
-						$btn.removeClass('on').addClass('off');
-						$btn.attr('aria-label', '자동재생 시작');
-						$text.text('재생');
-					} else {
-						// ▶ autoplay 시작
-						swiper.autoplay.start();
+						if ($btn.hasClass('on')) {
+							swiperInstance.autoplay.stop();
 
-						$btn.removeClass('off').addClass('on');
-						$btn.attr('aria-label', '자동재생 일시정지');
-						$text.text('일시정지');
-					}
-				});
+							$btn.removeClass('on').addClass('off')
+								.attr('aria-label', '자동재생 시작');
+							$text.text('재생');
+						} else {
+							swiperInstance.autoplay.start();
+
+							$btn.removeClass('off').addClass('on')
+								.attr('aria-label', '자동재생 일시정지');
+							$text.text('일시정지');
+						}
+					});
 			});
 		}
 	</script>
