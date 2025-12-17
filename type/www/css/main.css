@@ -253,7 +253,7 @@
 }
 .main-banner.slidebox .swiper-slide a.arr-circle-right {
   opacity: 0;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 .main-banner.slidebox .swiper-slide.swiper-slide-active a.arr-circle-right {
   display: block;
