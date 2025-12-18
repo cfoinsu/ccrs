@@ -233,7 +233,7 @@ $(function () {
 });
 /* 푸터 스크립트:e */
 // 팝업스크립트
-const openYoutubeUrl = (url) => {
+const openyoutubeurl = (url) => {
 	if (!url) {
 		url = "/index.do";
 	}
