@@ -1106,8 +1106,8 @@ ol.list-number {
   }
 }
 
-.popup-close-btn,
-.close-btn {
+body>.popup-close-btn,
+body>.close-btn {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
@@ -1125,8 +1125,8 @@ ol.list-number {
   box-shadow: 0 2px 8px rgba(1, 19, 59, 0.3);
 }
 
-.popup-close-btn:hover,
-.close-btn:hover {
+body>.popup-close-btn:hover,
+body>.close-btn:hover {
   background: #022357;
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
@@ -1134,8 +1134,8 @@ ol.list-number {
   box-shadow: 0 4px 12px rgba(1, 19, 59, 0.4);
 }
 
-.popup-close-btn:active,
-.close-btn:active {
+body>.popup-close-btn:active,
+body>.close-btn:active {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }

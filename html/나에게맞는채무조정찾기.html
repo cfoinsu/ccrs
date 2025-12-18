@@ -146,6 +146,7 @@
                                 <div class="figma-step-content">
                                     <!-- 1단계: 무담보채무액 -->
                                     <div class="figma-step-item active" data-step="1">
+                                        <div class="sr-only">1단계 무담보채무액</div>
                                         <div class="figma-step-group">
                                             <div class="figma-step-icon">
                                                 <img src="/type/www/img/contents/png/icon_step1_01.svg?ver=5.9"
@@ -201,6 +202,7 @@
 
                                     <!-- 2단계: 담보채무액 -->
                                     <div class="figma-step-item" data-step="2">
+                                        <div class="sr-only">2단계 담보채무액</div>
                                         <div class="figma-step-group">
                                             <div class="figma-step-icon">
                                                 <img src="/type/www/img/contents/png/icon_step2_01.png?ver=5.9"
@@ -274,6 +276,7 @@
 
                                     <!-- 3단계: 재산 -->
                                     <div class="figma-step-item" data-step="3">
+                                        <div class="sr-only">3단계 재산</div>
                                         <div class="figma-step-group">
                                             <div class="figma-step-icon">
                                                 <img src="/type/www/img/contents/png/icon_step2_01.png?ver=5.9"
@@ -347,6 +350,7 @@
 
                                     <!-- 4단계: 소득 -->
                                     <div class="figma-step-item" data-step="4">
+                                        <div class="sr-only">4단계 소득</div>
                                         <div class="figma-step-group">
                                             <div class="figma-step-icon">
                                                 <img src="/type/www/img/contents/png/icon_step4_01.svg?ver=5.9"
@@ -397,6 +401,7 @@
 
                                     <!-- 5단계: 정보 -->
                                     <div class="figma-step-item" data-step="5">
+                                        <div class="sr-only">5단계 정보</div>
                                         <div class="figma-step-group">
                                             <div class="figma-step-icon">
                                                 <img src="/type/www/img/contents/png/icon_step5_01.svg?ver=5.9"
@@ -459,62 +464,7 @@
                             </div>
 
                             <!-- Compare Section -->
-                            <!-- 비교하기 하단 고정 바 -->
-                            <div class="compare-fixed-bar" style="display: none;">
-                                <div class="compare-container">
-                                    <div class="compare-flex-items">
-                                        <div class="desktop-title-section">
-                                            <h2 class="desktop-title-h2">
-                                                비교하기
-                                            </h2>
-                                            <p class="desktop-title-p">
-                                                (최대 3개 가능)
-                                            </p>
-                                        </div>
-                                        <div class="compare-products-container">
-                                            <div class="products-flex-container">
-                                                <div class="product-card">
-                                                    <div class="product-icon-wrapper">
-                                                        <img src="/type/www/images/ic/icon_title.svg?ver=5.9" alt="">
-                                                    </div>
-                                                    <div class="product-title">
-                                                        사전채무조정
-                                                    </div>
-                                                    <button class="remove-btn">
-                                                        <span>×</span>
-                                                    </button>
-                                                </div>
-                                                <div class="product-card">
-                                                    <div class="product-icon-wrapper">
-                                                        <img src="/type/www/images/ic/icon_house.svg?ver=5.9" alt="">
-                                                    </div>
-                                                    <div class="product-title">
-                                                        개인워크아웃 개인회생주택담보대출
-                                                    </div>
-                                                    <button class="remove-btn">
-                                                        <span>×</span>
-                                                    </button>
-                                                </div>
-                                                <div class="add-slot-card">
-                                                    <div class="add-slot-icon">
-                                                        <span>+</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="compare-buttons-container">
-                                            <button id="openCompareModal" class="open-compare-modal">
-                                                <span>
-                                                    비교하기
-                                                </span>
-                                            </button>
-                                            <button class="close-btn">
-                                                <span>×</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
 
 
                             <!-- Quick Results -->
@@ -681,8 +631,7 @@
                                 <div class="left-box">
                                     <button type="button" class="krds-btn xlarge tertiary" aria-label="간편진단 다시하기"><i
                                             class="svg-icon ico-angle left" aria-hidden="true"></i>다시하기</button>
-                                    <button type="button" class="krds-btn xlarge primary compare-modal"
-                                        data-target="compareModal" aria-label="제도비교">제도비교<img
+                                    <button type="button" class="krds-btn xlarge primary" aria-label="제도비교">제도비교<img
                                             src="/type/www/img/icons/filter_white.svg?ver=5.9"
                                             aria-hidden="true"></i></button>
                                 </div>
@@ -728,8 +677,65 @@
                                     <p class="fs_17">신용회복위원회는 취약채무자를 대상으로 개인회생·파산 법원 접수 절차를 무료로 지원하고 있습니다.</p>
                                 </div>
                             </div>
+
+                            <!-- 비교하기 하단 고정 바 -->
+                            <div class="compare-fixed-bar" style="display: none;">
+                                <div class="compare-container">
+                                    <div class="compare-flex-items">
+                                        <div class="desktop-title-section">
+                                            <h2 class="desktop-title-h2">
+                                                비교하기
+                                            </h2>
+                                            <p class="desktop-title-p">
+                                                (최대 3개 가능)
+                                            </p>
+                                        </div>
+                                        <div class="compare-products-container">
+                                            <div class="products-flex-container">
+                                                <div class="product-card">
+                                                    <div class="product-icon-wrapper">
+                                                        <img src="/type/www/images/ic/icon_title.svg?ver=5.9" alt="">
+                                                    </div>
+                                                    <div class="product-title">
+                                                        사전채무조정
+                                                    </div>
+                                                    <button class="remove-btn">
+                                                        <span>×</span>
+                                                    </button>
+                                                </div>
+                                                <div class="product-card">
+                                                    <div class="product-icon-wrapper">
+                                                        <img src="/type/www/images/ic/icon_house.svg?ver=5.9" alt="">
+                                                    </div>
+                                                    <div class="product-title">
+                                                        개인워크아웃 개인회생주택담보대출
+                                                    </div>
+                                                    <button class="remove-btn">
+                                                        <span>×</span>
+                                                    </button>
+                                                </div>
+                                                <div class="add-slot-card">
+                                                    <div class="add-slot-icon">
+                                                        <span>+</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="compare-buttons-container">
+                                            <button id="openCompareModal" class="open-compare-modal">
+                                                <span>
+                                                    비교하기
+                                                </span>
+                                            </button>
+                                            <button class="close-btn">
+                                                <span>×</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="additional-info" id="adjustmentMore">
-                                <h5><strong>채무조정제도 더보기</strong></h5><br>
+                                <h5><strong>채무조정제도 더보기</strong></h5>
 
                                 <div class="info-list" id="infoList">
                                     <div class="info-item">
@@ -737,9 +743,9 @@
                                         <div class="info-content">
                                             <h4>연체기간 30일 이하인 채무자</h4>
                                         </div>
-                                        <div class="info-actions"><a class="btn btn-secondary"
-                                                href="/cms/com/index.do?MENU_ID=520" target="_blank">상세정보</a><button
-                                                class="btn btn-line" onclick="addToDbtAdjstSystem(1)">비교담기</button>
+                                        <div class="info-actions">
+                                            <a class="btn btn-secondary" href="/cms/com/index.do?MENU_ID=520" target="_blank">상세정보</a>
+                                            <button class="btn btn-line compare-modal" data-target="compareModal">비교담기</button>
                                         </div>
                                     </div>
                                     <div class="info-item">
@@ -749,7 +755,7 @@
                                         </div>
                                         <div class="info-actions"><a class="btn btn-secondary"
                                                 href="/cms/com/index.do?MENU_ID=530" target="_blank">상세정보</a><button
-                                                class="btn btn-line" onclick="addToDbtAdjstSystem(3)">비교담기</button>
+                                                class="btn btn-line compare-modal" data-target="compareModal">비교담기</button>
                                         </div>
                                     </div>
                                     <div class="info-item">
@@ -759,7 +765,7 @@
                                         </div>
                                         <div class="info-actions"><a class="btn btn-secondary"
                                                 href="/cms/com/index.do?MENU_ID=540" target="_blank">상세정보</a><button
-                                                class="btn btn-line" onclick="addToDbtAdjstSystem(5)">비교담기</button>
+                                                class="btn btn-line compare-modal" data-target="compareModal">비교담기</button>
                                         </div>
                                     </div>
                                     <div class="info-item">
@@ -769,7 +775,7 @@
                                         </div>
                                         <div class="info-actions"><a class="btn btn-secondary"
                                                 href="/cms/com/index.do?MENU_ID=550" target="_blank">상세정보</a><button
-                                                class="btn btn-line" onclick="addToDbtAdjstSystem(17)">비교담기</button>
+                                                class="btn btn-line compare-modal" data-target="compareModal">비교담기</button>
                                         </div>
                                     </div>
                                     <div class="info-item">
@@ -1084,8 +1090,8 @@
             </div>
 
             <div class="modal-footer">
-                <button class="btn-cancel" id="cancelModal">초기화</button>
                 <button class="btn btn-primary">인쇄하기</button>
+                <button class="btn-cancel" id="cancelModal">닫기</button>
             </div>
         </div>
     </div>
@@ -1311,9 +1317,10 @@
         }).trigger('change');
 
         $('.compare-modal').on('click', function () {
-            $('.compare-fixed-bar').slideDown();
+            $('.compare-fixed-bar').slideDown()
+            $('.compare-fixed-bar').find('button:first').focus();
         });
-        $('.close-btn').on('click', function () {
+        $('.compare-fixed-bar .close-btn').on('click', function () {
             $('.compare-fixed-bar').slideUp();
         });
 
@@ -1331,7 +1338,7 @@
         });
 
         // 2. 모달 닫기 버튼 이벤트
-        $('#compareModal .close-btn, #compareModal #cancelModal').on('click', function () {
+        $('#compareModal .close-btn, #compareModal .btn-cancel').on('click', function () {
             $('#compareModal').removeClass('show').hide();
 
             // 모달을 열었던 버튼으로 포커스 복귀 (접근성 필수)
