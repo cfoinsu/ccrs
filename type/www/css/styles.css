@@ -3956,11 +3956,11 @@ span.sub4InputLabel {
 }
 
 table.comparison-table {
-    width: auto;
+    width: 100%;
     border-collapse: collapse;
     border-top: 1px solid var(--krds-color-light-gray-100);
 }
-
+table.comparison-table col:first-child {width: 15% !important;}
 table.comparison-table th,
 table.comparison-table td {
     border-bottom: 1px solid #E1E1E1;
