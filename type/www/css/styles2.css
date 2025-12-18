@@ -932,4 +932,11 @@
     .info-content h4 br {
         display: none;
     }
+    .results-content-wrapper .graph-wrap.zoom {
+        height: 198px;
+    }
+    .graph-wrap.zoom.type_box3 .manwon {
+        right: 30rem;
+        top: 15.5rem;
+    }
 }
