@@ -2527,24 +2527,19 @@ label:has(>input[type=checkbox]:focus) {
     content: '';
     display: block;
     background: url(../images/ic/quickmenu/icon_book.png) center no-repeat;
-    width: 2rem;
-    height: 2.3rem;
+    width: 20px;
+    height: 23px;
     flex-shrink: 0;
 }
 
-@media (max-width: 767px) {
-    .quick-item.book::before {
-        width: 3rem;
-        height: 3.2rem;
-    }
-}
 
 .quick-item.book.on::before {
     content: '';
     display: block;
     background: url(../images/ic/quickmenu/icon_book_on.png) center no-repeat;
-    width: 2rem;
-    height: 2.3rem;
+    width: 20px;
+    height: 23px;
+    flex-shrink: 0;
 }
 
 .quick-item.book.on .quick-showbox {
