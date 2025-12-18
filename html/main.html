@@ -1272,44 +1272,68 @@
 		 * 스와이퍼 포커스
 		 */
 		function initSwiperFocus() {
+			const userFocusMap = new WeakMap();
+
+			const focusableSelector =
+				'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])';
+
 			$('.swiper-container').on(
-				'focus',
-				'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])',
+				'focusin',
+				focusableSelector,
 				function () {
 
-					if ($(this).hasClass('swiper-pagination-bullet')) {
-						return;
-					}
+				if ($(this).hasClass('swiper-pagination-bullet')) return;
 
-					var $slide = $(this).closest('.swiper-slide');
-					if (!$slide.length) return;
+				const $slide = $(this).closest('.swiper-slide');
+				if (!$slide.length || $slide.hasClass('swiper-slide-duplicate')) return;
 
-					if ($slide.hasClass('swiper-slide-duplicate')) return;
+				const container = $slide.closest('.swiper-container')[0];
+				const swiper = swiperList.find(s => s.el === container);
+				if (!swiper) return;
 
-					let container = $slide.closest('.swiper-container')[0];
-					let swiper = swiperList.find(s => s.el === container);
-					if (!swiper) return;
+				userFocusMap.set(swiper, true);
 
-					if (swiper.autoplay) {
-						try { swiper.autoplay.stop(); } catch (e) { }
-					}
+				if (swiper.autoplay) {
+					try { swiper.autoplay.stop(); } catch (e) {}
+				}
 
-					let index = $slide.data('swiper-slide-index');
-					if (typeof index === 'undefined') index = $slide.index();
+				let index = $slide.data('swiper-slide-index');
+				if (typeof index === 'undefined') index = $slide.index();
 
-					if (swiper.params.loop && typeof swiper.slideToLoop === 'function') {
-						swiper.slideToLoop(index, 0);
-					} else {
-						swiper.slideTo(index, 0);
-					}
+				if (swiper.params.loop && swiper.slideToLoop) {
+					swiper.slideToLoop(index, 0);
+				} else {
+					swiper.slideTo(index, 0);
+				}
 
-					const el = this;
-					swiper.once('transitionEnd', () => {
-						try { el.focus(); } catch (e) { }
-					});
+				const el = this;
+				swiper.once('transitionEnd', () => {
+					if (!userFocusMap.get(swiper)) return;
+					try { el.focus(); } catch (e) {}
+				});
 				}
 			);
-		}
+
+			$('.swiper-container').on(
+				'focusout',
+				focusableSelector,
+				function (e) {
+
+				const container = $(this).closest('.swiper-container')[0];
+				if (!container) return;
+
+				const swiper = swiperList.find(s => s.el === container);
+				if (!swiper || !swiper.autoplay) return;
+
+				const related = e.relatedTarget;
+				if (related && container.contains(related)) return;
+
+				userFocusMap.set(swiper, false);
+
+				try { swiper.autoplay.start(); } catch (e) {}
+				}
+			);
+			}
 
 		function initSwiperAutoplayToggle() {
 			$('.swiper-container').each(function () {
@@ -1347,6 +1371,39 @@
 					});
 			});
 		}
+
+		// function initSwiperAutoplayToggle() {
+		// 	$('.swiper-container').each(function () {
+		// 		const $container = $(this);
+		// 		const $toggleBtn = $container.find('.autoplay-toggle');
+
+		// 		//if ($toggleBtn.length === 0) return;
+
+		// 		const swiper = swiperList.find(s => s.el === $container[0]);
+		// 		if (!swiper || !swiper.autoplay) return;
+
+		// 		$toggleBtn.off('click').on('click', function () {
+		// 			const $btn = $(this);
+		// 			const $text = $btn.find('.sr-only');
+
+		// 			if ($btn.hasClass('on')) {
+		// 				// ▶ autoplay 정지
+		// 				swiper.autoplay.stop();
+
+		// 				$btn.removeClass('on').addClass('off');
+		// 				$btn.attr('aria-label', '자동재생 시작');
+		// 				$text.text('재생');
+		// 			} else {
+		// 				// ▶ autoplay 시작
+		// 				swiper.autoplay.start();
+
+		// 				$btn.removeClass('off').addClass('on');
+		// 				$btn.attr('aria-label', '자동재생 일시정지');
+		// 				$text.text('일시정지');
+		// 			}
+		// 		});
+		// 	});
+		// }
 	</script>
 </body>
 
