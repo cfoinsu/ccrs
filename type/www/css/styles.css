@@ -2830,7 +2830,7 @@ label:has(>input[type=checkbox]:focus) {
 }
 
 .btn-line:hover {
-    background-color: var(--krds-color-light-gray-30);
+    background-color: var(--krds-color-light-primary-30);
 }
 
 /* News Section */
