@@ -9277,6 +9277,23 @@ a.customer-service-card {
 
 .card-actions .btn-action.applink,
 .g-grid-wrap .g-img__link-mo {display: none;}
+.process-list {display: flex; align-items: center; gap: 0 20px; background: #f6faff; border-radius: 24px; padding: 32px 30px; box-sizing: border-box;}
+.process-list .process-list-item {width: 25%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px 0; position: relative;}
+.process-list .process-list-item:not(:last-child)::before {content: ''; display: block; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-left: 12px solid #f48f01; position: absolute; right: -17px; top: 62px;}
+.process-list .list-item__circle {width: 15rem; height: 15rem; border-radius: 50%; border: 1px solid #f48f01; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: .8rem 0; background: #fff; overflow: hidden;}
+.process-list .list-item__circle i {width: 32px; height: 32px; display: block;}
+.process-list .list-item__circle span {font-size: 1.7rem; font-weight: bold; color: #f48f01;}
+.process-list .list-item__circle.bg-orange {background: #f48f01;}
+.process-list .list-item__circle.bg-orange span {color: #fff;}
+.process-list .list-item__list {width: 100%; min-height: 240px; border: 1px solid #7188B8; border-radius: 12px; padding: 16px 12px; display: flex; align-items: center; justify-content: center; position: relative; background: #fff;}
+.process-list .list-item__list::before {content: ''; display: block; position: absolute; top: -9px; left: 50%; transform: translateX(-50%); width: 1px; height: 9px; background: #7188B8;}
+.process-list .list-item__list ul li {color: #1d3d82; font-size: 1.5rem; line-height: 1.5; position: relative;}
+.process-list .list-item__list ul li + li {margin-top: .4rem;}
+.process-list .list-item__list.list-item__list--type1 li {display: flex; align-items: flex-start; }
+.process-list .list-item__list.list-item__list--type1 li span {width: 1.8rem; flex-shrink: 0;}
+.process-list .list-item__list.list-item__list--type2 li {padding-left: 1.2rem;}
+.process-list .list-item__list.list-item__list--type2 li::before {content: ''; display: block; width: .4rem; height: .4rem; border-radius: 50%; background: #7188B8; position: absolute; top: .9rem; left: 0;} 
+.process-list + .g-img-wrap {max-width: 757px; width: 100%; margin: 4rem auto 0;}
 @media (max-width: 1340px) {
     .customer-service-card .g-img {margin: 0;}
 }
@@ -9303,13 +9320,14 @@ a.customer-service-card {
 
     .map-search-box {flex-direction: column; align-items: center; gap: 3.2rem 0;}
     .g-imag-hover, .centersearch {width: 100%;}
-}
-@media (max-width: 1279px) {
     .g-grid-wrap.contect .appdown+.item-share.active {top: initial; right: 0; right: initial; left: 1.6rem; bottom: -17.5rem;}
     .card-actions .appdown+.item-share.active {left: 8%; right: initial; top: initial; bottom: -15.5rem;}
 
     .effect-box .boxc2.row.noborder {border-bottom: 1px solid var(--krds-color-light-gray-20)}
     /* .effect-box .boxc2.row.noborder:last-of-type {border-bottom: none;}   */
+}
+@media (max-width: 1024px) {
+    .process-list {align-items: flex-start;}
 }
 @media (max-width: 767px) {
     /* 공통 */
@@ -9392,6 +9410,15 @@ a.customer-service-card {
     .picker_txt {width: 16px;}
     .search-top-box .sch-filter-box .filter-form.row .period .optSetDate > .krds-input {width: calc(50% - 8px);}
     .date-picker-control:link, .date-picker-control:visited {margin: 3px 7px 0 -25px !important;}
+
+    .process-list {flex-direction: column; gap: 50px 0;}
+    .process-list .process-list-item {width: 100%;}
+    .process-list .process-list-item:not(:last-child)::before {left: 50%; transform: translateX(-50%); right: initial; top: initial; bottom: -42px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 12px solid #f48f01;}
+    .process-list .list-item__circle {width: 150px; height: 150px;}
+    .process-list .list-item__list {min-height: initial;}
+    .process-list .list-item__list ul li {font-size: 1.7rem;}
+    .process-list + .g-img-wrap {max-width: 500px;}
+
 }
 @media (max-width: 360px) {
     .cp-store-card .cp-store-btn {height: auto; padding: .6rem .4rem; font-size: 1.7rem;}
