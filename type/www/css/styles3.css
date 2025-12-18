@@ -2189,15 +2189,6 @@
   }
 }
 
-@media (max-width: 767px) {
-
-  .financial-support-section .support-card,
-  .employment-support-section .support-card,
-  .welfare-support-section .support-card {
-    padding: 2.4rem;
-  }
-}
-
 .financial-support-section .support-card .card-header,
 .employment-support-section .support-card .card-header,
 .welfare-support-section .support-card .card-header {
@@ -2465,6 +2456,17 @@
 .welfare-support-section .support-card:nth-child(2) .card-header .card-header-underline {
   width: 19.3rem;
 }
+
+@media (max-width: 767px) {
+
+  .financial-support-section .support-card,
+  .employment-support-section .support-card,
+  .welfare-support-section .support-card {
+    padding: 2.4rem;
+    min-height: 0;
+  }
+}
+
 
 .enhanced-debt-adjustment-flow {
   position: relative;
