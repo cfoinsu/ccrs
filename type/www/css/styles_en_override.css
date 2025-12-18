@@ -1610,8 +1610,8 @@
   }
 
   .en .ccrs-year .year-tab.active {
-    background-color: #f48f01;
-    border-color: #f48f01;
+    background-color: var(--krds-color-light-primary-50);
+    border-color: var(--krds-color-light-primary-50);
   }
 
   .en .ccrs-year .year-tab.active .year-text {
@@ -1937,7 +1937,7 @@
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 50%;
-  background-color: #f48f01;
+  background-color: var(--krds-color-light-primary-50);
   z-index: 1;
 }
 
@@ -1951,7 +1951,7 @@
 .en .ccrs-year .timeline-year-flex {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #f48f01;
+  color: var(--krds-color-light-primary-50);
   line-height: 1.2;
 }
 
@@ -2128,8 +2128,8 @@
 .benefits-section .benefits-header .bullet {
   width: 4px;
   height: 1.8rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f48f01), to(#344d82));
-  background: linear-gradient(to bottom, #f48f01 0%, #344d82 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--krds-color-light-primary-50)), to(#344d82));
+  background: linear-gradient(to bottom, var(--krds-color-light-primary-50) 0%, #344d82 100%);
   border-radius: 0.2rem;
 }
 
@@ -2610,7 +2610,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #f48f01;
+  color: var(--krds-color-light-primary-50);
   font-size: 2.4rem;
   margin: 0.4rem 0;
 }
