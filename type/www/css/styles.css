@@ -3875,7 +3875,7 @@ span.sub4InputLabel {
 }
 
 .open-compare-modal {
-    background-color: var(--krds-color-light-gray-50);
+    background-color: var(--krds-color-light-primary-50);
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
     min-width: 8rem;
