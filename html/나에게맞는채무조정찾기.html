@@ -132,10 +132,14 @@
                                 <!-- 단계 탭 -->
                                 <div class="figma-step-tabs">
                                     <a href="#" class="figma-step-tab active" data-step="1">1단계 무담보채무액</a>
-                                    <a href="#" class="figma-step-tab" data-step="2" tabindex="0" role="button">2단계 담보채무액</a>
-                                    <a href="#" class="figma-step-tab" data-step="3" tabindex="0" role="button">3단계 재산</a>
-                                    <a href="#" class="figma-step-tab" data-step="4" tabindex="0" role="button">4단계 소득</a>
-                                    <a href="#" class="figma-step-tab" data-step="5" tabindex="0" role="button">5단계 정보</a>
+                                    <a href="#" class="figma-step-tab" data-step="2" tabindex="0" role="button">2단계
+                                        담보채무액</a>
+                                    <a href="#" class="figma-step-tab" data-step="3" tabindex="0" role="button">3단계
+                                        재산</a>
+                                    <a href="#" class="figma-step-tab" data-step="4" tabindex="0" role="button">4단계
+                                        소득</a>
+                                    <a href="#" class="figma-step-tab" data-step="5" tabindex="0" role="button">5단계
+                                        정보</a>
                                 </div>
 
                                 <!-- 컨텐츠 영역 -->
@@ -1312,6 +1316,74 @@
         $('.close-btn').on('click', function () {
             $('.compare-fixed-bar').slideUp();
         });
+
+        /* --- [추가] 모달 포커스 트랩 스크립트 시작 --- */
+
+        // 1. 비교하기 모달 열기 (ID: openCompareModal 클릭 시)
+        $('#openCompareModal').on('click', function () {
+            const $modal = $('#compareModal');
+            const $triggerBtn = $(this); // 모달을 연 버튼 저장 (닫을 때 복귀용)
+
+            $modal.addClass('show').show(); // 모달 표시 (CSS에 따라 class나 show() 사용)
+
+            // 포커스 트랩 실행
+            trapFocusInModal($modal, $triggerBtn);
+        });
+
+        // 2. 모달 닫기 버튼 이벤트
+        $('#compareModal .close-btn, #compareModal #cancelModal').on('click', function () {
+            $('#compareModal').removeClass('show').hide();
+
+            // 모달을 열었던 버튼으로 포커스 복귀 (접근성 필수)
+            if (window.lastFocusBtn) {
+                window.lastFocusBtn.focus();
+            }
+        });
+
+        // 3. 포커스 트랩 공통 함수
+        function trapFocusInModal($modal, $triggerBtn) {
+            // 닫을 때 돌아갈 버튼 전역 변수에 저장
+            window.lastFocusBtn = $triggerBtn;
+
+            // 모달 내 포커스 가능한 모든 요소 찾기
+            const $focusableElements = $modal.find('a, button, input, textarea, select, [tabindex]:not([tabindex="-1"])');
+
+            if ($focusableElements.length === 0) return;
+
+            const $firstFocusable = $focusableElements.first();
+            const $lastFocusable = $focusableElements.last();
+
+            // 모달 열리면 첫 번째 요소로 강제 이동
+            $firstFocusable.focus();
+
+            // 키보드 이벤트 감지 (Tab 키 가두기)
+            $modal.off('keydown').on('keydown', function (e) {
+                const isTabPressed = (e.key === 'Tab' || e.keyCode === 9);
+                const isEscPressed = (e.key === 'Escape' || e.keyCode === 27);
+
+                if (isEscPressed) {
+                    // ESC 키 누르면 닫기 버튼 클릭 처리
+                    $modal.find('.close-btn').first().click();
+                }
+
+                if (!isTabPressed) return;
+
+                if (e.shiftKey) {
+                    // Shift + Tab : 첫 번째 요소에서 누르면 마지막으로 이동
+                    if (document.activeElement === $firstFocusable[0]) {
+                        e.preventDefault();
+                        $lastFocusable.focus();
+                    }
+                } else {
+                    // Tab : 마지막 요소에서 누르면 첫 번째로 이동
+                    if (document.activeElement === $lastFocusable[0]) {
+                        e.preventDefault();
+                        $firstFocusable.focus();
+                    }
+                }
+            });
+        }
+        /* --- [추가] 모달 포커스 트랩 스크립트 끝 --- */
 
 
     </script>
