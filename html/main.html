@@ -1277,12 +1277,17 @@
 			const focusableSelector =
 				'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
+			// ▶ focusin
 			$('.swiper-container').on(
 				'focusin',
 				focusableSelector,
 				function () {
 
-				if ($(this).hasClass('swiper-pagination-bullet')) return;
+				// pagination / autoplay 버튼은 제외
+				if (
+					$(this).hasClass('swiper-pagination-bullet') ||
+					$(this).hasClass('autoplay-toggle')
+				) return;
 
 				const $slide = $(this).closest('.swiper-slide');
 				if (!$slide.length || $slide.hasClass('swiper-slide-duplicate')) return;
@@ -1293,6 +1298,7 @@
 
 				userFocusMap.set(swiper, true);
 
+				// ▶ 포커스로 인한 정지는 허용
 				if (swiper.autoplay) {
 					try { swiper.autoplay.stop(); } catch (e) {}
 				}
@@ -1314,6 +1320,7 @@
 				}
 			);
 
+			// ▶ focusout
 			$('.swiper-container').on(
 				'focusout',
 				focusableSelector,
@@ -1325,6 +1332,9 @@
 				const swiper = swiperList.find(s => s.el === container);
 				if (!swiper || !swiper.autoplay) return;
 
+				// 🔥 사용자가 멈춘 경우 → 절대 재생하지 않음
+				if (swiper.__pausedByUser) return;
+
 				const related = e.relatedTarget;
 				if (related && container.contains(related)) return;
 
@@ -1333,7 +1343,8 @@
 				try { swiper.autoplay.start(); } catch (e) {}
 				}
 			);
-			}
+		}
+
 
 		function initSwiperAutoplayToggle() {
 			$('.swiper-container').each(function () {
@@ -1345,65 +1356,46 @@
 				let swiperInstance = swiperList.find(s => s.el === $container[0]);
 				if (!swiperInstance || !swiperInstance.autoplay) return;
 
+				// 초기 상태
+				swiperInstance.__pausedByUser = false;
+
 				$toggleBtn
-					.off('click.autoplayLocal')
-					.on('click.autoplayLocal', function (e) {
+				.off('click.autoplayLocal')
+				.on('click.autoplayLocal', function (e) {
+					e.preventDefault();
+					e.stopImmediatePropagation(); // 🔥 중요
 
-						e.preventDefault();
-						e.stopImmediatePropagation(); // 🔥 핵심
+					let $btn = $(this);
+					let $text = $btn.find('.text, .sr-only');
 
-						let $btn = $(this);
-						let $text = $btn.find('.text, .sr-only');
+					if ($btn.hasClass('on')) {
+					// ▶ 사용자가 직접 정지
+					swiperInstance.autoplay.stop();
+					swiperInstance.__pausedByUser = true;
 
-						if ($btn.hasClass('on')) {
-							swiperInstance.autoplay.stop();
+					$btn
+						.removeClass('on')
+						.addClass('off')
+						.attr('aria-label', '자동재생 시작')
+						.attr('aria-pressed', 'true');
 
-							$btn.removeClass('on').addClass('off')
-								.attr('aria-label', '자동재생 시작');
-							$text.text('재생');
-						} else {
-							swiperInstance.autoplay.start();
+					$text.text('재생');
+					} else {
+					// ▶ 사용자가 직접 재생
+					swiperInstance.autoplay.start();
+					swiperInstance.__pausedByUser = false;
 
-							$btn.removeClass('off').addClass('on')
-								.attr('aria-label', '자동재생 일시정지');
-							$text.text('일시정지');
-						}
-					});
+					$btn
+						.removeClass('off')
+						.addClass('on')
+						.attr('aria-label', '자동재생 일시정지')
+						.attr('aria-pressed', 'false');
+
+					$text.text('일시정지');
+					}
+				});
 			});
 		}
-
-		// function initSwiperAutoplayToggle() {
-		// 	$('.swiper-container').each(function () {
-		// 		const $container = $(this);
-		// 		const $toggleBtn = $container.find('.autoplay-toggle');
-
-		// 		//if ($toggleBtn.length === 0) return;
-
-		// 		const swiper = swiperList.find(s => s.el === $container[0]);
-		// 		if (!swiper || !swiper.autoplay) return;
-
-		// 		$toggleBtn.off('click').on('click', function () {
-		// 			const $btn = $(this);
-		// 			const $text = $btn.find('.sr-only');
-
-		// 			if ($btn.hasClass('on')) {
-		// 				// ▶ autoplay 정지
-		// 				swiper.autoplay.stop();
-
-		// 				$btn.removeClass('on').addClass('off');
-		// 				$btn.attr('aria-label', '자동재생 시작');
-		// 				$text.text('재생');
-		// 			} else {
-		// 				// ▶ autoplay 시작
-		// 				swiper.autoplay.start();
-
-		// 				$btn.removeClass('off').addClass('on');
-		// 				$btn.attr('aria-label', '자동재생 일시정지');
-		// 				$text.text('일시정지');
-		// 			}
-		// 		});
-		// 	});
-		// }
 	</script>
 </body>
 
