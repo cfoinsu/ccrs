@@ -4598,7 +4598,7 @@
 
 .en .ccrs-service-diagram .diagram-section {
   position: absolute;
-  z-index: 2;
+  z-index: 6;
   max-width: 43rem;
 }
 
