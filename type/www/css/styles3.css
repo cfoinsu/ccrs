@@ -4141,21 +4141,35 @@
   font-weight: 700;
   text-align: right;
 }
+
+.business-performance-card .card-content.jiwon {
+  margin-top: 0;
+  gap: 0;
+}
+
+.business-performance-card .jiwon .row-item:last-child {
+  padding: 5px 0 0 0;
+}
+
 .business-performance-card .jiwon .label {
   font-size: 1.7rem;
 }
+
 .business-performance-card .jiwon .count {
   font-size: 2.4rem;
 }
+
 .business-performance-card .jiwon .count .primary {
   font-size: 3.6rem;
 }
+
 .business-performance-card .jiwon .unit {
   font-size: 1.7rem;
   font-weight: 500;
   color: #17191B;
   margin-left: 0.4rem;
 }
+
 .business-performance-card .divider {
   width: 1px;
   height: 12px;
@@ -4188,6 +4202,11 @@
     width: 100%;
   }
 
+  .business-performance-card .card-content.jiwon {
+    margin-top: 2rem;
+    gap: 0;
+  }
+
   .business-performance-card .data {
     width: 100%;
     justify-content: flex-end;
@@ -4199,5 +4218,8 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.8rem;
+  }
+  .business-performance-card .jiwon .row-item {
+    gap: 0;
   }
 }
