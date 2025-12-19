@@ -2894,8 +2894,13 @@ label:has(>input[type=checkbox]:focus) {
     border-bottom: 1px solid #e5e7eb;
 }
 
+.news-item:first-child {
+    padding: 0 0 1rem 0;
+}
+
 .news-item:last-child {
     border-bottom: none;
+    padding: 1rem 0 0 0;
 }
 
 .news-item h3 {
