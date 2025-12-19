@@ -131,7 +131,7 @@
                             <div class="figma-step-container" data-current-step="1">
                                 <!-- 단계 탭 -->
                                 <div class="figma-step-tabs">
-                                    <a href="#" class="figma-step-tab active" data-step="1">1단계 무담보채무액</a>
+                                    <a href="#" class="figma-step-tab active" data-step="1" title="선택됨">1단계 무담보채무액</a>
                                     <a href="#" class="figma-step-tab" data-step="2" tabindex="0" role="button">2단계
                                         담보채무액</a>
                                     <a href="#" class="figma-step-tab" data-step="3" tabindex="0" role="button">3단계
@@ -456,7 +456,7 @@
 
                                     <!-- 버튼 영역 -->
                                     <div class="figma-buttons">
-                                        <button type="button" class="figma-btn secondary"
+                                        <button type="button" class="figma-btn secondary" style="display: none;"
                                             id="figma-prev-btn">이전</button>
                                         <button type="button" class="figma-btn primary" id="figma-next-btn">다음</button>
                                     </div>
@@ -1121,77 +1121,126 @@
     <!-- 채무조정찾기 스크립트 -->
     <script>
         $(function () {
-
-            // 새로운 피그마 스텝 기능
+            // 현재 스텝 변수
             let currentStep = 1;
 
-            // 초기 상태 설정
-            $('.figma-step-tab').removeClass('active');
-            $('.figma-step-tab[data-step="1"]').addClass('active');
-            $('.figma-step-item').removeClass('active');
-            $('.figma-step-item[data-step="1"]').addClass('active');
+            /**
+             * [핵심 통합 함수] 특정 단계로 이동하고 UI 및 포커스를 관리합니다.
+             * @param {number} step - 이동할 단계 (1~5)
+             * @param {boolean} focusOnInput - 인풋에 포커스를 줄지 여부 (기본값 true)
+             */
+            function goToStep(step, focusOnInput = true) {
+                if (step < 1 || step > 5) return;
+
+                currentStep = step;
+
+                // 1. 탭 활성화 상태 업데이트
+                $('.figma-step-tab').removeClass('active').attr('title', '');
+                $(`.figma-step-tab[data-step="${currentStep}"]`).addClass('active').attr('title', '현재 선택됨');
+
+                // 2. 컨텐츠 표시 업데이트
+                $('.figma-step-item').removeClass('active');
+                $(`.figma-step-item[data-step="${currentStep}"]`).addClass('active');
+
+                // 3. 컨테이너 상태 변경 (배경색 등)
+                $('.figma-step-container').attr('data-current-step', currentStep);
+
+                // 4. 버튼 상태 및 탭 중앙 정렬 실행
+                updateButtons();
+                centerActiveTab();
+
+                // 5. [웹접근성] 해당 단계의 첫 번째 입력 요소로 포커스 이동
+                if (focusOnInput) {
+                    setTimeout(() => {
+                        const $targetContent = $(`.figma-step-item[data-step="${currentStep}"]`);
+                        // 필터링: 숨겨지지 않고 비활성화되지 않은 첫 번째 입력 요소
+                        const $firstInput = $targetContent.find('input, select, textarea, button').not(':disabled').filter(':visible').first();
+                        if ($firstInput.length) {
+                            $firstInput.focus();
+                        }
+                    }, 100); 
+                }
+            }
+
+            /**
+             * 버튼 표시 및 텍스트 제어 함수
+             */
+            function updateButtons() {
+                // [수정] 1단계일 때만 이전 버튼을 숨김 (나머지 단계에선 표시)
+                if (currentStep === 1) {
+                    $('#figma-prev-btn').hide();
+                } else {
+                    $('#figma-prev-btn').show();
+                }
+
+                // 다음 버튼 텍스트 제어
+                if (currentStep === 5) {
+                    $('#figma-next-btn').text('간편진단 결과조회');
+                } else {
+                    $('#figma-next-btn').text('다음');
+                }
+            }
+
+            // --- 이벤트 바인딩 ---
+
+            // 다음 버튼 클릭
+            $('#figma-next-btn').off('click').on('click', function () {
+                if (currentStep < 5) {
+                    goToStep(currentStep + 1);
+                }
+            });
+
+            // 이전 버튼 클릭
+            $('#figma-prev-btn').off('click').on('click', function () {
+                if (currentStep > 1) {
+                    goToStep(currentStep - 1);
+                }
+            });
 
             // 탭 클릭 이벤트
             $('.figma-step-tab').on('click', function () {
                 const stepNumber = parseInt($(this).data('step'));
-
-                // 탭 활성화
-                $('.figma-step-tab').removeClass('active');
-                $(this).addClass('active');
-
-                // 컨텐츠 표시
-                $('.figma-step-item').removeClass('active');
-                $(`.figma-step-item[data-step="${stepNumber}"]`).addClass('active');
-
-                // 배경색 변경
-                $('.figma-step-container').attr('data-current-step', stepNumber);
-
-                currentStep = stepNumber;
-                updateButtons();
-                centerActiveTab();
+                goToStep(stepNumber);
             });
 
-            // "없음" 버튼 클릭 이벤트
+            // 탭 중앙 정렬 함수 (모바일)
+            function centerActiveTab() {
+                const $activeTab = $('.figma-step-tab.active');
+                const $container = $('.figma-step-tabs');
+                if ($activeTab.length === 0 || $container.length === 0) return;
+                if ($(window).width() > 768) return;
+
+                const containerWidth = $container.width();
+                const tabWidth = $activeTab.outerWidth();
+                const scrollLeft = $container.scrollLeft();
+                const relativeTabLeft = $activeTab.offset().left - $container.offset().left;
+                const targetScrollLeft = scrollLeft + relativeTabLeft - (containerWidth / 2) + (tabWidth / 2);
+
+                $container.stop().animate({ scrollLeft: targetScrollLeft }, 300);
+            }
+
+            // --- 입력 필드 관련 기능 (기존 로직 유지) ---
+
+            // "없음" 버튼 클릭
             $('.figma-chip-button[data-action="clear"]').on('click', function () {
-                const $wrapper = $(this).closest('.figma-input-wrapper');
-                const $inputField = $wrapper.find('.figma-input-field');
-
-                // 입력 필드를 0으로 설정
+                const $inputField = $(this).closest('.figma-input-wrapper').find('.figma-input-field');
                 $inputField.val('0');
-
-                // 버튼 상태 표시 (선택됨)
                 $(this).addClass('selected');
-
             });
 
-            // input 필드에 값이 입력되면 "없음" 버튼 비활성화 시각적 효과
-            $('.figma-input-field').on('input', function () {
-                const $wrapper = $(this).closest('.figma-input-wrapper');
-                const $clearButton = $wrapper.find('.figma-chip-button[data-action="clear"]');
-
-                if ($(this).val().replace(/,/g, '') !== '0' && $(this).val() !== '') {
-                    $clearButton.removeClass('selected');
-                }
-            });
-
-            // 입력 필드에 천단위 구분자 추가
+            // 천단위 구분자 및 0 처리
             $('.figma-input-field').on('input', function () {
                 let value = $(this).val().replace(/,/g, '');
                 if (!isNaN(value) && value !== '') {
                     $(this).val(Number(value).toLocaleString());
                 }
-            });
-
-            // 입력 필드 포커스 이벤트
-            $('.figma-input-field').on('focus', function () {
-                let value = $(this).val().replace(/,/g, '');
-                if (value === '0') {
-                    $(this).val('');
+                // "없음" 버튼 상태 해제
+                if (value !== '0' && value !== '') {
+                    $(this).closest('.figma-input-wrapper').find('.figma-chip-button[data-action="clear"]').removeClass('selected');
                 }
-            });
-
-            // 입력 필드 블러 이벤트
-            $('.figma-input-field').on('blur', function () {
+            }).on('focus', function () {
+                if ($(this).val().replace(/,/g, '') === '0') $(this).val('');
+            }).on('blur', function () {
                 let value = $(this).val().replace(/,/g, '');
                 if (value === '' || value === '0') {
                     $(this).val('0');
@@ -1200,103 +1249,10 @@
                 }
             });
 
-            // 버튼 이벤트
-            $('#figma-next-btn').on('click', function () {
-                if (currentStep < 5) {
-                    currentStep++;
-
-                    // 탭 활성화
-                    $('.figma-step-tab').removeClass('active');
-                    $(`.figma-step-tab[data-step="${currentStep}"]`).addClass('active');
-
-                    // 컨텐츠 표시
-                    $('.figma-step-item').removeClass('active');
-                    $(`.figma-step-item[data-step="${currentStep}"]`).addClass('active');
-
-                    // 배경색 변경
-                    $('.figma-step-container').attr('data-current-step', currentStep);
-
-                    updateButtons();
-                    centerActiveTab();
-                }
-            });
-
-            $('#figma-prev-btn').on('click', function () {
-                if (currentStep > 1) {
-                    currentStep--;
-
-                    // 탭 활성화
-                    $('.figma-step-tab').removeClass('active');
-                    $(`.figma-step-tab[data-step="${currentStep}"]`).addClass('active');
-
-                    // 컨텐츠 표시
-                    $('.figma-step-item').removeClass('active');
-                    $(`.figma-step-item[data-step="${currentStep}"]`).addClass('active');
-
-                    // 배경색 변경
-                    $('.figma-step-container').attr('data-current-step', currentStep);
-
-                    updateButtons();
-                    centerActiveTab();
-                }
-            });
-
-            function updateButtons() {
-                // 이전 버튼은 항상 표시 (피그마 디자인에 맞춰)
-                $('#figma-prev-btn').show();
-
-                // 다음 버튼
-                if (currentStep === 5) {
-                    $('#figma-next-btn').text('간편진단 결과조회');
-                } else {
-                    $('#figma-next-btn').text('다음');
-                }
-            }
-
-            function centerActiveTab() {
-                const $activeTab = $('.figma-step-tab.active');
-                const $container = $('.figma-step-tabs');
-
-                if ($activeTab.length === 0 || $container.length === 0) return;
-
-                // 모바일에서만 동작
-                if ($(window).width() > 768) return;
-
-                const containerWidth = $container.width();
-                const tabWidth = $activeTab.outerWidth();
-                const scrollLeft = $container.scrollLeft();
-
-                // 탭의 상대 위치 계산
-                const tabOffsetLeft = $activeTab.offset().left;
-                const containerOffsetLeft = $container.offset().left;
-                const relativeTabLeft = tabOffsetLeft - containerOffsetLeft;
-
-                // 중앙 정렬을 위한 스크롤 위치 계산
-                const targetScrollLeft = scrollLeft + relativeTabLeft - (containerWidth / 2) + (tabWidth / 2);
-
-                $container.stop().animate({ scrollLeft: targetScrollLeft }, 300);
-            }
-
-            // 초기 버튼 상태 설정
-            updateButtons();
+            // 초기 실행: 1단계 설정 (포커스는 사용자 시작을 위해 false로 설정 가능)
+            goToStep(1, false);
         });
 
-        function prevStep1() {
-            // 이전 단계로 이동
-            $(".card-step").removeClass("active").eq(0).addClass("active");
-        }
-        function prevStep2() {
-            // 이전 단계로 이동
-            $(".card-step").removeClass("active").eq(1).addClass("active");
-        }
-        function nextStep1() {
-            // 다음 단계로 이동
-            $(".card-step").removeClass("active").eq(1).addClass("active");
-        }
-        function nextStep2() {
-            // 다음 단계로 이동
-            $(".card-step").removeClass("active").eq(2).addClass("active");
-        }
 
         // 숫자 입력 필드에 천단위 구분자 추가
         document.querySelectorAll('.input-field').forEach(input => {
