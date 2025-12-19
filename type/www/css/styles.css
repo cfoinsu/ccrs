@@ -3302,9 +3302,14 @@ label:has(>input[type=checkbox]:focus) {
         visibility: hidden;
         opacity: 0; */
         max-height: 80vh;
-        overflow-y: visible;
+        overflow-y: auto;
         transition: transform 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
         z-index: 1001;
+    }
+    @supports (-webkit-touch-callout: none) {
+        .quick-menu {
+            overflow-y: visible;
+        }
     }
 
     .quick-menu.active {
@@ -4190,7 +4195,8 @@ table.comparison-table td:first-child {
 .keywords-img {
     width: 7.2rem;
     height: 7.2rem;
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
+    flex-shrink: 0;
     border-radius: var(--krds-radius-xlarge3);
     background-color: var(--krds-light-color-surface-gray-subtler);
     display: flex;
