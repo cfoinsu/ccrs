@@ -160,9 +160,9 @@
                                                 </div>
                                                 <div class="figma-input-wrapper">
                                                     <div class="figma-input-box">
-                                                        <span class="figma-input-label">신용대출 총액</span>
+                                                        <label class="figma-input-label" for="simple01">신용대출 총액</label>
                                                         <input type="text" class="figma-input-field" value="2,000"
-                                                            placeholder="0">
+                                                            placeholder="0" id="simple01">
                                                         <span class="figma-input-unit">만원</span>
                                                     </div>
                                                 </div>
@@ -216,9 +216,9 @@
                                                 </div>
                                                 <div class="figma-input-wrapper">
                                                     <div class="figma-input-box">
-                                                        <span class="figma-input-label">담보대출 잔액</span>
+                                                        <label class="figma-input-label" for="simple02">담보대출 잔액</label>
                                                         <input type="text" class="figma-input-field" value=""
-                                                            placeholder="0">
+                                                            placeholder="0" id="simple02">
                                                         <span class="figma-input-unit">만원</span>
                                                     </div>
                                                     <button type="button" class="figma-chip-button"
@@ -239,9 +239,9 @@
                                                 </div>
                                                 <div class="figma-input-wrapper">
                                                     <div class="figma-input-box">
-                                                        <span class="figma-input-label">임차보증금 대출</span>
+                                                        <label class="figma-input-label" for="simple03">임차보증금 대출</label>
                                                         <input type="text" class="figma-input-field" value=""
-                                                            placeholder="0">
+                                                            placeholder="0" id="simple03">
                                                         <span class="figma-input-unit">만원</span>
                                                     </div>
                                                     <button type="button" class="figma-chip-button"
@@ -262,9 +262,9 @@
                                                 </div>
                                                 <div class="figma-input-wrapper">
                                                     <div class="figma-input-box">
-                                                        <span class="figma-input-label">자동차 담보대출</span>
+                                                        <label class="figma-input-label" for="simple04">자동차 담보대출</label>
                                                         <input type="text" class="figma-input-field" value=""
-                                                            placeholder="0">
+                                                            placeholder="0" id="simple04">
                                                         <span class="figma-input-unit">만원</span>
                                                     </div>
                                                     <button type="button" class="figma-chip-button"
@@ -290,9 +290,9 @@
                                                 </div>
                                                 <div class="figma-input-wrapper">
                                                     <div class="figma-input-box">
-                                                        <span class="figma-input-label">부동산 시세</span>
+                                                        <label class="figma-input-label" for="simple05">부동산 시세</label>
                                                         <input type="text" class="figma-input-field" value=""
-                                                            placeholder="0">
+                                                            placeholder="0" id="simple05">
                                                         <span class="figma-input-unit">만원</span>
                                                     </div>
                                                     <button type="button" class="figma-chip-button"
@@ -313,9 +313,9 @@
                                                 </div>
                                                 <div class="figma-input-wrapper">
                                                     <div class="figma-input-box">
-                                                        <span class="figma-input-label">임차보증금</span>
+                                                        <label class="figma-input-label" for="simple06">임차보증금</label>
                                                         <input type="text" class="figma-input-field" value=""
-                                                            placeholder="0">
+                                                            placeholder="0" id="simple06">
                                                         <span class="figma-input-unit">만원</span>
                                                     </div>
                                                     <button type="button" class="figma-chip-button"
@@ -336,9 +336,9 @@
                                                 </div>
                                                 <div class="figma-input-wrapper">
                                                     <div class="figma-input-box">
-                                                        <span class="figma-input-label">자동차 시세</span>
+                                                        <label class="figma-input-label" for="simple07">자동차 시세</label>
                                                         <input type="text" class="figma-input-field" value=""
-                                                            placeholder="0">
+                                                            placeholder="0" id="simple07">
                                                         <span class="figma-input-unit">만원</span>
                                                     </div>
                                                     <button type="button" class="figma-chip-button"
@@ -364,9 +364,9 @@
                                                 </div>
                                                 <div class="figma-input-wrapper">
                                                     <div class="figma-input-box">
-                                                        <span class="figma-input-label">월소득</span>
+                                                        <label class="figma-input-label" for="simple08">월소득</label>
                                                         <input type="text" class="figma-input-field" value=""
-                                                            placeholder="0">
+                                                            placeholder="0" id="simple08">
                                                         <span class="figma-input-unit">만원</span>
                                                     </div>
                                                     <button type="button" class="figma-chip-button"
@@ -387,9 +387,9 @@
                                                 </div>
                                                 <div class="figma-input-wrapper">
                                                     <div class="figma-input-box">
-                                                        <span class="figma-input-label">제 3자 소득제공액</span>
+                                                        <label class="figma-input-label" for="simple09">제 3자 소득제공액</label>
                                                         <input type="text" class="figma-input-field" value=""
-                                                            placeholder="0">
+                                                            placeholder="0" id="simple09">
                                                         <span class="figma-input-unit">만원</span>
                                                     </div>
                                                     <button type="button" class="figma-chip-button"
@@ -1228,7 +1228,7 @@
             $('.figma-chip-button[data-action="clear"]').on('click', function () {
                 const $inputField = $(this).closest('.figma-input-wrapper').find('.figma-input-field');
                 $inputField.val('0');
-                $(this).addClass('selected');
+                $(this).addClass('selected').attr('title', '선택됨');
             });
 
             // 천단위 구분자 및 0 처리
@@ -1239,7 +1239,7 @@
                 }
                 // "없음" 버튼 상태 해제
                 if (value !== '0' && value !== '') {
-                    $(this).closest('.figma-input-wrapper').find('.figma-chip-button[data-action="clear"]').removeClass('selected');
+                    $(this).closest('.figma-input-wrapper').find('.figma-chip-button[data-action="clear"]').removeClass('selected').attr('title', '');
                 }
             }).on('focus', function () {
                 if ($(this).val().replace(/,/g, '') === '0') $(this).val('');
