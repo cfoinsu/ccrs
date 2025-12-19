@@ -1390,6 +1390,9 @@ section {
   margin: 0 auto;
   padding: 0 0 10rem;
 }
+#section4 .card-scroll {
+  padding: 0;
+}
 .card-scroll .title-box {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -3658,7 +3661,7 @@ body:has(.intro.show) {
   z-index: 1; 
 }
 @media (max-width: 767px) {
-  .card-scroll {
+  .card-scroll, #section4 .card-scroll {
     padding-bottom: 8rem;
   }
 }
@@ -3705,7 +3708,7 @@ body:has(.intro.show) {
 @media (max-width: 1400px) {
   #section4 .news-grid .news-right .press-content {height: 10rem;}
   #section4 .news-grid .news-right .press-content p {-webkit-line-clamp: 2;}
-  #section4 .news-grid .news-right span {padding: 0 3.2rem 2rem;}
+  #section4 .news-grid .news-right span {padding: 0 2.4rem 2rem;}
 }
 
 @media (max-width: 767px)  {
