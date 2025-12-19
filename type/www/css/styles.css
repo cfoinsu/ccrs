@@ -2473,6 +2473,7 @@ label:has(>input[type=checkbox]:focus) {
 }
 
 .quick-item .quick-showbox .showbox-item {
+    position: relative;
     display: flex;
     gap: 10px;
     align-items: flex-start;
@@ -2508,10 +2509,6 @@ label:has(>input[type=checkbox]:focus) {
     display: block;
     font-size: 2.1rem;
 }
-.quick-item .quick-showbox .showbox-item p.link-title>a {
-    display: block;
-    color: var(--krds-color-light-primary-50);
-}
 
 .quick-item .quick-showbox .showbox-item p.link-title .board-ph {
     display: block;
@@ -2522,8 +2519,20 @@ label:has(>input[type=checkbox]:focus) {
 .quick-item.book.on span {
     color: var(--krds-color-light-primary-50);
 }
+.quick-item.book .quick-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.1rem 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333;
+    min-width: 8rem;
+}
 
-.quick-item.book::before {
+.quick-item.book .quick-toggle::before {
     content: '';
     display: block;
     background: url(../images/ic/quickmenu/icon_book.png) center no-repeat;
@@ -2532,8 +2541,7 @@ label:has(>input[type=checkbox]:focus) {
     flex-shrink: 0;
 }
 
-
-.quick-item.book.on::before {
+.quick-item.book.on .quick-toggle::before {
     content: '';
     display: block;
     background: url(../images/ic/quickmenu/icon_book_on.png) center no-repeat;
@@ -9277,7 +9285,7 @@ a.customer-service-card {
 
 .krds-modal .modal-dialog .modal-btn {justify-content: center !important;}
 
-.link-title .g-info-box__link, .g-info-box .g-info-box__link {position: absolute; width: 100%; height: 100%; top: 0; left: 0; bottom:0; right: 0; z-index: 1; display: none;}
+.showbox-item .g-info-box__link, .g-info-box .g-info-box__link {position: absolute; width: 100%; height: 100%; top: 0; left: 0; bottom:0; right: 0; z-index: 1; display: none;}
 .g-info-box .g-info-box__link--type2 {position: absolute; width: 100%; height: 100%; top: 0; left: 0; bottom:0; right: 0; z-index: 1;}
 
 .card-actions .btn-action.applink,
@@ -9340,6 +9348,7 @@ a.customer-service-card {
 
     .item-share.item-share-wrap {display: none;}
 
+    .showbox-item .g-info-box__link,
     .g-info-box .g-info-box__link,
     .g-grid-wrap .g-img__link-mo {display: block;}
     .card-actions .btn-action.appdown,

@@ -276,22 +276,45 @@ $(document).ready(function () {
     });
 
     // 1) 마우스 클릭
-    $('.quick-item.book').on('click', function () {
-        $(this).toggleClass('on');
-        if ($(this).hasClass('on')) {
+    const $quickItem = $('.quick-item.book');
+    const $toggleBtn = $quickItem.find('.quick-toggle');
+    const $showBox = $quickItem.find('.quick-showbox');
+
+    // 토글 버튼 클릭 이벤트
+    $toggleBtn.on('click', function () {
+        const isOpen = $quickItem.hasClass('on');
+
+        if (!isOpen) {
+            // [열기]
+            $quickItem.addClass('on');
+            $showBox.stop().fadeIn(200); // 시각적 효과
+            $(this).attr('aria-expanded', 'true');
             $(this).attr('title', '상담 예약신청 닫기');
+            
+            // 접근성 팁: 열리자마자 첫 번째 링크로 포커스 이동 (선택 사항)
+            $showBox.find('a').first().focus();
         } else {
+            // [닫기]
+            $quickItem.removeClass('on');
+            $showBox.stop().fadeOut(200);
+            $(this).attr('aria-expanded', 'false');
             $(this).attr('title', '상담 예약신청 열기');
         }
     });
 
-    // 2) 키보드 Enter / Space
-    $('.quick-item.book').on('keydown', function (e) {
-    // Enter(13) 또는 Space(32)
-    if (e.key === 'Enter' || e.key === ' ' || e.keyCode === 13 || e.keyCode === 32) {
-        e.preventDefault();          // Space 눌렀을 때 스크롤 방지
-        $(this).click();             // 기존 click 핸들러 재사용
-    }
+    // ESC 키를 눌렀을 때 메뉴 닫기 (접근성 향상)
+    $(document).on('keydown', function (e) {
+        if (e.key === 'Escape' && $quickItem.hasClass('on')) {
+            $toggleBtn.click();
+            $toggleBtn.focus(); // 버튼으로 다시 포커스 복귀
+        }
+    });
+
+    // 메뉴 밖을 클릭하면 닫기
+    $(document).on('click', function (e) {
+        if (!$(e.target).closest('.quick-item.book').length && $quickItem.hasClass('on')) {
+            $toggleBtn.click();
+        }
     });
 });
 $(document).ready(function() {

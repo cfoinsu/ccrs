@@ -1,24 +1,27 @@
 <div class="quickmenu-container">
 
 	<div class="quick-menu" role="navigation" aria-label="퀵메뉴">
-		<div class="quick-item book" title="상담 예약신청 열기" tabindex="0" role="button">
-			<span>상담<br>예약신청</span>
-			<div class="quick-showbox">
-				<a href="https://cyber.ccrs.or.kr/reservation/apply/guide.do" target="_blank" title="새창열림" class="showbox-item showbox-arrow" aria-label="방문상담 예약 - 새창 열림">
-					<img src="/type/www/images/ic/quickmenu/icon_book_show1.svg?ver=5.9" alt="방문상담 예약 아이콘" aria-hidden="true">
-					<p class="link-title">방문상담 예약</p>
+		<div class="quick-item book">
+			<button type="button" class="quick-toggle" aria-expanded="false" aria-controls="quick-menu-box" title="상담 예약신청 열기">
+				<span>상담<br>예약신청</span>
+			</button>
+
+			<div id="quick-menu-box" class="quick-showbox" style="display: none;">
+				<a href="https://cyber.ccrs.or.kr/reservation/apply/guide.do" target="_blank" class="showbox-item showbox-arrow" title="새창열림">
+					<img src="/type/www/images/ic/quickmenu/icon_book_show1.svg?ver=5.9" alt="" aria-hidden="true">
+					<p class="link-title">방문상담 예약 <span class="blind">(새창 열림)</span></p>
 				</a>
-				<a href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_blank" title="새창열림" class="showbox-item showbox-arrow" aria-label="인터넷상담 예약 - 새창 열림">
-					<img src="/type/www/images/ic/quickmenu/icon_book_show2.svg?ver=5.9" alt="인터넷상담 예약 아이콘" aria-hidden="true">
-					<p class="link-title">인터넷상담 예약</p>
+				<a href="https://cyber.ccrs.or.kr/debt/apply/guide.do" target="_blank" class="showbox-item showbox-arrow" title="새창열림">
+					<img src="/type/www/images/ic/quickmenu/icon_book_show2.svg?ver=5.9" alt="" aria-hidden="true">
+					<p class="link-title">인터넷상담 예약 <span class="blind">(새창 열림)</span></p>
 				</a>
-				<div class="showbox-item" aria-label="전화상담 예약 1600-5500">
-					<img src="/type/www/images/ic/quickmenu/icon_book_show3.svg?ver=5.9" alt="전화상담 예약 아이콘" aria-hidden="true">
+				<div class="showbox-item">
+					<img src="/type/www/images/ic/quickmenu/icon_book_show3.svg?ver=5.9" alt="" aria-hidden="true">
 					<p class="link-title">
-						<a href="tel:16005500" class="g-info-box__link"></a>
-						<span>1600-5500</span>
+						<span class="primary">1600-5500</span>
 						<span class="board-ph">+82-2-6337-2000(해외)</span>
 					</p>
+					<a href="tel:16005500" class="g-info-box__link"></a>
 				</div>
 			</div>
 		</div>
