@@ -3604,10 +3604,10 @@ body:has(.intro.show) {
 }
 #section4 .news-grid .news-right .press-content {
   background-color: transparent;
-  padding: 2rem 2.4rem 1rem;
+  padding: 1.6rem 2.4rem 1rem;
   font-size: 1.7rem;
   font-weight: 700;
-  height: calc(100% - (19rem + 4rem));
+  height: calc(100% - (19rem + 4.5rem));
 }
 #section4 .news-grid .news-right .press-content p {
   display: -webkit-box;
