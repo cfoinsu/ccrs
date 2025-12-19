@@ -2605,7 +2605,9 @@ dd .add_openNoti {width:100%;margin-left:0px;}
 .pop_wrap {position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;/*background:rgba(0,0,0,0.7);*/z-index:1500} /*iframe에서 반투명 bg사용, 팝업 bg 제거*/
 .pop_wrap #pop_pwCheck,
 .popLayer #pop_pwCheck {width:440px;overflow:hidden}
-
+.board-detail #contents p:has(>img) {
+    text-align: center;
+}
 @media all and (max-width:768px){
     #pop_pwCheck {width:80%;}
     
