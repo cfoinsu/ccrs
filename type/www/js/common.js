@@ -15,6 +15,9 @@ $(function() {
 
     // Initialize institution carousel
     initInstitutionCarousel();
+
+    // [실행 1] DOM 로드 직후 즉시 selected 선택됨 실행
+    appendSelectedText();
 });
 
 /**
@@ -356,3 +359,17 @@ $(function() {
     $('html, body').animate({scrollTop: 0}, 500);
   });
 });
+function appendSelectedText() {
+  // 1. 초기화: 기존에 생성된 모든 '선택됨' 아이콘 제거 (상태 변경 대응)
+  $('ul[role="tablist"] li [role="tab"] .sr-only.created, ul[role="tablist"] li .sr-only.created, ul[role="tablist"] li .sr-only').remove();
+
+  // 2. active 클래스가 있는 li 내부의 button 또는 a 태그 탐색
+  $('ul[role="tablist"] li.active').each(function () {
+      const $target = $(this).find('button, a');
+
+      // 3. 중복 추가 방지 및 텍스트 삽입
+      if ($target.length > 0 && $target.find('.sr-only.created').length === 0) {
+          $target.append('<i class="sr-only created">선택됨</i>');
+      }
+  });
+}

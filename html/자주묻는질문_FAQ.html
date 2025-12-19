@@ -146,7 +146,7 @@
                                 <div class="tab-list-top">
 
                                     <div class="tab fill middle wrap">
-                                        <ul role="tablist">
+                                        <ul role="tablist" class="faq">
                                             <li id="stab01" role="tab" aria-selected="true"
                                                 aria-controls="stabpanel01" class="active" data-listener-attached="true">
                                                 <button type="button" class="btn-tab">전체<i class="sr-only created">선택됨</i></button>
@@ -372,6 +372,41 @@
     <script src="/type/www/js/script.js"></script> 
     공통 header 분리하기 위해 init.js 임시 추가  -->
 	<script src="includes/init.js?ver=5.9"></script>
+    <script>
+        $(function () {
+            const $tabList = $('ul.faq[role="tablist"]');
+            const $tabs = $tabList.find('li[role="tab"]');
+            const $tabButtons = $tabs.find('.btn-tab');
+
+            // 탭 클릭 이벤트
+            $tabButtons.on('click', function (e) {
+                e.preventDefault();
+                const $parentLi = $(this).parent();
+                activateTab($parentLi);
+            });
+
+            /**
+             * 탭 활성화 핵심 함수
+             * @param {jQuery} $targetLi - 활성화할 li[role="tab"] 요소
+             */
+            function activateTab($targetLi) {
+                if ($targetLi.hasClass('active')) return;
+
+                // 1. 모든 탭 상태 초기화
+                $tabs.removeClass('active').attr('aria-selected', 'false');
+                $tabs.find('.sr-only.created').remove(); // 기존 '선택됨' 텍스트 제거
+
+                // 2. 선택된 탭 활성화
+                $targetLi.addClass('active').attr('aria-selected', 'true');
+                $targetLi.find('.btn-tab').append('<i class="sr-only created">선택됨</i>');
+
+                // 3. 탭 패널 제어 (aria-controls 기반)
+                const targetPanelId = $targetLi.attr('aria-controls');
+                $('[role="tabpanel"]').attr('hidden', true); // 모두 숨김
+                $('#' + targetPanelId).removeAttr('hidden'); // 해당 패널 노출
+            }
+        });
+    </script>
 </body>
 
 </html>
