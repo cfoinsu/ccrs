@@ -11435,7 +11435,7 @@ textarea.krds-input {
   --krds-form-select--size-height-medium: var(--krds-size-height-7);
   --krds-form-select--icon-size-medium: var(--krds-icon--size-medium);
   --krds-form-select--padding-right-medium: calc(var(--krds-form-select--padding-default) + var(--krds-gap-3) + var(--krds-form-select--icon-size-medium));
-  --krds-form-select--radius-medium: var(--krds-radius-medium2);
+  --krds-form-select--radius-medium: var(--krds-radius-medium3);
   --krds-form-select--pc-font-size-medium: var(--krds-pc-font-size-label-medium);
   --krds-form-select--mobile-font-size-medium: var(--krds-mobile-font-size-label-medium);
   --krds-form-select--size-height-large: var(--krds-size-height-8);
