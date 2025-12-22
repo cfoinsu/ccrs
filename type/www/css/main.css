@@ -1969,11 +1969,16 @@ section {
   font-size: 1.8rem;
   font-weight: 500;
   padding: 1.9rem 3rem 1.9rem 1.4rem;
-  background: var(--krds-light-color-text-inverse-static) url(../images/main/link_btn_m.svg) center right 24px no-repeat;
-  background-size: 1.7rem 1.4rem;
+  background: var(--krds-light-color-text-inverse-static) url(/type/www/images/ic/arr_circle_orange_right.svg) center right 24px no-repeat;
+  background-size: 25px 25px;
   border-radius: 1000px;
   line-height: 1;
   height: 5.6rem;
+}
+.intro .intro-linkbox .box1 .boxlinkbottom .arrowlink-w:focus,
+.intro .intro-linkbox .box1 .boxlinkbottom .arrowlink-w:hover {
+  background: var(--krds-light-color-text-inverse-static) url(/type/www/images/ic/arr_circle_blue_right.svg) center right 24px no-repeat;
+  background-size: 25px 25px;
 }
 @media (max-width: 1400px) {
   .intro .intro-linkbox .box1 .boxlinkbottom .arrowlink-w {
@@ -2170,12 +2175,17 @@ section {
 }
 .intro .intro-linkbox .usefullinkbox .arrowlink-s {
   font-size: 1.9rem;
-  padding: 0 2.3rem 0 0;
-  background: transparent url(../images/main/link_btn_s.svg) center right no-repeat;
-  background-size: 1.7rem 1.2rem;
+  padding: 0 3.3rem 0 0;
+  background: transparent url(/type/www/images/ic/arr_circle_orange_right.svg) center right no-repeat;
+  background-size: 25px 25px;
   line-height: 1;
   height: 2.9rem;
   line-height: 29px;
+}
+.intro .intro-linkbox .usefullinkbox .arrowlink-s:focus,
+.intro .intro-linkbox .usefullinkbox .arrowlink-s:hover {
+  background: transparent url(/type/www/images/ic/arr_circle_blue_right.svg) center right no-repeat;
+  background-size: 25px 25px;
 }
 .intro .intro-linkbox .boxRcol {
   width: 76rem;
