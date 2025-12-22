@@ -907,9 +907,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid var(--main-color1, #F48F01);
-  border-radius: 0.4rem;
+  align-items: center;
+  border: 1px solid #ed7801;
+  border-radius: 60px;
   overflow: hidden;
+  padding: 0 .5rem 0 0;
 }
 .en .header-mobile .mobile-search-panel .mobile-search-form .search-input {
   -webkit-box-flex: 1;
@@ -918,6 +920,7 @@
   padding: 1.2rem 1.6rem;
   border: none;
   font-size: 1.6rem;
+  width: calc(100% - (4rem + .5rem));
 }
 .en .header-mobile .mobile-search-panel .mobile-search-form .search-input::-webkit-input-placeholder {
   color: var(--krds-color-light-gray-40);
@@ -935,8 +938,9 @@
   color: var(--krds-color-light-gray-40);
 }
 .en .header-mobile .mobile-search-panel .mobile-search-form .search-submit {
-  width: 4.8rem;
-  background: var(--main-color1, #F48F01);
+  width: 4rem;
+  height: 4rem;
+  background: #ec6f01;
   border: none;
   cursor: pointer;
   display: -webkit-box;
@@ -948,6 +952,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 50%;
 }
 .en .header-mobile .mobile-search-panel .mobile-search-form .search-submit img {
   width: 2rem;
@@ -1099,17 +1104,24 @@
   margin-bottom: 4rem;
 }
 .search-menu #searchText {
-  width: calc(100% - 5.2rem);
-  height: 4.4rem;
+  width: 100%;
+  height: 6.4rem;
   padding: 0 0.8rem;
-  border: 2px solid var(--text-color1);
-  border-radius: 0.3rem;
+  border: 1px solid #ed7801;
+  border-radius: 6rem;
 }
 .search-menu .btn-search-header {
-  height: 4.4rem;
-  width: 4.4rem;
+  height: 4.8rem;
+  width: 4.8rem;
+  /* background: url(../images/ic/pop-search.png) no-repeat; */
   margin-left: 0.4rem;
-  background: url(../images/ic/pop-search.png) no-repeat;
+  background: #ec6f01 url(../images/main/icon_search.svg) center no-repeat;
+  background-size: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%)
 }
 .search-menu .result-area {
   max-height: 60vh;
@@ -1738,5 +1750,8 @@
   .en #header .gnb-wrap > nav .gnb > li .depth2 {
     height: 37.5rem;
   }
+}
+@media (max-width: 767px) {
+  .en .header-mobile .mobile-search-panel .mobile-search-form .search-submit {padding: 0;}
 }
 /*# sourceMappingURL=layout_en_override.css.map */
