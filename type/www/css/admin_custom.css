@@ -308,3 +308,13 @@ body {
 .reN_cms footer>address::before {
     display: none;
 }
+
+.reN_cms fieldset.search_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reN_optTb .date-picker-control:link,
+.reN_optTb .date-picker-control:visited {
+    margin: 0 0 0 -25px;
+}
