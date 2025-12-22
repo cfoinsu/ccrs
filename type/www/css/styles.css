@@ -8702,7 +8702,8 @@ table .table-center {
 }
 
 .loan-total-box .price-num {
-    color: #FFEE71;
+    /* color: #FFEE71; */
+    color: #fff;
     font-size: 1.7rem;
     font-weight: 700;
 }
