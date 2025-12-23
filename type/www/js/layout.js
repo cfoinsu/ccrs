@@ -136,7 +136,7 @@ function trapFocusAllmenu(e) {
     document.body.style.overflow = 'hidden';
     
     // 포커스를 검색 입력창으로 이동
-    const searchInput = document.getElementById('searchText');
+    const searchInput = document.getElementById('searchTextSide');
     if (searchInput) {
         setTimeout(() => searchInput.focus(), 100);
     }
