@@ -1040,7 +1040,7 @@
     margin-bottom: 4rem;
 }
 
-.search-menu #searchText {
+.search-menu #searchTextSide {
     width: calc(100% - 52px);
     height: 44px;
     padding: 0 8px;
