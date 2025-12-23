@@ -3182,10 +3182,12 @@ label:has(>input[type=checkbox]:focus) {
     min-width: 8rem;
 }
 
-.quick-item:hover {
+.quick-item:not(.book):hover {
     background: #f5f5f5;
 }
-
+.quick-item .quick-toggle:hover {
+    background: #f5f5f5;
+}
 .quick-item svg {
     margin-bottom: 0.8rem;
 }
