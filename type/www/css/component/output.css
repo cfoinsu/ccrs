@@ -1178,8 +1178,8 @@ body {
 *:focus {
   outline: 3px dashed #AB0000 !important;
   box-sizing: border-box;
-  outline-offset: -3px;
-  box-shadow: var(--krds-box-shadow-outline) !important;
+  outline-offset: 3px;
+  /* box-shadow: var(--krds-box-shadow-outline) !important; */
   /* border: 3px dashed #AB0000 !important; */
   transition: outline 0s, box-shadow 0s !important;
 }
