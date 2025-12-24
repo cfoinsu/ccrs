@@ -2177,10 +2177,10 @@ section {
   font-size: 1.9rem;
   padding: 0 3.3rem 0 0;
   background: transparent url(/type/www/images/ic/arr_circle_orange_right.svg) center right no-repeat;
-  background-size: 25px 25px;
+  background-size: 2.5rem 2.5rem;
   line-height: 1;
   height: 2.9rem;
-  line-height: 29px;
+  line-height: 24px;
 }
 .intro .intro-linkbox .usefullinkbox .arrowlink-s:focus,
 .intro .intro-linkbox .usefullinkbox .arrowlink-s:hover {
