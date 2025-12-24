@@ -4002,6 +4002,12 @@ table.comparison-table th:first-child,
 table.comparison-table td:first-child {
     border-left: none;
 }
+@media (max-width: 767px) {
+    table.comparison-table {
+        width: auto;
+    }
+}
+
 
 .comparison-table .product-box {
     display: flex;
