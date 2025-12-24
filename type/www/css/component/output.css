@@ -1175,8 +1175,8 @@ body {
   }
 }
 
-*:focus {
-  outline: 3px dashed var(--krds-color-light-secondary-80) !important;
+*:focus-visible {
+  outline: 1px dashed var(--krds-color-light-primary-30) !important;
   box-sizing: border-box;
   outline-offset: -3px;
   /* box-shadow: var(--krds-box-shadow-outline) !important; */
