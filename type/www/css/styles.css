@@ -9432,7 +9432,7 @@ a.customer-service-card {
 
     .picker_txt {width: 16px;}
     .search-top-box .sch-filter-box .filter-form.row .period .optSetDate > .krds-input {width: calc(50% - 8px);}
-    .date-picker-control:link, .date-picker-control:visited {margin: 3px 7px 0 -25px !important;}
+    .date-picker-control:link, .date-picker-control:visited {margin: 4px 7px 0 -25px !important;}
 
     .process-list {flex-direction: column; gap: 50px 0;}
     .process-list .process-list-item {width: 100%;}
