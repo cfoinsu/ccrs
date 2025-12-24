@@ -1968,8 +1968,8 @@ section {
 .intro .intro-linkbox .box1 .boxlinkbottom .arrowlink-w {
   font-size: 1.8rem;
   font-weight: 500;
-  padding: 1.9rem 3rem 1.9rem 1.4rem;
-  background: var(--krds-light-color-text-inverse-static) url(/type/www/images/ic/arr_circle_orange_right.svg) center right 24px no-repeat;
+  padding: 1.9rem 3rem 1.9rem 1.8rem;
+  background: var(--krds-light-color-text-inverse-static) url(/type/www/images/ic/arr_circle_orange_right.svg) center right 12px no-repeat;
   background-size: 25px 25px;
   border-radius: 1000px;
   line-height: 1;
@@ -1977,7 +1977,7 @@ section {
 }
 .intro .intro-linkbox .box1 .boxlinkbottom .arrowlink-w:focus,
 .intro .intro-linkbox .box1 .boxlinkbottom .arrowlink-w:hover {
-  background: var(--krds-light-color-text-inverse-static) url(/type/www/images/ic/arr_circle_blue_right.svg) center right 24px no-repeat;
+  background: var(--krds-light-color-text-inverse-static) url(/type/www/images/ic/arr_circle_blue_right.svg) center right 20px no-repeat;
   background-size: 25px 25px;
 }
 @media (max-width: 1400px) {
