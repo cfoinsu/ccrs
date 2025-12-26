@@ -5208,11 +5208,25 @@ table .krds-info-list>li {
 
 .logo-img-box .logo-info {
     display: flex;
-    padding: 0 3.2rem;
+    padding: 0 4rem;
     flex-direction: column;
     justify-content: center;
-    gap: 26px;
+    gap: 16px;
     flex: 1 0 0;
+    margin-top: -1.4rem;
+}
+
+@media (max-width: 767px) {
+    .g-wrap .g-info-box.logo-img-box {
+        flex-direction: column;
+        gap: 4.2rem;
+    }
+    .g-wrap .g-info-box.logo-img-box svg {
+        display: none;
+    }
+    .logo-img-box .logo-info {
+        margin-top: -1.2rem;
+    }
 }
 
 /* 연도 탭 섹션 */
@@ -9813,7 +9827,7 @@ a.customer-service-card {
 
     .map-content .content-area .g-imag {
         height: auto !important;
-        flex : 1;
+        flex: 1;
         min-height: 0;
     }
 
@@ -9960,7 +9974,8 @@ a.customer-service-card {
         max-width: 500px;
     }
 
-    table.comparison-table th, table.comparison-table td {
+    table.comparison-table th,
+    table.comparison-table td {
         padding: 1.2rem;
     }
 }
