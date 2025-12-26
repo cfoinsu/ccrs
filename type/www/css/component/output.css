@@ -1182,7 +1182,7 @@ body {
   /* box-shadow: var(--krds-box-shadow-outline) !important; */
   /* border: 3px dashed #AB0000 !important; */
   transition: outline 0s, box-shadow 0s !important;
-  overflow: visible !important;
+  /* overflow: visible !important; */
 }
 
 ::-moz-selection {
