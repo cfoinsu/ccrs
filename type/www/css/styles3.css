@@ -4219,9 +4219,19 @@
     align-items: flex-start;
     gap: 0.8rem;
   }
+
   .business-performance-card .jiwon .row-item {
     gap: 0;
   }
 }
 
-.financial-support-arrow.financial-support-arrow-4 {margin: 0; max-width: initial; width: 100%;}
+.financial-support-arrow.financial-support-arrow-4 {
+  margin: 0;
+  max-width: initial;
+  width: 100%;
+}
+
+/*#book 스크롤 보정*/
+.g-conts-area#book {
+  scroll-margin-top: 12rem;
+}
