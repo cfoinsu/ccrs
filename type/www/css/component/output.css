@@ -1706,6 +1706,13 @@ caption {
   height: var(--krds-icon--size-large);
 }
 
+@media (max-width: 767px) {
+  .krds-btn.large .svg-icon {
+    width: var(--krds-icon--size-medium);
+    height: var(--krds-icon--size-medium);
+  }
+}
+
 .krds-btn.xlarge {
   gap: var(--krds-button--gap-xlarge);
   height: var(--krds-button--size-height-xlarge);
