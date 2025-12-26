@@ -3985,7 +3985,7 @@ span.sub4InputLabel {
 }
 
 table.comparison-table {
-    width: 100%;
+    width: auto;
     border-collapse: collapse;
     border-top: 1px solid var(--krds-color-light-gray-100);
 }
@@ -4002,6 +4002,7 @@ table.comparison-table td {
     text-align: left;
     font-size: 1.7rem;
     text-align: center;
+    min-width: 120px;
 }
 
 table.comparison-table th {
@@ -4009,6 +4010,7 @@ table.comparison-table th {
     background-color: #eee;
     width: 20rem;
     text-align: center;
+    min-width: 75px;
 }
 
 table.comparison-table th:first-child,
@@ -9939,6 +9941,9 @@ a.customer-service-card {
         max-width: 500px;
     }
 
+    table.comparison-table th, table.comparison-table td {
+        padding: 1.2rem;
+    }
 }
 
 @media (max-width: 360px) {
