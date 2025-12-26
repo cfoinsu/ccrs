@@ -8028,7 +8028,7 @@ table .table-center {
 
     .exclamation.ptext {
         font-size: 1.7rem !important;
-        padding-left: 2.6rem;
+        padding-left: 0;
         text-align: center;
     }
 
@@ -8036,7 +8036,10 @@ table .table-center {
         width: 2rem;
         height: 2rem;
         background-size: 2rem;
-        top: 2px;
+        display: inline-block;
+        position: initial;
+        vertical-align: text-bottom;
+        margin-right: 2px;
     }
 }
 
