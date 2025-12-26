@@ -39,8 +39,12 @@
 			</div>
 		</div>
 		<div class="tellphon">
-			<p class="call">희망으로 거는 전화 <span class="al ml10"><strong><a href="tel:16005500">1600-5500</a></strong><span
-						class="board-ph">+82-2-6337-2000(해외)</span></span></p>
+			<p class="call">
+				희망으로 거는 전화 
+				<span class="al ml10">
+				<strong>1600-5500<a href="tel:16005500" class="g-info-box__link"></a></strong>
+				<span class="board-ph">+82-2-6337-2000(해외)</span></span>
+			</p>
 		</div>
 		<div class="swiper" id="introSwiper">
 			<div class="intro-linkbox swiper-wrapper">
@@ -1279,40 +1283,40 @@
 				focusableSelector,
 				function () {
 
-				// pagination / autoplay 버튼은 제외
-				if (
-					$(this).hasClass('swiper-pagination-bullet') ||
-					$(this).hasClass('autoplay-toggle')
-				) return;
+					// pagination / autoplay 버튼은 제외
+					if (
+						$(this).hasClass('swiper-pagination-bullet') ||
+						$(this).hasClass('autoplay-toggle')
+					) return;
 
-				const $slide = $(this).closest('.swiper-slide');
-				if (!$slide.length || $slide.hasClass('swiper-slide-duplicate')) return;
+					const $slide = $(this).closest('.swiper-slide');
+					if (!$slide.length || $slide.hasClass('swiper-slide-duplicate')) return;
 
-				const container = $slide.closest('.swiper-container')[0];
-				const swiper = swiperList.find(s => s.el === container);
-				if (!swiper) return;
+					const container = $slide.closest('.swiper-container')[0];
+					const swiper = swiperList.find(s => s.el === container);
+					if (!swiper) return;
 
-				userFocusMap.set(swiper, true);
+					userFocusMap.set(swiper, true);
 
-				// ▶ 포커스로 인한 정지는 허용
-				if (swiper.autoplay) {
-					try { swiper.autoplay.stop(); } catch (e) {}
-				}
+					// ▶ 포커스로 인한 정지는 허용
+					if (swiper.autoplay) {
+						try { swiper.autoplay.stop(); } catch (e) { }
+					}
 
-				let index = $slide.data('swiper-slide-index');
-				if (typeof index === 'undefined') index = $slide.index();
+					let index = $slide.data('swiper-slide-index');
+					if (typeof index === 'undefined') index = $slide.index();
 
-				if (swiper.params.loop && swiper.slideToLoop) {
-					swiper.slideToLoop(index, 0);
-				} else {
-					swiper.slideTo(index, 0);
-				}
+					if (swiper.params.loop && swiper.slideToLoop) {
+						swiper.slideToLoop(index, 0);
+					} else {
+						swiper.slideTo(index, 0);
+					}
 
-				const el = this;
-				swiper.once('transitionEnd', () => {
-					if (!userFocusMap.get(swiper)) return;
-					try { el.focus(); } catch (e) {}
-				});
+					const el = this;
+					swiper.once('transitionEnd', () => {
+						if (!userFocusMap.get(swiper)) return;
+						try { el.focus(); } catch (e) { }
+					});
 				}
 			);
 
@@ -1322,21 +1326,21 @@
 				focusableSelector,
 				function (e) {
 
-				const container = $(this).closest('.swiper-container')[0];
-				if (!container) return;
+					const container = $(this).closest('.swiper-container')[0];
+					if (!container) return;
 
-				const swiper = swiperList.find(s => s.el === container);
-				if (!swiper || !swiper.autoplay) return;
+					const swiper = swiperList.find(s => s.el === container);
+					if (!swiper || !swiper.autoplay) return;
 
-				// 🔥 사용자가 멈춘 경우 → 절대 재생하지 않음
-				if (swiper.__pausedByUser) return;
+					// 🔥 사용자가 멈춘 경우 → 절대 재생하지 않음
+					if (swiper.__pausedByUser) return;
 
-				const related = e.relatedTarget;
-				if (related && container.contains(related)) return;
+					const related = e.relatedTarget;
+					if (related && container.contains(related)) return;
 
-				userFocusMap.set(swiper, false);
+					userFocusMap.set(swiper, false);
 
-				try { swiper.autoplay.start(); } catch (e) {}
+					try { swiper.autoplay.start(); } catch (e) { }
 				}
 			);
 		}
@@ -1356,40 +1360,40 @@
 				swiperInstance.__pausedByUser = false;
 
 				$toggleBtn
-				.off('click.autoplayLocal')
-				.on('click.autoplayLocal', function (e) {
-					e.preventDefault();
-					e.stopImmediatePropagation(); // 🔥 중요
+					.off('click.autoplayLocal')
+					.on('click.autoplayLocal', function (e) {
+						e.preventDefault();
+						e.stopImmediatePropagation(); // 🔥 중요
 
-					let $btn = $(this);
-					let $text = $btn.find('.text, .sr-only');
+						let $btn = $(this);
+						let $text = $btn.find('.text, .sr-only');
 
-					if ($btn.hasClass('on')) {
-					// ▶ 사용자가 직접 정지
-					swiperInstance.autoplay.stop();
-					swiperInstance.__pausedByUser = true;
+						if ($btn.hasClass('on')) {
+							// ▶ 사용자가 직접 정지
+							swiperInstance.autoplay.stop();
+							swiperInstance.__pausedByUser = true;
 
-					$btn
-						.removeClass('on')
-						.addClass('off')
-						.attr('aria-label', '자동재생 시작')
-						.attr('aria-pressed', 'true');
+							$btn
+								.removeClass('on')
+								.addClass('off')
+								.attr('aria-label', '자동재생 시작')
+								.attr('aria-pressed', 'true');
 
-					$text.text('재생');
-					} else {
-					// ▶ 사용자가 직접 재생
-					swiperInstance.autoplay.start();
-					swiperInstance.__pausedByUser = false;
+							$text.text('재생');
+						} else {
+							// ▶ 사용자가 직접 재생
+							swiperInstance.autoplay.start();
+							swiperInstance.__pausedByUser = false;
 
-					$btn
-						.removeClass('off')
-						.addClass('on')
-						.attr('aria-label', '자동재생 일시정지')
-						.attr('aria-pressed', 'false');
+							$btn
+								.removeClass('off')
+								.addClass('on')
+								.attr('aria-label', '자동재생 일시정지')
+								.attr('aria-pressed', 'false');
 
-					$text.text('일시정지');
-					}
-				});
+							$text.text('일시정지');
+						}
+					});
 			});
 		}
 	</script>
