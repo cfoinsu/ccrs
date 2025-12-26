@@ -2063,6 +2063,10 @@ section {
       -ms-flex-align: center;
           align-items: center;
   height: 8rem;
+  transition: 0.3s;
+}
+.intro .intro-linkbox .box2 .cyberlinkbox .iconlink .g-img:hover {
+  transform: scale(1.1);
 }
 .intro .intro-linkbox .box2 .cyberlinkbox .iconlink .g-img img {
   height: 100%;
