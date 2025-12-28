@@ -3179,7 +3179,6 @@ label:has(>input[type=checkbox]:focus) {
     flex-direction: column;
     align-items: center;
     padding: 1.1rem 1.6rem;
-    cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 1.2rem;
     text-align: center;
