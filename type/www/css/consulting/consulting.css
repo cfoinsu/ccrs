@@ -10,20 +10,21 @@ body {
 
 /* 메인 컨테이너 (카드 형태) */
 .container {
-    width: 600px;
+    width: 100%;
     margin: 50px auto;
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 30px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    box-sizing: border-box; /* 패딩 포함 크기 계산 */
 }
 
 /* 헤더 영역 */
 .header {
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid #ec6f01;
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
@@ -40,7 +41,9 @@ body {
     display: block; /* active 클래스가 붙으면 보임 */
     animation: fadeIn 0.4s ease-in-out; /* 부드럽게 나타나기 */
 }
-
+.step-content p {
+    margin: 0;
+}
 /* 페이드인 애니메이션 정의 */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(5px); }
@@ -53,12 +56,16 @@ body {
 h3 {
     margin-top: 0;
     color: #2c3e50;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 p {
     color: #666;
     font-size: 0.95rem;
     line-height: 1.5;
+    margin: 0;
 }
 
 .input-group {
@@ -71,6 +78,7 @@ p {
     margin-bottom: 8px;
     font-weight: bold;
     color: #333;
+    font-size: 20px;
 }
 
 /* 텍스트 입력창 */
@@ -85,7 +93,7 @@ p {
 }
 
 .input-text:focus {
-    border-color: #007bff;
+    border-color: #ec6f01;
     outline: none;
 }
 
@@ -105,6 +113,7 @@ p {
 .gender-group input[type="radio"] {
     margin-right: 8px;
     transform: scale(1.2); /* 라디오 버튼 살짝 키움 */
+    accent-color: #ec6f01; /* 선택 시 색상 */
 }
 
 /* =========================================
@@ -122,13 +131,13 @@ button {
 
 /* 메인 액션 버튼 (다음단계 등) */
 button.btn-primary {
-    background-color: #007bff;
+    background-color: #ec6f01;
     color: white;
     width: 100%;
 }
 
 button.btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #c55200;
 }
 
 /* 서브 액션 버튼 (이전 등) */
@@ -261,7 +270,7 @@ button.btn-secondary:hover {
 /* 완료 페이지 결과 박스 (인용구 스타일) */
 .result-box {
     background-color: #f1f8ff; /* 연한 파란색 배경 */
-    border-left: 5px solid #007bff; /* 왼쪽 강조 선 */
+    border-left: 5px solid #ec6f01; /* 왼쪽 강조 선 */
     padding: 20px;
     margin: 20px 0;
     border-radius: 4px;
@@ -281,7 +290,7 @@ button.btn-secondary:hover {
 
 .result-value {
     font-weight: bold;
-    color: #007bff;
+    color: #ec6f01;
 }
 
 /* 완료 아이콘 효과 (선택사항) */
