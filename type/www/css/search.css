@@ -244,6 +244,13 @@
   width: 1.6rem;
   height: 1.6rem;
 }
+.search-input-area .search-box-main .keyword-input:focus-visible {
+  outline: none !important;
+}
+.search-input-area .search-box-main:has(.keyword-input:focus-visible) {
+  outline: 2px dashed var(--krds-color-light-primary-30) !important;
+}
+
 .search-input-area .popular-search-rank {
   position: absolute;
   right: -19.2rem;

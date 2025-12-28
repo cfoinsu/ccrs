@@ -378,9 +378,9 @@ $(document).ready(function() {
                         </a>
                         <a href="javascript:;" class="_btnKakao" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_kakao.svg" alt="카카오스토리">
+                                <img src="/type/www/images/ic/footer/ic-kakaotalk.svg" alt="카카오톡">
                             </i> 
-                            <span>카카오스토리</span>
+                            <span>카카오톡</span>
                         </a>
                         <a href="javascript:;" class="_btnBand" title="새창열림">
                             <i class="icon" aria-hidden="true">
@@ -463,9 +463,9 @@ $(document).ready(function() {
                         </a>
                         <a href="javascript:;" class="_btnKakao" title="new window">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_kakao.svg" alt="">
+                                <img src="/type/www/images/ic/footer/ic-kakaotalk.svg" alt="">
                             </i> 
-                            <span>Kakao Story</span>
+                            <span>Kakao Talk</span>
                         </a>
                         <a href="javascript:;" class="_btnBand" title="new window">
                             <i class="icon" aria-hidden="true">
@@ -586,6 +586,18 @@ $(document).ready(function() {
             case 'kakaostory':
                 shareUrl = `https://story.kakao.com/share?url=${currentUrl}`;
                 break;
+            case 'kakaotalk':
+                if (copyToClipboard(rawCurrentUrl)) {
+                    // 복사에 성공하면 사용자에게 안내합니다. (복사 성공 여부 확인용)
+                    // 복사가 비동기로 이루어질 수 있지만, 일단 안내 후 이동합니다.
+                    alert("현재 페이지 URL이 복사되었습니다. \n카카오톡 대화창에 '붙여넣기' 해주세요.");
+                } else {
+                    alert('URL 복사에 실패했습니다. 직접 주소창의 URL을 복사해 주세요.');
+                }
+                // 새 페이지에서 열어 기존 페이지를 유지합니다.
+                window.open('https://pf.kakao.com/_LmMEC', '_blank');
+                return; // 팝업 로직을 실행하지 않고 종료
+                
             case 'band':
                 shareUrl = `https://band.us/plugin/share?body=${currentTitle}%0A${currentUrl}&route=BAND`;
                 break;
@@ -629,7 +641,8 @@ $(document).ready(function() {
         let snsType = '';
         if ($(this).hasClass('_btnFacebook')) snsType = 'facebook';
         else if ($(this).hasClass('_btnX')) snsType = 'x';
-        else if ($(this).hasClass('_btnKakao')) snsType = 'kakaostory';
+        else if ($(this).hasClass('_btnKakaoStory')) snsType = 'kakaostory';
+        else if ($(this).hasClass('_btnKakao')) snsType = 'kakaotalk';
         else if ($(this).hasClass('_btnBand')) snsType = 'band';
         else if ($(this).hasClass('_btnBlog')) snsType = 'blog';
         else if ($(this).hasClass('_btnTumblr')) snsType = 'tumblr';
