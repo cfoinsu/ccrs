@@ -2490,6 +2490,9 @@ label:has(>input[type=checkbox]:focus) {
     padding-right: 4rem;
     position: relative;
 }
+.quick-item .quick-showbox .showbox-item.showbox-arrow.mob-only {
+    display: flex !important;
+}
 
 .quick-item .quick-showbox .showbox-item.showbox-arrow::after {
     content: '';
