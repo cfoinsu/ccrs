@@ -377,7 +377,7 @@ $(document).ready(function() {
                             <span>X</span>
                         </a>
                         <a href="javascript:;" class="_btnKakao" title="새창열림">
-                            <i class="icon" aria-hidden="true">
+                            <i class="icon" aria-hidden="true" style="background: #f9e202;border-radius: 12px;">
                                 <img src="/type/www/images/ic/footer/ic-kakaotalk.svg" alt="카카오톡">
                             </i> 
                             <span>카카오톡</span>
@@ -462,7 +462,7 @@ $(document).ready(function() {
                             <span>X</span>
                         </a>
                         <a href="javascript:;" class="_btnKakao" title="new window">
-                            <i class="icon" aria-hidden="true">
+                            <i class="icon" aria-hidden="true" style="background: #f9e202;border-radius: 12px;">
                                 <img src="/type/www/images/ic/footer/ic-kakaotalk.svg" alt="">
                             </i> 
                             <span>Kakao Talk</span>
@@ -587,17 +587,32 @@ $(document).ready(function() {
                 shareUrl = `https://story.kakao.com/share?url=${currentUrl}`;
                 break;
             case 'kakaotalk':
-                if (copyToClipboard(rawCurrentUrl)) {
-                    // 복사에 성공하면 사용자에게 안내합니다. (복사 성공 여부 확인용)
-                    // 복사가 비동기로 이루어질 수 있지만, 일단 안내 후 이동합니다.
-                    alert("현재 페이지 URL이 복사되었습니다. \n카카오톡 대화창에 '붙여넣기' 해주세요.");
-                } else {
-                    alert('URL 복사에 실패했습니다. 직접 주소창의 URL을 복사해 주세요.');
+                if (!Kakao.isInitialized()) {
+                    Kakao.init('6091e5c29481d74dbab204ea8aedd144');
                 }
-                // 새 페이지에서 열어 기존 페이지를 유지합니다.
-                window.open('https://pf.kakao.com/_LmMEC', '_blank');
+                Kakao.Share.sendDefault({
+                    objectType: 'feed',
+                    content: {
+                        title: document.title, // 문서의 제목을 자동으로 가져옵니다.
+                        description: '',
+                        imageUrl: '',
+                        link: {
+                            mobileWebUrl: rawCurrentUrl, // 변수 사용
+                            webUrl: rawCurrentUrl,       // 변수 사용
+                        },
+                    },
+                    buttons: [
+                        {
+                        title: '웹으로 보기',
+                        link: {
+                            mobileWebUrl: rawCurrentUrl,
+                            webUrl: rawCurrentUrl,
+                        },
+                        },
+                    ],
+                });
                 return; // 팝업 로직을 실행하지 않고 종료
-                
+
             case 'band':
                 shareUrl = `https://band.us/plugin/share?body=${currentTitle}%0A${currentUrl}&route=BAND`;
                 break;
