@@ -2437,6 +2437,7 @@ body:has(.intro.show) {
   background: url(/type/www/images/ic/arr_circle_orange_right.svg) no-repeat 0 0/cover;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  pointer-events: none;
 }
 .arr-circle-right:hover::after {
   -webkit-transform: translateY(-5px) scale(1.05);

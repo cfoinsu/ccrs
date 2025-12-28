@@ -203,13 +203,10 @@ Version : v1.0
   background: var(--main-color1);
 }
 
-#header:has(:focus) .gnb-wrap>nav .gnb>li .depth2 {
-  display: none;
-}
-
 #header .gnb-wrap>nav .gnb>li .depth2 {
-  opacity: 0;
-  visibility: hidden;
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  display: none; /* 탭이동시 처리막음 */ 
   min-height: 0;
   height: 312px;
   position: absolute;
