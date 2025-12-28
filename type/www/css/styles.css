@@ -2496,7 +2496,7 @@ label:has(>input[type=checkbox]:focus) {
     position: absolute;
     height: 2rem;
     width: 2rem;
-    top: 20px;
+    top: 2rem;
     right: 20px;
     background: url(../images/ic/quickmenu/arrow-right.svg) no-repeat;
 }
