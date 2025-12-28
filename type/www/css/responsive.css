@@ -614,11 +614,11 @@
     width: 100%;
   }
 }
-@media (max-width: 1279px) {
+/* @media (max-width: 1279px) {
   .footer .footer-content .footer-icon .certi {
     display: none;
   }
-}
+} */
 @media (max-width: 1279px) {
   #header {
     overflow: visible;
