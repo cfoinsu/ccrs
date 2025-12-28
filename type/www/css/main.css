@@ -2180,12 +2180,12 @@ section {
 }
 .intro .intro-linkbox .usefullinkbox .arrowlink-s {
   font-size: 1.9rem;
-  padding: 0 3.3rem 0 0;
+  padding: 0 33px 0 0;
   background: transparent url(/type/www/images/ic/arr_circle_orange_right.svg) center right no-repeat;
-  background-size: 2.5rem 2.5rem;
+  background-size: 25px 25px;
   line-height: 1;
-  height: 2.9rem;
-  line-height: 24px;
+  height: 32px;
+  line-height: 32px;
 }
 .intro .intro-linkbox .usefullinkbox .arrowlink-s:focus,
 .intro .intro-linkbox .usefullinkbox .arrowlink-s:hover {
