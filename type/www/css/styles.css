@@ -6340,7 +6340,7 @@ table .krds-info-list>li {
 
     html {
         width: 210mm;
-        min-width: 1340px;
+        min-width: 1340px !important;
         height: 297mm;
         margin: 0;
         padding: 0;
@@ -6352,7 +6352,7 @@ table .krds-info-list>li {
 
     body {
         width: 210mm;
-        min-width: 1340px;
+        min-width: 1340px !important;
         height: 297mm;
         margin: 0;
         padding: 0;
@@ -6424,23 +6424,6 @@ table .krds-info-list>li {
         page-break-after: always;
     }
 }
-/* 프린트 기본 설정 */
-* {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-}
-.accordion-item,
-.no-split {
-    /* 요소 내부에서 페이지 분할을 방지합니다. */
-    break-inside: avoid;
-    page-break-inside: avoid; /* 구형 브라우저 대응 */
-}
-.page-break {
-    /* 이 요소 이후에 강제로 페이지를 넘깁니다. */
-    break-after: page;
-    page-break-after: always;
-}
-
 
 .money-area {
     display: flex;
