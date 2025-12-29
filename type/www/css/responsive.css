@@ -631,7 +631,7 @@
     padding-top: 5.4rem !important;
   }
   .content-layout {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   .content-layout .breadcrumb {
     display: none;
@@ -693,6 +693,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  [id] {scroll-margin-top: 100px;}
 }
 .mobile-allmenu-overlay {
   position: fixed;
