@@ -853,6 +853,10 @@
   -ms-flex: 1;
   flex: 1;
 }
+.other-debt-adjustment .adjustment-card .card-description.card-description__center {
+  flex: initial;
+  margin: auto 0;
+}
 
 @media (max-width: 767px) {
   .other-debt-adjustment .adjustment-card .card-description {
