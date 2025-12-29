@@ -10192,3 +10192,37 @@ a.customer-service-card {
         display: none;
     }
 }
+
+/* 기부현황 */
+.chart-wrap {display: flex; align-items: center; width: 100%; gap: 0 4rem;}
+.chart-cnt {width: calc(50% - 2rem);}
+.chart-cnt .chart-title {font-size: 1.9rem; line-height: 1.5; display: flex; align-items: center; gap: 0 .8rem; font-weight: bold;}
+.chart-cnt .chart-title em.co-orange {color: #ed7801;}
+.chart-cnt .chart-title em.co-blue {color: #4485fd;}
+.chart-cnt .chart-title span {font-size: 1.5rem; color: #474e55; font-weight: 300;}
+.chart-detail {margin-top: 5rem; position: relative; width: 100%; height: 240px; max-width: 438px;}
+.chart-detail img {width: 240px; height: 240px; display: block; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);}
+.chart-detail__list {position: relative; width: 100%; height: 100%;}
+.chart-detail__list span {display: inline-block; padding: .6rem .8rem; border-radius: 2rem; background: rgba(255, 255, 255, 0.7); box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); backdrop-filter: blur(30px); font-size: 1.3rem; font-weight: bold; color: #17191b; z-index: 1; position: absolute;}
+.chart-detail__list01 .chart_list01 {top: -8%; left: 44.06%;}
+.chart-detail__list01 .chart_list02 {top: 0; left: 11.33%;}
+.chart-detail__list01 .chart_list03 {top: 29.16%; left: 7.3%;}
+.chart-detail__list01 .chart_list04 {top: 66.88%; left: 4.77%;}
+.chart-detail__list01 .chart_list05 {top: 70.12%; left: 60.35%;}
+.chart-detail__list02 .chart_list01 {top: -13.25%; left: 41.78%;}
+.chart-detail__list02 .chart_list02 {top: -2%; left: 22.83%;}
+.chart-detail__list02 .chart_list03 {top: 15.41%; left: 2.28%;}
+.chart-detail__list02 .chart_list04 {top: 45%; left: 4.1%;}
+.chart-detail__list02 .chart_list05 {top: 67.5%; left: 62.55%;}
+
+@media (max-width: 767px) {
+    .chart-wrap {flex-direction: column; gap:  5.5rem 0 ;}
+    .chart-cnt {width: 100%;}
+    .chart-detail {margin: 5.5rem auto 0;}
+}
+@media (max-width: 320px) {
+    .chart-detail {height: 210px;}
+    .chart-detail img {width: 210px; height: 210px;}
+    .chart-detail__list01 .chart_list02 {top: 2%;}
+    .chart-detail__list02 .chart_list01 {left: 38%;}
+}
