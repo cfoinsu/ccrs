@@ -297,17 +297,20 @@
   font-size: 1.9rem;
   font-weight: 700;
   color: var(--krds-light-color-text-bolder);
+  z-index: 1;
 }
 .main-banner.center .diagnosis-card-top .diagnosis-card-text {
   font-size: 3.2rem;
   font-weight: 700;
   color: var(--krds-light-color-text-bolder);
   line-height: 1.4;
+  z-index: 1;
 }
 .main-banner.center .diagnosis-card-top .diagnosis-card-subtext {
   font-size: 1.9rem;
   font-weight: 400;
   line-height: 1.5;
+  z-index: 1;
 }
 .main-banner.center .diagnosis-card-top a {
   display: -webkit-box;
@@ -2504,6 +2507,7 @@ body:has(.intro.show) {
 .grid-width .grid-col1 .col-tit, .grid-width .grid-col2 .col-tit, .grid-width .grid-col3 .col-tit {
   font-size: 1.9rem;
   font-weight: 700;
+  z-index: 1;
 }
 @media (max-width: 1400px) {
   .grid-width .grid-col1 {
