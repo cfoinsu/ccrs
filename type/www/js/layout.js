@@ -588,7 +588,14 @@ $(document).ready(function() {
                 break;
             case 'kakaotalk':
                 if (!Kakao.isInitialized()) {
-                    Kakao.init('6091e5c29481d74dbab204ea8aedd144');
+                    var apiKey = (typeof GLOBAL_KAKAO_KEY !== 'undefined') ? GLOBAL_KAKAO_KEY : '';
+
+                    if(apiKey) {
+                        Kakao.init(apiKey);
+                    } else {
+                        alert('카카오 API 키가 설정되지 않았습니다.');
+                        return;
+                    }
                 }
                 Kakao.Share.sendDefault({
                     objectType: 'feed',
