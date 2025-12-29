@@ -109,6 +109,10 @@ p {
     display: flex;
     align-items: center;
 }
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #ec6f01; /* 선택 시 색상 */
+}
 
 .gender-group input[type="radio"] {
     margin-right: 8px;
