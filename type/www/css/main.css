@@ -1904,6 +1904,7 @@ section {
   font-size: 2.4rem;
   margin-left: 0.6rem;
   display: block;
+  position: relative;
 }
 .intro .tellphon .call .board-ph{
   font-weight: 400;
