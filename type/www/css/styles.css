@@ -6340,7 +6340,7 @@ table .krds-info-list>li {
 
     html {
         width: 210mm;
-        min-width: 1340px !important;
+        min-width: 1340px;
         height: 297mm;
         margin: 0;
         padding: 0;
@@ -6352,7 +6352,7 @@ table .krds-info-list>li {
 
     body {
         width: 210mm;
-        min-width: 1340px !important;
+        min-width: 1340px;
         height: 297mm;
         margin: 0;
         padding: 0;
