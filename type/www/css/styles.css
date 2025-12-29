@@ -2490,9 +2490,6 @@ label:has(>input[type=checkbox]:focus) {
     padding-right: 4rem;
     position: relative;
 }
-.quick-item .quick-showbox .showbox-item.showbox-arrow.mob-only {
-    display: flex !important;
-}
 
 .quick-item .quick-showbox .showbox-item.showbox-arrow::after {
     content: '';
@@ -6404,6 +6401,9 @@ table .krds-info-list>li {
     }
 
     /* 불필요한 요소 숨기기 */
+    #quickmenu-container,
+    #footer-container,
+    .page-actions,
     .no-print,
     nav,
     header,
@@ -6411,6 +6411,17 @@ table .krds-info-list>li {
     .sidebar,
     .btn {
         display: none !important;
+    }
+    .accordion-item,
+    .no-split {
+        /* 요소 내부에서 페이지 분할을 방지합니다. */
+        break-inside: avoid;
+        page-break-inside: avoid; /* 구형 브라우저 대응 */
+    }
+    .page-break {
+        /* 이 요소 이후에 강제로 페이지를 넘깁니다. */
+        break-after: page;
+        page-break-after: always;
     }
 }
 

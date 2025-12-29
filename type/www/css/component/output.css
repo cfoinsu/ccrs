@@ -1491,6 +1491,9 @@ caption {
 
   .mob-only {
     display: block !important;
+  }  
+  .quick-item .quick-showbox .showbox-item.showbox-arrow.mob-only {
+      display: flex !important;
   }
 
   .btn-action.mob-only {
