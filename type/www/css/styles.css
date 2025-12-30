@@ -4482,9 +4482,11 @@ table.comparison-table td:first-child {
 .noti.g-tit.info,
 .noti.g-tit.exclamation {
     margin-left: 3rem;
+    position: relative;
 }
 
 .exclamation {
+    position: relative;
     margin-top: 1.6rem;
     padding-left: 3rem;
 }
