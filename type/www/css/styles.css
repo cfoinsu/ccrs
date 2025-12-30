@@ -6407,8 +6407,8 @@ table .krds-info-list>li {
     }
 
     /* 불필요한 요소 숨기기 */
-    #quickmenu-container,
-    #footer-container,
+    .quickmenu-container,
+    .section-institution,
     .page-actions,
     .no-print,
     nav,
