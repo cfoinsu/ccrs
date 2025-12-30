@@ -9607,6 +9607,7 @@ a.customer-service-card {
 
     .g-map-images {
         background-size: 100%;
+        max-width: 100%;
     }
 
     /* 지부위치안내 */
