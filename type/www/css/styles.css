@@ -3988,7 +3988,7 @@ span.sub4InputLabel {
 }
 
 table.comparison-table {
-    width: auto;
+    width: 100%;
     border-collapse: collapse;
     border-top: 1px solid var(--krds-color-light-gray-100);
 }
