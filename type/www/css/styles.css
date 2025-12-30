@@ -10210,7 +10210,7 @@ a.customer-service-card {
 /* 기부현황 */
 .chart-wrap {display: flex; align-items: center; width: 100%; gap: 0 4rem;}
 .chart-cnt {width: calc(50% - 2rem);}
-.chart-cnt .chart-title {font-size: 1.9rem; line-height: 1.5; display: flex; align-items: center; gap: 0 .8rem; font-weight: bold;}
+.chart-cnt .chart-title {font-size: 1.9rem; line-height: 1.5; display: flex; align-items: center; gap: 0 .8rem; font-weight: bold; flex-wrap: wrap;}
 .chart-cnt .chart-title em.co-orange {color: #ed7801;}
 .chart-cnt .chart-title em.co-blue {color: #4485fd;}
 .chart-cnt .chart-title span {font-size: 1.5rem; color: #474e55; font-weight: 300;}
