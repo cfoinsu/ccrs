@@ -9606,10 +9606,12 @@ a.customer-service-card {
         max-height: calc(100% - 11.5rem);
         padding-bottom: 3rem;
     }
-
+    .g-imag-hover {
+        overflow: auto;
+    }
     .g-map-images {
-        background-size: 100%;
-        max-width: 100%;
+        background-size: 33.8rem;
+        max-width: none;
     }
 
     /* 지부위치안내 */
