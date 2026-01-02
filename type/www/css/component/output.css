@@ -59,6 +59,7 @@
   mask-position: center center;
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_angle.svg);
+  background-image: url(../../img/icons/ico_angle.svg);
   mask-image: url(../../img/icons/ico_angle.svg);
 }
 
@@ -101,6 +102,7 @@
   mask-position: center center;
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_sch.svg);
+  background-image: url(../../img/icons/ico_sch.svg);
   mask-image: url(../../img/icons/ico_sch.svg);
 }
 
@@ -113,6 +115,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_upload.svg);
   mask-image: url(../../img/icons/ico_upload.svg);
+  background-image: url(../../img/icons/ico_upload.svg);
 }
 
 .svg-icon.ico-call {
@@ -124,6 +127,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_call.svg);
   mask-image: url(../../img/icons/ico_call.svg);
+  background-image: url(../../img/icons/ico_call.svg);
 }
 
 .svg-icon.ico-faq {
@@ -135,6 +139,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_faq.svg);
   mask-image: url(../../img/icons/ico_faq.svg);
+  background-image: url(../../img/icons/ico_faq.svg);
 }
 
 .svg-icon.ico-like {
@@ -146,6 +151,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_like.svg);
   mask-image: url(../../img/icons/ico_like.svg);
+  background-image: url(../../img/icons/ico_like.svg);
 }
 
 .svg-icon.ico-share {
@@ -157,6 +163,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_share.svg);
   mask-image: url(../../img/icons/ico_share.svg);
+  background-image: url(../../img/icons/ico_share.svg);
 }
 
 .svg-icon.ico-more {
@@ -168,6 +175,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_more.svg);
   mask-image: url(../../img/icons/ico_more.svg);
+  background-image: url(../../img/icons/ico_more.svg);
 }
 
 .svg-icon.ico-sch-plus {
@@ -179,6 +187,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_sch_plus.svg);
   mask-image: url(../../img/icons/ico_sch_plus.svg);
+  background-image: url(../../img/icons/ico_sch_plus.svg);
 }
 
 .svg-icon.ico-go {
@@ -190,6 +199,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_go.svg);
   mask-image: url(../../img/icons/ico_go.svg);
+  background-image: url(../../img/icons/ico_go.svg);
 }
 
 .svg-icon.ico-down {
@@ -201,6 +211,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_download.svg);
   mask-image: url(../../img/icons/ico_download.svg);
+  background-image: url(../../img/icons/ico_download.svg);
 }
 
 .svg-icon.ico-filter {
@@ -212,6 +223,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_filter.svg);
   mask-image: url(../../img/icons/ico_filter.svg);
+  background-image: url(../../img/icons/ico_filter.svg);
 }
 
 .svg-icon.ico-reset {
@@ -223,6 +235,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_reset.svg);
   mask-image: url(../../img/icons/ico_reset.svg);
+  background-image: url(../../img/icons/ico_reset.svg);
 }
 
 .svg-icon.ico-log {
@@ -234,6 +247,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_login.svg);
   mask-image: url(../../img/icons/ico_login.svg);
+  background-image: url(../../img/icons/ico_login.svg);
 }
 
 .svg-icon.ico-func {
@@ -245,6 +259,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_expand.svg);
   mask-image: url(../../img/icons/ico_expand.svg);
+  background-image: url(../../img/icons/ico_expand.svg);
 }
 
 .svg-icon.ico-func.up {
@@ -264,6 +279,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_logout.svg);
   mask-image: url(../../img/icons/ico_logout.svg);
+  background-image: url(../../img/icons/ico_logout.svg);
 }
 
 .svg-icon.ico-logout {
@@ -278,7 +294,7 @@
   mask-position: center center;
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_email.svg);
-  mask-image: url(../../img/icons/ico_email.svg);
+  background-image: url(../../img/icons/ico_email.svg);
 }
 
 .svg-icon.ico-email {
@@ -294,6 +310,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_print.svg);
   mask-image: url(../../img/icons/ico_print.svg);
+  background-image: url(../../img/icons/ico_print.svg);
 }
 
 .svg-icon.ico-print {
@@ -309,6 +326,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_spot.svg);
   mask-image: url(../../img/icons/ico_spot.svg);
+  background-image: url(../../img/icons/ico_spot.svg);
 }
 
 .svg-icon.ico-spot {
@@ -324,6 +342,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_scrap.svg);
   mask-image: url(../../img/icons/ico_scrap.svg);
+  background-image: url(../../img/icons/ico_scrap.svg);
 }
 
 .svg-icon.ico-scrap {
@@ -339,6 +358,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_delete.svg);
   mask-image: url(../../img/icons/ico_delete.svg);
+  background-image: url(../../img/icons/ico_delete.svg);
 }
 
 .svg-icon.ico-del {
@@ -354,6 +374,7 @@
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_close.svg);
   mask-image: url(../../img/icons/ico_close.svg);
+  background-image: url(../../img/icons/ico_close.svg);
 }
 
 .svg-icon.ico-delete-fill {
@@ -10778,6 +10799,7 @@ span.sec-tit,
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_angle.svg);
   mask-image: url(../../img/icons/ico_angle.svg);
+  background-image: url(../../img/icons/ico_angle.svg);
   background-color: var(--krds-pagination--color-text);
   transform: rotate(90deg);
 }
@@ -10806,6 +10828,7 @@ span.sec-tit,
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_angle.svg);
   mask-image: url(../../img/icons/ico_angle.svg);
+  background-image: url(../../img/icons/ico_angle.svg);
   background-color: var(--krds-pagination--color-text);
   transform: rotate(-90deg);
 }

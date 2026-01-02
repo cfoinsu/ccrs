@@ -3245,7 +3245,9 @@ main.map-content .container {
   background: url(../images/img/map/map.png) center no-repeat;
   margin: 3.2rem auto 0;
 }
-
+.g-map-images:has(.map-choose:hover) {
+  background: none;
+}
 .g-imag-hover .map-choose {
   position: absolute;
   width: 4.2rem;
@@ -3254,7 +3256,7 @@ main.map-content .container {
   z-index: 3;
   border-radius: 1000px;
   color: var(--krds-light-color-text-disabled-on);
-  background-color: var(--krds-light-color-gray-50);
+  background-color: #D2D6DA;
   text-align: center;
   line-height: 22px;
   font-size: 1.5rem;

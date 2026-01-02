@@ -2204,7 +2204,7 @@ section {
 }
 .intro .intro-linkbox .usefullinkbox .arrowlink-s:focus,
 .intro .intro-linkbox .usefullinkbox .arrowlink-s:hover {
-  background: transparent url(/type/www/images/ic/arr_circle_blue_right.svg) center right no-repeat;
+  background: transparent url(/type/www/images/ic/arr_circle_blue_right.svg) center right 4px no-repeat;
   background-size: 25px 25px;
 }
 .intro .intro-linkbox .boxRcol {

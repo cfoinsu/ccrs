@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+#contents section{margin: 0 20px;}
+#contents .text-box-2{padding: 19px; margin-bottom: 15px; border: 1px solid #ccc; font-size: 15px; color: #000;}
+#contents .text-box-2 ul {margin-top: 12px;}
+#contents .text-box-2 ul li { padding-left: 10px; margin-bottom: 5px; font-size: 10px; background: url(../../images_Mobile/front/li-bullet-2.png) no-repeat left 5px;}
+#contents h2 {margin-bottom: 12px; font-size: 18px; color: #000; font-weight: normal;}
+#contents h3 {margin-bottom: 12px; font-size: 18px; color: #000; font-weight: normal;word-break: break-all}
+#contents h4 {margin-bottom: 10px; font-size: 15px; color: #000; font-weight: normal;}
+
+
+.view_table {border:1px solid #ccc;width:100%;margin:10px 0;}
+.view_table th, td {padding: 10px 5px;}
+.view_table thead th {color:#000;background:#eee;border:1px solid #ccc; font-size:12px;}
+.view_table tbody th {border:1px solid #ccc;background:#f4f4f4; font-size:12px;}
+.view_table tbody td, .view_table tfoot td {border:1px solid #ccc;text-align:left; font-size:11px;}
+.view_table tfoot {border-top:1px solid #aaa;background:#f8ebdc}
+.view_table strong {font-weight:bold;color:#000}
+.view_table ul li {padding-left: 7px; margin: 5px 0; background: url(../../images_Mobile/front/li-bullet.jpg) no-repeat left 8px;}
+.view_table ul li p {padding-top:5px;color:#f25500; font-size:10px;}
+.view_table ol {margin-top:10px;}
+.view_table caption {text-indent:-9999px; height:1px;}
+
