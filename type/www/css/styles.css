@@ -1447,6 +1447,11 @@ body aside {
     border-top-color: var(--krds-color-light-gray-95);
 }
 
+.tooltip-right::after {
+    right: 20px;
+    left: initial;
+}
+
 @media (max-width: 767px) {
 
     /* .tooltip-trigger i.fas.fa-question-circle {
@@ -1464,11 +1469,19 @@ body aside {
         max-width: 100%;
         max-height: 90vh;
         overflow: auto;
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .tooltip-trigger .tooltip .tbl {
         min-width: 0;
+    }
+
+    .tooltip-tbl .tooltip-trigger:hover .tooltip,
+    .tooltip-tbl .tooltip-trigger:focus .tooltip,
+    .tooltip-tbl .tooltip-trigger:focus-within .tooltip {
+        max-width: initial;
+        padding: .8rem 2rem;
+        min-width: max-content;
     }
 
 }
