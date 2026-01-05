@@ -172,7 +172,8 @@ document.addEventListener('keydown', (e) => {
 
 // Print Functionality
 document.querySelector('[aria-label="인쇄"]')?.addEventListener('click', () => {
-    window.print();
+    //window.print();
+    pcScreenshotPrint();
 });
 
 // Share Functionality

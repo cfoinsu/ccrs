@@ -327,3 +327,44 @@
     </div>
 </footer>
 <!-- Footer:e -->
+<script src="/type/www/js/jquery-2.2.4.min.js?ver=5.9"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<link rel="stylesheet" href="/type/www/print/print.min.css">
+<script src="/type/www/print/print.min.js"></script>
+<script>
+    function pcScreenshotPrint() {
+        const target = document.getElementById('content-area');
+        
+        // 1. 캡처 전 임시로 스크롤을 풀고 스타일을 조정합니다.
+        target.style.height = 'auto';
+        target.style.overflow = 'visible';
+
+        // 2. html2canvas 실행
+        html2canvas(target, {
+            scale: 2,             // PC 인쇄 시 선명도를 위해 2배 확대 캡처
+            useCORS: true,        // 외부 이미지 로드 허용
+            backgroundColor: "#ffffff", // 배경을 강제로 하얀색으로 지정
+            y: window.scrollY
+        }).then(canvas => {
+            // 3. 이미지 데이터 생성
+            const imgData = canvas.toDataURL('image/png');
+
+            if (typeof printJS === 'undefined') {
+                alert("프린트 라이브러리가 아직 로딩되지 않았습니다. 잠시 후 다시 시도해주세요!");
+                return;
+            }
+
+            // 4. Print.js 호출
+            printJS({
+                printable: imgData,
+                type: 'image',
+                // 중요: 가로 세로 비율이 깨지지 않도록 이미지 스타일 강제 지정
+                imageStyle: 'width:100%; max-width:100%; height:auto;',
+                style: `
+                    @page { size: A4; margin: 0; } /* 적당한 여백 부여 */
+                    body { margin: 0; padding: 0; }
+                `
+            });
+        });
+    }
+</script>
