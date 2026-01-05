@@ -10302,5 +10302,21 @@ a.customer-service-card {
     .prevention-list__cnt {padding: 1.2rem; border-radius: 8px;}
     .prevention-list__cnt ul li {font-size: 1.7rem;}
     .prevention-list__cnt ul li::before {top: 9px;}
-    
+}
+
+.map-content .tab-layout .util-btns .util-search-btn i {
+  width: 20px;
+  height: 20px;
+  margin: -3px 0 0 0;
+  background: url(/type/www/images/ic/header-search.svg?ver=5.9) no-repeat center;
+  background-size: 20px;
+}
+
+.svg-icon.ico-search {
+  background: url(/type/www/images/ic/header-search.svg?ver=5.9) no-repeat center;
+  background-size: 20px;
+}
+
+@media (max-width: 767px){
+    .map-content .tab-layout .top-box {display: flex; align-items: center; justify-content: space-between; width: 100%;}
 }
