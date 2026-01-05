@@ -36,6 +36,13 @@ Version : v1.0
   src: url('../fonts/NotoSansKR-Bold.ttf') format('truetype');
 } */
 
+@font-face {
+  font-family: 'Paperlogy-Bold';
+  font-style: Bold;
+  font-weight: 700;
+  src: url('fonts/Paperlogy-7Bold.woff') format('woff');
+}
+
 
 /*skip*/
 /*#skip_nav {}*/
@@ -10248,7 +10255,7 @@ a.customer-service-card {
 
 .prevention-list-wrap {width: 100%; padding: 3.2rem; background: #3D6FCF; border-radius: 2.4rem; position: relative; overflow: hidden;}
 .prevention-list-wrap::before {content: ''; display: block; width: 21.1rem; height: 19.1rem; background: url(/type/www/images/img/prevention-hand.png) no-repeat center; position: absolute; right: -6.7rem; top: 3.1rem; background-size: 100%;}
-.prevention-list-title {font-size: 6.4rem; font-weight: bold; text-align: center; color: #fff;}
+.prevention-list-title {font-family: 'Paperlogy-Bold'; font-size: 6.4rem; font-weight: bold; text-align: center; color: #fff;}
 .prevention-list-title span {display: inline-block; background: #f35e13; padding: 0 1.1rem; line-height: 1.2;}
 .prevention-list {background: #fff; border-radius: 2.4rem; padding: 3rem 2.5rem; margin-top: 3.2rem;}
 .prevention-list li + li {margin-top: 3.2rem;}
