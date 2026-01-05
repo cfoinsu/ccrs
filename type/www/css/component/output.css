@@ -1648,6 +1648,9 @@ caption {
 .krds-btn .svg-icon {
   width: var(--krds-icon--size-large);
   height: var(--krds-icon--size-large);
+  background-color: initial !important;
+  background-size: 100% !important;
+  mask-image: none !important;;
 }
 
 .krds-btn.xsmall {
