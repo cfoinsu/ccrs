@@ -59,7 +59,7 @@
   mask-position: center center;
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_angle.svg);
-  background-image: url(../../img/icons/ico_angle.svg);
+  background-image: url(../../img/icons/ico_angle-white.svg);
   mask-image: url(../../img/icons/ico_angle.svg);
 }
 
@@ -1648,13 +1648,6 @@ caption {
 .krds-btn .svg-icon {
   width: var(--krds-icon--size-large);
   height: var(--krds-icon--size-large);
-  background-color: initial !important;
-  background-size: 100% !important;
-  mask-image: none !important;
-  filter: invert(1) contrast(100);
-}
-.krds-btn.tertiary:not(.icon) .svg-icon {
-  filter: none;
 }
 
 .krds-btn.xsmall {
@@ -1822,6 +1815,9 @@ caption {
 
 .krds-btn.primary:not(.icon) .svg-icon {
   background-color: var(--krds-button--color-primary-text);
+  background-color: initial !important;
+  background-size: 100% !important;
+  mask-image: none !important;
 }
 
 .krds-btn.primary:hover {
@@ -1937,6 +1933,9 @@ caption {
 
 .krds-btn.text:not(.icon) .svg-icon {
   background-color: var(--krds-button--color-text-text);
+  background-color: initial !important;
+  background-size: 100% !important;
+  mask-image: none !important;
 }
 
 .krds-btn.text:hover {
@@ -2021,6 +2020,13 @@ caption {
 .krds-btn .svg-icon {
   background-color: var(--krds-button--color-primary-text);
   transition: var(--krds-transition-base);
+  background-color: initial !important;
+  background-size: 100% !important;
+  mask-image: none !important;
+  /* filter: invert(1) contrast(100); */
+}
+.krds-btn.tertiary:not(.icon) .svg-icon {
+  background-image : url(../../img/icons/ico_angle.svg);
 }
 
 .krds-btn:hover {
@@ -2377,7 +2383,10 @@ caption {
 }
 
 .krds-btn.icon .svg-icon {
-  background-color: var(--krds-light-color-text-basic);
+  /* background-color: var(--krds-light-color-text-basic); */
+  background-color: initial !important;
+  background-size: 100% !important;
+  mask-image: none !important;
 }
 
 .krds-btn.icon.pure .svg-icon {
@@ -10799,17 +10808,19 @@ span.sec-tit,
   height: var(--krds-icon--size-medium);
   background-color: var(--krds-light-color-text-basic);
   forced-color-adjust: none;
-  -webkit-mask-repeat: no-repeat;
+  /* -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center center;
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_angle.svg);
-  mask-image: url(../../img/icons/ico_angle.svg);
+  mask-image: url(../../img/icons/ico_angle.svg); */
   background-image: url(../../img/icons/ico_angle.svg);
   background-color: var(--krds-pagination--color-text);
   transform: rotate(90deg);
+  background-color: initial !important;
+  background-size: 100%;
 }
 
 .krds-pagination .page-navi.next {
@@ -10828,17 +10839,19 @@ span.sec-tit,
   height: var(--krds-icon--size-medium);
   background-color: var(--krds-light-color-text-basic);
   forced-color-adjust: none;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center center;
-  -webkit-mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
-  -webkit-mask-image: url(../../img/icons/ico_angle.svg);
-  mask-image: url(../../img/icons/ico_angle.svg);
+  /* -webkit-mask-repeat: no-repeat; */
+  /* -webkit-mask-position: center center; */
+  /* -webkit-mask-size: contain; */
+  /* mask-repeat: no-repeat; */
+  /* mask-position: center center; */
+  /* mask-size: contain; */
+  /* -webkit-mask-image: url(../../img/icons/ico_angle.svg); */
+  /* mask-image: url(../../img/icons/ico_angle.svg); */
   background-image: url(../../img/icons/ico_angle.svg);
   background-color: var(--krds-pagination--color-text);
   transform: rotate(-90deg);
+  background-color: initial !important;
+  background-size: 100% !important;
 }
 
 .krds-pagination .page-navi.disabled {
@@ -10875,14 +10888,17 @@ span.sec-tit,
   height: var(--krds-icon--size-large);
   background-color: var(--krds-light-color-text-basic);
   forced-color-adjust: none;
-  -webkit-mask-repeat: no-repeat;
+  /* -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center center;
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_ellipsis.svg);
-  mask-image: url(../../img/icons/ico_ellipsis.svg);
+  mask-image: url(../../img/icons/ico_ellipsis.svg); */
+  background-color: initial !important;
+  background-size: 100% !important;
+  background: url(../../img/icons/ico_ellipsis.svg);
 }
 
 .krds-pagination .page-links .page-link.active {
