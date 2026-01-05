@@ -95,15 +95,15 @@
 }
 
 .svg-icon.ico-sch {
-  /* -webkit-mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center center;
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  -webkit-mask-image: url(../../img/icons/ico_sch.svg); */
+  -webkit-mask-image: url(../../img/icons/ico_sch.svg);
   background-image: url(../../img/icons/ico_sch.svg);
-  /* mask-image: url(../../img/icons/ico_sch.svg); */
+  mask-image: url(../../img/icons/ico_sch.svg);
 }
 
 .svg-icon.ico-upload {
@@ -2021,9 +2021,10 @@ caption {
   color: var(--krds-light-color-action-white);
 }
 
-/* .krds-btn:active, .krds-btn:focus {
+.krds-btn:active, .krds-btn:focus {
   background-color: var(--krds-button--color-primary-fill-pressed);
-} */
+}
+ 
 .krds-btn[disabled],
 .krds-btn.disabled {
   background-color: var(--krds-button--color-primary-fill-disabled);
@@ -2367,10 +2368,10 @@ caption {
   width: 100%;
   height: 100%;
 }
-/* 
+
 .krds-btn.icon .svg-icon {
   background-color: var(--krds-light-color-text-basic);
-} */
+}
 
 .krds-btn.icon.pure .svg-icon {
   background-color: transparent;
@@ -2720,10 +2721,10 @@ caption {
   background-color: transparent;
   border-color: var(--krds-high-contrast-color-border-transparency);
 }
-/* 
+
 [data-krds-mode=high-contrast] .krds-btn.icon .svg-icon {
   background-color: var(--krds-high-contrast-color-text-basic);
-} */
+}
 
 [data-krds-mode=high-contrast] .krds-btn.icon.border {
   background-color: var(--krds-high-contrast-color-background-white);
@@ -3059,10 +3060,10 @@ caption {
     background-color: transparent;
     border-color: var(--krds-high-contrast-color-border-transparency);
   }
-/* 
+
   [data-krds-mode=theme] .krds-btn.icon .svg-icon {
     background-color: var(--krds-high-contrast-color-text-basic);
-  } */
+  }
 
   [data-krds-mode=theme] .krds-btn.icon.border {
     background-color: var(--krds-high-contrast-color-background-white);
@@ -10791,14 +10792,14 @@ span.sec-tit,
   height: var(--krds-icon--size-medium);
   background-color: var(--krds-light-color-text-basic);
   forced-color-adjust: none;
-  /* -webkit-mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center center;
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_angle.svg);
-  mask-image: url(../../img/icons/ico_angle.svg); */
+  mask-image: url(../../img/icons/ico_angle.svg);
   background-image: url(../../img/icons/ico_angle.svg);
   background-color: var(--krds-pagination--color-text);
   transform: rotate(90deg);
@@ -10820,14 +10821,14 @@ span.sec-tit,
   height: var(--krds-icon--size-medium);
   background-color: var(--krds-light-color-text-basic);
   forced-color-adjust: none;
-  /* -webkit-mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center center;
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
   -webkit-mask-image: url(../../img/icons/ico_angle.svg);
-  mask-image: url(../../img/icons/ico_angle.svg); */
+  mask-image: url(../../img/icons/ico_angle.svg);
   background-image: url(../../img/icons/ico_angle.svg);
   background-color: var(--krds-pagination--color-text);
   transform: rotate(-90deg);
