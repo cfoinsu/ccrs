@@ -9431,8 +9431,8 @@ span.sec-tit,
 }
 
 .krds-structured-list.gallery .card-top img {
-  width: 310px;
-  height: 204px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   flex-shrink: 0;
 }
