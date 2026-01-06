@@ -171,10 +171,10 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Print Functionality
-document.querySelector('[aria-label="인쇄"]')?.addEventListener('click', () => {
-    //window.print();
-    pcScreenshotPrint();
-});
+// document.querySelector('[aria-label="인쇄"]')?.addEventListener('click', () => {
+//     //window.print();
+//     pcScreenshotPrint();
+// });
 
 // Share Functionality
 // document.querySelector('[aria-label="공유"]')?.addEventListener('click', () => {
