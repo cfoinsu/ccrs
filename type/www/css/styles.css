@@ -4027,6 +4027,7 @@ table.comparison-table td {
     text-align: center;
     min-width: 120px;
     max-width: 120px;
+    word-break: initial;
 }
 
 table.comparison-table th {
