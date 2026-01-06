@@ -214,6 +214,10 @@
   background-image: url(../../img/icons/ico_download.svg);
 }
 
+.krds-btn.primary .svg-icon.ico-down {
+  background-image: url(../../img/icons/ico_download-white.svg);
+}
+
 .svg-icon.ico-filter {
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center center;
