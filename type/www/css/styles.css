@@ -1419,6 +1419,8 @@ body aside {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     max-width: 980rem;
     min-width: 300px;
+    left: 50%;
+    top: -4px;
 }
 
 .tooltip-content {
