@@ -9432,7 +9432,7 @@ span.sec-tit,
 
 .krds-structured-list.gallery .card-top img {
   width: 100%;
-  height: auto;
+  height: 224px;
   object-fit: cover;
   flex-shrink: 0;
 }
