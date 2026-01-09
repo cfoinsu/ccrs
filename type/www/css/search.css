@@ -77,7 +77,7 @@
 }
 @media (max-width: 1279px) {
   .search-input-area .search-box-main {
-    height: auto;
+    /* height: auto; */
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -101,7 +101,7 @@
 }
 @media (max-width: 1279px) {
   .search-input-area .scope-filter {
-    width: 100%;
+    /* width: 100%; */
   }
 }
 .search-input-area .scope-filter .krds-form-select {
@@ -181,6 +181,14 @@
 }
 @media (max-width: 1279px) {
   .search-input-area .keyword-input-wrap {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .search-input-area .keyword-input-wrap {
+    width: calc(100% - 100px);
+  }
+  .search-input-area .keyword-input {
     width: 100%;
   }
 }
