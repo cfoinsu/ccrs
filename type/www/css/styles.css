@@ -9245,7 +9245,7 @@ a.customer-service-card {
     z-index: 10;
     pointer-events: none;
     display: flex;
-    gap: 20px;
+    gap: 6px; /* 20260128 조직도 간격 변경 */
 
     &.en {
         top: 550px;
