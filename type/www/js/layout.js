@@ -254,7 +254,7 @@ function mobileMenu() {
 // 	if ($(this).scrollTop() > 200) {
 // 		if (!$('.scroll-to-top').length) {
 // 			$('body').append(
-// 				'<button class="scroll-to-top" style="position: fixed; bottom: 20px; right: 10px; width: 6rem; height: 6rem; background: var(--krds-light-color-button-primary-fill); border: none; border-radius: 50%; cursor: pointer; z-index: 999; font-size: 18px;"><img src="/type/www/img/icons/ico_go_top.svg" alt="맨 위로 가기" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);"></button>'
+// 				'<button class="scroll-to-top" style="position: fixed; bottom: 20px; right: 10px; width: 6rem; height: 6rem; background: var(--krds-light-color-button-primary-fill); border: none; border-radius: 50%; cursor: pointer; z-index: 999; font-size: 18px;"><img src="/ccrs/type/www/img/icons/ico_go_top.svg" alt="맨 위로 가기" style="filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(132deg) brightness(103%) contrast(103%);"></button>'
 // 			);
 // 		}
 // 		$('.scroll-to-top').fadeIn();
@@ -330,11 +330,11 @@ $(document).ready(function() {
                     <div class="g-qr-box">
                         <div class="qr-box">
                             <p class="font-bold">구글 플레이</p>
-                            <img src="/type/www/img/contents/png/qr-googleplay.png" alt="Google Play 스토어의 신용회복위원회 다운로드 페이지로 연결되는 QR 코드 : https://play.google.com/store/apps/details?id=kr.or.ccrs.cyber">
+                            <img src="/ccrs/type/www/img/contents/png/qr-googleplay.png" alt="Google Play 스토어의 신용회복위원회 다운로드 페이지로 연결되는 QR 코드 : https://play.google.com/store/apps/details?id=kr.or.ccrs.cyber">
                         </div>
                         <div class="qr-box">
                             <p class="font-bold">앱 스토어</p>
-                            <img src="/type/www/img/contents/png/qr-appstore.png" alt="App Store 스토어의 신용회복위원회 다운로드 페이지로 연결되는 QR 코드 : https://apps.apple.com/kr/app/%EC%8B%A0%EC%9A%A9%ED%9A%8C%EB%B3%B5%EC%9C%84%EC%9B%90%ED%9A%8C/id1478216021">
+                            <img src="/ccrs/type/www/img/contents/png/qr-appstore.png" alt="App Store 스토어의 신용회복위원회 다운로드 페이지로 연결되는 QR 코드 : https://apps.apple.com/kr/app/%EC%8B%A0%EC%9A%A9%ED%9A%8C%EB%B3%B5%EC%9C%84%EC%9B%90%ED%9A%8C/id1478216021">
                         </div>
                     </div>
                     <button type="button" class="btn-close">
@@ -366,49 +366,49 @@ $(document).ready(function() {
                     <div class="sns-type">
                         <a href="javascript:;" class="_btnFacebook" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_facebook.svg" alt="페이스북">
+                                <img src="/ccrs/type/www/img/icons/icon_logo_facebook.svg" alt="페이스북">
                             </i> 
                             <span>페이스북</span>
                         </a>
                         <a href="javascript:;" class="_btnX" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_x.svg" alt="메타">
+                                <img src="/ccrs/type/www/img/icons/icon_logo_x.svg" alt="메타">
                             </i> 
                             <span>X</span>
                         </a>
                         <a href="javascript:;" class="_btnKakao" title="새창열림">
                             <i class="icon" aria-hidden="true" style="background: #f9e202;border-radius: 12px;">
-                                <img src="/type/www/images/ic/footer/ic-kakaotalk.svg" alt="카카오톡">
+                                <img src="/ccrs/type/www/images/ic/footer/ic-kakaotalk.svg" alt="카카오톡">
                             </i> 
                             <span>카카오톡</span>
                         </a>
                         <a href="javascript:;" class="_btnBand" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_band.svg" alt="네이버밴드">
+                                <img src="/ccrs/type/www/img/icons/icon_logo_band.svg" alt="네이버밴드">
                             </i> 
                             <span>네이버밴드</span>
                         </a>
                         <a href="javascript:;" class="_btnBlog" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_blog.svg" alt="네이버블로그">
+                                <img src="/ccrs/type/www/img/icons/icon_logo_blog.svg" alt="네이버블로그">
                             </i> 
                             <span>네이버블로그</span>
                         </a>
                         <a href="javascript:;" class="_btnTumblr" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_tumblr.svg" alt="텀블러">
+                                <img src="/ccrs/type/www/img/icons/icon_logo_tumblr.svg" alt="텀블러">
                             </i> 
                             <span>텀블러</span>
                         </a>
                         <a href="javascript:;" class="_btnPinter" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_pinter.svg" alt="핀터레스트">
+                                <img src="/ccrs/type/www/img/icons/icon_logo_pinter.svg" alt="핀터레스트">
                             </i> 
                             <span>핀터레스트</span>
                         </a>
                         <a href="javascript:;" class="_btnInsta" title="새창열림">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_insta.svg" alt="인스타그램">
+                                <img src="/ccrs/type/www/img/icons/icon_logo_insta.svg" alt="인스타그램">
                             </i> 
                             <span>인스타그램</span>
                         </a>
@@ -451,49 +451,49 @@ $(document).ready(function() {
                     <div class="sns-type">
                         <a href="javascript:;" class="_btnFacebook" title="new window">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_facebook.svg" alt="">
+                                <img src="/ccrs/type/www/img/icons/icon_logo_facebook.svg" alt="">
                             </i> 
                             <span>Facebook</span>
                         </a>
                         <a href="javascript:;" class="_btnX" title="new window">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_x.svg" alt="">
+                                <img src="/ccrs/type/www/img/icons/icon_logo_x.svg" alt="">
                             </i> 
                             <span>X</span>
                         </a>
                         <a href="javascript:;" class="_btnKakao" title="new window">
                             <i class="icon" aria-hidden="true" style="background: #f9e202;border-radius: 12px;">
-                                <img src="/type/www/images/ic/footer/ic-kakaotalk.svg" alt="">
+                                <img src="/ccrs/type/www/images/ic/footer/ic-kakaotalk.svg" alt="">
                             </i> 
                             <span>Kakao Talk</span>
                         </a>
                         <a href="javascript:;" class="_btnBand" title="new window">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_band.svg" alt="">
+                                <img src="/ccrs/type/www/img/icons/icon_logo_band.svg" alt="">
                             </i> 
                             <span>Naver Band</span>
                         </a>
                         <a href="javascript:;" class="_btnBlog" title="new window">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_blog.svg" alt="">
+                                <img src="/ccrs/type/www/img/icons/icon_logo_blog.svg" alt="">
                             </i> 
                             <span>Naver Blog</span>
                         </a>
                         <a href="javascript:;" class="_btnTumblr" title="new window">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_tumblr.svg" alt="">
+                                <img src="/ccrs/type/www/img/icons/icon_logo_tumblr.svg" alt="">
                             </i> 
                             <span>Tumblr</span>
                         </a>
                         <a href="javascript:;" class="_btnPinter" title="new window">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_pinter.svg" alt="">
+                                <img src="/ccrs/type/www/img/icons/icon_logo_pinter.svg" alt="">
                             </i> 
                             <span>Pinterest</span>
                         </a>
                         <a href="javascript:;" class="_btnInsta" title="new window">
                             <i class="icon" aria-hidden="true">
-                                <img src="/type/www/img/icons/icon_logo_insta.svg" alt="">
+                                <img src="/ccrs/type/www/img/icons/icon_logo_insta.svg" alt="">
                             </i> 
                             <span>Instagram</span>
                         </a>

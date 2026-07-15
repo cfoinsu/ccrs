@@ -643,7 +643,7 @@
   height: 34rem;
 }
 .en #header.header-en.is-active .gnb-wrap .utils li .language-change {
-  background: url(/type/www/images/img/en/header-language-kr-b.svg) no-repeat center;
+  background: url(/ccrs/type/www/images/img/en/header-language-kr-b.svg) no-repeat center;
   background-size: contain;
 }
 .en #header.header-en .header-container {
@@ -702,7 +702,7 @@
   display: inline-block;
 }
 .en #header.header-en .gnb-wrap .utils li .language-change {
-  background: url(/type/www/images/img/en/header-language-kr.svg) no-repeat center;
+  background: url(/ccrs/type/www/images/img/en/header-language-kr.svg) no-repeat center;
   background-size: contain;
   width: 3rem;
   height: 3rem;
@@ -720,7 +720,7 @@
   border-bottom: none;
 }
 .en #header.header-en.header-en-main .gnb-wrap .logo {
-  background: url(/type/www/img/logo/ccrs_logo_eng_dark.svg) no-repeat;
+  background: url(/ccrs/type/www/img/logo/ccrs_logo_eng_dark.svg) no-repeat;
   background-size: contain;
   background-position: center;
   width: 26.4rem;
@@ -733,7 +733,7 @@
   color: var(--krds-color-light-gray-0);
 }
 .en #header.header-en.header-en-main .gnb-wrap .utils li .language-change {
-  background: url(/type/www/images/img/en/header-language-kr-w.svg) no-repeat center;
+  background: url(/ccrs/type/www/images/img/en/header-language-kr-w.svg) no-repeat center;
   background-size: contain;
 }
 .en #header.header-en.header-en-main .gnb-wrap > nav .gnb > li .menu-label {
@@ -750,12 +750,12 @@
   background-color: var(--krds-color-light-gray-0);
 }
 .en #header.header-en.header-en-main.is-active .gnb-wrap .logo {
-  background: url(/type/www/img/logo/ccrs_logo_eng.svg) no-repeat;
+  background: url(/ccrs/type/www/img/logo/ccrs_logo_eng.svg) no-repeat;
   background-size: contain;
   background-position: center;
 }
 .en #header.header-en.header-en-main.is-active .gnb-wrap .utils li .language-change {
-  background: url(/type/www/images/img/en/header-language-kr.svg) no-repeat center;
+  background: url(/ccrs/type/www/images/img/en/header-language-kr.svg) no-repeat center;
   background-size: contain;
 }
 .en #header.header-en.header-en-main.is-active .gnb-wrap .utils li .search-open i {

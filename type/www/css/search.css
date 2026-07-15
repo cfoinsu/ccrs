@@ -316,11 +316,11 @@
   height: 1.2rem;
   margin-left: auto;
   background-color: var(--krds-color-light-gray-70);
-  mask-image: url("/type/www/images/ic/arrow-down.svg");
+  mask-image: url("/ccrs/type/www/images/ic/arrow-down.svg");
   mask-size: contain;
   mask-repeat: no-repeat;
   mask-position: center;
-  -webkit-mask-image: url("/type/www/images/ic/arrow-down.svg");
+  -webkit-mask-image: url("/ccrs/type/www/images/ic/arrow-down.svg");
   -webkit-mask-size: contain;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;

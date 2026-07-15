@@ -312,10 +312,10 @@ $(function() {
  */
 function searchPop(type) {
   const popupUrls = {
-    'ITEM': '/html/popup/item.html',        // 처리하는 개인정보 항목
-    'OFFER': '/html/popup/offer.html',      // 개인정보의 제3자 제공
-    'ENTRUST': '/html/popup/entrust.html',  // 개인정보처리의 위탁 현황
-    'ALIAS': '/html/popup/alias.html'       // 가명정보 처리현황
+    'ITEM': '/ccrs/html/popup/item.html',        // 처리하는 개인정보 항목
+    'OFFER': '/ccrs/html/popup/offer.html',      // 개인정보의 제3자 제공
+    'ENTRUST': '/ccrs/html/popup/entrust.html',  // 개인정보처리의 위탁 현황
+    'ALIAS': '/ccrs/html/popup/alias.html'       // 가명정보 처리현황
   };
 
   const url = popupUrls[type];
@@ -339,7 +339,7 @@ function searchPop(type) {
 $(function() {  
     // Scroll to top functionality
     $('body').append(
-      '<button class="scroll-to-top"><img src="/type/www/img/icons/ico_go_top.svg" alt="맨 위로 가기"</button>'
+      '<button class="scroll-to-top"><img src="/ccrs/type/www/img/icons/ico_go_top.svg" alt="맨 위로 가기"</button>'
     );
 
   $(window).on('scroll', function() {

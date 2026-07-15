@@ -12,8 +12,8 @@ $(function () {
   if ($('#header-content-container').length > 0) {
     $('#header-content-container').load('includes/header.html', function () {
       // Header가 로드된 후 스크립트 초기화
-      $.getScript('/type/www/js/layout.js');
-      $.getScript('/type/www/js/script.js');
+      $.getScript('/ccrs/type/www/js/layout.js');
+      $.getScript('/ccrs/type/www/js/script.js');
     });
   }
 
@@ -21,8 +21,8 @@ $(function () {
   if ($('#header-container').length > 0) {
     $('#header-container').load('includes/header.html', function () {
       // Header가 로드된 후 스크립트 초기화
-      $.getScript('/type/www/js/layout.js');
-      $.getScript('/type/www/js/script.js');
+      $.getScript('/ccrs/type/www/js/layout.js');
+      $.getScript('/ccrs/type/www/js/script.js');
     });
   }
 

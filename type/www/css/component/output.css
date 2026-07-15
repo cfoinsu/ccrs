@@ -4909,7 +4909,7 @@ caption {
 .krds-accordion.type-line .accordion-item .btn-accordion::after {
   top: var(--krds-accordion--line-padding);
   right: 0;
-  background: url(/type/www/img/icons/ico_angle.svg) no-repeat;
+  background: url(/ccrs/type/www/img/icons/ico_angle.svg) no-repeat;
   transform: rotate(360deg);
   background-size: contain;
 }

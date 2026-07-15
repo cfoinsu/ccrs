@@ -164,7 +164,7 @@
   transform: translateY(-2px);
   width: 2rem;
   height: 2rem;
-  background: url(/type/www/images/ic/icon-newwindow.svg) no-repeat center center/contain;
+  background: url(/ccrs/type/www/images/ic/icon-newwindow.svg) no-repeat center center/contain;
 }
 
 .btn-action:hover {
@@ -374,7 +374,7 @@
   left: 0;
   width: 4px;
   height: 1.8rem;
-  background: url(/type/www/images/ic/ic-bullet.svg) no-repeat 0 0/contain;
+  background: url(/ccrs/type/www/images/ic/ic-bullet.svg) no-repeat 0 0/contain;
 }
 
 .wrap-calculator {
@@ -819,7 +819,7 @@
   transform: translateX(-50%);
   width: 1.5rem;
   height: 3.4rem;
-  background: url(/type/www/images/ic/dot-line.svg) no-repeat 0 0/cover;
+  background: url(/ccrs/type/www/images/ic/dot-line.svg) no-repeat 0 0/cover;
 }
 
 @media (max-width: 767px) {
@@ -1902,7 +1902,7 @@
   width: 2rem;
   height: 2rem;
   display: inline-block;
-  background: url(/type/www/images/ic/icon-info.svg) no-repeat center;
+  background: url(/ccrs/type/www/images/ic/icon-info.svg) no-repeat center;
   background-size: contain;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -3867,7 +3867,7 @@
   width: 24px;
   height: 24px;
   display: inline-block;
-  background: url(/type/www/img/icons/icon-link-white.svg) no-repeat center;
+  background: url(/ccrs/type/www/img/icons/icon-link-white.svg) no-repeat center;
   background-size: contain;
 
 }
@@ -3986,7 +3986,7 @@
 }
 
 .silhyo .other-debt-adjustment .adjustment-card::before {
-  background: url(/type/www/images/ic/dot-line-red.svg) no-repeat 0 0 / cover;
+  background: url(/ccrs/type/www/images/ic/dot-line-red.svg) no-repeat 0 0 / cover;
 }
 
 /*소액신용카드발급_통이미지 퍼블리싱*/

@@ -3820,7 +3820,7 @@
   left: 0;
   width: 10px;
   height: 25px;
-  background: url(/type/www/images/ic/tit_accordian.svg) no-repeat 0 0/contain;
+  background: url(/ccrs/type/www/images/ic/tit_accordian.svg) no-repeat 0 0/contain;
 }
 
 .g-conts-area .bullet {
@@ -4556,7 +4556,7 @@
 }
 
 .en .org-chart-area {
-  background: url(/type/www/images/en/Organization_chart.png) no-repeat -22px 0;
+  background: url(/ccrs/type/www/images/en/Organization_chart.png) no-repeat -22px 0;
 }
 
 .en .ccrs-service-diagram {

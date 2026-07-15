@@ -3529,12 +3529,12 @@ label:has(>input[type=checkbox]:focus) {
 
 b .icon-ph,
 strong .icon-ph {
-    background: url(/type/www/img/icons/bold_telephone.svg) center no-repeat;
+    background: url(/ccrs/type/www/img/icons/bold_telephone.svg) center no-repeat;
 
 }
 
 .icon-ph {
-    background: url(/type/www/img/icons/normal_telephone.svg) center no-repeat;
+    background: url(/ccrs/type/www/img/icons/normal_telephone.svg) center no-repeat;
     display: inline-block;
     vertical-align: middle;
     width: 1.6rem;
@@ -10552,14 +10552,14 @@ a.customer-service-card {
 }
 
 .prevention-list-wrap {width: 100%; padding: 3.2rem; background: #3D6FCF; border-radius: 2.4rem; position: relative; overflow: hidden;}
-.prevention-list-wrap::before {content: ''; display: block; width: 21.1rem; height: 19.1rem; background: url(/type/www/images/img/prevention-hand.png) no-repeat center; position: absolute; right: -9.5rem; top: 3.1rem; background-size: 100%;}
+.prevention-list-wrap::before {content: ''; display: block; width: 21.1rem; height: 19.1rem; background: url(/ccrs/type/www/images/img/prevention-hand.png) no-repeat center; position: absolute; right: -9.5rem; top: 3.1rem; background-size: 100%;}
 .prevention-list-title {font-family: 'Paperlogy-Bold'; font-size: 5rem; font-weight: bold; text-align: center; color: #fff;}
 .prevention-list-title span {display: inline-block; background: #f35e13; padding: 0 1.1rem; line-height: 1.2;}
 .prevention-list {background: #fff; border-radius: 2.4rem; padding: 3rem 2.5rem; margin-top: 3.2rem;}
 .prevention-list li + li {margin-top: 3.2rem;}
 .prevention-list__tit {display: flex; align-items: flex-start; gap: 0 1rem;}
 .prevention-list__tit span {display: block; width: 5.4rem; height: 2.9rem; font-size: 2rem; font-weight: bold; color: #fff; position: relative; text-align: center;}
-.prevention-list__tit span::before {content: ''; display: block; width: 100%; height: 100%; background: url(/type/www/images/img/prevention-list-icon.png) no-repeat center; position: absolute; top: 0; left: 0; background-size: 100%;}
+.prevention-list__tit span::before {content: ''; display: block; width: 100%; height: 100%; background: url(/ccrs/type/www/images/img/prevention-list-icon.png) no-repeat center; position: absolute; top: 0; left: 0; background-size: 100%;}
 .prevention-list__tit span em {z-index: 1; position: relative;}
 .prevention-list__tit p {font-size: 2.4rem; font-weight: bold; width: calc(100% - 5.5rem);}
 .prevention-list__tit p em {color: #f65b15;}
@@ -10568,8 +10568,8 @@ a.customer-service-card {
 .prevention-list__cnt ul li::before {content: ''; display: block; width: 3px; height: 3px; border-radius: 50%; position: absolute; top: 12px; left: 0; background: #17191b;}
 .prevention-list__cnt ul li + li {margin-top: .4rem;}
 .prevention-list__cnt .prevention-list__check li {font-size: 1.7rem; padding-left: 1.8rem;}
-.prevention-list__cnt .prevention-list__check li:before {width: 1.2rem; height: 1.1rem; background: url(/type/www/images/img/prevention-check-icon.png) no-repeat center; background-size: 100%; top: 7px;}
-.ico-tel {display: inline-block; width: 1.6rem; height: 1.6rem; background: url(/type/www/images/img/prevention-tel-icon.png) no-repeat center; background-size: 100%; margin: 0px 3px -1px;}
+.prevention-list__cnt .prevention-list__check li:before {width: 1.2rem; height: 1.1rem; background: url(/ccrs/type/www/images/img/prevention-check-icon.png) no-repeat center; background-size: 100%; top: 7px;}
+.ico-tel {display: inline-block; width: 1.6rem; height: 1.6rem; background: url(/ccrs/type/www/images/img/prevention-tel-icon.png) no-repeat center; background-size: 100%; margin: 0px 3px -1px;}
 
 @media (max-width: 1024px) {
     .prevention-list-wrap::before {right: -9%;}
@@ -10593,12 +10593,12 @@ a.customer-service-card {
   width: 20px;
   height: 20px;
   margin: -3px 0 0 0;
-  background: url(/type/www/images/ic/header-search.svg?ver=5.9) no-repeat center;
+  background: url(/ccrs/type/www/images/ic/header-search.svg?ver=5.9) no-repeat center;
   background-size: 20px;
 }
 
 .svg-icon.ico-search {
-  background: url(/type/www/images/ic/header-search.svg?ver=5.9) no-repeat center;
+  background: url(/ccrs/type/www/images/ic/header-search.svg?ver=5.9) no-repeat center;
   background-size: 20px;
 }
 
