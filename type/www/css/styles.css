@@ -8630,6 +8630,11 @@ table .table-center {
     flex-wrap: wrap;
 }
 
+/* 20260714 새 조직도(국문): 이미지가 컨테이너 폭을 꽉 채우므로 지역본부 원도 같은 폭으로 균등 배치 */
+.grouptree-region .region-branches {
+    justify-content: space-between;
+}
+
 .region-branch-wrapper {
     position: relative;
     display: flex;
@@ -8647,7 +8652,7 @@ table .table-center {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 1.2;
     transition: all 0.3s ease;
     padding: 20px 0;
     box-sizing: border-box;
@@ -9151,30 +9156,59 @@ a.customer-service-card {
     }
 }
 
-/*조직도 하단 선*/
+/*조직도 하단 선 - 고객본부 → 지역본부 연결선 (20260714 조직도 이미지 교체로 CSS 드로잉으로 변경)*/
+/* 기준 이미지: GroupTree.png (2062x1320) / 고객본부 박스 하단 y=1119, 우측 x=2061 */
 .grouptree-bg-line {
     position: absolute;
-    top: 535px;
+    top: 80.57%;
+    /* 1063.5 / 1320 = 고객본부 박스(1008~1119) 세로 중앙 */
     left: 60px;
-    width: 916px;
-    height: 189px;
-    background: url(../img/contents/png/GroupTree_bgline.png) left top no-repeat;
-    background-size: 100%;
+    /* 첫 번째 지역본부 원 중심 (원 120px, flex-start) */
+    right: -8px;
+    /* 이미지 우측 끝 바깥 8px - 디지털상담부 박스 테두리와 겹치지 않도록 */
+    height: calc(19.43% + 39px);
+    /* 이미지 하단 + 39px = 지역본부 원 위 25px 지점 */
+    border-right: 1px solid #b1b8be;
+    border-bottom: 1px solid #b1b8be;
+    pointer-events: none;
+    z-index: 1;
+    /* 조직도 이미지(z-index 2)보다 아래 */
+}
+
+/* 고객본부 박스 우측 → 세로선으로 이어지는 가로 연결선 (안쪽 끝은 이미지에 가려짐) */
+.grouptree .grouptree-bg-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14px;
+    height: 1px;
+    background: #b1b8be;
+}
+
+/* 지역본부 원으로 내려오는 세로선 */
+.grouptree-region .region-branch-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    width: 1px;
+    height: 25px;
+    background: #b1b8be;
     pointer-events: none;
 }
 
-.grouptree-bg-line.en {
-    background: url(../images/en/GroupTree_bgline.png) right top no-repeat;
-    background-size: contain;
-    top: 522px;
-    left: 62px;
-    width: 915px;
-    height: 380px;
-}
+/* 영문 조직도 연결선은 파일 하단 .organization-chart 블록에서 CSS로 그림 (20260714) */
 
 /* 조직도 인재경영부, 사회공헌팀 */
 .g-conts-area {
     position: relative;
+}
+
+/* 연결선이 조직도 이미지 뒤에서 나오도록 이미지를 위로 */
+.grouptree>img {
+    position: relative;
+    z-index: 2;
 }
 
 .grouptree-list {
@@ -9184,19 +9218,10 @@ a.customer-service-card {
     right: 250px;
     width: 160px;
 
-    &.en {
-        top: 227px;
-        right: 245px;
-        width: 175px;
-
-    }
+    /* 영문(.en) 재배치는 파일 하단 .organization-chart 블록에서 처리 (20260714) */
 
     &.second {
         top: 316px;
-
-        &.en {
-            top: 318px;
-        }
     }
 
     &:focus,
@@ -9238,57 +9263,88 @@ a.customer-service-card {
     }
 }
 
+/* 20260714 새 조직도(국문): 미래사업추진단 / 인재경영부 / 홍보협력실 hover 팀 목록 */
+/* 이미지 원본 px 기준 (GroupTree.png 3093x1980) - navy 박스 450x168, x 1725~2174 */
+/* 미래사업추진단 y327 · 인재경영부 y762 · 홍보협력실 y960 */
+.grouptree .grouptree-list {
+    position: absolute;
+    overflow: visible;
+    left: 55.771%;
+    /* 1725 / 3093 */
+    right: auto;
+    width: 14.549%;
+    /* 450 / 3093 */
+    height: 8.485%;
+    /* 168 / 1980 */
+    z-index: 10;
+
+    &.future {
+        top: 16.515%;
+        /* 327 / 1980 - 미래사업추진단 */
+    }
+
+    &.first {
+        top: 38.485%;
+        /* 762 / 1980 - 인재경영부 */
+    }
+
+    &.second {
+        top: 48.485%;
+        /* 960 / 1980 - 홍보협력실 */
+    }
+
+    .group-title {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .grouptree-list-item {
+        position: absolute;
+        top: calc(100% + 10px);
+        /* navy 박스 바로 아래 */
+        left: 50%;
+        transform: translate(-50%, -10px);
+        min-width: 100%;
+        white-space: nowrap;
+        pointer-events: none;
+        z-index: 20;
+    }
+
+    /* 팝업이 아래쪽 박스(비서실·홍보협력실)를 덮으므로, 호버 중인 그룹을 위로 올린다 */
+    &:focus,
+    &:focus-within,
+    &:hover {
+        z-index: 20;
+    }
+
+    &:focus .grouptree-list-item,
+    &:focus-within .grouptree-list-item,
+    &:hover .grouptree-list-item {
+        opacity: 1;
+        transform: translate(-50%, 0);
+        pointer-events: auto;
+    }
+}
+
+/* 20260714 조직도 이미지 교체(2062x1320)에 맞춰 % 기준으로 변경 */
+/* 부서 박스 17개: box 110 / gap 12 / top 1136 / height 181 (이미지 원본 px 기준) */
 .grouptree-team-list {
     position: absolute;
-    top: 568px;
+    top: 86.061%;
+    /* 1136 / 1320 */
     left: 0;
+    width: 100%;
+    height: 13.712%;
+    /* 181 / 1320 */
     z-index: 10;
     pointer-events: none;
     display: flex;
-    gap: 6px; /* 20260128 조직도 간격 변경 */
+    gap: 0.582%;
+    /* 12 / 2062 */
 
-    &.en {
-        top: 550px;
-        gap: 24px;
-
-        >ul {
-            flex-direction: column;
-            gap: 0;
-
-            .team-title {
-                width: 220px;
-                height: 50px;
-            }
-
-            li:focus,
-            li:focus-within,
-            li:hover {
-                ul {
-                    opacity: 1;
-                    transform: translate(0, 0);
-                }
-            }
-
-            ul {
-                width: auto;
-                top: -4px;
-                left: 224px;
-                right: auto;
-                transform: none;
-
-                &::after {
-                    top: 24px;
-                    left: -8px;
-                    transform: translateY(-50%) rotate(-90deg);
-                    /* 왼쪽 방향 세모 */
-                    border-left: 6px solid transparent;
-                    border-right: 6px solid transparent;
-                    border-bottom: 6px solid #84b4ff;
-                    border-top: none;
-                }
-            }
-        }
-    }
+    /* 영문(.en) 재배치는 파일 하단 .organization-chart 블록에서 처리 (20260714) */
 
     ul {
         display: flex;
@@ -9298,14 +9354,29 @@ a.customer-service-card {
         margin: 0;
     }
 
+    /* 본부별 묶음: 경영혁신본부 5개(598/2062), 나머지 4개(476/2062) */
+    >ul {
+        width: 23.084%;
+        height: 100%;
+        gap: 2.521%;
+        /* 12 / 476 */
+
+        &:first-child {
+            width: 29.001%;
+            gap: 2.007%;
+            /* 12 / 598 */
+        }
+    }
+
     >ul>li {
         position: relative;
+        flex: 1 1 0;
         pointer-events: auto;
 
         .team-title {
             display: block;
-            height: 92px;
-            width: 55px;
+            width: 100%;
+            height: 100%;
             text-indent: -9999px;
             overflow: hidden;
             cursor: pointer;
@@ -9316,7 +9387,9 @@ a.customer-service-card {
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 110px;
+            top: calc(100% + 20px);
+            width: auto;
+            height: auto;
             left: 50%;
             transform: translate(-50%, -8px);
             text-align: center;
@@ -9374,13 +9447,217 @@ a.customer-service-card {
 
 .region-branches.en {
     margin-top: 36px;
+    /* 20260715 지역본부 원 그룹을 이미지 중앙에 배치 */
+    justify-content: center;
+}
+
+/* =========================================================================
+   20260714 영문 조직도 (Organization_chart.png 1996x1580) 오버레이 재배치
+   - 국문(.grouptree)과 클래스 공유하므로 .organization-chart 로 스코프
+   - 좌표는 이미지 원본 px 기준 %
+   ========================================================================= */
+
+/* 조직도 이미지를 연결선 위로 (선이 이미지 뒤에서 나오도록) */
+.organization-chart>img {
+    position: relative;
+    z-index: 2;
+}
+
+/* Customer Division 헤더 우측변 → 이미지 옆으로 나와 지역본부로 내려가는 연결선 */
+.organization-chart .grouptree-bg-line {
+    position: absolute;
+    top: 65.918%;
+    /* 1041.5/1580 = Customer Division 헤더(navy, y986~1097) 세로 중앙 */
+    left: calc((100% - 954px) / 2 + 60px);
+    /* 중앙 정렬된 첫 지역본부 원 중심 (원 7개 총폭 954px) */
+    right: -8px;
+    /* 이미지 우측 끝 바깥 - 이미지 옆으로 나오는 형상 */
+    height: calc(34.082% + 33px);
+    /* 이미지 하단 + 33px = 가로 버스 */
+    border-right: 1px solid #b1b8be;
+    border-bottom: 1px solid #b1b8be;
+    background: none;
+    pointer-events: none;
+    z-index: 3;
+    /* 이미지(z-index 2) 위 - 옆으로 나온 선이 보이도록 */
+}
+
+/* 이미지 우측 끝 바깥에서만 나오는 짧은 가로 스텁 (이미지 위로 겹치지 않게) */
+.organization-chart .grouptree-bg-line::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    /* 이미지 우측 끝(x1020) → 세로선(x1028)만 연결, 이미지 위로 안 올라감 */
+    height: 1px;
+    background: #b1b8be;
+}
+
+/* 지역본부 원으로 내려오는 세로 낙하선 */
+.region-branches.en .region-branch-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    width: 1px;
+    height: 27px;
+    background: #b1b8be;
+    pointer-events: none;
+}
+
+/* --- 하단 4개 본부 부서 hover (컬럼별 절대배치) --- */
+/* Col1 x0~438(5행) / Col2 x488~926(4행) / Col3 x976~1414(4행) / Col4 x1464~1902(4행) */
+/* 부서영역 상단 y1096, col1 하단 y1578 */
+.organization-chart .grouptree-team-list {
+    top: 69.367%;
+    /* 1096/1580 */
+    left: 0;
+    width: 100%;
+    height: 30.506%;
+    /* (1578-1096)/1580 */
+    gap: 0;
+    display: block;
+    z-index: 10;
+}
+
+.organization-chart .grouptree-team-list>ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    gap: 0;
+    width: 23.057%;
+    /* 439/1904 */
+    height: 100%;
+}
+
+.organization-chart .grouptree-team-list>ul:nth-child(2) {
+    left: 25.630%;
+    /* 488/1904 */
+    height: 82.988%;
+    /* 400/482 */
+}
+
+.organization-chart .grouptree-team-list>ul:nth-child(3) {
+    left: 51.261%;
+    /* 976/1904 */
+    height: 82.988%;
+}
+
+.organization-chart .grouptree-team-list>ul:nth-child(4) {
+    left: 76.891%;
+    /* 1464/1904 */
+    height: 84.647%;
+    /* 408/482 */
+}
+
+.organization-chart .grouptree-team-list>ul>li {
+    flex: 1 1 0;
+}
+
+/* 팀 팝업: 부서 박스 오른쪽으로 */
+.organization-chart .grouptree-team-list>ul>li>ul {
+    top: 0;
+    left: calc(100% + 8px);
+    right: auto;
+    transform: translateY(-8px);
+}
+
+.organization-chart .grouptree-team-list>ul>li>ul::after {
+    top: 22px;
+    left: -9px;
+    right: auto;
+    transform: rotate(-90deg);
+}
+
+.organization-chart .grouptree-team-list>ul>li:focus>ul,
+.organization-chart .grouptree-team-list>ul>li:focus-within>ul,
+.organization-chart .grouptree-team-list>ul>li:hover>ul {
+    transform: translateY(0);
+}
+
+/* col4는 우측 끝이라 팝업을 왼쪽으로 */
+.organization-chart .grouptree-team-list>ul:nth-child(4)>li>ul {
+    left: auto;
+    right: calc(100% + 8px);
+}
+
+.organization-chart .grouptree-team-list>ul:nth-child(4)>li>ul::after {
+    left: auto;
+    right: -9px;
+    transform: rotate(90deg);
+}
+
+/* --- HR / PR 부서 hover (Secretary-General 우측) --- */
+/* HR Management Dept: x1200~1547, y534~645 / PR Dept: y716~827 */
+.organization-chart .grouptree-list {
+    overflow: visible;
+    left: 63.025%;
+    /* 1200/1904 */
+    right: auto;
+    width: 18.225%;
+    /* 347/1904 */
+    height: 6.899%;
+    /* 109/1580 */
+    z-index: 10;
+}
+
+.organization-chart .grouptree-list.future {
+    top: 11.456%;
+    /* 181/1580 = Business & Initiatives Development Division */
+}
+
+.organization-chart .grouptree-list.first {
+    top: 33.861%;
+    /* 535/1580 */
+}
+
+.organization-chart .grouptree-list.second {
+    top: 45.380%;
+    /* 717/1580 */
+}
+
+.organization-chart .grouptree-list .group-title {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    cursor: pointer;
+}
+
+.organization-chart .grouptree-list .grouptree-list-item {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translate(-50%, -8px);
+    min-width: 100%;
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: 20;
+}
+
+/* 팝업이 아래 박스를 덮으므로 hover 중인 그룹을 위로 */
+.organization-chart .grouptree-list:focus,
+.organization-chart .grouptree-list:focus-within,
+.organization-chart .grouptree-list:hover {
+    z-index: 20;
+}
+
+.organization-chart .grouptree-list:focus .grouptree-list-item,
+.organization-chart .grouptree-list:focus-within .grouptree-list-item,
+.organization-chart .grouptree-list:hover .grouptree-list-item {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    pointer-events: auto;
 }
 
 @media (max-width: 1400px) {
 
     .grouptree-team-list,
     .grouptree-list,
-    .grouptree-bg-line {
+    .grouptree-bg-line,
+    .grouptree-region .region-branch-wrapper::before,
+    .region-branches.en .region-branch-wrapper::before {
         display: none;
     }
 
@@ -9390,6 +9667,10 @@ a.customer-service-card {
 
     .region-branches {
         margin-top: 20px;
+    }
+
+    .grouptree-region .region-branches {
+        justify-content: flex-start;
     }
 
     .region-branches.en {

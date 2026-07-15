@@ -122,7 +122,7 @@
                         <div class="content-sections">
 
                             <div class="g-conts-area">
-                                <div class="g-conts-area" style="position: relative;">
+                                <div class="g-conts-area grouptree" style="position: relative;">
                                     <img class="pc-only" src="/type/www/img/contents/png/GroupTree.png?ver=5.9">
                                     <img class="mob-only w-full"src="/type/www/img/contents/png/GroupTree_mo.png?ver=5.9">
                                     <div class="sr-only pc-only">
@@ -134,24 +134,23 @@
                                                     <li>심의위원회 (위원장 직속)</li>
                                                     <li>재창업지원위원회 (위원장 직속)</li>
                                                     <li>융자위원회 (위원장 직속)</li>
+                                                    <li>미래사업추진단 (위원장 직속)
+                                                        <ul>
+                                                            <li>미래사업팀</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>비서실 (위원장 직속)</li>
                                                     <li>
                                                         <div class="head">사무국장</div>
                                                         <ul>
                                                             <li>인재경영부 (사무국장 직속)
                                                                 <ul>
                                                                     <li>인재개발팀</li>
-                                                                    <li>비서팀</li>
                                                                 </ul>
                                                             </li>
                                                             <li>홍보협력실 (사무국장 직속)
                                                                 <ul>
-                                                                    <li>사회공헌팀</li>
-                                                                </ul>
-                                                            </li>
-                                                            <li>
-                                                                감사 (사무국장 직속)
-                                                                <ul>
-                                                                    <li>감사실</li>
+                                                                    <li>홍보팀</li>
                                                                 </ul>
                                                             </li>
                                                             <li>
@@ -189,7 +188,7 @@
                                                                             <li>심사기획팀</li>
                                                                         </ul>
                                                                     </li>
-                                                                    <li>개인회생파산지원부
+                                                                    <li>개인회생·파산지원부
                                                                         <ul>
                                                                             <li>법무지원팀</li>
                                                                         </ul>
@@ -226,20 +225,21 @@
                                                             <li>
                                                                 <div class="head">고객본부</div>
                                                                 <ul>
-                                                                    <li>고객서비스운영부
+                                                                    <li>금융소비자보호부
                                                                         <ul>
                                                                             <li>고객소통팀</li>
                                                                             <li>금융피해자지원팀</li>
                                                                         </ul>
                                                                     </li>
+                                                                    <li>고객서비스운영부</li>
+                                                                    <li>상담서비스지원부
+                                                                        <ul>
+                                                                            <li>상담기획팀</li>
+                                                                        </ul>
+                                                                    </li>
                                                                     <li>디지털상담부
                                                                         <ul>
                                                                             <li>디지털상담지원팀</li>
-                                                                        </ul>
-                                                                    </li>
-                                                                    <li>고객만족부
-                                                                        <ul>
-                                                                            <li>상담기획팀</li>
                                                                         </ul>
                                                                     </li>
                                                                 </ul>
@@ -248,26 +248,38 @@
                                                     </li>
                                                 </ul>
                                             </li>
+                                            <li>
+                                                <div class="head">감사</div>
+                                                <ul>
+                                                    <li>감사실</li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </div>
 
-                                    <!-- <div class="grouptree-bg-line"></div> -->
-                                    <img class="grouptree-team-list" src="/type/www/img/contents/png/GroupTree_bgline.png" alt="" style="position: absolute;top: 535px;left: 60px;width: 916px;height: 189px;pointer-events: none;">
+                                    <!-- 고객본부 → 지역본부 연결선 -->
+                                    <div class="grouptree-bg-line" aria-hidden="true"></div>
+
+                                    <div class="grouptree-list future" tabindex="0" aria-hidden="true">
+                                        <span class="group-title">미래사업추진단</span>
+                                        <ul class="grouptree-list-item">
+                                            <li>미래사업팀</li>
+                                        </ul>
+                                    </div>
                                     <div class="grouptree-list first" tabindex="0" aria-hidden="true">
                                         <span class="group-title">인재경영부</span>
                                         <ul class="grouptree-list-item">
                                             <li>인재개발팀</li>
-                                            <li>비서팀</li>
                                         </ul>
                                     </div>
                                     <div class="grouptree-list second" tabindex="0" aria-hidden="true">
                                         <span class="group-title">홍보협력실</span>
                                         <ul class="grouptree-list-item">
-                                            <li>사회공헌팀</li>
+                                            <li>홍보팀</li>
                                         </ul>
                                     </div>
 
-                                    <div class="grouptree-team-list" aria-hidden="true" style="gap: 6px;">
+                                    <div class="grouptree-team-list" aria-hidden="true">
                                         <ul>
                                             <li tabindex="0">
                                                 <span class="team-title">기획조정부</span>
@@ -346,19 +358,22 @@
                                         </ul>
                                         <ul>
                                             <li tabindex="0">
-                                                <span class="team-title">고객서비스운영부</span>
+                                                <span class="team-title">금융소비자보호부</span>
                                                 <ul>
                                                     <li>고객소통팀</li>
                                                     <li>금융피해자지원팀</li>
                                                 </ul>
                                             </li>
                                             <li tabindex="0">
-                                                <span class="team-title">고객만족부</span>
+                                                <span class="team-title">고객서비스운영부</span>
+                                            </li>
+                                            <li tabindex="0">
+                                                <span class="team-title">상담서비스지원부</span>
                                                 <ul>
                                                     <li>상담기획팀</li>
                                                 </ul>
                                             </li>
-                                            <li>
+                                            <li tabindex="0">
                                                 <span class="team-title">디지털상담부</span>
                                                 <ul>
                                                     <li>디지털상담지원팀</li>
@@ -369,7 +384,7 @@
                                 </div>
 
                                 <!-- 지역본부 -->
-                                <div class="g-conts-area pc-only">
+                                <div class="g-conts-area pc-only grouptree-region">
                                     <h3 class="bullet region-branch-title"><strong>고객본부</strong></h3>
                                     <div class="region-branches">
                                         <div class="region-branch-wrapper" tabindex="0">
@@ -430,6 +445,7 @@
                                                 <p>보령지부</p>
                                                 <p>충주지부</p>
                                                 <p>아산지부</p>
+                                                <p>세종지부</p>
                                             </div>
                                         </div>
 
@@ -472,6 +488,7 @@
                                                 <p>창원지부</p>
                                                 <p>사상지부</p>
                                                 <p>울산지부</p>
+                                                <p>김해지부</p>
                                                 <p>수영지부</p>
                                                 <p>진주지부</p>
                                                 <p>거제지부</p>
